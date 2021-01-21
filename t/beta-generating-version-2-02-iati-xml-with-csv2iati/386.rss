@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+    <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386</link>
+    <description>Hi everyone
+
+Thanks to @bjwebb and @siemvaessen I&#39;ve recently been able to generate version 2.02 IATI data out of the [CSV2IATI tool](http://csv2iati.iatistandard.org/)  
+
+*A word of caution - this isnt a straightforward process -so please only try/test this on non-production data models to begin with.  Ideally - create a brand new model in CSV2IATI to test it out for yourself.*
+
+The key to this project is [this JSON code](https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83).  What this does is generate the &quot;mapping&quot; model in CSV2IATI according to the 2.02 schema.  As people might be aware, CSV2IATI currently outputs to version 1.03 by default.  It is actually possible to construct a model in line with any version of the schema - but this requires some careful work, planning and clicking.  Hence, this code helps generate the template according to 2.02, giving you the foundation to build on.
+
+To do this, try the following steps:
+
+1. Create a new model in CSV2IATI, with the source data CSV file you want to convert
+2. When in this model, click the link on the right hand side &quot;**Show JSON**&quot; - this is the current model in JSON format
+3. In a new tab, open the [2.02 JSON file](https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83) - and copy the JSON (tip: click on the Raw button to the [same code without the surrounding web page](https://gist.githubusercontent.com/Bjwebb/b3eccf2d314a2bdd3c83/raw/9bd633335dcc05117c66a0c8cab0702c6e944e68/mapping.json))
+4. Go back to CSV2IATI, select the existing code, and then paste in the 2.02 version - this replaces the underlying code for your model
+5. Whilst the JSON window is still open, find the &quot;Save Model&quot; button click it.  This can be tricky in some browsers/interfaces - but it&#39;s essential (I found) to save the model whilst the JSON is still open
+6. Once saved, you can close the JSON and moved to the model and mapping.  
+7. In the mapping page you should see the whole of the activity standard elements and attributes, to map you source file again.  
+8. If you really dont need a particular element you cna delete it with the small trashcan icon for each element/attribute. 
+9. Tip: As you do so, dont forget to save!
+10. When you&#39;ve finished, you can move directly to the convert page, and convert to XML.
+
+
+The resultant file is structured according to 2.02 , but with two small issues. To fix these, you&#39;ll then need to download the XML and edit it:
+
+1. The version attribute of ``iati-activities`` will still be 1.03.  Manually edit this to 2.02
+2. The ``reporting-org`` element will not be formatted according to 2.02, if you have provided an Organisation Name in the first page of CSV2IATI - eg:
+
+``&lt;reporting-org ref=&quot;12345&quot; type=&quot;60&quot;&gt;Org Name&lt;/reporting-org&gt;``
+
+Find and replace the existing code with something like:
+
+``&lt;reporting-org ref=&quot;12345&quot; type=&quot;60&quot;&gt;&lt;narrative&gt;Org Name&lt;/narrative&gt;&lt;/reporting-org&gt;``
+
+As highlighted, this is quite involved, but does work if you make some time for it.  Would be great to hear from others who try it</description>
+    
+    <lastBuildDate>Mon, 17 Oct 2016 12:33:03 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/brentphillips">@BrentPhillips</a> - The CSV2IATI tool was decommissioned last summer. Perhaps you missed, but just in case:  <a href="http://www.aidtransparency.net/news/iati-publishing-tool-csv2iati-to-be-decommissioned" rel="nofollow noopener">http://www.aidtransparency.net/news/iati-publishing-tool-csv2iati-to-be-decommissioned</a></p>
+<p><a href="https://www.oipa.nl" rel="nofollow noopener">https://www.oipa.nl</a>  does IATI XML export + CSV export. <a class="mention" href="/u/vincentvw">@VincentVW</a> should be able to get you up to speed on that.</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/13</link>
+        <pubDate>Mon, 17 Oct 2016 12:33:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-13</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m curious if anyone has experimented with the reverse and gotten the IATI XML to CSV tool to work recently? <a class="mention" href="/u/bjwebb">@bjwebb</a> contributed some code to it last on GitHub: <a href="https://github.com/IATI/IATI-XSLT" rel="nofollow noopener">https://github.com/IATI/IATI-XSLT</a> and here’s some information on using it published by Adrian Collier: <a href="http://adrian-collier.com/converting-iati-xml-data-to-csv/" rel="nofollow noopener">http://adrian-collier.com/converting-iati-xml-data-to-csv/</a></p>
+<p>I’m testing it but can’t get it to work and wondering what I’m doing wrong. I’m mainly interested in examining what it outputs depending on what files are used as input.</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/12</link>
+        <pubDate>Wed, 12 Oct 2016 05:59:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-12</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>[Apologies for the deleted post, hit send too early].</p>
+<p>Some further technical details.</p>
+<p>The <a href="https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83" rel="nofollow noopener">CSV2IATI 2.02 JSON mapping</a> was generated by modifying a local instance of the CSV2IATI metadata generation code to use the 2.02 schema. I then created a mapping in the (local) interface, and exported the JSON from “Show JSON”). The JSON then needed manual editing to convert properly, this can be seen at: <a href="https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83/revisions" rel="nofollow noopener">https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83/revisions</a></p>
+<p>The modified metadata generation can be seen at: <a href="https://github.com/OpenDataServices/CSV2IATI/commit/6677296976feb75e93e476d1edec7a38a34a7c3d" rel="nofollow noopener">https://github.com/OpenDataServices/CSV2IATI/commit/6677296976feb75e93e476d1edec7a38a34a7c3d</a> (I’ve shared this with Dale and Rory, but I don’t think it’s posted on this thread yet as it’s not needed to follow Steven’s instructions).<br>
+This change, and the XML sorting code also linked above might be useful to create a 2.02 version of CSV2IATI, but more development (and deployment) work would be required.</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/11</link>
+        <pubDate>Mon, 08 Feb 2016 16:02:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-11</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/sjohns">@SJohns</a></p>
+<p>Thanks.  Everything that we (at Open Data Services Co-operative) have worked on is shared in the post I’m afraid.</p>
+<p>The CSV2IATI tool is hosted by the Secretariat  - I’m not aware of any roadmap to enable this to be 2.0x out of the box.</p>
+<p>As a community, we probably need to think about what is useful for us, and how this is then resourced and maintained.  In the case of CSV2IATI, I’m aware of how complex flat files can be (including the work we did <a href="https://www.bond.org.uk/strengthen/csv-converter-guidance-using-bond-templates" rel="nofollow noopener">on tabbed spreadsheets</a> with <a class="mention" href="/u/danielmackenzie">@DanielMackenzie</a>), and how far we can get from “plug and play”.  However, the nature of IATI (multiples of multiples within multiples!) does demand a lot of attention in many cases.</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/9</link>
+        <pubDate>Fri, 05 Feb 2016 10:26:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-9</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello - yesterday Pelle and Theo mentioned that Open Data Services Cooperative are working on a CSV to XML Convertor that does 2.02. Any more info on that please? <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/bjwebb">@bjwebb</a> cc. <a class="mention" href="/u/rolfkleef">@rolfkleef</a>   We need it for some of our orgs that have MFA funding please, and the above workaround is way too complicated for us mortals.</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/8</link>
+        <pubDate>Thu, 04 Feb 2016 11:26:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-8</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Ben, very helpful, played with it yesterday!</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/7</link>
+        <pubDate>Thu, 28 Jan 2016 11:17:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-7</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve created a Python script to order an XML file according to the schema: <a href="https://github.com/OpenDataServices/iati-utils/blob/master/sort_iati.py" rel="nofollow noopener">https://github.com/OpenDataServices/iati-utils/blob/master/sort_iati.py</a></p>
+<p>Usage on Ubuntu:</p>
+<pre><code class="lang-auto"># get the script
+git clone https://github.com/OpenDataServices/iati-utils.git
+cd iati-utils
+# install lxml
+sudo apt-get install python3-lxml
+# get the schemas
+git clone https://github.com/IATI/IATI-Schemas.git
+# sort the xml
+python3 sort_iati.py input_file.xml output_file.xml
+</code></pre>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/6</link>
+        <pubDate>Wed, 27 Jan 2016 15:44:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-6</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok, I’ve tried to adapt the model for an existing test dataset, and managed to get a “2.02-ish” file.</p>
+<p>Too bad this mandatory ordering of elements was introduced in version 2.01, just to make life harder for the producers <img src="//discuss.iatistandard.org/images/emoji/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>I haven’t completely re-arranged everything to pass the test, just one activity, and that works.</p>
+<p>A few observations:</p>
+<ul>
+<li>Under budget there is an attribute <code>status</code> that I don’t see in the standard.</li>
+<li>
+<code>activity-status</code> suggests to map a text value as well as the status code, but any text value will break validation.</li>
+<li>In my sample set (for 1.03), it would need some additional conversions from text to numeric codes, something to factor in.</li>
+</ul>
+<p>Will be good to try with a real-life example, just need a simpler way to re-arrange elements in the proper order…</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/5</link>
+        <pubDate>Wed, 27 Jan 2016 14:39:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-5</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[pelleaardema]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven, great stuff!<br>
+I was just looking into possible tools to support all the upcoming Dutch publishers.</p>
+<p>I’ll give this a try in the coming week. Keep you posted.</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/4</link>
+        <pubDate>Mon, 25 Jan 2016 12:39:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-4</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Update: There’s a slight snag with this in that when the CSV is converted to XML, the elements are not presented in the exact order required by the IATI 2.02 schema. We’ll look at a fix and update…</p>
+<p>(<a class="mention" href="/u/rolfkleef">@rolfkleef</a> might be keen to know this)</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/3</link>
+        <pubDate>Fri, 22 Jan 2016 14:04:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-3</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>NB: post edited on 22nd Jan - the <code>&lt;narrative&gt;</code> element of <code>&lt;participating-org&gt;</code> is required</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/2</link>
+        <pubDate>Fri, 22 Jan 2016 13:10:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-2</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+      <item>
+        <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone</p>
+<p>Thanks to <a class="mention" href="/u/bjwebb">@bjwebb</a> and <a class="mention" href="/u/siemvaessen">@siemvaessen</a> I’ve recently been able to generate version 2.02 IATI data out of the <a href="http://csv2iati.iatistandard.org/" rel="nofollow noopener">CSV2IATI tool</a></p>
+<p><em>A word of caution - this isnt a straightforward process -so please only try/test this on non-production data models to begin with.  Ideally - create a brand new model in CSV2IATI to test it out for yourself.</em></p>
+<p>The key to this project is <a href="https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83" rel="nofollow noopener">this JSON code</a>.  What this does is generate the “mapping” model in CSV2IATI according to the 2.02 schema.  As people might be aware, CSV2IATI currently outputs to version 1.03 by default.  It is actually possible to construct a model in line with any version of the schema - but this requires some careful work, planning and clicking.  Hence, this code helps generate the template according to 2.02, giving you the foundation to build on.</p>
+<p>To do this, try the following steps:</p>
+<ol>
+<li>Create a new model in CSV2IATI, with the source data CSV file you want to convert</li>
+<li>When in this model, click the link on the right hand side “<strong>Show JSON</strong>” - this is the current model in JSON format</li>
+<li>In a new tab, open the <a href="https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83" rel="nofollow noopener">2.02 JSON file</a> - and copy the JSON (tip: click on the Raw button to the <a href="https://gist.githubusercontent.com/Bjwebb/b3eccf2d314a2bdd3c83/raw/9bd633335dcc05117c66a0c8cab0702c6e944e68/mapping.json" rel="nofollow noopener">same code without the surrounding web page</a>)</li>
+<li>Go back to CSV2IATI, select the existing code, and then paste in the 2.02 version - this replaces the underlying code for your model</li>
+<li>Whilst the JSON window is still open, find the “Save Model” button click it.  This can be tricky in some browsers/interfaces - but it’s essential (I found) to save the model whilst the JSON is still open</li>
+<li>Once saved, you can close the JSON and moved to the model and mapping.</li>
+<li>In the mapping page you should see the whole of the activity standard elements and attributes, to map you source file again.</li>
+<li>If you really dont need a particular element you cna delete it with the small trashcan icon for each element/attribute.</li>
+<li>Tip: As you do so, dont forget to save!</li>
+<li>When you’ve finished, you can move directly to the convert page, and convert to XML.</li>
+</ol>
+<p>The resultant file is structured according to 2.02 , but with two small issues. To fix these, you’ll then need to download the XML and edit it:</p>
+<ol>
+<li>The version attribute of <code>iati-activities</code> will still be 1.03.  Manually edit this to 2.02</li>
+<li>The <code>reporting-org</code> element will not be formatted according to 2.02, if you have provided an Organisation Name in the first page of CSV2IATI - eg:</li>
+</ol>
+<p><code>&lt;reporting-org ref="12345" type="60"&gt;Org Name&lt;/reporting-org&gt;</code></p>
+<p>Find and replace the existing code with something like:</p>
+<p><code>&lt;reporting-org ref="12345" type="60"&gt;&lt;narrative&gt;Org Name&lt;/narrative&gt;&lt;/reporting-org&gt;</code></p>
+<p>As highlighted, this is quite involved, but does work if you make some time for it.  Would be great to hear from others who try it</p>
+          <p><a href="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386/1</link>
+        <pubDate>Thu, 21 Jan 2016 15:49:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-386-1</guid>
+        <source url="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386.rss">[Beta] Generating version 2.02 IATI XML with CSV2IATI</source>
+      </item>
+  </channel>
+</rss>

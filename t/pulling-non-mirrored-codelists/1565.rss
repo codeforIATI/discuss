@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pulling non-mirrored codelists?</title>
+    <link>https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565</link>
+    <description>Hi,
+
+Please can I ask how other people handle the codelists that are not directly mirrored by IATI? For DAC5 etc we (a computer) can pull them directly, but for e.g. the Humanitarian sectors/clusters, the IATI codelist links to a webpage where you can download them as a csv - of course we can write a scraper to locate the CSV and download it, and then deal with the import - but this could easily break and is reliant on a non IATI third party.
+
+Any tips for how everyone else handles this? Any pointers to why some codelists are integrated (therefore higher class IATI citizens) and others are not?
+
+Thanks a lot,
+
+Matt</description>
+    
+    <lastBuildDate>Mon, 03 Dec 2018 12:21:12 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Pulling non-mirrored codelists?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/bill_anderson">@bill_anderson</a> - this sounds a good direction of travel.</p>
+<p>Currently non DAC5 data is completely inaccessible to non-technical users e.g. I can’t search for it via d-portal, OIPA or the datastore, so if we are going to keep having it as part of the standard, the question is what steps are we going to take to make it useful?</p>
+<p>I think your focus on APIs is the right one. Can we adjust the rules so that IATI either only adds external codelists that are available by API, or requests the organisations to whom the codelists belong to upload a copy in a standard format for IATI to make available via their API?</p>
+          <p><a href="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/8</link>
+        <pubDate>Mon, 03 Dec 2018 12:21:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1565-8</guid>
+        <source url="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565.rss">Pulling non-mirrored codelists?</source>
+      </item>
+      <item>
+        <title>Pulling non-mirrored codelists?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t think it is realistic to expect a voluntary community to maintain a reliable suite of replicated standards.</p>
+<p>Rather I think we, along with other open data standards and other consumers of these coding standards, should argue:</p>
+<ul>
+<li>for all codelists to be API accessible</li>
+<li>and (I know this is ambitious) for common protocols in consuming these lists?</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/7</link>
+        <pubDate>Mon, 03 Dec 2018 12:05:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1565-7</guid>
+        <source url="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565.rss">Pulling non-mirrored codelists?</source>
+      </item>
+      <item>
+        <title>Pulling non-mirrored codelists?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> - thanks for the response.</p>
+<p>Could we move to a system where the community maintain them as part of IATI in the same way they can submit pull requests for DAC5?</p>
+<p>I ask because not embedding these codelists makes it much harder to use any IATI data that does not use DAC5 sectors, and all the different systems that use IATI data have to maintain their own codelists - this would be much more efficient if it were handled by IATI.</p>
+<p>Thanks,</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/6</link>
+        <pubDate>Thu, 22 Nov 2018 17:30:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1565-6</guid>
+        <source url="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565.rss">Pulling non-mirrored codelists?</source>
+      </item>
+      <item>
+        <title>Pulling non-mirrored codelists?</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> Ideally we would not have to replicate any of the external codelist but historically we have done so for the OECD DAC and a few others. We have done this mainly for convenience and accessibility of users.<br>
+We are unable to maintain and replicate all external codelists. It is the responsibility of the codelist providers to make sure they are up-to-date and easily accessible to users via the URLs they have provided and we link to on the IATI page.</p>
+          <p><a href="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/5</link>
+        <pubDate>Thu, 22 Nov 2018 16:40:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1565-5</guid>
+        <source url="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565.rss">Pulling non-mirrored codelists?</source>
+      </item>
+      <item>
+        <title>Pulling non-mirrored codelists?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a> can you share any light on this? How come only the DAC5 vocab is integrated and not the other <a href="http://reference.iatistandard.org/203/codelists/SectorVocabulary/" rel="nofollow noopener">sector vocabs</a>?</p>
+          <p><a href="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/4</link>
+        <pubDate>Wed, 21 Nov 2018 19:53:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1565-4</guid>
+        <source url="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565.rss">Pulling non-mirrored codelists?</source>
+      </item>
+      <item>
+        <title>Pulling non-mirrored codelists?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Matt,</p>
+<p>I’d suggest adding an issue on the Open Knowledge datasets repo:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/datasets/awesome-data/issues" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars0.githubusercontent.com/u/1643515?s=400&amp;v=4" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/datasets/awesome-data/issues" target="_blank" rel="nofollow noopener">datasets/awesome-data</a></h3>
+
+<p>Awesome datasets curated. By topic and for core data https://datahub.io/docs/core-data - datasets/awesome-data</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>Then there’s potential to find collaborators who can help with maintaining a scraper.</p>
+<aside class="quote no-group" data-username="matmaxgeds" data-post="1" data-topic="1565">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Any pointers to why some codelists are integrated (therefore higher class IATI citizens) and others are not?</p>
+</blockquote>
+</aside>
+<p>I don’t know. I guess there’s some heuristic that factors in how widely used the codelist is likely to be, how difficult the original is to use (e.g. the format it’s in), how frequently it updates etc…</p>
+          <p><a href="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/3</link>
+        <pubDate>Wed, 21 Nov 2018 17:16:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1565-3</guid>
+        <source url="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565.rss">Pulling non-mirrored codelists?</source>
+      </item>
+      <item>
+        <title>Pulling non-mirrored codelists?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Bump - anyone?..</p>
+          <p><a href="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/2</link>
+        <pubDate>Wed, 21 Nov 2018 16:17:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1565-2</guid>
+        <source url="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565.rss">Pulling non-mirrored codelists?</source>
+      </item>
+      <item>
+        <title>Pulling non-mirrored codelists?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>Please can I ask how other people handle the codelists that are not directly mirrored by IATI? For DAC5 etc we (a computer) can pull them directly, but for e.g. the Humanitarian sectors/clusters, the IATI codelist links to a webpage where you can download them as a csv - of course we can write a scraper to locate the CSV and download it, and then deal with the import - but this could easily break and is reliant on a non IATI third party.</p>
+<p>Any tips for how everyone else handles this? Any pointers to why some codelists are integrated (therefore higher class IATI citizens) and others are not?</p>
+<p>Thanks a lot,</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565/1</link>
+        <pubDate>Thu, 08 Nov 2018 14:35:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1565-1</guid>
+        <source url="https://discuss.iatistandard.org/t/pulling-non-mirrored-codelists/1565.rss">Pulling non-mirrored codelists?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Question about deprecation of code list organisation_role/accountable</title>
+    <link>https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39</link>
+    <description>The IATI TAG recommend at the last meeting that (reported by Bill Anderson) (1)(Note below, I am not able to put more than two links in, argh) they would remove the role &quot;accountable&quot; organisation from the IATI standard.
+&gt; Discussion at the TAG in Montreal reached a consensus that there is no consistent way in which to define and apply the role of &quot;accountable&quot; organisation, and that it is therefore best to remove it.
+
+I am not sure I understand the reasoning behind this.
+
+At Akvo we have been classifying organisations approximately the same as the [organisation_role][2]. We are currently mapping the full Akvo RSR dataset to the equivalent IATI data and/or introducing what is missing/replacing it with the IATI equivalent.
+
+In Akvo RSR we have a number of types of partners attached to a particular program or project. 
+
+We have Funding partner, who pays for the work, equivalent to IATI organisation_role/funding
+We have Support partner, who is responsible for the work and reports back to the funder, equivalent to IATI organisation_role/Accountable
+We have Field partner, who implements the project on the ground, equivalent to IATI organisation_role/implementing
+
+(We don&#39;t have the equivalent of organisation_role/extending, which we have marked as Funding in relevant cases. But we also have Sponsor partner, which is partners which was initially part of marketing support for the program which was fundraising, but has been used for other purposes later. Those types may be added or changed during our data model restructuring.)
+
+So my questions is this:
+
+Why is Accountable partner being removed? If you do that you now have organisations as part of the process which can&#39;t be classified, as they don&#39;t match the remaining alternatives. I was told by Adrian Collier at Akvo that Reporting organisation may be thought the equivalent, i.e. [iati-organisations/iati-organisation/reporting-org][4], (although we don&#39;t agree, as per Adrian&#39;s request for comment here(2).)
+
+The definition of reporting organisation says:
+&gt; The organisation issuing the report. May be a primary source (reporting on its own activity as donor, implementing agency, etc) or a secondary source (reporting on the activities of another organisation).
+
+But in one of our most likely usage scenarios of Akvo RSR, Akvo will be the secondary source and the Accountable organisation (Akvo Support partner) will be listed as part of the organisation_role. If you remove Accountable, then we have no category to put them in. 
+
+Maybe I am completely missing the point here and don&#39;t hesitate to educated me on the finer points of IATI, but this decision puzzles me and I would love to understand what I am missing.
+
+Thanks!
+
+Thomas
+
+(1): http://support.iatistandard.org/entries/41095068-Deprecate-code-list-organisation-role-accountable
+
+(2): http://support.iatistandard.org/entries/41095068-Deprecate-code-list-organisation-role-accountable
+
+  [2]: http://iatistandard.org/codelists/OrganisationRole/
+  [4]: http://iatistandard.org/organisation-standard/iati-organisations/iati-organisation/reporting-org/
+</description>
+    
+    <lastBuildDate>Wed, 13 Jul 2016 12:31:07 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Question about deprecation of code list organisation_role/accountable</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39/5</link>
+        <pubDate>Wed, 13 Jul 2016 12:31:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-39-5</guid>
+        <source url="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39.rss">Question about deprecation of code list organisation_role/accountable</source>
+      </item>
+      <item>
+        <title>Question about deprecation of code list organisation_role/accountable</title>
+        <dc:creator><![CDATA[Adrian]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39/4</link>
+        <pubDate>Fri, 27 Jun 2014 08:10:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-39-4</guid>
+        <source url="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39.rss">Question about deprecation of code list organisation_role/accountable</source>
+      </item>
+      <item>
+        <title>Question about deprecation of code list organisation_role/accountable</title>
+        <dc:creator><![CDATA[bjelkeman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Adrian. Looking forward to understand this issue.<br>
+I really like the choice of discussion forum. Good work.</p>
+          <p><a href="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39/3</link>
+        <pubDate>Wed, 18 Jun 2014 12:39:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-39-3</guid>
+        <source url="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39.rss">Question about deprecation of code list organisation_role/accountable</source>
+      </item>
+      <item>
+        <title>Question about deprecation of code list organisation_role/accountable</title>
+        <dc:creator><![CDATA[Adrian]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Thomas.</p>
+<p>Of course I agree with you that it would be great to have this question clarified, but at the moment we are not intending to use this discussion platform for that purpose.</p>
+<p>We are currently trialling Discourse within Working Groups and other informal tracks to get information about how the platform works and where it can best be positioned within the group of tools and sites being used for IATI collaboration.</p>
+<p>In the meantime, questions about the standard itself, should remain within the knowledgebase where users should be looking and contributing to these discussions together.</p>
+<p>I understand that sometimes answers to questions can take some time there - this is not intentional but symptomatic of the many directions many who are working within IATI are being pulled in.</p>
+<p>I will pick up your comments from here and pull these into the knowledgebase with the aim of trying to get difinitive answers to these points.</p>
+<p>We will be keeping the community updated as to how and when this discussion site is expanded for other uses and additional categories will be created to accomodate these new subjects.</p>
+<p>Thanks</p>
+<p>Adrian</p>
+<ul>
+<li>another note, I have increased the limit on external links, this was default set to 2, but obviously it is useful for users to be able to post more.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39/2</link>
+        <pubDate>Wed, 18 Jun 2014 11:47:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-39-2</guid>
+        <source url="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39.rss">Question about deprecation of code list organisation_role/accountable</source>
+      </item>
+      <item>
+        <title>Question about deprecation of code list organisation_role/accountable</title>
+        <dc:creator><![CDATA[bjelkeman]]></dc:creator>
+        <description><![CDATA[
+            <p>The IATI TAG recommend at the last meeting that (reported by Bill Anderson) (1)(Note below, I am not able to put more than two links in, argh) they would remove the role “accountable” organisation from the IATI standard.</p>
+<blockquote>
+<p>Discussion at the TAG in Montreal reached a consensus that there is no consistent way in which to define and apply the role of “accountable” organisation, and that it is therefore best to remove it.</p>
+</blockquote>
+<p>I am not sure I understand the reasoning behind this.</p>
+<p>At Akvo we have been classifying organisations approximately the same as the <a href="http://iatistandard.org/codelists/OrganisationRole/" rel="nofollow noopener">organisation_role</a>. We are currently mapping the full Akvo RSR dataset to the equivalent IATI data and/or introducing what is missing/replacing it with the IATI equivalent.</p>
+<p>In Akvo RSR we have a number of types of partners attached to a particular program or project.</p>
+<p>We have Funding partner, who pays for the work, equivalent to IATI organisation_role/funding<br>
+We have Support partner, who is responsible for the work and reports back to the funder, equivalent to IATI organisation_role/Accountable<br>
+We have Field partner, who implements the project on the ground, equivalent to IATI organisation_role/implementing</p>
+<p>(We don’t have the equivalent of organisation_role/extending, which we have marked as Funding in relevant cases. But we also have Sponsor partner, which is partners which was initially part of marketing support for the program which was fundraising, but has been used for other purposes later. Those types may be added or changed during our data model restructuring.)</p>
+<p>So my questions is this:</p>
+<p>Why is Accountable partner being removed? If you do that you now have organisations as part of the process which can’t be classified, as they don’t match the remaining alternatives. I was told by Adrian Collier at Akvo that Reporting organisation may be thought the equivalent, i.e. <a href="http://iatistandard.org/organisation-standard/iati-organisations/iati-organisation/reporting-org/" rel="nofollow noopener">iati-organisations/iati-organisation/reporting-org</a>, (although we don’t agree, as per Adrian’s request for comment here(2).)</p>
+<p>The definition of reporting organisation says:</p>
+<blockquote>
+<p>The organisation issuing the report. May be a primary source (reporting on its own activity as donor, implementing agency, etc) or a secondary source (reporting on the activities of another organisation).</p>
+</blockquote>
+<p>But in one of our most likely usage scenarios of Akvo RSR, Akvo will be the secondary source and the Accountable organisation (Akvo Support partner) will be listed as part of the organisation_role. If you remove Accountable, then we have no category to put them in.</p>
+<p>Maybe I am completely missing the point here and don’t hesitate to educated me on the finer points of IATI, but this decision puzzles me and I would love to understand what I am missing.</p>
+<p>Thanks!</p>
+<p>Thomas</p>
+<p>(1): <a href="http://support.iatistandard.org/entries/41095068-Deprecate-code-list-organisation-role-accountable" rel="nofollow noopener">http://support.iatistandard.org/entries/41095068-Deprecate-code-list-organisation-role-accountable</a></p>
+<p>(2): <a href="http://support.iatistandard.org/entries/41095068-Deprecate-code-list-organisation-role-accountable" rel="nofollow noopener">http://support.iatistandard.org/entries/41095068-Deprecate-code-list-organisation-role-accountable</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39/1</link>
+        <pubDate>Tue, 17 Jun 2014 09:20:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-39-1</guid>
+        <source url="https://discuss.iatistandard.org/t/question-about-deprecation-of-code-list-organisation-role-accountable/39.rss">Question about deprecation of code list organisation_role/accountable</source>
+      </item>
+  </channel>
+</rss>

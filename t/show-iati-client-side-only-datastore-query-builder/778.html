@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/show-iati-client-side-only-datastore-query-builder/778 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:25:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Show IATI: Client-side only datastore query builder - Community Zone - IATI Community Discussions</title>
+    <meta name="description" content="I’ve had a little go at a client-side only version of the datastore query builder: http://please.treadsoft.ly/query/ 
+
+I’ll probably keep tinkering with it, so feedback welcome. 
+
+Features:  * inline preview  * nicer mul&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="778.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Show IATI: Client-side only datastore query builder&#39;" href="778.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/show-iati-client-side-only-datastore-query-builder/778" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/show-iati-client-side-only-datastore-query-builder/778" />
+<meta property="og:title" content="Show IATI: Client-side only datastore query builder" />
+<meta name="twitter:title" content="Show IATI: Client-side only datastore query builder" />
+<meta property="og:description" content="I’ve had a little go at a client-side only version of the datastore query builder:  http://please.treadsoft.ly/query/  I’ll probably keep tinkering with it, so feedback welcome.  Features:   inline preview nicer multiselects (as suggested by @dalepotter) bootstrap (for @markbrough’s benefit)  Tagging @YohannaLoucheur because this includes some of the things our table discussed in the query builder session at TAG.  NB probably doesn’t work on Internet Explorer." />
+<meta name="twitter:description" content="I’ve had a little go at a client-side only version of the datastore query builder:  http://please.treadsoft.ly/query/  I’ll probably keep tinkering with it, so feedback welcome.  Features:   inline preview nicer multiselects (as suggested by @dalepotter) bootstrap (for @markbrough’s benefit)  Tagging @YohannaLoucheur because this includes some of the things our table discussed in the query builder session at TAG.  NB probably doesn’t work on Internet Explorer." />
+<meta property="article:published_time" content="2017-04-03T15:03:07+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="778.html">Show IATI: Client-side only datastore query builder</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="778.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-04-03T15:03:07Z'>
+              <time itemprop='dateModified' datetime='2017-04-03T15:42:39Z' class='post-time'>
+                April 3, 2017,  3:42pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve had a little go at a client-side only version of the datastore query builder:<br>
+<a href="http://please.treadsoft.ly/query/" class="onebox" target="_blank">http://please.treadsoft.ly/query/</a></p>
+<p>I’ll probably keep tinkering with it, so feedback welcome.</p>
+<p>Features:</p>
+<ul>
+<li>inline preview</li>
+<li>nicer multiselects (as suggested by <a class="mention" href="../../u/dalepotter.html">@dalepotter</a>)</li>
+<li>bootstrap (for <a class="mention" href="../../u/markbrough.html">@markbrough</a>’s benefit)</li>
+</ul>
+<p>Tagging <a class="mention" href="../../u/yohannaloucheur-2.html">@YohannaLoucheur</a> because this includes some of the things our table discussed in the query builder session at TAG.</p>
+<p>NB probably doesn’t work on Internet Explorer.</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Client-side only datastore query builder'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/YohannaLoucheur.html'><span itemprop='name'>YohannaLoucheur</span></a>
+            (Yohanna Loucheur)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="778.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-03T18:30:40Z' class='post-time'>
+                April 3, 2017,  6:30pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-03T18:30:40Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>That’s awsome!  Thanks Andy!</p>
+<p>I like the improved selection process, it will be much much easier to select publishers.  Is there any cnance to add fields, or is this out of scope for now?</p>
+<p>For the preview, I think it’ll be useful to be able to check what the selection options look like before going through the whole download process (esp for those like me with a badly configured Excel…)  However there may be a need to tweek it.<br>
+For instance, perhaps you should in fact call it “Preview”, so that “Submit” remains for the production of the csv file?  The “Download csv File” button isn’t very visible in the top right corner, might be better to have all 3 options side-by-side at the bottom (Preview, Submit, Reset)?</p>
+<p>Will there be a way for the user to change the default format of the preview space? For instance I would prefer that rows did not expand to show the full project descriptions (CA-3 ones are always so long!!) in order to see more than one row at a time - this would make clearer what happens when I choose eg multi-sector or transaction per row.</p>
+<p>I’ll keep playing with it and come back with more feedback. It’s exciting to see these improvements!</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Client-side only datastore query builder'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/YohannaLoucheur.html'><span itemprop='name'>YohannaLoucheur</span></a>
+            (Yohanna Loucheur)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="778.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-03T20:12:56Z' class='post-time'>
+                April 3, 2017,  8:12pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-03T20:12:56Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>A couple of additional ideas I just remembered:</p>
+<ul>
+<li>
+<p>Someone (<a class="mention" href="../../u/stevieflow.html">@stevieflow</a>?) suggested to allow users to choose the elements/columns being exported. That would indeed be very useful, to avoid dealing with a lot of data the user doesn’t need. The previewer would be that much more useful, as we could scroll more easily across the preview to check what we have (or not).</p>
+</li>
+<li>
+<p>Add a “Hide preview” button? Once (I think) I’ve figured what I need to do, it would be nice to have the full Q page visible.</p>
+</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Client-side only datastore query builder'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="778.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-04T21:57:54Z' class='post-time'>
+                April 4, 2017,  9:57pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-04T21:57:54Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks very much for this feedback, <a class="mention" href="../../u/yohannaloucheur-2.html">@YohannaLoucheur</a>!</p>
+<p>All suggestions re. preview / submit / reset / hide preview are great – I’ll make those changes.</p>
+<aside class="quote no-group" data-post="2" data-topic="778">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Is there any cnance to add fields, or is this out of scope for now?</p>
+</blockquote>
+</aside>
+<p>What sort of thing did you have in mind? This depends a bit on the datastore</p>
+<aside class="quote no-group" data-post="2" data-topic="778">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Will there be a way for the user to change the default format of the preview space? For instance I would prefer that rows did not expand to show the full project descriptions</p>
+</blockquote>
+</aside>
+<p>Yes very good point. I’ll fix that.</p>
+<aside class="quote no-group" data-post="3" data-topic="778">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>suggested to allow users to choose the elements/columns being exported</p>
+</blockquote>
+</aside>
+<p>Hmm… The export comes straight from the datastore, so this would require a change to the datastore. Were you thinking of restricting columns, or adding new columns?</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Client-side only datastore query builder'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/YohannaLoucheur.html'><span itemprop='name'>YohannaLoucheur</span></a>
+            (Yohanna Loucheur)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="778.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-05T19:23:16Z' class='post-time'>
+                April 5, 2017,  7:23pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-05T19:23:16Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="4" data-topic="778">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/andylolz/40/495_2.jpg" class="avatar"> andylolz:</div>
+<blockquote>
+<p>Is there any cnance to add fields, or is this out of scope for now?</p>
+<p>What sort of thing did you have in mind? This depends a bit on the datastore</p>
+</blockquote>
+</aside>
+<aside class="quote no-group" data-post="4" data-topic="778">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/andylolz/40/495_2.jpg" class="avatar"> andylolz:</div>
+<blockquote>
+<p>suggested to allow users to choose the elements/columns being exported</p>
+<p>Hmm… The export comes straight from the datastore, so this would require a change to the datastore. Were you thinking of restricting columns, or adding new columns?</p>
+</blockquote>
+</aside>
+<p>Yeah, that may be beyond the scope of this specific exercize. My comment about adding field was based on the fact that I wasn’t getting all the data elements in the download (eg planned disbursements). I also wasn’t seeing them in your preview but wasn’t sure if it was your design choice or missing in the data itself (now I know).</p>
+<p>I think I’m talking about 3 different things, which isn’t helpful…:<br>
+1 - filters<br>
+2 - elements included in the download<br>
+3 - elements visible in the preview</p>
+<p>On <span class="hashtag">#1</span>, adding or removing filters from the Q Builder itself, that’s probably better discussed in a different post?</p>
+<p>On <span class="hashtag">#2</span>, as a data user, I assume all the elements will be in the downloaded file. This assumption isn’t correct, as I found out. I would also like to be able to select (ie remove) elements from the download, if I know I won’t need them and want to limit the size of the file or something.  Is this also better discussed in a different post? (same post as <span class="hashtag">#1</span> or different one?)</p>
+<p>On <span class="hashtag">#3:</span> irrespective of <span class="hashtag">#2</span>, a user may want to exclude specific columns from the preview, for instance to focus on those that are affected by a change in the selection (ie to see them all at once on the screen). In other words, the user wants to download a given dataset, but doesn’t want to see the full range of elements in the preview.</p>
+<p>Hope that makes sense, and sorry for the confusion.</p>
+<p>Which filters are available</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Client-side only datastore query builder'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/show-iati-client-side-only-datastore-query-builder/778 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:26:00 GMT -->
+</html>

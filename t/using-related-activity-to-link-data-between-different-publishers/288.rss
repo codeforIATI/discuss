@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using related-activity to link data between different publishers</title>
+    <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288</link>
+    <description>Hi everyone
+
+I&#39;ve been taking another look at &quot;traceability&quot; - especially following the excellent presentation of @Herman at the TAG (https://www.dropbox.com/s/rlb4hdoicvdwztb/linking%20iati%20data%20v7.pptx?dl=0 ) - 
+
+I have put some slides together: http://slides.com/opendataservices/traceability - which centre on org references, activity identifiers and transaction encoding to link data between different publishers.
+
+In discussion with others - a point was raised about the use of the related-activity element to express links between activity data published by different organisations - especially the use of code 5 (&quot;Third Party&quot;: http://iatistandard.org/201/codelists/RelatedActivityType/).
+
+Im not sure.  Checking the dashboard, nobody is using this code atm:
+
+http://dashboard.iatistandard.org/codelist/1/related-activity_@type.html
+http://dashboard.iatistandard.org/codelist/2/related-activity_@type.html
+
+Regardless - would others in the community utilise related-activity to do this?  One of the drivers to this would be that the only other method to express direct links between activities is within transactions.  At the participating-org level this is not possible (I&#39;ve raised this here: http://support.iatistandard.org/entries/82377659-Add-activity-id-attribute-to-participating-org-element)</description>
+    
+    <lastBuildDate>Tue, 10 Sep 2019 22:12:28 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Yikes! Some of those look eerily familiar.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/45">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/45</link>
+        <pubDate>Tue, 10 Sep 2019 22:12:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-45</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>This folder contains the documents that were (I believe) present on the first iatistandard website, end of 2010.</p>
+<p><a href="http://bit.ly/iatistandard_2010_sitedocs" rel="nofollow noopener">bit.ly/iatistandard_2010_sitedocs</a></p>
+<p>NB <a href="https://docs.google.com/document/d/1s0tMeQiW9LlQff7PPzZxFS5-tppC6Z9x/edit" rel="nofollow noopener">IATI XML Schema Tutorial</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/44">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/44</link>
+        <pubDate>Tue, 10 Sep 2019 16:03:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-44</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="42" data-topic="288">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_2.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>We shouldn’t be in a situation where the only explanation for a change resides in the memory of the previous tech lead! <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>Hence the importance of removing all ambiguities by standardising the standard.</p>
+<p>For what it’s worth this, I believe, was the initial set of codelists, dated 3 December 2010 - <a href="https://drive.google.com/file/d/1n8Gjm6Tpn5LJeZEFsB5PI7gESzDuJEHS/view" rel="nofollow noopener">https://drive.google.com/file/d/1n8Gjm6Tpn5LJeZEFsB5PI7gESzDuJEHS/view</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/43">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/43</link>
+        <pubDate>Tue, 10 Sep 2019 10:48:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-43</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="41" data-topic="288">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_2.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>The text which includes “sub-component” has always been there. It looks like “reported to IATI” was added along the line, but I can’t see whan (<a class="mention" href="/u/andylolz">@andylolz</a>: would you know?)</p>
+</blockquote>
+</aside>
+<p>It was added in v2.01 <a href="https://github.com/IATI/IATI-Codelists/commit/33b2174f8c2aeb42f277f8ad9d715b31233179bc" rel="nofollow noopener">in this commit</a>, as part of <a href="https://github.com/IATI/IATI-Codelists/issues/3" rel="nofollow noopener">this issue</a>. It’s mentioned at the bottom of <a href="https://support.iatistandard.org/hc/en-us/articles/214393546" rel="nofollow noopener">the related proposal</a>:</p>
+<blockquote>
+<ul>
+<li>A clearer definition has been found for the proposed Related Activity Type</li>
+</ul>
+</blockquote>
+<hr>
+<p>I’ve mentioned it before, but this sort of historical paper trail is really useful for maintaining organisational knowledge. It’s pretty good in this instance, but could be better.</p>
+<p>We shouldn’t be in a situation where the only explanation for a change resides in the memory of the previous tech lead! <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/42">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/42</link>
+        <pubDate>Tue, 10 Sep 2019 09:28:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-42</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="40" data-topic="288">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>If my memory serves me correctly the original Version 1 codelist contained 3 values - parent, child, sibling. A child was defined as a ‘sub-component’ of a parent: the assumption being that they both belonged to the same organisation.</p>
+</blockquote>
+</aside>
+<p>There were four codes in version 1.01: <a href="http://reference.iatistandard.org/archived/101/codelists/related_activity_type/index.html" rel="nofollow noopener">http://reference.iatistandard.org/archived/101/codelists/related_activity_type/index.html</a></p>
+<p>The text which includes “sub-component” has always been there. It looks like “reported to IATI” was added along the line, but I can’t see whan (<a class="mention" href="/u/andylolz">@andylolz</a>: would you know?)</p>
+<p>If there is any assumption about <em>who</em> publishes, then this isn’t / wasn’t stated.</p>
+<p>A fifth code, “Third Party” was added in version 2.01 update: <a href="http://reference.iatistandard.org/203/codelists/RelatedActivityType/" rel="nofollow noopener">http://reference.iatistandard.org/203/codelists/RelatedActivityType/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/41">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/41</link>
+        <pubDate>Tue, 10 Sep 2019 09:10:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-41</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Another example that makes the case for ‘standardising the standard’.</p>
+<p>If my memory serves me correctly the original Version 1 codelist contained 3 values - parent, child, sibling. A child was defined as a  ‘sub-component’ of a parent: the assumption being that they both belonged to the same organisation.</p>
+<p>This is not, however, clear in the wording of the standard (in both schema definition and code list).</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/40">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/40</link>
+        <pubDate>Tue, 10 Sep 2019 07:18:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-40</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stevieflow">@stevieflow</a> and <a class="mention" href="/u/stolk">@stolk</a>: in the Dutch MFA guidelines we have added the related activity with the purpose of enabling publishers to model the logical activity structure of an alliance, even if there are no transactions (yet).</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/39">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/39</link>
+        <pubDate>Tue, 10 Sep 2019 06:54:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-39</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/stolk">@stolk</a></p>
+<p>Whilst I’m not aware of a specific “rule” that governs usage of related-activity , perhaps we have to be pragmatic in terms of what means “external”  It seems quite legitimate to use this within the context of a delivery chain / consortium, as evidenced.</p>
+<p>I do think this isn’t in the Netherlands MFA guidance - would be interested to hear from <a class="mention" href="/u/herman">@Herman</a> &amp; <a class="mention" href="/u/pelleaardema">@pelleaardema</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/38">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/38</link>
+        <pubDate>Tue, 10 Sep 2019 06:43:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-38</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[stolk]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/pelleaardema">@pelleaardema</a> , within the DRA alliance, the lead organization in a ‘joint response’ is actually the holder of the parent activity, whilst participating organizations in that ‘joint response’ publish the child projects.  As far as I know DRA members do not use the related activity across to point up to an alliance member in the ‘joint response’ lead role (rotating function in the alliance). But I find the use of related activity parent, better than provider org activity ID, as DRA acts as an alliance. That is also often the case within the Oxfam Confederation, where participating affiliate contribute from their parent to executing affiliates implementing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/37">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/37</link>
+        <pubDate>Mon, 09 Sep 2019 18:15:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-37</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="288">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/amys/40/288_2.png" class="avatar"> amys:</div>
+<blockquote>
+<p>My advice was (and still is) that Parent/Child/Sibling relationships should only be used internally, and not refer to activities from external organisations.</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/stolk">@stolk</a> <a class="mention" href="/u/pelleaardema">@pelleaardema</a> - I was looking at <a href="https://docs.google.com/spreadsheets/d/1xV070GRwPLVgR3hInACL-UwO4ABcbVZkwIKNfFoTm2o/edit?usp=sharing" rel="nofollow noopener">a full set of “linked activities”</a> via the Yes I Do programme just recently.</p>
+<p>Whilst the use of linkages via transactions is clear, there is also use of <strong>related-activity (parent) between different organisations in this chain.</strong></p>
+<p>Hence, Rutgers declare <a href="http://d-portal.org/q.html?aid=NL-KVK-41193594-YID7300" rel="nofollow noopener">their activity</a> has a parent of the <a href="http://d-portal.org/q.html?aid=NL-KVK-41198890-YID" rel="nofollow noopener">Plan Nederland</a> activity:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/798137fe456be6f805cd9eb2009de43fc30a1187.png" alt="d-portal%20org%20q%20html%20aid%20NL-KVK-41193594-YID7300" width="293" height="116"></p>
+<p>Given we have a set of <strong>29 activities from nine publishers</strong>, we could just consider this as a slight blip - esp as other publishers in this “family” do not act this way.  However, I’d be interested to hear thoughts about this - especially if it starts to break stuff!</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/36</link>
+        <pubDate>Mon, 09 Sep 2019 16:05:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-36</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andylolz">@andylolz</a> and <a href="https://discuss.iatistandard.org/t/enabling-two-way-traceability/1734">new post</a> created</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/35</link>
+        <pubDate>Wed, 01 May 2019 09:28:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-35</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="33" data-topic="288">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/wendy/40/12_1.png" class="avatar"> Wendy:</div>
+<blockquote>
+<p>NB as this question is moving away from the original post topic I am happy to move this post to a new topic if required</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/wendy">@Wendy</a> +1 for starting a new thread. The reciprocal links question is v interesting, but it’s sufficiently different to this <code>related-activity</code> discussion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/34</link>
+        <pubDate>Fri, 26 Apr 2019 11:10:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-34</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>As you point out <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a> it is already possible for donor and recipients to cross reference each other and the IATI Standard does already make provision for that to happen.  However, as <a class="mention" href="/u/herman">@Herman</a> has mentioned (and it was also my understanding) I think that the original intention for traceability within IATI was just to trace upwards within the funding chain?  As <a class="mention" href="/u/herman">@Herman</a> and <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>  have pointed out a donor or funder can generally provide their own originating IATI activity identifier to the recipient via contract documentation and/ or as part of the contract management business process etc .</p>
+<p>Interestingly, some of our most recent work within the Grand Bargain (particularly around issues relating to Localisation) is highlighting that there would indeed be value in being to be able to trace both ‘up’ and ‘down’ the funding chain. Presumably for this it happen, Donors and other funders would need to regularly ‘harvest’ the recipient activity identifiers and add them into their own systems. I think this process could certainly be automated and it would also provide donors with an automatic confirmation or  validation that recipients have also now published the receipt of that funding to IATI? As a result I would be very interested to hear any views from donors or others on the practicalities and appetite (or lack of?) for making this happen?</p>
+<p>NB as this question is moving away from the original post topic I am happy to move this post to a new topic if required</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/33</link>
+        <pubDate>Thu, 18 Apr 2019 12:59:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-33</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Herman - you aren’t missing anything.  What you suggest is completely possible assuming the recipient system has a place to store that data.  My point was only that it would only work in one direction and thus might not help all users depending upon what direction they are coming from along the chain.  I would have thought that ideally both donor and recipient would cross-reference one another so the traceability could work in either direction.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/32</link>
+        <pubDate>Tue, 16 Apr 2019 10:20:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-32</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe I am missing something in the workflow here, but isn’t it always the case that at the moment of signing the contract/agreement, the donor knows their own funding activity-id? In that case the recipient can always point back to the donor’s activity-id (which is mentioned in the contract). So the key point here is to point upward in the funding chain and not downward, since that would require the donor to refer to not (yet) existing activities.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/31</link>
+        <pubDate>Tue, 16 Apr 2019 10:02:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-31</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>We do and always have but that doesn’t mean the donor does anything with it that makes its way into IATI.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/30</link>
+        <pubDate>Fri, 01 Mar 2019 16:04:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-30</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="28" data-topic="288">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/michelle_iom/40/515_1.png" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>The challenge we face (may not be an issue for others) is that <em>we don’t know what our project ID will be at the time of signing the agreements</em>. That would require a follow up to communicate that information back to the donor if they want to reference our IDs. <em>That too is ambitious I believe</em> but would be a possible solution for linking two donors to the same project.</p>
+</blockquote>
+</aside>
+<p>That’s a challenge we identified as well when trying to figure out how to get activity IDs. My very simple suggestion: put your activity ID (and org ID for that matter) on all your communications to the donor, especially reports. Very little cost, no risk, and tremendously useful if the donor ever wants the info.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/29</link>
+        <pubDate>Fri, 01 Mar 2019 15:47:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-29</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>IOM had a few conversations with a few of our donors while at TAG and off-line.  Knowing the donor reference is often known at the time the donor agreements are signed.  We don’t currently have a place to store that info such that it can easily be pulled into our IATI data set but we are working on it.</p>
+<p>Expecting us to look it up after the fact is ambitious.  Particularly when some of our donors don’t publish their donations to us until after we’ve published the projects they have funded.  We be playing catch up most of the time.</p>
+<p>The challenge we face (may not be an issue for others) is that we don’t know what our project ID will be at the time of signing the agreements. That would require a follow up to communicate that information back to the donor if they want to reference our IDs.  That too is ambitious I believe but would be a possible solution for linking two donors to the same project.</p>
+<p>It is imperfect but our plan was to use the participating-org/<span class="mention">@activity-id</span> or provider-org/<span class="mention">@provider-activity-id</span> elements/attributes/?? when we do.  Our (perhaps incorrect) understanding of related-activity wasn’t for this purpose.  If you “experts” tell me otherwise, we still have time to course correct as we don’t yet publish this info.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/28</link>
+        <pubDate>Fri, 01 Mar 2019 11:44:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-28</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I had always interpreted related activity as being for situations where activities were related e.g. in terms of objectives, joint planning etc, but where there were no financial flows that would already have allowed that link to be made, whether it was between different donors, within a donors portfolio etc.</p>
+<p>Perhaps more importantly, do we know many publishers who have a publishing process where they lookup the activity codes of either related activities or activities/org codes from other publishers that they are funding? If not, all this is a bit optimistic no?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/27</link>
+        <pubDate>Fri, 01 Mar 2019 08:08:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-27</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="25" data-topic="288">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>– similarly, when a donor is publishing alongside another donor, and needs to signal that their funding is connected</p>
+</blockquote>
+</aside>
+<p>Isn’t this (best) expressed in the data as funding going to the same activity? In other words, by the recipient indicating both donors’ incoming funds to this activity and/or both donors indicating which recipient’s activity their funding goes to?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/26</link>
+        <pubDate>Thu, 28 Feb 2019 22:32:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-26</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>HI everyone</p>
+<p>I do like that this thread over three years old, 24 posts long, and still not at consensus!</p>
+<p>I think we can learn lessons from this around the potential complexity of rulesets and validation of - and this might be a simple case!</p>
+<p>The reason for my posting here, is that <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/stolk">@stolk</a> <a class="mention" href="/u/david_megginson">@David_Megginson</a> <a class="mention" href="/u/wendy">@Wendy</a> <a class="mention" href="/u/ximboden">@ximboden</a> <a class="mention" href="/u/pelleaardema">@pelleaardema</a> and I discussed <code>related-activity</code> during a focus on FTS &amp; IATI last week.</p>
+<p>We got to this very same question: <strong>should <code>related-activity</code> be used to point / link between activities published by <em>different</em> <code>reporting-org</code>s?</strong></p>
+<p>Having reread this thread, I think our position is:</p>
+<ul>
+<li>most cases suggest that <code>related-activity</code> should be reserved for pointing within a publisher dataset</li>
+<li>however, there’s a case to suggest otherwise:<br>
+– when a publisher is a part of a federation / network of organisations, and needs to relate to an activity (published by another <code>reporting-org</code>) that provides more context<br>
+– similarly, when a donor is publishing alongside another donor, and needs to signal that their funding is connected</li>
+</ul>
+<p>And that, brings the codes for “co-funded” and “third-party” into question.</p>
+<p>However, as <a class="mention" href="/u/herman">@herman</a> confirmed, use of <code>related-activity</code> outside of the scope would mean a fail of Netherlands MFA validation rules, although not render the data useless</p>
+<p>So… I’m still not sure we have a <strong>Best Practice</strong> on use of this element.  As more publishers create and connect data, it strikes me we need something…</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/25</link>
+        <pubDate>Tue, 26 Feb 2019 20:11:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-25</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[stolk]]></dc:creator>
+        <description><![CDATA[
+            <p>indeed, at this stage, that’s where we are. …</p>
+<p>Regions or country level strategic intentions (5 yr) are expressed in sets of three - five programmes (focus choices) each. with tiles, descriptions, etc.<br>
+Financial and result intentions are set per country/region per ‘programme’ in annual operating plan,</p>
+<p>However actual transactions, income and expenditures are recorded at project level across affiliates that contribute to these programmes.</p>
+<p>So programmes ‘belong’ to the collective aka the confederation, the projects belong to and are administrated in, the various confederations affiliates.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/24</link>
+        <pubDate>Thu, 01 Feb 2018 15:40:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-24</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok, so programmes <span class="mention">@Oxfam</span> are used to group related activities, but not for financial planning?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/23</link>
+        <pubDate>Thu, 01 Feb 2018 15:13:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-23</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[stolk]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/amys">@amys</a> and <a class="mention" href="/u/stevieflow">@stevieflow</a>  If referring to a single set of level one activities across our our confederation is not an option, all affiliates will have to include repetitions of the hierachy one activities in their individual data sets. Such repetion is undesirable isn’t it?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/22</link>
+        <pubDate>Thu, 01 Feb 2018 07:20:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-22</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+      <item>
+        <title>Using related-activity to link data between different publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Just wanted to flag what the standard says on <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/related-activity/" rel="nofollow noopener">related-activity</a>:</p>
+<blockquote>
+<p>Another separately reported IATI activity that is related to this one.</p>
+</blockquote>
+<p>I think that supports both use-cases.  Are we now in the realm of a difference between reference documentation (what is written down for all) and implementation guidance (what is done in context)?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/21</link>
+        <pubDate>Wed, 31 Jan 2018 13:35:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-288-21</guid>
+        <source url="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288.rss">Using related-activity to link data between different publishers</source>
+      </item>
+  </channel>
+</rss>

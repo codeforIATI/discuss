@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Add Narrative element to related-activity</title>
+    <link>https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828</link>
+    <description>There&#39;s currently no narrative element as part of the &#39;related-activity&#39; element http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/related-activity/ 
+Propose that this is added as part of 2.03 upgrade.  Further background here https://github.com/devinit/D-Portal/issues/332</description>
+    
+    <lastBuildDate>Mon, 08 May 2017 11:32:10 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Add Narrative element to related-activity</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree with <a class="mention" href="/u/stevieflow">@stevieflow</a> and <a class="mention" href="/u/andylolz">@andylolz</a> that including a title in this manner would lead to DRY problems and so a <code>related-activity/narrative</code> element should not be used to contain information that the related activity provides itself.</p>
+<hr>
+<p>Could a <code>narrative</code> element in this location instead provide useful information to clarify <code>result-type/@type</code>? For example:</p>
+<pre><code class="lang-auto">&lt;related-activity ref="AA-AAA-123456789-6789" type="3"&gt;
+  &lt;narrative&gt;An equivalent project, being implemented in Kenya rather than Tanzania.&lt;/narrative&gt;
+&lt;/related-activity&gt;
+</code></pre>
+<p>Again, there could be DRY problems (parents and children providing the same information in different directions). I’m not, however, immediately aware of anywhere in the Standard that this information can currently be represented (unlike titles, which can be extracted directly from the related activity).</p>
+<p><em>Note:</em> I’ve not looked at whether this data would be either useful, or available in practice.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828/5</link>
+        <pubDate>Mon, 08 May 2017 11:32:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-828-5</guid>
+        <source url="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828.rss">Add Narrative element to related-activity</source>
+      </item>
+      <item>
+        <title>Add Narrative element to related-activity</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="828">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>what happens if one publisher gives the title for a related activity, but it is different from that given in the actual activity (either by a third party or by  the publisher themselves)?</p>
+</blockquote>
+</aside>
+<p>+1 this is a good example of a potential syncing issue. This could be caused by a change to an activity title (IATI IDs may be immutable, but titles are not!) Keeping activity data in sync when it potentially spans multiple files and even multiple publishers introduces significant complexity.</p>
+<aside class="quote no-group quote-modified" data-post="3" data-topic="828">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>I think that’s where <a href="https://github.com/devinit/D-Portal/issues/332">this github issue was heading</a>, following some work <a href="https://github.com/devinit/D-Portal/issues/331">to start linking up references to other transactions and organisations</a></p>
+</blockquote>
+</aside>
+<p>Bit off-topic, but… I think that second example is fundamentally different, because the information required is all available in the XML without extra requests.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828/4</link>
+        <pubDate>Thu, 04 May 2017 10:30:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-828-4</guid>
+        <source url="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828.rss">Add Narrative element to related-activity</source>
+      </item>
+      <item>
+        <title>Add Narrative element to related-activity</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d agree with <a class="mention" href="/u/andylolz">@andylolz</a> <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Scenario: what happens if one publisher gives the title for a related activity, but it is <em>different</em> from that given in the <em>actual</em> activity (either by a third party or by  the publisher themselves)?  This might cause headaches for the data user.</p>
+<p>For applications such as d-portal, it seems possible to go and fetch the title of the related activity, and print that on screen.  I think that’s where this <a href="https://github.com/devinit/D-Portal/issues/332" rel="nofollow noopener">github issue was heading</a>, following some work <a href="https://github.com/devinit/D-Portal/issues/331" rel="nofollow noopener">to start linking up references to other transactions and organisations</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828/3</link>
+        <pubDate>Thu, 04 May 2017 09:35:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-828-3</guid>
+        <source url="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828.rss">Add Narrative element to related-activity</source>
+      </item>
+      <item>
+        <title>Add Narrative element to related-activity</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I have a basic question!</p>
+<p>Is it definitely a good idea to violate <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">the ‘don’t repeat yourself’ principle</a> like this? It increases redundancy and therefore file size, and I guess there are other potential syncing issues. I suppose there’s a perceived trade-off here between duplication and making the data easy to use?</p>
+<p>As an example, I’ve had a go at doing this for the activity mentioned in the github issue. <a href="https://cdn.rawgit.com/andylolz/c8d2fb0cb36458214bbd0a465f8afae7/raw/1cf49bd4b7b504b88bafa2fc109d88b4232df1bf/activity.xml">Here’s the original activity</a>… And <a href="https://cdn.rawgit.com/andylolz/c8d2fb0cb36458214bbd0a465f8afae7/raw/7b0efbdc5af337a15fbf69e98050d6faa7fd8763/activity.xml">here it is with <code>related-activity</code> titles embedded</a> (fetched from the IATI datastore). Massive!</p>
+<p>In the short-term, this wouldn’t solve the issue seen in d-portal anyway, because publishers may not upgrade to 2.03 immediately.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828/2</link>
+        <pubDate>Wed, 03 May 2017 16:49:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-828-2</guid>
+        <source url="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828.rss">Add Narrative element to related-activity</source>
+      </item>
+      <item>
+        <title>Add Narrative element to related-activity</title>
+        <dc:creator><![CDATA[Matt]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s currently no narrative element as part of the ‘related-activity’ element <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/related-activity/">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/related-activity/</a><br>
+Propose that this is added as part of 2.03 upgrade.  Further background here <a href="https://github.com/devinit/D-Portal/issues/332">https://github.com/devinit/D-Portal/issues/332</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828/1</link>
+        <pubDate>Wed, 03 May 2017 12:37:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-828-1</guid>
+        <source url="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828.rss">Add Narrative element to related-activity</source>
+      </item>
+  </channel>
+</rss>

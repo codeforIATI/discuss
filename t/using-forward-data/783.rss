@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using forward data</title>
+    <link>https://discuss.iatistandard.org/t/using-forward-data/783</link>
+    <description>As part of our efforts to encourage country-based staff (and partner country officials) to use IATI data and tools, I&#39;ve spent more time lately exploring the Datastore and the D-Portal. I have not been able to access forward-looking data in a practical way, and wonder if I may be missing something, or may have identified a gap that should be filled.  
+
+More specifically:
+1 - Is there a place to access the data published in the Organizational files? I&#39;m thinking in particular of the country forward budgets (where donors provide estimates of their budget over the next 3 to 5 years). By access I mean a reasonably user-friendly interface, not a bunch of xml files. It&#39;s fairly simple data that would look good as csv.  I did check the D-Portal, but the forward data provided by country is the sum of the project budgets, not the data published in the Organization file. 
+
+2 - Is there a way to download data on planned disbursements for a group of projects? When using the Datastore Query Builder, budgets and past transactions are downloaded but not planned disbursements. In addition, planned disbursements don&#39;t seem to be visible on the D-Portal project profiles - even if they were though, we cannot expect people to look up one project after another to compile this data. 
+
+Forward-looking information is consistently among the top asks from partner countries, and something donor country-based staff need access to. It seems odd that there would not be a reasonably simple way to access the data. If there is one, I&#39;d be grateful for instructions on how to find it.</description>
+    
+    <lastBuildDate>Fri, 07 Apr 2017 14:08:07 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/using-forward-data/783.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using forward data</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="9" data-topic="783">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>The total-budget element is one of the the least interesting in the Org file (for one thing, it’s available in national budgets, annual reports etc). The country-budget is probably the most important - partner countries ask donors for this information to support their planning.</p>
+</blockquote>
+</aside>
+<p>Thanks for the extra clarification Yohanna. I have amended the GitHub issue to cite the <a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/">recipient-country-budget</a> element.</p>
+<p>Re the code to output a customised CSV file from the Datastore: If anyone thinks this functionality could be useful but difficult to understand, I’m happy to spend some time to talk through the code, or provide more documentation <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-forward-data/783/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-forward-data/783/10</link>
+        <pubDate>Fri, 07 Apr 2017 14:08:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-783-10</guid>
+        <source url="https://discuss.iatistandard.org/t/using-forward-data/783.rss">Using forward data</source>
+      </item>
+      <item>
+        <title>Using forward data</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you Dale for following up on this and creating the issues on github.</p>
+<p>I fully understand that resources are limited and issues need to be prioritized. As such, I would like to help us all focus on the issues most likely to make a difference to users.</p>
+<aside class="quote no-group" data-post="8" data-topic="783">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"> dalepotter:</div>
+<blockquote>
+<p>There is also a wider issue in that the Datastore contains no information from organisation files, such as information on the total-budget element.</p>
+</blockquote>
+</aside>
+<p>The total-budget element is one of the the least interesting in the Org file (for one thing, it’s available in national budgets, annual reports etc). The country-budget is probably the most important - partner countries ask donors for this information to support their planning.</p>
+<p>As such, I would suggest to change the example you provide on github from total-budget to country-budget, to help focus people’s mind on the most important issue from the start.</p>
+<aside class="quote no-group" data-post="8" data-topic="783">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"> dalepotter:</div>
+<blockquote>
+<p>An example of how to do this is here: <a href="https://github.com/dalepotter/iati-datastore-custom-csv">https://github.com/dalepotter/iati-datastore-custom-csv</a></p>
+</blockquote>
+</aside>
+<p>Thanks for developing this. It’s way beyond my technical expertise, but hopefully it will help others until this element can be added to the Datastore.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-forward-data/783/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-forward-data/783/9</link>
+        <pubDate>Thu, 06 Apr 2017 19:07:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-783-9</guid>
+        <source url="https://discuss.iatistandard.org/t/using-forward-data/783.rss">Using forward data</source>
+      </item>
+      <item>
+        <title>Using forward data</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to chip in with regard to what is possible to obtain from the official <a href="http://datastore.iatistandard.org/">IATI Datastore</a>.</p>
+<p>Unfortunately data from the <code>planned-disbursement</code> element is not available in Datastore CSV outputs. However, it is available in the XML and JSON technical formats, so a script could be written to loop over all data and obtain desired elements from the data. Whilst this requires some technical input, this would be a lot easier than trawling through every file from the Registry! An example of how to do this is here: <a href="https://github.com/dalepotter/iati-datastore-custom-csv">https://github.com/dalepotter/iati-datastore-custom-csv</a></p>
+<p>There is also a wider issue in that the Datastore contains no information from organisation files, such as information on the <code>total-budget</code> element.</p>
+<p>We’ll definitely add both these ideas to our list of features for the new datastore given the response here. Others: please do continue to post if this information would be useful - either as a reply here or on the Datastore codebase issues that I have created for <a href="https://github.com/IATI/IATI-Datastore/issues/260">obtaining planned-disbursement data</a> and <a href="https://github.com/IATI/IATI-Datastore/issues/259">getting data from organisation files</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-forward-data/783/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-forward-data/783/8</link>
+        <pubDate>Thu, 06 Apr 2017 16:16:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-783-8</guid>
+        <source url="https://discuss.iatistandard.org/t/using-forward-data/783.rss">Using forward data</source>
+      </item>
+      <item>
+        <title>Using forward data</title>
+        <dc:creator><![CDATA[james.coe]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d like to +1 Yohanna’s comment.</p>
+<p>Yesterday I was trying to see the countries / thematic spends of certain donors. Using IATI, I found the only reliable way to do this was to open up the Registry and trawl through the organisation files.</p>
+<p>Ultimately, the question I was asking was a pretty easy one – “who is spending what in country X?” The data was there but getting to it was manual and thus time-consuming and required a level of comfort with the Registry that we cannot realistically expect people to have.</p>
+<p>Please can somebody let me know if I am missing something?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-forward-data/783/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-forward-data/783/7</link>
+        <pubDate>Thu, 06 Apr 2017 08:11:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-783-7</guid>
+        <source url="https://discuss.iatistandard.org/t/using-forward-data/783.rss">Using forward data</source>
+      </item>
+      <item>
+        <title>Using forward data</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="783">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>You’re talking about commitments here, right? I.e. transactions with transaction-type  == 2? If so, these do seem to be included in the CSV output from the datastore (though you can’t filter for them specifically.)</p>
+</blockquote>
+</aside>
+<p>Nope, talking about Planned Disbursements.  These aren’t in the Transaction element.<br>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/planned-disbursement/" class="onebox" target="_blank">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/planned-disbursement/</a></p>
+<p>That being said, it would be neat to be able to filter by type of transaction…</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-forward-data/783/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-forward-data/783/6</link>
+        <pubDate>Wed, 05 Apr 2017 15:02:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-783-6</guid>
+        <source url="https://discuss.iatistandard.org/t/using-forward-data/783.rss">Using forward data</source>
+      </item>
+      <item>
+        <title>Using forward data</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Matt!   Have to admit I hadn’t quite noticed the arrows to scroll for future years…   I’m not alone, judging by Levis and Andy’s responses. <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-forward-data/783/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-forward-data/783/5</link>
+        <pubDate>Wed, 05 Apr 2017 14:57:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-783-5</guid>
+        <source url="https://discuss.iatistandard.org/t/using-forward-data/783.rss">Using forward data</source>
+      </item>
+      <item>
+        <title>Using forward data</title>
+        <dc:creator><![CDATA[Matt]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Yohanna</p>
+<p>On organisation budgets - there is some data on this in d-portal if you choose a publisher from the list on front page, and look at a recipient country table eg here <a href="http://d-portal.org/ctrack.html?publisher=CA-3&amp;tongue=eng#view=publisher_countries">http://d-portal.org/ctrack.html?publisher=CA-3&amp;tongue=eng#view=publisher_countries</a><br>
+The two green budget columns show data for the same year - the ‘{year} allocated’ column shows budget information from the publisher’s activity file(s), and the ‘{year} total’ column shows the budget data from the publisher’s organisation file.  You can also scroll through subsequent years using the arrow on the ‘IATI Budget’ column.<br>
+(quick caveat, this data for some other publishers needs re-importing after an issue last week, but should be back in tomorrow!)<br>
+It’s per publisher, but is that a start on what you were looking for?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-forward-data/783/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-forward-data/783/4</link>
+        <pubDate>Wed, 05 Apr 2017 14:15:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-783-4</guid>
+        <source url="https://discuss.iatistandard.org/t/using-forward-data/783.rss">Using forward data</source>
+      </item>
+      <item>
+        <title>Using forward data</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi both,</p>
+<aside class="quote no-group" data-post="1" data-topic="783">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>When using the Datastore Query Builder, budgets and past transactions are downloaded but not planned disbursements.</p>
+</blockquote>
+</aside>
+<p>You’re talking about commitments here, right? I.e. transactions with <code>transaction-type</code>  == 2? If so, these do seem to be included in the CSV output from the datastore (though you can’t filter for them specifically.)</p>
+<aside class="quote no-group quote-modified" data-post="1" data-topic="783">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Is there a place to access the data published in the Organizational files? I’m thinking in particular of the country forward budgets (where donors provide estimates of their budget over the next 3 to 5 years). By access I mean a reasonably user-friendly interface, not a bunch of xml files.</p>
+</blockquote>
+</aside>
+<p>This is a really good point – I don’t know of any tool for org file viz (though I don’t <em>think</em> it would be too difficult to build.) I’d be interested in having a go!</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-forward-data/783/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-forward-data/783/3</link>
+        <pubDate>Wed, 05 Apr 2017 12:05:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-783-3</guid>
+        <source url="https://discuss.iatistandard.org/t/using-forward-data/783.rss">Using forward data</source>
+      </item>
+      <item>
+        <title>Using forward data</title>
+        <dc:creator><![CDATA[levis]]></dc:creator>
+        <description><![CDATA[
+            <p>i have been as well looking around for such information on D-portal and data store but i can’t find any! please whoever knows how to get these information can help us and no way to get them then this needs to be improved in further dialogues.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-forward-data/783/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-forward-data/783/2</link>
+        <pubDate>Wed, 05 Apr 2017 05:41:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-783-2</guid>
+        <source url="https://discuss.iatistandard.org/t/using-forward-data/783.rss">Using forward data</source>
+      </item>
+      <item>
+        <title>Using forward data</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>As part of our efforts to encourage country-based staff (and partner country officials) to use IATI data and tools, I’ve spent more time lately exploring the Datastore and the D-Portal. I have not been able to access forward-looking data in a practical way, and wonder if I may be missing something, or may have identified a gap that should be filled.</p>
+<p>More specifically:<br>
+1 - Is there a place to access the data published in the Organizational files? I’m thinking in particular of the country forward budgets (where donors provide estimates of their budget over the next 3 to 5 years). By access I mean a reasonably user-friendly interface, not a bunch of xml files. It’s fairly simple data that would look good as csv.  I did check the D-Portal, but the forward data provided by country is the sum of the project budgets, not the data published in the Organization file.</p>
+<p>2 - Is there a way to download data on planned disbursements for a group of projects? When using the Datastore Query Builder, budgets and past transactions are downloaded but not planned disbursements. In addition, planned disbursements don’t seem to be visible on the D-Portal project profiles - even if they were though, we cannot expect people to look up one project after another to compile this data.</p>
+<p>Forward-looking information is consistently among the top asks from partner countries, and something donor country-based staff need access to. It seems odd that there would not be a reasonably simple way to access the data. If there is one, I’d be grateful for instructions on how to find it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-forward-data/783/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-forward-data/783/1</link>
+        <pubDate>Tue, 04 Apr 2017 19:02:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-783-1</guid>
+        <source url="https://discuss.iatistandard.org/t/using-forward-data/783.rss">Using forward data</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Changes to Github SSOT repository &amp; developer documentation- please comment by 27 March</title>
+    <link>https://discuss.iatistandard.org/t/changes-to-github-ssot-repository-developer-documentation-please-comment-by-27-march/1911</link>
+    <description>This post aims to explain the Technical Team’s **final proposal on changing the Github SSOT repositories and developer documentation** (following discussions and considerations of your responses to [our initial post](https://discuss.iatistandard.org/t/technical-notice-moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1897)). We aim to get **approval from the community** and request that you respond to this post by **Friday 27 March**.
+
+## 1. Single Source of Truth (SSOT)
+
+Currently, in the[ SSOT repository on Github](https://github.com/IATI/IATI-Standard-SSOT) we have:
+
+* Codelists
+* Extra Documentation
+* Rulesets
+* Schemas
+
+### **What changes do we want to make to the SSOT Github repository?**
+
+**Location of files**
+
+The changes we want to make refer to specific sections of the Extra Documentation only.
+
+In [Extra Documentation](https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en) we currently have:
+
+* [Activity standard](https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/activity-standard)
+  * IATI activities
+  * [Overview](https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/activity-standard/overview)
+  * [Separate RST files]
+* [Codelist guides](https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/codelists-guides)
+  * Codelist API
+  * Codelist Management
+* [Codelists](https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/codelists)
+* [Organisation standard](https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/organisation-standard)
+  * IATI organisations
+  * [Overview](https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/organisation-standard/overview)
+  * [Separate RST file]
+* [Rulesets](https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/rulesets)
+  * Ruleset development
+  * Standard rulesets
+
+See the **Table** [Changes to the SSOT- Extra Documentation](https://docs.google.com/spreadsheets/d/1CQKf6mCVHUTKIrX7P-8HGF6M3k87JPTYsF4vjK5Zr3w/edit?usp=sharing), detailing specific changes and where files will be relocated to.
+
+**Format of files**
+
+We had [initially proposed to change the format](https://discuss.iatistandard.org/t/technical-notice-moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1897/10) of the IATI Guidance and IATI Extra Documentation repositories and were considering changing their content to XML formatting. There were no strong views expressed from the community on IATI Discuss and following discussion with Open Contracting and considering options with other developers, we have decided to keep files in the format they currently are in: RST.
+
+RST is still widely used by data standards organisations for documentation because it is easy to read, easy to version control, and can still contain a robust amount of content and formatting. While XML or JSON would have been more flexible and more machine readable, it would not be human readable, nor would it be easy for the community to version control.
+
+### **Why are we making these changes to the SSOT repository?**
+
+The SSOT needs to cover only the prescriptive parts of the Standard and needs to be version controlled for each version of the Standard, e.g 2.01, 2.02, 2.03. The content that we want to move out of the SSOT repository is the descriptive part of the standard, including guidance and explanations. Based on feedback received from the community on how important version control is for the descriptive part of the Standard, we have decided to keep all existing content from Extra Documentation on Github and will simply change the location of the files; it will still be version controlled on Github but only for major versions of the Standard.
+
+## 2. Developer Documentation
+
+In our previous [Technical Notice post](https://discuss.iatistandard.org/t/technical-notice-moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1897) we have announced that we will be moving the [Developer Documentation](http://github.com/IATI/IATI-Developer-Documentation/) to our Content Management System (CMS) Wagtail, meaning it will not be version controlled. We have not received any objection to this from the community so would like to go ahead with that change and wanted to confirm that in this post.
+
+## Get in touch
+
+Please let us know your views by responding to this post. If you can let us know your views by **next Friday 27 March**, that will be much appreciated!
+
+If you have any questions about these changes please email support@iatistandard.org</description>
+    
+    <lastBuildDate>Mon, 30 Mar 2020 14:32:31 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/changes-to-github-ssot-repository-developer-documentation-please-comment-by-27-march/1911.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Changes to Github SSOT repository &amp; developer documentation- please comment by 27 March</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>We have not received any comments from the community by the deadline of the 27th of March. As a result, we assume that there are no objections and the IATI Tech Team will proceed with the SSOT changes as outlined in this thread!</p>
+<p>Do get in touch if you need any further clarification on any of the information we have provided above!</p>
+          <p><a href="https://discuss.iatistandard.org/t/changes-to-github-ssot-repository-developer-documentation-please-comment-by-27-march/1911/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/changes-to-github-ssot-repository-developer-documentation-please-comment-by-27-march/1911/2</link>
+        <pubDate>Mon, 30 Mar 2020 14:32:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1911-2</guid>
+        <source url="https://discuss.iatistandard.org/t/changes-to-github-ssot-repository-developer-documentation-please-comment-by-27-march/1911.rss">Changes to Github SSOT repository &amp; developer documentation- please comment by 27 March</source>
+      </item>
+      <item>
+        <title>Changes to Github SSOT repository &amp; developer documentation- please comment by 27 March</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This post aims to explain the Technical Team’s <strong>final proposal on changing the Github SSOT repositories and developer documentation</strong> (following discussions and considerations of your responses to <a href="https://discuss.iatistandard.org/t/technical-notice-moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1897">our initial post</a>). We aim to get <strong>approval from the community</strong> and request that you respond to this post by <strong>Friday 27 March</strong>.</p>
+<h2>1. Single Source of Truth (SSOT)</h2>
+<p>Currently, in the<a href="https://github.com/IATI/IATI-Standard-SSOT"> SSOT repository on Github</a> we have:</p>
+<ul>
+<li>Codelists</li>
+<li>Extra Documentation</li>
+<li>Rulesets</li>
+<li>Schemas</li>
+</ul>
+<h3><strong>What changes do we want to make to the SSOT Github repository?</strong></h3>
+<p><strong>Location of files</strong></p>
+<p>The changes we want to make refer to specific sections of the Extra Documentation only.</p>
+<p>In <a href="https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en">Extra Documentation</a> we currently have:</p>
+<ul>
+<li>
+<a href="https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/activity-standard">Activity standard</a>
+<ul>
+<li>IATI activities</li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/activity-standard/overview">Overview</a></li>
+<li>[Separate RST files]</li>
+</ul>
+</li>
+<li>
+<a href="https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/codelists-guides">Codelist guides</a>
+<ul>
+<li>Codelist API</li>
+<li>Codelist Management</li>
+</ul>
+</li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/codelists">Codelists</a></li>
+<li>
+<a href="https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/organisation-standard">Organisation standard</a>
+<ul>
+<li>IATI organisations</li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/organisation-standard/overview">Overview</a></li>
+<li>[Separate RST file]</li>
+</ul>
+</li>
+<li>
+<a href="https://github.com/IATI/IATI-Extra-Documentation/tree/ed119e070cffc5dc1bd85671175de414c79e8c2f/en/rulesets">Rulesets</a>
+<ul>
+<li>Ruleset development</li>
+<li>Standard rulesets</li>
+</ul>
+</li>
+</ul>
+<p>See the <strong>Table</strong> <a href="https://docs.google.com/spreadsheets/d/1CQKf6mCVHUTKIrX7P-8HGF6M3k87JPTYsF4vjK5Zr3w/edit?usp=sharing">Changes to the SSOT- Extra Documentation</a>, detailing specific changes and where files will be relocated to.</p>
+<p><strong>Format of files</strong></p>
+<p>We had <a href="https://discuss.iatistandard.org/t/technical-notice-moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1897/10">initially proposed to change the format</a> of the IATI Guidance and IATI Extra Documentation repositories and were considering changing their content to XML formatting. There were no strong views expressed from the community on IATI Discuss and following discussion with Open Contracting and considering options with other developers, we have decided to keep files in the format they currently are in: RST.</p>
+<p>RST is still widely used by data standards organisations for documentation because it is easy to read, easy to version control, and can still contain a robust amount of content and formatting. While XML or JSON would have been more flexible and more machine readable, it would not be human readable, nor would it be easy for the community to version control.</p>
+<h3><strong>Why are we making these changes to the SSOT repository?</strong></h3>
+<p>The SSOT needs to cover only the prescriptive parts of the Standard and needs to be version controlled for each version of the Standard, e.g 2.01, 2.02, 2.03. The content that we want to move out of the SSOT repository is the descriptive part of the standard, including guidance and explanations. Based on feedback received from the community on how important version control is for the descriptive part of the Standard, we have decided to keep all existing content from Extra Documentation on Github and will simply change the location of the files; it will still be version controlled on Github but only for major versions of the Standard.</p>
+<h2>2. Developer Documentation</h2>
+<p>In our previous <a href="https://discuss.iatistandard.org/t/technical-notice-moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1897">Technical Notice post</a> we have announced that we will be moving the <a href="http://github.com/IATI/IATI-Developer-Documentation/">Developer Documentation</a> to our Content Management System (CMS) Wagtail, meaning it will not be version controlled. We have not received any objection to this from the community so would like to go ahead with that change and wanted to confirm that in this post.</p>
+<h2>Get in touch</h2>
+<p>Please let us know your views by responding to this post. If you can let us know your views by <strong>next Friday 27 March</strong>, that will be much appreciated!</p>
+<p>If you have any questions about these changes please email <a href="mailto:support@iatistandard.org">support@iatistandard.org</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/changes-to-github-ssot-repository-developer-documentation-please-comment-by-27-march/1911/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/changes-to-github-ssot-repository-developer-documentation-please-comment-by-27-march/1911/1</link>
+        <pubDate>Fri, 20 Mar 2020 10:43:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1911-1</guid>
+        <source url="https://discuss.iatistandard.org/t/changes-to-github-ssot-repository-developer-documentation-please-comment-by-27-march/1911.rss">Changes to Github SSOT repository &amp; developer documentation- please comment by 27 March</source>
+      </item>
+  </channel>
+</rss>

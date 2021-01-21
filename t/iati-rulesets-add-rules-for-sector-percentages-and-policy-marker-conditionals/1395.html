@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:53:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>IATI rulesets - add rules for sector percentages and policy marker conditionals - Data Quality - IATI Community Discussions</title>
+    <meta name="description" content="(posting this in Data Quality to begin with…) 
+The IATI Rulesets are a set of conditions that it would be very useful for any IATI publisher to consider in their publication. 
+These are not enforced at the schema level, &amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1395.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;IATI rulesets - add rules for sector percentages and policy marker conditionals&#39;" href="1395.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395" />
+<meta property="og:title" content="IATI rulesets - add rules for sector percentages and policy marker conditionals" />
+<meta name="twitter:title" content="IATI rulesets - add rules for sector percentages and policy marker conditionals" />
+<meta property="og:description" content="(posting this in Data Quality to begin with…)  The IATI Rulesets are a set of conditions that it would be very useful for any IATI publisher to consider in their publication.  These are not enforced at the schema level, but additional. Think of these rules as the bits of “guidance” you often see in the IATI schema, which are then represented as rules to help us use them!  They represent logic (eg start date before end date!) and conditions (percenrages of multiple countries should add to 100%) a..." />
+<meta name="twitter:description" content="(posting this in Data Quality to begin with…)  The IATI Rulesets are a set of conditions that it would be very useful for any IATI publisher to consider in their publication.  These are not enforced at the schema level, but additional. Think of these rules as the bits of “guidance” you often see in the IATI schema, which are then represented as rules to help us use them!  They represent logic (eg start date before end date!) and conditions (percenrages of multiple countries should add to 100%) a..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="4 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="7 ❤" />
+<meta property="article:published_time" content="2018-07-16T16:48:33+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1395.html">IATI rulesets - add rules for sector percentages and policy marker conditionals</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/data-quality/14.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #2695B8'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Data Quality</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-07-16T16:48:33Z' class='post-time'>
+                July 16, 2018,  4:48pm
+              </time>
+              <meta itemprop='dateModified' content='2018-07-16T16:48:33Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>(posting this in Data Quality to begin with…)</p>
+<p>The <a href="http://reference.iatistandard.org/203/rulesets/" rel="nofollow noopener"><strong>IATI Rulesets</strong></a> are a set of conditions that it would be very useful for any IATI publisher to consider in their publication.</p>
+<p>These are not enforced at the schema level, but additional. Think of these rules as the bits of “guidance” you often see in the IATI schema, which are then represented as rules to help us use them!  They represent logic (eg start date before end date!) and conditions (percenrages of multiple countries should add to 100%) and other things!</p>
+<p>These rulesets are very important, and have long been available around IATI.  We know that they are not currently used in the “<a href="http://validator.iatistandard.org/" rel="nofollow noopener">official IATI validator</a>”, but are used by others.  At Open Data Services, we use the rulesets in our tools, for example.</p>
+<p>Who else uses the rulsets?  <a class="mention" href="../../u/rolfkleef.html">@rolfkleef</a> <a class="mention" href="../../u/rbesseling.html">@rbesseling</a> <a class="mention" href="../../u/johnadams-2.html">@JohnAdams</a> maybe?</p>
+<p>Looking at the <a href="https://github.com/IATI/IATI-Rulesets/blob/e77e6860ceba3be71d95c7ed95b9c78f3f29928e/rulesets/standard.json" rel="nofollow noopener">current IATI rules</a>, and in discussion with others such as <a class="mention" href="../../u/yohannaloucheur-2.html">@YohannaLoucheur</a> <a class="mention" href="../../u/herman-2.html">@Herman</a> <a class="mention" href="../../u/robredpath.html">@robredpath</a> &amp; <a class="mention" href="../../u/andylolz.html">@andylolz</a>, there seem to be a couple of omissions, which I would suggest we incorporate:</p>
+<p><strong>Sectors</strong><br>
+There is no rule in terms of multiple sectors from the same vocabulary should add to 100%.  The standard text says:</p>
+<blockquote>
+<p>All reported sectors from the same vocabulary MUST add up to 100.</p>
+</blockquote>
+<p>There is no rule in the ruleset for this</p>
+<p><strong>Policy Markers</strong><br>
+There is no rule in terms of conditions of the <a href="http://reference.iatistandard.org/203/codelists/PolicySignificance/" rel="nofollow noopener">Policy Marker codes</a></p>
+<p>The standard says:</p>
+<blockquote>
+<p>Policy Significance code = 4 (Explicit primary objective) SHOULD ONLY be used in conjunction with Policy Marker code = 9 (Reproductive, Maternal, Newborn and Child Health)</p>
+</blockquote>
+<p>There is no rule in the ruleset for this</p>
+<p>==================</p>
+<p>There may be others too - so I wonder if there is chance to get a wider review of these rulesets…?</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../dac-wp-stat-group-redefining-purpose-codes-sector-codes-to-align-with-sdgs/433/8.html" itemprop='item'>
+                      <meta itemprop='url' content='../dac-wp-stat-group-redefining-purpose-codes-sector-codes-to-align-with-sdgs/433/8.html'>
+                      <meta itemprop='position' content='5'>
+                      <span itemprop='name'>DAC WP-STAT group redefining purpose codes (sector codes) to align with SDGs</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-07-17T12:18:33Z'>
+              <time itemprop='dateModified' datetime='2018-07-17T12:44:58Z' class='post-time'>
+                July 17, 2018, 12:44pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group quote-modified" data-post="1" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>The standard says:</p>
+<blockquote>
+<p>Policy Significance code = 4 (Explicit primary objective) SHOULD ONLY be used in conjunction with Policy Marker code = 9 (Reproductive, Maternal, Newborn and Child Health)</p>
+</blockquote>
+</blockquote>
+</aside>
+<p>So, the <a href="http://iatistandard.org/203/activity-standard/iati-activities/iati-activity/sector/">same page</a> also says:</p>
+<blockquote>
+<p>When multiple <code>sector</code> are declared, then the <code>@percentage</code> values should sum to 100% for the specific <code>iati-activity</code>.</p>
+</blockquote>
+<p>I.e. the “must” becomes a “should”. Also:</p>
+<blockquote>
+<h3>1.03</h3>
+<p>Where used, the <span class="mention">@percentage</span> attribute is now designated as a decimal value and no longer as a positive Integer</p>
+</blockquote>
+<p>The “where used” here suggests <code>@percentage</code> isn’t required. But I don’t know what the rule should be when it isn’t provided. Indeed, there are examples on the page that don’t include a <code>@percentage</code> e.g. this one:</p>
+<blockquote>
+<pre><code class="lang-xml">&lt;sector vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1" /&gt;
+</code></pre>
+</blockquote>
+<p>I’m not trying to muddy the waters here – I’m just pointing out that the waters are muddy. The standard appears to leave things a bit open to interpretation. IIRC, my own code uses the following quite pragmatic interpretation:</p>
+<ul>
+<li>If percentages for a given sector vocab are <em>not</em> provided, assume equal split (e.g. if there are two, assume 50% each)</li>
+<li>If percentages for a given sector vocab are <em>sometimes</em> provided, assume they’re correct, and assume equal split of the remainder</li>
+<li>If percentages for a given sector vocab are <em>always</em> provided, but their total is greater than 100, rescale (i.e. don’t treat percentages as percentages, but treat them instead as a proportion of their sum)</li>
+<li>If percentages are <em>sometimes</em> provided, but their total is greater than 100, ignore them and assume equal split (since there’s no satisfactory way to work around this data error)</li>
+</ul>
+<p>TL;DR: for the data user, life is complicated.</p>
+<hr>
+<p>Anyway. Assuming the correct interpretation of this rule is the “MUST” one, <a href="https://github.com/andylolz/IATI-Rulesets/commit/fb5590b0">I made a start at adding it to the standard ruleset</a>. This fix adds a rule specifically for the DAC vocab (i.e. <code>@vocabulary="1"</code> or <code>@vocabulary</code> not present). Doing it for an arbitrary vocab would involve looping, which would constitute a bigger (though by no means insurmountable!) change.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-07-17T12:49:45Z' class='post-time'>
+                July 17, 2018, 12:49pm
+              </time>
+              <meta itemprop='dateModified' content='2018-07-17T12:49:45Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi both,</p>
+<p>I have also struggled with this when trying to use IATI data - as a result I would be in favour of adding a ‘must’ to the rule.</p>
+<p>Alternatively, would it be possible/helpful to add to the standard a section on ‘official approach to interpreting’ e.g. following the rules <a class="mention" href="../../u/andylolz.html">@andylolz</a> uses so that publishers who did not give percentages adding to 100% could be sure of how it would be interpreted - and I would therefore hope that this would mean that all the platforms that publish IATI data would also use the same approach - otherwise we have the situation where different platforms could be showing different results for the same IATI data - which I think starts to really damage the standard.</p>
+<p>Does anyone know what ruleset e.g. d-portal uses - is it the same as Andy’s?</p>
+<p>I would prefer the ‘must add to 100 to be valid’ approach because when sector codes are not given, it is incredibly unlikely to be an even split - and so IATI data ends up inaccurate and gets rejected at the country level but users who are aware of the individual projects. When I have done number crunching with an ‘assume equal split’ approach (because I agree that there is not a better one) it has often ended up with a (false) upward bias to small sectors that often get thrown into many projects e.g. PFM, gender, human rights - leading to wrong policy conclusions.</p>
+<p>Does the same kind of issue apply in other places in the standard/rules e.g. in the percentage allocations to different countries for multi-country projects?</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436.png">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-07-17T21:31:22Z'>
+              <time itemprop='dateModified' datetime='2018-07-17T22:06:16Z' class='post-time'>
+                July 17, 2018, 10:06pm
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="3" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Does anyone know what ruleset e.g. d-portal uses - is it the same as Andy’s?</p>
+</blockquote>
+</aside>
+<p>It appears to be the following:</p>
+<ul>
+<li>if there’s no <code>@percentage</code>, assume it’s 100% (even if there are multiple sectors)</li>
+<li>totals that don’t add to 100% are still shown</li>
+<li>everything gets rescaled for the pie chart. I.e. if the total is greater or less than 100%, rescale.</li>
+</ul>
+<p>For instance, here’s an activity in d-portal with 10 sectors, adding up to 1,000%:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436.png" data-download-href="https://discuss.iatistandard.org/uploads/default/0505ee86bc4d9ddc64c15016a86092bc081cd436" title="Screen Shot 2018-07-17 at 22.11.33.png"><img src="../../uploads/default/optimized/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436_2_690x281.png" alt="33" width="690" height="281" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436_2_690x281.png, https://discuss.iatistandard.org/uploads/default/original/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436.png 2x" data-small-upload="../../uploads/default/optimized/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2018-07-17 at 22.11.33.png</span><span class="informations">908×370 57 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><a href="https://d-portal.org/q.html?aid=DK-1-202839" rel="nofollow noopener">ref.</a></p>
+<p>Here’s one with 2 sectors adding up to 50%:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/2c493b2e431d41082f482410c82a971804c89e18.png" data-download-href="https://discuss.iatistandard.org/uploads/default/2c493b2e431d41082f482410c82a971804c89e18" title="Screen Shot 2018-07-17 at 22.27.54.png"><img src="../../uploads/default/optimized/1X/2c493b2e431d41082f482410c82a971804c89e18_2_690x276.png" alt="54" width="690" height="276" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/2c493b2e431d41082f482410c82a971804c89e18_2_690x276.png, https://discuss.iatistandard.org/uploads/default/original/1X/2c493b2e431d41082f482410c82a971804c89e18.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/2c493b2e431d41082f482410c82a971804c89e18.png 2x" data-small-upload="../../uploads/default/optimized/1X/2c493b2e431d41082f482410c82a971804c89e18_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2018-07-17 at 22.27.54.png</span><span class="informations">912×366 14.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><a href="https://d-portal.org/q.html?aid=BE-BCE_KBO-0410644946468" rel="nofollow noopener">ref.</a></p>
+<aside class="quote no-group" data-post="3" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Does the same kind of issue apply in other places in the standard/rules e.g. in the percentage allocations to different countries for multi-country projects?</p>
+</blockquote>
+</aside>
+<p><code>recipient-country</code> and <code>recipient-region</code> have their own issues! But we should probably save that for a separate discussion.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-07-17T21:47:27Z' class='post-time'>
+                July 17, 2018,  9:47pm
+              </time>
+              <meta itemprop='dateModified' content='2018-07-17T21:47:27Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>thanks <a class="mention" href="../../u/andylolz.html">@andylolz</a> for the detective work - I guess I can see the logic in the second approach - stick to the given numbers (but as you say, the pie chart should really only show 50% accounted for) - as for the first one - no comment!</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6.png">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-07-17T21:56:10Z'>
+              <time itemprop='dateModified' datetime='2018-07-17T22:05:39Z' class='post-time'>
+                July 17, 2018, 10:05pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Just to illustrate one bit that I didn’t provide an example for…</p>
+<pre><code class="lang-xml">&lt;sector vocabulary="DAC" code="11220"/&gt;
+&lt;sector vocabulary="DAC" code="11230" percentage="50"/&gt;
+</code></pre>
+<p>^^ In this case, we have one sector with a <code>@percentage</code> and one without. The one without defaults to 100%, so this gets rendered as:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6.png" data-download-href="https://discuss.iatistandard.org/uploads/default/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6" title="Screen Shot 2018-07-17 at 22.54.38.png"><img src="../../uploads/default/optimized/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6_2_690x279.png" alt="38" width="690" height="279" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6_2_690x279.png, https://discuss.iatistandard.org/uploads/default/original/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6.png 2x" data-small-upload="../../uploads/default/optimized/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2018-07-17 at 22.54.38.png</span><span class="informations">908×368 16.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><a href="https://d-portal.org/q.html?aid=GB-CHC-1071659-UGA-COMIC-SOUTHSUDAN" rel="nofollow noopener">ref.</a></p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-07-18T07:29:30Z' class='post-time'>
+                July 18, 2018,  7:29am
+              </time>
+              <meta itemprop='dateModified' content='2018-07-18T07:29:30Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m reminded that there was also relevant discussion on this topic during the <a href="../non-statistical-secondary-sectors-excluded-2-03/849.html">proposal for a <code>sector/@no-aggregation</code> attribute</a>, as part of the v2.03 upgrade.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-07-18T16:48:40Z' class='post-time'>
+                July 18, 2018,  4:48pm
+              </time>
+              <meta itemprop='dateModified' content='2018-07-18T16:48:40Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the discussion and research on the <code>sector</code> issue <a class="mention" href="../../u/andylolz.html">@andylolz</a> <a class="mention" href="../../u/matmaxgeds.html">@matmaxgeds</a></p>
+<p>I just want to circle back up to the original post I made:</p>
+<aside class="quote no-group" data-post="1" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>There is no rule in terms of multiple sectors from the same vocabulary should add to 100%.</p>
+</blockquote>
+</aside>
+<p>I can appreciate this gets complicated, quickly - but I’m advocating for an inclusion of <em>a</em> rule in the rulesets, so people can at <em>least</em> use it.  Of course, there will be exceptions and complications - but I also understand that is the purpose of rules in the rulesets: they are there for guidance - it’s not “essential” that every single activity pass them successfully (whereas schema validation is much more strict?)</p>
+<p>If we continue to avoid mention of sectors/percentages in the rulesets, then I think we can have a very long thread on where they are not working, but no means to help people address it, systematically.</p>
+<p>Therefore, I’d support the <a href="https://github.com/andylolz/IATI-Rulesets/commit/fb5590b0" rel="nofollow noopener">contribution</a> from <a class="mention" href="../../u/andylolz.html">@andylolz</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-07-18T17:09:20Z' class='post-time'>
+                July 18, 2018,  5:09pm
+              </time>
+              <meta itemprop='dateModified' content='2018-07-18T17:09:20Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/stevieflow.html">@stevieflow</a> sorry for the drag into a discussion - also very much in favour of the rule from my side</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/0a02ce77e9c22a87ef229fd18fb9b5e8aebb5f31.jpg">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-07-18T21:10:56Z'>
+              <time itemprop='dateModified' datetime='2018-07-23T15:25:43Z' class='post-time'>
+                July 23, 2018,  3:25pm
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I also support adding this to the standard ruleset. But it would be great to firm up the docs so it’s clear.</p>
+<p>I’ve now sent a fix for v2.03, both for DAC and other vocabs:<br>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Rulesets/pull/81" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Rulesets</a>
+  </header>
+  <article class="onebox-body">
+      <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+    <img alt="andylolz" src="../../uploads/default/original/1X/0a02ce77e9c22a87ef229fd18fb9b5e8aebb5f31.jpg" class="thumbnail onebox-avatar" width="90" height="90">
+  </a>
+
+<h4>
+  <a href="https://github.com/IATI/IATI-Rulesets/pull/81" target="_blank" rel="nofollow noopener">Add sector percentage rule (v2.03)</a>
+</h4>
+
+<div class="date">
+  by <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">andylolz</a>
+  on <a href="https://github.com/IATI/IATI-Rulesets/pull/81" target="_blank" rel="nofollow noopener">08:56PM - 18 Jul 18 UTC</a>
+</div>
+
+<div class="github-commit-stats">
+  <strong>3 commits</strong>
+  changed <strong>10 files</strong>
+  with <strong>116 additions</strong>
+  and <strong>2 deletions</strong>.
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p><s>It’s python only at the moment (hence PHP tests fail) but I might add PHP at some point.</s> Implemented in both PHP and python.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-07-19T06:02:15Z' class='post-time'>
+                July 19, 2018,  6:02am
+              </time>
+              <meta itemprop='dateModified' content='2018-07-19T06:02:15Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks <a class="mention" href="../../u/matmaxgeds.html">@matmaxgeds</a> <a class="mention" href="../../u/andylolz.html">@andylolz</a></p>
+<p>How about the Policy Marker rule <a class="mention" href="../../u/yohannaloucheur-2.html">@YohannaLoucheur</a> <a class="mention" href="../../u/herman-2.html">@Herman</a> (<a class="mention" href="../../u/andylolz.html">@andylolz</a> - could you do similar for this one, maybe?) ?</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-07-19T10:24:21Z' class='post-time'>
+                July 19, 2018, 10:24am
+              </time>
+              <meta itemprop='dateModified' content='2018-07-19T10:24:21Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi Steven,</p>
+<blockquote>
+<p>I can appreciate this gets complicated, quickly - but I’m advocating for an inclusion of a rule in the rulesets, so people can at least use it. Of course, there will be exceptions and complications - but I also understand that is the purpose of rules in the rulesets: they are there for guidance - it’s not “essential” that every single activity pass them successfully (whereas schema validation is much more strict?)</p>
+</blockquote>
+<p>Do not agree with this statement. A <strong>IATI rule</strong> is imo opinion applicable to each and every IATI activity. An <strong>IATI guideline</strong> is an advise to IATI publishers, but does not need to apply to each activity.</p>
+<p>With regard to sector percentages in the same vocabulary: if percentages are published, then they should add up to 100%. Since percentages are optional, there should imo be another rule:<br>
+you publish for every sector a mandatory percentage, or you publish no percentages at all. So no mixed bags of some sectors having a percentage and some not.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-07-20T13:52:07Z' class='post-time'>
+                July 20, 2018,  1:52pm
+              </time>
+              <meta itemprop='dateModified' content='2018-07-20T13:52:07Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Fair point <a class="mention" href="../../u/herman-2.html">@Herman</a></p>
+<aside class="quote no-group" data-post="12" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/herman/40/192_1.jpg" class="avatar"> Herman:</div>
+<blockquote>
+<p>Do not agree with this statement. A <strong>IATI rule</strong> is imo opinion applicable to each and every IATI activity. An <strong>IATI guideline</strong> is an advise to IATI publishers, but does not need to apply to each activity.</p>
+</blockquote>
+</aside>
+<p>That’s useful, when put that way.  I guess the question is: have we any guidance that is currently a rule? Or vice versa?!</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/shi.html'><span itemprop='name'>shi</span></a>
+            (shi)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1395.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-08-02T13:43:31Z' class='post-time'>
+                August 2, 2018,  1:43pm
+              </time>
+              <meta itemprop='dateModified' content='2018-08-02T13:43:31Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group quote-modified" data-post="4" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/andylolz/40/495_2.jpg" class="avatar"> andylolz:</div>
+<blockquote>
+<blockquote>
+<p>Does anyone know what ruleset e.g. d-portal uses - is it the same as Andy’s?</p>
+</blockquote>
+<p>It appears to be the following:</p>
+</blockquote>
+</aside>
+<p>Thanks, <a class="mention" href="../../u/andylolz.html">@andylolz</a> -  yup, that’s what we’ve done.</p>
+<p>If you don’t specify a number, we will treat it as 100% so this way, when multiple sectors are not given a percentage, we are still able to rescale the pie chart and they all get an equal share.</p>
+<p>We basically treat the numbers as ratios.</p>
+<p>Once we’ve got all of the sectors, we add them up and if it comes to more or less than 100%, we adjust it so it adds up to 100% by scaling; ie. if it adds up to 200%, we half it to fit.</p>
+<p>If the numbers don’t add up to 100%, we attribute this to a data quality issue.</p>
+<p>The original numbers are displayed in SAVi.</p>
+<aside class="quote no-group" data-post="3" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Does the same kind of issue apply in other places in the standard/rules e.g. in the percentage allocations to different countries for multi-country projects?</p>
+</blockquote>
+</aside>
+<p>In d-portal, yes. We can’t split the money unless it all adds up to 100% so we always make sure it adds up to that.</p>
+<p>If people are publishing the right numbers, this would not be a problem but when they don’t, we make a ‘best guess’. Otherwise, we will not be able to include that activity in the portal.</p>
+<p><strong>Ultimately, these graphs are not just visual representations of the data, we also use these calculated percentages for the rest of d-portal; ie. all the sector and publisher tables.</strong></p>
+<p>This means, the whole site is dependant on the quality of the data that has been published.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI rulesets - add rules for sector percentages and policy marker conditionals'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="4" />
+           <span class='post-likes'>4 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:53:47 GMT -->
+</html>

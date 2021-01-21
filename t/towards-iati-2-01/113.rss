@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Towards IATI 2.01</title>
+    <link>https://discuss.iatistandard.org/t/towards-iati-2-01/113</link>
+    <description>Topic for people to post questions, queries and answers about publishing and working with IATI 2.01 data
+
+NB: In the period up to 6th January 2015, the community are invited to test IATI 2.01.  After this date, organisations will be able to publish 2.01 data.
+
+Useful links:
+
+ - 2.01 Changes: http://iatistandard.org/upgrades/integer-upgrade-to-2-01/
+ - 2.01 Reference table (activities): http://dev.iatistandard.org/201/activity-standard/summary-table/
+ - 2.01 Example XML: http://dev.iatistandard.org/201/activity-standard/example-xml/
+ - Validator (with 2.01): http://validator.iatistandard.org/</description>
+    
+    <lastBuildDate>Fri, 28 Nov 2014 08:10:30 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/towards-iati-2-01/113.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Towards IATI 2.01</title>
+        <dc:creator><![CDATA[Adrian]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve also been working with the 2.01 version in relation to the adoption of the model within <a href="http://rsr.akvo.org" rel="nofollow noopener">Akvo RSR</a> and further reporting and monitoring work.</p>
+<p>The changes are not so complex - the order of the file gives a nice structure that I was previously lacking. It has resulted in some minor changes in scripts, but overall it makes the files much easier to read and find the information you want.</p>
+<p>Still to do output validation - but that should come in the next week.</p>
+          <p><a href="https://discuss.iatistandard.org/t/towards-iati-2-01/113/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/towards-iati-2-01/113/3</link>
+        <pubDate>Fri, 28 Nov 2014 08:10:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-113-3</guid>
+        <source url="https://discuss.iatistandard.org/t/towards-iati-2-01/113.rss">Towards IATI 2.01</source>
+      </item>
+      <item>
+        <title>Towards IATI 2.01</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve managed to generate a DFID IATI 2.01 file, and it was relatively easy to do. On the SQL-to-IATI database tool I mainly needed to adapt the view that generates the XML from the core tables. About half a day’s work.</p>
+<p>I started by putting the elements in approximate order, according to the <a href="http://dev.iatistandard.org/201/activity-standard/iati-activities/iati-activity/">http://dev.iatistandard.org/201/activity-standard/iati-activities/iati-activity/</a>, and then used the validator to test each iteration on one activity. In our case I started with a hierarchy=1 activity, proved that, and then a hierarchy=2 activity, and finally an entire country file. The validator was fantastically useful.</p>
+<p>I’d be interested to know others’ experiences.</p>
+<p>For us the more challenging thing is to adapt DevTracker data import to 2.01, particularly now everything has moved to codelists!</p>
+          <p><a href="https://discuss.iatistandard.org/t/towards-iati-2-01/113/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/towards-iati-2-01/113/2</link>
+        <pubDate>Thu, 20 Nov 2014 15:24:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-113-2</guid>
+        <source url="https://discuss.iatistandard.org/t/towards-iati-2-01/113.rss">Towards IATI 2.01</source>
+      </item>
+      <item>
+        <title>Towards IATI 2.01</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Topic for people to post questions, queries and answers about publishing and working with IATI 2.01 data</p>
+<p>NB: In the period up to 6th January 2015, the community are invited to test IATI 2.01.  After this date, organisations will be able to publish 2.01 data.</p>
+<p>Useful links:</p>
+<ul>
+<li>2.01 Changes: <a href="http://iatistandard.org/upgrades/integer-upgrade-to-2-01/" rel="nofollow noopener">http://iatistandard.org/upgrades/integer-upgrade-to-2-01/</a>
+</li>
+<li>2.01 Reference table (activities): <a href="http://dev.iatistandard.org/201/activity-standard/summary-table/" rel="nofollow noopener">http://dev.iatistandard.org/201/activity-standard/summary-table/</a>
+</li>
+<li>2.01 Example XML: <a href="http://dev.iatistandard.org/201/activity-standard/example-xml/" rel="nofollow noopener">http://dev.iatistandard.org/201/activity-standard/example-xml/</a>
+</li>
+<li>Validator (with 2.01): <a href="http://validator.iatistandard.org/" rel="nofollow noopener">http://validator.iatistandard.org/</a>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/towards-iati-2-01/113/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/towards-iati-2-01/113/1</link>
+        <pubDate>Fri, 31 Oct 2014 09:24:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-113-1</guid>
+        <source url="https://discuss.iatistandard.org/t/towards-iati-2-01/113.rss">Towards IATI 2.01</source>
+      </item>
+  </channel>
+</rss>

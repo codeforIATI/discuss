@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Add &quot;Reporting&quot; to Organisation Role codelist</title>
+    <link>https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868</link>
+    <description>While poking around the IATI Query Builder I noticed that the Organisation Role codelist does not contain &quot;reporting&quot;.  
+
+Would it not make sense for this role to be coded like the other ones (ie funding, implementing, etc), enabling searches through the datastore? Does anyone remember why it was not included in the codelist from the beginning?
+
+Note that &quot;Type of organisation&quot; is already an attribute of the &quot;reporting organisation&quot; element.
+
+Organisation Role is a core codelist. Not sure if this would be a minor or major upgrade. [http://reference.iatistandard.org/201/codelists/OrganisationRole/](http://reference.iatistandard.org/201/codelists/OrganisationRole/)</description>
+    
+    <lastBuildDate>Thu, 31 Oct 2019 13:44:22 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Add &quot;Reporting&quot; to Organisation Role codelist</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Rolf, not sure what you mean by “cover this”?  Yes, there is a reporting-org field, and this has an org-type attribute. I guess I’m wondering if reporting should be treated as a role, and whether it would make data use simpler.</p>
+<p>The Query Builder brings this in sharper contrast because the filters for reporting-org and reporting-org-type are on the “Core filters” tab, but it is not possible yet to search by org-role nor org-type (I have created entries for this on github).</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868/3</link>
+        <pubDate>Thu, 31 Oct 2019 13:44:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1868-3</guid>
+        <source url="https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868.rss">Add &quot;Reporting&quot; to Organisation Role codelist</source>
+      </item>
+      <item>
+        <title>Add &quot;Reporting&quot; to Organisation Role codelist</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>Does the reporting-org field in the activity not cover this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868/2</link>
+        <pubDate>Wed, 30 Oct 2019 22:17:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1868-2</guid>
+        <source url="https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868.rss">Add &quot;Reporting&quot; to Organisation Role codelist</source>
+      </item>
+      <item>
+        <title>Add &quot;Reporting&quot; to Organisation Role codelist</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>While poking around the IATI Query Builder I noticed that the Organisation Role codelist does not contain “reporting”.</p>
+<p>Would it not make sense for this role to be coded like the other ones (ie funding, implementing, etc), enabling searches through the datastore? Does anyone remember why it was not included in the codelist from the beginning?</p>
+<p>Note that “Type of organisation” is already an attribute of the “reporting organisation” element.</p>
+<p>Organisation Role is a core codelist. Not sure if this would be a minor or major upgrade. <a href="http://reference.iatistandard.org/201/codelists/OrganisationRole/" rel="nofollow noopener">http://reference.iatistandard.org/201/codelists/OrganisationRole/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868/1</link>
+        <pubDate>Wed, 30 Oct 2019 15:01:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1868-1</guid>
+        <source url="https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868.rss">Add &quot;Reporting&quot; to Organisation Role codelist</source>
+      </item>
+  </channel>
+</rss>

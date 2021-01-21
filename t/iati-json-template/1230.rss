@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI JSON Template</title>
+    <link>https://discuss.iatistandard.org/t/iati-json-template/1230</link>
+    <description>Perhaps this is an easy question but has IATI come up with a recommended JSON format for IATI data?
+
+I&#39;m not a JSON expert and I was just consulting a previous topic and I noticed different recommendations on how to format data (https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481).
+
+I&#39;m looking for a best practices style template fully documenting an aid activity file containing multiple activities, and I&#39;m especially curious how hyphens and codelists should be treated?
+
+Application-wise, I&#39;m experimenting with nesting IATI data within a blockchain transaction between a previous-hash, timestamp and a current-hash. I&#39;m curious how the IATI and non-IATI data should/could look in JSON.</description>
+    
+    <lastBuildDate>Fri, 23 Feb 2018 17:47:15 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-json-template/1230.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI JSON Template</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ll give them a closer look, thanks.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-json-template/1230/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-json-template/1230/3</link>
+        <pubDate>Fri, 23 Feb 2018 17:47:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1230-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-json-template/1230.rss">IATI JSON Template</source>
+      </item>
+      <item>
+        <title>IATI JSON Template</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m aware of two main JSON outputs available right now of IATI data.</p>
+<p>(1) The <a href="http://iatistandard.org/203/guidance/datastore/" rel="nofollow noopener">IATI Datastore</a> will provide JSON if given the JSON extension -<br>
+e,g. <a href="http://datastore.iatistandard.org/api/1/access/activity.json" rel="nofollow noopener">http://datastore.iatistandard.org/api/1/access/activity.json</a></p>
+<p>(2) <a href="https://oipa.nl/api/activities/" rel="nofollow noopener">OIPA provides JSON</a> as it’s default format: <a href="https://oipa.nl/api/activities/?format=json" rel="nofollow noopener">https://oipa.nl/api/activities/?format=json</a></p>
+<p>I’m not sure how these JSON renderings compare, and whether there are differences between them - though that would be interesting to analyse.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-json-template/1230/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-json-template/1230/2</link>
+        <pubDate>Fri, 23 Feb 2018 11:18:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1230-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-json-template/1230.rss">IATI JSON Template</source>
+      </item>
+      <item>
+        <title>IATI JSON Template</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>Perhaps this is an easy question but has IATI come up with a recommended JSON format for IATI data?</p>
+<p>I’m not a JSON expert and I was just consulting a previous topic and I noticed different recommendations on how to format data (<a href="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481">IATI XML to JSON converter?</a>).</p>
+<p>I’m looking for a best practices style template fully documenting an aid activity file containing multiple activities, and I’m especially curious how hyphens and codelists should be treated?</p>
+<p>Application-wise, I’m experimenting with nesting IATI data within a blockchain transaction between a previous-hash, timestamp and a current-hash. I’m curious how the IATI and non-IATI data should/could look in JSON.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-json-template/1230/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-json-template/1230/1</link>
+        <pubDate>Sun, 18 Feb 2018 01:01:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1230-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-json-template/1230.rss">IATI JSON Template</source>
+      </item>
+  </channel>
+</rss>

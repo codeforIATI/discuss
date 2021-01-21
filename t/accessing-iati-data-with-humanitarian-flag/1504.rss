@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Accessing IATI data with humanitarian flag</title>
+    <link>https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504</link>
+    <description>Hello all,
+
+first post here, so please be forgiving as this is all new and exciting.
+
+I&#39;m currently trying to explore the humanitarian data (as in, data with a [humanitarian attribute](http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/)) on IATI. However, it seems to be tricky to download this data, in either XML or preferably CSV format. Would anybody have advice on how to best get hold of, say, all IATI data with a humanitarian flag in either of those formats? 
+
+Now this might have already been addressed in similar topics. I could not find anything specific to this query but am more than happy to read up existing discussions if pointed in the right direction. 
+
+Thanks a lot,
+
+Nik</description>
+    
+    <lastBuildDate>Tue, 09 Oct 2018 18:46:03 +0000</lastBuildDate>
+    <category>Humanitarian</category>
+    <atom:link href="https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Accessing IATI data with humanitarian flag</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/nik">@Nik</a>,</p>
+<p>Ideally the <a href="http://datastore.iatistandard.org" rel="nofollow noopener">IATI Datastore</a> would allow you to filter on this and export a CSV. However, it hasn’t been updated to support anything new in v2.02 or v2.03, so you can’t filter by the <code>@humanitarian</code> flag.</p>
+<p>It doesn’t appear to be documented, but it looks like <a href="https://www.oipa.nl/home" rel="nofollow noopener">OIPA</a> does support this. E.g.: <a href="https://www.oipa.nl/api/activities/?format=json&amp;humanitarian=1" rel="nofollow noopener">https://www.oipa.nl/api/activities/?format=json&amp;humanitarian=1</a></p>
+<p><a class="mention" href="/u/siemvaessen">@siemvaessen</a> can you confirm / expand on this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504/2</link>
+        <pubDate>Tue, 09 Oct 2018 18:46:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1504-2</guid>
+        <source url="https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504.rss">Accessing IATI data with humanitarian flag</source>
+      </item>
+      <item>
+        <title>Accessing IATI data with humanitarian flag</title>
+        <dc:creator><![CDATA[Nik]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello all,</p>
+<p>first post here, so please be forgiving as this is all new and exciting.</p>
+<p>I’m currently trying to explore the humanitarian data (as in, data with a <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/" rel="nofollow noopener">humanitarian attribute</a>) on IATI. However, it seems to be tricky to download this data, in either XML or preferably CSV format. Would anybody have advice on how to best get hold of, say, all IATI data with a humanitarian flag in either of those formats?</p>
+<p>Now this might have already been addressed in similar topics. I could not find anything specific to this query but am more than happy to read up existing discussions if pointed in the right direction.</p>
+<p>Thanks a lot,</p>
+<p>Nik</p>
+          <p><a href="https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504/1</link>
+        <pubDate>Tue, 09 Oct 2018 13:47:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1504-1</guid>
+        <source url="https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504.rss">Accessing IATI data with humanitarian flag</source>
+      </item>
+  </channel>
+</rss>

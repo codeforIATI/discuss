@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Excel template for IATI data and guidence on database design</title>
+    <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379</link>
+    <description>I&#39;m curious if IATI has produced an official spreadsheet template organizations can use to begin databasing activity information using IATI Standard information fields and codes? I&#39;ve seen CSV files published by different organizations but I can&#39;t find a complete spreadsheet with column headings for every conceivable field?
+
+Ultimately we&#39;d like to build a PostgreSQL database and it would be helpful to know how folks are handling database design, tables, columns and rows. Can anyone refer us to a database model we can replicate that&#39;s been tested and improved through use?</description>
+    
+    <lastBuildDate>Fri, 10 Jun 2016 09:54:30 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Excel template for IATI data and guidence on database design</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/dalepotter">@dalepotter</a> - we do make use of the Github WIKI anymore and have moved all docs to:  <a href="http://docs.oipa.nl/en/latest/" rel="nofollow noopener">http://docs.oipa.nl/en/latest/</a></p>
+<p>Perhaps <a class="mention" href="/u/vincentvw">@VincentVW</a> could assist your here for more specifics if the docs won’t help you out.</p>
+          <p><a href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/10</link>
+        <pubDate>Fri, 10 Jun 2016 09:54:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-379-10</guid>
+        <source url="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss">Excel template for IATI data and guidence on database design</source>
+      </item>
+      <item>
+        <title>Excel template for IATI data and guidence on database design</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="379">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/410_1.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>Perhaps the OIPA db model could help you</p>
+</blockquote>
+</aside>
+<p>Hi <a class="mention" href="/u/siemvaessen">@siemvaessen</a> - was just following up on this thread. Is the OIPA DB model still readily available for interest? I tried the wiki link but this take me to a ‘create new wiki page’ form, so the docs may have been moved.</p>
+<p>Also <a class="mention" href="/u/brentphillips">@BrentPhillips</a> - would be great to hear the findings from your data scientist, or any template that is generated. I’m sure this could be of interest to others in future too.</p>
+          <p><a href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/9</link>
+        <pubDate>Fri, 10 Jun 2016 09:32:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-379-9</guid>
+        <source url="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss">Excel template for IATI data and guidence on database design</source>
+      </item>
+      <item>
+        <title>Excel template for IATI data and guidence on database design</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://github.com/IATI/IATI-Registry-Refresher" rel="nofollow noopener">https://github.com/IATI/IATI-Registry-Refresher</a> is probably the place to start looking for downloading a local copy of all IATI data.</p>
+          <p><a href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/8</link>
+        <pubDate>Tue, 31 May 2016 10:14:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-379-8</guid>
+        <source url="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss">Excel template for IATI data and guidence on database design</source>
+      </item>
+      <item>
+        <title>Excel template for IATI data and guidence on database design</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, I’ll refer your links to our data scientist. Off hand, for testing, do you use a local copy of the entire IATI dataset? Generating or acquiring one is on our todo list this week.</p>
+          <p><a href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/7</link>
+        <pubDate>Tue, 24 May 2016 22:28:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-379-7</guid>
+        <source url="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss">Excel template for IATI data and guidence on database design</source>
+      </item>
+      <item>
+        <title>Excel template for IATI data and guidence on database design</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I think this this would be feasible. We built a tool to do something similar for OCDS and 360Giving - <a href="https://github.com/OpenDataServices/flatten-tool" rel="nofollow noopener">https://github.com/OpenDataServices/flatten-tool</a></p>
+<p>These are JSON rather than XML, so we use JSON Path rather than XPath as column headings.</p>
+<p>As an example, see the template for OCDS <a href="https://github.com/open-contracting/sample-data/tree/master/flat-template" rel="nofollow noopener">https://github.com/open-contracting/sample-data/tree/master/flat-template</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/6</link>
+        <pubDate>Tue, 24 May 2016 14:34:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-379-6</guid>
+        <source url="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss">Excel template for IATI data and guidence on database design</source>
+      </item>
+      <item>
+        <title>Excel template for IATI data and guidence on database design</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m curious, perhaps this is a dumb question, would it be feasible to use IATI XML XPath elements as column headings? They cover all IATI’s possible data fields.</p>
+<p>What are your thoughts? Would it be useful for IATI to create an official list of unique XPath to Heading conversions?</p>
+          <p><a href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/5</link>
+        <pubDate>Wed, 11 May 2016 02:50:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-379-5</guid>
+        <source url="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss">Excel template for IATI data and guidence on database design</source>
+      </item>
+      <item>
+        <title>Excel template for IATI data and guidence on database design</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>Siem,</p>
+<p>Thanks so much. That’s a huge help!</p>
+          <p><a href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/4</link>
+        <pubDate>Thu, 14 Jan 2016 07:33:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-379-4</guid>
+        <source url="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss">Excel template for IATI data and guidence on database design</source>
+      </item>
+      <item>
+        <title>Excel template for IATI data and guidence on database design</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="1" data-topic="379">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/b/fbc32d/40.png" class="avatar"> BrentPhillips:</div>
+<blockquote>
+<p>Can anyone refer us to a database model we can replicate that’s been tested and improved through use?</p>
+</blockquote>
+</aside>
+<p>Hi Brent,</p>
+<p>Perhaps the OIPA db model could help you: <a href="https://github.com/zimmerman-zimmerman/OIPA/wiki/Database-implementation-model" rel="nofollow noopener">https://github.com/zimmerman-zimmerman/OIPA/wiki/Database-implementation-model</a> - we updated the model to reflect current state of affairs with OIPA, but some of the documentation needs to be updated. Ping me if you require more info.</p>
+          <p><a href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/3</link>
+        <pubDate>Wed, 13 Jan 2016 16:14:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-379-3</guid>
+        <source url="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss">Excel template for IATI data and guidence on database design</source>
+      </item>
+      <item>
+        <title>Excel template for IATI data and guidence on database design</title>
+        <dc:creator><![CDATA[r_clements]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello Brent, DFID have open sourced the database that we use to generate our IATI v2.01 standard data on GitHub: <a href="https://github.com/DFID/SQL-to-IATI-Database" rel="nofollow noopener">https://github.com/DFID/SQL-to-IATI-Database</a>.</p>
+<p>It has been created in SQL Server but it works with the freely available Express edition of the software.</p>
+<p>Kind Regards,<br>
+Ross</p>
+          <p><a href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/2</link>
+        <pubDate>Wed, 06 Jan 2016 12:27:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-379-2</guid>
+        <source url="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss">Excel template for IATI data and guidence on database design</source>
+      </item>
+      <item>
+        <title>Excel template for IATI data and guidence on database design</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m curious if IATI has produced an official spreadsheet template organizations can use to begin databasing activity information using IATI Standard information fields and codes? I’ve seen CSV files published by different organizations but I can’t find a complete spreadsheet with column headings for every conceivable field?</p>
+<p>Ultimately we’d like to build a PostgreSQL database and it would be helpful to know how folks are handling database design, tables, columns and rows. Can anyone refer us to a database model we can replicate that’s been tested and improved through use?</p>
+          <p><a href="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379/1</link>
+        <pubDate>Tue, 29 Dec 2015 23:58:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-379-1</guid>
+        <source url="https://discuss.iatistandard.org/t/excel-template-for-iati-data-and-guidence-on-database-design/379.rss">Excel template for IATI data and guidence on database design</source>
+      </item>
+  </channel>
+</rss>

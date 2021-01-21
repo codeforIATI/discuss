@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>[Added] December 2017 DAC codelist updates</title>
+    <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169</link>
+    <description>There’s a change by change summary of the December 2017 DAC codelist updates here: https://github.com/datasets/dac-crs-codes/pull/40
+
+The diff is here (so you can see exactly what changed): https://github.com/datasets/dac-crs-codes/pull/40/files
+
+This is all consistent with the self-declared changes on the ‘web link’ page of the XLS file.</description>
+    
+    <lastBuildDate>Fri, 20 Apr 2018 13:56:48 +0000</lastBuildDate>
+    <category>Non-Core Codelist Amendments</category>
+    <atom:link href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>These codelist updates <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/231">have now been approved and merged</a>.</p>
+<p>The changes haven’t been deployed yet, so they’re not reflected on the <a href="http://iatistandard.org">iatistandard.org</a> website.</p>
+<p>Once the changes are on <a href="http://iatistandard.org">iatistandard.org</a>, I guess the title of this post can be prefixed with “[Added]” and the post can be locked.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/12</link>
+        <pubDate>Fri, 20 Apr 2018 13:56:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-12</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>While I didn’t find any other big anomalies, there are a lot of small inconsistencies (capitalisation; spacing; small differences in translation) that suggest the source for the two datasets might be different.</p>
+<hr>
+<p>Just to expand on the flow type issue: the XML includes the following two flow types:</p>
+<ul>
+<li>
+<code>37</code> (Other Private flows at market terms - Banks)</li>
+<li>
+<code>38</code> (Other Private flows at market terms - Non-banks)</li>
+</ul>
+<p>The XLS doesn’t include <code>38</code>, but does include:</p>
+<ul>
+<li>
+<code>37</code> (Other Private flows at market terms)</li>
+</ul>
+<p>So not only is <code>38</code> present in the XML but not the XLS, but I’d also wonder whether <code>37</code> might mean something different in the two versions?</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/11</link>
+        <pubDate>Sun, 18 Feb 2018 22:16:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-11</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="8" data-topic="1169">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>In DACland you can be a recipient one year and a donor the next.</p>
+</blockquote>
+</aside>
+<p>But you’d persist if you were on the channel code list?</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/10</link>
+        <pubDate>Wed, 14 Feb 2018 18:05:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-10</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve made a start at comparing the XLS and XML. My work in progress findings are here: <a href="https://gist.github.com/andylolz/3962f25d7d8ef5b0675029cfe04fbf72">https://gist.github.com/andylolz/3962f25d7d8ef5b0675029cfe04fbf72</a></p>
+<p>As mentioned, the additional flow type in the XML (<code>38</code>) seems like a bit of a worry.</p>
+<aside class="quote no-group" data-post="4" data-topic="1169">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/petyakangalova/40/175_1.png" class="avatar"> petyakangalova:</div>
+<blockquote>
+<p>I have just sent some feedback on the codelist - one codelist was missing and the XML still requires a few changes to comply with the IATI XML schema. Once the changes have been made and we are happy that the file meets the IATI codelist schema, I will post again in here.</p>
+</blockquote>
+</aside>
+<p>Could we compare notes? E.g. was the missing codelist <a href="http://iatistandard.org/202/codelists/SectorCategory/">this one</a>?</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/9</link>
+        <pubDate>Tue, 13 Feb 2018 13:35:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-9</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="7" data-topic="1169">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>this can be the list for all relevant XM-DAC listings</p>
+</blockquote>
+</aside>
+<p>There is a persistence problem. In DACland you can be a recipient one year and a donor the next.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/8</link>
+        <pubDate>Wed, 07 Feb 2018 15:53:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-8</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Looking good - thanks <a class="mention" href="/u/petyakangalova">@petyakangalova</a> and <a class="mention" href="/u/iati-techteam">@IATI-techteam</a></p>
+<p>Just linking up with a <a href="https://github.com/IATI/IATI-Schemas/issues/409#issuecomment-363500241" rel="nofollow noopener">GitHub thread</a> where there’s some discussion about the DAC Channel Codes list (ie the list of of Organisations originally published as an <a href="http://iatistandard.org/202/codelists/OrganisationIdentifier/" rel="nofollow noopener">IATI codelist</a>).  If the XML output from DAC is synched up, then this can be <em>the</em> list for all relevant XM-DAC listings.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/7</link>
+        <pubDate>Wed, 07 Feb 2018 15:39:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-7</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="1169">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>Does the data in the XML match the data in the XLS</p>
+</blockquote>
+</aside>
+<p>It was explained to me that the xml is being generated directly from the main database and should therefore be authoritative.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/6</link>
+        <pubDate>Wed, 07 Feb 2018 13:51:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-6</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m very cautiously optimistic, but I haven’t checked or tested anything yet!</p>
+<aside class="quote no-group" data-post="4" data-topic="1169">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/petyakangalova/40/175_1.png" class="avatar"> petyakangalova:</div>
+<blockquote>
+<p>Once the changes have been made and we are happy that the file meets the IATI codelist schema</p>
+</blockquote>
+</aside>
+<p>Meeting the schema is good. Another really important check is: Does the data in the XML match the data in the XLS? Because it’s important to note: <strong>the DAC publishing XML codelists is not new</strong> – they’ve been doing that for a long time. But the DAC publishing XML that is consistent with the XLS <em>would</em> be new – and a really fantastic step forward.</p>
+<p>I remember from <a class="mention" href="/u/dalepotter">@dalepotter</a>’s <a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/3">post on this topic</a>:</p>
+<aside class="quote no-group" data-post="3" data-topic="866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"><a href="//discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/3">Planning for machine readable, version controlled OECD-DAC codelists</a>
+</div>
+<blockquote>
+<p>However, by Autumn 2017, the DAC are planning to implement an automated systems to generate both XLS and XML versions in an automated way, which should see an end to inconsistencies between versions and make it possible to work with DAC codelists in a fully machine-readable way.</p>
+</blockquote>
+</aside>
+<p>If the DAC did manage to implement it in this way – with both versions generated automatically from the same source – then that would be a massive plus to helping ensure the reliability of the published XML.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/5</link>
+        <pubDate>Wed, 07 Feb 2018 13:24:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-5</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stevieflow">@stevieflow</a> Yes, the DAC have now added the codelist in XML format, following a number of conversations we had with them. I have just sent some feedback on the codelist - one codelist was missing and the XML still requires a few changes to comply with the IATI XML schema. Once the changes have been made and we are happy that the file meets the IATI codelist schema, I will post again in here.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/4</link>
+        <pubDate>Wed, 07 Feb 2018 13:06:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-4</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I just noticed an update - <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm" rel="nofollow noopener">http://www.oecd.org/dac/stats/dacandcrscodelists.htm</a> - and this time there’s the codelists in XML, too…</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/3</link>
+        <pubDate>Thu, 01 Feb 2018 18:54:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-3</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Using <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/172" rel="nofollow noopener">https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/172</a>, I’ve created a pull request with the relevant codelist changes for IATI:</p>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/231" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Codelists-NonEmbedded</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Pull Request">
+    <svg width="60" height="60" class="github-icon" viewBox="0 0 12 16" aria-hidden="true"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/231" target="_blank" rel="nofollow noopener">December 2017 DAC codelist update</a>
+    </h4>
+
+    <div class="branches">
+      <code>IATI:master</code> ← <code>andylolz:december-2017-dac-codelist-update</code>
+    </div>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2018-01-06" data-time="14:57:38" data-timezone="UTC">02:57PM - 06 Jan 18 UTC</span>
+      </div>
+
+      <div class="user">
+        <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+          <img alt="andylolz" src="https://avatars1.githubusercontent.com/u/464193?v=4" class="onebox-avatar-inline" width="20" height="20">
+          andylolz
+        </a>
+      </div>
+
+      <div class="lines" title="4 commits changed 3 files with 4 additions and 4 deletions">
+        <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/231/files" target="_blank" rel="nofollow noopener">
+          <span class="added">+4</span>
+          <span class="removed">-4</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/2</link>
+        <pubDate>Sat, 06 Jan 2018 15:03:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-2</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+      <item>
+        <title>[Added] December 2017 DAC codelist updates</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s a change by change summary of the December 2017 DAC codelist updates here: <a href="https://github.com/datasets/dac-crs-codes/pull/40" rel="nofollow noopener">https://github.com/datasets/dac-crs-codes/pull/40</a></p>
+<p>The diff is here (so you can see exactly what changed): <a href="https://github.com/datasets/dac-crs-codes/pull/40/files" rel="nofollow noopener">https://github.com/datasets/dac-crs-codes/pull/40/files</a></p>
+<p>This is all consistent with the self-declared changes on the ‘web link’ page of the XLS file.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169/1</link>
+        <pubDate>Fri, 05 Jan 2018 12:45:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1169-1</guid>
+        <source url="https://discuss.iatistandard.org/t/added-december-2017-dac-codelist-updates/1169.rss">[Added] December 2017 DAC codelist updates</source>
+      </item>
+  </channel>
+</rss>

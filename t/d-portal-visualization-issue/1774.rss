@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>D-Portal Visualization Issue</title>
+    <link>https://discuss.iatistandard.org/t/d-portal-visualization-issue/1774</link>
+    <description>USAID was reviewing a recent PWYF blog: 
+ (https://www.publishwhatyoufund.org/2019/06/tracking-humanitarian-spending-in-iraq/) on tracking humanitarian spending and believe we&#39;ve uncovered an issue with d-Portal. 
+
+We&#39;re adding this issue to GitHub, but would appreciate others taking a look to see if others are finding this issue.  
+
+PWYF has issued an update on the blog, but we want to make sure this issue is also updated on d-Portal so that there isn&#39;t a lack of trust in the data. 
+
+After examining the issue found in the PWYF blog, we found the immediate issue is that in d-Portal the first pie chart (no matter what you&#39;re filtered on year wise) shows all years of data.  It appears on the USAID graph in the blog, the $723.6M for emergency response on the pie chart was used.  Again, however, this is a sum of all years of data.  When you click &#39;view all&#39; and go into the table, you get around $300M for 2017 which is correct.  This is a feature of d-Portal that the first graph shows all years and not the year filtered on in the initial selection - the amount of emergency spend in 2017 was not higher than the total spend for Iraq (which is around $325M). 
+
+However, the real issue, as PWYF then pointed out to us, is that d-Portal notes that USAID disbursed $331.6M in Iraq in 2017, but it also says that USAID disbursed $418.4m of emergency response funds in Iraq in 2017. (See:  https://d-portal.org/ctrack.html?country=IQ&amp;year_min=2017&amp;year=2017&amp;year_max=2017&amp;year=2017#view=donors and https://d-portal.org/ctrack.html?country=IQ&amp;sector_group=720&amp;year_min=2017&amp;year=2017&amp;year_max=2017&amp;year=2017#view=donors)
+
+The issue of emergency funding being larger than the reported total is an issue with the d-portal visualization.  For example, if you click on the total for USAID emergency funding (418,436,618) it will bring up a list of USAID activities.  Notice the second activity in the list, USAID/OFDA Grant for Iraq/Complex Emergency (AID-OFDA-IO-16-00109), reports a total of (44,273,300).  However if you then select that activity and total the disbursements listed for 2017, it is 22,136,660.  This is the correct amount.  This error is occurring with many, but not all of the USAID activities reported in that chart.  
+
+Additionally if you repeat this process for the chart that reports total USAID Irag spend, you will notice the total is reported correctly for this activity, hence why emergency funding totals are larger than the reported country totals.  
+
+@YohannaLoucheur @JohnAdams - did you have a chance to review the PWYF blog and the Canada and DFID findings there?  Is the issue we describe also affecting your data on d-Portal? 
+
+@james.coe @andylolz</description>
+    
+    <lastBuildDate>Mon, 24 Jun 2019 23:00:42 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/d-portal-visualization-issue/1774.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>D-Portal Visualization Issue</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Andie, thank you very much for flagging. I haven’t had a chance to review yet (very busy month here in Ottawa!) but making a note of it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/d-portal-visualization-issue/1774/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/d-portal-visualization-issue/1774/2</link>
+        <pubDate>Mon, 24 Jun 2019 23:00:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1774-2</guid>
+        <source url="https://discuss.iatistandard.org/t/d-portal-visualization-issue/1774.rss">D-Portal Visualization Issue</source>
+      </item>
+      <item>
+        <title>D-Portal Visualization Issue</title>
+        <dc:creator><![CDATA[AVaughn]]></dc:creator>
+        <description><![CDATA[
+            <p>USAID was reviewing a recent PWYF blog:<br>
+(<a href="https://www.publishwhatyoufund.org/2019/06/tracking-humanitarian-spending-in-iraq/" rel="nofollow noopener">https://www.publishwhatyoufund.org/2019/06/tracking-humanitarian-spending-in-iraq/</a>) on tracking humanitarian spending and believe we’ve uncovered an issue with d-Portal.</p>
+<p>We’re adding this issue to GitHub, but would appreciate others taking a look to see if others are finding this issue.</p>
+<p>PWYF has issued an update on the blog, but we want to make sure this issue is also updated on d-Portal so that there isn’t a lack of trust in the data.</p>
+<p>After examining the issue found in the PWYF blog, we found the immediate issue is that in d-Portal the first pie chart (no matter what you’re filtered on year wise) shows all years of data.  It appears on the USAID graph in the blog, the $723.6M for emergency response on the pie chart was used.  Again, however, this is a sum of all years of data.  When you click ‘view all’ and go into the table, you get around $300M for 2017 which is correct.  This is a feature of d-Portal that the first graph shows all years and not the year filtered on in the initial selection - the amount of emergency spend in 2017 was not higher than the total spend for Iraq (which is around $325M).</p>
+<p>However, the real issue, as PWYF then pointed out to us, is that d-Portal notes that USAID disbursed $331.6M in Iraq in 2017, but it also says that USAID disbursed $418.4m of emergency response funds in Iraq in 2017. (See:  <a href="https://d-portal.org/ctrack.html?country=IQ&amp;year_min=2017&amp;year=2017&amp;year_max=2017&amp;year=2017#view=donors" rel="nofollow noopener">https://d-portal.org/ctrack.html?country=IQ&amp;year_min=2017&amp;year=2017&amp;year_max=2017&amp;year=2017#view=donors</a> and <a href="https://d-portal.org/ctrack.html?country=IQ&amp;sector_group=720&amp;year_min=2017&amp;year=2017&amp;year_max=2017&amp;year=2017#view=donors" rel="nofollow noopener">https://d-portal.org/ctrack.html?country=IQ&amp;sector_group=720&amp;year_min=2017&amp;year=2017&amp;year_max=2017&amp;year=2017#view=donors</a>)</p>
+<p>The issue of emergency funding being larger than the reported total is an issue with the d-portal visualization.  For example, if you click on the total for USAID emergency funding (418,436,618) it will bring up a list of USAID activities.  Notice the second activity in the list, USAID/OFDA Grant for Iraq/Complex Emergency (AID-OFDA-IO-16-00109), reports a total of (44,273,300).  However if you then select that activity and total the disbursements listed for 2017, it is 22,136,660.  This is the correct amount.  This error is occurring with many, but not all of the USAID activities reported in that chart.</p>
+<p>Additionally if you repeat this process for the chart that reports total USAID Irag spend, you will notice the total is reported correctly for this activity, hence why emergency funding totals are larger than the reported country totals.</p>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/johnadams">@JohnAdams</a> - did you have a chance to review the PWYF blog and the Canada and DFID findings there?  Is the issue we describe also affecting your data on d-Portal?</p>
+<p><a class="mention" href="/u/james.coe">@james.coe</a> <a class="mention" href="/u/andylolz">@andylolz</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/d-portal-visualization-issue/1774/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/d-portal-visualization-issue/1774/1</link>
+        <pubDate>Mon, 24 Jun 2019 14:21:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1774-1</guid>
+        <source url="https://discuss.iatistandard.org/t/d-portal-visualization-issue/1774.rss">D-Portal Visualization Issue</source>
+      </item>
+  </channel>
+</rss>

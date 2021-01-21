@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI 2.03 and data validation</title>
+    <link>https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369</link>
+    <description>Hey guys! I&#39;m a new guy here (I&#39;m a Python developer), I&#39;m working with IATI data (I&#39;m building some custom data validation tools) and I have a question about IATI datasets and their validation.
+
+Could anyone point me to a single Dataset which would be fully compliant with IATI v. 2.03 (or at least 2.02) and which would be clean and valid (based on 2.03 rules)? I believe that in the whole registry there should he at least 1 file which should be valid. I checked 5 files in a row, manually compared them with 2.03 rules and the files are far from valid.
+
+Unfortunately when you run the file through http://validator.iatistandard.org/, it gives no error messages. Why it&#39;s not working is a separate question. But what I want to find is at least a single file which would help me to start building working validation tools for the datasets. Is there one ?
+
+thanks and cheers,
+Eimantas</description>
+    
+    <lastBuildDate>Thu, 19 Jul 2018 09:42:43 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI 2.03 and data validation</title>
+        <dc:creator><![CDATA[Eimis]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for your help Michelle and Steven! I’m a bit late with the reply, but regarding public IATI validator - unfortunately I can see that it is not wise to rely on it at all I’m afraid. For example, if you pass in XML Activities file which doesn’t have any “recipient-country” or “recipient-region” element (on both Activity level and transactions level), IATI’s validator says everything’s OK. And for me personally it does not make any sense at all, because I think it’s quite far from OK <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> But anyway, I ended up building my own XML file based on<br>
+Netherlands Ministry of Foreign Affairs files, because they had the least amount of errors! <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369/4</link>
+        <pubDate>Thu, 19 Jul 2018 09:42:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1369-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369.rss">IATI 2.03 and data validation</source>
+      </item>
+      <item>
+        <title>IATI 2.03 and data validation</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1369">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/eimis/40/409_1.png" class="avatar"> Eimis:</div>
+<blockquote>
+<p>Hey guys! I’m a new guy here</p>
+</blockquote>
+</aside>
+<p>Welcome!</p>
+<p>We’ve been working with <a class="mention" href="/u/annape">@AnnaPe</a> at Comic Relief, outputting 2.03 data: <a href="https://iatiregistry.org/publisher/cprojects" rel="nofollow noopener">https://iatiregistry.org/publisher/cprojects</a></p>
+<p>Testing one of their files on the IATI Validator gives <a href="http://validator.iatistandard.org/?perm=https:__www.comicrelief.com_sites_default_files_downloads_CR_Common_Ground_Initiative_Grants.xml_1530806929" rel="nofollow noopener">positive results</a></p>
+<p><a class="mention" href="/u/eimis">@Eimis</a> you mention “rules”.  The IATI Validator only (afaik) tests data at the “schema level” - there are a set of rules in the standard that are not <a href="http://reference.iatistandard.org/203/rulesets/standard-ruleset/" rel="nofollow noopener">enforced by the schema</a>.</p>
+<p>(and indeed, some of these rules are still <a href="https://twitter.com/YohannaLoucheur/status/1014600988655800322" rel="nofollow noopener">subject to discussion</a> --&gt; <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/herman">@Herman</a>   )</p>
+<p>With the CoVE tool we maintain at Open Data Services, we have formatted the IATI ruleset into machine-readable ones.  Hence, if I test the same Comic data file, it seems that these <a href="http://iati.cove.opendataservices.coop/data/d4be8476-24d5-41c2-b474-58eb69c8b4a2" rel="nofollow noopener">PASS the rulesets</a>.</p>
+<p>I believe <a class="mention" href="/u/andylolz">@andylolz</a> also has the rules in place via Publish What You Fund tools, and maybe <a class="mention" href="/u/rolfkleef">@rolfkleef</a> has something …</p>
+<p>Caution - PASSING the rules 100% might not - imho - be fully achievable.  There are quite a few logics and conditions that, in some cases, might not be <a href="https://discuss.iatistandard.org/t/policy-markers-and-humanitarian-activities-advice-needed/1343">practical or entirely possible</a> for all publishers to achieve.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369/3</link>
+        <pubDate>Thu, 05 Jul 2018 16:16:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1369-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369.rss">IATI 2.03 and data validation</source>
+      </item>
+      <item>
+        <title>IATI 2.03 and data validation</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear Eimis,</p>
+<p>I doubt you will find any publisher that publishes every single possible element out there by which you can check all the validation but I am happy to point out that IOM’s data does pass the public validator with no error message.  We declare that we publish in 2.02 but are fully compliant with 2.03 as well.  We will make the switch later this year.  And I’m also happy to answer questions about our data if you have any.</p>
+<p>Kind Regards,<br>
+Michelle Consultant – IATI Project Manager<br>
+International Organization for Migration (IOM)<br>
+Geneva – Switzerland (GMT +1)<br>
+Office: +41-(0)22 717 94 83<br>
+Mobile: +41 (0)78 647 31 86<br>
+Email/Skype: mylevesque@iom.int</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369/2</link>
+        <pubDate>Wed, 04 Jul 2018 13:15:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1369-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369.rss">IATI 2.03 and data validation</source>
+      </item>
+      <item>
+        <title>IATI 2.03 and data validation</title>
+        <dc:creator><![CDATA[Eimis]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey guys! I’m a new guy here (I’m a Python developer), I’m working with IATI data (I’m building some custom data validation tools) and I have a question about IATI datasets and their validation.</p>
+<p>Could anyone point me to a single Dataset which would be fully compliant with IATI v. 2.03 (or at least 2.02) and which would be clean and valid (based on 2.03 rules)? I believe that in the whole registry there should he at least 1 file which should be valid. I checked 5 files in a row, manually compared them with 2.03 rules and the files are far from valid.</p>
+<p>Unfortunately when you run the file through <a href="http://validator.iatistandard.org/" rel="nofollow noopener">http://validator.iatistandard.org/</a>, it gives no error messages. Why it’s not working is a separate question. But what I want to find is at least a single file which would help me to start building working validation tools for the datasets. Is there one ?</p>
+<p>thanks and cheers,<br>
+Eimantas</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369/1</link>
+        <pubDate>Mon, 02 Jul 2018 14:13:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1369-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-2-03-and-data-validation/1369.rss">IATI 2.03 and data validation</source>
+      </item>
+  </channel>
+</rss>

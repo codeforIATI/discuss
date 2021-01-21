@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Python 2.x Deprecation Notice</title>
+    <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725</link>
+    <description>As part of the [work planned for this quarter](https://iatistandard.org/en/news/iati-technical-team-our-detailed-quarterly-update/), the Tech Team will be upgrading the programming language used across a number of our tools.
+
+As of 1st January 2020, [Python 2.x will no longer be supported](https://www.python.org/dev/peps/pep-0373/) globally. To ensure that our tools remain functional and up-to-date, we are commencing upgrades now.
+
+Standard tools affected will be:
+
+* Rulesets: https://github.com/IATI/IATI-Rulesets
+
+* Stats: https://github.com/IATI/IATI-Stats
+
+* Dashboard: https://github.com/IATI/IATI-Dashboard
+
+* SSOT reference site: https://github.com/IATI/IATI-Standard-SSOT
+
+* Codelists Non Embedded: https://github.com/IATI/IATI-Codelists-NonEmbedded
+
+* Codelists: https://github.com/IATI/IATI-Codelists
+
+* Developer Documentation: https://github.com/IATI/IATI-Developer-Documentation
+
+* Extra Documentation: https://github.com/IATI/IATI-Extra-Documentation
+
+* Csv2IATI: https://github.com/IATI/CSV2IATI
+
+* Missing activity checker: https://github.com/IATI/IATI-Missing-Activity-Checker
+
+As a part of a wider reconfiguration of tools, the following internal tools are being considered for deprecation, and therefore aren&#39;t a priority for upgrade:
+
+* Websites: https://github.com/IATI/IATI-Websites
+
+* deployment: https://github.com/IATI/deployment
+
+The Datastore is currently undergoing a major rebuild using Python 3.x as default, so no action will be taken on the current repository. The new Datastore is being released this quarter.
+
+For developers, the upgrade means that virtual environments must be configured to use Python 3.x and dependencies upgraded. We urge that any contributions use [Python 3 complicit code](https://docs.python.org/3/reference/).
+
+Tool documentation will be updated with instructions for using Python 3 virtual environments.</description>
+    
+    <lastBuildDate>Fri, 04 Sep 2020 11:25:08 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p>Update on the Registry work:</p>
+<ul>
+<li>The IATI Registry is currently at <a href="https://iatiregistry.org/api/action/status_show">CKAN 2.8.5</a>. Changelog with ckan 2.8.5 can be accessed in <a href="https://docs.ckan.org/en/2.8/changelog.html">here</a>.</li>
+<li>The CKAN Python 3 upgrade will then happen in a two step approach:<br>
+Update to ckan 2.9 (Python 2) - major change: pylons have been removed and now everything is in flask.<br>
+Update on ckan 2.9 to (Python 3)- migrate extensions to python 3 and deploy in staging which should undergo exhaustive testing.<br>
+Details and updates will added on <a href="https://github.com/IATI/ckanext-iati/issues">Github</a> and we will keep the community posted on Discuss as well.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/13</link>
+        <pubDate>Fri, 04 Sep 2020 11:25:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-13</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Derilinx are currently working on the CKAN python three upgrade work, so we hope this will be deployed soon.</p>
+<p>We’ve got a few people from the team on holiday currently, so we will give an update about Publisher Stats and the Dashboard in a couple of weeks time.  Thank you for your patience.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/12</link>
+        <pubDate>Mon, 24 Aug 2020 11:25:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-12</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Is there an update on the python3 upgrade? This was a focus for the tech team in 2019, and I see it was covered in the <a href="https://iatistandard.org/en/news/iati-tech-quarterly-update-q1-2020/" rel="nofollow noopener">Q1 2020 technical update</a> but not since.</p>
+<p>A few things to note from looking at the open source code:</p>
+<ul>
+<li>There’s <a href="https://github.com/IATI/IATI-Dashboard/pull/565" rel="nofollow noopener">an approved but unmerged PR</a> to upgrade the IATI-Dashboard to python3. The <code>live</code> branch is still using python2.</li>
+<li>Similarly for the IATI-Publishing-Statistics code, there’s <a href="https://github.com/IATI/IATI-Publishing-Statistics/pull/7" rel="nofollow noopener">a draft PR</a> that includes the python3 upgrade. The <code>master</code> branch is still using python2.</li>
+<li>The <code>live</code> branch of the IATI-Stats code is still using python2.</li>
+</ul>
+<p>It’s possible python3 is in use on production, which would be great. If so, the public code on github should be updated to reflect that.</p>
+<p>Re. the registry: it looks as though <a href="https://docs.ckan.org/en/2.9/changelog.html#major-features" rel="nofollow noopener">CKAN v2.9 was released two weeks ago, with python3 support</a>. So upgrading to that version would make it possible to upgrade the registry to python3.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/11</link>
+        <pubDate>Mon, 17 Aug 2020 21:54:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-11</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[John_Askew]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Andy, some of the background work has been done to upgrade the custom ckan-iati code that currently exists, and the agency we’re working with expects to finish and deliver this work by year end.<br>
+It appears that CKAN itself will support <a href="https://github.com/ckan/ckan/issues/4681#issuecomment-532699519" rel="nofollow noopener">python 3 as of version 2.9</a>, but that might not come out until the first quarter of 2020. So while the bespoke IATI code will support python 3, the ckan base will not until said update is rolled out.<br>
+If anything else comes up regarding this I’ll make sure to update this thread.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/10</link>
+        <pubDate>Mon, 04 Nov 2019 12:20:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-10</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Is there also a plan to upgrade the IATI Registry to python 3?</p>
+<p>I realise the registry code is managed by an agency. Is upgrading to python 3 on their radar?</p>
+<p>It looks like the next minor version of CKAN <a href="https://github.com/ckan/ckan/issues/4681" rel="nofollow noopener">will have python 3 support</a>, so I guess that is a big part of the upgrade.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/9</link>
+        <pubDate>Tue, 15 Oct 2019 12:52:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-9</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p><code>CSV2IATI</code> has been deprecated and put offline, no further work will happen on it.</p>
+<p><code>Missing Activity Checker</code> has been deprecated as it did not seem to be in use, no further work will happen on it.</p>
+<p>Both codebases will remain available. The Tech Team is available in case further contact is needed.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/8</link>
+        <pubDate>Thu, 12 Sep 2019 11:06:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-8</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this update. Sounds like a lot of progress has been made on this, which is great.</p>
+<aside class="quote no-group" data-post="1" data-topic="1725">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_2.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<ul>
+<li>Csv2IATI: <a href="https://github.com/IATI/CSV2IATI" rel="nofollow noopener">https://github.com/IATI/CSV2IATI</a>
+</li>
+<li>Missing activity checker: <a href="https://github.com/IATI/IATI-Missing-Activity-Checker" rel="nofollow noopener">https://github.com/IATI/IATI-Missing-Activity-Checker</a>
+</li>
+</ul>
+</blockquote>
+</aside>
+<p>^^ Looks like these two haven’t been converted to python 3. Was the conclusion of the scoping exercise <a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/4">mentioned above</a> that these won’t be converted?</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/7</link>
+        <pubDate>Wed, 11 Sep 2019 15:19:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-7</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello Andy, thanks for re flagging this. We were going to update at work complete but an interim update won’t hurt.</p>
+<p>As of now, the tools that have not yet been upgraded to Python 3 are:</p>
+<ul>
+<li>
+<p>IATI Dashboard: <em>now separated from Publishing Statistics</em></p>
+</li>
+<li>
+<p>IATI Publishing Statistics: <em>stand alone; did not exist at the time we wrote the original post</em></p>
+</li>
+<li>
+<p>IATI Stats: <em>hard dependency on the split work that happened above</em></p>
+</li>
+<li>
+<p>IATI Datastore: <em>soon to be replaced by the new one</em></p>
+</li>
+<li>
+<p>IATI Registry Refresher <em>does not really fit this list as it’s currently in a different language and does not require an upgrade</em></p>
+</li>
+</ul>
+<p>Dashboard, Publishing Statistics and Stats will be our next upgrade focus, followed by the Datastore (based on the new Datastore’s progress).</p>
+<p>Registry Refresher is at the bottom of our priority list because of it not really being affected by the deprecation deadline, being in PHP so we’ll see about this as we move forward and complete more critical work.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/6</link>
+        <pubDate>Mon, 09 Sep 2019 15:14:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-6</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Python Software Foundation <a href="https://www.python.org/doc/sunset-python-2/" rel="nofollow noopener">wrote about this today.</a></p>
+<p>The IATI python upgrade featured in <a href="https://iatistandard.org/en/news/iati-technical-team-our-detailed-quarterly-update/" rel="nofollow noopener">April’s technical update</a>, but <a href="https://iatistandard.org/en/news/iati-technical-team-quarterly-update/" rel="nofollow noopener">not July’s</a>.</p>
+<p>I understand a bunch of work has happened on this since April, which is brilliant. Given that, would it be possible to get an update from <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> on current progress &amp; work remaining, with respect to the repositories referenced above?</p>
+<p>Thanks</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/5</link>
+        <pubDate>Mon, 09 Sep 2019 12:27:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-5</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[sargentfrancesca]]></dc:creator>
+        <description><![CDATA[
+            <p>Andy, that’s great, thank you! We’ll look into the registry refresher.</p>
+<blockquote>
+<p><a href="http://csv2iati.iatistandard.org/" rel="nofollow noopener">CSV2IATI</a> definitely should not be upgraded to python 3</p>
+</blockquote>
+<p>This has indeed been decommissioned, however there is potential that some publishers are using this tool. So, for now, we’ve marked this upgrade as a low priority and are keeping it on our radar whilst we scope who might still be using it and consider steps for rounding off the decommission completely.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/4</link>
+        <pubDate>Mon, 29 Apr 2019 08:22:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-4</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve converted <a href="https://github.com/IATI/IATI-Registry-Refresher" rel="nofollow noopener">IATI Registry Refresher</a> from PHP to python3, in case that’s useful.</p>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Registry-Refresher/pull/27" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Registry-Refresher</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Pull Request">
+    <svg width="60" height="60" class="github-icon" viewBox="0 0 12 16" aria-hidden="true"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Registry-Refresher/pull/27" target="_blank" rel="nofollow noopener">Convert grab_urls.php to python3</a>
+    </h4>
+
+    <div class="branches">
+      <code>IATI:python-3-upgrade</code> ← <code>andylolz:python3</code>
+    </div>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2019-04-27" data-time="15:21:20" data-timezone="UTC">03:21PM - 27 Apr 19 UTC</span>
+      </div>
+
+      <div class="user">
+        <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+          <img alt="andylolz" src="https://avatars1.githubusercontent.com/u/464193?v=4" class="onebox-avatar-inline" width="20" height="20">
+          andylolz
+        </a>
+      </div>
+
+      <div class="lines" title="3 commits changed 6 files with 91 additions and 114 deletions">
+        <a href="https://github.com/IATI/IATI-Registry-Refresher/pull/27/files" target="_blank" rel="nofollow noopener">
+          <span class="added">+91</span>
+          <span class="removed">-114</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/3</link>
+        <pubDate>Sat, 27 Apr 2019 15:34:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-3</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hooray for python 3! <img src="https://discuss.iatistandard.org/images/emoji/twitter/tada.png?v=5" title=":tada:" class="emoji" alt=":tada:"> This is great – hopefully a good opportunity to make some incremental improvements to some old codebases.</p>
+<p>One thing to note: <a href="http://csv2iati.iatistandard.org/">CSV2IATI</a> definitely should not be upgraded to python 3, since it was <a href="https://discuss.iatistandard.org/t/update-csv2iati-decommissioning/905/14">decommissioned last year</a>. I don’t know about the missing activity checker – I don’t know if that is in use.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/2</link>
+        <pubDate>Fri, 26 Apr 2019 16:02:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-2</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+      <item>
+        <title>Python 2.x Deprecation Notice</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>As part of the <a href="https://iatistandard.org/en/news/iati-technical-team-our-detailed-quarterly-update/">work planned for this quarter</a>, the Tech Team will be upgrading the programming language used across a number of our tools.</p>
+<p>As of 1st January 2020, <a href="https://www.python.org/dev/peps/pep-0373/">Python 2.x will no longer be supported</a> globally. To ensure that our tools remain functional and up-to-date, we are commencing upgrades now.</p>
+<p>Standard tools affected will be:</p>
+<ul>
+<li>
+<p>Rulesets: <a href="https://github.com/IATI/IATI-Rulesets">https://github.com/IATI/IATI-Rulesets</a></p>
+</li>
+<li>
+<p>Stats: <a href="https://github.com/IATI/IATI-Stats">https://github.com/IATI/IATI-Stats</a></p>
+</li>
+<li>
+<p>Dashboard: <a href="https://github.com/IATI/IATI-Dashboard">https://github.com/IATI/IATI-Dashboard</a></p>
+</li>
+<li>
+<p>SSOT reference site: <a href="https://github.com/IATI/IATI-Standard-SSOT">https://github.com/IATI/IATI-Standard-SSOT</a></p>
+</li>
+<li>
+<p>Codelists Non Embedded: <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded">https://github.com/IATI/IATI-Codelists-NonEmbedded</a></p>
+</li>
+<li>
+<p>Codelists: <a href="https://github.com/IATI/IATI-Codelists">https://github.com/IATI/IATI-Codelists</a></p>
+</li>
+<li>
+<p>Developer Documentation: <a href="https://github.com/IATI/IATI-Developer-Documentation">https://github.com/IATI/IATI-Developer-Documentation</a></p>
+</li>
+<li>
+<p>Extra Documentation: <a href="https://github.com/IATI/IATI-Extra-Documentation">https://github.com/IATI/IATI-Extra-Documentation</a></p>
+</li>
+<li>
+<p>Csv2IATI: <a href="https://github.com/IATI/CSV2IATI">https://github.com/IATI/CSV2IATI</a></p>
+</li>
+<li>
+<p>Missing activity checker: <a href="https://github.com/IATI/IATI-Missing-Activity-Checker">https://github.com/IATI/IATI-Missing-Activity-Checker</a></p>
+</li>
+</ul>
+<p>As a part of a wider reconfiguration of tools, the following internal tools are being considered for deprecation, and therefore aren’t a priority for upgrade:</p>
+<ul>
+<li>
+<p>Websites: <a href="https://github.com/IATI/IATI-Websites">https://github.com/IATI/IATI-Websites</a></p>
+</li>
+<li>
+<p>deployment: <a href="https://github.com/IATI/deployment">https://github.com/IATI/deployment</a></p>
+</li>
+</ul>
+<p>The Datastore is currently undergoing a major rebuild using Python 3.x as default, so no action will be taken on the current repository. The new Datastore is being released this quarter.</p>
+<p>For developers, the upgrade means that virtual environments must be configured to use Python 3.x and dependencies upgraded. We urge that any contributions use <a href="https://docs.python.org/3/reference/">Python 3 complicit code</a>.</p>
+<p>Tool documentation will be updated with instructions for using Python 3 virtual environments.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/1</link>
+        <pubDate>Fri, 26 Apr 2019 15:11:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1725-1</guid>
+        <source url="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725.rss">Python 2.x Deprecation Notice</source>
+      </item>
+  </channel>
+</rss>

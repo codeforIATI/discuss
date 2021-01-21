@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Data requests from partner country governments</title>
+    <link>https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785</link>
+    <description>Somewhat related to my previous post (on forward data https://discuss.iatistandard.org/t/using-forward-data/783). 
+
+Attached is the type of templates provided by partner countries to collect data for their aid management platform (AMP, AIMS). We receive such requests rather frequently, from an increasing number of partner countries. While they&#39;re not identical, most/all templates require information such as dates, budgets, past and future disbursements. 
+
+Unfortunately, the D-Portal does not provide the data needed to fill this template. Neither does the Datastore CSV Query Builder, since we are missing planned disbursements. 
+
+As we work together to develop guidance, tools etc to promote data use, it would be good to keep this template in mind - this is a real, current need that could be filled with IATI data. (Talking here both of the donor officials who put this information together, but also country officials who use it.) The end goal is data imports into AIMS, but we&#39;re quite a way from there. 
+
+Efforts to raise awareness and encourage use of IATI data in partner countries will be more effective when we can demonstrate how the data can help them do their work faster or better.   
+
+How best can I help my colleagues in Dar or Maputo or Jakarta use IATI data to fill this template (ie respond to partner country requests)? Or better yet, help officials from Tanzania, Mozambique or Indonesia access the data themselves? I don&#39;t know whether it&#39;d be better to improve the D-Portal, or Datastore, or both, or develop something else entirely. What do you think? 
+
+&lt;a class=&quot;attachment&quot; href=&quot;/uploads/default/original/1X/abd3faa3a652dc0854543108af8e48f75942552c.XLSX&quot;&gt;IATI_-_Quarterly_Report_AIMS_-_Generic_Template_.XLSX&lt;/a&gt; (46.7 KB)</description>
+    
+    <lastBuildDate>Fri, 11 May 2018 13:40:12 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Data requests from partner country governments</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Bumping up this thread (which I had forgotten) as it provides user feedback that I think is very relevant to the Datastore redesign exercize.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/8</link>
+        <pubDate>Fri, 11 May 2018 13:40:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-785-8</guid>
+        <source url="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785.rss">Data requests from partner country governments</source>
+      </item>
+      <item>
+        <title>Data requests from partner country governments</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> and I’m glad you were able to extract the data yourself.</p>
+<p>Also like you I found the different order of columns downloaded to CSV by activity or transaction initially confusing so I have just added an issue to the datastore github proposing that the column should be the same where appropriate.  <a href="https://github.com/IATI/IATI-Datastore/issues/275">https://github.com/IATI/IATI-Datastore/issues/275</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/7</link>
+        <pubDate>Thu, 27 Jul 2017 09:46:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-785-7</guid>
+        <source url="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785.rss">Data requests from partner country governments</source>
+      </item>
+      <item>
+        <title>Data requests from partner country governments</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Wendy.  Indeed, playing with the Excel file I had gotten to a similar point - with an additional sorting step on Activity ID to group all disbursements by project, as this is how it gets reported.</p>
+<p>I realized in the process that one of the complicating factor for a low-skilled user is the way columns are ordered and labeled. I’m sorta used to download data in the one-project-per-line format, so got used to how the data is presented (and can more quickly remove the gazillion irrelevant columns before getting to work on the data). One-transaction-per-line arrives in a totally different order, so it took me more time to find my way around and clean the file. Would there be a way to make the presentation more standardized?</p>
+<p>And I think we can all agree that the labels are not all that intuitive (in fact I had to check the standard for some, I had no idea what they meant). Not sure what can be done here, but it’s something to keep in mind when we send unsuspecting users to the Datastore. Perhaps someone will have a brilliant idea to make users’ life easier on that front.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/6</link>
+        <pubDate>Wed, 26 Jul 2017 14:10:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-785-6</guid>
+        <source url="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785.rss">Data requests from partner country governments</source>
+      </item>
+      <item>
+        <title>Data requests from partner country governments</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/reidmporter">@reidmporter</a> and <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> and you should be able to get this information from the datastore by downloading all transactions for GAC and then sorting and filtering on transaction-date and transaction-type (where type = 3 for disbursements). However, i do appreciate that you do need to be familiar with the IATI Standard to do this.</p>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> I’ll send you the file of data I downloaded and edited as above separately</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/5</link>
+        <pubDate>Wed, 26 Jul 2017 10:26:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-785-5</guid>
+        <source url="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785.rss">Data requests from partner country governments</source>
+      </item>
+      <item>
+        <title>Data requests from partner country governments</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>I believe these and other similar use cases (being able to query any and all fields, and extract data + documents from the registry with no specialized skills) are being addressed in the portal that we’re working on with <a class="mention" href="/u/twvaessen">@twvaessen</a>, <a class="mention" href="/u/siemvaessen">@siemvaessen</a>, and <a class="mention" href="/u/vincentvw">@VincentVW</a> from Zimmerman &amp; Zimmerman, but that doesn’t help you (or her) now unfortunately.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/4</link>
+        <pubDate>Tue, 25 Jul 2017 14:57:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-785-4</guid>
+        <source url="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785.rss">Data requests from partner country governments</source>
+      </item>
+      <item>
+        <title>Data requests from partner country governments</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Wonder if we can get more interest in this post - data needs of partner country officials are, after all, supposed to be THE whole point of IATI…</p>
+<p>Real-life request received last week from a colleague:<br>
+"Our mission in Kabul (Afghanistan) has requested a list of all GAC disbursements to Afghanistan for the first six months of 2017.</p>
+<p>We would need this information as soon as possible in response to a Government of Afghanistan donor contribution exercise."</p>
+<p>How to respond? As far as I can tell, this fairly simple query cannot be easily answered via the Datastore CSV Query Builder. There is no way to filter projects with a given status (eg operational), or with disbursements between such and such date. I can download all our Afghanistan data to play with in Excel, but choosing one project per line doens’t work if I need details on disbursements, and choosing one transaction per row makes the data unworkable (at least at my level of skills).</p>
+<p>There is no way to get this data from D-Portal either, except by looking up projects one by one.</p>
+<p>What should I tell her?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/3</link>
+        <pubDate>Mon, 24 Jul 2017 19:49:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-785-3</guid>
+        <source url="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785.rss">Data requests from partner country governments</source>
+      </item>
+      <item>
+        <title>Data requests from partner country governments</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>I am extremely interested in this topic.</p>
+<p>I am currently working on the aid reporting for the AIMS in South Sudan and Somalia (and previously Mozambique and Sierra Leone) - see attached sheet example for South Sudan (very similar to Yohanna’s generic one). As Yohanna explained in her other post - for these exercises, forward data is probably of more importance than backwards data (OECD mindset vs partner country needs!). So far, the best use we have been able to make of IATI data is to identify donors/projects that we are missing.</p>
+<p>I am very willing to test any suggestions with my counterparts (in a production environment) and provide feedback.</p>
+<p>As with our work in Bangladesh (which is using IATI data in production - although I think not planned disbursements yet <a class="mention" href="/u/markbrough">@markbrough</a>), donor country office staff are likely to be the main beneficiary in terms of time saved filling these systems in. For aid recipient countries, they will want real contact details to follow up with (not just generic email addresses) and an indication of whether the data is the donor’s "official: figures and therefore reportable. Plus the usual difficulties on adjusting the FY and aligning to government budget sectors (both solvable with mappings and value-dates).</p>
+<p>Thanks a lot for pushing on this Johanna,</p>
+<p>Matt<br>
+<a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/a910d1b16badf2f66337dadfafabdf1f186d1237.xlsx">MoFEP South Sudan 2017-18 data request - Template for IATI.xlsx</a> (20.7 KB)</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/2</link>
+        <pubDate>Tue, 04 Apr 2017 20:45:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-785-2</guid>
+        <source url="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785.rss">Data requests from partner country governments</source>
+      </item>
+      <item>
+        <title>Data requests from partner country governments</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Somewhat related to my previous post (on forward data <a href="https://discuss.iatistandard.org/t/using-forward-data/783" class="inline-onebox">Using forward data</a>).</p>
+<p>Attached is the type of templates provided by partner countries to collect data for their aid management platform (AMP, AIMS). We receive such requests rather frequently, from an increasing number of partner countries. While they’re not identical, most/all templates require information such as dates, budgets, past and future disbursements.</p>
+<p>Unfortunately, the D-Portal does not provide the data needed to fill this template. Neither does the Datastore CSV Query Builder, since we are missing planned disbursements.</p>
+<p>As we work together to develop guidance, tools etc to promote data use, it would be good to keep this template in mind - this is a real, current need that could be filled with IATI data. (Talking here both of the donor officials who put this information together, but also country officials who use it.) The end goal is data imports into AIMS, but we’re quite a way from there.</p>
+<p>Efforts to raise awareness and encourage use of IATI data in partner countries will be more effective when we can demonstrate how the data can help them do their work faster or better.</p>
+<p>How best can I help my colleagues in Dar or Maputo or Jakarta use IATI data to fill this template (ie respond to partner country requests)? Or better yet, help officials from Tanzania, Mozambique or Indonesia access the data themselves? I don’t know whether it’d be better to improve the D-Portal, or Datastore, or both, or develop something else entirely. What do you think?</p>
+<p><a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/abd3faa3a652dc0854543108af8e48f75942552c.XLSX">IATI_-<em>Quarterly_Report_AIMS</em>-<em>Generic_Template</em>.XLSX</a> (46.7 KB)</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785/1</link>
+        <pubDate>Tue, 04 Apr 2017 20:18:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-785-1</guid>
+        <source url="https://discuss.iatistandard.org/t/data-requests-from-partner-country-governments/785.rss">Data requests from partner country governments</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</title>
+    <link>https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241</link>
+    <description>Taking a look at the publishing statistics and the [specific metric on traceability](http://dashboard.iatistandard.org/comprehensiveness_financials.html#h_narrative):
+
+&gt; For the data at the publishers&#39; lowest hierarchy, the percentage of current activities containing a transaction of type Incoming Funds that also contain the IATI identifier for the funding organisation&#39;s activity. 
+
+and
+
+&gt; All transactions of @type=IF (1.xx) or @type=1 (2.xx) must contain provider-org/@provider-activity-id
+
+Should the inclusion of ``Incoming Funds`` be wider, to include ``Incoming Commitment`` and even ``Incoming Pledge`` ?  In theory, it&#39;s possible to include provider-org details, and link back to an existing activity, even when funds have not been disbursed.  Does that count as traceability?
+
+Maybe there&#39;s a specific reason for just ``Incoming Funds`` though? 
+
+--&gt; over to @bill_anderson , @Herman &amp; @pelleaardema ?</description>
+    
+    <lastBuildDate>Mon, 12 Mar 2018 09:18:07 +0000</lastBuildDate>
+    <category>Traceability</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/stevieflow">@stevieflow</a>,<br>
+Agree, all incoming flows regardsless of the type, should be included in the traceability metrics.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/6</link>
+        <pubDate>Mon, 12 Mar 2018 09:18:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1241-6</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241.rss">IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</source>
+      </item>
+      <item>
+        <title>IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> <a class="mention" href="/u/dalepotter">@dalepotter</a> any idea when this could be reviewed / deployed?  There’s a <a href="https://github.com/IATI/IATI-Dashboard/pulls" rel="nofollow noopener">few other community-contributed pull requests to the dashboard</a> , too…</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/5</link>
+        <pubDate>Fri, 09 Mar 2018 16:45:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1241-5</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241.rss">IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</source>
+      </item>
+      <item>
+        <title>IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1241">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Anyone able to check that the dashboard doesn’t <em>already</em> include <code>Incoming Commitment</code> in the traceability test, and it’s just a case of the text needed an update?</p>
+</blockquote>
+</aside>
+<p>I checked – No, I’m afraid it doesn’t include either <code>Incoming Commitment</code> or <code>Incoming Pledge</code>.</p>
+<aside class="quote no-group" data-post="2" data-topic="1241">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Are you volunteering a github issue?</p>
+</blockquote>
+</aside>
+<p><a href="https://github.com/IATI/IATI-Dashboard/issues/468">Here’s a github issue</a>, and <a href="https://github.com/IATI/IATI-Stats/pull/122">here‘s a proposed fix</a>.</p>
+<p>The <a href="https://github.com/IATI/IATI-Dashboard/pull/469">updated wording is in this pull request</a>, so if that looks correct then it’s probably doing the right thing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/4</link>
+        <pubDate>Mon, 05 Mar 2018 19:25:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1241-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241.rss">IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</source>
+      </item>
+      <item>
+        <title>IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+<p>Yes, of course can create a github issue.  One thing that made me hesitant is that the <a href="http://dashboard.iatistandard.org/comprehensiveness_financials.html#h_narrative" rel="nofollow noopener">text for the Commitments test</a> <strong>does</strong> include <code>Incoming Commitment</code>:</p>
+<blockquote>
+<p>For the data in the chosen hierarchy, the percentage of all current activities that contain at least one transaction of type Commitment or Incoming Commitment</p>
+</blockquote>
+<p>Anyone able to check that the dashboard doesn’t <em>already</em> include <code>Incoming Commitment</code> in the traceability test, and it’s just a case of the text needed an update?  <a class="mention" href="/u/andylolz">@andylolz</a> <a class="mention" href="/u/dalepotter">@dalepotter</a>?</p>
+<p>I guess as <code>Incoming Pledge</code> is brand new, that would needed adding anyway.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/3</link>
+        <pubDate>Mon, 05 Mar 2018 09:38:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1241-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241.rss">IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</source>
+      </item>
+      <item>
+        <title>IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1241">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Maybe there’s a specific reason for just Incoming Funds though?</p>
+</blockquote>
+</aside>
+<p>Incoming commitments and pledges didn’t exist when the logic was written. (Are you volunteering a github issue?)</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/2</link>
+        <pubDate>Sun, 04 Mar 2018 17:24:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1241-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241.rss">IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</source>
+      </item>
+      <item>
+        <title>IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Taking a look at the publishing statistics and the <a href="http://dashboard.iatistandard.org/comprehensiveness_financials.html#h_narrative" rel="nofollow noopener">specific metric on traceability</a>:</p>
+<blockquote>
+<p>For the data at the publishers’ lowest hierarchy, the percentage of current activities containing a transaction of type Incoming Funds that also contain the IATI identifier for the funding organisation’s activity.</p>
+</blockquote>
+<p>and</p>
+<blockquote>
+<p>All transactions of @type=IF (1.xx) or @type=1 (2.xx) must contain provider-org/<span class="mention">@provider-activity-id</span></p>
+</blockquote>
+<p>Should the inclusion of <code>Incoming Funds</code> be wider, to include <code>Incoming Commitment</code> and even <code>Incoming Pledge</code> ?  In theory, it’s possible to include provider-org details, and link back to an existing activity, even when funds have not been disbursed.  Does that count as traceability?</p>
+<p>Maybe there’s a specific reason for just <code>Incoming Funds</code> though?</p>
+<p>–&gt; over to <a class="mention" href="/u/bill_anderson">@bill_anderson</a> , <a class="mention" href="/u/herman">@Herman</a> &amp; <a class="mention" href="/u/pelleaardema">@pelleaardema</a> ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241/1</link>
+        <pubDate>Thu, 01 Mar 2018 17:49:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1241-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-dashboard-metric-on-traceability-does-not-include-incoming-commitments-or-pledges/1241.rss">IATI Dashboard - metric on traceability does not include Incoming Commitments (or Pledges)</source>
+      </item>
+  </channel>
+</rss>

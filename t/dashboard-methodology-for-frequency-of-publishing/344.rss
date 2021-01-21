@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Dashboard methodology for frequency of publishing</title>
+    <link>https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344</link>
+    <description>We have been discussing our [frequency methodology][1] with the World Food Programme. They do in fact refresh their data monthly, but not necessarily in each calendar month. Frequency appears to be simple but there are a range of scenarios that are more challenging for a machine, rather than the naked eye, to assess. To make this fairer and keep it simple we are proposing to adopt the following methodology:
+
+Monthly = Data updated in 7 or more of past 12 full months AND data updated at least once in last 2 full months. 
+Quarterly = Data updated in 3 or more of past 12 full months AND data updated at least once in last 4 full months. 
+
+The effect of this is to improve the status of four publishers to Monthly (Canada, WFP, CAFOD and Find Your Feet) and one publisher to Quarterly (Samaritan&#39;s Purse UK).
+
+Comments most welcome
+
+
+  [1]: http://dashboard.iatistandard.org/timeliness.html</description>
+    
+    <lastBuildDate>Wed, 04 Nov 2015 14:47:41 +0000</lastBuildDate>
+    <category>Consultations</category>
+    <atom:link href="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Dashboard methodology for frequency of publishing</title>
+        <dc:creator><![CDATA[Sanjana_Gaddam]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear Bill,</p>
+<p>This is a timely discussion as we in UNICEF have just started to review our AID Transparency Index and even though we have started our monthly publications since June 2015 our frequency on the Dashboard is reflected as quarterly. Any rationale on why you have chosen to check for data updated in 7 or more of past 12 months in the revised methodology. Can it be for data updated in past 6 months? we would very much like to reflect our publication frequency as monthly.</p>
+<p>regards, Sanjana</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/9</link>
+        <pubDate>Wed, 04 Nov 2015 14:47:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-344-9</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344.rss">Dashboard methodology for frequency of publishing</source>
+      </item>
+      <item>
+        <title>Dashboard methodology for frequency of publishing</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>This has now been added as a GitHub issue for planned implementation in the week beginning 2 November 2015: <a href="https://github.com/IATI/IATI-Dashboard/issues/343">https://github.com/IATI/IATI-Dashboard/issues/343</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/8</link>
+        <pubDate>Mon, 02 Nov 2015 16:47:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-344-8</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344.rss">Dashboard methodology for frequency of publishing</source>
+      </item>
+      <item>
+        <title>Dashboard methodology for frequency of publishing</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://dashboard.iatistandard.org/stats/gitaggregate-publisher-dated/wfp/most_recent_transaction_date.json">Here is a link to our log</a>, Each row shows the date and time of each logged observation, and the most recent transaction date observed at that time.</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/7</link>
+        <pubDate>Fri, 30 Oct 2015 13:15:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-344-7</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344.rss">Dashboard methodology for frequency of publishing</source>
+      </item>
+      <item>
+        <title>Dashboard methodology for frequency of publishing</title>
+        <dc:creator><![CDATA[Reichner]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Bill,</p>
+<p>In 2015 we published at least one update every given month with the transactions for the previous month (see below dates).<br>
+As you can see September data was published 20/10, August data was published 28/9, July data published 20/8, etc.</p>
+<p>We were never told why your evaluation tool does not detect some of these updates properly, thus we couldn’t react, e.g. improve our process if necessary…</p>
+<p>Possible cause:<br>
+I already asked Wendy if by any chance some future transaction dates we published by mistake in several months for income could have caused these problems.<br>
+Otherwise I can’t understand how the tool detected August data in August for WFP if we published this transactional data only in September?<br>
+I also suggested, that an easy remedy to that fault would be to disallow/block future transactions from being published in the validator.</p>
+<p>What do you think?</p>
+<p>Rgds<br>
+Otto</p>
+<ul>
+<li>Jan 30 (Dec data)</li>
+<li>Feb 3 (Dec data)</li>
+<li>Feb 9 (Jan data)</li>
+<li>Mar 4 (Feb data)</li>
+<li>Mar 9 (Feb data)</li>
+<li>Mar 13 (Feb data)</li>
+<li>Mar 18 (Feb data)</li>
+<li>Apr 13 (Mar data)</li>
+<li>May 13 (Apr data)</li>
+<li>May 19 (Apr data)</li>
+<li>Jun 1 (Apr data)</li>
+<li>Jun 2 (Apr data)</li>
+<li>Jun 11 (May data)</li>
+<li>July 16 (June data)</li>
+<li>Aug 20 (July data)</li>
+<li>Sep 28 (Aug data)</li>
+<li>Oct 20 (Sep data)</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/6</link>
+        <pubDate>Fri, 30 Oct 2015 12:45:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-344-6</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344.rss">Dashboard methodology for frequency of publishing</source>
+      </item>
+      <item>
+        <title>Dashboard methodology for frequency of publishing</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Otto it is true that WFP has reported transactional data for every month of 2015. However, frequency measures <strong>when</strong> the update takes place. It is <strong>not</strong> true that WFP updated its data during each month. For example your August transactions were detected by the dashboard on 31 August but your September transactions were only detected for the first time on 21 October. In other words no update was detected during September.</p>
+<p>We are proposing this change to provide a fair, rather than ‘proper’ reflection.</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/5</link>
+        <pubDate>Fri, 30 Oct 2015 10:24:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-344-5</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344.rss">Dashboard methodology for frequency of publishing</source>
+      </item>
+      <item>
+        <title>Dashboard methodology for frequency of publishing</title>
+        <dc:creator><![CDATA[Reichner]]></dc:creator>
+        <description><![CDATA[
+            <p>In fact, WFP has updated IATI transactional data every single month (at least in 2015) and we never fully understood why the current methodology does not reflect that. I thus welcome any change to the methodology that ensures a proper reflection of monthly updates, in particular considering that these monthly updates require a substantial effort from publishers.</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/4</link>
+        <pubDate>Fri, 30 Oct 2015 09:02:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-344-4</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344.rss">Dashboard methodology for frequency of publishing</source>
+      </item>
+      <item>
+        <title>Dashboard methodology for frequency of publishing</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, Yohanna. We are in touch with the Index team. This is relevant as this is one of the few elements of the Index that has shared methodology with the Transparency Indicator.</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/3</link>
+        <pubDate>Wed, 28 Oct 2015 20:29:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-344-3</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344.rss">Dashboard methodology for frequency of publishing</source>
+      </item>
+      <item>
+        <title>Dashboard methodology for frequency of publishing</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a timely discussion given that several of us likely are starting to review their Aid Transparency Index results, where this may be an issue.</p>
+<p>Indeed, we noticed that DFATD’s assessment on the Dashboard did not reflect the fact that we moved to a monthly publication in June - and that it would take some time to do so.</p>
+<p>As such, we welcome this revision of the methodology that will better reflect publishers’ recent efforts.</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/2</link>
+        <pubDate>Wed, 28 Oct 2015 19:31:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-344-2</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344.rss">Dashboard methodology for frequency of publishing</source>
+      </item>
+      <item>
+        <title>Dashboard methodology for frequency of publishing</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>We have been discussing our <a href="http://dashboard.iatistandard.org/timeliness.html">frequency methodology</a> with the World Food Programme. They do in fact refresh their data monthly, but not necessarily in each calendar month. Frequency appears to be simple but there are a range of scenarios that are more challenging for a machine, rather than the naked eye, to assess. To make this fairer and keep it simple we are proposing to adopt the following methodology:</p>
+<p>Monthly = Data updated in 7 or more of past 12 full months AND data updated at least once in last 2 full months.<br>
+Quarterly = Data updated in 3 or more of past 12 full months AND data updated at least once in last 4 full months.</p>
+<p>The effect of this is to improve the status of four publishers to Monthly (Canada, WFP, CAFOD and Find Your Feet) and one publisher to Quarterly (Samaritan’s Purse UK).</p>
+<p>Comments most welcome</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344/1</link>
+        <pubDate>Wed, 28 Oct 2015 12:29:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-344-1</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-methodology-for-frequency-of-publishing/344.rss">Dashboard methodology for frequency of publishing</source>
+      </item>
+  </channel>
+</rss>

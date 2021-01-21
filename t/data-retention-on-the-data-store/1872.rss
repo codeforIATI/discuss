@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Data retention on the Data Store</title>
+    <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872</link>
+    <description>The Data Store depends on whatever is available on the IATI Registry. We have come across a use-case with @Wendy on the Humanitarian Data Portal (Grand Bargain) where data is not available in the Data Store once it becomes unavailable in the Registry. 
+
+While some publishers remove their data on purpose, sometimes data becomes unreachable and therefore will be removed from the Datastore.
+
+What retention policy should we take into consideration here and should the Registry have a publisher &#39;kill-switch&#39; which could tell other services down the data pipeline (Datastore etc) to remove data if that is checked to True in case of a retention policy of say 30 days?</description>
+    
+    <lastBuildDate>Wed, 17 Jun 2020 16:12:01 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The <a href="https://discuss.iatistandard.org/t/iati-data-removal-guidance-input-by-26-june/1973">IATI Technical Team has now written guidance</a> for data owners to explain the process for removing data published to the IATI Standard. This guidance sets out the process to be followed by data owners in instances where they choose to remove data published to the IATI Standard. Please note that this is separate from data retention, which sets policies on, for instance, how long a dataset is retained for in a specific application. We will look at this in the future, but at the moment the priority focus was on developing data removal guidance. Please do have a look at the <a href="https://discuss.iatistandard.org/t/iati-data-removal-guidance-input-by-26-june/1973">IATI data removal guidance Discuss post</a> and let us know if you have any clarification points.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/19</link>
+        <pubDate>Wed, 17 Jun 2020 16:12:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-19</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a> <a class="mention" href="/u/wendythomas">@WendyThomas</a> is there any update on this topic? Thanks</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/18</link>
+        <pubDate>Sat, 30 May 2020 09:12:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-18</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Please can I ask: did a Data Retention Policy for IATI products come through?</p>
+<p>Seems the last post from <a class="mention" href="/u/siemvaessen">@siemvaessen</a> was querying this with <a class="mention" href="/u/wendythomas">@WendyThomas</a> / <a class="mention" href="/u/iati-techteam">@IATI-techteam</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/17</link>
+        <pubDate>Fri, 10 Apr 2020 10:49:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-17</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="15" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I am not convinced that solving the issue of data being accidentally/temporarily unavailable in the registry should be solved via the datastore</p>
+</blockquote>
+</aside>
+<p>Me neither, never made that claim either. Again: this topic tries to address the lack of a data retention policy in place and how formalise it. Who within IATI is responsible for shaping this policy? Perhaps <a class="mention" href="/u/wendythomas">@WendyThomas</a> could shed light on the matter?</p>
+<aside class="quote no-group" data-post="15" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>current ToR for the revisions to the registry</p>
+</blockquote>
+</aside>
+<p>Where could I find that ToR revisions plan for the Registry?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/16</link>
+        <pubDate>Thu, 14 Nov 2019 18:03:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-16</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I am not convinced that solving the issue of data being accidentally/temporarily unavailable in the registry should be solved via the datastore, as this means that only tools that use the datastore as the source of their data benefit from it, if everyone needs this feature, perhaps this would be better inserted into the current ToR for the revisions to the registry, then it would be solved once (and with only one ruleset) for everyone?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/15</link>
+        <pubDate>Thu, 14 Nov 2019 16:31:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-15</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, <a class="mention" href="/u/andylolz">@andylolz</a> - yes, our process is similar to the validator:</p>
+<ol>
+<li>If a file download errors out, we use the last successful download. (This mostly deals with intermittent network errors.)</li>
+<li>We do a test wherein if the Registry looks <em>suspiciously</em> empty, we skip the Registry update and use the previous version.</li>
+</ol>
+<p>Step 2 was added when the <a href="https://twitter.com/IATI_aid/status/801437815867408384" rel="nofollow noopener">Registry hiccuped</a> and emptied itself.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/14</link>
+        <pubDate>Thu, 14 Nov 2019 14:24:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-14</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="12" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/568_2.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>we need a formal rule, not informal precedent</p>
+</blockquote>
+</aside>
+<p>Absolutely agree. I suppose a rule on this should be proposed, agreed, and then formally conveyed (e.g. via a page on <a href="http://iatistandard.org" rel="nofollow noopener">iatistandard.org</a>).</p>
+<aside class="quote no-group" data-post="12" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/568_2.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>Is there any audit trail on IATI communication discussion on this?</p>
+</blockquote>
+</aside>
+<p>I don’t see anything in the draft ToR about it. This was certainly discussed as part of the Manchester developer workshop last year, but I’m afraid I’m not able to find documentation of that.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/13</link>
+        <pubDate>Thu, 14 Nov 2019 12:48:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-13</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_2.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>So there’s already a precedent here. It would seem reasonable for the new datastore to follow the precedent already set (see: <a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" rel="nofollow noopener">Principle of least astonishment</a>).</p>
+</blockquote>
+</aside>
+<p>Sure, but we need a formal rule, not informal precedent. Is there any audit trail on IATI communication discussion on this? It needs to be discussed outside of the realm of 2-3 tools, seeing it touches on overall data consistency.</p>
+<p>And it also does not provide a solution to data accidentally being unavailable on the Registry, while some other tool (a website for example) depends on another tool (datastore for example) etc.etc.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/12</link>
+        <pubDate>Thu, 14 Nov 2019 12:12:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-12</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="10" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/568_2.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>What is the best way forward to introduce such a policy</p>
+</blockquote>
+</aside>
+<p>I’m in favour of consistency between tools.</p>
+<p>So for instance: <a href="https://d-portal.org/" rel="nofollow noopener">d-portal</a> has a policy on this (<a class="mention" href="/u/shi">@shi</a> and xriss can elucidate). The validator also has a policy (as <a class="mention" href="/u/rolfkleef">@rolfkleef</a> <a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/8">outlines above</a>) which sounds very similar to the one d-portal uses. I <em>think</em> (but would need to check) that the <a href="http://datastore.iatistandard.org/" rel="nofollow noopener">existing datastore</a> policy is also similar.</p>
+<p>So there’s already a precedent here. It would seem reasonable for the new datastore to follow the precedent already set (see: <a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" rel="nofollow noopener">Principle of least astonishment</a>).</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/11</link>
+        <pubDate>Thu, 14 Nov 2019 11:53:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-11</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Back to my original subject: data retention. Currently policy (rules) on the matter are not in place. What is the best way forward to introduce such a policy and who needs to be involved? What is the mechanism to start this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/10</link>
+        <pubDate>Thu, 14 Nov 2019 10:37:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-10</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="samuele-mattiuzzo" data-post="2" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/samuele-mattiuzzo/40/485_2.png" class="avatar"> samuele-mattiuzzo:</div>
+<blockquote>
+<p>Above aside, I would say a notification system that tells all the tools that the data has been removed by the publishers is what we should aim for, so that we can ensure consistency across tools</p>
+</blockquote>
+</aside>
+<p>Happily, such a notification system exists:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://iati-canary.herokuapp.com/static/img/favicon-32x32.png%3Fq%3Df1647" class="site-icon" width="32" height="32">
+      <a href="https://iati-canary.herokuapp.com/" target="_blank" rel="nofollow noopener">IATI Canary</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://iati-canary.herokuapp.com/static/img/canary.png%3Fq%3D54077" class="thumbnail onebox-avatar" width="256" height="256">
+
+<h3><a href="https://iati-canary.herokuapp.com/" target="_blank" rel="nofollow noopener">IATI Canary</a></h3>
+
+<p>An early warning system for IATI publishers.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/9</link>
+        <pubDate>Thu, 14 Nov 2019 08:59:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-9</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>My guess would be this might involve the <a href="https://iatiregistry.org/publisher/ocha_fts" rel="nofollow noopener">104 FTS files</a> with URLs that have gone missing since July 30th?</p>
+<p>As the new IATI Validator currently still uses its independent harvesting backend (integration with Datastore underway): we use the <a href="https://test-validator.iatistandard.org/organisation/ocha_fts" rel="nofollow noopener">“last seen alive” version</a> of files (July 29th).</p>
+<p>This allows for reasonably robust availability of data independent of availability of source files (or even the Registry).</p>
+<p>The “publisher kill switch” would be one of two options:</p>
+<ol>
+<li>
+<p>Remove the dataset from the Registry: in that case, the dataset will disappear from the Validator at the next successful refresh from the Registry (currently scheduled every 3 hours).</p>
+</li>
+<li>
+<p>Remove an activity (or all data) from the data served via the URL of the dataset: in that case, the specific activity will disappear after the next successful file refresh and processing (currently scheduled every 8 hours).</p>
+</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/8</link>
+        <pubDate>Wed, 13 Nov 2019 21:11:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-8</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<ul>
+<li>As far as I am aware the current position remains that the Datastore is an organised interface to the registry. It is not a curated database. If a publisher removes any data from the registry it gets removed from the datastore. This is simple. <strong>The Datastore does not hold data (historical or otherwise) against the wishes of a publisher.</strong>
+</li>
+</ul>
+</blockquote>
+</aside>
+<p>Agree.</p>
+<aside class="quote no-group">
+<blockquote>
+<ul>
+<li>Ascertaining whether a publisher has removed data or whether it is accidentally, temporarily unavailable is the challenge that <a class="mention" href="/u/siemvaessen">@siemvaessen</a> focuses on above, and that does <strong>require some rules that I don’t think have been clearly expressed anywhere</strong>.</li>
+</ul>
+</blockquote>
+</aside>
+<p>Correct, IATI needs to define a ruleset for this.</p>
+<aside class="quote no-group">
+<blockquote>
+<ul>
+<li>As per 1 above I <strong>don’t think it is the responsibility of the Datastore to perpetually cope with deprecated versions of the standard</strong> - where a publisher has neither removed nor refreshed their data - but this is perhaps best dealt with as a separate, validation issue.</li>
+</ul>
+</blockquote>
+</aside>
+<p>Agree.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/7</link>
+        <pubDate>Wed, 13 Nov 2019 21:09:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-7</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Splitting this in three:</p>
+<ol>
+<li>As far as I am aware the current position remains that the Datastore is an organised interface to the registry. It is not a curated database. If a publisher removes any data from the registry it gets removed from the datastore. This is simple. The Datastore does not hold data (historical or otherwise) against the wishes of a publisher.</li>
+<li>Ascertaining whether a publisher has removed data or whether it is accidentally, temporarily unavailable is the challenge that <a class="mention" href="/u/siemvaessen">@siemvaessen</a> focuses on above, and that does require some rules that I don’t think have been clearly expressed anywhere.</li>
+<li>As per 1 above I don’t think it is the responsibility of the Datastore to perpetually cope with deprecated versions of the standard - where a publisher has neither removed nor refreshed their data - but this is perhaps best dealt with as a separate, validation issue.</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/6</link>
+        <pubDate>Wed, 13 Nov 2019 18:47:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-6</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/samuele-mattiuzzo">@samuele-mattiuzzo</a> - totally with you on the need to think/decide whether IATI should do historical (and what that would involve), but I think it must have been discussed 10 years ago and probably needs solving in that context, not in the context of a problem it causes for the DS as the implications are far wider…also e.g. if something was published as v1.03 and the secretariat stored it for historical purposes, would it then be lost as v1 is depreciated (in which case it is only part of history being kept), or would the Secretariat republish in v2…I guess because of all the difficulties is why the current situation exists <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/5</link>
+        <pubDate>Wed, 13 Nov 2019 18:23:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-5</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>My assumption would be that if data is removed/becomes unreachable then it should immediately disappear from the datastore as there is no way of knowing whether this was an error, or on-purpose as I suspect that many publishers would ignore a kill-switch.</p>
+</blockquote>
+</aside>
+<p>ah I did not think about the edge cases of mistakes/publishing the wrong file or generic errors like such (in which case having faulty broken data and retaining it becomes detrimental)</p>
+<p>I was more referring to data that was valid and has once been used to draw calculations and then gets removed by the publisher 2-3 years afterwards, that would fundamentally change previous reports and possibly reports that work on comparisons as well (as that comparable data would have been removed).</p>
+<p>Maybe there needs to be a way to clarify whether certain datasets have actually been published with mistakes and thus need removal and which data can stay but is not relevant/withdrawn for certain reasons?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/4</link>
+        <pubDate>Wed, 13 Nov 2019 17:19:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-4</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>As far as I am aware, IATI doesn’t have any historical approach, it is up to the publishers to decide if they want to keep historical data available.</p>
+<p>My assumption would be that if data is removed/becomes unreachable then it should immediately disappear from the datastore as there is no way of knowing whether this was an error, or on-purpose as I suspect that many publishers would ignore a kill-switch.</p>
+<p>If the DS kept it in, and then the publisher replaced it with another file there would be issues knowing which one was the right one etc</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/3</link>
+        <pubDate>Wed, 13 Nov 2019 17:13:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-3</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p>Wouldn’t removing the data from the Datastore and other tools also affect the way we can report on historical data, being that there will be gaps/missing pieces that were there in the first place?<br>
+Although I think this would be the case anyway whenever a publisher takes their file offline.</p>
+<p>Above aside, I would say a notification system that tells all the tools that the data has been removed by the publishers is what we should aim for, so that we can ensure consistency across tools</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/2</link>
+        <pubDate>Wed, 13 Nov 2019 16:07:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-2</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+      <item>
+        <title>Data retention on the Data Store</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>The Data Store depends on whatever is available on the IATI Registry. We have come across a use-case with <a class="mention" href="/u/wendy">@Wendy</a> on the Humanitarian Data Portal (Grand Bargain) where data is not available in the Data Store once it becomes unavailable in the Registry.</p>
+<p>While some publishers remove their data on purpose, sometimes data becomes unreachable and therefore will be removed from the Datastore.</p>
+<p>What retention policy should we take into consideration here and should the Registry have a publisher ‘kill-switch’ which could tell other services down the data pipeline (Datastore etc) to remove data if that is checked to True in case of a retention policy of say 30 days?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/1</link>
+        <pubDate>Wed, 13 Nov 2019 11:16:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1872-1</guid>
+        <source url="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872.rss">Data retention on the Data Store</source>
+      </item>
+  </channel>
+</rss>

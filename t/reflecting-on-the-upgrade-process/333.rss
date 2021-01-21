@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Reflecting on the upgrade process</title>
+    <link>https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333</link>
+    <description>Today I spent some time going over the proposals for version 2.02. And I&#39;m a bit ambivalent about it:
+
+On the one hand it&#39;s good to fix a few things, and keep the standard moving. People run into problems and come up with fixes for them.
+
+On the other hand, there seems to be limited involvement in the consultation. With risks: we&#39;re solving some problems for a few people, but we&#39;re not addressing the bigger issues of outreach to new publishers and users, and data quality.
+
+ - It&#39;s hard for anyone who is &quot;just doing IATI&quot; to understand the proposals or offer meaningful feedback: it&#39;s too technical and too detailed.
+ - It doesn&#39;t offer time or space for more profound technical and guidance issues in the standard. Recommendations on how to fill certain fields (e.g. flow type) differ depending on who you ask.
+ - It makes the landscape more complicated for users and developers. AidStream has only just been updated for 2.01, the CSV convertor is behind, and Mark built a script to *downgrade* 2.01 files to 1.05 in order to keep working with tools.
+
+I think it will be hard to keep mixing the use cases, outreach and technical modifications. We&#39;re missing things, for instance in results:
+
+ - A lot of the NGOs that we work with want to publish qualitative results. It&#39;s still a use case to be explored, so there are no technical proposals, and so it&#39;s not in 2.02.
+ - At the same time, there are fixes to make the quantitative results more usable, but without a long-term vision of where it should lead to.
+ - Examples around results are usually for outputs, whereas many NGOs (and donors) want to manage on outcomes and impacts, or different types of theory of change, especially in lobby and advocacy.
+
+There is a real risk the extra &quot;optional&quot; elements in the standard quickly turn into &quot;less optional&quot; requirements from donors. NGOs that didn&#39;t embrace IATI because of its potential are looking at these changes as &quot;extra burden&quot;.
+
+So... who are we actually making happy with the current proposals for version 2.02?
+
+ - Should we have an active &quot;experimental&quot; branch for opt-in front-runners to experiment with extensions to the standard before they become official part of the standard?
+ - Can we have an upgrade process where we first have a round of looking at use cases (added value) and then have a round of (very technical) proposals to adapt the standard? A stepping stone from strategy and vision to technical changes, and a way to build guidance how to use the standard as part of the process.
+
+I hope it&#39;s a constructive contribution.</description>
+    
+    <lastBuildDate>Mon, 12 Oct 2015 19:39:41 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Reflecting on the upgrade process</title>
+        <dc:creator><![CDATA[Herb_Caudill]]></dc:creator>
+        <description><![CDATA[
+            <p>Some comments on what’s missing from the results element here: <a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process-results-element/336">Reflecting on the upgrade process: Results element</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/6</link>
+        <pubDate>Mon, 12 Oct 2015 19:39:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-333-6</guid>
+        <source url="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333.rss">Reflecting on the upgrade process</source>
+      </item>
+      <item>
+        <title>Reflecting on the upgrade process</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Rolf and Sarah</p>
+<p>If I could reply jointly …</p>
+<p>To get formalities out of the way first, the standing ‘rules’ for upgrades that the IATI Secretariat and Tech Team must follow were agreed by the IATI Steering Committee in October 2011. (See Annex 1 in <a href="http://www.aidtransparency.net/wp-content/uploads/2013/09/Paper-4.b-First-Integer-Upgrade-to-the-Standard.doc">this SC document</a> for details).</p>
+<p>A number of your comments relate to the overall governance and process involved in conducting upgrades. We welcome these and hope that, continuing the review of the 2.01 process started at the last TAG, we can find a way to make change control more inclusive and purposeful.</p>
+<p>If I could limit my response here, though, to comments that either directly or indirectly relate to the current upgrade and the immediate responsibilities of the technical team.</p>
+<p><strong>2.02 has come too soon and makes the landscape more complicated for users and developers</strong><br>
+I take the point that every upgrade creates challenges for users and developers. You will see that our original mandate was to conduct a decimal upgrade on a quarterly basis. Our thinning out of this schedule (to say one decimal per year and an integer every 3 to 5 years) is recognition of this. The fact remains we do, from time to time, need to improve the standard. Don’t you agree?</p>
+<p><strong>Limited involvement in the consultation</strong><br>
+We’re open to suggestions as to how to get more people interested. Standards work is not ‘sexy’ and by its nature needs to be fairly dry and pedantic. I would argue that this lack of wider interest is an issue for IATI as a whole, not the current consultation. We send emails about upgrades to the Steering Committee, the TAG and the IATI Notifications list (which includes the SC, TAG and the main contact for each publisher). We also post notifications about the process on the website, on Discuss and on Twitter. We had a good response to the consultation calls we did for 2.01 so are repeating these for 2.02. I would hope that we reach the vast majority of the IATI community through at least one of these channels</p>
+<p><strong>We’re not addressing bigger issues</strong><br>
+We’re trying to improve reporting of humanitarian activities and results in this upgrade. I think those are fairly big issues.</p>
+<p><strong>Vision and strategy</strong><br>
+I think there is a long term vision for the development of the standard: making it fit for purpose for all financial and technical resource flows relating to humanitarian aid and development cooperation. Some of this work has started (private sector flows, humanitarian aid, results) and others are in a longer term pipeline (South South Cooperation).</p>
+<p><strong>We’re not addressing outreach to new publishers and users, and data quality</strong><br>
+These are important issues - and with our limited resources the tech team and Secretariat are attempting to address these – but how can upgrades help? Adding mandatory fields in 2.01 is the kind of thing the standard can do to improve data quality.</p>
+<p><strong>It’s  too technical and too detailed</strong><br>
+That is the nature of this standard. There are different approaches to standards – such as the very user-friendly Humanitarian Exchange Language. I am not sure there would be appetite for the entire standard to be completely engineered into a less technical and less detailed schema.</p>
+<p><strong>Insufficient time on guidance</strong><br>
+We can always improve our guidance and we welcome more help on this. Guidance in most instances is not tied to upgrades and can be improved at any time (provided that it does not alter the formal meaning of the standard).</p>
+<p><strong>Results</strong><br>
+We have been talking about results for a long time. There was a very constructive session at the last TAG. And we are currently consulting on how best to improve results reporting. This consultation is ongoing.</p>
+<p><strong>New optional elements will become “less optional”</strong><br>
+The only way an element can become mandatory is through an integer upgrade in which wide ranging consent is required. It’s a fairly democratic process, I think.</p>
+          <p><a href="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/5</link>
+        <pubDate>Fri, 09 Oct 2015 13:33:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-333-5</guid>
+        <source url="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333.rss">Reflecting on the upgrade process</source>
+      </item>
+      <item>
+        <title>Reflecting on the upgrade process</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Some additional observations on the upgrade process from the UK NGO perspective:</p>
+<p>Refining and communicating a vision and strategy for the development of the IATI data standard would be useful. Upgrades can then be framed  in that context, and publishers and users can clearly see that the changes are contributing towards a movement towards making the Standard better. I think that this context or reference point is missing from the upgrade process at the moment which makes it confusing to engage with.</p>
+<p>Perhaps there is a need for a slight change to the governance structure to guide the technical development of the IATI data standard. For example, the ISO has an elected Technical Management Board that’s small (15 members) but representative of all stakeholders <a href="http://www.iso.org/iso/home/standards_development/governance_of_technical_work.htm" rel="nofollow noopener">http://www.iso.org/iso/home/standards_development/governance_of_technical_work.htm</a>. The TMB helps to set and monitors the progress of technical committees (I guess the equivalent of the TAG working groups) and reports back to the wider ISO Council of members. My vision is that a similar elected TMB for IATI would help to streamline decision-making but also make it more representative and accountable. I think we all feel that the TAG is too big to make decisions effectively, which means that the committed few end up doing most of the work. It would also help to better define the TAG as for example a community of practice that advises the TMB through the working groups and is reflected in the TMB members.</p>
+<p>I think it would be useful to better communicate the cycle for the upgrade process which details everything from collecting proposals to tool upgrades, and to communicate that there will be a set amount of decimal and integer upgrades in one time period, for example 5 years. As Rolf mentioned, in NGO-land, we’re just getting to grips with 2.01 through AidStream, some 9 months after the introduction of this upgrade. To start talking about 2.02 and ‘optional’ fields is too soon, and the feedback we are hearing is of publishers disengaging because the Standard is perceived as changing too quickly and getting more complicated to implement.</p>
+<p>Proposed changes to the Standard might benefit from being assessed/ranked against specific criteria (aligned with the vision/strategy), for example better usability for target users, rather than lumped together. There were 30 proposals in total for 2.02, many of which were held over from previous upgrades, and some had already been implemented but still included. If they had been ranked or even categorised by beneficiary user, for example donors, it would have made it much quicker to go through, and hopefully improve engagement outside the stalwart few who regularly comment.</p>
+<p>A Code of Conduct for those engaging in technical discussions and decision-making might be useful (again see ISO for this: <a href="http://www.iso.org/iso/codes_of_conduct.pdf" rel="nofollow noopener">http://www.iso.org/iso/codes_of_conduct.pdf</a>) in order to make sure all voices are heard.</p>
+<p>I hope this is also constructive and useful feedback.</p>
+          <p><a href="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/4</link>
+        <pubDate>Wed, 07 Oct 2015 13:32:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-333-4</guid>
+        <source url="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333.rss">Reflecting on the upgrade process</source>
+      </item>
+      <item>
+        <title>Reflecting on the upgrade process</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>I will be on the call on Monday, yes!</p>
+          <p><a href="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/3</link>
+        <pubDate>Wed, 07 Oct 2015 11:35:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-333-3</guid>
+        <source url="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333.rss">Reflecting on the upgrade process</source>
+      </item>
+      <item>
+        <title>Reflecting on the upgrade process</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Rolf, I think you have raised some very valid points here. I agree that upgrades should be considered for the value they add to the community, but also for the impact they may have on take-up.</p>
+<p>Although decimal upgrades are non-mandatory, we should also look at impact.</p>
+<p>Are you able to participate in any of the phone calls that the technical team are organising?</p>
+          <p><a href="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/2</link>
+        <pubDate>Tue, 06 Oct 2015 18:58:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-333-2</guid>
+        <source url="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333.rss">Reflecting on the upgrade process</source>
+      </item>
+      <item>
+        <title>Reflecting on the upgrade process</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>Today I spent some time going over the proposals for version 2.02. And I’m a bit ambivalent about it:</p>
+<p>On the one hand it’s good to fix a few things, and keep the standard moving. People run into problems and come up with fixes for them.</p>
+<p>On the other hand, there seems to be limited involvement in the consultation. With risks: we’re solving some problems for a few people, but we’re not addressing the bigger issues of outreach to new publishers and users, and data quality.</p>
+<ul>
+<li>It’s hard for anyone who is “just doing IATI” to understand the proposals or offer meaningful feedback: it’s too technical and too detailed.</li>
+<li>It doesn’t offer time or space for more profound technical and guidance issues in the standard. Recommendations on how to fill certain fields (e.g. flow type) differ depending on who you ask.</li>
+<li>It makes the landscape more complicated for users and developers. AidStream has only just been updated for 2.01, the CSV convertor is behind, and Mark built a script to <em>downgrade</em> 2.01 files to 1.05 in order to keep working with tools.</li>
+</ul>
+<p>I think it will be hard to keep mixing the use cases, outreach and technical modifications. We’re missing things, for instance in results:</p>
+<ul>
+<li>A lot of the NGOs that we work with want to publish qualitative results. It’s still a use case to be explored, so there are no technical proposals, and so it’s not in 2.02.</li>
+<li>At the same time, there are fixes to make the quantitative results more usable, but without a long-term vision of where it should lead to.</li>
+<li>Examples around results are usually for outputs, whereas many NGOs (and donors) want to manage on outcomes and impacts, or different types of theory of change, especially in lobby and advocacy.</li>
+</ul>
+<p>There is a real risk the extra “optional” elements in the standard quickly turn into “less optional” requirements from donors. NGOs that didn’t embrace IATI because of its potential are looking at these changes as “extra burden”.</p>
+<p>So… who are we actually making happy with the current proposals for version 2.02?</p>
+<ul>
+<li>Should we have an active “experimental” branch for opt-in front-runners to experiment with extensions to the standard before they become official part of the standard?</li>
+<li>Can we have an upgrade process where we first have a round of looking at use cases (added value) and then have a round of (very technical) proposals to adapt the standard? A stepping stone from strategy and vision to technical changes, and a way to build guidance how to use the standard as part of the process.</li>
+</ul>
+<p>I hope it’s a constructive contribution.</p>
+          <p><a href="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/1</link>
+        <pubDate>Tue, 06 Oct 2015 17:02:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-333-1</guid>
+        <source url="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333.rss">Reflecting on the upgrade process</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</title>
+    <link>https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261</link>
+    <description>IATI has secured a new hosting arrangement for the IATI Registry to improve the experience for users. Preparations are now underway for the switchover to our new CKAN provider, [Derilinx](https://derilinx.com/) over the next few weeks.
+
+In order to complete the migration, the Registry will need to be put into read-only mode from 09:00 (UK time) on Friday 23rd March to enable a safe transition of the underlying database. Therefore, users will not be able to add new or edit existing dataset or user records. The metadata for datasets updated during the migration period will also not be updated until after the switchover.
+
+We anticipate the switch to be complete by 18:00 (UK time) on Monday 27 March, when full access to the Registry will be restored.  After the switch, the website&#39;s appearance will remain the same but users should experience a more stable, consistent service.
+
+In accordance with information security best practice, we would ask users to consider changing their registry password after the switchover.</description>
+    
+    <lastBuildDate>Wed, 25 Apr 2018 12:35:26 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Better late than never, I thought it worth mentioning here that the www is now forcibly stripped, so all requests to <a href="https://www.iatiregistry.org">https://www.iatiregistry.org</a> are redirected to <a href="https://iatiregistry.org">https://iatiregistry.org</a></p>
+<p>If you have an application that uses the IATI Registry API (e.g. for updating your IATI data) it’s possible (though unlikely) that it may have been affected by this change. It may be prudent to check everything’s working as expected – particularly when writing to the registry.</p>
+<p>The <a href="https://github.com/IATI/IATI-Datastore/pull/307">IATI Datastore recently ran into this issue</a>, which is how it came to light.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/6</link>
+        <pubDate>Wed, 25 Apr 2018 12:35:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1261-6</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261.rss">IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</source>
+      </item>
+      <item>
+        <title>IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Great – thanks <a class="mention" href="/u/petyakangalova">@petyakangalova</a>!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/5</link>
+        <pubDate>Wed, 28 Mar 2018 11:38:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1261-5</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261.rss">IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</source>
+      </item>
+      <item>
+        <title>IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, the transition has been completed and the IATI Registry is now back  to writeable access.The Github repository is located <a href="https://github.com/IATI/ckanext-iati">here.</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/4</link>
+        <pubDate>Wed, 28 Mar 2018 09:57:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1261-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261.rss">IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</source>
+      </item>
+      <item>
+        <title>IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/dalepotter">@dalepotter</a>,</p>
+<p>Sorry to hear this was a more painful process than expected.</p>
+<p>Can you confirm this has been completed now / the registry is now writeable? I assume so (given the maintenance period has passed, and the maintenance notice has disappeared).</p>
+<p>Has the github repository moved, too? <a href="https://github.com/IATI/ckanext-iati">The version here</a> still has the maintenance notice. If it has, could you share the new location?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/3</link>
+        <pubDate>Wed, 28 Mar 2018 09:19:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1261-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261.rss">IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</source>
+      </item>
+      <item>
+        <title>IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Due to issues beyond our control - primarily due to problems with the database information initially provided - the migration is overrunning and is now due to be completed by the end of tomorrow (Tuesday 27 March).</p>
+<p>During this time, the Registry will continue to be in read-only mode and users may experience unexpected errors if trying to undertake tasks that attempt to write data to the database.</p>
+<p>On behalf of the IATI team, please accept our sincere apologies for this extended loss of functionality. Together with our new suppliers, we are working hard to complete the migration given these unexpected difficulties.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/2</link>
+        <pubDate>Mon, 26 Mar 2018 16:41:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1261-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261.rss">IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</source>
+      </item>
+      <item>
+        <title>IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>IATI has secured a new hosting arrangement for the IATI Registry to improve the experience for users. Preparations are now underway for the switchover to our new CKAN provider, <a href="https://derilinx.com/">Derilinx</a> over the next few weeks.</p>
+<p>In order to complete the migration, the Registry will need to be put into read-only mode from 09:00 (UK time) on Friday 23rd March to enable a safe transition of the underlying database. Therefore, users will not be able to add new or edit existing dataset or user records. The metadata for datasets updated during the migration period will also not be updated until after the switchover.</p>
+<p>We anticipate the switch to be complete by 18:00 (UK time) on Monday 27 March, when full access to the Registry will be restored.  After the switch, the website’s appearance will remain the same but users should experience a more stable, consistent service.</p>
+<p>In accordance with information security best practice, we would ask users to consider changing their registry password after the switchover.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261/1</link>
+        <pubDate>Fri, 16 Mar 2018 14:45:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1261-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-migration-read-only-access-friday-23-tuesday-27-march/1261.rss">IATI Registry migration: Read-only access (Friday 23 - Tuesday 27 March)</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Standards Day Proposal: Accommodating non-statistical, secondary sectors</title>
+    <link>https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753</link>
+    <description># Standards Day Proposal: Accommodating non-statistical, secondary sectors
+
+### Key Facts
+
+---
+* Proposal Authors: Open Ag Funding Partnership
+* Standard change type: schema (and guidelines indirectly)
+* Elements affected: `iati-activities/iati-activity/sector`
+* Change Type: backwardly compatible
+* Proposed IATI Version: 2.03
+* Issues addressed:
+  * non-statistical activity classification
+  * activity-search
+  * SDGs
+---
+
+### TL;DR
+
+Let&#39;s add an `@aggregation-status` attribute to the `iati-activity/sector` element so that we can put in tags for discovery, categorise in a non-statistical way, and make implementing the SDGs more straightforward.
+
+&gt; Please note that this proposal has arisen from discussions that have taken place *at the TAG* - we came to the TAG with the aim of starting discussions around this topic, and evangelising our own user needs. Here, we&#39;ve found that the humanitarian sector, and publishers trying to incorporate the SDGs into their data have similar concerns, and so the following proposal has been put together for consideration.
+
+***This is not about changing, or replacing the OECD DAC CRS Purpose Codes!***
+
+***This isn&#39;t the only way of addressing the user needs below, and we&#39;re open to the other options!***
+
+## The user needs
+
+#### 1. Activity search
+
+The proposed change *is not sector specific*, but informed by a sector-specific use case. Let&#39;s consider this, and some other use cases:
+
+* As agricultural users and publishers of IATI we want to make agricultural investment data more findable, without making IATI less usable or clear, and with the minimum impact on the standard, to facilitate and promote more agricultural publication and data use.
+
+Now let&#39;s abstract this:
+
+* As a sector-specific user (humanitarian, health, nutrition, education, etc.), I want a way of finding relevant IATI activities which are categorised to a level of detail which fits my sector&#39;s interests, so that I can access and use investment data which is relevant to it.
+
+#### 2. Non-statistical / SDG classification
+
+&gt; **Proviso from the author**: I&#39;m not an SDG expert, but I have gotten the impression that others are asking similar questions about classification, and I hope this section starts a conversation at least.
+
+Another potential scenario is that a publisher wants to associate their activity with various SDG goals, but that there is no sensible way to allocate percentages, because the SDGs aren&#39;t mutually exclusive, and one activity might contain interventions which simultaneously address multiple goals.
+
+In this instance, it would still be valuable for data users to know that an activity is relevant to an SDG goal, and then know to look at that activity&#39;s **transactions** for statistical analysis of the goals\* (as the SDG goals could be used there also) , or **results** for analysis of the activity&#39;s outputs relative to the SDG indicators.
+
+## The current obstacle
+
+The sector element assumes that classification is *statistical*, i.e. that aggregation **works** with the sectors.
+
+For instance, if I publish an activity that spans two sectors, I am expected to include a percentage split, so that the funds can be split amongst the sectors and, for instance, a pie chart can be drawn. All of the codes within a given vocabulary must add up to 100%.
+
+This doesn&#39;t play nice with the use-cases outlined above.
+
+## The proposal
+
+To add an `@aggregation-status` attribute to secondary `sector` elements, which defaults to `true`, but when declared as `false` indicates that this instance of a sector should not be included in aggregations. This would work in the same way as the `result/@aggregation-status`.
+
+Rules and guidance should reflect that:
+
+1. This only applies to non-primary sectors
+2. This *absolutely does not* apply to DAC CRS purpose codes
+
+**Status Quo**
+
+```xml
+&lt;sector vocabulary=&quot;DAC&quot; code=&quot;31140&quot;&gt;
+    &lt;narrative&gt;Irrigation And Drainage&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary=&quot;99&quot; vocabulary-uri=&quot;http://example.vocabulary.com/tag-registry/&quot; code=&quot;c_10967&quot; percentage=&quot;40&quot;&gt;
+    &lt;narrative xml:lang=&quot;en&quot;&gt;food security&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary=&quot;99&quot; vocabulary-uri=&quot;http://example.vocabulary.com/tag-registry/&quot; code=&quot;c_37836&quot; percentage=&quot;30&quot;&gt;
+    &lt;narrative xml:lang=&quot;en&quot;&gt;capacity building&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary=&quot;99&quot; vocabulary-uri=&quot;http://example.vocabulary.com/tag-registry/&quot; code=&quot;c_24935&quot; percentage=&quot;30&quot;&gt;
+    &lt;narrative xml:lang=&quot;en&quot;&gt;off season cultivation&lt;/narrative&gt;
+&lt;/sector&gt;
+```
+
+**Proposed**
+
+```xml
+&lt;sector vocabulary=&quot;DAC&quot; code=&quot;31140&quot;&gt;
+    &lt;narrative&gt;Irrigation And Drainage&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary=&quot;99&quot; vocabulary-uri=&quot;http://example.vocabulary.com/tag-registry/&quot; code=&quot;c_10967&quot; aggregation-status=&quot;false&quot;&gt;
+    &lt;narrative xml:lang=&quot;en&quot;&gt;food security&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary=&quot;99&quot; vocabulary-uri=&quot;http://example.vocabulary.com/tag-registry/&quot; code=&quot;c_37836&quot; aggregation-status=&quot;false&quot;&gt;
+    &lt;narrative xml:lang=&quot;en&quot;&gt;capacity building&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary=&quot;99&quot; vocabulary-uri=&quot;http://example.vocabulary.com/tag-registry/&quot; code=&quot;c_24935&quot; aggregation-status=&quot;false&quot;&gt;
+    &lt;narrative xml:lang=&quot;en&quot;&gt;off season cultivation&lt;/narrative&gt;
+&lt;/sector&gt;
+
+```
+
+## Arguments against
+
+#### This changes the way people will think about sectors
+
+**Outline**: tool builders and data users currently assume that any sector elements of the same vocabulary will add up to 100%. This change would defy that assumption and cause inconvenience or confusion.
+
+**Initial response**: most changes which would allow for above use cases would require some changes which would impact current users. This is really an issue of priorities.
+
+#### Moral hazard for publishers in their primary sector code?
+
+**Outline**: The schema doesn&#39;t allow for one rule to be applied to a primary sector code and another to a secondary one, so this change might allow publishers to put this aggregation-status flag into their DAC purpose codes, allowing for worse quality data.
+
+**Initial Response**: The schema already allows for bad or misleading data, and we have to assume that publishers adhere to rules and guidelines, we shouldn&#39;t constrain the capability of all publishers because we don&#39;t trust some of them. Instead, we should introduce more robust validation and more immediate feedback mechanisms.
+
+## Alternatives considered or suggested
+
+* Add a new element i.e. `sector-tag` which uses the same vocabularies as `&lt;sector&gt;`, but acts as a content tag
+
+This is potentially a more pure solution, but requires the addition of a new element to the standard, for which there is little appetite, and which would require data users to deal with another element instead of just another attribute.
+
+This isn&#39;t a major drawback though, so this option could serve as an alternative if there is consensus that the solution proposed above is untenable.
+
+* Using policy-marker
+
+This would be misleading for several of the anticipated usecases. Particularly for classifications which deal with concepts like crops, natural disasters, or much sector purposes which can&#39;t be summed, but share a codelist.
+
+## In Sum
+
+Our aim is to start a conversation around this, and we&#39;re not wedded to the proposed fix. We want it to be clear that there are legitimate needs for a non-statistical classification which links out to codelists.</description>
+    
+    <lastBuildDate>Mon, 13 Mar 2017 08:59:00 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Standards Day Proposal: Accommodating non-statistical, secondary sectors</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I think you’re right to link these up <a class="mention" href="/u/herman">@Herman</a></p>
+<p>There’s also another post I wrote, in terms of RO vocabularies: <a href="//discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576">Clarification: multiple RO Sector Vocabularies</a> that could be linked</p>
+<p>To make this practical, is it worth us having a dedicated “topic” for sector-codes, to enable us to pull things together?  <a class="mention" href="/u/wendy">@Wendy</a> <a class="mention" href="/u/dalepotter">@dalepotter</a> <a class="mention" href="/u/johnadams">@JohnAdams</a> - can you help?</p>
+          <p><a href="https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753/3</link>
+        <pubDate>Mon, 13 Mar 2017 08:59:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-753-3</guid>
+        <source url="https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753.rss">Standards Day Proposal: Accommodating non-statistical, secondary sectors</source>
+      </item>
+      <item>
+        <title>Standards Day Proposal: Accommodating non-statistical, secondary sectors</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Is there a risk that this proposal and the proposal about the use of sector and country codes on the transaction level (<a href="//discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/4">Providing sector/country codes at activity and transaction level - enable both?</a>) migth interfere whith each other?</p>
+          <p><a href="https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753/2</link>
+        <pubDate>Sat, 11 Mar 2017 13:36:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-753-2</guid>
+        <source url="https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753.rss">Standards Day Proposal: Accommodating non-statistical, secondary sectors</source>
+      </item>
+      <item>
+        <title>Standards Day Proposal: Accommodating non-statistical, secondary sectors</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <h1>Standards Day Proposal: Accommodating non-statistical, secondary sectors</h1>
+<h3>Key Facts</h3>
+<hr>
+<ul>
+<li>Proposal Authors: Open Ag Funding Partnership</li>
+<li>Standard change type: schema (and guidelines indirectly)</li>
+<li>Elements affected: <code>iati-activities/iati-activity/sector</code>
+</li>
+<li>Change Type: backwardly compatible</li>
+<li>Proposed IATI Version: 2.03</li>
+<li>Issues addressed:
+<ul>
+<li>non-statistical activity classification</li>
+<li>activity-search</li>
+<li>SDGs</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>TL;DR</h3>
+<p>Let’s add an <code>@aggregation-status</code> attribute to the <code>iati-activity/sector</code> element so that we can put in tags for discovery, categorise in a non-statistical way, and make implementing the SDGs more straightforward.</p>
+<blockquote>
+<p>Please note that this proposal has arisen from discussions that have taken place <em>at the TAG</em> - we came to the TAG with the aim of starting discussions around this topic, and evangelising our own user needs. Here, we’ve found that the humanitarian sector, and publishers trying to incorporate the SDGs into their data have similar concerns, and so the following proposal has been put together for consideration.</p>
+</blockquote>
+<p><em><strong>This is not about changing, or replacing the OECD DAC CRS Purpose Codes!</strong></em></p>
+<p><em><strong>This isn’t the only way of addressing the user needs below, and we’re open to the other options!</strong></em></p>
+<h2>The user needs</h2>
+<h4>1. Activity search</h4>
+<p>The proposed change <em>is not sector specific</em>, but informed by a sector-specific use case. Let’s consider this, and some other use cases:</p>
+<ul>
+<li>As agricultural users and publishers of IATI we want to make agricultural investment data more findable, without making IATI less usable or clear, and with the minimum impact on the standard, to facilitate and promote more agricultural publication and data use.</li>
+</ul>
+<p>Now let’s abstract this:</p>
+<ul>
+<li>As a sector-specific user (humanitarian, health, nutrition, education, etc.), I want a way of finding relevant IATI activities which are categorised to a level of detail which fits my sector’s interests, so that I can access and use investment data which is relevant to it.</li>
+</ul>
+<h4>2. Non-statistical / SDG classification</h4>
+<blockquote>
+<p><strong>Proviso from the author</strong>: I’m not an SDG expert, but I have gotten the impression that others are asking similar questions about classification, and I hope this section starts a conversation at least.</p>
+</blockquote>
+<p>Another potential scenario is that a publisher wants to associate their activity with various SDG goals, but that there is no sensible way to allocate percentages, because the SDGs aren’t mutually exclusive, and one activity might contain interventions which simultaneously address multiple goals.</p>
+<p>In this instance, it would still be valuable for data users to know that an activity is relevant to an SDG goal, and then know to look at that activity’s <strong>transactions</strong> for statistical analysis of the goals* (as the SDG goals could be used there also) , or <strong>results</strong> for analysis of the activity’s outputs relative to the SDG indicators.</p>
+<h2>The current obstacle</h2>
+<p>The sector element assumes that classification is <em>statistical</em>, i.e. that aggregation <strong>works</strong> with the sectors.</p>
+<p>For instance, if I publish an activity that spans two sectors, I am expected to include a percentage split, so that the funds can be split amongst the sectors and, for instance, a pie chart can be drawn. All of the codes within a given vocabulary must add up to 100%.</p>
+<p>This doesn’t play nice with the use-cases outlined above.</p>
+<h2>The proposal</h2>
+<p>To add an <code>@aggregation-status</code> attribute to secondary <code>sector</code> elements, which defaults to <code>true</code>, but when declared as <code>false</code> indicates that this instance of a sector should not be included in aggregations. This would work in the same way as the <code>result/@aggregation-status</code>.</p>
+<p>Rules and guidance should reflect that:</p>
+<ol>
+<li>This only applies to non-primary sectors</li>
+<li>This <em>absolutely does not</em> apply to DAC CRS purpose codes</li>
+</ol>
+<p><strong>Status Quo</strong></p>
+<pre><code class="lang-xml">&lt;sector vocabulary="DAC" code="31140"&gt;
+    &lt;narrative&gt;Irrigation And Drainage&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_10967" percentage="40"&gt;
+    &lt;narrative xml:lang="en"&gt;food security&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_37836" percentage="30"&gt;
+    &lt;narrative xml:lang="en"&gt;capacity building&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_24935" percentage="30"&gt;
+    &lt;narrative xml:lang="en"&gt;off season cultivation&lt;/narrative&gt;
+&lt;/sector&gt;
+</code></pre>
+<p><strong>Proposed</strong></p>
+<pre><code class="lang-xml">&lt;sector vocabulary="DAC" code="31140"&gt;
+    &lt;narrative&gt;Irrigation And Drainage&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_10967" aggregation-status="false"&gt;
+    &lt;narrative xml:lang="en"&gt;food security&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_37836" aggregation-status="false"&gt;
+    &lt;narrative xml:lang="en"&gt;capacity building&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_24935" aggregation-status="false"&gt;
+    &lt;narrative xml:lang="en"&gt;off season cultivation&lt;/narrative&gt;
+&lt;/sector&gt;
+
+</code></pre>
+<h2>Arguments against</h2>
+<h4>This changes the way people will think about sectors</h4>
+<p><strong>Outline</strong>: tool builders and data users currently assume that any sector elements of the same vocabulary will add up to 100%. This change would defy that assumption and cause inconvenience or confusion.</p>
+<p><strong>Initial response</strong>: most changes which would allow for above use cases would require some changes which would impact current users. This is really an issue of priorities.</p>
+<h4>Moral hazard for publishers in their primary sector code?</h4>
+<p><strong>Outline</strong>: The schema doesn’t allow for one rule to be applied to a primary sector code and another to a secondary one, so this change might allow publishers to put this aggregation-status flag into their DAC purpose codes, allowing for worse quality data.</p>
+<p><strong>Initial Response</strong>: The schema already allows for bad or misleading data, and we have to assume that publishers adhere to rules and guidelines, we shouldn’t constrain the capability of all publishers because we don’t trust some of them. Instead, we should introduce more robust validation and more immediate feedback mechanisms.</p>
+<h2>Alternatives considered or suggested</h2>
+<ul>
+<li>Add a new element i.e. <code>sector-tag</code> which uses the same vocabularies as <code>&lt;sector&gt;</code>, but acts as a content tag</li>
+</ul>
+<p>This is potentially a more pure solution, but requires the addition of a new element to the standard, for which there is little appetite, and which would require data users to deal with another element instead of just another attribute.</p>
+<p>This isn’t a major drawback though, so this option could serve as an alternative if there is consensus that the solution proposed above is untenable.</p>
+<ul>
+<li>Using policy-marker</li>
+</ul>
+<p>This would be misleading for several of the anticipated usecases. Particularly for classifications which deal with concepts like crops, natural disasters, or much sector purposes which can’t be summed, but share a codelist.</p>
+<h2>In Sum</h2>
+<p>Our aim is to start a conversation around this, and we’re not wedded to the proposed fix. We want it to be clear that there are legitimate needs for a non-statistical classification which links out to codelists.</p>
+          <p><a href="https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753/1</link>
+        <pubDate>Wed, 08 Mar 2017 16:10:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-753-1</guid>
+        <source url="https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753.rss">Standards Day Proposal: Accommodating non-statistical, secondary sectors</source>
+      </item>
+  </channel>
+</rss>

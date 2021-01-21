@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>New IATI Datastore API launched for testing</title>
+    <link>https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815</link>
+    <description>IATI’s new Datastore API is being launched for a month of public testing between **19 August and 18 September**, as announced in the technical team’s [last quarterly update](https://iatistandard.org/en/news/iati-technical-team-quarterly-update/).
+
+IATI’s [technical team](https://iatistandard.org/en/about/governance/who-runs-iati/technical-team/) and [Zimmerman and Zimmerman](https://www.zimmermanzimmerman.nl/), who are building the new Datastore, are calling on technical users to test the Datastore API and provide feedback.
+
+**Try new [Datastore API](https://test-datastore.iatistandard.org/api/) now. See [documentation](https://docs.oipa.nl/?version=latest) on how to use the API.**
+
+**About the new Datastore**
+
+The new IATI Datastore aims to offer a robust online data service, providing timely and standardised access to data published according to the IATI Standard. Initially, users can gain data on development and humanitarian resources and results through using the [Datastore’s API](https://test-datastore.iatistandard.org/api/). Users will also be able to download data from a new user-friendly Datastore Query Builder, which is due to be released shortly for testing.
+
+**What data can be accessed?**
+
+The new [IATI Datastore API](https://test-datastore.iatistandard.org/api/) provides data published by organisations who have used version 2 of the IATI Standard. This is following the decision to deprecate [version 1 by IATI members](https://iatistandard.org/en/news/notice-iati-standard-version-1-is-deprecated/), which was implemented last month.
+
+To help users access good quality data, the Datastore will not hold any data that does not adhere to the IATI Schema. The IATI Schema provides the exact order and format that publishers should provide their XML files in. More information about the Schema can be found on [IATI’s Reference site](http://reference.iatistandard.org/203/schema/).
+
+**Testing the new Datastore API (19 Aug - 18 Sept)**
+
+Users are invited to [test the API](https://test-datastore.iatistandard.org/api/) to build queries of selected IATI data and review the output of data from the Datastore. Specifically users are requested to:
+
+* check that they can filter the data by the elements/parameters they require;
+* review the content of the data that is returned to ensure it accurately matches the elements/parameters selected and,
+* check that the output they receive is usable and matches their expectations.
+
+When testing, please refer to the [Datastore API documentation](https://docs.oipa.nl/?version=latest) and [IATI Datastore – API mapping and examples](https://docs.google.com/document/d/1nTu1Jdg17toiQoemJT3R9YPwvAwCN1gpFnnL1R-lfHY/edit?usp=sharing), then provide your feedback on Github on the [IATI Datastore project](https://github.com/zimmerman-zimmerman/OIPA/projects/5). This will help the technical team and Zimmerman and Zimmerman more easily review feedback and, where applicable, convert issues directly into GitHub tickets to work on.
+
+**What will happen after the Datastore testing phase?**
+
+After the testing deadline of 18 September, the technical team and Zimmerman and Zimmerman will post an update about the collected feedback on IATI Discuss. They will also contact users individually if more information is needed, continue triaging issues and action changes where required.
+
+Based on the scope of the testing phase and its follow-up weeks, a date for the official launch of the Datastore will be set and the old Datastore will be phased out 6 months after this date.
+
+**Help to transition from using the old datastore to the new IATI Datastore**
+
+The technical team will be working to ensure that users can smoothly transition from using the old datastore to using the new IATI Datastore. They will:
+
+* provide a [mapping document with some examples](https://docs.google.com/document/d/1nTu1Jdg17toiQoemJT3R9YPwvAwCN1gpFnnL1R-lfHY/edit?usp=sharing) to help testing and migrating between Datastore versions
+* provide automated redirects from old to new datastore API calls for 6 months
+* publish API documentation and a User Manual
+* offer direct support from the technical team via email or one-to-one calls.
+
+Thanks in advance to IATI’s dedicated community who are able to support the testing phase of the Datastore. The technical team and Zimmerman and Zimmerman look forward to receiving your feedback. For any questions please email: [support@iatistandard.org](mailto:support@iatistandard.org).</description>
+    
+    <lastBuildDate>Fri, 30 Aug 2019 09:39:10 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>New IATI Datastore API launched for testing</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Wendy,</p>
+<p>Absolutely – understood. Hopefully this is useful as a temporary measure. Happy to take it down or redirect as soon as the official query builder goes live.</p>
+<p>The trouble with testing just the API is that most users will struggle to do so without a user interface. So this is a (quick and hacky) attempt to address that!</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/7</link>
+        <pubDate>Fri, 30 Aug 2019 09:39:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1815-7</guid>
+        <source url="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815.rss">New IATI Datastore API launched for testing</source>
+      </item>
+      <item>
+        <title>New IATI Datastore API launched for testing</title>
+        <dc:creator><![CDATA[WendyThomas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Andy</p>
+<p>Thanks for sharing your tool!</p>
+<p>The testing phase we’re in at present (through 18 September) is just for the API, and the Tech Team is getting lots of feedback on that via Github, which is what we and Zimmerman &amp; Zimmerman are focussing on now. The new Datastore query builder is imminent-- as soon as it is ready, we’ll be soft launching that for test—watch this space!</p>
+<p>Wendy</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/6</link>
+        <pubDate>Fri, 30 Aug 2019 09:25:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1815-6</guid>
+        <source url="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815.rss">New IATI Datastore API launched for testing</source>
+      </item>
+      <item>
+        <title>New IATI Datastore API launched for testing</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="1815" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_2.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Andy, thanks for thinking of us aid wonks not comfortable with an API. This will be useful while we wait for the new datastore’s full query builder.</p>
+</blockquote>
+</aside>
+<p>Thanks Yohanna – yes, exactly right. This was just intended as a stop-gap until the new query builder goes live.</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/5</link>
+        <pubDate>Thu, 29 Aug 2019 16:35:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1815-5</guid>
+        <source url="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815.rss">New IATI Datastore API launched for testing</source>
+      </item>
+      <item>
+        <title>New IATI Datastore API launched for testing</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Andy, thanks for thinking of us aid wonks not comfortable with an API. This will be useful while we wait for the new datastore’s full query builder.</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/4</link>
+        <pubDate>Thu, 29 Aug 2019 14:20:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1815-4</guid>
+        <source url="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815.rss">New IATI Datastore API launched for testing</source>
+      </item>
+      <item>
+        <title>New IATI Datastore API launched for testing</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I just presented this on the community call – I’ve had a go at repurposing the old datastore query builder to work with the new datastore. It’s available here:</p>
+<p><a href="https://datastore-query-builder.codeforiati.org/" rel="nofollow noopener">https://datastore-query-builder.codeforiati.org</a></p>
+<p>Note that this is quite rough and ready, and by no means feature-complete. The new datastore offers <strong>lots</strong> more filters that are not included here. But hopefully this is still helpful for users who want to test and provide feedback on the new datastore, but are maybe not comfortable with an API.</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/3</link>
+        <pubDate>Thu, 29 Aug 2019 14:10:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1815-3</guid>
+        <source url="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815.rss">New IATI Datastore API launched for testing</source>
+      </item>
+      <item>
+        <title>New IATI Datastore API launched for testing</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p>To clarify the above a tad bit further: this soft-launch, for the time being, offers API access only (like the existing datastore’s) so you will get the raw xml/json/csv etc formatted response.</p>
+<p>A more user friendly interface / query builder will follow, watch this Discuss forum for more updates!</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/2</link>
+        <pubDate>Mon, 19 Aug 2019 14:42:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1815-2</guid>
+        <source url="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815.rss">New IATI Datastore API launched for testing</source>
+      </item>
+      <item>
+        <title>New IATI Datastore API launched for testing</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>IATI’s new Datastore API is being launched for a month of public testing between <strong>19 August and 18 September</strong>, as announced in the technical team’s <a href="https://iatistandard.org/en/news/iati-technical-team-quarterly-update/" rel="nofollow noopener">last quarterly update</a>.</p>
+<p>IATI’s <a href="https://iatistandard.org/en/about/governance/who-runs-iati/technical-team/" rel="nofollow noopener">technical team</a> and <a href="https://www.zimmermanzimmerman.nl/" rel="nofollow noopener">Zimmerman and Zimmerman</a>, who are building the new Datastore, are calling on technical users to test the Datastore API and provide feedback.</p>
+<p><strong>Try new <a href="https://test-datastore.iatistandard.org/api/" rel="nofollow noopener">Datastore API</a> now. See <a href="https://docs.oipa.nl/?version=latest" rel="nofollow noopener">documentation</a> on how to use the API.</strong></p>
+<p><strong>About the new Datastore</strong></p>
+<p>The new IATI Datastore aims to offer a robust online data service, providing timely and standardised access to data published according to the IATI Standard. Initially, users can gain data on development and humanitarian resources and results through using the <a href="https://test-datastore.iatistandard.org/api/" rel="nofollow noopener">Datastore’s API</a>. Users will also be able to download data from a new user-friendly Datastore Query Builder, which is due to be released shortly for testing.</p>
+<p><strong>What data can be accessed?</strong></p>
+<p>The new <a href="https://test-datastore.iatistandard.org/api/" rel="nofollow noopener">IATI Datastore API</a> provides data published by organisations who have used version 2 of the IATI Standard. This is following the decision to deprecate <a href="https://iatistandard.org/en/news/notice-iati-standard-version-1-is-deprecated/" rel="nofollow noopener">version 1 by IATI members</a>, which was implemented last month.</p>
+<p>To help users access good quality data, the Datastore will not hold any data that does not adhere to the IATI Schema. The IATI Schema provides the exact order and format that publishers should provide their XML files in. More information about the Schema can be found on <a href="http://reference.iatistandard.org/203/schema/" rel="nofollow noopener">IATI’s Reference site</a>.</p>
+<p><strong>Testing the new Datastore API (19 Aug - 18 Sept)</strong></p>
+<p>Users are invited to <a href="https://test-datastore.iatistandard.org/api/" rel="nofollow noopener">test the API</a> to build queries of selected IATI data and review the output of data from the Datastore. Specifically users are requested to:</p>
+<ul>
+<li>check that they can filter the data by the elements/parameters they require;</li>
+<li>review the content of the data that is returned to ensure it accurately matches the elements/parameters selected and,</li>
+<li>check that the output they receive is usable and matches their expectations.</li>
+</ul>
+<p>When testing, please refer to the <a href="https://docs.oipa.nl/?version=latest" rel="nofollow noopener">Datastore API documentation</a> and <a href="https://docs.google.com/document/d/1nTu1Jdg17toiQoemJT3R9YPwvAwCN1gpFnnL1R-lfHY/edit?usp=sharing" rel="nofollow noopener">IATI Datastore – API mapping and examples</a>, then provide your feedback on Github on the <a href="https://github.com/zimmerman-zimmerman/OIPA/projects/5" rel="nofollow noopener">IATI Datastore project</a>. This will help the technical team and Zimmerman and Zimmerman more easily review feedback and, where applicable, convert issues directly into GitHub tickets to work on.</p>
+<p><strong>What will happen after the Datastore testing phase?</strong></p>
+<p>After the testing deadline of 18 September, the technical team and Zimmerman and Zimmerman will post an update about the collected feedback on IATI Discuss. They will also contact users individually if more information is needed, continue triaging issues and action changes where required.</p>
+<p>Based on the scope of the testing phase and its follow-up weeks, a date for the official launch of the Datastore will be set and the old Datastore will be phased out 6 months after this date.</p>
+<p><strong>Help to transition from using the old datastore to the new IATI Datastore</strong></p>
+<p>The technical team will be working to ensure that users can smoothly transition from using the old datastore to using the new IATI Datastore. They will:</p>
+<ul>
+<li>provide a <a href="https://docs.google.com/document/d/1nTu1Jdg17toiQoemJT3R9YPwvAwCN1gpFnnL1R-lfHY/edit?usp=sharing" rel="nofollow noopener">mapping document with some examples</a> to help testing and migrating between Datastore versions</li>
+<li>provide automated redirects from old to new datastore API calls for 6 months</li>
+<li>publish API documentation and a User Manual</li>
+<li>offer direct support from the technical team via email or one-to-one calls.</li>
+</ul>
+<p>Thanks in advance to IATI’s dedicated community who are able to support the testing phase of the Datastore. The technical team and Zimmerman and Zimmerman look forward to receiving your feedback. For any questions please email: <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815/1</link>
+        <pubDate>Mon, 19 Aug 2019 13:46:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1815-1</guid>
+        <source url="https://discuss.iatistandard.org/t/new-iati-datastore-api-launched-for-testing/1815.rss">New IATI Datastore API launched for testing</source>
+      </item>
+  </channel>
+</rss>

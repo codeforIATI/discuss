@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Modifications, Additions, Improvements - IATI Community Discussions</title>
+    <link>https://discuss.iatistandard.org/c/standard-management/modifications-additions-improvements/36</link>
+    <description>Topics in the &#39;Modifications, Additions, Improvements&#39; category Inbox for suggestions - post will be moved into appropriate upgrade forums as they are made. For instance, if a proposal would constitute a non-backwardly compatible change to the IATI standard, it would most likely be moved into the nearest Integer upgrade forum.</description>
+    
+      <lastBuildDate>Wed, 30 Oct 2019 15:01:30 +0000</lastBuildDate>
+      <atom:link href="https://discuss.iatistandard.org/c/standard-management/modifications-additions-improvements/36.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Add &quot;Reporting&quot; to Organisation Role codelist</title>
+          <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>While poking around the IATI Query Builder I noticed that the Organisation Role codelist does not contain “reporting”.</p>
+<p>Would it not make sense for this role to be coded like the other ones (ie funding, implementing, etc), enabling searches through the datastore? Does anyone remember why it was not included in the codelist from the beginning?</p>
+<p>Note that “Type of organisation” is already an attribute of the “reporting organisation” element.</p>
+<p>Organisation Role is a core codelist. Not sure if this would be a minor or major upgrade. <a href="http://reference.iatistandard.org/201/codelists/OrganisationRole/" rel="nofollow noopener">http://reference.iatistandard.org/201/codelists/OrganisationRole/</a></p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868</link>
+          <pubDate>Wed, 30 Oct 2019 15:01:30 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1868</guid>
+          <source url="https://discuss.iatistandard.org/t/add-reporting-to-organisation-role-codelist/1868.rss">Add &quot;Reporting&quot; to Organisation Role codelist</source>
+        </item>
+        <item>
+          <title>[Added] Minor v2.03 schema refactor, plus namespace bugfix</title>
+          <dc:creator><![CDATA[andylolz]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>A <a href="https://github.com/IATI/IATI-Schemas/pull/426" rel="nofollow noopener">pull request was sent/received</a> that makes changes to the version 2.03 schema. <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> <a href="https://github.com/IATI/IATI-Schemas/pull/426#issuecomment-489103690" rel="nofollow noopener">suggested</a> raising it with the community before they reach a decision, so that’s what I’m doing here.</p>
+<p>The <a href="https://github.com/IATI/IATI-Schemas/pull/426" rel="nofollow noopener">pull request in question</a> DRYs up the schema a bit, to move some currency-related code out of the activity and organisation schemas and into the common schema (used by both). This is consistent with other refactoring changes made at v2.03.</p>
+<p>It also fixes a minor bug related to custom namespaces. Java programmers may have run into this problem, since <a href="https://docs.oracle.com/javase/8/docs/technotes/tools/unix/xjc.html" rel="nofollow noopener">xjc</a> gets stuck as a result of this bug (<code>Unique Particle Attribution error</code>).</p>
+<p>If anyone objects to (or supports!) changing the v2.03 schema in this way, speak now! Thanks</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756</link>
+          <pubDate>Mon, 03 Jun 2019 15:55:21 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1756</guid>
+          <source url="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756.rss">[Added] Minor v2.03 schema refactor, plus namespace bugfix</source>
+        </item>
+        <item>
+          <title>(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</title>
+          <dc:creator><![CDATA[amys]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p><strong>Issue</strong></p>
+<p>I think we implemented two rules at the v2.03 upgrade which are not backwards compatible, as v2.02 and previous data may not validate against the v2.03 ruleset. This may have been missed as the rules were added as the relevant <a href="http://reference.iatistandard.org/codelists/IndicatorMeasure/">Indicator Measure</a> codelist transitioned from embedded to non-embedded.</p>
+<p>The Rules are:</p>
+<ul>
+<li>The <span class="mention">@value</span> <strong>must</strong> be omitted for qualitative measures</li>
+<li>The <span class="mention">@value</span> <strong>must</strong> be included for non-qualitative measures</li>
+<li>The <span class="mention">@value</span> should be a valid number for all non-qualitative measures</li>
+</ul>
+<p>And they are found in three places:</p>
+<ul>
+<li>iati-activities/iati-activity/result/indicator/baseline/<span class="mention">@value</span>
+</li>
+<li>iati-activities/iati-activity/result/indicator/period/target/<span class="mention">@value</span>
+</li>
+<li>iati-activities/iati-activity/result/indicator/period/actual/<span class="mention">@value</span>
+</li>
+</ul>
+<p>Measures are declared using the <span class="mention">@measure</span> attribute at indicator level. The ability to do was present at v1.04 onward. As the Indicator Measure codelist is now non-embedded all values are available for all versions of the Standard - this includes the new ‘qualitative’ measure.</p>
+<p>(See the <a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/49">Discuss post</a> for more information)</p>
+<p>This means that as of version 2.03,  publishers using an earlier version of the IATI Standard could report a qualitative measure and include an <span class="mention">@value</span>. Similarly, they could include a non-qualitative measure and not include an <span class="mention">@value</span>. Neither of these would be breaking a rule in IATI.</p>
+<p><strong>Solution</strong></p>
+<p>We propose that the two <strong><em>must</em></strong> statements added at v2.03 are to be changed to <strong><em>shoulds</em></strong>. This means they will be taken out of the Standard Ruleset and publishers’ data will not be checked against this in the new validator.</p>
+<p>These three now <em>should</em> statements are to be made <em>musts</em> at the next major upgrade (version 3.0.0). The proposal for this is <a href="https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733">here</a>.</p>
+<p><strong>Who would be affected?</strong></p>
+<p>No publisher will be disadvantaged by this change.</p>
+<p>Publishers who are obeying the rules as they currently are will not be affected. They will continue to be following the guidance provided by the IATI Standard. Publishers using an earlier version may be going against the guidance resent in v2.03. However, if they change their published data to v2.03 their files will still validate as they will not be breaking a rule.</p>
+<p><strong>Next Steps</strong></p>
+<p>The relevant GitHub changes to the Standard can be seen <a href="https://github.com/IATI/IATI-Schemas/pull/429">here</a>. The current discussion and PR for the rulesets can be found <a href="https://github.com/IATI/IATI-Rulesets/issues/189">here</a>.</p>
+<p>If there is no objection to this bug fix within 7 days, the IATI Technical Team will implement the changes. This only applies to version 2.03 of the IATI Standard. If objections are raised, we will go into consultation about how this issue should be resolved.</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731</link>
+          <pubDate>Tue, 30 Apr 2019 09:54:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1731</guid>
+          <source url="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731.rss">(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</source>
+        </item>
+        <item>
+          <title>Calls for global register of debt - with a few tweaks IATI could do this</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>See article here: <a href="https://www.theguardian.com/business/2019/apr/28/g20-must-heed-global-debt-warnings-to-stave-off-another-crisis" rel="nofollow noopener">https://www.theguardian.com/business/2019/apr/28/g20-must-heed-global-debt-warnings-to-stave-off-another-crisis</a> and original brief here: <a href="https://jubileedebt.org.uk/report/transparency-of-loans-to-governments-the-publics-right-to-know-about-their-debts" rel="nofollow noopener">https://jubileedebt.org.uk/report/transparency-of-loans-to-governments-the-publics-right-to-know-about-their-debts</a></p>
+<p>With just a <a href="https://discuss.iatistandard.org/t/currency-conversion/413/11">few tweaks</a>, and some pro-active reaching out, IATI could easily provide the backbone of this registry (and already has a good chunk of the necessary data) - can we respond to this need?</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/calls-for-global-register-of-debt-with-a-few-tweaks-iati-could-do-this/1728">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/calls-for-global-register-of-debt-with-a-few-tweaks-iati-could-do-this/1728</link>
+          <pubDate>Mon, 29 Apr 2019 16:01:41 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1728</guid>
+          <source url="https://discuss.iatistandard.org/t/calls-for-global-register-of-debt-with-a-few-tweaks-iati-could-do-this/1728.rss">Calls for global register of debt - with a few tweaks IATI could do this</source>
+        </item>
+        <item>
+          <title>(Added) Rules for reporting multiple countries and regions - proposed bug fix</title>
+          <dc:creator><![CDATA[amys]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p><strong>Issue</strong></p>
+<p>In the activity standard and surrounding guidance it is unclear whether or not recipient-regions from different vocabularies are included within the 100%.</p>
+<p>For the example below:</p>
+<ul>
+<li>If the reported region vocabulary makes no difference, then the percentage total equals 150% which is invalid</li>
+<li>If the reported region vocabularies are treated separately. Then country + region percentages equals 100%, which is valid.</li>
+</ul>
+<p>&lt;recipient-country code=“AF” percentage=“50” /&gt;<br>
+&lt;recipient-region code=“489” vocabulary=“1” percentage=“50” /&gt;<br>
+&lt;recipient-region code=“A1” vocabulary=“99” percentage=“50” vocabulary-uri=“<a href="http://example.com/vocab.html">http://example.com/vocab.html</a>” /&gt;</p>
+<p>There’s been some discussion on GitHub about this already: <a href="https://github.com/IATI/IATI-Extra-Documentation/pull/516">https://github.com/IATI/IATI-Extra-Documentation/pull/516</a></p>
+<p>We propose that the latter option should be implemented as a bug fix.</p>
+<p><strong>Solution</strong><br>
+To make it clear that vocabularies can be used independently of each other, we have made text changes to the rules in the IATI activity standard, changed the guidance for recipient-region and recipient country and updated the overall geography guidance. These proposed changes can be seen on GitHub and are linked to the following issue:</p>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/544" target="_blank">github.com/IATI/IATI-Extra-Documentation</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/544" target="_blank">Unclear Country and Region rule/guidance</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2019-04-18" data-time="10:52:13" data-timezone="UTC">10:52AM - 18 Apr 19 UTC</span>
+      </div>
+
+        <div class="date">
+          closed <span class="discourse-local-date" data-format="ll" data-date="2019-05-07" data-time="16:03:14" data-timezone="UTC">04:03PM - 07 May 19 UTC</span>
+        </div>
+
+      <div class="user">
+        <a href="https://github.com/amy-silcock" target="_blank">
+          <img alt="amy-silcock" src="https://avatars1.githubusercontent.com/u/27764077?v=4" class="onebox-avatar-inline" width="20" height="20">
+          amy-silcock
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">The rules within the IATI Standard and the surrounding documentation are unclear and inconsistent whether or not publishers can map their...</p>
+</div>
+
+<div class="labels">
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">bug</span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><strong>Use cases:</strong><br>
+Organisations may need to report using different region vocabularies for different stakeholders. E.g. UN CEB requirements require publishing using the UN region codelist, and their DAC reporting requires use of the OECD DAC region codelist.</p>
+<p>Organisations may need to report using the OECD DAC region codelist as per their grant agreement. However, internally their region mapping is different and would use the vocab option 99 to demonstrate their own regions based on partner networks</p>
+<p><strong>Who would be affected?</strong><br>
+If this bug fix goes ahead, it means that the rule will be included in the IATI validator.</p>
+<p>I can find one organisation which has one activity that would be breaking this rule:</p>
+<ul>
+<li><a href="https://iatiregistry.org/publisher/ippf">International Planned Parenthood Federation</a></li>
+<li><a href="http://www.d-portal.org/ctrack.html#view=act&amp;aid=GB-CHC-229476-XM-DAC-7PPR-4000000707">GB-CHC-229476-XM-DAC-7PPR-4000000707</a></li>
+</ul>
+<p>The IATI tech team will get in contact with them to let them know of the change and what changes are needed to their data.</p>
+<p><strong>Next steps</strong><br>
+If there is no objection to this bug fix within 7 working days (excluding bank holidays for Easter) we will implement the changes. This will include version 2.01, 2.02 and 2.03 of the IATI Standard. If objections are raised we will go into consultation about how this issue should be resolved.</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719</link>
+          <pubDate>Thu, 18 Apr 2019 11:50:54 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1719</guid>
+          <source url="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719.rss">(Added) Rules for reporting multiple countries and regions - proposed bug fix</source>
+        </item>
+        <item>
+          <title>Indicator/result reference code</title>
+          <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>We offer reference code vocabularies for results and indicators. While trying to resolve some data processing issues, I had a few observations on how to improve orthogonality of the standard.</p>
+<ul>
+<li>For indicators, it says “Multiple vocabularies may be specified, but each vocabulary may be specified only once for each indicator.”. For results, this is not specified.</li>
+<li>This makes it impossible to use two different reference codes from two separate organisation-specific vocabularies (for instance to include a partnership-specific code).</li>
+<li>For sectors, we added code “98” to have the option of a second organisation-specific vocabulary. These could be included in the result and indicator vocabularies as well.</li>
+<li>For sectors and results, it is possible to add an attribute <span class="mention">@vocabulary-uri</span> to specify which vocabulary is used. For indicators, this attribute is called <span class="mention">@indicator-uri</span>, although it is described as a vocabulary uri too.</li>
+</ul>
+<p>A bit of a mixed bag. I think the “98” codes could be added in a decimal upgrade, the rest probably could be taken into account for a major upgrade?</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/indicator-result-reference-code/1653">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/indicator-result-reference-code/1653</link>
+          <pubDate>Thu, 07 Feb 2019 12:59:56 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1653</guid>
+          <source url="https://discuss.iatistandard.org/t/indicator-result-reference-code/1653.rss">Indicator/result reference code</source>
+        </item>
+        <item>
+          <title>Joining the IATI-files (IATI 2.04)</title>
+          <dc:creator><![CDATA[OJ_]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>Denmark would like to propose additions to the standard, in the next minor upgrade, that allows publishers to join data at activity-level (i.e. in the Activity file(s)) with the organisational budget (i.e. the organisation file).</p>
+<p>There will be several advantages in this improvement, but Denmark wish to emphasize that the proposal is motivated by an observed need to provide reporting-solutions that better reflects the flow of funds associated with cooperation-modalities such as core funding and soft earmarks. A simple join between the existing standards is by far the most efficient way to reflect how clusters of activities are actually funded and managed under specific lines of the budget of the publishing organisation.</p>
+<p>As presented at the TAG meeting in Kathmandu (<a href="https://iatistandard.org/documents/697/Soft_Earmarks_-_Joining_the_IATI-standards_-_enhancing_the_effectiveness-gain_MUQabby.pptx" rel="nofollow noopener">slides</a>, <a href="https://iatistandard.org/documents/698/Soft_Earmarks_-_IATI_reporting_partners_-_MoFA_Denmark.docx" rel="nofollow noopener">text</a>), the core of the proposal is to add a voluntary tag at activity-level. The name of the tag could be ‘budget-source’, to distinguish it from the existing ‘budget’ and ‘country-budget’ tags, and the content should constitute a machine-readable reference (i.e. a foreign key) to the specific budget_line in the organisation-file of the publisher, from which the activity draws its internal funding. It is of paramount importance to recognise that ‘internal funding’ can originate from multiple sources (e.g. raised/earned by the organisation itself, received as core-contribution from providers and received as loosely earmarked funds from providers). Such inflows should be reported the same way: Incoming transactions to an ‘activity’. If the activity is labelled as core contributions (type of aid B01 or B02), users must be informed that such funds becomes part of the organisations own funds. If the activity is labelled as softly earmarked (type of aid B03), it should be linked to the budget_line (the new ‘budget_source’ tag), from which it is subsequently allocated under control of the organisation, not the provider.</p>
+<p>We need to realise this, that some modalities of cooperation are misrepresented if they are published as specific inflows to specific activities, directly from the provider. And we need to find a more efficient and correct way to reflect the internal budget-allocations of any organisation, to replace time-consuming publication of ‘internal flows’.</p>
+<p>This option, to join data from the activity-file with the relevant budget_lines in the organisation-file, will allow future development of rules, such as the type_of_aid example above, that would greatly improve the interpretability of IATI-data. This should currently be considered one of our primary concerns; in IATI, we have found innovative ways of addressing other quality-issues, but interpretability necessitates further work, e.g. making it a priority to define and share ‘rules’ in a systematic manner – rules that will inform data-users which data-patterns to expect.</p>
+<p>Another issue, where we would like to present input to the ongoing preparation of the strategic priorities for the coming years, is the very practical issue of cost-effectiveness. Our main point is that we should consider and promote IATI as a dataformat feasible for bilateral data-exchange, where the global transparency becomes a fringe benefit – and, most notably, the core management-resources of partners will be directly contributing to IATI-data QA, reducing any extra IATI-efforts to a minimum, and revitalizing the aid-effectiveness ambition. We need to prove that IATI, and transparency in general, contributes to aid-effectiveness. And therefore we need to pay increased attention to the small and practical business cases, where digital and IATI-based reporting-practices among partners can be proven as more efficient.</p>
+<p>To be continued, a.o based on experiences as they become available, from our ongoing pilot-phase, covering the strategic partnership-agreements between Danida and the major Danish development-CSO’s.</p>
+<p>PS – <a href="https://iatistandard.org/en/events/tag-2018-kathmandu/" rel="nofollow noopener">it is a very nice picture</a>, but it is from Bhaktapur, not Kathmandu …</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615</link>
+          <pubDate>Fri, 18 Jan 2019 10:22:22 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1615</guid>
+          <source url="https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615.rss">Joining the IATI-files (IATI 2.04)</source>
+        </item>
+        <item>
+          <title>Bug fix: @budget-not-provided contains a rule</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>At the 2.03 upgrade the attribute <span class="mention">@budget-not</span> provided was added:</p>
+<pre><code>@budget-not-provided
+
+A code indicating the reason why this activity does not contain any iati-activity/budget elements. The value must exist in the BudgetNotProvided codelist.
+
+This value must be of type xsd:string.
+
+This value must be on the BudgetNotProvided codelist
+</code></pre>
+<p>The description contains a <em>rule</em> that the attribute is only to be used when no budget elements are reported for the activity.</p>
+<p>The IATI Technical team consider adding the rule more clearly as a must to be a bug fix. At the same time, we will remove the duplicated sentence to read:</p>
+<pre><code> A code indicating the reason why this activity does not contain any iati-activity/budget elements. The code MUST only be used when no budget elements are present.
+</code></pre>
+<p>Unless an objection is received we plan to implement this pull request for version 2.03 of the Activity Standard after seven days.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612</link>
+          <pubDate>Wed, 09 Jan 2019 17:17:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1612</guid>
+          <source url="https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612.rss">Bug fix: @budget-not-provided contains a rule</source>
+        </item>
+        <item>
+          <title>Transaction Type Codelist - Update</title>
+          <dc:creator><![CDATA[AVaughn]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>Hi all -</p>
+<p>USAID is requesting a bug fix to the transaction type codeslist codes 12 and 13 (outgoing pledge and incoming pledge) to remove the word ‘pledge’ and replace it with a word that is more consistent with organization’s intended humanitarian commitments. We do not seek to add a new code or redefine the existing one, this is simply about changing the name of the code.</p>
+<p>Some organizations (including ours) do not participate in pledging events and in many cases there are legal issues with promising funding, inhibiting the use of pledging as it is traditionally conceived. For organizations that have ‘announced’ funding or ‘pending outgoing commitments’, ‘pledge’ is not an appropriate term and cannot be used to publish this pending commitment data - leaving us with no other available code to publish this information.</p>
+<p>At this time, it appears only one organization is using these pledge codes.</p>
+<p>We propose in codes 12 and 13 (outgoing pledge and incoming pledge) that the word ‘pledge’ should be removed and replaced with a more appropriate word such as ‘pending outgoing commitment,’ ‘announced funding,’ or ‘commitment in process.’ We welcome other words and suggestions to updating this term to be more inclusive to organizations who do not take part in pledging events.</p>
+            <p><small>16 posts - 8 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/transaction-type-codelist-update/1608">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/transaction-type-codelist-update/1608</link>
+          <pubDate>Mon, 07 Jan 2019 19:50:07 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1608</guid>
+          <source url="https://discuss.iatistandard.org/t/transaction-type-codelist-update/1608.rss">Transaction Type Codelist - Update</source>
+        </item>
+        <item>
+          <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>At the TAG 2018, we want to review the community need for a next IATI Standard upgrade. The IATI technical team will run a short session that will focus on the appetite for a next upgrade (<a href="http://reference.iatistandard.org/203/upgrades/">minor or major</a>) and discuss the potential timeline if there is a need for one.</p>
+<p>Before we get to the TAG we want participants to be aware of outstanding minor and major upgrade proposals, and to have a discussion about whether or not they are still relevant. Please refer to all proposals listed below. If you think there are proposals we have missed out, please add a link to the relevant Discuss post on this thread.</p>
+<p>Please note that at this year’s TAG there won’t be a full IATI standards day and the TAG will not be a place to raise new proposals. This can be done at any time via the normal process on <a href="https://discuss.iatistandard.org/c/standard-management">IATI Discuss</a>. We want to review the appetite for an upgrade given the current state of play.</p>
+<p><strong>Outstanding minor upgrade changes:</strong></p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/exchange-rate-options-excluded-2-03/">Exchange rate options</a> (Needs further consultation and alignment with the open contracting community before being taken forward)</p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/publishing-application-excluded-2-03">Publishing Application</a> (Requires further discussion about whether it’s needed and why)</p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03">Adding links to related OCDS contracts</a> (Agreed that more work was needed to get this right)</p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/">Results – recognising partner contributions</a> (Need to gain more experience and use cases first)</p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/outgoing-commitment-conflicting-description-use/">Outgoing Commitment - conflicting description &amp; use?</a> (Need more consensus and worked examples)</p>
+</li>
+</ul>
+<p><strong>Outstanding major upgrade changes:</strong></p>
+<p><em><strong>Proposals from the IATI community:</strong></em></p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/43">Fix Activity Status Mix Up</a> (agreement reached, but solution changes the meaning of the code and is therefore not backward compatible)</p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/introduce-a-new-transaction-type-for-internally-sourced-funds/662/3">Add a new transaction type</a> (no consensus and needs further discussion)</p>
+</li>
+<li>
+<p><a href="https://support.iatistandard.org/hc/en-us/articles/214389106-Add-an-indicator-schema-to-the-IATI-standard">Add an indicator schema to the IATI Standard </a>(needs discussion)</p>
+</li>
+<li>
+<p>Deprecate: location/coordinates elements; legacy data element; organisation type ‘Accountable’. (agreement reached)</p>
+</li>
+<li>
+<p>Make mandatory: elements ‘<a href="https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679/">iati-activities’ and ‘iati-organisations</a>’ (consensus); attribute <a href="https://discuss.iatistandard.org/t/making-the-generated-datetime-element-mandatory/1204">@generated-datetime</a> (not discussed); <a href="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/">@value-date</a></p>
+<ul>
+<li>Need a major upgrade to include new rules</li>
+</ul>
+</li>
+</ul>
+<p><em><strong>Creation of rules following previous minor upgrade proposals:</strong></em></p>
+<ul>
+<li>There are multiple occasions where rules need to be created. This is where ‘shoulds’ have been added as part of previous decimal upgrades, with the agreement they would become ‘musts’ at version 3.0.0.</li>
+</ul>
+<p><strong><em>Technical changes to ‘fix’ the standard:</em></strong></p>
+<ul>
+<li>
+<p>Contradictions within the schema: There are number of rules and guidelines within the schema which contradict each other. E.g.</p>
+<ul>
+<li>For a &lt;sector&gt; at activity level both are true: “Each vocabulary’s percentages <strong>should</strong> add up to 100%” compared with, “All reported sectors from the same vocabulary <strong>must</strong> add up to 100%”.</li>
+</ul>
+</li>
+<li>
+<p>There are a number of places in the standard, in which documentation can be made consistent. This does not change the meaning of the Standard, but will make it easier to use for publishers, data users and tool providers.</p>
+</li>
+</ul>
+<p><strong>Note</strong>: The IATI tech team will separately run a workshop on how to engage in a possible next upgrade. IATI has a <a href="http://reference.iatistandard.org/203/upgrades/">new upgrade process</a>, which requires changes to the standard to be suggested in non-technical language and to be presented with use cases. We want to test how this works in practice, and help attendees gain confidence in writing proposals.</p>
+            <p><small>14 posts - 8 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535</link>
+          <pubDate>Thu, 25 Oct 2018 11:25:22 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1535</guid>
+          <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+        </item>
+        <item>
+          <title>Mapping Budget Identifiers and DAC Sectors</title>
+          <dc:creator><![CDATA[Melinda]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>I have found and old mapping between CC codes and CRS Purpose Codes. Now that there are a few new and changed sectors I was wondering if anybody has updated their mapping and if we can use it?</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322</link>
+          <pubDate>Wed, 16 May 2018 10:55:56 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1322</guid>
+          <source url="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322.rss">Mapping Budget Identifiers and DAC Sectors</source>
+        </item>
+        <item>
+          <title>Budgets - status, sector &amp; budget-line</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>Hi</p>
+<p>Working between the budget elements of the organisation and activity standards, I found a couple of things I wanted to ask</p>
+<p>1 - The <code>budget-line</code> element is only in the organisation standard (<a href="https://support.iatistandard.org/hc/en-us/articles/214394046" rel="nofollow noopener">original proposal in 2.01</a>).  It’s therefore possible to only provide some degree of disaggregation of budgets, by a theme/subject, at the org level.  This isn’t possible at the activity level.</p>
+<p>Question - <strong>Is/was there a reason for this?</strong></p>
+<p>2 - The <a href="http://iatistandard.org/203/codelists/BudgetType/" rel="nofollow noopener">budget type</a> is  is only at the activity level, whereas <a href="http://iatistandard.org/203/codelists/BudgetStatus/" rel="nofollow noopener">budget status</a> is available at both levels (discussion via 2.03).</p>
+<p>Question - <strong>is/was there a reason for this</strong>?</p>
+<p>3 - All budgets lack a <em>general</em> narrative element*.  It could be useful for some publishers to provide some description for budgets, particularly if it further helps clarify the nature of budgets.</p>
+<p>(* the org standard allows a budget at the <a href="http://iatistandard.org/203/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/budget-line/" rel="nofollow noopener">budget-line</a> element)</p>
+<p>Another question - <strong>is/was there a reason for no description element within any budgets?</strong></p>
+<p>The above are not proposals, just observations,  Any insights and background gratefully received</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/budgets-status-sector-budget-line/1244">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/budgets-status-sector-budget-line/1244</link>
+          <pubDate>Mon, 05 Mar 2018 14:48:05 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1244</guid>
+          <source url="https://discuss.iatistandard.org/t/budgets-status-sector-budget-line/1244.rss">Budgets - status, sector &amp; budget-line</source>
+        </item>
+        <item>
+          <title>Proposal: update of budget element description text (in activity standard)</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>I would like to propose that the following line is <em><strong>removed</strong></em> from the description text for the <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/budget/" rel="nofollow noopener">budget element</a>:</p>
+<blockquote>
+<p>The total budget for an activity should be reported as a commitment in the transaction element.</p>
+</blockquote>
+<p>Many of us have discussed this, <a href="https://discuss.iatistandard.org/t/outgoing-commitment-conflicting-description-use/1183/">most recently in this thread</a>.</p>
+<p>I do not believe this “guidance” in the spirit of the standard.  Additionally, there is a (continued) high risk of confusion amongst those implementing and using IATI data - particularly in the context of renaming the Commitment transaction type to become Incoming Commitment.</p>
+<p>I would welcome discussion / confirmation from others on this matter - flagging for <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/mhirji">@Mhirji</a> <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/andylolz">@andylolz</a> &amp; <a class="mention" href="/u/akermanmartin">@AkermanMartin</a> , as they contributed to the previous discussion.</p>
+<p>The revised budget description would then read:</p>
+<blockquote>
+<p>The value of the aid activity’s budget for each financial quarter or year over the lifetime of the activity. The purpose of this element is to provide predictability for recipient planning on an annual basis. The status explains whether the budget being reported is indicative or has been formally committed. The value should appear within the BudgetStatus codelist. If the <span class="mention">@status</span> attribute is not present, the budget is assumed to be indicative. While it is useful for the sum of budgets to match the sum of commitments this is not necessarily the case, depending on a publisher’s business model and legal frameworks.</p>
+</blockquote>
+            <p><small>19 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/proposal-update-of-budget-element-description-text-in-activity-standard/1216">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/proposal-update-of-budget-element-description-text-in-activity-standard/1216</link>
+          <pubDate>Thu, 08 Feb 2018 12:36:45 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1216</guid>
+          <source url="https://discuss.iatistandard.org/t/proposal-update-of-budget-element-description-text-in-activity-standard/1216.rss">Proposal: update of budget element description text (in activity standard)</source>
+        </item>
+        <item>
+          <title>Add name to administrative levels</title>
+          <dc:creator><![CDATA[Sebastian_Dimunzio]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>It could be really useful to have a name element within administrative node in order to report the name of each level.<br>
+Example:</p>
+<pre><code>&lt;administrative code="370230" vocabulary="G1" level="2"&gt;
+&lt;name&gt;
+&lt;Narrative&gt;Meheisa&lt;/Narrative&gt; 
+&lt;/name&gt;
+&lt;/administrative&gt;</code></pre>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163</link>
+          <pubDate>Thu, 21 Dec 2017 13:48:37 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1163</guid>
+          <source url="https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163.rss">Add name to administrative levels</source>
+        </item>
+        <item>
+          <title>Allow multiple vocabularies- recipient region</title>
+          <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p><strong>Issue:</strong></p>
+<p>At the moment the IATI standard does <strong>not</strong> allow the use of multiple vocabularies <strong><code>recipient- region</code></strong> at transaction level.</p>
+<p>The guidance currently states that <span class="mention">@vocabulary</span> attribute is only allowed to exist <code>0</code> or <code>1</code> for the following elements:</p>
+<p>iati-activities/iati-activity/transaction/recipient-region</p>
+<p>See <a href="http://iatistandard.org/202/activity-standard/summary-table/">Activity Summary table</a> for reference.</p>
+<p>This has been flagged as an issue for users who want to classify their data using multiple vocabularies and also in line with the below recommendation in the guidance.</p>
+<p><strong>Question:</strong><br>
+Given that the community agrees that multiple vocabularies should be allowed, there are two suggested options:</p>
+<ol>
+<li>Consider this as a bug fix and fix immediately.</li>
+<li>Issue should be taken forward at the next decimal upgrade.</li>
+</ol>
+<p>Please comment in response to this post.</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105</link>
+          <pubDate>Fri, 27 Oct 2017 10:46:16 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1105</guid>
+          <source url="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105.rss">Allow multiple vocabularies- recipient region</source>
+        </item>
+        <item>
+          <title>Bug fix: Implementing checks on @percentage attributes</title>
+          <dc:creator><![CDATA[dalepotter]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>Linked to the proposal in the v2.03 upgrade to set <a href="https://discuss.iatistandard.org/t/boundary-values-for-percentages-included-2-03/843">boundary values where the IATI Standard refers to percentages</a>, a <a href="https://github.com/IATI/IATI-Schemas/pull/329">pull request</a> has been received by <a class="mention" href="/u/vincentvw">@VincentVW</a> to restrict values used in percentage attributes to the set boundaries (0 - 100).</p>
+<p>This change would apply to the following attributes:</p>
+<ul>
+<li><code>iati-activities/iati-activity/recipient-country/@percentage</code></li>
+<li><code>iati-activities/iati-activity/recipient-region/@percentage</code></li>
+<li><code>iati-activities/iati-activity/sector/@percentage</code></li>
+<li><code>iati-activities/iati-activity/capital-spend/@percentage</code></li>
+<li><code>iati-activities/iati-activity/country-budget-items/budget-item/@percentage</code></li>
+</ul>
+<p>The IATI Technical Team are considering this to be a bug fix, given that the definition for these attributes typically reads</p>
+<blockquote>
+<p>Content must be a positive decimal number between 0 and 100, with no percentage sign.</p>
+</blockquote>
+<p>Therefore, and <strong>unless an objection is received we plan to implement this pull request for version 2.02 of the Activity Standard after a one week notice period (expiring on Sunday 13 August 2017)</strong>.  Where appropriate, this will also be back-ported to prior versions.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983</link>
+          <pubDate>Fri, 04 Aug 2017 16:11:43 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-983</guid>
+          <source url="https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983.rss">Bug fix: Implementing checks on @percentage attributes</source>
+        </item>
+        <item>
+          <title>Guidance on implementing aid and budget alignment</title>
+          <dc:creator><![CDATA[markbrough]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>In the Standards Day at the 2017 IATI TAG in Dar es Salaam, <a href="https://docs.google.com/spreadsheets/d/1RRE5IjyirIp-JFRF94JUNL6IEKnEU42uGzlWoj1yJ0A/edit#gid=0" rel="nofollow noopener">we agreed</a> to deprecate the BudgetIdentifier codelist and provide communications materials to publishers on implementing aid and budget alignment.</p>
+<p>This guidance explains how the methodology now works. It stems from work conducted by the IATI TAG Working Group on Aid and Budget Alignment, and reflects decisions made by the WP-STAT and IATI Steering Committee. In summary:</p>
+<ol>
+<li>Use the <code>capital-spend</code> field</li>
+<li>Use detailed CRS purpose codes<br>
+a) don’t use very broad purpose codes like <code>43010 - Multisector aid</code><br>
+b) use the more detailed “voluntary” CRS purpose codes.</li>
+</ol>
+<h1>1) Publish the capital-spend field</h1>
+<p>For activities at the commitment stage, the percentage of an activity that is capital expenditure should be published using the <code>capital-spend</code> field. The definition of capital expenditure follows the IMF GFS definition:</p>
+<blockquote>
+<p>Capital spending is generally defined as physical assets with a useful life of more than one year. But it also includes capital improvements or the rehabilitation of physical assets that enhance or extend the useful life of the asset (as distinct from repair or maintenance, which assures that the asset is functional for its planned life). Capital includes all aspects of design and construction that are required to make the asset operational. Source: D Jacobs, 2009, Capital Expenditures and the Budget, IMF PFM Technical Guidance Note No 8. (IMF, Washington)]</p>
+</blockquote>
+<p>This definition was <a href="http://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2015)30/REV1&amp;docLanguage=En" rel="nofollow noopener">approved by WP-STAT under the written procedure</a> in February 2016.</p>
+<h1>2) Publish detailed CRS purpose codes</h1>
+<h2>(a) Don’t use very broad codes</h2>
+<p>Broad “multisector aid” or “sector not specified” purpose codes are not mappable to budgets and are too aggregate to tell you much that is useful about the activity. Publishers should not use these purpose codes if they want activities to be mappable to budgets.</p>
+<p>List of multisector codes that should not be used (source: <a href="http://www.aidtransparency.net/wp-content/uploads/2013/05/Study-on-better-reflecting-aid-flows-in-country-budgets.doc" rel="nofollow noopener">IATI 2012 Study on Better Reflecting Aid Flows in Country Budgets</a>, <a href="http://www.aidtransparency.net/wp-content/uploads/2013/05/Annex-4-Common-Code-and-CRS-Spreadsheet.xls" rel="nofollow noopener">Annex 4</a> - codes that are “not classifiable - multisector”):</p>
+<ul>
+<li>43010 - Multisector aid</li>
+<li>43050 - Non-agricultural alternative development</li>
+<li>43081 - Multisector education / training</li>
+<li>43082 - Research / scientific institutions</li>
+<li>52010 - Food aid/food security programmes</li>
+<li>99810 - Sectors not specified</li>
+</ul>
+<h2>(b) Use the more detailed “voluntary” CRS purpose codes, not “parent” codes</h2>
+<p>In a fairly broad sample of 35-40 countries, various studies found that more disaggregated (“voluntary”) codes under 15 existing CRS purpose codes were needed to map to budgets. Publishers should use the voluntary codes instead of the “parent” codes if they want their activities to be mappable to budgets.</p>
+<p>The CRS purpose codes, including the more detailed voluntary codes, are listed in the <a href="http://www.oecd.org/dac/financing-sustainable-development/development-finance-standards/DAC-CRS-CODES.xls" rel="nofollow noopener">DAC and CRS codelists Excel sheet</a>, which has also been <a href="https://andylolz.github.io/dac-crs-codes/data/sector/" rel="nofollow noopener">provided in a more accessible format</a> by <a class="mention" href="/u/andylolz">@andylolz</a>.</p>
+<p>The additional codes were <a href="http://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2015)30/REV1&amp;docLanguage=En" rel="nofollow noopener">approved by WP-STAT under the written procedure</a> in February 2016. The IATI Steering Committee <a href="http://www.aidtransparency.net/wp-content/uploads/2013/01/Paper-4c-from-TAG-Working-Group-on-Budget-Identifier.pdf" rel="nofollow noopener">approved the use of the more detailed CRS purpose codes</a> (instead of using the “Common Code" codelist) in March 2014.</p>
+<hr>
+<p>Feedback on this guidance is welcome.</p>
+            <p><small>33 posts - 7 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831</link>
+          <pubDate>Fri, 05 May 2017 15:19:03 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-831</guid>
+          <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+        </item>
+        <item>
+          <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+          <dc:creator><![CDATA[Rumy]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>One of our partner organisations recently brought to our attention that for an activity, they are keeping both <strong>original</strong> and <strong>revised budget</strong> of the same financial period side by side when preparing their IATI source files.</p>
+<p>Their assumption is that - original budget is amended by the revised budget element and can co-exist side by side within an activity whereas our definition is that a revised budget replaces the original one.</p>
+<p>According to the IATI standard definition: The purpose of Budget element is to provide predictability for recipient planning on an annual basis. The status explains whether the budget being reported is indicative or has been formally committed.</p>
+<p>This definition for activity budget is kind of ambiguous as it does not really specify if an activity can accommodate both the original budget and it’s revised version or just only one of them.</p>
+<p>This is creating confusion in DevTracker when calculating the total budget for partner files as the original and the revised amounts are getting summed up into an artificially high value that does not exist in reality.</p>
+<p>For DFID, we keep only one of the two and not both which is why this never created confusion internally.</p>
+<p>Will be grateful if other members of the community could share their experiences to see  if they have encountered this issue and how they resolved it so that we can come to a common understanding of the meaning of “Original” and “Revised” budget figures</p>
+            <p><small>15 posts - 9 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819</link>
+          <pubDate>Thu, 27 Apr 2017 11:01:03 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-819</guid>
+          <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+        </item>
+        <item>
+          <title>Show IATI: Republishing OECD DAC codelists</title>
+          <dc:creator><![CDATA[andylolz]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>I’ve noticed a few threads about machine readable, version controlled OECD DAC codelists.</p>
+<p>I’ve had a go at a DAC CRS codelist scraper (built from earlier work by <a class="mention" href="/u/markbrough">@markbrough</a>) that auto- sends pull requests to a github repo, with an octopub frontend.</p>
+<p><strong>Demo here:</strong><br>
+<strong><a href="https://andylolz.github.io/dac-crs-codes/">https://andylolz.github.io/dac-crs-codes/</a></strong></p>
+<p>(NB there’s a few “csv invalid” errors there that I need to iron out!)</p>
+<p>The scraper runs daily <a href="https://morph.io/andylolz/dac-crs-codes">and lives on morph.io</a>.</p>
+<p>I wonder if this is something that could be useful to the secretariat, as a tool to help manage non-embedded codelists from OECD DAC?</p>
+<p>Tagging some people from related threads:<br>
+<a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/wendy">@Wendy</a> <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/herman">@Herman</a></p>
+            <p><small>7 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/show-iati-republishing-oecd-dac-codelists/763">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/show-iati-republishing-oecd-dac-codelists/763</link>
+          <pubDate>Fri, 17 Mar 2017 17:08:36 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-763</guid>
+          <source url="https://discuss.iatistandard.org/t/show-iati-republishing-oecd-dac-codelists/763.rss">Show IATI: Republishing OECD DAC codelists</source>
+        </item>
+        <item>
+          <title>Roadmaps for IATI Technical Team Products</title>
+          <dc:creator><![CDATA[dalepotter]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>The IATI Technical Team is currently working to review the large range of products it provides. This will ensure we are best able to provide the features and capabilities that are useful to publishers and users of IATI data. This review is being undertaken with an overarching long-term plan to migrate core IATI products to a new Architecture - as described in a <a href="//discuss.iatistandard.org/t/iati-systems-design-architecture-proposal/709">separate post</a>.</p>
+<p>To help ensure core IATI products are useful to the widest possible audience, the Technical Team is making their product roadmaps public as it becomes reasonable to do so. It is desired that feedback from the wider community will provided and integrated into roadmaps as appropriate.</p>
+<h2>Background</h2>
+<p>At present the IATI Technical Team maintains a large number of distinct products. To best ensure that the products provided are useful to a wide range of relevant persons, it is important to have information about the current, intended and future status of each product. This may involve creating new products, maintaining existing ones, or closing down products that are no longer useful.</p>
+<p>As part of a wider series of projects, personas based on the various IATI user groups are to be developed. Once finalised, these will form the basis of ongoing roadmap and feature discussions. The short-term roadmap until the personas are developed is designed to provide a strong architectural foundation for a sustainable future.</p>
+<h2>Product Roadmap</h2>
+<p><a href="https://docs.google.com/spreadsheets/d/1EJqrW4Yt0vCzpsVo4CQmcs17PItFdG0fS4sru24Ip24/edit?usp=sharing">This Google sheet contains the high-level IATI Technical Team product roadmap</a> as of late-February 2017.</p>
+<h3>Product Roadmap Table</h3>
+<ul>
+<li>
+<p>The <em>Product description and Product purpose</em> columns define what a product should do and why.</p>
+</li>
+<li>
+<p><em>Technology Stack</em> and <em>Current Status</em> define the current technical status of products</p>
+</li>
+<li>
+<p>The <em>Headline long-term development status</em> column gives the summary of our plan for each product in the longer term - see below for more details.</p>
+</li>
+<li>
+<p>The <em>Long</em> and <em>Short-term development plans</em> columns offer more detail on the intended future for products over varying timescales</p>
+</li>
+</ul>
+<h3>Headline long-term development statuses</h3>
+<p>There are several states that a product may be in.</p>
+<ul>
+<li>
+<p><strong>New product:</strong> There are plans to provide some new functionality that is not provided by the IATI Technical Team at present.  In the <a href="https://docs.google.com/spreadsheets/d/1EJqrW4Yt0vCzpsVo4CQmcs17PItFdG0fS4sru24Ip24/edit?usp=sharing">roadmap</a> this applies to:</p>
+</li>
+<li>
+<p>Python library</p>
+</li>
+<li>
+<p>Conversion Tools</p>
+</li>
+<li>
+<p><strong>Improve:</strong> The base functionality that exists is either useful in its current state, or there is a clear path to make it useful. It is likely that the improvements will be based around the new architecture. In the <a href="https://docs.google.com/spreadsheets/d/1EJqrW4Yt0vCzpsVo4CQmcs17PItFdG0fS4sru24Ip24/edit?usp=sharing">roadmap</a> this applies to:</p>
+</li>
+<li>
+<p>Standard Single Source of Truth (SSOT)</p>
+</li>
+<li>
+<p>Website</p>
+</li>
+<li>
+<p>Datastore</p>
+</li>
+<li>
+<p>Datastore Query Tool</p>
+</li>
+<li>
+<p>d-Portal</p>
+</li>
+<li>
+<p>Validator</p>
+</li>
+<li>
+<p>Dashboard</p>
+</li>
+<li>
+<p><strong>3rd party products:</strong> Some 3rd party products, such as a discussion forum, are used to provide IATI functionality. New versions of these products will be upgraded to as they become available. In the <a href="https://docs.google.com/spreadsheets/d/1EJqrW4Yt0vCzpsVo4CQmcs17PItFdG0fS4sru24Ip24/edit?usp=sharing">roadmap</a> this applies to:</p>
+</li>
+<li>
+<p>Registry (CKAN)</p>
+</li>
+<li>
+<p>Community Forum (Discuss)</p>
+</li>
+<li>
+<p>IATI Support platform (Zendesk)</p>
+</li>
+<li>
+<p><strong>Maintenance only:</strong> No new features will be added, though if it breaks in some manner the Technical Team will endeavour to make it work again. In the <a href="https://docs.google.com/spreadsheets/d/1EJqrW4Yt0vCzpsVo4CQmcs17PItFdG0fS4sru24Ip24/edit?usp=sharing">roadmap</a> this applies to:</p>
+</li>
+<li>
+<p>Data Tickets</p>
+</li>
+<li>
+<p>Publisher Guidance and Wizards</p>
+</li>
+<li>
+<p><strong>Close down:</strong> The end result will be that the product is shut down. For some products that contain written content, the copy will be migrated to the main IATI website before the product is closed. Where appropriate, clear timescales will be announced to ensure there are opportunities to migrate to utilising alternative products. In the roadmap this applies to:</p>
+</li>
+<li>
+<p>Preview Tool</p>
+</li>
+<li>
+<p>Aid Info Labs CSV Converter</p>
+</li>
+<li>
+<p>CSV2IATI Platform</p>
+</li>
+<li>
+<p>IATI Wiki</p>
+</li>
+<li>
+<p>Google Group</p>
+</li>
+<li>
+<p>Open Development Toolkit</p>
+</li>
+</ul>
+<p>Short-term plans are more concrete at this point in time than those longer-term.  Up to the end of 2017 Q2, we plan to allocate time for:</p>
+<ul>
+<li>
+<p><strong>Maintenance:</strong> All currently supported IATI products must keep working until they are closed or replaced.</p>
+</li>
+<li>
+<p><strong>Time-sensitive work:</strong> The IATI Technical Team is involved in a number of projects that are to be completed short-term. These include managing a upgrade to create v2.03 of the IATI Standard, and (independently-funded work) to add Grand Bargain monitoring on the IATI Dashboard.</p>
+</li>
+<li>
+<p><strong>Architecture design and development:</strong> Create a solid foundation for future development to build upon. This includes development of the initial stages of an <a href="//discuss.iatistandard.org/t/introducing-the-iati-python-library/720">IATI python library</a>, which will offer functionality to deliver common IATI tasks (e.g. fetching and loading files, data validation, extracting data, etc). This library will be open-source and reusable by 3rd party tool builders and developers.</p>
+</li>
+<li>
+<p><strong>Validator development:</strong> This will be used to demonstrate that the aspects of a new architecture relating to SSOT representation and communication between services works. It will provide capabilities beyond that of the existing public validator, notably a public API.</p>
+</li>
+<li>
+<p><strong>Datastore development:</strong> Improvements to the official IATI Datastore are essential to better support data use.  Specific use cases will begin to be scoped at the forthcoming TAG and we will then scope product options. Depending on results, this may include a thorough overhaul of the current Datastore, or formal adoption of a currently third-party product.</p>
+</li>
+</ul>
+<h2>Ongoing Roadmap Development</h2>
+<p>Once a cast of user personas for IATI have been developed and validated, with the support UX consultants, a more thorough look at user needs and how to meet them through the provision of technical products will be undertaken. It is expected that this will occur towards the end of Q2 2017.</p>
+<p>Feedback from the wider IATI community will also be utilised to help inform the direction of technical product roadmaps.  We invite comment on these roadmaps in this thread as well as during <a href="https://iatitag2017.sched.com/event/9oeT/consulting-the-community-iati-core-technical-product-roadmaps-12">the session at the forthcoming TAG</a>.</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/roadmaps-for-iati-technical-team-products/733">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/roadmaps-for-iati-technical-team-products/733</link>
+          <pubDate>Fri, 24 Feb 2017 16:37:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-733</guid>
+          <source url="https://discuss.iatistandard.org/t/roadmaps-for-iati-technical-team-products/733.rss">Roadmaps for IATI Technical Team Products</source>
+        </item>
+        <item>
+          <title>Discussion post: Identifying government entities</title>
+          <dc:creator><![CDATA[TimDavies]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>Alongside the development of the updated org-id list of organisation identifier lists (which contains an increasing number of company and NGO/charity lists) we have been exploring the state of government entity identification.</p>
+<p>A full paper on this is forthcoming, but to summarise the current state of play:</p>
+<h2>The problem</h2>
+<p>There are few reliable sources of identifiers for government entities (i.e. lists which are stable, well maintained and provide unique identifiers that map to particular legal entities, or sub-units of legal entities).</p>
+<p>The problem is compounded when looking beyond national government departments, to also consider schools, hospitals or other kinds of entities that might engage in transactions (e.g contracts, spending or recieving aid funding directly or indirectly).</p>
+<p>The current organisation identifier methodology in use in Open Contracting, IATI and 360Giving  is predicated on identifying a ‘legal entity’. However, in many cases the legal status of state entities is not directly analogous to that of companies or charities.</p>
+<h2>Current state of play</h2>
+<p>It is difficult to answer questions such as:</p>
+<ul>
+<li>How much money has been spent by the UK Department for Health with small or medium enterprises?</li>
+</ul>
+<p>or</p>
+<ul>
+<li>How much money has the official Ugandan education system received from government donors in the last five years?</li>
+</ul>
+<p>because the data available lacks identifiers, names in data are presented inconsistently, and where identifiers exist they are not related to meta-data which can support analysis.</p>
+<h2>Requirements</h2>
+<p>We have identified 11 requirements against which any identification approach should be evaluated:</p>
+<p>An identifier system should…</p>
+<ul>
+<li>…allow identification of central government departments.</li>
+<li>…allow identification of local government units.</li>
+<li>…allow identification of government agencies.</li>
+<li>…allow identification of bodies such as schools, hospitals etc.</li>
+<li>…provide access to information on the level of government the body operates at.</li>
+<li>…provide access to information on the history of the body (e.g. bodies it replaced).</li>
+<li>…provide access to information on the hierarchical position of the body.</li>
+<li>…uniquely identify a single entity (e.g. two distinct government entities should not share a code).</li>
+<li>…provide persistent identifiers that only change when the integrity or legal status of the identified organisation changes.</li>
+<li>…be appropriate for use in a single country</li>
+<li>…be appropriate for use across countries (for example, identifying all the mining ministries around the world).</li>
+</ul>
+<p>These requirements may be prioritised differently be different use cases, and it may be difficult to meet all requirements through a single approach.</p>
+<h2>Initial recommendations</h2>
+<p>Based on the analysis to date, we propose a two-track approach to government entity identification.</p>
+<p><strong>(1) Maintaining the distributed organisation identifier list approach</strong> - but focussing on (a) encouraging government to publish registers of government entities; and (b) working to create a ‘list of last resort’ via WikiData - which can accept user-contributions.</p>
+<p><strong>(2) Requiring separate publication of descriptive meta-data elements for government entities</strong> - to provide information for identification, de-duplication and data analysis.</p>
+<p>In particular, this would involve adding attributes to organisation fields based on the EC’s <a href="https://joinup.ec.europa.eu/asset/cpov/home" rel="nofollow noopener">Core Public Organisation Vocabulary</a> for:</p>
+<ul>
+<li>
+<strong>purpose</strong> - using COFOG codes to indicate the function of the government entity;</li>
+<li>
+<strong>spatial</strong> - using either (a) ADM1 / ADM2 / ADM2 to indicate the level of government, or some established gazeteer to indicate the geographic area covered by the government entity;</li>
+</ul>
+<p>As well as including a field for:</p>
+<ul>
+<li>
+<strong>jurisdiction</strong> - the iso country code of the organisation;</li>
+</ul>
+<p>And encouraging additional publication (either as attributes or sub-fields of an organisation object) of:</p>
+<ul>
+<li>
+<strong>full name</strong> - without use of acronyms</li>
+<li>
+<strong>address</strong> - a registered or operational address of the organisation</li>
+<li>
+<strong>uri</strong> - the homepage of the organisation</li>
+</ul>
+<p>Taken together, these additional elements:</p>
+<ul>
+<li>(1) <strong>Prevent false-positive matches</strong> - as tools can disambiguate two ‘Department of Education’ records if they have a different <strong>jurisdiction</strong> or <strong>spatial</strong> coverage.</li>
+<li>(2) <strong>Support de-duplication</strong> - as tools can use matching <strong>purpose</strong>, <strong>jurisdiction</strong>, <strong>address</strong>, <strong>uri</strong> and <strong>spatial</strong> values to support matching of organisations even when names or identifiers are different;</li>
+<li>(3) <strong>Answer general queries</strong> that do not require specific organisation identification. For example, using COFOG codes to identify spending with government education entities in a given area.</li>
+</ul>
+<p>Guidance should be developed so that COFOG purpose codes <strong>are only</strong> used for government entities.</p>
+<h3>Implications and IATI worked example</h3>
+<p>For IATI (and other standards) the above approach would involve:</p>
+<ul>
+<li>Continued work to maintain a list of organisation identifier lists;</li>
+<li>Addition of new fields to organisation elements (e.g. <code>&lt;participating-org&gt;</code>)</li>
+</ul>
+<p>For example, the block below adds purpose, spatial and jurisdiction codes to identify the UK Department for International Development.</p>
+<pre><code class="lang-xml">&lt;participating-org ref="GB-GOV-1" role="1" type="10" org-purpose="01.2" org-spatial="ADM1" org-jurisiction="gb"&gt;
+        &lt;narrative&gt;UK Department for International Development&lt;/narrative&gt;
+&lt;/participating-org&gt;
+</code></pre>
+<p>The block below identifies an Education Ministry in Nepal, for which no identifier reference could be located:</p>
+<pre><code class="lang-xml">&lt;participating-org ref="" role=4" type="10" org-purpose="09" org-spatial="ADM1" org-jurisiction="np"&gt;
+        &lt;narrative&gt;Ministry of Education, Government of Nepal&lt;/narrative&gt;
+&lt;/participating-org&gt;
+</code></pre>
+<p>Note that this additional meta-data about organisations would be provided by <strong>data publishers</strong>. It could be drawn from an identifier lists if such a list exists (to avoid it having to be entered each time), but ultimately the values of these additional meta-data fields would be based on the judgement of those entering the data (so there is no solid guarantee that two publishers would describe a single organisation in exactly the same way).</p>
+<h2>Discussion</h2>
+<p>Feedback is invited on:</p>
+<ul>
+<li>Whether the approach of splitting <strong>identification</strong> and <strong>description</strong> of organisations into two separate problems is an appropriate one;</li>
+<li>The implications of this approach for publishers;</li>
+<li>The implications of this approach for data users;</li>
+<li>The implications of this approach for other data standards (e.g. OCDS, 360 etc.)</li>
+</ul>
+<p>Following feedback we’ll combine feedback into a full paper, and will host an online discussion on ways forward, identifying whether to propose changes to existing standards.</p>
+            <p><small>21 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/discussion-post-identifying-government-entities/729">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/discussion-post-identifying-government-entities/729</link>
+          <pubDate>Wed, 22 Feb 2017 18:51:30 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-729</guid>
+          <source url="https://discuss.iatistandard.org/t/discussion-post-identifying-government-entities/729.rss">Discussion post: Identifying government entities</source>
+        </item>
+        <item>
+          <title>OECD DAC codelist - updated in January 10th</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>I noticed that the <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm" rel="nofollow noopener">OECD DAC codelist spreadsheet</a> has a notice to say it was updated on January 10th</p>
+<p>Aside from some color coded cells, I can’t see a changelog or similar.  Does anybody know what the changes are, and whether these then impact in IATI lists?</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/oecd-dac-codelist-updated-in-january-10th/681">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/oecd-dac-codelist-updated-in-january-10th/681</link>
+          <pubDate>Wed, 25 Jan 2017 20:12:48 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-681</guid>
+          <source url="https://discuss.iatistandard.org/t/oecd-dac-codelist-updated-in-january-10th/681.rss">OECD DAC codelist - updated in January 10th</source>
+        </item>
+        <item>
+          <title>Add xs:duration attribute to certain dates to indicate aggregation spans</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>This <a href="http://support.iatistandard.org/hc/en-us/articles/214388546-Add-xs-duration-attribute-to-certain-dates-to-indicate-aggregation-spans">issue</a> was originally added and originally discussed on the previous version IATI Standard Upgrade forum. However that forum has itself now itself moved to the IATI Discuss platform so this topic has been created in order that discussions can continue here.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/add-xs-duration-attribute-to-certain-dates-to-indicate-aggregation-spans/656">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/add-xs-duration-attribute-to-certain-dates-to-indicate-aggregation-spans/656</link>
+          <pubDate>Wed, 04 Jan 2017 11:47:27 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-656</guid>
+          <source url="https://discuss.iatistandard.org/t/add-xs-duration-attribute-to-certain-dates-to-indicate-aggregation-spans/656.rss">Add xs:duration attribute to certain dates to indicate aggregation spans</source>
+        </item>
+        <item>
+          <title>A total-budget for an activity?</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>Over on <a href="//discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644">this thread</a> we’re discussing the nature of the Commitment transaction, as it may have a couple of use cases</p>
+<p>One of these is to express the total budget, as <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/budget/" rel="nofollow noopener">explained here</a>:</p>
+<blockquote>
+<p>The total budget for an activity should be reported as a commitment in the transaction element.</p>
+</blockquote>
+<p>Meanwhile, in the Org standard, we have an <a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-budget/" rel="nofollow noopener">element named</a> <code>total-budget</code>:</p>
+<blockquote>
+<p>the organisation’s total annual planned budget for each of the next three years is reported.</p>
+</blockquote>
+<p>When you read this, it’s not quite one expression for a total budget, as advice is to represent different years - it seems more like an “annual-budget”, perhaps.</p>
+<p>Around the community of IATI publishers - particularly non-donors - I’ve observed some confusion around the concept of budgets, and total budgets (via transaction commitments).  Given that the standard doesn’t <em>explicitly</em> provide a total-budget for an activity, do people see this as an issue?  Is a new total-budget element an answer, or just clearer guidance?</p>
+<p>Most importantly, do people need to see/use total budget data for activities?</p>
+<p>Any thoughts welcome!</p>
+            <p><small>8 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/a-total-budget-for-an-activity/645">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/a-total-budget-for-an-activity/645</link>
+          <pubDate>Wed, 14 Dec 2016 11:00:57 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>Yes</discourse:topicClosed>
+          <discourse:topicArchived>Yes</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-645</guid>
+          <source url="https://discuss.iatistandard.org/t/a-total-budget-for-an-activity/645.rss">A total-budget for an activity?</source>
+        </item>
+        <item>
+          <title>About the Modifications, Additions, Improvements category</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Modifications, Additions, Improvements</category>
+          <description><![CDATA[
+            <p>Inbox for suggestions - post will be moved into appropriate upgrade forums as they are made. For instance, if a proposal would constitute a non-backwardly compatible change to the IATI standard, it would most likely be moved into the nearest Integer upgrade forum.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/about-the-modifications-additions-improvements-category/589">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/about-the-modifications-additions-improvements-category/589</link>
+          <pubDate>Tue, 11 Oct 2016 14:22:08 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-589</guid>
+          <source url="https://discuss.iatistandard.org/t/about-the-modifications-additions-improvements-category/589.rss">About the Modifications, Additions, Improvements category</source>
+        </item>
+  </channel>
+</rss>

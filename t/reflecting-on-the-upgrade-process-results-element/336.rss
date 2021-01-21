@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Reflecting on the upgrade process: Results element</title>
+    <link>https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process-results-element/336</link>
+    <description>Continuing the discussion from [Reflecting on the upgrade process](http://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333):
+[quote=&quot;rolfkleef, post:1, topic:333&quot;]
+A lot of the NGOs that we work with want to publish qualitative results. It&#39;s still a use case to be explored, so there are no technical proposals, and so it&#39;s not in 2.02.
+[/quote]
+
+Clearly some things (e.g. vaccinations, schoolrooms) are easier to quantify than others (e.g. democracy). That&#39;s not a problem we&#39;re going to solve with XSD. 
+
+In the proposed standard:
+
+- There are (qualitative) `comment` elements available at the same level as the (quantitative) `actual` and `target` elements. There are narrative `description` elements available at various levels. 
+
+- Disaggregation can be used to represent categorical data like ethnicity. 
+
+- Indicator definitions can also provide nuance and context to what&#39;s being measured. 
+
+Beyond that, I&#39;m curious to know what more we could envision doing to support qualitative results. Could you perhaps provide some examples of use cases that the proposed standard doesn&#39;t support?
+
+[quote=&quot;rolfkleef, post:1, topic:333&quot;]
+At the same time, there are fixes to make the quantitative results more usable, but without a long-term vision of where it should lead to.
+[/quote]
+
+Here are some stories that these fixes make possible, none of which is possible with the current standard: 
+
+- Someone managing a housing reconstruction project in a post-disaster situation can submit the same IATI report to different stakeholders (donors, home office, host country, etc.) instead of spending their time reformatting their data to accommodate mutually incompatible computer systems. 
+ 
+- A researcher exploring whether bednet distribution is effective can query IATI-reported data on bednet delivery, across multiple donors/implementers/countries, and compare that with malaria incidence data. 
+
+- A local investigative journalist can compare IATI-reported results (say, on schoolroom rehabilitation) with facts on the ground, and possibly bring corruption to light. 
+
+- The administrator of a large bilateral donor agency can answer to her legislature with precision and detail when they ask what was accomplished with taxpayer money. 
+
+I&#39;m not sure what more we could expect from a humble little XML element.  
+
+[quote=&quot;rolfkleef, post:1, topic:333&quot;]
+Examples around results are usually for outputs, whereas many NGOs (and donors) want to manage on outcomes and impacts, or different types of theory of change, especially in lobby and advocacy.
+[/quote]
+
+The proposed schema is agnostic and can support outcome data just as easily as it can output data. See https://github.com/IATI/IATI-Codelists/blob/version-2.01/xml/ResultType.xml . If you want, you can report not only outputs (e.g. hours of teacher training provided) but outcomes (e.g. improved math scores) and impacts (e.g. greater social mobility). The XSD doesn&#39;t care. 
+
+We have to be careful with attribution - does intervention X get all the credit for improvement Y, and is there even a causal relationship at all? That&#39;s what Ph.D. candidates are for. But researchers and evaluators can&#39;t even get started if we are incapable of counting our outputs; in that case they&#39;re left with crude proxies like dollars disbursed, and that&#39;s the least informative metric of all.</description>
+    
+    <lastBuildDate>Wed, 13 Jul 2016 12:29:11 +0000</lastBuildDate>
+    <category>Results</category>
+    <atom:link href="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process-results-element/336.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Reflecting on the upgrade process: Results element</title>
+        <dc:creator><![CDATA[Herb_Caudill]]></dc:creator>
+        <description><![CDATA[
+            <p>Continuing the discussion from <a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333">Reflecting on the upgrade process</a>:</p>
+<aside class="quote no-group quote-modified" data-post="1" data-topic="333">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rolfkleef/40/82_1.png" class="avatar"><a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/1">Reflecting on the upgrade process</a>
+</div>
+<blockquote>
+<p>A lot of the NGOs that we work with want to publish qualitative results. It’s still a use case to be explored, so there are no technical proposals, and so it’s not in 2.02.</p>
+</blockquote>
+</aside>
+<p>Clearly some things (e.g. vaccinations, schoolrooms) are easier to quantify than others (e.g. democracy). That’s not a problem we’re going to solve with XSD.</p>
+<p>In the proposed standard:</p>
+<ul>
+<li>
+<p>There are (qualitative) <code>comment</code> elements available at the same level as the (quantitative) <code>actual</code> and <code>target</code> elements. There are narrative <code>description</code> elements available at various levels.</p>
+</li>
+<li>
+<p>Disaggregation can be used to represent categorical data like ethnicity.</p>
+</li>
+<li>
+<p>Indicator definitions can also provide nuance and context to what’s being measured.</p>
+</li>
+</ul>
+<p>Beyond that, I’m curious to know what more we could envision doing to support qualitative results. Could you perhaps provide some examples of use cases that the proposed standard doesn’t support?</p>
+<aside class="quote no-group" data-post="1" data-topic="333">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rolfkleef/40/82_1.png" class="avatar"><a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/1">Reflecting on the upgrade process</a>
+</div>
+<blockquote>
+<p>At the same time, there are fixes to make the quantitative results more usable, but without a long-term vision of where it should lead to.</p>
+</blockquote>
+</aside>
+<p>Here are some stories that these fixes make possible, none of which is possible with the current standard:</p>
+<ul>
+<li>
+<p>Someone managing a housing reconstruction project in a post-disaster situation can submit the same IATI report to different stakeholders (donors, home office, host country, etc.) instead of spending their time reformatting their data to accommodate mutually incompatible computer systems.</p>
+</li>
+<li>
+<p>A researcher exploring whether bednet distribution is effective can query IATI-reported data on bednet delivery, across multiple donors/implementers/countries, and compare that with malaria incidence data.</p>
+</li>
+<li>
+<p>A local investigative journalist can compare IATI-reported results (say, on schoolroom rehabilitation) with facts on the ground, and possibly bring corruption to light.</p>
+</li>
+<li>
+<p>The administrator of a large bilateral donor agency can answer to her legislature with precision and detail when they ask what was accomplished with taxpayer money.</p>
+</li>
+</ul>
+<p>I’m not sure what more we could expect from a humble little XML element.</p>
+<aside class="quote no-group" data-post="1" data-topic="333">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rolfkleef/40/82_1.png" class="avatar"><a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/1">Reflecting on the upgrade process</a>
+</div>
+<blockquote>
+<p>Examples around results are usually for outputs, whereas many NGOs (and donors) want to manage on outcomes and impacts, or different types of theory of change, especially in lobby and advocacy.</p>
+</blockquote>
+</aside>
+<p>The proposed schema is agnostic and can support outcome data just as easily as it can output data. See <a href="https://github.com/IATI/IATI-Codelists/blob/version-2.01/xml/ResultType.xml" rel="nofollow noopener">https://github.com/IATI/IATI-Codelists/blob/version-2.01/xml/ResultType.xml</a> . If you want, you can report not only outputs (e.g. hours of teacher training provided) but outcomes (e.g. improved math scores) and impacts (e.g. greater social mobility). The XSD doesn’t care.</p>
+<p>We have to be careful with attribution - does intervention X get all the credit for improvement Y, and is there even a causal relationship at all? That’s what Ph.D. candidates are for. But researchers and evaluators can’t even get started if we are incapable of counting our outputs; in that case they’re left with crude proxies like dollars disbursed, and that’s the least informative metric of all.</p>
+          <p><a href="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process-results-element/336/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process-results-element/336/1</link>
+        <pubDate>Mon, 12 Oct 2015 19:38:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-336-1</guid>
+        <source url="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process-results-element/336.rss">Reflecting on the upgrade process: Results element</source>
+      </item>
+  </channel>
+</rss>

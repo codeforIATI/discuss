@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Emergency versus Appeals</title>
+    <link>https://discuss.iatistandard.org/t/emergency-versus-appeals/1474</link>
+    <description>The Humanitarian Scope element asks that activities be tagged with a type and defines type as Emergency or Appeal.  I&#39;m now trying to figure out the precise difference between the two.  
+
+In reading on the OCHA-FTS-HRP site they refer to Humanitarian Response Plans (HRP) and Flash Appeals and they define Flash Appeals as (emergency plans).  
+
+Should I interpret this to mean that activities that are part of formal HRP should be considered Appeals and anything else is emergency?  
+
+IOM is part of the HRP process in many countries but we also have activities where we create our own appeals via our own Humanitarian Compendium website.  This site includes appeals which are part of HRP as well as non-HRP appeals.   My head starts to spin when an appeal is set up because of an emergency.  
+
+If anyone has any definitive guidance on the difference it would be greatly appreciated.  And if it is all subjective then even sharing thoughts on the approach taken by others would be appreciated.</description>
+    
+    <lastBuildDate>Fri, 14 Sep 2018 13:38:39 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/emergency-versus-appeals/1474.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Emergency versus Appeals</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear Nick,</p>
+<p>Wow most of that actually made sense to me.  Thank you so much for taking the time to write it all down.  And yes, I think the standard documentation section should have more info on this.  I’d like to think I’m not the only one who really couldn’t follow how it is supposed to work.</p>
+<p>Kind Regards,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/emergency-versus-appeals/1474/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/emergency-versus-appeals/1474/3</link>
+        <pubDate>Fri, 14 Sep 2018 13:38:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1474-3</guid>
+        <source url="https://discuss.iatistandard.org/t/emergency-versus-appeals/1474.rss">Emergency versus Appeals</source>
+      </item>
+      <item>
+        <title>Emergency versus Appeals</title>
+        <dc:creator><![CDATA[ximboden]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Michelle,</p>
+<p>The humanitarian-scope element is confusingly defined and I agree that we need to work on how the documentation explains it. This is how I understand it:</p>
+<ol>
+<li>
+<p>The purpose of the humanitarian-scope element is to define key characteristics of activities that are of particular importance for humanitarian tracking, but don’t have a natural home within other existing IATI tags.</p>
+</li>
+<li>
+<p>At the moment, these two characteristics are, broadly speaking, (a) the identification of the particular humanitarian crisis or emergency which an activity is addressing; and (b) the identification of the particular response plan of which the activity forms part. These characteristics are distinct. The <span class="mention">@type</span> attribute is used to indicate which of these two characteristics a humanitarian-scope element is being used to identify. (In the future, the <span class="mention">@type</span> attribute could be expanded to include additional humanitarian characteristics beyond these two).</p>
+</li>
+<li>
+<p>All humanitarian activities can be linked to an emergency or crisis. This means that for all activities there should be a humanitarian-scope element of <strong>type=1 (Emergency)</strong> which identifies the emergency. The emergency is identified using one of the standard emergency lists available under the <span class="mention">@vocabulary</span> attribute. At the moment, the only such list is <strong>vocabulary=1-2 (Glide)</strong>. You can also use your own list, identified with <strong>vocabulary=99</strong>. (In the future, the <span class="mention">@vocabulary</span> attribute could be expanded to include other standard emergency lists)</p>
+</li>
+<li>
+<p>Additionally, some - but not all - humanitarian activities can also be identified as being part of a response plan. This means that for these ‘on-plan’ activities there should be a humanitarian-scope element of <strong>type=2 (Appeal)</strong> which identifies the response plan. The plan is identified using one of the standard plan lists available under the <span class="mention">@vocabulary</span> attribute. At the moment, the only such list is <strong>vocabulary=2-1 (Humanitarian Plan)</strong>. You can also use your own list, identified with <strong>vocabulary=99</strong>. (In the future, the <span class="mention">@vocabulary</span> attribute could be expanded to include other standard plan lists).</p>
+</li>
+<li>
+<p>In practice, response plans are almost always associated with a particular emergency. This means that for <strong>on-plan activities</strong> where the plan is correctly identified with a humanitarian-scope element of type=2 and vocabulary=2-1, it is recommended <em>but not mandatory</em> to additionally include a humanitarian-scope element of type=1 and vocabulary 1-2 to identify the emergency. However, all <strong>off-plan activities</strong> <em>must</em> identify the emergency using a humanitarian-scope element of type=1.</p>
+</li>
+</ol>
+<p>I hope that this short explanation provides the clarity you need. A few other observations:</p>
+<ul>
+<li>
+<p>The ‘Flash Appeal’ issue you describe is a bit of a red herring. A Flash Appeal is still a form of response plan, and not an emergency. It is most commonly associated with a particular type of emergency, namely sudden-onset emergencies such as earthquakes or typhoons. HRPs are more commonly used in protracted crises (which are another form of emergency). If your activity is related to any response plan, whether it is a Flash Appeal, HRP, 3RP or other, then this should always be indicated using type=2.</p>
+</li>
+<li>
+<p>The response plan type is deliberately designed for you to be able to recognise your own response plans, in addition to the inter-agency ones on the official list. You do this using the vocabulary code 99. So for example, an activity that is part of an IOM appeal as well as an HRP could include two humanitarian-scope elements of type=2, one with vocabulary=99 and the other with vocabulary=2-1. This activity could optionally also include a third humanitarian-scope element, of type=1, to identify the emergency.</p>
+</li>
+<li>
+<p>The type codelist should be modified in order to make this distinction clearer, e.g. by changing ‘Emergency’ to ‘Emergency / Crisis’, and ‘Appeal’ to ‘Response Plan / Appeal’. We should also add descriptions which explain the difference, e.g. Emergency=‘The particular humanitarian situation or event to which an activity is responding’ and Plan=‘The response plan to which the activity contributes or in which the activity participates’.</p>
+</li>
+<li>
+<p>The vocabulary codelist should be modified to indicate that it includes certain lists which represent emergencies (i.e. those with codes which begin with ‘1-’) and are therefore only to used together with type=1, and other lists which represents response plans (i.e. those with codes which begin with ‘2-’) and are therefore only to be used together with type=2. The all-purpose code 99 for a reporting org’s own lists can be used for both emergencies and plans.</p>
+</li>
+<li>
+<p>The above five-point explanation, or some abbreviated variation thereof, should be included in the various guidelines for humanitarian reporting in IATI.</p>
+</li>
+</ul>
+<p>Kind regards,</p>
+<p>Nick</p>
+          <p><a href="https://discuss.iatistandard.org/t/emergency-versus-appeals/1474/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/emergency-versus-appeals/1474/2</link>
+        <pubDate>Fri, 14 Sep 2018 13:11:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1474-2</guid>
+        <source url="https://discuss.iatistandard.org/t/emergency-versus-appeals/1474.rss">Emergency versus Appeals</source>
+      </item>
+      <item>
+        <title>Emergency versus Appeals</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>The Humanitarian Scope element asks that activities be tagged with a type and defines type as Emergency or Appeal.  I’m now trying to figure out the precise difference between the two.</p>
+<p>In reading on the OCHA-FTS-HRP site they refer to Humanitarian Response Plans (HRP) and Flash Appeals and they define Flash Appeals as (emergency plans).</p>
+<p>Should I interpret this to mean that activities that are part of formal HRP should be considered Appeals and anything else is emergency?</p>
+<p>IOM is part of the HRP process in many countries but we also have activities where we create our own appeals via our own Humanitarian Compendium website.  This site includes appeals which are part of HRP as well as non-HRP appeals.   My head starts to spin when an appeal is set up because of an emergency.</p>
+<p>If anyone has any definitive guidance on the difference it would be greatly appreciated.  And if it is all subjective then even sharing thoughts on the approach taken by others would be appreciated.</p>
+          <p><a href="https://discuss.iatistandard.org/t/emergency-versus-appeals/1474/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/emergency-versus-appeals/1474/1</link>
+        <pubDate>Thu, 13 Sep 2018 07:53:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1474-1</guid>
+        <source url="https://discuss.iatistandard.org/t/emergency-versus-appeals/1474.rss">Emergency versus Appeals</source>
+      </item>
+  </channel>
+</rss>

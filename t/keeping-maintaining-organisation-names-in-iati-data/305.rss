@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Keeping / maintaining Organisation names in IATI data</title>
+    <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305</link>
+    <description>It is understood that 2.01 places emphasis on the code over the code name within the data.  Hence
+
+    &lt;activity-status code=&quot;2 /&gt;
+
+is &quot;preferable&quot; to
+
+    &lt;activity-status code=&quot;2&quot;&gt;Implementation&lt;/activity-status&gt;
+
+I understand that this is because the data should - as far as possible - be language neutral, so that data users can then implement multi-lingual instances of IATI, by utilising translations of the code lists, etc
+
+---------
+
+However, I just wanted to state that this logic might not best be applied to the describing organisations in IATI.  By this, I mean that whilst the `@ref` code is very important for IATI when describing an organisation, the name (in any version of the standard) still also has a use.  Namely - it&#39;s because there *isn&#39;t* a lookup list for all the *possible* organisations in the world (or IATI) it becomes difficult for data users to *dereference* organisations when just a `@ref` exists.  
+
+Whilst such a service would no doubt be useful, it might be worth stating that 
+
+    &lt;participating-org ref=&quot;GB-1&quot; role=&quot;Funding&quot; type=&quot;10&quot;&gt;DfID&lt;/participating-org&gt;
+
+could be more help to a data user than:
+
+    &lt;participating-org ref=&quot;GB-1&quot; role=&quot;Funding&quot; type=&quot;10&quot;/&gt; 
+
+Example: take a look at this data on d-portal*: http://d-portal.org/q.xml?aid=GB-COH-1364201-BGD0173
+
+The XML for the `participating-org` does not include the name, just the `@ref`.  d-portal does not therefore display an organisation name - because it hasn&#39;t (I guess) a list to lookup against (and GB-1 is not the best example)
+
+-----
+Perhaps we need to establish clearer consensus / guidance on this?  Do others think this might be a potential issue (or not)?
+
+*NB: this isn&#39;t a critique of d-portal - just an illustration of the challenges that we could face</description>
+    
+    <lastBuildDate>Thu, 10 Sep 2015 13:24:10 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>There are a couple of issues here when it comes to a utility:</p>
+<p><strong>(1) An approach to look-up official names from those registration agencies which provide open data could be part of Joined Up Data work on Org IDs.</strong></p>
+<p>This could be a relatively low-lift tool that provides wrappers around existing lookup platforms (e.g. Open Corporates) rather than trying to provide and maintain the quality of its own lookup list.</p>
+<p><strong>(2) An approach to look-up names where no open data list exists is more complex - and relies on at least some IATI publishers including names in their files</strong></p>
+<p>I.e. the other way a tool can work is to read in all the IATI files published, look for mapping between IDs and Names, and then allow others to lookup names from the ID.</p>
+<p>I believe Dan M and others have experimented with tools for this: but found issues with the incoming data quality that made this tricky.</p>
+<hr>
+<p>To allow a utility that does (2) here, then definitely a strong recommendation to include the name is useful.</p>
+<p>The alternative to this is to encourage publication of a separate codelist of organisations named in files, keeping IATI files terse, but providing the input that would be needed for a utility of type (2).</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/15</link>
+        <pubDate>Thu, 10 Sep 2015 13:24:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-15</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>OK - have added something around the second point at <a href="http://support.iatistandard.org/entries/83872305-Clearer-guidance-on-organisation-names" rel="nofollow noopener">http://support.iatistandard.org/entries/83872305-Clearer-guidance-on-organisation-names</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/14</link>
+        <pubDate>Thu, 10 Sep 2015 12:58:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-14</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>There are a couple of issues worthy of discussion here:</p>
+<ul>
+<li>If we had a proper utility by which the name associated with an organisation identifier could be discovered our guidance could be the same as our guidance for code descriptions. Is the building of such an utility a priority?</li>
+<li>In the absence of such a utility we need to change the guidance that this is a recommended rather than optional element. Logically they may mean the same thing, but I think this is an important enough issue for the guidance to be included in the schema definition. Hence the suggestion that we consider it for 2.02</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/13</link>
+        <pubDate>Thu, 10 Sep 2015 10:32:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-13</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi</p>
+<p>I dont see this being related to 2.02.  It’s more about guidance across all versions of IATI, but particularly for 2.01 - where emphasis was placed on not using a name with a code.  This is about making it clear that the data would be <em>useful</em> when an org name was included.</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/12</link>
+        <pubDate>Thu, 10 Sep 2015 10:05:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-12</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven,</p>
+<p>We recently had a discussion which touched on your observation of 2.01 and earlier documentation’s lack of clarity on <code>participating-org</code>'s narrative. Could I invite you to expand on it a bit, and add it to our <a href="http://support.iatistandard.org/forums/21251175-2-02-Decimal-Upgrade-Proposals" rel="nofollow noopener">2.02 proposals page</a>?</p>
+<p>Best,<br>
+Rory</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/11</link>
+        <pubDate>Tue, 08 Sep 2015 11:49:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-11</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>So it would be a simple case of clearer guidance then, to make sure the name is included in the narrative element. A best practice, so to speak.</p>
+<p>I now recall we had this discussion in DFATD - indeed some people assumed we would only use the ID, but I insisted that we should also include the name, for ease of reference.</p>
+<p>I still think it would make sense for the D-Portal to use the narrative element along with the ID, if it isn’t already the case.</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/10</link>
+        <pubDate>Tue, 28 Jul 2015 14:04:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-10</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks all</p>
+<p><a class="mention" href="/u/dalepotter">@dalepotter</a> would be good to know any plans/timescales</p>
+<p><a class="mention" href="/u/michaelmedley">@MichaelMedley</a> afaik such a list isnt a hand.  Perhaps that should be a datastore API query in itself?  Additionally, there is a field for “IATI identifier” held in the Registry, so that could be useful (although not accessible via <a href="http://iatiregistry.org/api/3/action/organization_list?all_fields=True" rel="nofollow noopener">http://iatiregistry.org/api/3/action/organization_list?all_fields=True</a>).  However, note that these values don’t always match the data: <a href="http://dashboard.iatistandard.org/reporting_orgs.html" rel="nofollow noopener">http://dashboard.iatistandard.org/reporting_orgs.html</a>.  Maybe this is a new thread?</p>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> yes, in 2.01 the narrative element <em>can</em> be used to provide the organisation name.  My original observation was that a name should ALWAYS be provided for an organisation, alongside the structured reference/identifier - as these alone cannot always be dereferenced. In 2.01, we dont seem to be clear on this:</p>
+<p>On <a href="http://iatistandard.org/201/activity-standard/iati-activities/iati-activity/participating-org/" rel="nofollow noopener">participating-org</a>:</p>
+<blockquote>
+<p>May contain the organisation name as narrative.</p>
+</blockquote>
+<blockquote>
+<p>If <span class="mention">@ref</span> is not present then the narrative MUST contain the name of the organisation.</p>
+</blockquote>
+<p>Hence - this could also be read that it is fine to <em>just</em> include the organisation ref alone, with no name.</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/9</link>
+        <pubDate>Tue, 28 Jul 2015 07:52:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-9</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi<br>
+I’m a bit confused about what the issue is.  Isn’t this addressed by using the “narrative” element along with the identifier?  It would be possible for the D-Portal (or other sites) to show the content of the narrative element along with the ID.</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/8</link>
+        <pubDate>Mon, 27 Jul 2015 22:01:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-8</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[MichaelMedley]]></dc:creator>
+        <description><![CDATA[
+            <p>Is there a comprehensive list of valid values one can use for reporting-org in the Datastore API? It would help me if there were, especially if it were machine-readable and cross-referenced with the text names that have been used against the codes. Such a list would (perhaps obviously) include all the organizations that HAVE reported rather than all the organizations in the world.</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/7</link>
+        <pubDate>Thu, 23 Jul 2015 02:12:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-7</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Steven, this was touched on at the last Tech Team Issue call and will be discussed in more detail in the next one in a couple weeks.</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/6</link>
+        <pubDate>Wed, 22 Jul 2015 16:07:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-6</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>In the meantime, should there be some guidance on this page, regarding the use of org names: <a href="http://iatistandard.org/201/organisation-identifiers/" rel="nofollow noopener">http://iatistandard.org/201/organisation-identifiers/</a> ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/5</link>
+        <pubDate>Wed, 22 Jul 2015 13:43:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-5</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this extra information <a class="mention" href="/u/timdavies">@TimDavies</a> - very useful to see the context of where things have been in the past. You’re right that this would definitely be one to explore with the Joined Up Data Alliance. I’ve made a note to draft up some ideas shortly.  <a class="mention" href="/u/bill_anderson">@bill_anderson</a> is also thinking about the vision for this too.</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/4</link>
+        <pubDate>Tue, 21 Jul 2015 11:03:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-4</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Dale,</p>
+<p>A few years ago I built a simple lookup against the then spreadsheet based Organisation ID codelist - just to help people (a) identify prefixes; (b) lookup organisations if a search for IDs for the registration agency existed;</p>
+<p>It is at <a href="https://practicalparticipation.github.io/organisation-id-tool/" rel="nofollow noopener">https://practicalparticipation.github.io/organisation-id-tool/</a>, but no longer working due to the move away from maintaining Organisation ID prefixes in a Google spreadsheet.</p>
+<p>I think the solution in this space is definitely something to pursue through the Joined Up Data Alliance: a shared project to create a platform which would:</p>
+<p>(a) Enable easier lookup of prefixes;<br>
+(b) If a third-party reconciliation service exists for IDs, map an endpoint to that;</p>
+<p>E.g. rather than trying to maintain a full organization lookup, which is a prohibitively complex task (just ask Open Corporates about their hosting bill…), proxy requests to GB-COH to open corporates, for example, or to some other source that maintains an authoritative list of companies.</p>
+<p>This noted: having people still include the name they know an organisation by in their IATI files is <em>really</em> useful, and it only only helps with cases where there isn’t an existing identifier, or lookup service - but also helps with discovery of the ‘Also Known As’ (AKAs) of organisations.</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/3</link>
+        <pubDate>Mon, 20 Jul 2015 11:05:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-3</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven - good to bring this up. My immediate reaction was that this shows a need for an organisational look-up tool in order to dereference a given IATI organisation identifier. However, you’re right that such a tool would not be able to identify every possible organisational identifier even for the same organisation (bearing in mind that an organisation may be listed with multiple registration agencies), let alone all organisations in the world!</p>
+<p>Therefore it would probably make sense to include some textual reference alongside any field referencing an organisation identifier, as you suggest. We’ve added this to the issue backlog to discuss further amongst the team.</p>
+<p>In any case, it’s on my (albeit long) task list to find out about previous work on an organisational look-up tool. <a class="mention" href="/u/timdavies">@TimDavies</a> may have done some work on this previously?</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/2</link>
+        <pubDate>Mon, 20 Jul 2015 09:56:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-2</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+      <item>
+        <title>Keeping / maintaining Organisation names in IATI data</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>It is understood that 2.01 places emphasis on the code over the code name within the data.  Hence</p>
+<pre><code>&lt;activity-status code="2 /&gt;
+</code></pre>
+<p>is “preferable” to</p>
+<pre><code>&lt;activity-status code="2"&gt;Implementation&lt;/activity-status&gt;
+</code></pre>
+<p>I understand that this is because the data should - as far as possible - be language neutral, so that data users can then implement multi-lingual instances of IATI, by utilising translations of the code lists, etc</p>
+<hr>
+<p>However, I just wanted to state that this logic might not best be applied to the describing organisations in IATI.  By this, I mean that whilst the <code>@ref</code> code is very important for IATI when describing an organisation, the name (in any version of the standard) still also has a use.  Namely - it’s because there <em>isn’t</em> a lookup list for all the <em>possible</em> organisations in the world (or IATI) it becomes difficult for data users to <em>dereference</em> organisations when just a <code>@ref</code> exists.</p>
+<p>Whilst such a service would no doubt be useful, it might be worth stating that</p>
+<pre><code>&lt;participating-org ref="GB-1" role="Funding" type="10"&gt;DfID&lt;/participating-org&gt;
+</code></pre>
+<p>could be more help to a data user than:</p>
+<pre><code>&lt;participating-org ref="GB-1" role="Funding" type="10"/&gt; 
+</code></pre>
+<p>Example: take a look at this data on d-portal*: <a href="http://d-portal.org/q.xml?aid=GB-COH-1364201-BGD0173" rel="nofollow noopener">http://d-portal.org/q.xml?aid=GB-COH-1364201-BGD0173</a></p>
+<p>The XML for the <code>participating-org</code> does not include the name, just the <code>@ref</code>.  d-portal does not therefore display an organisation name - because it hasn’t (I guess) a list to lookup against (and GB-1 is not the best example)</p>
+<hr>
+<p>Perhaps we need to establish clearer consensus / guidance on this?  Do others think this might be a potential issue (or not)?</p>
+<p>*NB: this isn’t a critique of d-portal - just an illustration of the challenges that we could face</p>
+          <p><a href="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305/1</link>
+        <pubDate>Fri, 17 Jul 2015 16:23:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-305-1</guid>
+        <source url="https://discuss.iatistandard.org/t/keeping-maintaining-organisation-names-in-iati-data/305.rss">Keeping / maintaining Organisation names in IATI data</source>
+      </item>
+  </channel>
+</rss>

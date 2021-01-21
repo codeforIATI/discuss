@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Use of namespaces as meta-data &quot;carriers&quot;</title>
+    <link>https://discuss.iatistandard.org/t/use-of-namespaces-as-meta-data-carriers/169</link>
+    <description>There are many instances I have experienced where the data set that is intended to be published contains some sector/industry/marketing data they would wish to publish, but it doesn&#39;t quite have that perfect natural home within the standard that would specifically allow other readers of this information to understand the context of the data being supplied.
+
+If there is a common trait to data that is being published by many donors that fit this statement, then there are ways that this can be incorporated into the standard, and it is being done.
+
+**Using the Standard to suit your custom needs!**
+
+Akvo RSR makes use of a narrative data (unofficial) standard to publish and present information on individual projects/activities to a public audience including network sourced content.
+
+The data model has been aligned with the IATI Standard, meaning all fields stored fit into the official 2.01 schema, but there is a Namespace to provide meta data about the content being included that allows us to retain the rich elements intact when transferring data.
+
+This is useful for Akvo to do as they collect and publish information from a large number of individual organisations. The namespace will be used consistently throughout the published data so consumers of the data can work more easily with the files.
+
+**How does this work?**
+
+To help put this into context, I will provide a practical example:
+
+There are more description fields being used in Akvo RSR than the available different types within the IATI standard. These fields encourage publishers to talk about specific areas of interest within their activities. In IATI we only have the space for 4 different types of description fields. To incorporate more description fields, a namespace description field has been added and a sample output XML would be:
+
+    &lt;description type=&quot;2&quot; akvo:type=&quot;8&quot;&gt;
+    	&lt;narrative&gt;Our aim is to provide an Android Application that is simple, intuitive and effective. The performance of this should be so great that we start having all users moving their updates to be created using the App.&lt;/narrative&gt;
+    &lt;/description&gt;
+    &lt;description type=&quot;3&quot;&gt;
+    	&lt;narrative&gt;RSR Up is designed and developed for active users of Akvo RSR to be able to provide their project updates on the move. Most users will be expected to already have a working knowledge of the platform, but the interface is designed to be picked up easily without any additional specific training.&lt;/narrative&gt;
+    &lt;/description&gt;
+    &lt;description type=&quot;4&quot; akvo:type=&quot;5&quot;&gt;
+    	&lt;narrative&gt;Akvo has been working hard in order to create an Android Application that will allow any authorised user to create and submit a Project Update directly to the system without the need to interface on a regular desktop machine.&lt;/narrative&gt;
+    &lt;/description&gt;
+    &lt;description type=&quot;4&quot; akvo:type=&quot;9&quot;&gt;
+    	  &lt;narrative&gt;We have a working application that we are currently finalising the internal testing on. After this current testing round, we will be connecting with our colleagues all over the globe, to start the Beta testing further afield.
+    The app has been designed to be intuitive to use and operate, so anyone familiar with updating their projects on RSR should have no trouble at all.&lt;/narrative&gt;
+    &lt;/description&gt;
+
+Here you can see that description nodes, can be accompanied by an Akvo namespace element that gives an additional description type that can be used.
+
+The header of the file would contain:
+
+    &lt;iati-activities xmlns:akvo=&quot;http://www.akvo.org&quot;&gt;
+
+To compliment this functionality, the namespace information is published at a high level (more detailed schema to come) here: https://github.com/akvo/akvo-rsr/wiki/RSR_Partner-IATI-Codelist
+
+In practice the header of the file should be written as:
+
+    &lt;iati-activities xmlns:akvo=&quot;http://www.akvo.org&quot;&gt;
+    &lt;!-- Akvo.org codelist: https://github.com/akvo/akvo-rsr/wiki/RSR_Partner-IATI-Codelist --&gt;
+
+**What does this provide?**
+
+This further specification allows us to have rich data sets that completely validate to the IATI XML standard but the enhancements can be shared and utilised within entire organisations or programmes to improve the usability of the provided data for other purposs such as internal steering, results reporting or public communications.
+
+This could easily be expanded to create an additional field and validation set by a government or funding organisation that can provide recipients with the precise details of how to perform official and specified progress reporting required.
+
+It could also be utilised to incorporate additional data or codelists that are being used elsewhere within the networks of organisations involved, but are as yet not part of the IATI Standard. An example of this is the [Organisation Type codelist](http://iatistandard.org/201/codelists/OrganisationType/). I&#39;ve been informed that many organisations are already using the [OECD DAC Channel Codes](http://www.oecd.org/dac/stats/dacandcrscodelists.htm) that have a deeper level of granularity. Utilisation of an additional namepsace could provide the option to also add this codelist to the data being provided without it needing to be officially included within the standard in the short term.
+
+**What comes next?**
+
+It would be great to see if others are already using this kind of approach to incorporating additional meta data into the standard.
+
+I&#39;d also like to see if we can encourage the use and re-use of existing namespaces. Maybe there&#39;s a need for an &quot;unofficial registry&quot; of these kinds of namespaces, to encourage collaboration and categorisation.
+
+Some items I think are important to bear in mind:
+
+- Additional namespaces should be published with the validating schema
+- The coverage of new namespaces should overlap with existing namespaces as little as possible to keep things simple
+- We should discourage the use of a namespace if used by a small number of publishers</description>
+    
+    <lastBuildDate>Sun, 26 Apr 2015 11:58:32 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/use-of-namespaces-as-meta-data-carriers/169.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Use of namespaces as meta-data &quot;carriers&quot;</title>
+        <dc:creator><![CDATA[Adrian]]></dc:creator>
+        <description><![CDATA[
+            <p>There are many instances I have experienced where the data set that is intended to be published contains some sector/industry/marketing data they would wish to publish, but it doesn’t quite have that perfect natural home within the standard that would specifically allow other readers of this information to understand the context of the data being supplied.</p>
+<p>If there is a common trait to data that is being published by many donors that fit this statement, then there are ways that this can be incorporated into the standard, and it is being done.</p>
+<p><strong>Using the Standard to suit your custom needs!</strong></p>
+<p>Akvo RSR makes use of a narrative data (unofficial) standard to publish and present information on individual projects/activities to a public audience including network sourced content.</p>
+<p>The data model has been aligned with the IATI Standard, meaning all fields stored fit into the official 2.01 schema, but there is a Namespace to provide meta data about the content being included that allows us to retain the rich elements intact when transferring data.</p>
+<p>This is useful for Akvo to do as they collect and publish information from a large number of individual organisations. The namespace will be used consistently throughout the published data so consumers of the data can work more easily with the files.</p>
+<p><strong>How does this work?</strong></p>
+<p>To help put this into context, I will provide a practical example:</p>
+<p>There are more description fields being used in Akvo RSR than the available different types within the IATI standard. These fields encourage publishers to talk about specific areas of interest within their activities. In IATI we only have the space for 4 different types of description fields. To incorporate more description fields, a namespace description field has been added and a sample output XML would be:</p>
+<pre><code>&lt;description type="2" akvo:type="8"&gt;
+	&lt;narrative&gt;Our aim is to provide an Android Application that is simple, intuitive and effective. The performance of this should be so great that we start having all users moving their updates to be created using the App.&lt;/narrative&gt;
+&lt;/description&gt;
+&lt;description type="3"&gt;
+	&lt;narrative&gt;RSR Up is designed and developed for active users of Akvo RSR to be able to provide their project updates on the move. Most users will be expected to already have a working knowledge of the platform, but the interface is designed to be picked up easily without any additional specific training.&lt;/narrative&gt;
+&lt;/description&gt;
+&lt;description type="4" akvo:type="5"&gt;
+	&lt;narrative&gt;Akvo has been working hard in order to create an Android Application that will allow any authorised user to create and submit a Project Update directly to the system without the need to interface on a regular desktop machine.&lt;/narrative&gt;
+&lt;/description&gt;
+&lt;description type="4" akvo:type="9"&gt;
+	  &lt;narrative&gt;We have a working application that we are currently finalising the internal testing on. After this current testing round, we will be connecting with our colleagues all over the globe, to start the Beta testing further afield.
+The app has been designed to be intuitive to use and operate, so anyone familiar with updating their projects on RSR should have no trouble at all.&lt;/narrative&gt;
+&lt;/description&gt;
+</code></pre>
+<p>Here you can see that description nodes, can be accompanied by an Akvo namespace element that gives an additional description type that can be used.</p>
+<p>The header of the file would contain:</p>
+<pre><code>&lt;iati-activities xmlns:akvo="http://www.akvo.org"&gt;
+</code></pre>
+<p>To compliment this functionality, the namespace information is published at a high level (more detailed schema to come) here: <a href="https://github.com/akvo/akvo-rsr/wiki/RSR_Partner-IATI-Codelist" rel="nofollow noopener">https://github.com/akvo/akvo-rsr/wiki/RSR_Partner-IATI-Codelist</a></p>
+<p>In practice the header of the file should be written as:</p>
+<pre><code>&lt;iati-activities xmlns:akvo="http://www.akvo.org"&gt;
+&lt;!-- Akvo.org codelist: https://github.com/akvo/akvo-rsr/wiki/RSR_Partner-IATI-Codelist --&gt;
+</code></pre>
+<p><strong>What does this provide?</strong></p>
+<p>This further specification allows us to have rich data sets that completely validate to the IATI XML standard but the enhancements can be shared and utilised within entire organisations or programmes to improve the usability of the provided data for other purposs such as internal steering, results reporting or public communications.</p>
+<p>This could easily be expanded to create an additional field and validation set by a government or funding organisation that can provide recipients with the precise details of how to perform official and specified progress reporting required.</p>
+<p>It could also be utilised to incorporate additional data or codelists that are being used elsewhere within the networks of organisations involved, but are as yet not part of the IATI Standard. An example of this is the <a href="http://iatistandard.org/201/codelists/OrganisationType/" rel="nofollow noopener">Organisation Type codelist</a>. I’ve been informed that many organisations are already using the <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm" rel="nofollow noopener">OECD DAC Channel Codes</a> that have a deeper level of granularity. Utilisation of an additional namepsace could provide the option to also add this codelist to the data being provided without it needing to be officially included within the standard in the short term.</p>
+<p><strong>What comes next?</strong></p>
+<p>It would be great to see if others are already using this kind of approach to incorporating additional meta data into the standard.</p>
+<p>I’d also like to see if we can encourage the use and re-use of existing namespaces. Maybe there’s a need for an “unofficial registry” of these kinds of namespaces, to encourage collaboration and categorisation.</p>
+<p>Some items I think are important to bear in mind:</p>
+<ul>
+<li>Additional namespaces should be published with the validating schema</li>
+<li>The coverage of new namespaces should overlap with existing namespaces as little as possible to keep things simple</li>
+<li>We should discourage the use of a namespace if used by a small number of publishers</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-namespaces-as-meta-data-carriers/169/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-namespaces-as-meta-data-carriers/169/1</link>
+        <pubDate>Sun, 26 Apr 2015 11:16:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-169-1</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-namespaces-as-meta-data-carriers/169.rss">Use of namespaces as meta-data &quot;carriers&quot;</source>
+      </item>
+  </channel>
+</rss>

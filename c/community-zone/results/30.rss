@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Results - IATI Community Discussions</title>
+    <link>https://discuss.iatistandard.org/c/community-zone/results/30</link>
+    <description>Topics in the &#39;Results&#39; category Include any posts here that relate to the Results element of the IATI Standard. &lt;br&gt;This category also includes posts discussed during standards day at the TAG 2017 and specific proposals for the results element to be put forward in the 2.03 standard upgrade process.</description>
+    
+      <lastBuildDate>Mon, 30 Oct 2017 14:51:31 +0000</lastBuildDate>
+      <atom:link href="https://discuss.iatistandard.org/c/community-zone/results/30.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Challenge: results with multiple indicators and multiple measures</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>I’m working with an organisation who wish to publish results data.</p>
+<p>For any indicator, there will be multiple measurements (periods) that provide target and actuals, like this:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/ee1a6a368c1d4000d814b288873a1885d64c4c2a.png" data-download-href="https://discuss.iatistandard.org/uploads/default/ee1a6a368c1d4000d814b288873a1885d64c4c2a" title="results.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/ee1a6a368c1d4000d814b288873a1885d64c4c2a_2_690x183.png" alt="results" width="690" height="183" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/ee1a6a368c1d4000d814b288873a1885d64c4c2a_2_690x183.png, https://discuss.iatistandard.org/uploads/default/original/1X/ee1a6a368c1d4000d814b288873a1885d64c4c2a.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/ee1a6a368c1d4000d814b288873a1885d64c4c2a.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/ee1a6a368c1d4000d814b288873a1885d64c4c2a_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">results.png</span><span class="informations">826×220 19 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>The standard allows this:</p>
+<ul>
+<li>a result can have one or more <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/" rel="nofollow noopener">indicator</a>
+</li>
+<li>any indicator can have more than one <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/period/" rel="nofollow noopener">period</a> (which then holds the target and actual data)</li>
+</ul>
+<p>So far so good.  But… how do we actually maintain this data, for the production of IATI.  And then - use it!</p>
+<p>Missing in the schema is the ability to somehow <em>identify</em> the result(s) and indicator(s), meaning that whilst you might want to say in the above model:</p>
+<blockquote>
+<p>the actual value 100 relates to the period Q2 1617, and contributes to Indicator A, which is a part of Result 1.</p>
+</blockquote>
+<p>It doesn’t seem possible to declare the concepts of Result 1 and Indicator A.</p>
+<p>(<em>the ref attribute of transaction might be a good analogy here</em>)</p>
+<p>This becomes a real difficulty when you’re managing data on <em>multiple</em> activities, all with <em>many</em> results, <em>a range of</em> indicators and <em>various</em> measurement periods.</p>
+<p>Of course, <em>it’s possible to do this directly in the XML</em>, but the struggle is how to manage this in the lead up to publishing - whether spreadsheets, in house systems or elsewhere.  The Aidstream interface would enable this multi-multi recording, but I assume there’s some database behind it - <a class="mention" href="/u/anjesh">@anjesh</a> , do you provide a databse key (or similar) for the above elements?</p>
+<p>And - at the other end, if someone wants to convert some XML to a spreadsheet / other format - how do packages then handle such multi-multi relationships, with IDs?</p>
+<p><a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/rolfkleef">@rolfkleef</a> <a class="mention" href="/u/pelleaardema">@pelleaardema</a> what’s your experience?</p>
+<p><a class="mention" href="/u/sjohns">@SJohns</a> <a class="mention" href="/u/mikesmith">@mikesmith</a> <a class="mention" href="/u/rbesseling">@rbesseling</a>  did this come up in the CSO work on results?</p>
+            <p><small>21 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/challenge-results-with-multiple-indicators-and-multiple-measures/1108">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/challenge-results-with-multiple-indicators-and-multiple-measures/1108</link>
+          <pubDate>Mon, 30 Oct 2017 14:51:31 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1108</guid>
+          <source url="https://discuss.iatistandard.org/t/challenge-results-with-multiple-indicators-and-multiple-measures/1108.rss">Challenge: results with multiple indicators and multiple measures</source>
+        </item>
+        <item>
+          <title>Vocabulary attribute in Result element version 2.03</title>
+          <dc:creator><![CDATA[stolk]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>Currently the standard doesn’t mention the option to add a vocabulary attribute to the RESULT element.<br>
+The use of the Result element is relatively new and subject of collective learning. One of our leanings is that a publisher often administrates multiple result frameworks simultaneously. Each framework having different codes and structure.<br>
+Combining results and indicators without clarifying the respective vocabulary will create a an undesired degree of chaos.</p>
+<p>so the proposal is to allow the attribute vocabulary in Result element</p>
+            <p><small>8 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/vocabulary-attribute-in-result-element-version-2-03/814">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/vocabulary-attribute-in-result-element-version-2-03/814</link>
+          <pubDate>Wed, 26 Apr 2017 08:59:26 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-814</guid>
+          <source url="https://discuss.iatistandard.org/t/vocabulary-attribute-in-result-element-version-2-03/814.rss">Vocabulary attribute in Result element version 2.03</source>
+        </item>
+        <item>
+          <title>Results: Make the quality of evidence behind IATI results data transparent</title>
+          <dc:creator><![CDATA[mikesmith]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>This draft suggestion addresses Principle 3 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a> ) -  see attached document <a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/851a006feba47972c9c70c6a926af28d2d34b3e3.docx">Results_makeTheQualityOfEvidenceBehindIATIResultsDataTransparent.docx</a> (27.9 KB)</p>
+<p><strong>note:</strong> this suggestion is pending discussion at the IATI TAG conference 1330-1430 Wednesday 8th March</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-make-the-quality-of-evidence-behind-iati-results-data-transparent/752">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-make-the-quality-of-evidence-behind-iati-results-data-transparent/752</link>
+          <pubDate>Mon, 06 Mar 2017 21:32:36 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-752</guid>
+          <source url="https://discuss.iatistandard.org/t/results-make-the-quality-of-evidence-behind-iati-results-data-transparent/752.rss">Results: Make the quality of evidence behind IATI results data transparent</source>
+        </item>
+        <item>
+          <title>Results: reporting how and why IATI results were or were not achieved</title>
+          <dc:creator><![CDATA[mikesmith]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>This suggestion addresses Principle 2 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a> ) - see attached document <a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/fd6a465182c7445d75eac6d149f1b4c6985a4265.docx">Results_reportingHowAndWhyIATIResultsWereOrWereNotAchievedFORMATTINGUPDATED.docx</a> (15.9 KB)</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-reporting-how-and-why-iati-results-were-or-were-not-achieved/751">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-reporting-how-and-why-iati-results-were-or-were-not-achieved/751</link>
+          <pubDate>Mon, 06 Mar 2017 21:02:59 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-751</guid>
+          <source url="https://discuss.iatistandard.org/t/results-reporting-how-and-why-iati-results-were-or-were-not-achieved/751.rss">Results: reporting how and why IATI results were or were not achieved</source>
+        </item>
+        <item>
+          <title>Results: keep old results</title>
+          <dc:creator><![CDATA[mikesmith]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>This suggestion addresses Principle 5 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a> ) - see attached document <a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/c92b3cd040b8af5c54b3ebb4fb3c8aa18d6b0f6c.docx">Results_keepOldResults.docx</a> (14.8 KB)</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-keep-old-results/750">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-keep-old-results/750</link>
+          <pubDate>Mon, 06 Mar 2017 21:01:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-750</guid>
+          <source url="https://discuss.iatistandard.org/t/results-keep-old-results/750.rss">Results: keep old results</source>
+        </item>
+        <item>
+          <title>Results: represent more than quantitative data</title>
+          <dc:creator><![CDATA[mikesmith]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>This suggestion addresses Principle 1 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a> ) - see attached document <a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/def895b120dfd4c1b55f7c5d8a65e3dfc8782536.docx">Results_representMoreThanQuantitativeDataFORMATTINGUPDATED.docx</a> (16.6 KB)</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749</link>
+          <pubDate>Mon, 06 Mar 2017 20:59:27 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-749</guid>
+          <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749.rss">Results: represent more than quantitative data</source>
+        </item>
+        <item>
+          <title>Results: improve consistency of result standard: aggregations-status</title>
+          <dc:creator><![CDATA[mikesmith]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>This suggestion addresses Principle 7.1 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a> ) - see attached document <a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/fc2c58ad1a76b50d5df096c71b4f33c6eec54b56.docx">Results_aggregations-statusImproveConsistencyOfResultStandard.docx</a> (13.6 KB)</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-result-standard-aggregations-status/748">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-result-standard-aggregations-status/748</link>
+          <pubDate>Mon, 06 Mar 2017 20:45:13 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-748</guid>
+          <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-result-standard-aggregations-status/748.rss">Results: improve consistency of result standard: aggregations-status</source>
+        </item>
+        <item>
+          <title>Results: improve consistency of result standard: baseline</title>
+          <dc:creator><![CDATA[mikesmith]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>This suggestion addresses Principle 7.2 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a> ) - see attached document<a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/125588c129efb28e9fdb678e0308ded77a49f8b3.docx">Results_baselineImproveConsistencyOfResultStandard.docx</a> (13.8 KB)</p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-result-standard-baseline/747">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-result-standard-baseline/747</link>
+          <pubDate>Mon, 06 Mar 2017 20:43:18 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-747</guid>
+          <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-result-standard-baseline/747.rss">Results: improve consistency of result standard: baseline</source>
+        </item>
+        <item>
+          <title>Results: use of narrative elements</title>
+          <dc:creator><![CDATA[mikesmith]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>This suggestion is in response to a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a>) - see attached document <a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/037559cc91f273770d67c6b02c880dc81b1a035d.docx">Results_useOfNarrativeElements.docx</a> (14.8 KB)</p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-use-of-narrative-elements/746">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-use-of-narrative-elements/746</link>
+          <pubDate>Mon, 06 Mar 2017 20:36:27 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-746</guid>
+          <source url="https://discuss.iatistandard.org/t/results-use-of-narrative-elements/746.rss">Results: use of narrative elements</source>
+        </item>
+        <item>
+          <title>Results: statement to describe the purpose of IATI results data</title>
+          <dc:creator><![CDATA[mikesmith]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>This suggestion addresses Principle 8 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a> ) - see attached document <a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/495657e07f0c2581a8029bf3c9b8c21140181365.docx">Results_StatementToDescribeThePurposeOfIATIResultsData.docx</a> (15.1 KB)</p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-statement-to-describe-the-purpose-of-iati-results-data/745">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-statement-to-describe-the-purpose-of-iati-results-data/745</link>
+          <pubDate>Mon, 06 Mar 2017 20:32:39 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-745</guid>
+          <source url="https://discuss.iatistandard.org/t/results-statement-to-describe-the-purpose-of-iati-results-data/745.rss">Results: statement to describe the purpose of IATI results data</source>
+        </item>
+        <item>
+          <title>Results: allow disaggregation</title>
+          <dc:creator><![CDATA[mikesmith]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>This suggestion addresses Principle 4 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a> ) - see attached document <a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/3825299f5986f975ca9e7039df8d8ee608e9179e.docx">Results_allowDisaggregationLINKADDED.docx</a> (14.8 KB)</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-allow-disaggregation/744">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-allow-disaggregation/744</link>
+          <pubDate>Mon, 06 Mar 2017 20:29:31 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-744</guid>
+          <source url="https://discuss.iatistandard.org/t/results-allow-disaggregation/744.rss">Results: allow disaggregation</source>
+        </item>
+        <item>
+          <title>Results: recognising partner contributions</title>
+          <dc:creator><![CDATA[mikesmith]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>This suggestion addresses Principle 6 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a> ) - see attached document.<a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/fb08890c244b50acfbfff7e85442fa3f865d9f47.docx">Results_contributionOfPartners.docx</a> (16.4 KB)</p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions/743">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions/743</link>
+          <pubDate>Mon, 06 Mar 2017 20:25:29 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-743</guid>
+          <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions/743.rss">Results: recognising partner contributions</source>
+        </item>
+        <item>
+          <title>Challenge: integrating beneficiary feedback data into IATI?</title>
+          <dc:creator><![CDATA[SJohns]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>I’ve been puzzling on how best IATI data can support iterative/adaptive programme design and shared learning. As IATI project/finance data can be reported in near real-time and we can also easily update objectives and results, there is a potential for it to be useful for this purpose (although some kind of log of changes would be needed to track how a programme is adapted over time). One important part of adaptive design is integration of beneficiary feedback. It also may help support the transparency and participation elements of the Humanitarian Grand Bargain.</p>
+<p>Whilst most feedback tends to be tracked at local project level, there is a reported challenge of sharing this learning upwards to inform programme design. See for example the learning from the beneficiary feedback mechanisms pilots in the UK: <a href="http://feedbackmechanisms.org/findings/" rel="nofollow noopener">http://feedbackmechanisms.org/findings/</a> and also thisreport from Development Initiatives:<br>
+<a href="http://devinit.org/wp-content/uploads/2016/06/Beneficiary-feedback-in-donor-programme-design-development-and-evaluation-Uganda-and-Kenya-Report-June-20161.pdf" rel="nofollow noopener">http://devinit.org/wp-content/uploads/2016/06/Beneficiary-feedback-in-donor-programme-design-development-and-evaluation-Uganda-and-Kenya-Report-June-20161.pdf</a> (page 11). Would including a summary of key feedback from beneficiaries in IATI data about the project help to address this challenge?</p>
+<p>Would it also support better accountability? In theory, a wider range of constituents would be able to access and use the summary, via websites using IATI data, to check whether the programme/project has been adapted or changed as a result of the feedback.</p>
+<p>Would integrating all reporting (project/finance/results/feedback) through one mechanism be more efficient for in-country organisations who are partners with either donor-country based organisations or with donors directly? And would those organisations accept IATI data reporting in lieu of traditional reports?</p>
+<p>There are some key considerations in thinking about reporting feedback via IATI. For example, it would have to be done in line with responsible data use standards to protect individuals providing feedback. It may also be used to ‘spin’ media stories where the learning aspect is ignored, and therefore may limit what organisations are willing to disclose.</p>
+<p>As it’s qualitative data, perhaps the easiest/quickest way to integrate it is as a new document category, for example a code ‘beneficiary feedback summary’ <a href="http://iatistandard.org/202/codelists/DocumentCategory/" rel="nofollow noopener">http://iatistandard.org/202/codelists/DocumentCategory/</a></p>
+<p>However in the longer term, would it be possible/desirable to include it as an additional element, to sit alongside the Results element?</p>
+<p>I’d be interested in hearing your views.</p>
+<p>Sarah</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/challenge-integrating-beneficiary-feedback-data-into-iati/702">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/challenge-integrating-beneficiary-feedback-data-into-iati/702</link>
+          <pubDate>Fri, 03 Feb 2017 11:54:25 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-702</guid>
+          <source url="https://discuss.iatistandard.org/t/challenge-integrating-beneficiary-feedback-data-into-iati/702.rss">Challenge: integrating beneficiary feedback data into IATI?</source>
+        </item>
+        <item>
+          <title>Remove attribute aggregation-status from &lt;result&gt;</title>
+          <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>At the moment, the  field has an attribute aggregation-status: “Boolean flag indicating whether the data in the result set are suitable for aggregation.”</p>
+<p>I propose to remove this attribute:</p>
+<ul>
+<li>
+<p>It is defined at the  level. There can be multiple  elements in a , and some may be suitable for aggregation, while others are not. Would I then set this flag to “true” (some data in the result set is suitable for aggregation) or to “false” (not all the data is suitable for aggregation)?</p>
+</li>
+<li>
+<p>It doesn’t let me specify over which dimensions it can be aggregated. “Households reached” can usually be aggregated over regions, but not over time spans.</p>
+</li>
+</ul>
+            <p><small>4 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663</link>
+          <pubDate>Wed, 04 Jan 2017 12:26:00 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-663</guid>
+          <source url="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663.rss">Remove attribute aggregation-status from &lt;result&gt;</source>
+        </item>
+        <item>
+          <title>About the Results category</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>Include any posts here that relate to the Results element of the IATI Standard.<br>
+This category also includes posts discussed during standards day at the TAG 2017 and specific proposals for the results element to be put forward in the 2.03 standard upgrade process.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/about-the-results-category/506">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/about-the-results-category/506</link>
+          <pubDate>Wed, 13 Jul 2016 12:24:33 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-506</guid>
+          <source url="https://discuss.iatistandard.org/t/about-the-results-category/506.rss">About the Results category</source>
+        </item>
+        <item>
+          <title>Results: discussion space and TAG 2016/17 path</title>
+          <dc:creator><![CDATA[SJohns]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>Hi, we are seeing a number of organisations who are now either voluntarily or contractually required to use the Results element of the IATI Standard. This element is probably the most under-developed of the IATI Standard, and yet open data on results remains a key aspiration of both IATI (it’s included in the new Vision and Mission) and the Sustainable Development Goals work.</p>
+<p>I’d like to set up a discussion on the Results element here (recognising that this has been attempted before) which then feeds into a Results path at the next TAG meeting (in 2016 or early 2017?) to help develop both some consistency in how the element is used, share best practice and solve some problems.</p>
+<p>Here’s why:</p>
+<ol>
+<li>
+<p>There are pockets of expertise developing, for example in the Netherlands and amongst development resource providers, and it would be good to bring this together in one place in a very practical way.</p>
+</li>
+<li>
+<p>I think we need to develop a common understanding of what the word ‘results’ means, and what IATI results data can and can’t be used for.</p>
+</li>
+<li>
+<p>We need to gather and share evidence from Monitoring and Evaluation people within organisations, to check what results they want to record, and how they are want to record them. And also evidence from users that the information that they are getting from the Results element is meaningful and not misleading (ie through the attempted aggregation of apples and pears).</p>
+</li>
+</ol>
+<p>In terms of outputs from this discussion and particularly the TAG, I can see the following would be really useful:</p>
+<ol>
+<li>
+<p>A recommendation to the IATI  technical team on any updates needed to the Results element of the Standard to make it fit for purpose.</p>
+</li>
+<li>
+<p>I think it would be good to develop and publish a set of examples - real-world problems and solutions in order to share the knowledge more widely and to ensure much better quality data. So for example, who records what results in a group of organisations working on one project? How do you define attribution? How do you report qualitative results in a way that’s useful to data users?</p>
+</li>
+</ol>
+<p>What do you think?</p>
+            <p><small>7 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502</link>
+          <pubDate>Tue, 12 Jul 2016 11:30:45 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-502</guid>
+          <source url="https://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502.rss">Results: discussion space and TAG 2016/17 path</source>
+        </item>
+        <item>
+          <title>Disaggregation of results</title>
+          <dc:creator><![CDATA[Kasper]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>Hi all,</p>
+<p>Following the changes in v2.02, I was wondering about the disaggregation of results. In <a href="http://support.iatistandard.org/entries/79499149-Support-disaggregation-of-performance-data" rel="nofollow noopener">this discussion</a>, the addition of dimension and location nodes per target or actual has been introduced and also the idea of allowing more than 1 actual or target node.</p>
+<p>However, it seems that allowing more than 1 target/actual node <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/period/target/" rel="nofollow noopener">has not been taken along</a> in the standard. The IATI validator shows an error when using multiple target or actual elements as well.</p>
+<p>So I was wondering if it is possible to add this to the discussion of the next version again. And, as a new suggestion, also allow for disaggregation of the indicator’s baseline, similar to the target and actual elements.</p>
+<p>Kind regards,<br>
+Kasper</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/disaggregation-of-results/449">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/disaggregation-of-results/449</link>
+          <pubDate>Fri, 15 Apr 2016 08:46:19 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-449</guid>
+          <source url="https://discuss.iatistandard.org/t/disaggregation-of-results/449.rss">Disaggregation of results</source>
+        </item>
+        <item>
+          <title>Sharing Results using IATI data standard: will it improve learning and accountability?</title>
+          <dc:creator><![CDATA[SJohns]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>Publishing Results to IATI: Will it Improve Learning and Accountability?</p>
+<p>Donors are increasingly making – or considering making – the publication of results information to the IATI standard a requirement of their grantees. But will this lead to increased learning and accountability? What checks would need to be in place to avoid the publication of misleading or useless data, and to ensure that NGOs are supported in their publishing?</p>
+<p>This discussion paper – written by Bond’s Michael O’Donnell, explores the background and rationale for publishing results to IATI and the impact this could have on organisations and the transparency of the sector. The paper uses 7 tests to assess the extent to which publishing results to IATI would enhance learning and accountability, and makes recommendations for making the IATI results module fit for purpose, and for donors to consider if making publishing results mandatory.</p>
+<p><a href="https://docs.google.com/document/d/1wfVHChss3qhiD53W_-Epnahq1psG40dgsIBoNzw2_5w/edit?usp=sharing" rel="nofollow noopener">Discussion paper: Sharing results using the IATI data standard</a></p>
+<p>The final discussion paper will be launched in early April an has been posted here ahead of then as we would really appreciate your insights and reflections. We’d encourage you to discuss any aspect of the topic either here or by adding comments directly to the document.</p>
+<p>Previous discussions on the Results element:</p>
+<p><aside class="quote quote-modified" data-post="1" data-topic="285">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/herb_caudill/40/51_1.png" class="avatar">
+    <a href="//discuss.iatistandard.org/t/improving-the-results-element-phase-1-unambiguous-indicator-references/285">Improving the results element, phase 1: Unambiguous indicator references</a> <a class="badge-wrapper  box" href="/c/community-zone/results"><span class="badge-category-parent-bg" style="background-color: #12A89D;"></span><span class="badge-category-bg" style="background-color: #4BE6D0;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Include any posts here that relate to the Results element of the IATI Standard. This category also includes posts discussed during standards day at the TAG 2017 and specific proposals for the results element to be put forward in the 2.03 standard upgrade process.">Results</span></a>
+  </div>
+  <blockquote>
+    I've submitted my first stab at the <a href="http://blog.devresults.com/iati-results-standard/#1" rel="nofollow noopener">phase 1 of improving the result element</a>, which is making it possible for indicator results to refer unambiguously to known indicators.  
+
+There are two parts to this: 
+
+
+
+Adding a reference element to the indicator element. <a href="https://github.com/HerbCaudill/IATI-Schemas/blob/results-1/iati-activities-schema.xsd#L1725-L1753" rel="nofollow noopener">(View on Github)</a>. Note that (a) this is optional, and (b) you can include multiple references (e.g. if the same indicator is referenced with different codes in different vocabularies). 
+
+Creating a codelist of Indicator Vocabularies. <a href="https://github.com/HerbCaudill/IATI-Codelists-NonEmbedded/blob/results-1/xml/IndicatorVocabulary.xml" rel="nofollow noopener">(View …</a>
+  </blockquote>
+</aside>
+<br>
+<aside class="quote quote-modified" data-post="1" data-topic="172">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/michaelmedley/40/59_1.png" class="avatar">
+    <a href="//discuss.iatistandard.org/t/activity-results-and-objectives/172">Activity results (and objectives)</a> <a class="badge-wrapper  box" href="/c/events/iati-tag-2015"><span class="badge-category-parent-bg" style="background-color: #F1592A;"></span><span class="badge-category-bg" style="background-color: #e7a37d;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="The IATI TAG will be held in May 2015.">IATI TAG 2015</span></a>
+  </div>
+  <blockquote>
+    Continuing the discussion from <a href="//discuss.iatistandard.org/t/bright-ideas-for-the-tag/134/11">Bright ideas for the TAG</a>: 
+
+
+
+I agree it is extremely important that aid agencies report their activity results, and that everyone can access these reports through IATI. I am in awe of the analytical grasp that Herb_Caudill has brought to bear on this. But it seems over-ambitious in the forseeable future to think in terms of a way in which indicators can be rigorously defined machine-readably for all activities. 
+
+A key point is that different activities - and with…
+  </blockquote>
+</aside>
+<br>
+<aside class="quote quote-modified" data-post="1" data-topic="336">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/herb_caudill/40/51_1.png" class="avatar">
+    <a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process-results-element/336">Reflecting on the upgrade process: Results element</a> <a class="badge-wrapper  box" href="/c/community-zone/results"><span class="badge-category-parent-bg" style="background-color: #12A89D;"></span><span class="badge-category-bg" style="background-color: #4BE6D0;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Include any posts here that relate to the Results element of the IATI Standard. This category also includes posts discussed during standards day at the TAG 2017 and specific proposals for the results element to be put forward in the 2.03 standard upgrade process.">Results</span></a>
+  </div>
+  <blockquote>
+    Continuing the discussion from <a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333">Reflecting on the upgrade process</a>:  
+
+
+
+Clearly some things (e.g. vaccinations, schoolrooms) are easier to quantify than others (e.g. democracy). That's not a problem we're going to solve with XSD.  
+
+In the proposed standard: 
+
+
+There are (qualitative) comment elements available at the same level as the (quantitative) actual and target elements. There are narrative description elements available at various levels.  
+Disaggregation can be used to represent categori…
+  </blockquote>
+</aside>
+</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/sharing-results-using-iati-data-standard-will-it-improve-learning-and-accountability/431">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/sharing-results-using-iati-data-standard-will-it-improve-learning-and-accountability/431</link>
+          <pubDate>Wed, 16 Mar 2016 10:50:03 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-431</guid>
+          <source url="https://discuss.iatistandard.org/t/sharing-results-using-iati-data-standard-will-it-improve-learning-and-accountability/431.rss">Sharing Results using IATI data standard: will it improve learning and accountability?</source>
+        </item>
+        <item>
+          <title>Reflecting on the upgrade process: Results element</title>
+          <dc:creator><![CDATA[Herb_Caudill]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>Continuing the discussion from <a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333">Reflecting on the upgrade process</a>:</p>
+<aside class="quote no-group quote-modified" data-post="1" data-topic="333">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rolfkleef/40/82_1.png" class="avatar"><a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/1">Reflecting on the upgrade process</a>
+</div>
+<blockquote>
+<p>A lot of the NGOs that we work with want to publish qualitative results. It’s still a use case to be explored, so there are no technical proposals, and so it’s not in 2.02.</p>
+</blockquote>
+</aside>
+<p>Clearly some things (e.g. vaccinations, schoolrooms) are easier to quantify than others (e.g. democracy). That’s not a problem we’re going to solve with XSD.</p>
+<p>In the proposed standard:</p>
+<ul>
+<li>
+<p>There are (qualitative) <code>comment</code> elements available at the same level as the (quantitative) <code>actual</code> and <code>target</code> elements. There are narrative <code>description</code> elements available at various levels.</p>
+</li>
+<li>
+<p>Disaggregation can be used to represent categorical data like ethnicity.</p>
+</li>
+<li>
+<p>Indicator definitions can also provide nuance and context to what’s being measured.</p>
+</li>
+</ul>
+<p>Beyond that, I’m curious to know what more we could envision doing to support qualitative results. Could you perhaps provide some examples of use cases that the proposed standard doesn’t support?</p>
+<aside class="quote no-group" data-post="1" data-topic="333">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rolfkleef/40/82_1.png" class="avatar"><a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/1">Reflecting on the upgrade process</a>
+</div>
+<blockquote>
+<p>At the same time, there are fixes to make the quantitative results more usable, but without a long-term vision of where it should lead to.</p>
+</blockquote>
+</aside>
+<p>Here are some stories that these fixes make possible, none of which is possible with the current standard:</p>
+<ul>
+<li>
+<p>Someone managing a housing reconstruction project in a post-disaster situation can submit the same IATI report to different stakeholders (donors, home office, host country, etc.) instead of spending their time reformatting their data to accommodate mutually incompatible computer systems.</p>
+</li>
+<li>
+<p>A researcher exploring whether bednet distribution is effective can query IATI-reported data on bednet delivery, across multiple donors/implementers/countries, and compare that with malaria incidence data.</p>
+</li>
+<li>
+<p>A local investigative journalist can compare IATI-reported results (say, on schoolroom rehabilitation) with facts on the ground, and possibly bring corruption to light.</p>
+</li>
+<li>
+<p>The administrator of a large bilateral donor agency can answer to her legislature with precision and detail when they ask what was accomplished with taxpayer money.</p>
+</li>
+</ul>
+<p>I’m not sure what more we could expect from a humble little XML element.</p>
+<aside class="quote no-group" data-post="1" data-topic="333">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rolfkleef/40/82_1.png" class="avatar"><a href="//discuss.iatistandard.org/t/reflecting-on-the-upgrade-process/333/1">Reflecting on the upgrade process</a>
+</div>
+<blockquote>
+<p>Examples around results are usually for outputs, whereas many NGOs (and donors) want to manage on outcomes and impacts, or different types of theory of change, especially in lobby and advocacy.</p>
+</blockquote>
+</aside>
+<p>The proposed schema is agnostic and can support outcome data just as easily as it can output data. See <a href="https://github.com/IATI/IATI-Codelists/blob/version-2.01/xml/ResultType.xml" rel="nofollow noopener">https://github.com/IATI/IATI-Codelists/blob/version-2.01/xml/ResultType.xml</a> . If you want, you can report not only outputs (e.g. hours of teacher training provided) but outcomes (e.g. improved math scores) and impacts (e.g. greater social mobility). The XSD doesn’t care.</p>
+<p>We have to be careful with attribution - does intervention X get all the credit for improvement Y, and is there even a causal relationship at all? That’s what Ph.D. candidates are for. But researchers and evaluators can’t even get started if we are incapable of counting our outputs; in that case they’re left with crude proxies like dollars disbursed, and that’s the least informative metric of all.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process-results-element/336">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process-results-element/336</link>
+          <pubDate>Mon, 12 Oct 2015 19:38:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-336</guid>
+          <source url="https://discuss.iatistandard.org/t/reflecting-on-the-upgrade-process-results-element/336.rss">Reflecting on the upgrade process: Results element</source>
+        </item>
+        <item>
+          <title>Improving the results element, phase 1: Unambiguous indicator references</title>
+          <dc:creator><![CDATA[Herb_Caudill]]></dc:creator>
+          <category>Results</category>
+          <description><![CDATA[
+            <p>I’ve submitted my first stab at the <a href="http://blog.devresults.com/iati-results-standard/#1" rel="nofollow noopener">phase 1 of improving the <code>result</code> element</a>, which is making it possible for indicator results to refer unambiguously to known indicators.</p>
+<p>There are two parts to this:</p>
+<ol>
+<li>
+<strong>Adding a <code>reference</code> element to the <code>indicator</code> element.</strong> <a href="https://github.com/HerbCaudill/IATI-Schemas/blob/results-1/iati-activities-schema.xsd#L1725-L1753" rel="nofollow noopener">(View on Github)</a>. Note that (a) this is <strong>optional</strong>, and (b) you can include multiple references (e.g. if the same indicator is referenced with different codes in different vocabularies).</li>
+<li>
+<strong>Creating a codelist of Indicator Vocabularies.</strong> <a href="https://github.com/HerbCaudill/IATI-Codelists-NonEmbedded/blob/results-1/xml/IndicatorVocabulary.xml" rel="nofollow noopener">(View on Github)</a>. I’ve started with a few illustrative indicator repositories (US F Framework, World Bank World Development Indicators, UN SDGs, etc). No doubt this list will grow much larger. I’ve added this to the non-embedded codelist repo, because much like the Organisation Registry codelist, additions will likely need to be made on short notice outside of published upgrade schedules.</li>
+</ol>
+<p>This is backwards-compatible; no existing tests have been broken.</p>
+<p>For now I’ve just straight-up forked the IATI repositories and have submitted these changes as pull requests. If it turns out that these changes are controversial or will take months to be approved, I can refactor them into an extension. I’m hoping that won’t be necessary, and at any rate this seemed like the easiest way to make a concrete proposal.</p>
+<p>Please let me know what you think.</p>
+<p>Cheers<br>
+Herb</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/improving-the-results-element-phase-1-unambiguous-indicator-references/285">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/improving-the-results-element-phase-1-unambiguous-indicator-references/285</link>
+          <pubDate>Fri, 05 Jun 2015 01:56:41 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-285</guid>
+          <source url="https://discuss.iatistandard.org/t/improving-the-results-element-phase-1-unambiguous-indicator-references/285.rss">Improving the results element, phase 1: Unambiguous indicator references</source>
+        </item>
+  </channel>
+</rss>

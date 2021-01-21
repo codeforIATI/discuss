@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Discuss Downtime</title>
+    <link>https://discuss.iatistandard.org/t/iati-discuss-downtime/1742</link>
+    <description>At 12pm GMT+1 today (8th May 2019), the IATI technical team ran a maintenance upgrade on the IATI Discuss service. Unfortunately, we experienced some problems with this, leading to a backup being restored so that service could be resumed. Unfortunately, any posts and other changes that would have been made since this time and 2pm GMT+1 will have been lost - we sincerely apologise for any inconvenience this may have caused.
+
+In technical terms, we have isolated the upgrade failure to an issue with an outdated Docker image and a memory leak within that. The memory leak is a common issue with Docker, and was preventing us from interacting with any micro-services that Discuss runs. Pruning stagnant Docker images unfortunately led to further problems, leading us to restore the backup as a last resort in order to get Discuss up and running again.
+
+We will attempt the upgrade again on Monday 13th May at 2pm GMT as a planned maintenance task. In order to ensure a smooth upgrade, we will also carry out some further steps during this time, as defined below. This inevitably means that users will experience downtime.
+
+Next steps include:
+
+* Increase the memory of our server
+
+* Explore the Docker memory issue, and ways that we can safely reclaim space
+
+* Solidify upgrade processes for the service
+
+* Define an upgrade schedule
+
+* Upgrade the Docker image
+
+* Upgrade the Discuss software
+
+The technical team thank you for your patience on this matter.</description>
+    
+    <lastBuildDate>Wed, 08 May 2019 13:43:23 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-discuss-downtime/1742.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Discuss Downtime</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>At 12pm GMT+1 today (8th May 2019), the IATI technical team ran a maintenance upgrade on the IATI Discuss service. Unfortunately, we experienced some problems with this, leading to a backup being restored so that service could be resumed. Unfortunately, any posts and other changes that would have been made since this time and 2pm GMT+1 will have been lost - we sincerely apologise for any inconvenience this may have caused.</p>
+<p>In technical terms, we have isolated the upgrade failure to an issue with an outdated Docker image and a memory leak within that. The memory leak is a common issue with Docker, and was preventing us from interacting with any micro-services that Discuss runs. Pruning stagnant Docker images unfortunately led to further problems, leading us to restore the backup as a last resort in order to get Discuss up and running again.</p>
+<p>We will attempt the upgrade again on Monday 13th May at 2pm GMT as a planned maintenance task. In order to ensure a smooth upgrade, we will also carry out some further steps during this time, as defined below. This inevitably means that users will experience downtime.</p>
+<p>Next steps include:</p>
+<ul>
+<li>
+<p>Increase the memory of our server</p>
+</li>
+<li>
+<p>Explore the Docker memory issue, and ways that we can safely reclaim space</p>
+</li>
+<li>
+<p>Solidify upgrade processes for the service</p>
+</li>
+<li>
+<p>Define an upgrade schedule</p>
+</li>
+<li>
+<p>Upgrade the Docker image</p>
+</li>
+<li>
+<p>Upgrade the Discuss software</p>
+</li>
+</ul>
+<p>The technical team thank you for your patience on this matter.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-discuss-downtime/1742/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-discuss-downtime/1742/1</link>
+        <pubDate>Wed, 08 May 2019 13:43:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1742-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-discuss-downtime/1742.rss">IATI Discuss Downtime</source>
+      </item>
+  </channel>
+</rss>

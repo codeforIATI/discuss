@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI XML to JSON converter?</title>
+    <link>https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481</link>
+    <description>Is anyone aware of any attempts to convert IATI data in its original XML format into JSON format?
+
+I am experimenting with importing IATI into a mongoDB as a side project, but thought to check if there was any existing tools before I have a go at building something from scratch.</description>
+    
+    <lastBuildDate>Fri, 10 Jun 2016 08:45:10 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI XML to JSON converter?</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this extra detail on OIPA <a class="mention" href="/u/vincentvw">@VincentVW</a> - I was more looking to convert the XML from the source publisher datasets (will likely use <a href="https://github.com/martinblech/xmltodict">xmltodict</a> for this), and primarily as a back-end only in the first instance.</p>
+<p>Nonetheless, it’s good to know of some of the considerations and design approaches that were needed. I don’t work too much in json these days so hadn’t yet noticed some of the nuances of the notation when applied to IATI (use of underscores and plurals) so it was particularly good to highlight those.</p>
+<p>Will post results here when I’ve had a chance to work something up!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/7</link>
+        <pubDate>Fri, 10 Jun 2016 08:45:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-481-7</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481.rss">IATI XML to JSON converter?</source>
+      </item>
+      <item>
+        <title>IATI XML to JSON converter?</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Dale,</p>
+<p>You could also consider using the OIPA API. Dependent on your views of ‘in its original XML format’.</p>
+<p>In my opinion/experience its not very practical to map IATI XML 1:1 to JSON. There’s some considerations with regards to JSON styling practices and making the API useful. Here’s the alterations with regards to IATI -&gt; JSON mapping in OIPA.</p>
+<ul>
+<li>
+<p>Hyphens are replaced by underscores in JSON keys. Some users (and we ourselves) prefer dot notation to access properties in javascript, that would be troublesome with hyphens. It’s a minor thing and a discutable solution, we prefer practical use of the API.</p>
+</li>
+<li>
+<p>XML elements that can occur multiple times, become a list in JSON. IN JSON its common practice to make list keys plural.</p>
+</li>
+<li>
+<p>In OIPA most code lists are nested in the JSON. When using IATI XML 1:1 as JSON, you’ll have to keep all the used code lists on your front-end. In some cases that’s desirable, in most cases it isn’t. It could also cause bugs when you don’t keep that code lists up-to-date (you’ll have to maintain that for every front-end).</p>
+</li>
+</ul>
+<p>Here’s an example that shows all three of these alterations;</p>
+<p><code>"recipient_countries": [{"country": {"code": "TZ", "name": "Tanzania, united republic of"},"percentage": 30.0}]</code></p>
+<p>1:1 mapping would be:</p>
+<p><code>"recipient-country": [{"code": "TZ", "percentage": 30.0}]</code></p>
+<p>These are all just design decision with practical use on front-end websites in mind. I would be interested to hear other views on these issues!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/6</link>
+        <pubDate>Mon, 06 Jun 2016 15:13:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-481-6</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481.rss">IATI XML to JSON converter?</source>
+      </item>
+      <item>
+        <title>IATI XML to JSON converter?</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for these quick responses.</p>
+<p><a class="mention" href="/u/carlelmstam">@carlelmstam</a> My thinking was to parse raw IATI data from publisher’s files into JSON, rather than use the datastore (as at the moment there are instances of missing activities which the technical team are investigating).</p>
+<p><a class="mention" href="/u/bjwebb">@bjwebb</a> <a href="https://github.com/martinblech/xmltodict">xmltodict</a> looks like a good shout - also came across it in this <a href="http://stackoverflow.com/a/10201387/2761030">Stackoverflow post</a>. Thanks for the link to how it is implemented in the datastore.</p>
+<p><a class="mention" href="/u/rolfkleef">@rolfkleef</a> BaseX looks interesting too, was considering playing around with that too.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/5</link>
+        <pubDate>Fri, 03 Jun 2016 15:02:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-481-5</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481.rss">IATI XML to JSON converter?</source>
+      </item>
+      <item>
+        <title>IATI XML to JSON converter?</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve looked a bit at Xquery 3.1 for that. BaseX has a JSON module that lets you import and export with something like <code>json:serialize(//iati-activities, map { 'format': 'jsonml' })</code></p>
+<p>Or command line to create a jsonML file from an xml file:<br>
+<code>basex -i iati.xml -o iati.json -q "json:serialize(//iati-activities, map { 'format': 'jsonml' })"</code></p>
+<p>I haven’t done anything with it yet, though.<br>
+<a href="http://docs.basex.org/wiki/JSON_Module" class="onebox" target="_blank" rel="nofollow noopener">http://docs.basex.org/wiki/JSON_Module</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/4</link>
+        <pubDate>Fri, 03 Jun 2016 14:36:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-481-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481.rss">IATI XML to JSON converter?</source>
+      </item>
+      <item>
+        <title>IATI XML to JSON converter?</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>I experimented briefly with importing IATI data into elasticsearch (which uses JSON). I didn’t use the datastore itself, but did use the same approach - using xmltodict and then encoding that to JSON <a href="https://github.com/IATI/iati-datastore/blob/master/iati_datastore/iatilib/frontend/serialize/jsonserializer.py#L27" rel="nofollow noopener">https://github.com/IATI/iati-datastore/blob/master/iati_datastore/iatilib/frontend/serialize/jsonserializer.py#L27</a>. The different arguments of xmltodict may also be worth looking into, as it can produce a few different shapes of JSON.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/3</link>
+        <pubDate>Fri, 03 Jun 2016 13:48:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-481-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481.rss">IATI XML to JSON converter?</source>
+      </item>
+      <item>
+        <title>IATI XML to JSON converter?</title>
+        <dc:creator><![CDATA[carlelmstam]]></dc:creator>
+        <description><![CDATA[
+            <p>Isn’t it possible to get a Json response from the IATI data store? <a href="http://datastore.iatistandard.org/docs/api/#technical-formats" rel="nofollow noopener">http://datastore.iatistandard.org/docs/api/#technical-formats</a></p>
+<p>But perhaps you really need a converter and just converted data?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/2</link>
+        <pubDate>Fri, 03 Jun 2016 13:32:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-481-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481.rss">IATI XML to JSON converter?</source>
+      </item>
+      <item>
+        <title>IATI XML to JSON converter?</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Is anyone aware of any attempts to convert IATI data in its original XML format into JSON format?</p>
+<p>I am experimenting with importing IATI into a mongoDB as a side project, but thought to check if there was any existing tools before I have a go at building something from scratch.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481/1</link>
+        <pubDate>Fri, 03 Jun 2016 11:30:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-481-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-xml-to-json-converter/481.rss">IATI XML to JSON converter?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+    <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562</link>
+    <description>Vocabularies for the SDG goals and targets should be added to the TagVocabulary codelist to enable the publication of data in line with the DAC WP-STAT decision to create a new CRS field to report SDG targets (per this [post](https://discuss.iatistandard.org/t/dac-wp-stat-group-redefining-purpose-codes-sector-codes-to-align-with-sdgs/433/10?u=yohannaloucheur))
+
+These vocabularies are code 7 &#39;SDG goal&#39; and code 8 ’ SDG Target’ in the  [Sector Vocabulary 5](http://iatistandard.org/202/codelists/SectorVocabulary/) codelist .
+
+While not covered in CRS, I suggest we may want to also add the SDG indicators (code 9 in the SectorVocabulary codelist).
+
+Thanks</description>
+    
+    <lastBuildDate>Wed, 07 Aug 2019 13:57:06 +0000</lastBuildDate>
+    <category>Non-Core Codelist Amendments</category>
+    <atom:link href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The SDG Goal and Target codelists have now been added to the Tag Vocabulary codelst: <a href="http://reference.iatistandard.org/203/codelists/TagVocabulary/" rel="nofollow noopener">http://reference.iatistandard.org/203/codelists/TagVocabulary/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/25</link>
+        <pubDate>Wed, 07 Aug 2019 13:57:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-25</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The SDG working group propose that SDG Goals and Targets should be reported via the Tag element. SDG Indicators should be reported via the result indicator reference element. Both of these should be added as non-core replicated codelists.</p>
+<p>The draft guidance can be found <a href="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783">here</a>. Please note that the guidance cannot introduce new rules into the Standard.</p>
+<p>If there is no objection by the 10th July, the proposal is to add:</p>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>2</th>
+<th>SDG Goal</th>
+<th>A value from the top-level list of UN sustainable development goals (SDGs) (e.g. ‘1’)</th>
+<th><a href="https://sustainabledevelopment.un.org/?menu=1300" rel="nofollow noopener">https://sustainabledevelopment.un.org/?menu=1300</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>SDG Target</td>
+<td>A value from the second-level list of UN sustainable development goals (SDGs) (e.g. ‘1.1’)</td>
+<td><a href="http://unstats.un.org/sdgs/indicators/indicators-list/" rel="nofollow noopener">http://unstats.un.org/sdgs/indicators/indicators-list/</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/24</link>
+        <pubDate>Wed, 03 Jul 2019 16:01:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-24</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>You may disagree with the decision made at WP-STAT, but after consideration of the SIDA pilot and other input, that is where they landed.</p>
+<p>If there is no agreement to reflect this new part of the CRS standard in the IATI standard, I guess we’ll simply all have to use a 99 vocabulary.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/23</link>
+        <pubDate>Fri, 07 Dec 2018 20:33:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-23</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>This is not a new issue - <a href="https://schd.ws/hosted_files/iatitag2017/d8/Sida%27s%20SDG%20mapping%202016_IATI.pdf">see Sida paper from 2017 TAG</a></p>
+<blockquote>
+<ul>
+<li>Reporting and aligning the SDG targets to ODA contributions is a necessity for the international donor community, which needs to be  implemented internationally.</li>
+<li>The reporting should be done according to the first method, distributing 100% of the disbursement on the identified SDG targets. The method answers to the question on how much ODA that goes to a particular SDG target. The method was preferred by the program officers in the pilot and allows for presenting the SDG statistics in an illustrative and at the same time straightforward manner.</li>
+</ul>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/22</link>
+        <pubDate>Wed, 05 Dec 2018 10:54:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-22</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I am also very much in favour of adding SDGs to the Tags element as soon as possible (based on the rule/presumption that SDG data should/does not include percentages and therefore should be a tag), as far as I see it, the holdups are:</p>
+<ol>
+<li>This change needs combining with the removal of SDGs from the sector codes - as with SDGs in two (3 including results) places, it will be near impossible for non-technical users to compare the support given to a particular SDG goal by e.g. UNICEF or UNDP (who currently use the SDG sector vocab), and a publisher using the SDG tags, without which, the whole effort becomes substantially less useful.</li>
+<li>We need to establish who is responsible for contacting those publishers that currently (correctly) use the SDG sector vocab to help them transition to SDG tags instead. For some e.g. UNICEF this should be easy as they currently also report sector data using DAC5 sector codes, and their own ‘99’ vocab.</li>
+<li>This needs combining with adding all the SDG codes as an embedded codelist. Otherwise (as far as I am aware) the vast majority of the user facing data use tools (d-portal, the datastore search, OIPA and things built on it, the Development Gateway IATI import tool etc) do not have the capacity to allow users to access IATI data by SDG tag, therefore without this, many of the major benefits are lost.</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/21</link>
+        <pubDate>Wed, 05 Dec 2018 10:31:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-21</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a very unfortunate turn of events. There is no downside to adding this codelist to the Tag element.</p>
+<p>The result of putting this change on hold is that SDG tags reported to the DAC will not be available in IATI data. This will make IATI data less relevant for SDG-related discussions, a missed opportunity for data use efforts.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/20</link>
+        <pubDate>Tue, 04 Dec 2018 20:56:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-20</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Another reason for the M&amp;E expert community to get their act together and agree upon some standards. This isn’t an IATI problem.</p>
+<p>Personally I think the issue is between inputs and outputs. Tags are just tags, not analytical classifications.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/19</link>
+        <pubDate>Tue, 04 Dec 2018 18:09:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-19</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Following the 7 day period since the proposal <a href="https://discuss.iatistandard.org/t/planned-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/2">was added for inclusion</a> consensus has not been reached on adding SDG goals, targets and indicators under the tagvocabulary.</p>
+<p>As Reid mentioned <a href="https://discuss.iatistandard.org/t/planned-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/16">above</a> at the TAG in Kathmandu some participants volunteered to form a working group on SDGs that can look at current challenges with how the standard currently incorporates SDGs and focus on recommendations for SDG reporting (addressing some of the <a href="https://discuss.iatistandard.org/t/planned-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/14">questions</a> raised in this thread). <a class="mention" href="/u/aparr">@aparr</a> will be following up with participants who volunteered end of this week/early next week.</p>
+<p>This proposal will be put  <strong>ON-HOLD</strong> until there is clearer guidance and consensus on the inclusion of SDGs under TagVocabulary.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/18</link>
+        <pubDate>Tue, 04 Dec 2018 17:25:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-18</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a> I have responded to <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/276#issuecomment-442485222">Github</a> as well. It was indeed an error that the changes were picked up with the deployment of the website this week, as opposed to next week (giving the community until 4th of December). <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> this refers to <a href="https://discuss.iatistandard.org/t/planned-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/13">your comment</a> that the changes are live on the website. We will wait to hear opinions until 4th of December (until either a consensus is reached or proposal rejected) and will then update the tagvocabulary codelist accordingly.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/17</link>
+        <pubDate>Wed, 28 Nov 2018 17:21:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-17</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I would be really interested to learn in more detail what the other issues and limitations are (aside from publishers not having to assign a 100% or other value) as to the use of the existing implementations for SDGs (ie via sector or result indicators?) and how using the TagVocabulary is a better solution?</p>
+</blockquote>
+<p><a class="mention" href="/u/wendy">@Wendy</a> - to your point, <a class="mention" href="/u/aparr">@aparr</a> or <a class="mention" href="/u/petyakangalova">@petyakangalova</a> facilitated the SDG session at TAG and might have more comprehensive notes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/16</link>
+        <pubDate>Wed, 28 Nov 2018 17:03:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-16</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Bit off-topic here, so forgive me…</p>
+<aside class="quote no-group" data-post="7" data-topic="1562">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>No objection has been received since the proposal was posted 20 days ago so the tech team proceeded with including the codelist as per standard procedure for adding a non-embedded codelist.</p>
+</blockquote>
+</aside>
+<p>^^ I flagged this <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/276#issuecomment-442485222">on github</a>, but just to restate: I don’t think this is the process. The codelist management process is described on <a href="http://reference.iatistandard.org/203/codelists-guides/codelist-management/#updates-to-non-embedded-codelists">the codelist management page</a>:</p>
+<blockquote>
+<p>If a decision has been made to make a change to a non-embedded list the <a href="http://discuss.iatistandard.org/c/iati-standard">IATI Standard discussion thread</a> <strong>*will be notified*</strong> (within 1 working day) about the change that is to be made and <strong>*the date that the change will take effect*</strong> (usually within 7 calendar days). The proposal will be <strong>*marked as ‘Planned’*</strong> on the support forum. At this point people have the right to disagree.</p>
+</blockquote>
+<p>I’ve highlighted above all the bits that I don’t think happened here. In this sense, I don’t think the process has been adhered to.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/15</link>
+        <pubDate>Wed, 28 Nov 2018 15:56:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-15</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>This therefore seems to me to be a case of principle vs practicality? I still do not feel that I could endorse this proposal on principle due to its impact on existing publishers and data users as mentioned previously by both myself and <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>.  Also, as I have not been involved in the most recent TAG or other discussions on SDG reporting etc.I would be really interested to learn in more detail what the other issues and limitations are (aside from publishers not having to assign a 100% or other value) as to the use of the existing implementations for SDGs (ie via sector or result indicators?) and how using the TagVocabulary is a better solution?</p>
+<p>However, if it is subsequently decided to also add SDGs via the TagVocabulary then it would be good to know that it is being done so  in a managed way with a clear recommendation of action(s) for existing publishers along with any appropriate communications around the deprecation(?) or other actions relating to the previous publishing options.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/14</link>
+        <pubDate>Wed, 28 Nov 2018 15:51:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-14</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>It appears that they have already been added?!  <a href="http://reference.iatistandard.org/203/codelists/TagVocabulary/" rel="nofollow noopener">http://reference.iatistandard.org/203/codelists/TagVocabulary/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/13</link>
+        <pubDate>Wed, 28 Nov 2018 15:46:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-13</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="7" data-topic="1562">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>Feedback is indeed needed from users <strong>on which option is feasible</strong> and what the recommended guidance should be.</p>
+</blockquote>
+</aside>
+<p>I’m confused by this. The DAC has already decided to report on SDG targets as tags, so clearly this option is feasible. Given the number of active IATI publishers who also report to the DAC, not having this option in the IATI standard would create important discrepancies in the data. Also, the fact that so few publishers currently report on SDG goals and targets as sectors (according to Matt below) shows that THIS option is clearly the least feasible.</p>
+<aside class="quote no-group" data-post="8" data-topic="1562">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/wendy/40/12_1.png" class="avatar"> Wendy:</div>
+<blockquote>
+<p>I am rather uncomfortable with this information being available within the Standard in two places.</p>
+</blockquote>
+</aside>
+<p>We already have SDGs in more than one place in the standard (as Bill reminded us above). Nobody seemed to mind until now.</p>
+<p>That being said, if we feel strongly about not having the same vocabulary in more than one place (which should have been flagged when they were duplicated), we could note for the next integer upgrade that:</p>
+<ul>
+<li>SDG goals and targets should be removed from sectors (very few publishers use them at the moment) and reserved for the tag element</li>
+<li>SDG should be removed from sectors and reserved for the Result element, since SDG indicators are about outcomes more than inputs.</li>
+</ul>
+<p>Bottom line: now that the DAC has made a decision, donors and multilaterals reporting to the DAC will start coding their activities with SDG targets. This will be available in DAC statistics. It is up to the IATI community to decide whether they want them in IATI data as well - thus making IATI relevant to SDG monitoring - or not. I strongly recommend that we do.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/12</link>
+        <pubDate>Wed, 28 Nov 2018 14:41:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-12</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I just did a check of the use of the SDG sector vocabs - I count 2 publishers using sector code=“7”, 1 using “8”, and 33 publishers using sector code=“9”</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/11</link>
+        <pubDate>Wed, 28 Nov 2018 14:03:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-11</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>thanks for the summary <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> - I am with <a class="mention" href="/u/wendy">@Wendy</a> that having SDG data in two places would make using the data incredibly difficult - imagine if you wanted to compare the contribution to SDG1 of two donors, one of which used the sector vocabulary, and the other which used the tags - it doesn’t seem likely that there is any tool/website available to end users that could handle this situation.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/10</link>
+        <pubDate>Wed, 28 Nov 2018 13:49:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-10</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Three places actually:<br>
+As inputs (sectors), outputs (results) or non-specific (tags)</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/9</link>
+        <pubDate>Wed, 28 Nov 2018 13:44:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-9</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks all for comments and clarifications. Also while I don’t want to delay this update I am rather uncomfortable with this information being available within the Standard in two places. I also think that some publishers are already using the sector code vocabulary for SDGs so is there a recommendation for those publisher to update their published data to use the TagVocabulary codelist instead (although technically that could make the change not backward compatible and therefore should only happen as part of a major upgrade)? In addition, it would mean that data users would also have to check for SDG information in two places?</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/8</link>
+        <pubDate>Wed, 28 Nov 2018 13:12:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-8</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the follow-up <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> and clarifying. Yes, it is correct that the difference between reporting SDGs using the sector vocabulary and including it in the tagvocabulary is that when reporting multiple SDG goals, targets, indicators at sector level a % is required.</p>
+<p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> , this proposal allows the flexibility to be able to report multiple SDGs using the tagvocabulary without having to assign a percentage.Feedback is indeed needed from users on which option is feasible and what the recommended guidance should be. At the TAG in Kathmandu earlier this month an initial discussion was started and  suggestion made to set up a reference group to share, develop and review good practice.</p>
+<p>No objection has been received since the proposal was posted 20 days ago so the tech team proceeded with including the codelist as per standard procedure for adding a non-embedded codelist. <span class="mention">@matmaxgedsand</span> and  <a class="mention" href="/u/wendy">@Wendy</a> are you content with inclusion?</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/7</link>
+        <pubDate>Wed, 28 Nov 2018 12:34:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-7</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> that clarifies that the key question is whether users/publishers want/can supply percentages with the SDG information - once we know that, we can decide whether it should be a sector vocab or a tag vocab.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/6</link>
+        <pubDate>Wed, 28 Nov 2018 08:37:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-6</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="1562">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>It would also be good to know why the DAC Policy Markers are also not included as a Tag vocabulary as they seem similar in use case/organisation to the SDGs.</p>
+</blockquote>
+</aside>
+<p>DAC policy markers are not tags; they come with specific levels (the <span class="mention">@significance</span> attribute, which is mandatory when using the DAC policy markers vocabulary).</p>
+<aside class="quote no-group" data-post="4" data-topic="1562">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Is there an idea/rule somewhere about the difference between sectors and tags?</p>
+</blockquote>
+</aside>
+<p>Sectors come with %, tags don’t. In other words, if an activity is coded with 3 sectors, the activity budget is split between them (evenly split if no % are specified). Tags are simply attached to an activity, without an implicit budget allocation.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/5</link>
+        <pubDate>Tue, 27 Nov 2018 22:32:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-5</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with <a class="mention" href="/u/wendy">@Wendy</a>, having SDGs in two places would be pretty unhelpful. Is there an idea/rule somewhere about the difference between sectors and tags?</p>
+<p>I could imagine that the difference is something to do with sector vocabularies being comprehensive in coverage (i.e. one would/could apply to all activities), whereas tags do not need to be?</p>
+<p>It would also be good to know why the DAC Policy Markers are also not included as a Tag vocabulary as they seem similar in use case/organisation to the SDGs.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/4</link>
+        <pubDate>Tue, 27 Nov 2018 13:08:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-4</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>What are the plans for the SDGs as listed as Sector Vocabularies? It could be very confusing to have this information available in two places?</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/3</link>
+        <pubDate>Tue, 27 Nov 2018 11:26:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-3</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>There has been no objection to the proposal for an addition of SDG goals and targets to the non-embedded codelist for <a href="http://reference.iatistandard.org/203/codelists/TagVocabulary/">Tag Vocabulary</a>. As we understand the proposal is to also add SDG indicators. If no further concerns are raised the below tag vocabularies will be added added to the codelist within a week (by 4th of December).</p>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>2</th>
+<th>SDG Goal</th>
+<th>A value from the top-level list of UN sustainable development goals (SDGs) (e.g. ‘1’)</th>
+<th><a href="https://sustainabledevelopment.un.org/?menu=1300">https://sustainabledevelopment.un.org/?menu=1300</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>SDG Target</td>
+<td>A value from the second-level list of UN sustainable development goals (SDGs) (e.g. ‘1.1’)</td>
+<td><a href="http://unstats.un.org/sdgs/indicators/indicators-list/">http://unstats.un.org/sdgs/indicators/indicators-list/</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>SDG Indicator</td>
+<td>A value from the list of UN sustainable development (SDG) indicators (e.g. ‘1.1.1’)</td>
+<td><a href="http://unstats.un.org/sdgs/indicators/indicators-list/">http://unstats.un.org/sdgs/indicators/indicators-list/</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/2</link>
+        <pubDate>Tue, 27 Nov 2018 10:58:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-2</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+      <item>
+        <title>[Added] Add SDG goals and targets to the TagVocabulary codelist</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Vocabularies for the SDG goals and targets should be added to the TagVocabulary codelist to enable the publication of data in line with the DAC WP-STAT decision to create a new CRS field to report SDG targets (per this <a href="https://discuss.iatistandard.org/t/dac-wp-stat-group-redefining-purpose-codes-sector-codes-to-align-with-sdgs/433/10">post</a>)</p>
+<p>These vocabularies are code 7 ‘SDG goal’ and code 8 ’ SDG Target’ in the  <a href="http://iatistandard.org/202/codelists/SectorVocabulary/" rel="nofollow noopener">Sector Vocabulary 5</a> codelist .</p>
+<p>While not covered in CRS, I suggest we may want to also add the SDG indicators (code 9 in the SectorVocabulary codelist).</p>
+<p>Thanks</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/1</link>
+        <pubDate>Tue, 06 Nov 2018 17:29:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1562-1</guid>
+        <source url="https://discuss.iatistandard.org/t/added-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562.rss">[Added] Add SDG goals and targets to the TagVocabulary codelist</source>
+      </item>
+  </channel>
+</rss>

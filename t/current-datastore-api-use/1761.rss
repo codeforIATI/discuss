@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Current Datastore API use</title>
+    <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761</link>
+    <description>We have reviewed the existing data store logs over the past 10 days:
+
+* All API calls containing the string “recipient-country=” were analysed.
+* Bots and csv download requests were excluded
+* The content of the specific calls (often including reporting-org filters) was analysed
+* Follow-up queries to the possible originators of API calls were made
+
+We find that:
+
+* Only two developing countries and one donor (Sweden) are using the datastore in their production systems
+* Somalia automatically retrieves all activities a number of times each day
+* Bangladesh makes manually initiated calls for selected publishers on a random basis.
+* Rwanda is making a single invalid call every second day
+* Haiti and Malawi are making test calls from a staging server
+* There are a substantial number of non-country specific calls emanating from IP addresses in Belgium, South Korea and Russia
+
+Please contact us if you believe we have missed something.
+
+We are planning to continue to monitor them for the next couple of weeks to inform our planning so that we can offer users the smoothest transition possible.</description>
+    
+    <lastBuildDate>Fri, 14 Jun 2019 13:12:13 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/markbrough">@markbrough</a> and <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>: thanks, perfectly clear now!</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/15</link>
+        <pubDate>Fri, 14 Jun 2019 13:12:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-15</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes that’s right, thanks <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>! <a class="mention" href="/u/herman">@Herman</a> sorry for my slow reply. The Bangladesh AIMS IATI importer uses the current IATI Datastore maintained by the IATI tech team (I know the Netherlands uses OIPA for e.g. openaid.nl)</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/14</link>
+        <pubDate>Fri, 14 Jun 2019 12:42:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-14</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/herman">@Herman</a> I believe <a class="mention" href="/u/markbrough">@markbrough</a> means that donor staff from the Netherlands embassy imported the Netherlands IATI data using the tool built into the Bangladesh AIMS (which relies on the current datastore maintained by the IATI tech team).</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/13</link>
+        <pubDate>Fri, 14 Jun 2019 11:49:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-13</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/markbrough">@Markbrough</a>: interesting that you say that the Netherlands is using the old datastore. As far as I know, we do not use the old IATI datastore maintained by the IATI tech team. Zimmerman &amp; Zimmerman are, as far as I know, making use of OIPA though to feed the ‘openaid.nl’ website.</p>
+<p>Maybe I am a bit confused here, but to what datastore are you referring here (OIPA or the old IATI datastore maintained by the techteam)?</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/12</link>
+        <pubDate>Wed, 12 Jun 2019 14:40:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-12</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Great to hear, thanks <a class="mention" href="/u/samuele-mattiuzzo">@samuele-mattiuzzo</a></p>
+<p>To echo <a class="mention" href="/u/markbrough">@markbrough</a> <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> <a class="mention" href="/u/joshua_powell">@Joshua_Powell</a> and others in the Community That Can Give Technical Advice &amp; Support In A Collaborative Way (CTCGTASIACW - I agree it’s not that catchy), do reach out early and often for our help.</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/11</link>
+        <pubDate>Fri, 07 Jun 2019 13:15:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-11</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[Joshua_Powell]]></dc:creator>
+        <description><![CDATA[
+            <p>Sounds great, thanks for the clarification!</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/10</link>
+        <pubDate>Thu, 06 Jun 2019 21:31:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-10</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> appreciated, will do once things move further along!</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/9</link>
+        <pubDate>Thu, 06 Jun 2019 16:02:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-9</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/samuele-mattiuzzo">@samuele-mattiuzzo</a> - great to hear - if there is anything (e.g. edge cases, calls that could be tweaked to make a specific solution possible etc) that you would find helpful to get input on, then please do just ask.</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/8</link>
+        <pubDate>Thu, 06 Jun 2019 16:02:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-8</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Great – thank you for the clarification, <a class="mention" href="/u/samuele-mattiuzzo">@samuele-mattiuzzo</a>! That is great to hear.</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/7</link>
+        <pubDate>Thu, 06 Jun 2019 15:58:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-7</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p>As mentioned in the first post, we are continuing to monitor the logs so decisions are not going to be based on 10 days only.</p>
+<p>To expand a bit on our plans, we have listened to your requests and concerns and, in conjunction with the new Datastore’s dev team, are devising a plan to cater to all the existing user’s needs during the months that will see both Datastores running in parallel so that no action will be needed on the existing user’s side.</p>
+<p>How this will be implemented still needs to be finalised, but once that happens it will be promptly communicated. We just need to be given some thinking space and proper time to consider all edge cases, drawbacks and release a robust solution for all.</p>
+<p>Hope this helps a bit.</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/6</link>
+        <pubDate>Thu, 06 Jun 2019 15:41:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-6</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I also thought that we might need to add aidhedge to this list as they were using the DSv1 according to their website: <a href="https://story.aidhedge.org/integrating-iati-a-tech-overview-3c921aa9ded9" rel="nofollow noopener">https://story.aidhedge.org/integrating-iati-a-tech-overview-3c921aa9ded9</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/5</link>
+        <pubDate>Thu, 06 Jun 2019 13:57:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-5</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s great to see this research! Thanks to <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> for digging into this. A few points:</p>
+<ol>
+<li>
+<p>Agree with <a class="mention" href="/u/joshua_powell">@Joshua_Powell</a> - 10 days is unlikely to provide a representative sample of current users, even aside from underestimating the number of systems that are <em>able</em> to use IATI data but not currently doing so.</p>
+</li>
+<li>
+<p>On <strong>Bangladesh</strong>: “random” is not correct. As I explained to <a class="mention" href="/u/bill_anderson">@bill_anderson</a>, the IATI import module is supposed to check nightly for new data. This process needs to be started again. However in the meantime, donors can (and are) still choosing to import their data. Three donors have imported their data in the last month or so: the Netherlands, USAID and World Bank.</p>
+</li>
+<li>
+<p>I also discovered <a href="http://spreadsheets.aidonbudget.org" rel="nofollow noopener">a system I built a couple of years ago</a> for the Liberian Ministry of Finance that is still importing data for <strong>Liberia</strong> and <strong>Uganda</strong> from the Datastore, and generating nice spreadsheets of data according to fiscal years.</p>
+</li>
+<li>
+<p>It would be great to work with those countries (Rwanda, Haiti and Malawi) that have nascent IATI import systems to get them into production mode. Perhaps also Bangladesh to address the current fairly minor issue there.</p>
+</li>
+<li>
+<p>Finally: I think this shows how hard it is to get these systems up and running sustainably at country level. We should be supporting and strengthening these existing systems. However, if the existing IATI Datastore API is discontinued, many of these systems will break. That will significantly set back efforts to promote data use at country level. It will also raise serious questions as to whether countries should invest in IATI in future.</p>
+</li>
+</ol>
+<p>What is the actual cost of providing backwards compatibility to these existing systems? <a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/8">Based on Andy’s work</a>, it does seem that the investment on the Datastore side should be fairly modest, and certainly less than the cost of all providers needing to both update their tools and deploy those updates (to the extent this is even possible given ongoing contracts or relationships). Would that not be worth the cost to avoid losing any of these countries?</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/4</link>
+        <pubDate>Thu, 06 Jun 2019 13:56:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-4</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> great to get some data on the table and thanks for sharing. A small note to say that the South Korea calls are probably a developer who works for me - we have a tool that I use to figure out email addresses across multiple activities which uses the v1 datastore CSVs for their aggregations plus a few other calls - we should be done soon but it is throttled pretty heavily at the moment so it is taking us some time to iterate through the bugfixes and then all the publishers.</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/3</link>
+        <pubDate>Thu, 06 Jun 2019 13:47:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-3</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[Joshua_Powell]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for sharing this. I’m afraid that a 10-day period is unlikely to be the best judgement for both actual and potential use of the DataStore, or the impact of failing to preserve backward-compatibility. For example, Madagascar production AMP has the latest version of the IATI-AIMS import tool deployed, which allows them to use the (current) datastore directly – I’m not aware if they’ve done this yet, but they had previously been importing IATI so it is likely that they will, if they’ve not already (outside of that 10-day evaluation period). Other AMPs also have the tool deployed, but have not engaged with IATI. If those countries chose to do so in the future, they would first need to have any new changes pushed to their servers.</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/2</link>
+        <pubDate>Thu, 06 Jun 2019 13:38:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-2</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+      <item>
+        <title>Current Datastore API use</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>We have reviewed the existing data store logs over the past 10 days:</p>
+<ul>
+<li>All API calls containing the string “recipient-country=” were analysed.</li>
+<li>Bots and csv download requests were excluded</li>
+<li>The content of the specific calls (often including reporting-org filters) was analysed</li>
+<li>Follow-up queries to the possible originators of API calls were made</li>
+</ul>
+<p>We find that:</p>
+<ul>
+<li>Only two developing countries and one donor (Sweden) are using the datastore in their production systems</li>
+<li>Somalia automatically retrieves all activities a number of times each day</li>
+<li>Bangladesh makes manually initiated calls for selected publishers on a random basis.</li>
+<li>Rwanda is making a single invalid call every second day</li>
+<li>Haiti and Malawi are making test calls from a staging server</li>
+<li>There are a substantial number of non-country specific calls emanating from IP addresses in Belgium, South Korea and Russia</li>
+</ul>
+<p>Please contact us if you believe we have missed something.</p>
+<p>We are planning to continue to monitor them for the next couple of weeks to inform our planning so that we can offer users the smoothest transition possible.</p>
+          <p><a href="https://discuss.iatistandard.org/t/current-datastore-api-use/1761/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/current-datastore-api-use/1761/1</link>
+        <pubDate>Thu, 06 Jun 2019 12:47:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1761-1</guid>
+        <source url="https://discuss.iatistandard.org/t/current-datastore-api-use/1761.rss">Current Datastore API use</source>
+      </item>
+  </channel>
+</rss>

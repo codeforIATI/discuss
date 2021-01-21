@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Show IATI: Transform v1.0x data to v2.03</title>
+    <link>https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662</link>
+    <description>Here is an experimental tool to transform v1.0x data to v2.03:
+
+https://iati-transformer.herokuapp.com
+
+You can one-off transform legacy data with this. Alternatively, you could run current data through the transformer, copy the generated link, and post that to the registry. Or the datastore could potentially use this to import v1.0x data.
+
+Of course, if the v1.0x data is missing information that is required at v2.03, you’ll see an error, and the requisite fields will need to be populated. But it can still potentially save a bit of work.
+
+Under the hood, this app uses an [XSLT file](https://en.wikipedia.org/wiki/XSLT) to transform IATI v1.0x activity XML into IATI v2.03 activity XML ([this one](https://github.com/andylolz/iati-transformer/tree/master/iati_transformer/static/iati-activities.xsl)). Producing an XSLT file like this should probably be part of any major version upgrade.</description>
+    
+    <lastBuildDate>Thu, 21 Feb 2019 14:38:45 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Show IATI: Transform v1.0x data to v2.03</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/timdavies">@TimDavies</a> Thanks! (And thanks for trying it out &amp; providing feedback!)</p>
+<aside class="quote no-group" data-post="3" data-topic="1662">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/timdavies/40/122_1.png" class="avatar"> TimDavies:</div>
+<blockquote>
+<p>I noticed quite a lot of the schema errors were to do with missing elements (titles and descriptions in the examples I saw), and I guess the strict element ordering validation in 2.x.</p>
+</blockquote>
+</aside>
+<p>Hmm… Could you provide some examples? The output XML shouldn’t have element ordering errors, as the XSLT should account for that… But I agree about missing elements – that’s certainly a consequence of 2.0x being a bit more strict.</p>
+<aside class="quote no-group" data-post="3" data-topic="1662">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/timdavies/40/122_1.png" class="avatar"> TimDavies:</div>
+<blockquote>
+<p>Have you considered having a ‘quirks mode’ conversion that populates these missing descriptive elements with ‘Not provided’ or some default text?</p>
+</blockquote>
+</aside>
+<p>There’s a very very tiny bit of auto-population at the moment (the old <a href="http://reference.iatistandard.org/105/activity-standard/iati-activities/iati-activity/activity-website/"><code>activity-website</code></a> element gets reshaped into a <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/document-link/"><code>document-link</code></a>, so it’s given the title “Activity website” and a category.) Quirksmode is an interesting idea – I certainly wouldn’t make it default behaviour (as I don’t want the transformer to modify the <strong>content</strong> of publishers’ data by default – just the <strong>shape</strong>) but I’d be interested in adding that as a request parameter.</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662/4</link>
+        <pubDate>Thu, 21 Feb 2019 14:38:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1662-4</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662.rss">Show IATI: Transform v1.0x data to v2.03</source>
+      </item>
+      <item>
+        <title>Show IATI: Transform v1.0x data to v2.03</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>Good stuff <a class="mention" href="/u/andylolz">@andylolz</a>: and nice to see some XSLT in use <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I noticed quite a lot of the schema errors were to do with missing elements (titles and descriptions in the examples I saw), and I guess the strict element ordering validation in 2.x.</p>
+<p>Have you considered having a ‘quirks mode’ conversion that populates these missing descriptive elements with ‘Not provided’ or some default text?</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662/3</link>
+        <pubDate>Thu, 21 Feb 2019 13:27:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1662-3</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662.rss">Show IATI: Transform v1.0x data to v2.03</source>
+      </item>
+      <item>
+        <title>Show IATI: Transform v1.0x data to v2.03</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I tried using <a href="https://iati-transformer.herokuapp.com/">IATI Transformer</a> to transform all the v1.0x data on the registry to v2.03.</p>
+<p><a href="https://gist.github.com/andylolz/be1d52258be2278b8ad94432beef2a56"><strong>Here’s the result.</strong></a></p>
+<p>In summary:</p>
+<ul>
+<li>
+<a href="https://gist.github.com/andylolz/be1d52258be2278b8ad94432beef2a56#successfully-transformed-datasets"><strong>127 v1.0x datasets</strong></a> were transformed to v2.03 successfully (i.e. without schema or codelist errors)</li>
+<li>
+<a href="https://gist.github.com/andylolz/be1d52258be2278b8ad94432beef2a56#transformed-datasets-but-with-schema-or-codelist-errors"><strong>738 v1.0x datasets</strong></a> were transformed to v2.03, but the result has schema or codelist errors</li>
+<li>
+<a href="https://gist.github.com/andylolz/be1d52258be2278b8ad94432beef2a56#not-transformed-source-invalid"><strong>190 v1.0x datasets</strong></a> were invalid beforehand (so the transformer refused to try and transform them)</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662/2</link>
+        <pubDate>Tue, 19 Feb 2019 13:43:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1662-2</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662.rss">Show IATI: Transform v1.0x data to v2.03</source>
+      </item>
+      <item>
+        <title>Show IATI: Transform v1.0x data to v2.03</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Here is an experimental tool to transform v1.0x data to v2.03:</p>
+<p><a href="https://iati-transformer.herokuapp.com" class="onebox" target="_blank">https://iati-transformer.herokuapp.com</a></p>
+<p>You can one-off transform legacy data with this. Alternatively, you could run current data through the transformer, copy the generated link, and post that to the registry. Or the datastore could potentially use this to import v1.0x data.</p>
+<p>Of course, if the v1.0x data is missing information that is required at v2.03, you’ll see an error, and the requisite fields will need to be populated. But it can still potentially save a bit of work.</p>
+<p>Under the hood, this app uses an <a href="https://en.wikipedia.org/wiki/XSLT">XSLT file</a> to transform IATI v1.0x activity XML into IATI v2.03 activity XML (<a href="https://github.com/andylolz/iati-transformer/tree/master/iati_transformer/static/iati-activities.xsl">this one</a>). Producing an XSLT file like this should probably be part of any major version upgrade.</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662/1</link>
+        <pubDate>Sun, 17 Feb 2019 08:56:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1662-1</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-transform-v1-0x-data-to-v2-03/1662.rss">Show IATI: Transform v1.0x data to v2.03</source>
+      </item>
+  </channel>
+</rss>

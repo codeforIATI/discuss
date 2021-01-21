@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Sectors: How we broke the standard (and fixed it in d-Portal)</title>
+    <link>https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071</link>
+    <description>In Version 1 of the standard sectors were specified at the activity level. In Version 2 it became possible to also report sectors at transaction level.
+
+BUT
+
+[A rule was established](http://iatistandard.org/201/activity-standard/iati-activities/iati-activity/sector/)
+
+&gt; Sector MUST EITHER be reported here OR at transaction level for ALL transactions
+
+`iati-activity/transaction/sector` is [now used by 91 publishers](http://dashboard.iatistandard.org/element/iati-activity_transaction_sector.html) including UN CERF, ILO, Spanish Ministry of Foreign Affairs, UNFPA, UNICEF, USA and WHO
+
+This also applies to countries (used by 32 publishers).
+
+At DI we first discovered the problem when we tried to analyse forward-looking budgets by sector. Without trawling through transactions this is no longer (easily) possible.
+
+Similarly, if you filter a search on d-Portal or the Datastore you will get incomplete answers as neither of these systems copes with transaction-level sectors.
+
+Until now
+
+The following logic has now been applied in d-Portal:
+
+* If no Sectors are reported at activity level they are harvested from transactions
+* If multiple sectors are present a percentage split is calculated from Commitments (or Disbursements and Expenditures if no Commitments are present)
+
+The first iteration of this modification is live now</description>
+    
+    <lastBuildDate>Thu, 22 Feb 2018 14:30:27 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Sectors: How we broke the standard (and fixed it in d-Portal)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="bill_anderson" data-post="1" data-topic="1071">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Similarly, if you filter a search on d-Portal or the Datastore you will get incomplete answers as neither of these systems copes with transaction-level sectors.</p>
+<p>Until now</p>
+</blockquote>
+</aside>
+<p><a href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/5">As pointed out above</a>, this remains broken on the Datastore. I sent a fix for it a few weeks ago:<br>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Datastore/pull/299" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Datastore</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Pull Request">
+    <svg width="60" height="60" class="github-icon" viewBox="0 0 12 16" aria-hidden="true"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Datastore/pull/299" target="_blank" rel="nofollow noopener">Filter on transaction AND activity sector</a>
+    </h4>
+
+    <div class="branches">
+      <code>IATI:master</code> ← <code>codeforIATI:284-transaction-sectors</code>
+    </div>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2018-02-02" data-time="15:43:51" data-timezone="UTC">03:43PM - 02 Feb 18 UTC</span>
+      </div>
+
+      <div class="user">
+        <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+          <img alt="andylolz" src="https://avatars1.githubusercontent.com/u/464193?v=4" class="onebox-avatar-inline" width="20" height="20">
+          andylolz
+        </a>
+      </div>
+
+      <div class="lines" title="4 commits changed 2 files with 29 additions and 2 deletions">
+        <a href="https://github.com/IATI/IATI-Datastore/pull/299/files" target="_blank" rel="nofollow noopener">
+          <span class="added">+29</span>
+          <span class="removed">-2</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/9</link>
+        <pubDate>Thu, 22 Feb 2018 14:30:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1071-9</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071.rss">Sectors: How we broke the standard (and fixed it in d-Portal)</source>
+      </item>
+      <item>
+        <title>Sectors: How we broke the standard (and fixed it in d-Portal)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Re. allowing <code>sector</code>s at transaction AND activity level… I think we then get into issues around percentage split, which I believe were discussed as part of the original <a href="https://discuss.iatistandard.org/t/non-statistical-secondary-sectors-excluded-2-03/849">Non-statistical secondary sectors (excluded 2.03)</a> proposal (and resulted in the proposal being amended.)</p>
+<blockquote>
+<p>(1) Require sectors/countries/regions at the activity level, but make them optional at the transaction level</p>
+</blockquote>
+<p>So… I like this proposal, but I don’t think it constitutes a relaxation of the rule – it’s just a different rule. I say that because currently, <code>sector</code> is not required at activity level. This proposal <em>does</em> require <code>sector</code> at activity level. So I’m pretty sure (though happy to be corrected) that it would require an integer upgrade.</p>
+<blockquote>
+<p>(2) Adjust the restrictions to only apply to OECD DAC Codes, or just to be per-vocabulary</p>
+</blockquote>
+<p>As I mentioned above, I like this proposal. But I think it solves a different problem to the one you’re describing, <a class="mention" href="/u/stevieflow">@stevieflow</a>.</p>
+<p>Just to get more of an understanding of the intention of your suggestion, can you explain why it would be difficult for publishers to provide a sector code for expenditures? Or are you speculating that this information wouldn’t be useful to users? I’m not sure I follow.</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/8</link>
+        <pubDate>Mon, 16 Oct 2017 08:56:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1071-8</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071.rss">Sectors: How we broke the standard (and fixed it in d-Portal)</source>
+      </item>
+      <item>
+        <title>Sectors: How we broke the standard (and fixed it in d-Portal)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a> - sorry, I can see that <a class="mention" href="/u/timdavies">@TimDavies</a> proposes in <a href="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/3:">https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/3:</a></p>
+<blockquote>
+<p>(3) Propose an alternative  element for the kinds of coding we are looking for</p>
+</blockquote>
+<p>But - I dont think that satisfies the original observation around this “rule” of sector codes being EITHER activity or transactions, and if the latter then ALL must have a sector.</p>
+<p>Since that, the TAG happened, and the tag element (!)  has been refined and developed (via <a href="https://discuss.iatistandard.org/t/non-statistical-secondary-sectors-excluded-2-03/849/26">Non-statistical secondary sectors (excluded 2.03)</a>) - so it’s actually <a class="mention" href="/u/timdavies">@TimDavies</a>’ first observation that is more relevant:</p>
+<blockquote>
+<p>(1) Require sectors/countries/regions at the activity level, but make them optional at the transaction level</p>
+</blockquote>
+<p>and</p>
+<blockquote>
+<p>(2) Adjust the restrictions to only apply to OECD DAC Codes, or just to be per-vocabulary</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/7</link>
+        <pubDate>Mon, 16 Oct 2017 08:07:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1071-7</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071.rss">Sectors: How we broke the standard (and fixed it in d-Portal)</source>
+      </item>
+      <item>
+        <title>Sectors: How we broke the standard (and fixed it in d-Portal)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p>I dont think <a href="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577">Providing sector/country codes at activity and transaction level - enable both?</a> was to do with the <code>tag</code> element.  This was an observation that the “rule”, as <a class="mention" href="/u/bill_anderson">@bill_anderson</a> states:</p>
+<blockquote>
+<p>Sector MUST EITHER be reported here OR at transaction level for ALL transactions</p>
+</blockquote>
+<p>… seemed rather ambitious and/or impractical for many.  There were two use cases We observered:</p>
+<p>1 -  For a publisher to <em>suddenly</em> drop any sector codes at activity level, in favour of transactional sectors - could throw data users (as now illustrated by d-portal)<br>
+2 - ALL transactions should have a sector code.  ALL of them?  Our observation was that it may make sense for Commitments and Disbursements, but Expenditure?  We felt that this wasn’t really researched to fully justify, hence a call for a relaxation of this rule</p>
+<p>I’ve no idea why or how this dont make this to standards day at TAG, hence the query.</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/6</link>
+        <pubDate>Mon, 16 Oct 2017 07:38:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1071-6</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071.rss">Sectors: How we broke the standard (and fixed it in d-Portal)</source>
+      </item>
+      <item>
+        <title>Sectors: How we broke the standard (and fixed it in d-Portal)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/james.coe">@james.coe</a> points out that this still appears to be an issue for the IATI Datastore. I’ve created a ticket for that here: <a href="https://github.com/IATI/IATI-Datastore/issues/284">https://github.com/IATI/IATI-Datastore/issues/284</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/5</link>
+        <pubDate>Fri, 13 Oct 2017 17:41:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1071-5</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071.rss">Sectors: How we broke the standard (and fixed it in d-Portal)</source>
+      </item>
+      <item>
+        <title>Sectors: How we broke the standard (and fixed it in d-Portal)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s great that d-portal has been upgraded to reflect this aspect of the 2.0x standard!</p>
+<p>But I think the story here is actually that the standard was upgraded, but d-portal was not. I.e. I think a more accurate title for this post would be “That time we upgraded the standard but not d-portal (and then upgraded d-portal to be compliant.)”</p>
+<p>When upgrades are made to the standard, it would be great if in-house tools like d-portal led the way in being compliant with the new version. After all (as I understand it) IATI have ultimate control over both things! But in this case, it seems publishers adopted the new version long before d-portal did.</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/4</link>
+        <pubDate>Fri, 13 Oct 2017 13:13:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1071-4</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071.rss">Sectors: How we broke the standard (and fixed it in d-Portal)</source>
+      </item>
+      <item>
+        <title>Sectors: How we broke the standard (and fixed it in d-Portal)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>[NB I would add this comment to <a href="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577">this thread</a>, but it seems that one is now closed for comments]</p>
+<aside class="quote no-group" data-post="2" data-topic="1071">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>How do we move that forward?</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/stevieflow">@stevieflow</a>: What are you looking to move forward here? The third of <a class="mention" href="/u/timdavies">@timdavies</a>’ proposals (the <code>&lt;tag&gt;</code> element) was both included in the Standards day and has so far been adopted into v2.03, right?</p>
+<p>Personally, I think the second suggestion in the second proposal is a good one, too (make sector restrictions per-vocabulary). I think it’s an oversight that sector restrictions aren’t currently vocabulary-dependent. But (as far as I can tell) this wasn’t worked up into a 2.03 proposal, so I guess that’s why it didn’t move forward.</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/3</link>
+        <pubDate>Fri, 13 Oct 2017 12:54:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1071-3</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071.rss">Sectors: How we broke the standard (and fixed it in d-Portal)</source>
+      </item>
+      <item>
+        <title>Sectors: How we broke the standard (and fixed it in d-Portal)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> via OpenAg (<a class="mention" href="/u/reidmporter">@reidmporter</a>) analysis  <a href="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577">we had a thread</a> (with contributions from <a class="mention" href="/u/herman">@Herman</a> &amp; <a class="mention" href="/u/timdavies">@TimDavies</a>)   around this rule, which got into the 2.03 list, but didn’t seem to get included in Standards Day, and subsequent discussions.  How do we move that forward?</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/2</link>
+        <pubDate>Wed, 11 Oct 2017 17:17:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1071-2</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071.rss">Sectors: How we broke the standard (and fixed it in d-Portal)</source>
+      </item>
+      <item>
+        <title>Sectors: How we broke the standard (and fixed it in d-Portal)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>In Version 1 of the standard sectors were specified at the activity level. In Version 2 it became possible to also report sectors at transaction level.</p>
+<p>BUT</p>
+<p><a href="http://iatistandard.org/201/activity-standard/iati-activities/iati-activity/sector/">A rule was established</a></p>
+<blockquote>
+<p>Sector MUST EITHER be reported here OR at transaction level for ALL transactions</p>
+</blockquote>
+<p><code>iati-activity/transaction/sector</code> is <a href="http://dashboard.iatistandard.org/element/iati-activity_transaction_sector.html">now used by 91 publishers</a> including UN CERF, ILO, Spanish Ministry of Foreign Affairs, UNFPA, UNICEF, USA and WHO</p>
+<p>This also applies to countries (used by 32 publishers).</p>
+<p>At DI we first discovered the problem when we tried to analyse forward-looking budgets by sector. Without trawling through transactions this is no longer (easily) possible.</p>
+<p>Similarly, if you filter a search on d-Portal or the Datastore you will get incomplete answers as neither of these systems copes with transaction-level sectors.</p>
+<p>Until now</p>
+<p>The following logic has now been applied in d-Portal:</p>
+<ul>
+<li>If no Sectors are reported at activity level they are harvested from transactions</li>
+<li>If multiple sectors are present a percentage split is calculated from Commitments (or Disbursements and Expenditures if no Commitments are present)</li>
+</ul>
+<p>The first iteration of this modification is live now</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071/1</link>
+        <pubDate>Wed, 11 Oct 2017 11:26:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1071-1</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071.rss">Sectors: How we broke the standard (and fixed it in d-Portal)</source>
+      </item>
+  </channel>
+</rss>

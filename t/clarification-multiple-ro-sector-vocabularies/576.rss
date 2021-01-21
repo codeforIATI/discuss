@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Clarification: multiple RO Sector Vocabularies</title>
+    <link>https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576</link>
+    <description>IATI guidance states that the two Reporting Organisation codes for Sectors (codes 98 &amp; 99):
+
+&gt; It is also recommended that if a publisher has its own classification system or systems then the vocabularies 99 or 98 (Reporting Organisation’s own vocabularies) should be used in addition to DAC codes.
+
+When using 98 or 99, a publisher can add a ``vocaulary-uri`` to point to that vocabulary online (added in 2.02)
+
+With the [Initiative for Open Ag Funding](https://www.interaction.org/document/initiative-open-ag-funding-proposals-standard-developments), we have started to unearth cases where there may well be a need for more than two RO vocabularies.  Eventually, these may well be added to the vocab code list (see also [#495: Make vocab codelists non- embedded](http://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495) ), but we wanted to clarify whether the standard could feasibly be expressed by publishers by :
+
+- using either code 98 or 99 - but with different vocabulary-uri attributes - to express multiple vocabularies.  This example details four different RO vocabularies (via the uri)
+
+``&lt;sector code=&quot;1&quot; vocabulary=&quot;&quot;98&quot; vocabulary-url=&quot;http://sectorvocabA.example.org&quot; /&gt;
+    &lt;sector code=&quot;2&quot; vocabulary=&quot;&quot;98&quot; vocabulary-url=&quot;http://sectorvocabB.example.org&quot; /&gt;
+    &lt;sector code=&quot;3&quot; vocabulary=&quot;&quot;99&quot; vocabulary-url=&quot;http://sectorvocabC.example.org&quot; /&gt;
+    &lt;sector code=&quot;4&quot; vocabulary=&quot;&quot;99&quot; vocabulary-url=&quot;http://sectorvocabD.example.org&quot; /&gt;``
+
+This doesn&#39;t seem very elegant or user-friendly.  A way round this could be to reserve a block of codes (eg: 80-100?) for RO vocabularies, for example (but that may in turn have more impact on data users).  It would be useful to clarify/discuss this. @rolfkleef may have ideas!</description>
+    
+    <lastBuildDate>Tue, 07 Mar 2017 07:32:48 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Clarification: multiple RO Sector Vocabularies</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>The key use case as I see it:</p>
+<ul>
+<li>We have a code list that is not on the IATI list, we want to use it now</li>
+<li>We want to express that we share the code list with other organisations</li>
+</ul>
+<p>Adding room for more “RO” vocabularies doesn’t solve the second point.</p>
+<p>This issue occurs with more code lists and identifiers. Two routes I see:</p>
+<ol>
+<li>
+<p>Adding a code to a code list should become easier: IATI takes on a role like “IANA: internet assigned names and numbers authority”. I’m not in favour of this myself, and it still doesn’t answer the “we want to use this now” case.</p>
+</li>
+<li>
+<p>Introduce “name spaces”: URIs basically solve that problem. Having a base URI with a code might be a middle ground for ease of use of finding sectors within one vocabulary. IATI could maintain a list of “recommended code list URIs”, and we could keep the existing codes as shorthand for URIs.</p>
+</li>
+</ol>
+<p>Route 2 could mean interpreting like:</p>
+<ul>
+<li>If there is a code: assume that code list</li>
+<li>If there is no code, use the URI</li>
+</ul>
+<p>But it could also be the other way around (if there is a URI, use that, if not: use the code).</p>
+<p>(I think we need to expand the standard with such interpretation rules: how is an application or user supposed to deal with the data if both attributes are there?)</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576/5</link>
+        <pubDate>Tue, 07 Mar 2017 07:32:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-576-5</guid>
+        <source url="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576.rss">Clarification: multiple RO Sector Vocabularies</source>
+      </item>
+      <item>
+        <title>Clarification: multiple RO Sector Vocabularies</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I would not be in favor of using a pattern here. In general, hiding information in identifiers, leads to problems in the long run. If there is a well established sector classification, shouldn’t it deserve its own unique identifier? Still lots of room in the current SectorVocabulary code list.</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576/4</link>
+        <pubDate>Wed, 15 Feb 2017 15:49:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-576-4</guid>
+        <source url="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576.rss">Clarification: multiple RO Sector Vocabularies</source>
+      </item>
+      <item>
+        <title>Clarification: multiple RO Sector Vocabularies</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>A bit similar to what Steven is suggesting, could you not just have a pattern here to allow an unlimited number of reporting organisation codes, e.g. anything beginning with <code>9</code> is a RO vocabulary?</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576/3</link>
+        <pubDate>Mon, 13 Feb 2017 23:29:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-576-3</guid>
+        <source url="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576.rss">Clarification: multiple RO Sector Vocabularies</source>
+      </item>
+      <item>
+        <title>Clarification: multiple RO Sector Vocabularies</title>
+        <dc:creator><![CDATA[AkermanMartin]]></dc:creator>
+        <description><![CDATA[
+            <p>Adding more lines to the sector vocabulary is best.  No need for Ag and other well-established vocabularies to have to share the 98 and 99 codes in a single activity if a reporting agency is able to make their data most descriptive.</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576/2</link>
+        <pubDate>Mon, 30 Jan 2017 17:17:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-576-2</guid>
+        <source url="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576.rss">Clarification: multiple RO Sector Vocabularies</source>
+      </item>
+      <item>
+        <title>Clarification: multiple RO Sector Vocabularies</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>IATI guidance states that the two Reporting Organisation codes for Sectors (codes 98 &amp; 99):</p>
+<blockquote>
+<p>It is also recommended that if a publisher has its own classification system or systems then the vocabularies 99 or 98 (Reporting Organisation’s own vocabularies) should be used in addition to DAC codes.</p>
+</blockquote>
+<p>When using 98 or 99, a publisher can add a <code>vocaulary-uri</code> to point to that vocabulary online (added in 2.02)</p>
+<p>With the <a href="https://www.interaction.org/document/initiative-open-ag-funding-proposals-standard-developments" rel="nofollow noopener">Initiative for Open Ag Funding</a>, we have started to unearth cases where there may well be a need for more than two RO vocabularies.  Eventually, these may well be added to the vocab code list (see also <a href="//discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495">#495: Make vocab codelists non- embedded</a> ), but we wanted to clarify whether the standard could feasibly be expressed by publishers by :</p>
+<ul>
+<li>using either code 98 or 99 - but with different vocabulary-uri attributes - to express multiple vocabularies.  This example details four different RO vocabularies (via the uri)</li>
+</ul>
+<p><code>&lt;sector code="1" vocabulary=""98" vocabulary-url="http://sectorvocabA.example.org" /&gt; &lt;sector code="2" vocabulary=""98" vocabulary-url="http://sectorvocabB.example.org" /&gt; &lt;sector code="3" vocabulary=""99" vocabulary-url="http://sectorvocabC.example.org" /&gt; &lt;sector code="4" vocabulary=""99" vocabulary-url="http://sectorvocabD.example.org" /&gt;</code></p>
+<p>This doesn’t seem very elegant or user-friendly.  A way round this could be to reserve a block of codes (eg: 80-100?) for RO vocabularies, for example (but that may in turn have more impact on data users).  It would be useful to clarify/discuss this. <a class="mention" href="/u/rolfkleef">@rolfkleef</a> may have ideas!</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576/1</link>
+        <pubDate>Tue, 20 Sep 2016 23:24:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-576-1</guid>
+        <source url="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576.rss">Clarification: multiple RO Sector Vocabularies</source>
+      </item>
+  </channel>
+</rss>

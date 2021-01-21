@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Mapping of IATI to DAC CRS</title>
+    <link>https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489</link>
+    <description>Hi all
+
+1. Has anyone successfully mapped from IATI to CRS? If so, have you shared your story?
+
+2. Has anyone got a mapping between DAC country codes (http://www.oecd.org/dac/stats/documentupload/Codelist_May_2016.xls) and IATI country codes (http://iatistandard.org/202/codelists/Country/). I&#39;m too lazy to write my own!
+
+Thanks
+
+John</description>
+    
+    <lastBuildDate>Tue, 14 Jun 2016 18:00:44 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Mapping of IATI to DAC CRS</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>Speak to Herman <span class="mention">@minbuza</span>
+</li>
+<li>A linked data option with lots of other country relationships is at <a href="http://joinedupdata.org/geo-pol/countries.html">http://joinedupdata.org/geo-pol/countries.html</a>
+</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489/3</link>
+        <pubDate>Tue, 14 Jun 2016 18:00:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-489-3</guid>
+        <source url="https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489.rss">Mapping of IATI to DAC CRS</source>
+      </item>
+      <item>
+        <title>Mapping of IATI to DAC CRS</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey John! I think I can help with your point 2 – I guess it would also be good if there was somewhere to share these sorts of generally useful datasets:<br>
+<aside class="onebox githubblob">
+  <header class="source">
+      <a href="https://github.com/markbrough/fr-crs-iati/blob/master/lib/countries-regions.csv" target="_blank" rel="nofollow noopener">github.com</a>
+  </header>
+  <article class="onebox-body">
+    <h4><a href="https://github.com/markbrough/fr-crs-iati/blob/master/lib/countries-regions.csv" target="_blank" rel="nofollow noopener">markbrough/fr-crs-iati/blob/master/lib/countries-regions.csv</a></h4>
+<pre><code class="lang-csv">country_name,country_name_FR,dac_country_code,iso2,iso3,dac_region_code,dac_region_name,type
+Afghanistan,Afghanistan,625,AF,AFG,689,"South &amp; Central Asia, regional",Country
+"Africa, regional","Afrique, régional",298,,,298,"Africa, regional",Region
+Albania,Albanie,71,AL,ALB,89,"Europe, regional",Country
+Algeria,Algérie,130,DZ,DZA,189,"North of Sahara, regional",Country
+"America, regional/multi-country","Amérique, régional",498,,QNA,498,"America, regional",Region
+Angola,Angola,225,AO,AGO,289,"South of Sahara, regional",Country
+Anguilla,,376,AI,AIA,389,"North &amp; Central America, regional",Country
+Antigua &amp; Barbuda,Antigua-et-Barbuda,377,AG,ATG,389,"North &amp; Central America, regional",Country
+Argentina,Argentine,425,AR,ARG,489,"South America, regional",Country
+Armenia,Arménie,610,AM,ARM,689,"South &amp; Central Asia, regional",Country
+"Asia, regional/multi-country","Asie, régional",798,,QRA,798,"Asia, regional",Region
+Azerbaijan,Azerbaïdjan,611,AZ,AZE,689,"South &amp; Central Asia, regional",Country
+Bangladesh,Bangladesh,666,BD,BGD,689,"South &amp; Central Asia, regional",Country
+Barbados,,329,BB,BRB,389,"North &amp; Central America, regional",Country
+Belarus,Bélarus,86,BY,BLR,89,"Europe, regional",Country
+Belize,Belize,352,BZ,BLZ,389,"North &amp; Central America, regional",Country
+Benin,Bénin,236,BJ,BEN,289,"South of Sahara, regional",Country
+Bhutan,Bhoutan,630,BT,BTN,689,"South &amp; Central Asia, regional",Country
+Bolivia,Bolivie,428,BO,BOL,489,"South America, regional",Country
+</code></pre>
+
+  This file has been truncated. <a href="https://github.com/markbrough/fr-crs-iati/blob/master/lib/countries-regions.csv" target="_blank" rel="nofollow noopener">show original</a>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489/2</link>
+        <pubDate>Tue, 14 Jun 2016 17:39:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-489-2</guid>
+        <source url="https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489.rss">Mapping of IATI to DAC CRS</source>
+      </item>
+      <item>
+        <title>Mapping of IATI to DAC CRS</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all</p>
+<ol>
+<li>
+<p>Has anyone successfully mapped from IATI to CRS? If so, have you shared your story?</p>
+</li>
+<li>
+<p>Has anyone got a mapping between DAC country codes (<a href="http://www.oecd.org/dac/stats/documentupload/Codelist_May_2016.xls">http://www.oecd.org/dac/stats/documentupload/Codelist_May_2016.xls</a>) and IATI country codes (<a href="http://iatistandard.org/202/codelists/Country/">http://iatistandard.org/202/codelists/Country/</a>). I’m too lazy to write my own!</p>
+</li>
+</ol>
+<p>Thanks</p>
+<p>John</p>
+          <p><a href="https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489/1</link>
+        <pubDate>Mon, 13 Jun 2016 14:19:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-489-1</guid>
+        <source url="https://discuss.iatistandard.org/t/mapping-of-iati-to-dac-crs/489.rss">Mapping of IATI to DAC CRS</source>
+      </item>
+  </channel>
+</rss>

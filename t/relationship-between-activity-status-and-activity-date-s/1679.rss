@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Relationship between `activity-status` and `activity-date`s</title>
+    <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679</link>
+    <description>I have some basic questions, after reading @anjesh’s [excellent blog](https://blog.yipl.com.np/quality-analysis-of-belgium-based-organisations-98614fb1d235).
+
+ 1. Should an activity in implementation (an `activity-status` of 2) be allowed an actual end date?
+ 2. Should an activity in pipeline/identification (an `activity-status` of 1) be allowed an actual start date, or actual end date?
+
+According to the standard, actual dates [**must** be in the past](http://reference.iatistandard.org/203/rulesets/standard-ruleset/#iati-activity). But the above rules aren’t currently included in [the standard ruleset](http://reference.iatistandard.org/203/rulesets/standard-ruleset/), or anywhere in the reference documentation. Should they be?
+
+Asking this now because the ruleset is currently being worked on, and because the [new IATI Validator is around the corner](https://twitter.com/IATI_aid/status/1102542836476641280) (congratulations, @rolfkleef!) which will do ruleset testing.
+
+Thanks!</description>
+    
+    <lastBuildDate>Fri, 01 Mar 2019 16:19:57 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_1.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Absolutely not! The first transaction is not necessarily the start date, and more importantly the last projected transaction is very/most often not the end date. All kinds of things happen during the course of a project implementation that can require frontloading or delaying transactions.</p>
+</blockquote>
+</aside>
+<p>Completely understood, but then we have to be clear that the dates associated with activities certainly don’t have a financial meaning - but what meaning do they have? The standard <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/activity-date/" rel="nofollow noopener">says that</a> “Start dates may reflect either the commencement of funding, planning or physical activity. End dates should, wherever possible, reflect the ending of physical activity.” It could be very different for different donors and different projects - which starts to make it a bit useless if in some cases it means that a team is on the ground, and in other cases it might mean it has been allocated funds internally to the donor but you might not see activity for months? I guess I feel that the ruleset should enforce that the dates need to say which if these things (planning, funding, activity) they refer to in order to be more useful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/12</link>
+        <pubDate>Fri, 01 Mar 2019 16:19:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-12</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/michelle_iom/40/515_1.png" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>In my humble opinion I don’t think it makes sense for something that hasn’t finished to have an actual end date nor a project that hasn’t started to have an actual start date. Planned yes. Actual no.</p>
+</blockquote>
+</aside>
+<p>Agree</p>
+<aside class="quote no-group" data-post="4" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>this points out that my suggestions of actual dates being important should actually refer to planned dates.</p>
+</blockquote>
+</aside>
+<p>That’s what I assumed, glad you confirmed.</p>
+<aside class="quote no-group" data-post="2" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>As above, if the ruleset enforced forward spending data, then this would change - you wouldn’t need project dates, but could impute them from the spending i.e. date of first transaction = start date, date of last projected transation = end date</p>
+</blockquote>
+</aside>
+<p>Absolutely not! The first transaction is not necessarily the start date, and more importantly the last projected transaction is very/most often not the end date. All kinds of things happen during the course of a project implementation that can require frontloading or delaying transactions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/11</link>
+        <pubDate>Fri, 01 Mar 2019 15:55:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-11</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah, sorry. Missed that point. Yes, we should have related rules. NB. <a class="mention" href="/u/amys">@amys</a> <a class="mention" href="/u/petyakangalova">@petyakangalova</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/10</link>
+        <pubDate>Fri, 01 Mar 2019 13:34:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-10</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> Yes – exactly. None of those rules are about the relationship between <code>activity-date</code> and <code>activity-status</code>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/9</link>
+        <pubDate>Fri, 01 Mar 2019 13:17:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-9</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/0ebfdf384e0be99e17f03bbf90f6afeb41fb2d4c.png" data-download-href="https://discuss.iatistandard.org/uploads/default/0ebfdf384e0be99e17f03bbf90f6afeb41fb2d4c" title="rules.png"><img src="https://discuss.iatistandard.org/uploads/default/original/1X/0ebfdf384e0be99e17f03bbf90f6afeb41fb2d4c.png" alt="rules" width="690" height="406" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/0ebfdf384e0be99e17f03bbf90f6afeb41fb2d4c_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">rules.png</span><span class="informations">785×462 13.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/8</link>
+        <pubDate>Fri, 01 Mar 2019 13:08:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-8</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Yes, every MUST in the standard that cannot be validated by the schema MUST have a rule in gthe standard ruleset.</p>
+</blockquote>
+</aside>
+<p>The rules mentioned above are not MUSTs in the standard (unless I am mistaken?) I don’t think they’re included anywhere in the reference documentation. Should they be?</p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/7</link>
+        <pubDate>Fri, 01 Mar 2019 12:55:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-7</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>According to the standard, actual dates <a href="http://reference.iatistandard.org/203/rulesets/standard-ruleset/#iati-activity"> <strong>must</strong> be in the past </a>. But the above rules aren’t currently included in <a href="http://reference.iatistandard.org/203/rulesets/standard-ruleset/">the standard ruleset</a>, or anywhere in the reference documentation. Should they be?</p>
+</blockquote>
+</aside>
+<p>Yes, every MUST in the standard that cannot be validated by the schema MUST have a rule in gthe standard ruleset.</p>
+<aside class="quote no-group" data-post="2" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I am even less clear that that we need an ‘activity-status’ field given that it can be imputed from the start/end dates and the current date.</p>
+</blockquote>
+</aside>
+<p>That works for “Implementation” but not for all status codes? (And we’re not in the business of re-egineering the standard at the moment, right?)</p>
+<aside class="quote no-group" data-post="3" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/michelle_iom/40/515_1.png" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>In my humble opinion I don’t think it makes sense for something that hasn’t finished to have an actual end date nor a project that hasn’t started to have an actual start date. Planned yes. Actual no.</p>
+</blockquote>
+</aside>
+<p>I agree</p>
+<aside class="quote no-group" data-post="4" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I often think that exact dates for activities are fairly meaningless</p>
+</blockquote>
+</aside>
+<p>Given that some exact dates may have meaning the original thinking was that using xsd:date (yyyy-mm-dd)** for all dates - and using the first and last days of the month for non-specific dates - was a pragmatic solution.</p>
+<p>** the attibute label <span class="mention">@iso-date</span> is misleading as yyyy-mm is valid for ISO 8601 but not for xsd:date. (I think I’m correct on this.) But we’re hardly going to re-engineer the standard now, right?</p>
+<aside class="quote no-group" data-post="5" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>Perhaps some grace period would be good,</p>
+</blockquote>
+</aside>
+<p>I don’t think we need a grace period for how the validator approaches its work. (It has to be loyal to the standard alone.) The DataStore is a different matter: it should in my opinion ingest future actual dates (or correct them to planned?). No doubt this will arise in the forthcoming consultation on such issues.</p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/6</link>
+        <pubDate>Fri, 01 Mar 2019 12:50:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-6</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Not the answer you are looking for, but if we are going to have rulesets, then I am even less clear that that we need an ‘activity-status’ field given that it can be imputed from the start/end dates and the current date.</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> Hmm… Perhaps… But also: removing <code>activity-status</code> would happen at a major upgrade, so that’s a v3.0.0 discussion! Can we park that one? <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<aside class="quote no-group" data-post="3" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/michelle_iom/40/515_1.png" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>In my humble opinion I don’t think it makes sense for something that hasn’t finished to have an actual end date nor a project that hasn’t started to have an actual start date. Planned yes. Actual no.</p>
+</blockquote>
+</aside>
+<p>Great – thanks <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a>!</p>
+<aside class="quote no-group" data-post="4" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>RE Imputing things - the technical answer to your example is for the date to also reference the timezone that it applies to (is this a feature that we have in the standard?).</p>
+</blockquote>
+</aside>
+<p>It’s not a feature of the standard, no.</p>
+<p>Michelle raises a good point here, though. Perhaps some grace period would be good, to allow for these sorts of edge cases?</p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/5</link>
+        <pubDate>Fri, 01 Mar 2019 12:24:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-5</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/michelle_iom">@Michelle_IOM</a> thanks - this points out that my suggestions of actual dates being important should actually refer to planned dates. Does this mean that you think the ruleset should now reject all activities with actual dates set in the future - <span class="mention">@andy</span> can you tell if there are there a lot of these?</p>
+<p>RE Imputing things - the technical answer to your example is for the date to also reference the timezone that it applies to (is this a feature that we have in the standard?).</p>
+<p>I often think that exact dates for activities are fairly meaningless (and aside from those for calculating loan disbursements would argue for just MM/YYYY) - if the actual start date was the 15th of May, but that is a Saturday and so work started until the 17th of May in reality no-one bats an eyelid - so why does IATI need to be so precise? Most projects have an 30th/31st of the month end date - again, likely to bear little relation to the actual end of activities, in which case we shouldn’t really worry about making dates seem more precise than they are in reality. Otherwise we should start putting in separate dates for the date a transaction was sent, and the date it arrived etc. It is also not clear what part of an activity the dates refer to - i.e. if the donor started thinking about a project in Jan, but its first expenditure was in June, the start date is already pretty useless to many users.</p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/4</link>
+        <pubDate>Fri, 01 Mar 2019 12:06:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-4</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Andy,</p>
+<p>In my humble opinion I don’t think it makes sense for something that hasn’t finished to have an actual end date nor a project that hasn’t started to have an actual start date.  Planned yes.  Actual no.</p>
+<p>Having the standard impute anything is a tad risky in my opinion.  What happens when a project starts or ends on the date of publishing and one isn’t in the same time-zone as IATI (GMT I believe)?  The system logic may not know what to do or give a result the publisher isn’t looking for.</p>
+<p>Hope that helps.<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/3</link>
+        <pubDate>Fri, 01 Mar 2019 11:29:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-3</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Not the answer you are looking for, but if we are going to have rulesets, then I am even less clear that that we need an ‘activity-status’ field given that it can be imputed from the start/end dates and the current date.</p>
+<p>I think an issue is that the process/standard was designed for publishers who regularly re-publish and so the status gets updated when the start-date is passed, but as in the Belgian example (I guess) there are lots of publishers doing it irregularly - removing and instead imputing the activity-status would make it a lot easier for them. Of course it doesn’t solve the issue of a project that doesn’t actually start by the start date, but nor does the current situation.</p>
+<p>RE the actual questions, my take is:</p>
+<ol>
+<li>Yes, you want to be able to predict when the project will end - and I often end up using it to estimate the upcoming disbursements ((activity value - disbursements to date) / remaining years) where the forward spending data is not provided.</li>
+<li>Yes, because it is often helpful to know when a project is due to be active / be spending.</li>
+</ol>
+<p>As above, if the ruleset enforced forward spending data, then this would change - you wouldn’t need project dates, but could impute them from the spending i.e. date of first transaction = start date, date of last projected transation = end date.</p>
+<p>I think my thinking here, is that in the absence of a ruleset that works in all cases, or is enforced, then the more data the better to try and figure out what is happening, despite the business-logic flaws that this involves.</p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/2</link>
+        <pubDate>Fri, 01 Mar 2019 08:04:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-2</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+      <item>
+        <title>Relationship between `activity-status` and `activity-date`s</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I have some basic questions, after reading <a class="mention" href="/u/anjesh">@anjesh</a>’s <a href="https://blog.yipl.com.np/quality-analysis-of-belgium-based-organisations-98614fb1d235">excellent blog</a>.</p>
+<ol>
+<li>Should an activity in implementation (an <code>activity-status</code> of 2) be allowed an actual end date?</li>
+<li>Should an activity in pipeline/identification (an <code>activity-status</code> of 1) be allowed an actual start date, or actual end date?</li>
+</ol>
+<p>According to the standard, actual dates <a href="http://reference.iatistandard.org/203/rulesets/standard-ruleset/#iati-activity"><strong>must</strong> be in the past</a>. But the above rules aren’t currently included in <a href="http://reference.iatistandard.org/203/rulesets/standard-ruleset/">the standard ruleset</a>, or anywhere in the reference documentation. Should they be?</p>
+<p>Asking this now because the ruleset is currently being worked on, and because the <a href="https://twitter.com/IATI_aid/status/1102542836476641280">new IATI Validator is around the corner</a> (congratulations, <a class="mention" href="/u/rolfkleef">@rolfkleef</a>!) which will do ruleset testing.</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679/1</link>
+        <pubDate>Thu, 28 Feb 2019 14:55:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1679-1</guid>
+        <source url="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679.rss">Relationship between `activity-status` and `activity-date`s</source>
+      </item>
+  </channel>
+</rss>

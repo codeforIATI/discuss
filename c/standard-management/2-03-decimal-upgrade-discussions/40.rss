@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>2.03 Decimal Upgrade Discussions - IATI Community Discussions</title>
+    <link>https://discuss.iatistandard.org/c/standard-management/2-03-decimal-upgrade-discussions/40</link>
+    <description>Topics in the &#39;2.03 Decimal Upgrade Discussions&#39; category This is a grouping of all previous discussions relating to possible 2.03 proposals - these are now locked to be used as a reference, as the upgrade process has been begun - you can find details of the &lt;a href=&quot;http://iatistandard.org/202/upgrades/decimal-upgrade-to-2-03&quot;&gt;timeline here&lt;/a&gt;, and all the proposals for 2.03 in the category &lt;a href=&quot;https://discuss.iatistandard.org/c/standard-management/2-03-decimal-upgrade-proposals&quot;&gt;2.03 Decimal Upgrade Proposals&lt;/a&gt; which are now open for comments.</description>
+    
+      <lastBuildDate>Wed, 03 May 2017 12:37:12 +0000</lastBuildDate>
+      <atom:link href="https://discuss.iatistandard.org/c/standard-management/2-03-decimal-upgrade-discussions/40.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Add Narrative element to related-activity</title>
+          <dc:creator><![CDATA[Matt]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>There’s currently no narrative element as part of the ‘related-activity’ element <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/related-activity/">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/related-activity/</a><br>
+Propose that this is added as part of 2.03 upgrade.  Further background here <a href="https://github.com/devinit/D-Portal/issues/332">https://github.com/devinit/D-Portal/issues/332</a></p>
+            <p><small>5 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828</link>
+          <pubDate>Wed, 03 May 2017 12:37:12 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-828</guid>
+          <source url="https://discuss.iatistandard.org/t/add-narrative-element-to-related-activity/828.rss">Add Narrative element to related-activity</source>
+        </item>
+        <item>
+          <title>About 2.03 Discussions Category</title>
+          <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>This is a grouping of all previous discussions relating to possible 2.03 proposals - these are now locked to be used as a reference, as the upgrade process has been begun - you can find details of the <a href="http://iatistandard.org/202/upgrades/decimal-upgrade-to-2-03">timeline here</a>, and all the proposals for 2.03 in the category <a href="https://discuss.iatistandard.org/c/standard-management/2-03-decimal-upgrade-proposals">2.03 Decimal Upgrade Proposals</a> which are now open for comments.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/about-2-03-discussions-category/816">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/about-2-03-discussions-category/816</link>
+          <pubDate>Wed, 26 Apr 2017 10:36:23 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-816</guid>
+          <source url="https://discuss.iatistandard.org/t/about-2-03-discussions-category/816.rss">About 2.03 Discussions Category</source>
+        </item>
+        <item>
+          <title>Specification of User-Defined Vocabularies</title>
+          <dc:creator><![CDATA[hayfield]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>Under the <a href="http://iatistandard.org/202/codelists/SectorVocabulary/">Sector Vocabulary</a> Codelist, you may specify a user-defined vocabulary by specifying a code of <code>99</code>. You may specify a specify a second user-defined vocabulary by specifying a code of <code>98</code>. There is no way to specify a third (or more) user-defined vocabularies.</p>
+<p>Other Vocabulary Codelists including <a href="http://iatistandard.org/202/codelists/PolicyMarkerVocabulary/">Policy Marker</a> and <a href="http://iatistandard.org/202/codelists/HumanitarianScopeVocabulary/">Humanitarian Scope</a> are even more restrictive in that they only define a method to specify a single user-defined vocabulary.</p>
+<p>If multiple user-defined vocabularies may actually be specified through unique <code>vocabulary-uri</code> values:</p>
+<ul>
+<li>Code <code>98</code> values should probably be withdrawn.</li>
+<li>It should be documented that multiple user-defined vocabularies may be identified using unique <code>vocabulary-uri</code> values for version 2.02+ publishers.</li>
+</ul>
+<p>Alternatively, It is unclear whether a <code>//sector/narrative</code> could be used as a UID. If it describes the <code>@code</code>, it cannot. If it describes or defines the vocabulary, it can. If it can describe either or both (as appears to be), it cannot.</p>
+<ul>
+<li>
+</li>
+</ul>
+<p>As a related issue, the name <code>Reporting Organisation</code> for code <code>99</code> does not clearly identify its meaning, and is not correct in all instances - a code <code>99</code> vocabulary may be maintained by an organisation other than the Reporting Org.</p>
+<ul>
+<li>
+</li>
+</ul>
+<p><strong>In summary</strong></p>
+<ul>
+<li>There should be a standardised and scalable method for defining and uniquely identifying multiple user-defined vocabularies.</li>
+<li>The <code>Name</code> of code <code>99</code> should be changed to more accurately state what it is, and descriptions added / updated to reflect this.</li>
+</ul>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788</link>
+          <pubDate>Wed, 05 Apr 2017 09:49:42 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-788</guid>
+          <source url="https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788.rss">Specification of User-Defined Vocabularies</source>
+        </item>
+        <item>
+          <title>Additions to Document category codelist</title>
+          <dc:creator><![CDATA[Riza]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>There is increased recognition of the value of moving beyond a focus primarily on fiduciary standards to also ensure that social and environmental standards are recognized and applied as part of an organization’s commitment to transparency and accountability, as these take into account the potential impacts on people and the environment. Social and environmental safeguard policies are now considered a vital component of development interventions and public disclosure. In order to enable organizations to publish corporate sustainability commitments and project-level safeguard related documents as part of their publication to the IATI standard we would like to suggest the addition of the following items to the Document Category codelist;</p>
+<p>Category A – Activity level</p>
+<ol>
+<li>Social and Environmental safeguard document: Since most IFIs already require the application of safeguards to projects, this would enable IATI publishers to start reporting project level safeguard documents (e.g. screenings, assessments, management plans) if they wish to do so.</li>
+</ol>
+<p>Category B – Organization level</p>
+<ol start="2">
+<li>
+<p>Programme and Project Management Policy/Procedure:  This would enable the disclosure of organizational policies related to programme/project management, which would include corporate social and environmental safeguards policies.</p>
+</li>
+<li>
+<p>Grievance Mechanism(s) : Grievance mechanisms are an important aspect of accountability and transparency. This would primarily be a link to the policy or webpage with information on an organization’s grievance mechanism and case register (e.g. for UNDP it is at <a href="http://www.undp.org/secu-srm" rel="nofollow noopener">www.undp.org/secu-srm</a>)</p>
+</li>
+<li>
+<p>Corporate Sustainability Report : This would be relevant for organizations that publish data on their environmental and social footprint and sustainability, e.g. through the Global Reporting Initiative (GRI)</p>
+</li>
+</ol>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/additions-to-document-category-codelist/782">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/additions-to-document-category-codelist/782</link>
+          <pubDate>Tue, 04 Apr 2017 14:36:14 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-782</guid>
+          <source url="https://discuss.iatistandard.org/t/additions-to-document-category-codelist/782.rss">Additions to Document category codelist</source>
+        </item>
+        <item>
+          <title>Standards Day Proposal: Accommodating non-statistical, secondary sectors</title>
+          <dc:creator><![CDATA[rory_scott]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <h1>Standards Day Proposal: Accommodating non-statistical, secondary sectors</h1>
+<h3>Key Facts</h3>
+<hr>
+<ul>
+<li>Proposal Authors: Open Ag Funding Partnership</li>
+<li>Standard change type: schema (and guidelines indirectly)</li>
+<li>Elements affected: <code>iati-activities/iati-activity/sector</code>
+</li>
+<li>Change Type: backwardly compatible</li>
+<li>Proposed IATI Version: 2.03</li>
+<li>Issues addressed:
+<ul>
+<li>non-statistical activity classification</li>
+<li>activity-search</li>
+<li>SDGs</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>TL;DR</h3>
+<p>Let’s add an <code>@aggregation-status</code> attribute to the <code>iati-activity/sector</code> element so that we can put in tags for discovery, categorise in a non-statistical way, and make implementing the SDGs more straightforward.</p>
+<blockquote>
+<p>Please note that this proposal has arisen from discussions that have taken place <em>at the TAG</em> - we came to the TAG with the aim of starting discussions around this topic, and evangelising our own user needs. Here, we’ve found that the humanitarian sector, and publishers trying to incorporate the SDGs into their data have similar concerns, and so the following proposal has been put together for consideration.</p>
+</blockquote>
+<p><em><strong>This is not about changing, or replacing the OECD DAC CRS Purpose Codes!</strong></em></p>
+<p><em><strong>This isn’t the only way of addressing the user needs below, and we’re open to the other options!</strong></em></p>
+<h2>The user needs</h2>
+<h4>1. Activity search</h4>
+<p>The proposed change <em>is not sector specific</em>, but informed by a sector-specific use case. Let’s consider this, and some other use cases:</p>
+<ul>
+<li>As agricultural users and publishers of IATI we want to make agricultural investment data more findable, without making IATI less usable or clear, and with the minimum impact on the standard, to facilitate and promote more agricultural publication and data use.</li>
+</ul>
+<p>Now let’s abstract this:</p>
+<ul>
+<li>As a sector-specific user (humanitarian, health, nutrition, education, etc.), I want a way of finding relevant IATI activities which are categorised to a level of detail which fits my sector’s interests, so that I can access and use investment data which is relevant to it.</li>
+</ul>
+<h4>2. Non-statistical / SDG classification</h4>
+<blockquote>
+<p><strong>Proviso from the author</strong>: I’m not an SDG expert, but I have gotten the impression that others are asking similar questions about classification, and I hope this section starts a conversation at least.</p>
+</blockquote>
+<p>Another potential scenario is that a publisher wants to associate their activity with various SDG goals, but that there is no sensible way to allocate percentages, because the SDGs aren’t mutually exclusive, and one activity might contain interventions which simultaneously address multiple goals.</p>
+<p>In this instance, it would still be valuable for data users to know that an activity is relevant to an SDG goal, and then know to look at that activity’s <strong>transactions</strong> for statistical analysis of the goals* (as the SDG goals could be used there also) , or <strong>results</strong> for analysis of the activity’s outputs relative to the SDG indicators.</p>
+<h2>The current obstacle</h2>
+<p>The sector element assumes that classification is <em>statistical</em>, i.e. that aggregation <strong>works</strong> with the sectors.</p>
+<p>For instance, if I publish an activity that spans two sectors, I am expected to include a percentage split, so that the funds can be split amongst the sectors and, for instance, a pie chart can be drawn. All of the codes within a given vocabulary must add up to 100%.</p>
+<p>This doesn’t play nice with the use-cases outlined above.</p>
+<h2>The proposal</h2>
+<p>To add an <code>@aggregation-status</code> attribute to secondary <code>sector</code> elements, which defaults to <code>true</code>, but when declared as <code>false</code> indicates that this instance of a sector should not be included in aggregations. This would work in the same way as the <code>result/@aggregation-status</code>.</p>
+<p>Rules and guidance should reflect that:</p>
+<ol>
+<li>This only applies to non-primary sectors</li>
+<li>This <em>absolutely does not</em> apply to DAC CRS purpose codes</li>
+</ol>
+<p><strong>Status Quo</strong></p>
+<pre><code class="lang-xml">&lt;sector vocabulary="DAC" code="31140"&gt;
+    &lt;narrative&gt;Irrigation And Drainage&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_10967" percentage="40"&gt;
+    &lt;narrative xml:lang="en"&gt;food security&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_37836" percentage="30"&gt;
+    &lt;narrative xml:lang="en"&gt;capacity building&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_24935" percentage="30"&gt;
+    &lt;narrative xml:lang="en"&gt;off season cultivation&lt;/narrative&gt;
+&lt;/sector&gt;
+</code></pre>
+<p><strong>Proposed</strong></p>
+<pre><code class="lang-xml">&lt;sector vocabulary="DAC" code="31140"&gt;
+    &lt;narrative&gt;Irrigation And Drainage&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_10967" aggregation-status="false"&gt;
+    &lt;narrative xml:lang="en"&gt;food security&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_37836" aggregation-status="false"&gt;
+    &lt;narrative xml:lang="en"&gt;capacity building&lt;/narrative&gt;
+&lt;/sector&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.vocabulary.com/tag-registry/" code="c_24935" aggregation-status="false"&gt;
+    &lt;narrative xml:lang="en"&gt;off season cultivation&lt;/narrative&gt;
+&lt;/sector&gt;
+
+</code></pre>
+<h2>Arguments against</h2>
+<h4>This changes the way people will think about sectors</h4>
+<p><strong>Outline</strong>: tool builders and data users currently assume that any sector elements of the same vocabulary will add up to 100%. This change would defy that assumption and cause inconvenience or confusion.</p>
+<p><strong>Initial response</strong>: most changes which would allow for above use cases would require some changes which would impact current users. This is really an issue of priorities.</p>
+<h4>Moral hazard for publishers in their primary sector code?</h4>
+<p><strong>Outline</strong>: The schema doesn’t allow for one rule to be applied to a primary sector code and another to a secondary one, so this change might allow publishers to put this aggregation-status flag into their DAC purpose codes, allowing for worse quality data.</p>
+<p><strong>Initial Response</strong>: The schema already allows for bad or misleading data, and we have to assume that publishers adhere to rules and guidelines, we shouldn’t constrain the capability of all publishers because we don’t trust some of them. Instead, we should introduce more robust validation and more immediate feedback mechanisms.</p>
+<h2>Alternatives considered or suggested</h2>
+<ul>
+<li>Add a new element i.e. <code>sector-tag</code> which uses the same vocabularies as <code>&lt;sector&gt;</code>, but acts as a content tag</li>
+</ul>
+<p>This is potentially a more pure solution, but requires the addition of a new element to the standard, for which there is little appetite, and which would require data users to deal with another element instead of just another attribute.</p>
+<p>This isn’t a major drawback though, so this option could serve as an alternative if there is consensus that the solution proposed above is untenable.</p>
+<ul>
+<li>Using policy-marker</li>
+</ul>
+<p>This would be misleading for several of the anticipated usecases. Particularly for classifications which deal with concepts like crops, natural disasters, or much sector purposes which can’t be summed, but share a codelist.</p>
+<h2>In Sum</h2>
+<p>Our aim is to start a conversation around this, and we’re not wedded to the proposed fix. We want it to be clear that there are legitimate needs for a non-statistical classification which links out to codelists.</p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753</link>
+          <pubDate>Wed, 08 Mar 2017 16:10:06 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-753</guid>
+          <source url="https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753.rss">Standards Day Proposal: Accommodating non-statistical, secondary sectors</source>
+        </item>
+        <item>
+          <title>Improvements relating to both activity and organisation standards</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>The organisation standard paper contained a small piece on issues relating to both standards. This section has grown thanks to <a class="mention" href="/u/hayfield">@hayfield</a>’s <a href="https://docs.google.com/document/d/1lj5VQ2M1zzQ4uZ8cQZrzPGCC0JR7uckZUkUSpwElrYc/edit?usp=sharing">forensic analysis</a> and it has now been <a href="https://docs.google.com/document/d/1XCwTApd1NX3Rfc0p8-uxAskZ0NE8RIDxrzmojQdNYRY/edit?usp=sharing">split off into its own paper which is available here.</a></p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/improvements-relating-to-both-activity-and-organisation-standards/737">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/improvements-relating-to-both-activity-and-organisation-standards/737</link>
+          <pubDate>Thu, 02 Mar 2017 12:17:05 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-737</guid>
+          <source url="https://discuss.iatistandard.org/t/improvements-relating-to-both-activity-and-organisation-standards/737.rss">Improvements relating to both activity and organisation standards</source>
+        </item>
+        <item>
+          <title>Under the Bonnet: Standard Tuning Issues</title>
+          <dc:creator><![CDATA[hayfield]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p><a href="https://docs.google.com/document/d/1lj5VQ2M1zzQ4uZ8cQZrzPGCC0JR7uckZUkUSpwElrYc/edit#">This document</a> contains a number of problems, issues and suggestions for tuning the Standard. They primarily involve small changes to the existing Standard content rather than adding anything new. Points are roughly grouped by type of problem / suggested addition, though are currently very mixed in terms of severity / impact.</p>
+<p>There are also a number of issues logged directly against the SSOT under <a href="https://github.com/IATI/IATI-Schemas/issues">Schemas</a>, <a href="https://github.com/IATI/IATI-Rulesets/issues">Rulesets</a> and <a href="https://github.com/IATI/IATI-Extra-Documentation/issues">Extra Documentation</a>. These are generally small issues relating to documentation content. If any of these issues impact interpretation or use of the Standard, a note should be made on Github to copy them into this document.</p>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/document/d/1lj5VQ2M1zzQ4uZ8cQZrzPGCC0JR7uckZUkUSpwElrYc/edit" target="_blank">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/document/d/1lj5VQ2M1zzQ4uZ8cQZrzPGCC0JR7uckZUkUSpwElrYc/edit" target="_blank"><span class="googledocs-onebox-logo g-docs-logo"></span></a>
+
+<h3><a href="https://docs.google.com/document/d/1lj5VQ2M1zzQ4uZ8cQZrzPGCC0JR7uckZUkUSpwElrYc/edit" target="_blank">Under the Bonnet: Standard Tuning Issues</a></h3>
+
+<p>Under the Bonnet: Standard Tuning Issues This document contains a number of problems, issues and suggestions for tuning the Standard. They primarily involve small changes to the existing Standard content rather than adding anything new. Points are...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+            <p><small>3 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/under-the-bonnet-standard-tuning-issues/735">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/under-the-bonnet-standard-tuning-issues/735</link>
+          <pubDate>Mon, 27 Feb 2017 10:25:43 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-735</guid>
+          <source url="https://discuss.iatistandard.org/t/under-the-bonnet-standard-tuning-issues/735.rss">Under the Bonnet: Standard Tuning Issues</source>
+        </item>
+        <item>
+          <title>Amend Name of Transaction Type &#39;Interest Repayment&#39;</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>Transaction type code 5 on the <a href="http://iatistandard.org/202/codelists/TransactionType/">Transaction Type Codelist</a> currently has a name of ‘Interest Repayment’ However, this should actually be ‘Interest Payment’ and so the name should be amended</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/amend-name-of-transaction-type-interest-repayment/680">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/amend-name-of-transaction-type-interest-repayment/680</link>
+          <pubDate>Wed, 25 Jan 2017 13:36:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-680</guid>
+          <source url="https://discuss.iatistandard.org/t/amend-name-of-transaction-type-interest-repayment/680.rss">Amend Name of Transaction Type &#39;Interest Repayment&#39;</source>
+        </item>
+        <item>
+          <title>Add CRS++ Non-flow data</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>This <a href="http://support.iatistandard.org/hc/en-us/articles/214388506-Non-flow-data" rel="nofollow noopener">issue</a> was originally added and discussed on the previous version IATI Standard Upgrade forum. However that forum has now itself moved to the IATI Discuss platform so this topic has been created in order that discussions can continue here.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/add-crs-non-flow-data/661">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/add-crs-non-flow-data/661</link>
+          <pubDate>Wed, 04 Jan 2017 12:17:29 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-661</guid>
+          <source url="https://discuss.iatistandard.org/t/add-crs-non-flow-data/661.rss">Add CRS++ Non-flow data</source>
+        </item>
+        <item>
+          <title>Add Attribute To Hold Name of Application That Created XML File</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>This <a href="http://support.iatistandard.org/hc/en-us/articles/214388566-Add-Attribute-To-Hold-Name-of-Application-That-Created-XML-File">issue</a> was originally added and originally discussed on the previous version IATI Standard Upgrade forum. However that forum has now itself moved to the IATI Discuss platform so this topic has been created in order that discussions can continue here.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/add-attribute-to-hold-name-of-application-that-created-xml-file/659">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/add-attribute-to-hold-name-of-application-that-created-xml-file/659</link>
+          <pubDate>Wed, 04 Jan 2017 12:05:07 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-659</guid>
+          <source url="https://discuss.iatistandard.org/t/add-attribute-to-hold-name-of-application-that-created-xml-file/659.rss">Add Attribute To Hold Name of Application That Created XML File</source>
+        </item>
+        <item>
+          <title>IATI Org standard for UN System Reporting</title>
+          <dc:creator><![CDATA[Riza]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>This <a href="http://support.iatistandard.org/hc/en-us/articles/214388586-IATI-Org-standard-for-UN-System-Reporting" rel="nofollow noopener">issue</a> was originally added and originally discussed on the previous version IATI Standard Upgrade forum. However that forum has itself now itself moved to the IATI Discuss platform so this topic has been created in order that discussions can continue here.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657</link>
+          <pubDate>Wed, 04 Jan 2017 11:57:36 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-657</guid>
+          <source url="https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657.rss">IATI Org standard for UN System Reporting</source>
+        </item>
+        <item>
+          <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>_NB: picking up on discussions that are here: <a href="http://support.iatistandard.org/hc/en-us/articles/214390586" rel="nofollow noopener">http://support.iatistandard.org/hc/en-us/articles/214390586</a> - with <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/rolfkleef">@rolfkleef</a> <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/johnadams">@JohnAdams</a> _</p>
+<p>As we know, the code “Incoming Commitment” was added to 2.02 (but not to earlier versions of the standard, as <a class="mention" href="/u/herman">@Herman</a> originally proposed).  My understanding is that one purpose of this is to enable publishers to be clear about the commitments they have from others - and to not use the Incoming Funds code to declare this.</p>
+<p>This leaves the Commitment code. <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> asked:</p>
+<blockquote>
+<p>I want to make sure I understand how the codelist will work.  If it’s an incoming commitment we would code it 11, while for an outgoing commitment we continue using code 2 “Commitment”?  Would it be clearer to rename 2 “Outgoing Commitment”, or would that be too much trouble for what it’s worth?</p>
+</blockquote>
+<p>This didn’t seem to get discussed in the original thread.</p>
+<p>Looking across the standard. there seems to be a slight ambiguity in terms of the relationship between the Commitment transaction and a “total budget” of an activity.  <a href="http://iatistandard.org/202/activity-standard/overview/transactions/" rel="nofollow noopener">IATI Guidance states</a>:</p>
+<blockquote>
+<p>Commitment (code<em>2</em>)- the total agreed budget for the activity.</p>
+</blockquote>
+<p>The actual <a href="http://iatistandard.org/202/codelists/TransactionType/" rel="nofollow noopener">codelist definition for Commitment</a> seems to be different in approach:</p>
+<blockquote>
+<p>A firm, written obligation from a donor or provider to provide a specified amount of funds, under particular terms and conditions, for specific purposes, for the benefit of the recipient.</p>
+</blockquote>
+<p>In short, I think there are two uses of Commitment, around IATI land.  Publishers may do either (or both in some cases)</p>
+<ol>
+<li>We’re committing this value to this <em>activity</em> aka the total-budget</li>
+<li>We’re committing this value to this <em>partner</em>
+</li>
+</ol>
+<p>The first use case is supported by the fact that publishers are <strong>not</strong> encouraged to use the `budget`` element to declare the total budget of an activity (and a total-budget element does not exist in the activity standard - only the org standard)</p>
+<p>The second use case supports the “full-chain” transparency, referenced by <a class="mention" href="/u/herman">@Herman</a>:</p>
+<blockquote>
+<p>Since the current standard only supports the ‘Commitment’ as a transaction type, it is impossible to distinguish between incoming and outgoing commitments. Without this element full chain transparency is therefore not possible.</p>
+</blockquote>
+<p>And so - here could be our difficulty.  If the same code is wide open to two use cases, we face difficulties in getting datasets to work together, potentially.</p>
+<p>To sum: Renaming (or clarifying) Commitment to Outgoing Commitment may start to make things clearer for implementation, although we should also be minded that this code is in widespread use.</p>
+<p>(In trying to pick up and type up this discussion, it does seem to make the case for a <code>total-budget</code> element in the activity standard, or perhaps some work on the <code>budget/@type</code> attribute/codelist)</p>
+            <p><small>16 posts - 9 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644</link>
+          <pubDate>Wed, 14 Dec 2016 08:32:33 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-644</guid>
+          <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+        </item>
+        <item>
+          <title>Providing sector/country codes at activity and transaction level - enable both?</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>IATI is quite clear in how and where either sector and country/region classifications can be mixed between the activity and transactions.</p>
+<p>For <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/sector/" rel="nofollow noopener">sector</a> codes</p>
+<blockquote>
+<p>Sector can also be reported at the transaction level rather than the activity level. Sector must only be reported at EITHER transaction level OR activity level.</p>
+</blockquote>
+<p>and <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/recipient-country/" rel="nofollow noopener">country/region</a>:</p>
+<blockquote>
+<p>The country can also be specified at transaction rather than activity level. If recipient-country OR recipient-region are reported at the transaction level, ALL transactions MUST contain a recipient-country or recipient-region element and iati-activity/recipient-country and iati-activity/recipient-region MUST NOT be used.</p>
+</blockquote>
+<p>With the <a href="https://www.interaction.org/document/initiative-open-ag-funding-proposals-standard-developments" rel="nofollow noopener">Initiative for Open Ag Funding</a> we think it might be useful to relax this rule, in terms of:</p>
+<ul>
+<li>any activity can have sector / country/region codes at BOTH activity and transaction level</li>
+<li>sector / country/region codes do NOT have to apply to all transactions</li>
+</ul>
+<p>We can see use-cases such as:</p>
+<ul>
+<li>A publisher may want to describe their activity with a certain set of sector codes at a high level / early on, and then gradually build up a more detailed picture over time of the activity via transaction encoding.</li>
+<li>A publisher may be able to codify certain transactions (eg disbursements to partners) with a sector / country/region codes, but have no reason or use with other types.</li>
+</ul>
+<p>Both of these may help end users understand the delivery and scope of the activity via access to greater detail.  We understand that this may also place a high bar on publishers to do this effectively - this post is to illustrate that within the current guidance neither of these scenarios are permitted.</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577</link>
+          <pubDate>Tue, 20 Sep 2016 23:42:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-577</guid>
+          <source url="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577.rss">Providing sector/country codes at activity and transaction level - enable both?</source>
+        </item>
+        <item>
+          <title>Clarification: multiple RO Sector Vocabularies</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>IATI guidance states that the two Reporting Organisation codes for Sectors (codes 98 &amp; 99):</p>
+<blockquote>
+<p>It is also recommended that if a publisher has its own classification system or systems then the vocabularies 99 or 98 (Reporting Organisation’s own vocabularies) should be used in addition to DAC codes.</p>
+</blockquote>
+<p>When using 98 or 99, a publisher can add a <code>vocaulary-uri</code> to point to that vocabulary online (added in 2.02)</p>
+<p>With the <a href="https://www.interaction.org/document/initiative-open-ag-funding-proposals-standard-developments" rel="nofollow noopener">Initiative for Open Ag Funding</a>, we have started to unearth cases where there may well be a need for more than two RO vocabularies.  Eventually, these may well be added to the vocab code list (see also <a href="//discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495">#495: Make vocab codelists non- embedded</a> ), but we wanted to clarify whether the standard could feasibly be expressed by publishers by :</p>
+<ul>
+<li>using either code 98 or 99 - but with different vocabulary-uri attributes - to express multiple vocabularies.  This example details four different RO vocabularies (via the uri)</li>
+</ul>
+<p><code>&lt;sector code="1" vocabulary=""98" vocabulary-url="http://sectorvocabA.example.org" /&gt; &lt;sector code="2" vocabulary=""98" vocabulary-url="http://sectorvocabB.example.org" /&gt; &lt;sector code="3" vocabulary=""99" vocabulary-url="http://sectorvocabC.example.org" /&gt; &lt;sector code="4" vocabulary=""99" vocabulary-url="http://sectorvocabD.example.org" /&gt;</code></p>
+<p>This doesn’t seem very elegant or user-friendly.  A way round this could be to reserve a block of codes (eg: 80-100?) for RO vocabularies, for example (but that may in turn have more impact on data users).  It would be useful to clarify/discuss this. <a class="mention" href="/u/rolfkleef">@rolfkleef</a> may have ideas!</p>
+            <p><small>5 posts - 5 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576</link>
+          <pubDate>Tue, 20 Sep 2016 23:24:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-576</guid>
+          <source url="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576.rss">Clarification: multiple RO Sector Vocabularies</source>
+        </item>
+        <item>
+          <title>Tech Paper: Improvements to the Activity Standard</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>This paper will consider a number of issues relating to the Activity Standard. (We may need to split this paper in two to make it more manageable.)</p>
+<p><strong>Secondary publishers</strong></p>
+<ul>
+<li>The definition of what constitutes a secondary publisher requires clarification.</li>
+<li>Organisations reported by secondary publishers that do not themselves publish to IATI should be flagged so that their activity data can be used without fear of duplication or double counting.</li>
+<li>Does there need to be a way to link the activities of an organisation reported by a secondary publisher to a primary publisher?</li>
+</ul>
+<p><strong>Future-dated transactions</strong></p>
+<ul>
+<li>Current rules insist that transactions are a record of de facto actions that must therefore take place in the past. This logic is used to detect when a publisher’s data has changed to calculate timeliness (publisher statistics logic looks for a change in the most recent transaction date). There are however business models where accounting systems legitimately issue committed instructions to banks for future transactions.</li>
+</ul>
+<p><strong>Participating organisation type attribute</strong></p>
+<ul>
+<li>Add an <a href="//discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/17">attribute to participating-org</a> - particularly useful for describing implementing organisations</li>
+<li>Agree on either separation or alignment of the IATI Organisation Type codelist with the CRS Channel of Delivery. (See discussions <a href="http://support.iatistandard.org/entries/27805378-Additions-to-Organisation-Type-codelist">here</a> and <a href="//discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/17">here</a>.)</li>
+</ul>
+<p><strong>Results aggregation/disaggregation</strong></p>
+<ul>
+<li>Fix the results complex element to ensure accurate reporting of <a href="//discuss.iatistandard.org/t/disaggregation-of-results/449">disaggregated values</a> per indicator.</li>
+<li>
+<a href="http://support.iatistandard.org/entries/83376329-Remove-attribute-aggregation-status-from-">Proposal to remove</a> the aggregation-status attribute from the result element</li>
+</ul>
+<p><strong>Transaction Issues</strong></p>
+<ul>
+<li>Add a transaction type code for internally sourced / core funds. (<a href="//discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542">See separate paper on core funding</a>)</li>
+<li>Change transaction type code description “Interest Repayment” to “Interest Payment”</li>
+<li>Make value-date mandatory (if agreed this would go in to the 3.01 queue)</li>
+<li>
+<a href="//discuss.iatistandard.org/t/currency-conversion/413/3">Proposal</a> to specify an explicit exchange rate for a transaction</li>
+</ul>
+<p><strong>Budget Identifier</strong></p>
+<ul>
+<li>Deprecate BudgetIdentifier codelist as it has been superceded by the new list of CRS purpose codes</li>
+<li>Modify the BudgetIdenifierVocabulary codelist. (<a href="//discuss.iatistandard.org/t/sectors-sector-mappings/173/12">See discussion here</a>.)</li>
+</ul>
+<p><strong>Total Estimated Cost</strong></p>
+<ul>
+<li>Proposal to add a new total estimated cost element. (<a href="//discuss.iatistandard.org/t/total-cost-of-the-award-new-field-suggestion/456/9">See discussion here</a>)</li>
+<li>Review and clarify definitions for commitments, budgets and costs</li>
+</ul>
+<p>Miscellaneous</p>
+<ul>
+<li>Review ambiguous use of <span class="mention">@type</span> and <span class="mention">@code</span> attributes across schema</li>
+<li>Limit use of description/<span class="mention">@type</span> within an activity. (i.e. <a href="http://support.iatistandard.org/entries/83242579-Limit-The-Use-of-description-type-Within-An-Activity">don’t allow repetition</a> of same <span class="mention">@type</span> in one description)</li>
+<li>[Make URLs on elements with a publisher-provided codelist mandatory](<a href="http://Make">http://Make</a> URLs on elements with a publisher-provided codelist mandatory)</li>
+</ul>
+<p><a href="https://docs.google.com/document/d/1kOIcA2A_eDfP8pnoLTFHbXvRdJdwJn81R2CwdQcrqQc/edit?usp=sharing">This paper</a> is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+            <p><small>17 posts - 7 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544</link>
+          <pubDate>Tue, 09 Aug 2016 08:51:00 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-544</guid>
+          <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+        </item>
+        <item>
+          <title>Tech Paper: Improvements to the Organisation Standard</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>This paper will propose modifications to be considered for the 2.03 decimal upgrade.</p>
+<p><strong>More data on organisation-level finances</strong></p>
+<ul>
+<li>Core funding and funding from own sources. (<a href="//discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542">See separate paper</a>)</li>
+<li>Total operational spend - a self-reporting facility for the calculation of <a href="http://dashboard.iatistandard.org/coverage.html">Coverage in Publisher Statistics</a>.</li>
+<li>
+<a href="http://support.iatistandard.org/entries/83900675-IATI-Org-standard-for-UN-System-Reporting">A proposal from UNDP</a> to use the standard for UN system Chief Executive Board (CEB) reporting at highest UN organization level. (Annual expense, annual budget, annual working capital, annual revenue by funding, annual assessed revenue)</li>
+</ul>
+<p><strong>Other Issues</strong></p>
+<ul>
+<li>
+<a href="http://support.iatistandard.org/entries/71003738-Non-flow-data">CRS Non-flow data.</a> For publishers reporting to the OECD DAC who want to derive their entire CRS++ submission from IATI data.</li>
+</ul>
+<p><strong>Issues relating to both Organisation and Activity standards</strong></p>
+<ul>
+<li>Enforce all u.r.l.s to be absolute, not relative.</li>
+<li>U/L case validation of organisation identifiers (and registration agency suffixes)</li>
+<li>Booleans can be reported either as 0/1 or true/false. This complicates the data for non-technical users. Should the standard allow only one version?</li>
+</ul>
+<p>This paper outline is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+            <p><small>10 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-organisation-standard/543">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-organisation-standard/543</link>
+          <pubDate>Tue, 09 Aug 2016 07:08:03 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-543</guid>
+          <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-organisation-standard/543.rss">Tech Paper: Improvements to the Organisation Standard</source>
+        </item>
+        <item>
+          <title>Tech Paper: Core funding and funding from own sources</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>Neither the Organisation nor Activity standard currently allow for the explicit reporting of both core funding and finances that have been raised by the publishing organisation.</p>
+<ul>
+<li>
+<p>This paper will propose modifications to the Organisation standard to allow for both</p>
+</li>
+<li>
+<p>It will also propose a modification to the Activity standard to indicate that an activity is being financed through core and/or own finances.</p>
+</li>
+</ul>
+<p><a href="https://docs.google.com/document/d/1GL89dPkdM6Uj9fkfiqNz5c86XhQhdLoYVFbnAvl1pEo/edit?usp=sharing">This paper</a> is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+            <p><small>5 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542</link>
+          <pubDate>Tue, 09 Aug 2016 06:44:31 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-542</guid>
+          <source url="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542.rss">Tech Paper: Core funding and funding from own sources</source>
+        </item>
+        <item>
+          <title>Tech Paper: Traceability</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>When UK’s DFID began it’s drive to trace finances down the delivery chain there were discussions with the IATI Tech Team on methodology, but these were never formalised. With the UK, Netherlands and World Food Programme experience of implementing traceability, we now need to establish documented rules and guidelines.</p>
+<p><a href="https://docs.google.com/document/d/1GMVXG4ruO3OxIjrUfUbY7EbFS3c1slF22l6d7lSu2dk/edit?usp=sharing">This paper</a> is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+            <p><small>8 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/tech-paper-traceability/541">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/tech-paper-traceability/541</link>
+          <pubDate>Mon, 08 Aug 2016 19:18:56 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-541</guid>
+          <source url="https://discuss.iatistandard.org/t/tech-paper-traceability/541.rss">Tech Paper: Traceability</source>
+        </item>
+        <item>
+          <title>Tech Paper: Double Counting</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>IATI is a publishing standard which encourages <strong>all</strong> actors in the development and humanitarian aid delivery chains to publish information on their activities and finances. As a result you can’t simply add up all the numbers. Many users of the data need, somehow, to derive meaningful totals.</p>
+<ul>
+<li>What rules do individual publishers need to follow within their own reporting?</li>
+<li>Traceability of finances down the delivery chain provides a means of avoiding double counting. We need to be clear on the rules for publishers and users alike.</li>
+<li>Given that many publishers will take a long time to properly implement traceability - <strong>particularly through multilaterals</strong> - is there a simpler methodology that could be used to assist data users?</li>
+</ul>
+<p><a href="https://docs.google.com/document/d/1FN-R2mwSqPrTJElkjiWkyqrOAu-SIG6jeo_4LqJy_Ow/edit?usp=sharing">This paper</a> is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/tech-paper-double-counting/540">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/tech-paper-double-counting/540</link>
+          <pubDate>Mon, 08 Aug 2016 19:01:27 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-540</guid>
+          <source url="https://discuss.iatistandard.org/t/tech-paper-double-counting/540.rss">Tech Paper: Double Counting</source>
+        </item>
+        <item>
+          <title>Tech Paper: Hierarchies</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>The Activity Standard allows for publishers to reflect their particular business model by reporting their activities in a hierarchical structure: for example using hierarchical levels to distinguish between programmes and their constituent projects and sub-components. Rules and guidance are unclear, inter alia, as to:</p>
+<ul>
+<li>What elements must be inherited by a child activity</li>
+<li>At what level commitments and budgets can be reported</li>
+<li>At what level results can be reported</li>
+</ul>
+<p>This also impacts upon publisher statistics methodology.</p>
+<p>Please add other hierarchy-related issues here</p>
+<p>This paper outline is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+            <p><small>24 posts - 8 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/tech-paper-hierarchies/539">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/tech-paper-hierarchies/539</link>
+          <pubDate>Mon, 08 Aug 2016 18:41:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-539</guid>
+          <source url="https://discuss.iatistandard.org/t/tech-paper-hierarchies/539.rss">Tech Paper: Hierarchies</source>
+        </item>
+        <item>
+          <title>Tech Paper: Codelist Management</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p><a href="http://iatistandard.org/201/codelists/">We maintain or support a number of codelists</a>. Embedded codelists belong to IATI and can only be updated through an upgrade as their modification may have functional implications. Non-embedded codelists either belong to third parties or belong to IATI but can be updated, subject to consultation, as needed.</p>
+<p>There are currently a number of issues requiring clarification:</p>
+<ul>
+<li>How best to handle versioning of codelists</li>
+<li>How to keep non embedded codelists up to date</li>
+<li>Should all external vocabularies be imported into their own IATI-duplicated codelist like <a href="http://iatistandard.org/201/codelists/Sector/">OECD DAC CRS Sector codes</a>
+</li>
+<li>Change status of vocabulary codelists from embedded to non-embedded?</li>
+<li>How do we ensure only valid lists get added as a codelist vocabulary</li>
+</ul>
+<p><a href="https://docs.google.com/document/d/1JTw_OMEZpiKrgBfCPVeLYPNmkt7cZ_Qf0s8aN4_QfxM/edit?usp=sharing">This paper</a>  is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+            <p><small>17 posts - 8 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/tech-paper-codelist-management/538">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/tech-paper-codelist-management/538</link>
+          <pubDate>Mon, 08 Aug 2016 18:31:07 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-538</guid>
+          <source url="https://discuss.iatistandard.org/t/tech-paper-codelist-management/538.rss">Tech Paper: Codelist Management</source>
+        </item>
+        <item>
+          <title>Changes needed to activity scope codelist?</title>
+          <dc:creator><![CDATA[laia_grino]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>Just reviewing our IATI output for NGO Aid Map, and looking back again at the options in the <a href="http://iatistandard.org/202/codelists/ActivityScope/" rel="nofollow noopener">activity scope codelist</a>. I know many organizations aren’t reporting on sub-national location information, but the codes associated with sub-national location seem rather limited:</p>
+<ul>
+<li>5: Sub-national: Multi-first-level administrative areas</li>
+<li>6: Sub-national: Single first-level administrative area</li>
+<li>7: Sub-national: Single second-level administrative area</li>
+<li>8: Single location</li>
+</ul>
+<p>Seems like these options should be consolidated into a single sub-national code, or made more exhaustive.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/changes-needed-to-activity-scope-codelist/527">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/changes-needed-to-activity-scope-codelist/527</link>
+          <pubDate>Fri, 22 Jul 2016 22:16:32 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-527</guid>
+          <source url="https://discuss.iatistandard.org/t/changes-needed-to-activity-scope-codelist/527.rss">Changes needed to activity scope codelist?</source>
+        </item>
+        <item>
+          <title>Vocab codelists - make &quot;non-embedded&quot;?</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>There are two different versions of SectorVocabulary codelist for</p>
+<ul>
+<li>2.01 (8 codes): <a href="http://iatistandard.org/201/codelists/SectorVocabulary/" rel="nofollow noopener">http://iatistandard.org/201/codelists/SectorVocabulary/</a>
+</li>
+<li>2.02 (12 codes): <a href="http://iatistandard.org/202/codelists/SectorVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/SectorVocabulary/</a>
+</li>
+</ul>
+<p>This is because this list (and other vocab lists) are “embedded” - meaning they can only be changed through version updates: <a href="http://iatistandard.org/202/codelists/codelist-management/" rel="nofollow noopener">http://iatistandard.org/202/codelists/codelist-management/</a></p>
+<p>It might be a more useful approach for these vocab lists to be “non-embedded”, meaning that a new code can be added independently.  Currently the standard seems to suggest that additional/new vocab codes published in 2.02 <strong>cannot</strong> be used in previous versions of the standard (as they are not on the list).  I’m not sure this is the intention - if I publish 2.01 (or a relevant 1.0x version) and want to utilise a new vocab, it’s probably practical (and useful) to refer to a single/definitive list…</p>
+<p>(more widely, this might point at how versions of different codelists are managed and published - but the vocab use-case may provide a good focal point)</p>
+            <p><small>8 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495</link>
+          <pubDate>Wed, 22 Jun 2016 08:48:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-495</guid>
+          <source url="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495.rss">Vocab codelists - make &quot;non-embedded&quot;?</source>
+        </item>
+        <item>
+          <title>Target and actual value attribute type</title>
+          <dc:creator><![CDATA[bryanph]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>Right now the 2.02 standard indicates that the “value” attribute fo the “target” and “actual” fields in result should be a string. What is the reasoning behind this?</p>
+<p>Since the “measure” attribute of the “indicator” field determines the unit of measure it seems that the field should be of type decimal, in order to work with the values as possible aggregates.</p>
+<p>Cheers,<br>
+Bryan</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/target-and-actual-value-attribute-type/482">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/target-and-actual-value-attribute-type/482</link>
+          <pubDate>Fri, 03 Jun 2016 11:42:54 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-482</guid>
+          <source url="https://discuss.iatistandard.org/t/target-and-actual-value-attribute-type/482.rss">Target and actual value attribute type</source>
+        </item>
+        <item>
+          <title>Total Cost of the Award - New Field Suggestion</title>
+          <dc:creator><![CDATA[AVaughn]]></dc:creator>
+          <category>2.03 Decimal Upgrade Discussions</category>
+          <description><![CDATA[
+            <p>It would be helpful to add a new field or add to the budget field regarding the total cost of the award/project (the lifetime total estimated cost).  The current budget field only captures the annual activity/project budget.  We have this total estimated cost of the lifetime of the award/project, but currently have no place to publish it.  Is this the case for others?</p>
+            <p><small>17 posts - 7 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/total-cost-of-the-award-new-field-suggestion/456">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/total-cost-of-the-award-new-field-suggestion/456</link>
+          <pubDate>Thu, 21 Apr 2016 21:01:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-456</guid>
+          <source url="https://discuss.iatistandard.org/t/total-cost-of-the-award-new-field-suggestion/456.rss">Total Cost of the Award - New Field Suggestion</source>
+        </item>
+  </channel>
+</rss>

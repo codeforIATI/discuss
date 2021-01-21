@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Publishing Trust and/or Pooled Funds in IATI</title>
+    <link>https://discuss.iatistandard.org/t/publishing-trust-and-or-pooled-funds-in-iati/775</link>
+    <description>Hi everyone,
+
+At the IATI TAG we had a constructive discussion about representing Trust Funds in IATI. 
+
+See below the model that I presented during the session, based on the principles in the Netherlands IATI publication guidelines (available [here](https://www.government.nl/binaries/government/documents/publications/2015/12/01/open-data-and-development-cooperation/how-to-use-the-iati-standard-1.pdf) (English) and [here](https://www.government.nl/binaries/government/documents/publications/2016/12/15/how-to-use-the-iati-standard-dutch-publication-guidelines-for-implementing-partners-in-french/Comment+utiliser+la+norme+IITA+-+Directives+NL.pdf) (French).
+
+&lt;img src=&quot;/uploads/default/original/1X/ec62cbd9bbe70877ce658fdec0f12c86084344ef.png&quot; width=&quot;666&quot; height=&quot;500&quot;&gt;
+
+In this case Organisation B is the organisation that manages the Trust Fund (Activity B). The Fund has 2 donors: Donor A and Donor D. 
+The Trust Fund supports multiple activities, managed through activities B1 and B2 and implemented by external partners - in this case Organisation C.
+
+The IATI elements needed to represent this structure are added below. 
+
+&lt;img src=&quot;/uploads/default/original/1X/2d3b40eceaf6a96a84ddabffbdbb5c2c131d6b32.png&quot; width=&quot;666&quot; height=&quot;500&quot;&gt;
+
+During the TAG there seemed to be consensus about this model, but looking forward to hearing your thoughts now that you&#39;ve been able to think about it a bit longer. 
+
+Pelle</description>
+    
+    <lastBuildDate>Tue, 11 Apr 2017 16:23:09 +0000</lastBuildDate>
+    <category>Traceability</category>
+    <atom:link href="https://discuss.iatistandard.org/t/publishing-trust-and-or-pooled-funds-in-iati/775.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Publishing Trust and/or Pooled Funds in IATI</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/pelleaardema">@pelleaardema</a>, thanks for starting this thread.</p>
+<p>(TL;DR: maybe do this but add some way of a) explicitly saying "<code>B</code> is a Trust Fund" and b) making Trust Funded and non-Trust Funded activities not look super different from each other.)</p>
+<p>I had a couple of thoughts on this - framed here as statements to make it easier to agree / disagree with <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> – basically I think this is pretty good (though not 100% sure that trust funds should be activities rather than organisations), but maybe a couple of tweaks could make it a bit easier to use this data. Anyway, a few ideas…</p>
+<ol>
+<li><strong>Starting point: Importance of being able to identify Trust Funds as distinct funding streams, and their relationship to donors and constituent projects</strong></li>
+<li>A trust fund (in real life) is more like an activity than an organisation (I think this is true, but after a couple of conversations with others, I am not really sure on this point – are there any reasons why it would make sense and be more helpful to see it as an organisation rather than an activity?)</li>
+<li>It is important (<em>we should be clear on why</em>) to be able to say all of these things:
+<ul>
+<li>“we gave money to <code>B</code> trust fund, and not <code>C</code> trust fund”</li>
+<li>“Activity <code>B1</code> received money from <code>B</code> trust fund”</li>
+<li>“Trust fund <code>B</code> received money from donors A and D”</li>
+<li>"Activity <code>B1</code> received money from trust fund <code>B</code>, which was in turn funded by donors A and D; but that doesn’t necessarily mean that donor A funded Activity <code>B1</code>"</li>
+<li>“Activity <code>B1</code> is funded from a trust fund, and not from a co-financing arrangement”</li>
+</ul>
+</li>
+<li>
+<strong>One concern: Inconsistent structure for Trust Fund-funded activities compared to non-Trust Funded activity from the same organisation</strong>
+<ol>
+<li>Let’s say the World Bank has two sets of projects: those funded by their own funds (i.e. IDA/IBRD) and those funded from Trust Funds.</li>
+<li>In the above example:</li>
+</ol>
+<ul>
+<li>the IDA/IBRD projects would have a hierarchy of one level (as they do not have the Trust Fund activity) and the Trust Funded projects would have a hierarchy of two levels.</li>
+<li>the actual projects (<code>C1</code>, <code>C2</code>) would appear at hierarchy=1 for IDA/IBRD projects and hierarchy=2 for Trust Funded projects (<code>B1</code>, <code>B2</code>)</li>
+<li>this makes the IDA/IBRD and TF activities look fundamentally different sorts of things from each other as generally (at least for data published by donors), the hierarchy implies that an activity is (e.g.) a program vs a project, or a project vs a subcomponent. It also makes the data harder to use as there is an inconsistent structure for the same organisation.</li>
+</ul>
+</li>
+<li>
+<strong>Suggestion: Thinking through how to capture trust fund data while still keeping things simple</strong>
+<ol>
+<li>I think it would be useful to have some way of identifying the trust fund activity as actually a trust fund - it is not a “hierarchy 1” activity “above” Activity <code>B1</code>, but it is a different sort of thing. Would it better belong in the organisation file? I am not sure. But it feels like it would be helpful to be able at least to say explicitly, "<code>B</code> is a Trust Fund", as it looks a little different from normal activities.</li>
+<li>To avoid the structure looking very different (this feels like a bit of a hack, but a sort of elegant hack) you could create the Trust Fund activity B as a hierarchy=0 activity. This means it can still be a “parent” of activity <code>B1</code> so that it can use the various features of the IATI Standard. However, trust-funded activities <code>B1</code>, <code>B2</code> would then still sit at the same hierarchy=1 level as non-trust funded activities <code>C1</code>, <code>C2</code>.</li>
+</ol>
+</li>
+</ol>
+<p>Any thoughts?</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-trust-and-or-pooled-funds-in-iati/775/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-trust-and-or-pooled-funds-in-iati/775/2</link>
+        <pubDate>Tue, 11 Apr 2017 16:23:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-775-2</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-trust-and-or-pooled-funds-in-iati/775.rss">Publishing Trust and/or Pooled Funds in IATI</source>
+      </item>
+      <item>
+        <title>Publishing Trust and/or Pooled Funds in IATI</title>
+        <dc:creator><![CDATA[pelleaardema]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>At the IATI TAG we had a constructive discussion about representing Trust Funds in IATI.</p>
+<p>See below the model that I presented during the session, based on the principles in the Netherlands IATI publication guidelines (available <a href="https://www.government.nl/binaries/government/documents/publications/2015/12/01/open-data-and-development-cooperation/how-to-use-the-iati-standard-1.pdf" rel="nofollow noopener">here</a> (English) and <a href="https://www.government.nl/binaries/government/documents/publications/2016/12/15/how-to-use-the-iati-standard-dutch-publication-guidelines-for-implementing-partners-in-french/Comment+utiliser+la+norme+IITA+-+Directives+NL.pdf" rel="nofollow noopener">here</a> (French).</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/ec62cbd9bbe70877ce658fdec0f12c86084344ef.png" data-download-href="https://discuss.iatistandard.org/uploads/default/ec62cbd9bbe70877ce658fdec0f12c86084344ef" title="Trust and pooled funds v01.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/ec62cbd9bbe70877ce658fdec0f12c86084344ef_2_666x500.png" width="666" height="500" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/ec62cbd9bbe70877ce658fdec0f12c86084344ef_2_666x500.png, https://discuss.iatistandard.org/uploads/default/original/1X/ec62cbd9bbe70877ce658fdec0f12c86084344ef.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/ec62cbd9bbe70877ce658fdec0f12c86084344ef.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/ec62cbd9bbe70877ce658fdec0f12c86084344ef_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Trust and pooled funds v01.png</span><span class="informations">960×720 25.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>In this case Organisation B is the organisation that manages the Trust Fund (Activity B). The Fund has 2 donors: Donor A and Donor D.<br>
+The Trust Fund supports multiple activities, managed through activities B1 and B2 and implemented by external partners - in this case Organisation C.</p>
+<p>The IATI elements needed to represent this structure are added below.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/2d3b40eceaf6a96a84ddabffbdbb5c2c131d6b32.png" data-download-href="https://discuss.iatistandard.org/uploads/default/2d3b40eceaf6a96a84ddabffbdbb5c2c131d6b32" title="Trust and pooled funds v01-2.png"><img src="https://discuss.iatistandard.org/uploads/default/original/1X/2d3b40eceaf6a96a84ddabffbdbb5c2c131d6b32.png" width="666" height="500" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/2d3b40eceaf6a96a84ddabffbdbb5c2c131d6b32_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Trust and pooled funds v01-2.png</span><span class="informations">960×720 43.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>During the TAG there seemed to be consensus about this model, but looking forward to hearing your thoughts now that you’ve been able to think about it a bit longer.</p>
+<p>Pelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-trust-and-or-pooled-funds-in-iati/775/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-trust-and-or-pooled-funds-in-iati/775/1</link>
+        <pubDate>Fri, 31 Mar 2017 13:35:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-775-1</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-trust-and-or-pooled-funds-in-iati/775.rss">Publishing Trust and/or Pooled Funds in IATI</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Add document-link to Results indicator (included 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895</link>
+    <description>**Title**
+Add document-link to Results standard
+
+**Standard**
+Activity
+
+**Schema Object**
+o   result/indicator/baseline/comment
+o   result/indicator/period/target/comment
+o   result/indicator/period/actual/comment
+o   result/description
+o   result/indicator/description
+
+**Type of Change**
+Change to the Schema
+
+**Issue**
+Currently, you can only use the narrative text elements to describe what each result and associated indicators concern. This is an issue because  a) the narrative is then used as a catchall for any different purpose (not easy to search, understand, is messy etc.) b) it means copying from any documents that the project already has and pasting into the narrative which is i) extra work and ii) restrictive as it does not allow you to include rich representations such as pictures, tables etc. c) it means any links (eg to WPDx , documents etc.) will have to be written into the narrative making them difficult to follow etc. (requires tools to search for links in text) .
+
+“Data on results cannot be used for learning or accountability without context. Just because an intervention achieved its targeted results, does not mean it will work elsewhere.&quot; https://www.bond.org.uk/resources/publishing-results-to-iati
+
+**Proposal**
+
+This proposal comes from Principles 1 and 2 discussed on thread: https://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/4
+
+An optional link(s) to relevant documents should be added to various parts of the results standard (for example to allow linking to context analysis that could include: any conflicts/ fragility, scope of influence, scale/ stage of initiative, external pressures/ trends etc.).  These additions would be used to detail qualitative results as well as how and why the result has been achieved or not, any unanticipated results, and whether this has had a positive or negative affect on the overall project.
+
+Add document-link element (0..*) (per iati-activity/document-link http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/document-link/  ) to:
+·         (as justified in Principle 1)
+o   result/indicator/baseline/comment
+o   result/indicator/period/target/comment
+o   result/indicator/period/actual/comment
+·         (as justified in Principle 2)
+o   result/description
+o   result/indicator/description
+
+**Standards Day**
+Workshopped at the TAG 2017.
+
+**Links**
+https://docs.google.com/document/d/1S4s6fjR4MCv9ZBSoZy4KtBZJM5LcutFz8RavCR2eTE0/edit?usp=sharing
+https://docs.google.com/document/d/179pZPWwfohsPfNJSrtz1x3816VYciK9iH5Voblx2GFI/</description>
+    
+    <lastBuildDate>Wed, 25 Oct 2017 13:56:24 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Add document-link to Results indicator (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/10</link>
+        <pubDate>Wed, 25 Oct 2017 13:56:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-895-10</guid>
+        <source url="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895.rss">Add document-link to Results indicator (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add document-link to Results indicator (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal has been been included in the 2.03 upgrade. It can be viewed in the following two Discuss posts:</p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Proposal of 2.03 Content</a></p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Technical Proposal for the 2.03 Upgrade</a></p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/9</link>
+        <pubDate>Wed, 25 Oct 2017 13:56:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-895-9</guid>
+        <source url="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895.rss">Add document-link to Results indicator (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add document-link to Results indicator (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Notes from consultation calls w/c 3rd July</p>
+<p>Outcome:<br>
+The proposal was reviewed by those on the call and there was no objection from the group.<br>
+It was clarified where the elements have been included in the IATI activity and organisation standard summary table.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/8</link>
+        <pubDate>Fri, 07 Jul 2017 12:11:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-895-8</guid>
+        <source url="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895.rss">Add document-link to Results indicator (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add document-link to Results indicator (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been included for consideration in the formal 2.03 proposal</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/5</link>
+        <pubDate>Fri, 16 Jun 2017 15:32:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-895-5</guid>
+        <source url="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895.rss">Add document-link to Results indicator (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add document-link to Results indicator (included 2.03)</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Adding example in response to <a class="mention" href="/u/rolfkleef">@rolfkleef</a>’s comment on <a href="https://discuss.iatistandard.org/t/our-shared-understanding-of-what-iati-is-and-is-not/893/8">Our shared understanding of what IATI is, and is not,</a> to demonstrate the value of this proposal.  First code block is using proposal, second without proposal where you have to embed any references to documents in the freetext - the example highlights the data quality issue; without document-link there is no standard way to link to documents in results (an IATI app would have a hard time automatically figuring out how to make a link to the relevant documents below for example).</p>
+<p>Example using proposal:</p>
+<pre><code>&lt;result type="2"&gt;
+  &lt;title&gt;
+    &lt;narrative&gt;Potential for inclusion of hygiene promotion into national vaccination programme beyond pilot project&lt;/narrative&gt;
+  &lt;/title&gt;
+  &lt;description&gt;
+    &lt;narrative&gt;&lt;/narrative&gt;
+  &lt;/description&gt;
+  &lt;indicator measure="Qualitative"&gt;
+    &lt;title&gt;
+      &lt;narrative&gt;feasibility of integrating hygiene promotion into vaccination programme under normal programme delivery circumstances&lt;/narrative&gt;
+    &lt;/title&gt;
+    &lt;baseline year="2014"&gt;
+      &lt;comment&gt;
+        &lt;narrative&gt;Scoping study in 2012 demonstrated the desire of health sector to pilot initiative through identifying missed opportunity to combine hygiene promotion into national vaccination programme – see document-link for details&lt;/narrative&gt;
+      &lt;/comment&gt;
+		  &lt;document-link url="http://washdev.iwaponline.com/content/3/3/459" format="text/html"&gt;
+			&lt;title&gt;
+				&lt;narrative&gt;An opportunity not to be missed – immunisation as an entry point for hygiene promotion and diarrhoeal disease reduction in Nepal&lt;/narrative&gt;
+			&lt;/title&gt;
+			&lt;category code="A08"&gt;&lt;/category&gt;
+		  &lt;/document-link&gt;	
+    &lt;/baseline&gt;
+    &lt;period&gt;
+      &lt;period-start iso-date="2014-01-01"&gt;&lt;/period-start&gt;
+      &lt;period-end iso-date="2016-04-05"&gt;&lt;/period-end&gt;
+      &lt;actual&gt;
+        &lt;comment&gt;
+          &lt;narrative&gt; recommendations copied from the document-link:
+o	Both the FCHV and health worker should be involved to run the session smoothly.
+o	Some incentive for health worker to motivate them to work actively.
+o	Regular supervision from district and center level for proper feedback.
+o	Vaccinator should also involve in review program.
+o	This program should give continuity in future and scale up in other districts also because hygiene promotion is directly/indirectly related to decrease/minimize the cases of child mortality and morbidity.
+o	Number of games should be decrease so that it will takes less time to run session.&lt;/narrative&gt;
+        &lt;/comment&gt;
+			&lt;document-link url="http%3A%2F%2F16_04_051-Nepal%20vaccines%20FCP%20narrative%20report%20template%20April%202016%20-%20March%202017_Final_13%20May%202017_A_B_Om.docx" format="application/msword"&gt;
+			  &lt;title&gt;
+				&lt;narrative&gt;A Report on Midterm review of Hygiene Promotion through Routine Immunization program&lt;/narrative&gt;
+			  &lt;/title&gt;
+			  &lt;category code="A08"&gt;&lt;/category&gt;
+			&lt;/document-link&gt;				
+      &lt;/actual&gt;
+    &lt;/period&gt;
+    &lt;period&gt;
+      &lt;period-start iso-date="2016-04-05"&gt;&lt;/period-start&gt;
+      &lt;period-end iso-date="2017-02-10"&gt;&lt;/period-end&gt;
+      &lt;actual&gt;
+        &lt;comment&gt;
+          &lt;narrative&gt; conclusion copied from the document-link:
+            Representatives of four District/Public Health Office and FCHVs have shared that the Hygiene Promotion through Routine Immunization Programme can be implemented successfully using the existing health system. It has shown its mutual synergy to increase the positive hygiene behaviour change and increasing the coverage of routine immunization. They have also flag that the program has played a vital role in reducing the dropout and wastage rate of the vaccine. All four districts mentioned that there is no outbreak of diarrhoeal and cholera diseases in their districts after the implementation of this program.
+            The integration of hygiene promotion package in Routine Immunization sessions has been well appreciated and accepted by FCHVs / health workers and the mothers. So, this review meeting has recommended for the need to continue the program in these four districts and should be scaled up in other districts.&lt;/narrative&gt;
+        &lt;/comment&gt;
+			&lt;document-link url="https%3A%2F%2FCentral%20Level%20Review%20Meeting%20of%20%22Hygiene%20Promotion%20through%20Routine%20Immunization%20Programme%20in%20Nepal.docx" format="application/msword"&gt;
+			  &lt;title&gt;
+				&lt;narrative&gt;Central Level Review Meeting of "Hygiene Promotion through Routine Immunization Programme in Nepal&lt;/narrative&gt;
+			  &lt;/title&gt;
+			  &lt;category code="A08&gt;&lt;/category&gt;
+			&lt;/document-link&gt;			
+      &lt;/actual&gt;
+    &lt;/period&gt;
+    &lt;period&gt;
+      &lt;period-start iso-date="2014-01-01"&gt;&lt;/period-start&gt;
+      &lt;period-end iso-date="2017-06-01"&gt;&lt;/period-end&gt;
+      &lt;target&gt;
+        &lt;comment&gt;
+          &lt;narrative&gt;fully feasible to integrate hygiene promotion into vaccination programme under normal programme delivery circumstances.&lt;/narrative&gt;
+        &lt;/comment&gt;
+      &lt;/target&gt;
+    &lt;/period&gt;        
+  &lt;/indicator&gt;
+&lt;/result&gt;
+</code></pre>
+<p>Example before proposal (per post <a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/872">Results – represent more than quantitative data (included 2.03)</a> ):</p>
+<pre><code>&lt;result type="2"&gt;
+  &lt;title&gt;
+    &lt;narrative&gt;Potential for inclusion of hygiene promotion into national vaccination programme beyond pilot project&lt;/narrative&gt;
+  &lt;/title&gt;
+  &lt;description&gt;
+    &lt;narrative&gt;&lt;/narrative&gt;
+  &lt;/description&gt;
+  &lt;indicator measure="Qualitative"&gt;
+    &lt;title&gt;
+      &lt;narrative&gt;feasibility of integrating hygiene promotion into vaccination programme under normal programme delivery circumstances&lt;/narrative&gt;
+    &lt;/title&gt;
+    &lt;baseline year="2014"&gt;
+      &lt;comment&gt;
+        &lt;narrative&gt;Scoping study in 2012 demonstrated the desire of health sector to pilot initiative through identifying missed opportunity to combine hygiene promotion into national vaccination programme – see published scoping document http://washdev.iwaponline.com/content/3/3/459.&lt;/narrative&gt;
+      &lt;/comment&gt;
+    &lt;/baseline&gt;
+    &lt;period&gt;
+      &lt;period-start iso-date="2014-01-01"&gt;&lt;/period-start&gt;
+      &lt;period-end iso-date="2016-04-05"&gt;&lt;/period-end&gt;
+      &lt;actual&gt;
+        &lt;comment&gt;
+          &lt;narrative&gt; recommendations copied from the document 16_04_051-Nepal vaccines FCP narrative report template April 2016 - March 2017_Final_13 May 2017_A_B_Om from the activity’s document-link:
+o	Both the FCHV and health worker should be involved to run the session smoothly.
+o	Some incentive for health worker to motivate them to work actively.
+o	Regular supervision from district and center level for proper feedback.
+o	Vaccinator should also involve in review program.
+o	This program should give continuity in future and scale up in other districts also because hygiene promotion is directly/indirectly related to decrease/minimize the cases of child mortality and morbidity.
+o	Number of games should be decrease so that it will takes less time to run session.&lt;/narrative&gt;
+        &lt;/comment&gt;            
+      &lt;/actual&gt;
+    &lt;/period&gt;
+    &lt;period&gt;
+      &lt;period-start iso-date="2016-04-05"&gt;&lt;/period-start&gt;
+      &lt;period-end iso-date="2017-02-10"&gt;&lt;/period-end&gt;
+      &lt;actual&gt;
+        &lt;comment&gt;
+          &lt;narrative&gt; conclusion copied from review meetings document with title” Central Level Review Meeting of "Hygiene Promotion through Routine Immunization Programme in Nepal" on 10th Feb, 2017”:
+            Representatives of four District/Public Health Office and FCHVs have shared that the Hygiene Promotion through Routine Immunization Programme can be implemented successfully using the existing health system. It has shown its mutual synergy to increase the positive hygiene behaviour change and increasing the coverage of routine immunization. They have also flag that the program has played a vital role in reducing the dropout and wastage rate of the vaccine. All four districts mentioned that there is no outbreak of diarrhoeal and cholera diseases in their districts after the implementation of this program.
+            The integration of hygiene promotion package in Routine Immunization sessions has been well appreciated and accepted by FCHVs / health workers and the mothers. So, this review meeting has recommended for the need to continue the program in these four districts and should be scaled up in other districts.&lt;/narrative&gt;
+        &lt;/comment&gt;
+      &lt;/actual&gt;
+    &lt;/period&gt;
+    &lt;period&gt;
+      &lt;period-start iso-date="2014-01-01"&gt;&lt;/period-start&gt;
+      &lt;period-end iso-date="2017-06-01"&gt;&lt;/period-end&gt;
+      &lt;target&gt;
+        &lt;comment&gt;
+          &lt;narrative&gt;fully feasible to integrate hygiene promotion into vaccination programme under normal programme delivery circumstances.&lt;/narrative&gt;
+        &lt;/comment&gt;
+      &lt;/target&gt;
+    &lt;/period&gt;        
+  &lt;/indicator&gt;
+&lt;/result&gt;</code></pre>
+          <p><a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/4</link>
+        <pubDate>Fri, 16 Jun 2017 09:56:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-895-4</guid>
+        <source url="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895.rss">Add document-link to Results indicator (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add document-link to Results indicator (included 2.03)</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p><em>Note: This is from memory and I’ve not made an extensive check</em></p>
+<hr>
+<p>The proposed locations at which <code>&lt;document-link&gt;</code> should be added are all <em>narrative containers</em>, in that they allow the specification of textual data in multiple languages through use of a <code>&lt;narrative&gt;</code> element.</p>
+<p>At present, all <em>narrative containers</em> are simply containers for one or more <code>&lt;narrative&gt;</code> elements and do not have any other children. Changing this state would add some level of additional confusion to use of these containers.</p>
+<p>As such, I’d suggest moving the proposed location at which the new elements are added up a level, as such becoming:</p>
+<ul>
+<li><code>result/indicator/baseline/document-link</code></li>
+<li><code>result/indicator/period/target/document-link</code></li>
+<li><code>result/indicator/period/actual/document-link</code></li>
+<li><code>result/document-link</code></li>
+<li><code>result/indicator/document-link</code></li>
+</ul>
+<p>In terms of adding a description about the document itself, there is a <a href="https://discuss.iatistandard.org/t/document-link-description/841">separate proposal</a> regarding this addition.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/3</link>
+        <pubDate>Tue, 13 Jun 2017 16:39:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-895-3</guid>
+        <source url="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895.rss">Add document-link to Results indicator (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add document-link to Results indicator (included 2.03)</title>
+        <dc:creator><![CDATA[brian725]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this great suggestion. This would be tremendously helpful in allowing people to share their results more transparently. As the discussions on value for money continue to gain momentum, the opportunity to flexibly share content related to those results will become ever more important. Being able to link to specific data about results, such as providing a link to  specific water points in the <a href="https://data.waterpointdata.org/dataset/Water-Point-Data-Exchange-Complete-Dataset/amwk-dedf/data" rel="nofollow noopener">Water Point Data Exchange</a> would allow us and other stakeholders to efficiently and clearly share their results. The ability to link to other types of result information, such as reports or photos, would be invaluable to diverse sectors. Thank you once again for this important suggestion!</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/2</link>
+        <pubDate>Fri, 02 Jun 2017 15:00:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-895-2</guid>
+        <source url="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895.rss">Add document-link to Results indicator (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add document-link to Results indicator (included 2.03)</title>
+        <dc:creator><![CDATA[DanielMackenzie]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Title</strong><br>
+Add document-link to Results standard</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p><strong>Schema Object</strong><br>
+o   result/indicator/baseline/comment<br>
+o   result/indicator/period/target/comment<br>
+o   result/indicator/period/actual/comment<br>
+o   result/description<br>
+o   result/indicator/description</p>
+<p><strong>Type of Change</strong><br>
+Change to the Schema</p>
+<p><strong>Issue</strong><br>
+Currently, you can only use the narrative text elements to describe what each result and associated indicators concern. This is an issue because  a) the narrative is then used as a catchall for any different purpose (not easy to search, understand, is messy etc.) b) it means copying from any documents that the project already has and pasting into the narrative which is i) extra work and ii) restrictive as it does not allow you to include rich representations such as pictures, tables etc. c) it means any links (eg to WPDx , documents etc.) will have to be written into the narrative making them difficult to follow etc. (requires tools to search for links in text) .</p>
+<p>“Data on results cannot be used for learning or accountability without context. Just because an intervention achieved its targeted results, does not mean it will work elsewhere." <a href="https://www.bond.org.uk/resources/publishing-results-to-iati" rel="nofollow noopener">https://www.bond.org.uk/resources/publishing-results-to-iati</a></p>
+<p><strong>Proposal</strong></p>
+<p>This proposal comes from Principles 1 and 2 discussed on thread: <a href="https://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/4">Results: discussion space and TAG 2016/17 path</a></p>
+<p>An optional link(s) to relevant documents should be added to various parts of the results standard (for example to allow linking to context analysis that could include: any conflicts/ fragility, scope of influence, scale/ stage of initiative, external pressures/ trends etc.).  These additions would be used to detail qualitative results as well as how and why the result has been achieved or not, any unanticipated results, and whether this has had a positive or negative affect on the overall project.</p>
+<p>Add document-link element (0…*) (per iati-activity/document-link <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/document-link/" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/document-link/</a>  ) to:<br>
+·         (as justified in Principle 1)<br>
+o   result/indicator/baseline/comment<br>
+o   result/indicator/period/target/comment<br>
+o   result/indicator/period/actual/comment<br>
+·         (as justified in Principle 2)<br>
+o   result/description<br>
+o   result/indicator/description</p>
+<p><strong>Standards Day</strong><br>
+Workshopped at the TAG 2017.</p>
+<p><strong>Links</strong><br>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/document/d/1S4s6fjR4MCv9ZBSoZy4KtBZJM5LcutFz8RavCR2eTE0/edit?usp=sharing" target="_blank" rel="nofollow noopener">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/document/d/1S4s6fjR4MCv9ZBSoZy4KtBZJM5LcutFz8RavCR2eTE0/edit?usp=sharing" target="_blank" rel="nofollow noopener"><span class="googledocs-onebox-logo g-docs-logo"></span></a>
+
+<h3><a href="https://docs.google.com/document/d/1S4s6fjR4MCv9ZBSoZy4KtBZJM5LcutFz8RavCR2eTE0/edit?usp=sharing" target="_blank" rel="nofollow noopener">Results2_reportingHowAndWhyIATIResultsWereOrWereNotAchieved</a></h3>
+
+<p>Results: reporting how and why IATI results were or were not achieved  Note: This suggestion addresses Principle 2 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – see...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/document/d/179pZPWwfohsPfNJSrtz1x3816VYciK9iH5Voblx2GFI/edit" target="_blank" rel="nofollow noopener">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/document/d/179pZPWwfohsPfNJSrtz1x3816VYciK9iH5Voblx2GFI/edit" target="_blank" rel="nofollow noopener"><span class="googledocs-onebox-logo g-docs-logo"></span></a>
+
+<h3><a href="https://docs.google.com/document/d/179pZPWwfohsPfNJSrtz1x3816VYciK9iH5Voblx2GFI/edit" target="_blank" rel="nofollow noopener">Results1_representMoreThanQuantitativeData</a></h3>
+
+<p>Results: represent more than quantitative data Note: This suggestion addresses Principle 1 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – see...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895/1</link>
+        <pubDate>Fri, 02 Jun 2017 13:38:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-895-1</guid>
+        <source url="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895.rss">Add document-link to Results indicator (included 2.03)</source>
+      </item>
+  </channel>
+</rss>

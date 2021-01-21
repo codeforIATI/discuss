@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Country percentages - how do you represent change over time?</title>
+    <link>https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614</link>
+    <description>We have an example of an organisation where the percentage of funding going to each country has changed over the lifetime of the project. How would the organisation handle this in the data? How could you retain a historical reference in the data to the original set of countries so that you can see how the country focus has changed over time?
+
+Any help appreciated - this is a live problem that we are trying to find a solution to!</description>
+    
+    <lastBuildDate>Fri, 18 Nov 2016 21:13:00 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Country percentages - how do you represent change over time?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback -  I think this is the approach I’ll suggest to the organisation I am working with. There’s no user need (in this instance) to show changes over time so it makes sense to follow this approach.</p>
+          <p><a href="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/6</link>
+        <pubDate>Fri, 18 Nov 2016 21:13:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-614-6</guid>
+        <source url="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614.rss">Country percentages - how do you represent change over time?</source>
+      </item>
+      <item>
+        <title>Country percentages - how do you represent change over time?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with Herman.  For what it’s worth, it’s the approach we take - update countries/regions (and sectors) in our system and IATI files as the project evolves. This can create discrepancies in our data, for instance between what was reported to the DAC at the beginning of the project and what’s in our current IATI files 2 or 3 years later, but that comes with the territory - IATI is meant to provide timely, up-to-date data, not a statistical record.</p>
+<p>It’s an interesting question nevertheless. <a class="mention" href="/u/sjohns">@SJohns</a>, are the organizations having problems in their reporting because of the changes, ie is anyone actually asking for the changes to be recorded?</p>
+<p>I wonder is an easier solution would be to add an attribute to the country/region percentages indicating if they are modified. Data users for whom this is important could seek details from the publisher?</p>
+          <p><a href="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/5</link>
+        <pubDate>Thu, 03 Nov 2016 18:49:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-614-5</guid>
+        <source url="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614.rss">Country percentages - how do you represent change over time?</source>
+      </item>
+      <item>
+        <title>Country percentages - how do you represent change over time?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I would suggest publishing the most recent country and region percentages available. It is up to the consumer of the IATI data to build an historical record of country and region percentages, if they are interested in these changes.</p>
+<p>The alternative would be to extend the standard with a start and end date for the country and region percentages. This would introduce a lot of additional complexity though and I doubt the benefits would outweigh the costs.</p>
+          <p><a href="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/4</link>
+        <pubDate>Thu, 03 Nov 2016 08:14:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-614-4</guid>
+        <source url="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614.rss">Country percentages - how do you represent change over time?</source>
+      </item>
+      <item>
+        <title>Country percentages - how do you represent change over time?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Wendy, this may be an option for some organisations. The additional challenge with the organisation I am working with is that it is subject to both MFA and DFID requirements, and these funders ask for countries to be recorded at activity level. The Standard doesn’t allow countries to be recorded at both activity and transaction level in the same activity. Any solution for this one?</p>
+          <p><a href="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/3</link>
+        <pubDate>Wed, 02 Nov 2016 20:13:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-614-3</guid>
+        <source url="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614.rss">Country percentages - how do you represent change over time?</source>
+      </item>
+      <item>
+        <title>Country percentages - how do you represent change over time?</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Would specifying the country at transaction rather than activity level help here <a class="mention" href="/u/sjohns">@SJohns</a> ? That way any countries that become recipients at a later stage would only appear in the transaction at a later date in the project lifecycle?</p>
+          <p><a href="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/2</link>
+        <pubDate>Wed, 02 Nov 2016 16:42:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-614-2</guid>
+        <source url="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614.rss">Country percentages - how do you represent change over time?</source>
+      </item>
+      <item>
+        <title>Country percentages - how do you represent change over time?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>We have an example of an organisation where the percentage of funding going to each country has changed over the lifetime of the project. How would the organisation handle this in the data? How could you retain a historical reference in the data to the original set of countries so that you can see how the country focus has changed over time?</p>
+<p>Any help appreciated - this is a live problem that we are trying to find a solution to!</p>
+          <p><a href="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614/1</link>
+        <pubDate>Wed, 02 Nov 2016 16:25:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-614-1</guid>
+        <source url="https://discuss.iatistandard.org/t/country-percentages-how-do-you-represent-change-over-time/614.rss">Country percentages - how do you represent change over time?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/show-iati-iati-canary/1732/7 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:03:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Show IATI: IATI Canary - Community Zone - IATI Community Discussions</title>
+    <meta name="description" content="IATI Canary is a free data monitoring and alert service from Publish What You Fund. It checks to ensure IATI data is both available and compliant with the IATI schema. If there’s a problem, you’ll be notified by email. 
+Y&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1732.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Show IATI: IATI Canary&#39;" href="../1732.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/7" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/7" />
+<meta property="og:title" content="Show IATI: IATI Canary" />
+<meta name="twitter:title" content="Show IATI: IATI Canary" />
+<meta property="og:description" content="Gah! Apologies, and thanks for alerting me to this, @Michelle_IOM.  You’re right – the canary did indeed sing out of turn. This was a false alarm.  IATI Canary relies on the IATI codelist API, which broke on the 10th. There’s a bit more detail about that here.  The missing codelists meant all subscribed users were emailed to say their data was invalid (!) That’s a bit drastic, and definitely shouldn’t have happened as a result of a missing codelist! I’ve now added a failsafe, which should preven..." />
+<meta name="twitter:description" content="Gah! Apologies, and thanks for alerting me to this, @Michelle_IOM.  You’re right – the canary did indeed sing out of turn. This was a false alarm.  IATI Canary relies on the IATI codelist API, which broke on the 10th. There’s a bit more detail about that here.  The missing codelists meant all subscribed users were emailed to say their data was invalid (!) That’s a bit drastic, and definitely shouldn’t have happened as a result of a missing codelist! I’ve now added a failsafe, which should preven..." />
+<meta property="article:published_time" content="2020-07-16T21:48:15+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../../index.html">
+          <img src="../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1732.html">Show IATI: IATI Canary</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1732.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-30T10:12:40Z' class='post-time'>
+                April 30, 2019, 10:12am
+              </time>
+              <meta itemprop='dateModified' content='2019-04-30T10:12:40Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>IATI Canary is a free data monitoring and alert service from Publish What You Fund. It checks to ensure IATI data is both available and compliant with the IATI schema. If there’s a problem, you’ll be notified by email.</p>
+<p>You can sign up for email alerts here:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://iati-canary.herokuapp.com/static/img/favicon-32x32.png%3Fq%3Df1647" class="site-icon" width="32" height="32">
+      <a href="https://iati-canary.herokuapp.com/" target="_blank" rel="nofollow noopener">IATI Canary</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://iati-canary.herokuapp.com/static/img/canary.png%3Fq%3D54077" class="thumbnail onebox-avatar" width="256" height="256">
+
+<h3><a href="https://iati-canary.herokuapp.com/" target="_blank" rel="nofollow noopener">IATI Canary</a></h3>
+
+<p>An early warning system for IATI publishers.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>If you’re an IATI publisher aiming to ensure your data stays accessible, or a data user keeping an eye on data availability, you may find IATI Canary useful.</p>
+<p>This idea was originally suggested by <a class="mention" href="../../../u/stolk.html">@stolk</a>. As is often the case, the groundwork was laid by <a class="mention" href="../../../u/david_megginson-2.html">@David_Megginson</a>.</p>
+<p>If you have any comments or feedback, please reply below. Thanks!</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: IATI Canary'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/David_Megginson.html'><span itemprop='name'>David_Megginson</span></a>
+            (David Megginson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1732.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-30T14:10:35Z' class='post-time'>
+                April 30, 2019,  2:10pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-30T14:10:35Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This is a great tool. I especially like that it’s fully RESTful, so a publisher can bookmark a live-ish dashboard for their own IATI sharing, e.g.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://iati-canary.herokuapp.com/static/img/favicon-32x32.png%3Fq%3Df1647" class="site-icon" width="32" height="32">
+      <a href="https://iati-canary.herokuapp.com/publisher/undp" target="_blank" rel="nofollow noopener">IATI Canary</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://iati-canary.herokuapp.com/static/img/canary.png%3Fq%3D54077" class="thumbnail onebox-avatar" width="256" height="256">
+
+<h3><a href="https://iati-canary.herokuapp.com/publisher/undp" target="_blank" rel="nofollow noopener">United Nations Development Programme (UNDP) | IATI Canary</a></h3>
+
+<p>Check status of “United Nations Development Programme (UNDP)” datasets on IATI Canary – An early warning system for IATI publishers.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: IATI Canary'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Michelle_IOM.html'><span itemprop='name'>Michelle_IOM</span></a>
+            (Michelle Levesque)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1732.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-01T08:45:13Z' class='post-time'>
+                May 1, 2019,  8:45am
+              </time>
+              <meta itemprop='dateModified' content='2019-05-01T08:45:13Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Dear David,</p>
+<p>Can you explain to a non-IT person what you mean by it being restful and can bookmark a dashboard for sharing?  I’m curious and if you don’t mind taking or have the time to break that down it would be much appreciated.</p>
+<p>Kind Regards,<br>
+Michelle</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: IATI Canary'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/David_Megginson.html'><span itemprop='name'>David_Megginson</span></a>
+            (David Megginson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1732.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-05-13T08:04:27Z'>
+              <time itemprop='dateModified' datetime='2019-05-13T08:04:52Z' class='post-time'>
+                May 13, 2019,  8:04am
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi, <a class="mention" href="../../../u/michelle_iom-2.html">@Michelle_IOM</a>, and apologies for the jargon in my previous post. By “RESTful” in this case, I mean mainly that if you navigate to a dashboard for an organisation, you can save it as a bookmark and come back to it, link to it in an email or from another web page, etc. (There are other concepts in REST, but they don’t matter here).</p>
+<p>For example, this link will always take you to the report for IOM: <a href="https://iati-canary.herokuapp.com/publisher/iom" rel="nofollow noopener">https://iati-canary.herokuapp.com/publisher/iom</a></p>
+<p>Cheers, David</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: IATI Canary'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1732.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-07-01T14:34:44Z'>
+              <time itemprop='dateModified' datetime='2019-07-02T10:17:54Z' class='post-time'>
+                July 2, 2019, 10:17am
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I recently realised that <a>IATI Canary</a> addresses one of the recommendations of <a href="https://iatistandard.org/en/news/board-decisions-on-iati-technical-audit/" rel="nofollow noopener">last year’s IATI tech audit</a>:</p>
+<blockquote>
+<p><strong>Quality service:</strong> A future data quality feedback tool that could be designed to email publishers actionable notifications if there is a data issue.</p>
+</blockquote>
+<p>While IATI Canary currently only emails about data that is broken (i.e. invalid XML) or unavailable, it knows about data that is invalid against the IATI schema, and flags that in the user interface. It could be made to email about this, too, but I haven’t added that feature yet.</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: IATI Canary'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Michelle_IOM.html'><span itemprop='name'>Michelle_IOM</span></a>
+            (Michelle Levesque)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1732.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-16T15:18:20Z' class='post-time'>
+                July 16, 2020,  3:18pm
+              </time>
+              <meta itemprop='dateModified' content='2020-07-16T15:18:20Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/andylolz.html">@andylolz</a> IOM received an email from Canary on July 10 saying both our Org and Activities files has issues.  But when I ran both through the 2 versions of the validator nothing came up wrong other than our usual budgets being more than one year.  Oddly enough our Org file hadn’t been touched in about 6 months and our activity file had been changed 10 days earlier.  At the moment I don’t think we had or have an issue but want to bring it to your attention in case the bird is singing for no reason.<br>
+Michelle</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: IATI Canary'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1732.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2020-07-16T21:48:15Z'>
+              <time itemprop='dateModified' datetime='2020-07-17T09:34:48Z' class='post-time'>
+                July 17, 2020,  9:34am
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Gah! Apologies, and thanks for alerting me to this, <a class="mention" href="../../../u/michelle_iom-2.html">@Michelle_IOM</a>.</p>
+<p>You’re right – the canary did indeed sing out of turn. This was a false alarm.</p>
+<p>IATI Canary relies on the <a href="https://iatistandard.org/en/guidance/developer/codelist-api/" rel="nofollow noopener">IATI codelist API</a>, which broke on the 10th. <a href="../../moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1987/2.html">There’s a bit more detail about that here.</a></p>
+<p>The missing codelists meant <strong>all subscribed users</strong> were emailed to say their data was invalid (!) That’s a bit drastic, and definitely shouldn’t have happened as a result of a missing codelist! I’ve now added a failsafe, which should prevent this from happening in the future.</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: IATI Canary'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Michelle_IOM.html'><span itemprop='name'>Michelle_IOM</span></a>
+            (Michelle Levesque)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1732.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-17T11:37:36Z' class='post-time'>
+                July 17, 2020, 11:37am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-17T11:37:36Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/andylolz.html">@andylolz</a> glad my message helped.  I have to admit that I’m always relieved when it isn’t stupid user error.</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: IATI Canary'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Michelle_IOM.html'><span itemprop='name'>Michelle_IOM</span></a>
+            (Michelle Levesque)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1732.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-20T07:29:49Z' class='post-time'>
+                July 20, 2020,  7:29am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-20T07:29:49Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/andylolz.html">@andylolz</a>  We received a new message on the 18th and our data set hasn’t changed at all.  Hope you can work your magic and get that darn canary to be quiet for a bit.  <img src="../../../images/emoji/twitter/slight_smilec164.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: IATI Canary'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1732.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-07-20T10:37:56Z' class='post-time'>
+                July 20, 2020, 10:37am
+              </time>
+              <meta itemprop='dateModified' content='2020-07-20T10:37:56Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Ach, yes, I spotted this too. It was due to a different issue this time, which should also be resolved now.</p>
+<p>IATI Canary relies on a different product that I maintain, <a href="https://iati-data-dump.codeforiati.org/" rel="nofollow noopener">IATI Data Dump</a>, which also recently broke <img src="../../../images/emoji/twitter/frowningc164.png?v=9" title=":frowning:" class="emoji" alt=":frowning:"> (its last successful run was 13th July). So that was the cause of the problem this time.</p>
+<p>It seems all the things I maintain broke at once!</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: IATI Canary'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/show-iati-iati-canary/1732/7 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:03:11 GMT -->
+</html>

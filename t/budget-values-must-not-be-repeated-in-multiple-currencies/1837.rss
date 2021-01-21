@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Budget values *must* not be repeated in multiple currencies</title>
+    <link>https://discuss.iatistandard.org/t/budget-values-must-not-be-repeated-in-multiple-currencies/1837</link>
+    <description>Currently the guidance states &quot;Recipient country budgets can be published in the currency of the country. However, budget values **should** not be repeated in multiple currencies.&quot;
+
+I am proposing that this &#39;should&#39; should be made a &#39;must&#39; (and a rule added) to make data use easier as publishing the same budget in multiple currencies would make it very hard to use the data as there is no way to know if they are duplicates or not?
+
+Or is there a way to know if two budget items are identical, just in different currencies? Or should we introduce a &#39;budget element ID&#39; so publishers could signal that this is the same budget? Or are users expected to deduce from the period of the budget that they are the same?
+
+I also wonder why &#39;budgets&#39; don&#39;t use the transaction element like all the other financial flows? The transaction element has more of the tools needed to solve this issue I think.</description>
+    
+    <lastBuildDate>Thu, 05 Sep 2019 09:23:00 +0000</lastBuildDate>
+    <category>3.0.0 Major Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/budget-values-must-not-be-repeated-in-multiple-currencies/1837.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Budget values *must* not be repeated in multiple currencies</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Currently the guidance states “Recipient country budgets can be published in the currency of the country. However, budget values <strong>should</strong> not be repeated in multiple currencies.”</p>
+<p>I am proposing that this ‘should’ should be made a ‘must’ (and a rule added) to make data use easier as publishing the same budget in multiple currencies would make it very hard to use the data as there is no way to know if they are duplicates or not?</p>
+<p>Or is there a way to know if two budget items are identical, just in different currencies? Or should we introduce a ‘budget element ID’ so publishers could signal that this is the same budget? Or are users expected to deduce from the period of the budget that they are the same?</p>
+<p>I also wonder why ‘budgets’ don’t use the transaction element like all the other financial flows? The transaction element has more of the tools needed to solve this issue I think.</p>
+          <p><a href="https://discuss.iatistandard.org/t/budget-values-must-not-be-repeated-in-multiple-currencies/1837/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/budget-values-must-not-be-repeated-in-multiple-currencies/1837/1</link>
+        <pubDate>Thu, 05 Sep 2019 09:23:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1837-1</guid>
+        <source url="https://discuss.iatistandard.org/t/budget-values-must-not-be-repeated-in-multiple-currencies/1837.rss">Budget values *must* not be repeated in multiple currencies</source>
+      </item>
+  </channel>
+</rss>

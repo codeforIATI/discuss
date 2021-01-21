@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Getting to a list of organisation references for IATI publishers</title>
+    <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060</link>
+    <description>Question: where can I get a list of organisation references for IATI publishers?
+
+Answer - [here&#39;s a list, which took some steps to produce](https://gist.github.com/Bjwebb/c532eeb7b8ea7f950c0354fd58e4b5d4#file-1_output-csv)
+
+Sounds simple?  Well, it took us a few steps to get to this (big thanks to @bjwebb):
+
+- We first looked at the IATI Registry.  Each publisher has a freetext field for their organisation reference.  We found this to be inconsistent and unreliable: [the dashboard confirms this](http://dashboard.iatistandard.org/reporting_orgs.html).  
+
+- we then looked Activity data.  The reporting-org reference is useful here.  But - this is repeated, and sometimes different.  It seemed a lot of overhead to check 4500+ files for around 500 identifiers.
+
+- so, finally, we landed at the Organisation file. Big Surprise!
+
+Yes.  When discovering the preferred organisation reference for an IATI publisher, we found the Organisation files to be the best source.  Specifically, we looked for instances where:
+
+&gt; reporting-org/@ref matches the identifier in organisation-identifier (or iati-identifier in versions 1.0x)
+
+(it&#39;s entirely possible and feasible to reference many organisations in a single org file, but we focused on matches between the publisher and org reference initially)
+
+We took a look into this (in July 2017), and found:
+
+- Of 555 IATI publishers, there were 406 IATI organisation files (73% of publishers provide an Org file)
+- Of these 406 publishers, 392 organisation identifiers match the reporting-org/@ref (97%)
+
+So - when a publisher provides an Org file, it&#39;s _highly likely_ that this will be a definitive source for their organisation reference
+
+So far, so good.  
+
+Next, we then [took a look at the prefixes for these references](https://docs.google.com/spreadsheets/d/19qHIeyS3sq6NaxYTaZnyBYOH6aTy8pYj5BTXz_kPKSw/edit?usp=sharing), to understand if these were available via the [org-id project](http://org-id.guide/) (which [IATI supports](https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851)).  On doing this, we found:
+
+ - Of 392 &quot;matching&quot; organisation identifiers, 333 started with a &quot;recognised&quot; prefix (85%)
+
+So again - a trend seems to be that definitive, _and_ standardized / useful organisation references are _also_ highly likely via the IATI Org file.
+
+What Next?
+
+It seems obvious: 
+
+- all publishers should provide an Org file
+- the definitive organisation reference for a publisher should be maintained in the Org file
+
+It doesn&#39;t seem a lot of effort to get to nearly 100% coverage in the above metrics.  It would be useful to hear thoughts from others.
+
+Last notes:
+
+- this isn&#39;t a list of _all the organisations_ mentioned via IATI data: we wanted to focus initially on the growing list of publishers
+
+- how such a list (if it is a list - @TimDavies thinks it&#39;s more of a _cache_) is published, maintained _and_ used is another topic.  In doing this research, we output the identifiers as a spreadsheet, but also looked at how the [IATI Organisation standard could be used](https://gist.github.com/Bjwebb/c532eeb7b8ea7f950c0354fd58e4b5d4#file-1_output-xml).</description>
+    
+    <lastBuildDate>Fri, 19 Jul 2019 10:04:06 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="32" data-topic="1060">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_2.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>I’m unsure what the “recent changes to the registry” are, but these also seem welcome.</p>
+</blockquote>
+</aside>
+<p>Sorry, I should have provided a link. I was referring to changes to the registry that <a href="https://github.com/IATI/ckanext-iati/issues/252" rel="nofollow noopener">prevent publishers from changing their IATI publisher and Org IDs</a>.</p>
+<aside class="quote no-group" data-post="32" data-topic="1060">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_2.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p><a class="mention" href="/u/andylolz">@andylolz</a> can you confirm that the <a href="https://andylolz.github.io/org-id-finder/" rel="nofollow noopener">service you voluntarily host</a> remains up to date / in synch ( I think it’s automagically so)?</p>
+</blockquote>
+</aside>
+<p>Indeed yes. The footer currently says it last updated 9 hours ago.</p>
+<p>I’m tempted to change the methodology that org-id-finder uses, to instead use registry metadata. This would make it much simpler. But it would be good to get confirmation that this is now the most reliable source.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/33</link>
+        <pubDate>Fri, 19 Jul 2019 10:04:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-33</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Many thanks for this timely update <a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p>It does represent excellent news in terms of the growth of the number and quality of the organisation references available.  Thanks to the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> for pushing this forward for us all.</p>
+<p>I’m unsure what the “recent changes to the registry” are, but these also seem welcome.  Is there an announcement of these changes anywhere <a class="mention" href="/u/wendythomas">@WendyThomas</a> ?</p>
+<p><a class="mention" href="/u/andylolz">@andylolz</a> can you confirm that the <a href="https://andylolz.github.io/org-id-finder/" rel="nofollow noopener">service you voluntarily host</a> remains up to date / in synch ( I think it’s automagically so)?</p>
+<p>From all this, there looks to be four questions to us all to address:</p>
+<ol>
+<li>
+<p>Given that registry itself now contains a high match (94%) of org references to the reporting-org/<span class="mention">@ref</span> data , is this to be a preferred methodology?</p>
+</li>
+<li>
+<p>If so, where does that leave the purpose of the organisation file?  Our original point was to highlight that the org file could be the perfect place to maintain a single source of truth in terms of a publisher org reference (and less dependent on the registry itself, which might be a use case for data users who download the whole corpus)</p>
+</li>
+<li>
+<p>What do we do about the fact that 32% of publishers (330) do not publish an organisation file?</p>
+</li>
+<li>
+<p>Whilst org references are available in a list on the registry, do we need to ensure services such as <a class="mention" href="/u/andylolz">@andylolz</a> <a href="https://andylolz.github.io/org-id-finder/" rel="nofollow noopener">org id finder</a> are core, central and easily available to all?</p>
+</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/32</link>
+        <pubDate>Fri, 19 Jul 2019 06:08:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-32</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>An update on <a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/1">the figures from the original post</a>, two years on.</p>
+<blockquote>
+<ul>
+<li>Of 555 IATI publishers, there were 406 IATI organisation files (73% of publishers provide an Org file)</li>
+</ul>
+</blockquote>
+<p>We’re now up to 1,024 IATI publishers. 694 of those have an IATI organisation file. That’s 68% - so the numbers have gone up, but the percentage has slipped a little.</p>
+<blockquote>
+<ul>
+<li>Of these 406 publishers, 392 organisation identifiers match the reporting-org/<span class="mention">@ref</span> (97%)</li>
+</ul>
+</blockquote>
+<p>Of the 694 publishers with organisation files, 678 of the <code>organisation-identifier</code>s in those org files match the <code>reporting-org/@ref</code> (98%).</p>
+<blockquote>
+<ul>
+<li>Of 392 “matching” organisation identifiers, 333 started with a “recognised” prefix (85%)</li>
+</ul>
+</blockquote>
+<p>Of the 678 “matching” organisation identifiers, 637 start with a “recognised” prefix (94%). I guess that means new publishers are choosing (or being given) valid org IDs, and some existing publishers have updated their org IDs to the new system. That’s excellent.</p>
+<hr>
+<p>It looks like there are also noteable improvements to the registry metadata. I suspect the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> have pushed to improve this, so that is great. (Recent changes to the registry ensuring the org ID can only be modified on request will certainly also help with this.)</p>
+<p>First of all, <strong>100%</strong> of organisation identifiers in these 678 org files match the organisation identifiers in the registry metadata. <a class="mention" href="/u/stevieflow">@stevieflow</a> and <a class="mention" href="/u/bjwebb">@bjwebb</a> didn’t include this figure last time so we don’t have it for comparison, but I suspect it wasn’t this high.</p>
+<p>958 of the 1,024 org identifiers in the registry metadata match the reporting-org/<span class="mention">@ref</span> (94%).</p>
+<p>Of these 958 “matching” organisation identifiers, 898 start with a recognised prefix (94%).</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/31</link>
+        <pubDate>Thu, 18 Jul 2019 20:36:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-31</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>The source code is available here:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/andylolz/org-id-finder" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://discuss.iatistandard.org/uploads/default/original/1X/f60d062c5f855557d5ef1475861cc3783fb254ff.jpeg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/andylolz/org-id-finder" target="_blank" rel="nofollow noopener">andylolz/org-id-finder</a></h3>
+
+<p>OLD REPO. This is just here to redirect to the new location - andylolz/org-id-finder</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>It’s <a href="https://github.com/andylolz/org-id-finder/blob/master/LICENSE" rel="nofollow noopener">MIT licensed</a>, so if someone wants to take it, rebrand it, repurpose it… I’m fine with that.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/29</link>
+        <pubDate>Fri, 13 Jul 2018 12:55:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-29</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>When using API’s in production applications, its continuity must be guaranteed. <a class="mention" href="/u/bill_anderson">@bill_anderson</a> would it therefore be possible to have this API of <a class="mention" href="/u/andylolz">@andylolz</a> defined as an IATI core service (to be hosted either by the IATI technical team or to be hosted by a third party under the supervision of the IATI technical team)?</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/28</link>
+        <pubDate>Wed, 27 Jun 2018 15:20:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-28</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[AnnaPe]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi All</p>
+<p>A bit late to this conversation but I just wanted to say that I find <a class="mention" href="/u/andylolz">@andylolz</a>  API super helpful - thanks Andy! I work for a funder and currently in the process of publishing about 200 activities (i.e. grants) - I started looking for organisations’ ids by scrolling up and down the IATI Registry, then discovered this tool (thanks to <a class="mention" href="/u/stevieflow">@stevieflow</a>) and almost halved the time it took me to look up orgs on the Register.</p>
+<p>I have also published our org file so the stat is now 407 out of 555 publishers!</p>
+<p>Agree this should be maintained centrally as a tool IATI should offer to encourage and support people to publish and agree a list would also be helpful for things like vlookups etc. Tools like this can improve the quality of the data massively!</p>
+<p>And I know this is slightly separate to this thread but an activity finder, based on the same concept and maintained centrally, would be amazing - it would be also useful to ensure that aid flows are tracked properly (by enabling publishers to check that they’re using the right activity id)</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/27</link>
+        <pubDate>Tue, 27 Feb 2018 16:11:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-27</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Great API! Will this be ‘officially’ maintained?</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/24</link>
+        <pubDate>Mon, 29 Jan 2018 09:58:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-24</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="22" data-topic="1060">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>However, I think some organisations would also appreciate the data as a list, or in a format that could be imported into their applications.  So this application doesn’t fail anything – it’s just a step on from there being a list!!</p>
+</blockquote>
+</aside>
+<p>The API is linked in the footer. You can use that to get a snapshot list of IATI org IDs, in CSV, JSON or atom.</p>
+<ul>
+<li><a href="https://api.morph.io/andylolz/org-id-finder/data.json?key=wFTSIH61nwMjLBhphd4T&amp;query=select%20*%20from%20%22organisations%22">Live, daily snapshot of all org data (JSON)</a></li>
+<li><a href="https://api.morph.io/andylolz/org-id-finder/data.csv?key=wFTSIH61nwMjLBhphd4T&amp;query=select%20*%20from%20%22organisations%22">Live, daily snapshot of all org data (CSV)</a></li>
+</ul>
+<p>I’ll change the footer links to make this more obvious.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/23</link>
+        <pubDate>Fri, 26 Jan 2018 16:31:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-23</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p><strong><em>Please</em></strong> can we take <strong>out</strong> of this conversation mention of:</p>
+<ul>
+<li>references to <em>any</em> organisation in the IATI corpus</li>
+<li>a list of activity identifiers</li>
+</ul>
+<p>This isn’t what is being talk about.  One thing at a time, folks!</p>
+<p>The remit of the original focus was to get a list of <strong>organisation references for IATI publishers</strong>.  Whilst that sounds straightforward, we realised it isn’t always so.  We then found that the data published via the Organisation standard was the optimal source.</p>
+<aside class="quote no-group" data-post="19" data-topic="1060">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>Any working solution should not have manual intervention</p>
+</blockquote>
+</aside>
+<p>I agree.  This is why the methodology above took a look at the org data <em>already</em> provided by publishers.  Any solution could continue to focus on this data as a source.</p>
+<aside class="quote no-group" data-post="20" data-topic="1060">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>In what sense does this thing fail to do what you’re looking for</p>
+</blockquote>
+</aside>
+<p>The interface to this is very useful.  It’s be great to have a similar interface to many other “codes”!  However, I think some organisations would also appreciate the data as a list, or in a format that could be imported into their applications.  So this application doesn’t <em>fail</em> anything – it’s just a step on from there being <em>a list</em>!!</p>
+<aside class="quote no-group" data-post="18" data-topic="1060" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/410_1.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>So, who will be managing this list to the extent that anyone can trust this list for it to be codified into a codelist?</p>
+</blockquote>
+</aside>
+<p>It’s probably important to consider this <strong>isn’t a list</strong> in the same way as other lists we use.  It’s not a list of countries, that changes via formal announcements, for example.</p>
+<p>This list of IATI publisher references that will a) increase regularly / at no set pattern b) be contributed to by each publisher, via their org file (so no central sanction of the list) c) have the possibility of changing, should a publish change their org reference (which is theoretically possibly – a UN agency may decide to add the XM-DAC prefix, for example.)</p>
+<p>Therefore, the important step seems to be:</p>
+<ul>
+<li>agreeing that the route to canonical references for IATI publishers is via the org file</li>
+<li>inspecting <a href="https://gist.github.com/Bjwebb/c532eeb7b8ea7f950c0354fd58e4b5d4#file-0_xquery-xq" rel="nofollow noopener">the code we shared</a>, to ensure that provides this</li>
+<li>running / hosting that code to provide an updated/ongoing version of this <em>list</em>
+</li>
+</ul>
+<p>I’d imagine the service to provide ongoing access the contents of this list would be something consider core to the IATI infrastructure.</p>
+<p>I think this can be a community effort, with backing from the Secretariat.  We also have an in built metric, in that we can actively track those organisations that do not provide an org file / matching references in their org file.  This metric might be something the secretariat could take on.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/22</link>
+        <pubDate>Fri, 26 Jan 2018 15:29:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-22</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="18" data-topic="1060" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/410_1.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>So, <strong><em>who</em></strong> will be managing this list to the extent that anyone can <strong><em>trust</em></strong> this list for it to be codified into a codelist?</p>
+</blockquote>
+</aside>
+<p>I guess you’re talking about the secretariat either funding, managing, running or endorsing this somehow. Is that right?<br>
+[/quote]</p>
+<p><a class="mention" href="/u/andylolz">@andylolz</a> yes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/21</link>
+        <pubDate>Fri, 26 Jan 2018 13:00:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-21</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>For clarity: In what sense does <a href="https://andylolz.github.io/org-id-finder/">this thing</a> fail to do what you’re looking for, <a class="mention" href="/u/stevieflow">@stevieflow</a> / <a class="mention" href="/u/siemvaessen">@siemvaessen</a> / <a class="mention" href="/u/herman">@Herman</a>?</p>
+<aside class="quote no-group" data-post="19" data-topic="1060">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>Any working solution should not have manual intervention, since  new organizations en activities are frequently added. What would be helpful is that the existing organization and activity codes are automatically extracted from the current IATI XML publications. Then these list can be used to validate if references to organisations-id and activity-ids actually exist.</p>
+</blockquote>
+</aside>
+<p>^^ I agree with this! That’s why it’s exactly how <a href="https://andylolz.github.io/org-id-finder/">this thing</a> works (for org IDs, at least.) For activity IDs, I guess you need to look to a datastore <a href="https://www.oipa.nl/api/">like this one</a> (though I’m afraid I have no way to judge its trustworthiness!)</p>
+<aside class="quote no-group" data-post="18" data-topic="1060" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/410_1.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>So, <strong><em>who</em></strong> will be managing this list to the extent that anyone can <strong><em>trust</em></strong> this list for it to be codified into a codelist?</p>
+</blockquote>
+</aside>
+<p>I guess you’re talking about the secretariat either funding, managing, running or endorsing this somehow. Is that right?</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/20</link>
+        <pubDate>Thu, 25 Jan 2018 20:23:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-20</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Any working solution should not have manual intervention, since  new organizations en activities are frequently added. What would be helpful is that the existing organization and activity codes are automatically extracted from the current IATI XML publications. Then these list can be used to validate if references to organisations-id and activity-ids actually exist.</p>
+<p>Trust is implicit since an IATI publisher is responsible for its own data. So if you as a publisher publish an activity with a certain identifier, that is by definition the truth since you own the data that activity.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/19</link>
+        <pubDate>Thu, 25 Jan 2018 14:40:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-19</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>So, <em><strong>who</strong></em> will be managing this list to the extent that anyone can <em><strong>trust</strong></em> this list for it to be codified into a codelist?</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/18</link>
+        <pubDate>Thu, 25 Jan 2018 14:00:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-18</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>A canonical list of activity ids would also be very helpfull to implement validation of references to other activities. The lack of both the canonical org id and activity lists as a part of the IATI infrastructure causes quite some headaches and duplication of effort to do very basic data validation checks.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/17</link>
+        <pubDate>Wed, 24 Jan 2018 19:12:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-17</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>At the “Mini developers TAG” meeting today, I heard several people (I think) reiterate the need for a <strong>canonical list of verified organisation references</strong> (my words).  I pointed to this thread on <a href="https://twitter.com/stevieflow/status/955838997347135489" rel="nofollow noopener">twitter</a>, but want to flag again.</p>
+<p>I also wanted reiterate that the method we went through confirmed (as <a class="mention" href="/u/anjesh">@anjesh</a> describes) that the <strong>Organisation XML files seem to be our best initial source</strong> of these references.  This <em>isn’t</em> an ID for every single organisation mentioned in IATI data, <em>but it is a start</em>.</p>
+<p>And - I’m going to do that thing of tagging people I heard say (or at least listen to!) this: <a class="mention" href="/u/rolfkleef">@rolfkleef</a> <a class="mention" href="/u/pelleaardema">@pelleaardema</a> <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/siemvaessen">@siemvaessen</a>  <a class="mention" href="/u/hayfield">@hayfield</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/imogen_kutz">@Imogen_Kutz</a> <a class="mention" href="/u/r_clements">@r_clements</a> <a class="mention" href="/u/johnadams">@JohnAdams</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/16</link>
+        <pubDate>Wed, 24 Jan 2018 18:22:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-16</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice! Thanks for sharing, <a class="mention" href="/u/anjesh">@anjesh</a>! I’m exciting about something like this being baked into AidStream.</p>
+<p>Just to respond on this point:</p>
+<aside class="quote no-group" data-post="14" data-topic="1060">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/anjesh/40/333_2.png" class="avatar"> anjesh:</div>
+<blockquote>
+<p>I randomly typed DFID and got this</p>
+<p>Apparently this xml has that id <a href="https://aidstream.org/files/xml/stromme_ug-org.xml" rel="nofollow noopener">https://aidstream.org/files/xml/stromme_ug-org.xml</a></p>
+</blockquote>
+</aside>
+<p>So, I did it this way <strong>by design</strong>, mostly because I don’t have the time or desire to take ownership of someone else’s data issues <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Funnily enough, I did exactly the same search as you last week, and found the same data issue. But instead of taking responsibility for the problem and fixing it myself, I was able to trace where the problem was, by clicking the source link:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/3cbf4e23fcad2523f3fa65bf020c622c0694a848.png" alt="44" width="689" height="318"></p>
+<p>I reported the issue (via zendesk) last week, and it’s currently with the publisher in question to fix.</p>
+<p>Admittedly, that doesn’t help users in the meantime – the data is bad, and remains bad until the publisher fixes it. But once it’s fixed, it’s fixed for everyone. I’d encourage you to also bubble up the data issues you find back to the publishers.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/15</link>
+        <pubDate>Wed, 24 Jan 2018 14:43:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-15</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[anjesh]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Andy and all,</p>
+<p>I am bit late into the discussion here. As Reid mentioned in earlier thread, we are doing something similar in and for AidStream users - where we are taking data from org xml and the publishers list in the registry. We are only consuming data that pass org-id.guide criteria or is present in iati-org-codelist - rest are ignored even if they are included in org-xmls. We want this to be controlled list instead of solely consuming org-xml files only. There are number of issues with org-xml files which might give wrong info to the users. I randomly typed DFID and got this<br>
+<img src="https://discuss.iatistandard.org/uploads/default/original/1X/24acca8c27c1aee55d94bb513269163447de1a95.png" alt="image" width="688" height="172"> Apparently this xml has that id <a href="https://aidstream.org/files/xml/stromme_ug-org.xml" rel="nofollow noopener">https://aidstream.org/files/xml/stromme_ug-org.xml</a></p>
+<p>We are putting extra eyes to avoid situation like this but still there are chances of missing those as well, when the numbers of org increase. So we call for suggestions from the users as well to improve the data. Like providing alternative names for organisations so that searching for DFID also gives results here <a href="http://api.stage.aidstream.org/organisation" rel="nofollow noopener">http://api.stage.aidstream.org/organisation</a> But it’s far from perfection but hope that this will at least help the majority of aidstream users to improve the a limited number of organisations to start with.</p>
+<p>We are releasing this as a part of <a href="https://blog.yipl.com.np/aidstream-and-organisations-data-quality-feature-launch-56a089a3229c" rel="nofollow noopener">aidstream new feature</a> solely targeting the participating-organisations data.</p>
+<p>I would be very happy to collaborate and see how we can combine our forces on org-data.</p>
+<p>Best<br>
+Anjesh.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/14</link>
+        <pubDate>Wed, 24 Jan 2018 10:41:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-14</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>+1</p>
+<p>I see this as core infrastructure, and based on the needs of publishers.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/13</link>
+        <pubDate>Mon, 22 Jan 2018 15:53:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-13</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Bumping this:</p>
+<aside class="quote no-group quote-modified" data-post="10" data-topic="1060">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>Pulling organisation data from organisation files into the registry metadata would be <strong>awesome</strong>. I think that would achieve the thing you’re talking about here, <a class="mention" href="/u/stevieflow">@stevieflow</a>. The registry archiver already does a similar job when it comes to last updated timestamps for datasets, so there’s precedent for this […] What do you think to this change, <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>?</p>
+<p>Then the registry would be providing a publisher-maintained, centralised list of organisation identifiers, available via API.</p>
+</blockquote>
+</aside>
+<p>What do you think, <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>?</p>
+<p>I use <a href="https://andylolz.github.io/org-id-finder/">https://andylolz.github.io/org-id-finder/</a> quite often. It would be great if the registry could provide this service directly.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/12</link>
+        <pubDate>Mon, 22 Jan 2018 10:41:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-12</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, agree.</p>
+<aside class="quote no-group" data-post="10" data-topic="1060">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p><strong>a publisher-maintained</strong>, centralised list of organisation identifiers</p>
+</blockquote>
+</aside>
+<p>(my emphasis) - but that’s the crucial bit for me.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/11</link>
+        <pubDate>Thu, 26 Oct 2017 15:28:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-11</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Registry metadata is available via API, and includes the publisher’s name and publisher’s organisation identifier. <a href="https://iatiregistry.org/api/3/action/organization_show?id=pwyf">Here’s a random example</a>. As both a user and a publisher, I’ve found the overlap between the publisher metadata on the registry versus the information in the organisation file super confusing.</p>
+<p>Pulling organisation data from organisation files into the registry metadata would be <strong>awesome</strong>. I think that would achieve the thing you’re talking about here, <a class="mention" href="/u/stevieflow">@stevieflow</a>. The registry archiver already does a similar job when it comes to last updated timestamps for datasets, so there’s precedent for this (albeit <a href="https://github.com/ViderumGlobal/ckanext-iati/issues/125">it’s currently being fixed</a>!) What do you think to this change, <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>?</p>
+<p>Then the registry would be providing a publisher-maintained, centralised list of organisation identifiers, available via API. Adding endpoints to make it queryable by organisation name and/or organisation identifier would also be brilliant.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/10</link>
+        <pubDate>Thu, 26 Oct 2017 13:45:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-10</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I just want to take a slight step back here to the original question</p>
+<aside class="quote no-group" data-post="1" data-topic="1060">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>where can I get a list of organisation references for IATI publishers?</p>
+</blockquote>
+</aside>
+<p>The reason (or use case) for this would be:</p>
+<ul>
+<li>IATI publishing organisations are <em>very likely</em> to be talking about themselves and their involvement in activities</li>
+<li>With traceability, a key and vital consideration is that organisations can <em>talk about each other</em> in consistent and unique ways (GB-GOV-1 rather than DFID or DfID or D.F.I.D)</li>
+<li>IATI publishers self-identify.  If we can be certain about what <em>they</em> use to identify <em>themselves</em>, then that can be useful to others, for reuse</li>
+</ul>
+<p>The intention here is to not solve wider issues about the cannonical reference for organisations outside of the 555 (now 592) publishers, <em>right now</em>.  We just wanted to test and find the most reliable source for being confident of the reference for the publishers.  It turned out that is the organisation file, published by these very same organisations!</p>
+<p>In terms of org-id.guide.  Right now, that is a service to check/verify the first part of any reference (the GB-GOV or GB-GOV-1, for example).  We used this in the methodology above.  org-id.guide is not currently about hosting lists of specific organisation identifiers.</p>
+<p>The IATI Registry is a listing of organisations that publish data with the IATI format.  <a href="https://iatiregistry.org/publisher" rel="nofollow noopener">We’ve a list</a>, which is automated by the software underneath it, has an API underneath it, and is administered by the core <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>.  If the IATI Registry can serve out (perhaps along the methodology outlined above) the <strong><em>identifiers for the publishers registered on its own system</em></strong>, in an authoritative way, then that seems very helpful for people such as <a class="mention" href="/u/reichner">@Reichner</a> and others.</p>
+<p>Honestly, it’s really fantastic that <a class="mention" href="/u/andylolz">@andylolz</a> has built something, and that <a class="mention" href="/u/anjesh">@anjesh</a> and team are integrating org referencing tools to AidStream.  But, I also think building upon the <em>core and common infrastructure we have in place already</em>, is well worth consideration, for this particular question</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/9</link>
+        <pubDate>Thu, 26 Oct 2017 11:18:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-9</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>Spoke with <a class="mention" href="/u/andylolz">@andylolz</a> about this briefly offline, and tbh I’m sure I don’t fully appreciate the use case here (though I trust there is one)…But…</p>
+<ol>
+<li>
+<p>At a strategic level, I’m with <a class="mention" href="/u/bill_anderson">@bill_anderson</a> - this needs to be integrated with other infrastructure, sustainably financed, embedded with other complementary tools, etc. I return to my pub props - ketchup bottle, salt shaker, hot sauce (which then became water bottles at the last miniTAG) if we solve every problem individually, without tying those solutions together in some way, we’re increasing the maintenance burden for ourselves and adding to the overwhelmed feeling new publishers get when introduced to the ever-expanding list of tools and workarounds-as-tools. (I think this is aimed at a more forgiving clientele, but I’ll say it anyway.)</p>
+</li>
+<li>
+<p>Tactically, this seems very similar, possibly overlapping in parts, but at the very least tangentially related to the work <a class="mention" href="/u/anjesh">@anjesh</a> and Young Innovations are doing with the org data clean up, org-data API service, and AidStream UI integration. Anjesh can say more, and <a class="mention" href="/u/timdavies">@TimDavies</a> is involved in both, so I don’t think there’s risk of duplicating work, but wanted people to be aware since they’re working in proximity to each other. See more: <a href="https://github.com/younginnovations/aidstream-org-data" rel="nofollow noopener">https://github.com/younginnovations/aidstream-org-data</a></p>
+</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/8</link>
+        <pubDate>Wed, 25 Oct 2017 18:46:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-8</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s a first pass at an org-id finder, using (more or less) the methodology described above: <a href="https://andylolz.github.io/org-id-finder/">https://andylolz.github.io/org-id-finder/</a></p>
+<p>What do you have in mind here, <a class="mention" href="/u/stevieflow">@stevieflow</a>? Does that roughly do the thing publishers need it to do?</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/7</link>
+        <pubDate>Wed, 25 Oct 2017 01:41:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-7</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+      <item>
+        <title>Getting to a list of organisation references for IATI publishers</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I would prefer to see this as part of a shared, cross-standard list, maintained by (a sustainably funded) org-id.guide.</p>
+<p>Taking this a step further I would like to see (a sustainably funded) org-id.guide provide a service that harvests all valid org-ids used in all places in all participating standards.</p>
+          <p><a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060/6</link>
+        <pubDate>Tue, 24 Oct 2017 14:22:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1060-6</guid>
+        <source url="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060.rss">Getting to a list of organisation references for IATI publishers</source>
+      </item>
+  </channel>
+</rss>

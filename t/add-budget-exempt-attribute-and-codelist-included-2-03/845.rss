@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845</link>
+    <description>This proposal is part of the [2.03 upgrade process](https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838), please comment by replying below.
+
+**Standard**
+Activity
+
+**Schema Object**
+iati-activity/@budget-exempt
+
+**Type of Change**
+Addition to Schema and Codelists
+
+**Issue**
+One of the key goals of IATI is to improve the predictability of resource flows for users through the provision of forward-looking budgets. Users should expect IATI data to provide them with annual budget estimates across the lifetime of all activities. There are, however, circumstance under which forward-looking data cannot be provided, be it for operational, legal or commercial reason. This modification allows users to know which activities are exempt from providing budget data.
+
+**Proposal**
+&lt;ul&gt;
+&lt;li&gt;Add attribute iati-activity/@budget-exempt
+&lt;ul&gt;
+&lt;li&gt;Definition
+A code indicating the reason why this activity does not contain any iati-activity/budget elements. The value must exist in the BudgetExempt codelist.
+&lt;li&gt;Occurs
+0..1
+&lt;/ul&gt;
+
+
+&lt;li&gt;Add non-embedded BudgetExempt codelist
+&lt;ul&gt;
+&lt;li&gt;Initial Values
+1 - Commercial restrictions
+2 - Legal restrictions
+3 - Rapid onset emergency
+&lt;/ul&gt;
+
+**Standards Day**
+Further consultation was requested
+
+**Links**
+http://bit.ly/2m4G3YA</description>
+    
+    <lastBuildDate>Wed, 25 Oct 2017 13:52:39 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/13</link>
+        <pubDate>Wed, 25 Oct 2017 13:52:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-13</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal has been been included in the 2.03 upgrade. It can be viewed in the following two Discuss posts:</p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Proposal of 2.03 Content</a></p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Technical Proposal for the 2.03 Upgrade</a></p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/12</link>
+        <pubDate>Wed, 25 Oct 2017 13:52:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-12</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>I am content with <code>@budget-not-provided</code> and the initial codelist would cover the reasons that we normally exempt forward-looking budgets at an activity level.</p>
+<p>Where there are other exemptions (security &amp; safety, international relations), these are normally applied to either a whole activity or other elements (participating-orgs for example).</p>
+<p>The value in this is not so much the publisher statistics, but in informing “real” data users that the data is not available for a particular reason.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/11</link>
+        <pubDate>Mon, 21 Aug 2017 18:54:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-11</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>In my opinion the primary use case is for users accessing forward-looking data. This has always been one of the most important features of IATI data and users need to know whether the absence of budgets is a legitimate use case or a data quality issue. Placing the burden on users to run a number of checks (is this a fast-onset emergency, does the activity have commercial or legal restrictions, etc) is complicated.</li>
+<li>I do not support the inclusion of an ‘Other’ code. If a new use case emerges for which budgets are not applicable it should be properly defined and classified.</li>
+<li>I take the point that ‘exempt’ is inappropriate. Personally I’m happy with (the rather cumbersome) <code>@budget-not-provided</code>
+</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/10</link>
+        <pubDate>Wed, 09 Aug 2017 12:07:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-10</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Notes from consultation calls w/c 3rd July</p>
+<p>Outcome:<br>
+The proposal was reviewed by those on the call and there was no objection from the group about the inclusion of the attribute <span class="mention">@budget-exempt</span><br>
+There were some specific proposals for modification:<br>
+Change the attribute name as the word ‘exempt’ was not deemed appropriate. Possible suggestion: <span class="mention">@budget-not-provided</span><br>
+Including an additional code (4-Other)</p>
+<p>Discussion:<br>
+There was discussion around the need to be able to add add more information, in addition to selecting a codelist, elaborating on the reasons for not being able to publish forward-looking budget.  As currently an attribute is used the option for free-text is not possible.<br>
+The group expressed a need for more use cases on how the attribute will be used.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/9</link>
+        <pubDate>Fri, 07 Jul 2017 12:19:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-9</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I can see why this information might be useful, but I think we should avoid giving the appearance of there being sub-standards for different types of publishers. IATI does not provide blanket exemptions for certain types of publisher or certain types of activity. Of course there are sometimes valid reasons for omitting data, but these need to be justified case by case. So we would propose some changes here:</p>
+<ul>
+<li>A more granular codelist of reasons for not publishing information</li>
+<li>Case by case justification as to how publishing the redacted information would cause material or direct harm</li>
+</ul>
+<p>Forward looking budgets have been a consistent demand from partner country governments, and <a href="http://www.cabri-sbo.org/uploads/files/Documents/policy_brief_2012_cabri_transparency_and_accountability_use_of_country_systems_english_brief_5_cabri_busan_note_english.pdf">concerns have been raised</a> that ‘commercial sensitivity’ might become the standard excuse for not providing information. IATI should be careful to avoid legitimising this.</p>
+<p>Also, the word ‘exempt’ is perhaps best avoided here: publishers are explicitly declaring that they will not publish forward budgets for an activity, but IATI is not granting them exemption from doing so.</p>
+<p>Andy Lulham<br>
+Aid Information Advisor, Publish What You Fund</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/7</link>
+        <pubDate>Mon, 26 Jun 2017 17:55:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-7</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>There is nothing in the data, for example, that defines which humanitarian activities should or shouldn’t contain forward-looking data.</p>
+</blockquote>
+<p>I think the argument here is that rapid onset emergencies would not necessarily expect to have forward looking data for those activities. Could we not exclude activities tagged as humanitarian (<code>iati-activity/@humanitarian='1'</code>) which started less than 6 months ago, or something like that?</p>
+<blockquote>
+<p>Nor is it always clear which activities are covered by legal or competitive restrictions.</p>
+</blockquote>
+<p>Again I think this is something that should be externally defined. For example, if we think that all DFIs should be exempted from publishing this information (I am still not convinced of this, but it sounds like that’s the argument) then that is relatively easy to do. We could do something like exclude activities reported by private sector organisations, for example (e.g. <code>reporting-org/@type='70'</code>).</p>
+<p>If there are other types of activities that should not be expected to publish such information then we should be able to at least describe features of them (and we could then see the extent to which they could be covered by other fields in the Standard).</p>
+<blockquote>
+<p>Which other fields require metadata on exemptions that would improve the ability of users to assess and process the data?</p>
+</blockquote>
+<p>For issues around commercial confidentiality, I would guess a number of transactional fields (though various publishers will clearly have more ideas here). I also think making clear that data is not published because of systems limitations would be useful for certain fields, e.g. title, description, implementing organisation, some classifications.</p>
+<blockquote>
+<p>Forward-looking data is one of the most important cornerstones of IATI’s raison d’etre and accurate benchmarking of this dimension is, I would argue, a legitimate exercise.</p>
+</blockquote>
+<p>Agreed, but I don’t see how self-reporting will allow you to do this with any accuracy. You would have an uneven playing field between similar publishers depending on whether each of them decided to use this or not. It would be odd if at least some publishers didn’t tag all of their activities that didn’t have a <code>budget</code> element as <code>budget-exempt</code>. (And they wouldn’t necessarily be acting in bad faith by doing so.)</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/5</link>
+        <pubDate>Wed, 21 Jun 2017 11:47:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-5</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="845">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>I thought the discussion at Standards Day more or less reached the consensus that adding particular fields into the Standard simply in order to facilitate the calculation of publisher statistics is not a very strong use case.</p>
+</blockquote>
+</aside>
+<p>I would not agree that there was consensus on this. The argument was also made that the primary use case for this is for data users to know whether data on an activity is accurate and complete.</p>
+<p>Forward-looking data is one of the most important cornerstones of IATI’s raison d’etre and accurate benchmarking of this dimension is, I would argue, a legitimate exercise.</p>
+<aside class="quote no-group" data-post="3" data-topic="845">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>the calculation of whether or not an activity should be exempted from requiring forward data is something that should be determined by other things in the data</p>
+</blockquote>
+</aside>
+<p>There is nothing in the data, for example, that defines which humanitarian activities should or shouldn’t contain forward-looking data. Nor is it always clear which activities are covered by legal or competitive restrictions. Self-reporting is not ideal but it is better than nothing and a publisher’s use of it can be spot-checked.</p>
+<aside class="quote no-group quote-modified" data-post="3" data-topic="845">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>I can see the value of being able to state exemptions in a structured way but I don’t think it makes sense to cover only one particular field.</p>
+</blockquote>
+</aside>
+<p>Which other fields require metadata on exemptions that would improve the ability of users to assess and process the data?</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/4</link>
+        <pubDate>Wed, 21 Jun 2017 10:05:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-4</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I would question the value of adding a specific attribute to state only that the budget field is deliberately not published. I can see the value of being able to state exemptions in a structured way but I don’t think it makes sense to cover only one particular field.</p>
+<p>I thought the discussion at Standards Day more or less reached the consensus that adding particular fields into the Standard simply in order to facilitate the calculation of publisher statistics is not a very strong use case.</p>
+<p>(As an aside, I would also suggest that the calculation of whether or not an activity should be exempted from requiring forward data is something that should be determined by other things in the data (e.g. activities marked as administrative, humanitarian, or whatever) rather than the publisher’s own choice to not have them assessed.)</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/3</link>
+        <pubDate>Tue, 20 Jun 2017 14:49:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-3</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been included for consideration in the formal 2.03 proposal</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/2</link>
+        <pubDate>Fri, 16 Jun 2017 15:33:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-2</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+      <item>
+        <title>Add budget-exempt attribute and codelist (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal is part of the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p><strong>Schema Object</strong><br>
+iati-activity/<span class="mention">@budget-exempt</span></p>
+<p><strong>Type of Change</strong><br>
+Addition to Schema and Codelists</p>
+<p><strong>Issue</strong><br>
+One of the key goals of IATI is to improve the predictability of resource flows for users through the provision of forward-looking budgets. Users should expect IATI data to provide them with annual budget estimates across the lifetime of all activities. There are, however, circumstance under which forward-looking data cannot be provided, be it for operational, legal or commercial reason. This modification allows users to know which activities are exempt from providing budget data.</p>
+<p><strong>Proposal</strong></p>
+<ul>
+<li>Add attribute iati-activity/@budget-exempt
+<ul>
+<li>Definition
+A code indicating the reason why this activity does not contain any iati-activity/budget elements. The value must exist in the BudgetExempt codelist.
+</li>
+<li>Occurs
+0..1
+</li>
+</ul>
+</li>
+<li>Add non-embedded BudgetExempt codelist
+<ul>
+<li>Initial Values
+1 - Commercial restrictions
+2 - Legal restrictions
+3 - Rapid onset emergency
+</li>
+</ul>
+<p><strong>Standards Day</strong><br>
+Further consultation was requested</p>
+<p><strong>Links</strong><br>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/document/d/1hduO4-idwg1oV7bx3Eigzexws1_uy_7-ArfPEqI0IcA/edit" target="_blank">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/document/d/1hduO4-idwg1oV7bx3Eigzexws1_uy_7-ArfPEqI0IcA/edit" target="_blank"><span class="googledocs-onebox-logo g-docs-logo"></span></a>
+
+<h3><a href="https://docs.google.com/document/d/1hduO4-idwg1oV7bx3Eigzexws1_uy_7-ArfPEqI0IcA/edit" target="_blank">11 Publisher Statistics Methodologies</a></h3>
+
+<p>Name of paper Improvements to Publishing Statistics Methodologies Theme (e.g. Rules &amp;amp; Guidelines; Improvements etc) Improvements Lead author Wendy Rogers Links to other relevant information (Discuss forum; Website etc) Discuss:...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845/1</link>
+        <pubDate>Fri, 12 May 2017 11:29:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-845-1</guid>
+        <source url="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845.rss">Add budget-exempt attribute and codelist (included 2.03)</source>
+      </item>
+  </channel>
+</rss>

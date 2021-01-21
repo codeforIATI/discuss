@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Publishing and updating process - checking my understanding</title>
+    <link>https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600</link>
+    <description>Dear all, we are just starting to publish our activity data and I want to check that I understand the process correctly:
+
+1. I &#39;publish&#39; our activity data by registering a data set at https://iatiregistry.org/dashboard/datasets which links to a file that I store at a url of our choice
+
+2. When I want to update our activity file I just replace the file at our url with a new activity xml file.  There is no need to re-register it
+
+3.  People who want to consume the data have to either read it from all of the individual xml files scattered around the web or alternatively pull it from another source that has already done so.  The iati registry itself does not collate the data
+
+If the three statements above are correct then I have a couple of extra questions:
+
+A. How often is our xml file read or does that depend on who is doing the reading?   I&#39;m imagining that whoever is polling the file just looks at the file datestamp to see when there are changes
+
+B. When I initially register the dataset there is a &#39;Date Updated&#39; field but I don&#39;t see what that is for if I only have to register the data once.  Do we actually need to complete that?
+
+Hope that makes sense.  I&#39;m trying to pull together bits of info. from various places to get the process down.</description>
+    
+    <lastBuildDate>Tue, 18 Dec 2018 13:25:39 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Publishing and updating process - checking my understanding</title>
+        <dc:creator><![CDATA[RichPepp]]></dc:creator>
+        <description><![CDATA[
+            <p>Awesome reply, thank you.  That is completely clear</p>
+<blockquote>
+<p>This date must change whenever the value of any field changes</p>
+</blockquote>
+<p>Excellent, I’ll use that.  I had been looking through other published datasets and some seemed to use it more as a generated-datetime rather than last-updated-datetime.  last-updated works well for me and will fit nicely with our checking workflow</p>
+<p>Thanks again</p>
+<p>Richard</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600/3</link>
+        <pubDate>Tue, 18 Dec 2018 13:25:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1600-3</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600.rss">Publishing and updating process - checking my understanding</source>
+      </item>
+      <item>
+        <title>Publishing and updating process - checking my understanding</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>All makes sense, and all excellent questions, <a class="mention" href="/u/richpepp">@RichPepp</a>!</p>
+<aside class="quote no-group" data-post="1" data-topic="1600">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/richpepp/40/500_1.png" class="avatar"> RichPepp:</div>
+<blockquote>
+<ol>
+<li>
+<p>I ‘publish’ our activity data by registering a data set at <a href="https://iatiregistry.org/dashboard/datasets">https://iatiregistry.org/dashboard/datasets</a> which links to a file that I store at a url of our choice</p>
+</li>
+<li>
+<p>When I want to update our activity file I just replace the file at our url with a new activity xml file. There is no need to re-register it</p>
+</li>
+<li>
+<p>People who want to consume the data have to either read it from all of the individual xml files scattered around the web or alternatively pull it from another source that has already done so. The iati registry itself does not collate the data</p>
+</li>
+</ol>
+</blockquote>
+</aside>
+<p>The three statements above are indeed correct!</p>
+<aside class="quote no-group" data-post="1" data-topic="1600">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/richpepp/40/500_1.png" class="avatar"> RichPepp:</div>
+<blockquote>
+<p>A. How often is our xml file read or does that depend on who is doing the reading?</p>
+</blockquote>
+</aside>
+<p>It indeed depends on who’s doing the reading. Most services update daily. But for instance, the <a href="http://dashboard.iatistandard.org/">IATI Dashboard</a> updates every three days (see <a href="http://dashboard.iatistandard.org/faq.html">the FAQ</a>).</p>
+<aside class="quote no-group" data-post="1" data-topic="1600">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/richpepp/40/500_1.png" class="avatar"> RichPepp:</div>
+<blockquote>
+<p>I’m imagining that whoever is polling the file just looks at the file datestamp to see when there are changes</p>
+</blockquote>
+</aside>
+<p>There are a number of timestamps! Below is a list of some:</p>
+<ul>
+<li>The XML root node has a <code>@generated-datetime</code> attribute. It’s highly recommended that this is used, though its meaning (and therefore its usefulness) <a href="http://reference.iatistandard.org/activity-standard/iati-activities/#attributes">isn’t well-defined</a>.</li>
+<li>Each repeated <code>iati-organisation</code> and <code>iati-activity</code> has a <code>@last-updated-datetime</code> attribute. <a href="http://reference.iatistandard.org/activity-standard/iati-activities/iati-activity/#attributes">According to the documentation</a>:
+<blockquote>
+<p>This date must change whenever the value of any field changes</p>
+</blockquote>
+</li>
+<li>The registry stores <code>data_updated</code> in the dataset metadata (shown as “IATI data updated”), which is updated ~daily to equal the most recent of these <code>@last-updated-datetime</code>s. This would be a very useful reference, but note that this is handled by the registry archiver and this process has been very unreliable in the recent past. The <a href="https://iatistandard.org/en/news/board-decisions-on-iati-technical-audit/">tech audit recommended</a> updating this metadata from outside of CKAN.</li>
+<li>The registry also stores <code>metadata_modified</code> in the dataset metadata (shown as “IATI registry updated”). This is unrelated to data modifications – I think it records the most recent manual metadata update.</li>
+<li>The server responding to the data request will itself include various dates in the response headers. It would be cool if publishers could guarantee that these response headers were meaningful or consistent, but I’m not sure about guidance or consensus on this.</li>
+</ul>
+<aside class="quote no-group" data-post="1" data-topic="1600">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/richpepp/40/500_1.png" class="avatar"> RichPepp:</div>
+<blockquote>
+<p>B. When I initially register the dataset there is a ‘Date Updated’ field but I don’t see what that is for if I only have to register the data once. Do we actually need to complete that?</p>
+</blockquote>
+</aside>
+<p>No, you don’t need to complete that. It’ll be automatically populated. The automatically populated fields shouldn’t really be editable by the publisher – it would be cool if the registry made them readonly.</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600/2</link>
+        <pubDate>Tue, 18 Dec 2018 12:14:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1600-2</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600.rss">Publishing and updating process - checking my understanding</source>
+      </item>
+      <item>
+        <title>Publishing and updating process - checking my understanding</title>
+        <dc:creator><![CDATA[RichPepp]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear all, we are just starting to publish our activity data and I want to check that I understand the process correctly:</p>
+<ol>
+<li>
+<p>I ‘publish’ our activity data by registering a data set at <a href="https://iatiregistry.org/dashboard/datasets" rel="nofollow noopener">https://iatiregistry.org/dashboard/datasets</a> which links to a file that I store at a url of our choice</p>
+</li>
+<li>
+<p>When I want to update our activity file I just replace the file at our url with a new activity xml file.  There is no need to re-register it</p>
+</li>
+<li>
+<p>People who want to consume the data have to either read it from all of the individual xml files scattered around the web or alternatively pull it from another source that has already done so.  The iati registry itself does not collate the data</p>
+</li>
+</ol>
+<p>If the three statements above are correct then I have a couple of extra questions:</p>
+<p>A. How often is our xml file read or does that depend on who is doing the reading?   I’m imagining that whoever is polling the file just looks at the file datestamp to see when there are changes</p>
+<p>B. When I initially register the dataset there is a ‘Date Updated’ field but I don’t see what that is for if I only have to register the data once.  Do we actually need to complete that?</p>
+<p>Hope that makes sense.  I’m trying to pull together bits of info. from various places to get the process down.</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600/1</link>
+        <pubDate>Tue, 18 Dec 2018 11:00:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1600-1</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-and-updating-process-checking-my-understanding/1600.rss">Publishing and updating process - checking my understanding</source>
+      </item>
+  </channel>
+</rss>

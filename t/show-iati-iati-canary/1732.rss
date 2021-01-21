@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Show IATI: IATI Canary</title>
+    <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732</link>
+    <description>IATI Canary is a free data monitoring and alert service from Publish What You Fund. It checks to ensure IATI data is both available and compliant with the IATI schema. If there’s a problem, you’ll be notified by email.
+
+You can sign up for email alerts here:
+
+https://iati-canary.herokuapp.com
+
+If you’re an IATI publisher aiming to ensure your data stays accessible, or a data user keeping an eye on data availability, you may find IATI Canary useful.
+
+This idea was originally suggested by @stolk. As is often the case, the groundwork was laid by @David_Megginson.
+
+If you have any comments or feedback, please reply below. Thanks!</description>
+    
+    <lastBuildDate>Mon, 20 Jul 2020 10:37:56 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Show IATI: IATI Canary</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Ach, yes, I spotted this too. It was due to a different issue this time, which should also be resolved now.</p>
+<p>IATI Canary relies on a different product that I maintain, <a href="https://iati-data-dump.codeforiati.org/" rel="nofollow noopener">IATI Data Dump</a>, which also recently broke <img src="https://discuss.iatistandard.org/images/emoji/twitter/frowning.png?v=9" title=":frowning:" class="emoji" alt=":frowning:"> (its last successful run was 13th July). So that was the cause of the problem this time.</p>
+<p>It seems all the things I maintain broke at once!</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/10</link>
+        <pubDate>Mon, 20 Jul 2020 10:37:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1732-10</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss">Show IATI: IATI Canary</source>
+      </item>
+      <item>
+        <title>Show IATI: IATI Canary</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a>  We received a new message on the 18th and our data set hasn’t changed at all.  Hope you can work your magic and get that darn canary to be quiet for a bit.  <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/9</link>
+        <pubDate>Mon, 20 Jul 2020 07:29:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1732-9</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss">Show IATI: IATI Canary</source>
+      </item>
+      <item>
+        <title>Show IATI: IATI Canary</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a> glad my message helped.  I have to admit that I’m always relieved when it isn’t stupid user error.</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/8</link>
+        <pubDate>Fri, 17 Jul 2020 11:37:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1732-8</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss">Show IATI: IATI Canary</source>
+      </item>
+      <item>
+        <title>Show IATI: IATI Canary</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Gah! Apologies, and thanks for alerting me to this, <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a>.</p>
+<p>You’re right – the canary did indeed sing out of turn. This was a false alarm.</p>
+<p>IATI Canary relies on the <a href="https://iatistandard.org/en/guidance/developer/codelist-api/" rel="nofollow noopener">IATI codelist API</a>, which broke on the 10th. <a href="https://discuss.iatistandard.org/t/moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1987/2">There’s a bit more detail about that here.</a></p>
+<p>The missing codelists meant <strong>all subscribed users</strong> were emailed to say their data was invalid (!) That’s a bit drastic, and definitely shouldn’t have happened as a result of a missing codelist! I’ve now added a failsafe, which should prevent this from happening in the future.</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/7</link>
+        <pubDate>Thu, 16 Jul 2020 21:48:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1732-7</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss">Show IATI: IATI Canary</source>
+      </item>
+      <item>
+        <title>Show IATI: IATI Canary</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a> IOM received an email from Canary on July 10 saying both our Org and Activities files has issues.  But when I ran both through the 2 versions of the validator nothing came up wrong other than our usual budgets being more than one year.  Oddly enough our Org file hadn’t been touched in about 6 months and our activity file had been changed 10 days earlier.  At the moment I don’t think we had or have an issue but want to bring it to your attention in case the bird is singing for no reason.<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/6</link>
+        <pubDate>Thu, 16 Jul 2020 15:18:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1732-6</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss">Show IATI: IATI Canary</source>
+      </item>
+      <item>
+        <title>Show IATI: IATI Canary</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I recently realised that <a>IATI Canary</a> addresses one of the recommendations of <a href="https://iatistandard.org/en/news/board-decisions-on-iati-technical-audit/" rel="nofollow noopener">last year’s IATI tech audit</a>:</p>
+<blockquote>
+<p><strong>Quality service:</strong> A future data quality feedback tool that could be designed to email publishers actionable notifications if there is a data issue.</p>
+</blockquote>
+<p>While IATI Canary currently only emails about data that is broken (i.e. invalid XML) or unavailable, it knows about data that is invalid against the IATI schema, and flags that in the user interface. It could be made to email about this, too, but I haven’t added that feature yet.</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/5</link>
+        <pubDate>Mon, 01 Jul 2019 14:34:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1732-5</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss">Show IATI: IATI Canary</source>
+      </item>
+      <item>
+        <title>Show IATI: IATI Canary</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a>, and apologies for the jargon in my previous post. By “RESTful” in this case, I mean mainly that if you navigate to a dashboard for an organisation, you can save it as a bookmark and come back to it, link to it in an email or from another web page, etc. (There are other concepts in REST, but they don’t matter here).</p>
+<p>For example, this link will always take you to the report for IOM: <a href="https://iati-canary.herokuapp.com/publisher/iom" rel="nofollow noopener">https://iati-canary.herokuapp.com/publisher/iom</a></p>
+<p>Cheers, David</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/4</link>
+        <pubDate>Mon, 13 May 2019 08:04:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1732-4</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss">Show IATI: IATI Canary</source>
+      </item>
+      <item>
+        <title>Show IATI: IATI Canary</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear David,</p>
+<p>Can you explain to a non-IT person what you mean by it being restful and can bookmark a dashboard for sharing?  I’m curious and if you don’t mind taking or have the time to break that down it would be much appreciated.</p>
+<p>Kind Regards,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/3</link>
+        <pubDate>Wed, 01 May 2019 08:45:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1732-3</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss">Show IATI: IATI Canary</source>
+      </item>
+      <item>
+        <title>Show IATI: IATI Canary</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a great tool. I especially like that it’s fully RESTful, so a publisher can bookmark a live-ish dashboard for their own IATI sharing, e.g.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://iati-canary.herokuapp.com/static/img/favicon-32x32.png%3Fq%3Df1647" class="site-icon" width="32" height="32">
+      <a href="https://iati-canary.herokuapp.com/publisher/undp" target="_blank" rel="nofollow noopener">IATI Canary</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://iati-canary.herokuapp.com/static/img/canary.png%3Fq%3D54077" class="thumbnail onebox-avatar" width="256" height="256">
+
+<h3><a href="https://iati-canary.herokuapp.com/publisher/undp" target="_blank" rel="nofollow noopener">United Nations Development Programme (UNDP) | IATI Canary</a></h3>
+
+<p>Check status of “United Nations Development Programme (UNDP)” datasets on IATI Canary – An early warning system for IATI publishers.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/2</link>
+        <pubDate>Tue, 30 Apr 2019 14:10:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1732-2</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss">Show IATI: IATI Canary</source>
+      </item>
+      <item>
+        <title>Show IATI: IATI Canary</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>IATI Canary is a free data monitoring and alert service from Publish What You Fund. It checks to ensure IATI data is both available and compliant with the IATI schema. If there’s a problem, you’ll be notified by email.</p>
+<p>You can sign up for email alerts here:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://iati-canary.herokuapp.com/static/img/favicon-32x32.png%3Fq%3Df1647" class="site-icon" width="32" height="32">
+      <a href="https://iati-canary.herokuapp.com" target="_blank" rel="nofollow noopener">IATI Canary</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://iati-canary.herokuapp.com/static/img/canary.png%3Fq%3D54077" class="thumbnail onebox-avatar" width="256" height="256">
+
+<h3><a href="https://iati-canary.herokuapp.com" target="_blank" rel="nofollow noopener">IATI Canary</a></h3>
+
+<p>An early warning system for IATI publishers.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>If you’re an IATI publisher aiming to ensure your data stays accessible, or a data user keeping an eye on data availability, you may find IATI Canary useful.</p>
+<p>This idea was originally suggested by <a class="mention" href="/u/stolk">@stolk</a>. As is often the case, the groundwork was laid by <a class="mention" href="/u/david_megginson">@David_Megginson</a>.</p>
+<p>If you have any comments or feedback, please reply below. Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/show-iati-iati-canary/1732/1</link>
+        <pubDate>Tue, 30 Apr 2019 10:12:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1732-1</guid>
+        <source url="https://discuss.iatistandard.org/t/show-iati-iati-canary/1732.rss">Show IATI: IATI Canary</source>
+      </item>
+  </channel>
+</rss>

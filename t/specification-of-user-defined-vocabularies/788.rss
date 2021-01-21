@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Specification of User-Defined Vocabularies</title>
+    <link>https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788</link>
+    <description>Under the [Sector Vocabulary](http://iatistandard.org/202/codelists/SectorVocabulary/) Codelist, you may specify a user-defined vocabulary by specifying a code of `99`. You may specify a specify a second user-defined vocabulary by specifying a code of `98`. There is no way to specify a third (or more) user-defined vocabularies.
+
+Other Vocabulary Codelists including [Policy Marker](http://iatistandard.org/202/codelists/PolicyMarkerVocabulary/) and [Humanitarian Scope](http://iatistandard.org/202/codelists/HumanitarianScopeVocabulary/) are even more restrictive in that they only define a method to specify a single user-defined vocabulary.
+
+If multiple user-defined vocabularies may actually be specified through unique `vocabulary-uri` values:
+
+* Code `98` values should probably be withdrawn.
+* It should be documented that multiple user-defined vocabularies may be identified using unique `vocabulary-uri` values for version 2.02+ publishers.
+
+Alternatively, It is unclear whether a `//sector/narrative` could be used as a UID. If it describes the `@code`, it cannot. If it describes or defines the vocabulary, it can. If it can describe either or both (as appears to be), it cannot.
+
+-
+
+As a related issue, the name `Reporting Organisation` for code `99` does not clearly identify its meaning, and is not correct in all instances - a code `99` vocabulary may be maintained by an organisation other than the Reporting Org.
+
+-
+
+**In summary**
+
+* There should be a standardised and scalable method for defining and uniquely identifying multiple user-defined vocabularies.
+* The `Name` of code `99` should be changed to more accurately state what it is, and descriptions added / updated to reflect this.</description>
+    
+    <lastBuildDate>Wed, 05 Apr 2017 09:50:00 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Specification of User-Defined Vocabularies</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> may have some thoughts</p>
+          <p><a href="https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788/2</link>
+        <pubDate>Wed, 05 Apr 2017 09:50:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-788-2</guid>
+        <source url="https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788.rss">Specification of User-Defined Vocabularies</source>
+      </item>
+      <item>
+        <title>Specification of User-Defined Vocabularies</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>Under the <a href="http://iatistandard.org/202/codelists/SectorVocabulary/">Sector Vocabulary</a> Codelist, you may specify a user-defined vocabulary by specifying a code of <code>99</code>. You may specify a specify a second user-defined vocabulary by specifying a code of <code>98</code>. There is no way to specify a third (or more) user-defined vocabularies.</p>
+<p>Other Vocabulary Codelists including <a href="http://iatistandard.org/202/codelists/PolicyMarkerVocabulary/">Policy Marker</a> and <a href="http://iatistandard.org/202/codelists/HumanitarianScopeVocabulary/">Humanitarian Scope</a> are even more restrictive in that they only define a method to specify a single user-defined vocabulary.</p>
+<p>If multiple user-defined vocabularies may actually be specified through unique <code>vocabulary-uri</code> values:</p>
+<ul>
+<li>Code <code>98</code> values should probably be withdrawn.</li>
+<li>It should be documented that multiple user-defined vocabularies may be identified using unique <code>vocabulary-uri</code> values for version 2.02+ publishers.</li>
+</ul>
+<p>Alternatively, It is unclear whether a <code>//sector/narrative</code> could be used as a UID. If it describes the <code>@code</code>, it cannot. If it describes or defines the vocabulary, it can. If it can describe either or both (as appears to be), it cannot.</p>
+<ul>
+<li>
+</li>
+</ul>
+<p>As a related issue, the name <code>Reporting Organisation</code> for code <code>99</code> does not clearly identify its meaning, and is not correct in all instances - a code <code>99</code> vocabulary may be maintained by an organisation other than the Reporting Org.</p>
+<ul>
+<li>
+</li>
+</ul>
+<p><strong>In summary</strong></p>
+<ul>
+<li>There should be a standardised and scalable method for defining and uniquely identifying multiple user-defined vocabularies.</li>
+<li>The <code>Name</code> of code <code>99</code> should be changed to more accurately state what it is, and descriptions added / updated to reflect this.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788/1</link>
+        <pubDate>Wed, 05 Apr 2017 09:49:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-788-1</guid>
+        <source url="https://discuss.iatistandard.org/t/specification-of-user-defined-vocabularies/788.rss">Specification of User-Defined Vocabularies</source>
+      </item>
+  </channel>
+</rss>

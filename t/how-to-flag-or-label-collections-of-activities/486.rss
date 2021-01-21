@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to flag or label collections of activities?</title>
+    <link>https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486</link>
+    <description>We would like to be able to label all activities from UK government related to the International Climate Facility (ICF). Obviously we could add &quot;ICF&quot; to every activity title or description, but is there a better, more structured way using one of the other fields?
+
+I would rather use a core field rather than an extension as it mean that tools like OIPA and Datastore will pick that up.</description>
+    
+    <lastBuildDate>Wed, 08 Jun 2016 17:02:27 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to flag or label collections of activities?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I had the same idea as Rory and Wendy.  We’re doing something similar with various thematic priorities.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486/4</link>
+        <pubDate>Wed, 08 Jun 2016 17:02:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-486-4</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486.rss">How to flag or label collections of activities?</source>
+      </item>
+      <item>
+        <title>How to flag or label collections of activities?</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Interesting question <a class="mention" href="/u/johnadams">@JohnAdams</a>. My first thought was whether you could integrate ‘ICF’ as a value on either your own ‘Sector’ or ‘policy-marker’ code vocabularies (‘99’)? Would that work?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486/3</link>
+        <pubDate>Wed, 08 Jun 2016 13:57:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-486-3</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486.rss">How to flag or label collections of activities?</source>
+      </item>
+      <item>
+        <title>How to flag or label collections of activities?</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello John,</p>
+<p>It depends on how structured you want the element to be. One approach which would lead to fairly structured data, but using quite a flexible element is to include an additional description element of type <a href="http://iatistandard.org/202/codelists/DescriptionType/" rel="nofollow noopener"><code>4 - other</code></a> to then include a specific tag for activities related to the International Climate Facility:</p>
+<pre><code class="lang-xml">  &lt;!--rest of activity--&gt;
+  &lt;description type="1"&gt;
+     &lt;narrative&gt;Original activity description: principle operations etc.&lt;/narrative&gt;
+  &lt;/description&gt;
+  &lt;description type="4"&gt;
+     &lt;narrative&gt;IFC&lt;/narrative&gt;
+    &lt;/description&gt;
+  &lt;!--rest of activity--&gt;
+</code></pre>
+<p>Another, more structured approach could be to use the policy marker element and a custom DFID vocabulary:</p>
+<pre><code class="lang-xml">&lt;policy-marker vocabulary="99" vocabulary-uri="http://dfid.customvocabs.com/policy-marker-vocab.html" code="IFC" significance="3" /&gt;
+</code></pre>
+<p>Here you could host a page explaining the way you’ve encoded this information along with a table of values, which could be referenced in the <code>vocabulary-uri</code> attribute, and you could use the <a href="http://iatistandard.org/202/codelists/PolicySignificance/" rel="nofollow noopener"><code>significance</code></a> codelist as is.</p>
+<p>Do either of these solutions look tenable to you? If not there maybe more, but I’d have to have a think!</p>
+<p>Best,<br>
+Rory</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486/2</link>
+        <pubDate>Wed, 08 Jun 2016 13:56:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-486-2</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486.rss">How to flag or label collections of activities?</source>
+      </item>
+      <item>
+        <title>How to flag or label collections of activities?</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>We would like to be able to label all activities from UK government related to the International Climate Facility (ICF). Obviously we could add “ICF” to every activity title or description, but is there a better, more structured way using one of the other fields?</p>
+<p>I would rather use a core field rather than an extension as it mean that tools like OIPA and Datastore will pick that up.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486/1</link>
+        <pubDate>Wed, 08 Jun 2016 11:39:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-486-1</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-flag-or-label-collections-of-activities/486.rss">How to flag or label collections of activities?</source>
+      </item>
+  </channel>
+</rss>

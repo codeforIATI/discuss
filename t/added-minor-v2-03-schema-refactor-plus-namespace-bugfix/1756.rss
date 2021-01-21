@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>[Added] Minor v2.03 schema refactor, plus namespace bugfix</title>
+    <link>https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756</link>
+    <description>A [pull request was sent/received](https://github.com/IATI/IATI-Schemas/pull/426) that makes changes to the version 2.03 schema. @IATI-techteam [suggested](https://github.com/IATI/IATI-Schemas/pull/426#issuecomment-489103690) raising it with the community before they reach a decision, so that’s what I’m doing here.
+
+The [pull request in question](https://github.com/IATI/IATI-Schemas/pull/426) DRYs up the schema a bit, to move some currency-related code out of the activity and organisation schemas and into the common schema (used by both). This is consistent with other refactoring changes made at v2.03.
+
+It also fixes a minor bug related to custom namespaces. Java programmers may have run into this problem, since [xjc](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/xjc.html) gets stuck as a result of this bug (`Unique Particle Attribution error`).
+
+If anyone objects to (or supports!) changing the v2.03 schema in this way, speak now! Thanks</description>
+    
+    <lastBuildDate>Fri, 09 Aug 2019 13:26:48 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>[Added] Minor v2.03 schema refactor, plus namespace bugfix</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Great – many thanks <a class="mention" href="/u/iati-techteam">@IATI-techteam</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756/4</link>
+        <pubDate>Fri, 09 Aug 2019 13:26:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1756-4</guid>
+        <source url="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756.rss">[Added] Minor v2.03 schema refactor, plus namespace bugfix</source>
+      </item>
+      <item>
+        <title>[Added] Minor v2.03 schema refactor, plus namespace bugfix</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p>The changes have been checked on our end as well and we have merged them in the <code>version-2.03</code> branch <a href="https://github.com/IATI/IATI-Schemas/commit/3d084f107fd5de6be06cb5a3aae101b6eb8a7b1e" rel="nofollow noopener">today</a> since there has been no further activity on this thread.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756/3</link>
+        <pubDate>Fri, 09 Aug 2019 13:13:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1756-3</guid>
+        <source url="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756.rss">[Added] Minor v2.03 schema refactor, plus namespace bugfix</source>
+      </item>
+      <item>
+        <title>[Added] Minor v2.03 schema refactor, plus namespace bugfix</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>thanks for this <a class="mention" href="/u/andylolz">@andylolz</a> …20 chars</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756/2</link>
+        <pubDate>Wed, 05 Jun 2019 16:49:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1756-2</guid>
+        <source url="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756.rss">[Added] Minor v2.03 schema refactor, plus namespace bugfix</source>
+      </item>
+      <item>
+        <title>[Added] Minor v2.03 schema refactor, plus namespace bugfix</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>A <a href="https://github.com/IATI/IATI-Schemas/pull/426" rel="nofollow noopener">pull request was sent/received</a> that makes changes to the version 2.03 schema. <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> <a href="https://github.com/IATI/IATI-Schemas/pull/426#issuecomment-489103690" rel="nofollow noopener">suggested</a> raising it with the community before they reach a decision, so that’s what I’m doing here.</p>
+<p>The <a href="https://github.com/IATI/IATI-Schemas/pull/426" rel="nofollow noopener">pull request in question</a> DRYs up the schema a bit, to move some currency-related code out of the activity and organisation schemas and into the common schema (used by both). This is consistent with other refactoring changes made at v2.03.</p>
+<p>It also fixes a minor bug related to custom namespaces. Java programmers may have run into this problem, since <a href="https://docs.oracle.com/javase/8/docs/technotes/tools/unix/xjc.html" rel="nofollow noopener">xjc</a> gets stuck as a result of this bug (<code>Unique Particle Attribution error</code>).</p>
+<p>If anyone objects to (or supports!) changing the v2.03 schema in this way, speak now! Thanks</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756/1</link>
+        <pubDate>Mon, 03 Jun 2019 15:55:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1756-1</guid>
+        <source url="https://discuss.iatistandard.org/t/added-minor-v2-03-schema-refactor-plus-namespace-bugfix/1756.rss">[Added] Minor v2.03 schema refactor, plus namespace bugfix</source>
+      </item>
+  </channel>
+</rss>

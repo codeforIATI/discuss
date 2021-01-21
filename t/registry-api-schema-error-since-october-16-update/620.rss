@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Registry API Schema Error Since October &#39;16 Update</title>
+    <link>https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620</link>
+    <description>I&#39;ve encountered a schema error (&quot;key already exists&quot;) stemming from the &quot;Extras&quot; hash when attempting to create or update datasets via the Registry API.  My code had been working for these actions prior to the recent API update in October.
+
+Folks from IATI support (and CKAN) have been notified and are looking into it; however in the meantime, I wondered if anyone else in the API user community uses the &quot;extras&quot; hash when adding or updating datasets, and if so whether you have encountered any similar hiccups.  If anyone is using that section and it&#39;s working, I&#39;d love to hear from you!
+
+Regards - 
+Robert</description>
+    
+    <lastBuildDate>Thu, 25 Jan 2018 18:57:15 +0000</lastBuildDate>
+    <category>APIs</category>
+    <atom:link href="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Registry API Schema Error Since October &#39;16 Update</title>
+        <dc:creator><![CDATA[Robert]]></dc:creator>
+        <description><![CDATA[
+            <p>Fantastic – glad to hear it!</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/7</link>
+        <pubDate>Thu, 25 Jan 2018 18:57:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-620-7</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620.rss">Registry API Schema Error Since October &#39;16 Update</source>
+      </item>
+      <item>
+        <title>Registry API Schema Error Since October &#39;16 Update</title>
+        <dc:creator><![CDATA[Steven_Hicks]]></dc:creator>
+        <description><![CDATA[
+            <p>Robert - your suggestion worked perfectly and saved me from digging through the code. Thanks so much!</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/6</link>
+        <pubDate>Thu, 25 Jan 2018 18:41:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-620-6</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620.rss">Registry API Schema Error Since October &#39;16 Update</source>
+      </item>
+      <item>
+        <title>Registry API Schema Error Since October &#39;16 Update</title>
+        <dc:creator><![CDATA[Robert]]></dc:creator>
+        <description><![CDATA[
+            <p>For reference, if you like:  <a href="https://github.com/ViderumGlobal/ckanext-iati/blob/9fd3ce35441c0416e5876ef8b785acd22a6ef52e/ckanext/iati/plugins.py" rel="nofollow noopener">https://github.com/ViderumGlobal/ckanext-iati/blob/9fd3ce35441c0416e5876ef8b785acd22a6ef52e/ckanext/iati/plugins.py</a></p>
+<p>check out the method “_modify_package_schema” to see all the fields that are explicitly converted now.</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/5</link>
+        <pubDate>Thu, 25 Jan 2018 15:17:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-620-5</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620.rss">Registry API Schema Error Since October &#39;16 Update</source>
+      </item>
+      <item>
+        <title>Registry API Schema Error Since October &#39;16 Update</title>
+        <dc:creator><![CDATA[Robert]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven,<br>
+I managed to figure this one out a few months ago after looking at the registry source code and changelog.  There was a change in how the ‘extras’ were handled.</p>
+<p>There had been attributes we had to submit within an “extras” hash because the registry did not autoconvert them.  Many (at least all of the ones I’ve been using) are now accounted for, so rather than this:</p>
+<pre><code>{
+  filetype: "activity",
+  owner_org: "ia_nam",
+  ...,
+  extras: {
+    iati_version: "2.1",
+    data_updated: "2018-01-01",
+    activity_count: 5
+  }
+}
+</code></pre>
+<p>we now have to reposition those extras because they are now accounted for in the schema by auto-conversion.  So adding them explicitly creates a conflict.  So, now I do:</p>
+<pre><code>{
+  filetype: "activity",
+  owner_org: "ia_nam",
+  ...,
+  iati_version: "2.1",
+  data_updated: "2018-01-01",
+  activity_count: 5
+}
+</code></pre>
+<p>without specifying extras, as they are now explicitly auto-converted by the registry.</p>
+<p>The above works great if you’re adding brand new packages.  However, I found out that updating existing packages that were submitted the old way (with an “extras” hash in our code) may fail if you just patch the fields like the CKAN docs recommend:  running package_search or package_show and then calling package_update on the result with new data.  The problem is that the old extras hang around, so what I did was make sure to add a line to delete the “extras” hash from my package_show/search result before patching with package_update.  Then there’s no conflict to throw the schema error.</p>
+<p>Happy to send a code snippet if needed.   Hope this helps!</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/4</link>
+        <pubDate>Thu, 25 Jan 2018 15:09:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-620-4</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620.rss">Registry API Schema Error Since October &#39;16 Update</source>
+      </item>
+      <item>
+        <title>Registry API Schema Error Since October &#39;16 Update</title>
+        <dc:creator><![CDATA[Steven_Hicks]]></dc:creator>
+        <description><![CDATA[
+            <p>I too am encountering the error: <strong>There is a schema field with the same name</strong> regarding the ‘extras’.</p>
+<p>Since some of the data I need to update is in this area (activity_count and data_updated), it is kind of important that the API actually works.</p>
+<p>Is there any traction on this issue?</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/3</link>
+        <pubDate>Thu, 25 Jan 2018 14:26:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-620-3</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620.rss">Registry API Schema Error Since October &#39;16 Update</source>
+      </item>
+      <item>
+        <title>Registry API Schema Error Since October &#39;16 Update</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I encountered some strange behaviour if the registry as well. The organisation file of publisher ‘achest’ has an incorrect filetype ‘activity’ in the json response from the registry. Unclear if this is a registry problem or an data entry problem. Imo the registry should check on the actual file type of the supplied XML, before setting the filetype attribute.</p>
+<p>Regards<br>
+Herman</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/2</link>
+        <pubDate>Fri, 18 Nov 2016 17:06:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-620-2</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620.rss">Registry API Schema Error Since October &#39;16 Update</source>
+      </item>
+      <item>
+        <title>Registry API Schema Error Since October &#39;16 Update</title>
+        <dc:creator><![CDATA[Robert]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve encountered a schema error (“key already exists”) stemming from the “Extras” hash when attempting to create or update datasets via the Registry API.  My code had been working for these actions prior to the recent API update in October.</p>
+<p>Folks from IATI support (and CKAN) have been notified and are looking into it; however in the meantime, I wondered if anyone else in the API user community uses the “extras” hash when adding or updating datasets, and if so whether you have encountered any similar hiccups.  If anyone is using that section and it’s working, I’d love to hear from you!</p>
+<p>Regards -<br>
+Robert</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620/1</link>
+        <pubDate>Tue, 15 Nov 2016 12:39:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-620-1</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-api-schema-error-since-october-16-update/620.rss">Registry API Schema Error Since October &#39;16 Update</source>
+      </item>
+  </channel>
+</rss>

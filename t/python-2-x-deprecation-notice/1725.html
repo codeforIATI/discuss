@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:31:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Python 2.x Deprecation Notice - Notifications - IATI Community Discussions</title>
+    <meta name="description" content="As part of the work planned for this quarter, the Tech Team will be upgrading the programming language used across a number of our tools. 
+As of 1st January 2020, Python 2.x will no longer be supported globally. To ensur&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1725.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Python 2.x Deprecation Notice&#39;" href="1725.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725" />
+<meta property="og:title" content="Python 2.x Deprecation Notice" />
+<meta name="twitter:title" content="Python 2.x Deprecation Notice" />
+<meta property="og:description" content="As part of the work planned for this quarter, the Tech Team will be upgrading the programming language used across a number of our tools.  As of 1st January 2020, Python 2.x will no longer be supported globally. To ensure that our tools remain functional and up-to-date, we are commencing upgrades now.  Standard tools affected will be:    Rulesets: https://github.com/IATI/IATI-Rulesets    Stats: https://github.com/IATI/IATI-Stats    Dashboard: https://github.com/IATI/IATI-Dashboard    SSOT refere..." />
+<meta name="twitter:description" content="As part of the work planned for this quarter, the Tech Team will be upgrading the programming language used across a number of our tools.  As of 1st January 2020, Python 2.x will no longer be supported globally. To ensure that our tools remain functional and up-to-date, we are commencing upgrades now.  Standard tools affected will be:    Rulesets: https://github.com/IATI/IATI-Rulesets    Stats: https://github.com/IATI/IATI-Stats    Dashboard: https://github.com/IATI/IATI-Dashboard    SSOT refere..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="11 ❤" />
+<meta property="article:published_time" content="2019-04-26T15:11:32+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1725.html">Python 2.x Deprecation Notice</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/notifications/29.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F73357'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Notifications</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-26T15:11:32Z' class='post-time'>
+                April 26, 2019,  3:11pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-26T15:11:32Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>As part of the <a href="https://iatistandard.org/en/news/iati-technical-team-our-detailed-quarterly-update/">work planned for this quarter</a>, the Tech Team will be upgrading the programming language used across a number of our tools.</p>
+<p>As of 1st January 2020, <a href="https://www.python.org/dev/peps/pep-0373/">Python 2.x will no longer be supported</a> globally. To ensure that our tools remain functional and up-to-date, we are commencing upgrades now.</p>
+<p>Standard tools affected will be:</p>
+<ul>
+<li>
+<p>Rulesets: <a href="https://github.com/IATI/IATI-Rulesets">https://github.com/IATI/IATI-Rulesets</a></p>
+</li>
+<li>
+<p>Stats: <a href="https://github.com/IATI/IATI-Stats">https://github.com/IATI/IATI-Stats</a></p>
+</li>
+<li>
+<p>Dashboard: <a href="https://github.com/IATI/IATI-Dashboard">https://github.com/IATI/IATI-Dashboard</a></p>
+</li>
+<li>
+<p>SSOT reference site: <a href="https://github.com/IATI/IATI-Standard-SSOT">https://github.com/IATI/IATI-Standard-SSOT</a></p>
+</li>
+<li>
+<p>Codelists Non Embedded: <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded">https://github.com/IATI/IATI-Codelists-NonEmbedded</a></p>
+</li>
+<li>
+<p>Codelists: <a href="https://github.com/IATI/IATI-Codelists">https://github.com/IATI/IATI-Codelists</a></p>
+</li>
+<li>
+<p>Developer Documentation: <a href="https://github.com/IATI/IATI-Developer-Documentation">https://github.com/IATI/IATI-Developer-Documentation</a></p>
+</li>
+<li>
+<p>Extra Documentation: <a href="https://github.com/IATI/IATI-Extra-Documentation">https://github.com/IATI/IATI-Extra-Documentation</a></p>
+</li>
+<li>
+<p>Csv2IATI: <a href="https://github.com/IATI/CSV2IATI">https://github.com/IATI/CSV2IATI</a></p>
+</li>
+<li>
+<p>Missing activity checker: <a href="https://github.com/IATI/IATI-Missing-Activity-Checker">https://github.com/IATI/IATI-Missing-Activity-Checker</a></p>
+</li>
+</ul>
+<p>As a part of a wider reconfiguration of tools, the following internal tools are being considered for deprecation, and therefore aren’t a priority for upgrade:</p>
+<ul>
+<li>
+<p>Websites: <a href="https://github.com/IATI/IATI-Websites">https://github.com/IATI/IATI-Websites</a></p>
+</li>
+<li>
+<p>deployment: <a href="https://github.com/IATI/deployment">https://github.com/IATI/deployment</a></p>
+</li>
+</ul>
+<p>The Datastore is currently undergoing a major rebuild using Python 3.x as default, so no action will be taken on the current repository. The new Datastore is being released this quarter.</p>
+<p>For developers, the upgrade means that virtual environments must be configured to use Python 3.x and dependencies upgraded. We urge that any contributions use <a href="https://docs.python.org/3/reference/">Python 3 complicit code</a>.</p>
+<p>Tool documentation will be updated with instructions for using Python 3 virtual environments.</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-26T16:02:53Z' class='post-time'>
+                April 26, 2019,  4:02pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-26T16:02:53Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hooray for python 3! <img src="../../images/emoji/twitter/tadaae52.png?v=5" title=":tada:" class="emoji" alt=":tada:"> This is great – hopefully a good opportunity to make some incremental improvements to some old codebases.</p>
+<p>One thing to note: <a href="http://csv2iati.iatistandard.org/">CSV2IATI</a> definitely should not be upgraded to python 3, since it was <a href="../update-csv2iati-decommissioning/905/14.html">decommissioned last year</a>. I don’t know about the missing activity checker – I don’t know if that is in use.</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-27T15:34:15Z' class='post-time'>
+                April 27, 2019,  3:34pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-27T15:34:15Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve converted <a href="https://github.com/IATI/IATI-Registry-Refresher" rel="nofollow noopener">IATI Registry Refresher</a> from PHP to python3, in case that’s useful.</p>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Registry-Refresher/pull/27" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Registry-Refresher</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Pull Request">
+    <svg width="60" height="60" class="github-icon" viewBox="0 0 12 16" aria-hidden="true"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Registry-Refresher/pull/27" target="_blank" rel="nofollow noopener">Convert grab_urls.php to python3</a>
+    </h4>
+
+    <div class="branches">
+      <code>IATI:python-3-upgrade</code> ← <code>andylolz:python3</code>
+    </div>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2019-04-27" data-time="15:21:20" data-timezone="UTC">03:21PM - 27 Apr 19 UTC</span>
+      </div>
+
+      <div class="user">
+        <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+          <img alt="andylolz" src="https://avatars1.githubusercontent.com/u/464193?v=4" class="onebox-avatar-inline" width="20" height="20">
+          andylolz
+        </a>
+      </div>
+
+      <div class="lines" title="3 commits changed 6 files with 91 additions and 114 deletions">
+        <a href="https://github.com/IATI/IATI-Registry-Refresher/pull/27/files" target="_blank" rel="nofollow noopener">
+          <span class="added">+91</span>
+          <span class="removed">-114</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/sargentfrancesca.html'><span itemprop='name'>sargentfrancesca</span></a>
+            (Francesca Sargent)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-29T08:22:16Z' class='post-time'>
+                April 29, 2019,  8:22am
+              </time>
+              <meta itemprop='dateModified' content='2019-04-29T08:22:16Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Andy, that’s great, thank you! We’ll look into the registry refresher.</p>
+<blockquote>
+<p><a href="http://csv2iati.iatistandard.org/" rel="nofollow noopener">CSV2IATI</a> definitely should not be upgraded to python 3</p>
+</blockquote>
+<p>This has indeed been decommissioned, however there is potential that some publishers are using this tool. So, for now, we’ve marked this upgrade as a low priority and are keeping it on our radar whilst we scope who might still be using it and consider steps for rounding off the decommission completely.</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924.html" itemprop='item'>
+                      <meta itemprop='url' content='../python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924.html'>
+                      <meta itemprop='position' content='2'>
+                      <span itemprop='name'>Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-09-09T12:27:26Z'>
+              <time itemprop='dateModified' datetime='2019-09-09T12:28:16Z' class='post-time'>
+                September 9, 2019, 12:28pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Python Software Foundation <a href="https://www.python.org/doc/sunset-python-2/" rel="nofollow noopener">wrote about this today.</a></p>
+<p>The IATI python upgrade featured in <a href="https://iatistandard.org/en/news/iati-technical-team-our-detailed-quarterly-update/" rel="nofollow noopener">April’s technical update</a>, but <a href="https://iatistandard.org/en/news/iati-technical-team-quarterly-update/" rel="nofollow noopener">not July’s</a>.</p>
+<p>I understand a bunch of work has happened on this since April, which is brilliant. Given that, would it be possible to get an update from <a class="mention" href="../../u/iati-techteam-2.html">@IATI-techteam</a> on current progress &amp; work remaining, with respect to the repositories referenced above?</p>
+<p>Thanks</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/samuele-mattiuzzo.html'><span itemprop='name'>samuele-mattiuzzo</span></a>
+            (Samuele Mattiuzzo)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-09-09T15:14:06Z' class='post-time'>
+                September 9, 2019,  3:14pm
+              </time>
+              <meta itemprop='dateModified' content='2019-09-09T15:14:06Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hello Andy, thanks for re flagging this. We were going to update at work complete but an interim update won’t hurt.</p>
+<p>As of now, the tools that have not yet been upgraded to Python 3 are:</p>
+<ul>
+<li>
+<p>IATI Dashboard: <em>now separated from Publishing Statistics</em></p>
+</li>
+<li>
+<p>IATI Publishing Statistics: <em>stand alone; did not exist at the time we wrote the original post</em></p>
+</li>
+<li>
+<p>IATI Stats: <em>hard dependency on the split work that happened above</em></p>
+</li>
+<li>
+<p>IATI Datastore: <em>soon to be replaced by the new one</em></p>
+</li>
+<li>
+<p>IATI Registry Refresher <em>does not really fit this list as it’s currently in a different language and does not require an upgrade</em></p>
+</li>
+</ul>
+<p>Dashboard, Publishing Statistics and Stats will be our next upgrade focus, followed by the Datastore (based on the new Datastore’s progress).</p>
+<p>Registry Refresher is at the bottom of our priority list because of it not really being affected by the deprecation deadline, being in PHP so we’ll see about this as we move forward and complete more critical work.</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="4" />
+           <span class='post-likes'>4 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-09-11T15:19:06Z' class='post-time'>
+                September 11, 2019,  3:19pm
+              </time>
+              <meta itemprop='dateModified' content='2019-09-11T15:19:06Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for this update. Sounds like a lot of progress has been made on this, which is great.</p>
+<aside class="quote no-group" data-post="1" data-topic="1725">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/iati-techteam/40/432_2.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<ul>
+<li>Csv2IATI: <a href="https://github.com/IATI/CSV2IATI" rel="nofollow noopener">https://github.com/IATI/CSV2IATI</a>
+</li>
+<li>Missing activity checker: <a href="https://github.com/IATI/IATI-Missing-Activity-Checker" rel="nofollow noopener">https://github.com/IATI/IATI-Missing-Activity-Checker</a>
+</li>
+</ul>
+</blockquote>
+</aside>
+<p>^^ Looks like these two haven’t been converted to python 3. Was the conclusion of the scoping exercise <a href="1725/4.html">mentioned above</a> that these won’t be converted?</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/samuele-mattiuzzo.html'><span itemprop='name'>samuele-mattiuzzo</span></a>
+            (Samuele Mattiuzzo)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-09-12T11:06:44Z' class='post-time'>
+                September 12, 2019, 11:06am
+              </time>
+              <meta itemprop='dateModified' content='2019-09-12T11:06:44Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><code>CSV2IATI</code> has been deprecated and put offline, no further work will happen on it.</p>
+<p><code>Missing Activity Checker</code> has been deprecated as it did not seem to be in use, no further work will happen on it.</p>
+<p>Both codebases will remain available. The Tech Team is available in case further contact is needed.</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-15T12:52:53Z' class='post-time'>
+                October 15, 2019, 12:52pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-15T12:52:53Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Is there also a plan to upgrade the IATI Registry to python 3?</p>
+<p>I realise the registry code is managed by an agency. Is upgrading to python 3 on their radar?</p>
+<p>It looks like the next minor version of CKAN <a href="https://github.com/ckan/ckan/issues/4681" rel="nofollow noopener">will have python 3 support</a>, so I guess that is a big part of the upgrade.</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/John_Askew.html'><span itemprop='name'>John_Askew</span></a>
+            (John Askew)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-04T12:20:59Z' class='post-time'>
+                November 4, 2019, 12:20pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-04T12:20:59Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi Andy, some of the background work has been done to upgrade the custom ckan-iati code that currently exists, and the agency we’re working with expects to finish and deliver this work by year end.<br>
+It appears that CKAN itself will support <a href="https://github.com/ckan/ckan/issues/4681#issuecomment-532699519" rel="nofollow noopener">python 3 as of version 2.9</a>, but that might not come out until the first quarter of 2020. So while the bespoke IATI code will support python 3, the ckan base will not until said update is rolled out.<br>
+If anything else comes up regarding this I’ll make sure to update this thread.</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-17T21:54:34Z' class='post-time'>
+                August 17, 2020,  9:54pm
+              </time>
+              <meta itemprop='dateModified' content='2020-08-17T21:54:34Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Is there an update on the python3 upgrade? This was a focus for the tech team in 2019, and I see it was covered in the <a href="https://iatistandard.org/en/news/iati-tech-quarterly-update-q1-2020/" rel="nofollow noopener">Q1 2020 technical update</a> but not since.</p>
+<p>A few things to note from looking at the open source code:</p>
+<ul>
+<li>There’s <a href="https://github.com/IATI/IATI-Dashboard/pull/565" rel="nofollow noopener">an approved but unmerged PR</a> to upgrade the IATI-Dashboard to python3. The <code>live</code> branch is still using python2.</li>
+<li>Similarly for the IATI-Publishing-Statistics code, there’s <a href="https://github.com/IATI/IATI-Publishing-Statistics/pull/7" rel="nofollow noopener">a draft PR</a> that includes the python3 upgrade. The <code>master</code> branch is still using python2.</li>
+<li>The <code>live</code> branch of the IATI-Stats code is still using python2.</li>
+</ul>
+<p>It’s possible python3 is in use on production, which would be great. If so, the public code on github should be updated to reflect that.</p>
+<p>Re. the registry: it looks as though <a href="https://docs.ckan.org/en/2.9/changelog.html#major-features" rel="nofollow noopener">CKAN v2.9 was released two weeks ago, with python3 support</a>. So upgrading to that version would make it possible to upgrade the registry to python3.</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-08-24T11:25:18Z' class='post-time'>
+                August 24, 2020, 11:25am
+              </time>
+              <meta itemprop='dateModified' content='2020-08-24T11:25:18Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Derilinx are currently working on the CKAN python three upgrade work, so we hope this will be deployed soon.</p>
+<p>We’ve got a few people from the team on holiday currently, so we will give an update about Publisher Stats and the Dashboard in a couple of weeks time.  Thank you for your patience.</p>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/petyakangalova.html'><span itemprop='name'>petyakangalova</span></a>
+            (Petya Kangalova)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1725.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-09-04T11:25:08Z' class='post-time'>
+                September 4, 2020, 11:25am
+              </time>
+              <meta itemprop='dateModified' content='2020-09-04T11:25:08Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Update on the Registry work:</p>
+<ul>
+<li>The IATI Registry is currently at <a href="https://iatiregistry.org/api/action/status_show">CKAN 2.8.5</a>. Changelog with ckan 2.8.5 can be accessed in <a href="https://docs.ckan.org/en/2.8/changelog.html">here</a>.</li>
+<li>The CKAN Python 3 upgrade will then happen in a two step approach:<br>
+Update to ckan 2.9 (Python 2) - major change: pylons have been removed and now everything is in flask.<br>
+Update on ckan 2.9 to (Python 3)- migrate extensions to python 3 and deploy in staging which should undergo exhaustive testing.<br>
+Details and updates will added on <a href="https://github.com/IATI/ckanext-iati/issues">Github</a> and we will keep the community posted on Discuss as well.</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Python 2.x Deprecation Notice'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:31:21 GMT -->
+</html>

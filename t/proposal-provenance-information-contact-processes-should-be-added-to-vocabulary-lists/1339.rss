@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Proposal: provenance information &amp; contact processes should be added to vocabulary lists</title>
+    <link>https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339</link>
+    <description>As IATI builds up use and reliance on external codelists, specifically through the function of vocabularies, there exists some risk that these lists might disappear/change/alter.  Should this occur, then there should be a clear channel via which users and/or IATI can contact the list holder to seek clarification / fixes
+
+The [Humanitarian Scope Vocabulary](http://iatistandard.org/203/codelists/HumanitarianScopeVocabulary/) list is a good example.  There&#39;s an [ongoing thread](https://discuss.iatistandard.org/t/help-cant-access-glide-numbers/1225/) about how one entry (GLIDE) seems to have intermittent availability, whilst the Humanitarian Plan list changed from a CSV to XML.  Looking at the information presented for the list, there isn&#39;t much to help the end user:
+
+![hum|654x200](upload://klr9EYehk3sR7snrb42ubrfzuBk.png)
+
+Q - from the Name &amp; URL provided, can you understand who owns / publishes this list, and how to contact them?
+
+Over at [Sector Vocabulary, we now have 10 external lists](http://iatistandard.org/203/codelists/SectorVocabulary/).  Today, one of these was discovered to be password protected (or moved), meaning it could not be accessed.  We [solved the issue quickly](https://twitter.com/stevieflow/status/1002499514333302785) (thanks @David_Megginson @rbesseling) via twitter - but that feels rather sticky tape.
+
+**Proposal**
+
+i. For external vocabulary lists in the IATI standard, we add / revise the codelist introductory text to make it clear that these are external lists.  We detail that for any issues found with these lists should be reported to either a) the list owner and b) the IATI Secretariat.  
+
+ii. For each vocabulary entry, we update the Description text to provide provenance details for the list owner.  This may differ across entries, but should at least include a named organisation/publisher, and URL for contact details
+
+iii. Infrastructure is put in place to monitor the availability of these external resources.  We can&#39;t rely on casual browsers to hit Page Not Found, or similar.  There exist simple services to help us here.
+
+iv. Efforts are made to ensure that list owners are fully aware that IATI are pointing at their list.  Again, this may vary, but may mitigate against list owners changing their arrangements without notifying a user community
+
+Further suggestions and ideas very welcome.  I do not believe any of these changes are version dependent/breaking changes, and could be considered as a bug, therefore implemented quickly and effectively.  Vocabulary lists are [Non-Embedded](http://iatistandard.org/203/codelists/codelist-management/#non-embedded-codelist), so can be changed with community consensus, as far as I understand.</description>
+    
+    <lastBuildDate>Fri, 08 Jun 2018 08:48:08 +0000</lastBuildDate>
+    <category>Codelists</category>
+    <atom:link href="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Proposal: provenance information &amp; contact processes should be added to vocabulary lists</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>There has been some interesting work in projects like <a href="http://amberlink.org/" rel="nofollow noopener">http://amberlink.org/</a> to create archives of linked content, with fallback when source sites are down.</p>
+<p>This would help with the human link-following use case I believe, although there might be alternative solutions for providing proxy and caching for machine-readable access to lists.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339/4</link>
+        <pubDate>Fri, 08 Jun 2018 08:48:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1339-4</guid>
+        <source url="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339.rss">Proposal: provenance information &amp; contact processes should be added to vocabulary lists</source>
+      </item>
+      <item>
+        <title>Proposal: provenance information &amp; contact processes should be added to vocabulary lists</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/david_megginson">@David_Megginson</a></p>
+<p>For others - the <a href="https://twitter.com/stevieflow/status/1002590877041287170" rel="nofollow noopener">discussion is taking place on twitter</a> (w/ <a class="mention" href="/u/andylolz">@andylolz</a>)  !</p>
+<p>The cache approach sounds useful.  I just want to flag that my main focus here is what <strong>IATI can do</strong>, in terms of maintaining the codelist of vocabularies.  To my mind, better data on who maintains such vocabularies doesn’t seem to be a major technical blocker or infrastructural request…</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339/3</link>
+        <pubDate>Mon, 04 Jun 2018 10:25:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1339-3</guid>
+        <source url="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339.rss">Proposal: provenance information &amp; contact processes should be added to vocabulary lists</source>
+      </item>
+      <item>
+        <title>Proposal: provenance information &amp; contact processes should be added to vocabulary lists</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a general problem for all distributed/open-data initiatives and platforms, including IATI, the Semantic Web, and HDX (among many others). As I mentioned on Twitter, I think part of the solution is having a cache available as a fallback, the same way that Google offers cached versions of the web pages it indexes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339/2</link>
+        <pubDate>Fri, 01 Jun 2018 17:21:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1339-2</guid>
+        <source url="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339.rss">Proposal: provenance information &amp; contact processes should be added to vocabulary lists</source>
+      </item>
+      <item>
+        <title>Proposal: provenance information &amp; contact processes should be added to vocabulary lists</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>As IATI builds up use and reliance on external codelists, specifically through the function of vocabularies, there exists some risk that these lists might disappear/change/alter.  Should this occur, then there should be a clear channel via which users and/or IATI can contact the list holder to seek clarification / fixes</p>
+<p>The <a href="http://iatistandard.org/203/codelists/HumanitarianScopeVocabulary/" rel="nofollow noopener">Humanitarian Scope Vocabulary</a> list is a good example.  There’s an <a href="https://discuss.iatistandard.org/t/help-cant-access-glide-numbers/1225/">ongoing thread</a> about how one entry (GLIDE) seems to have intermittent availability, whilst the Humanitarian Plan list changed from a CSV to XML.  Looking at the information presented for the list, there isn’t much to help the end user:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/8e97dbbce0cfa62ab0e8e986e22be7d00189b6ba.png" alt="hum" width="654" height="200"></p>
+<p>Q - from the Name &amp; URL provided, can you understand who owns / publishes this list, and how to contact them?</p>
+<p>Over at <a href="http://iatistandard.org/203/codelists/SectorVocabulary/" rel="nofollow noopener">Sector Vocabulary, we now have 10 external lists</a>.  Today, one of these was discovered to be password protected (or moved), meaning it could not be accessed.  We <a href="https://twitter.com/stevieflow/status/1002499514333302785" rel="nofollow noopener">solved the issue quickly</a> (thanks <a class="mention" href="/u/david_megginson">@David_Megginson</a> <a class="mention" href="/u/rbesseling">@rbesseling</a>) via twitter - but that feels rather sticky tape.</p>
+<p><strong>Proposal</strong></p>
+<p>i. For external vocabulary lists in the IATI standard, we add / revise the codelist introductory text to make it clear that these are external lists.  We detail that for any issues found with these lists should be reported to either a) the list owner and b) the IATI Secretariat.</p>
+<p>ii. For each vocabulary entry, we update the Description text to provide provenance details for the list owner.  This may differ across entries, but should at least include a named organisation/publisher, and URL for contact details</p>
+<p>iii. Infrastructure is put in place to monitor the availability of these external resources.  We can’t rely on casual browsers to hit Page Not Found, or similar.  There exist simple services to help us here.</p>
+<p>iv. Efforts are made to ensure that list owners are fully aware that IATI are pointing at their list.  Again, this may vary, but may mitigate against list owners changing their arrangements without notifying a user community</p>
+<p>Further suggestions and ideas very welcome.  I do not believe any of these changes are version dependent/breaking changes, and could be considered as a bug, therefore implemented quickly and effectively.  Vocabulary lists are <a href="http://iatistandard.org/203/codelists/codelist-management/#non-embedded-codelist" rel="nofollow noopener">Non-Embedded</a>, so can be changed with community consensus, as far as I understand.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339/1</link>
+        <pubDate>Fri, 01 Jun 2018 16:38:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1339-1</guid>
+        <source url="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339.rss">Proposal: provenance information &amp; contact processes should be added to vocabulary lists</source>
+      </item>
+  </channel>
+</rss>

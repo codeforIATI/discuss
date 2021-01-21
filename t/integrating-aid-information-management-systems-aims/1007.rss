@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Integrating Aid Information Management Systems (AIMS)</title>
+    <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007</link>
+    <description>Yesterday [a debate brewed on Twitter](https://storify.com/isiAfrica/aims-integration) which I think is worth continuing in a less restrictive format.
+
+It started with me, having skimmed [UNDP&#39;s RFP document for a new AIMS in Somalia](http://procurement-notices.undp.org/view_file.cfm?doc_id=116829), commenting
+
+&gt; No mention in TOR of AIMS integrating with other budget, finance or line ministry systems.
+
+@markbrough 
+&gt; It&#39;s mentioned on p54: &quot;Export for budget process including relevant CoA coding and filtered by on/off-treasury&quot;
+
+
+@matmaxgeds
+&gt; Report choices best understood via p27-29 of the underlying study: http://bit.ly/2wMumOK  includes budget, finance, line Mins + many others
+
+@bill_anderson
+&gt; I don&#39;t think export and integration are the same thing. I see @matmaxgeds that the underlying study refers to &#39;budget integration&#39;
+
+@Joshua_Powell
+&gt;  Big challenge is integration requires 2-way collab. Often budget system/team either not ready/interested in integration. Politics matter.
+
+&gt; And typically push for integration comes more from external partner (or AIMS team) w/out buy-in or resources twinned on budget side.
+
+@markbrough
+&gt;  Yes. Plus, there are conceptual / linguistic gaps. AIMS/IFMIS teams not always talking about same thing even when they use the same words
+
+@bill_anderson
+
+&gt; Using politics, capacity, ignorance as excuses for building unsustainable systems doesn&#39;t wash
+
+@Joshua_Powell
+
+&gt;  Respectfully, ignoring politics is often the biggest cause of unsustainable systems. 1st FMIS trip I took, budget team refused all mtings.
+
+&gt;  Incentives, ownership, ARE systems, tech can a tool w/in systems. Same tech can suc/fail based on the political system in which it operates.
+
+@ariag
+
+&gt; Trick is to find a way to get buy in and support for system integration so the politics shift. Nobody said it would be easy
+
+It seems to me that @markbrough, @matmaxgeds and @Joshua_Powell - who are engaged in developing AIMS - take a pragmatic approach to system design. This approach is influenced by all the constraints they make above.
+
+My view is that this matter has nothing to do with IATI, or aid, but with the development of sustainable systems. In my view the argument for building the architecture for the integration of AIMS (with budget, finance and line ministry systems) now is no different from [the argument for the need of long-term investments in registry and administrative systems](http://devinit.org/post/long-term-investments-in-a-short-term-world-arguments-for-sustainable-data/) in general.
+
+I see the reliance on standalone AIMS in the same light as the current reliance in many development countries on household surveys for all  their socio-economic statistics: quick fixes diverting the limited resources available away from more sustainable solutions.</description>
+    
+    <lastBuildDate>Wed, 30 Aug 2017 17:52:31 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Integrating Aid Information Management Systems (AIMS)</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks all for a very interesting conversation, will follow with interest. The above already touches on a lot of questions/issues/concerns raised over the years in informal discussions with most of you (e.g. actual demand or use cases for aid data, how to assess AIMS, etc).</p>
+          <p><a href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/10</link>
+        <pubDate>Wed, 30 Aug 2017 17:52:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1007-10</guid>
+        <source url="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss">Integrating Aid Information Management Systems (AIMS)</source>
+      </item>
+      <item>
+        <title>Integrating Aid Information Management Systems (AIMS)</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Josh,</p>
+<p>Great suggestion, and I am absolutely up for building on Leigh’s work as a community (also because I agree with you that Park’s paper can be built improved) because I think there are some clear lessons to learn about where AIMS work well - that if they are better known will mean we all get more sensible commissions with a better chance of success.</p>
+<p>Can you think what a good starting definition of ‘functional’ is? I had started thinking about this a few years ago and got as far as:</p>
+<ul>
+<li>Coverage (% of volume, % of DPs, % of implementers)</li>
+<li>Timeliness (e.g. the former PEFA D2 indicator? Is there data entered within the last 6 months, is there future data)</li>
+<li>Inclusion of key fields (has sufficient CoA for budget, debt, M&amp;E)</li>
+<li>Features (can cope with multi-donor projects, mix loan/grant projects, and projects where some but not all funds are on-budget, can merge projects, can map between different FYs, and map between diff sector coding schema)</li>
+<li>Other features (IATI import, exposes API, mapping, excel export, auto backup/restore, able to edit lists e.g. Ministries, Sectors in interface)</li>
+</ul>
+<p>Thoughts/rewrites very much appreciated e.g. we should probably better split the technical features functionality from the ‘functional in terms of in-use’ components, need to figure out what is measurable etc</p>
+<p>RE DFMAS link - thanks for the info, I had expected this was AIMS &gt; DFMAS but now see it is DFMAS &gt; AIMS. Given it is Uganda and that they have a very strong system for getting loans ‘on-parliament’ I am not surprised that the debt side has better data. It does fit with the idea that the next phase of IATI might be reaching beyond AIMS more e.g. IATI &gt; DFMAS which I am always keen on as debt work is one of the few use cases where each individual disbursement is actually needed and therefore IATI data is at it’s most useful (as in most other cases, the transaction data is agglomerated into annual/quarterly data). I guess UNCTAD didn’t open up the DFMAS code to allow it to communicate without a tool in between? Is that tool open source, or can you share what transformations are needed? I guess this also reinforces your (and Mark’s, and my) feelings that unless both sides open their systems, excel files are still beating APIs for most inter system transfers at the moment. Another area that it would be good to standardise…at least until DFMAS’s/Freebalance etc had IATI.xml import tools as standard</p>
+<p>Thanks loads,</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/9</link>
+        <pubDate>Tue, 29 Aug 2017 16:18:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1007-9</guid>
+        <source url="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss">Integrating Aid Information Management Systems (AIMS)</source>
+      </item>
+      <item>
+        <title>Integrating Aid Information Management Systems (AIMS)</title>
+        <dc:creator><![CDATA[Joshua_Powell]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> a lot to chew on here, and largely agreed on the issues on demand side - particularly that AIMS (or any system) should not be introduced to create a new process, but only to strengthen existing processes.</p>
+<p>Here’s a quick write-up of our AMP-DMFAS integration in Uganda available here: <a href="http://www.developmentgateway.org/blog/strengthening-public-financial-management-uganda-connecting-dmfas-and-amp" rel="nofollow noopener">http://www.developmentgateway.org/blog/strengthening-public-financial-management-uganda-connecting-dmfas-and-amp</a> and happy to link with the team directly.</p>
+<p>I’d take issue with the statistic that 12% of COTS AIMS are successful (as I’ve also spoken directly to the author after publication). The paper is not particularly accurate (for example it says that DG implemented the AIMS in Somalia, which was implemented by Synergy, and that Liberia/Niger have been shutdown) and I don’t think it’s findings should be taken as a true reflection of the relative success/failure rate. Similarly, on the homegrown side, Philippines are currently replacing their AIMS, which had been defunct for several years, etc.</p>
+<p>I would be open to a community exercise (building on <a class="mention" href="/u/leighhmitchell">@leighhmitchell</a>’s work) of classifying which AIMS are thriving, active, lagging, failed, etc. and think an honest analysis of cause/effect for this should be undertaken (perhaps something UNDP might consider as an evaluation of AIMS globally).</p>
+          <p><a href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/8</link>
+        <pubDate>Tue, 29 Aug 2017 15:30:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1007-8</guid>
+        <source url="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss">Integrating Aid Information Management Systems (AIMS)</source>
+      </item>
+      <item>
+        <title>Integrating Aid Information Management Systems (AIMS)</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>I think we might also get some clarity by asking why this hasn’t happened already? I think that a large part of the answer is that there is often not sufficient benefit, to overcome the effort/change inertia of doing it.</p>
+<p>Things like IATI, work done by AIMS providers and technical assistance (notably all paid for by donors), all seek to reduce the difficulty of this work, but where very little attention is placed (as <span class="mention">@josn</span> notes), is the demand side. As <a class="mention" href="/u/joshua_powell">@Joshua_Powell</a> has found elsewhere, and <a class="mention" href="/u/bill_anderson">@bill_anderson</a> says, the rest of the Ministry of Finance in Sierra Leone were not interested in the AIMS data. Why is that?</p>
+<ol>
+<li>Most aid in Sierra Leone (and therefore in the AIMS) is off-budget. The rest of the Ministry of Finace therefore has little interest in it – they have severely limited capacity, and it is not priority given that they are not funds that they can influence the spending of, and typically are not even consulted.</li>
+<li>Compounding this, data in the AIMS is too difficult to export it in a format useful to the rest of the MoF, because of the poor export tools, and because the AIMS does not collect the fields needed by the rest of the MoF e.g. full CoA breakdowns, more exact conversions between currencies etc.</li>
+<li>Where the MoF in Sierra Leone does use aid data, in debt management, in capturing budget support and other on-budget flows, and during the strategic phase of the budget process the AIMS is not the easiest source of data, and the aid management unit (and their AIMS) are left out of the loop.</li>
+<li>Sierra Leone has several times requested an IATI module for the DAD – nobody would bat an eyebrow if this was funded (costing hundreds of thousands!) but based on the above, this would probably be a waste at this stage.</li>
+</ol>
+<p>What does this means for IATI:</p>
+<p>I think IATI has great potential to lower some of the capacity requirements/difficulty of getting hold of aid data – the latest generation of IATI import modules are a big step forward but based on the above, I have very little belief that it would improve anything beyond making it easier for the donor data entry staff.</p>
+<p>As it stands, IATI data cannot meet many of the requirements to carry data needed for FMIS integration, strategic budget integration, or debt systems integration. Hence e.g. why I push for per transaction exchange rates. However, the fact that I am pushing for this suggests to me that the current upgrade process is a bit broken. We currently mainly have piecemeal upgrades suggested (and discussed) almost 100% by people who are not primarily data users. Perhaps the IATI community need to pick a use case each 6 months and work out what needs to change to make it happen e.g. for the next 6 months (as well as the piecemeal bits) IATI are working on meeting the needs of debt management systems – with the end result being a raft of changes so that we could be more sure that this use case was catered for.</p>
+<p>IATI data quality is still paramount e.g. I don’t think there is a measure on the data quality screen for the percentage of projects that use the national language of the recipient? Perhaps the data quality tests need to say % of activities meeting the IATi standard for ‘Debt Management using IATI data’, or for ‘Transparency to the public’. Each would require different fields.</p>
+<p>IATI need to engage with systems beyond AIMS (see later, most AIMS are broken) e.g. FMIS providers (SAP, Oracle, Freebalance), and e.g. debt systems providers, and we should definitely maintain a list of successful integrations so that best practice gets shared and does not need relearning. E.g. FB have an aid module, has anyone ever used it? Similarly, can Josh share anything from how DG integrated the AIMS with DFMAS? However, rather than a DG API and a Synergy API…perhaps we should also standardise these so that any FMIS can suck from any AIMS.</p>
+<p>More generally, we should only be installing AIMS where they would  assist in a process that is already taking place, via excel sheets, or on paper, not using AIMS as an excuse to impose new processes without sufficient priority or demand. See this (<a href="http://aisel.aisnet.org/cgi/viewcontent.cgi?article=1334&amp;context=hicss-50" rel="nofollow noopener">http://aisel.aisnet.org/cgi/viewcontent.cgi?article=1334&amp;context=hicss-50</a>) paper, especially the last page. Homegrown systems are far far more successful (44% of homegrown systems are successful, compared to 12% of COTS AIMS). Why is this, not because they are better quality systems (for the most part) but I think that ‘homegrown’ is a proxy for a much stronger demand for an AIMS as opposed to an externally imposed solution.</p>
+<p>Perhaps also, homegrown AIMS have over 3 times the success rate because they better reflect the demands of other PFM processes, instead of the current situation where AIMS mainly cater for producing an annual aid report. This is also why I agree with <a class="mention" href="/u/bill_anderson">@bill_anderson</a> hat it is imperative that IATI moves beyond AIMS….they have a terrible success rate outside of a fairly fixed set of parameters e.g. higher capacity countries, with homegrown AIMS, and higher functioning PFM surroundings demanding the data. To see this another way, how about we start by looking at where aid-FMIS integration does work and work backwards from that………think about local authorities in the UK who integrate EU structural funds into their budgets/FMIS’s/processes (please let me know if anyone wants to fund a study into this!). But I suspect this again supports the idea that what often works well is that aid data gets integrated into existing systems without an AIMS.</p>
+<p>Always happy to chat more,</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/7</link>
+        <pubDate>Tue, 29 Aug 2017 12:58:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1007-7</guid>
+        <source url="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss">Integrating Aid Information Management Systems (AIMS)</source>
+      </item>
+      <item>
+        <title>Integrating Aid Information Management Systems (AIMS)</title>
+        <dc:creator><![CDATA[Joshua_Powell]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/bill_anderson">@bill_anderson</a> - I think we’ve reached a point of near total agreement <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> This is why we’ve invested heavily in the AMP API over the past 2 years, in anticipation of great future demand - happy to chat more about that on a call.</p>
+          <p><a href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/6</link>
+        <pubDate>Tue, 29 Aug 2017 04:45:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1007-6</guid>
+        <source url="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss">Integrating Aid Information Management Systems (AIMS)</source>
+      </item>
+      <item>
+        <title>Integrating Aid Information Management Systems (AIMS)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I think we agree, <a class="mention" href="/u/markbrough">@markbrough</a> and <a class="mention" href="/u/joshua_powell">@Joshua_Powell</a>, about the ideal solution AND about the need to make a pragmatic start. Where I think we disagree is how this pragmatic start is framed.</p>
+<p>Sustainable systems,  by definition, need to be grounded in sound policy and capacity and I am not advocating a purely technical solution. I accept that it is the vision (or lack thereof) of many aid management units that is the primary problem: if ODA macro-management that produces top-line numbers for donor-government relations is all that is required you have a mountain to climb. (And, for what it’s worth, I think many of IATI’s developing country members don’t see beyond this framework.)</p>
+<p>Interoperability, however, is a concept - both political and technical -<a href="https://sites.google.com/site/useofiatidataincountrysystems/the-guide/aims"> that is gaining traction</a>. Some years ago I was part of an integration discussion at a Synergy/DAD community workshop in Armenia where the AIMS administrator from Sierra Leone said his work wasn’t taken seriously by his Ministry of Finance because they were not aware of the data he managed. He was not alone then, and he is far from alone now.</p>
+<p>I don’t accept, Josh, that we need to position ourselves in this challenge as an external ‘international community’: politics aside (there’s always politics wherever you are) this is about best practice and standards.</p>
+<p>Perhaps my beef is more with the funders and your customers rather than with you (contracted as you are to deliver your client’s requests) but for me the bottom line should be that:</p>
+<ul>
+<li>An AIMS should be defined as a component that fits into a broader public financial management framework.</li>
+<li>The benefits of integration should be clearly expounded in all documentation.</li>
+<li>API access to AIMS data should be made available EVEN IF there is no initial use case for it.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/5</link>
+        <pubDate>Mon, 28 Aug 2017 11:44:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1007-5</guid>
+        <source url="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss">Integrating Aid Information Management Systems (AIMS)</source>
+      </item>
+      <item>
+        <title>Integrating Aid Information Management Systems (AIMS)</title>
+        <dc:creator><![CDATA[Joshua_Powell]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/bill_anderson">@bill_anderson</a> a lot to unpack here, but will try to get a few key points across (and perhaps chat more at the Members Assembly?). Forgive the painfully long message!</p>
+<ol>
+<li>
+<p>I agree with Mark’s comments on pragmatic starting points on technical approaches in gaining traction from the status quo, as well as on the ideal state of automated linkages (and the barriers to achieving this).</p>
+</li>
+<li>
+<p>To your point about sustainable systems, I think we need to be clear what we mean when we say systems. To me, a proper AIMS, IFMIS, etc. system is a combination of [a] policy (directives to various teams as written in law), [b] politics (how those teams act in practice/what incentives drive behavior in terms of sharing/not sharing data and in what format), [c] people (encompassing capacity, time, incentives, etc.), [d] resources (financial, personnel, IT infrastructure, etc.), and finally [e] tools. It seems you are taking quite a tools-first approach to diagnosis by saying that stand-alone AIMS are a band-aid/counterproductive solution. In reality, stand-alone AIMS tend to exist because governments create external coordination units (separate from budget/debt/procurement) and the needs of those units differ from those of the others mentioned above. This isn’t an excuse, just a statement of fact.</p>
+</li>
+<li>
+<p>It’s worth noting that this challenge is seen across the full IFMIS ecosystem: in most countries, budget planning/execution may not be linked to DMFAS, are almost certainly not linked to eProcurement (if eProc exists), nor to AIMS. This is where I believe we agree <a class="mention" href="/u/bill_anderson">@bill_anderson</a> - there needs to be a more systemic approach to all parts of PFM systems, which starts from government strategy (or in many countries, unfortunately, external funders’ strategies). This approach is almost entirely missing, such that you end up with different teams with different systems, and integration/exchange is an afterthought.</p>
+</li>
+<li>
+<p>I think the integration discussion in many cases comes back to a bit of a push for isomorphic mimicry. You have donors telling governments their systems should be integrated, while teams within governments may or may not agree or want this (hence my anecdote on having a budget team fail to show for an entire week of meetings - they didn’t want to “share” data with the aid coordination team or see the practical value in their getting access to better aid info). Unless governments see actual value from integration based in real USES of joined-up data to drive decisions/programming, we in the international community are largely proffering a solution to a problem the government doesn’t see or wish to solve.</p>
+</li>
+<li>
+<p>There IS a role for groups like DG and individuals like <a class="mention" href="/u/markbrough">@markbrough</a> and <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> to play here, and I am not simply trying to hand-wave away all responsibility for integrations that haven’t gone to plan. Our early pushes on integration were taken from a purely technical standpoint and we didn’t do enough to understand the intra/inter-ministerial politics at play (and in many cases didn’t have or ask for the budget to work on this). We all need to get smarter at understanding the incentives on both sides, with particular awareness that, if the push for integration is coming from AIMS, FMIS team will likely require some “selling” on the idea. This selling must be grounded in the tangible benefits they’ll experience targeted to solving problems that they themselves see as high priority.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/4</link>
+        <pubDate>Sat, 26 Aug 2017 18:40:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1007-4</guid>
+        <source url="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss">Integrating Aid Information Management Systems (AIMS)</source>
+      </item>
+      <item>
+        <title>Integrating Aid Information Management Systems (AIMS)</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a>, thanks for starting this super interesting discussion (at least for AIMS and IFMIS nerds)</p>
+<p>My view is that starting by having AIMS generate decent data which can be shared in Excel format with other parts of the MoF (beginning with getting this data included in the budget preparation process) is a necessary starting point. Low level technical integration between an AIMS and an IFMIS when the understanding and expectations on each side are different (timeliness, granularity, classifications in data, general quality) is not a straightforward thing to specify or to negotiate between the two units and is likely to end in failure. In Ministries with limited resources - both in financial terms and staff time - the value proposition for diverting resources to automatically pulling data from AIMS will become clearer once others in the MoF can see the value of capturing and using this data. Getting data into a useful format in Excel requires a chunk of negotiation but it makes the outcomes of the conceptual work, mapping and wrangling much easier to understand and confirm than a more abstract process where databases exchange data without humans seeing it.</p>
+<p>Yes, we should be aiming for automatically pulling data through into IFMIS eventually. Automation reduces transaction costs and the likelihood of the flow of data within the MoF being disrupted. There are likely some big benefits if we get this right. But these investments in developer time are expensive and divert the focus away from understanding whether (and gaining agreement that) the data coming from the AIMS is being generated in a format useful for the budget preparation process. We can get aid data much closer to end users in MoF much more quickly by starting with far simpler solutions. For now, Excel is our friend <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/3</link>
+        <pubDate>Sat, 26 Aug 2017 11:04:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1007-3</guid>
+        <source url="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss">Integrating Aid Information Management Systems (AIMS)</source>
+      </item>
+      <item>
+        <title>Integrating Aid Information Management Systems (AIMS)</title>
+        <dc:creator><![CDATA[danmihaila]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with Bill’s comments and I suggest to discuss with Egipt and Ukraine who are investing in development of AIMS systems</p>
+          <p><a href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/2</link>
+        <pubDate>Sat, 26 Aug 2017 10:22:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1007-2</guid>
+        <source url="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss">Integrating Aid Information Management Systems (AIMS)</source>
+      </item>
+      <item>
+        <title>Integrating Aid Information Management Systems (AIMS)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Yesterday <a href="https://storify.com/isiAfrica/aims-integration">a debate brewed on Twitter</a> which I think is worth continuing in a less restrictive format.</p>
+<p>It started with me, having skimmed <a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=116829">UNDP’s RFP document for a new AIMS in Somalia</a>, commenting</p>
+<blockquote>
+<p>No mention in TOR of AIMS integrating with other budget, finance or line ministry systems.</p>
+</blockquote>
+<p><a class="mention" href="/u/markbrough">@markbrough</a></p>
+<blockquote>
+<p>It’s mentioned on p54: “Export for budget process including relevant CoA coding and filtered by on/off-treasury”</p>
+</blockquote>
+<p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a></p>
+<blockquote>
+<p>Report choices best understood via p27-29 of the underlying study: <a href="http://bit.ly/2wMumOK">http://bit.ly/2wMumOK</a>  includes budget, finance, line Mins + many others</p>
+</blockquote>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+<blockquote>
+<p>I don’t think export and integration are the same thing. I see <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> that the underlying study refers to ‘budget integration’</p>
+</blockquote>
+<p><a class="mention" href="/u/joshua_powell">@Joshua_Powell</a></p>
+<blockquote>
+<p>Big challenge is integration requires 2-way collab. Often budget system/team either not ready/interested in integration. Politics matter.</p>
+</blockquote>
+<blockquote>
+<p>And typically push for integration comes more from external partner (or AIMS team) w/out buy-in or resources twinned on budget side.</p>
+</blockquote>
+<p><a class="mention" href="/u/markbrough">@markbrough</a></p>
+<blockquote>
+<p>Yes. Plus, there are conceptual / linguistic gaps. AIMS/IFMIS teams not always talking about same thing even when they use the same words</p>
+</blockquote>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+<blockquote>
+<p>Using politics, capacity, ignorance as excuses for building unsustainable systems doesn’t wash</p>
+</blockquote>
+<p><a class="mention" href="/u/joshua_powell">@Joshua_Powell</a></p>
+<blockquote>
+<p>Respectfully, ignoring politics is often the biggest cause of unsustainable systems. 1st FMIS trip I took, budget team refused all mtings.</p>
+</blockquote>
+<blockquote>
+<p>Incentives, ownership, ARE systems, tech can a tool w/in systems. Same tech can suc/fail based on the political system in which it operates.</p>
+</blockquote>
+<p><a class="mention" href="/u/ariag">@ariag</a></p>
+<blockquote>
+<p>Trick is to find a way to get buy in and support for system integration so the politics shift. Nobody said it would be easy</p>
+</blockquote>
+<p>It seems to me that <a class="mention" href="/u/markbrough">@markbrough</a>, <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> and <a class="mention" href="/u/joshua_powell">@Joshua_Powell</a> - who are engaged in developing AIMS - take a pragmatic approach to system design. This approach is influenced by all the constraints they make above.</p>
+<p>My view is that this matter has nothing to do with IATI, or aid, but with the development of sustainable systems. In my view the argument for building the architecture for the integration of AIMS (with budget, finance and line ministry systems) now is no different from <a href="http://devinit.org/post/long-term-investments-in-a-short-term-world-arguments-for-sustainable-data/">the argument for the need of long-term investments in registry and administrative systems</a> in general.</p>
+<p>I see the reliance on standalone AIMS in the same light as the current reliance in many development countries on household surveys for all  their socio-economic statistics: quick fixes diverting the limited resources available away from more sustainable solutions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007/1</link>
+        <pubDate>Sat, 26 Aug 2017 10:05:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1007-1</guid>
+        <source url="https://discuss.iatistandard.org/t/integrating-aid-information-management-systems-aims/1007.rss">Integrating Aid Information Management Systems (AIMS)</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Final Technical Proposal for the 2.03 Upgrade</title>
+    <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097</link>
+    <description>The IATI technical team has worked up the [final proposed content for the 2.03 Upgrade](https://discuss.iatistandard.org/t/final-proposal-of-2-03-content/1054) into a technical proposal. The document below contains the proposed 2.03 summary tables for the Organisation and Activity Standards:
+
+https://docs.google.com/spreadsheets/d/1XWnzesMvLebIVLk47OIXATfhcjESVcaGnw8SJpOuCCk/edit#gid=595223309
+
+The tabs are as follows:
+* Keylog: details the type of change made
+* 2.03 Activity Standard (Changes): a condensed summary of the changes
+* 2.03 Organisation Standard (Changes): a condensed summary of the changes
+* 2.03 Activity Standard (Full): the full summary table
+* 2.03 Organisation Standard (Full): the full summary table
+* Non-embedded codelists: list of codelists moving from Embedded to Non-Embedded
+* Codelists: details of the additions and modifications made
+
+If you would like to comment on the final technical proposal, please do so via this thread. The deadline for making comments is **Friday 3rd November 2017.**</description>
+    
+    <lastBuildDate>Wed, 02 Jan 2019 16:02:14 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> where you’ve spotted mistakes could you please send us the details to <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>? We’ll take a look first off at what kind of errors there are and how best to fix them.</p>
+<p>Thank you.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/25</link>
+        <pubDate>Wed, 02 Jan 2019 16:02:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-25</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>, as I review 2.03 schema and changelog carefully I’m noticing a few mistakes, typos etc. What would be the best way to report these?</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/24</link>
+        <pubDate>Wed, 19 Dec 2018 16:42:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-24</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/23</link>
+        <pubDate>Thu, 11 Jan 2018 16:19:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-23</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stolk">@stolk</a> Apologies for the significant delay in getting back to you.</p>
+<blockquote>
+<p>Can you please confirm that codelist change, the new organisation “type 24” is meant for ‘partner countries based NGOs’.</p>
+</blockquote>
+<p>Yes, this is correct.</p>
+<p>The mapping spreadsheet that was shared by <a class="mention" href="/u/wendy">@Wendy</a> during the upgrade discussion for <a href="https://discuss.iatistandard.org/t/organisation-type-codes-additions-included-2-03/858/14">this proposal</a> also has descriptions that probably make the distinction between 22- National NGO<br>
+24- Partner country-based NGO clearer. Also direct link in <a href="https://docs.google.com/spreadsheets/d/1UQ8oPyGiBSzY64UO0CBnH4hND9D2d0MkZ07FRYGhrjM/edit#gid=0">here</a>.</p>
+<p>For clarity, I will add the descriptions from the spreadsheet to the new organisation types to the relevant <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/182">Github issue</a> so that they can be incorporated as part of the 2.03 upgrade process.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/22</link>
+        <pubDate>Wed, 06 Dec 2017 17:13:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-22</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[stolk]]></dc:creator>
+        <description><![CDATA[
+            <p>Now preparing Requests for Change proposals for 2.03 changes.</p>
+<p>Can you please confirm that codelist change, the new organisation “type 24” is meant for ‘partner countries based NGOs’.</p>
+<p>Oxfam Novib so far used type 22 (National NGO) for NGOs based in partner countries, operating at national level, and sub national level.</p>
+<p>The description in the upgrade list suggests that type 22 refers to NGOs based in donor countries.  Understood from Charter4Change perspective, that the distinction between a (partner country based) national NGO and (partner country based) Internationally affiliated NGO or INGOs, is important.</p>
+<p>Noticed in discuss that others also expected type 24 to identify a Partner country based INGO.</p>
+<p>just seek confirmation that 24 = partner country based NGO. and that 22 is donor country based NGO. l</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/21</link>
+        <pubDate>Mon, 13 Nov 2017 14:16:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-21</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[pelleaardema]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/mikesmith">@mikesmith</a>,</p>
+<p>I understand what you’re trying to do, but I’m in doubt about the proposed solution.</p>
+<p>In general <em>adding elements</em> to <em>reduce complexity</em> would not be my preferred solution. IATI is already perceived as a complex standard, and from my experiences with many different publishers I am doubtful if this specific proposal makes their lives easier - let alone for users of the data, for whom it will introduce yet another dimension to take into account when dealing with results.</p>
+<p>In line with our joint statement I’m in favour of making changes to the standard supported by very clear ‘use cases’ and inline with a common understanding of what IATI is and is not. I feel we are not there yet, so let’s please take some more time to share and learn from each other’s experiences.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/20</link>
+        <pubDate>Thu, 09 Nov 2017 11:25:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-20</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>(this post is in reference to <a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/10" class="inline-onebox">Results – recognising partner contributions (excluded 2.03)</a> )</p>
+<p>Hi <a class="mention" href="/u/pelleaardema">@pelleaardema</a> thanks for the response, please could you provide some reasoning behind your doubts - for example many of the 2.03 proposals “add complexity” why in particular should this one not be accepted? Also e.g. <a class="mention" href="/u/herman">@Herman</a> queried in your referenced post <a href="https://discuss.iatistandard.org/t/our-shared-understanding-of-what-iati-is-and-is-not/893/12" class="inline-onebox">Our shared understanding of what IATI is, and is not,</a>  if the "propose to defer the adoption of the IATI 2.03 upgrade” - but the community has collectively decided that there will be a 2.03 upgrade.  It would be good to understand what your reasoning is.</p>
+<p>To help provide the UK NGO and Nethope consultation perspective, this proposal is about improving the consistency of the IATI standard and simplifying IATI reporting. For the former, it’s remiss that transactions are for specific organisations but results cannot be.  For the latter, I think we can agree that IATI should not cause a fundamental redesign of our work, just for IATI reporting ( see <a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/44" class="inline-onebox">Results – represent more than quantitative data (included 2.03)</a>  and other comments).  For example one currently has to artificially split an activity because you cannot assign different parts of the results framework to different organisations.  This requires duplicating data (eg, title, description) and designing projects to a level of detail beyond that is required for internal management and donor reporting (eg you have to split budgets, organisation spending etc. by individual results, partners etc.).  Some overarching results (ag indirect advocacy ) can’t be split so must also be treated separately.  This all adds up to very complicated reporting which is even highlighted in the document that is referenced (<a href="https://www.drostan.org/wp-content/uploads/2017/05/Partos-IATI-Results-2017-report-of-meetings.pdf" rel="nofollow noopener">https://www.drostan.org/wp-content/uploads/2017/05/Partos-IATI-Results-2017-report-of-meetings.pdf</a> ) in the post that <a class="mention" href="/u/pelleaardema">@pelleaardema</a> you refer to (<a href="https://discuss.iatistandard.org/t/our-shared-understanding-of-what-iati-is-and-is-not/893" class="inline-onebox">Our shared understanding of what IATI is, and is not,</a>  ) "there are no ways to indicate the boundary of a partnership, or to better mark activities as joint activities. This can lead to overlaps and duplications.”.  They also talk about this problem of having to change the fundamental way projects are managed under the section "How do you coordinate working with the same indicators in a partnership?” which I know has caused a number of organisations a headache.  The additional coordination effort to produce reports (with various additional discussions, sign-offs between organisations etc.) just to report in this way is substantial.  A simplified example (in practice there are often <em>many</em> more indicators) , 5 partners, 5 indicators (2 of which overarching):<br>
+<img src="https://discuss.iatistandard.org/uploads/default/original/1X/66bbefbc426ff2ce19e814ba189f1c8d5afc8571.png" alt="ImplementingPartners" width="514" height="143"><br>
+requires artificially splitting 1 activity into 5 (red ellipses marking the activity boundary) just so that they can be reported in IATI.  As well as causing duplication and confusion, there is substantial effort involved in splitting finances per each activity (doesn’t sound like much but this is in effect adding an additional dimension to all financial reporting in an organisation) which is beyond what most NGO systems can do at the moment, and adds a huge overhead to our programmes staff, just for IATI.  This proposal alleviates these problems by not forcing artificial splits.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/19</link>
+        <pubDate>Sat, 04 Nov 2017 16:59:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-19</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[pelleaardema]]></dc:creator>
+        <description><![CDATA[
+            <p>Thinking things through, I think that <code>result/indicator/@aggregation-status</code> can only be <code>1</code> if <code>result/indicator/@measure</code> is <code>1</code> (Unit)</p>
+<p>Percentages, scales and qualitative results can’t be aggregated.</p>
+<p><a class="mention" href="/u/mikesmith">@mikesmith</a>: the “Results – recognising partner contributions (excluded 2.03)”  proposal was probably omitted because I expressed my <a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/10">doubts</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/18</link>
+        <pubDate>Fri, 03 Nov 2017 16:23:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-18</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>OCDS link was omitted because <a class="mention" href="/u/timdavies">@TimDavies</a>, <a href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/3">on second thoughts</a>, felt some more work was required to get this right.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/17</link>
+        <pubDate>Fri, 03 Nov 2017 10:45:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-17</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Like the OCDS contracts, the <a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873">Results – recognising partner contributions (excluded 2.03)</a> proposal was also included until the 25th October when the title changed to “(excluded 2.03)”, and the post was immediate closed to further discussion meaning no response could be made.  Please could someone clarify why it was excluded and why there has not been opportunity for discussion after it was dropped from the upgrade process on the 25th October?  The IATI <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> also emailed me to check the results proposals on the 25th October and respond but because the posts are closed I cannot do so.  Should I include my response here?</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/16</link>
+        <pubDate>Fri, 03 Nov 2017 10:35:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-16</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I wonder if <code>budget-omitted</code> might be a pithier name than <code>budget-not-provided</code> (and avoids the negation.)</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/15</link>
+        <pubDate>Thu, 02 Nov 2017 21:04:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-15</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m wondering what happened to: <a href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918">Adding links to related OCDS contracts (excluded 2.03)</a>. The title of that post suggests it was excluded (which I believe just means the proposal <em>as it was originally stated</em> was rejected), but the thread suggests it was included. However, I can’t see any mention of it in <a href="https://docs.google.com/spreadsheets/d/1XWnzesMvLebIVLk47OIXATfhcjESVcaGnw8SJpOuCCk/edit#gid=595223309">the final proposal</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/14</link>
+        <pubDate>Wed, 01 Nov 2017 12:37:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-14</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>It is proposed that 4 new Codelists are added:</p>
+<ul>
+<li>BudgetNotProvided</li>
+<li>AidTypeVocabulary</li>
+<li>ResultVocabulary</li>
+<li>TagVocabulary</li>
+</ul>
+<p>These have names, though do not appear to have been provided additional details, in particular:</p>
+<ul>
+<li>description</li>
+<li>complete?</li>
+</ul>
+<p>(<a href="https://github.com/IATI/pyIATI/blob/cd8c5e90decf7aad104a828ab4a5956f8cf0ed29/iati/codelists.py#L82-L88">other details</a> may also be relevant, though the above are essential (some like the prose name and language are obvious, so don’t really require stating, though others may))</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/13</link>
+        <pubDate>Wed, 01 Nov 2017 11:51:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-13</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>It is proposed to change a number of Codelists from <code>Embedded</code> to <code>Non-Embedded</code>.</p>
+<p>The following Codelists had their format changed from <code>1.05</code> to <code>2.01</code>. As such, they cannot become <code>Non-Embedded</code> since there is no categorisation to allow particular Codes to exist at only particular integer versions of the Standard:</p>
+<ul>
+<li>DocumentCategory (<a href="http://iatistandard.org/202/upgrades/integer-upgrade-to-2-01/2-01-changes/#document-category-new-codes">changelog</a>)</li>
+<li>GazetteerAgency (<a href="http://iatistandard.org/202/upgrades/integer-upgrade-to-2-01/2-01-changes/#gazetteer-agency-amended-codes">changelog</a>)</li>
+</ul>
+<p><a class="mention" href="/u/petyakangalova">@petyakangalova</a> (with assistance from others) has been working on a full solution to allow this change to occur, through the introduction of a new category of Codelist.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/12</link>
+        <pubDate>Wed, 01 Nov 2017 11:38:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-12</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>With regards to the proposal to introduce <code>iati-activities/iati-activity/result/baseline/@iso-date</code> with occurrence rule <code>1..1</code>.</p>
+<p>Is it not the case that decimal upgrades can only add optional fields, so perhaps the occurrence rule should be <code>0..1</code>?</p>
+<hr>
+<hr>
+<p>Occurrence rule changed to 0…1. See Github: <a href="https://github.com/IATI/IATI-Schemas/issues/364">https://github.com/IATI/IATI-Schemas/issues/364</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/11</link>
+        <pubDate>Wed, 01 Nov 2017 11:25:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-11</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>A couple of things with <code>{x}Vocabulary</code> Codelists…</p>
+<p><strong>ResultVocabulary</strong></p>
+<p>It is currently detailed that this Codelist will have <code>99</code> and <code>98</code> values in a similar way to <a href="http://iatistandard.org/202/codelists/SectorVocabulary/">SectorVocabulary</a>.</p>
+<p>The addition of a <code>98</code> value seems problematic since it allows partial use of multiple vocabularies, but only to a limited extent. A more versatile option would be to either:</p>
+<ol>
+<li>Make use of the <code>@vocabulary-uri</code> attribute to deem uniqueness (this was introduced as a concept at <code>2.02</code>, after <code>98</code> became a thing with <code>SectorVocabulary</code>).</li>
+<li>Add a <code>&lt;narrative&gt;</code> sub-element to provide information (<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/sector/narrative/">partially implemented</a> with sectors, though how to deem uniqueness is slightly unclear).</li>
+</ol>
+<p>Due to how other <code>@[vocabulary|indicator]-uri</code> attributes are implemented (ie. they lack child narrative elements), 1) appears the preferable option.</p>
+<p>Whichever way, <code>98</code> codes should be on a path towards deprecation in favour of a more robust solution - more <code>98</code> codes shouldn’t be added.</p>
+<p><strong>TagVocabulary</strong></p>
+<p>This is to be used by an element (<code>iati-activities/iati-activity/tag</code>) with a <code>@vocabulary-uri</code> attribute. It is not proposed that a <code>99</code> code is added.</p>
+<ul>
+<li>The <code>TagVocabulary</code> Codelist should include a <code>99</code> code.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/10</link>
+        <pubDate>Wed, 01 Nov 2017 09:47:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-10</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>The <code>@value</code> attribute for various things within <code>result</code>s is proposed to become optional so that it is clearer how to report qualitative data.</p>
+<ul>
+<li><code>iati-activities/iati-activity/result/indicator/baseline/@value</code></li>
+<li><code>iati-activities/iati-activity/result/indicator/period/target/@value</code></li>
+<li><code>iati-activities/iati-activity/result/indicator/period/actual/@value</code></li>
+</ul>
+<p>It is proposed that 3 Rules are added:</p>
+<ol>
+<li>The <span class="mention">@value</span> must be omitted for qualitative measures</li>
+<li>The <span class="mention">@value</span> must be included for non-qualitative measures</li>
+<li>The <span class="mention">@value</span> must be a valid number for all non-qualitative measures</li>
+</ol>
+<p>With these Rules…</p>
+<p>A note that: Numbers 1) and 2) are <a href="http://iatistandard.org/202/rulesets/standard-ruleset/#non-machine-readable-rules">Non-Machine Readable</a>, and so will not displayed on the relevant <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">attribute pages</a> (at least with the current architecture).</p>
+<p>Additionally, because the attributes are currently so lax in what is allowed (permitting both quantitative and qualitative values, numeric and non-numeric), implementing these as Rules (<code>must</code>) is not backwards-compatible.</p>
+<p><span class="hashtag">#2</span>) <em>can</em> be a Rule at <code>2.03</code> because it maintains the status quo. 1) and 3), however, cannot because they would add additional restrictions. They must instead be Guidelines (<code>should</code>).</p>
+<hr>
+<p><strong>EDIT:</strong> It has been explained how my interpretation of the <a href="http://iatistandard.org/202/codelists/IndicatorMeasure/"><code>IndicatorMeasure</code></a> Codelist is incorrect. I would therefore suggest it may be worth adding something along the lines of <code>This can be used to detail [qualitative|quantitative] indicators.</code> to the Description of Codes in this Codelist.</p>
+<p>This corrected understanding changes the above points to:</p>
+<ul>
+<li>
+<span class="hashtag">#1</span>) and <span class="hashtag">#2</span>) can be Rules</li>
+<li>
+<span class="hashtag">#3</span>) can only be a Guideline because it adds additional restrictions (not present in <code>2.02</code>) to quantitative indicator values</li>
+</ul>
+<hr>
+<hr>
+<p>Changed rule 3 from a must to a should: “the <span class="mention">@value</span> should be a valid number for all non-qualitative measures”. See Github issue: <a href="https://github.com/IATI/IATI-Schemas/issues/353">https://github.com/IATI/IATI-Schemas/issues/353</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/9</link>
+        <pubDate>Tue, 31 Oct 2017 15:01:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-9</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>The definition of <code>iati-activities/iati-activity/transaction/receiver-org/@ref</code> currently <a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1118-L1121">states</a> that:</p>
+<blockquote>
+<p>if omitted on incoming funds then the receiver organisation is assumed to be the reporting organisation</p>
+</blockquote>
+<p>The proposed definition removes this information.</p>
+<p>Additionally, the <code>Previous Definition</code> in the spreadsheet is incorrect for this attribute.</p>
+<hr>
+<p><strong>EDIT:</strong> It has been noted that this issue impacts a range of <code>receiver-org/@ref</code> and <code>provider-org/@ref</code> attributes, not just the one specified here.</p>
+<hr>
+<hr>
+<p>Comment added to relevant <a href="https://github.com/IATI/IATI-Schemas/issues/339">Github issue</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/8</link>
+        <pubDate>Tue, 31 Oct 2017 14:00:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-8</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>There are inconsistent references to the <code>Aid Type</code> Codelist with respect to the new vocabulary.</p>
+<p>The definition for <code>iati-activities/iati-activity/default-aid-type/@code</code> refers to it as:</p>
+<blockquote>
+<p>the OECD DAC vocabulary</p>
+</blockquote>
+<p>The definition for <code>iati-activities/iati-activity/default-aid-type/@vocabulary</code> refers to it as:</p>
+<blockquote>
+<p>the AidType codelist</p>
+</blockquote>
+<p>These should be made consistent so that it is clear that they are referring to the same thing.</p>
+<hr>
+<hr>
+<p>Definition’s changed to:<br>
+<strong>Code</strong>: A code from the specified vocabulary.<br>
+<strong>Vocabulary</strong>: A code for the vocabulary aid-type classifications. If omitted the AidType (OECD DAC) codelist is assumed. The code must be a valid value in the AidTypeVocabulary codelist.</p>
+<p>See Github: <a href="https://github.com/IATI/IATI-Schemas/issues/346">https://github.com/IATI/IATI-Schemas/issues/346</a> and <a href="https://github.com/IATI/IATI-Schemas/issues/345">https://github.com/IATI/IATI-Schemas/issues/345</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/7</link>
+        <pubDate>Tue, 31 Oct 2017 13:01:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-7</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>The spreadsheet of changes includes an entry for <code>iati-activities/iati-activity/tag/narrative/text()</code>.</p>
+<p>This is not an element or attribute. The definition should be under <code>iati-activities/iati-activity/tag/narrative</code>. This is an element, so does not have a type.</p>
+<hr>
+<p><strong>EDIT:</strong> This appears to be something magic about <code>&lt;narrative&gt;</code> elements being unlike anything else in the Standard, and so this can be passed over with no action.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/6</link>
+        <pubDate>Tue, 31 Oct 2017 12:53:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-6</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>The updated definition for <code>iati-activities/iati-activity/recipient-region/@vocaulary-uri</code> states that:</p>
+<blockquote>
+<p>The URI where this vocabulary is defined. If the vocabulary is 99 or 98 (reporting organisation), the URI where this internal vocabulary is defined. While this is an optional field it is STRONGLY RECOMMENDED that all publishers use it to ensure that the meaning of their codes are fully understood by data users.</p>
+</blockquote>
+<p>This attribute refers to another attribute that uses the <a href="http://iatistandard.org/202/codelists/RegionVocabulary/">Region Vocabulary</a> Codelist. This Codelist does not contain a <code>98</code> value.</p>
+<p>There is also no proposed change in the <code>Codelists</code> sheet to add a <code>98</code> code.</p>
+<p>This also impacts other <code>@vocabulary-uri</code> attributes.</p>
+<ul>
+<li>iati-activities/iati-activity/recipient-region/<span class="mention">@vocabulary-uri</span>
+</li>
+<li>iati-activities/iati-activity/sector/<span class="mention">@vocabulary-uri</span>
+</li>
+<li>iati-activities/iati-activity/tag/<span class="mention">@vocabulary-uri</span>
+</li>
+<li>iati-activities/iati-activity/humanitarian-scope/<span class="mention">@vocabulary-uri</span>
+</li>
+<li>iati-activities/iati-activity/policy-marker/<span class="mention">@vocabulary-uri</span>
+</li>
+<li>iati-activities/iati-activity/transaction/sector/<span class="mention">@vocabulary-uri</span>
+</li>
+<li>iati-activities/iati-activity/transaction/recipient-region/<span class="mention">@vocabulary-uri</span>
+</li>
+<li>iati-activities/iati-activity/result/reference/<span class="mention">@vocabulary-uri</span>
+</li>
+</ul>
+<hr>
+<hr>
+<p>Changes made in Github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/issues/341">https://github.com/IATI/IATI-Schemas/issues/341</a></li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/5</link>
+        <pubDate>Tue, 31 Oct 2017 12:19:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-5</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>With the addition of <code>iati-activities/iati-activity/participating-org/@crs-channel-code</code>, there is no need for a Rule specifying:</p>
+<blockquote>
+<p>Must contain a valid value from the CRS ChannelCode codelist.</p>
+</blockquote>
+<p>This is because it is stated that the attribute will have a value from the <a href="http://iatistandard.org/202/codelists/CRSChannelCode/">CRS Channel Code</a> Codelist, and this Codelist is specified to be <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/blob/master/xml/CRSChannelCode.xml">complete</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/4</link>
+        <pubDate>Tue, 31 Oct 2017 11:52:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-4</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>The updated definition of the <code>xml:lang</code> attribute is the same for all instances of the attribute. As such, it removes any reference to the ability to define a default language at the <code>&lt;iati-activity&gt;</code> or <code>&lt;iati-organisation&gt;</code> level. This information should be maintained.</p>
+<p>There are 3 narrative elements. It is reasonable that each may be different:</p>
+<ul>
+<li>
+<code>iati-activity</code> (defined in <a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L170-L173">activity</a>)</li>
+<li>
+<code>iati-organisation</code> (defined in <a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-organisations-schema.xsd#L104-L107">org</a>)</li>
+<li>
+<code>narrative</code> (defined in <a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-common.xsd#L40">common</a>)</li>
+</ul>
+<hr>
+<hr>
+<p>Comment added to relevant issue on <a href="https://github.com/IATI/IATI-Schemas/issues/336">Github</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/3</link>
+        <pubDate>Tue, 31 Oct 2017 11:37:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-3</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/2</link>
+        <pubDate>Wed, 25 Oct 2017 14:05:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-2</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+      <item>
+        <title>Final Technical Proposal for the 2.03 Upgrade</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The IATI technical team has worked up the <a href="https://discuss.iatistandard.org/t/final-proposal-of-2-03-content/1054">final proposed content for the 2.03 Upgrade</a> into a technical proposal. The document below contains the proposed 2.03 summary tables for the Organisation and Activity Standards:</p>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/spreadsheets/d/1XWnzesMvLebIVLk47OIXATfhcjESVcaGnw8SJpOuCCk/edit#gid=595223309" target="_blank">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/spreadsheets/d/1XWnzesMvLebIVLk47OIXATfhcjESVcaGnw8SJpOuCCk/edit#gid=595223309" target="_blank"><span class="googledocs-onebox-logo g-sheets-logo"></span></a>
+
+<h3><a href="https://docs.google.com/spreadsheets/d/1XWnzesMvLebIVLk47OIXATfhcjESVcaGnw8SJpOuCCk/edit#gid=595223309" target="_blank">2.03 Upgrade - Final Technical Summary</a></h3>
+
+<p>Keylog
+
+ Modified
+ New
+ Deprecate
+** in Changes tables refer to definitions that have changed for attributes that are repeated elsewhere( but are only listed once)
+
+ 2. 03 Activity Standard( Changes)
+
+ Full Table Line, Section, Item, Definition,...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>The tabs are as follows:</p>
+<ul>
+<li>Keylog: details the type of change made</li>
+<li>2.03 Activity Standard (Changes): a condensed summary of the changes</li>
+<li>2.03 Organisation Standard (Changes): a condensed summary of the changes</li>
+<li>2.03 Activity Standard (Full): the full summary table</li>
+<li>2.03 Organisation Standard (Full): the full summary table</li>
+<li>Non-embedded codelists: list of codelists moving from Embedded to Non-Embedded</li>
+<li>Codelists: details of the additions and modifications made</li>
+</ul>
+<p>If you would like to comment on the final technical proposal, please do so via this thread. The deadline for making comments is <strong>Friday 3rd November 2017.</strong></p>
+          <p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097/1</link>
+        <pubDate>Wed, 25 Oct 2017 13:27:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1097-1</guid>
+        <source url="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097.rss">Final Technical Proposal for the 2.03 Upgrade</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Notification of removal of misleading section from the Developer&#39;s Reference site</title>
+    <link>https://discuss.iatistandard.org/t/notification-of-removal-of-misleading-section-from-the-developers-reference-site/1547</link>
+    <description>**Introduction**
+
+This post notifies you on an update to a section of the developer reference that is currently misleading.
+
+In http://reference.iatistandard.org/203/developer/ssot/proposal/#tags we offer an option to retrieve a specific version of the standard using Git tags (https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+While this is technically correct, it&amp;rsquo;s currently misleading for various reasons:
+
+- the currently tagged snapshots of the repositories are out of date, as shown in the screenshots below:
+
+![|217x271](/uploads/default/original/1X/3a359f2eb230f20bde22ce7187fc5513cde713c7.png)![|210x274](/uploads/default/original/1X/5dee314d5808823b6f200ff62e2f987d2a18bb70.png)![|217x234](/uploads/default/original/1X/045ebdb6953253e283327a6a64b9957a9f2cd89a.png)![|207x278](/uploads/default/original/1X/1879ea14e6f98903148a6c4105df8d9e04c20c16.png)![|207x423](/uploads/default/original/1X/8146faad93c97d3193e14cdbb860bb784fbc2d2c.png)![|207x321](/uploads/default/original/1X/afecbead51f2473e5c1ff672c07f71e011fba329.png)
+
+- the Standard uses a **MAJOR.MINOR** versioning system, from which the tagged branches can easily diverge as soon as a new bugfix is introduced after a tagged release; as an example, version 2.03 of the Standard isn&amp;rsquo;t due to change any time soon, but if a developer modifies one of the files within the SSOT, the tag becomes obsolete.
+
+Tagged branches will make sense once Semantic Versioning (&amp;ldquo;semver&amp;rdquo; https://semver.org/) is introduced for the Standard (as suggested in https://iatistandard.org/documents/242/Paper-10-Proposed-revisions-to-the-IATI-Standard-upgrade-process.pdf) and the Standard version will then acquire the form of **MAJOR.MINOR.PATCH**, allowing the developers to always fetch the most recent version of the codebase (and thus the Standard itself) without ambiguity or confusion.
+
+Relevant GitHub issue: https://github.com/IATI/IATI-Standard-SSOT/issues/153
+
+**Possible options**
+
+- Removal of tags from branches + update of the reference page till semver is introduced for the Standard
+
+- Manual upgrade of tags &amp;ldquo;every so often&amp;rdquo;: albeit this not being a bad option, it requires the developers to constantly remember to remove a tag (in Git, a tag is not reusable unless deleted) and re-tag a branch once a bug fix/code patch happens. This isn&amp;rsquo;t a stable approach and introduces the risk of leaving a branch&amp;rsquo;s tag out of date anyway.
+
+- Introducing the **PATCH** number in Git tags (and not in the Standard): this would cause, in our opinion, a potentially confusing mismatch of versions (eg: Standard version 2.03 vs. Git-tagged branch version 2.03.64 would both refer to version 2.03 of the Standard)
+
+**Recommendation: Temporary Deprecation**
+
+Our suggestion is to temporarily remove the tags from the affected repositories and updating the reference guide with the complete removal of the tags guideline. The developers wanting to work on the Standard will still be able to retrieve it using the named branches (as described in http://reference.iatistandard.org/203/developer/ssot/proposal/#ssot-branches) and always be sure to correctly fetch the latest version.
+
+This change will not impact anybody and is going to provide a tidier and non-misleading documentation page.
+
+We aim to push this update before the 10th of November 2018.</description>
+    
+    <lastBuildDate>Tue, 30 Oct 2018 16:31:19 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/notification-of-removal-of-misleading-section-from-the-developers-reference-site/1547.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Notification of removal of misleading section from the Developer&#39;s Reference site</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Introduction</strong></p>
+<p>This post notifies you on an update to a section of the developer reference that is currently misleading.</p>
+<p>In <a href="http://reference.iatistandard.org/203/developer/ssot/proposal/#tags" rel="nofollow noopener">http://reference.iatistandard.org/203/developer/ssot/proposal/#tags</a> we offer an option to retrieve a specific version of the standard using Git tags (<a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging" rel="nofollow noopener">https://git-scm.com/book/en/v2/Git-Basics-Tagging</a>).</p>
+<p>While this is technically correct, it’s currently misleading for various reasons:</p>
+<ul>
+<li>the currently tagged snapshots of the repositories are out of date, as shown in the screenshots below:</li>
+</ul>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/3a359f2eb230f20bde22ce7187fc5513cde713c7.png" data-download-href="https://discuss.iatistandard.org/uploads/default/3a359f2eb230f20bde22ce7187fc5513cde713c7" title="pMoOcTFJ_5WDpZajBf048gn55pNH3Lr5i61oknZXzNTtFEmU2tD3oB6CDARBKzICZek0p6nOjjjqF7T6utat8Vt4Z26gWIzjMEqbYaLHwOEZwsmdusg__w6Lu3FxT9FNNqV0zDwX.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/3a359f2eb230f20bde22ce7187fc5513cde713c7_2_217x271.png" alt width="217" height="271" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/3a359f2eb230f20bde22ce7187fc5513cde713c7_2_217x271.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/3a359f2eb230f20bde22ce7187fc5513cde713c7_2_325x406.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/3a359f2eb230f20bde22ce7187fc5513cde713c7_2_434x542.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/3a359f2eb230f20bde22ce7187fc5513cde713c7_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">pMoOcTFJ_5WDpZajBf048gn55pNH3Lr5i61oknZXzNTtFEmU2tD3oB6CDARBKzICZek0p6nOjjjqF7T6utat8Vt4Z26gWIzjMEqbYaLHwOEZwsmdusg__w6Lu3FxT9FNNqV0zDwX.png</span><span class="informations">774×968 39.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/5dee314d5808823b6f200ff62e2f987d2a18bb70.png" data-download-href="https://discuss.iatistandard.org/uploads/default/5dee314d5808823b6f200ff62e2f987d2a18bb70" title="SAK1ol1iZsotrzQR29gAH8naVxEqlWAZEl_x7P1cWlr8iE3KUT1rYECuWdlM4KM4esU9e2ZAvwDSAqWMZDM6tQWo9n4IE5PHKHrNH2iDIN3c89DYIrpvCLQDpePuMNYEdTpZi4Zu.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/5dee314d5808823b6f200ff62e2f987d2a18bb70_2_210x274.png" alt width="210" height="274" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/5dee314d5808823b6f200ff62e2f987d2a18bb70_2_210x274.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/5dee314d5808823b6f200ff62e2f987d2a18bb70_2_315x411.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/5dee314d5808823b6f200ff62e2f987d2a18bb70_2_420x548.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/5dee314d5808823b6f200ff62e2f987d2a18bb70_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">SAK1ol1iZsotrzQR29gAH8naVxEqlWAZEl_x7P1cWlr8iE3KUT1rYECuWdlM4KM4esU9e2ZAvwDSAqWMZDM6tQWo9n4IE5PHKHrNH2iDIN3c89DYIrpvCLQDpePuMNYEdTpZi4Zu.png</span><span class="informations">742×972 41.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/045ebdb6953253e283327a6a64b9957a9f2cd89a.png" data-download-href="https://discuss.iatistandard.org/uploads/default/045ebdb6953253e283327a6a64b9957a9f2cd89a" title="fYDz8rE7pt4LQ6kARyA92WHwjg57GccxmjgoSKW0kpHZkW0bP0JPhrChnyGHim6Fdx9UeK1wQEbnZVEZ-kLbwHYh17-KQQGB2SAD22n9hHpZCV7jNbR6ig3Xs8tSDzx9oSWXALa3.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/045ebdb6953253e283327a6a64b9957a9f2cd89a_2_217x234.png" alt width="217" height="234" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/045ebdb6953253e283327a6a64b9957a9f2cd89a_2_217x234.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/045ebdb6953253e283327a6a64b9957a9f2cd89a_2_325x351.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/045ebdb6953253e283327a6a64b9957a9f2cd89a_2_434x468.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/045ebdb6953253e283327a6a64b9957a9f2cd89a_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">fYDz8rE7pt4LQ6kARyA92WHwjg57GccxmjgoSKW0kpHZkW0bP0JPhrChnyGHim6Fdx9UeK1wQEbnZVEZ-kLbwHYh17-KQQGB2SAD22n9hHpZCV7jNbR6ig3Xs8tSDzx9oSWXALa3.png</span><span class="informations">704×678 25.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/1879ea14e6f98903148a6c4105df8d9e04c20c16.png" data-download-href="https://discuss.iatistandard.org/uploads/default/1879ea14e6f98903148a6c4105df8d9e04c20c16" title="SZliXHo_Sn0icDoUqehJTciFmSQ0t59Mj-1f5J6z49soqaSO0wqL82LnxbgZd7bUn7XYN-qKkKG2ARov0dMHqQf82fO8e5tPq57VFy2D46EeiHExAaEgf6JuBqQZihr6vLbgW044.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/1879ea14e6f98903148a6c4105df8d9e04c20c16_2_207x278.png" alt width="207" height="278" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/1879ea14e6f98903148a6c4105df8d9e04c20c16_2_207x278.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/1879ea14e6f98903148a6c4105df8d9e04c20c16_2_310x417.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/1879ea14e6f98903148a6c4105df8d9e04c20c16_2_414x556.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/1879ea14e6f98903148a6c4105df8d9e04c20c16_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">SZliXHo_Sn0icDoUqehJTciFmSQ0t59Mj-1f5J6z49soqaSO0wqL82LnxbgZd7bUn7XYN-qKkKG2ARov0dMHqQf82fO8e5tPq57VFy2D46EeiHExAaEgf6JuBqQZihr6vLbgW044.png</span><span class="informations">762×996 39.6 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/8146faad93c97d3193e14cdbb860bb784fbc2d2c.png" data-download-href="https://discuss.iatistandard.org/uploads/default/8146faad93c97d3193e14cdbb860bb784fbc2d2c" title="HciLpcK-om3XmhM1_gSYtRPr9sT1svl-VXU6cs15ALfTzMwlZvWH57T3vltQjmBl09Er4bcDSDnbSONVcbYrQHsGsUsS-a9EmE942-VFJcGTe3UEgwWQeqWlzGB-p0ZmbcQrQJ0l.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/8146faad93c97d3193e14cdbb860bb784fbc2d2c_2_207x423.png" alt width="207" height="423" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/8146faad93c97d3193e14cdbb860bb784fbc2d2c_2_207x423.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/8146faad93c97d3193e14cdbb860bb784fbc2d2c_2_310x634.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/8146faad93c97d3193e14cdbb860bb784fbc2d2c_2_414x846.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/8146faad93c97d3193e14cdbb860bb784fbc2d2c_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">HciLpcK-om3XmhM1_gSYtRPr9sT1svl-VXU6cs15ALfTzMwlZvWH57T3vltQjmBl09Er4bcDSDnbSONVcbYrQHsGsUsS-a9EmE942-VFJcGTe3UEgwWQeqWlzGB-p0ZmbcQrQJ0l.png</span><span class="informations">708×1444 61.8 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/afecbead51f2473e5c1ff672c07f71e011fba329.png" data-download-href="https://discuss.iatistandard.org/uploads/default/afecbead51f2473e5c1ff672c07f71e011fba329" title="CKNjoYZHh5V4OR2LoY6XlSN8CH5nco4SEmLeJrQtTEFq8Wbs4AW74xrkvrfO0BCLdOAfXbxR1YyfO8hsoinVlA0IGiYuxrxfjEynusVsXToenbeAQzNRCDZ1X8QuxDK9_81kHzbb.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/afecbead51f2473e5c1ff672c07f71e011fba329_2_207x321.png" alt width="207" height="321" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/afecbead51f2473e5c1ff672c07f71e011fba329_2_207x321.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/afecbead51f2473e5c1ff672c07f71e011fba329_2_310x481.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/afecbead51f2473e5c1ff672c07f71e011fba329_2_414x642.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/afecbead51f2473e5c1ff672c07f71e011fba329_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">CKNjoYZHh5V4OR2LoY6XlSN8CH5nco4SEmLeJrQtTEFq8Wbs4AW74xrkvrfO0BCLdOAfXbxR1YyfO8hsoinVlA0IGiYuxrxfjEynusVsXToenbeAQzNRCDZ1X8QuxDK9_81kHzbb.png</span><span class="informations">700×1018 40.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<ul>
+<li>the Standard uses a <strong>MAJOR.MINOR</strong> versioning system, from which the tagged branches can easily diverge as soon as a new bugfix is introduced after a tagged release; as an example, version 2.03 of the Standard isn’t due to change any time soon, but if a developer modifies one of the files within the SSOT, the tag becomes obsolete.</li>
+</ul>
+<p>Tagged branches will make sense once Semantic Versioning (“semver” <a href="https://semver.org/" rel="nofollow noopener">https://semver.org/</a>) is introduced for the Standard (as suggested in <a href="https://iatistandard.org/documents/242/Paper-10-Proposed-revisions-to-the-IATI-Standard-upgrade-process.pdf" rel="nofollow noopener">https://iatistandard.org/documents/242/Paper-10-Proposed-revisions-to-the-IATI-Standard-upgrade-process.pdf</a>) and the Standard version will then acquire the form of <strong>MAJOR.MINOR.PATCH</strong>, allowing the developers to always fetch the most recent version of the codebase (and thus the Standard itself) without ambiguity or confusion.</p>
+<p>Relevant GitHub issue: <a href="https://github.com/IATI/IATI-Standard-SSOT/issues/153" rel="nofollow noopener">https://github.com/IATI/IATI-Standard-SSOT/issues/153</a></p>
+<p><strong>Possible options</strong></p>
+<ul>
+<li>
+<p>Removal of tags from branches + update of the reference page till semver is introduced for the Standard</p>
+</li>
+<li>
+<p>Manual upgrade of tags “every so often”: albeit this not being a bad option, it requires the developers to constantly remember to remove a tag (in Git, a tag is not reusable unless deleted) and re-tag a branch once a bug fix/code patch happens. This isn’t a stable approach and introduces the risk of leaving a branch’s tag out of date anyway.</p>
+</li>
+<li>
+<p>Introducing the <strong>PATCH</strong> number in Git tags (and not in the Standard): this would cause, in our opinion, a potentially confusing mismatch of versions (eg: Standard version 2.03 vs. Git-tagged branch version 2.03.64 would both refer to version 2.03 of the Standard)</p>
+</li>
+</ul>
+<p><strong>Recommendation: Temporary Deprecation</strong></p>
+<p>Our suggestion is to temporarily remove the tags from the affected repositories and updating the reference guide with the complete removal of the tags guideline. The developers wanting to work on the Standard will still be able to retrieve it using the named branches (as described in <a href="http://reference.iatistandard.org/203/developer/ssot/proposal/#ssot-branches" rel="nofollow noopener">http://reference.iatistandard.org/203/developer/ssot/proposal/#ssot-branches</a>) and always be sure to correctly fetch the latest version.</p>
+<p>This change will not impact anybody and is going to provide a tidier and non-misleading documentation page.</p>
+<p>We aim to push this update before the 10th of November 2018.</p>
+          <p><a href="https://discuss.iatistandard.org/t/notification-of-removal-of-misleading-section-from-the-developers-reference-site/1547/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/notification-of-removal-of-misleading-section-from-the-developers-reference-site/1547/1</link>
+        <pubDate>Tue, 30 Oct 2018 16:31:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1547-1</guid>
+        <source url="https://discuss.iatistandard.org/t/notification-of-removal-of-misleading-section-from-the-developers-reference-site/1547.rss">Notification of removal of misleading section from the Developer&#39;s Reference site</source>
+      </item>
+  </channel>
+</rss>

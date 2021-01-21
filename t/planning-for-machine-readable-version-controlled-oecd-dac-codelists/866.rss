@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+    <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866</link>
+    <description>Some of us (OK, @andylolz!) noticed that the DAC CRS codelists were updated by the [OECD on May 9th](http://www.oecd.org/dac/financing-sustainable-development/development-finance-standards/dacandcrscodelists.htm).
+
+It&#39;s great that we have something from the community (also @andylolz!) in place to [try and track this](https://discuss.iatistandard.org/t/show-iati-republishing-oecd-dac-codelists/763/6). 
+
+However, it would be great to know when, what and how these codelists will be moved by the OECD-DAC to a platform that ensures scalability, version control and machine legibility.  I think there&#39;s an upcoming WP-STAT meeting - can anyone inform us (maybe @OJ_ or @Herman ?)?
+
+A while back, I posted something about [characteristics we might want to see from an external codelist](https://discuss.iatistandard.org/t/criteria-for-assessing-external-codelists-vocabularies-registries/498).  Perhaps we could start to list and detail what we&#39;d expect from CRS DAC codelists in the IATI community, given that we are so reliant on their effective management?</description>
+    
+    <lastBuildDate>Mon, 10 Jul 2017 11:50:06 +0000</lastBuildDate>
+    <category>Codelists</category>
+    <atom:link href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Maintained, machine readable versions of <a href="http://data.okfn.org/data/core/dac-and-crs-code-lists">these codelists are now provided as a frictionless data core dataset</a>, in CSV and JSON.</p>
+<p><a href="http://www.publishwhatyoufund.org/maintained-machine-readable-dac-crs-code-lists-de-rien/">I’ve blogged about it here</a> (please like and share etc etc).</p>
+<p>It’s trivial to automatically replicate these as IATI codelists. It’s slightly less trivial if you want to keep track of removed (‘withdrawn’) codes, but still ultimately doable. I’ve <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/51#issuecomment-313250955">added some comments about how I’d do it</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/9</link>
+        <pubDate>Mon, 10 Jul 2017 11:50:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-866-9</guid>
+        <source url="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss">Planning for machine readable, version controlled OECD-DAC codelists</source>
+      </item>
+      <item>
+        <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>As an update this the posts above, we had a follow-up call with representatives from the OECD DAC last Friday (16th June).</p>
+<p><strong>Updates to OECD DAC codelists in XML format</strong><br>
+It was confirmed that the <a href="http://vs-web-fs-1.oecd.org/crs-iati-xml/Lookup/DAC_codeLists.xml">current XML version of the OECD codelists</a> has not been updated for some time. We understand that generating this XML file is – at present – a manual process and the colleague actioned with this is hoping to undertake the work within a couple weeks.  They said they would update us when the file was updated, and we will post here when we receive this notification.</p>
+<p><strong>Progress on fully machine-readable (XML) codelists</strong><br>
+There are no updates on work to automatically generate this file at this time. However the OECD DAC are hoping to work on this over the summer, with automatic and fully machine-readable XML codelists available in the Autumn.</p>
+<p>We have advised that all OECD DAC codelists are made available in XML format (not just those used by IATI), for the benefit of the wider open and development data communities.  Additionally, we have highlighted the importance of keeping the XML codelist file at the same URL, which they are happy to do.</p>
+<p><strong>Interest and involvement from the wider IATI community</strong><br>
+We have highlighted the interest in the above-mentioned topics, such as in this thread. Given this, we encouraged the DAC to consider setting-up a (perhaps quarterly) user group meeting/consultation call to speak directly with codelist users and other interested parties in the open and development data communities. However, given resourcing constraints, there is no capacity to do this and it is felt that an informal relationship is most sustainable, given they see their primary remit being to service DAC members.  They have said that interested parties and data users are however welcome to get in touch using the <a href="http://www.oecd.org/general/contactsbydepartment.htm">contact information</a> on their website.</p>
+<p><strong>Overall</strong><br>
+We will continue to engage on the above matters and would also encourage others with an interest in OECD data to get in touch direct. This way, data producers and data users can work together to ensure that relevant data is produced in a way that best meets user needs and supports economic development and decision-making.</p>
+          <p><a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/8</link>
+        <pubDate>Fri, 23 Jun 2017 16:18:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-866-8</guid>
+        <source url="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss">Planning for machine readable, version controlled OECD-DAC codelists</source>
+      </item>
+      <item>
+        <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="6" data-topic="866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>surely the OECD DAC representatives can signal their intentions and plans in an open and public channel, for us all to engage around?  It’s 2017 - we have the internet.</p>
+</blockquote>
+</aside>
+<p>We were indeed planning to encourage the OECD DAC to do this in our meeting tomorrow, with the person responsible for managing their codelists. Unless we plan to find an alternative source for the codelists currently provided by the OECD DAC, and given that we are a separate entity, ultimately all we can do share our experiences and offer encouragement.</p>
+          <p><a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/7</link>
+        <pubDate>Thu, 15 Jun 2017 16:24:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-866-7</guid>
+        <source url="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss">Planning for machine readable, version controlled OECD-DAC codelists</source>
+      </item>
+      <item>
+        <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello</p>
+<blockquote>
+<p>Following our face-to-face discussions with the OECD DAC in May, we have an open channel for dialogue and are next due to speak with our contact there this coming Friday. We will seek to find out about the status of the current XML version of their codelists that you mentioned. We will also be finding out more about how they are progressing with plans to automate the release of fully machine-readable XML, and will report back here.</p>
+</blockquote>
+<p>Forgive me, but this strikes as creating further complexity.  It’s no doubt appreciated that the IATI tech team are talking to the OECD DAC team, but surely the OECD DAC representatives can signal their intentions and plans in an open and <em>public</em> channel, for us all to engage around?  It’s 2017 - we have the internet.</p>
+<p>Apologies - I do not wish to sound flippant, but I do think this issue could be dealt with if the party controlling and managing these codes could interact with the community that (in)directly use them.</p>
+          <p><a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/6</link>
+        <pubDate>Tue, 13 Jun 2017 17:19:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-866-6</guid>
+        <source url="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss">Planning for machine readable, version controlled OECD-DAC codelists</source>
+      </item>
+      <item>
+        <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for these comments <a class="mention" href="/u/andylolz">@andylolz</a></p>
+<aside class="quote no-group" data-post="4" data-topic="866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>If IATI were to work with the XLS codelists that the DAC publishes right now, and help iron out issues that occur with those, it could help better inform the DAC about the requirements users (e.g. IATI) have.</p>
+</blockquote>
+</aside>
+<p>Following our face-to-face discussions with the OECD DAC in May, we have an open channel for dialogue and are next due to speak with our contact there this coming Friday.  We will seek to find out about the status of the current XML version of their codelists that you mentioned. We will also be finding out more about how they are progressing with plans to automate the release of fully machine-readable XML, and will report back here.  Aside from the issues that I mentioned in <a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/3">the above post</a> and raised by <a class="mention" href="/u/rory_scott">@rory_scott</a> <a href="https://discuss.iatistandard.org/t/dac-crs-code-lists-multiple-versions/528/3?u=dalepotter">here</a> , do let us know if there are other usability issues that you would like us to highlight in our ongoing dialogue?</p>
+<aside class="quote no-group" data-post="4" data-topic="866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>IATI non-embedded codelists being months out-of-date is (in my opinion) largely independent of the DAC not publishing machine-readable codelists.</p>
+</blockquote>
+</aside>
+<p>We accept that some recent changes to non-embedded codelists have taken some time to push through (<a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771">example</a>), often where there have been queries about recycled codes that may impact the meaning of published data. We have been discussing our protocols for this amongst the IATI Technical Team and have been looking to find better ways to handle these.</p>
+<p>Pending full agreement within the team (and corresponding clarification on the <a href="http://iatistandard.org/codelists/codelist-management/">IATI Codelist Management</a> page), we are moving towards a situation where replicated non-embedded codelists (i.e. those from the OECD DAC, ISO, IANA and the US National Geospatial-Intelligence Agency) are agreed to be replicated ‘as is’, after at least 7 days notice has been given on the <a href="https://discuss.iatistandard.org/c/standard-management/non-embedded-codelist-amendments">Non-embedded codelists category</a>. We will also be seeking to include withdrawn codes as part of the source codelists, using the <code>status</code>, <code>activation-date</code> and <code>withdrawal-date</code> <a href="https://github.com/IATI/IATI-Codelists/blob/version-2.02/codelist.xsd#L54-L56">attributes</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/5</link>
+        <pubDate>Tue, 13 Jun 2017 16:31:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-866-5</guid>
+        <source url="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss">Planning for machine readable, version controlled OECD-DAC codelists</source>
+      </item>
+      <item>
+        <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="866">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"> dalepotter:</div>
+<blockquote>
+<p>However, the DAC recognise that in the past there have been occasions where the content of XLS and XML versions have been inconsistant.</p>
+</blockquote>
+</aside>
+<p>It’s worth explicitly noting that this is not limited to the past, but in fact also applies to the present! The <code>date-last-modified</code> for <a href="http://www.oecd.org/dac/financing-sustainable-development/dacandcrscodelistsinxmlformatbasedoniatistandardcodelist.htm">the XML version</a> says Jan 2016, and a quick eyeball suggests this is probably accurate. I believe <a class="mention" href="/u/stevieflow">@stevieflow</a> has previously called for the link to the XML version to be removed from the OECD site, at least until it points to something up-to-date.</p>
+<hr>
+<p>That said… It seems to me there’s a bit of complexity here, but the machine readable bit (i.e. XLS-&gt;XML) is the least of the problems. We know from experience that there’s XML… And then there’s “XML”. If IATI were to work with the XLS codelists that the DAC publishes right now, and help iron out issues that occur with those, it could help better inform the DAC about the requirements users (e.g. IATI) have.</p>
+<p>Of course it would be useful if the DAC produced and maintained machine-readable codelists… But IATI would still need to (at least for a period) maintain some infrastructure to e.g. track changes (as <a class="mention" href="/u/dalepotter">@dalepotter</a> mentions). Most of that can be set up right now (in fact, it’s exactly what <a href="https://andylolz.github.io/dac-crs-codes/">https://andylolz.github.io/dac-crs-codes/</a> does). I don’t believe that would undermine efforts to get the DAC producing machine-readable codelists. IATI non-embedded codelists being months out-of-date is (in my opinion) largely independent of the DAC not publishing machine-readable codelists.</p>
+          <p><a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/4</link>
+        <pubDate>Wed, 07 Jun 2017 12:21:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-866-4</guid>
+        <source url="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss">Planning for machine readable, version controlled OECD-DAC codelists</source>
+      </item>
+      <item>
+        <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a timely topic, particularly given that new updates to DAC codelists keep on coming!  Additionally, representatives from the IATI Technical Team met with the OECD DAC last week to discuss how we can better support each others work.</p>
+<p>Our use of replicated codelists was a key topic as part of this, and we gained a greater understanding into how DAC codelists are reproduced and shared our experiences of working with them.</p>
+<p>There were a number of issues which will be of interest to the IATI and development data communities:</p>
+<p><strong>Machine readability of codelists</strong></p>
+<p>As we know the DAC codelists are made available in <a href="http://www.oecd.org/dac/financing-sustainable-development/development-finance-standards/DAC-CRS-CODES.xls" rel="nofollow noopener">XLS (spreadsheet)</a> and <a href="http://vs-web-fs-1.oecd.org/crs-iati-xml/Lookup/DAC_codeLists.xml" rel="nofollow noopener">XML (fully machine-readable)</a> formats.  However, the DAC recognise that in the past there have been occasions where the content of XLS and XML versions have been inconsistant. In part, this appears to be related to resources available to manage the codelists. Currently, codes are stored at source on an internal (SQL) database, with the output XLS and XML versions curated manually.</p>
+<p>However, by Autumn 2017, the DAC are planning to implement an automated systems to generate both XLS and XML versions in an automated way, which should see an end to inconsistencies between versions and make it possible to work with DAC codelists in a fully machine-readable way.</p>
+<p><strong>Changelog</strong></p>
+<p>The DAC have been responsive to requests from their user community and have introduced a summary sheet to the main sheet detailing changes since the last version. This is of great help for highlighting modifications, as it prevents the need to manually identify these differences.</p>
+<p>Example from the latest spreadsheet of codes:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/7204ae836b18c280dde87e7119aef61af0e056f9.png" data-download-href="https://discuss.iatistandard.org/uploads/default/7204ae836b18c280dde87e7119aef61af0e056f9" title="image.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/7204ae836b18c280dde87e7119aef61af0e056f9_2_690x332.png" width="690" height="332" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/7204ae836b18c280dde87e7119aef61af0e056f9_2_690x332.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/7204ae836b18c280dde87e7119aef61af0e056f9_2_1035x498.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/7204ae836b18c280dde87e7119aef61af0e056f9_2_1380x664.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/7204ae836b18c280dde87e7119aef61af0e056f9_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1640×790 92.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>With full machine readability of codes, it will be possible to generate changelogs more easily anyway. I would suggest that a daily script is created to identify changes to XML version and store a new version in a git repository.</p>
+<p><strong>Reuse of codes</strong></p>
+<p>From our discussion, it was clear that the DAC share our frustration when codes are re-used. It seems that they feel they are forced into reusing codes when member organisations supply data. Nonetheless this is something that they are striving to avoid. Additionally, we are grateful to DAC staff who have been responsive and helpful in responding to queries to help understand the scope of changes to code names (for example relating to <a href="https://discuss.iatistandard.org/t/align-sector-codelist-with-the-latest-version-published-the-dac/771/6">DAC sector code 15114</a>).</p>
+<p><strong>Making old codes available</strong></p>
+<p>The DAC are responsive to this ask and are planning to modify their source database to include metadata fields for code introduction (and presumably withdrawal) dates. Our understanding if that they will seek to make this public in output versions too. The above idea on storing codelists as a git repository will provide a way to generate this metadata even if not feed through to output versions.</p>
+<p><strong>Summary</strong></p>
+<p>All in all, this was an encouraging meeting and a good insight into working practices. The publication of these lists in fully machine-readable XML format will be a game-changer for the management of the codes.</p>
+<p>We would continue to encourage the DAC user community to make visible the positive impact that the production of DAC codelists makes to the wider development data community, as well as the importance of codelist management policies and our excitement about the potential of full machine-readability to improve efficiency and effectiveness.</p>
+          <p><a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/3</link>
+        <pubDate>Tue, 16 May 2017 09:09:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-866-3</guid>
+        <source url="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss">Planning for machine readable, version controlled OECD-DAC codelists</source>
+      </item>
+      <item>
+        <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear Steven</p>
+<p>Yes, that’s the spirit. I have previously shared a few items to such a list. Basic point being the need for a historical dimension.</p>
+<p>This will include from-to dates, but we must remember that this has nothing to do with the date of release of updates – all codes are valid for the statistical reporting of particular calendar years, and changes made e.g. at the June meeting this year will have effect for the final reporting on 2016-flows. Thus, codes currently on the list may end up with 31-12-2015 as ‘end date’, and some codes, that are not on the list yet, will be published in June under the understanding that the start-date was actually 01-01-2016.</p>
+<p>The current, specific channel-codes should be considered ‘serial-numbers’, since they no longer carry any information about the category or parent-relationship. But if we intend to establish historical data for more than just a couple of years, we reach back to a time where the specific channelcodes did carry that meaning – i.e. when organisations got new id’s if they were moved from one category to another. Thus, a long-reaching historical dataset would require a ‘previous code’ option.</p>
+<p>The Secretariat has responded very positively, and favourably regarding an idea of providing the rich meta-data as well (e.g. documentation of when which changes to the list was decided).</p>
+<p>So I do believe this could end up as a successful cooperation.</p>
+<p>Yours OJ</p>
+          <p><a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/2</link>
+        <pubDate>Mon, 15 May 2017 08:23:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-866-2</guid>
+        <source url="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss">Planning for machine readable, version controlled OECD-DAC codelists</source>
+      </item>
+      <item>
+        <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Some of us (OK, <a class="mention" href="/u/andylolz">@andylolz</a>!) noticed that the DAC CRS codelists were updated by the <a href="http://www.oecd.org/dac/financing-sustainable-development/development-finance-standards/dacandcrscodelists.htm" rel="nofollow noopener">OECD on May 9th</a>.</p>
+<p>It’s great that we have something from the community (also <a class="mention" href="/u/andylolz">@andylolz</a>!) in place to <a href="https://discuss.iatistandard.org/t/show-iati-republishing-oecd-dac-codelists/763/6">try and track this</a>.</p>
+<p>However, it would be great to know when, what and how these codelists will be moved by the OECD-DAC to a platform that ensures scalability, version control and machine legibility.  I think there’s an upcoming WP-STAT meeting - can anyone inform us (maybe <a class="mention" href="/u/oj_">@OJ_</a> or <a class="mention" href="/u/herman">@Herman</a> ?)?</p>
+<p>A while back, I posted something about <a href="https://discuss.iatistandard.org/t/criteria-for-assessing-external-codelists-vocabularies-registries/498">characteristics we might want to see from an external codelist</a>.  Perhaps we could start to list and detail what we’d expect from CRS DAC codelists in the IATI community, given that we are so reliant on their effective management?</p>
+          <p><a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/1</link>
+        <pubDate>Mon, 15 May 2017 07:38:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-866-1</guid>
+        <source url="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss">Planning for machine readable, version controlled OECD-DAC codelists</source>
+      </item>
+  </channel>
+</rss>

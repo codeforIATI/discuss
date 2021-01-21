@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:35:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>IATI Identifiers should not be allowed to contain special characters - 3.0.0 Major Upgrade Proposals - IATI Community Discussions</title>
+    <meta name="description" content="Hello, 
+
+We have had a lot of issues latelywhen trying to develop solutions on top of IATI data when the underlying IATI identifiers contain special characters like &amp;#39; and &amp;amp;. 
+
+The IATI standard states that identifiers sh&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="649.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;IATI Identifiers should not be allowed to contain special characters&#39;" href="649.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649" />
+<meta property="og:title" content="IATI Identifiers should not be allowed to contain special characters" />
+<meta name="twitter:title" content="IATI Identifiers should not be allowed to contain special characters" />
+<meta property="og:description" content="Hello,  We have had a lot of issues latelywhen trying to develop solutions on top of IATI data when the underlying IATI identifiers contain special characters like ’ and &amp;.  The IATI standard states that identifiers should pass the followiing regex [^/&amp;|?]+  I think that this suggestion should be made into a requirement that identifiers must not contain special characters and that any IATI identifier that contains special characters will cause the activity to fail  validation.  The standard also..." />
+<meta name="twitter:description" content="Hello,  We have had a lot of issues latelywhen trying to develop solutions on top of IATI data when the underlying IATI identifiers contain special characters like ’ and &amp;.  The IATI standard states that identifiers should pass the followiing regex [^/&amp;|?]+  I think that this suggestion should be made into a requirement that identifiers must not contain special characters and that any IATI identifier that contains special characters will cause the activity to fail  validation.  The standard also..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="8 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="6 ❤" />
+<meta property="article:published_time" content="2016-12-22T13:35:01+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="next" href="6494658.html?page=2">
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="649.html">IATI Identifiers should not be allowed to contain special characters</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/standard-management/35.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #5719A3'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Standard Management</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/standard-management/3-01-integer-upgrade-proposals/37.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #A66EE9'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>3.0.0 Major Upgrade Proposals</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/r_clements.html'><span itemprop='name'>r_clements</span></a>
+            (r_clements)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2016-12-22T13:35:01Z'>
+              <time itemprop='dateModified' datetime='2017-04-27T09:00:44Z' class='post-time'>
+                April 27, 2017,  9:00am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hello,</p>
+<p>We have had a lot of issues latelywhen trying to develop solutions on top of IATI data when the underlying IATI identifiers contain special characters like ’ and &amp;.</p>
+<p>The <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/iati-identifier/" rel="nofollow noopener">IATI standard</a> states that identifiers should pass the followiing regex [^/&amp;|?]+</p>
+<p>I think that this suggestion should be made into a requirement that identifiers must not contain special characters and that any IATI identifier that contains special characters will cause the activity to fail  validation.</p>
+<p>The standard also states that once an ID has been created that it must not be changed. I think in the case of special characters within IDs, however, that an exception should be made in order to improve the quality of the data contained within the registry.</p>
+<p>Ross</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-12-30T09:55:35Z' class='post-time'>
+                December 30, 2016,  9:55am
+              </time>
+              <meta itemprop='dateModified' content='2016-12-30T09:55:35Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/r_clements.html">@r_clements</a></p>
+<p>I agree that such identifiers then “break” uses of the data - especially when an identifier is a part of a URL - a / or a \ can present challenges / break things</p>
+<p>One issue in terms of enforcing this is that the current IATI schema does not check such content - for example the format of an identifier.  The rules you cite are additional resources - meaning that somebody validating their data via the schema (or the IATI Validator online) may “pass” validation, but be unaware / skip this additional good practice.</p>
+<p>It would be great if others could indicate how such a process could become a part of the central resources</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Wendy.html'><span itemprop='name'>Wendy</span></a>
+            (Wendy Rogers)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-01-04T11:06:52Z'>
+              <time itemprop='dateModified' datetime='2017-01-04T11:19:13Z' class='post-time'>
+                January 4, 2017, 11:19am
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for raising this issue <a class="mention" href="../../u/r_clements.html">@r_clements</a> and I thought I should add that it is still our intention to enhance the <a href="http://validator.iatistandard.org/">IATI validator</a> so that it carries out all specific validation and content checking (such as this for the activity identifier) as defined as part of the IATI Standard.  Unfortunately <a href="../work-towards-an-improved-iati-validator/524.html">work on the new validator</a> has had to be paused due to other priorities but we hope to get going with it again in the near future.</p>
+<p>Also you suggest that the activity identifier should not contain any special characters so we could extend the regex to explicitly cover other characters that should not be used? eg ’ $%* etc. However, I assume that we would want to continue to allow ‘-’ hypens to be used?</p>
+<p>I also agree that whilst it is explicitly stated that an activity identifier once published should not change we may perhaps need to make an exception for when special characters have inadvertently been used. However, I would be interested to get the views of others (and especially data users) on this?</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-09T09:19:27Z' class='post-time'>
+                January 9, 2017,  9:19am
+              </time>
+              <meta itemprop='dateModified' content='2017-01-09T09:19:27Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am not sure this change outweighs the benefits. When using IATI identifiers in URL’s  you should always URL encode the IATI identifier. That solves the problem.</p>
+<p>If you still want to exclude special characters from the IATI identifier, this check should be part of the IATI validator, since this the formal IATI conformance check. I would not change existing IATI identifiers, since that would cause all kind of problems when relating activities (as we extensively do). The hyphen ‘-’ is a part of the existing guidelines. No reason i.m.o. to change that. Since this is a breaking change, it should be part of the next integer upgrade of the standard, only to be applied to new activities. That would be not be trivial to implement though.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/r_clements.html'><span itemprop='name'>r_clements</span></a>
+            (r_clements)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-09T11:30:23Z' class='post-time'>
+                January 9, 2017, 11:30am
+              </time>
+              <meta itemprop='dateModified' content='2017-01-09T11:30:23Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thank you to everyone for your thoughts on my initial question.</p>
+<p><a class="mention" href="../../u/wendy-2.html">@Wendy</a> - I think to clarify I would like to say that I had never thought that hyphen would be one of the characters that’s removed as DFID use it in all of our H2 IATI project identifiers and it doesn’t break URLs.</p>
+<p><a class="mention" href="../../u/herman-2.html">@Herman</a> - The standard currently warns against the use of characters that would break URLs but I don’t think that it goes far enough and they should be explicitly banned from usage. Ideally the IATI validator would check for this but I think that firming up the guidance would be a good start.<br>
+The OIPA API / Devtracker ecosystem has been updated so that it returns project identifiers that are stripped of special characters, however if I wanted to return raw JSON data from the OIPA API then you’re in a position where you are forcing the interface to process low quality input (e.g. the / character in a project identifier) so that users get the expected project data returned to them.</p>
+<p>I honestly believe that this issue is causing problems across the board for people trying to create tools on top of IATI data and means that developers are spending time trying to interpret bad data rather than improve the tools that they are developing.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-31T16:13:28Z' class='post-time'>
+                January 31, 2017,  4:13pm
+              </time>
+              <meta itemprop='dateModified' content='2017-01-31T16:13:28Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/r_clements.html">@r_clements</a>,<br>
+Yes I agree that the use of IATI should be as simple as possible in principle. Changing existing identifiers will have considerable impact though in all existing applications referring to activities of other publishers. So this is no trivial change. It would be interesting to know how many publishers are producing activity identifiers with non-standard characters, so we know what the impact of this change would be.</p>
+<p>The use of special characters throughout IATI should maybe considered (such as the use of special characters in the names of IATI file in the registry)</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-01-31T16:40:46Z'>
+              <time itemprop='dateModified' datetime='2017-01-31T16:42:20Z' class='post-time'>
+                January 31, 2017,  4:42pm
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi all,</p>
+<p>I am not really a programmer but is an alternative not to tweak the IATI standard to enforce (or convert to) the use of character entity references e.g. <a href="http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php" rel="nofollow noopener">http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php</a> instead of just the [^/&amp;|?]+ regex so that all characters can continue to be used, and peoples parsers don’t break? E.g. “/” would be " &amp; # 4 7 ; ". This seems to me one of the advantages of raw IATI data being machine readable.</p>
+<p>My hunch is that otherwise this could force publishers to maintain two names e.g. for projects in their own systems (one for their system including special characters, and another for publishing to IATI), and also rmove lots of useful hyperlinks in the data which would be a significant inconvenience and reduce the amount of data that is published.</p>
+<p>Matt</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-02-21T16:20:29Z'>
+              <time itemprop='dateModified' datetime='2017-02-21T16:21:16Z' class='post-time'>
+                February 21, 2017,  4:21pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m puzzled about this! <code>[^\/\&amp;\|\?]+</code> will match an identifier that contains <strong>at least one</strong> character <strong>that isn’t</strong> a forward slash, ampersand, pipe or question mark.</p>
+<p>So for instance, <code>:-/ uh oh? :-|</code> would match this regex, and therefore be considered a valid identifier, despite the special characters.</p>
+<p>I wonder if this regex should instead be: <code>^[^\/\&amp;\|\?]+$</code> i.e. the identifier <strong>can’t contain any</strong> forward slashes, ampersands, pipes or question marks.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bjwebb.html'><span itemprop='name'>bjwebb</span></a>
+            (Ben Webb)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-21T19:01:54Z' class='post-time'>
+                February 21, 2017,  7:01pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-21T19:01:54Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes, I think you’re right. This was probably a mistake on my part a few years ago.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T06:08:35Z' class='post-time'>
+                March 2, 2017,  6:08am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T06:08:35Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>We do not seem to have consensus on this issue. There would appear to be two approaches to use of characters in IATI identifiers.</p>
+<ol>
+<li>Restrict characters allowed and fix regex rules.</li>
+<li>Allow all valid characters and enforce url encoding when using identifiers in urls.</li>
+</ol>
+<p>Could everyone provide a bottom-line response to these two options?</p>
+<p><a class="mention" href="../../u/herman-2.html">@Herman</a> <a class="mention" href="../../u/r_clements.html">@r_clements</a> <a class="mention" href="../../u/andylolz.html">@andylolz</a> <a class="mention" href="../../u/bjwebb.html">@bjwebb</a> <a class="mention" href="../../u/matmaxgeds.html">@matmaxgeds</a> <a class="mention" href="../../u/markbrough.html">@markbrough</a> <a class="mention" href="../../u/stevieflow.html">@stevieflow</a>  <a class="mention" href="../../u/timdavies-2.html">@TimDavies</a></p>
+<p>(Personally I am with <a class="mention" href="../../u/herman-2.html">@herman</a> on the second option as the activity part of the identifier should reflect the identifier used in the publisher’s own system.)</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T06:27:02Z' class='post-time'>
+                March 2, 2017,  6:27am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T06:27:02Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Also with <a class="mention" href="../../u/herman-2.html">@Herman</a> - the donor systems I have seen would have significant  difficulty (huge increase in manual tweaking of fields required) to restrict these characters, potentially also making those fields less readable. Suggest enforcing URL encoding for all URLs, not just those with identifiers.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T08:30:30Z' class='post-time'>
+                March 2, 2017,  8:30am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T08:30:30Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="10" data-topic="649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.jpg" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Allow all valid characters and enforce url encoding when using identifiers in urls.</p>
+</blockquote>
+</aside>
+<p>I agree (in more than 20 characters)</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/TimDavies.html'><span itemprop='name'>TimDavies</span></a>
+            (Tim Davies)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T10:04:48Z' class='post-time'>
+                March 2, 2017, 10:04am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T10:04:48Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I prefer option (2).</p>
+<p>The two other considerations that might point towards (1) however:</p>
+<ul>
+<li>(a) Input systems that only allow alphanumeric characters. Often legacy systems will have restrictive validation on fields; or at least may not support full unicode in input fields for identifiers;</li>
+<li>(b) Cases where identifiers are presented in a range of different ways (e.g. Australian Business Number might be written as ‘123 123 123’ or ‘123.123.123’ or ‘123123123’ in different places, all for the same organisation;</li>
+</ul>
+<p>These noted, I still support option (2), with the idea that we might need to provide guidance to users of organisation identifiers on some basic normalisation to apply to them to maximally ensure identifier matches.</p>
+<p>(For example, I’m not aware of any identifier schemes in which ‘123/123/123’ and ‘123123123’ would identify <strong>different</strong> organisations - so it is generally safe <em>internally when consuming data</em> to strip out special characters to get the best chance of identifier matches)</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../d-portal-search-feedback-on-features/647/8.html" itemprop='item'>
+                      <meta itemprop='url' content='../d-portal-search-feedback-on-features/647/8.html'>
+                      <meta itemprop='position' content='1'>
+                      <span itemprop='name'>D-portal search - feedback on features</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/r_clements.html'><span itemprop='name'>r_clements</span></a>
+            (r_clements)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T10:21:55Z' class='post-time'>
+                March 2, 2017, 10:21am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T10:21:55Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hello everyone,</p>
+<p>For me it’s still: 1.Restrict characters allowed and fix regex rules.</p>
+<p>I don’t like to be the contrarian here, but I’m afraid I disagree and would like to highlight one of the issues.</p>
+<p>An organisation whose data we wanted to consume published an identifier that went something like: GB-test-Sana’a and caused the team behind DevTracker and OIPA no end of headaches to try and formulate and process an ID that was usable from the existing data.</p>
+<p>I think it would be far easier for any tool builder to have the option of excluding IATI identifiers that contain this type of character and I fail to see why allowing /  ’ " = and &amp; values within IATI identifiers adds any value to the standard.</p>
+<p>For me it results in a significant overhead for anyone trying to build API tools on top of the data, that will be replicated by any technical team looking to build tools with IATI data.</p>
+<p>As a consumer of IATI data, I would rather spend my time working to develop new features to our tools (e.g DevTracker), insead of trying to mitigate against the impact of iati identifiers whi ch contain special characters that break url encoding.</p>
+<p><a class="mention" href="../../u/herman-2.html">@Herman</a> <a class="mention" href="../../u/andylolz.html">@andylolz</a> <a class="mention" href="../../u/bill_anderson.html">@bill_anderson</a> <a class="mention" href="../../u/bjwebb.html">@bjwebb</a> <a class="mention" href="../../u/markbrough.html">@markbrough</a> <a class="mention" href="../../u/stevieflow.html">@stevieflow</a> <a class="mention" href="../../u/vincentvw-2.html">@VincentVW</a> <a class="mention" href="../../u/siemvaessen.html">@siemvaessen</a> <a class="mention" href="../../u/matmaxgeds.html">@matmaxgeds</a></p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T10:23:19Z' class='post-time'>
+                March 2, 2017, 10:23am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T10:23:19Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/timdavies-2.html">@TimDavies</a> I think the bigger problem lies with the ‘project number’ part of the identifier, though I take the point that this could crop up on the organisation side as well</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T10:30:04Z' class='post-time'>
+                March 2, 2017, 10:30am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T10:30:04Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/r_clements.html">@r_clements</a> you make a strong case, but how do you maintain a link to the original project number:</p>
+<ol>
+<li>Is there a conversion (that works in both directions) that could be standardised?</li>
+<li>Or do you argue that the benefits of breaking that link outweigh the drawbacks?</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/r_clements.html'><span itemprop='name'>r_clements</span></a>
+            (r_clements)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T11:30:26Z' class='post-time'>
+                March 2, 2017, 11:30am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T11:30:26Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hello <a class="mention" href="../../u/bill_anderson.html">@bill_anderson</a>, In this case we were lucky in that the project was not linked to any other IATI data sets so I asked the organisation to fix it (i.e. remove the ’ and republish) - I must appologise to the community here as I didn’t realise that you’re not meant to do this, so I misinformed the publisher in this case.</p>
+<p>There were other issues with their published data, projects were published four times a year as the ID was adapted to reflect the current financial quarter, causing duplication of data within the IATI network. Again we have advised the organisation involved about this and they are changing their data, going forward, so they only publish a project ID once and adjust the finances rather than change the ID.</p>
+<p>I think my real concern with the IATI identifiers is that when we start to really improve our linking through the network, via the transaction ref fields, that a badly formed identifier (i.e. non url compliant) is going to cause issues for anyone trying to track funds when they’re using API calls to return the data.</p>
+<p>It’s not impossible to work round this issue, but I think we’re going to make the IATI data much more complex to work with than it needs to be - I suppose my core question, difficulties of changing the systems to enforce complance behaviour aside, is it too much to ask project inputters to avoid using these specific characters when allocating IATI Identifiers?</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/r_clements.html'><span itemprop='name'>r_clements</span></a>
+            (r_clements)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T11:33:18Z' class='post-time'>
+                March 2, 2017, 11:33am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T11:33:18Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Sorry I went off a bit there: I think you’ve hit the nail on the head, in the first instance I would break the link so 2. but would look to flag this in some way (Vincent’s IATI bug tracker could be adapted for this, so that part 1. can happen in conversation between the impacted organisations.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T11:33:28Z' class='post-time'>
+                March 2, 2017, 11:33am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T11:33:28Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Do we know firsthand how many IATI identifiers contain special characters, seeing I don’t have those numbers in front of me.</p>
+<p>From API (OIPA) perspective this has been an ongoing <em>issue</em> for years now. Non URL/URI compliance does in many cases require a custom approach from our perspective. Seeing how others may have a different approach as well, this does not add to interoperability if we for example were to align different systems in the IATI network.</p>
+<p>Basically the issue is two-fold: an IATI org. identifier can contain special character plus the additional identifier may contain special characters as well.</p>
+<p>We would prefer this to be solved at the root of the chain -the standard itself- and not anywhere else.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="649.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-02T11:37:11Z' class='post-time'>
+                March 2, 2017, 11:37am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-02T11:37:11Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="19" data-topic="649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.jpg" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>the root of the chain</p>
+</blockquote>
+</aside>
+<p>Isn’t the root of the chain the institution’s own business rules for how they id their projects? IATI doesn’t have jurisdiction over this.</p>
+<p><a class="mention" href="../../u/r_clements.html">@r_clements</a> just to be clear, when I talked about breaking the link I didn’t mean across IATI datasets, but between IATI and the reporting organisation’s project management system</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Identifiers should not be allowed to contain special characters'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="6494658.html?page=2">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:35:57 GMT -->
+</html>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Data divergence between registry and datastore</title>
+    <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708</link>
+    <description>Thanks very much @KateHughes for the [quarterly update](https://iatistandard.org/en/news/iati-technical-team-our-detailed-quarterly-update/)  perhaps worth posting on the forums too?
+
+@IATI-techteam In it I learnt that the new datastore will access data from the validator API, not directly from the registry. This suggests that the registry and the datastore could end up with different data i.e. a query via the registry to see how many active activities are there in country X could be different from the same query via the new datastore? Is this correct or have I missed something? If so, is one of them (registry API, validator API, datastore API) going to be &#39;official&#39;?</description>
+    
+    <lastBuildDate>Sat, 04 May 2019 17:02:44 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/herman">@Herman</a></p>
+<p>From my side, there are two things here that make it harder for people to use IATI data - the need for multiple APIs to access different parts of the data, and that the different APIs will now return different data to equivalent queries - and my aim is to make IATI easier to use, and therefore more widely used.</p>
+<p>It doesn’t seem that difficult to me, for a single API (the datastore) to return a) the data in curated form (it does this already) b) the original data (this is in the ToR already), c) the full metadata (it already provides some of this - and could get the rest from the registry API), and d) the codelists (this wouldn’t be hard - it could get them from the existing codelist API).</p>
+<p>This would seem to be established good practice, for the datastore to do all the bringing together of the necessary parts, and therefore it is done once, rather than each tool/users having to re-invent the wheel (which adds cost, complexity, and greater potential to be break).</p>
+<p>I don’t really understand how it is different for you whether the registry API returns the metadata, or the DS API does - in both cases (as with the data that the DS also returns) the publisher remains responsible for it. It is not like the publishers control the registry API either?</p>
+<p>We are also getting away from the original thread point - that I think having different results coming from equivalent queries to different IATI data sources is likely to reduce the value of IATI as a system of data provision due to the confusion it introduces - I think that if IATI is serious about solving some of the data use barriers, it needs to start prioritising some of these factors rather more - perhaps we can discuss this at the upcoming Copenhagen meeting.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/14</link>
+        <pubDate>Sat, 04 May 2019 17:02:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-14</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> From the technical point of view having 1 API to do all your work is convenient. The registry funtionality and therefore the registry API (with exception of the codelists maybe) is quite different from an DS API:</p>
+<ul>
+<li>the registry provides <strong>meta-data</strong>  of which the IATI publisher is the owner and for which the publisher is fully responsible</li>
+<li>the DS provides (curated) <strong>data</strong> (and maybe some meta-data) not directly under control by the publisher.</li>
+</ul>
+<p>Some examples of meta-data  use (and therfore the need of an registry API):</p>
+<ul>
+<li>
+<p>we are piloting now with providing automated e-mail data-quality feedback each time a publisher publishes a new IATI file. We are using the e-mail metadata in the registry to determine to which e-mail adress the feedback report must be sent to.</p>
+</li>
+<li>
+<p>If we find there is a problem with the IATI data of one of our partners, we <strong>always</strong> go back to the dataset to be found under the URL our partner has published on the regisitry. Because that URL, and therefore the corresponding dataset, is fully under control of our partner and therefore their responsibility.</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/13</link>
+        <pubDate>Thu, 02 May 2019 08:08:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-13</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/herman">@Herman</a> -  I agree that having the urls is essential, but had thought that this will be provided by the new datastore endpoint for datasets, which I think is <a href="https://dev.oipa.nl/api/datasets/" rel="nofollow noopener">https://dev.oipa.nl/api/datasets/</a> - it seems to provide the urls to the original publisher files - but maybe something is missing?</p>
+<p>I am also not sure what the use case is for using data that is marked as ‘invalid’ by the datastore? Another option is that invalid data is not even allowed in the registry - but this has other problems.</p>
+<p>I would normally agree that having more options is better, but in this case, it significantly increases the potential for confusion on the part of data users who will get different results from the different sources.</p>
+<p>I am also finding that IATI model of multiple APIs quite difficult - to build our system, we need to query the registry API for organisation files, the codelist API for the codelists, and the datastore API for the data - this seems pretty excessive - or am I missing a trick here?</p>
+<p>I was therefore hoping that the new datastore would also host/share a) the organisation files, and b) the codelists so that only one API would be needed to access IATI data?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/12</link>
+        <pubDate>Tue, 30 Apr 2019 14:27:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-12</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[KateHughes]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Herman,</p>
+<p>The situation you outlined had been our planned from the start, but we had wanted to take some time to review the suggestion from Matt.   On review we are going to stick to our orginal plan.  Thank you for outlining things so well - it means that I don’t have to describe it!</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/11</link>
+        <pubDate>Tue, 30 Apr 2019 13:25:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-11</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Matt and Kate, I thoroughly <strong>disagree</strong> with your point.</p>
+<p>The IATI registry and the DS fulfill two different distinct roles.</p>
+<p>The registry is the central point of meta-information about where all IATI data can be found and what its status is. The DS is a particular curated view on the data referred to in the IATI registry, with specific possibilities and limitations (e.g. search paths). Also communication about the quality of the uncurated raw IATI data published by publishers, must be based on the IATI registry, since it will not be available in the DS. The meta-data, including the URL’s to the IATI publishers files, must i.m.o. <strong>always</strong> be accessible though IATI-registry and certainly not closed off.</p>
+<p>Depending on your use case, you might want to use the registry, the DS or both.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/10</link>
+        <pubDate>Mon, 29 Apr 2019 12:50:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-10</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[KateHughes]]></dc:creator>
+        <description><![CDATA[
+            <p>You raise a valid point, the role of each tool within the system needs to be fully explored.  There will be future posts from the Tech Team on this as the integration of the tools is worked out in detail.  We’re going through our tools and working out their usage, use cases and what the future holds for them.  As many things have dependancies on other things, this is something we don’t want to hurry, but instead want to build up step by step.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/9</link>
+        <pubDate>Tue, 23 Apr 2019 15:58:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-9</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>This suggests to me that we should consider closing the registry API to public requests (leaving it only open to the datastore), otherwise people who directly used the registry as the source of IATI data (and put the effort into working with files that do not pass the XSD) would get different results to the same query via the datastore.</p>
+<p>As I understand it, the /api/datasets endpoint in the datastore will provide all the same functionality for querying the registry that we had before anyway.</p>
+<p>My concern is that IATI is in danger of splintering as a data source and that this will seriously damage its validity to end users.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/8</link>
+        <pubDate>Mon, 22 Apr 2019 10:18:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-8</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/herman">@Herman</a> that is correct. We drew up other options (both DS and Validator using Registry as source), but they had provided rather challenging (= time consuming) synchronisation issues in between DS and Validator.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/7</link>
+        <pubDate>Fri, 19 Apr 2019 07:03:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-7</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Siem,<br>
+If I understand your message correctly, the DS will use the registry to retrieve all the raw IATI-XML and the validator will subsequently retrieve the raw  IATI-XML from the DS?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/6</link>
+        <pubDate>Thu, 18 Apr 2019 15:12:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-6</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a> was over in ZZ office last week and spent a day with <a class="mention" href="/u/rolfkleef">@rolfkleef</a> discussing options on how the new DS (Datastore) will communicate with Validator. Our focus was on how to deliver this with minimal impact in mind on both DS and Validator.</p>
+<p>One part of the ETL process in DS basically reviews XML files processed from the Registry into DS and decides if it is valid XML. Once declared valid and having identified its IATI version it will then push that file to the relevant <em>version</em> based parser.</p>
+<p>Last week we identified this part of the process of DS to be most relevant for the new IATI Validator to be activated. The concept will define a system integration around this. This means the DS will not use its internal validator, but will communicate with new IATI Validator as a 3rd party service / API. Essentially DS and Validator will be in constant communication on data validation and data handling. Non valid XML will never pass the validator test, only XSD validated data will pass and rulesets will be used to review data and depending on the ruleset outcome, an activity for example will be flagged in the DS on activity level, true/false. DS will then by default return <em>all</em> activities with a filter/parameter being introduced for API request only containing activities flagged true or false.</p>
+<p>In this system, the Validator will <em>no</em> longer look at the IATI Registry for data sources, but will look-up the /api/datasets endpoint in DS, review its sha1 signature (new or same) and will then decide to process a file etc. Once we have a final systems integrations docs on this process we can share it here.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/5</link>
+        <pubDate>Thu, 18 Apr 2019 14:44:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-5</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>As far as I understand it from previous discussions, that can be the case if the data does not validate against the XSD. But the same data will also be unusable when directly retrieving them based on the info from the registry.</p>
+<p>And it also good to remember that the registry itself does not contain data. It just refers to the URL’s where IATI publishers place their datasets. From that point of view there can not be a difference between the DS and the registry (since the registry is not a database). Basically the registry accepts any kind of rubbish. By definition the DS, being a proper database, can not do that.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/4</link>
+        <pubDate>Tue, 16 Apr 2019 09:47:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-4</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>thanks <a class="mention" href="/u/herman">@Herman</a> that is really helpful, and would be great if confirmed. I was worrying that it might mean some data available in the registry was being rejected by the validator and therefore would not be present in the datastore.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/3</link>
+        <pubDate>Tue, 16 Apr 2019 09:17:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-3</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>As far as I understand it (but please correct me if I am wrong), there can only be a <strong>timing difference</strong> since the data validator needs some time to do the back-end processing of the IATI files from the registry. Imo the registry is the source of the <strong>actual</strong> status of all data and is therefore ‘official’.</p>
+<p>The same reasoning can also be applied to all other products making use of the registry (e.g. D-portal).</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/2</link>
+        <pubDate>Tue, 16 Apr 2019 09:02:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-2</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+      <item>
+        <title>Data divergence between registry and datastore</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks very much <a class="mention" href="/u/katehughes">@KateHughes</a> for the <a href="https://iatistandard.org/en/news/iati-technical-team-our-detailed-quarterly-update/" rel="nofollow noopener">quarterly update</a>  perhaps worth posting on the forums too?</p>
+<p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a> In it I learnt that the new datastore will access data from the validator API, not directly from the registry. This suggests that the registry and the datastore could end up with different data i.e. a query via the registry to see how many active activities are there in country X could be different from the same query via the new datastore? Is this correct or have I missed something? If so, is one of them (registry API, validator API, datastore API) going to be ‘official’?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708/1</link>
+        <pubDate>Tue, 09 Apr 2019 17:47:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1708-1</guid>
+        <source url="https://discuss.iatistandard.org/t/data-divergence-between-registry-and-datastore/1708.rss">Data divergence between registry and datastore</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>[Approved] Bug fix: Incorrect org type description</title>
+    <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755</link>
+    <description>At version 2.03 new organisation types were added to the [OrganisationType](http://reference.iatistandard.org/203/codelists/OrganisationType/) codelist.
+
+One of these was: **24 - Partner Country based NGO**
+
+As part of the change descriptions for each org type were created but only added for the new codes. However, code 24 accidentally got the wrong description according to the [Mapping Spreadsheet](https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/182) as seen on the github issue.
+
+It should read:
+
+* *National NGO / CSOs only in partner countries*
+
+Rather than the International NGO description: 
+* *NGOs not based in an aid recipient country and carrying out operations in one or more aid recipient countries.*
+
+This also brings up the need for agreement on the descriptions for all organisation types. This conversation is to be had in preparation for the next upgrade (tbd).
+
+If there are no objections within 7 days, the tech team will implement the [bug fix](https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/297) to correct the description of OrgType code 24 to: *National NGO / CSOs only in partner countries*</description>
+    
+    <lastBuildDate>Mon, 08 Jul 2019 13:35:35 +0000</lastBuildDate>
+    <category>Non-Core Codelist Amendments</category>
+    <atom:link href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the input all.</p>
+<p>If there’s no objection within 7 days we’ll change the description to: Local and National NGO / CSO based in aid/assistance recipient country’</p>
+<p>GitHub PR is here: <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/297#event-2465906000" rel="nofollow noopener">https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/297#event-2465906000</a></p>
+<p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> to your point, I agree it needs doing and to be done consistently. That will most likely take place at a v3 upgrade.</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/11</link>
+        <pubDate>Tue, 25 Jun 2019 15:38:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-11</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Works for me. Thanks <a class="mention" href="/u/annape">@AnnaPe</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/10</link>
+        <pubDate>Tue, 18 Jun 2019 09:59:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-10</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[AnnaPe]]></dc:creator>
+        <description><![CDATA[
+            <p>If not too late how about ‘Local and National NGO / CSO based in aid/assistance recipient country’ to include also smaller organisations working at sub-national level?</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/9</link>
+        <pubDate>Fri, 14 Jun 2019 15:55:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-9</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>I think <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> makes a very good point and I would add that we are constantly coming across instances and examples of ‘loaded’ terminology with have different meanings in different eg hum. and dev. contexts.  However, for purposes of practicalities I would be happy (at least for now) with an ever so slightly tweaked version of <a class="mention" href="/u/sjohns">@SJohns</a> suggestion of ‘National NGO / CSO based in assistance recipient country’ ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/8</link>
+        <pubDate>Fri, 07 Jun 2019 09:18:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-8</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I would suggest that whichever we are using i.e. partner, recipient etc, we will run into trouble e.g. with countries that are both providers and recipients of aid - therefore I think we need to move away from this distinction - it only works for the OECD DAC because they also define which countries can be ODA ‘aid’ recipients and go on from there - IATI doesn’t make this distinction and has more than OECD DAC reporters and therefore it starts to fall apart as a distinction.</p>
+<p>My favourite related story is that China signed the Busan declaration…but only as a recipient - therefore it signed and everybody could say yay, China is on board, but as it do so as a recipient, it did not feel that its aid should be bound by any of the commitments.</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/7</link>
+        <pubDate>Wed, 05 Jun 2019 16:56:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-7</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/wendy">@Wendy</a> and <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> it would be good to hear your views on this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/6</link>
+        <pubDate>Tue, 04 Jun 2019 13:56:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-6</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, maybe it would be clearer to write ‘National NGO / CSO based in aid recipient country’ rather than ‘partner country’ - then it would also make sense alongside the other definitions (ie ‘private sector in aid recipient country’)?</p>
+<p>At some stage it may be worth having a conversation about coming away from OECD definitions, as  the term ‘aid recipient’ is old-school and doesn’t take into account other types of financing, including south-south cooperation. IATI itself talks about resources rather than aid. Also, there are increasing numbers of organisations (ie trade unions, networks, social enterprises etc) that are partnering with donors on funded projects that are not NGOs.</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/5</link>
+        <pubDate>Mon, 03 Jun 2019 10:42:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-5</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear Amy,</p>
+<p>I know the UN refers to “programming countries” which are close but not the same as the OECD recipient countries. I just may not have realized they are also called partner countries.  I’m wondering if it is an OECD term rather than UN. I’ll be interested to find out what you find out.</p>
+<p>Kind Regards,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/4</link>
+        <pubDate>Fri, 31 May 2019 13:58:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-4</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Michelle,</p>
+<p>It’s IATI/UN language for a DAC developing country or an aid recipient country.</p>
+<p>(I think - will check though)</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/3</link>
+        <pubDate>Thu, 30 May 2019 15:36:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-3</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear Amy,</p>
+<p>What is the definition of “partner countries”?</p>
+<p>Kind Regards,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/2</link>
+        <pubDate>Wed, 29 May 2019 13:24:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-2</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+      <item>
+        <title>[Approved] Bug fix: Incorrect org type description</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>At version 2.03 new organisation types were added to the <a href="http://reference.iatistandard.org/203/codelists/OrganisationType/" rel="nofollow noopener">OrganisationType</a> codelist.</p>
+<p>One of these was: <strong>24 - Partner Country based NGO</strong></p>
+<p>As part of the change descriptions for each org type were created but only added for the new codes. However, code 24 accidentally got the wrong description according to the <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/182" rel="nofollow noopener">Mapping Spreadsheet</a> as seen on the github issue.</p>
+<p>It should read:</p>
+<ul>
+<li><em>National NGO / CSOs only in partner countries</em></li>
+</ul>
+<p>Rather than the International NGO description:</p>
+<ul>
+<li><em>NGOs not based in an aid recipient country and carrying out operations in one or more aid recipient countries.</em></li>
+</ul>
+<p>This also brings up the need for agreement on the descriptions for all organisation types. This conversation is to be had in preparation for the next upgrade (tbd).</p>
+<p>If there are no objections within 7 days, the tech team will implement the <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/297" rel="nofollow noopener">bug fix</a> to correct the description of OrgType code 24 to: <em>National NGO / CSOs only in partner countries</em></p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755/1</link>
+        <pubDate>Wed, 29 May 2019 11:02:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1755-1</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-incorrect-org-type-description/1755.rss">[Approved] Bug fix: Incorrect org type description</source>
+      </item>
+  </channel>
+</rss>

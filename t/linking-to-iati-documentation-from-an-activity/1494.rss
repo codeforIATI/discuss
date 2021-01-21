@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Linking to IATI documentation from an activity</title>
+    <link>https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494</link>
+    <description>I&#39;ve been encouraging publishers I work with to include a ``document-link`` that goes back to a web page / document they maintain, which provides context about their IATI process/policy/publication.
+
+Hence, with UNHCR, every activity includes a link back to [their IATI page](http://reporting.unhcr.org/iati):
+
+![d-portal%20(5)|332x76](upload://dBVcAmuSWOGR6GCTHm9skFn9a0l.png) 
+
+This isn&#39;t strictly a &quot;project document&quot;, and might well be frowned upon by those who only expect certain codes/documents, but I think the arguments to support this would be well-received: it makes the _data_ more _useful_. :
+
+- Any IATI activity could be presented in any other portal/search results - out of context from the original XML publication (and far far away from the IATI Registry). Hence, providing some link back to documentation _within the activity_ helps people (the data users) wanting to find out more.  It&#39;s like a consistent footnote for each and every activity.
+
+- Publishers can / could be encouraged to provide details of the decisions they have made along their IATI journey in these documents.  It might even help explain any particular namespaces, or hierarchies or any data behavours one should expect.
+
+- Elsewhere - when using vocabulary 99 codes, we encourage the publication of a URL to access the complete vocabulary. I see this link to documentation as a place to put this in context.
+
+It&#39;d be useful to hear what others think of this.  Technically, this &quot;breaks&quot; the standard!  I&#39;ve posted elsewhere about the [background the document category codes](https://discuss.iatistandard.org/t/background-for-document-category-codes/1481), as this might need some focus and discussion.</description>
+    
+    <lastBuildDate>Thu, 27 Sep 2018 14:52:45 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Linking to IATI documentation from an activity</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1494">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Technically, this “breaks” the standard!</p>
+</blockquote>
+</aside>
+<p>In case anyone else is wondering, this breaks the standard because “Organisation web page” is an organisation level document category, but here, <a class="mention" href="/u/stevieflow">@stevieflow</a> is using it at activity level.</p>
+<p>It makes total sense for this information to live in the organisation file, because it’s organisation-level information. Repeating this organisation-level information for every activity (318 times) is bad, because it’s unnecessary duplication. I’m also not keen on recommending to publishers that they break the standard.</p>
+<p>I think the problem you’re aiming to solve here is: IATI tools don’t display relevant (organisation level) information alongside activities. Agreed – totally valid problem. However, IMHO the solution should not be to hack the data – it should be to fix the tools. That would be a more general solution, and in keeping with the spirit of a data standard.</p>
+<p>At Publish What You Fund, we’re well aware that <a href="http://www.publishwhatyoufund.org/organisation-file-veritable-treasure-trove/" rel="nofollow noopener">the organisation file is underused</a>. That’s why we’re <a href="http://www.publishwhatyoufund.org/visualising-budget-data-on-iati-working-on-a-solution/" rel="nofollow noopener">working on tools <strong>right now</strong> to make better use of it</a>, including making organisation level documents a bit more visible.</p>
+          <p><a href="https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494/3</link>
+        <pubDate>Thu, 27 Sep 2018 14:52:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1494-3</guid>
+        <source url="https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494.rss">Linking to IATI documentation from an activity</source>
+      </item>
+      <item>
+        <title>Linking to IATI documentation from an activity</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>This makes eminent sense to me.</p>
+<p>I too have been up to no good, providing advice that technically breaks the standard but is nevertheless useful (I think!). About to post about it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494/2</link>
+        <pubDate>Thu, 27 Sep 2018 13:40:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1494-2</guid>
+        <source url="https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494.rss">Linking to IATI documentation from an activity</source>
+      </item>
+      <item>
+        <title>Linking to IATI documentation from an activity</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been encouraging publishers I work with to include a <code>document-link</code> that goes back to a web page / document they maintain, which provides context about their IATI process/policy/publication.</p>
+<p>Hence, with UNHCR, every activity includes a link back to <a href="http://reporting.unhcr.org/iati" rel="nofollow noopener">their IATI page</a>:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/5f65ad79177ce0d75a3e4f60b7c3cf16540d3145.png" alt="d-portal%20(5)" width="332" height="76"></p>
+<p>This isn’t strictly a “project document”, and might well be frowned upon by those who only expect certain codes/documents, but I think the arguments to support this would be well-received: it makes the <em>data</em> more <em>useful</em>. :</p>
+<ul>
+<li>
+<p>Any IATI activity could be presented in any other portal/search results - out of context from the original XML publication (and far far away from the IATI Registry). Hence, providing some link back to documentation <em>within the activity</em> helps people (the data users) wanting to find out more.  It’s like a consistent footnote for each and every activity.</p>
+</li>
+<li>
+<p>Publishers can / could be encouraged to provide details of the decisions they have made along their IATI journey in these documents.  It might even help explain any particular namespaces, or hierarchies or any data behavours one should expect.</p>
+</li>
+<li>
+<p>Elsewhere - when using vocabulary 99 codes, we encourage the publication of a URL to access the complete vocabulary. I see this link to documentation as a place to put this in context.</p>
+</li>
+</ul>
+<p>It’d be useful to hear what others think of this.  Technically, this “breaks” the standard!  I’ve posted elsewhere about the <a href="https://discuss.iatistandard.org/t/background-for-document-category-codes/1481">background the document category codes</a>, as this might need some focus and discussion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494/1</link>
+        <pubDate>Thu, 27 Sep 2018 08:17:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1494-1</guid>
+        <source url="https://discuss.iatistandard.org/t/linking-to-iati-documentation-from-an-activity/1494.rss">Linking to IATI documentation from an activity</source>
+      </item>
+  </channel>
+</rss>

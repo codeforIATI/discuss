@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Codelists - IATI Community Discussions</title>
+    <link>https://discuss.iatistandard.org/c/community-zone/codelists/32</link>
+    <description>Topics in the &#39;Codelists&#39; category </description>
+    
+      <lastBuildDate>Fri, 05 Apr 2019 14:04:51 +0000</lastBuildDate>
+      <atom:link href="https://discuss.iatistandard.org/c/community-zone/codelists/32.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Use of CLv1 and CLv2</title>
+          <dc:creator><![CDATA[amys]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>With the upcoming deprecation of version 1 of the IATI Standard there’s a question over what happens to codelist versions.</p>
+<p>Currently there are <a href="http://reference.iatistandard.org/203/codelists-guides/codelist-api/">three types</a>: CLv1, CLv2 and CLv3. Each codelist version has slightly different formatting, and can be accessed by the codelist api.</p>
+<p>Please can share if you are using version CLv1 and/or CLv2. If yes, do you have plans to change onto CLv3 before/once version 1 of the IATI Standard has been deprecated? And if not, why not?</p>
+<p>I’m reaching out to the techies here. Please do let me know and do share with others.</p>
+<p><a class="mention" href="/u/andylolz">@andylolz</a> <a class="mention" href="/u/markbrough">@markbrough</a> <a class="mention" href="/u/siemvaessen">@siemvaessen</a> <a class="mention" href="/u/rolfkleef">@rolfkleef</a> <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> <a class="mention" href="/u/bibhusan">@bibhusan</a> <a class="mention" href="/u/akermanmartin">@AkermanMartin</a> <a class="mention" href="/u/shi">@shi</a> <a class="mention" href="/u/eimis">@Eimis</a> <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/johnadams">@JohnAdams</a> <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/stolk">@stolk</a></p>
+            <p><small>6 posts - 5 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704</link>
+          <pubDate>Fri, 05 Apr 2019 14:04:51 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1704</guid>
+          <source url="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704.rss">Use of CLv1 and CLv2</source>
+        </item>
+        <item>
+          <title>Transaction Type Codelist - Humanitarian Data</title>
+          <dc:creator><![CDATA[AVaughn]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>It would be great to get thoughts and suggestions on the transaction type codelist as we work through how to tag “announced” or “anticipated” commitments in the humanitarian space.</p>
+<p>We have a specific category of transaction that is not considered a ‘pledge’ (which we understand to have specific political meaning), but is not yet a binding, legal financial obligation (what we tag as commitment).  The anticipated funding has merely been “announced.”  Do others have this type of anticipated/announced funding to humanitarian activities that they do not consider to be a ‘pledge?’  If so, could this be accommodated in the codelist? We would like to publish this data, but are struggling to find a way to do so.</p>
+<p>Additionally - as another question, is anyone thinking through how to publish any sort of pledge or announced/anticipated funding when this is a fuzzy number that may change?  For example, an announcement that is $100 one month, but the pledge or announced/anticipated amount increased to $150 the next month - it doesn’t seem like there is a good way to publish this in IATI - it would need to be clear that the total amount is $150 - not $250. Is anyone else discussing this internally or have suggestions?</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/transaction-type-codelist-humanitarian-data/1401">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/transaction-type-codelist-humanitarian-data/1401</link>
+          <pubDate>Fri, 20 Jul 2018 18:37:54 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1401</guid>
+          <source url="https://discuss.iatistandard.org/t/transaction-type-codelist-humanitarian-data/1401.rss">Transaction Type Codelist - Humanitarian Data</source>
+        </item>
+        <item>
+          <title>New GLIDE number source available</title>
+          <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p><strong>GLIDE numbers</strong> are the identifiers for humanitarian crises used UN agencies, IFRC, and many other partners. Because multiple organisations can create GLIDEs independently, there is often confusion over which ones to choose for best interoperability.</p>
+<p>The UN’s humanitarian office (OCHA) is now publishing a live list of the subset of GLIDE numbers it uses for information management and financial tracking:</p>
+<p><a href="https://data.humdata.org/dataset/unocha-glides" class="onebox" target="_blank" rel="nofollow noopener">https://data.humdata.org/dataset/unocha-glides</a></p>
+<p>(Direct CSV download: <a href="https://proxy.hxlstandard.org/data/39a48b/download/unocha-glide-numbers.csv" rel="nofollow noopener">https://proxy.hxlstandard.org/data/39a48b/download/unocha-glide-numbers.csv</a>)</p>
+<p>This list is available online independently of any outages at the main <a href="http://GLIDEnumber.net" rel="nofollow noopener">GLIDEnumber.net</a> site, and we encourage IATI reporters to use these codes (when available) with the <em><a href="http://iatistandard.org/203/activity-standard/iati-activities/iati-activity/humanitarian-scope/" rel="nofollow noopener">humanitarian-scope</a></em> element for their humanitarian activities.</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/new-glide-number-source-available/1357</link>
+          <pubDate>Tue, 19 Jun 2018 15:40:14 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1357</guid>
+          <source url="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357.rss">New GLIDE number source available</source>
+        </item>
+        <item>
+          <title>Proposal: provenance information &amp; contact processes should be added to vocabulary lists</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>As IATI builds up use and reliance on external codelists, specifically through the function of vocabularies, there exists some risk that these lists might disappear/change/alter.  Should this occur, then there should be a clear channel via which users and/or IATI can contact the list holder to seek clarification / fixes</p>
+<p>The <a href="http://iatistandard.org/203/codelists/HumanitarianScopeVocabulary/" rel="nofollow noopener">Humanitarian Scope Vocabulary</a> list is a good example.  There’s an <a href="https://discuss.iatistandard.org/t/help-cant-access-glide-numbers/1225/">ongoing thread</a> about how one entry (GLIDE) seems to have intermittent availability, whilst the Humanitarian Plan list changed from a CSV to XML.  Looking at the information presented for the list, there isn’t much to help the end user:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/8e97dbbce0cfa62ab0e8e986e22be7d00189b6ba.png" alt="hum" width="654" height="200"></p>
+<p>Q - from the Name &amp; URL provided, can you understand who owns / publishes this list, and how to contact them?</p>
+<p>Over at <a href="http://iatistandard.org/203/codelists/SectorVocabulary/" rel="nofollow noopener">Sector Vocabulary, we now have 10 external lists</a>.  Today, one of these was discovered to be password protected (or moved), meaning it could not be accessed.  We <a href="https://twitter.com/stevieflow/status/1002499514333302785" rel="nofollow noopener">solved the issue quickly</a> (thanks <a class="mention" href="/u/david_megginson">@David_Megginson</a> <a class="mention" href="/u/rbesseling">@rbesseling</a>) via twitter - but that feels rather sticky tape.</p>
+<p><strong>Proposal</strong></p>
+<p>i. For external vocabulary lists in the IATI standard, we add / revise the codelist introductory text to make it clear that these are external lists.  We detail that for any issues found with these lists should be reported to either a) the list owner and b) the IATI Secretariat.</p>
+<p>ii. For each vocabulary entry, we update the Description text to provide provenance details for the list owner.  This may differ across entries, but should at least include a named organisation/publisher, and URL for contact details</p>
+<p>iii. Infrastructure is put in place to monitor the availability of these external resources.  We can’t rely on casual browsers to hit Page Not Found, or similar.  There exist simple services to help us here.</p>
+<p>iv. Efforts are made to ensure that list owners are fully aware that IATI are pointing at their list.  Again, this may vary, but may mitigate against list owners changing their arrangements without notifying a user community</p>
+<p>Further suggestions and ideas very welcome.  I do not believe any of these changes are version dependent/breaking changes, and could be considered as a bug, therefore implemented quickly and effectively.  Vocabulary lists are <a href="http://iatistandard.org/203/codelists/codelist-management/#non-embedded-codelist" rel="nofollow noopener">Non-Embedded</a>, so can be changed with community consensus, as far as I understand.</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339</link>
+          <pubDate>Fri, 01 Jun 2018 16:38:44 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1339</guid>
+          <source url="https://discuss.iatistandard.org/t/proposal-provenance-information-contact-processes-should-be-added-to-vocabulary-lists/1339.rss">Proposal: provenance information &amp; contact processes should be added to vocabulary lists</source>
+        </item>
+        <item>
+          <title>Organisation Type codelist - descriptions</title>
+          <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://discuss.iatistandard.org/t/organisation-type-codes-additions-included-2-03/858/18">Organisation type codes - additions (included 2.03)</a>:</p>
+<p>Does anyone still have a link to the definitions/descriptions of the new Org Type codes that were added in 2.03?  The description for “Partner Country Based NGO” currently published (<a href="http://iatistandard.org/203/codelists/OrganisationType/">http://iatistandard.org/203/codelists/OrganisationType/</a>) has faulty logic: “Partner country based NGO- NGOs not based in an aid recipient country and carrying out operations in one or more aid recipient countries.”   I wonder if it’s just a typo but cannot seem to find the original descriptions in the various 2.03 upgrade threads.</p>
+<p>Also, as was suggested early in the discussion about changing/adding Org Types, it would really be good to have descriptions for all elements of this codelist - ideally matching the DAC’s where relevant.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/organisation-type-codelist-descriptions/1268">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/organisation-type-codelist-descriptions/1268</link>
+          <pubDate>Mon, 19 Mar 2018 19:32:35 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1268</guid>
+          <source url="https://discuss.iatistandard.org/t/organisation-type-codelist-descriptions/1268.rss">Organisation Type codelist - descriptions</source>
+        </item>
+        <item>
+          <title>Error on Budget Type codelist page</title>
+          <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>I just noticed that the Budget Type codelist page (<a href="http://iatistandard.org/203/codelists/BudgetType/">http://iatistandard.org/203/codelists/BudgetType/</a>) provides an erroneous definition/description of this element; Budget Type has nothing to do with the DAC.</p>
+<p>The schema itself is fine, and defines Budget Type as: “Whether this is the original budget (prepared when the original commitment was made) or has subsequently been revised.”</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/error-on-budget-type-codelist-page/1260">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/error-on-budget-type-codelist-page/1260</link>
+          <pubDate>Thu, 15 Mar 2018 18:49:59 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1260</guid>
+          <source url="https://discuss.iatistandard.org/t/error-on-budget-type-codelist-page/1260.rss">Error on Budget Type codelist page</source>
+        </item>
+        <item>
+          <title>Planning for machine readable, version controlled OECD-DAC codelists</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>Some of us (OK, <a class="mention" href="/u/andylolz">@andylolz</a>!) noticed that the DAC CRS codelists were updated by the <a href="http://www.oecd.org/dac/financing-sustainable-development/development-finance-standards/dacandcrscodelists.htm" rel="nofollow noopener">OECD on May 9th</a>.</p>
+<p>It’s great that we have something from the community (also <a class="mention" href="/u/andylolz">@andylolz</a>!) in place to <a href="https://discuss.iatistandard.org/t/show-iati-republishing-oecd-dac-codelists/763/6">try and track this</a>.</p>
+<p>However, it would be great to know when, what and how these codelists will be moved by the OECD-DAC to a platform that ensures scalability, version control and machine legibility.  I think there’s an upcoming WP-STAT meeting - can anyone inform us (maybe <a class="mention" href="/u/oj_">@OJ_</a> or <a class="mention" href="/u/herman">@Herman</a> ?)?</p>
+<p>A while back, I posted something about <a href="https://discuss.iatistandard.org/t/criteria-for-assessing-external-codelists-vocabularies-registries/498">characteristics we might want to see from an external codelist</a>.  Perhaps we could start to list and detail what we’d expect from CRS DAC codelists in the IATI community, given that we are so reliant on their effective management?</p>
+            <p><small>9 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866</link>
+          <pubDate>Mon, 15 May 2017 07:38:57 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-866</guid>
+          <source url="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.rss">Planning for machine readable, version controlled OECD-DAC codelists</source>
+        </item>
+        <item>
+          <title>About the Codelists category</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>(Replace this first paragraph with a brief description of your new category. This guidance will appear in the category selection area, so try to keep it below 200 characters. <strong>Until you edit this description or create topics, this category won’t appear on the categories page.</strong>)</p>
+<p>Use the following paragraphs for a longer description, or to establish category guidelines or rules:</p>
+<ul>
+<li>
+<p>Why should people use this category? What is it for?</p>
+</li>
+<li>
+<p>How exactly is this different than the other categories we already have?</p>
+</li>
+<li>
+<p>What should topics in this category generally contain?</p>
+</li>
+<li>
+<p>Do we need this category? Can we merge with another category, or subcategory?</p>
+</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/about-the-codelists-category/508">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/about-the-codelists-category/508</link>
+          <pubDate>Wed, 13 Jul 2016 12:27:40 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-508</guid>
+          <source url="https://discuss.iatistandard.org/t/about-the-codelists-category/508.rss">About the Codelists category</source>
+        </item>
+        <item>
+          <title>Criteria for assessing external codelists / vocabularies / registries</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>It will be increasingly important that when IATI involves external vocabularies (via vocabularies) codelists (as non-embedded lists) and/or registries (in terms of organisation registration agencies)  within the standard, there might need to be some process or criteria through which these are assessed, prior to being added.</p>
+<p>As <a class="mention" href="/u/wendy">@Wendy</a> <a href="//discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/2">states</a>:</p>
+<blockquote>
+<p>However, I should also mention that one thing we would need to be  mindful of is that the non-embedded codelist update process has enough  oversight to ensure that only valid entries for formal vocabularies  (that are themselves well managed and likely to endure) are added.</p>
+</blockquote>
+<p>Via the Open Ag Funding project we’ve started to think about this - there’s some thoughts in an initial post on what “<a href="https://github.com/OpenAgFunding/development/issues/16" rel="nofollow noopener">a good codelist looks like</a>”.</p>
+<p>I can happily replicate here, but would welcome any thoughts and feedback on this topic.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/criteria-for-assessing-external-codelists-vocabularies-registries/498">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/criteria-for-assessing-external-codelists-vocabularies-registries/498</link>
+          <pubDate>Wed, 29 Jun 2016 10:24:07 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-498</guid>
+          <source url="https://discuss.iatistandard.org/t/criteria-for-assessing-external-codelists-vocabularies-registries/498.rss">Criteria for assessing external codelists / vocabularies / registries</source>
+        </item>
+        <item>
+          <title>Locating translated codelists</title>
+          <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>We are trying to locate the French versions of some IATI codelists.  We found some on Github, but are missing the following:</p>
+<p>ConditionType.xml<br>
+DocumentCategory.xml<br>
+GeographicExactness.xml<br>
+GeographicLocationClass.xml<br>
+GeographicLocationReach.xml<br>
+OtherIdentifierType.xml<br>
+RelatedActivityType.xml<br>
+TiedStatus.xml (though this last one may be a DAC one?)</p>
+<p>Anybody knows where to find them?</p>
+            <p><small>16 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464</link>
+          <pubDate>Fri, 13 May 2016 21:27:23 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-464</guid>
+          <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+        </item>
+        <item>
+          <title>Adding to the Organisation Registration Agency code list - push rather than pull?</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>Hello</p>
+<p>I know that <a href="http://support.iatistandard.org/entries/107901873-Organization-registration-agencies-for-Poland" rel="nofollow noopener">this request for three additions</a> to the Org Registration Agency codelist is grounded in a use case for the <a href="http://standard.open-contracting.org/latest/en/" rel="nofollow noopener">Open Contracting Data Standard</a>.  It’s a great example of cross-over and synergy between two open data standards, working in different domains.</p>
+<p>As more organisations prepare, publish and use data across standards, updates to this list could be key.  The<a href="http://iatistandard.org/201/codelists/codelist-management/" rel="nofollow noopener"> current IATI documentation states</a>:</p>
+<blockquote>
+<p>Because there is a need to add registration agencies quickly, so that people can do their work, and because we anticipate many additions that will not be of interest to most people, we will add values to this list without making announcements. Values to be added will be agreed at the weekly team meeting.</p>
+</blockquote>
+<p>It’s great that codes can be added quite quickly.  However, the community might want to add and utilise codes <em>immediately</em> in some instances - and perhaps without the need for a sanction from the “centre”.  Could such a situation exist, and be helpful?</p>
+<p>Rather than wait for a code to be added to the central list (a <em><strong>pull</strong></em> mechanism) could we imagine a setup where a data publisher would actively inform the community of their intended code (a <strong><em>push</em></strong>)?  It is then a task to maintain the publication of the list, but not approve the content, making this list <a href="http://p2pfoundation.net/Chaordic_Organizations_-_Characteristics" rel="nofollow noopener">chaordic</a> ; <em>powered from the periphery, unified from the core</em></p>
+<p>I appreciate that this might sound like a play on concepts - but it could be important to position the management of this list as community-led, rather than centrally-governed.  This may well be the intention already, so it would be useful to clarify.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/adding-to-the-organisation-registration-agency-code-list-push-rather-than-pull/414">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/adding-to-the-organisation-registration-agency-code-list-push-rather-than-pull/414</link>
+          <pubDate>Sat, 20 Feb 2016 11:00:41 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-414</guid>
+          <source url="https://discuss.iatistandard.org/t/adding-to-the-organisation-registration-agency-code-list-push-rather-than-pull/414.rss">Adding to the Organisation Registration Agency code list - push rather than pull?</source>
+        </item>
+        <item>
+          <title>Guidance on using the US-DOS org identifier</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Codelists</category>
+          <description><![CDATA[
+            <p>Hello</p>
+<p>Has anyone used the <code>US-DOS</code> code for referencing US registered corporations?  As far as I can see, many US organisations are using <code>US-EIN</code> instead.</p>
+<p>A further question to this would be any recommended practice in terms of identifying the state registries.</p>
+<p>Picking a <em>random</em> example:</p>
+<p>Acme Company: <a href="https://opencorporates.com/companies/us_de/947909" rel="nofollow noopener">https://opencorporates.com/companies/us_de/947909</a> - registered in Delaware.</p>
+<p>For using <code>US-DOS</code> would the reference be, for example, <code>US-DOS-DE947909</code> ?</p>
+            <p><small>9 posts - 5 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374</link>
+          <pubDate>Wed, 16 Dec 2015 19:59:24 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-374</guid>
+          <source url="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss">Guidance on using the US-DOS org identifier</source>
+        </item>
+  </channel>
+</rss>

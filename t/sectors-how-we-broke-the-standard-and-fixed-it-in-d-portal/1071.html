@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:17:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Sectors: How we broke the standard (and fixed it in d-Portal) - Using IATI Data - IATI Community Discussions</title>
+    <meta name="description" content="In Version 1 of the standard sectors were specified at the activity level. In Version 2 it became possible to also report sectors at transaction level. 
+BUT 
+A rule was established 
+
+Sector MUST EITHER be reported here O&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1071.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Sectors: How we broke the standard (and fixed it in d-Portal)&#39;" href="1071.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071" />
+<meta property="og:title" content="Sectors: How we broke the standard (and fixed it in d-Portal)" />
+<meta name="twitter:title" content="Sectors: How we broke the standard (and fixed it in d-Portal)" />
+<meta property="og:description" content="In Version 1 of the standard sectors were specified at the activity level. In Version 2 it became possible to also report sectors at transaction level.  BUT  A rule was established   Sector MUST EITHER be reported here OR at transaction level for ALL transactions   iati-activity/transaction/sector is now used by 91 publishers including UN CERF, ILO, Spanish Ministry of Foreign Affairs, UNFPA, UNICEF, USA and WHO  This also applies to countries (used by 32 publishers).  At DI we first discovered ..." />
+<meta name="twitter:description" content="In Version 1 of the standard sectors were specified at the activity level. In Version 2 it became possible to also report sectors at transaction level.  BUT  A rule was established   Sector MUST EITHER be reported here OR at transaction level for ALL transactions   iati-activity/transaction/sector is now used by 91 publishers including UN CERF, ILO, Spanish Ministry of Foreign Affairs, UNFPA, UNICEF, USA and WHO  This also applies to countries (used by 32 publishers).  At DI we first discovered ..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="2 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2017-10-11T11:26:19+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1071.html">Sectors: How we broke the standard (and fixed it in d-Portal)</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/iati-applied/21.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #2695B8'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Using IATI Data</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1071.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-11T11:26:19Z' class='post-time'>
+                October 11, 2017, 11:26am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-11T11:26:19Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>In Version 1 of the standard sectors were specified at the activity level. In Version 2 it became possible to also report sectors at transaction level.</p>
+<p>BUT</p>
+<p><a href="http://iatistandard.org/201/activity-standard/iati-activities/iati-activity/sector/">A rule was established</a></p>
+<blockquote>
+<p>Sector MUST EITHER be reported here OR at transaction level for ALL transactions</p>
+</blockquote>
+<p><code>iati-activity/transaction/sector</code> is <a href="http://dashboard.iatistandard.org/element/iati-activity_transaction_sector.html">now used by 91 publishers</a> including UN CERF, ILO, Spanish Ministry of Foreign Affairs, UNFPA, UNICEF, USA and WHO</p>
+<p>This also applies to countries (used by 32 publishers).</p>
+<p>At DI we first discovered the problem when we tried to analyse forward-looking budgets by sector. Without trawling through transactions this is no longer (easily) possible.</p>
+<p>Similarly, if you filter a search on d-Portal or the Datastore you will get incomplete answers as neither of these systems copes with transaction-level sectors.</p>
+<p>Until now</p>
+<p>The following logic has now been applied in d-Portal:</p>
+<ul>
+<li>If no Sectors are reported at activity level they are harvested from transactions</li>
+<li>If multiple sectors are present a percentage split is calculated from Commitments (or Disbursements and Expenditures if no Commitments are present)</li>
+</ul>
+<p>The first iteration of this modification is live now</p>
+        </div>
+
+        <meta itemprop='headline' content='Sectors: How we broke the standard (and fixed it in d-Portal)'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1071.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-11T17:17:25Z' class='post-time'>
+                October 11, 2017,  5:17pm
+              </time>
+              <meta itemprop='dateModified' content='2017-10-11T17:17:25Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/bill_anderson.html">@bill_anderson</a> via OpenAg (<a class="mention" href="../../u/reidmporter.html">@reidmporter</a>) analysis  <a href="../providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577.html">we had a thread</a> (with contributions from <a class="mention" href="../../u/herman-2.html">@Herman</a> &amp; <a class="mention" href="../../u/timdavies-2.html">@TimDavies</a>)   around this rule, which got into the 2.03 list, but didn’t seem to get included in Standards Day, and subsequent discussions.  How do we move that forward?</p>
+        </div>
+
+        <meta itemprop='headline' content='Sectors: How we broke the standard (and fixed it in d-Portal)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1071.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-10-13T12:54:20Z'>
+              <time itemprop='dateModified' datetime='2017-10-13T13:14:30Z' class='post-time'>
+                October 13, 2017,  1:14pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>[NB I would add this comment to <a href="../providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577.html">this thread</a>, but it seems that one is now closed for comments]</p>
+<aside class="quote no-group" data-post="2" data-topic="1071">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>How do we move that forward?</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="../../u/stevieflow.html">@stevieflow</a>: What are you looking to move forward here? The third of <a class="mention" href="../../u/timdavies-2.html">@timdavies</a>’ proposals (the <code>&lt;tag&gt;</code> element) was both included in the Standards day and has so far been adopted into v2.03, right?</p>
+<p>Personally, I think the second suggestion in the second proposal is a good one, too (make sector restrictions per-vocabulary). I think it’s an oversight that sector restrictions aren’t currently vocabulary-dependent. But (as far as I can tell) this wasn’t worked up into a 2.03 proposal, so I guess that’s why it didn’t move forward.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sectors: How we broke the standard (and fixed it in d-Portal)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1071.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-13T13:13:24Z' class='post-time'>
+                October 13, 2017,  1:13pm
+              </time>
+              <meta itemprop='dateModified' content='2017-10-13T13:13:24Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It’s great that d-portal has been upgraded to reflect this aspect of the 2.0x standard!</p>
+<p>But I think the story here is actually that the standard was upgraded, but d-portal was not. I.e. I think a more accurate title for this post would be “That time we upgraded the standard but not d-portal (and then upgraded d-portal to be compliant.)”</p>
+<p>When upgrades are made to the standard, it would be great if in-house tools like d-portal led the way in being compliant with the new version. After all (as I understand it) IATI have ultimate control over both things! But in this case, it seems publishers adopted the new version long before d-portal did.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sectors: How we broke the standard (and fixed it in d-Portal)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1071.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-10-13T17:41:22Z'>
+              <time itemprop='dateModified' datetime='2017-10-13T17:41:53Z' class='post-time'>
+                October 13, 2017,  5:41pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/james.html">@james.coe</a> points out that this still appears to be an issue for the IATI Datastore. I’ve created a ticket for that here: <a href="https://github.com/IATI/IATI-Datastore/issues/284">https://github.com/IATI/IATI-Datastore/issues/284</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Sectors: How we broke the standard (and fixed it in d-Portal)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1071.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-16T07:38:52Z' class='post-time'>
+                October 16, 2017,  7:38am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-16T07:38:52Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/andylolz.html">@andylolz</a></p>
+<p>I dont think <a href="../providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577.html">Providing sector/country codes at activity and transaction level - enable both?</a> was to do with the <code>tag</code> element.  This was an observation that the “rule”, as <a class="mention" href="../../u/bill_anderson.html">@bill_anderson</a> states:</p>
+<blockquote>
+<p>Sector MUST EITHER be reported here OR at transaction level for ALL transactions</p>
+</blockquote>
+<p>… seemed rather ambitious and/or impractical for many.  There were two use cases We observered:</p>
+<p>1 -  For a publisher to <em>suddenly</em> drop any sector codes at activity level, in favour of transactional sectors - could throw data users (as now illustrated by d-portal)<br>
+2 - ALL transactions should have a sector code.  ALL of them?  Our observation was that it may make sense for Commitments and Disbursements, but Expenditure?  We felt that this wasn’t really researched to fully justify, hence a call for a relaxation of this rule</p>
+<p>I’ve no idea why or how this dont make this to standards day at TAG, hence the query.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sectors: How we broke the standard (and fixed it in d-Portal)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1071.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-16T08:07:55Z' class='post-time'>
+                October 16, 2017,  8:07am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-16T08:07:55Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/andylolz.html">@andylolz</a> - sorry, I can see that <a class="mention" href="../../u/timdavies-2.html">@TimDavies</a> proposes in <a href="../providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/3_.html">https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/3:</a></p>
+<blockquote>
+<p>(3) Propose an alternative  element for the kinds of coding we are looking for</p>
+</blockquote>
+<p>But - I dont think that satisfies the original observation around this “rule” of sector codes being EITHER activity or transactions, and if the latter then ALL must have a sector.</p>
+<p>Since that, the TAG happened, and the tag element (!)  has been refined and developed (via <a href="../non-statistical-secondary-sectors-excluded-2-03/849/26.html">Non-statistical secondary sectors (excluded 2.03)</a>) - so it’s actually <a class="mention" href="../../u/timdavies-2.html">@TimDavies</a>’ first observation that is more relevant:</p>
+<blockquote>
+<p>(1) Require sectors/countries/regions at the activity level, but make them optional at the transaction level</p>
+</blockquote>
+<p>and</p>
+<blockquote>
+<p>(2) Adjust the restrictions to only apply to OECD DAC Codes, or just to be per-vocabulary</p>
+</blockquote>
+        </div>
+
+        <meta itemprop='headline' content='Sectors: How we broke the standard (and fixed it in d-Portal)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1071.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-10-16T08:56:03Z'>
+              <time itemprop='dateModified' datetime='2017-10-16T09:01:04Z' class='post-time'>
+                October 16, 2017,  9:01am
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Re. allowing <code>sector</code>s at transaction AND activity level… I think we then get into issues around percentage split, which I believe were discussed as part of the original <a href="../non-statistical-secondary-sectors-excluded-2-03/849.html">Non-statistical secondary sectors (excluded 2.03)</a> proposal (and resulted in the proposal being amended.)</p>
+<blockquote>
+<p>(1) Require sectors/countries/regions at the activity level, but make them optional at the transaction level</p>
+</blockquote>
+<p>So… I like this proposal, but I don’t think it constitutes a relaxation of the rule – it’s just a different rule. I say that because currently, <code>sector</code> is not required at activity level. This proposal <em>does</em> require <code>sector</code> at activity level. So I’m pretty sure (though happy to be corrected) that it would require an integer upgrade.</p>
+<blockquote>
+<p>(2) Adjust the restrictions to only apply to OECD DAC Codes, or just to be per-vocabulary</p>
+</blockquote>
+<p>As I mentioned above, I like this proposal. But I think it solves a different problem to the one you’re describing, <a class="mention" href="../../u/stevieflow.html">@stevieflow</a>.</p>
+<p>Just to get more of an understanding of the intention of your suggestion, can you explain why it would be difficult for publishers to provide a sector code for expenditures? Or are you speculating that this information wouldn’t be useful to users? I’m not sure I follow.</p>
+        </div>
+
+        <meta itemprop='headline' content='Sectors: How we broke the standard (and fixed it in d-Portal)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1071.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-02-22T14:30:27Z' class='post-time'>
+                February 22, 2018,  2:30pm
+              </time>
+              <meta itemprop='dateModified' content='2018-02-22T14:30:27Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="bill_anderson" data-post="1" data-topic="1071">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.jpg" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Similarly, if you filter a search on d-Portal or the Datastore you will get incomplete answers as neither of these systems copes with transaction-level sectors.</p>
+<p>Until now</p>
+</blockquote>
+</aside>
+<p><a href="1071/5.html">As pointed out above</a>, this remains broken on the Datastore. I sent a fix for it a few weeks ago:<br>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Datastore/pull/299" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Datastore</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Pull Request">
+    <svg width="60" height="60" class="github-icon" viewBox="0 0 12 16" aria-hidden="true"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Datastore/pull/299" target="_blank" rel="nofollow noopener">Filter on transaction AND activity sector</a>
+    </h4>
+
+    <div class="branches">
+      <code>IATI:master</code> ← <code>codeforIATI:284-transaction-sectors</code>
+    </div>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2018-02-02" data-time="15:43:51" data-timezone="UTC">03:43PM - 02 Feb 18 UTC</span>
+      </div>
+
+      <div class="user">
+        <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+          <img alt="andylolz" src="https://avatars1.githubusercontent.com/u/464193?v=4" class="onebox-avatar-inline" width="20" height="20">
+          andylolz
+        </a>
+      </div>
+
+      <div class="lines" title="4 commits changed 2 files with 29 additions and 2 deletions">
+        <a href="https://github.com/IATI/IATI-Datastore/pull/299/files" target="_blank" rel="nofollow noopener">
+          <span class="added">+29</span>
+          <span class="removed">-2</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+        </div>
+
+        <meta itemprop='headline' content='Sectors: How we broke the standard (and fixed it in d-Portal)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/sectors-how-we-broke-the-standard-and-fixed-it-in-d-portal/1071 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:17:39 GMT -->
+</html>

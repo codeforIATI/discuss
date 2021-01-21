@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Generating a list of all IATI file URLs</title>
+    <link>https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079</link>
+    <description>Any thoughts on the best way to generate a list of all IATI file URLs? Next, how about on a regular basis?
+
+For a project, I manually generated a regional list by copying them from iatiregistry.org for example but this took some time and steps.</description>
+    
+    <lastBuildDate>Tue, 17 Oct 2017 14:56:38 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Generating a list of all IATI file URLs</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 for using <a href="https://github.com/IATI/iati-Registry-Refresher">IATI Registry Refresher</a>. If you use the version on <a href="https://github.com/IATI/IATI-Registry-Refresher/pull/24">this branch</a>, it fetches all the URLs ~10x faster.</p>
+<p>[Thinking out loud… I guess if <a href="http://datapipes.okfnlabs.org/">data pipes</a> accepted JSON source, it would be easy to generate CSV output from CKAN. Or is there another tool to do this, <a class="mention" href="/u/rufuspollock">@rufuspollock</a>?]</p>
+          <p><a href="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/6</link>
+        <pubDate>Tue, 17 Oct 2017 14:56:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1079-6</guid>
+        <source url="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079.rss">Generating a list of all IATI file URLs</source>
+      </item>
+      <item>
+        <title>Generating a list of all IATI file URLs</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t see anything for it <a href="http://docs.ckan.org/en/latest/api/index.html?highlight=package_search#ckan.logic.action.get.package_search" rel="nofollow noopener">in the documentation</a>.</p>
+<p>Would be good to have something like <a href="https://dev.oipa.nl/api/datasets/?format=json&amp;fields=name,source_url&amp;page_size=10000" rel="nofollow noopener">this</a> indeed which is more performant / flexible. Side note; I would not recommend <a href="https://dev.oipa.nl/api/datasets/?format=csv&amp;fields=name,source_url&amp;page_size=10000" rel="nofollow noopener">using OIPA for this use case</a>, the registry API should be the single source of truth here.</p>
+          <p><a href="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/5</link>
+        <pubDate>Tue, 17 Oct 2017 13:16:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1079-5</guid>
+        <source url="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079.rss">Generating a list of all IATI file URLs</source>
+      </item>
+      <item>
+        <title>Generating a list of all IATI file URLs</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/vincentvw">@VincentVW</a> Are there any &amp;fields= type filters on that API call, to just return the actual resource.url field in a list?</p>
+          <p><a href="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/4</link>
+        <pubDate>Tue, 17 Oct 2017 11:45:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1079-4</guid>
+        <source url="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079.rss">Generating a list of all IATI file URLs</source>
+      </item>
+      <item>
+        <title>Generating a list of all IATI file URLs</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/brentphillips">@BrentPhillips</a> - the <a href="https://github.com/IATI/iati-registry-refresher">IATI-Registry-Refresher</a> can do this for you, although again it’s more of a developer tool.</p>
+<p>Running the <code>grab_urls.php</code> script will find the data URLs for each publisher, and create one file per publisher in a <code>urls</code> folder. Each file will contain the  dataset names and the dataset URL for every dataset published by that organisation.</p>
+<p>The above code is considered legacy, and will at some point time be replaced by functionality in <code>iati.fetch</code> part of  the <a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720">IATI Python Library</a> - an experimental start on this has type of thing been made <a href="https://github.com/IATI/iati.fetch/blob/fetch-dataset/iati/fetch/__init__.py">here</a>, although it won’t be able to download dataset URLs at this point.</p>
+          <p><a href="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/3</link>
+        <pubDate>Tue, 17 Oct 2017 09:01:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1079-3</guid>
+        <source url="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079.rss">Generating a list of all IATI file URLs</source>
+      </item>
+      <item>
+        <title>Generating a list of all IATI file URLs</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>The only source that you can be sure of always being up-to-date is the IATI Registry API. You can use that directly through <a href="https://iatiregistry.org/api/action/package_search" rel="nofollow noopener">https://iatiregistry.org/api/action/package_search</a> (only suitable for programmers I guess).</p>
+<p>Would be good if a download in CSV functionality would also exist in the datasets page at the registry.</p>
+          <p><a href="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/2</link>
+        <pubDate>Tue, 17 Oct 2017 07:31:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1079-2</guid>
+        <source url="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079.rss">Generating a list of all IATI file URLs</source>
+      </item>
+      <item>
+        <title>Generating a list of all IATI file URLs</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>Any thoughts on the best way to generate a list of all IATI file URLs? Next, how about on a regular basis?</p>
+<p>For a project, I manually generated a regional list by copying them from <a href="http://iatiregistry.org" rel="nofollow noopener">iatiregistry.org</a> for example but this took some time and steps.</p>
+          <p><a href="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079/1</link>
+        <pubDate>Tue, 17 Oct 2017 04:16:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1079-1</guid>
+        <source url="https://discuss.iatistandard.org/t/generating-a-list-of-all-iati-file-urls/1079.rss">Generating a list of all IATI file URLs</source>
+      </item>
+  </channel>
+</rss>

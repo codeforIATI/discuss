@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Basic usability issues with financial data and guidance</title>
+    <link>https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206</link>
+    <description>Through using IATI data in Liberia, we have become aware that some donors are publishing data that is not possible to use at country level. I have contacted the relevant organisations and understand **they&#39;re all working to fix their data** (which is great, so I am not complaining about anyone specifically!)
+
+However, I wanted to bring these issues to the attention of the community as there appears to be some misunderstanding that publishing data in this way is in line with the Standard (or will provide useful data).
+
+The two main issues I encountered are:
+
+- **publishing annual totals for previous years**. This data looks odd when mapped against country fiscal years. For example, [this project](http://spreadsheets.aidonbudget.org/en/countries/LR/activities/XM-DAC-41114-PROJECT-00050471/) shows all disbursements against Q2, because disbursements in 2012-2015 were recorded at 31st December of each year, which is Q2 in Liberia&#39;s financial year (July-June).
+
+- **publishing cumulative disbursements in the current year**. This means that as we move through the year, spending that would currently (as of 31 Jan) be attributed to Liberia&#39;s Q3 (Jan-Mar) would become attributed to Q4 (Apr-Jun) and then shift into the next fiscal year (beginning in July).
+
+## Suggestions for improving guidance
+
+The [guidance on the IATI Standard site]() already states that publishers should consider &quot;how to achieve&quot;
+&gt; Sense - IATI data should be represented in units that are manageable for the publisher and meaningful for the user - particularly when focusing on aggregation of transaction data.
+
+It would be great to be a bit more explicit in guidance and communications to encourage publishers to:
+
+- **publish a breakdown of disbursements** (at least monthly, though actual transactions would be preferable to allow for accurate currency conversion)
+
+- **ensure transactions are always actual** rather than cumulative</description>
+    
+    <lastBuildDate>Thu, 01 Feb 2018 11:07:55 +0000</lastBuildDate>
+    <category>Data Quality</category>
+    <atom:link href="https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Basic usability issues with financial data and guidance</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Yohanna</p>
+<p>So for the issues I raised above, even quarterly aggregation would be an improvement on the current situation <img src="//discuss.iatistandard.org/images/emoji/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"> but in terms of what would really be useful:</p>
+<p>I know that a number of countries request monthly data from donors, so the maximum aggregation in any case should be monthly, if we want IATI to at least align with the granularity of data countries are already getting / requesting.</p>
+<p>In general, I cannot really see an argument against aggregating low-value transactions (by month). However, for larger transactions, I think it is probably important to publish actual transactions given that some currencies can be quite volatile (for example, the price of the Liberian Dollar has fallen from around LD 135 to LD 120 against the US dollar in the last week, a fall in value of about 10% (<a href="https://cbl.org.lr" rel="nofollow noopener">see Central Bank survey</a>). For large financial values, this can clearly make a big difference.</p>
+<p>For loans, I think even small transactions should be published as actual values given that the precision is so much more important for calculating precisely debt and repayment amounts; though the Standard probably needs a <a href="https://discuss.iatistandard.org/t/currency-conversion/413/11">few more fields</a> to be really useful for debt management systems. I have been looking at debt management systems here the last couple of weeks. At the moment staff have to read through (~40 page) contracts and manually key data in to debt management systems. Being able to pull this data in automatically would clearly save time and probably improve the quality of data captured.</p>
+          <p><a href="https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206/3</link>
+        <pubDate>Thu, 01 Feb 2018 11:07:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1206-3</guid>
+        <source url="https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206.rss">Basic usability issues with financial data and guidance</source>
+      </item>
+      <item>
+        <title>Basic usability issues with financial data and guidance</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Mark, thanks for sharing this very useful feedback from actual use of the data.</p>
+<p>A question on your first suggestion regarding the aggregation or breakdown of disbursements, as I’m under the impression what we have gone back &amp; forth on this one over time.</p>
+<p>The standard does encourage donors to publish transactions with a specific date. However, there are challenges to publishing actual transactions (e.g. security, business confidentiality). I seem to recall that you had indicated that aggregation by quarter would be ok (or, at least, not be too much of a barrier for use by the partner government).</p>
+<p>How crucial is it to have actual transactions in your opinion? Could you be more explicit about the problems caused by monthly or quarterly aggregation? Also, how much would these problems vary with the value of the transactions, or project budget (ie perhaps there’s little harm done by aggregating transactions under a certain threshold)?</p>
+          <p><a href="https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206/2</link>
+        <pubDate>Wed, 31 Jan 2018 20:16:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1206-2</guid>
+        <source url="https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206.rss">Basic usability issues with financial data and guidance</source>
+      </item>
+      <item>
+        <title>Basic usability issues with financial data and guidance</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Through using IATI data in Liberia, we have become aware that some donors are publishing data that is not possible to use at country level. I have contacted the relevant organisations and understand <strong>they’re all working to fix their data</strong> (which is great, so I am not complaining about anyone specifically!)</p>
+<p>However, I wanted to bring these issues to the attention of the community as there appears to be some misunderstanding that publishing data in this way is in line with the Standard (or will provide useful data).</p>
+<p>The two main issues I encountered are:</p>
+<ul>
+<li>
+<p><strong>publishing annual totals for previous years</strong>. This data looks odd when mapped against country fiscal years. For example, <a href="http://spreadsheets.aidonbudget.org/en/countries/LR/activities/XM-DAC-41114-PROJECT-00050471/" rel="nofollow noopener">this project</a> shows all disbursements against Q2, because disbursements in 2012-2015 were recorded at 31st December of each year, which is Q2 in Liberia’s financial year (July-June).</p>
+</li>
+<li>
+<p><strong>publishing cumulative disbursements in the current year</strong>. This means that as we move through the year, spending that would currently (as of 31 Jan) be attributed to Liberia’s Q3 (Jan-Mar) would become attributed to Q4 (Apr-Jun) and then shift into the next fiscal year (beginning in July).</p>
+</li>
+</ul>
+<h2>Suggestions for improving guidance</h2>
+<p>The <a>guidance on the IATI Standard site</a> already states that publishers should consider “how to achieve”</p>
+<blockquote>
+<p>Sense - IATI data should be represented in units that are manageable for the publisher and meaningful for the user - particularly when focusing on aggregation of transaction data.</p>
+</blockquote>
+<p>It would be great to be a bit more explicit in guidance and communications to encourage publishers to:</p>
+<ul>
+<li>
+<p><strong>publish a breakdown of disbursements</strong> (at least monthly, though actual transactions would be preferable to allow for accurate currency conversion)</p>
+</li>
+<li>
+<p><strong>ensure transactions are always actual</strong> rather than cumulative</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206/1</link>
+        <pubDate>Wed, 31 Jan 2018 13:24:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1206-1</guid>
+        <source url="https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206.rss">Basic usability issues with financial data and guidance</source>
+      </item>
+  </channel>
+</rss>

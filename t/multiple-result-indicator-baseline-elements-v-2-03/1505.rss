@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Multiple result indicator baseline elements (v. 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505</link>
+    <description>Hey guys,
+
+I have a question. According [to the documentation](http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/) for Result indicator baseline element, this &#39;baseline&#39; element can now be reported multiple times in IATI v. 2.03:
+
+![15|690x262](upload://qYyifW0s2QBkaL6UiXevDBqeAHv.png) 
+
+Although there is no example in the documentation and in the discussion links (provided in the documentation) I can not find anything saying that this element can now be reported multiple times. Could anyone please confirm this ?
+
+thanks!!</description>
+    
+    <lastBuildDate>Sat, 13 Oct 2018 10:01:36 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Multiple result indicator baseline elements (v. 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="1505">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/amys/40/288_1.png" class="avatar"> amys:</div>
+<blockquote>
+<p>The example documentation doesn’t repeat elements unnecessarily. This is true throughout the standard.</p>
+</blockquote>
+</aside>
+<p>True… But I don’t think it would be unnecessary here. <a href="http://reference.iatistandard.org/activity-standard/iati-activities/iati-activity/title/#example-usage" rel="nofollow noopener">Here’s an example of a repeated element in the docs</a>:</p>
+<blockquote>
+<pre><code class="lang-xml">&lt;title&gt;
+    &lt;narrative&gt;Activity title&lt;/narrative&gt;
+    &lt;narrative xml:lang="fr"&gt;Titre de l'activité&lt;/narrative&gt;
+    &lt;narrative xml:lang="es"&gt;Título de la actividad&lt;/narrative&gt;
+&lt;/title&gt;
+</code></pre>
+</blockquote>
+<p>^^ This involves repetition of the <code>narrative</code> element. It’s super helpful, as it demonstrates why you’d use more than one <code>narrative</code> element.</p>
+<p>Same for <a href="http://reference.iatistandard.org/activity-standard/iati-activities/iati-activity/description/#example-usage" rel="nofollow noopener"><code>description</code></a>, and for <a href="http://reference.iatistandard.org/activity-standard/iati-activities/iati-activity/participating-org/#example-usage" rel="nofollow noopener"><code>participating-org</code></a>, and <a href="http://reference.iatistandard.org/activity-standard/iati-activities/iati-activity/activity-date/#example-usage" rel="nofollow noopener"><code>activity-date</code></a>… There’s quite a lot of useful repetition in the example usage sections.</p>
+<p>Intuitively, I’d only expect to find one baseline per result. It wasn’t immediately obvious to me why there’d be more than one. It’s because of disaggregations, and an example could help make this clear without having to read the original proposal.</p>
+<p>I don’t think it’s easy to make sense of the results element from the documentation as it stands. If someone thinks it’s obvious, there’s a decent chance they’ve not understood it <img src="https://discuss.iatistandard.org/images/emoji/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/7</link>
+        <pubDate>Fri, 12 Oct 2018 14:35:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1505-7</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505.rss">Multiple result indicator baseline elements (v. 2.03)</source>
+      </item>
+      <item>
+        <title>Multiple result indicator baseline elements (v. 2.03)</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for the feedback. It is useful to hear. We’ll make a note of it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/6</link>
+        <pubDate>Thu, 11 Oct 2018 12:28:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1505-6</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505.rss">Multiple result indicator baseline elements (v. 2.03)</source>
+      </item>
+      <item>
+        <title>Multiple result indicator baseline elements (v. 2.03)</title>
+        <dc:creator><![CDATA[Eimis]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/amys">@amys</a>,</p>
+<p>thanks for your message. Well, in my opinion if it was <em>changed</em> in a specific IATI version, it would be really helpful to have an example in the documentation of the change that was made. I’m a technical person and I still find it really difficult to understand the language used in the documentation and without proper examples it’s even more difficult. I honestly don’t think that this is “unnecessarily repeating elements” <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Just some honest feedback from my side. But thanks again for your help! It’s much more clear now.</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/5</link>
+        <pubDate>Thu, 11 Oct 2018 11:34:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1505-5</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505.rss">Multiple result indicator baseline elements (v. 2.03)</source>
+      </item>
+      <item>
+        <title>Multiple result indicator baseline elements (v. 2.03)</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/eimis">@Eimis</a></p>
+<p>The 2.03 reference page includes: <div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/b63eba414ddabfc4aafb68c902d5539f10c3dab3.png" data-download-href="https://discuss.iatistandard.org/uploads/default/b63eba414ddabfc4aafb68c902d5539f10c3dab3" title="image.png"><img src="https://discuss.iatistandard.org/uploads/default/original/1X/b63eba414ddabfc4aafb68c902d5539f10c3dab3.png" alt="image" width="690" height="168" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/b63eba414ddabfc4aafb68c902d5539f10c3dab3_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">799×195 2.84 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<aside class="quote no-group" data-post="3" data-topic="1505">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/eimis/40/409_2.png" class="avatar"> Eimis:</div>
+<blockquote>
+<p>Kinda difficult so spot it…</p>
+</blockquote>
+</aside>
+<p>This should not be difficult to spot on the page. Users don’t need to look at the 2.03 upgrade discussions.</p>
+<p>The example documentation doesn’t repeat elements unnecessarily.   This is true throughout the standard.</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/4</link>
+        <pubDate>Thu, 11 Oct 2018 10:34:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1505-4</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505.rss">Multiple result indicator baseline elements (v. 2.03)</source>
+      </item>
+      <item>
+        <title>Multiple result indicator baseline elements (v. 2.03)</title>
+        <dc:creator><![CDATA[Eimis]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks again for your help Andy… <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> Sooo it’s this small line, right ? Kinda difficult so spot it…</p>
+<blockquote>
+<p>b. Change baseline cardinality from 0…1 to 0…* to permit disaggregations (per proposal <a href="https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data/871">Results – allow disaggregations of results data (included 2.03)</a> )</p>
+</blockquote>
+<p>Also, don’t you think that an example in the official documentation page for this element should include multiple Baseline element’s ? It was <em>changed</em> in 2.03 after all. I’m surprised that it is not there. cc: <a class="mention" href="/u/amys">@amys</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/3</link>
+        <pubDate>Thu, 11 Oct 2018 09:06:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1505-3</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505.rss">Multiple result indicator baseline elements (v. 2.03)</source>
+      </item>
+      <item>
+        <title>Multiple result indicator baseline elements (v. 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/eimis">@Eimis</a>,</p>
+<p>So, this update was to allow for something like this:</p>
+<pre><code class="lang-xml">&lt;baseline year="2012" iso-date="2012-01-01" value="10"&gt;
+  &lt;dimension name="sex" value="female" /&gt;
+  &lt;dimension name="age" value="adult" /&gt;
+&lt;/baseline&gt;
+
+&lt;baseline year="2012" iso-date="2012-01-01" value="20"&gt;
+  &lt;dimension name="sex" value="male" /&gt;
+  &lt;dimension name="age" value="adult" /&gt;
+&lt;/baseline&gt;
+</code></pre>
+<p>I.e. multiple baselines for different disaggregations (expressed via the <code>dimension</code> element). That’s explained in <a class="mention" href="/u/mikesmith">@mikesmith</a>’s <a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874">v2.03 proposal</a> linked in the documentation.</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/2</link>
+        <pubDate>Wed, 10 Oct 2018 20:18:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1505-2</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505.rss">Multiple result indicator baseline elements (v. 2.03)</source>
+      </item>
+      <item>
+        <title>Multiple result indicator baseline elements (v. 2.03)</title>
+        <dc:creator><![CDATA[Eimis]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey guys,</p>
+<p>I have a question. According <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/" rel="nofollow noopener">to the documentation</a> for Result indicator baseline element, this ‘baseline’ element can now be reported multiple times in IATI v. 2.03:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/bd10d3d0f2731e1fc19d2eaac8bbac6e37153be9.png" data-download-href="https://discuss.iatistandard.org/uploads/default/bd10d3d0f2731e1fc19d2eaac8bbac6e37153be9" title="Screen Shot 2018-10-10 at 16.08.15.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/bd10d3d0f2731e1fc19d2eaac8bbac6e37153be9_2_690x262.png" alt="15" width="690" height="262" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/bd10d3d0f2731e1fc19d2eaac8bbac6e37153be9_2_690x262.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/bd10d3d0f2731e1fc19d2eaac8bbac6e37153be9_2_1035x393.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/bd10d3d0f2731e1fc19d2eaac8bbac6e37153be9.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/bd10d3d0f2731e1fc19d2eaac8bbac6e37153be9_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2018-10-10 at 16.08.15.png</span><span class="informations">1256×478 34.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Although there is no example in the documentation and in the discussion links (provided in the documentation) I can not find anything saying that this element can now be reported multiple times. Could anyone please confirm this ?</p>
+<p>thanks!!</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505/1</link>
+        <pubDate>Wed, 10 Oct 2018 14:09:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1505-1</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-result-indicator-baseline-elements-v-2-03/1505.rss">Multiple result indicator baseline elements (v. 2.03)</source>
+      </item>
+  </channel>
+</rss>

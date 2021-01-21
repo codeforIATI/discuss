@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:44:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Add budget-exempt attribute and codelist (included 2.03) - 2.03 Decimal Upgrade Proposals - IATI Community Discussions</title>
+    <meta name="description" content="This proposal is part of the 2.03 upgrade process, please comment by replying below. 
+
+Standard Activity 
+
+Schema Object iati-activity/@budget-exempt 
+
+Type of Change Addition to Schema and Codelists 
+
+Issue One of the k&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="845.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Add budget-exempt attribute and codelist (included 2.03)&#39;" href="845.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845" />
+<meta property="og:title" content="Add budget-exempt attribute and codelist (included 2.03)" />
+<meta name="twitter:title" content="Add budget-exempt attribute and codelist (included 2.03)" />
+<meta property="og:description" content="This proposal is part of the 2.03 upgrade process, please comment by replying below.  Standard  Activity  Schema Object  iati-activity/@budget-exempt  Type of Change  Addition to Schema and Codelists  Issue  One of the key goals of IATI is to improve the predictability of resource flows for users through the provision of forward-looking budgets. Users should expect IATI data to provide them with annual budget estimates across the lifetime of all activities. There are, however, circumstance under..." />
+<meta name="twitter:description" content="This proposal is part of the 2.03 upgrade process, please comment by replying below.  Standard  Activity  Schema Object  iati-activity/@budget-exempt  Type of Change  Addition to Schema and Codelists  Issue  One of the key goals of IATI is to improve the predictability of resource flows for users through the provision of forward-looking budgets. Users should expect IATI data to provide them with annual budget estimates across the lifetime of all activities. There are, however, circumstance under..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="3 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="2 ❤" />
+<meta property="article:published_time" content="2017-05-12T11:29:56+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="845.html">Add budget-exempt attribute and codelist (included 2.03)</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/standard-management/35.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #5719A3'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Standard Management</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/standard-management/2-03-decimal-upgrade-proposals/42.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #A66EE9'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>2.03 Decimal Upgrade Proposals</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../tag/activity_standard.html' class='discourse-tag' rel="tag">activity_standard</a>, 
+            <a href='../../tag/2-03_exemptions.html' class='discourse-tag' rel="tag">2-03_exemptions</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-05-12T11:29:56Z'>
+              <time itemprop='dateModified' datetime='2017-06-16T15:33:31Z' class='post-time'>
+                June 16, 2017,  3:33pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This proposal is part of the <a href="../version-2-03-decimal-upgrade-index-of-proposals/838.html">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p><strong>Schema Object</strong><br>
+iati-activity/<span class="mention">@budget-exempt</span></p>
+<p><strong>Type of Change</strong><br>
+Addition to Schema and Codelists</p>
+<p><strong>Issue</strong><br>
+One of the key goals of IATI is to improve the predictability of resource flows for users through the provision of forward-looking budgets. Users should expect IATI data to provide them with annual budget estimates across the lifetime of all activities. There are, however, circumstance under which forward-looking data cannot be provided, be it for operational, legal or commercial reason. This modification allows users to know which activities are exempt from providing budget data.</p>
+<p><strong>Proposal</strong></p>
+<ul>
+<li>Add attribute iati-activity/@budget-exempt
+<ul>
+<li>Definition
+A code indicating the reason why this activity does not contain any iati-activity/budget elements. The value must exist in the BudgetExempt codelist.
+</li>
+<li>Occurs
+0..1
+</li>
+</ul>
+</li>
+<li>Add non-embedded BudgetExempt codelist
+<ul>
+<li>Initial Values
+1 - Commercial restrictions
+2 - Legal restrictions
+3 - Rapid onset emergency
+</li>
+</ul>
+<p><strong>Standards Day</strong><br>
+Further consultation was requested</p>
+<p><strong>Links</strong><br>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/document/d/1hduO4-idwg1oV7bx3Eigzexws1_uy_7-ArfPEqI0IcA/edit" target="_blank">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/document/d/1hduO4-idwg1oV7bx3Eigzexws1_uy_7-ArfPEqI0IcA/edit" target="_blank"><span class="googledocs-onebox-logo g-docs-logo"></span></a>
+
+<h3><a href="https://docs.google.com/document/d/1hduO4-idwg1oV7bx3Eigzexws1_uy_7-ArfPEqI0IcA/edit" target="_blank">11 Publisher Statistics Methodologies</a></h3>
+
+<p>Name of paper Improvements to Publishing Statistics Methodologies Theme (e.g. Rules &amp;amp; Guidelines; Improvements etc) Improvements Lead author Wendy Rogers Links to other relevant information (Discuss forum; Website etc) Discuss:...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+          <meta itemprop='keywords' content='activity_standard, 2-03_exemptions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-16T15:33:20Z' class='post-time'>
+                June 16, 2017,  3:33pm
+              </time>
+              <meta itemprop='dateModified' content='2017-06-16T15:33:20Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This topic has been included for consideration in the formal 2.03 proposal</p>
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/markbrough.html'><span itemprop='name'>markbrough</span></a>
+            (Mark Brough)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-20T14:49:03Z' class='post-time'>
+                June 20, 2017,  2:49pm
+              </time>
+              <meta itemprop='dateModified' content='2017-06-20T14:49:03Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I would question the value of adding a specific attribute to state only that the budget field is deliberately not published. I can see the value of being able to state exemptions in a structured way but I don’t think it makes sense to cover only one particular field.</p>
+<p>I thought the discussion at Standards Day more or less reached the consensus that adding particular fields into the Standard simply in order to facilitate the calculation of publisher statistics is not a very strong use case.</p>
+<p>(As an aside, I would also suggest that the calculation of whether or not an activity should be exempted from requiring forward data is something that should be determined by other things in the data (e.g. activities marked as administrative, humanitarian, or whatever) rather than the publisher’s own choice to not have them assessed.)</p>
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-21T10:05:29Z' class='post-time'>
+                June 21, 2017, 10:05am
+              </time>
+              <meta itemprop='dateModified' content='2017-06-21T10:05:29Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="3" data-topic="845">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/markbrough/40/557_2.jpg" class="avatar"> markbrough:</div>
+<blockquote>
+<p>I thought the discussion at Standards Day more or less reached the consensus that adding particular fields into the Standard simply in order to facilitate the calculation of publisher statistics is not a very strong use case.</p>
+</blockquote>
+</aside>
+<p>I would not agree that there was consensus on this. The argument was also made that the primary use case for this is for data users to know whether data on an activity is accurate and complete.</p>
+<p>Forward-looking data is one of the most important cornerstones of IATI’s raison d’etre and accurate benchmarking of this dimension is, I would argue, a legitimate exercise.</p>
+<aside class="quote no-group" data-post="3" data-topic="845">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/markbrough/40/557_2.jpg" class="avatar"> markbrough:</div>
+<blockquote>
+<p>the calculation of whether or not an activity should be exempted from requiring forward data is something that should be determined by other things in the data</p>
+</blockquote>
+</aside>
+<p>There is nothing in the data, for example, that defines which humanitarian activities should or shouldn’t contain forward-looking data. Nor is it always clear which activities are covered by legal or competitive restrictions. Self-reporting is not ideal but it is better than nothing and a publisher’s use of it can be spot-checked.</p>
+<aside class="quote no-group quote-modified" data-post="3" data-topic="845">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/markbrough/40/557_2.jpg" class="avatar"> markbrough:</div>
+<blockquote>
+<p>I can see the value of being able to state exemptions in a structured way but I don’t think it makes sense to cover only one particular field.</p>
+</blockquote>
+</aside>
+<p>Which other fields require metadata on exemptions that would improve the ability of users to assess and process the data?</p>
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/markbrough.html'><span itemprop='name'>markbrough</span></a>
+            (Mark Brough)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-06-21T11:47:31Z'>
+              <time itemprop='dateModified' datetime='2017-06-21T11:48:56Z' class='post-time'>
+                June 21, 2017, 11:48am
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>There is nothing in the data, for example, that defines which humanitarian activities should or shouldn’t contain forward-looking data.</p>
+</blockquote>
+<p>I think the argument here is that rapid onset emergencies would not necessarily expect to have forward looking data for those activities. Could we not exclude activities tagged as humanitarian (<code>iati-activity/@humanitarian='1'</code>) which started less than 6 months ago, or something like that?</p>
+<blockquote>
+<p>Nor is it always clear which activities are covered by legal or competitive restrictions.</p>
+</blockquote>
+<p>Again I think this is something that should be externally defined. For example, if we think that all DFIs should be exempted from publishing this information (I am still not convinced of this, but it sounds like that’s the argument) then that is relatively easy to do. We could do something like exclude activities reported by private sector organisations, for example (e.g. <code>reporting-org/@type='70'</code>).</p>
+<p>If there are other types of activities that should not be expected to publish such information then we should be able to at least describe features of them (and we could then see the extent to which they could be covered by other fields in the Standard).</p>
+<blockquote>
+<p>Which other fields require metadata on exemptions that would improve the ability of users to assess and process the data?</p>
+</blockquote>
+<p>For issues around commercial confidentiality, I would guess a number of transactional fields (though various publishers will clearly have more ideas here). I also think making clear that data is not published because of systems limitations would be useful for certain fields, e.g. title, description, implementing organisation, some classifications.</p>
+<blockquote>
+<p>Forward-looking data is one of the most important cornerstones of IATI’s raison d’etre and accurate benchmarking of this dimension is, I would argue, a legitimate exercise.</p>
+</blockquote>
+<p>Agreed, but I don’t see how self-reporting will allow you to do this with any accuracy. You would have an uneven playing field between similar publishers depending on whether each of them decided to use this or not. It would be odd if at least some publishers didn’t tag all of their activities that didn’t have a <code>budget</code> element as <code>budget-exempt</code>. (And they wouldn’t necessarily be acting in bad faith by doing so.)</p>
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-06-26T17:55:19Z'>
+              <time itemprop='dateModified' datetime='2017-07-05T09:27:11Z' class='post-time'>
+                July 5, 2017,  9:27am
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I can see why this information might be useful, but I think we should avoid giving the appearance of there being sub-standards for different types of publishers. IATI does not provide blanket exemptions for certain types of publisher or certain types of activity. Of course there are sometimes valid reasons for omitting data, but these need to be justified case by case. So we would propose some changes here:</p>
+<ul>
+<li>A more granular codelist of reasons for not publishing information</li>
+<li>Case by case justification as to how publishing the redacted information would cause material or direct harm</li>
+</ul>
+<p>Forward looking budgets have been a consistent demand from partner country governments, and <a href="http://www.cabri-sbo.org/uploads/files/Documents/policy_brief_2012_cabri_transparency_and_accountability_use_of_country_systems_english_brief_5_cabri_busan_note_english.pdf">concerns have been raised</a> that ‘commercial sensitivity’ might become the standard excuse for not providing information. IATI should be careful to avoid legitimising this.</p>
+<p>Also, the word ‘exempt’ is perhaps best avoided here: publishers are explicitly declaring that they will not publish forward budgets for an activity, but IATI is not granting them exemption from doing so.</p>
+<p>Andy Lulham<br>
+Aid Information Advisor, Publish What You Fund</p>
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-07-07T12:19:00Z'>
+              <time itemprop='dateModified' datetime='2017-07-07T12:21:19Z' class='post-time'>
+                July 7, 2017, 12:21pm
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Notes from consultation calls w/c 3rd July</p>
+<p>Outcome:<br>
+The proposal was reviewed by those on the call and there was no objection from the group about the inclusion of the attribute <span class="mention">@budget-exempt</span><br>
+There were some specific proposals for modification:<br>
+Change the attribute name as the word ‘exempt’ was not deemed appropriate. Possible suggestion: <span class="mention">@budget-not-provided</span><br>
+Including an additional code (4-Other)</p>
+<p>Discussion:<br>
+There was discussion around the need to be able to add add more information, in addition to selecting a codelist, elaborating on the reasons for not being able to publish forward-looking budget.  As currently an attribute is used the option for free-text is not possible.<br>
+The group expressed a need for more use cases on how the attribute will be used.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-08-09T12:07:13Z' class='post-time'>
+                August 9, 2017, 12:07pm
+              </time>
+              <meta itemprop='dateModified' content='2017-08-09T12:07:13Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <ol>
+<li>In my opinion the primary use case is for users accessing forward-looking data. This has always been one of the most important features of IATI data and users need to know whether the absence of budgets is a legitimate use case or a data quality issue. Placing the burden on users to run a number of checks (is this a fast-onset emergency, does the activity have commercial or legal restrictions, etc) is complicated.</li>
+<li>I do not support the inclusion of an ‘Other’ code. If a new use case emerges for which budgets are not applicable it should be properly defined and classified.</li>
+<li>I take the point that ‘exempt’ is inappropriate. Personally I’m happy with (the rather cumbersome) <code>@budget-not-provided</code>
+</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/JohnAdams.html'><span itemprop='name'>JohnAdams</span></a>
+            (John Adams)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-08-21T18:54:03Z' class='post-time'>
+                August 21, 2017,  6:54pm
+              </time>
+              <meta itemprop='dateModified' content='2017-08-21T18:54:03Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am content with <code>@budget-not-provided</code> and the initial codelist would cover the reasons that we normally exempt forward-looking budgets at an activity level.</p>
+<p>Where there are other exemptions (security &amp; safety, international relations), these are normally applied to either a whole activity or other elements (participating-orgs for example).</p>
+<p>The value in this is not so much the publisher statistics, but in informing “real” data users that the data is not available for a particular reason.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-25T13:52:39Z' class='post-time'>
+                October 25, 2017,  1:52pm
+              </time>
+              <meta itemprop='dateModified' content='2017-10-25T13:52:39Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This proposal has been been included in the 2.03 upgrade. It can be viewed in the following two Discuss posts:</p>
+<ul>
+<li>
+<p><a href="../final-technical-proposal-for-the-2-03-upgrade/1097c3ce.html?u=iati-techteam">Final Proposal of 2.03 Content</a></p>
+</li>
+<li>
+<p><a href="../final-technical-proposal-for-the-2-03-upgrade/1097c3ce.html?u=iati-techteam">Final Technical Proposal for the 2.03 Upgrade</a></p>
+</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+              closed 
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="845.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-25T13:52:43Z' class='post-time'>
+                October 25, 2017,  1:52pm
+              </time>
+              <meta itemprop='dateModified' content='2017-10-25T13:52:43Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          
+        </div>
+
+        <meta itemprop='headline' content='Add budget-exempt attribute and codelist (included 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:44:31 GMT -->
+</html>

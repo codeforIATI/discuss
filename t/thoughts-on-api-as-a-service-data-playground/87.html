@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/thoughts-on-api-as-a-service-data-playground/87 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:50:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Thoughts on API as a Service &amp; Data Playground - APIs - IATI Community Discussions</title>
+    <meta name="description" content="In March I shared some thoughts via a Gist about some ways in which IATI data could be used in a way that would make it more accessible to NGOs and other parties.  I have been asked to move the content of the gist here a&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="87.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Thoughts on API as a Service &amp; Data Playground&#39;" href="87.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/thoughts-on-api-as-a-service-data-playground/87" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/thoughts-on-api-as-a-service-data-playground/87" />
+<meta property="og:title" content="Thoughts on API as a Service &amp; Data Playground" />
+<meta name="twitter:title" content="Thoughts on API as a Service &amp; Data Playground" />
+<meta property="og:description" content="In March I shared some thoughts via a Gist about some ways in which IATI data could be used in a way that would make it more accessible to NGOs and other parties.  I have been asked to move the content of the gist here as it is a better forum (in that it is actually a forum) for discussing it.  I must caveat the following with   These are just ideas off the top of my head and could be further refined. I currently don’t work with IATI data or projects so the user need associated with these ideas ..." />
+<meta name="twitter:description" content="In March I shared some thoughts via a Gist about some ways in which IATI data could be used in a way that would make it more accessible to NGOs and other parties.  I have been asked to move the content of the gist here as it is a better forum (in that it is actually a forum) for discussing it.  I must caveat the following with   These are just ideas off the top of my head and could be further refined. I currently don’t work with IATI data or projects so the user need associated with these ideas ..." />
+<meta property="article:published_time" content="2014-08-05T12:06:13+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="87.html">Thoughts on API as a Service &amp; Data Playground</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/apis/10.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #2695B8'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>APIs</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/kouphax.html'><span itemprop='name'>kouphax</span></a>
+            (James Hughes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="87.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-08-05T12:06:13Z' class='post-time'>
+                August 5, 2014, 12:06pm
+              </time>
+              <meta itemprop='dateModified' content='2014-08-05T12:06:13Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>In March I shared some thoughts via a <a href="https://gist.github.com/kouphax/f5f3553c1c48860288bc" rel="nofollow noopener">Gist</a> about some ways in which IATI data could be used in a way that would make it more accessible to NGOs and other parties.  I have been asked to move the content of the <a href="https://gist.github.com/kouphax/f5f3553c1c48860288bc" rel="nofollow noopener">gist</a> here as it is a better forum (in that it is actually a forum) for discussing it.</p>
+<p>I must caveat the following with</p>
+<ol>
+<li>These are just ideas off the top of my head and could be further refined.</li>
+<li>I currently don’t work with IATI data or projects so the <strong>user need</strong> associated with these ideas may be very limited</li>
+<li>This was written roughly in a single pass and might contain terrible atrocities against grammar and spelling.  I apologies for that.</li>
+<li>I am in no way saying any of this is right or anything currently existing is wrong, these are just thoughts that may or may not spark some discussion.</li>
+</ol>
+<blockquote>
+<p>EARLY ALPHA: Some very early unvalidated thoughts on an IATI API Service/Playground.</p>
+</blockquote>
+<blockquote>
+<h2>Introduction</h2>
+</blockquote>
+<blockquote>
+<p>There appears, from an outside view, to be an attempt to create a unified IATI API that will supoprt querying of all available IATI data in a unified way.  Projects like <a href="http://iati-datastore.herokuapp.com/" rel="nofollow noopener">IATI Datastore</a> and to a certain extent the <a href="http://devtracker.dfid.gov.uk/api" rel="nofollow noopener">DevTracker API</a> <em>[There are more and we should call them out here]</em> have gone some way to achieving this goal.</p>
+</blockquote>
+<blockquote>
+<h2>DevTracker</h2>
+</blockquote>
+<blockquote>
+<p>During the development of <a href="http://devtracker.dfid.gov.uk/" rel="nofollow noopener">DevTracker</a> we explored using various IATI datastores but every one of them had constraints.  Some problematic, others potentially catastrophic to the project.  Existing solutions either strictly adhered to the IATI standard thus refusing to consume most of the necessary data (IATI Datastore) or had assumptions baked into the logic that conflicted with the DFID data structure.</p>
+</blockquote>
+<blockquote>
+<h2>Root Cause Analysis</h2>
+</blockquote>
+<blockquote>
+<p>The reason for these problems was that existing datastores attempt to provide a generic appraoch to a non-generic problem.  While most API based solutions give people access to Activity streams and Organistaion streams there simply isn’t enough guidence within the developing IATI standard yet to expand on this.  Consumers needs are typically rather unique to them in some regard which imposes certain overheads on a generic API.  In DevTracker for example using an existing solution would have meant extracting data by crawling the, often paged, endpoints, deserialing it and aggreating the data into our own structure that we want to consume.  This would have been more time consuming and prone to error.</p>
+</blockquote>
+<blockquote>
+<p>The other problem was that most of these solutions aren’t open to extension without diving into the code itself.  Something that many people would consider too high a barrier of entry.</p>
+</blockquote>
+<blockquote>
+<h2>Suggestion</h2>
+</blockquote>
+<blockquote>
+<p>Two things I have observed (from my outsider view) is that people want</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Access to data (or subset of)</li>
+<li>Ability to construct their own queries over this data</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>These people may want to build a site, make an API of a subset of data publically available, or simply do some spreadsheet based work.  All of these require some very specific query abilities and custom outputs that dont belong in a generic solution.</p>
+</blockquote>
+<blockquote>
+<p>Over the last few weeks I’ve been toying with the idea of an “API as a Service” and/or “Data Playground”.  Both of these could be seen as an extension to <a href="http://iati-datastore.herokuapp.com/" rel="nofollow noopener">IATI Datastore</a> (though an extensible approach would be more favourable due to the needs of some users).</p>
+</blockquote>
+<blockquote>
+<h3>API as a Service</h3>
+</blockquote>
+<blockquote>
+<p>This concept revolves around providing a multi-tenant approach to providing an API.  A user would sign up to the service, configure their resources (select desired data sources, refresh frequency etc) and immediatley be given access to a basic but full featured API similar to the IATI Datastore.  They can then provide their own aggregations to the API e.g. Country View, Sectors etc. which will be exposed as an API endpoint on their specific API e.g. <code>http://jhughes.iati-api.org/api/countries</code>.</p>
+</blockquote>
+<blockquote>
+<p>Custom queries can be provided through some sort of query language <em>[TBD]</em> e.g. Readonly SQL Subset, Readonly XPath/XQuery or some sort of graphical interface akin to <a href="http://pipes.yahoo.com/pipes/" rel="nofollow noopener">Yahoo Pipes</a>.</p>
+</blockquote>
+<blockquote>
+<p>Varous other customisations <em>could</em> be provided if there was a need (i18n of API data, custom codelists etc.) but the goal should be to provide flexability without inventing an entirely new platfrom with a million bells and whistles.</p>
+</blockquote>
+<blockquote>
+<h3>Data Playground</h3>
+</blockquote>
+<blockquote>
+<p>Not everyone wants an API.  Some users may simply want to access a subset of data and play around with it to perform some adhoc calculations or embed it as a widget in another site.  So where the API as a Service feature would be too full blown they could use the Data Playground.  Inspired by Githubs <a href="https://gist.github.com/" rel="nofollow noopener">Gist</a> feature (providing ability to share code without having to use a full blown git repository) and Neo4Js <a href="http://gist.neo4j.org/" rel="nofollow noopener">Graph Gist</a> (abiltiy to save and visualise graph queries) the playground would enable users to write and save one off queries against a set of data.  Results would come back in table, csv, json, xml, graphs (D3 powered for example) and can be embedded in other sites or exported to spreadsheets and other tools.</p>
+</blockquote>
+<blockquote>
+<p>Again format of the queries is open to discussion.</p>
+</blockquote>
+<blockquote>
+<h2>Thoughts</h2>
+</blockquote>
+<blockquote>
+<h3>Extensible Data Store</h3>
+</blockquote>
+<blockquote>
+<p>Datastores could be pluggable (assuming a common defined interface) so you could provide a public store and plug it into your own API platform account.  Or other people coudl provide BaseX version of IATI or you could run everything locally etc.</p>
+</blockquote>
+<blockquote>
+<h3>Monetisation</h3>
+</blockquote>
+<blockquote>
+<p>As the IATI dataset grows and potential userbase gets larger the cost of running this type service would also increase.  Queries would not necesarilly be cheap (though extensive caching in line with IATI data refresh would help).  So a tiered subscription model could be introduced giving access to various features or increasing numbers of Requests/Queries per Month.</p>
+</blockquote>
+<blockquote>
+<h3>Benefits</h3>
+</blockquote>
+<blockquote>
+<p><strong>For the User/Consumer</strong></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>They aren’t obliged to download and setup another product or technology stack just to get some data.</li>
+<li>They don’t have to work around the constraints of a sytem designed to cater to everyone</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>For the API Designers</strong></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>They can look at providing a baseline API (performance, scale, API semantics) without extensive aggregations and trying to guess people needs.</li>
+</ul>
+</blockquote>
+        </div>
+
+        <meta itemprop='headline' content='Thoughts on API as a Service &amp; Data Playground'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/thoughts-on-api-as-a-service-data-playground/87 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:50:31 GMT -->
+</html>

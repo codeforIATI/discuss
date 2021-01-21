@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Revision of IATI Standard Upgrade Procedures</title>
+    <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014</link>
+    <description>[Here is a draft discussion document on proposed changes to our upgrade procedures](https://docs.google.com/document/d/1V5QEyJFhHxxKZLqBdxkIIk-gZL7apVf1iZo6lJ4NaXc/edit?usp=sharing) that will be submitted to the Member&#39;s Assembly in October. The more that we can agree on before we get to Rome, the more likely we are to come away with a framework that works for all. I would urge everyone who has expressed interest in this matter to engage. 
+
+Could you make major comments in this thread (quoting sections here when relevant) and restrict comments on the Google Doc to finer/pedantic points.
+
+This document is very different from the one we presented in Dar es Salaam. Hopefully it takes on board the further learnings we have gone through with 2.03 over the past months.
+
+The biggest change is to make a clear distinction between content and technical implementation. We propose that we should formally approve the content - the explicit use cases for each proposal - before going anywhere near schemas, xml, etc.
+
+Other changes include
+
+* New responsibilities for the Governing Board in initiating and approving decimal upgrades and overseeing integers
+* Procedures for involving the Governing Board in resolving disputes.
+* Specifying the necessary phases of an upgrade without prescribing the timeline (which should be determined on a case-by-case basis to take into account likely complexity and TAG and MA meeting timings).
+
+I look forward to an open and constructive discussion.</description>
+    
+    <lastBuildDate>Fri, 14 Sep 2018 10:51:23 +0000</lastBuildDate>
+    <category>Issues for Members Assembly</category>
+    <atom:link href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry to bump this thread after a long time. I checked back and noticed <a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/8">the forwards compatibility suggestion</a> didn’t make it into <a href="https://iatistandard.org/documents/242/Paper-10-Proposed-revisions-to-the-IATI-Standard-upgrade-process.pdf" rel="nofollow noopener">the MA 2017 proposal</a>.</p>
+<p>That’s a shame – I think some guarantees about forwards compatibility would be really valuable from a data use perspective.</p>
+<p>To continue <a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/11">Bill’s TV analogy above</a>: let’s say a publisher is a TV broadcaster, transmitting a black-and-white signal. Maybe the publisher won’t upgrade immediately after the version upgrade to colour. <strong>Backwards compatibility</strong> means users can still watch their black-and-white channel, even on a colour TV. <strong>That’s why backwards compatibility is good – it benefits both publishers and users.</strong></p>
+<p>Now let’s say an aid management system is a black-and-white TV. Maybe it won’t be upgraded immediately after the version upgrade to colour. <strong>Forwards compatibility</strong> guarantees it still works after broadcasters upgrade to colour. Without forwards compatibility, it might just show static noise. <strong>That’s why forwards compatibility is good – it specifically benefits users.</strong></p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/21</link>
+        <pubDate>Fri, 14 Sep 2018 10:51:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-21</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with the proposals.</p>
+<p>In particular I like the separation of the What and How, and the need to explain changes in terms of user need first. That means there will be initial discussion around the extent and value of the user need rather than starting with less accessible discussions about details of tech implementation.</p>
+<p>That single change I think goes quite a way to address concerns expressed by people in this forum about the purpose of the standard and how it can continue to meet user needs as they evolve.</p>
+<p>The recent decimal upgrades have focussed on a couple of user “epics” on humanitarian and results. I think we can learn from those experiences about how to frame the user need questions better.</p>
+<p>I think the GB rather than the MA should initiate <strong>minor changes</strong>. Adding the MA to this process would be too inflexible. The focus on user needs helps to ensure minor changes are meeting real needs that can be understood across the wider IATI community.</p>
+<p>The principle of consensus is important here, and it would be useful to explore further community principles as Herman has suggested.</p>
+<p>Additionally, could we make better use of an extensions approach to test user needs better? Take an Alpha/Beta/Live approach to changes to help understand the user need better. That might help to see how big the user base for particular elements might be, addressing Herman’s concern about scale.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/20</link>
+        <pubDate>Mon, 18 Sep 2017 14:22:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-20</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="16" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>There is a paradox:</p>
+<p>every publisher and user would like the simplest possible standard to meet their needs<br>
+many publishers and users have very different needs</p>
+<p>Can we capture this in another way?</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a>  Yes, this is exactly where a lot of discussions about the standard boil down to. The discussion about this inherent tension between the complexity and usability of the standard is now largely a matter of opinion of individuals with an interest in the standard.</p>
+<p>Your proposal to separate the ‘what’ and ‘how’ in the upgrade procedure will help to more explicitly strike the balance between complexity and usability. But I think that will not be enough since we still need to decide for each technical implementation of a user need, if the proposed solution is workable.</p>
+<p>What could help i.m.o. , is a set of criteria/principles/rules to determine if a solution does not unnecessarily contribute to the complexity of the standard, but still satisfies the user needs.</p>
+<p>Examples of these rules (open for debate of course) could be:</p>
+<ul>
+<li>solutions must be relevant for a majority of users within at least one constituency (to avoid adding complexity which benefits only a couple of publishers)</li>
+<li>if an alternative to implement a user need already exists in the standard, the standard is not changed (to avoid technical redundancy, making processing logic more complex).</li>
+<li>etc.</li>
+</ul>
+<p>In case of conflicts, these criteria can than be used to advise the MA whether or not to accept a change proposal.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/19</link>
+        <pubDate>Thu, 14 Sep 2017 15:40:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-19</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Papers for the Members’ Assembly need to be submitted on Tuesday 19th September so please could you submit any comments before 18:00 UTC on Monday 17th September.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/18</link>
+        <pubDate>Thu, 14 Sep 2017 12:51:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-18</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="14" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>The only reason for distinguishing between MA and Board for Major and Minor was pragmatic. With the MA only meeting once a year it means every upgrade, however trivial, is effectively spread over a two-year period.</p>
+</blockquote>
+</aside>
+<p>A yearly update cycle (1 major or minor upgrade each year) might still be possible. At the yearly MA meeting the MA can decide about the terms of reference for the next years upgrade and decide about the conflict items of the previous year upgrade.</p>
+<p>All the change proposals for which there is consensus, can be released on authority of the board. No need to discuss those again in the MA. So an upgrade release does not have to wait on the MA meeting.</p>
+<p>After decision on the conflict items by the MA, it might be possible to release those items directly after the MA meeting as a patch release on the minor or major release.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/17</link>
+        <pubDate>Thu, 14 Sep 2017 08:16:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-17</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="12" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>tools and services have no consequence for the governance of the upgrade process.</p>
+</blockquote>
+</aside>
+<p>I take your point <a class="mention" href="/u/herman">@Herman</a>, you are quite correct (although I was referring to tools and services that simplify the publishing and using data in general, not how they are upgraded)</p>
+<p>I do, however, think that, somehow, the <strong><em>implementation</em></strong> of the standard needs to be taken into account within the governance.</p>
+<p>There is a paradox:</p>
+<ul>
+<li>every publisher and user would like the simplest possible standard to meet their needs</li>
+<li>many publishers and users have very different needs</li>
+</ul>
+<p>Can we capture this in another way?</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/16</link>
+        <pubDate>Wed, 13 Sep 2017 15:43:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-16</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="13" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/theo.sande/40/300_1.png" class="avatar"> theo.sande:</div>
+<blockquote>
+<p>it is essential to (better) define the roles and functions of the ‘technical lead’ as well as the ‘technical team’.</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/theo.sande">@theo.sande</a> don’t you think this is best done in the institutional arrangements - <a href="https://discuss.iatistandard.org/t/members-consultation-on-review-of-iatis-institutional-arrangements/1006/5">where I see you have indeed raised this point</a></p>
+<p>Currently the technical team’s role is the administration, coordination and technical implementation of upgrades. The technical lead oversees the work of the team, chairs team discussions on candidate selection and engages in consultations with the aim of reaching consensus (or establishing a clear lack thereof).</p>
+<p>Members of the team, including the lead, also engage in consultation discussions in their personal capacity on issues within their own working experience.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/15</link>
+        <pubDate>Wed, 13 Sep 2017 15:10:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-15</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="10" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>I think it is vital that the MA has the final say of both minor and major upgrades.</p>
+</blockquote>
+</aside>
+<p>The only reason for distinguishing between MA and Board for Major and Minor was pragmatic. With the MA only meeting once a year it means every upgrade, however trivial, is effectively spread over a two-year period.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/14</link>
+        <pubDate>Wed, 13 Sep 2017 14:46:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-14</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[theo.sande]]></dc:creator>
+        <description><![CDATA[
+            <p>In discussing the upgrade procedures it is essential to (better) define the roles and functions of the ‘technical lead’ as well as the ‘technical team’.<br>
+In the current SOP of IATI they are loosely described as a function of DI, without defining their specific functions and or their relations with other parts of the secretariat, or with (chair) TAG, MA or (Chair) GB.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/13</link>
+        <pubDate>Wed, 13 Sep 2017 13:55:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-13</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>The standard is, by its nature, complex. Tools and services that simplify both the publishing and use of data must be the core priorities of the technical team tasked with maintaining the standard.</p>
+</blockquote>
+<p>Tools and services may need to be upgraded after introducing a new IATI version, but in itself tools and services have no consequence for the governance of the upgrade process. To avoid confusion I would suggest to remove this point from the principles section.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/12</link>
+        <pubDate>Wed, 13 Sep 2017 13:30:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-12</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="8" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/hayfield/40/202_1.png" class="avatar"> hayfield:</div>
+<blockquote>
+<p>All Decimal Versions within an Integer Version should be forwards-compatible where possible.</p>
+</blockquote>
+</aside>
+<p>It took me a while to get my head around forward-compatibility but I now get it and will add this proposal. This TV analogy works better for me:</p>
+<blockquote>
+<p>The introduction of color television allowed backward compatibility since new receivers could receive black-and-white signals generated by old transmitters. It allowed forward compatibility since black-and-white TV sets still could receive a signal from a new transmitter.</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/11</link>
+        <pubDate>Wed, 13 Sep 2017 13:08:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-11</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Bill,<br>
+Thanks for this revision of the IATI upgrade procedure. It is a great improvement compared to the original upgrade procedures, because of the clear distinction between ‘what’ and  ‘how’ and by making more explicit what the role of the MA is.</p>
+<p>The proposed upgrade procedure makes a distinction between the handling of minor and major upgrades. I am wondering if this distinction is necessary. The difference between a minor (decimal) and a major (integer) upgrade is its backward compatibility. Substantial functional changes may occur in both major and minor upgrades (e.g. the addition of the Humanitarian elements in minor upgrade 2.03). So doesn’t this mean that the same upgrade procedure can be used for minor and major upgrades?</p>
+<p>Because all functional changes will affect IATI members, I think it is vital that the MA has the final say of both minor and major upgrades. Both minor and major upgrades ought therefore to be initiated and approved by the MA. Initiation of a minor or major upgrade could for instance take place in a yearly cycle in which the MA determines the work plan for the next year and approves the terms of reference for the next minor or major release.</p>
+<p>It is up to the governing body to oversee the execution of the work plan and monitor if the work plan is executed in accordance with the terms of reference. When executing the work plan, there can be consensus about how to implement a change proposals in the standard or not. For all change proposals for which there is consensus, the governing body approves and releases the change proposals.</p>
+<p>When there is no consensus, the discussion is often about the interpretation of the required functionality or about the impact on non-functional aspects of the standard (e.g. usability, data-quality, etc.). Therefore, it is i.m.o. important that in these cases the MA has the final say, regardless whether or not it is an minor or major upgrade.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/10</link>
+        <pubDate>Wed, 13 Sep 2017 12:42:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-10</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="7" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/hayfield/40/202_1.png" class="avatar"> hayfield:</div>
+<blockquote>
+<p>Personally, I’d suggest that it should be possible to update Guidelines through a Patch Upgrade</p>
+</blockquote>
+</aside>
+<p>I agree with this approach <a class="mention" href="/u/hayfield">@hayfield</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/9</link>
+        <pubDate>Wed, 13 Sep 2017 11:37:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-9</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>Section 3 talks about backwards-compatibility. It may also be useful to add something about forwards-compatibility - this has <a href="https://discuss.iatistandard.org/t/non-statistical-secondary-sectors-excluded-2-03/849">been relevant</a> with 2.03.</p>
+<p>Suggest that:</p>
+<ol>
+<li>All Patch Versions within a Decimal Version must be backwards-compatible.</li>
+<li>All Decimal Versions within an Integer Version must be backwards-compatible.</li>
+<li>All Decimal Versions within an Integer Version should be forwards-compatible where possible.</li>
+<li>An Integer Version generated through an Integer Upgrade must not be backwards-compatible with the previous Integer Version.</li>
+</ol>
+<p>In the currently proposed wording: 1 is explicit (3.c.), 2 is explicit (3.d.), 3 is new and 4 is implicit (3.a. - SemVer requires this).</p>
+<hr>
+<p>In terms of definitions:</p>
+<p><strong>Backwards Compatible</strong><br>
+Let α be a Version with a Version Number and β be a Version with a higher Version Number.</p>
+<p>β is Backwards Compatible with α if all conformant Datasets at α are conformant at β.</p>
+<p><strong>Forward Compatible</strong><br>
+Let α be a Version with a Version Number and β be a Version with a higher Version Number.</p>
+<p>α is Forward Compatible with β if for all conformant Datasets at β:</p>
+<ul>
+<li>Let γ be a conformant Dataset at β</li>
+<li>Let δ be γ but with all elements and attributes defined through an Upgrade Process from α to β removed</li>
+<li>The elements and attributes defined in δ have the same meaning at α as in γ at β</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/8</link>
+        <pubDate>Wed, 13 Sep 2017 09:53:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-8</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="1014" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/timdavies/40/122_1.png" class="avatar"> TimDavies:</div>
+<blockquote>
+<p>I.e. should changes to <strong>guidelines</strong> only be possible with a new version of the standard, or could they be updated outside that versioning process?</p>
+</blockquote>
+</aside>
+<p>Personally, I’d suggest that it should be possible to update Guidelines through a Patch Upgrade, so:</p>
+<hr>
+<p>Rules may be:</p>
+<ul>
+<li>Added - at a Decimal or Integer Upgrade, through the applicable consultation process</li>
+<li>Modified (relaxed restrictions) - at a Decimal or Integer Upgrade, through the applicable consultation process</li>
+<li>Modified (enhanced restrictions) - at an Integer Upgrade, through the applicable consultation process</li>
+<li>Removed - at a Decimal or Integer Upgrade, through the applicable consultation process</li>
+</ul>
+<p>Guidelines may be:</p>
+<ul>
+<li>Added - at any point, subject to applicable notification and/or consultation</li>
+<li>Modified (relaxed restrictions) - at any point, subject to applicable notification and/or consultation</li>
+<li>Modified (enhanced restrictions) - at any point, subject to applicable notification and/or consultation</li>
+<li>Removed - at any point, subject to applicable notification and/or consultation</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/7</link>
+        <pubDate>Wed, 13 Sep 2017 09:41:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-7</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Bill.</p>
+<p>On rules and guidelines, I was also thinking of a wider separation in terms of governance.</p>
+<p>I.e. should changes to <strong>guidelines</strong> only be possible with a new version of the standard, or could they be updated outside that versioning process?</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/6</link>
+        <pubDate>Wed, 13 Sep 2017 09:13:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-6</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>All our documentation should make this distinction.</p>
+</blockquote>
+</aside>
+<p>I think you mean “MUST”!</p>
+<p>+1 for semver and RC – that’s great.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/5</link>
+        <pubDate>Wed, 13 Sep 2017 08:49:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-5</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Many thanks, <a class="mention" href="/u/timdavies">@TimDavies</a></p>
+<aside class="quote no-group" data-post="3" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/timdavies/40/122_1.png" class="avatar"> TimDavies:</div>
+<blockquote>
+<p>It might be useful to defer to the Semantic Versioning (SEMVER) framework for defining what can happen at MAJOR.MINOR.PATCH numbering points</p>
+</blockquote>
+</aside>
+<p>We agree that this is a better solution and have made appropriate <a href="https://docs.google.com/document/d/1V5QEyJFhHxxKZLqBdxkIIk-gZL7apVf1iZo6lJ4NaXc/edit#heading=h.3c87l7yxws35">changes</a> to the proposal</p>
+<aside class="quote no-group quote-modified" data-post="3" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/timdavies/40/122_1.png" class="avatar"> TimDavies:</div>
+<blockquote>
+<p>When thinking about a ‘beta’ of each version for testing, ‘Release Candidate’ might be a good terminology to use.</p>
+</blockquote>
+</aside>
+<p>Agreed and changed</p>
+<aside class="quote no-group" data-post="3" data-topic="1014">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/timdavies/40/122_1.png" class="avatar"> TimDavies:</div>
+<blockquote>
+<p>it might be worth separating rules</p>
+</blockquote>
+</aside>
+<p>All our documentation should make this distinction. Rules should be a MUST and guidelines a SHOULD or be RECOMMENDED. We will check consistency.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/4</link>
+        <pubDate>Tue, 12 Sep 2017 18:42:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-4</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Bill,</p>
+<p>There’s some good evolution here. Some initial thoughts:</p>
+<p>It might be useful to defer to the <a href="http://semver.org/" rel="nofollow noopener">Semantic Versioning (SEMVER)</a> framework for defining what can happen at MAJOR.MINOR.PATCH numbering points (moving to the language of major change, minor change and patch might also help build understanding with those who don’t immediately map those concepts for integer and decimal)</p>
+<p>When thinking about a ‘beta’ of each version for testing, ‘Release Candidate’ might be a good terminology to use.</p>
+<p>Does all of the documentation fall into <strong>additional rules and guidelines</strong>?</p>
+<ul>
+<li>It seems to me it might be worth separating <strong>rules</strong> (which are normative, and affect ‘validity’) from guidelines (which might be thought of as advisory, and affect ‘utility’ or ‘quality evaluation’)?</li>
+<li>If there is documentation that falls outside this governance process, is that clearly identified.</li>
+</ul>
+<p>Terminology wise, I wonder if <strong>intention</strong> and <strong>implementation</strong> might better capture the point than <strong>content</strong> and <strong>implementation</strong>. I tend to find there is a three stage process from <strong>intent</strong> (we want to do X with data), via <strong>content</strong> (what kind of data so people hold, what can be extracted from existing systems, what can be queried effectively), through to <strong>implementation</strong> (what exactly should the data element look like).</p>
+<p>I think moving away from tight timings makes sense with the reality of a process, but it would be good to keep some principles on minimum consultation periods, just to manage expectations about how long people will get to review major or minor changes.</p>
+<p>The details of ‘step vi’ final approval may need some working out. In OCDS the governance groups responsibility at that point is just to confirm the process has been followed, but is not to have any say on the substantive content of the standard. I think there is a risk that as governing board were involved in setting <strong>intention</strong>, their involvement at this step could risk raising substantive implementation issues that should have been picked up earlier.</p>
+<p>Happy to join a more in depth discussion as useful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/3</link>
+        <pubDate>Tue, 05 Sep 2017 10:14:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-3</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Bill,</p>
+<p>This looks good to me. Requiring proposals to be submitted as real world usecases – and distinguishing between the content consultation and technical consultation – should make it far easier for non-technical stakeholders to engage with the upgrade process.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/2</link>
+        <pubDate>Mon, 04 Sep 2017 17:24:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-2</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+      <item>
+        <title>Revision of IATI Standard Upgrade Procedures</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://docs.google.com/document/d/1V5QEyJFhHxxKZLqBdxkIIk-gZL7apVf1iZo6lJ4NaXc/edit?usp=sharing">Here is a draft discussion document on proposed changes to our upgrade procedures</a> that will be submitted to the Member’s Assembly in October. The more that we can agree on before we get to Rome, the more likely we are to come away with a framework that works for all. I would urge everyone who has expressed interest in this matter to engage.</p>
+<p>Could you make major comments in this thread (quoting sections here when relevant) and restrict comments on the Google Doc to finer/pedantic points.</p>
+<p>This document is very different from the one we presented in Dar es Salaam. Hopefully it takes on board the further learnings we have gone through with 2.03 over the past months.</p>
+<p>The biggest change is to make a clear distinction between content and technical implementation. We propose that we should formally approve the content - the explicit use cases for each proposal - before going anywhere near schemas, xml, etc.</p>
+<p>Other changes include</p>
+<ul>
+<li>New responsibilities for the Governing Board in initiating and approving decimal upgrades and overseeing integers</li>
+<li>Procedures for involving the Governing Board in resolving disputes.</li>
+<li>Specifying the necessary phases of an upgrade without prescribing the timeline (which should be determined on a case-by-case basis to take into account likely complexity and TAG and MA meeting timings).</li>
+</ul>
+<p>I look forward to an open and constructive discussion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014/1</link>
+        <pubDate>Fri, 01 Sep 2017 17:35:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1014-1</guid>
+        <source url="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014.rss">Revision of IATI Standard Upgrade Procedures</source>
+      </item>
+  </channel>
+</rss>

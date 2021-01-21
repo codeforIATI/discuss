@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>D-portal broken</title>
+    <link>https://discuss.iatistandard.org/t/d-portal-broken/1691</link>
+    <description>Hi all, 
+
+When I use d-portal to search for projects for using a keyword search, a sector group, and a publishers the search tells me there are multiple activities but then when I click explore results there are 0 projects.  
+
+I have encountered this issue a week ago for World Bank and today for USAID, so I just checked and SIDA, DFID,  and Global Affairs Canada have this issue too, so I&#39;m guessing it is a system wide glitch. This is a pretty big obstacle for use and trying to find a certain kind of project, and personally will be a big hindrance to data use work I am doing.
+
+@stevieflow @KateHughes @amys  @Melinda @AVaughn @YohannaLoucheur @JohnAdams @rbesseling</description>
+    
+    <lastBuildDate>Fri, 05 Apr 2019 12:46:08 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/d-portal-broken/1691.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>D-portal broken</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I wasn’t able to recreate the issue, either. <a class="mention" href="/u/ariag">@ariag</a> did you post this onto <a href="https://github.com/devinit/D-Portal/issues" rel="nofollow noopener">the d-portal issue tracker</a>? I wasn’t able to find a corresponding issue there.</p>
+<p>If you do post it, I’m sure the developers would appreciate some sample steps to recreate the problem.</p>
+<p>I wonder if this discuss post could also be renamed, since “D-portal broken” is a bit disconcerting!</p>
+          <p><a href="https://discuss.iatistandard.org/t/d-portal-broken/1691/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/d-portal-broken/1691/7</link>
+        <pubDate>Fri, 05 Apr 2019 12:46:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1691-7</guid>
+        <source url="https://discuss.iatistandard.org/t/d-portal-broken/1691.rss">D-portal broken</source>
+      </item>
+      <item>
+        <title>D-portal broken</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>hmm thanks <a class="mention" href="/u/ariag">@ariag</a> - interesting</p>
+<p>I tried multiples of the sectors, countries and publishers:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/3ba4b00b8ae960201689f825d0cc21be4a59f80f.png" data-download-href="https://discuss.iatistandard.org/uploads/default/3ba4b00b8ae960201689f825d0cc21be4a59f80f" title="download (37).png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/3ba4b00b8ae960201689f825d0cc21be4a59f80f_2_690x435.png" alt="download%20(37)" width="690" height="435" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/3ba4b00b8ae960201689f825d0cc21be4a59f80f_2_690x435.png, https://discuss.iatistandard.org/uploads/default/original/1X/3ba4b00b8ae960201689f825d0cc21be4a59f80f.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/3ba4b00b8ae960201689f825d0cc21be4a59f80f.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/3ba4b00b8ae960201689f825d0cc21be4a59f80f_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">download (37).png</span><span class="informations">1002×633 355 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>But - the <a href="http://d-portal.org/ctrack.html?search=water&amp;country=AF%7CCD&amp;sector_group=311%7C313%7C210&amp;publisher=41122%7C44000#view=main" rel="nofollow noopener">Explore Results does still work</a>…!</p>
+          <p><a href="https://discuss.iatistandard.org/t/d-portal-broken/1691/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/d-portal-broken/1691/6</link>
+        <pubDate>Tue, 19 Mar 2019 18:55:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1691-6</guid>
+        <source url="https://discuss.iatistandard.org/t/d-portal-broken/1691.rss">D-portal broken</source>
+      </item>
+      <item>
+        <title>D-portal broken</title>
+        <dc:creator><![CDATA[ariag]]></dc:creator>
+        <description><![CDATA[
+            <p>I talked with my team member doing the detailed work on this, and he highlighted that its only when multiple sector groups are pulled, which explains why you got results still Steven. Also downgrades the severity of the issue, but still a relatively big deal.   I apparently always use multiple sector groups.  As there are multiple ones for broad categories like energy or health.</p>
+          <p><a href="https://discuss.iatistandard.org/t/d-portal-broken/1691/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/d-portal-broken/1691/5</link>
+        <pubDate>Tue, 19 Mar 2019 16:28:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1691-5</guid>
+        <source url="https://discuss.iatistandard.org/t/d-portal-broken/1691.rss">D-portal broken</source>
+      </item>
+      <item>
+        <title>D-portal broken</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>HI <a class="mention" href="/u/ariag">@ariag</a></p>
+<p>I’m not exactly sure what the issue is</p>
+<p>I just did a search with a a keyword, publisher and sector category, as you describe:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/a89181ce3cb879b6d93b1e3b63e17af4650a2a4e.png" data-download-href="https://discuss.iatistandard.org/uploads/default/a89181ce3cb879b6d93b1e3b63e17af4650a2a4e" title="explore.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/a89181ce3cb879b6d93b1e3b63e17af4650a2a4e_2_690x394.png" alt="explore" width="690" height="394" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/a89181ce3cb879b6d93b1e3b63e17af4650a2a4e_2_690x394.png, https://discuss.iatistandard.org/uploads/default/original/1X/a89181ce3cb879b6d93b1e3b63e17af4650a2a4e.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/a89181ce3cb879b6d93b1e3b63e17af4650a2a4e.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/a89181ce3cb879b6d93b1e3b63e17af4650a2a4e_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">explore.png</span><span class="informations">1001×573 335 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>When I tap the Explore Results button,<a href="https://github.com/devinit/D-Portal/issues" rel="nofollow noopener">I got to this page</a>:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/54f1c6e6682a5e31f15cdef4c2492ddd7e1369e4.png" data-download-href="https://discuss.iatistandard.org/uploads/default/54f1c6e6682a5e31f15cdef4c2492ddd7e1369e4" title="reults.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/54f1c6e6682a5e31f15cdef4c2492ddd7e1369e4_2_690x441.png" alt="reults" width="690" height="441" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/54f1c6e6682a5e31f15cdef4c2492ddd7e1369e4_2_690x441.png, https://discuss.iatistandard.org/uploads/default/original/1X/54f1c6e6682a5e31f15cdef4c2492ddd7e1369e4.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/54f1c6e6682a5e31f15cdef4c2492ddd7e1369e4.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/54f1c6e6682a5e31f15cdef4c2492ddd7e1369e4_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">reults.png</span><span class="informations">1000×640 445 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Is this what you do, but get no results (when you click through)?</p>
+<p>For info: d-portal <a href="https://github.com/devinit/D-Portal/issues" rel="nofollow noopener">github is here</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/d-portal-broken/1691/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/d-portal-broken/1691/4</link>
+        <pubDate>Tue, 19 Mar 2019 15:58:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1691-4</guid>
+        <source url="https://discuss.iatistandard.org/t/d-portal-broken/1691.rss">D-portal broken</source>
+      </item>
+      <item>
+        <title>D-portal broken</title>
+        <dc:creator><![CDATA[ariag]]></dc:creator>
+        <description><![CDATA[
+            <p>Can you just send me the github link, I couldn’t find it…</p>
+          <p><a href="https://discuss.iatistandard.org/t/d-portal-broken/1691/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/d-portal-broken/1691/3</link>
+        <pubDate>Tue, 19 Mar 2019 15:55:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1691-3</guid>
+        <source url="https://discuss.iatistandard.org/t/d-portal-broken/1691.rss">D-portal broken</source>
+      </item>
+      <item>
+        <title>D-portal broken</title>
+        <dc:creator><![CDATA[KateHughes]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Aria, can you post this on github so Kris and Shi can take a look? I could post this for you, but Shi might need to ask you some questions to fully understand the bug so it would be great if you would be happy to post it there <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"><br>
+Thank you for bringing this to our attention.</p>
+          <p><a href="https://discuss.iatistandard.org/t/d-portal-broken/1691/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/d-portal-broken/1691/2</link>
+        <pubDate>Tue, 19 Mar 2019 15:47:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1691-2</guid>
+        <source url="https://discuss.iatistandard.org/t/d-portal-broken/1691.rss">D-portal broken</source>
+      </item>
+      <item>
+        <title>D-portal broken</title>
+        <dc:creator><![CDATA[ariag]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>When I use d-portal to search for projects for using a keyword search, a sector group, and a publishers the search tells me there are multiple activities but then when I click explore results there are 0 projects.</p>
+<p>I have encountered this issue a week ago for World Bank and today for USAID, so I just checked and SIDA, DFID,  and Global Affairs Canada have this issue too, so I’m guessing it is a system wide glitch. This is a pretty big obstacle for use and trying to find a certain kind of project, and personally will be a big hindrance to data use work I am doing.</p>
+<p><a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/katehughes">@KateHughes</a> <a class="mention" href="/u/amys">@amys</a>  <a class="mention" href="/u/melinda">@Melinda</a> <a class="mention" href="/u/avaughn">@AVaughn</a> <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/johnadams">@JohnAdams</a> <a class="mention" href="/u/rbesseling">@rbesseling</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/d-portal-broken/1691/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/d-portal-broken/1691/1</link>
+        <pubDate>Tue, 19 Mar 2019 15:33:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1691-1</guid>
+        <source url="https://discuss.iatistandard.org/t/d-portal-broken/1691.rss">D-portal broken</source>
+      </item>
+  </channel>
+</rss>

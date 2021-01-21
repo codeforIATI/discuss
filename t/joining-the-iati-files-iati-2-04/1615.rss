@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Joining the IATI-files (IATI 2.04)</title>
+    <link>https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615</link>
+    <description>Denmark would like to propose additions to the standard, in the next minor upgrade, that allows publishers to join data at activity-level (i.e. in the Activity file(s)) with the organisational budget (i.e. the organisation file).
+
+There will be several advantages in this improvement, but Denmark wish to emphasize that the proposal is motivated by an observed need to provide reporting-solutions that better reflects the flow of funds associated with cooperation-modalities such as core funding and soft earmarks. A simple join between the existing standards is by far the most efficient way to reflect how clusters of activities are actually funded and managed under specific lines of the budget of the publishing organisation.
+
+As presented at the TAG meeting in Kathmandu ([slides](https://iatistandard.org/documents/697/Soft_Earmarks_-_Joining_the_IATI-standards_-_enhancing_the_effectiveness-gain_MUQabby.pptx), [text](https://iatistandard.org/documents/698/Soft_Earmarks_-_IATI_reporting_partners_-_MoFA_Denmark.docx)), the core of the proposal is to add a voluntary tag at activity-level. The name of the tag could be ‘budget-source’, to distinguish it from the existing ‘budget’ and ‘country-budget’ tags, and the content should constitute a machine-readable reference (i.e. a foreign key) to the specific budget_line in the organisation-file of the publisher, from which the activity draws its internal funding. It is of paramount importance to recognise that ‘internal funding’ can originate from multiple sources (e.g. raised/earned by the organisation itself, received as core-contribution from providers and received as loosely earmarked funds from providers). Such inflows should be reported the same way: Incoming transactions to an &#39;activity&#39;. If the activity is labelled as core contributions (type of aid B01 or B02), users must be informed that such funds becomes part of the organisations own funds. If the activity is labelled as softly earmarked (type of aid B03), it should be linked to the budget_line (the new &#39;budget_source&#39; tag), from which it is subsequently allocated under control of the organisation, not the provider.
+
+We need to realise this, that some modalities of cooperation are misrepresented if they are published as specific inflows to specific activities, directly from the provider. And we need to find a more efficient and correct way to reflect the internal budget-allocations of any organisation, to replace time-consuming publication of ‘internal flows’.
+
+This option, to join data from the activity-file with the relevant budget_lines in the organisation-file, will allow future development of rules, such as the type_of_aid example above, that would greatly improve the interpretability of IATI-data. This should currently be considered one of our primary concerns; in IATI, we have found innovative ways of addressing other quality-issues, but interpretability necessitates further work, e.g. making it a priority to define and share ‘rules’ in a systematic manner – rules that will inform data-users which data-patterns to expect.
+
+Another issue, where we would like to present input to the ongoing preparation of the strategic priorities for the coming years, is the very practical issue of cost-effectiveness. Our main point is that we should consider and promote IATI as a dataformat feasible for bilateral data-exchange, where the global transparency becomes a fringe benefit – and, most notably, the core management-resources of partners will be directly contributing to IATI-data QA, reducing any extra IATI-efforts to a minimum, and revitalizing the aid-effectiveness ambition. We need to prove that IATI, and transparency in general, contributes to aid-effectiveness. And therefore we need to pay increased attention to the small and practical business cases, where digital and IATI-based reporting-practices among partners can be proven as more efficient.
+
+To be continued, a.o based on experiences as they become available, from our ongoing pilot-phase, covering the strategic partnership-agreements between Danida and the major Danish development-CSO’s.
+
+PS – [it is a very nice picture](https://iatistandard.org/en/events/tag-2018-kathmandu/), but it is from Bhaktapur, not Kathmandu …</description>
+    
+    <lastBuildDate>Wed, 30 Jan 2019 11:55:24 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Joining the IATI-files (IATI 2.04)</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>The ‘another issue’ of <a href="https://en.wikipedia.org/wiki/Eating_your_own_dog_food" rel="nofollow noopener">using IATI data for as many official purposes</a> as possible sounds very sensible - I guess the first question would be ‘what is stopping this currently?’ so we can work out whether this is an IATI standard issue, a data quality issue, an aid agency systems issue etc?</p>
+          <p><a href="https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615/2</link>
+        <pubDate>Wed, 30 Jan 2019 11:55:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1615-2</guid>
+        <source url="https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615.rss">Joining the IATI-files (IATI 2.04)</source>
+      </item>
+      <item>
+        <title>Joining the IATI-files (IATI 2.04)</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>Denmark would like to propose additions to the standard, in the next minor upgrade, that allows publishers to join data at activity-level (i.e. in the Activity file(s)) with the organisational budget (i.e. the organisation file).</p>
+<p>There will be several advantages in this improvement, but Denmark wish to emphasize that the proposal is motivated by an observed need to provide reporting-solutions that better reflects the flow of funds associated with cooperation-modalities such as core funding and soft earmarks. A simple join between the existing standards is by far the most efficient way to reflect how clusters of activities are actually funded and managed under specific lines of the budget of the publishing organisation.</p>
+<p>As presented at the TAG meeting in Kathmandu (<a href="https://iatistandard.org/documents/697/Soft_Earmarks_-_Joining_the_IATI-standards_-_enhancing_the_effectiveness-gain_MUQabby.pptx" rel="nofollow noopener">slides</a>, <a href="https://iatistandard.org/documents/698/Soft_Earmarks_-_IATI_reporting_partners_-_MoFA_Denmark.docx" rel="nofollow noopener">text</a>), the core of the proposal is to add a voluntary tag at activity-level. The name of the tag could be ‘budget-source’, to distinguish it from the existing ‘budget’ and ‘country-budget’ tags, and the content should constitute a machine-readable reference (i.e. a foreign key) to the specific budget_line in the organisation-file of the publisher, from which the activity draws its internal funding. It is of paramount importance to recognise that ‘internal funding’ can originate from multiple sources (e.g. raised/earned by the organisation itself, received as core-contribution from providers and received as loosely earmarked funds from providers). Such inflows should be reported the same way: Incoming transactions to an ‘activity’. If the activity is labelled as core contributions (type of aid B01 or B02), users must be informed that such funds becomes part of the organisations own funds. If the activity is labelled as softly earmarked (type of aid B03), it should be linked to the budget_line (the new ‘budget_source’ tag), from which it is subsequently allocated under control of the organisation, not the provider.</p>
+<p>We need to realise this, that some modalities of cooperation are misrepresented if they are published as specific inflows to specific activities, directly from the provider. And we need to find a more efficient and correct way to reflect the internal budget-allocations of any organisation, to replace time-consuming publication of ‘internal flows’.</p>
+<p>This option, to join data from the activity-file with the relevant budget_lines in the organisation-file, will allow future development of rules, such as the type_of_aid example above, that would greatly improve the interpretability of IATI-data. This should currently be considered one of our primary concerns; in IATI, we have found innovative ways of addressing other quality-issues, but interpretability necessitates further work, e.g. making it a priority to define and share ‘rules’ in a systematic manner – rules that will inform data-users which data-patterns to expect.</p>
+<p>Another issue, where we would like to present input to the ongoing preparation of the strategic priorities for the coming years, is the very practical issue of cost-effectiveness. Our main point is that we should consider and promote IATI as a dataformat feasible for bilateral data-exchange, where the global transparency becomes a fringe benefit – and, most notably, the core management-resources of partners will be directly contributing to IATI-data QA, reducing any extra IATI-efforts to a minimum, and revitalizing the aid-effectiveness ambition. We need to prove that IATI, and transparency in general, contributes to aid-effectiveness. And therefore we need to pay increased attention to the small and practical business cases, where digital and IATI-based reporting-practices among partners can be proven as more efficient.</p>
+<p>To be continued, a.o based on experiences as they become available, from our ongoing pilot-phase, covering the strategic partnership-agreements between Danida and the major Danish development-CSO’s.</p>
+<p>PS – <a href="https://iatistandard.org/en/events/tag-2018-kathmandu/" rel="nofollow noopener">it is a very nice picture</a>, but it is from Bhaktapur, not Kathmandu …</p>
+          <p><a href="https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615/1</link>
+        <pubDate>Fri, 18 Jan 2019 10:22:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1615-1</guid>
+        <source url="https://discuss.iatistandard.org/t/joining-the-iati-files-iati-2-04/1615.rss">Joining the IATI-files (IATI 2.04)</source>
+      </item>
+  </channel>
+</rss>

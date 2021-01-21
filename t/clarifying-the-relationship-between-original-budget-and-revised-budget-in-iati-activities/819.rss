@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+    <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819</link>
+    <description>Hi everyone,
+
+One of our partner organisations recently brought to our attention that for an activity, they are keeping both **original** and **revised budget** of the same financial period side by side when preparing their IATI source files.
+
+Their assumption is that - original budget is amended by the revised budget element and can co-exist side by side within an activity whereas our definition is that a revised budget replaces the original one.
+
+According to the IATI standard definition: The purpose of Budget element is to provide predictability for recipient planning on an annual basis. The status explains whether the budget being reported is indicative or has been formally committed.
+
+This definition for activity budget is kind of ambiguous as it does not really specify if an activity can accommodate both the original budget and it&#39;s revised version or just only one of them.
+
+This is creating confusion in DevTracker when calculating the total budget for partner files as the original and the revised amounts are getting summed up into an artificially high value that does not exist in reality.
+
+For DFID, we keep only one of the two and not both which is why this never created confusion internally.
+
+Will be grateful if other members of the community could share their experiences to see  if they have encountered this issue and how they resolved it so that we can come to a common understanding of the meaning of “Original” and “Revised” budget figures</description>
+    
+    <lastBuildDate>Wed, 08 Apr 2020 14:33:37 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Amy,<br>
+Do you remember if this consultation was on Discuss or was it a Webinar?</p>
+<p>Regards<br>
+Herman</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/15</link>
+        <pubDate>Wed, 08 Apr 2020 14:33:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-15</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Please do have a read over the <a href="https://drive.google.com/file/d/1vB3vk7gbnADwG1S8A1bRDd8mK-nOfwCh/view">latest guidance</a> to date. One snippit is below.</p>
+<p>●  <strong>Budget element</strong></p>
+<p>When an activity budget is first published it will likely have the <span class="mention">@type</span> attribute ‘ <strong>original</strong> ’. If the budget value is later amended, this should be detailed by the adding of a new budget element containing the new value and <span class="mention">@type</span> attribute ‘ <strong>revised’</strong> . The new revised figure should be added, rather than the difference from the original to the revised budget. Further changes to the budget should be added by changing the value in the ‘revised’ budget element, and not by adding multiple ‘revised’ budgets for the same time period.</p>
+<p>A budget can also have one of two statuses:</p>
+<p>●  <strong>1 - Indicative:</strong>  A non-binding estimate for the described budget.</p>
+<p>●  <strong>2 - Committed:</strong>  A binding agreement for the described budget. When a budget changes status, the status of the existing budget element should change. A new budget element should  <strong>not</strong>  be created.</p>
+<p>To calculate the total budget for an activity, a data user should be able to add up all the revised budget values which each cover different time periods. If not all time periods have a revised budget, then the original budget should be used for these periods.</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/14</link>
+        <pubDate>Wed, 08 Apr 2020 13:48:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-14</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>You’re correct that the guidance goes beyond what is in the IATI Standard and existing overview pages (soon to be removed). As this thread examples there’s ambiguity in the standard which we can’t formerly sort out until a major upgrade happens.</p>
+<p>What we can and have been doing over the past 12 months is to develop guidance to complement the Standard. Such as the new guidance for SDG publishing and use. Similarly, this budget guidance provides more detail about how the budget elements and attributes ‘should’ be used.</p>
+<p>The guidance was created in an open consultation and received no objection by the IATI community. It is not part of the Standard but comes alongside it. This also means we can’t validate against it. But it is an interim measure to help align data reporting and use until we can proceed with a major upgrade.</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/13</link>
+        <pubDate>Wed, 08 Apr 2020 13:44:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-13</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Is the issue that the tool (what tool are we talking about) is unable to distinguish between original and revised budgets?</p>
+<p>If the guidance becomes to only publish one, then we could simplify and just remove the <span class="mention">@type</span> because then it would only/always be “latest”.</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/12</link>
+        <pubDate>Wed, 08 Apr 2020 12:30:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-12</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="10" data-topic="819">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/amys/40/288_2.png" class="avatar"> amys:</div>
+<blockquote>
+<p>the resulting guidance doc</p>
+</blockquote>
+</aside>
+<p>This seems to say:</p>
+<ul>
+<li>if a budget changes type (original to revised) then publishers should add a new budget (but keep the original?)<br>
+– but, only when the revised budget is changed, then no additional budget element should be added</li>
+<li>if a budget changes status (original &gt; committed) then the no new budget element is published</li>
+</ul>
+<p>Is that contrary to, or aligned with, what is discussed by <a class="mention" href="/u/rory_scott">@rory_scott</a> &amp; <a class="mention" href="/u/herman">@Herman</a>?</p>
+<p>In terms of this guidance, I looked at both the <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/budget/" rel="nofollow noopener">budget element</a> and <a href="http://reference.iatistandard.org/203/activity-standard/overview/budgets/" rel="nofollow noopener">budget overview</a> pages, and found no mention or synery with this guidance document.  This is rather concerning.</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/11</link>
+        <pubDate>Wed, 08 Apr 2020 11:44:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-11</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>The most recent discussion on this was last year in the guidance webinar. Do have a look at the resulting guidance doc here: <a href="https://drive.google.com/file/d/1vB3vk7gbnADwG1S8A1bRDd8mK-nOfwCh/view">https://drive.google.com/file/d/1vB3vk7gbnADwG1S8A1bRDd8mK-nOfwCh/view</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/10</link>
+        <pubDate>Wed, 08 Apr 2020 10:59:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-10</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Rory,<br>
+I tend to agree with you. To avoid double counting of budgets within an activity your solution looks straightforward. IATI is i.m.o. not meant to publish the whole internal budgeting process of an organization.</p>
+<p>What is important is the budget amount currently allocated to an activity in order to provide information on the intended amount to be spend on the whole life cycle of the activity. IATI is not an financial accounting tool.</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/9</link>
+        <pubDate>Wed, 08 Apr 2020 10:50:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-9</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>I was talking with <a class="mention" href="/u/rumy">@Rumy</a> about this issue today, as there’s a live issue related to it and cross-gov IATI data. Whilst we were talking I googled “iati budget original revised” to see if I could find a clear steer, and we landed on his original post from 2017 - he had forgotten all about this thread <img src="https://discuss.iatistandard.org/images/emoji/twitter/laughing.png?v=9" title=":laughing:" class="emoji" alt=":laughing:"></p>
+<p>This issue is causing a headache for us, as some budgets in some countries appear to be hugely inflated (well, doubled) due to the duplication of budgets.</p>
+<p>I’m inclined to advise partner organisations and other UK government departments something along the following lines:</p>
+<blockquote>
+<p>Budgets should never be duplicated across type or status, meaning that each budget features <strong>only once</strong>. If its status or type changes, it should be <strong>replaced</strong> by an updated budget, not added to.</p>
+</blockquote>
+<p>In practical terms, this would mean certain publishers deleting all of their extra ‘original’ budgets, or appearing to have vastly inflated budgets.</p>
+<p>What are the arguments against this? Steven talked about the record of changes being useful, but to me that pales when considering the headache of duplicated budgets which can’t be untangled.</p>
+<p>Ccing some budget heads to check if this is problematic: <a class="mention" href="/u/markbrough">@markbrough</a> <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/herman">@Herman</a></p>
+<p>If we all agree that budgets shouldn’t be duplicated, could we get this included in the normative guidance somewhere, <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>?</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/8</link>
+        <pubDate>Wed, 08 Apr 2020 09:45:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-8</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve run into this one just recently.  I discussed this briefly with <a class="mention" href="/u/herman">@Herman</a> &amp; <a class="mention" href="/u/pelleaardema">@pelleaardema</a> recently, but wanted to check with others</p>
+<p>Situation:</p>
+<ul>
+<li>An organisation publishes an original, indicative budget for an activity</li>
+<li>At some point, this budget is finalised, and a new value is published - which is revised and committed</li>
+<li>In effect, there are two different budgets</li>
+<li>For some users, it’s useful to know the difference between the two</li>
+</ul>
+<p>As discussed here, the standard has <a href="http://iatistandard.org/202/activity-standard/overview/budgets/" rel="nofollow noopener">nothing to say</a> about whether budgets should be maintained.  It seems that the general assumptions is that <strong><em>only</em></strong> the latest budget would be published, which would help with the use case described by <a class="mention" href="/u/rumy">@Rumy</a></p>
+<p>Nothing happened around this for 2.03 - how do we maintain focus on this?</p>
+<p>I’ll also note the attention on the description of the budget element highlighted in this thread - <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> flags that it needs some refinement.</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/7</link>
+        <pubDate>Fri, 02 Feb 2018 12:57:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-7</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for the clarification. I created a request to note this a bit more on the <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/budget/" rel="nofollow noopener">budget element page</a>.</p>
+<p>Is this something to propose as a rule for a next upgrade just to make sure everyone has that same interpretation?</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/6</link>
+        <pubDate>Fri, 27 Oct 2017 13:27:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-6</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>The original intention was never to provide an audit of changes, only to indicate to the user that one or more changes had been made since first published. Other than that the element only shows the current state of play.</p>
+<p>Similarly a committed budget <code>'status=2'</code> shouldn’t be changed, but there is no way of policing this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/5</link>
+        <pubDate>Fri, 27 Oct 2017 12:01:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-5</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>I think this discussion was forgotten about a bit and is left unanswered. It would help to know the origin of why this attribute exists at all. Probably there was a reason that indicates that both can exist or only one of the two.</p>
+<aside class="quote no-group quote-modified" data-post="2" data-topic="819">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/hayfield/40/202_1.png" class="avatar"> hayfield:</div>
+<blockquote>
+<p>…by allowing analysis of how far budgets have historically been revised by.</p>
+</blockquote>
+</aside>
+<p>That historical analysis would only be possible if you would keep track of all revisions of the budgets. If you would want to do that you need to know the dates on which the budgets were set to be able to know the history timeline and the actual budget. Imo that’s a use case IATI shouldn’t support, IATI is a snapshot of data and if you would want to do analysis you need to compare multiple snapshots on different dates.</p>
+<aside class="quote no-group quote-modified" data-post="2" data-topic="819">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/hayfield/40/202_1.png" class="avatar"> hayfield:</div>
+<blockquote>
+<p>From the element definition you could infer that it’s OK…</p>
+</blockquote>
+</aside>
+<p>From the type attribute definition on the same page you could infer that it’s not OK; “Whether this is the original budget (prepared when the original commitment was made) or has subsequently been revised”. Though that definition could be interpreted as to be read from the perspective of one single budget element.</p>
+<p>In the end I don’t care if either or both can exist, but I’m lost in how to interpret budgets and no one seems to know for sure. I also don’t want to rely on the Schema for this since the Schema only has basic rules implemented and hence I don’t know if its on purpose or if its a flaw in the schema (Its probably not even something the schema can check).</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/4</link>
+        <pubDate>Fri, 27 Oct 2017 11:31:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-4</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>There is a similar issue with <code>planned</code> and <code>actual</code> <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/331"><code>activity-date</code>s</a> where both may be present, but it is not clear that this is the case (though with <code>activity-date</code> at least the wording is consistent).</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/3</link>
+        <pubDate>Tue, 09 May 2017 13:29:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-3</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>Additionally, there are multiple definitions of budgets, seemingly contradicting each other.</p>
+<p>From the <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/budget/#definition">element definition</a> you could infer that it’s OK to have both the <code>Original</code> and <code>Revised</code> budgets since this would help “<em>provide predictability for recipient planning on an annual basis</em>” by allowing analysis of how far budgets have historically been revised by.</p>
+<p>From the <a href="http://iatistandard.org/202/activity-standard/overview/budgets/#definition">overview definition</a>, the statement that it’s a value "<em>as stated in the original project document or revised accordingly</em> " would indicate that there should be one or the other but not both.</p>
+<p>There is also nothing within the Schema or Rulesets prevents the definition of both <code>Original</code> and <code>Revised</code> budgets, indicating that your partner organisation’s assumption is valid.</p>
+<hr>
+<p>There are a <a href="https://github.com/IATI/IATI-Schemas/issues/323">couple</a> of <a href="https://github.com/IATI/IATI-Schemas/issues/310">other</a> issues <a href="https://github.com/IATI/IATI-Schemas/issues/308">with</a> the definition of budgets, so it may be worth considering a wider discussion of how budgets are defined.</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/2</link>
+        <pubDate>Thu, 27 Apr 2017 12:11:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-2</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+      <item>
+        <title>Clarifying the relationship between Original Budget And Revised Budget in IATI activities</title>
+        <dc:creator><![CDATA[Rumy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>One of our partner organisations recently brought to our attention that for an activity, they are keeping both <strong>original</strong> and <strong>revised budget</strong> of the same financial period side by side when preparing their IATI source files.</p>
+<p>Their assumption is that - original budget is amended by the revised budget element and can co-exist side by side within an activity whereas our definition is that a revised budget replaces the original one.</p>
+<p>According to the IATI standard definition: The purpose of Budget element is to provide predictability for recipient planning on an annual basis. The status explains whether the budget being reported is indicative or has been formally committed.</p>
+<p>This definition for activity budget is kind of ambiguous as it does not really specify if an activity can accommodate both the original budget and it’s revised version or just only one of them.</p>
+<p>This is creating confusion in DevTracker when calculating the total budget for partner files as the original and the revised amounts are getting summed up into an artificially high value that does not exist in reality.</p>
+<p>For DFID, we keep only one of the two and not both which is why this never created confusion internally.</p>
+<p>Will be grateful if other members of the community could share their experiences to see  if they have encountered this issue and how they resolved it so that we can come to a common understanding of the meaning of “Original” and “Revised” budget figures</p>
+          <p><a href="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819/1</link>
+        <pubDate>Thu, 27 Apr 2017 11:01:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-819-1</guid>
+        <source url="https://discuss.iatistandard.org/t/clarifying-the-relationship-between-original-budget-and-revised-budget-in-iati-activities/819.rss">Clarifying the relationship between Original Budget And Revised Budget in IATI activities</source>
+      </item>
+  </channel>
+</rss>

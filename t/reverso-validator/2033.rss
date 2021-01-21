@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Reverso validator?</title>
+    <link>https://discuss.iatistandard.org/t/reverso-validator/2033</link>
+    <description>Hi - would it be possible to have the validator return a list of all the &#39;errors&#39; in IATI data, and then e.g. the number of cases for each one (grouped by error, not by the datafile)? I think the validator stores runs tests on the data in the background so this might be feasible? Or maybe it would be a specific job that looped through all the files - perhaps possible via the validator API?</description>
+    
+    <lastBuildDate>Tue, 17 Nov 2020 08:19:16 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/reverso-validator/2033.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Reverso validator?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks…the ability to swap between ‘see results by ruleset’ and ‘by activity’ feature is very helpful e.g. if I have a publisher for whom we are having difficulty parsing their data for a specific element, then this is much easier that going through each activity one-by one (as I think is the option in the new validator?)</p>
+          <p><a href="https://discuss.iatistandard.org/t/reverso-validator/2033/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reverso-validator/2033/6</link>
+        <pubDate>Tue, 17 Nov 2020 08:19:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2033-6</guid>
+        <source url="https://discuss.iatistandard.org/t/reverso-validator/2033.rss">Reverso validator?</source>
+      </item>
+      <item>
+        <title>Reverso validator?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>We have <em>something like this</em> in our <a href="https://iati.cove.opendataservices.coop/" rel="nofollow noopener">IATI CoVE tool</a></p>
+<p>Specifically, we added this on the ruleset tests, so you can group the feedback by activity or by ruleset.  Is that what you meant <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> ?</p>
+<p><a href="https://iati.cove.opendataservices.coop/data/849c8126-d9e4-430e-9d5b-958caa26b08e" rel="nofollow noopener">Here’s an example</a> on the first dataset listed as invalid on the IATI dashboard</p>
+<p>Added bonus: you can then convert that IATI XML into a spreadsheet - whereby the one-to-many aspect of IATI is pushed into relevant sheets.  I find this super useful!</p>
+          <p><a href="https://discuss.iatistandard.org/t/reverso-validator/2033/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reverso-validator/2033/5</link>
+        <pubDate>Mon, 16 Nov 2020 21:02:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2033-5</guid>
+        <source url="https://discuss.iatistandard.org/t/reverso-validator/2033.rss">Reverso validator?</source>
+      </item>
+      <item>
+        <title>Reverso validator?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> - as a non publisher, but with a data use hat on, I am trying to figure out how the Validator could be made useful e.g. “what is the most common error in element X”, or what errors have gone longest without being fixed etc.</p>
+          <p><a href="https://discuss.iatistandard.org/t/reverso-validator/2033/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reverso-validator/2033/4</link>
+        <pubDate>Mon, 16 Nov 2020 18:45:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2033-4</guid>
+        <source url="https://discuss.iatistandard.org/t/reverso-validator/2033.rss">Reverso validator?</source>
+      </item>
+      <item>
+        <title>Reverso validator?</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>. Apologies for very slow response on this!</p>
+<ul>
+<li>
+<p>As you know, the validator validates single files. For each file  you can see the errors presented as you suggest, but currently not a summary for all files.</p>
+</li>
+<li>
+<p>To your point on being able to see a list of all errors, we are actually now working on developing a feature to be added to the validator that gives you a summary of <em>critical</em>, <em>errors</em> and <em>warnings</em> <strong>per publisher</strong> to support measures in the IATI Results Framework.  This will not yet include the detailed summary for specific error types that you suggest. I agree it is indeed something that will be useful to have in the future, and that we can look into, but we are now prioritising the measure for the results framework.</p>
+</li>
+<li>
+<p>On the public API, currently there is no public API for the validator.  With the launch of the validator, we have been engaging with publishers directly and are now starting to consult on user requirements for a public API.</p>
+</li>
+</ul>
+<p>Hope this helps but happy to speak if more helpful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/reverso-validator/2033/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reverso-validator/2033/3</link>
+        <pubDate>Mon, 16 Nov 2020 11:26:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2033-3</guid>
+        <source url="https://discuss.iatistandard.org/t/reverso-validator/2033.rss">Reverso validator?</source>
+      </item>
+      <item>
+        <title>Reverso validator?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 month bump <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> any ideas? It would be useful to see where the majority of errors were to know which parts of the standard needed most work?</p>
+          <p><a href="https://discuss.iatistandard.org/t/reverso-validator/2033/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reverso-validator/2033/2</link>
+        <pubDate>Sun, 15 Nov 2020 20:29:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2033-2</guid>
+        <source url="https://discuss.iatistandard.org/t/reverso-validator/2033.rss">Reverso validator?</source>
+      </item>
+      <item>
+        <title>Reverso validator?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi - would it be possible to have the validator return a list of all the ‘errors’ in IATI data, and then e.g. the number of cases for each one (grouped by error, not by the datafile)? I think the validator stores runs tests on the data in the background so this might be feasible? Or maybe it would be a specific job that looped through all the files - perhaps possible via the validator API?</p>
+          <p><a href="https://discuss.iatistandard.org/t/reverso-validator/2033/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reverso-validator/2033/1</link>
+        <pubDate>Thu, 15 Oct 2020 13:32:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2033-1</guid>
+        <source url="https://discuss.iatistandard.org/t/reverso-validator/2033.rss">Reverso validator?</source>
+      </item>
+  </channel>
+</rss>

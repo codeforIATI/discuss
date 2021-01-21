@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Ambiguous guidance re. results (and a sanity check)</title>
+    <link>https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670</link>
+    <description>Had a question from a client today that sent me off on a rabbit chase...
+
+-----
+
+As a launching off point, in [the guidance on &quot;What data should I publish?&quot;](https://iatistandard.org/en/guidance/preparing-data/what-data-to-publish/), it says that:
+
+&gt; * Data should be **cumulative**. If you’re publishing every quarter, each activity _should include data for the quarter being reported along with existing data from previous quarters_. This will also enable you to amend your existing data as necessary.
+
+This threw me initially because I read too much into the term &quot;cumulative&quot;, but the text in italics makes clear that the intention of this guidance is to prevent publishers from removing historic data in subsequent updates. In other words, we&#39;ve established that we want to make it easy for downstream data users to have full information with regards to the activity in question. Got it. Moving on...
+
+-----
+
+In [the reference page for result/indicator/period/actual](http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/), it states that:
+
+&gt; A record of the achieved result _for this period_.
+
+At first glance, my read is that this refers to **incremental** results, that which was achieved &quot;for this period&quot;. In other words, if I trained 5 people last year, but only 3 people this year, I would publish 3 as my actual for this year, not 8 (which would be the **cumulative** result, from the beginning of time to the current period). Then again, I wouldn&#39;t fault anyone for interpreting this the other way, that the (cumulative) result &quot;for this period&quot; is 8, just as the result for the previous period was 5. Keep your finger on that minor ambiguity...
+
+------
+
+In this Discuss post (which covers several issues related to results), @pelleaardema says:
+
+&gt; At the Netherlands Red Cross we keep track of changes over time by defining different periods for targets and actuals:
+&gt;* the target is usually valid for the entire activity period (but it’s also possible to work with annual targets)
+&gt;* _the actual values will reflect the progress made over a shorter period of time, e.g. a quarter_. In this case it is important that the _actual value shows the **increment** in that period, rather than the **cumulative** value._
+
+This explicitly states that at least one publisher out there uses incremental values rather than cumulative. In fact, DevResults clients also publish incremental results, which is all that our platform allows for at present. But...
+
+----
+
+Both the [Dutch](https://www.government.nl/documents/publications/2015/12/01/open-data-and-development-cooperation) and the [DFID](https://www.gov.uk/government/publications/dfid-iati-guidelines) guidance (which many organizations use as their primary reference for what to publish) do two things:
+
+1. Avoid stating explicitly whether they&#39;re looking for cumulative or incremental results.
+2. Include illustrative examples that are similarly ambiguous...
+```xml
+ &lt;period&gt;
+  &lt;period-start iso-date=”2012-01-01” /&gt;
+  &lt;period-end iso-date=”2015-12-31” /&gt;
+  &lt;target value=”2000000”&gt;
+   &lt;comment&gt;
+    &lt;narrative&gt;
+    In 2015, 2 mln people in Country X should have access to
+    independent media on a regular basis (60% of the population)
+    &lt;/narrative&gt;
+   &lt;/comment&gt;
+  &lt;/target&gt;
+ &lt;/period&gt;
+ &lt;period&gt;
+  &lt;period-start iso-date=”2012-01-01” /&gt;
+  &lt;period-end iso-date=”2012-12-31” /&gt;
+  &lt;actual value=”300000”&gt;
+   &lt;comment&gt;
+    &lt;narrative&gt;
+    Narrative explanation of the actual value, e.g. how it was
+    reached, in which areas the most progress was made.
+    &lt;/narrative&gt;
+   &lt;/comment&gt;
+  &lt;/actual&gt;
+ &lt;/period&gt;
+ &lt;period&gt;
+  &lt;period-start iso-date=”2013-01-01” /&gt;
+  &lt;period-end iso-date=”2013-12-31” /&gt;
+  &lt;actual value=”500000”&gt;
+   &lt;comment&gt;
+    &lt;narrative&gt;
+    Narrative explanation of the actual value, e.g. how it was
+    reached, in which areas the most progress was made.
+    &lt;/narrative&gt;
+   &lt;/comment&gt;
+  &lt;/actual&gt;
+ &lt;/period&gt;
+ &lt;period&gt;
+  &lt;period-start iso-date=”2014-01-01” /&gt;
+  &lt;period-end iso-date=”2014-12-31” /&gt;
+  &lt;actual value=”1200000”&gt;
+   &lt;comment&gt;
+    &lt;narrative&gt;
+    Narrative explanation of the actual value, e.g. how it was
+    reached, in which areas the most progress was made.
+    &lt;/narrative&gt;
+   &lt;/comment&gt;
+  &lt;/actual&gt;
+ &lt;/period&gt;
+&lt;/indicator&gt;
+```
+If you just look at the 3 actuals for 2012, 2013, and 2014 -- 300,000 + 500,000 + 1,200,000 -- you get exactly the target value (2,000,000), which _suggests_ that the values should be considered as **incremental**, but alternatively, one could read these results as **cumulative** and determine that they have yet to achieve the target. (For the record, I&#39;m sure whomever wrote this example was mostly illustrating what the elements mean rather than trying to illustrate how results should be interpreted, but even so, this is the most detail published in any authoritative source that I can find about whether results should be incremental or cumulative.)
+
+-----
+
+**SO!** With all that in mind, my questions:
+
+1. Am I missing something obvious and explicit about how publishers should publish indicator results by period? (I did initially look through the archives to see what the intention was when results and indicators were introduced, but gave up quickly:-)
+2. If I&#39;m not missing anything, is IATI&#39;s guidance/reference in need of clarification?
+3. If IATI intentionally avoided coming down on one side of incremental vs. cumulative, does that suggest that yet another attribute is needed in the standard to clarify how `&lt;indicator&gt; ` actuals should be interpreted/aggregated?
+4. **With regards to data use, what do we actually prefer?** I assume it would be more straightforward for the entire world to agree that incremental results are where it&#39;s at, as this would speed both manual aggregation (i.e. adding this period to last period at a glance or in Excel) as well as automated aggregation (i.e. in a data portal or analysis app). But that would suggest that we&#39;re only interested in things that tend to move in only one direction - i.e. things we&#39;ve done, outputs, etc. - and not metrics that can fluctuate up and down, because having a negative incremental result would be weird, right? Additionally, if donors are using IATI as progress reports, are they expecting to see cumulative or incremental results per period?
+5. I&#39;m tempted to ask if clarifying this ambiguity between incremental vs. cumulative was the/an intention behind `@aggregation-status`, but I know from other threads (which I can&#39;t be bothered to locate at the moment) that there&#39;s a host of known reasons why publishers say that results should/should not be aggregated - percentages, methodological inappropriateness, etc. Are these two threads at all related, or have I truly gone down the rabbit hole now?
+
+Would appreciate any clarity yall can bring to this situation: @pelleaardema @stevieflow @Herman @SJohns @mikesmith @bill_anderson</description>
+    
+    <lastBuildDate>Fri, 22 Feb 2019 13:56:21 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Ambiguous guidance re. results (and a sanity check)</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes! Thank you <a class="mention" href="/u/stevieflow">@stevieflow</a>. That proposal is related to <a href="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663">this post</a>, which 1) asserts that <code>aggregation-status</code> at the <code>result</code> level is potentially ambiguous if there are multiple indicators, and 2) hints that <code>aggregation-status</code> can be used (by publishers) and interpreted (by data users) many different ways, including but not limited to “these are cumulative results, don’t sum across time frames”, as well as “indicator measure!=1”. But you’re right, the proposal thread has much more detail.</p>
+<p>Somewhere - couldn’t find it again - <a class="mention" href="/u/pelleaardema">@pelleaardema</a> suggets something like a validation test that would flag anywhere that <code>aggregation-status="1"</code> and <code>@measure!="1"</code>, but I could be mis-remembering.</p>
+          <p><a href="https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670/4</link>
+        <pubDate>Fri, 22 Feb 2019 13:56:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1670-4</guid>
+        <source url="https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670.rss">Ambiguous guidance re. results (and a sanity check)</source>
+      </item>
+      <item>
+        <title>Ambiguous guidance re. results (and a sanity check)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Excellent post - thanks <a class="mention" href="/u/reidmporter">@reidmporter</a> !</p>
+<p>Please consider my initial contribution as a tangential context.  I also thought of <code>aggregation-status</code> whilst reading this, but then thought “that was just 2.03?”</p>
+<p>I can see that the <code>aggregation-status</code> attribute was added to the <code>indicator</code> <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/" rel="nofollow noopener">element in 2.03</a>.  The initial <strong><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874">proposal</a></strong> was penned by <a class="mention" href="/u/mikesmith">@mikesmith</a> …</p>
+          <p><a href="https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670/2</link>
+        <pubDate>Thu, 21 Feb 2019 17:43:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1670-2</guid>
+        <source url="https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670.rss">Ambiguous guidance re. results (and a sanity check)</source>
+      </item>
+      <item>
+        <title>Ambiguous guidance re. results (and a sanity check)</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>Had a question from a client today that sent me off on a rabbit chase…</p>
+<hr>
+<p>As a launching off point, in <a href="https://iatistandard.org/en/guidance/preparing-data/what-data-to-publish/" rel="nofollow noopener">the guidance on “What data should I publish?”</a>, it says that:</p>
+<blockquote>
+<ul>
+<li>Data should be <strong>cumulative</strong>. If you’re publishing every quarter, each activity <em>should include data for the quarter being reported along with existing data from previous quarters</em>. This will also enable you to amend your existing data as necessary.</li>
+</ul>
+</blockquote>
+<p>This threw me initially because I read too much into the term “cumulative”, but the text in italics makes clear that the intention of this guidance is to prevent publishers from removing historic data in subsequent updates. In other words, we’ve established that we want to make it easy for downstream data users to have full information with regards to the activity in question. Got it. Moving on…</p>
+<hr>
+<p>In <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/" rel="nofollow noopener">the reference page for result/indicator/period/actual</a>, it states that:</p>
+<blockquote>
+<p>A record of the achieved result <em>for this period</em>.</p>
+</blockquote>
+<p>At first glance, my read is that this refers to <strong>incremental</strong> results, that which was achieved “for this period”. In other words, if I trained 5 people last year, but only 3 people this year, I would publish 3 as my actual for this year, not 8 (which would be the <strong>cumulative</strong> result, from the beginning of time to the current period). Then again, I wouldn’t fault anyone for interpreting this the other way, that the (cumulative) result “for this period” is 8, just as the result for the previous period was 5. Keep your finger on that minor ambiguity…</p>
+<hr>
+<p>In this Discuss post (which covers several issues related to results), <a class="mention" href="/u/pelleaardema">@pelleaardema</a> says:</p>
+<blockquote>
+<p>At the Netherlands Red Cross we keep track of changes over time by defining different periods for targets and actuals:</p>
+<ul>
+<li>the target is usually valid for the entire activity period (but it’s also possible to work with annual targets)</li>
+<li>
+<em>the actual values will reflect the progress made over a shorter period of time, e.g. a quarter</em>. In this case it is important that the <em>actual value shows the <strong>increment</strong> in that period, rather than the <strong>cumulative</strong> value.</em>
+</li>
+</ul>
+</blockquote>
+<p>This explicitly states that at least one publisher out there uses incremental values rather than cumulative. In fact, DevResults clients also publish incremental results, which is all that our platform allows for at present. But…</p>
+<hr>
+<p>Both the <a href="https://www.government.nl/documents/publications/2015/12/01/open-data-and-development-cooperation" rel="nofollow noopener">Dutch</a> and the <a href="https://www.gov.uk/government/publications/dfid-iati-guidelines" rel="nofollow noopener">DFID</a> guidance (which many organizations use as their primary reference for what to publish) do two things:</p>
+<ol>
+<li>Avoid stating explicitly whether they’re looking for cumulative or incremental results.</li>
+<li>Include illustrative examples that are similarly ambiguous…</li>
+</ol>
+<pre><code class="lang-xml"> &lt;period&gt;
+  &lt;period-start iso-date=”2012-01-01” /&gt;
+  &lt;period-end iso-date=”2015-12-31” /&gt;
+  &lt;target value=”2000000”&gt;
+   &lt;comment&gt;
+    &lt;narrative&gt;
+    In 2015, 2 mln people in Country X should have access to
+    independent media on a regular basis (60% of the population)
+    &lt;/narrative&gt;
+   &lt;/comment&gt;
+  &lt;/target&gt;
+ &lt;/period&gt;
+ &lt;period&gt;
+  &lt;period-start iso-date=”2012-01-01” /&gt;
+  &lt;period-end iso-date=”2012-12-31” /&gt;
+  &lt;actual value=”300000”&gt;
+   &lt;comment&gt;
+    &lt;narrative&gt;
+    Narrative explanation of the actual value, e.g. how it was
+    reached, in which areas the most progress was made.
+    &lt;/narrative&gt;
+   &lt;/comment&gt;
+  &lt;/actual&gt;
+ &lt;/period&gt;
+ &lt;period&gt;
+  &lt;period-start iso-date=”2013-01-01” /&gt;
+  &lt;period-end iso-date=”2013-12-31” /&gt;
+  &lt;actual value=”500000”&gt;
+   &lt;comment&gt;
+    &lt;narrative&gt;
+    Narrative explanation of the actual value, e.g. how it was
+    reached, in which areas the most progress was made.
+    &lt;/narrative&gt;
+   &lt;/comment&gt;
+  &lt;/actual&gt;
+ &lt;/period&gt;
+ &lt;period&gt;
+  &lt;period-start iso-date=”2014-01-01” /&gt;
+  &lt;period-end iso-date=”2014-12-31” /&gt;
+  &lt;actual value=”1200000”&gt;
+   &lt;comment&gt;
+    &lt;narrative&gt;
+    Narrative explanation of the actual value, e.g. how it was
+    reached, in which areas the most progress was made.
+    &lt;/narrative&gt;
+   &lt;/comment&gt;
+  &lt;/actual&gt;
+ &lt;/period&gt;
+&lt;/indicator&gt;
+</code></pre>
+<p>If you just look at the 3 actuals for 2012, 2013, and 2014 – 300,000 + 500,000 + 1,200,000 – you get exactly the target value (2,000,000), which <em>suggests</em> that the values should be considered as <strong>incremental</strong>, but alternatively, one could read these results as <strong>cumulative</strong> and determine that they have yet to achieve the target. (For the record, I’m sure whomever wrote this example was mostly illustrating what the elements mean rather than trying to illustrate how results should be interpreted, but even so, this is the most detail published in any authoritative source that I can find about whether results should be incremental or cumulative.)</p>
+<hr>
+<p><strong>SO!</strong> With all that in mind, my questions:</p>
+<ol>
+<li>Am I missing something obvious and explicit about how publishers should publish indicator results by period? (I did initially look through the archives to see what the intention was when results and indicators were introduced, but gave up quickly:-)</li>
+<li>If I’m not missing anything, is IATI’s guidance/reference in need of clarification?</li>
+<li>If IATI intentionally avoided coming down on one side of incremental vs. cumulative, does that suggest that yet another attribute is needed in the standard to clarify how <code>&lt;indicator&gt;</code> actuals should be interpreted/aggregated?</li>
+<li>
+<strong>With regards to data use, what do we actually prefer?</strong> I assume it would be more straightforward for the entire world to agree that incremental results are where it’s at, as this would speed both manual aggregation (i.e. adding this period to last period at a glance or in Excel) as well as automated aggregation (i.e. in a data portal or analysis app). But that would suggest that we’re only interested in things that tend to move in only one direction - i.e. things we’ve done, outputs, etc. - and not metrics that can fluctuate up and down, because having a negative incremental result would be weird, right? Additionally, if donors are using IATI as progress reports, are they expecting to see cumulative or incremental results per period?</li>
+<li>I’m tempted to ask if clarifying this ambiguity between incremental vs. cumulative was the/an intention behind <code>@aggregation-status</code>, but I know from other threads (which I can’t be bothered to locate at the moment) that there’s a host of known reasons why publishers say that results should/should not be aggregated - percentages, methodological inappropriateness, etc. Are these two threads at all related, or have I truly gone down the rabbit hole now?</li>
+</ol>
+<p>Would appreciate any clarity yall can bring to this situation: <a class="mention" href="/u/pelleaardema">@pelleaardema</a> <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/sjohns">@SJohns</a> <a class="mention" href="/u/mikesmith">@mikesmith</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670/1</link>
+        <pubDate>Wed, 20 Feb 2019 22:14:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1670-1</guid>
+        <source url="https://discuss.iatistandard.org/t/ambiguous-guidance-re-results-and-a-sanity-check/1670.rss">Ambiguous guidance re. results (and a sanity check)</source>
+      </item>
+  </channel>
+</rss>

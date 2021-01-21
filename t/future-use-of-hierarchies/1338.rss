@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Future use of Hierarchies</title>
+    <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338</link>
+    <description>Following from the Discuss post of [Agreeing best practice – using Hierarchies](https://discuss.iatistandard.org/t/agreeing-best-practice-using-hierarchies/) 
+
+The IATI tech team propose that hierarchies do not need to exist within the IATI standard. Their removal will not restrict the flexibility of organisations to show internal decisions about funds nor will it affect timeliness, structure or granularity of published data. This is based on the assumption that the changes outlined in the [Agreeing best practice – using Hierarchies](https://discuss.iatistandard.org/t/agreeing-best-practice-using-hierarchies/1337) post are taken forward.  Implementation of this would need to happen at the next integer upgrade as the changes are not backwards compatible.
+
+**Here is our reasoning:**
+* Only the attribute @hierarchies will be removed. All other reporting best practices will remain.
+
+* Activities previously reported in a hierarchical model can still be reported in the same structure. The structure will be detailed through use of the `&lt;related-activity&gt;` element, which allows organisations to specify ‘Child’ and ‘Parent’ relations within their reported activities. 
+
+* The hierarchies attribute does not add any additional information needed for data quality analysis or data use. This is true for the IATI Dashboard, d-Portal and likely all other data use platforms.
+
+* Therefore @hierarchies is a superfluous attribute which only adds complexity, and often confusion, to the IATI standard.
+
+**Current number of organisations using multiple hierarchies**
+
+When I was looking into this a few months ago there were 46 organisations using the @hierarchy attribute (this number will now have grown significantly). The majority of these organisations only use levels 1 and 2, with one organisation correctly using three levels of hierarchy. Removing the @hierarchy attribute will not remove the relationships between the published activities but will enable data users to better navigate the data as they will not be misled by incorrect @hierarchy labeling.
+
+Level 2: 44
+
+Level 3: 1 (4)
+
+Level 4: (1)
+
+Level 5: (1) 
+
+(Numbers in brackets show the number of organisations only publishing at that hierarchical level or not publishing sequentially to that level)
+
+Please do let us know what you think by responding to this post.</description>
+    
+    <lastBuildDate>Mon, 01 Oct 2018 15:42:37 +0000</lastBuildDate>
+    <category>Consultations</category>
+    <atom:link href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/amys">@amys</a>,<br>
+Since i.m.o. all activity hierarchies can be modelled using the ‘related-activity’ element, and because the hierarchy level itself can be derived/calculated from the published activity data (as we do based on both the related activity as the providing activity transaction elements) , I think your proposal makes sense. It would reduce redundancy and therefore remove a possible source of inconsistencies  in the IATI data.</p>
+<p>That being said, the issue here seems to be:<br>
+1 - is it worth the effort? Removing hierarchies would but a burden on both publishers and data users.<br>
+2 - isn’t the redundancy worthwhile to have because it may help to detect data quality problems?</p>
+<p>From the data modelling ‘purist’ point of view I tend to agree with this idea since registering derivable data always leads to consistency problems. But we also need to consider the migration effort this will mean for both publishers and data users.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/11</link>
+        <pubDate>Mon, 01 Oct 2018 15:42:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-11</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1338">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/amys/40/288_1.png" class="avatar"> amys:</div>
+<blockquote>
+<p>Only the attribute <span class="mention">@hierarchies</span> will be removed. All other reporting best practices will remain.</p>
+</blockquote>
+</aside>
+<p>This sounds like an action, not a reason.</p>
+<aside class="quote no-group">
+<blockquote>
+<p>Activities previously reported in a hierarchical model can still be reported in the same structure. The structure will be detailed through use of the &lt;related-activity&gt; element, which allows organisations to specify ‘Child’ and ‘Parent’ relations within their reported activities.</p>
+</blockquote>
+</aside>
+<p>Yes, but this would imply migrations for many of the information products (UI’s) -&gt; we do not see the benefit. This will also burden publishers with changes.</p>
+<aside class="quote no-group">
+<blockquote>
+<p>The hierarchies attribute does not add any additional information needed for data quality analysis or data use. This is true for the IATI Dashboard, d-Portal and likely all other data use platforms.</p>
+</blockquote>
+</aside>
+<p>This is not true. We and many in the IATI space use this element. The IATI Dashboard, d-Portal are not any ‘IATI’ default as far as I am concerned.</p>
+<aside class="quote no-group">
+<blockquote>
+<p>Therefore <span class="mention">@hierarchies</span> is a superfluous attribute which only adds complexity, and often confusion, to the IATI standard.</p>
+</blockquote>
+</aside>
+<p>I strongly disagree.</p>
+<p>I therefore find removing <span class="mention">@hierachies</span> as an attribute a very bad idea and should be abandoned asap.</p>
+<p>The thought of complete removal gave me an instant headache.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/10</link>
+        <pubDate>Thu, 07 Jun 2018 12:53:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-10</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I noticed in <a href="http://d-portal.org/faq.html#tech2" rel="nofollow noopener">d-portal FAQ</a> the following:</p>
+<blockquote>
+<p>There are currently plans under consideration to use the lowest hierarchy level data only, should data at multiple hierarchies exist, in order to avoid double counting.</p>
+</blockquote>
+<p>I think this illustrates - and <a class="mention" href="/u/markbrough">@markbrough</a> provides further evidence - that those <strong><em>using</em></strong> IATI data are considering hierarchies.</p>
+<p>I’ve always understood the hierarchy attribute as a mechanism to help distinguish and provide rationale for distributing various levels of data / IATI elements differently, within a set.  As we know, DFID only publish budgets at H1, with transactions occurring at H2 etc.  The same could apply to other data points (results, for example).</p>
+<p>To completely remove hierarchies would need careful consideration of the impact on such flexibility provided to the growing community of publishers and users</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/9</link>
+        <pubDate>Thu, 07 Jun 2018 09:21:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-9</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[stolk]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi amy</p>
+<p>In my view the use of hierachies has added value. For instance it allows organisations of networked organisations to link/group/cluster activities under one upper level entity.<br>
+Within the Oxfam confederation we now almost agreed on one maintained repository of confederation wide oxfam (country strategy)  programmes.  This opens up the possibility to demonstrate strategic coherence within the activities of all members of the confederation. In my view programmes should not necessarily be part of the funding flow.<br>
+the relation between programme type of activity and project type of activity is one to many.  Each project type of activity can have multiple internal and/or external sources of funding (provider activity ID).  A hierachy one activity is therefor not necessarily the funding source of hierachy 2 activities,<br>
+Hence we need related activity/hierachies ánd specific reference to provider activity ID and receiver activity ID in transactions.<br>
+I see this as two separate useful dimensions, getting rid of one of them would be a loss</p>
+<p>leo</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/8</link>
+        <pubDate>Wed, 06 Jun 2018 06:45:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-8</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I added my comments on <a href="https://discuss.iatistandard.org/t/agreeing-best-practice-using-hierarchies/1337/3?u=markbrough">the other post</a> – sorry, I’m a bit confused about the distinction between the two posts.</p>
+<p>I <em>think</em> this post is just suggesting that the <code>@hierarchy</code> attribute should be removed. I would strongly disagree with this. I think it is very useful as it means you can easily select activities from a particular level (e.g. “select only DFID’s programs, and not their project sub-components”). I have used this many times to roll up data according to what is most appropriate to the context, it is super useful.</p>
+<p>I am also still very unclear on the arguments in favour of removing it, it would be great if those could be explained in more detail.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/7</link>
+        <pubDate>Tue, 05 Jun 2018 16:30:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-7</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1338">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/amys/40/288_1.png" class="avatar"> amys:</div>
+<blockquote>
+<p><strong>Current number of organisations using multiple hierarchies</strong></p>
+<p>When I was looking into this a few months ago there were 46 organisations using the <span class="mention">@hierarchy</span> attribute</p>
+</blockquote>
+</aside>
+<p><a href="http://dashboard.iatistandard.org/publishers.html">According to the dashboard</a>, 79 publishers use multiple <code>@hierarchy</code> values. But as we know, the <code>@hierarchy</code> attribute is in many cases used incorrectly. If we instead look at <code>related-activity</code>, 199 publishers have at least one parent/child relation in their data.</p>
+<p>Looking at how this is used in the wild, these parent/child relations very often span multiple publishers. Here are some random examples (these are some of the longest, each involving four activities):</p>
+<ul>
+<li>US-EIN-521291786-CMI16: <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-CMI">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-388173">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=US-EIN-521291786-CMI">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=US-EIN-521291786-CMI16">[4]</a>
+</li>
+<li>NL-KVK-32108345-NLBB25-8832-ID: <a href="http://d-portal.org/q.html?aid=XM-DAC-7-PPR-28432">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41193594-AD7100GUS">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-32108345-NLBB25-GUSO">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-32108345-NLBB25-8832-ID">[4]</a>
+</li>
+<li>US-EIN-31-1812979-CMI01: <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-CMI">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-388144">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=US-EIN-31-1812979-CMI">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=US-EIN-31-1812979-CMI01">[4]</a>
+</li>
+<li>NL-KVK-40535338-FGG-TOC1: <a href="http://d-portal.org/q.html?aid=NL-KVK-41210098-FGG">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-40530467-FGG">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-40535338-FGG">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-40535338-FGG-TOC1">[4]</a>
+</li>
+<li>NL-KVK-41078390-SP-BO: <a href="http://d-portal.org/q.html?aid=NL-KVK-52957535-SP">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41078390-SP">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41078390-SP-LA">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41078390-SP-BO">[4]</a>
+</li>
+<li>NL-KVK-34308169-FG-DtZ-THAILAND: <a href="http://d-portal.org/q.html?aid=NL-KVK-41149287-TdH_NL_CE_AS_EU_AM_2015_PR0027">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41149287-TdH_NL_CE_NL_2016_Free%20a%20girl_PC0080">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-34308169-DtZ-FG">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-34308169-FG-DtZ-THAILAND">[4]</a>
+</li>
+<li>GB-CHC-229476-GUSO-ippf-ethiopia: <a href="http://d-portal.org/q.html?aid=XM-DAC-7-PPR-28432">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41193594-AD7100GUS">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=GB-CHC-229476-GUSO-ippfglobal">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=GB-CHC-229476-GUSO-ippf-ethiopia">[4]</a>
+</li>
+<li>NL-KVK-41202535-GAGGA-09: <a href="http://d-portal.org/q.html?aid=NL-1-PPR-27546">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NI-MIGOB-3602-001">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-GAGGA">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-GAGGA-09">[4]</a>
+</li>
+<li>NL-KVK-41155305-GLA-BO: <a href="http://d-portal.org/q.html?aid=NL-1-PPR-27549">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-40530467-GLA">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41155305-GLA">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41155305-GLA-BO">[4]</a>
+</li>
+<li>KE-NCB-200201282375-CMI01: <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-CMI">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-388174">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=KE-NCB-200201282375-CMI">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=KE-NCB-200201282375-CMI01">[4]</a>
+</li>
+<li>CO-CCB-00159397-CMI05: <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-CMI">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-388175">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=CO-CCB-00159397-CMI">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=CO-CCB-00159397-CMI05">[4]</a>
+</li>
+</ul>
+<p>You can also see in these examples that reciprocal parent/child relationships often aren’t declared. That is, while B might declare that A is its parent, that doesn’t necessarily mean A will declare that B is its child.</p>
+<p>So it looks like in the absence of clear guidance, and without feedback loops to correct publishers’ data, publishers have been left to figure out their own rules.</p>
+<p>The cool thing about the <code>@hierarchy</code> attribute is it provides a checksum, which can be used to spot errors. So IATI (or a third party) could use it to check related activity data and raise the issue with publishers.</p>
+<p>This attribute is surely there to make life easier for data users. Of course if it’s wrong, that won’t help the data user. But I wonder if the correct solution should be to fix it, rather than to remove it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/6</link>
+        <pubDate>Tue, 05 Jun 2018 16:17:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-6</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Unless I’m mistaken, you’re proposing the removal of the <code>@hierarchy</code> attribute here. You’re not talking about removing hierarchies in general. Is that correct?</p>
+<p>If so, I’d suggest removing or rewording the first sentence:</p>
+<aside class="quote no-group" data-post="1" data-topic="1338">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/amys/40/288_1.png" class="avatar"> amys:</div>
+<blockquote>
+<p>The IATI tech team propose that hierarchies do not need to exist within the IATI standard.</p>
+</blockquote>
+</aside>
+<p>…because it might cause confusion / derail the discussion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/5</link>
+        <pubDate>Fri, 01 Jun 2018 15:41:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-5</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/johnadams">@JohnAdams</a> the <code>&lt;related-activity&gt;</code> now appears. Looking forward to your responses next week and starting a discussion on this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/4</link>
+        <pubDate>Fri, 01 Jun 2018 15:16:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-4</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Or is there something missing in your second bullet point - are you proposing replacing the <span class="mention">@hierarchy</span> attribute with the use of the <strong>related-activity</strong> element?</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/3</link>
+        <pubDate>Fri, 01 Jun 2018 15:08:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-3</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Amy</p>
+<p>I’m not convinced that this is a good idea if we are trying to describe complex aid interventions, but will respond more fully next week.</p>
+<p>Also if we don’t hold finances at a particular hierarchy level, would that be possible?</p>
+<p>John</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/2</link>
+        <pubDate>Fri, 01 Jun 2018 15:06:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-2</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+      <item>
+        <title>Future use of Hierarchies</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Following from the Discuss post of <a href="https://discuss.iatistandard.org/t/agreeing-best-practice-using-hierarchies/">Agreeing best practice – using Hierarchies</a></p>
+<p>The IATI tech team propose that hierarchies do not need to exist within the IATI standard. Their removal will not restrict the flexibility of organisations to show internal decisions about funds nor will it affect timeliness, structure or granularity of published data. This is based on the assumption that the changes outlined in the <a href="https://discuss.iatistandard.org/t/agreeing-best-practice-using-hierarchies/1337">Agreeing best practice – using Hierarchies</a> post are taken forward.  Implementation of this would need to happen at the next integer upgrade as the changes are not backwards compatible.</p>
+<p><strong>Here is our reasoning:</strong></p>
+<ul>
+<li>
+<p>Only the attribute <span class="mention">@hierarchies</span> will be removed. All other reporting best practices will remain.</p>
+</li>
+<li>
+<p>Activities previously reported in a hierarchical model can still be reported in the same structure. The structure will be detailed through use of the <code>&lt;related-activity&gt;</code> element, which allows organisations to specify ‘Child’ and ‘Parent’ relations within their reported activities.</p>
+</li>
+<li>
+<p>The hierarchies attribute does not add any additional information needed for data quality analysis or data use. This is true for the IATI Dashboard, d-Portal and likely all other data use platforms.</p>
+</li>
+<li>
+<p>Therefore <span class="mention">@hierarchies</span> is a superfluous attribute which only adds complexity, and often confusion, to the IATI standard.</p>
+</li>
+</ul>
+<p><strong>Current number of organisations using multiple hierarchies</strong></p>
+<p>When I was looking into this a few months ago there were 46 organisations using the <span class="mention">@hierarchy</span> attribute (this number will now have grown significantly). The majority of these organisations only use levels 1 and 2, with one organisation correctly using three levels of hierarchy. Removing the <span class="mention">@hierarchy</span> attribute will not remove the relationships between the published activities but will enable data users to better navigate the data as they will not be misled by incorrect <span class="mention">@hierarchy</span> labeling.</p>
+<p>Level 2: 44</p>
+<p>Level 3: 1 (4)</p>
+<p>Level 4: (1)</p>
+<p>Level 5: (1)</p>
+<p>(Numbers in brackets show the number of organisations only publishing at that hierarchical level or not publishing sequentially to that level)</p>
+<p>Please do let us know what you think by responding to this post.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/1</link>
+        <pubDate>Fri, 01 Jun 2018 13:30:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1338-1</guid>
+        <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+      </item>
+  </channel>
+</rss>

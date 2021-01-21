@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Tech Paper: Core funding and funding from own sources</title>
+    <link>https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542</link>
+    <description>Neither the Organisation nor Activity standard currently allow for the explicit reporting of both core funding and finances that have been raised by the publishing organisation.
+
+* This paper will propose modifications to the Organisation standard to allow for both
+
+* It will also propose a modification to the Activity standard to indicate that an activity is being financed through core and/or own finances.
+
+
+[This paper](https://docs.google.com/document/d/1GL89dPkdM6Uj9fkfiqNz5c86XhQhdLoYVFbnAvl1pEo/edit?usp=sharing) is part of the [Agenda](http://discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534) for the IATI TAG 2016 [Technical Consultation Workshop](http://discuss.iatistandard.org/t/technical-consultation-workshop/533)
+
+:bird: #IATI #TAG2016</description>
+    
+    <lastBuildDate>Wed, 22 Feb 2017 11:08:42 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Tech Paper: Core funding and funding from own sources</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>From the <strong>user</strong> perspective there are more interesting aid modalities other than direct donor or core contributions. Pooled/basket funding is as interesting as (un-earmarked) core funding.</p>
+<p>Adding this functionality to the standard can easily be solved in the <strong>activity</strong> <strong>standard</strong> by simply introducing one additional code list element ‘aid modality’ having values ‘project’, ‘pooled/basket’ , ‘core’, ‘private funding’. No need to have a complicated extension of the organization standard and additional guidelines. It would answer your question if an activity is funded from private funds, core funds, a multi donor initiative or from direct donor contributions.</p>
+<p>I.m.o. no need to have a large change to the organization standard and guidelines when we can solve this information requirement with a very simple backward compatible change to the activity standard.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542/5</link>
+        <pubDate>Wed, 22 Feb 2017 11:08:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-542-5</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542.rss">Tech Paper: Core funding and funding from own sources</source>
+      </item>
+      <item>
+        <title>Tech Paper: Core funding and funding from own sources</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/herman">@herman</a> and <a class="mention" href="/u/markbrough">@markbrough</a> I’ve resolved the provider-activity-id issue and responded to your other comments in the document.</p>
+<p>The problem I think we need to solve is how <strong><em>users</em></strong> are able to identify core funds. How do you, for example, answer</p>
+<ul>
+<li>“What core funding does this organisation receive?” or</li>
+<li>“How much money does this organisation raise from street collections?”</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542/4</link>
+        <pubDate>Tue, 21 Feb 2017 16:12:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-542-4</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542.rss">Tech Paper: Core funding and funding from own sources</source>
+      </item>
+      <item>
+        <title>Tech Paper: Core funding and funding from own sources</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Bill,<br>
+Doesn’t this proposal add more problems to the standard than that it solves? The current practice, to model pooled or core funding, work quite well in practice. It is It seems to me that this proposal will mean a lot of additional complexity in both the production as the use of IATI data. The costs seem greater than the benefits. See the comments on the document for details.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542/3</link>
+        <pubDate>Tue, 21 Feb 2017 14:33:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-542-3</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542.rss">Tech Paper: Core funding and funding from own sources</source>
+      </item>
+      <item>
+        <title>Tech Paper: Core funding and funding from own sources</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://docs.google.com/document/d/1GL89dPkdM6Uj9fkfiqNz5c86XhQhdLoYVFbnAvl1pEo/edit?usp=sharing">Draft paper on core funding is now available here</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542/2</link>
+        <pubDate>Fri, 17 Feb 2017 14:51:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-542-2</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542.rss">Tech Paper: Core funding and funding from own sources</source>
+      </item>
+      <item>
+        <title>Tech Paper: Core funding and funding from own sources</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Neither the Organisation nor Activity standard currently allow for the explicit reporting of both core funding and finances that have been raised by the publishing organisation.</p>
+<ul>
+<li>
+<p>This paper will propose modifications to the Organisation standard to allow for both</p>
+</li>
+<li>
+<p>It will also propose a modification to the Activity standard to indicate that an activity is being financed through core and/or own finances.</p>
+</li>
+</ul>
+<p><a href="https://docs.google.com/document/d/1GL89dPkdM6Uj9fkfiqNz5c86XhQhdLoYVFbnAvl1pEo/edit?usp=sharing">This paper</a> is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542/1</link>
+        <pubDate>Tue, 09 Aug 2016 06:44:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-542-1</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542.rss">Tech Paper: Core funding and funding from own sources</source>
+      </item>
+  </channel>
+</rss>

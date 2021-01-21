@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/8 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:11:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Add related-transaction element (excluded 2.03) - 2.03 Decimal Upgrade Proposals - IATI Community Discussions</title>
+    <meta name="description" content="This proposal is part of the 2.03 upgrade process, please comment by replying below. 
+
+Standard Activity   Schema Object iati-activity/transaction/related-reference/@ref   Type of Change Schema addition   Issue In an act&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../848.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Add related-transaction element (excluded 2.03)&#39;" href="../848.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/8" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/8" />
+<meta property="og:title" content="Add related-transaction element (excluded 2.03)" />
+<meta name="twitter:title" content="Add related-transaction element (excluded 2.03)" />
+<meta property="og:description" content="This proposal is part of the 2.03 upgrade process, please comment by replying below.  Standard  Activity   **Schema Object** iati-activity/transaction/related-reference/@ref   **Type of Change** Schema addition   **Issue** In an activity that involves earmarked funding from more than one funder it is currently not possible to trace the financial flow through the activity. This is of particular relevance to pooled funds. A reference shared between a commitment (or incoming funds transaction) and ..." />
+<meta name="twitter:description" content="This proposal is part of the 2.03 upgrade process, please comment by replying below.  Standard  Activity   **Schema Object** iati-activity/transaction/related-reference/@ref   **Type of Change** Schema addition   **Issue** In an activity that involves earmarked funding from more than one funder it is currently not possible to trace the financial flow through the activity. This is of particular relevance to pooled funds. A reference shared between a commitment (or incoming funds transaction) and ..." />
+<meta property="article:published_time" content="2017-05-12T12:18:07+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../../index.html">
+          <img src="../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../848.html">Add related-transaction element (excluded 2.03)</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/standard-management/35.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #5719A3'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Standard Management</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/standard-management/2-03-decimal-upgrade-proposals/42.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #A66EE9'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>2.03 Decimal Upgrade Proposals</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../../tag/2-03_transactions.html' class='discourse-tag' rel="tag">2-03_transactions</a>, 
+            <a href='../../../tag/activity_standard.html' class='discourse-tag' rel="tag">activity_standard</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-05-12T12:18:07Z'>
+              <time itemprop='dateModified' datetime='2017-09-11T15:57:16Z' class='post-time'>
+                September 11, 2017,  3:57pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This proposal is part of the <a href="../../version-2-03-decimal-upgrade-index-of-proposals/838.html">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p>
+**Schema Object**
+iati-activity/transaction/related-reference/@ref
+</p><p>
+**Type of Change**
+Schema addition
+</p><p>
+**Issue**
+In an activity that involves earmarked funding from more than one funder it is currently not possible to trace the financial flow through the activity. This is of particular relevance to pooled funds. A reference shared between a commitment (or incoming funds transaction) and a disbursement would  clarify this.
+</p><p>
+**Proposal**
+</p><ul>
+<li>Add element iati-activity/transaction/related-reference
+<ul>
+<li>Definition: An internal reference that creates a link between two transactions within a single activity. The value in transaction/related-reference/@ref should be the same as transaction/@ref in another transaction.
+</li>
+<li>Occurs: 0..*
+</li>
+</ul>
+</li>
+<li>Add attribute iati-activity/transaction/related-reference/@ref
+<ul>
+<li>Definition: A value that matches the value in transaction/@ref in another transaction.
+</li>
+<li>Occurs: 1..1
+</li>
+</ul>
+</li>
+</ul>
+**Standards Day**
+This was a late presentation - part of a group of proposals that will improve humanitarian use of the standard - and was not discussed.
+<p>
+**Links**
+N/A</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+          <meta itemprop='keywords' content='2-03_transactions, activity_standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../version-2-03-decimal-upgrade-index-of-proposals/838/25.html" itemprop='item'>
+                      <meta itemprop='url' content='../../version-2-03-decimal-upgrade-index-of-proposals/838/25.html'>
+                      <meta itemprop='position' content='1'>
+                      <span itemprop='name'>Version 2.03 Decimal Upgrade - Index of Proposals</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-05-19T11:43:01Z' class='post-time'>
+                May 19, 2017, 11:43am
+              </time>
+              <meta itemprop='dateModified' content='2017-05-19T11:43:01Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am a bit doubtful about this proposal since the origin of the money is by definition lost in pooled funding. So if you want to be able to track the financial flows for each funder, you shouldn’t use pooled funding at all. Instead make a separate activity for each funder.</p>
+<p>Are there any real world examples where a fund manager keeps track in the financial system of the actual  origin of the money at the time of disbursement?</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/OJ_.html'><span itemprop='name'>OJ_</span></a>
+            (Ole Jacob Hjøllund)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-05-30T18:30:38Z' class='post-time'>
+                May 30, 2017,  6:30pm
+              </time>
+              <meta itemprop='dateModified' content='2017-05-30T18:30:38Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I agree with Herman. It is a contradiction in terms to intend to trace earmarked transactions within a basket/pooled fund. If it is earmarked, then it can’t be part of the pool.</p>
+<p>I would suggest that the problem is better solved by application of NL’s guidance on this Funding model - establishing a parent-activity to hold the incoming, pooled funds and then have the individual activities as children, and thes childrren can then receive additional ‘earmarked’ contributions with no reference to the pool.</p>
+<p>One relevant clarification would be for the fund-manager to report the type_of_aid on incoming donor-contributions. It would be highly relevant to make sure that the donor and the fund-manager agrees on the classification of the modality Applied.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-02T07:17:31Z' class='post-time'>
+                June 2, 2017,  7:17am
+              </time>
+              <meta itemprop='dateModified' content='2017-06-02T07:17:31Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Broadly, I agree with the nature of this proposal.  It is <em><strong>not possible</strong></em> to link specific activities via the standard.  We <a href="../../its-not-possible-to-follow-the-money-via-iati-transactions-discuss/724.html">have a discussion thread</a> on this, which isn’t referenced in this proposal.  NB:I’m not convinced we got to consensus in that thread either!</p>
+<p>However, I find the cited “issue” of pooled funds is too specific and narrow - and the concerns from <a class="mention" href="../../../u/herman-2.html">@Herman</a> and <a class="mention" href="../../../u/oj_-2.html">@OJ_</a> are well-grounded.</p>
+<p>Our point was that in use cases where transactions could - or should - be linked, then the standard simple does not enable this.  We have found instances where this would be very useful (see below).  However, to reiterate - and perhaps to <a href="../../our-shared-understanding-of-what-iati-is-and-is-not/893.html">points made by</a> <a class="mention" href="../../../u/rolfkleef.html">@rolfkleef</a> et al - this does not encompass a sudden move to make IATI an accounting system!</p>
+<p><a class="mention" href="../../../u/rory_scott.html">@rory_scott</a> and I have since explored <a href="../../tracing-transactions-a-first-draft-at-an-extension/832.html">an extension to illustrate this</a>.  This has been driven by our work with <a class="mention" href="../../../u/johnadams-2.html">@JohnAdams</a> at DFID, looking at traceability - <a href="http://d-portal.org/q.html?aid=GB-COH-04105827-AIDDIRECT" rel="nofollow noopener">the data is now live, in the use case of a fund manager for DFID</a>.</p>
+<p>I think there are plenty of use cases / support for the ability to link transactions, especially in certain aspects of delivery chain mapping / traceability.  We found some very interesting needs for this, but - <strong>and I repeat</strong> (!) - these are not universal, and not about mandating publishers to link each and every activity!</p>
+<p>tl;dr : I support the technical proposal, but not the specified use case.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/OJ_.html'><span itemprop='name'>OJ_</span></a>
+            (Ole Jacob Hjøllund)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-06-02T10:32:52Z'>
+              <time itemprop='dateModified' datetime='2017-06-02T10:36:52Z' class='post-time'>
+                June 2, 2017, 10:36am
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I might get the scent of where you are heading, but I am not able to see it in <a href="http://d-portal.org/q.html?aid=GB-COH-04105827-AIDDIRECT" rel="nofollow noopener">the example</a> you point out in d-portal. This is just a big grant, allowing disbursements to a very large number of partners. But that points towards an entirely different issue – an issue where I’m quite sure that there will never be consensus about how to use the schema nor the optional hierarchy.</p>
+<p>(In our activity-file, the lowest level is the level of ‘commitment’ – not the transaction of course, but the ‘binding agreement with the partner’ meaning that each and every one of the many recipient organisations in the example would constitute a child-activity of it’s own, in DK’s activity file.)</p>
+<p>There are also an issue about the ‘role’ of organisations; as <a href="http://d-portal.org/q.html?aid=GB-COH-2100867-GPAF-IMP-040" rel="nofollow noopener">a random example in the example</a> I could refer to ‘SOS Sahel’, listed as implementing organisation no. 98. It appears however that this organisation calls itself ‘SOS Sahel International UK’, and claims to hold an extending role, with SOS Sahel Ethiopia as the implementing partner.</p>
+<p>So – looking into it in order to understand the motivation for enriched transaction-data, I arrive at entirely different issues. Issues that are probably less about the standard itself, but rather how we use it – how we recommend our partners to use it. In this case: Ensure mutual recognition of the ‘role’ undertaken by your organisation in the specific activity, and make sure that your identification of ‘iati-activities’ corresponds with a very tangible concept of ‘partnership’, already found in the very foundation of your operational procedures.</p>
+<p>I know it’s a far shot, but could that last observation be considered an alternative solution to the problem you address? If one activity has multiple sources, and one of these insists to ‘earmark’ their support for specific parts of the activity, then it just might be that you actually already are managing the complex as several separate activities, and ought to revise your definition of IATI-activities rather than the coding of IATI-transactions.?</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/ximboden.html'><span itemprop='name'>ximboden</span></a>
+            (Nick Imboden)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-12T15:36:54Z' class='post-time'>
+                June 12, 2017,  3:36pm
+              </time>
+              <meta itemprop='dateModified' content='2017-06-12T15:36:54Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi, we have several concrete use cases for this feature for humanitarian financial tracking.</p>
+<ol>
+<li>
+<p><strong>Traceability: for activities funded by multiple donors, the ability to trace funding from each upstream donor through the activity to its downstream use.</strong> This is not the same as a pooled fund - I fully agree with Herman that a genuine pooled fund is by definition not supposed to be able to trace funding through the pool. However, if a regular activity - representing any humanitarian intervention - is funded by several donors, and finances several implementing partners, then without this feature a user cannot add traceability info even if he/she actually has this information. What we are finding with FTS reporting is that there is a proliferation of pseudo-‘pools’ within regular organisations where they report in bulk on income and in bulk on allocations without bothering to make traceable links between the two, claiming that they operate an internal pool when in fact their internal systems do require actual allocation of funding to its use (even if the funding was not earmarked by the donor), and they happily report back to the individual donors on where their money went. I am aware that this situation can be avoided through the use of a parent activity and then multiple child activities, each of which is funded by only one donor - but IATI is designed to support activities having multiple transactions from multiple donors, so enforcing the single-donor single-activity approach seems like the wrong way to approach this. This is not about making IATI more like an accounting system: traceability is a key element of the Grand Bargain and essential for tracking funding to local actors, so IATI should make this as easy as possible.</p>
+</li>
+<li>
+<p><strong>Accountability: the ability to uniquely link pledges to commitments, and commitments to disbursements.</strong> This concerns accountability of donors to their implementing partners and the ability to use IATI to identify gaps between promises made and funding actually received. Again, without this feature this is currently only possible if an activity has a single disbursement or a single pledge, so that the correct association of transactions is obvious. However, it is not uncommon for an activity to be funded by several different commitments from the same donor at different points in time, and for each of those commitments to then have multiple disbursements. FTS aims to maintain a record of how much has been committed vs disbursed. Even more importantly, for resource mobilisation purposes many humanitarians aim to track pledges. With IATI 2.03 expanding to allow for ‘pledge’-type transactions, it is important for both donors and recipients to have easy ways to use IATI to indicate how actual commitments are ‘drawing down’ on pledges made (where this info exists), and then hold donors accountable for outstanding pledges. Again, there are workarounds - for example, limiting an activity to having only one pledge and one commitment from any one organisation - but again in our opinion IATI’s role should be to make this as easy as possible, and this feature would provide an additional tool to aid accountability.</p>
+</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-06-16T15:22:59Z' class='post-time'>
+                June 16, 2017,  3:22pm
+              </time>
+              <meta itemprop='dateModified' content='2017-06-16T15:22:59Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This topic has been included for consideration in the formal 2.03 proposal, subject to additional use-case being illustrated.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-07-07T12:18:27Z' class='post-time'>
+                July 7, 2017, 12:18pm
+              </time>
+              <meta itemprop='dateModified' content='2017-07-07T12:18:27Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Notes from consultation calls w/c 3rd July</p>
+<p>The proposal was reviewed by those on the call and there was no objection from the group.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-08-09T13:49:41Z' class='post-time'>
+                August 9, 2017,  1:49pm
+              </time>
+              <meta itemprop='dateModified' content='2017-08-09T13:49:41Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>When reading back this topic I noticed that the last question of <a class="mention" href="../../../u/oj_-2.html">@OJ_</a> has  not been addressed. I think <a class="mention" href="../../../u/oj_-2.html">@OJ_</a> remark <strong>“If one activity has multiple sources, and one of these insists to ‘earmark’ their support for specific parts of the activity, then it just might be that you actually already are managing the complex as several separate activities, and ought to revise your definition of IATI-activities rather than the coding of IATI-transactions.?”</strong> makes sense and deserves an answer.</p>
+<p><a class="mention" href="../../../u/oj_-2.html">@OJ_</a>: where you in the consultation call and was your question answered?</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/OJ_.html'><span itemprop='name'>OJ_</span></a>
+            (Ole Jacob Hjøllund)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-08-09T15:21:58Z' class='post-time'>
+                August 9, 2017,  3:21pm
+              </time>
+              <meta itemprop='dateModified' content='2017-08-09T15:21:58Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>No, I was not available at the time. I still think that we are adressing the real issue from the wrong angle - we should rather clarify what we expect to be commonly understood as ‘an activity’.</p>
+<p>We are misunderstanding each other, and I fear that we are missing an opportunity to clarify different ‘points of measurement’ that could have been valuable. I still don’t see the benefit of linking transactions - I fear it will be a re-invention of the quite harmful notion of ‘follow the money’, now just as an optional alternative to the shared concept of traceability.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-08-09T15:56:00Z'>
+              <time itemprop='dateModified' datetime='2017-08-09T15:56:25Z' class='post-time'>
+                August 9, 2017,  3:56pm
+              </time>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I think a generic argument looks like this:</p>
+<ul>
+<li>An IATI activity can contain many commitments and disbursements from one or more sources</li>
+<li>Some stakeholders see a benefit in linking particular commitments to particular disbursements.</li>
+<li>The standard already contains the transaction/<span class="mention">@ref</span> attribute</li>
+<li>Adding an optional transaction/related-reference element that re-uses transaction/<span class="mention">@ref</span> would solve this use case without interfering with publishers who don’t use it and users who don’t need it.</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/JohnAdams.html'><span itemprop='name'>JohnAdams</span></a>
+            (John Adams)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-08-19T16:58:36Z' class='post-time'>
+                August 19, 2017,  4:58pm
+              </time>
+              <meta itemprop='dateModified' content='2017-08-19T16:58:36Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>On this one I’m not convinced that there is a universal user need for linking specific transactions, although <a class="mention" href="../../../u/stevieflow.html">@stevieflow</a> and <a class="mention" href="../../../u/ximboden.html">@ximboden</a> make some specific arguments.</p>
+<p>I don’t have any real objection to adding an optional transaction/related-reference element.</p>
+<p>However, would we not be better off doing some diagramming of different ways that activities can be related and seeing if a change in how these activities could be represented using the existing elements. I’d like to see more of these “architectural patterns” to inform this discussion.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-08-28T08:43:58Z'>
+              <time itemprop='dateModified' datetime='2017-08-29T06:08:31Z' class='post-time'>
+                August 29, 2017,  6:08am
+              </time>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I fully agree with <a class="mention" href="../../../u/oj_-2.html">@OJ_</a>.</p>
+<p>1 - We already have the possibility in the standard to track donor funds by defining an activity for each donor for which you want to track.</p>
+<p>2- The proposed change will not enable you to properly track donor funding. Let’s take the example that two donors, each disbursing 5 milj. Euro’s for an activity. Subsequently an expenditure of 7 milj. Euro’s from that activity is done. How are you going to attribute these 7 milj. Euro’s to the 2 donors using the transaction references?</p>
+<p>3 - Introducing this change will add an (i.m.o. flawed) alternative way to track funds. This will greatly complicate  data use when you want to combine data from publishers which use different ways of fund tracking.</p>
+<p>Therefore I can not agree with this proposal.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-08-28T08:51:57Z' class='post-time'>
+                August 28, 2017,  8:51am
+              </time>
+              <meta itemprop='dateModified' content='2017-08-28T08:51:57Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes, I think diagramming might help this discussion.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rory_scott.html'><span itemprop='name'>rory_scott</span></a>
+            (Rory Scott)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-09-05T08:15:13Z' class='post-time'>
+                September 5, 2017,  8:15am
+              </time>
+              <meta itemprop='dateModified' content='2017-09-05T08:15:13Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This is very late but, for reasons I won’t go into here, I’ve been effectively off-radar for around two months.</p>
+<p><em>That being said</em> I did make an informal extension for this functionality a while ago, which might help give some further structure to the discussion of this element.</p>
+<p>It offers three specific use cases, and examples for implementing them:</p>
+<blockquote>
+<ol>
+<li>
+<p>associating a disbursement in one organisation’s data with an incoming fund in another’s ('i.e the inter-organisation conception of ‘following the money’).</p>
+</li>
+<li>
+<p>associating a disbursement in one organisation’s parent-activity with an incoming fund in it’s child activity (following the money within a hierarchical group of activities).</p>
+</li>
+<li>
+<p>associating a group of small transactions with a single large transaction within a given activity (following the money within an activity - ideal for ‘flat’ representations of a fund-manager’s data for instance).</p>
+</li>
+</ol>
+</blockquote>
+<p>For the full extension text, see <a href="https://gist.github.com/rory09/bc89d2e581fe944aed2f1455da565611" rel="nofollow noopener">here</a>. I won’t be able to join the call today, but I’m happy to address any questions about the above, and for the record I don’t see any compelling reasons not to include this functionality, assuming that everyone is realistic about the <em>political</em> and <em>pragmatic</em> limits of ‘follow the money’, as well as the technical hurdles.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-09-11T15:34:52Z'>
+              <time itemprop='dateModified' datetime='2017-09-12T13:03:18Z' class='post-time'>
+                September 12, 2017,  1:03pm
+              </time>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Following <a href="../../version-2-03-decimal-upgrade-index-of-proposals/838/24.html">the call to seek consensus on the humanitarian proposals</a> that took place on 5th September 2017 this proposal has NOT been accepted for inclusion as part of v2.03.</p>
+<p>Some members of the IATI community felt  that the business case for this proposal was not yet strong enough for it to be taken forward at this time.</p>
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+              closed 
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../848.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-25T13:49:31Z' class='post-time'>
+                October 25, 2017,  1:49pm
+              </time>
+              <meta itemprop='dateModified' content='2017-10-25T13:49:31Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          
+        </div>
+
+        <meta itemprop='headline' content='Add related-transaction element (excluded 2.03)'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/8 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:11:09 GMT -->
+</html>

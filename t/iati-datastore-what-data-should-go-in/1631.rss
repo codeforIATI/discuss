@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Datastore - what data should go in?</title>
+    <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631</link>
+    <description>As part of the build of the new IATI datastore, there&amp;rsquo;s an important point for our community to consider: **what goes into the datastore**?
+
+A common response might be &amp;ldquo;_all published IATI data, surely?_&amp;rdquo;, but I wanted to offer an alternative, which I think others will support.
+
+In short, I propose that the IATI datastore _initially_ pulls in data that is:
+
+1. **Valid to the IATI schema, and;**
+
+2. **Published under an open licence, and;**
+
+3. **Using version 2.0x of IATI**
+
+To be clear: this does not encompass all current published data. So - why limit ourselves? Here&amp;rsquo;s three reasons:
+
+**1 - Schema validation is something we are very used to**
+
+For those of us that grapple with data validation around IATI, we know it can often mean many things. The term &amp;ldquo;compliance with IATI&amp;rdquo; is often heard, but not universally agreed.
+
+However, we have a very simple mechanism to help us: **[the IATI schema](http://reference.iatistandard.org/203/schema/)**. The schema provides exactness on how data should be ordered and structure: it&amp;rsquo;s the minimum level of validation one should pass.
+
+The [online IATI validator](http://validator.iatistandard.org/) has always provided a means to test data against the schema. It&amp;rsquo;s true that there are a range of further &amp;ldquo;validation&amp;rdquo; tests one could make, including a host of rulesets and codelist checking - and even extending to the coherence of organisation identifiers. However, for us to get a basic level, we should begin by working with data that passes this initial schema inspection.
+
+My argument here is simple: _if we start to support data that is not valid against the schema, why have a schema? Or even - what support are we giving to data users, if we supply invalid data?_
+
+**2 - Data licencing supports data use**
+
+You might be surprised to see mention of data licencing in this proposal, as it can often be something that is added at the last moment of publication, whilst someone sets up their IATI Registry account. However, appropriate data licencing is an absolute must if we are to support people to successfully use IATI data.
+
+In fact, we should really consider the datastore as a data user! In this light, it needs to be clear that they can access data under a licence that is permissive and open. When data is licenced under restricted grounds, then it cannot be reused (as that is what the licence says!).
+
+My challenge: _Why would we support the datastore to use data that has no licence for reuse?_
+
+**3 - Version 1 of the standard is deprecated**
+
+The TAG meeting in Kathmandu supported the decision of IATI members to deprecate version 1 of the standard, [meaning that from June 2019 publishers using this will not be supported](https://iatistandard.org/en/news/notice-deprecation-of-version-1-of-the-iati-standard/).
+
+Whilst it&amp;rsquo;s technically possible to convert data from version 1 to version 2 of the IATI standard, this would take up a limited resource on the datastore project we could deploy elsewhere.
+
+My rationale: _to get the support of the new datastore, organisations need to supply data in a version that is actively supported by the initiative._
+
+**Support for our principles?**
+
+A common thread between these three conditions is mutual support. We all want to support our data standard and data users via the datastore project. To do this, we must ensure that we respect the core protocols we have around the schemas, licences and versions for our standard. Given that the datastore represents a renewed focus on data quality and use, I can&amp;rsquo;t imagine a scenario where we would actively go against these.
+
+Of course, there are currently a range of publishing organisations that would be omitted from inclusion in the datastore, in terms of [failed schema tests](http://dashboard.iatistandard.org/validation.html), [restrictive licencing](http://dashboard.iatistandard.org/license/cc-nc.html) and/or use of [unsupported versions](http://dashboard.iatistandard.org/versions.html),. However, we should be careful to not start to cite examples in order to find reason for a relaxation of this criteria. I do believe this is a relatively low bar for entry - and that our community and tech team can provide positive support to those that need to remedy their data.
+
+**What next?** I&amp;rsquo;m hoping those active in our community can support these principles, so that we can in turn endorse the data that makes its way into the datastore. Maybe respond with a quick nod of a approval to get us moving on.....
+
+My _guess_ (based on informal discussions - see below) is that the first two principles are very agreeable, whilst there&#39;s a dilemma about use of version 1 data.  That seems fine - and is a reason for my separating v1 into a new point.
+
+After this, we can start to extend our discussions around data validity, compliance and quality in other, more advanced, ways.  But, I do hope colleagues are able to step back and **agree that this initial benchmark is for the betterment of the initiative**.
+
+_Disclosure_: prior to posting this I quickly discussed these ideas with @bill_anderson, @KateHughes, @Herman  @siemvaessen , @andylolz, @markbrough &amp; @rory_scott - more as an valued and accessible sounding board rather than definitive answer (but thanks, nevertheless!)!</description>
+    
+    <lastBuildDate>Fri, 14 Aug 2020 14:58:12 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/david_megginson">@David_Megginson</a>: agree that when we have an activity level validation we can skip the bad activities. But only if there is an active feedback mechanism. Not ‘eventually’ as you are suggesting, but at the moment activity level validation is implemented in the data store ingestion process.</p>
+<p>Agree with   <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> that we should define which kind of errors lead to:</p>
+<ul>
+<li>processing the individual activity even if there is an error in the content in an activity (e.g. a non existing sector code)</li>
+<li>skipping the whole activity</li>
+<li>rejecting all of a specific publisher files (if more than x% of the activities have errors, malformed XML or XSD errors).</li>
+</ul>
+<p>The questions remains of course is acceptable as an maximum number of errors (0.1%, 1%, 10%, ?).</p>
+<p>About the reservation <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> has about e-mail feedback to the publisher: e-mail feedback is by no means a panacea. It is i.m.o. better to engage with a publisher directly, but this rarely happens (see also the recent Catalpa report). By lack of a better feedback mechanism, I would rather have a working e-mail feedback process than nothing at all.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/67">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/67</link>
+        <pubDate>Fri, 14 Aug 2020 14:58:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-67</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Given we are considering this, please can we properly document it in the rules/IATI approach etc so that it is not just an ad-hoc decision:</p>
+<ol>
+<li>Spell out the logic, so that it can apply in other situations e.g. we are establishing the concept that in core IATI tools, where there is a conflict between availability of data, and XYZ, then we prioritise availability of data - I suspect if we apply this lens more widely, we might find a lot more ‘tweaks’ to make to IATI tools e.g. because IATI does not replicate several key codelists, thousands of activities do not have machine readable sector or result narratives. Therefore if we follow the logic we are doing for activities in the datastore, we are establishing the primacy of user access to data and so IATI should replicate many more codelists that it currently doesn’t?</li>
+<li>What do we think about transactions - should we really ditch a whole activity if just one transaction fails to validate?</li>
+<li>It seems like it is also not sensible to ditch a whole activity if e.g. one result element fails validation</li>
+<li>There are different types of failing validation - please can we be clear that ‘fail’ in this case applies just to the ‘must’ elements of the rules, or have I misunderstood this?</li>
+</ol>
+<p>For what it is worth, I think that we shouldn’t do this - if a major publisher cannot promptly fix a problem with their data that causes thousands of activities to disappear, I think we should not be trying to fix this via the datastore. I do not think that the ‘they will get an email’ is a serious proposition at least until we have proof that it works - I have previously tested the response rate to IATI emails previously with mixed results. Also, surely major publishers should themselves be checking e.g. that their activities are available in IATI tools - again if they are not doing that, I think IATI has a problem that needs a solution that lies outside the datastore.</p>
+<p>Finally, maybe it would also be better to work this though so actual cases - do we have other examples in addition to the World Bank case (and what has happened in that situation?). Is it also not worth seeing what happens when the validator is launched? We spoke multiple times about all being aware that once implemented it will cause a huge increase in rejections - presumably we agreed then that we were ok with this and expected that after a short period of rapid fixes, everything would settle down?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/66">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/66</link>
+        <pubDate>Fri, 07 Aug 2020 11:40:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-66</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/herman">@Herman</a> - I don’t think we’re far off: we both agree that the datastore shouldn’t try to ingest an <em>iati-activity</em> if it’s malformed. We also both agree that there should eventually be a feedback mechanism to let data providers know when the datastore does not ingest one of their activities because it’s malformed (and explain why), though I also acknowledge that this last part might be a new work item that needs to be triaged and scheduled.</p>
+<p>The difference is over whether one malformed activity in an <em>iati-activities</em> package should cause the datastore to reject (e.g.) 999 other, well-formed activities in the same package, assuming that the error doesn’t affect parsing outside of the activity element.</p>
+<p>Since the grouping of activities is non-semantic (the datastore discards the grouping and stores activities individually in any case), I think that would be an overreaction. OTOH, if there is an error at the top level (e.g. the attributes on <em>iati-activities,</em> that might justify a wholesale rejection, because we can’t be sure that we’re applying those attributes to the individual activities correctly.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/65">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/65</link>
+        <pubDate>Fri, 07 Aug 2020 00:16:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-65</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rory_scott">@rory_scott</a> and <a class="mention" href="/u/bill_anderson">@bill_anderson</a> I understand the need to have as much data available as possible. As mentioned before I am not against having an activity level schema validation for ingesting XML data in the data-store as such, provided there is an <strong>active</strong> feedback mechanism to the publisher  (active meaning that no action is required from the publisher to get informed about the data quality issues).</p>
+<p><a class="mention" href="/u/rory_scott">@rory_scott</a> proposes a number of interesting feedback mechanism, to which I would like to add one: sending an e-mail the the e-mail address provided on the activity level (<code>iati-activities/iati-activity/contact-info/email</code>) , or if there is not such an e-mail address, sending it to the contact e-mail address as stored in the registry.</p>
+<p>I object to any solution which would silently skip activities being processed without any notification to the user or the publisher of the data. Users will be kept in the dark about the completeness of the data and publishers will be kept in the dark about the quality problems in their data.</p>
+<p>One last thought: if a large publisher has just a few tiny errors in the many activities published, why not simply contact that publisher and ask to correct the problem. I.m.o. it is this lack of active engagement of data users and publishers that causes a great deal of these problems.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/64">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/64</link>
+        <pubDate>Fri, 31 Jul 2020 10:53:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-64</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for clarifying Josh - I’ve changed the example to reflect that <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/63">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/63</link>
+        <pubDate>Fri, 31 Jul 2020 10:04:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-63</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[JoshStanley]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="rory_scott" data-post="61" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rory_scott/40/594_2.png" class="avatar"> rory_scott:</div>
+<blockquote>
+<p>If GlobalGiving have one sector percent that doesn’t add up to 100, we could lose nearly 2% of all IATI data pertaining to nearly 10,000 organisations.</p>
+</blockquote>
+</aside>
+<p>Just to be clear, data quality issues such as sector percentages not adding up to 100 will <strong>not</strong> prevent the dataset from being ingested by the Datastore, as this is a Standard <em>rule</em> (<a href="https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">a must</a>), rather than something that is dictated by the Schema.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/62">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/62</link>
+        <pubDate>Fri, 31 Jul 2020 10:00:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-62</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>I understand <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> in the above, so this is in no way to try to contradict that timeline. I’m putting it here for posterity when this conversation re-opens after the initial launch.</p>
+<p>I’m in agreement with <a class="mention" href="/u/bill_anderson">@bill_anderson</a>, <a class="mention" href="/u/david_megginson">@David_Megginson</a> and others on this. I am routinely asked why IATI doesn’t line up with official statistics, or why expected IATI data is missing, or why we can’t we can’t trust IATI data. In my opinion it isn’t satisfactory to say that a publisher fluffed one number in a dataset of thousands of activities and therefore all of that data is inaccessible, and that this is by design.</p>
+<p>The removal of arbitrary, valid data will undermine trust in IATI, and frustrate both users and publishers, and exacerbate existing narratives about the viability of the entire corpus of data we work to produce.</p>
+<p>Regarding <a class="mention" href="/u/herman">@Herman</a>’s concern about the onus moving away from the publisher: I understand this principle, but at the moment we need pragmatism. I would be happy with a number of measures to re-establish that onus that don’t involve removing access to valuable data.</p>
+<p>For example:</p>
+<ol>
+<li>We could institutionalise <a href="https://iati-canary.herokuapp.com/" rel="nofollow noopener">IATI Canary</a>, making use of it a basic participation prerequisite for engagement.</li>
+<li>We could take this further by publishing the response times to data validation issues, and possibly push for this to be a relevant metric in future transparency evaluations such as the Aid Transparency Index or the IATI Dashboard</li>
+<li>We could include a flag within the XML to denote validity, and put garish, unsightly banners on relevant D-Portal pages or other presentation sites to make it clear that there are validation issues.</li>
+<li>We could celebrate the rapid engagement with and resolution of data validation issues in newsletters and official communications (if the publisher consents).</li>
+<li>We could have a public ‘caution’ list of publishers with invalid data.</li>
+</ol>
+<p>I’m not seriously suggesting all of these, and some of them might seem extreme, but for me they are all sensible* compared to removing an unknown quantity of valid data from the one official data store.</p>
+<hr>
+<p><code>*</code>To add some numbers to this sentiment (<a href="https://docs.google.com/spreadsheets/d/17Z6nbi2ZocCWiKFwr1I0DWpjObiNMb4iKQpRx9VW6hw/edit?usp=sharing" rel="nofollow noopener">see workings here</a>):</p>
+<ul>
+<li>There are currently <a href="http://dashboard.iatistandard.org/activities.html" rel="nofollow noopener">~982k activities</a>.</li>
+<li>If we take the <a href="http://dashboard.iatistandard.org/publishers.html" rel="nofollow noopener">publisher stats</a> and add an activity to file ratio value, we can see that the top 25 publishers by number of activities published account for ~814k activities, about 82.89% of the total.</li>
+<li>These activities are split amongst 2,234 files (meaning a total activity-to-file ratio of 364 among them).</li>
+</ul>
+<p>The median activity-to-file ratio among them is 530, and the arithmetic mean is 1,657. This is because of our top five activity-to-file publishers:</p>
+<ul>
+<li><a href="http://GlobalGiving.org" rel="nofollow noopener">GlobalGiving.org</a></li>
+<li>UN Pooled Funds</li>
+<li>Norad - Norwegian Agency for Development Cooperation</li>
+<li>Food and Agriculture Organization of the United Nations (FAO)</li>
+<li>The Global Alliance for Improved Nutrition</li>
+</ul>
+<p>Together these five account for 38,000 activities spread between 5 files.</p>
+<p>Going back to our top 25 publishers by activity count, it’s fairly clear that one validation error in any of these publishers will mean a serious loss of valid IATI data.</p>
+<p>If GlobalGiving have <s>one sector percent that doesn’t add up to 100</s> one missing sector field or other schema error, we could lose nearly 2% of all IATI data pertaining to nearly 10,000 organisations.</p>
+<p><strong>EDIT:</strong> changing the sector example as per <a class="mention" href="/u/joshstanley">@JoshStanley</a>’s correction.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/61">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/61</link>
+        <pubDate>Thu, 30 Jul 2020 16:16:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-61</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks to everyone for engaging with this conversation.</p>
+<p>The Tech Team is currently focussing on ensuring that the original TOR are delivered as we prepare for launch. Any consideration of requirements outside of the current TOR will be led by the Tech Team  <em>after</em>  launch; we will engage with the community to make sure this complex issue in particular is fully explored. In the meantime, the Tech Team is contacting publishers with schema invalid files this week to urge them to address their issues.</p>
+<p>Thanks again for all your good input above; we look forward to discussing this further after we launch.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/60">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/60</link>
+        <pubDate>Wed, 29 Jul 2020 16:58:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-60</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/herman">@Herman</a> I disagree with much of your approach. As an increasingly heavy user** (and champion) of IATI data I want access to as much usable data as possible. That’s what I expect from the datastore. Being told that I can’t have access  because the datastore is on a mission to produce ‘pure’ data won’t wash.</p>
+<p>In my particular use case my biggest problem is ensuring that both geographic and sector percentage splits add up to 100 so that I can to reliable transaction arithmetic. There’s a whole load of other QA issues that I’m not the slightest bit interested in. I would rather deal with my particular problem myself if I know that the Datastore is doing as little as possible to get in the way.</p>
+<p>This has got nothing to do with letting the publisher off the hook. That’s got nothing to do with me (or the datastore). If we can get <a href="https://www.devinit.org/resources/how-are-aid-budgets-changing-due-covid-19-crisis/">useful information</a> based on usable data in front of a lot of people (not just those responsible for supply chain accountability) the incentives for publishers to improve their data will far outweigh our moral sticks.</p>
+<p>(** For the record I have nothing to do with the supply side or governance any more)</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/59">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/59</link>
+        <pubDate>Wed, 29 Jul 2020 16:55:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-59</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m late to the party, <a class="mention" href="/u/siemvaessen">@siemvaessen</a>, but I’m in full agreement. The packaging of IATI activities is arbitrary (a data provider could choose anything from one XML file per activity to one XML file for all their activities, ever), so an error in one activity in the package shouldn’t block the others from the data store.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/58">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/58</link>
+        <pubDate>Wed, 29 Jul 2020 16:11:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-58</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="siemvaessen" data-post="56" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>This amendment does not in any way shift responsibility from the publisher to the IATI data-store, but merely feeds schema valid activities into the datastore for use that are actively being rejected by current policy.</p>
+</blockquote>
+</aside>
+<p>It <strong>implicitly</strong> does i.m.o. because you will change (by omitting bad activities) the content of the publishers IATI XML, without the publisher being aware.</p>
+<aside class="quote no-group quote-modified" data-username="siemvaessen" data-post="56" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>Not sure what the exact work on changing to activity level schema would entail, but from data-store perspective it looks minimal. I’d argue good IATI data being rejected is far worse.</p>
+</blockquote>
+</aside>
+<p>What I meant here was not the costs of the technical implementation, but the costs of increasingly sloppy publishers data because of implicitly omitting bad activities in an publication.</p>
+<p>It would i.m.o. be better to provide feedback to the publisher that they have data quality problems instead of processing the XML anyway. My experience is that data quality improves when providing feedback.</p>
+<p>Could you provide (automated) feedback to publishers when activities are rejected and inform the publisher that their IATI data will not be available in the data-store until they correct the errors?</p>
+<p>(B.t.w. did anyone in above examples try providing feedback to publishers? If so, what was the response?).</p>
+<aside class="quote no-group" data-username="siemvaessen" data-post="54" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>Correct, datastore will serve <strong>fully IATI standard compliant XML</strong> output (next to CSV and JSON formats).</p>
+</blockquote>
+</aside>
+<p>May I am not familiar enough with the data-store, but I was not able to retrieve the original publishers XML with all data-elements. Is there an endpoint for that?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/57">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/57</link>
+        <pubDate>Wed, 29 Jul 2020 15:16:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-57</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="Herman" data-post="55" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_2.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>I do not object against doing activity level schema validation as long as the publisher is responsible for doing this.</p>
+</blockquote>
+</aside>
+<p>The reason for this amendment is that in some cases (as pointed out by <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/35?">earlier</a>) one part of a transaction has an error which resulted in all other activities (schema valid) to be rejected due to current policy in place.</p>
+<p>We all agree publishers are responsible for good data, that’s not really the point for this amendment.</p>
+<p>This is about <strong>getting all schema valid activities available out to users to use.</strong> That’s the point of having a datastore in the first place. Current policy omits clearly valid data and therefore this policy must be revised.</p>
+<aside class="quote no-group" data-username="Herman" data-post="55" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_2.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>Ultimately this proposal is about <strong>who is ultimately responsible</strong> for the data quality of the data in the IATI ecosystem. This proposal partly shifts this responsibility.</p>
+</blockquote>
+</aside>
+<p>This amendment does not in any way shift responsibility from the publisher to the IATI data-store, but merely feeds schema valid activities into the datastore for use that are actively being rejected by current policy.</p>
+<aside class="quote no-group" data-username="Herman" data-post="55" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_2.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>I am not sure that in the long term the benefits will outweigh the costs.</p>
+</blockquote>
+</aside>
+<p>Not sure what the exact work on changing to activity level schema would entail, but from datastore perspective it looks minimal. I’d argue good IATI data being rejected is far worse.</p>
+<aside class="quote no-group" data-username="Herman" data-post="55" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_2.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>not be solely decided by the members of the community who are not on vacation right now or the tech-team. It warrants a broader audience (maybe an IATI WG?).</p>
+</blockquote>
+</aside>
+<p>Sure, we’re in the middle of summer, so no immediate action required. But actively blocking schema-valid activities from the datastore should is not a healthy data policy and should no longer be considered.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/56">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/56</link>
+        <pubDate>Wed, 29 Jul 2020 14:20:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-56</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="siemvaessen" data-post="54" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>But a bit back on topic: <strong>do you have fundamental objections</strong> to the proposal of moving to <strong>schema validation on activity level</strong> by the proposed amendment?</p>
+</blockquote>
+</aside>
+<p>I do not object against doing activity level schema validation as long as the publisher is responsible for doing this. Above proposal shifts this responsibility from the publisher to the IATI data-store, thereby removing any incentive to act on bad data. The problem with that is that this will get the publisher of the hook. Providing usable data will become a more technical responsibility.</p>
+<p>Ultimately this proposal is about <strong>who is ultimately responsible</strong> for the data quality of the data in the IATI ecosystem. This proposal partly shifts this responsibility. I am not sure that in the long term the benefits will outweigh the costs. Reading the thread I see different viewpoints on this. In addition to that I would say that this should not be solely decided by the members of the community who are not on vacation right now or the tech-team. It warrants a broader audience (maybe an IATI WG?).</p>
+<p>Nonetheless this should not be a showstopper for the further development of the data-store now. We can always decide to add this functionality in the next version of the data-store.</p>
+<aside class="quote no-group" data-username="siemvaessen" data-post="54" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>This is the case today seeing only schema validated data-sets arrive in the datastore.</p>
+</blockquote>
+</aside>
+<p>Correct me if I am wrong but the raw XML on the publishers URL validated against the XSD is i.m.o. the primary source of validated (or rejected) IATI XML.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/55">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/55</link>
+        <pubDate>Wed, 29 Jul 2020 13:51:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-55</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="Herman" data-post="53" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_2.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>Accepting files with schema errors and doing ‘activity level’ validation only, would make file level schema validation unnecessary.</p>
+</blockquote>
+</aside>
+<p>Correct, it can still stay in place, but for datastore entry the policy would be revised towards activity level.</p>
+<aside class="quote no-group" data-username="Herman" data-post="53" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_2.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>But then the question is how you are going to do ‘activity level’ validation.</p>
+</blockquote>
+</aside>
+<p>Validator and Datastore will update their (technical exchange) arrangements to fit this amendment.</p>
+<aside class="quote no-group" data-username="Herman" data-post="53" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_2.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>When this is bound to only validating and cleaning IATI data in the data-store ingestion process,</p>
+</blockquote>
+</aside>
+<p>Hold on. Validator nor Datastore will clean IATI data. This thread is about <strong>increasing</strong> IATI Data availability by moving towards activity-level schema validation.</p>
+<aside class="quote no-group" data-username="Herman" data-post="53" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_2.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>it would mean that every existing IATI XML consuming application would be forced to make use of the data-store if it wanted to use validated IATI data.</p>
+</blockquote>
+</aside>
+<p>This is the case today seeing only schema validated data-sets arrive in the datastore.</p>
+<aside class="quote no-group" data-username="Herman" data-post="53" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_2.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>The data-store will become the only source of validated IATI data since validating the raw IATI data of the publisher against the XSD will lose its meaning. This is i.m.o. only acceptable if the data-store would also provide <strong>fully IATI standard compliant XML</strong> output (which validates against the XSD), with just the erroneous activities being removed.</p>
+</blockquote>
+</aside>
+<p>Correct, datastore will serve <strong>fully IATI standard compliant XML</strong> output  (next to CSV and JSON formats).</p>
+<p>But a bit back on topic: <strong>do you have fundamental objections</strong> to the proposal of moving to <strong>schema validation on activity level</strong> by the proposed amendment?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/54">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/54</link>
+        <pubDate>Wed, 29 Jul 2020 13:03:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-54</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree with you Mark: data order should be irrelevant. Not so sure about other examples such as missing transaction type codes, currency codes, etc. Those activities should i.m.o. not be in the data-store (these are the really inedible rotten banana’s)</p>
+<p>Accepting files with schema errors and doing ‘activity level’ validation only, would make file level schema validation unnecessary.</p>
+<p>But then the question is how you are going to do ‘activity level’ validation. When this is bound to only validating and cleaning IATI data in the data-store ingestion process, it would mean that every existing IATI XML consuming application would be forced to make use of the data-store if it wanted to use validated IATI data.</p>
+<p>The data-store will become the only source of validated IATI data since validating the raw IATI data of the publisher against the XSD will lose its meaning. This is i.m.o. only acceptable if the data-store would also provide <strong>fully IATI standard compliant XML</strong> output (which validates against the XSD), with just the erroneous activities being removed.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/53">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/53</link>
+        <pubDate>Wed, 29 Jul 2020 12:22:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-53</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Could I suggest that anyone <em><strong>objecting</strong></em> to this proposal speak up. Otherwise silence should be accepted as community consent for this amendment, thus allowing the secretariat to take the necessary steps to make this happen.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/52">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/52</link>
+        <pubDate>Wed, 29 Jul 2020 11:28:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-52</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Bumping this as it’s been dormant for a month and <strong>needs urgent attention imo</strong>.</p>
+<p>I would like to engage with the initial IATI community consensus on the original RfP specification for the Datastore where community consensus  was reached (not sure when/where anymore) on the matter of <strong>blocking non schema valid data-sets</strong> from entering the new datastore.</p>
+<p>With the knowledge we all have today with both the 2020 validator and datastore moving towards production, I propose the IATI community to act on <a class="mention" href="/u/bill_anderson">@bill_anderson</a> suggestion to make an <strong>amendment</strong> to that will <strong><em>move away</em> from dataset level schema validation towards activity level schema validation</strong> as the initial proposed requirement omits huge amounts of data from the new datastore and is not in line with IATI strategy of data use and data quality. This is a more granular approach and <strong>will ensure we have all IATI schema valid activities stored in the Datastore</strong> which is currently not the case and will never be the case if current consensus remains in place.</p>
+<p>If we make this amendment IATI will <strong>massively increase the availability of IATI data</strong>.</p>
+<p>The current method for blocking any activity from a schema valid data-set -<em>even if 999/1000 of <strong>activities</strong> are actually schema valid(!!)-</em> seems unsustainable and is a policy we should revisit urgently.</p>
+<p>cc  <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/mhirji">@Mhirji</a> <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> <a class="mention" href="/u/markbrough">@markbrough</a> <a class="mention" href="/u/andylolz">@andylolz</a> <a class="mention" href="/u/david_megginson">@David_Megginson</a> <a class="mention" href="/u/herman">@Herman</a>  <a class="mention" href="/u/rolfkleef">@rolfkleef</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/51">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/51</link>
+        <pubDate>Wed, 29 Jul 2020 10:38:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-51</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="andylolz" data-post="48" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_2.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>I checked again today, and the number of schema-valid activities in schema-invalid datasets is now 74,752. It’s possible to validate at activity level and still provide access to raw XML, by excluding the invalid activities.</p>
+</blockquote>
+</aside>
+<p>this is a huge amount of activities that should reside in the Datastore. Let me check what the efforts would be to validate on activity level. Perhaps <a class="mention" href="/u/alexlydiate">@AlexLydiate</a> could chime in?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/50">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/50</link>
+        <pubDate>Thu, 02 Jul 2020 10:29:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-50</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>From a user perspective, it would be great that if there can be activity level validation and some activities are dropped due to failing validation, if there could be some unmissable notification that the activities shown are not all of what the publisher intended to publish - because quite often users see the existence of data for a publisher as implying a comprehensive dataset from that publisher.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/49">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/49</link>
+        <pubDate>Thu, 02 Jul 2020 10:25:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-49</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Flagging this from earlier in this thread:</p>
+<aside class="quote no-group" data-username="andylolz" data-post="3" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_2.png" class="avatar"> andylolz:</div>
+<blockquote>
+<ul>
+<li>Schema validation was performed at activity level (as suggested by Steven Flower). I found roughly 14,000 valid activities in invalid datasets. The datastore could exclude invalid activities, rather than invalid datasets.</li>
+</ul>
+</blockquote>
+</aside>
+<p>I checked again today, and the number of schema-valid activities in schema-invalid datasets is now 74,752. It’s possible to validate at activity level and still provide access to raw XML, by excluding the invalid activities.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/48">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/48</link>
+        <pubDate>Wed, 01 Jul 2020 23:11:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-48</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="markbrough" data-post="46" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/557_2.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>I think part of the issue is that 2.01 made it much easier to fail schema validation by requiring elements to be in a particular order (it did this in order to make certain fields “mandatory”, which I think was the wrong way of enforcing compliance). I think that was a mistake.</p>
+</blockquote>
+</aside>
+<p>I agree. I’m not an xml expert, but isn’t there another way of checking mandatory fileds without ordinality?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/47">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/47</link>
+        <pubDate>Wed, 01 Jul 2020 16:03:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-47</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this discussion!</p>
+<aside class="quote no-group" data-username="rolfkleef" data-post="44" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rolfkleef/40/82_2.png" class="avatar"> rolfkleef:</div>
+<blockquote>
+<p>The idea that the datastore just tries its best to process “anything” as a solution is shifting the problem from the producer to the consumer</p>
+</blockquote>
+</aside>
+<p>I think part of the issue is that 2.01 made it much easier to fail schema validation by requiring elements to be in a particular order (it did this in order to make certain fields “mandatory”, which I think was the wrong way of enforcing compliance). I think that was a mistake. That didn’t matter that much before now, because everyone could continue to use data even though it failed validation, but obviously it would begin to make much more of a difference if we stick to this approach.</p>
+<p>I don’t think making it impossible to access schema-invalid data through the IATI Datastore shifts any problem from a consumer to a producer. At the moment, it just makes it much more difficult for the consumer to access the data (even if it’s just a question of one element in one activity in one file being in the wrong order). If publishers quickly resolved data validation issues, that would be fine. However, the evidence suggests that around 10% of publishers have invalid files, and the number has remained fairly stable for the last three years – <a href="http://dashboard.iatistandard.org/validation.html" rel="nofollow noopener">see these charts</a>.</p>
+<p>As various people have mentioned, one way of squaring this circle might be for publishers to be automatically notified (or politely bombarded) when their data fails validation.</p>
+<p>If you’re a publisher reading this thread – you can <a href="https://iati-canary.herokuapp.com/" rel="nofollow noopener">sign up for alerts from IATI Canary</a>!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/46">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/46</link>
+        <pubDate>Wed, 01 Jul 2020 15:45:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-46</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="rolfkleef" data-post="44" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rolfkleef/40/82_2.png" class="avatar"> rolfkleef:</div>
+<blockquote>
+<p>A standard is for both producers and consumers</p>
+</blockquote>
+</aside>
+<p>Agree. But you go on to focus solely on the supply side.</p>
+<p>As a consumer I’m not interested in what producers should or shouldn’t be capable of doing. I just want the data. I’m not bothered whether <a href="https://www.europarl.europa.eu/unitedkingdom/en/media/euromyths/bendybananas.html">my banana is malformed</a> so long as it is edible.</p>
+<p>I’m quite happy to hold my hand up and admit that for the best part of ten years I was part of a machinery (and community) that paid insufficient attenion to users outside of our immediate supply chain. Now that I’m on the other side of the fence things look different …</p>
+<aside class="quote no-group" data-username="rolfkleef" data-post="44" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rolfkleef/40/82_2.png" class="avatar"> rolfkleef:</div>
+<blockquote>
+<p>it’s not a priority, you can be <span class="hashtag">#2</span> in the Aid Transparency Index even though you publish schema-invalid files. And the IATI Secretariat is happy to push data consumers to accept your data, you don’t even have to do that yourself.</p>
+</blockquote>
+</aside>
+<p>This kind of (much-used) argument is fundamentally flawed. Improving data quality and maximising the use of what currently exists are two very separate ideas that actually reinforce each other.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/45">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/45</link>
+        <pubDate>Wed, 01 Jul 2020 12:55:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-45</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>Funny, we actually fixed the sequence of elements within an activity as part of the upgrade to 2.01…</p>
+<p>A standard is for both producers and consumers, to make the exchange of information easier. We try to make it easier for producers by offering a schema (and hopefully a ruleset) that you can use to check your data before publishing. All with the intent to make it easier for more data consumers to use what is published.</p>
+<p>The idea that the datastore just tries its best to process “anything” as a solution is shifting the problem from the producer to the consumer. And it basically says: don’t try to develop your own IATI-consuming application and feel free to publish about anything.</p>
+<p>We need to fix this by making data quality part of the publisher’s process. And so it needs to be adequately resourced and prioritised. Bombarding a technical department with emails won’t change a thing until management sees that this is a problem. It helps if they see that their data is missing.</p>
+<p>This is what’s happening with grantees of the Dutch government: programme staff get called by grant managers that they are missing from the dashboard, and need to fix their data.</p>
+<p>If an organisation like the Worldbank is able to regularly update ~500MB across nearly150 files, they should be able to to a simple schema validation step as part of their QA when publishing.</p>
+<p>If it’s a matter of ordering the elements in the right way, I’d be happy to work with them on a simple XSLT script to do just that.</p>
+<p>But I assume their technical staff is already well aware of this.</p>
+<p>My guess is: it’s not a priority, you can be <span class="hashtag">#2</span> in the Aid Transparency Index even though you publish schema-invalid files. And the IATI Secretariat is happy to push data consumers to accept your data, you don’t even have to do that yourself.</p>
+<p>To echo Matt:</p>
+<ul>
+<li>Is IATI a still data standard to make it easier to exchange information  between all kinds of parties?</li>
+<li>Or is it a database offered by DI to please some users, and we don’t care that the EU, USAID, governments, multilateral NGO networks, project management software platforms, etc, also need or want to exchange information between systems?</li>
+</ul>
+<p>Making sure you have schema-valid XML has been solved over 20 years ago. We need to push publishers to make that part of their production system. So that we can move on to including business rules compliance as well. And discuss actual business rules as part of the standard, instead of still being stuck on this basic level.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/44">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/44</link>
+        <pubDate>Wed, 01 Jul 2020 10:52:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-44</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+      <item>
+        <title>IATI Datastore - what data should go in?</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="bill_anderson" data-post="41" data-topic="1631">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Personally I have always held the opinion that the datastore’s only clients are users - developers and savvy analysts - who should be provided with as much usable data as possible. The discussion that this thread cut short at the outset was how could we define ‘usable data’ without compromising the overall integrity of the standard. Feedback loops for improving data quality and other supply side issues are important but should have nothing to do with the datastore.</p>
+</blockquote>
+</aside>
+<p>Ok, but perhaps we should first look back at the rationale for following the schema, as <a class="mention" href="/u/stevieflow">@stevieflow</a> pointed out last year:</p>
+<blockquote>
+<p>My argument here is simple:  <em>if we start to support data that is not valid against the schema, why have a schema? Or even - what support are we giving to data users, if we supply invalid data?</em></p>
+</blockquote>
+<p>We first need to come up with a solid answer here, prior to opening up the Datastore to data that does not follow its data schema. Relaxing this requirement also introduces schema fatigue: “well, Datastore accepts everything anyway, just leave our non schema valid IATI data invalid”. Pretty slippery slope.</p>
+<p>I do get your point <a class="mention" href="/u/bill_anderson">@bill_anderson</a> on invalidating on dataset level though, like the WB example you pointed out, so perhaps we could look at activity level schema validation rather than dataset validation? I do agree that rejecting a complete dataset because of a single transaction level schema invalid reporting should not be considered best practice.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/43">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/43</link>
+        <pubDate>Wed, 01 Jul 2020 08:05:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1631-43</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631.rss">IATI Datastore - what data should go in?</source>
+      </item>
+  </channel>
+</rss>

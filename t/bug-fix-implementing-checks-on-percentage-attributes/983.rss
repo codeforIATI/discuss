@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Bug fix: Implementing checks on @percentage attributes</title>
+    <link>https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983</link>
+    <description>Linked to the proposal in the v2.03 upgrade to set [boundary values where the IATI Standard refers to percentages](https://discuss.iatistandard.org/t/boundary-values-for-percentages-included-2-03/843), a [pull request](https://github.com/IATI/IATI-Schemas/pull/329) has been received by @VincentVW to restrict values used in percentage attributes to the set boundaries (0 - 100). 
+
+This change would apply to the following attributes:
+
+- `iati-activities/iati-activity/recipient-country/@percentage`
+- `iati-activities/iati-activity/recipient-region/@percentage`
+- `iati-activities/iati-activity/sector/@percentage`
+- `iati-activities/iati-activity/capital-spend/@percentage`
+- `iati-activities/iati-activity/country-budget-items/budget-item/@percentage`
+
+The IATI Technical Team are considering this to be a bug fix, given that the definition for these attributes typically reads 
+
+&gt; Content must be a positive decimal number between 0 and 100, with no percentage sign.
+
+Therefore, and **unless an objection is received we plan to implement this pull request for version 2.02 of the Activity Standard after a one week notice period (expiring on Sunday 13 August 2017)**.  Where appropriate, this will also be back-ported to prior versions.</description>
+    
+    <lastBuildDate>Thu, 24 Aug 2017 12:51:01 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Bug fix: Implementing checks on @percentage attributes</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to follow up here: I raised the following (temporary) objection to this <a href="https://github.com/IATI/IATI-Schemas/pull/329#issuecomment-320333141">over on github</a>:</p>
+<blockquote>
+<p>I do love this update… But… I think it might be better to wait on this until the <a href="https://discuss.iatistandard.org/t/boundary-values-for-percentages-included-2-03/843">boundary values for percentages</a> proposal is done and dusted.</p>
+<p>That proposal acknowledges that the typical definition:</p>
+<blockquote>
+<p>Content must be a positive decimal number between 0 and 100, with no percentage sign.</p>
+</blockquote>
+<p>…suggests zero should be <em>excluded</em> since it isn’t a positive number. And <a class="mention" href="/u/wendy">@wendy</a> <a href="https://discuss.iatistandard.org/t/boundary-values-for-percentages-included-2-03/843/4">points out</a> that in at least some contexts, excluding zero might be preferable anyway. So adding this now seems like it might add more confusion, not less.</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983/2</link>
+        <pubDate>Thu, 24 Aug 2017 12:40:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-983-2</guid>
+        <source url="https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983.rss">Bug fix: Implementing checks on @percentage attributes</source>
+      </item>
+      <item>
+        <title>Bug fix: Implementing checks on @percentage attributes</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Linked to the proposal in the v2.03 upgrade to set <a href="https://discuss.iatistandard.org/t/boundary-values-for-percentages-included-2-03/843">boundary values where the IATI Standard refers to percentages</a>, a <a href="https://github.com/IATI/IATI-Schemas/pull/329">pull request</a> has been received by <a class="mention" href="/u/vincentvw">@VincentVW</a> to restrict values used in percentage attributes to the set boundaries (0 - 100).</p>
+<p>This change would apply to the following attributes:</p>
+<ul>
+<li><code>iati-activities/iati-activity/recipient-country/@percentage</code></li>
+<li><code>iati-activities/iati-activity/recipient-region/@percentage</code></li>
+<li><code>iati-activities/iati-activity/sector/@percentage</code></li>
+<li><code>iati-activities/iati-activity/capital-spend/@percentage</code></li>
+<li><code>iati-activities/iati-activity/country-budget-items/budget-item/@percentage</code></li>
+</ul>
+<p>The IATI Technical Team are considering this to be a bug fix, given that the definition for these attributes typically reads</p>
+<blockquote>
+<p>Content must be a positive decimal number between 0 and 100, with no percentage sign.</p>
+</blockquote>
+<p>Therefore, and <strong>unless an objection is received we plan to implement this pull request for version 2.02 of the Activity Standard after a one week notice period (expiring on Sunday 13 August 2017)</strong>.  Where appropriate, this will also be back-ported to prior versions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983/1</link>
+        <pubDate>Fri, 04 Aug 2017 16:11:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-983-1</guid>
+        <source url="https://discuss.iatistandard.org/t/bug-fix-implementing-checks-on-percentage-attributes/983.rss">Bug fix: Implementing checks on @percentage attributes</source>
+      </item>
+  </channel>
+</rss>

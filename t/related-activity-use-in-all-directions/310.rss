@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Related Activity - use in all directions?</title>
+    <link>https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310</link>
+    <description>Hello
+
+If a Parent activity declares a Child - does the Child have to also point to the Parent?
+
+Hope you see what I mean - we might want to be clearer about this in guidance.  In other words - should the RelatedActivity code be present within an activity *whenever* it has a relation, or is it suffice to express this once, somewhere within a dataset....</description>
+    
+    <lastBuildDate>Tue, 28 Jul 2015 08:02:18 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Related Activity - use in all directions?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/michaelmedley">@MichaelMedley</a> - that’s a good example, especially in terms of the use of hierarchies.  Hence, you <em>rely</em> on <code>related-activity</code> element to gather the data, it seems?</p>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> thanks.  Again - that’s a useful use case, in terms of sibling activities.</p>
+          <p><a href="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/6</link>
+        <pubDate>Tue, 28 Jul 2015 08:02:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-310-6</guid>
+        <source url="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310.rss">Related Activity - use in all directions?</source>
+      </item>
+      <item>
+        <title>Related Activity - use in all directions?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p><em>(apologies - I drafted this last week, but it didnt seem to post)</em></p>
+<p>Thanks <a class="mention" href="/u/wendy">@Wendy</a>.  Yes, I agree.</p>
+<p>I’ve made a suggested change to the guidance note that appears at: <a href="http://iatistandard.org/201/activity-standard/overview/linked-documents/" rel="nofollow noopener">http://iatistandard.org/201/activity-standard/overview/linked-documents/</a></p>
+<p>Here’s the change: <a href="https://github.com/IATI/IATI-Extra-Documentation/pull/302/files" rel="nofollow noopener">https://github.com/IATI/IATI-Extra-Documentation/pull/302/files</a> - not sure if <a class="mention" href="/u/dalepotter">@dalepotter</a> might also want to pull this into other versions though too…</p>
+<p>Additionally, the definition text that appears in the schema may need some attention:</p>
+<blockquote>
+<p>Another separately reported IATI activity that is related to this one. The ‘type’ attribute describes the type of relationship: eg. parent, child, multifunded …</p>
+</blockquote>
+<p>“Separately” seems to imply that this might be by another publisher…</p>
+          <p><a href="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/5</link>
+        <pubDate>Tue, 28 Jul 2015 07:59:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-310-5</guid>
+        <source url="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310.rss">Related Activity - use in all directions?</source>
+      </item>
+      <item>
+        <title>Related Activity - use in all directions?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>For what it’s worth, we point siblings both ways.  We don’t have parent-child relationships, but if we did I expect we would also report them both ways.</p>
+          <p><a href="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/4</link>
+        <pubDate>Mon, 27 Jul 2015 18:34:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-310-4</guid>
+        <source url="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310.rss">Related Activity - use in all directions?</source>
+      </item>
+      <item>
+        <title>Related Activity - use in all directions?</title>
+        <dc:creator><![CDATA[MichaelMedley]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s an example (and please correct me if I’m wrong or missing a better approach). I want to make a list of iati-activitys for recipient country C which includes links to project documents (using the document-link element). To get a list of iati-activitys for this country I can make a simple query in the IATI Datastore API. But this does not necessarily capture the document links. DFID, for instance, often (if not always) puts document links in activity records of hierarchy 1 but does not state the recipient country in records of hierarchy 1. The recipient country is stated in the records of child activities, but these records do not themselves include document links. Therefore, after doing my simple Datastore API query, I will probably depend on the related-activity element in each returned record to point me to parent records which may include document links, and which I will have to search using an additional process.</p>
+          <p><a href="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/3</link>
+        <pubDate>Thu, 23 Jul 2015 01:40:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-310-3</guid>
+        <source url="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310.rss">Related Activity - use in all directions?</source>
+      </item>
+      <item>
+        <title>Related Activity - use in all directions?</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven I think we would recommend that all activities that are related should always make reference to all of their activity relations. I am thinking that if a data user was for whatever reason accessing the child activity directly then they would not be aware of it relationship to the parent if it was not referenced. Hope that makes sense</p>
+          <p><a href="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/2</link>
+        <pubDate>Wed, 22 Jul 2015 10:19:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-310-2</guid>
+        <source url="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310.rss">Related Activity - use in all directions?</source>
+      </item>
+      <item>
+        <title>Related Activity - use in all directions?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello</p>
+<p>If a Parent activity declares a Child - does the Child have to also point to the Parent?</p>
+<p>Hope you see what I mean - we might want to be clearer about this in guidance.  In other words - should the RelatedActivity code be present within an activity <em>whenever</em> it has a relation, or is it suffice to express this once, somewhere within a dataset…</p>
+          <p><a href="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310/1</link>
+        <pubDate>Tue, 21 Jul 2015 15:00:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-310-1</guid>
+        <source url="https://discuss.iatistandard.org/t/related-activity-use-in-all-directions/310.rss">Related Activity - use in all directions?</source>
+      </item>
+  </channel>
+</rss>

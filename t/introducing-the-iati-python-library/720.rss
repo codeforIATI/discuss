@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Introducing the IATI Python Library</title>
+    <link>https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720</link>
+    <description>Our recent post on [IATI Systems Design &amp; Architecture](http://discuss.iatistandard.org/t/iati-systems-design-architecture-proposal/709) outlined the long-term plan to migrate core IATI products to a more resilient and sustainable technology setup.  A key part of this new architecture is the development of a Python library - this library will help the IATI Technical Team, as well as tool builders and software developers to more easily work with IATI data and build end-user tools.
+
+## Purpose
+The Python library will contain IATI functionality that is currently replicated across many of our software projects - as shown by the number of standalone tools in our [current architecture map](http://discuss.iatistandard.org/uploads/default/original/1X/acd7f3cdbde42af40101cf242d062ad81d2c5fa5.png).  Alongside our tools, there are an numerous third-party tools (including [OIPA](https://www.oipa.nl/home), [IATI Studio](https://www.iatistudio.com/), [AidSight](http://aidsight.org) and many others) which also reproduce very similar functionality (e.g. fetching and loading files, data validation, extracting data, etc).
+
+The IATI Technical Team will use this new library, with core IATI services refactored over time to use the library as a base for common tasks.  For others, it is intended that the library will make it easier to use IATI data by removing the need to reinvent the wheel before moving onto implementing innovative functionality, performing analysis of data or simply accessing data for data visualisations.
+
+The library will be distributed publicly using the [PyPi python package index](https://pypi.python.org/pypi), therefore allowing software developers to install using the `pip` package manager.
+
+
+## Long-term functionality
+
+Current plans for library components include:
+
+- **iati.core** - will allow programmatic access to SSOT constructs - i.e. the schema, codelists, rulesets
+
+- **iati.validate** - an API to validate IATI XML against the schema, codelists and rulesets.  The new validator API and web user-interface will heavily use this functionality
+ 
+- **iati.fetch** - functionality will be included to download individual raw IATI XML datasets (i.e as a wrapper around the [IATI Registry API](https://www.iatiregistry.org/registry-api)) links to queryable data (i.e. as a wrapper around the [Datastore API](http://datastore.iatistandard.org/docs/))
+
+- **iati.convert** -  (under exploration) conversion between versions of the IATI Standard or from XML to CSV
+
+
+## Current development
+
+The IATI Technical Team been working to develop the first stages of this library for a few weeks, focussing on `iati.core`. 
+
+Following overwhelming interest and discussion from those we have spoken to directly, we are today making this project open source: https://github.com/IATI/iati.core
+
+Current [usage examples are provided](https://github.com/IATI/iati.core#usage) in the project readme. However, please note, at present **the contents of this library is at best unstable, and much is experimental**. As such, it must be expected that its contents and API will change over the short-to-medium term future. `Warning` sections in code docstrings help flag up some particular known stability concerns. `Todo` sections describe known missing or incorrect features.
+
+At present the library (`core`) represents the contents of the [IATI Single Source of Truth (SSOT)](https://github.com/iati/iati-standard-ssot). It is able to handle a single version of the Standard (2.02 by default, although it is possible to load any IATI XML dataset).
+
+It is planned that different sections of the library, such as `validate` are split into their own repositories. They exist within this repository at present to help speed up the iteration process.
+
+This code is provided for illustrative purposes, as we are aware that some developers are about to imminently begin work on new applications to work with IATI data. We hope that an insight into our current development will inform technology choices, encourage future adoption of the library and prevent developers from again needing to reproduce common functionality, therefore saving time.
+
+## Developer feedback and contributions welcome
+**Feedback, suggestions, use-case descriptions, code reviews, bug reports and so on are much appreciated** - it&#39;s far better to know of issues earlier in the development cycle. Please use [the code repository’s Issues page](https://github.com/IATI/iati.core/issues) for this.  
+
+Furthermore, if the direction of the library suggests development time can be saved on your projects, we would encourage you to use some of the time saved to be used to contribute to future development - **please post below if you are at all interested in helping this library**, and we can follow up direct.</description>
+    
+    <lastBuildDate>Thu, 25 Jan 2018 10:20:37 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Introducing the IATI Python Library</title>
+        <dc:creator><![CDATA[johnbritt429]]></dc:creator>
+        <description><![CDATA[
+            <p>Currently all IATI code is Python 2, and in general isn’t Python 3. However, we have started some Python 3 features (e.g. the Python 3 print statement) in new code to make a future transition easier.</p>
+<p>Source: <a href="http://iatistandard.org/202/developer/code-python/" rel="nofollow noopener">http://iatistandard.org/202/developer/code-python/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/7</link>
+        <pubDate>Thu, 25 Jan 2018 10:20:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-720-7</guid>
+        <source url="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720.rss">Introducing the IATI Python Library</source>
+      </item>
+      <item>
+        <title>Introducing the IATI Python Library</title>
+        <dc:creator><![CDATA[mcarans]]></dc:creator>
+        <description><![CDATA[
+            <p>I think that humanitarian organisations using IATI would find it useful and time saving to be able to publish datasets directly to HDX and I would be happy to work with you on that.</p>
+<p>I would also like to encourage that we look at interoperability in the area where they converge between IATI and the <a href="http://hxlstandard.org/" rel="nofollow noopener">Humanitarian Exchange Language (HXL)</a>.</p>
+<aside class="quote no-group quote-modified" data-post="1" data-topic="720" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"> dalepotter:</div>
+<blockquote>
+<blockquote>
+<p>iati.convert - (under exploration) conversion between versions of the IATI Standard or from XML to CSV</p>
+</blockquote>
+</blockquote>
+</aside>
+<p>The above would be very helpful for that interoperability.</p>
+<p>Sorry for multiple posts but I am only allowed one link per post!</p>
+          <p><a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/6</link>
+        <pubDate>Fri, 03 Mar 2017 11:05:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-720-6</guid>
+        <source url="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720.rss">Introducing the IATI Python Library</source>
+      </item>
+      <item>
+        <title>Introducing the IATI Python Library</title>
+        <dc:creator><![CDATA[mcarans]]></dc:creator>
+        <description><![CDATA[
+            <p>An example of such feedback on our <a href="https://github.com/OCHA-DAP/hdx-python-api" rel="nofollow noopener">Python library</a> is “The HDX API Python wrapper is great for our use case and well documented.”</p>
+<p>We have found that key to there being confidence in the library is a high level of test coverage and plenty of documentation including API docs.</p>
+          <p><a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/5</link>
+        <pubDate>Fri, 03 Mar 2017 11:04:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-720-5</guid>
+        <source url="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720.rss">Introducing the IATI Python Library</source>
+      </item>
+      <item>
+        <title>Introducing the IATI Python Library</title>
+        <dc:creator><![CDATA[mcarans]]></dc:creator>
+        <description><![CDATA[
+            <p>I think that this is an excellent initiative and will be welcomed by the organisations who wish to use the IATI standard, particularly ones with greater technical capability. This is our experience with the <a href="https://data.humdata.org/" rel="nofollow noopener">Humanitarian Data Exchange (HDX)</a> where we have received positive feedback from organisations.</p>
+          <p><a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/4</link>
+        <pubDate>Fri, 03 Mar 2017 11:03:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-720-4</guid>
+        <source url="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720.rss">Introducing the IATI Python Library</source>
+      </item>
+      <item>
+        <title>Introducing the IATI Python Library</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Great idea! Will make IATI accessible to a large group of Python developers.</p>
+          <p><a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/3</link>
+        <pubDate>Wed, 22 Feb 2017 14:21:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-720-3</guid>
+        <source url="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720.rss">Introducing the IATI Python Library</source>
+      </item>
+      <item>
+        <title>Introducing the IATI Python Library</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Awesome! Yeah, getting it on PyPi &amp;&amp; readthedocs would be great, but this is already super useful. Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/2</link>
+        <pubDate>Fri, 17 Feb 2017 16:24:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-720-2</guid>
+        <source url="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720.rss">Introducing the IATI Python Library</source>
+      </item>
+      <item>
+        <title>Introducing the IATI Python Library</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Our recent post on <a href="http://discuss.iatistandard.org/t/iati-systems-design-architecture-proposal/709">IATI Systems Design &amp; Architecture</a> outlined the long-term plan to migrate core IATI products to a more resilient and sustainable technology setup.  A key part of this new architecture is the development of a Python library - this library will help the IATI Technical Team, as well as tool builders and software developers to more easily work with IATI data and build end-user tools.</p>
+<h2>Purpose</h2>
+<p>The Python library will contain IATI functionality that is currently replicated across many of our software projects - as shown by the number of standalone tools in our <a href="http://discuss.iatistandard.org/uploads/default/original/1X/acd7f3cdbde42af40101cf242d062ad81d2c5fa5.png">current architecture map</a>.  Alongside our tools, there are an numerous third-party tools (including <a href="https://www.oipa.nl/home" rel="nofollow noopener">OIPA</a>, <a href="https://www.iatistudio.com/" rel="nofollow noopener">IATI Studio</a>, <a href="http://aidsight.org" rel="nofollow noopener">AidSight</a> and many others) which also reproduce very similar functionality (e.g. fetching and loading files, data validation, extracting data, etc).</p>
+<p>The IATI Technical Team will use this new library, with core IATI services refactored over time to use the library as a base for common tasks.  For others, it is intended that the library will make it easier to use IATI data by removing the need to reinvent the wheel before moving onto implementing innovative functionality, performing analysis of data or simply accessing data for data visualisations.</p>
+<p>The library will be distributed publicly using the <a href="https://pypi.python.org/pypi" rel="nofollow noopener">PyPi python package index</a>, therefore allowing software developers to install using the <code>pip</code> package manager.</p>
+<h2>Long-term functionality</h2>
+<p>Current plans for library components include:</p>
+<ul>
+<li>
+<p><strong>iati.core</strong> - will allow programmatic access to SSOT constructs - i.e. the schema, codelists, rulesets</p>
+</li>
+<li>
+<p><strong>iati.validate</strong> - an API to validate IATI XML against the schema, codelists and rulesets.  The new validator API and web user-interface will heavily use this functionality</p>
+</li>
+<li>
+<p><strong>iati.fetch</strong> - functionality will be included to download individual raw IATI XML datasets (i.e as a wrapper around the <a href="https://www.iatiregistry.org/registry-api" rel="nofollow noopener">IATI Registry API</a>) links to queryable data (i.e. as a wrapper around the <a href="http://datastore.iatistandard.org/docs/" rel="nofollow noopener">Datastore API</a>)</p>
+</li>
+<li>
+<p><strong>iati.convert</strong> -  (under exploration) conversion between versions of the IATI Standard or from XML to CSV</p>
+</li>
+</ul>
+<h2>Current development</h2>
+<p>The IATI Technical Team been working to develop the first stages of this library for a few weeks, focussing on <code>iati.core</code>.</p>
+<p>Following overwhelming interest and discussion from those we have spoken to directly, we are today making this project open source: <a href="https://github.com/IATI/iati.core" rel="nofollow noopener">https://github.com/IATI/iati.core</a></p>
+<p>Current <a href="https://github.com/IATI/iati.core#usage" rel="nofollow noopener">usage examples are provided</a> in the project readme. However, please note, at present <strong>the contents of this library is at best unstable, and much is experimental</strong>. As such, it must be expected that its contents and API will change over the short-to-medium term future. <code>Warning</code> sections in code docstrings help flag up some particular known stability concerns. <code>Todo</code> sections describe known missing or incorrect features.</p>
+<p>At present the library (<code>core</code>) represents the contents of the <a href="https://github.com/iati/iati-standard-ssot" rel="nofollow noopener">IATI Single Source of Truth (SSOT)</a>. It is able to handle a single version of the Standard (2.02 by default, although it is possible to load any IATI XML dataset).</p>
+<p>It is planned that different sections of the library, such as <code>validate</code> are split into their own repositories. They exist within this repository at present to help speed up the iteration process.</p>
+<p>This code is provided for illustrative purposes, as we are aware that some developers are about to imminently begin work on new applications to work with IATI data. We hope that an insight into our current development will inform technology choices, encourage future adoption of the library and prevent developers from again needing to reproduce common functionality, therefore saving time.</p>
+<h2>Developer feedback and contributions welcome</h2>
+<p><strong>Feedback, suggestions, use-case descriptions, code reviews, bug reports and so on are much appreciated</strong> - it’s far better to know of issues earlier in the development cycle. Please use <a href="https://github.com/IATI/iati.core/issues" rel="nofollow noopener">the code repository’s Issues page</a> for this.</p>
+<p>Furthermore, if the direction of the library suggests development time can be saved on your projects, we would encourage you to use some of the time saved to be used to contribute to future development - <strong>please post below if you are at all interested in helping this library</strong>, and we can follow up direct.</p>
+          <p><a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720/1</link>
+        <pubDate>Fri, 17 Feb 2017 12:29:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-720-1</guid>
+        <source url="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720.rss">Introducing the IATI Python Library</source>
+      </item>
+  </channel>
+</rss>

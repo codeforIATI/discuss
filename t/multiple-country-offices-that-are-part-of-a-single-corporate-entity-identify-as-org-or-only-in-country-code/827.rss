@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</title>
+    <link>https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827</link>
+    <description>Hi all,
+
+I&#39;m looking for some guidance on how to report transfers of funds to country offices that are part of a single corporate entity. 
+
+IRC UK disburses money to IRC Inc. All IRC country offices that implement projects are a part of the same corporate structure - IRC Inc. - and thus share the same organisation identifier. Therefore, according the IRC IATI data, money is transferred to a range of countries (using the Country Code) but almost exclusively to one organisation (with a US corporate identifier).
+
+Perhaps it is not a problem (as we can identify funds to countries), but it seems to undermine traceability if we cannot represent a relationship between organisations using the Reporting-org or Transaction elements. 
+
+Can we identify individual country offices by creating IATI org identifiers that only correspond to IATI, e.g US-EIN-13-5660870-SL (IRC Inc. org id + country code)?
+
+Are there any other tips on how to go about this? Happy to explain further if it&#39;s not clear.
+
+Thanks,
+
+Daniel</description>
+    
+    <lastBuildDate>Fri, 09 Jun 2017 15:07:46 +0000</lastBuildDate>
+    <category>Traceability</category>
+    <atom:link href="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>This short twitter thread (and article linked within, which contains draft definitions) may be of interest<br>
+<aside class="onebox twitterstatus">
+  <header class="source">
+      <a href="https://twitter.com/manugupta2412/status/871772897546842112" target="_blank" rel="nofollow noopener">twitter.com</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://pbs.twimg.com/profile_images/1268851792487440384/sysEL6bb_400x400.jpg" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h4><a href="https://twitter.com/manugupta2412/status/871772897546842112" target="_blank" rel="nofollow noopener">Manu Gupta (manugupta2412)</a></h4>
+
+<div class="tweet"> Msg is clear <a href="https://twitter.com/WiltonPark" target="_blank" rel="nofollow noopener">@WiltonPark</a> - Int'l orgs registering themselves as national orgs does not qualify them as 'local' orgs. Period. <a href="https://twitter.com/search?q=%23Localizeaid" target="_blank" rel="nofollow noopener">#Localizeaid</a>
+</div>
+
+<div class="date">
+  <a href="https://twitter.com/manugupta2412/status/871772897546842112" target="_blank" rel="nofollow noopener">4:57 PM - 5 Jun 2017</a>
+    <span class="like">
+      <svg viewBox="0 0 512 512" width="14px" height="16px" aria-hidden="true">
+        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+      </svg> 13
+    </span>
+    <span class="retweet">
+      <svg viewBox="0 0 640 512" width="14px" height="16px" aria-hidden="true">
+        <path d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path>
+      </svg> 11
+    </span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/9</link>
+        <pubDate>Fri, 09 Jun 2017 15:07:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-827-9</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827.rss">Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</source>
+      </item>
+      <item>
+        <title>Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>As this post relates to traceability, I am moving this post into Community Zone - Traceability</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/8</link>
+        <pubDate>Thu, 25 May 2017 09:46:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-827-8</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827.rss">Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</source>
+      </item>
+      <item>
+        <title>Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree with most above - the legal entity should determine whether a “country office” needs/gets its own identifier. This has been quite difficult in GAC, but we are slowly getting rid of the duplicates (mostly UN country offices in our case) in our vendor system.</p>
+<p>A related issue though is proper coding of (and use of the data on) the organisation type. People are tempted to code the country office as a local NGO even though the legal entity is based in the UK or US (or Canada).</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/7</link>
+        <pubDate>Mon, 08 May 2017 20:44:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-827-7</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827.rss">Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</source>
+      </item>
+      <item>
+        <title>Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</title>
+        <dc:creator><![CDATA[DanielMackenzie]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, this is some very useful feedback. Thanks to all.</p>
+<p>I’ll keep asking around on my end, but based on what has been written above, we will seek to use the Transaction element to emphasise the country office that has received funds. If it is considered appropriate practice to use the Recipient Country attribute, we can start doing so. Otherwise, Activity Identifiers will be enough.</p>
+<p>Any other thoughts, please keep them coming.</p>
+<p>Thanks,</p>
+<p>Daniel</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/6</link>
+        <pubDate>Fri, 05 May 2017 08:12:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-827-6</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827.rss">Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</source>
+      </item>
+      <item>
+        <title>Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>But - the question implies that there are reasons to report the flow of funds from one office to the other. I take that as an indication that they are actually individual, legal entities and should be individual IATI reporters. If it is one and the same organisation, in legal and accounting terms, it is questionable to report it as flows. We certainly doesn’t report transfers between our own bank-accounts …</p>
+<p>Thus, there might be another relevant question: If several, legally independent organisations do regard themselves as members of an international family to a degree where they consider themselves as really one organisation - could or should that be visible in IATI in other ways than a frequent transfer og funds among them?</p>
+<p>Yours OJ</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/5</link>
+        <pubDate>Thu, 04 May 2017 14:28:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-827-5</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827.rss">Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</source>
+      </item>
+      <item>
+        <title>Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Also, although the money flows through IRC Inc and country offices are associated members of IRC Inc, are they legal entities in their own right in the country where they are based? I know of other organisations where this is the case as it is illegal to operate in some countries without an official registration/status. If they do have legal status then they can have an IATI identifier of their own.</p>
+<p>I’d agree re Steven and Tim re linkages at the activity level.</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/4</link>
+        <pubDate>Thu, 04 May 2017 09:00:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-827-4</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827.rss">Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</source>
+      </item>
+      <item>
+        <title>Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>Agreed that organisation identifiers are intended to identify the legal organisation: so if the money flows through the single legal entity, then they shouldn’t be ‘overloaded’ with branch information etc.</p>
+<p>Traceability looks like it should happen in this case via activity-&gt;activity linkages, rather than organisation-&gt;organisation linkages</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/3</link>
+        <pubDate>Thu, 04 May 2017 08:27:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-827-3</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827.rss">Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</source>
+      </item>
+      <item>
+        <title>Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/danielmackenzie">@DanielMackenzie</a></p>
+<p>Good question.  I’ve seen this with other organisations - and I know people such as <a class="mention" href="/u/pelleaardema">@pelleaardema</a> <a class="mention" href="/u/rolfkleef">@rolfkleef</a> &amp; <a class="mention" href="/u/sjohns">@SJohns</a> will have ideas on such structures</p>
+<p>Re:</p>
+<blockquote>
+<p>US-EIN-13-5660870-SL (IRC Inc. org id + country code)</p>
+</blockquote>
+<p>I’d suggest this “breaks” the organisation ID protocol , as there isn’t a list of country offices available via the US-EIN list?</p>
+<p>So, if the corporate entity is always US-EIN-13-5660870 then I don’t see a problem.  <a class="mention" href="/u/johnadams">@JohnAdams</a> <a class="mention" href="/u/timdavies">@TimDavies</a> - agree?</p>
+<p>You could increase and improve traceability potential via use of activity identifiers that funds are disbursed to (when they are published), though?</p>
+<p>Additionally, you could also use the recipient-country element within a transaction to  clearly signify the intended destination.  A downside of this, is I’m not too aware of how widespread this aspect of IATI is in use (via d-portal for example)</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/2</link>
+        <pubDate>Thu, 04 May 2017 08:06:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-827-2</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827.rss">Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</source>
+      </item>
+      <item>
+        <title>Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</title>
+        <dc:creator><![CDATA[DanielMackenzie]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>I’m looking for some guidance on how to report transfers of funds to country offices that are part of a single corporate entity.</p>
+<p>IRC UK disburses money to IRC Inc. All IRC country offices that implement projects are a part of the same corporate structure - IRC Inc. - and thus share the same organisation identifier. Therefore, according the IRC IATI data, money is transferred to a range of countries (using the Country Code) but almost exclusively to one organisation (with a US corporate identifier).</p>
+<p>Perhaps it is not a problem (as we can identify funds to countries), but it seems to undermine traceability if we cannot represent a relationship between organisations using the Reporting-org or Transaction elements.</p>
+<p>Can we identify individual country offices by creating IATI org identifiers that only correspond to IATI, e.g US-EIN-13-5660870-SL (IRC Inc. org id + country code)?</p>
+<p>Are there any other tips on how to go about this? Happy to explain further if it’s not clear.</p>
+<p>Thanks,</p>
+<p>Daniel</p>
+          <p><a href="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827/1</link>
+        <pubDate>Tue, 02 May 2017 10:04:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-827-1</guid>
+        <source url="https://discuss.iatistandard.org/t/multiple-country-offices-that-are-part-of-a-single-corporate-entity-identify-as-org-or-only-in-country-code/827.rss">Multiple country offices that are part of a single corporate entity - identify as org or only in country code?</source>
+      </item>
+  </channel>
+</rss>

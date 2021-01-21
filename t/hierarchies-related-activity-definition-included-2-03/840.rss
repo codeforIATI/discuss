@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hierarchies - related-activity definition (included 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840</link>
+    <description>This proposal is part of the [2.03 upgrade process](https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838), please comment by replying below.
+
+**Standard**
+Activity
+
+**Schema Object**
+iati-activity/related-activity
+
+**Type of Change**
+Modify Definition
+
+**Issue**
+Users of data should always be able to detect the hierarchical relationship between activities through inspection of the related activity element.
+
+**Proposal**
+Modify definition of related-activity from:
+&lt;ul&gt;&lt;ul&gt;
+“Another separately reported IATI activity that is related to this one. The ‘type’ attribute describes the type of relationship: eg. parent, child, multifunded …”
+&lt;/ul&gt;&lt;/ul&gt;
+to:
+&lt;ul&gt;&lt;ul&gt;
+“Another separately reported IATI activity that is related to this one. The ‘type’ attribute describes the type of relationship: (eg. parent, child, multifunded. It is strongly recommended that linkage between activities in an hierarchical group should always be managed by use of this element with @type of 1 (parent) or 2 (child).”
+&lt;/ul&gt;&lt;/ul&gt;
+**Standards Day**
+Accepted
+
+**Links**
+Previous discussions - https://discuss.iatistandard.org/t/tech-paper-hierarchies/539/21</description>
+    
+    <lastBuildDate>Wed, 25 Oct 2017 13:51:28 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hierarchies - related-activity definition (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840/5</link>
+        <pubDate>Wed, 25 Oct 2017 13:51:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-840-5</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840.rss">Hierarchies - related-activity definition (included 2.03)</source>
+      </item>
+      <item>
+        <title>Hierarchies - related-activity definition (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal has been been included in the 2.03 upgrade. It can be viewed in the following two Discuss posts:</p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Proposal of 2.03 Content</a></p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Technical Proposal for the 2.03 Upgrade</a></p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840/4</link>
+        <pubDate>Wed, 25 Oct 2017 13:51:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-840-4</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840.rss">Hierarchies - related-activity definition (included 2.03)</source>
+      </item>
+      <item>
+        <title>Hierarchies - related-activity definition (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been included for consideration in the formal 2.03 proposal</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840/2</link>
+        <pubDate>Fri, 16 Jun 2017 15:14:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-840-2</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840.rss">Hierarchies - related-activity definition (included 2.03)</source>
+      </item>
+      <item>
+        <title>Hierarchies - related-activity definition (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal is part of the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p><strong>Schema Object</strong><br>
+iati-activity/related-activity</p>
+<p><strong>Type of Change</strong><br>
+Modify Definition</p>
+<p><strong>Issue</strong><br>
+Users of data should always be able to detect the hierarchical relationship between activities through inspection of the related activity element.</p>
+<p><strong>Proposal</strong><br>
+Modify definition of related-activity from:</p>
+<ul><ul>
+“Another separately reported IATI activity that is related to this one. The ‘type’ attribute describes the type of relationship: eg. parent, child, multifunded …”
+</ul></ul>
+to:
+<ul><ul>
+“Another separately reported IATI activity that is related to this one. The ‘type’ attribute describes the type of relationship: (eg. parent, child, multifunded. It is strongly recommended that linkage between activities in an hierarchical group should always be managed by use of this element with @type of 1 (parent) or 2 (child).”
+</ul></ul>
+**Standards Day**
+Accepted
+<p><strong>Links</strong><br>
+Previous discussions - <a href="https://discuss.iatistandard.org/t/tech-paper-hierarchies/539/21">Tech Paper: Hierarchies</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840/1</link>
+        <pubDate>Fri, 12 May 2017 10:32:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-840-1</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840.rss">Hierarchies - related-activity definition (included 2.03)</source>
+      </item>
+  </channel>
+</rss>

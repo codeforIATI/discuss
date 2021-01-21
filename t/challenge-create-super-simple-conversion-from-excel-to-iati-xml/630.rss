@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+    <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630</link>
+    <description>My **Challenge** to the IATI community: Are you interested in pitching  for seed funds to develop something super human-friendly that converts Excel worksheets into IATI XML with no fuss? 
+
+So this is my concept: the source data from the user would be in an Excel workbook with multiple worksheets.Pretty much every person I work with in organisations uses Excel at some point, so the skills are already there - no learning new tools. I also think **workbooks** are more human-friendly way to work than one massive Excel sheet/CSV file. And it&#39;s way easier to collect data from different systems into different worksheets in one workbook. 
+
+The source Excel workbook could be based on a downloadable template so it is pre-populated with the right elements/column headings to make the mapping go more smoothly.  Or you could tell users the headings to use in their workbook. Some systems eg. SAGE also allow you to export data to sheets with alias field names that could replicate the required headings.
+
+Then the &#39;something&#39; would take all the data across all the worksheets (which probably have the activity IDs in the same field on every worksheet to link the data) and map it to the IATI elements.
+
+It will create the XML following the schema (it needs to produce data to the latest IATI Standard version without the user even knowing what a &#39;version&#39; is) and validate it. So the user will get the XML and the &#39;green ticks of perfection&#39; with little to no effort.
+
+And then all the publisher has to do is host the XML data on their website and upload the link to the Registry. Job done.
+
+Oh yes, and the something also needs to be ...
+
+* available both online and as a download/app to use offline (but with auto-check for updates when the user is also connected to the internet). 
+
+* available in French and Spanish and Dutch/Flemish. 
+
+* ideally would also work with OpenOffice spreadsheets and Google Sheets for the online version (although the majority of users will be on Excel).
+
+* usable on mobile devices.
+
+* open source and stand alone, ie not embedded into another tool. 
+
+* sit alongside other publishing software that is currently available, to give publishers a great choice of options.
+
+The &#39;something&#39; would need to have a clear business model - so it would may sit alongside/complement other products you already offer, for example. I think it would need to be subsidised initially by a/some donors so that it can be offered at little or no cost for small organisations. But I can also see the potential that medium to large organisations would pay you to integrate it into their processes.
+
+What do you think? Any takers?</description>
+    
+    <lastBuildDate>Fri, 31 Mar 2017 17:18:59 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve now written up our approach to Spreadsheet to IATI conversion, as introduced in my lightening talk at the TAG:</p>
+<aside class="quote quote-modified" data-post="1" data-topic="777">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/bjwebb/40/7_1.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777">Flatten-tool: New approach for Spreadsheet to IATI conversion</a> <a class="badge-wrapper  box" href="/c/community-zone"><span class="badge-category-bg" style="background-color: #12A89D;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="This is where to post your questions, queries or requests for support from the IATI Community.">Community Zone</span></a>
+  </div>
+  <blockquote>
+    This post is mostly a write up of the lightening talk I gave at the TAG, with some additional info on how the work is progressing. 
+
+<a href="http://csv2iati.iatistandard.org/" rel="nofollow noopener">CSV2IATI</a> is going to be retired this year, so at <a href="http://opendataservices.coop/" rel="nofollow noopener">Open Data Services Co-operative</a> we've been looking at alternate approaches for converting spreadsheets to IATI XML. 
+
+For <a href="http://standard.open-contracting.org/" rel="nofollow noopener">OCDS (Open Contracting Data Standard)</a> and <a href="http://www.threesixtygiving.org/standard/" rel="nofollow noopener">360Giving</a>, we built <a href="https://github.com/OpenDataServices/flatten-tool" rel="nofollow noopener">flatten-tool</a>.  This is a command line tool, and python library, for converting from flat spreadsheet formats to nested structured form…
+  </blockquote>
+</aside>
+
+<p>The command line tool is currently usable offline, but I would concede that’s not super simple. We’re working on a simple web interface though, but that won’t be available offline.</p>
+<p>Interested to discuss this further, to see if we could better address <a class="mention" href="/u/sjohns">@SJohns</a> bullet points. One approach we discussed very briefly at the TAG, was whether <a class="mention" href="/u/mikesmith">@mikesmith</a>’s tool and ours could be made more compatible.</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/14</link>
+        <pubDate>Fri, 31 Mar 2017 17:18:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-14</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>Just to chip in here. As part of our development for the ZOOM project (a data analysis platform built for Aidsfonds in cooperation with HumanityX -Leiden University-) we are in the final stages of the Datamapper component: a (lots of different types of) CSV convertor to the ZOOM data model. ZOOM is built on top of the IATI Studio core, which runs on top of the OIPA Datastore, so we’re trying to <em>re-use</em> existing technology.</p>
+<p>With regards to the ZOOM Datamapper component, I’d be happy to see how we can amend that conversion process so it could fit a ‘generic’ CSV file for organisations to publish to IATI. In this setup we have many moving parts: data input, data normalisation, data storage and data output (API).</p>
+<p>Seeing how ZOOM will touch some of the IATI Studio UI elements and OIPA, I could see the following scenario play out:</p>
+<p><strong>Datamapper (ZOOM data conversion component)</strong><br>
+CSV input (different types)</p>
+<p><strong>OIPA Datastore (input/conversion/storage/API)</strong><br>
+IATI XML input</p>
+<p><strong>IATI Studio</strong><br>
+IATI Publisher component (Manage IATI data/connect to Registry etc.)</p>
+<p>I’d be happy to have a call on the ZOOM Datamapper for:</p>
+<ul>
+<li>CSV ‘IATI’ Ready files for input</li>
+<li>Map CSV ‘IATI’ to OIPA/IATI Studio</li>
+<li>Publish the converted CSV ‘IATI’ XML file to the Registry.</li>
+<li>Continue &amp; repeat</li>
+</ul>
+<p>Can we setup a call and see how we would like to move on this specific subject?</p>
+<p>Thanks, Siem</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/13</link>
+        <pubDate>Mon, 20 Mar 2017 09:58:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-13</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/garybrough">@garybrough</a> , great to hear that you are also looking into how to support your partners to publish - it would be great to hear how you get on - maybe you could post a new topic with your progress?</p>
+<p>To answer your specific questions, yep all changes can be done in the spreadsheets, no need to change any macros etc.:</p>
+<ul>
+<li>you can just add any additional columns into any of the sheets and it will write the new element under the corresponding IATI element listed in cell C1 of each sheet (most of the additional elements you might want to add are on the main sheet “Activity Main Information”, but you might also want to add to others such as transactions etc. - you can use the navigation tree on the left hand side of <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/</a> to figure out where a particular element should go)</li>
+<li>for multiple rows per activity you add another sheet following the same pattern as the other sheets - I’ve already done this for documents so thought I’d attach it incase it is of use (just copy the whole sheet into the tool): <a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/fae020796ea3b07daa3b91c7620e8e2012f9274b.xlsx">IATIDocuments.xlsx</a> (16.4 KB)</li>
+</ul>
+<p>Hope that helps!</p>
+<p>Mike</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/12</link>
+        <pubDate>Thu, 16 Mar 2017 12:26:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-12</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[garybrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Mike - Thanks for this, very useful tool.</p>
+<p>We’re trying to commit to publishing as much data as we can manage, am I right in thinking we can just add the additional columns to the main info tab to accommodate data for which you select one variable per activity (or where the split is 100%)?</p>
+<p>If there are multiple rows, per activity (e.g. documents, conditions) can that be added without changes to the macro?</p>
+<p>We’re also starting to look at the impact of DFID requirements and how we might support our partners in publishing. This could be a good starting place for that so thanks again for sharing.</p>
+<p>Gary</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/11</link>
+        <pubDate>Fri, 10 Mar 2017 10:41:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-11</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/rolfkleef">@rolfkleef</a> - sounds like some great progress with Aids Fonds.<br>
+Please do consider the tool I mentioned - it could save some effort in having to do your second bullet as your first bullet sounds compatible with the tool (and we used to do the second bullet before we made the tool) - <strong>always happy to walk people through the code - especially if it means we build a tool for the sector rather than just one-offs for specific organisations!</strong></p>
+<p>I agree that where possible one should aim to fix data quality issues at source and not set up special downstream IATI spreadsheets.  We’ve actually used our IATI reporting process to highlight where we need to pinpoint and fix the problems in our source systems, then have slowly migrated the fixes back up the chain (using the data driven evidence (and business case!) that we didn’t have before our IATI reporting process <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> ).  The problem is, practically we’ve found there will always be some manual fixes you just can’t/ shouldn’t propagate back to source (not worth the investment to fix the source system just for IATI!).  More than happy to discuss more!</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/10</link>
+        <pubDate>Wed, 01 Feb 2017 19:53:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-10</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve just done a spreadsheet-to-IATI conversion for Aids Fonds last week, which enable me to set up a first rough tool chain following <a href="https://docs.google.com/document/d/14qA0YRnudfklvtW5Gg4StKNF2oz0qICjiuiPVPneXGs/edit?usp=sharing" rel="nofollow noopener">the “pseudo-iati merger” approach from my document</a>:</p>
+<ul>
+<li>They can extract individual Excel spreadsheets from their Management Information Systems (in their case one, but could be multiple): basically tables of information with an IATI activity identifier in each row (results, transactions, basic project information, …)</li>
+<li>I convert them to CSV files, set up the mapping, and merge the results into a single IATI file. Setting up the mapping is still a manual step that needs to happen once.</li>
+</ul>
+<p>We’re working along the way of Steven’s “different school of thought”: <em>extracting</em> useful spreadsheets from existing systems, rather than setting up a special IATI spreadsheet. It’s an incentive to fix the data at the source, rather than during an IATI publication process.</p>
+<p>And the mapping allows for some additional transformations (for instance from internal codes to IATI code list values), and mostly is a one-time set up.</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/9</link>
+        <pubDate>Mon, 30 Jan 2017 15:29:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-9</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Sarah and All,</p>
+<p>We made a standalone offline excel publishing tool a few years back and still use it for our publication - see <a href="https://github.com/WaterAid/iati-xl2xml/raw/master/src/xl2xml.xlsm" rel="nofollow noopener">https://github.com/WaterAid/iati-xl2xml/raw/master/src/xl2xml.xlsm</a> .  We needed to take the technical aspects out of publishing IATI and allow the various people involved in the publishing process (different areas of responsibility, approval processes etc.) access to the data on their terms so we chose Excel as a common tool.  There is a different worksheet for each of the main areas of the standard, eg basic information, Transactions, Activity dates etc. linked via the first column of each table, and we use a mixture of manual data entry and automatic data feeds (where we have corresponding systems).  We only fill in the blue cells of the table (grey and green are autofilled based on the IATI standard and WaterAid’s publishing model - saving about 2/3rds of the publishing burden).</p>
+<p>To create the XML you just run the  “GenerateXml” macro and choose an output directory.  At the time we anticipated our country offices would need to enter some of the data so we made this tool 100% offline and requires no additional installers etc. beyond having a windows machine with Excel installed (vba using standard windows libraries) - meaning it can be emailed back and forth with all relevant sign-off data in one place (useful for approval processes).</p>
+<p>Although we have used WaterAid publication as an example, technically it can publish as much or as little of the IATI standard as you like without restriction - you just change/ add / remove the table column headings (row 20) as appropriate and copy in new sheets for any additional repeating elements (under the hood the tool starts with the “iati-activities” sheet then traverses sheets (linking to its appropriate parent through cell C1) to recursively build out each sub-element on a row by row basis before moving to the next row, using the IDs in column C and row 20 to guide output - so its actually a general purpose excel to XML export tool really!).</p>
+<p>While this has proven great for our publishing, what’s needed to make this super simple for other organisations is a number of  standard templates (with the worksheets configured accordingly) that users can choose according to their publishing style and language.  Even better would be a front-end setup GUI allowing users to choose which elements of the IATI standard they wish to publish (the tool would then use the IATI schema to create worksheets, columns and codelist drop-downs appropriately, even setting up auto fills) - we started looking into this (eg using the IATI validator rulesets), however we couldn’t justify further time on the project as we didn’t have an internal need at the time.  Instead we open sourced it in the hope that others might take this further (<a class="mention" href="/u/stevieflow">@stevieflow</a> - this is the same tool and workflow I talked you through the other year, should this help jog memory!).  We’d be very happy to talk more about this, and given the new DFID requirements for NGOs to ensure our partners publish data we may well start another round of development/ create some new templates for this - anyone interested in collaborating?  Funding would also help maintain/ build communications for this tool - anything available?</p>
+<p>Best,</p>
+<p>Mike</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/8</link>
+        <pubDate>Mon, 16 Jan 2017 08:39:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-8</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for raising this <a class="mention" href="/u/sjohns">@SJohns</a></p>
+<p>I agree that there is a need for something around this.  I did a <a href="https://drive.google.com/file/d/0BwiW1e8TJmDeUDlSQ0RPN0tJZ2M/view" rel="nofollow noopener">lightening talk</a> at the IATI members’ assembly to highlight experiences of how people can get “confused” during the conversion and validation process (warning: contains cats!)</p>
+<p>Over at the <a href="http://www.threesixtygiving.org/standard/" rel="nofollow noopener">360Giving data standard</a>, we’ve worked hard to support organisations to publish spreadsheets (via templates), which can then be “easily” converted to the JSON format (360 is JSON rather than XML) via such tools as <a href="http://cove.opendataservices.coop/360/" rel="nofollow noopener">CoVE</a>.  In this context. it has felt like a smoother process to publication, as organisations are able to control and publish data in a format they know - which is particularly important in smaller places where there is litlle or no IT support/infrastructure.</p>
+<p>Of course, it should be noted that no process (imho) can ever be “super simple”.  Even with 360 there are a few gotchas.  We’ve all been down the date formats in windows / excel rabbit hole!</p>
+<p>We should be minded that IATI has lots of one-to-many relationships: a typical activity will have multiple transactions at the very least, but perhaps also more than one participating-org, document-link, sectors and possibly geographies.  When we get to results, then this starts to get more complex - multiple indicators with multiple time periods for reporting targets and actuals anyone?</p>
+<p>As you state, this starts to make more sense when in a workbook.  It should also be worth flagging some of the efforts around this already.  I made a version of 2.01 (warning: this isn’t fully tested) and added the <a href="https://github.com/OpenDataServices/iati-utils" rel="nofollow noopener">files here</a>.  These files provide “user friendly” titles for the various parts of the IATI schema, which is your point about the mapping to the standard.  Indeed, with Bond we provided <a href="https://www.bond.org.uk/strengthen/csv-converter-guidance-using-bond-templates" rel="nofollow noopener">guidance about working with such files, “flattening” them to a CSV, and then running through CSV2IATI to mint IATI XML</a>.  I’d agree that this isn’t “super-simple”, but it was interesting to see some organisations adopt this approach, once initial support / training / explanation had been given.</p>
+<p>There’s another school of thought which we should flag: “messing” around with spreadsheets can lead to inefficiencies and data quality loss.  Outputting IATI XML data in the right and valid format should not be anywhere near the frontline.  We’ve seen many organisations produce IATI data via teams working together at their strengths - with IT controlling the data production end.  I just wanted to flag this, as no matter how great a tool is, it could be argued that solutions are better sourced in-house, within processes and systems already in place.  That’s a whole other discussion though!</p>
+<p>That said, at Open Data Services Co-operative, we will start to work around some of this in 2017.  We’re not ready to announce timelines just yet, but will be testing how the various <a href="http://flatten-tool.readthedocs.io/en/latest/" rel="nofollow noopener">libraries and tools</a> we have can address these user needs, starting with our own work.  We will, of course, share our thoughts along the way.</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/7</link>
+        <pubDate>Fri, 30 Dec 2016 11:46:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-7</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[yemoku]]></dc:creator>
+        <description><![CDATA[
+            <p>Greetings,</p>
+<p>Would it not be better to have a web service/REST API hosted on the same domain as iatistandard to perform the conversions as opposed to distributing software that would be liable to change at each update of the specification?</p>
+<p>The service could verify submitted Excel workbooks and maintained centrally. Just like a website it would serve desktops, tablets and mobiles.</p>
+<p>Looking at the last post, it seems Aidstream essentially provides a way of does this</p>
+<p>Regards</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/6</link>
+        <pubDate>Fri, 16 Dec 2016 10:14:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-6</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for putting this post and it was really interesting to read though the thoughts by <a class="mention" href="/u/rolfkleef">@rolfkleef</a> too. Together, they set out a vision with a greatly improved user-experience than the IATI Secretariat’s existing <a href="http://csv2iati.iatistandard.org/">CSV2IATI tool</a>.</p>
+<p>I like the idea of having multiple sheets within a single workbook, which would deal with the multi-dimensional nature of the IATI Standard. However, some thought might be needed to deal with elements that are themselves multi-dimensional (for example, an <code>iati-activity</code> can have multiple <code>transaction</code> elements, which itself can have multiple <code>sector</code> elements).  The usability of such sheets in the workbook would need some consideration, particularly if the entire tool is to fulfil its goal of being ‘IATI beginner’-friendly.<br>
+Of note on this point - the element <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/title/narrative/">iati-activity/result/indicator/title/narrative</a> is the ‘deepest’ repeatable element that I have found in that v2.02 standard.</p>
+<p>In terms of development, I know IATI Studio and Aidstream were considering adding the ability to generate IATI XML from spreadsheet-like formats - perhaps <a class="mention" href="/u/siemvaessen">@siemvaessen</a> or <a class="mention" href="/u/bibhusan">@bibhusan</a> might be able to comment on their plans??</p>
+<p>Whilst the secretariat have made a <a href="http://www.aidtransparency.net/news/iati-publishing-tool-csv2iati-to-be-decommissioned">commitment to host the existing CSV2IATI tool until new tools and publishing solutions emerge to replace it</a>, it is highly unlikely that there will be further development work on this legacy tool as our focus for development work is currently focussed on streamlining the internal architecture and supporting the data usage agenda.</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/5</link>
+        <pubDate>Wed, 14 Dec 2016 17:22:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-5</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[AlissaKonstantinova]]></dc:creator>
+        <description><![CDATA[
+            <p>dear Sarah, i think this is a great idea and i would be willing to provide contributions to this suggested work. my organisation is just starting to publish data according to IATI and as we have funding from the NMFA, for the consistency reasons, i will be advising the senior management to publish data using NMFA’s extended requirements. i can foresee that we are going to have difficulties in transforming our financial data from Quickbooks to CSV or even more so to IATI XLM formats. To transfer data manually would be too time-consuming.</p>
+<p>i am looking at Rolf’s document and trying to figure out if it already brings solution, as apparently it allows for converting Excel into IATI XLM format? we publish data through Aidstream.</p>
+<p>i am not sure how helpful i can be as our organisation have beginner’s level in terms of IATI. do you know if many organisations publish the financial data at the transaction level? as i believe only in this case the solution for an easy conversion is really important (contrarily to the scenario when aggregated data per quarter is published)?</p>
+<p>many thanks</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/4</link>
+        <pubDate>Tue, 13 Dec 2016 15:27:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-4</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for sharing the document Rolf, great technical summary of the challenges and potential solutions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/3</link>
+        <pubDate>Fri, 02 Dec 2016 09:35:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-3</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>A few months ago I <a href="https://docs.google.com/document/d/14qA0YRnudfklvtW5Gg4StKNF2oz0qICjiuiPVPneXGs/edit?usp=sharing" rel="nofollow noopener">wrote down some thoughts on “spreadsheets to IATI”</a>.</p>
+<p>We’re exploring some options for an organisation. I think the “integrate it into their processes” is actually the key requirement here: that also means integrating it with quality and compliance, publishing, and using the data in one way or another.</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/2</link>
+        <pubDate>Tue, 29 Nov 2016 11:00:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-2</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+      <item>
+        <title>Challenge: create super-simple conversion from Excel to IATI XML</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>My <strong>Challenge</strong> to the IATI community: Are you interested in pitching  for seed funds to develop something super human-friendly that converts Excel worksheets into IATI XML with no fuss?</p>
+<p>So this is my concept: the source data from the user would be in an Excel workbook with multiple worksheets.Pretty much every person I work with in organisations uses Excel at some point, so the skills are already there - no learning new tools. I also think <strong>workbooks</strong> are more human-friendly way to work than one massive Excel sheet/CSV file. And it’s way easier to collect data from different systems into different worksheets in one workbook.</p>
+<p>The source Excel workbook could be based on a downloadable template so it is pre-populated with the right elements/column headings to make the mapping go more smoothly.  Or you could tell users the headings to use in their workbook. Some systems eg. SAGE also allow you to export data to sheets with alias field names that could replicate the required headings.</p>
+<p>Then the ‘something’ would take all the data across all the worksheets (which probably have the activity IDs in the same field on every worksheet to link the data) and map it to the IATI elements.</p>
+<p>It will create the XML following the schema (it needs to produce data to the latest IATI Standard version without the user even knowing what a ‘version’ is) and validate it. So the user will get the XML and the ‘green ticks of perfection’ with little to no effort.</p>
+<p>And then all the publisher has to do is host the XML data on their website and upload the link to the Registry. Job done.</p>
+<p>Oh yes, and the something also needs to be …</p>
+<ul>
+<li>
+<p>available both online and as a download/app to use offline (but with auto-check for updates when the user is also connected to the internet).</p>
+</li>
+<li>
+<p>available in French and Spanish and Dutch/Flemish.</p>
+</li>
+<li>
+<p>ideally would also work with OpenOffice spreadsheets and Google Sheets for the online version (although the majority of users will be on Excel).</p>
+</li>
+<li>
+<p>usable on mobile devices.</p>
+</li>
+<li>
+<p>open source and stand alone, ie not embedded into another tool.</p>
+</li>
+<li>
+<p>sit alongside other publishing software that is currently available, to give publishers a great choice of options.</p>
+</li>
+</ul>
+<p>The ‘something’ would need to have a clear business model - so it would may sit alongside/complement other products you already offer, for example. I think it would need to be subsidised initially by a/some donors so that it can be offered at little or no cost for small organisations. But I can also see the potential that medium to large organisations would pay you to integrate it into their processes.</p>
+<p>What do you think? Any takers?</p>
+          <p><a href="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/1</link>
+        <pubDate>Fri, 25 Nov 2016 16:13:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-630-1</guid>
+        <source url="https://discuss.iatistandard.org/t/challenge-create-super-simple-conversion-from-excel-to-iati-xml/630.rss">Challenge: create super-simple conversion from Excel to IATI XML</source>
+      </item>
+  </channel>
+</rss>

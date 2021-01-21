@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>What APIs exist currently?</title>
+    <link>https://discuss.iatistandard.org/t/what-apis-exist-currently/72</link>
+    <description>We should maintain a list of all the IATI related APIs somewhere, possibly with a list of relevant contacts, and whether the developers are involved in this working group.
+
+I&#39;ve turned this post into a discourse &quot;wiki post&quot;, so hopefully anyone should be able to edit and add links as appropriate. It&#39;s still part of the forum though, so if you prefer you can reply with a comment instead.
+
+# List of APIs
+
+## Current:
+
+ - [Datastore](http://datastore.iatistandard.org/)
+ - [OIPA](http://oipa.openaidsearch.org/api/v3/docs/)
+ - [DevTracker](http://devtracker.dfid.gov.uk/about/)
+ - [d-portal dstore](http://d-portal.org/about.html#sav)
+ - [AidView API](http://wiki.iatistandard.org/tools/aidview/start)
+ - [CSV Conversion Tool](http://tools.aidinfolabs.org/csv/direct_from_registry/index.php) (used for the registry CSV link)
+
+Additionally the [IATI Dashboard](http://dashboard.iatistandard.org/) is built off a poorly documented static [JSON API](http://dashboard.iatistandard.org/stats/current/).
+
+## In development
+
+ - [DevTracker New](https://github.com/DFID/devtracker-new)
+
+# Comparison of APIs
+
+We should probably have a full &quot;feature matrix&quot; to compare APIs.
+
+For now, @stevieflow has been doing some work comparing the number of activities in different APIs - https://docs.google.com/spreadsheet/ccc?key=0AqXcKmXbCG-OdGN2NnBHa0NqY0JEbjhSaURaWWtCaXc&amp;usp=drive_web#gid=0 </description>
+    
+    <lastBuildDate>Fri, 26 Sep 2014 09:54:03 +0000</lastBuildDate>
+    <category>APIs</category>
+    <atom:link href="https://discuss.iatistandard.org/t/what-apis-exist-currently/72.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>What APIs exist currently?</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Work done in the past:</p>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/document/d/1gxvmYZSDXBTSMAU16bxfFd-hn1lYVY1c2olkXbuPBj4/edit" target="_blank" rel="nofollow noopener">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/document/d/1gxvmYZSDXBTSMAU16bxfFd-hn1lYVY1c2olkXbuPBj4/edit" target="_blank" rel="nofollow noopener"><span class="googledocs-onebox-logo g-docs-logo"></span></a>
+
+<h3><a href="https://docs.google.com/document/d/1gxvmYZSDXBTSMAU16bxfFd-hn1lYVY1c2olkXbuPBj4/edit" target="_blank" rel="nofollow noopener">IATI API Convention - Working Draft</a></h3>
+
+<p>IATI API Conventions / Standards This is a 0.1 document produced as the result of a meeting of the IATI community in November 2012 and revised following conversations in January 2013.   A slide deck summarising key issues discussed on the 15th...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<ul>
+<li>
+<blockquote>
+<p>Define exact scope for the API standarisation</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>API’s current status - analysis</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>User needs on API level</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>DFID need speccing it more</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Seperate API’s</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Activity level API</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Organisation level API</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Aggregate API (sub function for API?)</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>API standard based on IATI V2.0.1 - probably goes live Q1/Q2 2015</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>API convention wrt IATI</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>API should support all IATI versions? Probably not bind it to a specific version</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>API as a Service?</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Impact of IATI upgrade to 2.0.1 on current API’s</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Which API’s out there - <a href="//discuss.iatistandard.org/t/what-apis-exist-currently/72">What APIs exist currently?</a></p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Master API layer that talks to the variety of API’s? Performance RISK.</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Single API contract: if you put a request to API in same format and send the call to any of those API’s, they should all send the same result</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Future: construct your own custom queries</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Common URI structure to align all API’s</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Datastores/API as a service (DFID)</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Feature matrix for comparison?</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Based on <a href="//discuss.iatistandard.org/t/what-apis-exist-currently/72">What APIs exist currently?</a> set a shortlist of ‘active’ API’s and focus the matrix comparison on those alone.</p>
+</blockquote>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/what-apis-exist-currently/72/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/what-apis-exist-currently/72/3</link>
+        <pubDate>Fri, 26 Sep 2014 09:54:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-72-3</guid>
+        <source url="https://discuss.iatistandard.org/t/what-apis-exist-currently/72.rss">What APIs exist currently?</source>
+      </item>
+      <item>
+        <title>What APIs exist currently?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>(from call on 26th September)</p>
+<p>Those on the call agreed that a “feature matrix” would be a useful next ste.  This would include:</p>
+<ul>
+<li>listing of all APIs</li>
+<li>evaluation of overall status (dead vs live!)</li>
+<li>in depth listing of functions/features of existing/live APIs</li>
+</ul>
+<p>Such a feature matrix would enable the Working Group to chart next steps.</p>
+<p>We are looking for volunteers to work on this</p>
+          <p><a href="https://discuss.iatistandard.org/t/what-apis-exist-currently/72/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/what-apis-exist-currently/72/2</link>
+        <pubDate>Fri, 26 Sep 2014 09:53:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-72-2</guid>
+        <source url="https://discuss.iatistandard.org/t/what-apis-exist-currently/72.rss">What APIs exist currently?</source>
+      </item>
+      <item>
+        <title>What APIs exist currently?</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>We should maintain a list of all the IATI related APIs somewhere, possibly with a list of relevant contacts, and whether the developers are involved in this working group.</p>
+<p>I’ve turned this post into a discourse “wiki post”, so hopefully anyone should be able to edit and add links as appropriate. It’s still part of the forum though, so if you prefer you can reply with a comment instead.</p>
+<h1>List of APIs</h1>
+<h2>Current:</h2>
+<ul>
+<li><a href="http://datastore.iatistandard.org/" rel="nofollow noopener">Datastore</a></li>
+<li><a href="http://oipa.openaidsearch.org/api/v3/docs/" rel="nofollow noopener">OIPA</a></li>
+<li><a href="http://devtracker.dfid.gov.uk/about/" rel="nofollow noopener">DevTracker</a></li>
+<li><a href="http://d-portal.org/about.html#sav" rel="nofollow noopener">d-portal dstore</a></li>
+<li><a href="http://wiki.iatistandard.org/tools/aidview/start" rel="nofollow noopener">AidView API</a></li>
+<li>
+<a href="http://tools.aidinfolabs.org/csv/direct_from_registry/index.php" rel="nofollow noopener">CSV Conversion Tool</a> (used for the registry CSV link)</li>
+</ul>
+<p>Additionally the <a href="http://dashboard.iatistandard.org/" rel="nofollow noopener">IATI Dashboard</a> is built off a poorly documented static <a href="http://dashboard.iatistandard.org/stats/current/" rel="nofollow noopener">JSON API</a>.</p>
+<h2>In development</h2>
+<ul>
+<li><a href="https://github.com/DFID/devtracker-new" rel="nofollow noopener">DevTracker New</a></li>
+</ul>
+<h1>Comparison of APIs</h1>
+<p>We should probably have a full “feature matrix” to compare APIs.</p>
+<p>For now, <a class="mention" href="/u/stevieflow">@stevieflow</a> has been doing some work comparing the number of activities in different APIs - <a href="https://docs.google.com/spreadsheet/ccc?key=0AqXcKmXbCG-OdGN2NnBHa0NqY0JEbjhSaURaWWtCaXc&amp;usp=drive_web#gid=0" rel="nofollow noopener">https://docs.google.com/spreadsheet/ccc?key=0AqXcKmXbCG-OdGN2NnBHa0NqY0JEbjhSaURaWWtCaXc&amp;usp=drive_web#gid=0</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/what-apis-exist-currently/72/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/what-apis-exist-currently/72/1</link>
+        <pubDate>Fri, 25 Jul 2014 14:42:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-72-1</guid>
+        <source url="https://discuss.iatistandard.org/t/what-apis-exist-currently/72.rss">What APIs exist currently?</source>
+      </item>
+  </channel>
+</rss>

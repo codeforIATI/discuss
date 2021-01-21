@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Testing IATI Regsitry Publishing</title>
+    <link>https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71</link>
+    <description>We&#39;re doing some user testing within the test Aidstream Implementation we have setup at http://aidstream.zimmermanzimmerman.com/ and would like to try out the publishing process to the registry.
+
+Obviously we don&#39;t want to start polluting the registry with our test data, so was wondering if you have a solution in place to be able to post to a test registry site which will give us the right responses back without it all being live?
+
+(Let me know if this isn&#39;t clear - not sure if I am describing the problem correctly).</description>
+    
+    <lastBuildDate>Thu, 31 Jul 2014 11:13:43 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Testing IATI Regsitry Publishing</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/siemvaessen">@siemvaessen</a></p>
+<p>I cant see any “application” for publisher/aidstream-zz - you point to a <em>user</em> with that.</p>
+<p>I think you may have made that classic (aka common!) error in terms of not completing this form for a new publisher:</p>
+<p><a href="http://iati2.staging.ckanhosted.com/publisher/new" class="onebox" target="_blank" rel="nofollow noopener">http://iati2.staging.ckanhosted.com/publisher/new</a></p>
+<p>The Registry requires people to create a user and <em>then</em> a publisher (which is approved).</p>
+<p>Thanks</p>
+<p>Steven</p>
+          <p><a href="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/7</link>
+        <pubDate>Thu, 31 Jul 2014 11:13:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-71-7</guid>
+        <source url="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71.rss">Testing IATI Regsitry Publishing</source>
+      </item>
+      <item>
+        <title>Testing IATI Regsitry Publishing</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>HI guys,</p>
+<p>We have just added a publisher at: <a href="http://iati2.staging.ckanhosted.com/user/activity/aidstream-zz" rel="nofollow noopener">http://iati2.staging.ckanhosted.com/user/activity/aidstream-zz</a></p>
+<p>So</p>
+<p>publisher: aidstream-zz<br>
+API Key: (deleted)</p>
+<p>We have verified a single activity in our aidstream setup, but not showing up yet.</p>
+<p><span class="mention">@steven</span>, do you need to verify this aidstream-zz publisher?</p>
+<p>please advise,</p>
+<p>Siem</p>
+          <p><a href="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/6</link>
+        <pubDate>Wed, 30 Jul 2014 14:38:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-71-6</guid>
+        <source url="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71.rss">Testing IATI Regsitry Publishing</source>
+      </item>
+      <item>
+        <title>Testing IATI Regsitry Publishing</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>From Adria at OKF:</p>
+<blockquote>
+<p>The staging site at <a href="http://iati2.staging.ckanhosted.com/" rel="nofollow noopener">http://iati2.staging.ckanhosted.com/</a><br>
+is running the latest code (but the database is using is an old one,<br>
+meaning that there aren’t all the publishers and datasets).</p>
+</blockquote>
+<blockquote>
+<p>People is of course welcome to use it, the only thing is that we have<br>
+other staging CKAN instances running on that server so if people testing<br>
+against it affects the performance of the other sites we may need to<br>
+put some limits in place. I don’t think that will be an issue though.</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/5</link>
+        <pubDate>Mon, 28 Jul 2014 10:59:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-71-5</guid>
+        <source url="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71.rss">Testing IATI Regsitry Publishing</source>
+      </item>
+      <item>
+        <title>Testing IATI Regsitry Publishing</title>
+        <dc:creator><![CDATA[Adrian]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks guys - I think this should work for us. Will let you know if we hit on any blockers <img src="//discuss.iatistandard.org/images/emoji/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/4</link>
+        <pubDate>Mon, 28 Jul 2014 09:22:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-71-4</guid>
+        <source url="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71.rss">Testing IATI Regsitry Publishing</source>
+      </item>
+      <item>
+        <title>Testing IATI Regsitry Publishing</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes - afaik the copy of the Registry at <a href="http://iati2.staging.ckanhosted.com/" rel="nofollow noopener">http://iati2.staging.ckanhosted.com/</a> can be used as it stands,  Please bear in mind that this is not fully synched with the live Registry (in terms of account data) and may get wiped without notice.  However, in terms of software (including the API), it is to the latest version of the live IATI CKAN.</p>
+<p>However, I will confirm this with the OKF CKAN team, just in case there are any restrictions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/3</link>
+        <pubDate>Mon, 28 Jul 2014 06:49:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-71-3</guid>
+        <source url="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71.rss">Testing IATI Regsitry Publishing</source>
+      </item>
+      <item>
+        <title>Testing IATI Regsitry Publishing</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, this makes sense, and I think is something other publishers have asked about.</p>
+<p>We have a test copy of the registry, which is used to test upgrades to the CKAN software - <a href="http://iati2.staging.ckanhosted.com/" rel="nofollow noopener">http://iati2.staging.ckanhosted.com/</a> . It may be possible to use this, or we may want to set up another test. The other alternative is to set up a copy of CKAN + the IATI extension locally. However, this isn’t especially straightforward, so we will probably look into providing a test instance for publishers. <a class="mention" href="/u/stevieflow">@stevieflow</a> probably has more to say about this.</p>
+<p>Some publishers have also suggested having a test copy of the datastore/dashboard which uses such a dev copy of the registry, to allow publishers to test the data using the datastore/dashboard without having to first make it live. This is more difficult, but is something we may also consider.</p>
+          <p><a href="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/2</link>
+        <pubDate>Fri, 25 Jul 2014 15:29:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-71-2</guid>
+        <source url="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71.rss">Testing IATI Regsitry Publishing</source>
+      </item>
+      <item>
+        <title>Testing IATI Regsitry Publishing</title>
+        <dc:creator><![CDATA[Adrian]]></dc:creator>
+        <description><![CDATA[
+            <p>We’re doing some user testing within the test Aidstream Implementation we have setup at <a href="http://aidstream.zimmermanzimmerman.com/" rel="nofollow noopener">http://aidstream.zimmermanzimmerman.com/</a> and would like to try out the publishing process to the registry.</p>
+<p>Obviously we don’t want to start polluting the registry with our test data, so was wondering if you have a solution in place to be able to post to a test registry site which will give us the right responses back without it all being live?</p>
+<p>(Let me know if this isn’t clear - not sure if I am describing the problem correctly).</p>
+          <p><a href="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71/1</link>
+        <pubDate>Thu, 24 Jul 2014 13:06:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-71-1</guid>
+        <source url="https://discuss.iatistandard.org/t/testing-iati-regsitry-publishing/71.rss">Testing IATI Regsitry Publishing</source>
+      </item>
+  </channel>
+</rss>

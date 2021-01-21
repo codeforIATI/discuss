@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:57:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Using IATI data - uniquely identifying transactions - Using IATI Data - IATI Community Discussions</title>
+    <meta name="description" content="Hi everyone 
+I wanted to share something @David_Megginson &amp;amp; @ximboden encountered via importing IATI data into the Financial Tracking System (FTS). 
+This might is an issue that some may have hit before.  It’d be great to&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1549.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Using IATI data - uniquely identifying transactions&#39;" href="1549.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549" />
+<meta property="og:title" content="Using IATI data - uniquely identifying transactions" />
+<meta name="twitter:title" content="Using IATI data - uniquely identifying transactions" />
+<meta property="og:description" content="Hi everyone  I wanted to share something @David_Megginson &amp; @ximboden encountered via importing IATI data into the Financial Tracking System (FTS).  This might is an issue that some may have hit before.  It’d be great to hear from others who regularly ingest IATI data into their projects, to understand if this is a headache, or not, or whether you have a workaround.  Thinking of @Herman @markbrough @tdavis  @siemvaessen @matmaxgeds and others…  Scenario  With FTS, we want to import IATI activiti..." />
+<meta name="twitter:description" content="Hi everyone  I wanted to share something @David_Megginson &amp; @ximboden encountered via importing IATI data into the Financial Tracking System (FTS).  This might is an issue that some may have hit before.  It’d be great to hear from others who regularly ingest IATI data into their projects, to understand if this is a headache, or not, or whether you have a workaround.  Thinking of @Herman @markbrough @tdavis  @siemvaessen @matmaxgeds and others…  Scenario  With FTS, we want to import IATI activiti..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="6 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="6 ❤" />
+<meta property="article:published_time" content="2018-11-01T21:01:35+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1549.html">Using IATI data - uniquely identifying transactions</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/iati-applied/21.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #2695B8'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Using IATI Data</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-01T21:01:35Z' class='post-time'>
+                November 1, 2018,  9:01pm
+              </time>
+              <meta itemprop='dateModified' content='2018-11-01T21:01:35Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi everyone</p>
+<p>I wanted to share something <a class="mention" href="../../u/david_megginson-2.html">@David_Megginson</a> &amp; <a class="mention" href="../../u/ximboden.html">@ximboden</a> encountered via importing IATI data into the Financial Tracking System (FTS).</p>
+<p>This might is an issue that some may have hit before.  It’d be great to hear from others who <strong><em>regularly</em></strong> ingest IATI data into their projects, to understand if this is a headache, or not, or whether you have a workaround.  Thinking of <a class="mention" href="../../u/herman-2.html">@Herman</a> <a class="mention" href="../../u/markbrough.html">@markbrough</a> <a class="mention" href="../../u/tdavis.html">@tdavis</a>  <a class="mention" href="../../u/siemvaessen.html">@siemvaessen</a> <a class="mention" href="../../u/matmaxgeds.html">@matmaxgeds</a> and others…</p>
+<p><strong>Scenario</strong></p>
+<p>With FTS, we want to import IATI activities, to construct Flows.  A (obvious) vital cog to this is the IATI transaction.</p>
+<p>We also know that IATI publishers will be adding transactions to their activities over time - which is expected behavior.</p>
+<p>So -</p>
+<ul>
+<li>On first import an activity has <strong>two transactions</strong>.</li>
+<li>When the activity is updated, a month later, two more transactions have been added by the publisher.  The activity now has <strong>four transactions</strong>.</li>
+<li>When we import the updated activity, we know it’s some data we’ve encountered before, because the <code>activity-identifier</code> is present.  That’s helpful!</li>
+<li>However, the transactions have no identifier.  Our import now gives us <strong>six transactions</strong> (the first two, plus the new four)!</li>
+</ul>
+<p>I can picture people frowning at this!  Of <em>course</em>, our system and data import routines <em>could</em> have some extra process to generate and store a <a href="https://en.wikipedia.org/wiki/Hash_function" rel="nofollow noopener">hash of the data</a>, for example - or even check the transactions dates and values etc etc.  We understand that, but the point is: <strong>do we think it efficient to shift this overhead from the publisher to data users, each of whom would have to work out the problem and compute a workaround?</strong></p>
+<p><strong>A solution</strong></p>
+<p>The IATI <code>transaction</code> element does actually include a <span class="mention">@ref</span> attribute, which could be use to declare an identifier for a transaction.  For example:</p>
+<pre><code>&lt;transaction ref="1"&gt;
+&lt;transaction ref="2"&gt;
+&lt;transaction ref="3"&gt;
+&lt;transaction ref="4"&gt;
+</code></pre>
+<p>Or, more verbosely:</p>
+<pre><code>&lt;transaction ref="EX-AMPLE-ORG-ACTIVITY100-transaction1"&gt;
+&lt;transaction ref="EX-AMPLE-ORG-ACTIVITY100-transaction2"&gt;
+&lt;transaction ref="EX-AMPLE-ORG-ACTIVITY100-transaction3"&gt;
+&lt;transaction ref="EX-AMPLE-ORG-ACTIVITY100-transaction4"&gt;
+</code></pre>
+<p>Or even:</p>
+<pre><code>&lt;transaction ref="oranges"&gt;
+&lt;transaction ref="apples"&gt;
+&lt;transaction ref="pears"&gt;
+&lt;transaction ref="cashews"&gt;
+</code></pre>
+<p>(OK, that last example isn’t advisable, but <a class="mention" href="../../u/reidmporter.html">@reidmporter</a> might like it)</p>
+<p>For our import to FTS, we know this solution actually works!  When publishers include a <span class="mention">@ref</span>, it acts as an identifier we can check, to understand if this is a transaction we’ve seen before.</p>
+<p>We are aware of scenarios such as transactions being edited, or data being added to a transaction (a receiver-org activity-identifier, for example), but would appreciate we try and stick to the main point here: <strong>should we strive to include a <span class="mention">@ref</span> that can act as a transaction identifier within any activity, to help data users?</strong></p>
+<p>It’d be great to hear from others.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../current-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19/1939/7.html" itemprop='item'>
+                      <meta itemprop='url' content='../current-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19/1939/7.html'>
+                      <meta itemprop='position' content='2'>
+                      <span itemprop='name'>Current Discussion: Quantifying percentage of funds allocated from an activity to COVID-19</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/David_Megginson.html'><span itemprop='name'>David_Megginson</span></a>
+            (David Megginson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-01T21:23:17Z' class='post-time'>
+                November 1, 2018,  9:23pm
+              </time>
+              <meta itemprop='dateModified' content='2018-11-01T21:23:17Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks, <a class="mention" href="../../u/stevieflow.html">@stevieflow</a> — that was a good overview of the problem.</p>
+<p>We’ve always assumed that activities would be first-class objects in an IATI user’s database — we attach identifiers not only for cross-references, but so that the user knows if they’re dealing with the same activity they saw last time (possibly with some updates), or an entirely-new activity.</p>
+<p>Unfortunately, without transaction/<span class="mention">@ref</span>, we can’t keep track of transactions the same way. So if a data user does extra work, like linking a transaction to one of their own business objects (eg a budget line in a partner country’s accounting system), they have to redo that work every time they read an updated IATI activity file.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-04T20:55:14Z' class='post-time'>
+                November 4, 2018,  8:55pm
+              </time>
+              <meta itemprop='dateModified' content='2018-11-04T20:55:14Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks from me too for setting this all out <a class="mention" href="../../u/stevieflow.html">@stevieflow</a></p>
+<p>Because of the difficulties of transactions not having any unique reference all the imports I have worked on have been to present all the transactions available to the user importing the activity, and allowing them to select the specific transactions to import. As you can tell - this means that using IATI data is semi-automatic at best - and only one activity at a time - certainly not the sales pitch that is circulated at the high level meetings about machines talking to machines etc! I know the system <a class="mention" href="../../u/markbrough.html">@markbrough</a> and I worked on in Bangladesh allowed for a degree of dynamic import e.g. once a user has initially semi-automatically imported an activity, then the system can interpret those choices going forwards to keep it up to date - but Mark is much better placed to explain how.</p>
+<p>I think transaction refs would be great (what can we do to make this happen?) - and the publisher systems I have seen either have them anyway, or if not, could easily make them by concatenating  timestamps with some other transaction data.</p>
+<p>My only other thought was that these references only have to be unique within the activity (could they even be just a counter that increases by 1 for each transaction?) and in combination with the activity code, they would then be globally unique - and that would be very cool to be able to instantly point to a single transaction.</p>
+<p>Matt</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/tdavis.html'><span itemprop='name'>tdavis</span></a>
+            (Taryn Davis)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-05T21:07:25Z' class='post-time'>
+                November 5, 2018,  9:07pm
+              </time>
+              <meta itemprop='dateModified' content='2018-11-05T21:07:25Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi Steven, indeed we have encountered this issue. To avoid duplicates when importing IATI data to AMP, we check if the transaction already exists in the AMP activity by checking if the transaction type,  adjustment type, transaction date, currency and transaction amount in the source activity match any of transactions in the AMP activity. Having a unique identifier for the transaction would make that a simpler process.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-11-06T11:06:12Z'>
+              <time itemprop='dateModified' datetime='2018-11-07T07:49:53Z' class='post-time'>
+                November 7, 2018,  7:49am
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>As mentioned above, transaction refs do already exist in the standard. <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/transaction/#attributes" rel="nofollow noopener">From the definition</a>, it’s apparent that they weren’t originally intended for this purpose, though. They’re missing some guarantees that would make them useful for this purpose.</p>
+<p>For this to work, transaction refs would need to at least be guaranteed <strong>immutable</strong> (i.e. can’t change over time), and (as <a class="mention" href="../../u/matmaxgeds.html">@matmaxgeds</a> mentions) <strong>unique within an activity</strong>. This would mean changing the definition.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-06T16:20:23Z' class='post-time'>
+                November 6, 2018,  4:20pm
+              </time>
+              <meta itemprop='dateModified' content='2018-11-06T16:20:23Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I know FTS is different from an AIMS, but I would still opt for this advice. Replace all transactions on every import.</p>
+<blockquote>
+<p><strong>Handling Activity Updates</strong></p>
+<p>As an activity progresses your development partners will continue to keep their project and financial management records up to date and modified versions of the activity will be published. The way IATI works is for the whole record, not just those parts that have been changed, to be republished each time. In a typical IATI reporting scenario most of the details of the activity are in place when first reported, and updates contain new financial transactions, activity budgets (forward-looking predictions of spend) and, where reported, information on results.</p>
+<p>If your import system is configured to alert you to any and every difference between your partner’s version of an activity and your own record, all the changes you made when the activity was new (as suggested in the previous section), will be flagged up as discrepancies to be resolved every time the activity is updated. This will bog your staff down in hours of unnecessary time wasting. For that reason it is suggested that:</p>
+<ul>
+<li>Financial transactions, budgets and results are automatically accepted during updates.</li>
+<li>Other fields that you decide (in your configuration) you will never modify may be added to this list.</li>
+<li>You NEVER make any changes to these fields. (See the next section on fixing data in these fields)</li>
+<li>All other fields are NOT updated. If your system is clever enough to alert you to when your partner has made a change (from their original) to one of these field – this is a bonus.<br>
+<a href="https://sites.google.com/site/useofiatidataincountrysystems/the-guide/auto-configure">https://sites.google.com/site/useofiatidataincountrysystems/the-guide/auto-configure</a>
+</li>
+</ul>
+</blockquote>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/markbrough.html'><span itemprop='name'>markbrough</span></a>
+            (Mark Brough)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-06T17:33:16Z' class='post-time'>
+                November 6, 2018,  5:33pm
+              </time>
+              <meta itemprop='dateModified' content='2018-11-06T17:33:16Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/stevieflow.html">@stevieflow</a> thanks for raising this isssue. Here is <a href="http://bd-iati.github.io/development/sprint-6/#3-handling-updates-of-iati-financial-data" rel="nofollow noopener">the methodology we used in Bangladesh for handling updates</a>. We use a similar process to <a class="mention" href="../../u/tdavis.html">@tdavis</a>’ approach in AMP. We first see whether the transaction already exists in the AIMS, considering a transaction as unique based on the transaction date, the transaction type and the transaction value (<a href="https://github.com/BD-IATI/edi/blob/master/AIMS_BD_IATI.DAL/AimsDAL.cs#L1117" rel="nofollow noopener">see the code here</a>). We stop import if there is data in the AIMS that is not in IATI, on the basis that a user may have entered data into the AIMS that they wouldn’t then want overwritten by IATI (because the effect would be to either double-count funds or to remove existing information).</p>
+<p>This seems to have worked in practice (because it is unlikely to happen that a transaction with identical values for (<code>date</code>, <code>type</code>, <code>value</code>) is retrospectively added on the same date as an existing transaction). Having said that, I think I agree with <a class="mention" href="../../u/bill_anderson.html">@bill_anderson</a> that wiping all the transactions and then inserting new ones is the safest way of proceeding. I guess it would just make things slower, though possibly not that much slower, I’m not sure.</p>
+<p>It agree it would be nice to have unique references for transactions and perhaps we can move that way over time, but in the interim we will need techniques like this to continue to handle this kind of issue.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/danmihaila.html'><span itemprop='name'>danmihaila</span></a>
+            (danmihaila)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-07T14:02:49Z' class='post-time'>
+                November 7, 2018,  2:02pm
+              </time>
+              <meta itemprop='dateModified' content='2018-11-07T14:02:49Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My 2 cents about this.<br>
+When I’ve been in DRC with <a class="mention" href="../../u/bill_anderson.html">@bill_anderson</a> for the first IATI Pilot, we wiped all existing transactions (for 3 donors) and imported the transactions coming from IATI feeds. It was a matter of trust and decision with local AIMS which decided that the IATI transactions were more accurate compared with what they had.<br>
+This can also happen if there is an update: old transaction will be dropped and the system will get the latest published transactions.</p>
+<p>It will be indeed great if transaction could carry an ID (similar with activities or organizations). I assume it is not an easy task, but it could be a composite ID: date, type, value, ref, etc.<br>
+As recommendation: at AIMS level there could be some rules that will allow transactions to be updated, dropped, not touched in case IATI feeds are bringing in or other input.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/samueldjohnson.html'><span itemprop='name'>samueldjohnson</span></a>
+            (Sam Johnson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-11-07T16:07:05Z'>
+              <time itemprop='dateModified' datetime='2018-11-07T16:07:43Z' class='post-time'>
+                November 7, 2018,  4:07pm
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m very new to IATI (just trying to get my head around it all), but I’ve worked with a wide range of information systems, and although your suggestion to replace all transactions makes sense, the problem with doing this without an identifier is that you’re very limited in the processing and analysis that you can then do with this data.  If, for example, you add further coding or link this data to other datasets, then without identifiers you’ll have to re-do this coding/linking for the full history of your data every time it’s re-imported - whereas if you use identifiers, then even if you refresh the full dataset, your existing codes and mappings will still work.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-09T08:39:36Z' class='post-time'>
+                November 9, 2018,  8:39am
+              </time>
+              <meta itemprop='dateModified' content='2018-11-09T08:39:36Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>When the trx id is a composition of existing trx elements, there is no need anymore for a seperate technical id (it can be derived automatically if needed, so there is no need for complicating the standard). So the question seems to be what are the elements which make a real world trx unique and immutable?</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-09T09:04:27Z' class='post-time'>
+                November 9, 2018,  9:04am
+              </time>
+              <meta itemprop='dateModified' content='2018-11-09T09:04:27Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="10" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/herman/40/192_1.jpg" class="avatar"> Herman:</div>
+<blockquote>
+<p>When the trx id is a composition of existing trx elements, there is no need anymore for a seperate technical id</p>
+</blockquote>
+</aside>
+<p>I understand the logic, but on that basis, shouldn’t we also campaign for removing the activity IDs on the basis that they complicate the standard, as presumably they could also be replaced by an ID made from a composition of their elements?</p>
+<p>I suspect that either making a composite ID that is valid in all the edge cases is too complex (is it not valid/possible to have two transactions on the same day for the same amount?), or that there is also something inherently useful about having an independent ID e.g. as a simple reference - assuming that we are not suggesting to hash the unique information for each transaction to get the composite ID?</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-11-09T10:48:18Z'>
+              <time itemprop='dateModified' datetime='2018-11-09T11:07:49Z' class='post-time'>
+                November 9, 2018, 11:07am
+              </time>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The intention of the (optional) <code>transaction/@ref</code> was to allow publishers to make a link back to their own systems.</p>
+<p>To change the standard to make this mandatory would involve:</p>
+<ul>
+<li>A major upgrade</li>
+<li>Backfilling all existing activities</li>
+</ul>
+<p>While I understand the problem, I don’t think <code>transaction/@ref</code> is the solution.</p>
+<ul>
+<li>Firstly, my reading of the community is that there is currently no appetite for a major upgrade.</li>
+<li>Secondly, it is possible that members could object to such a proposal.</li>
+<li>Thirdly, if actioned, it would take a further couple of years to be implemented.</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-09T11:32:22Z' class='post-time'>
+                November 9, 2018, 11:32am
+              </time>
+              <meta itemprop='dateModified' content='2018-11-09T11:32:22Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/matmaxgeds.html">@matmaxgeds</a>  The comparison between the activity-id and the transaction-id is an interesting point you raised. The key difference i.m.o. between those two identifiers is that the activity-id should be <strong>globally unique</strong> and the transaction-id is <strong>publisher-unique</strong>. That is the reason why i.m.o. the transaction does not ‘deserve’ its own identifier. The use case for the transaction-id seems to be purely technical, and not functional.</p>
+<p>Another question I have is if it is really necessary to have 100% correctness by handling all edge-cases, since IATI is not an accounting system?</p>
+<p>I doubt that there are many real life transactions with the same amount on the same date to the same receiver with the same currency. When I find such transactions in an IATI publication, I treat them as duplicates since it happens that activities are being published in multiple files from the same publisher.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-11-09T12:25:21Z'>
+              <time itemprop='dateModified' datetime='2018-11-09T12:25:41Z' class='post-time'>
+                November 9, 2018, 12:25pm
+              </time>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/herman-2.html">@Herman</a> - a) I am not sure I understand your technical vs functional differentiation - the case for a transaction ID is a technical thing that would help systems that use IATI data to function better (plus other stuff like direct links to specific transactions). b) It is not necessary to be 100% accurate but this change would make it easier to be - why wouldn’t we want that? Is the ‘accounting system’ reference your way of saying that you feel that the extra effort to use unique transaction references is not worth the benefit?</p>
+<p><a class="mention" href="../../u/bill_anderson.html">@bill_anderson</a> - a) seven respondents (out of 9) said that having transaction IDs would be helpful/the best option, as they currently have to use a workaround that has some flaws identified in the thread. b) Would members object…it would be great to know - how do we ask them? c) If actioned, it would take several years to be implemented…sounds like we had better get started asap then! d) I am not sure why anything would have to be made mandatory - a first step could be changing the guidance to say that if you do use transaction references, please keep them unique within an activity?</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-09T13:51:52Z' class='post-time'>
+                November 9, 2018,  1:51pm
+              </time>
+              <meta itemprop='dateModified' content='2018-11-09T13:51:52Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="14" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I am not sure why anything would have to be made mandatory - a first step could be changing the guidance to say that if you do use transaction references, please keep them unique within an activity</p>
+</blockquote>
+</aside>
+<p>Surely, from a user point of view you need to adopt a lowest common denomenator scenario. If some publishers don’t have refs you need logic to deal with them, so you might as well apply that logic to everybody. Personally I have no objection to changing the guidance, but, being pragmatic, I’m not sure it would help you that much.</p>
+<aside class="quote no-group" data-post="14" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>seven respondents (out of 9)</p>
+</blockquote>
+</aside>
+<p>For all our good intentions this forum is a bit of an echo chamber for quite a small group of committed enthusiasts</p>
+<aside class="quote no-group" data-post="14" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Would members object…it would be great to know - how do we ask them?</p>
+</blockquote>
+</aside>
+<p>Here, but see ^^</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-09T15:44:29Z' class='post-time'>
+                November 9, 2018,  3:44pm
+              </time>
+              <meta itemprop='dateModified' content='2018-11-09T15:44:29Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="14" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>a) I am not sure I understand your technical vs functional differentiation - the case for a transaction ID is a technical thing that would help systems that use IATI data to function better (plus other stuff like direct links to specific transactions).</p>
+</blockquote>
+</aside>
+<p>I.m.o. the IATI standard should only contain non-derivable atomic business object for which there is a common understanding(e.g. ‘currency’, ‘disbursement’, ‘sector’, etc.).</p>
+<aside class="quote no-group" data-post="14" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>b) It is not necessary to be 100% accurate but this change would make it easier to be - why wouldn’t we want that? Is the ‘accounting system’ reference your way of saying that you feel that the extra effort to use unique transaction references is not worth the benefit?</p>
+</blockquote>
+</aside>
+<p>What I mean is that an unique identifier can be derived by the data ingesting system (e.g. FTS)  by combining the existing transaction elements (as mentioned by <a class="mention" href="../../u/danmihaila.html">@danmihaila</a>).  As you already mentioned, there might be some edge cases, but as long as those have a low frequency, it might be sufficient to produce sensible information. It is i.m.o. not necessary that IATI has the same accuracy as an accounting system (where those edge-cases would not be acceptable).</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-11-11T21:24:12Z'>
+              <time itemprop='dateModified' datetime='2018-11-11T21:24:39Z' class='post-time'>
+                November 11, 2018,  9:24pm
+              </time>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="16" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/herman/40/192_1.jpg" class="avatar"> Herman:</div>
+<blockquote>
+<p>unique identifier can be derived by the data ingesting system (e.g. FTS) by combining the existing transaction elements</p>
+</blockquote>
+</aside>
+<p>I think this was the point of <a class="mention" href="../../u/stevieflow.html">@stevieflow</a>’s original post</p>
+<aside class="quote no-group" data-post="1" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p><strong>do we think it efficient to shift this overhead from the publisher to data users, each of whom would have to work out the problem and compute a workaround?</strong></p>
+</blockquote>
+</aside>
+<p>I agree with <a class="mention" href="../../u/stevieflow.html">@stevieflow</a> that it would be more efficient if this was shifted to data publishers, rather than data users (especially as I suspect that most publishers have this data already), with the benefits outlined by <a class="mention" href="../../u/david_megginson-2.html">@David_Megginson</a>, and side benefits of a) no more edge cases, and b) the ability to directly link to transactions.</p>
+<p><a class="mention" href="../../u/bill_anderson.html">@bill_anderson</a> - good point, without making it mandatory, we will need both the <span class="mention">@ref</span> and logic - but it seems like a step in the right direction (with no impact for those publishers who want to opt out) to me. For users who want to use data from secondary publishers, the <span class="mention">@ref</span> will become even more useful as an alternative to adding the publisher  to lengthening list of factors needed to make a transaction unique.</p>
+<p><a class="mention" href="../../u/herman-2.html">@Herman</a> - it sounds like you have had some bad experiences with accounting systems! However, I suspect that those using IATI for e.g. results data might prefer accuracy, as might those importing IATI data into systems like the FTS/AIMS, where things often need to add up a little bit more more precisely.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-11-12T06:13:08Z' class='post-time'>
+                November 12, 2018,  6:13am
+              </time>
+              <meta itemprop='dateModified' content='2018-11-12T06:13:08Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="17" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>those using IATI for e.g. results data might prefer accuracy</p>
+</blockquote>
+</aside>
+<p>Don’t want to sidetrack this conversation, but results data and accuracy are a bit of an oxymoron.</p>
+<aside class="quote no-group" data-post="17" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>accounting systems</p>
+</blockquote>
+</aside>
+<p>I think <a class="mention" href="../../u/herman-2.html">@Herman</a> makes an important point. Neither IATI nor AIMS are accounting systems. IATI data <strong><em>may</em></strong> be derived from a selective report run off a publisher’s accounting system. Most AIMS are a couple of steps removed from treasury systems. With a bit of luck they both contain good management information, but that is not the same thing.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/David_Megginson.html'><span itemprop='name'>David_Megginson</span></a>
+            (David Megginson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1549.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-11-27T17:58:37Z'>
+              <time itemprop='dateModified' datetime='2018-11-27T17:59:08Z' class='post-time'>
+                November 27, 2018,  5:59pm
+              </time>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Bill – your suggestion to replace all transactions on every import is suitable for a system that passively tracks IATI reporting. For any system that involves active curation (e.g. transactions manually checked for duplicates, linked to non-IATI information like ministry accounting systems, etc) that requires an enormous amount of redundant manual effort on every import, which means that (at best) such systems will update from IATI less often because of the high cost.</p>
+<p>I agree with leaving them optional, but I think it would be good (a) to update the guidance in the next major number release to require persistence and activity-scope uniqueness, and (b) to require them for specific initiatives.</p>
+<p>In fact, there’s nothing inconsistent with the standard in formulating stronger requirements for specific applications (e.g. if you want your IATI reporting to be counted for humanitarian response plan or Grand Bargain counting, you <em>must</em> follow these additional constraints). But it sounds like making those constraints general (when transaction refs are present) in the next major release would be helpful to a wide range of users, not just FTS.</p>
+        </div>
+
+        <meta itemprop='headline' content='Using IATI data - uniquely identifying transactions'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:57:01 GMT -->
+</html>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Question about updated 2.03 &#39;value&#39; attribute</title>
+    <link>https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399</link>
+    <description>Hello! I have a question. I am porting our application to support IATI v. 2.03. On the 2.03 changelog it says, that for iati-activities/iati-activity/result/indicator/period/target element, the attribute @value was made optional and rules for its use added (see: http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/). Although, in the documentation it doesn&#39;t mention what are the possible values of this element.
+
+In the discussion (https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/48) Mike Smith says, that the @value attribute has to be a valid number. But is this official ? If so, what kind of number ? Why this number is not specified in the documentation (http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/) ? Can it include absolutely any string ? 
+
+Hope someone can help me with this and tell me what are the &#39;official&#39; requirements.</description>
+    
+    <lastBuildDate>Thu, 19 Jul 2018 12:42:56 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Question about updated 2.03 &#39;value&#39; attribute</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>The IndicatorMeasure code descriptions are here:<br>
+<a href="http://reference.iatistandard.org/203/codelists/IndicatorMeasure/#codes" class="onebox" target="_blank">http://reference.iatistandard.org/203/codelists/IndicatorMeasure/#codes</a></p>
+<p>I think I’d conclude from those descriptions that codes <code>1</code>, <code>2</code>, <code>3</code> and <code>4</code> are quantitative. I.e. the same thing that’s stated in <a href="https://github.com/IATI/IATI-Rulesets/issues/51#issuecomment-351986870">the comment you link to</a>. But you’re right that this is not made explicit, and perhaps it should be.</p>
+<p>The rule I mentioned above is documented here: <a href="http://reference.iatistandard.org/203/rulesets/standard-ruleset/#result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-period-target">http://reference.iatistandard.org/203/rulesets/standard-ruleset/#result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-period-target</a></p>
+<p>So I’m not sure I’d agree that there’s 0 info on this in the docs. But there’s certainly always room for improvement! For instance, I think I’d expect element pages to link to relevant ruleset rules.</p>
+          <p><a href="https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399/4</link>
+        <pubDate>Thu, 19 Jul 2018 12:42:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1399-4</guid>
+        <source url="https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399.rss">Question about updated 2.03 &#39;value&#39; attribute</source>
+      </item>
+      <item>
+        <title>Question about updated 2.03 &#39;value&#39; attribute</title>
+        <dc:creator><![CDATA[Eimis]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you very much Andy! I will implement the checking in our system (OIPA), but do you have any idea why such things are not in the official documentation and they’re hidden as links to issues in comments within… pull requests ??.. Do you know why there is 0 info in this in docs ?</p>
+<p>For example for me it would make sense to add this to the documentation… <a href="https://github.com/IATI/IATI-Rulesets/issues/51#issuecomment-351986870" rel="nofollow noopener">https://github.com/IATI/IATI-Rulesets/issues/51#issuecomment-351986870</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399/3</link>
+        <pubDate>Thu, 19 Jul 2018 12:31:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1399-3</guid>
+        <source url="https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399.rss">Question about updated 2.03 &#39;value&#39; attribute</source>
+      </item>
+      <item>
+        <title>Question about updated 2.03 &#39;value&#39; attribute</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/#attributes">Relevant bit of the documentation</a> (emphasis mine):</p>
+<blockquote>
+<p><code>@value</code></p>
+<p>The target value.</p>
+<p><strong>This should be a numeric value if the measure is quantitative.</strong></p>
+<p>This value must be of type xsd:string.</p>
+</blockquote>
+<p>Here’s the referenced change to the standard ruleset, checking that <code>@value</code> is <em>present</em> for quantitative measures: <a href="https://github.com/IATI/IATI-Rulesets/pull/55">https://github.com/IATI/IATI-Rulesets/pull/55</a></p>
+<p>There’s nothing checking that <code>@value</code> is <em>numeric</em> for quantitative measures.</p>
+          <p><a href="https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399/2</link>
+        <pubDate>Thu, 19 Jul 2018 11:57:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1399-2</guid>
+        <source url="https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399.rss">Question about updated 2.03 &#39;value&#39; attribute</source>
+      </item>
+      <item>
+        <title>Question about updated 2.03 &#39;value&#39; attribute</title>
+        <dc:creator><![CDATA[Eimis]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello! I have a question. I am porting our application to support IATI v. 2.03. On the 2.03 changelog it says, that for iati-activities/iati-activity/result/indicator/period/target element, the attribute <span class="mention">@value</span> was made optional and rules for its use added (see: <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/" rel="nofollow noopener">http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/</a>). Although, in the documentation it doesn’t mention what are the possible values of this element.</p>
+<p>In the discussion (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/48">Results – represent more than quantitative data (included 2.03)</a>) Mike Smith says, that the <span class="mention">@value</span> attribute has to be a valid number. But is this official ? If so, what kind of number ? Why this number is not specified in the documentation (<a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/" rel="nofollow noopener">http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/</a>) ? Can it include absolutely any string ?</p>
+<p>Hope someone can help me with this and tell me what are the ‘official’ requirements.</p>
+          <p><a href="https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399/1</link>
+        <pubDate>Thu, 19 Jul 2018 09:52:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1399-1</guid>
+        <source url="https://discuss.iatistandard.org/t/question-about-updated-2-03-value-attribute/1399.rss">Question about updated 2.03 &#39;value&#39; attribute</source>
+      </item>
+  </channel>
+</rss>

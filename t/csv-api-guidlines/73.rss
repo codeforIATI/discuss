@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>CSV API Guidlines</title>
+    <link>https://discuss.iatistandard.org/t/csv-api-guidlines/73</link>
+    <description>It occurs to me that we should maybe have some general guidelines for working with/producing CSVs. Currently the IATI Datastore, Dashboard, Codelist API, the Registry and the CSV Conversion tool linked to from the registry produce csvs. The Registry, CSV2IATI and AidStream also accept CSVs as inputs. If I have missed any active CSV producing/consuming IATI tools/APIs, please post them below.
+
+Guidlines might include might include:
+
+- What format should be used (ie. what should the separator be, and what type of escaping should be used)
+- How should new lines be treated (the behaviour of quoted new lines seems to vary a lot)
+- What encoding should be used (I would suggest UTF-8)
+
+If these choices are consistent between multiple APIs, then they can share one piece of user guidance (ie. How to open this file in your spreadsheet program of choice). The most common user mistake I see is opening UTF-8 encoded files as windows code page.</description>
+    
+    <lastBuildDate>Mon, 04 Aug 2014 23:52:53 +0000</lastBuildDate>
+    <category>APIs</category>
+    <atom:link href="https://discuss.iatistandard.org/t/csv-api-guidlines/73.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>CSV API Guidlines</title>
+        <dc:creator><![CDATA[Dragon]]></dc:creator>
+        <description><![CDATA[
+            <p>The CSV RFC, <a href="http://tools.ietf.org/html/rfc4180" rel="nofollow noopener">RFC 4180</a>, specifies CRLF line endings: some generic tools don’t work with just LF - I can’t remember which off the top of my head at the moment.</p>
+<p>Encoding is a pain. As far as I can see, Unicode is the only sane option from the point of view of guaranteeing that any combinations of names can be represented, particularly since there’s no way of specifying an encoding in CSV. Yet Excel doesn’t make it easy to open UTF-8 files correctly. (UTF-8 also has the useful property of not incorrectly decoding things which aren’t UTF-8 encoding, and being relatively easy to detect when decoded as another encoding: has one non-ASCII character become many? It was UTF-8 to start with).</p>
+<p>If you’re genuinely producing CSVs, then I’d stick to the RFC for escaping/separators to help support loading into generic tools. If you can guarantee the contents of your files won’t contain certain characters, and will never contain newlines in data, then pipe- or semi-colon separated files are a sensible approach, too.</p>
+<p>It might be worth making a simple test CSV file that people can load into their system / save back out. Something as simple as:</p>
+<pre><code>"newline CRLF
+","newline LF
+",noquote,"doublequote ""","singlequote '","comma ,","ÚTF-8"
+</code></pre>
+<p>and checking that the output matches the input exactly. (The UTF-8 bit should be multilingual, ideally)</p>
+<p>[The above is all just my opinion from having worked with CSVs quite a bit - please critique harshly :)]</p>
+          <p><a href="https://discuss.iatistandard.org/t/csv-api-guidlines/73/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/csv-api-guidlines/73/2</link>
+        <pubDate>Mon, 04 Aug 2014 23:52:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-73-2</guid>
+        <source url="https://discuss.iatistandard.org/t/csv-api-guidlines/73.rss">CSV API Guidlines</source>
+      </item>
+      <item>
+        <title>CSV API Guidlines</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>It occurs to me that we should maybe have some general guidelines for working with/producing CSVs. Currently the IATI Datastore, Dashboard, Codelist API, the Registry and the CSV Conversion tool linked to from the registry produce csvs. The Registry, CSV2IATI and AidStream also accept CSVs as inputs. If I have missed any active CSV producing/consuming IATI tools/APIs, please post them below.</p>
+<p>Guidlines might include might include:</p>
+<ul>
+<li>What format should be used (ie. what should the separator be, and what type of escaping should be used)</li>
+<li>How should new lines be treated (the behaviour of quoted new lines seems to vary a lot)</li>
+<li>What encoding should be used (I would suggest UTF-8)</li>
+</ul>
+<p>If these choices are consistent between multiple APIs, then they can share one piece of user guidance (ie. How to open this file in your spreadsheet program of choice). The most common user mistake I see is opening UTF-8 encoded files as windows code page.</p>
+          <p><a href="https://discuss.iatistandard.org/t/csv-api-guidlines/73/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/csv-api-guidlines/73/1</link>
+        <pubDate>Fri, 25 Jul 2014 15:08:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-73-1</guid>
+        <source url="https://discuss.iatistandard.org/t/csv-api-guidlines/73.rss">CSV API Guidlines</source>
+      </item>
+  </channel>
+</rss>

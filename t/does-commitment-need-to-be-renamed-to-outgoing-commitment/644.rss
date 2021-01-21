@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+    <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644</link>
+    <description>_NB: picking up on discussions that are here: http://support.iatistandard.org/hc/en-us/articles/214390586 - with @Herman @rolfkleef @YohannaLoucheur @bill_anderson @JohnAdams _
+
+As we know, the code &quot;Incoming Commitment&quot; was added to 2.02 (but not to earlier versions of the standard, as @Herman originally proposed).  My understanding is that one purpose of this is to enable publishers to be clear about the commitments they have from others - and to not use the Incoming Funds code to declare this.
+
+This leaves the Commitment code. @YohannaLoucheur asked:
+
+&gt;  I want to make sure I understand how the codelist will work.  If it&#39;s an incoming commitment we would code it 11, while for an outgoing commitment we continue using code 2 &quot;Commitment&quot;?  Would it be clearer to rename 2 &quot;Outgoing Commitment&quot;, or would that be too much trouble for what it&#39;s worth?
+
+This didn&#39;t seem to get discussed in the original thread.
+
+Looking across the standard. there seems to be a slight ambiguity in terms of the relationship between the Commitment transaction and a &quot;total budget&quot; of an activity.  [IATI Guidance states](http://iatistandard.org/202/activity-standard/overview/transactions/):
+
+&gt; Commitment (code*2*)- the total agreed budget for the activity.
+
+The actual [codelist definition for Commitment](http://iatistandard.org/202/codelists/TransactionType/) seems to be different in approach:
+
+&gt; A firm, written obligation from a donor or provider to provide a specified amount of funds, under particular terms and conditions, for specific purposes, for the benefit of the recipient.
+
+In short, I think there are two uses of Commitment, around IATI land.  Publishers may do either (or both in some cases)
+
+1. We&#39;re committing this value to this _activity_ aka the total-budget
+2. We&#39;re committing this value to this _partner_ 
+
+The first use case is supported by the fact that publishers are **not** encouraged to use the `budget`` element to declare the total budget of an activity (and a total-budget element does not exist in the activity standard - only the org standard)
+
+The second use case supports the &quot;full-chain&quot; transparency, referenced by @Herman:
+
+&gt; Since the current standard only supports the &#39;Commitment&#39; as a transaction type, it is impossible to distinguish between incoming and outgoing commitments. Without this element full chain transparency is therefore not possible.
+
+And so - here could be our difficulty.  If the same code is wide open to two use cases, we face difficulties in getting datasets to work together, potentially.  
+
+To sum: Renaming (or clarifying) Commitment to Outgoing Commitment may start to make things clearer for implementation, although we should also be minded that this code is in widespread use.
+
+
+(In trying to pick up and type up this discussion, it does seem to make the case for a ``total-budget`` element in the activity standard, or perhaps some work on the ``budget/@type`` attribute/codelist)</description>
+    
+    <lastBuildDate>Thu, 09 Mar 2017 14:41:49 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Just flagging that this didnt seem to get to the list for <span class="hashtag">#TAG2017</span> Standards Day</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/16</link>
+        <pubDate>Thu, 09 Mar 2017 14:41:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-16</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree that commitments are transactions since they show the financial value of a contractual obligation in which two parties are involved. In the <a class="mention" href="/u/rolfkleef">@rolfkleef</a> schema, the provider publishes an ‘outgoing commitment’ at the moment the provider is legally bound. That maybe at the moment that a legal agreement  is signed by two parties (e.g. a contract) or when it is signed by the provider only (e.g. a subsidy).</p>
+<p>The receiver publishes an ‘incoming commitment’ at the moment the commitment is legally binding for the receiver. That maybe at the moment of countersigning the contract or at the moment of receiving the subsidy (no countersign required).</p>
+<p>Budgets are, as pointed out by <a class="mention" href="/u/pelleaardema">@pelleaardema</a> and <span class="mention">@YohannaLacheur</span>, not commitments. They represent an internal allocation decision by the organization responsible for the activity. Since different organizations use different budget cycles, As Pelle suggested, I think we should relax the year budget requirement. Even negative budget adjustments could/should be allowed. The total budget can than easily be derived by totaling the detail budgets, without the need for a new ‘Total budget’ element.</p>
+<p>Planned disbursements represent the specific amounts which are planned to be disbursed or expended in a given time period. Planned disbursements maybe the same as the budgets, but they are often different.</p>
+<p>In summary: yes ‘outgoing commitment’ seems to be much clearer that ‘commitment’. Budgets are nor the same as commitments so the definition text could be made clearer on this point to avoid confusion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/15</link>
+        <pubDate>Tue, 07 Feb 2017 16:32:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-15</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>it’s a bit off-topic, but I wanted to add this as it’s slightly different to Yohanna’s illustration. We encourage CSOs to use accountable and implementing to reflect where they are in the project delivery chain and their relationship to the flow of funds. For example,</p>
+<p><strong>Accountable:</strong> applies to an organisation where the majority of funding received from a specific donor is disbursed to a partner CSO who is actually doing the work. The first organisation does not implement the activity but is responsible/accountable back to the donor for the funds. They would also record an incoming commitment from the donor.</p>
+<p><strong>Implementing:</strong> Where the organisation uses all of the funds themselves to run the project (although a small amount may also be disbursed to partners). They would also record an incoming commitment from either the donor (where funded directly as a tier 1 partner) or from the accountable organisation (where they are a tier 2 partner).</p>
+<p>It’s conceivable that a CSO can be both accountable and implementing also.</p>
+<p>Re Tim’s point, a commitment and a disbursement can therefore go to an organisation categorised as accountable. To change the guidance to limit the use of commitment and disbursement transactions only to implementing would therefore I think be confusing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/14</link>
+        <pubDate>Thu, 05 Jan 2017 16:25:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-14</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>These are good points.</p>
+<p>I’m not sure we have documented rules about what transactions might exist to accountable and implementing organisations, so in current guidance I couldn’t find anything that would exclude these from being the recipients of a transaction, but it might be that guidance should be tightened up to make clear that commitment and disbursement transactions should always go to an organisation listed as ‘implementing’.</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/13</link>
+        <pubDate>Fri, 30 Dec 2016 16:01:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-13</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Tim, I’m confused by your table, specifically the presence of “accountable or extending organisation” in the receiver-org column for commitment and disbursement.  (Sorry, I cannot seem to put a quote from your post.)</p>
+<p>Granted, these 2 categories have always been somewhat unclear to us, but let me try to unpack it somewhat.</p>
+<p>The “accountable organisation” is defined in the standard as responsible for oversight and outcomes. Additional guidance explained early on that this is the organisation we sign an MoU with, such as a partner gouvernment ministry. An MoU is not a contractual instrument and does not lead to funding flows, so it would not seem possible to have the accountable org as the recipient of a commitment or disbursement. Would you have a real-life example of when this would happen?</p>
+<p>The “extending organisation” is defined as managing the activity budget and on behalf of the funder. If the extending organisation is receiving or disbursing funding itself, how does it differ from an “implementing organisation”? Would you have a concrete example?  Otherwise, I wonder if the extending org isn’t simply be an implementing org one step higher in the delivery chain (ie we give funding to Org A and code it as our implementing org. Org A gives funding to Org B and codes it as its implementing org, and so on).</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/12</link>
+        <pubDate>Fri, 30 Dec 2016 15:43:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-12</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Going back to Steven’s question because I think it’s important to be as clear as possible about this.</p>
+<aside class="quote no-group" data-post="4" data-topic="644">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Excuse the simplicity, but this is possible it seems:</p>
+<p>Commitment A - $1000 (total budget of project)<br>
+Commitment B - $500 - committed to partner X (using recipient-org)<br>
+Commitment C - $500 - committed to partner Y (using recipient-org)</p>
+</blockquote>
+</aside>
+<p>I don’t think the example is correct, as “Commitment A” is actually not a commitment (which is, by definition, a firm written obligation toward a recipient). This is why a commitment is treated as a transaction, as it requires a recipient. In other words, we would (should) only report/publish Commitment B and Commitment C.</p>
+<p>I’m increasingly convinced it would make sense to have a “total budget” element. This would enable donors to indicate the full budget allocated to a project, even if only part of the funding is committed (via a contractual instrument) at the begining.</p>
+<p>As we work on this element, let’s not forget that we need a way to modify “total budget” over time, as new resources can be added or indeed removed (through another formal approval process).</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/11</link>
+        <pubDate>Fri, 30 Dec 2016 15:25:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-11</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for flagging <a class="mention" href="/u/bill_anderson">@bill_anderson</a> and will do</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/10</link>
+        <pubDate>Mon, 19 Dec 2016 09:25:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-10</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rolfkleef">@rolfkleef</a> In addition to an excellent diagram I think we should include your definitions into the next decimal. <a class="mention" href="/u/wendy">@Wendy</a> could you add this to the <a href="//discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544">TAG paper on modifications</a> ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/9</link>
+        <pubDate>Fri, 16 Dec 2016 08:53:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-9</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/pelleaardema">@pelleaardema</a> the total budget may add up to the total incoming commitments, but it’s also possible to start a 5-year programme where only the funding for the first 3 years is secured via <em>incoming commitments</em> and the rest still be open for further fundraising.</p>
+<p>The other way too: I’ve discussed with organisations who only make contracts for one year with their implementing partners. Maybe they could publish their intention as <code>planned-disbursement</code> (side note: why isn’t that a transaction… ;-)).</p>
+<p>I made financial flow charts where a 5-year budget from minbuza comes in, and only 1-year contracts are published as <code>commitment</code>, so a huge portion seems to be not used yet.</p>
+<p>I guess there’s room for a level of <em>allocation</em> in addition to commitment?</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/8</link>
+        <pubDate>Thu, 15 Dec 2016 17:48:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-8</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Quickly:</p>
+<p><a class="mention" href="/u/rolfkleef">@rolfkleef</a> great diagram - wow, it looks <em>so easy</em> when you put it that way!</p>
+<p><a class="mention" href="/u/pelleaardema">@pelleaardema</a> thanks.  I started to fork some of the budget discussion into <a href="//discuss.iatistandard.org/t/a-total-budget-for-an-activity/645">A total-budget for an activity?</a> - but appreciate if we want to bundle it together</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/7</link>
+        <pubDate>Thu, 15 Dec 2016 11:34:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-7</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[pelleaardema]]></dc:creator>
+        <description><![CDATA[
+            <p>I think renaming ‘Commitment’ to ‘Outgoing Commitment’ might be clearer for many publishers without a financial background (e.g. many NGOs that currently join IATI). If this is confusing for DAC reporters we should make sure the description gives enough clarification.</p>
+<p>Thanks <a class="mention" href="/u/rolfkleef">@rolfkleef</a> for the nice schema. I was about to write something similar in text. This is exactly how I understand and explain the different transaction types to the organisations I work with.</p>
+<p>I’m not sure if the current description of the Budget element still makes sense:</p>
+<aside class="quote no-group">
+<blockquote>
+<p>The total budget for an activity should be reported as a commitment in the transaction element.</p>
+</blockquote>
+</aside>
+<p>The total budget of an activity is not the same as the sum of outgoing commitments. And adding a separate commitment for the total budget of an activity may lead to double counting of commitments - or at least requires a lot of in-depth knowledge of users of the data.</p>
+<p>Looking at the logic described in Rolfs schema and the <a href="https://www.government.nl/topics/development-cooperation/documents/publications/2015/12/01/open-data-and-development-cooperation" rel="nofollow noopener">Netherlands MFA guidelines</a>, the budget would equal the sum of incoming commitments from donor and from internal funds.</p>
+<p>At the same time I see organisations struggling with the IATI requirement that budgets are defined <em>per year</em>. Not every organisation keeps annual activity budgets. My prefered direction would be: allow organisations to show in IATI <em>how they work</em>- some will work with annual budgets, others will work with total budgets. In any case the total budget for an activity is simple the sum of budget values for that activity?</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/6</link>
+        <pubDate>Thu, 15 Dec 2016 09:55:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-6</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok, we had the insider joke at a TAG:</p>
+<blockquote>
+<p>A commitment is not a transaction <img src="https://discuss.iatistandard.org/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+</blockquote>
+<p>But maybe we can go to <strong>a commitment <em>is</em> a transaction</strong>: a firm, written agreement. <em>A transaction involves another activity</em> either within the same organisation or within another organisation.</p>
+<p>It is a <strong>movement of resources into or out of the activity</strong>: either on a contractual level (incoming/outgoing commitment) or on a payment level (incoming funds, disbursements, expenditure, etc).</p>
+<p>We’ve used this pseudo-UML timeline as a guide in some workshops.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/6310ca1574816d3f5e0b3ee04ae32386b140dffd.png" data-download-href="https://discuss.iatistandard.org/uploads/default/6310ca1574816d3f5e0b3ee04ae32386b140dffd" title="transactions.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/6310ca1574816d3f5e0b3ee04ae32386b140dffd_2_543x500.png" width="543" height="500" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/6310ca1574816d3f5e0b3ee04ae32386b140dffd_2_543x500.png, https://discuss.iatistandard.org/uploads/default/original/1X/6310ca1574816d3f5e0b3ee04ae32386b140dffd.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/6310ca1574816d3f5e0b3ee04ae32386b140dffd.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/6310ca1574816d3f5e0b3ee04ae32386b140dffd_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">transactions.png</span><span class="informations">767×705 35 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/5</link>
+        <pubDate>Wed, 14 Dec 2016 21:46:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-5</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Another observation.  The <code>budget</code><a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/budget/" rel="nofollow noopener"> element states</a>:</p>
+<blockquote>
+<p>The total budget for an activity should be reported as a commitment in the transaction element.</p>
+</blockquote>
+<p>So, any activity could have several commitment transactions, which could either describe the total budget for an activity, but <em>maybe also</em> the commitment(s) made to partner(s)?</p>
+<p>Excuse the simplicity, but this is possible it seems:</p>
+<ul>
+<li>Commitment A - $1000 (total budget of project)</li>
+<li>Commitment B - $500 - committed to partner X (using recipient-org)</li>
+<li>Commitment C - $500 - committed to partner Y (using recipient-org)</li>
+</ul>
+<p>Does the DAC ‘commitment’ encompass both these uses?</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/4</link>
+        <pubDate>Wed, 14 Dec 2016 10:44:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-4</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Now that, since version 2.01, we have a nonsemantic numeric code this makes absolute sense. To ensure that this does not confuse DAC reporters I think the description should explicitly relate this code to the DAC “commitment”.</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/3</link>
+        <pubDate>Wed, 14 Dec 2016 09:43:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-3</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 to renaming to ‘outgoing commitment’.</p>
+<p>I put together the table below to describe when provider-org or receiver-org should be used in a transaction element.</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/bda9c5013a2cfe0e1fd99ec8840426d2349805de.png" width="636" height="417"></p>
+<p>It highlights that when we have just ‘commitment’ we see people confusing the direction of the commitment.</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/2</link>
+        <pubDate>Wed, 14 Dec 2016 09:08:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-2</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+      <item>
+        <title>Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>_NB: picking up on discussions that are here: <a href="http://support.iatistandard.org/hc/en-us/articles/214390586" rel="nofollow noopener">http://support.iatistandard.org/hc/en-us/articles/214390586</a> - with <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/rolfkleef">@rolfkleef</a> <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/johnadams">@JohnAdams</a> _</p>
+<p>As we know, the code “Incoming Commitment” was added to 2.02 (but not to earlier versions of the standard, as <a class="mention" href="/u/herman">@Herman</a> originally proposed).  My understanding is that one purpose of this is to enable publishers to be clear about the commitments they have from others - and to not use the Incoming Funds code to declare this.</p>
+<p>This leaves the Commitment code. <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> asked:</p>
+<blockquote>
+<p>I want to make sure I understand how the codelist will work.  If it’s an incoming commitment we would code it 11, while for an outgoing commitment we continue using code 2 “Commitment”?  Would it be clearer to rename 2 “Outgoing Commitment”, or would that be too much trouble for what it’s worth?</p>
+</blockquote>
+<p>This didn’t seem to get discussed in the original thread.</p>
+<p>Looking across the standard. there seems to be a slight ambiguity in terms of the relationship between the Commitment transaction and a “total budget” of an activity.  <a href="http://iatistandard.org/202/activity-standard/overview/transactions/" rel="nofollow noopener">IATI Guidance states</a>:</p>
+<blockquote>
+<p>Commitment (code<em>2</em>)- the total agreed budget for the activity.</p>
+</blockquote>
+<p>The actual <a href="http://iatistandard.org/202/codelists/TransactionType/" rel="nofollow noopener">codelist definition for Commitment</a> seems to be different in approach:</p>
+<blockquote>
+<p>A firm, written obligation from a donor or provider to provide a specified amount of funds, under particular terms and conditions, for specific purposes, for the benefit of the recipient.</p>
+</blockquote>
+<p>In short, I think there are two uses of Commitment, around IATI land.  Publishers may do either (or both in some cases)</p>
+<ol>
+<li>We’re committing this value to this <em>activity</em> aka the total-budget</li>
+<li>We’re committing this value to this <em>partner</em>
+</li>
+</ol>
+<p>The first use case is supported by the fact that publishers are <strong>not</strong> encouraged to use the `budget`` element to declare the total budget of an activity (and a total-budget element does not exist in the activity standard - only the org standard)</p>
+<p>The second use case supports the “full-chain” transparency, referenced by <a class="mention" href="/u/herman">@Herman</a>:</p>
+<blockquote>
+<p>Since the current standard only supports the ‘Commitment’ as a transaction type, it is impossible to distinguish between incoming and outgoing commitments. Without this element full chain transparency is therefore not possible.</p>
+</blockquote>
+<p>And so - here could be our difficulty.  If the same code is wide open to two use cases, we face difficulties in getting datasets to work together, potentially.</p>
+<p>To sum: Renaming (or clarifying) Commitment to Outgoing Commitment may start to make things clearer for implementation, although we should also be minded that this code is in widespread use.</p>
+<p>(In trying to pick up and type up this discussion, it does seem to make the case for a <code>total-budget</code> element in the activity standard, or perhaps some work on the <code>budget/@type</code> attribute/codelist)</p>
+          <p><a href="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644/1</link>
+        <pubDate>Wed, 14 Dec 2016 08:32:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-644-1</guid>
+        <source url="https://discuss.iatistandard.org/t/does-commitment-need-to-be-renamed-to-outgoing-commitment/644.rss">Does Commitment need to be renamed to &quot;Outgoing Commitment&quot;?</source>
+      </item>
+  </channel>
+</rss>

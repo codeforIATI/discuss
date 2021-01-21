@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Tech Paper: Improvements to the Activity Standard</title>
+    <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544</link>
+    <description>This paper will consider a number of issues relating to the Activity Standard. (We may need to split this paper in two to make it more manageable.)
+
+**Secondary publishers**
+
+* The definition of what constitutes a secondary publisher requires clarification.
+* Organisations reported by secondary publishers that do not themselves publish to IATI should be flagged so that their activity data can be used without fear of duplication or double counting.
+* Does there need to be a way to link the activities of an organisation reported by a secondary publisher to a primary publisher?
+
+**Future-dated transactions**
+
+* Current rules insist that transactions are a record of de facto actions that must therefore take place in the past. This logic is used to detect when a publisher&#39;s data has changed to calculate timeliness (publisher statistics logic looks for a change in the most recent transaction date). There are however business models where accounting systems legitimately issue committed instructions to banks for future transactions.
+
+**Participating organisation type attribute**
+
+* Add an [attribute to participating-org](http://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/17) - particularly useful for describing implementing organisations
+* Agree on either separation or alignment of the IATI Organisation Type codelist with the CRS Channel of Delivery. (See discussions [here](http://support.iatistandard.org/entries/27805378-Additions-to-Organisation-Type-codelist) and [here](http://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/17).)
+
+**Results aggregation/disaggregation**
+
+* Fix the results complex element to ensure accurate reporting of [disaggregated values](http://discuss.iatistandard.org/t/disaggregation-of-results/449) per indicator. 
+* [Proposal to remove](http://support.iatistandard.org/entries/83376329-Remove-attribute-aggregation-status-from-) the aggregation-status attribute from the result element
+
+**Transaction Issues**
+
+* Add a transaction type code for internally sourced / core funds. ([See separate paper on core funding](http://discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542))
+* Change transaction type code description &quot;Interest Repayment&quot; to &quot;Interest Payment&quot;
+* Make value-date mandatory (if agreed this would go in to the 3.01 queue)
+* [Proposal](http://discuss.iatistandard.org/t/currency-conversion/413/3) to specify an explicit exchange rate for a transaction
+
+**Budget Identifier**
+
+* Deprecate BudgetIdentifier codelist as it has been superceded by the new list of CRS purpose codes
+* Modify the BudgetIdenifierVocabulary codelist. ([See discussion here](http://discuss.iatistandard.org/t/sectors-sector-mappings/173/12).)
+
+
+**Total Estimated Cost**
+
+* Proposal to add a new total estimated cost element. ([See discussion here](http://discuss.iatistandard.org/t/total-cost-of-the-award-new-field-suggestion/456/9))
+* Review and clarify definitions for commitments, budgets and costs
+
+Miscellaneous
+
+* Review ambiguous use of @type and @code attributes across schema
+* Limit use of description/@type within an activity. (i.e. [don&#39;t allow repetition](http://support.iatistandard.org/entries/83242579-Limit-The-Use-of-description-type-Within-An-Activity) of same @type in one description)
+* [Make URLs on elements with a publisher-provided codelist mandatory](http://Make URLs on elements with a publisher-provided codelist mandatory)
+
+[This paper](https://docs.google.com/document/d/1kOIcA2A_eDfP8pnoLTFHbXvRdJdwJn81R2CwdQcrqQc/edit?usp=sharing) is part of the [Agenda](http://discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534) for the IATI TAG 2016 [Technical Consultation Workshop](http://discuss.iatistandard.org/t/technical-consultation-workshop/533)
+
+:bird: #IATI #TAG2016</description>
+    
+    <lastBuildDate>Tue, 28 Feb 2017 16:41:22 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>hi <a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+<p>I had presumed (perhaps erroneously) that most secondary publishers were just adding something (e.g. aiddata with the split purposecodes, or an organisation who republished with some better geocoding) and therefore not seeing themselves as ‘owners’ in any way. The activities would already have <code>provider-id</code>'s and <code>provider-activity-id</code>'s.</p>
+<p>Your suggestion speaks to a situation where a secondary publisher was publishing an activity that was ‘new to IATI’ and in that case I think that your guideline for the <code>participating-org/@ref</code> is a good one (could also just drop anything where the <code>reporting-org</code> wasn’t in the list of <code>participating-org</code>, plus it supports the use of existing IATI components.</p>
+<p>As for the <code>@role</code>, I use this a lot in my manual AIMS work but this is just to allow e.g. DfID to have @role=funder and @role=implementer on the same project so we can capture both the funds they pass on, and those they administer themselves. Basically a guide for humans who can’t work this out based on reading the transactions. Not a problem for IATI.</p>
+<p>I am less sure that we need to know who ‘owns’ it but may have misunderstood your problem. We know who reported it, and who is involved already. What would we do with ‘ownership’ - is there a level of additional responsibility that we expect from them? Again, in AIMS ‘ownership’ typically defines who can edit the activity - but moving away from this (broken) model is one of my favourite things about IATI.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/17</link>
+        <pubDate>Tue, 28 Feb 2017 16:41:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-17</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="544">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I am very worried that <span class="mention">@unique</span> will invoke a false sense of security though, blanket acceptance could lead to further double counting so anyone using multi-publisher data will have to do their own checks anyway.</p>
+</blockquote>
+</aside>
+<p>Here’s a possible alternative approach. If we have a guideline that secondary publishers should (when reporting activities of organisations that publish to IATI themselves) use the same organisation identifier in <code>participating-org/@ref</code> for the secondary activity as the ‘primary’ organisation used for <code>reporting-org/@ref</code> it would be relatively trivial for a utility to check for ‘duplicate’ organisations across the entire IATI corpus.</p>
+<p>This, however, raises a problem. An activity reported by a secondary publisher  can contain <code>participating-org</code> data on funders, implementers, etc, but nothing tells you who ‘owns’  the activity being reported. Do we need a new <code>@role</code> code?</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/16</link>
+        <pubDate>Tue, 28 Feb 2017 15:28:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-16</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> what is needed to make this a practical proposal, and what is the deadline?</p>
+<p>I had imagined (but without deep thought) that it would be similar to <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/recipient-country/" rel="nofollow noopener">recipient-county</a> but with aid-type instead. Percentages would follow the same rules. I could do a ctrl-f replace, plus a few examples of where this might be useful?</p>
+<p>Does anyone else have an opinion on whether this belongs at the activity level or the transaction level? I am not sure how IATI handles these things e.g. if an activity is 80% TA, could a disbursement be set to be 50% TA and 50% something else?</p>
+<p>Thanks,</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/15</link>
+        <pubDate>Tue, 28 Feb 2017 14:48:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-15</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="544">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>and aid type (please can this allow percentage splits)?</p>
+</blockquote>
+</aside>
+<p>Would anyone like to have a stab at rendering this idea into a practical proposal?</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/14</link>
+        <pubDate>Tue, 28 Feb 2017 14:29:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-14</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Bill,</p>
+<p>Lots of things I can imagine using a lot here, especially contact info, and aid type (please can this allow percentage splits)?</p>
+<p>RE <span class="mention">@secondary-unique</span>, I think that it would be good practice to separate the two functions into two flags 1) <span class="mention">@secondary</span> - this a secondary publisher and 2) <span class="mention">@unique</span> - this data believed to be unique. It might also make it easier to then revoke/ignore/drop the ‘unique’ flag if the primary publisher later publishes or you don’t trust it, but still be able make use of the secondary publisher flag.</p>
+<p>I am very worried that <span class="mention">@unique</span> will invoke a false sense of security though, blanket acceptance could lead to further double counting so anyone using multi-publisher data will have to do their own checks anyway. E.g. imagine a situation where there were multiple secondary publishers, it would not be as simple as checking if the primary publisher was publishing. It would also be good to figure out how you could tell if the <span class="mention">@unique</span> flag was subsequently incorrect. This would depend on being able to match activities across different publishers?</p>
+<p>Thanks,</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/13</link>
+        <pubDate>Tue, 28 Feb 2017 11:35:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-13</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>The <a href="https://docs.google.com/document/d/1kOIcA2A_eDfP8pnoLTFHbXvRdJdwJn81R2CwdQcrqQc/edit?usp=sharing">draft paper on Improvements to the Activity Standard</a> is now available.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/12</link>
+        <pubDate>Tue, 28 Feb 2017 09:19:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-12</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>Option 1 should be preferred - but then we are back at the question of how to make a valid workaround and exemption from the current requirement on reporters to be ‘independent legal entities’. Is my proposal too far fetched - requesting the primary reporter to state its own list of valid subsidiary reporters in the org_file?</p>
+<p>This could allow a procedure similar to that of activity-identifiers (as elaborated in NL’s guidelines), where the ‘sponsor’ instructs the ‘receiver’ to use a particular key, when fulfilling the reporting requirement. Contrary to independent legal entities, these should not be allowed to proliferate in a bottom-up process.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/11</link>
+        <pubDate>Tue, 31 Jan 2017 15:16:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-11</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="544">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/timdavies/40/122_1.png" class="avatar"> TimDavies:</div>
+<blockquote>
+<p>How big an issue would  there be with two separate units of the same organisation/legal entity reporting to IATI with the same reporting-org/<span class="mention">@ref</span> value, but uploading separately to the registry, and potentially including different strings in the reporting-org/narrative field to indicate which department they are? Or does this not get to the issue that is of concern?</p>
+</blockquote>
+</aside>
+<p>The only rule that stops a publisher passing themselves off as another institution is the unique one-to-one relationship between the registry’s publisher id and the reporting-org/<span class="mention">@ref</span>. ** One possibility could be to modify this rule to say the registry publisher id needs to match reporting-org/<span class="mention">@ref</span> <strong><em>excluding</em></strong> a distinguishable suffix.</p>
+<p>This, I think, gives us three options:</p>
+<ol>
+<li>Departments publish to separate registry accounts using different reporting-org/<span class="mention">@ref</span>’s</li>
+<li>Departments are reflected in the activity identifier, not the reporting-org/<span class="mention">@ref</span>. (NB there is nothing stopping a transaction having the same provider-org and reciever-org, but different provider- and receiver- activity ids so funds can be transferred internally between departments and/or activities)</li>
+<li>Departments publish (jointly or separately) to 1 registry account using differently suffixed reporting-org/<span class="mention">@ref</span>’s</li>
+</ol>
+<p>Only the third option requires a change to the standard. This would most probably need to be part of an integer upgrade.</p>
+<p>Personally I would not be in favour of using any narrative field for any logical process</p>
+<p>** There have been issues with the implementation of this rule. That doesn’t undermine its importance. And we also need to deal with identifying organisations published by secondary publishers who do not publish themselves.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/10</link>
+        <pubDate>Tue, 31 Jan 2017 12:57:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-10</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/bill_anderson">@bill_anderson</a>, <a class="mention" href="/u/oj_">@OJ_</a></p>
+<p>So - as I understand the issue here, it is a question of identifying sub-units / departments etc. of a legal entity.</p>
+<p>Right now, the Organisation Identifier string is supposed to point to a specific legal entity. Where PIUs are not a legal entity, their Organisation Identifier string would be that of their parent legal entity.</p>
+<p>The Organisation Identifier strings could be adapted to include a sub-unit component. I’ve <a href="https://github.com/OpenDataServices/org-ids/issues/32" rel="nofollow noopener">opened an issue in the Org ID project here</a> which relates to this, in terms of whether a separator could be declared for a sub-unit component within the identifier string.</p>
+<p>This would have implications for tools that are interpreting identifiers, but does not look entirely implausible, providing it makes sense across standards working with the shared organisation ID method.</p>
+<p>However, it might be worth checking back on the original traceability issue. Based on the work <a class="mention" href="/u/stevieflow">@stevieflow</a> and Rory Scott have been doing, we’ve found lots of cases of in-organisation traceability, where activity identifiers level traceability can be used to show how funds flow between activities inside the single organisation.</p>
+<p>How big an issue would  there be with two separate units of the same organisation/legal entity reporting to IATI with the same reporting-org/<span class="mention">@ref</span> value, but uploading separately to the registry, and potentially including different strings in the reporting-org/narrative field to indicate which department they are? Or does this not get to the issue that is of concern?</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/9</link>
+        <pubDate>Tue, 31 Jan 2017 11:25:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-9</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/oj_">@OJ_</a> are you aware that IATI is<a href="https://identify-org.net/"> partnering with others to improve our approach</a> to all identifier headaches. <a class="mention" href="/u/timdavies">@TimDavies</a> and team can you get around OJ’s issue?</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/8</link>
+        <pubDate>Fri, 27 Jan 2017 16:33:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-8</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry - it’s a ‘Project Implementation Unit’.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/7</link>
+        <pubDate>Mon, 23 Jan 2017 08:21:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-7</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Just as a heads up here, we’ve convened a group of M&amp;E specialists to look at the Results element and advise how to improve it, and findings and recommendations will be provided as a paper for the TAG. This is likely to go beyond changes to the aggregation flag, and I’m guessing it will be an iterative process to consult on and incorporate into the Standard - some changes will be appropriate for an integer upgrade and some for a decimal.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/6</link>
+        <pubDate>Sat, 21 Jan 2017 15:38:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-6</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/oj_">@OJ_</a> please explain what a PIU is?</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/5</link>
+        <pubDate>Fri, 20 Jan 2017 20:26:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-5</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>PIU identification and -reporting.</p>
+<p>Realising that PIU’s are here to stay, while recognising that they come in many different types, sizes and shapes, IATI must find a way to include them all - a standaradised way to integrate reporting from PIU’s.</p>
+<p>If a PIU is a separate legal entity, then there is no problem - the {RegistrationAgency}-{RegistrationNumber} identification is OK.</p>
+<p>If a PIU is merely a subsiduary body of another organisation, it might take two different forms:</p>
+<ol>
+<li>
+<p>Integrated part of the parent-organisation - allowing data to be Integrated into the IATI files of the parent-organisation.</p>
+</li>
+<li>
+<p>Separated from the parent-organisation - being unable to process data into the consolidated dataset</p>
+</li>
+</ol>
+<p>It is obviously the second form that cause problems. And unless the problem is solved, the parent-organisation can only report disbursement to itself. No details on the further use of the funds are revealed, and this goes for  inflows from other sources as well. It is not just a black box, but a black hole. This allows no further work on traceability.</p>
+<p>The only way around the problem, within the current  standard, is for the parent organisation to double as RegistrationAgency - Thus allowing PIU’s to become reporters. This is hardly desireable, since the concept of Registration Agencies is relying on the assumption that they are the real thing - not just another pile of crap data.</p>
+<p>Having a flexible approach to the identification of Unique organisations, we could also allow PIU’s to just declare themselves (without the reference to Registration Agency), or we could set up a IATI-registration-office to serve the purpose. But this is only mentioned to cover the options - it is not to be recommended.</p>
+<p>I can only come up with one more option. It is not pretty, but having eliminated the previous I find it must be considered seriously. And I have to include the following proposal under the heading <a href="//discuss.iatistandard.org/t/tech-paper-improvements-to-the-organisation-standard/543">‘Improvements to the Organisational Standard’</a> as well.</p>
+<p>Adding a suffix to the organisation_identifier of their parent_organisation could single out PIU’s, and allow for validation (ensuring uniqueness of the suffix) if it is required by the parent_organisation to identify their PIU’s in the Organisation_file.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/4</link>
+        <pubDate>Thu, 19 Jan 2017 08:29:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-4</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven. Yes, I remember this discussion - I will make sure this proposal has a section in the paper. Thanks for reminding me!</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/3</link>
+        <pubDate>Tue, 20 Sep 2016 09:30:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-3</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Participating organisation: include contact-info block</strong></p>
+<p>An issue we explored via the<a href="https://www.interaction.org/document/initiative-open-ag-funding-proposals-standard-developments" rel="nofollow noopener"> Initiative for Open Ag Funding</a> was around identification and clarification of participating-orgs.  Granted, a unique / common <span class="mention">@ref</span> is an established method to do this.  However, we also highlight that further detail may be useful, given the fact that most organisations described with IATI are very large and consist of numerous departments and staff.  To this end we propose the addition of the <code>contact-info</code> block to the schema, intended for optional inclusion within the <code>participating-org</code> element.  This would enable publishers to include specific partner / organisation details within any activity, and may also assist data users to clarify the exact person/department involved in an activity.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/2</link>
+        <pubDate>Mon, 19 Sep 2016 18:17:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-2</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+      <item>
+        <title>Tech Paper: Improvements to the Activity Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>This paper will consider a number of issues relating to the Activity Standard. (We may need to split this paper in two to make it more manageable.)</p>
+<p><strong>Secondary publishers</strong></p>
+<ul>
+<li>The definition of what constitutes a secondary publisher requires clarification.</li>
+<li>Organisations reported by secondary publishers that do not themselves publish to IATI should be flagged so that their activity data can be used without fear of duplication or double counting.</li>
+<li>Does there need to be a way to link the activities of an organisation reported by a secondary publisher to a primary publisher?</li>
+</ul>
+<p><strong>Future-dated transactions</strong></p>
+<ul>
+<li>Current rules insist that transactions are a record of de facto actions that must therefore take place in the past. This logic is used to detect when a publisher’s data has changed to calculate timeliness (publisher statistics logic looks for a change in the most recent transaction date). There are however business models where accounting systems legitimately issue committed instructions to banks for future transactions.</li>
+</ul>
+<p><strong>Participating organisation type attribute</strong></p>
+<ul>
+<li>Add an <a href="//discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/17">attribute to participating-org</a> - particularly useful for describing implementing organisations</li>
+<li>Agree on either separation or alignment of the IATI Organisation Type codelist with the CRS Channel of Delivery. (See discussions <a href="http://support.iatistandard.org/entries/27805378-Additions-to-Organisation-Type-codelist">here</a> and <a href="//discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/17">here</a>.)</li>
+</ul>
+<p><strong>Results aggregation/disaggregation</strong></p>
+<ul>
+<li>Fix the results complex element to ensure accurate reporting of <a href="//discuss.iatistandard.org/t/disaggregation-of-results/449">disaggregated values</a> per indicator.</li>
+<li>
+<a href="http://support.iatistandard.org/entries/83376329-Remove-attribute-aggregation-status-from-">Proposal to remove</a> the aggregation-status attribute from the result element</li>
+</ul>
+<p><strong>Transaction Issues</strong></p>
+<ul>
+<li>Add a transaction type code for internally sourced / core funds. (<a href="//discuss.iatistandard.org/t/tech-paper-core-funding-and-funding-from-own-sources/542">See separate paper on core funding</a>)</li>
+<li>Change transaction type code description “Interest Repayment” to “Interest Payment”</li>
+<li>Make value-date mandatory (if agreed this would go in to the 3.01 queue)</li>
+<li>
+<a href="//discuss.iatistandard.org/t/currency-conversion/413/3">Proposal</a> to specify an explicit exchange rate for a transaction</li>
+</ul>
+<p><strong>Budget Identifier</strong></p>
+<ul>
+<li>Deprecate BudgetIdentifier codelist as it has been superceded by the new list of CRS purpose codes</li>
+<li>Modify the BudgetIdenifierVocabulary codelist. (<a href="//discuss.iatistandard.org/t/sectors-sector-mappings/173/12">See discussion here</a>.)</li>
+</ul>
+<p><strong>Total Estimated Cost</strong></p>
+<ul>
+<li>Proposal to add a new total estimated cost element. (<a href="//discuss.iatistandard.org/t/total-cost-of-the-award-new-field-suggestion/456/9">See discussion here</a>)</li>
+<li>Review and clarify definitions for commitments, budgets and costs</li>
+</ul>
+<p>Miscellaneous</p>
+<ul>
+<li>Review ambiguous use of <span class="mention">@type</span> and <span class="mention">@code</span> attributes across schema</li>
+<li>Limit use of description/<span class="mention">@type</span> within an activity. (i.e. <a href="http://support.iatistandard.org/entries/83242579-Limit-The-Use-of-description-type-Within-An-Activity">don’t allow repetition</a> of same <span class="mention">@type</span> in one description)</li>
+<li>[Make URLs on elements with a publisher-provided codelist mandatory](<a href="http://Make">http://Make</a> URLs on elements with a publisher-provided codelist mandatory)</li>
+</ul>
+<p><a href="https://docs.google.com/document/d/1kOIcA2A_eDfP8pnoLTFHbXvRdJdwJn81R2CwdQcrqQc/edit?usp=sharing">This paper</a> is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544/1</link>
+        <pubDate>Tue, 09 Aug 2016 08:51:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-544-1</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544.rss">Tech Paper: Improvements to the Activity Standard</source>
+      </item>
+  </channel>
+</rss>

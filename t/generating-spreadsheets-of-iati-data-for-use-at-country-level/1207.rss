@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Generating spreadsheets of IATI data for use at country level</title>
+    <link>https://discuss.iatistandard.org/t/generating-spreadsheets-of-iati-data-for-use-at-country-level/1207</link>
+    <description>ODI&#39;s [Budget Strengthening Initiative (BSI)](https://bsi.odi.org/) has been working for Liberia&#39;s [Ministry of Finance and Development Planning (MFDP)](https://mfdp.gov.lr/) to develop a tool to extract data from IATI in nice, clean spreadsheets. The tool is now live and you can see it here:
+
+http://spreadsheets.aidonbudget.org
+
+## Aim of the tool
+
+The idea was to use IATI to provide an easy to access source of aid data in a spreadsheet format, where data is otherwise unavailable at country level. Over time, IATI data could become the primary mechanism for data collection, but that will depend on the availability of systems for import and good quality data from specific donors, as well as confidence building and training at the country level.
+
+The tool demonstrates that it is possible to get a good first list of projects from IATI data into a useful spreadsheet format. We will improve the format further over time in response to feedback from MFDP.
+
+## Next steps
+
+We will continue to make further improvements to the tool&#39;s usability, to the format of the spreadsheet output, and to include more donors as their data improves (or as we are able to develop workarounds to handle basic issues in their data).
+
+## More detailed description
+
+In a little more detail, the tool does the following:
+
+* retrieves data each night from the IATI Datastore
+* captures data from a subset of official donors which have good quality data
+* converts all currencies to USD, using precise rates from the Federal Reserve and OECD
+* maps data against country fiscal years and quarters
+* reads data in v1.x or v2.x of the IATI Standard
+* flattens hierarchies in publishers&#39; data in an intelligent way (depending on the donor)
+* allows data to be viewed and exported in Excel files
+* available in English and French
+
+A few limitations of the tool:
+
+* excludes (deliberately) donors that do not have good enough data
+* does not include documents or results
+* currently only available for Liberia
+
+The source code is also available here:
+
+* https://github.com/markbrough/flatiati
+
+Currently, we generate data for Liberia by fetching data each night, writing the data to a database, and then freezing this to a static site to make viewing the site much faster. We will spend some time trying to speed up this process, which should make it possible to make the site available for more countries (the only issue here is the speed of generating spreadsheet files).</description>
+    
+    <lastBuildDate>Wed, 31 Jan 2018 13:24:59 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/generating-spreadsheets-of-iati-data-for-use-at-country-level/1207.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Generating spreadsheets of IATI data for use at country level</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>ODI’s <a href="https://bsi.odi.org/" rel="nofollow noopener">Budget Strengthening Initiative (BSI)</a> has been working for Liberia’s <a href="https://mfdp.gov.lr/" rel="nofollow noopener">Ministry of Finance and Development Planning (MFDP)</a> to develop a tool to extract data from IATI in nice, clean spreadsheets. The tool is now live and you can see it here:</p>
+<p><a href="http://spreadsheets.aidonbudget.org" class="onebox" target="_blank" rel="nofollow noopener">http://spreadsheets.aidonbudget.org</a></p>
+<h2>Aim of the tool</h2>
+<p>The idea was to use IATI to provide an easy to access source of aid data in a spreadsheet format, where data is otherwise unavailable at country level. Over time, IATI data could become the primary mechanism for data collection, but that will depend on the availability of systems for import and good quality data from specific donors, as well as confidence building and training at the country level.</p>
+<p>The tool demonstrates that it is possible to get a good first list of projects from IATI data into a useful spreadsheet format. We will improve the format further over time in response to feedback from MFDP.</p>
+<h2>Next steps</h2>
+<p>We will continue to make further improvements to the tool’s usability, to the format of the spreadsheet output, and to include more donors as their data improves (or as we are able to develop workarounds to handle basic issues in their data).</p>
+<h2>More detailed description</h2>
+<p>In a little more detail, the tool does the following:</p>
+<ul>
+<li>retrieves data each night from the IATI Datastore</li>
+<li>captures data from a subset of official donors which have good quality data</li>
+<li>converts all currencies to USD, using precise rates from the Federal Reserve and OECD</li>
+<li>maps data against country fiscal years and quarters</li>
+<li>reads data in v1.x or v2.x of the IATI Standard</li>
+<li>flattens hierarchies in publishers’ data in an intelligent way (depending on the donor)</li>
+<li>allows data to be viewed and exported in Excel files</li>
+<li>available in English and French</li>
+</ul>
+<p>A few limitations of the tool:</p>
+<ul>
+<li>excludes (deliberately) donors that do not have good enough data</li>
+<li>does not include documents or results</li>
+<li>currently only available for Liberia</li>
+</ul>
+<p>The source code is also available here:</p>
+<ul>
+<li><a href="https://github.com/markbrough/flatiati" rel="nofollow noopener">https://github.com/markbrough/flatiati</a></li>
+</ul>
+<p>Currently, we generate data for Liberia by fetching data each night, writing the data to a database, and then freezing this to a static site to make viewing the site much faster. We will spend some time trying to speed up this process, which should make it possible to make the site available for more countries (the only issue here is the speed of generating spreadsheet files).</p>
+          <p><a href="https://discuss.iatistandard.org/t/generating-spreadsheets-of-iati-data-for-use-at-country-level/1207/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/generating-spreadsheets-of-iati-data-for-use-at-country-level/1207/1</link>
+        <pubDate>Wed, 31 Jan 2018 13:24:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1207-1</guid>
+        <source url="https://discuss.iatistandard.org/t/generating-spreadsheets-of-iati-data-for-use-at-country-level/1207.rss">Generating spreadsheets of IATI data for use at country level</source>
+      </item>
+  </channel>
+</rss>

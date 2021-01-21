@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to link donor activities to implementing partner activities</title>
+    <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448</link>
+    <description>Hi folks.  I&#39;ve been looking at various discussions on how to link data between different publishers (e.g. https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288) and I just wanted to check that my current understanding is correct.  I understand that there is no intention for full accounting level trace-ability but we do want to be able to follow the money.
+
+1. We shouldn&#39;t use related-activities to link donor to implementing org activities.   Instead that link is made through transactions
+
+2. Ideally we should provide @provider-activity-id in the incoming transaction to match the donor activity but  we might not always know that.  It any case we should be matching amounts and dates
+
+3. related-activities and parent/child relationships should really be restricted to within our own organisation.
+
+It&#39;s basic stuff but there appear to be a few different ways to achieve the same aim so I would rather follow the same practices as others
+
+Thanks
+
+Richard</description>
+    
+    <lastBuildDate>Wed, 10 Oct 2018 12:44:11 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>I do agree on the correct use of the current standard, as described in this thread, but would like to raise one issue: It has been a notable trend, in the development of our standard, to push attributes down to leaf-level (being transactions) - to a degree where I find that it threatens to make manual updates too cumbersome, but more importantly it threatens to make other data-modelling options invisible.</p>
+<p>As an example, referring to this issue of how to identify partner-organisations and activities up- and downstream: If the activity-data are modelled around the individual engagements/agreements/contracts (either as the lowest level in a hierarchy, or as the only ‘level’), then we ought to allow the identification of defaults for org. and activity-relationships at activity-level, leaving transactions as just transactions - unless they should deviate from the published defaults.</p>
+<p>This could in fact be a nice incentive to build in - an incentive to identify feasible entities as (lowest level) Activity in IATI. I find that many of the options for enrichments we have pushed to transactions are indicating that some publishers must have chosen a very ‘aggregate’ concept for activities, since they see the need to disaggregate in so many dimensions at transaction-level.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/11</link>
+        <pubDate>Wed, 10 Oct 2018 12:44:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-11</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I assume there will be an ‘intro to the standard’ session for newcomers.</p>
+<aside class="quote no-group" data-post="9" data-topic="1448">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/michelle_iom/40/443_1.png" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>Having a conversation about how to possibly figure out how all parties along the chain can share the needed info during the contracting process so that we can weave the same thread through our publications and data users can follow it all would be an added bonus.</p>
+</blockquote>
+</aside>
+<p>That would be a very useful practical conversation to have, with concrete outcomes (e.g. “5 Top Things Funders Can Do To Facilitate Traceability”) to take back and implement.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/10</link>
+        <pubDate>Thu, 04 Oct 2018 13:23:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-10</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>I think it would start with the basics and then dig into the technical details. As a relatively new publisher (first publication in Feb 18) and someone who only started this journey a year ago I feel like I speak on behalf of the newbies who look at the documentation on the standard and see it as a confusing secret code that is daunting to crack.</p>
+<p>I understand that we need to encourage usage of the data.  As I look at the myriad of reporting requirements we have there is serious upside to having lots of roads lead back to/out from IATI.  But I also know that if the standard is complicated to understand or not well explained info will simply not be included by publishers or the data will not be comparable as different publishers will interpret things differently.  Making sure we are all on the same page and defining it in both technical and lay-persons’ terms is key.</p>
+<p>Having a conversation about how to possibly figure out how all parties along the chain can share the needed info during the contracting process so that we can weave the same thread through our publications and data users can follow it all would be an added bonus.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/9</link>
+        <pubDate>Thu, 04 Oct 2018 08:28:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-9</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="7" data-topic="1448">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/michelle_iom/40/443_1.png" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>As I’ve never been to TAG before I am curious if this is the kind of thing that is worth digging into during a small, interested party session in person at TAG.</p>
+</blockquote>
+</aside>
+<p>Do you mean the general issue of linking activities between donors and partners, or the more specific issue of whether an activity ID should be in IATI to be used?</p>
+<p>Either way, I do think it would be useful and would be interested in participating, assuming I attend the TAG.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/8</link>
+        <pubDate>Wed, 03 Oct 2018 16:37:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-8</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>As I’ve never been to TAG before I am curious if this is the kind of thing that is worth digging into during a small, interested party session in person at TAG.  I’m struggling to follow all of this and want to make sure I’m understanding all of this.</p>
+<p>Thoughts?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/7</link>
+        <pubDate>Fri, 28 Sep 2018 13:26:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-7</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>(I debated whether to make this a separate thread or not…  Let me know.)</p>
+<p>In light of recent questions from new publishers - who wanted to include activity IDs for incoming funds - I wonder about the value of requiring the activity to be published to IATI for the ID to be included.</p>
+<ul>
+<li>
+<p>At the organisation level, we allow the use of the org-identifier for organisations that are not (yet) IATI publishers. We have rules about how org-identifiers are formed and a ressource to help find the national registrations bodies/codelists (www.org-ID.guide).</p>
+</li>
+<li>
+<p>The activity-identifier is formed of the org-identifier + the activity number. Therefore, it is possible to construct an activity-identifier whether or not this activity is published to IATI. The activity number can be available publicly in a number of places that are not IATI (e.g. open contracting data, 360 data, funder’s website etc).</p>
+</li>
+</ul>
+<p>By allowing the use of activity identifiers irrespective of whether they are in IATI data, we would facilite joined-up data and may help encourage organizations to publish structured data (for instance those who already provide a lot of information on their websites), as they could see more concretely the value of linking up with other data.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/6</link>
+        <pubDate>Thu, 27 Sep 2018 13:58:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-6</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for raising this <a class="mention" href="/u/richpepp">@RichPepp</a></p>
+<p>I agree with <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> &amp; <a class="mention" href="/u/markbrough">@markbrough</a> about the use of transactions</p>
+<p>We should also remember that it’s possible to include <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/participating-org/" rel="nofollow noopener">an activity-identifier through the participating-org element</a>.  Hence, you could cite a donor,and link to their specific activity:</p>
+<blockquote>
+<p>A valid activity identifier published by the participating organisation which points to the activity that it has published to IATI that describes its role in this activity.</p>
+</blockquote>
+<p>This only links the organisation, not any “money”.</p>
+<p>In terms of <code>related-activity</code> I’m not convinced we have a consensus on how to use this - <a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288">this thread doesn’t seem to resolve</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/5</link>
+        <pubDate>Thu, 27 Sep 2018 08:28:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-5</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[RichPepp]]></dc:creator>
+        <description><![CDATA[
+            <p>Fantastic, thanks folks.  It’s easy enough to parse donor files to find the matching provider-org and provider-activity-id.  It will be great once donors start to put this on their documents. For us I think we will just incorporate our existing numbers into our activity IDs along with our org id</p>
+<p>Thanks again all</p>
+<p>Richard</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/4</link>
+        <pubDate>Fri, 31 Aug 2018 07:35:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-4</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/richpepp">@RichPepp</a> – yes, your understanding sounds correct to me!</p>
+<ul>
+<li>On incoming funds, use <code>provider-org/@provider-activity-id</code> (and <code>provider-org/@ref</code>, to state the provider’s organisation ID).</li>
+<li>Don’t use <code>related-activity</code> to model relationships between organisations.</li>
+</ul>
+<p>You might also find <a class="mention" href="/u/andylolz">@andylolz</a>’ organisation ID finder useful: <a href="https://andylolz.github.io/org-id-finder/" rel="nofollow noopener">https://andylolz.github.io/org-id-finder/</a></p>
+<p>Also agree with <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> that it would be great if all donors would start to put the project’s IATI ID clearly on their project documents.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/3</link>
+        <pubDate>Thu, 30 Aug 2018 15:56:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-3</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Richard</p>
+<p>That seems to make sense.</p>
+<p>[quote=“RichPepp, post:1, topic:1448”]<br>
+Ideally we should provide <span class="mention">@provider-activity-id</span> in the incoming transaction to match the donor activity but we might not always know that. [/quote]</p>
+<p>In most cases it should be rather simple to get the <span class="mention">@provider-activity-id</span>. If the activity ID/number not in the project documents (e.g. the contract/agreement), I’d suggest to ask the donor to provide it. Over time I would expect all donors to put their activity IDs very clearly on all their project documents - so, being asked for the IDs can help make the case for this good practice.</p>
+<p>If the donor is not an IATI publisher, you can use org-id.guide to figure out their organization ID (which will be the first part of their activity ID).</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/2</link>
+        <pubDate>Thu, 30 Aug 2018 14:52:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-2</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+      <item>
+        <title>How to link donor activities to implementing partner activities</title>
+        <dc:creator><![CDATA[RichPepp]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi folks.  I’ve been looking at various discussions on how to link data between different publishers (e.g. <a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288">Using related-activity to link data between different publishers</a>) and I just wanted to check that my current understanding is correct.  I understand that there is no intention for full accounting level trace-ability but we do want to be able to follow the money.</p>
+<ol>
+<li>
+<p>We shouldn’t use related-activities to link donor to implementing org activities.   Instead that link is made through transactions</p>
+</li>
+<li>
+<p>Ideally we should provide <span class="mention">@provider-activity-id</span> in the incoming transaction to match the donor activity but  we might not always know that.  It any case we should be matching amounts and dates</p>
+</li>
+<li>
+<p>related-activities and parent/child relationships should really be restricted to within our own organisation.</p>
+</li>
+</ol>
+<p>It’s basic stuff but there appear to be a few different ways to achieve the same aim so I would rather follow the same practices as others</p>
+<p>Thanks</p>
+<p>Richard</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448/1</link>
+        <pubDate>Thu, 30 Aug 2018 12:09:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1448-1</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-link-donor-activities-to-implementing-partner-activities/1448.rss">How to link donor activities to implementing partner activities</source>
+      </item>
+  </channel>
+</rss>

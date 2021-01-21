@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Publishing rich content and pictures in IATI</title>
+    <link>https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706</link>
+    <description>Has anyone published rich content including pictures in IATI format?
+
+1. Pictures. How are you including the files - as document-link? What document-category do you use? How are you labelling, captioning?
+
+2. Rich text context - are you using the multiple description types?
+
+John</description>
+    
+    <lastBuildDate>Tue, 28 Mar 2017 20:05:13 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Publishing rich content and pictures in IATI</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>In response to 1.</p>
+<p>Its a hack to do it in document-links imo, document-links require at least one DocumentCategory and none of the categories fit pictures.</p>
+<p>Saying that, its also the only option where you can validly hack it into IATI a bit without using namespaces (which I’ll never use). We implemented it on aiddata.rvo.nl since it does enrich the context of the project, especially for their type of projects.</p>
+<p><a href="https://aiddata.rvo.nl/projects/NL-KVK-27378529-PSIP13OT31/?tab=summary" class="onebox" target="_blank" rel="nofollow noopener">https://aiddata.rvo.nl/projects/NL-KVK-27378529-PSIP13OT31/?tab=summary</a><br>
+<a href="https://aiddata.rvo.nl/projects/NL-KVK-27378529-TGOS140001/?tab=summary" class="onebox" target="_blank" rel="nofollow noopener">https://aiddata.rvo.nl/projects/NL-KVK-27378529-TGOS140001/?tab=summary</a></p>
+<p>(there’s more on the media tabs).</p>
+<p>We used document category A12 (= Activity web page… well its at least shown on the web page!). Labelling + captioning would have to be merged in the title, we did not use it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706/3</link>
+        <pubDate>Tue, 28 Mar 2017 20:05:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-706-3</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706.rss">Publishing rich content and pictures in IATI</source>
+      </item>
+      <item>
+        <title>Publishing rich content and pictures in IATI</title>
+        <dc:creator><![CDATA[mato74]]></dc:creator>
+        <description><![CDATA[
+            <p>ad 1 yes, see <a href="https://github.com/akvo/akvo-rsr/wiki/IATI-Import-mapping" rel="nofollow noopener">https://github.com/akvo/akvo-rsr/wiki/IATI-Import-mapping</a></p>
+<p>ad 2 yes, see also a contribution at <a href="//discuss.iatistandard.org/t/tech-paper-codelist-management/538/15?u=mato74">Tech Paper: Codelist Management</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706/2</link>
+        <pubDate>Thu, 09 Mar 2017 13:03:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-706-2</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706.rss">Publishing rich content and pictures in IATI</source>
+      </item>
+      <item>
+        <title>Publishing rich content and pictures in IATI</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Has anyone published rich content including pictures in IATI format?</p>
+<ol>
+<li>
+<p>Pictures. How are you including the files - as document-link? What document-category do you use? How are you labelling, captioning?</p>
+</li>
+<li>
+<p>Rich text context - are you using the multiple description types?</p>
+</li>
+</ol>
+<p>John</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706/1</link>
+        <pubDate>Wed, 08 Feb 2017 10:28:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-706-1</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-rich-content-and-pictures-in-iati/706.rss">Publishing rich content and pictures in IATI</source>
+      </item>
+  </channel>
+</rss>

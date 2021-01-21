@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Has anyone converted IATI geocoded data to GeoJSON?</title>
+    <link>https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111</link>
+    <description>Has anyone converted IATI geocoded data from 1.04 XML to GeoJSON? Are there any simple parsers that anyone has written?</description>
+    
+    <lastBuildDate>Tue, 21 Oct 2014 15:52:09 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Has anyone converted IATI geocoded data to GeoJSON?</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s pretty straight-forward if there’s lat/lon data in the IATI (perhaps 1-4 hours’ coding). We just added HXL-to-GeoJSON support into the Python HXL library; for IATI, there’s just the slightly greater effort of parsing an hierarchical XML document rather than a simple tabular dataset.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/HXLStandard/libhxl-python" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars3.githubusercontent.com/u/8421027?s=400&amp;v=4" class="thumbnail onebox-avatar" width="200" height="200">
+
+<h3><a href="https://github.com/HXLStandard/libhxl-python" target="_blank" rel="nofollow noopener">HXLStandard/libhxl-python</a></h3>
+
+<p>Python support library for the Humanitarian Exchange Language (HXL) data standard. - HXLStandard/libhxl-python</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Cheers, David</p>
+          <p><a href="https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111/3</link>
+        <pubDate>Tue, 21 Oct 2014 15:52:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-111-3</guid>
+        <source url="https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111.rss">Has anyone converted IATI geocoded data to GeoJSON?</source>
+      </item>
+      <item>
+        <title>Has anyone converted IATI geocoded data to GeoJSON?</title>
+        <dc:creator><![CDATA[JakeGarcia]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi John –</p>
+<p>At the Foundation Center, we’re working on this now, we should have an IATI-to-GeoJSON prototype up by early November.</p>
+<p>Also, we’re working on the auto-geocoding web service/API that we discussed at the last TAG meeting, where users input plain text (project description, etc.), then the autogeocoder will parse out the geographic text and predict the best possible Geonames ID values for those geographic entities mentioned.  There will be more features (the ability to submit corroborating evidence of important related geographies to help influence the results, like recipient headquarter city, etc. - which is good if the plain text contains common geographic names like “Springfield”.)</p>
+<p>Dev Gateways is also working on something similar, we hope our two web services can eventually join forces to help give the best possible prediction.<br>
+Jake</p>
+          <p><a href="https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111/2</link>
+        <pubDate>Fri, 17 Oct 2014 07:30:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-111-2</guid>
+        <source url="https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111.rss">Has anyone converted IATI geocoded data to GeoJSON?</source>
+      </item>
+      <item>
+        <title>Has anyone converted IATI geocoded data to GeoJSON?</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Has anyone converted IATI geocoded data from 1.04 XML to GeoJSON? Are there any simple parsers that anyone has written?</p>
+          <p><a href="https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111/1</link>
+        <pubDate>Thu, 16 Oct 2014 08:16:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-111-1</guid>
+        <source url="https://discuss.iatistandard.org/t/has-anyone-converted-iati-geocoded-data-to-geojson/111.rss">Has anyone converted IATI geocoded data to GeoJSON?</source>
+      </item>
+  </channel>
+</rss>

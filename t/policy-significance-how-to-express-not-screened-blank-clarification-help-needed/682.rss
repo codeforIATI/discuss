@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</title>
+    <link>https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682</link>
+    <description>Via some work with a publishing organisation I took at look at the Policy [Marker](http://iatistandard.org/202/codelists/PolicyMarker/) &amp; [Significance](http://iatistandard.org/202/codelists/PolicySignificance/) code lists:
+
+The source for these is the [OECD DAC codelist](http://www.oecd.org/dac/stats/dacandcrscodelists.htm) spreadsheet.  
+
+Where I am slightly &quot;confused&quot; is that the OECD DAC list has a specific value of (blank):
+
+&gt; (blank)	not screened
+
+Whereas a value of 0 is different:
+
+&gt; 0	not targeted
+
+It is my understanding that a (blank) value in a CRS return indicates a specific choice in the data return, it is not purely a missing value.  This indicates something *different* to a 0, conceptually.
+
+However, I am unclear how this (blank) can be expressed via IATI XML, because:
+
+- The IATI [PolicySignificance](http://iatistandard.org/202/codelists/PolicySignificance/) codelist does not contain a (blank) value
+
+- It does not seem to be *useful* to publish the @significance attribute with a blank value, or missing entirely - eg:
+
+&gt;     policy-marker vocabulary=&quot;1&quot; code=&quot;3&quot; significance=&quot;&quot; 
+
+or
+
+&gt;     policy-marker vocabulary=&quot;1&quot; code=&quot;3&quot; 
+
+I&#39;m interested to know if others have discovered this, and how they have worked with/around it.  Or - if it is not an issue.</description>
+    
+    <lastBuildDate>Thu, 09 Mar 2017 14:36:10 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d like to flag that this slight complexity around Policy Significance attribute may work against ideas around utilising this element for a general “tag” on an activity (as discussed at <span class="hashtag">#TAG2017</span> Standards Day)</p>
+<p>–&gt; <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/rory_scott">@rory_scott</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/7</link>
+        <pubDate>Thu, 09 Mar 2017 14:36:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-682-7</guid>
+        <source url="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682.rss">Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</source>
+      </item>
+      <item>
+        <title>Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks all for your previous comments and just to add that as a general principle I would concur with <a class="mention" href="/u/herman">@Herman</a> in that if a publisher is unable to provide a valid codelist (or other) value for any relevant attribute then that attribute should not be included in the published data at all (rather than being included and left blank).</p>
+          <p><a href="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/6</link>
+        <pubDate>Mon, 06 Feb 2017 16:21:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-682-6</guid>
+        <source url="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682.rss">Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</source>
+      </item>
+      <item>
+        <title>Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>I am quite sure that some Publishers are using ‘0’ as their default value - this disserves no respect, and should not be encouraged nor set precedence. We must make sure that empty fields are understood correctly. Even if that should lead us to do strange things like adding ‘-1’ to the values - meaning ‘blank’, if we find reason to doubt the communicative power of absent fields.</p>
+          <p><a href="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/5</link>
+        <pubDate>Tue, 31 Jan 2017 14:05:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-682-5</guid>
+        <source url="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682.rss">Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</source>
+      </item>
+      <item>
+        <title>Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/herman">@Herman</a></p>
+<blockquote>
+<p>I agree that the most simple way to express this in IATI is not publishing the policy marker.</p>
+</blockquote>
+<p>It would be interesting to check with publishers this is so, and that use of 0 has not represented this use case.</p>
+          <p><a href="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/4</link>
+        <pubDate>Tue, 31 Jan 2017 09:40:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-682-4</guid>
+        <source url="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682.rss">Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</source>
+      </item>
+      <item>
+        <title>Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven,<br>
+Your interpretation is correct i.m.o. Blank in CRS terms just means: ‘we do not know, because we didn’t screen it’. I agree that the most simple way to express this in IATI is not publishing the policy marker.</p>
+          <p><a href="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/3</link>
+        <pubDate>Tue, 31 Jan 2017 09:04:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-682-3</guid>
+        <source url="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682.rss">Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</source>
+      </item>
+      <item>
+        <title>Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I wonder if <a class="mention" href="/u/herman">@Herman</a> or <a class="mention" href="/u/oj_">@OJ_</a> might be able to help here…</p>
+          <p><a href="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/2</link>
+        <pubDate>Mon, 30 Jan 2017 20:08:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-682-2</guid>
+        <source url="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682.rss">Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</source>
+      </item>
+      <item>
+        <title>Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Via some work with a publishing organisation I took at look at the Policy <a href="http://iatistandard.org/202/codelists/PolicyMarker/" rel="nofollow noopener">Marker</a> &amp; <a href="http://iatistandard.org/202/codelists/PolicySignificance/" rel="nofollow noopener">Significance</a> code lists:</p>
+<p>The source for these is the <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm" rel="nofollow noopener">OECD DAC codelist</a> spreadsheet.</p>
+<p>Where I am slightly “confused” is that the OECD DAC list has a specific value of (blank):</p>
+<blockquote>
+<p>(blank)	not screened</p>
+</blockquote>
+<p>Whereas a value of 0 is different:</p>
+<blockquote>
+<p>0	not targeted</p>
+</blockquote>
+<p>It is my understanding that a (blank) value in a CRS return indicates a specific choice in the data return, it is not purely a missing value.  This indicates something <em>different</em> to a 0, conceptually.</p>
+<p>However, I am unclear how this (blank) can be expressed via IATI XML, because:</p>
+<ul>
+<li>
+<p>The IATI <a href="http://iatistandard.org/202/codelists/PolicySignificance/" rel="nofollow noopener">PolicySignificance</a> codelist does not contain a (blank) value</p>
+</li>
+<li>
+<p>It does not seem to be <em>useful</em> to publish the <span class="mention">@significance</span> attribute with a blank value, or missing entirely - eg:</p>
+</li>
+</ul>
+<blockquote>
+<pre><code>policy-marker vocabulary="1" code="3" significance="" 
+</code></pre>
+</blockquote>
+<p>or</p>
+<blockquote>
+<pre><code>policy-marker vocabulary="1" code="3" 
+</code></pre>
+</blockquote>
+<p>I’m interested to know if others have discovered this, and how they have worked with/around it.  Or - if it is not an issue.</p>
+          <p><a href="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682/1</link>
+        <pubDate>Wed, 25 Jan 2017 20:31:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-682-1</guid>
+        <source url="https://discuss.iatistandard.org/t/policy-significance-how-to-express-not-screened-blank-clarification-help-needed/682.rss">Policy Significance - how to express &quot;not screened&quot; (blank)? Clarification help needed</source>
+      </item>
+  </channel>
+</rss>

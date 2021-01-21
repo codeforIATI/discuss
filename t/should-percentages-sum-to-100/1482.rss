@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Should percentages sum to 100%?</title>
+    <link>https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482</link>
+    <description>When we have multiple ``sector`` or ``recipient-country/region`` in any activity, the [standard seems quite clear](http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/sector/):
+
+&gt; All reported sectors from the same vocabulary MUST add up to 100.
+
+I&#39;ve always read the MUST as being a MUST!
+
+However, I know that it might not always be possible to get to *exactly* 100% in some instances, particularly where there might be rounding (I think we found this with Canada data @YohannaLoucheur?)
+
+I&#39;m aware that tools such as DataWorkBench also allow a tolerance around this (correct @rolfkleef?) so it would be interesting to hear thoughts on whether:
+
+a) we should consider a validation tolerance for the sum of multiple percentages (99-101%?)
+b) and if so, how do we document that? 
+
+I&#39;m sure @OJ_ @Herman might have thoughts</description>
+    
+    <lastBuildDate>Fri, 28 Sep 2018 11:12:58 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Should percentages sum to 100%?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andylolz">@andylolz</a>!</p>
+<p>Here’s that file on <a href="http://www.dataworkbench.io/iati-feedback/view/dqf/1fbdf206f29c05a025b32f16acaf3fc0" rel="nofollow noopener">dataworkbench</a>.  I agree it is flagged as 100% as a MUST.  In the example I had when I originally posted (which I didnt screenshot, and then fixed!) the percentages were on <code>sector</code>.   Maybe a dreamt it.  It’d be useful to hear from <a class="mention" href="/u/rolfkleef">@rolfkleef</a> about whether I did!</p>
+          <p><a href="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/7</link>
+        <pubDate>Fri, 28 Sep 2018 11:12:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1482-7</guid>
+        <source url="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482.rss">Should percentages sum to 100%?</source>
+      </item>
+      <item>
+        <title>Should percentages sum to 100%?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1482">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>I’ve always read the MUST as being a MUST!</p>
+</blockquote>
+</aside>
+<p>+1, agreed. And +1 to the publishers above, who also agree that this should be resolved by the publisher fixing their data, and not by the standard, the tools or the end user.</p>
+<aside class="quote no-group" data-post="4" data-topic="1482">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>I saw in the data workbench tool a tolerance around this.</p>
+</blockquote>
+</aside>
+<p>I tested and I can’t recreate this. <a href="http://d-portal.org/ctrack.html#view=act&amp;aid=NL-KVK-27189542-SP16" rel="nofollow noopener">Here’s an example with rounding errors</a> – the <code>recipient-country</code> percentages sum to 99.97. <a href="https://iatiregistry.org/dataset/nimd-hq-activities" rel="nofollow noopener">Here’s the dataset</a>. If you test this on DataWorkbench, it’s (correctly) flagged as an error.</p>
+<p>Note that in some edge cases, a tolerance could help (e.g. in the example above, since 13 into 100 doesn’t go!) But I don’t think it’s sufficiently prevalent or important to add a special case for. It’s eminently workaroundable.</p>
+          <p><a href="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/6</link>
+        <pubDate>Fri, 28 Sep 2018 10:10:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1482-6</guid>
+        <source url="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482.rss">Should percentages sum to 100%?</source>
+      </item>
+      <item>
+        <title>Should percentages sum to 100%?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry for the delayed response, I was consulting with our statistics experts who are far better placed. I am posting this on behalf of my colleague Jérémie Guiet, as his Discuss account is no longer working and he was unable to create a new one (perhaps <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> can help?):</p>
+<p>"GAC’s allocations slightly different than 100% are a consequence of aggregation of % and rounding of decimals.  We are currently working on a solution to adjust this for our IATI publication.</p>
+<p>However, the issue of rounding is, in theory, the same for CRS reporting, since allocation is limited to only one decimal.  Canada had suggested removing this limit to ensure accuracy and consistency between data, but it was not considered to “simplify” reporting.  While the option of multiple purpose coding was just introduced, an additional calculation is required, in our case, to reallocate missing decimals to sectors.</p>
+<p>This technical issue will therefore be addressed in the coming months and we agree the rule of exactly 100% should remain."</p>
+          <p><a href="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/5</link>
+        <pubDate>Wed, 26 Sep 2018 21:06:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1482-5</guid>
+        <source url="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482.rss">Should percentages sum to 100%?</source>
+      </item>
+      <item>
+        <title>Should percentages sum to 100%?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I saw in the data workbench tool a tolerance around this.  My understanding was that this is based on Dutch MFA rules?</p>
+<p><a class="mention" href="/u/rolfkleef">@rolfkleef</a> can you elaborate?</p>
+<p>NB - this was extremely useful to help spot instances where percentages didn’t <em>quite</em> add to 100.</p>
+          <p><a href="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/4</link>
+        <pubDate>Wed, 26 Sep 2018 14:27:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1482-4</guid>
+        <source url="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482.rss">Should percentages sum to 100%?</source>
+      </item>
+      <item>
+        <title>Should percentages sum to 100%?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with <a class="mention" href="/u/oj_">@OJ_</a>. The problem we are talking about, seems rather more a technical than a conceptual one. Rounding problems might cause small deviations from reaching exactly 100% when distributing amounts accross countries or sectors. But from the functional point of view it should be exactly 100% So I would say leave the IATI rules unchanged.  How to technically handle small deviations (&lt; 1% ?) should be decided on a case by base basis.</p>
+          <p><a href="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/3</link>
+        <pubDate>Wed, 26 Sep 2018 13:44:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1482-3</guid>
+        <source url="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482.rss">Should percentages sum to 100%?</source>
+      </item>
+      <item>
+        <title>Should percentages sum to 100%?</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>I am surprised to hear this. I am especially surprised if it should be considered a problem for CRS-reporting IATI-publishers. The requirement for 100% is strictly valid in CRS-statistics – otherwise it would introduce a general uncertainty reg. the volume of bilateral ODA: It is a requirement that bilateral ODA must be 100% recordable across the sector/purpose codes.</p>
+<p>If we introduce a tolerance in IATI, I see it as an act of ‘separation’ – splitting the CRS and the IATI standards. It would be strange to see as a push from members that are committed to report in both.</p>
+<p>I would rather like to address the issue as a question: How does the experienced problems with the 100% requirement correlate with publishers decisions reg. the level of reporting (aggregate/disaggregate data)?</p>
+          <p><a href="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/2</link>
+        <pubDate>Wed, 19 Sep 2018 08:40:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1482-2</guid>
+        <source url="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482.rss">Should percentages sum to 100%?</source>
+      </item>
+      <item>
+        <title>Should percentages sum to 100%?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>When we have multiple <code>sector</code> or <code>recipient-country/region</code> in any activity, the <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/sector/" rel="nofollow noopener">standard seems quite clear</a>:</p>
+<blockquote>
+<p>All reported sectors from the same vocabulary MUST add up to 100.</p>
+</blockquote>
+<p>I’ve always read the MUST as being a MUST!</p>
+<p>However, I know that it might not always be possible to get to <em>exactly</em> 100% in some instances, particularly where there might be rounding (I think we found this with Canada data <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>?)</p>
+<p>I’m aware that tools such as DataWorkBench also allow a tolerance around this (correct <a class="mention" href="/u/rolfkleef">@rolfkleef</a>?) so it would be interesting to hear thoughts on whether:</p>
+<p>a) we should consider a validation tolerance for the sum of multiple percentages (99-101%?)<br>
+b) and if so, how do we document that?</p>
+<p>I’m sure <a class="mention" href="/u/oj_">@OJ_</a> <a class="mention" href="/u/herman">@Herman</a> might have thoughts</p>
+          <p><a href="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482/1</link>
+        <pubDate>Wed, 19 Sep 2018 07:40:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1482-1</guid>
+        <source url="https://discuss.iatistandard.org/t/should-percentages-sum-to-100/1482.rss">Should percentages sum to 100%?</source>
+      </item>
+  </channel>
+</rss>

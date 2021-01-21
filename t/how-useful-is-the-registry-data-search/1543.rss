@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How useful is the Registry &quot;Data Search&quot;?</title>
+    <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543</link>
+    <description>It would be great to hear if anyone **_relies_** on the IATI Registry &quot;[Data Search](https://www.iatiregistry.org/dataset)&quot;, and specifically the file-level set up that some publishers follow: one IATI XML file per recipient-country.
+
+The underlying logic, which I think has been in place since day one of IATI, is that the Data Search can give us all **files** that are about a certain recipient country, for example these 46 files for Bangladesh:
+
+![download%20(10)|690x184](upload://dcZyQBMXx5m746IrE0Z1p5zFKvj.png) 
+
+However - I think it&#39;s well-known that this search is not definitive.
+
+If we check d-portal (for example) we can see that [185 publishers](http://d-portal.org/ctrack.html?search&amp;country=BD#view=main) actually have **activities** with this same recipient-country:
+
+![download%20(11)|690x378](upload://oxO9AJPsAzBs7MlZSAyc87Wu0Qa.png) 
+
+This is a big mismatch.  It&#39;s because many publishers might include all their activities in one / a few file(s) (Netherlands @Herman; Canada @YohannaLoucheur ) or also have multi-country activities that may be in a regional file (DFID @JohnAdams).
+
+Therefore - what&#39;s the point of the XML file-per-country and/or the IATI Registry Data Search?  Does this actively help data users?
+
+Added to this, is that the recipient-country filter on the Registry is populated with quite a few non-obvious entries:
+
+![Screenshot%20from%202018-10-29%2015-23-54|690x393](upload://ib4lrTfVVoNlNdmnqUlHWkEhz9.png) 
+
+Thoughts welcome.  I can understand how something like the Datastore might eventually fix this, but we should also think about the Here and Now: there might be someone trying to use IATI data and quickly finding this not useful.</description>
+    
+    <lastBuildDate>Thu, 04 Apr 2019 09:33:36 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[KateHughes]]></dc:creator>
+        <description><![CDATA[
+            <p>The work on the registry is planned to start in the later half of this quarter.  We will need to scope it fully before we can start.  HDX use “vanilia CKAN” and have thier own scripts for the metadata and the repo they have for this is very expansive.<br>
+We’ve had one chat with the team at HDX so far and will be talking to them again soon.<br>
+We’ll be publishing a quarterly update blog next week then you’ll be able to read more about our plans for the quarter.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/17</link>
+        <pubDate>Thu, 04 Apr 2019 09:33:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-17</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the prompt <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a></p>
+<aside class="quote no-group" data-post="12" data-topic="1543">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>The IATI Harvester (and metadata updating) is referenced a couple of times in <a href="https://iatistandard.org/documents/665/IATI_Technical_Audit_team_report.pdf" rel="nofollow noopener">the IATI Tech Audit write-up </a>. One of those recommendations was: “Build additional scripts to manage metadata as a service <strong>external to the registry</strong> .” (emphasis mine.) Also, “Put certain ideas out on discuss for developers, i.e. ask if anyone wants to work on splitting off […] IATI Harvester”</p>
+</blockquote>
+</aside>
+<p>I think it’d be very useful to hear from the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> in terms of any planned next steps.  We’ve had a fruitful discussion above - but must be minded that the Registry is supplied to the secretariat by an external vendor.  <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> how can we help in terms of our recommendations ^^ ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/16</link>
+        <pubDate>Wed, 03 Apr 2019 11:40:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-16</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Did anything come of these discussions beyond a suggestion for the publishing guidance? There were some good suggestions e.g. making recipient-country field use the activity level codes, not just the file metadata?</p>
+<p>I ask because I am using the registry search a lot at the moment, and it would be really helpful if when selecting one of the filters, options that then become unavailable, are removed from the other filters.</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/15</link>
+        <pubDate>Tue, 26 Mar 2019 19:29:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-15</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I fully agree with <a class="mention" href="/u/andylolz">@andylolz</a> and <a class="mention" href="/u/stevieflow">@stevieflow</a>. The technical splitting of publisher files by country might introduce problems, like publishing the same activity in multiple files because an activity is implemented in multiple countries. This will produce redundancy in a publishers IATI publication and it might therefore introduce inconsistencies and double counting.</p>
+<p>Once there is a properly working datastore, there will be no need anymore to split XML’s by country anymore.</p>
+<p>All in all splitting IATI files by country is i.m.o. not to be recommended.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/14</link>
+        <pubDate>Fri, 09 Nov 2018 15:59:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-14</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[thea]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all! A search for the reason behind multiple segmented files per country brought me here…</p>
+<p>Aidstream actually still recommends doing this in its “publishing settings”, because the IATI standard suggests it. My original question is: does IATI still recommend this too? If not, perhaps Aidstream can update their recommendation on the site?</p>
+<p>A lot of organisations publish one file for all their activities, and that makes searching for the recipient-country of the file, rather than in the activities themselves, very unreliable. Perhaps we should do what’s been mentioned before, have the search option rely on the recipient country on the activity rather than on the met data on the file.</p>
+<p>Interesting to see that people use the files per country to check errors. I don’t think I quite follow, but that’s probably because the project management database of Plan Netherlands produces a file for us, and validates it too, so we probably don’t work the same way.</p>
+<p>From a data analyst’s view, I don’t really see an upside to the multiple files. I use the files for my visualisation in Power BI because the data store is sometimes down, and one file is always easier than multiple.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/13</link>
+        <pubDate>Wed, 07 Nov 2018 17:54:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-13</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="1543">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Presumably the registry search field would have to do the same as we all do, and check the recipient-country tag on each activity in each file - if that is achievable, I think it could be better.</p>
+</blockquote>
+</aside>
+<p>Absolutely! So, this potentially involves searching a lot of data. Therefore it’s probably best done asynchronously and cached, ready for use by the search. There’s currently a process that runs on the registry and does exactly this sort of asynchronous caching – it’s called the “IATI Archiver” (formerly IATI Harvester, I think). You can see it making metadata updates if you click the “History” tab on any dataset. <a href="https://iatiregistry.org/dataset/history/pwyf-org" rel="nofollow noopener">For example…</a></p>
+<p>The IATI Harvester (and metadata updating) is referenced a couple of times in <a href="https://iatistandard.org/documents/665/IATI_Technical_Audit_team_report.pdf" rel="nofollow noopener">the IATI Tech Audit write-up</a>. One of those recommendations was: “Build additional scripts to manage metadata as a service <strong>external to the registry</strong>.” (emphasis mine.) Also, “Put certain ideas out on discuss for developers, i.e. ask if anyone wants to work on splitting off […] IATI Harvester”</p>
+<p>I think updating this recipient country metadata could be included as part of this service. (In fact, I had to write a script that did pretty much this, in order to derive the information above.) I notice, though, that work is already underway by the registry supplier derilinx to improve or rewrite the existing service <em>inside</em> of the registry. Therefore, it would be great to get an understanding of current plans from the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/12</link>
+        <pubDate>Fri, 02 Nov 2018 18:12:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-12</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>What would happen if we removed (or for now, ignored) the ‘recipient country’ field from the registry metadata? Presumably the registry search field would have to do the same as we all do, and check the recipient-country tag on each activity in each file - if that is achievable, I think it could be better. So the dropdown doesn’t get to complex, selecting ‘UG’ would show you all files that had at least one activity coded to ‘UG’, no need for a dropdown that had ‘UG, KE, SOl RW etc’ just to be able to select one publisher’s East Africa file.</p>
+<p>A side question - is there any chance/way that the use of ISO 2 digits country codes will be enforced (I assumed this was a requirement)? Do files that use 3 digit codes, or full names at least fail the data quality tests? Is there any process to notify publishers (ideally automatically) when they use their own 3 digit name?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/11</link>
+        <pubDate>Fri, 02 Nov 2018 13:43:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-11</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="1543">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>As far as I know, the standard has nothing to say on file segmentation, except that any file should be 40MB or less (can anyone find that guidance?).</p>
+</blockquote>
+</aside>
+<p>I don’t think the guidance says anything on segmentation anymore (I couldn’t find it, anyway). Here’s the bit I think you’re referring to, <a href="https://github.com/IATI/IATI-Guidance/blob/4fc9723bc89aaff31addc0f877214feaf6b39e53/en/how-to-publish/select-data-to-publish.rst#segmenting-files--file-size" rel="nofollow noopener">from the archives</a>:</p>
+<blockquote>
+<p>It is recommended that publishers segment their files to ensure that no file is larger than 40MB in size. Whilst there is no definitive rule as to when a file is too large, we recommend a maximum file size in order to minimise any issues of file processing by both IATI and third parties data users.</p>
+<p>With regard to segmentation, there is no definitive best practice for how files should be segmented. By country was historically the preferred option but this is no longer a requirement because published data can now be queried more easily via the IATI Datastore. The publisher should therefore carry out segmentation on whatever makes most sense to their publishing process. Examples might be by country, by region, by grant or loan type etc. As data volumes have increased some publisher are now segmenting by open and closed activities. This has the benefit that once created, there is no further requirement to reproduce or update a file of closed projects each time the Publisher updates their data.</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/10</link>
+        <pubDate>Fri, 02 Nov 2018 12:30:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-10</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> <a class="mention" href="/u/markbrough">@markbrough</a> &amp; <a class="mention" href="/u/tdavis">@tdavis</a> for your practical examples - really very helpful.  Huge thanks <a class="mention" href="/u/andylolz">@andylolz</a> for the research - which does seem to support the theory that the Registry metadata is largely unreliable.</p>
+<p>I’d suggest the following observations:</p>
+<ul>
+<li>It seems <em>lucky</em> that some publishers segment their data in specific recipient-country files where they can: this seems to help people using the data, particularly when debugging/testing</li>
+<li>But for someone casually browsing the IATI Registry, the idea that the recipient-country file metadata - expressed through the drop-down menu on the Data search page - would be precise, seems inaccurate.</li>
+</ul>
+<p>As far as I know, the standard has nothing to say on file segmentation, except that any file should be 40MB or less (can anyone find that guidance?).  I’d propose the following might be helpful:</p>
+<ul>
+<li>When segmenting activities into files, please aim to avoid any intended usage via the file metadata.  Services that use IATI data will work with data <em>within</em> any IATI activity.</li>
+</ul>
+<p>(that ^^ isn’t the best , but hopefully someone can improve in this!)</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/9</link>
+        <pubDate>Thu, 01 Nov 2018 21:36:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-9</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="6" data-topic="1543">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/t/5e9695/40.png" class="avatar"> tdavis:</div>
+<blockquote>
+<p>So if multiple countries are included in a single file, [our IATI-AIMS Importer] identifies that and prompts users to select which country they want to import for.</p>
+</blockquote>
+</aside>
+<p>This soooounds like the IATI-AIMS Importer may be using the XML, rather than the metadata (given that the metadata can include maximally one recipient country). If so: that’s good, given the metadata is currently misleading.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/8</link>
+        <pubDate>Thu, 01 Nov 2018 20:04:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-8</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I dug into this a bit more…</p>
+<p><strong>21% of activity datasets</strong> (a total of 1,282) containing <strong>24% of activities</strong> (a total of 263,337) do not list a recipient country in their registry metadata. That’s a large proportion of IATI activities that are unreachable via the recipient country search.</p>
+<p>A further ~50,000 activities include a <code>recipient-country/@code</code> in the data that appears to disagree with the recipient country code in the dataset metadata. (Though note that I’ve reached this number in a bit of a hacky way… I haven’t attempted to harmonize 2 and 3 letter country codes, and I’ve ignored regions completely.)</p>
+<p>It sounds like people do use the recipient country filter, so I’ll roll back on my previous answer and suggest perhaps the solution would be to fix this, rather than remove it. This metadata could be set automatically (like other dataset metadata is currently, including <code>data_updated</code>), and could list all <code>recipient-country</code>s / <code>recipient-region</code>s in a dataset, rather than just one (as <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> suggests). But note that for some datasets, this list will be quite long.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/7</link>
+        <pubDate>Thu, 01 Nov 2018 18:33:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-7</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[tdavis]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/stevieflow">@stevieflow</a> for our IATI-AIMS Importer, it uses the recipient country field to identify what country the activity goes to. So if multiple countries are included in a single file, it identifies that and prompts users to select which country they want to import for.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/6</link>
+        <pubDate>Tue, 30 Oct 2018 18:52:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-6</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/stevieflow">@stevieflow</a> – I actually find this feature quite useful, I think the same way as Matt. Although many donors don’t segment by country, many do, and it can quite often be useful for debugging. For example, if something is going wrong in the IATI import in Bangladesh I can take a quick look at <code>worldbank-bd</code> or <code>dfid-bd</code> and see how the data that eventually made it into the system (via the Datastore) compares with the originally published data (I guess it doesn’t necessarily require the country code drop-down, as I already know the package name I’m looking for).</p>
+<p>Once the IATI Datastore is more reliable and we can be much more certain that nothing is being lost, maybe we can do away with this feature, but until then, I think it is quite useful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/5</link>
+        <pubDate>Tue, 30 Oct 2018 09:32:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-5</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/stevieflow">@stevieflow</a> - I use this occasionally (4 or 5 times a year perhaps) as a shortcut to seeing whether I can just download one file for the publisher-country combination I am interested in. I just did so for Uganda, requiring me to do searches for ‘UG’, ‘UGA’, ‘Uganda’, and ‘uganda’ - let alone check the numbered examples (tend to be for ‘regions’ if I remember correctly) that you point out.</p>
+<p>I am currently supporting the development of an AIMS for UNDP in Somalia that uses IATI data but there is no way we can use this feature hence we are trying to decide between using the datastore (will the endpoints change, will it return full/unmodified xml) vs the registry (wasted download of not needed data).</p>
+<p>What I don’t understand is why there is standardisation on the two digit ISO code ‘UG’ for recipient-country at the activity level, but not in the file metadata - or is this wishful thinking about the recipient-country coding as well?</p>
+<p>I think that if it is not removed as a feature (or the codes standardised) then there should at least be an obvious note to point out that it can be very misleading in the data it returns unless you try all variations. A multi-select would also be very helpful.</p>
+<p>Thanks,</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/4</link>
+        <pubDate>Tue, 30 Oct 2018 09:03:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-4</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p>Regarding the file-per-country publishing - I’m interested to know if anybody relies on this.  For example: <a class="mention" href="/u/markbrough">@markbrough</a> <a class="mention" href="/u/tdavis">@tdavis</a> do AIMS imports work on this basis?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/3</link>
+        <pubDate>Tue, 30 Oct 2018 06:42:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-3</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree – this particular filter shouldn’t exist on the registry. In fact, I think this attribute should also be removed from registry metadata. As you’ve pointed out, it potentially produces misleading results.</p>
+<p>Splitting data into files by recipient country is merely convention / a convenience to avoid very large XML files. Not all publishers split their data in this way, nor should they be expected to.</p>
+<aside class="quote no-group" data-post="1" data-topic="1543">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>there might be someone trying to use IATI data and quickly finding this not useful.</p>
+</blockquote>
+</aside>
+<p>Data users shouldn’t be directed to the registry for this purpose. It’s possible to use d-portal / OIPA / the datastore query builder / other tools for this purpose, all of which will filter data based on the actual declared <code>recipient-country</code>, rather than the dataset metadata.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/2</link>
+        <pubDate>Mon, 29 Oct 2018 23:50:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-2</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+      <item>
+        <title>How useful is the Registry &quot;Data Search&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>It would be great to hear if anyone <strong><em>relies</em></strong> on the IATI Registry “<a href="https://www.iatiregistry.org/dataset" rel="nofollow noopener">Data Search</a>”, and specifically the file-level set up that some publishers follow: one IATI XML file per recipient-country.</p>
+<p>The underlying logic, which I think has been in place since day one of IATI, is that the Data Search can give us all <strong>files</strong> that are about a certain recipient country, for example these 46 files for Bangladesh:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/5c944145366f1b39fd09ca14359fcac324eeec55.png" data-download-href="https://discuss.iatistandard.org/uploads/default/5c944145366f1b39fd09ca14359fcac324eeec55" title="download (10).png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/5c944145366f1b39fd09ca14359fcac324eeec55_2_690x184.png" alt="download%20(10)" width="690" height="184" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/5c944145366f1b39fd09ca14359fcac324eeec55_2_690x184.png, https://discuss.iatistandard.org/uploads/default/original/1X/5c944145366f1b39fd09ca14359fcac324eeec55.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/5c944145366f1b39fd09ca14359fcac324eeec55.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/5c944145366f1b39fd09ca14359fcac324eeec55_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">download (10).png</span><span class="informations">734×196 8.43 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>However - I think it’s well-known that this search is not definitive.</p>
+<p>If we check d-portal (for example) we can see that <a href="http://d-portal.org/ctrack.html?search&amp;country=BD#view=main" rel="nofollow noopener">185 publishers</a> actually have <strong>activities</strong> with this same recipient-country:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/ac068c617952e7f78e2728635cbd96d774a87a72.png" data-download-href="https://discuss.iatistandard.org/uploads/default/ac068c617952e7f78e2728635cbd96d774a87a72" title="download (11).png"><img src="https://discuss.iatistandard.org/uploads/default/original/1X/ac068c617952e7f78e2728635cbd96d774a87a72.png" alt="download%20(11)" width="690" height="378" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/ac068c617952e7f78e2728635cbd96d774a87a72_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">download (11).png</span><span class="informations">980×537 224 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>This is a big mismatch.  It’s because many publishers might include all their activities in one / a few file(s) (Netherlands <a class="mention" href="/u/herman">@Herman</a>; Canada <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> ) or also have multi-country activities that may be in a regional file (DFID <a class="mention" href="/u/johnadams">@JohnAdams</a>).</p>
+<p>Therefore - what’s the point of the XML file-per-country and/or the IATI Registry Data Search?  Does this actively help data users?</p>
+<p>Added to this, is that the recipient-country filter on the Registry is populated with quite a few non-obvious entries:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/020e0e5fa08fa3fa0895e2a556d901f32c5d20c7.png" data-download-href="https://discuss.iatistandard.org/uploads/default/020e0e5fa08fa3fa0895e2a556d901f32c5d20c7" title="Screenshot from 2018-10-29 15-23-54.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/020e0e5fa08fa3fa0895e2a556d901f32c5d20c7_2_690x393.png" alt="Screenshot%20from%202018-10-29%2015-23-54" width="690" height="393" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/020e0e5fa08fa3fa0895e2a556d901f32c5d20c7_2_690x393.png, https://discuss.iatistandard.org/uploads/default/original/1X/020e0e5fa08fa3fa0895e2a556d901f32c5d20c7.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/020e0e5fa08fa3fa0895e2a556d901f32c5d20c7.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/020e0e5fa08fa3fa0895e2a556d901f32c5d20c7_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screenshot from 2018-10-29 15-23-54.png</span><span class="informations">753×429 39.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Thoughts welcome.  I can understand how something like the Datastore might eventually fix this, but we should also think about the Here and Now: there might be someone trying to use IATI data and quickly finding this not useful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543/1</link>
+        <pubDate>Mon, 29 Oct 2018 20:02:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1543-1</guid>
+        <source url="https://discuss.iatistandard.org/t/how-useful-is-the-registry-data-search/1543.rss">How useful is the Registry &quot;Data Search&quot;?</source>
+      </item>
+  </channel>
+</rss>

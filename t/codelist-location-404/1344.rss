@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Codelist location 404</title>
+    <link>https://discuss.iatistandard.org/t/codelist-location-404/1344</link>
+    <description>We use the following location for codelist checks, but it seems that URI renders a 404:
+
+http://iatistandard.org/202/codelists/downloads/clv1/codelist/EarmarkingCategory.xml
+
+Did this move and has 202 now been deprecated, codelist wise?</description>
+    
+    <lastBuildDate>Tue, 12 Jun 2018 12:05:43 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/codelist-location-404/1344.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Codelist location 404</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for spotting the error <a class="mention" href="/u/siemvaessen">@siemvaessen</a> and <a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p>We have approved and merged <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/255">the pull request</a> so the issue should now be fixed.  Let me know if there is anything else, otherwise, I will close this topic.</p>
+          <p><a href="https://discuss.iatistandard.org/t/codelist-location-404/1344/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/codelist-location-404/1344/4</link>
+        <pubDate>Tue, 12 Jun 2018 12:05:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1344-4</guid>
+        <source url="https://discuss.iatistandard.org/t/codelist-location-404/1344.rss">Codelist location 404</source>
+      </item>
+      <item>
+        <title>Codelist location 404</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andylolz">@andylolz</a> we are working on better error messaging in OIPA, so this one was spotted <img src="//discuss.iatistandard.org/images/emoji/twitter/smile.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/codelist-location-404/1344/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/codelist-location-404/1344/3</link>
+        <pubDate>Thu, 07 Jun 2018 12:29:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1344-3</guid>
+        <source url="https://discuss.iatistandard.org/t/codelist-location-404/1344.rss">Codelist location 404</source>
+      </item>
+      <item>
+        <title>Codelist location 404</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>This is just a bug. The relevant file is now (erroneously) located here:<br>
+<a href="http://iatistandard.org/202/codelists/downloads/clv1/codelist/EarmarkingCategory" class="onebox" target="_blank" rel="nofollow noopener">http://iatistandard.org/202/codelists/downloads/clv1/codelist/EarmarkingCategory</a></p>
+<p>I.e. the .xml file extension is missing.</p>
+<p>I sent a fix for this last week:<br>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/255" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Codelists-NonEmbedded</a>
+  </header>
+  <article class="onebox-body">
+      <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+    <img alt="andylolz" src="https://discuss.iatistandard.org/uploads/default/original/1X/0a02ce77e9c22a87ef229fd18fb9b5e8aebb5f31.jpeg" class="thumbnail onebox-avatar" width="90" height="90">
+  </a>
+
+<h4>
+  <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/255" target="_blank" rel="nofollow noopener">Add .xml file extension to EarmarkingCategory</a>
+</h4>
+
+<div class="date">
+  by <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">andylolz</a>
+  on <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/255" target="_blank" rel="nofollow noopener">09:58PM - 29 May 18 UTC</a>
+</div>
+
+<div class="github-commit-stats">
+  <strong>1 commits</strong>
+  changed <strong>1 files</strong>
+  with <strong>0 additions</strong>
+  and <strong>0 deletions</strong>.
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a> it would be cool if someone could review and merge the fix (and then redeploy). Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/codelist-location-404/1344/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/codelist-location-404/1344/2</link>
+        <pubDate>Thu, 07 Jun 2018 12:11:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1344-2</guid>
+        <source url="https://discuss.iatistandard.org/t/codelist-location-404/1344.rss">Codelist location 404</source>
+      </item>
+      <item>
+        <title>Codelist location 404</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>We use the following location for codelist checks, but it seems that URI renders a 404:</p>
+<p><a href="http://iatistandard.org/202/codelists/downloads/clv1/codelist/EarmarkingCategory.xml" class="onebox" target="_blank" rel="nofollow noopener">http://iatistandard.org/202/codelists/downloads/clv1/codelist/EarmarkingCategory.xml</a></p>
+<p>Did this move and has 202 now been deprecated, codelist wise?</p>
+          <p><a href="https://discuss.iatistandard.org/t/codelist-location-404/1344/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/codelist-location-404/1344/1</link>
+        <pubDate>Thu, 07 Jun 2018 12:03:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1344-1</guid>
+        <source url="https://discuss.iatistandard.org/t/codelist-location-404/1344.rss">Codelist location 404</source>
+      </item>
+  </channel>
+</rss>

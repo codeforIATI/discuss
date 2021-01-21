@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Switcheroo</title>
+    <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976</link>
+    <description>Hello,
+
+Hope all is well where you are. We made this over last weekend and thought we&#39;d share it with you.
+
+https://notshi.github.io/IATIswitcheroo/
+
+It&#39;s a website that exposes some of d-portal&#39;s internal data conversions; you could use it to convert an xml file to csv, make changes to that csv and upload it again to convert back to xml so this could be useful for small publishers.
+
+Optionally, you can use this to convert to html and have a quick preview of the data in print-friendly SAVi.
+
+Feedback and comments are much appreciated.</description>
+    
+    <lastBuildDate>Wed, 22 Jul 2020 18:47:34 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <p>The downloaded CSV is a special mirror version of the IATI XML which is designed so that you can edit it and it will convert back to schema validated IATI XML.</p>
+<p>Ultimately, this is a tool for publishers rather than consumers of the data.</p>
+<p>To use the data, as per your example; show total yearly transactions per activity - you’ll need to refer to IATI specific rules and conditions to get that data out as the data is not processed and comes as published.</p>
+<p>The rules for getting the information out of the data are too complicated to be done by hand and requires programming.</p>
+<p>It might be worthwhile to talk to the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> for this particular query. Hope this helps!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/12</link>
+        <pubDate>Wed, 22 Jul 2020 18:47:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-12</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[Jet]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for your explanation! I misunderstood how it worked and it was working just fine. I was expecting it to display the contents of the XML on the webpage.</p>
+<p>I am wondering now though how you are able to use the downloaded CSV. I am using a Worldbank XML as an example. It doesn’t seem different from if I opened the XML using Excel directly.</p>
+<p>For example, how could I show total yearly transactions per activity?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/10</link>
+        <pubDate>Wed, 22 Jul 2020 18:01:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-10</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/jet">@Jet</a>, thanks for letting me know.</p>
+<p>Currently, you can only upload one file at a time so multiple files are not supported.</p>
+<p>If the file is large (~20mb), it might take some time for the download buttons to show up - on the up side, if the file is small (~50kb), the download buttons show up almost instantly that you can miss it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/9</link>
+        <pubDate>Wed, 22 Jul 2020 17:13:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-9</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="Jet" data-post="7" data-topic="1976">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v4/letter/j/50afbb/40.png" class="avatar"> Jet:</div>
+<blockquote>
+<p>I downloaded XML files using the Data Dump third party tool (which I can’t find anymore now).</p>
+</blockquote>
+</aside>
+<p>It’s here:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://iati-data-dump.codeforiati.org" target="_blank" rel="nofollow noopener">IATI Data Dump</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://iati-data-dump.codeforiati.org/meta.png" class="thumbnail onebox-avatar" width="60" height="60">
+
+<h3><a href="https://iati-data-dump.codeforiati.org" target="_blank" rel="nofollow noopener">IATI Data Dump</a></h3>
+
+<p>Download a daily snapshot of all IATI data (and metadata) from the IATI Registry.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/8</link>
+        <pubDate>Wed, 22 Jul 2020 10:48:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-8</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[Jet]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/shi">@shi</a>. I downloaded XML files using the Data Dump third party tool (which I can’t find anymore now). I am trying to use Switcheroo with those XML files but nothing is happening after adding (by browsing) or dragging XML files to the tool.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/7</link>
+        <pubDate>Wed, 22 Jul 2020 09:13:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-7</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <p>XML export for IATI Switcheroo should now pass schema validation. Do let us know otherwise!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/6</link>
+        <pubDate>Wed, 01 Jul 2020 16:16:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-6</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <p>Huh, interesting. Thanks, Siem!</p>
+<p>Just ran an example via the validator and it looks like the export failed due to the wrong order of elements. Is this what you meant?</p>
+<p>We didn’t think the order of data mattered so didn’t put that into account. Currently it’s ordered alphabetically so it’s easy to find things (human legible).</p>
+<p>Suppose it’s called Switcheroo for a reason :} Will go change that then.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/5</link>
+        <pubDate>Wed, 01 Jul 2020 11:52:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-5</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, Matt!</p>
+<p>We made this so it’s a flat format and not made of multiple files so that it can go back and forth between formats.</p>
+<p>I think you can probably do this sort of processing using scripts inside a spreadsheet once you have the csv but we haven’t explored this yet!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/4</link>
+        <pubDate>Wed, 01 Jul 2020 11:29:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice, but the XML export seems to fail schema validation?! <img src="https://discuss.iatistandard.org/images/emoji/twitter/grimacing.png?v=9" title=":grimacing:" class="emoji" alt=":grimacing:"></p>
+<p>Has this app been tested with validator reports @ <a href="https://test-validator.iatistandard.org" rel="nofollow noopener">https://test-validator.iatistandard.org</a> ? I got (input raw XML valid data) that became schema-invalid once it got Switcherood from XML to XML…</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/3</link>
+        <pubDate>Tue, 30 Jun 2020 10:38:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Oooh, very cool - the most readable csv format I have seen so far <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> and super easy to just do a pivot table on to get real data out.</p>
+<p>Would it be hard (and make sense?) to make it spit out xlsx files, with one tab for the activity level stuff, and another for the transactions? Maybe with a column that listed the activity-ID for each row on the transaction tab?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/2</link>
+        <pubDate>Fri, 26 Jun 2020 20:43:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+      <item>
+        <title>IATI Switcheroo</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>Hope all is well where you are. We made this over last weekend and thought we’d share it with you.</p>
+<p><a href="https://notshi.github.io/IATIswitcheroo/" class="onebox" target="_blank" rel="nofollow noopener">https://notshi.github.io/IATIswitcheroo/</a></p>
+<p>It’s a website that exposes some of d-portal’s internal data conversions; you could use it to convert an xml file to csv, make changes to that csv and upload it again to convert back to xml so this could be useful for small publishers.</p>
+<p>Optionally, you can use this to convert to html and have a quick preview of the data in print-friendly SAVi.</p>
+<p>Feedback and comments are much appreciated.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976/1</link>
+        <pubDate>Fri, 26 Jun 2020 17:59:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1976-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Standards Day</title>
+    <link>https://discuss.iatistandard.org/t/standards-day/533</link>
+    <description>On the [fourth day of the TAG](http://discuss.iatistandard.org/t/tag-2016-exciting-news/532) (Thursday 9th March) we will be holding an all-day working session for the secretariat’s Technical Team to collaborate with the growing number of IATI experts in the community in progressing improvements to the standard as well as associated rules and guidelines.
+
+We will work to a formal agenda and minutes will be taken. Papers covering all issues to be discussed will be prepared and published well in advance. The meeting will be co-chaired by John Adams as TAG Chair and myself as Technical Lead. We will attempt to reach consensus wherever possible.
+
+**Agenda**
+
+The agenda will be restricted to proposals that relate directly to specific changes to the standard or associated rules and guidelines. For example, fixing the result element to accurately deal with aggregation and disaggregation is on the agenda. Discussion on how results reporting should be improved in general is not – but will no doubt be a key issue in the TAG proper on day 2 or 3.
+
+[A **proposed draft agenda** can be found here](http://discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534). Everyone is welcome to add to this agenda provided that the item contains a specific proposal and can be supported by written argument to be shared with the community on this forum.
+
+It will be possible to add matters arising during the first two days of the TAG into the agenda, provided that they are presented as concrete, actionable proposals.
+
+The agenda is already quite full. If we need to trim, we will do so as transparently as possible.
+
+**Participation**
+
+There is no restriction on attendance provided you inform us in advance so that we know how many to cater for. HOWEVER, all discussions will be technical and will assume that you have a good working knowledge of the standard and its implementation. Novices are welcome to attend as observers, but no attempt will be made to explain matters to you.
+
+**Outcomes**
+
+Our work should lead to:
+
+* The content for the Version 2.03 decimal upgrade. Formal work on this will begin immediately after the TAG and should go live by the end of the first quarter of 2017.
+* The clarification and definition of some key rules and guidelines that cannot be enforced by the schema. 
+* The earmarking of certain proposals for Version 3.01 integer upgrade (for which there is still no planned date) and consensus to drop some items that have been proposed over the past years, but have never ‘made the grade’.
+
+:bird: #IATI #TAG2016</description>
+    
+    <lastBuildDate>Thu, 18 Aug 2016 13:05:07 +0000</lastBuildDate>
+    <category>IATI TAG 2017</category>
+    <atom:link href="https://discuss.iatistandard.org/t/standards-day/533.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Standards Day</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Rolf your thoughts cover a range of cross-cutting issues which all demand attention.</p>
+<p>The one thing I think they do point at is that it would be more constructive to hold the technical workshop <strong>after</strong> and not before the two main TAG days. This would ensure that the <span class="hashtag">#pragmatists</span> have the opportunity to influence the <span class="hashtag">#pedants</span>, and not vice versa.</p>
+<p>While we are keen to get as much preparatory work done before the workshop, it would be much better if matters arising in the main TAG could, where applicable, be translated into concrete proposals for a day-three technical consultation.</p>
+<p>I’ve done a check around the organising team and with TAG Chair <a class="mention" href="/u/johnadams">@JohnAdams</a> and everyone is happy with this change.</p>
+          <p><a href="https://discuss.iatistandard.org/t/standards-day/533/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/standards-day/533/3</link>
+        <pubDate>Thu, 18 Aug 2016 13:05:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-533-3</guid>
+        <source url="https://discuss.iatistandard.org/t/standards-day/533.rss">Standards Day</source>
+      </item>
+      <item>
+        <title>Standards Day</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>Hope I can make it to the TAG, Bill! Thanks for starting the discussions early.</p>
+<p>I think an interesting aspect to add to the broad agenda is how different data users currently interpret possibly ambiguous or erroneous data in their tools or platforms. That could help distinguishing possible improvements to go into either 2.03 or 3.01, based on actual practice.</p>
+<p>Example: for our IATI Learning Workshop, I visualised data of a partnership funded by the Dutch MFA, and discussed it with <a class="mention" href="/u/herman">@Herman</a>: I used <code>related-activity</code> and found a direction error in parent-child activities; he added a “zero” incoming commitment <code>transaction</code> based on incoming funds, to show the right relation in their dashboard.</p>
+<p>I’ve also had discussions on whether or not to include explicit disbursement/incoming-fund transactions between parent-child relations within an organisation (both ways?). How do you interpret “missing flows” within an organisation, and do they need to be more explicit for the use cases we care for?</p>
+<p>Likewise: the <a href="http://d-portal.org" rel="nofollow noopener">d-portal.org</a> platform interprets data and presents potential double counting (for instance of budgets) on activities within an organisation. We’ve had a case where the advice from IATI/d-portal would be to omit budgets on one level, although our advice would be to make the data on a particular activity as complete as you can provide.</p>
+<p>I’d certainly be an evangalist for <span class="hashtag">#pedanticIATI</span>, but I think <span class="hashtag">#pragmaticIATI</span> will help all of us move the standard and its uptake forward <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>I think it would be great if we can share such interpretations and choices or solutions, and perhaps find a (structural) way to come to a consensus advice for data producers, based on data user’s practices.</p>
+<p>Maybe even make it the International Activity Transparancy Initiative and open the way to more generic classification vocabularies. Programmes, projects, campaigns, here’s a standard for time-bound and place-bound activties with actors, results and financial flows…</p>
+          <p><a href="https://discuss.iatistandard.org/t/standards-day/533/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/standards-day/533/2</link>
+        <pubDate>Wed, 10 Aug 2016 20:46:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-533-2</guid>
+        <source url="https://discuss.iatistandard.org/t/standards-day/533.rss">Standards Day</source>
+      </item>
+      <item>
+        <title>Standards Day</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>On the <a href="//discuss.iatistandard.org/t/tag-2016-exciting-news/532">fourth day of the TAG</a> (Thursday 9th March) we will be holding an all-day working session for the secretariat’s Technical Team to collaborate with the growing number of IATI experts in the community in progressing improvements to the standard as well as associated rules and guidelines.</p>
+<p>We will work to a formal agenda and minutes will be taken. Papers covering all issues to be discussed will be prepared and published well in advance. The meeting will be co-chaired by John Adams as TAG Chair and myself as Technical Lead. We will attempt to reach consensus wherever possible.</p>
+<p><strong>Agenda</strong></p>
+<p>The agenda will be restricted to proposals that relate directly to specific changes to the standard or associated rules and guidelines. For example, fixing the result element to accurately deal with aggregation and disaggregation is on the agenda. Discussion on how results reporting should be improved in general is not – but will no doubt be a key issue in the TAG proper on day 2 or 3.</p>
+<p><a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">A <strong>proposed draft agenda</strong> can be found here</a>. Everyone is welcome to add to this agenda provided that the item contains a specific proposal and can be supported by written argument to be shared with the community on this forum.</p>
+<p>It will be possible to add matters arising during the first two days of the TAG into the agenda, provided that they are presented as concrete, actionable proposals.</p>
+<p>The agenda is already quite full. If we need to trim, we will do so as transparently as possible.</p>
+<p><strong>Participation</strong></p>
+<p>There is no restriction on attendance provided you inform us in advance so that we know how many to cater for. HOWEVER, all discussions will be technical and will assume that you have a good working knowledge of the standard and its implementation. Novices are welcome to attend as observers, but no attempt will be made to explain matters to you.</p>
+<p><strong>Outcomes</strong></p>
+<p>Our work should lead to:</p>
+<ul>
+<li>The content for the Version 2.03 decimal upgrade. Formal work on this will begin immediately after the TAG and should go live by the end of the first quarter of 2017.</li>
+<li>The clarification and definition of some key rules and guidelines that cannot be enforced by the schema.</li>
+<li>The earmarking of certain proposals for Version 3.01 integer upgrade (for which there is still no planned date) and consensus to drop some items that have been proposed over the past years, but have never ‘made the grade’.</li>
+</ul>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+          <p><a href="https://discuss.iatistandard.org/t/standards-day/533/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/standards-day/533/1</link>
+        <pubDate>Mon, 08 Aug 2016 17:02:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-533-1</guid>
+        <source url="https://discuss.iatistandard.org/t/standards-day/533.rss">Standards Day</source>
+      </item>
+  </channel>
+</rss>

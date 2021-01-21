@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855</link>
+    <description>This proposal is part of the [2.03 upgrade process](https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838), please comment by replying below.
+
+**Standard**
+Activity
+&lt;p&gt;
+**Schema Object**
+iati-activity/participating-org/@role
+&lt;p&gt;
+**Type of Change**
+Addition to Embedded codelist
+&lt;p&gt;
+**Issue**
+Publishers are responsible for reporting on their ‘own’ activities, but may also act as an official proxy for another organisation or, as a secondary publisher, report on a third party’s activities. In the  latter two cases it is not always evident to the user which of the reported participating organisations - funders and/or implementers - actually ‘owns’ the reported activity and provided the information. An additional OrganisationRole code would help clarify this.
+&lt;p&gt;
+**Proposal**
+* Add code: 5 - Responsible
+
+The organisation responsible for the reported account and transactions of an activity as recorded by a proxy or secondary publisher.
+&lt;p&gt;
+**Standards Day**
+There was confusion about what is meant by the term &#39;secondary publisher&#39;. The use of the term &#39;proxy&#39; was suggested to clarify where publishers report &#39;officially&#39; on behalf of another organisation. (eg Swedish SIDA and Ministry of Foreign Affairs). Further consultation was requested.
+&lt;p&gt;
+**Links**
+N/A</description>
+    
+    <lastBuildDate>Fri, 07 Jul 2017 12:36:56 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/9</link>
+        <pubDate>Wed, 25 Oct 2017 14:00:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-855-9</guid>
+        <source url="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855.rss">Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Notes from consultation calls w/c 3rd July</p>
+<p>Outcome:<br>
+The proposal was reviewed by those on the call and there was no objection from the group about keeping organisation role code “Accountable”, however, a modification of the description was put forward as follows:<br>
+“An organisation that can be held accountable for the overall execution of the entire activity. If no accountable organisation is named, it is assumed that the reporting organisation is accountable for the activity.”</p>
+<p>Discussion:<br>
+There was some discussion to what extent the organisation role code “accountable” is being used by publishers and data visualisation platforms.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/8</link>
+        <pubDate>Fri, 07 Jul 2017 12:12:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-855-8</guid>
+        <source url="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855.rss">Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been rejected as it is now covered by a redefined definition of the “Accountable” code.</p>
+<p>If you feel that this should still be included in the current upgrade, please do respond here</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/5</link>
+        <pubDate>Fri, 16 Jun 2017 15:36:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-855-5</guid>
+        <source url="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855.rss">Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s a proposal to deprecate “Accountable” because of the stratospheric level of confusion around it…  The definition you quote isn’t the original one, as Mark Brough reminds us in the other post.</p>
+<p>That being said, I remain quite confused about what this “Responsible” role is, and would echo the question above: what’s the user story?</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/4</link>
+        <pubDate>Tue, 13 Jun 2017 18:40:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-855-4</guid>
+        <source url="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855.rss">Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>I sat down with our NGO Aid Map team and realized that my post above doesn’t really make any sense. Here’s a much more straightforward question:</p>
+<p><strong>There already exists a code for ‘Accountable.’ What is the difference between the proposed ‘Responsible’ and the existing ‘Accountable’?</strong></p>
+<p>It’s doubly confusing because the guidance for ‘Accountable’ uses the term ‘responsible’:</p>
+<blockquote>
+<p><code>role="2"</code> - Accountable - An organisation <em>responsible</em> for oversight of the activity and its outcomes</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/3</link>
+        <pubDate>Wed, 24 May 2017 19:12:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-855-3</guid>
+        <source url="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855.rss">Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>May be missing some nuance but here goes…</p>
+<p>Adding this to <code>&lt;participating-org&gt;</code> seems more confusing than adding a flag to <code>&lt;reporting-org&gt;</code>.  <code>&lt;reporting-org&gt;</code> seems to be the natural home for info about reporting, no? It also better represents the exceptional nature of this type of reporting, and avoids potential confusion with the existing <code>@secondary-reporter</code> flag.</p>
+<p>I take your point on the distinction between official proxies vs. secondary publishers reporting on third parties. Let me see if I can spell out the potential combinations with the proposal as is to (hopefully) clarify my confusion:</p>
+<ul>
+<li>
+<code>@secondary-reporter</code> = TRUE &amp; <code>@role</code> = responsible: ??</li>
+<li>
+<code>@secondary-reporter</code> = TRUE &amp; <code>@role</code> = !responsible: true secondary reporting for third party activities, i.e. Aid Data or NGO Aid Map</li>
+<li>
+<code>@secondary-reporter</code> = FALSE &amp; <code>@role</code> = responsible: typical situation, org owns and reports on activity</li>
+<li>
+<code>@secondary-reporter</code> = FALSE &amp; <code>@role</code> = !responsible: proxy publisher?</li>
+</ul>
+<p>Perhaps where I should have started is by channeling John - what’s the user story here? Is there a simpler way to clarify who owns vs. reports what?</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/2</link>
+        <pubDate>Wed, 17 May 2017 12:58:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-855-2</guid>
+        <source url="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855.rss">Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal is part of the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p>
+**Schema Object**
+iati-activity/participating-org/@role
+</p><p>
+**Type of Change**
+Addition to Embedded codelist
+</p><p>
+**Issue**
+Publishers are responsible for reporting on their ‘own’ activities, but may also act as an official proxy for another organisation or, as a secondary publisher, report on a third party’s activities. In the  latter two cases it is not always evident to the user which of the reported participating organisations - funders and/or implementers - actually ‘owns’ the reported activity and provided the information. An additional OrganisationRole code would help clarify this.
+</p><p>
+**Proposal**
+* Add code: 5 - Responsible
+</p><p>The organisation responsible for the reported account and transactions of an activity as recorded by a proxy or secondary publisher.</p>
+<p>
+**Standards Day**
+There was confusion about what is meant by the term 'secondary publisher'. The use of the term 'proxy' was suggested to clarify where publishers report 'officially' on behalf of another organisation. (eg Swedish SIDA and Ministry of Foreign Affairs). Further consultation was requested.
+</p><p>
+**Links**
+N/A</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855/1</link>
+        <pubDate>Fri, 12 May 2017 12:43:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-855-1</guid>
+        <source url="https://discuss.iatistandard.org/t/add-an-organisationrole-code-for-responsible-organisation-excluded-2-03/855.rss">Add an OrganisationRole Code for “Responsible” organisation (excluded 2.03)</source>
+      </item>
+  </channel>
+</rss>

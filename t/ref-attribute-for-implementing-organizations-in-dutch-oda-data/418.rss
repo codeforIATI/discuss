@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+    <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418</link>
+    <description>The IATI documentation for the @ref attribute says:
+
+&gt; Machine-readable identification string for the organisation. Must be in the format {Registration Agency} - (Registration Number} where {Registration Agency} is a valid code in the Registration Agency code list and {Registration Number } is a valid identifier issued by the {Registration Agency}. If this is not present then the narrative MUST contain the name of the organisation.
+
+The Dutch government supported activities in Zimbabwe:
+
+[http://datastore.iatistandard.org//api/1/access/activity.csv?reporting-org=NL-1&amp;recipient-country=ZW&amp;stream=True](http://datastore.iatistandard.org//api/1/access/activity.csv?reporting-org=NL-1&amp;recipient-country=ZW&amp;stream=True)
+
+Not only are those ref codes malformed, but some of them also appear multiple times, representing different implementing orgs. Is it the reporting organization that&#39;s using this identifier in an odd/wrong way, or merely a result of bad model mapping?</description>
+    
+    <lastBuildDate>Tue, 24 Jan 2017 12:19:59 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for <a class="mention" href="/u/markbrough">@markbrough</a>  and I am just going to move this to the Standard Management -&gt; Modification Additions &amp; Improvements category for further consideration</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/18</link>
+        <pubDate>Tue, 24 Jan 2017 12:19:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-18</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/wendy">@Wendy</a> – perhaps a sensible way forward would be to align the <code>OrganisationType</code> codelist more closely to the DAC channel codes where the latter refer to types of organisations rather than specific ones?</p>
+<p>The comment by <a class="mention" href="/u/theo.sande">@theo.sande</a> <a href="http://support.iatistandard.org/entries/27805378-Additions-to-Organisation-Type-codelist" rel="nofollow noopener">half way down this page</a> is probably what I’m suggesting… would an option be to merge the two lists?</p>
+<p>Incidentally, the <code>crs-add/channel-code</code> element doesn’t really help, because it isn’t placed within <code>participating-org</code> elements. So you can’t relate a specific channel code to a specific implementing organisation if there’s more than one implementing organisation.</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/17</link>
+        <pubDate>Thu, 12 May 2016 11:39:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-17</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for your comments <a class="mention" href="/u/markbrough">@markbrough</a> and it is an interesting idea regarding the use of the CRS channel codes and I can see how that might be useful at the present time. However, I’m not sure from a Standard’s Management perspective that we would want to allow multiple organisation references to be used but would prefer that all parties just used a single common organisation reference?  It would though of course always be interesting to hear from other data users (&amp; publishers) to get alternative views on this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/16</link>
+        <pubDate>Tue, 10 May 2016 14:47:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-16</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thinking about the organisation IDs more generally, I’ve seen a lot of donors using CRS channel codes in their data. Some of these are actually quite useful, especially in cases where more precise organisation IDs may be unavailable (due to systems limitations) or not exist (e.g. for public sector organisations). The channel code can also be quite useful as a way of understanding the type of organisation (it is more detailed and sometimes clearer than organisation type).</p>
+<p>Given this, I wonder whether it would be useful to allow the CRS channel code and the <code>ref</code> to both be reporting on the same <code>&lt;participating-org&gt;</code> element (for implementing organisations)? Otherwise, it is hard to reconcile the two when an organisation is using multiple <code>&lt;participating-org&gt;</code> and multiple channel codes.</p>
+<p>I did a <a href="https://github.com/BD-IATI/donor-data/blob/2d267cd026343f177addde1c6fc7ac9a1d468c9d/dfid/dfid_transactions_implementers.xlsx" rel="nofollow noopener">comparison of DFID implementing organisations and transaction/receiver-orgs here</a> which illustrates this issue reasonably well, I think (<a href="https://github.com/BD-IATI/donor-data/blob/master/dfid/dfid.ipynb" rel="nofollow noopener">code half way down this page</a>)</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/15</link>
+        <pubDate>Mon, 07 Mar 2016 14:58:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-15</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes you are completely right. That will be our next release in the summer in which we will gradually add fully IATI compliant identifiers to implementing organizations.</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/14</link>
+        <pubDate>Mon, 29 Feb 2016 12:26:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-14</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Uros.Milosevic]]></dc:creator>
+        <description><![CDATA[
+            <p>Shouldn’t the malformed/duplicate ref codes for the <strong>implementing</strong> organizations (e.g. 23000) be removed, though? Isn’t it a data quality issue?</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/13</link>
+        <pubDate>Mon, 29 Feb 2016 11:39:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-13</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>See: <a href="http://iatistandard.org/201/codelists/OrganisationRegistrationAgency/" rel="nofollow noopener">http://iatistandard.org/201/codelists/OrganisationRegistrationAgency/</a> for more information on changes in 2.0.1</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/12</link>
+        <pubDate>Mon, 29 Feb 2016 11:18:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-12</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Wendy for your explanation.</p>
+<p>We deliberately left the already published IATI identifiers of already published activities unchanged (NL-1-PPR-, because these identifiers might already be used in many systems. An IATI identifier should be unique throughout the life of an activity.</p>
+<p>Since the 2.01 release, our organization identifier has been changed. Therefore we publish new activities as XM-DAC-7-PPR-.</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/11</link>
+        <pubDate>Mon, 29 Feb 2016 11:09:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-11</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Kasper]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah, yes, of course… That makes sense, thx <a class="mention" href="/u/wendy">@Wendy</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/10</link>
+        <pubDate>Mon, 29 Feb 2016 10:21:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-10</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you Uros and just to add that the use of the ‘old’ identifier in the  element is correct as per the guidelines for handling changes to organisation identifiers (see earlier post for link).</p>
+<p>Also <a class="mention" href="/u/kasper">@Kasper</a> per the reason for the change of identifier is because the old identifier of ‘NL-1’ is not in the required format for an organisation identifier that became mandatory at v2.01 of the Standard</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/9</link>
+        <pubDate>Mon, 29 Feb 2016 10:10:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-9</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Uros.Milosevic]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you both!</p>
+<p><a class="mention" href="/u/wendy">@Wendy</a> There is also the <code>&lt;other-identifier&gt;</code> tag in activity descriptions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/8</link>
+        <pubDate>Sun, 28 Feb 2016 01:32:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-8</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Kasper]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>Since we get funding from the Dutch government as well, we used to reference them as NL-1, but indeed their organisation identifier has changed. This makes old files link to an unknown identifier and I haven’t been able to figure out why the switch was made (but haven’t done any thorough research either, to be honest).</p>
+<p>But in any case, it seems like they’re at least keeping the old activity identifiers the same (starting with NL-1). Newer activities, however, seem to be prepended with the new identifier. See the preview of their 2016-2017 file: <a href="http://preview.iatistandard.org/index.php?url=https%3A//static.rijksoverheid.nl/bz/IATIACTIVITIES20162017.xml" rel="nofollow noopener">http://preview.iatistandard.org/index.php?url=https%3A//static.rijksoverheid.nl/bz/IATIACTIVITIES20162017.xml</a>.</p>
+<p>Regards,<br>
+Kasper</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/7</link>
+        <pubDate>Thu, 25 Feb 2016 20:14:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-7</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Uros. Not all fields currently get included in the activity level CSV download but you can get the budget data by selecting the appropriate datastore option <a href="http://datastore.iatistandard.org/api/1/access/budgets.csv?reporting-org=XM-DAC-7">http://datastore.iatistandard.org/api/1/access/budgets.csv?reporting-org=XM-DAC-7</a></p>
+<p>Also regarding to the reference to the old publisher identifier in the XML output were you referring to the references in the transactions?</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/6</link>
+        <pubDate>Thu, 25 Feb 2016 09:29:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-6</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Uros.Milosevic]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Wendy. Actually, I just noticed there is a reference to the old publisher identifier in the XML output:</p>
+<p><a href="http://datastore.iatistandard.org//api/1/access/activity.xml?reporting-org=XM-DAC-7&amp;recipient-country=ZW&amp;stream=True" class="onebox" target="_blank" rel="nofollow noopener">http://datastore.iatistandard.org//api/1/access/activity.xml?reporting-org=XM-DAC-7&amp;recipient-country=ZW&amp;stream=True</a></p>
+<p>I also see budgets in there, but not in the CSV. Should I open a separate thread for that, or is there a simple solution to it?</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/5</link>
+        <pubDate>Wed, 24 Feb 2016 15:39:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-5</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>I thought I would just add here that it is okay for organisation identifiers to change as organisations do sometimes merge , change status etc over time However, what should never change are the activity identifiers. The guidelines for managing organisation identifier changes were established at V2.01 of the IATI Standard and can be found here - <a href="http://iatistandard.org/202/upgrades/integer-upgrade-to-2-01/migrating/#organisation-and-activity-identifiers">http://iatistandard.org/202/upgrades/integer-upgrade-to-2-01/migrating/#organisation-and-activity-identifiers</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/4</link>
+        <pubDate>Wed, 24 Feb 2016 13:51:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-4</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Uros.Milosevic]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Ben. I thought those identifiers aren’t supposed to change, ever.</p>
+<p>And, I guess you are right. It appears the problem does lie in the publisher’s data.</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/3</link>
+        <pubDate>Wed, 24 Feb 2016 09:10:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-3</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s nothing returned by that query. Looks like NL-1 is now XM-DAC-7, so:<br>
+<a href="http://datastore.iatistandard.org//api/1/access/activity.csv?reporting-org=XM-DAC-7&amp;recipient-country=ZW&amp;stream=True" class="onebox" target="_blank" rel="nofollow noopener">http://datastore.iatistandard.org//api/1/access/activity.csv?reporting-org=XM-DAC-7&amp;recipient-country=ZW&amp;stream=True</a></p>
+<p>Looks to me like the <span class="mention">@ref</span>’s are an issue in the publisher’s data: <a href="http://iatiregistry.org/dataset/minbuza_nl-activities20102011" rel="nofollow noopener">http://iatiregistry.org/dataset/minbuza_nl-activities20102011</a> .</p>
+<p>Link to the relevant docs: <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/participating-org/" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/participating-org/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/2</link>
+        <pubDate>Wed, 24 Feb 2016 08:25:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-2</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+      <item>
+        <title>@ref attribute for implementing organizations in Dutch ODA data</title>
+        <dc:creator><![CDATA[Uros.Milosevic]]></dc:creator>
+        <description><![CDATA[
+            <p>The IATI documentation for the <span class="mention">@ref</span> attribute says:</p>
+<blockquote>
+<p>Machine-readable identification string for the organisation. Must be in the format {Registration Agency} - (Registration Number} where {Registration Agency} is a valid code in the Registration Agency code list and {Registration Number } is a valid identifier issued by the {Registration Agency}. If this is not present then the narrative MUST contain the name of the organisation.</p>
+</blockquote>
+<p>The Dutch government supported activities in Zimbabwe:</p>
+<p><a href="http://datastore.iatistandard.org//api/1/access/activity.csv?reporting-org=NL-1&amp;recipient-country=ZW&amp;stream=True" rel="nofollow noopener">http://datastore.iatistandard.org//api/1/access/activity.csv?reporting-org=NL-1&amp;recipient-country=ZW&amp;stream=True</a></p>
+<p>Not only are those ref codes malformed, but some of them also appear multiple times, representing different implementing orgs. Is it the reporting organization that’s using this identifier in an odd/wrong way, or merely a result of bad model mapping?</p>
+          <p><a href="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418/1</link>
+        <pubDate>Mon, 22 Feb 2016 18:23:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-418-1</guid>
+        <source url="https://discuss.iatistandard.org/t/ref-attribute-for-implementing-organizations-in-dutch-oda-data/418.rss">@ref attribute for implementing organizations in Dutch ODA data</source>
+      </item>
+  </channel>
+</rss>

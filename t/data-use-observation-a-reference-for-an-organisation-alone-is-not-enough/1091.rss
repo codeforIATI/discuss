@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Data use observation: A reference for an organisation alone is not enough</title>
+    <link>https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091</link>
+    <description>I use d-portal a lot - it&#39;s very helpful to find good data, I find
+
+I wanted to share this recent insight that digs into how the standard is implemented, and what this means for a) a data use project such as d-portal and b) a data user using a data use project!
+
+This might seem quite a minor aspects of the standard, but I think interesting nevertheless, and they certainly have an impact on the end use.  Many thanks to @shi at d-portal for the prompt replies and actions
+
+**When we describe an organisaton with a org reference, should we include the name too?**
+
+When looking at one activity, I was presented with the following:
+
+![31860116-45b821d8-b70d-11e7-804a-02a1fe3bd5ff|343x170](upload://kKUzSaaRxHRJBAqEYwoiIeowDuK.png)
+
+As much as I _like_ organisation references, I dont think I can recall who NL-KVK-41198677 is !
+
+The reason for this , is that the publisher had not included the org name in the XML:
+
+    &lt;participating-org ref=&quot;NL-KVK-41198677&quot; role=&quot;2&quot; type=&quot;21&quot;/&gt;
+    &lt;participating-org ref=&quot;XM-DAC-7&quot; role=&quot;1&quot; type=&quot;10&quot;/&gt;
+    &lt;participating-org ref=&quot;NL-KVK-41198677&quot; role=&quot;4&quot; type=&quot;21&quot;/&gt;
+
+Hence, d-portal couldnt tell us the name of the organisation, as it wasnt in the data.
+
+Thankfully, @shi [found a solution](https://github.com/devinit/D-Portal/issues/416), and we now have:
+
+![orgs|444x124](upload://vXmKkYMOYy3uEOnaTRLnZCNs8iH.png)
+ 
+But - the fact remains that this data (and no doubt others) misses the org name.  This would potentially cause headaches for data users.  
+
+Do we therefore _insist_ on the name being included in the XML?  Or ... is there a need for a central look up of references, [which isn&#39;t as straightforward as it might seem](https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060).
+
+But, at the publisher end, it probably makes sense to keep things simple, and avoid repetition, particularly is you are talking about the same organisations time and again.  We only need to say NL-KVK-41198677 = Hivos once, right?  After all, we want the machines to read the machine-readable data?
+
+Any thoughts welcome</description>
+    
+    <lastBuildDate>Wed, 25 Oct 2017 07:05:40 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Data use observation: A reference for an organisation alone is not enough</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="1091">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Now, I would prefer to see both Ord ID and name on the D-Portal. The ID conveys useful information, like which country the org is from.</p>
+</blockquote>
+</aside>
+<p>Have added this: <a href="https://github.com/devinit/D-Portal/issues/417" rel="nofollow noopener">https://github.com/devinit/D-Portal/issues/417</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/8</link>
+        <pubDate>Wed, 25 Oct 2017 07:05:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1091-8</guid>
+        <source url="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091.rss">Data use observation: A reference for an organisation alone is not enough</source>
+      </item>
+      <item>
+        <title>Data use observation: A reference for an organisation alone is not enough</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="1091">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Now, I would prefer to see both Ord ID and name on the D-Portal. The ID conveys useful information, like which country the org is from.</p>
+</blockquote>
+</aside>
+<p>I second this. Considering activities reported from these ids usually begin with the same id in their identifiers, it’s a useful thing to have.</p>
+<p>Below are links showing all reporting-org publishers that have included both org name and id, along with the number of activities reported.</p>
+<p><a href="http://d-portal.org/q.json?from=act&amp;select=count,any_reporting_ref,any_reporting&amp;reporting_not_null&amp;groupby=reporting&amp;orderby=1-&amp;limit=-1" rel="nofollow noopener">JSON</a><br>
+<a href="http://d-portal.org/q.csv?from=act&amp;select=count,any_reporting_ref,any_reporting&amp;reporting_not_null&amp;groupby=reporting&amp;orderby=1-&amp;limit=-1" rel="nofollow noopener">CSV</a></p>
+<p>We found a total of 444 unique org name and id combination from data pulled in from the registry which means about 200 or so are not reporting org names, at least from our findings.</p>
+<p>There are also instances where org id include things like, <em>execution</em> (117 publishers), <em>null</em> (126 publishers) and <em>finished</em> (20 publishers) though this could just be down to an overzealous publishing tool.</p>
+<p><em>Update</em></p>
+<p>Thanks, <a class="mention" href="/u/vincentvw">@VincentVW</a> for pointing out that the numbers above could be wrong!</p>
+<p>444 publishers were attributed using 2.01 and not across all versions, maybe. Strange instances are counted as publishers when it should be activities - this was all down to a single publisher with questionable data.</p>
+<p>We will have to take a closer look as we do not use this part of the data so is subject to bit rot. On the plus side, we will fix more bugs :}</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/7</link>
+        <pubDate>Tue, 24 Oct 2017 17:40:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1091-7</guid>
+        <source url="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091.rss">Data use observation: A reference for an organisation alone is not enough</source>
+      </item>
+      <item>
+        <title>Data use observation: A reference for an organisation alone is not enough</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1091">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Do we therefore insist on the name being included in the XML?</p>
+</blockquote>
+</aside>
+<p>It’s already the case - it’s strongly suggested in guidance. Unless by <em>insist</em> you mean quasi-mandatory.</p>
+<p>We do publish org names (both English and French when relevant) in our file, mostly to make our data usable if downloaded (eg via datastore) -<br>
+something <a class="mention" href="/u/shi">@shi</a>’s much appreciated fix for the D-Portal won’t help with. Until we can solve this, perhaps we must insist more strongly for publishers to include both the Org ID and name (though in reality, we first need to insist that they actually publish an ID instead of a generic org category like CSO…)</p>
+<p>Now, I would prefer to see both Ord ID and name on the D-Portal. The ID conveys useful information, like which country the org is from.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/6</link>
+        <pubDate>Tue, 24 Oct 2017 17:00:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1091-6</guid>
+        <source url="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091.rss">Data use observation: A reference for an organisation alone is not enough</source>
+      </item>
+      <item>
+        <title>Data use observation: A reference for an organisation alone is not enough</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="1091">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>(to clarify: d-portal is doing an org-id lookup using all registry metadata. So it should work for any reference to an org that already publishes to IATI.)</p>
+</blockquote>
+</aside>
+<p>In case anyone is curious, this is how we do it:</p>
+<ol>
+<li>
+<p>Using the IATI Registry API - we suck down all the publisher metadata.<br>
+<a href="https://github.com/devinit/D-Portal/blob/master/dstore/json/publishers.json" rel="nofollow noopener">You can find it here</a> - this list is updated nightly-ish.</p>
+</li>
+<li>
+<p>Refining the data from here is, of course, an obvious and easy step; ie. turn <strong>publisher_iati_id</strong> into the org list.</p>
+</li>
+</ol>
+<p>Bonus points - Since this is under source control, you can see the <a href="https://github.com/devinit/D-Portal/commits/master/dstore/json/publishers.json" rel="nofollow noopener">history of changes</a> in the IATI Registry over time.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/5</link>
+        <pubDate>Tue, 24 Oct 2017 16:50:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1091-5</guid>
+        <source url="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091.rss">Data use observation: A reference for an organisation alone is not enough</source>
+      </item>
+      <item>
+        <title>Data use observation: A reference for an organisation alone is not enough</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah yes that is a bug and we’ve got an open issue on OIPA to fix that. [short explanation as to whats wrong] It now looks at the Organisation file -&gt; name element and if that is missing (or invalidates) it should fall back (but doesn’t) on displaying the publisher activity -&gt; reporting-org narrative or IATI registry publisher name ( We might make the latter the preferred name since it always exists ).</p>
+<p>To get more back on topic: totally agree that we can’t avoid using participating-org narratives for all organisations that do not publish yet for the reason that we can’t validate the name with the ref.</p>
+<p>A ‘do not repeat yourself’ solution would be to make it mandatory to report all the orgs you name in activities in your organisation file (that’s already possible atm right?). Not sure if that makes things easier for publishers nor developers though. It would increase consistency in naming.</p>
+<p>A central lookup using org-id.guide sounds like the best option to make it easier both on ‘search a org ref’ and ‘auto ref to name lookups’ in IATI visualisation tools. Also would be easy to integrate in publishing tools that use a CSV to IATI approach (pivot tables?) and AidStream. Any big issues with feasibility on this that you ran into at MA discussions <a class="mention" href="/u/andylolz">@andylolz</a> <a class="mention" href="/u/stevieflow">@stevieflow</a> ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/4</link>
+        <pubDate>Tue, 24 Oct 2017 16:26:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1091-4</guid>
+        <source url="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091.rss">Data use observation: A reference for an organisation alone is not enough</source>
+      </item>
+      <item>
+        <title>Data use observation: A reference for an organisation alone is not enough</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="1091">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>In general, OIPA is great for this sort of lookup – it does something very similar to what d-portal is doing here. Unfortunately, OIPA doesn’t help for that example… My guess is that OIPA uses the org file instead of the registry metadata, and the Hivos org file looks a bit borked</p>
+</blockquote>
+</aside>
+<p>Would be interested to know more —&gt; <a class="mention" href="/u/vincentvw">@VincentVW</a> ?</p>
+<p>I think the wider issue persists though - publishers are having to repeat the same thing again and again in their data – and that seems because <em>humans are reading it</em> (whether in the XML or via d-portal, for example)…</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/3</link>
+        <pubDate>Tue, 24 Oct 2017 13:03:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1091-3</guid>
+        <source url="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091.rss">Data use observation: A reference for an organisation alone is not enough</source>
+      </item>
+      <item>
+        <title>Data use observation: A reference for an organisation alone is not enough</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice fix from <a class="mention" href="/u/shi">@shi</a> here – that’s very cool (to clarify: <a href="http://d-portal.org/">d-portal</a> is doing an org-id lookup using all registry metadata. So it should work for any reference to an org that already publishes to IATI.)</p>
+<p>If the org-id can’t be used to figure out the org name, then yes – I don’t see any option but to insist on a name.</p>
+<aside class="quote no-group" data-post="1" data-topic="1091">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>is there a need for a central look up of references</p>
+</blockquote>
+</aside>
+<p>In general, <a href="https://www.oipa.nl/api/">OIPA</a> is great for this sort of lookup – it does something very similar to what d-portal is doing here. Unfortunately, <a href="https://www.oipa.nl/api/organisations/NL-KVK-41198677/">OIPA doesn’t help for that example</a>… My guess is that OIPA uses the org file instead of the registry metadata, and the Hivos org file looks a bit borked <img src="//discuss.iatistandard.org/images/emoji/twitter/cry.png?v=5" title=":cry:" class="emoji" alt=":cry:"></p>
+<p>One potential fallback option would be for d-portal to link to the relevant <a>org-id.guide</a> page, so the user could then follow the links and perform the lookup themselves. In this case, that’s <a href="http://org-id.guide/list/NL-KVK">http://org-id.guide/list/NL-KVK</a> but if you give that a go you’ll find you quickly come unstuck.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/2</link>
+        <pubDate>Tue, 24 Oct 2017 11:37:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1091-2</guid>
+        <source url="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091.rss">Data use observation: A reference for an organisation alone is not enough</source>
+      </item>
+      <item>
+        <title>Data use observation: A reference for an organisation alone is not enough</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I use d-portal a lot - it’s very helpful to find good data, I find</p>
+<p>I wanted to share this recent insight that digs into how the standard is implemented, and what this means for a) a data use project such as d-portal and b) a data user using a data use project!</p>
+<p>This might seem quite a minor aspects of the standard, but I think interesting nevertheless, and they certainly have an impact on the end use.  Many thanks to <a class="mention" href="/u/shi">@shi</a> at d-portal for the prompt replies and actions</p>
+<p><strong>When we describe an organisaton with a org reference, should we include the name too?</strong></p>
+<p>When looking at one activity, I was presented with the following:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/91790c6fe46d81897eac129b376a46399bdb11ce.png" alt="31860116-45b821d8-b70d-11e7-804a-02a1fe3bd5ff" width="343" height="170"></p>
+<p>As much as I <em>like</em> organisation references, I dont think I can recall who NL-KVK-41198677 is !</p>
+<p>The reason for this , is that the publisher had not included the org name in the XML:</p>
+<pre><code>&lt;participating-org ref="NL-KVK-41198677" role="2" type="21"/&gt;
+&lt;participating-org ref="XM-DAC-7" role="1" type="10"/&gt;
+&lt;participating-org ref="NL-KVK-41198677" role="4" type="21"/&gt;
+</code></pre>
+<p>Hence, d-portal couldnt tell us the name of the organisation, as it wasnt in the data.</p>
+<p>Thankfully, <a class="mention" href="/u/shi">@shi</a> <a href="https://github.com/devinit/D-Portal/issues/416" rel="nofollow noopener">found a solution</a>, and we now have:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/dff95e913d104cd0d9547d38e8511249e6d7a2d7.png" alt="orgs" width="444" height="124"></p>
+<p>But - the fact remains that this data (and no doubt others) misses the org name.  This would potentially cause headaches for data users.</p>
+<p>Do we therefore <em>insist</em> on the name being included in the XML?  Or … is there a need for a central look up of references, <a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060">which isn’t as straightforward as it might seem</a>.</p>
+<p>But, at the publisher end, it probably makes sense to keep things simple, and avoid repetition, particularly is you are talking about the same organisations time and again.  We only need to say NL-KVK-41198677 = Hivos once, right?  After all, we want the machines to read the machine-readable data?</p>
+<p>Any thoughts welcome</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091/1</link>
+        <pubDate>Tue, 24 Oct 2017 10:26:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1091-1</guid>
+        <source url="https://discuss.iatistandard.org/t/data-use-observation-a-reference-for-an-organisation-alone-is-not-enough/1091.rss">Data use observation: A reference for an organisation alone is not enough</source>
+      </item>
+  </channel>
+</rss>

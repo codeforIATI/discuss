@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Datastore Project Update: August 2020</title>
+    <link>https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000</link>
+    <description>Zimmerman and the IATI Secretariat are pleased to provide an update on the progress of the IATI Datastore project. 
+
+Over the last few months we have worked intensively to make a huge number of improvements to the tool, in response to community feedback during the testing phase, and to satisfy remaining requirements from the TOR. We’ve fixed bugs and added the required enhancements that enable the tool to be as robust and dependable as possible. We are working towards a release date of 22nd September.
+
+**What work has been completed?** 
+
+A non-exhaustive list of these items include:
+
+Bug fixes:
+
+* 0.00 values not being output
+* ‘Default’ elements being farmed to transactions
+* Location output not matching published data
+* Multiple description types not output
+
+Functional Additions:
+
+* Validator Integration
+* Schema-valid XML output
+* Several additional filters
+* Streamlined parsing process
+* Output CSV columns in Schema order
+
+**Remaining Requirements and official launch**
+
+As existing users will know, all items mentioned above have been implemented and are available to use now.
+
+The only remaining requirement for the product to be fully launched is for sector and recipient-country expansion functionality to be added to the csv output. Sector and recipient-country expansion allows, if required by the user, the ability to repeat each activity or transaction (depending on the row-output choice) over multiple rows, for each sector or recipient-country that is reported.
+
+The core functionality is already available on the tool, but the Zimmerman team is now working to make this available for all filters, and ensuring that all fields can be returned, as required.
+
+Once the work on the sector and recipient-country expansion feature is completed, the tool will be ready for launch. The purpose of the launch is to actively promote the use of the IATI Datastore both to existing and new IATI stakeholders within the international development and humanitarian sectors. A comprehensive User Guide for the Query Builder will also be published at the time of launch.
+
+**Redirects**
+
+As mentioned on a previous [Discuss post](https://discuss.iatistandard.org/t/iati-datastore-redirects-testing/1970), an important requirement is that queries that are made to the ‘old’ IATI Datastore API are redirected to the new one, with the equivalent query parameters used. This will ensure that any regular queries that utilise the existing tool can continue to return corresponding data from the new tool.
+
+The timeline for deprecating the old Datastore and implementing the redirects is as follows:
+
+From New Datastore communications Launch until 6 months after:
+
+* [Old Datastore](http://datastore.iatistandard.org/query/) remains live, as is.
+* “Redirect version” of Old Datastore is also available for use. The “Redirect version” of the Old Datastore will provide users with the corresponding query to the New Datastore. This should help with any migrations before the Old Datastore is deprecated
+
+6 months after Datastore official launch
+
+* Old Datastore is deprecated and no longer available
+* “Redirect version” of Old Datastore is deprecated and no longer available
+* Any queries to the Old Datastore **automatically** redirect to a corresponding query on the new Datastore.
+
+**Post Launch Requirements**
+
+Following the launch, we will continue to work on implementing the following requirements previously identified and keep the Community updated as to when these will be released .
+
+* Allow elements that can be returned at either transaction or activity level to be returned within the same query - [#2081](https://github.com/zimmerman-zimmerman/iati.cloud/issues/2081)
+* Add aggregated transaction data to the activity output - [#2025](https://github.com/zimmerman-zimmerman/iati.cloud/issues/2025)
+* Allow the user to choose between basic, complete, or custom csv output - [#2295](https://github.com/zimmerman-zimmerman/iati.cloud/issues/2295)
+* Normalise transaction values to USD - [#2219](https://github.com/zimmerman-zimmerman/iati.cloud/issues/2219)
+* Enable return of Validation results from the Datastore - [#2296](https://github.com/zimmerman-zimmerman/iati.cloud/issues/2296)
+
+As with all of our services, the IATI Secretariat will continue to monitor and respond to user needs with any necessary updates in the future, and will undertake consultations with the wider IATI Community about potential changes to the datastore and validator integration, including on topics currently under review [on Discuss.](https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdiscuss.iatistandard.org%2Ft%2Fiati-datastore-what-data-should-go-in%2F1631%2F60&amp;data=02%7C01%7Cannelise.parr%40undp.org%7C265f99d70f7b41a1a25108d83882e69e%7Cb3e5db5e2944483799f57488ace54319%7C0%7C0%7C637321482149473130&amp;sdata=97y7HQbUV5a4JEbPHjcLUVXIWFD%2FqGIAodm4z1rJvI0%3D&amp;reserved=0)
+
+**Get in touch**
+
+As ever, if you have further questions for the IATI Secretariat and Zimmerman, do post them here or email [support@iatistandard.org](mailto:support@iatistandard.org).
+
+Best wishes,
+IATI Secretariat &amp; Zimmerman Team</description>
+    
+    <lastBuildDate>Tue, 01 Sep 2020 14:30:35 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Datastore Project Update: August 2020</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>OK understood, thanks for the clarification and explanation, <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>!</p>
+          <p><a href="https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000/4</link>
+        <pubDate>Tue, 01 Sep 2020 14:30:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2000-4</guid>
+        <source url="https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000.rss">Datastore Project Update: August 2020</source>
+      </item>
+      <item>
+        <title>Datastore Project Update: August 2020</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Mark,</p>
+<p>Thanks for your feedback and apologies if our original post led to any confusion on this point. Adding a transaction and budget explosion is one of our post launch priorities. The current plan is to launch the validator with the country and sector explosion only when querying one activity per row.</p>
+<p>From the datastore perspective the current explosion only deals with activity level data. It doesn’t include countries and sectors reported at transaction level. Going forwards we want to be able to combine data from both levels, and be able to use this in the three different output formats / across the different endpoints. The dependency is on querying transaction and activity level data simultaneously which is another priority post launch feature (<a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/2081">2081</a>).</p>
+<p>This complication is not something we anticipated when writing the ToR.</p>
+<p>For now, we want to make it clear in the UI that expansion options are only available when selecting ‘each unique activity’ per row.</p>
+          <p><a href="https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000/3</link>
+        <pubDate>Tue, 01 Sep 2020 08:20:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2000-3</guid>
+        <source url="https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000.rss">Datastore Project Update: August 2020</source>
+      </item>
+      <item>
+        <title>Datastore Project Update: August 2020</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this update, <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>, this is super helpful, also to see the enormous amount of work that has been done over recent months – congratulations to everyone involved in getting to this point.</p>
+<p>I just wanted to check one thing – here it is suggested that sector and recipient-country expansion would be added to the CSV output for activities <strong>and</strong> transactions:</p>
+<aside class="quote no-group" data-username="IATI-techteam" data-post="1" data-topic="2000">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_2.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>The only remaining requirement for the product to be fully launched is for sector and recipient-country expansion functionality to be added to the csv output. Sector and recipient-country expansion allows, if required by the user, the ability to repeat each activity or transaction (depending on the row-output choice) over multiple rows, for each sector or recipient-country that is reported.</p>
+</blockquote>
+</aside>
+<p>However, <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/2392" rel="nofollow noopener">this issue suggests</a> that actually this will only be provided for activities, and <strong>not</strong> for transactions or budgets, so I wanted to check which was correct?</p>
+<p>Providing sector and recipient-country expansion for transactions and budgets would be really helpful (and is in <a href="https://www.ungm.org/UNUser/Documents/DownloadPublicDocument?docId=710263" rel="nofollow noopener">the original ToR</a>). Based on the really useful presentation in today’s DUTF, I think it would also significantly simplify access to the data for users that don’t have programming skills.</p>
+          <p><a href="https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000/2</link>
+        <pubDate>Tue, 18 Aug 2020 17:32:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2000-2</guid>
+        <source url="https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000.rss">Datastore Project Update: August 2020</source>
+      </item>
+      <item>
+        <title>Datastore Project Update: August 2020</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Zimmerman and the IATI Secretariat are pleased to provide an update on the progress of the IATI Datastore project.</p>
+<p>Over the last few months we have worked intensively to make a huge number of improvements to the tool, in response to community feedback during the testing phase, and to satisfy remaining requirements from the TOR. We’ve fixed bugs and added the required enhancements that enable the tool to be as robust and dependable as possible. We are working towards a release date of 22nd September.</p>
+<p><strong>What work has been completed?</strong></p>
+<p>A non-exhaustive list of these items include:</p>
+<p>Bug fixes:</p>
+<ul>
+<li>0.00 values not being output</li>
+<li>‘Default’ elements being farmed to transactions</li>
+<li>Location output not matching published data</li>
+<li>Multiple description types not output</li>
+</ul>
+<p>Functional Additions:</p>
+<ul>
+<li>Validator Integration</li>
+<li>Schema-valid XML output</li>
+<li>Several additional filters</li>
+<li>Streamlined parsing process</li>
+<li>Output CSV columns in Schema order</li>
+</ul>
+<p><strong>Remaining Requirements and official launch</strong></p>
+<p>As existing users will know, all items mentioned above have been implemented and are available to use now.</p>
+<p>The only remaining requirement for the product to be fully launched is for sector and recipient-country expansion functionality to be added to the csv output. Sector and recipient-country expansion allows, if required by the user, the ability to repeat each activity or transaction (depending on the row-output choice) over multiple rows, for each sector or recipient-country that is reported.</p>
+<p>The core functionality is already available on the tool, but the Zimmerman team is now working to make this available for all filters, and ensuring that all fields can be returned, as required.</p>
+<p>Once the work on the sector and recipient-country expansion feature is completed, the tool will be ready for launch. The purpose of the launch is to actively promote the use of the IATI Datastore both to existing and new IATI stakeholders within the international development and humanitarian sectors. A comprehensive User Guide for the Query Builder will also be published at the time of launch.</p>
+<p><strong>Redirects</strong></p>
+<p>As mentioned on a previous <a href="https://discuss.iatistandard.org/t/iati-datastore-redirects-testing/1970">Discuss post</a>, an important requirement is that queries that are made to the ‘old’ IATI Datastore API are redirected to the new one, with the equivalent query parameters used. This will ensure that any regular queries that utilise the existing tool can continue to return corresponding data from the new tool.</p>
+<p>The timeline for deprecating the old Datastore and implementing the redirects is as follows:</p>
+<p>From New Datastore communications Launch until 6 months after:</p>
+<ul>
+<li>
+<a href="http://datastore.iatistandard.org/query/">Old Datastore</a> remains live, as is.</li>
+<li>“Redirect version” of Old Datastore is also available for use. The “Redirect version” of the Old Datastore will provide users with the corresponding query to the New Datastore. This should help with any migrations before the Old Datastore is deprecated</li>
+</ul>
+<p>6 months after Datastore official launch</p>
+<ul>
+<li>Old Datastore is deprecated and no longer available</li>
+<li>“Redirect version” of Old Datastore is deprecated and no longer available</li>
+<li>Any queries to the Old Datastore <strong>automatically</strong> redirect to a corresponding query on the new Datastore.</li>
+</ul>
+<p><strong>Post Launch Requirements</strong></p>
+<p>Following the launch, we will continue to work on implementing the following requirements previously identified and keep the Community updated as to when these will be released .</p>
+<ul>
+<li>Allow elements that can be returned at either transaction or activity level to be returned within the same query - <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/2081">#2081</a>
+</li>
+<li>Add aggregated transaction data to the activity output - <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/2025">#2025</a>
+</li>
+<li>Allow the user to choose between basic, complete, or custom csv output - <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/2295">#2295</a>
+</li>
+<li>Normalise transaction values to USD - <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/2219">#2219</a>
+</li>
+<li>Enable return of Validation results from the Datastore - <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/2296">#2296</a>
+</li>
+</ul>
+<p>As with all of our services, the IATI Secretariat will continue to monitor and respond to user needs with any necessary updates in the future, and will undertake consultations with the wider IATI Community about potential changes to the datastore and validator integration, including on topics currently under review <a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdiscuss.iatistandard.org%2Ft%2Fiati-datastore-what-data-should-go-in%2F1631%2F60&amp;data=02%7C01%7Cannelise.parr%40undp.org%7C265f99d70f7b41a1a25108d83882e69e%7Cb3e5db5e2944483799f57488ace54319%7C0%7C0%7C637321482149473130&amp;sdata=97y7HQbUV5a4JEbPHjcLUVXIWFD%2FqGIAodm4z1rJvI0%3D&amp;reserved=0">on Discuss.</a></p>
+<p><strong>Get in touch</strong></p>
+<p>As ever, if you have further questions for the IATI Secretariat and Zimmerman, do post them here or email <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>.</p>
+<p>Best wishes,<br>
+IATI Secretariat &amp; Zimmerman Team</p>
+          <p><a href="https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000/1</link>
+        <pubDate>Thu, 06 Aug 2020 10:13:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2000-1</guid>
+        <source url="https://discuss.iatistandard.org/t/datastore-project-update-august-2020/2000.rss">Datastore Project Update: August 2020</source>
+      </item>
+  </channel>
+</rss>

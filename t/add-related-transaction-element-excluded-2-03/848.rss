@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Add related-transaction element (excluded 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848</link>
+    <description>This proposal is part of the [2.03 upgrade process](https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838), please comment by replying below.
+
+**Standard**
+Activity
+&lt;p&gt;
+**Schema Object**
+iati-activity/transaction/related-reference/@ref
+&lt;p&gt;
+**Type of Change**
+Schema addition
+&lt;p&gt;
+**Issue**
+In an activity that involves earmarked funding from more than one funder it is currently not possible to trace the financial flow through the activity. This is of particular relevance to pooled funds. A reference shared between a commitment (or incoming funds transaction) and a disbursement would  clarify this.
+&lt;p&gt;
+**Proposal**
+&lt;ul&gt;
+&lt;li&gt;Add element iati-activity/transaction/related-reference
+&lt;ul&gt;
+&lt;li&gt;Definition: An internal reference that creates a link between two transactions within a single activity. The value in transaction/related-reference/@ref should be the same as transaction/@ref in another transaction.
+&lt;li&gt;Occurs: 0..*
+&lt;/ul&gt;
+&lt;li&gt;Add attribute iati-activity/transaction/related-reference/@ref
+&lt;ul&gt;
+&lt;li&gt;Definition: A value that matches the value in transaction/@ref in another transaction.
+&lt;li&gt;Occurs: 1..1
+&lt;/ul&gt;
+&lt;/ul&gt;
+**Standards Day**
+This was a late presentation - part of a group of proposals that will improve humanitarian use of the standard - and was not discussed.
+&lt;p&gt;
+**Links**
+N/A</description>
+    
+    <lastBuildDate>Mon, 11 Sep 2017 15:34:52 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/19</link>
+        <pubDate>Wed, 25 Oct 2017 13:49:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-19</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Following <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838/24">the call to seek consensus on the humanitarian proposals</a> that took place on 5th September 2017 this proposal has NOT been accepted for inclusion as part of v2.03.</p>
+<p>Some members of the IATI community felt  that the business case for this proposal was not yet strong enough for it to be taken forward at this time.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/18</link>
+        <pubDate>Mon, 11 Sep 2017 15:34:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-18</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>This is very late but, for reasons I won’t go into here, I’ve been effectively off-radar for around two months.</p>
+<p><em>That being said</em> I did make an informal extension for this functionality a while ago, which might help give some further structure to the discussion of this element.</p>
+<p>It offers three specific use cases, and examples for implementing them:</p>
+<blockquote>
+<ol>
+<li>
+<p>associating a disbursement in one organisation’s data with an incoming fund in another’s ('i.e the inter-organisation conception of ‘following the money’).</p>
+</li>
+<li>
+<p>associating a disbursement in one organisation’s parent-activity with an incoming fund in it’s child activity (following the money within a hierarchical group of activities).</p>
+</li>
+<li>
+<p>associating a group of small transactions with a single large transaction within a given activity (following the money within an activity - ideal for ‘flat’ representations of a fund-manager’s data for instance).</p>
+</li>
+</ol>
+</blockquote>
+<p>For the full extension text, see <a href="https://gist.github.com/rory09/bc89d2e581fe944aed2f1455da565611" rel="nofollow noopener">here</a>. I won’t be able to join the call today, but I’m happy to address any questions about the above, and for the record I don’t see any compelling reasons not to include this functionality, assuming that everyone is realistic about the <em>political</em> and <em>pragmatic</em> limits of ‘follow the money’, as well as the technical hurdles.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/17</link>
+        <pubDate>Tue, 05 Sep 2017 08:15:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-17</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I think diagramming might help this discussion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/16</link>
+        <pubDate>Mon, 28 Aug 2017 08:51:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-16</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I fully agree with <a class="mention" href="/u/oj_">@OJ_</a>.</p>
+<p>1 - We already have the possibility in the standard to track donor funds by defining an activity for each donor for which you want to track.</p>
+<p>2- The proposed change will not enable you to properly track donor funding. Let’s take the example that two donors, each disbursing 5 milj. Euro’s for an activity. Subsequently an expenditure of 7 milj. Euro’s from that activity is done. How are you going to attribute these 7 milj. Euro’s to the 2 donors using the transaction references?</p>
+<p>3 - Introducing this change will add an (i.m.o. flawed) alternative way to track funds. This will greatly complicate  data use when you want to combine data from publishers which use different ways of fund tracking.</p>
+<p>Therefore I can not agree with this proposal.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/15</link>
+        <pubDate>Mon, 28 Aug 2017 08:43:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-15</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>On this one I’m not convinced that there is a universal user need for linking specific transactions, although <a class="mention" href="/u/stevieflow">@stevieflow</a> and <a class="mention" href="/u/ximboden">@ximboden</a> make some specific arguments.</p>
+<p>I don’t have any real objection to adding an optional transaction/related-reference element.</p>
+<p>However, would we not be better off doing some diagramming of different ways that activities can be related and seeing if a change in how these activities could be represented using the existing elements. I’d like to see more of these “architectural patterns” to inform this discussion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/14</link>
+        <pubDate>Sat, 19 Aug 2017 16:58:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-14</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I think a generic argument looks like this:</p>
+<ul>
+<li>An IATI activity can contain many commitments and disbursements from one or more sources</li>
+<li>Some stakeholders see a benefit in linking particular commitments to particular disbursements.</li>
+<li>The standard already contains the transaction/<span class="mention">@ref</span> attribute</li>
+<li>Adding an optional transaction/related-reference element that re-uses transaction/<span class="mention">@ref</span> would solve this use case without interfering with publishers who don’t use it and users who don’t need it.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/13</link>
+        <pubDate>Wed, 09 Aug 2017 15:56:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-13</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>No, I was not available at the time. I still think that we are adressing the real issue from the wrong angle - we should rather clarify what we expect to be commonly understood as ‘an activity’.</p>
+<p>We are misunderstanding each other, and I fear that we are missing an opportunity to clarify different ‘points of measurement’ that could have been valuable. I still don’t see the benefit of linking transactions - I fear it will be a re-invention of the quite harmful notion of ‘follow the money’, now just as an optional alternative to the shared concept of traceability.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/12</link>
+        <pubDate>Wed, 09 Aug 2017 15:21:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-12</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>When reading back this topic I noticed that the last question of <a class="mention" href="/u/oj_">@OJ_</a> has  not been addressed. I think <a class="mention" href="/u/oj_">@OJ_</a> remark <strong>“If one activity has multiple sources, and one of these insists to ‘earmark’ their support for specific parts of the activity, then it just might be that you actually already are managing the complex as several separate activities, and ought to revise your definition of IATI-activities rather than the coding of IATI-transactions.?”</strong> makes sense and deserves an answer.</p>
+<p><a class="mention" href="/u/oj_">@OJ_</a>: where you in the consultation call and was your question answered?</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/11</link>
+        <pubDate>Wed, 09 Aug 2017 13:49:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-11</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Notes from consultation calls w/c 3rd July</p>
+<p>The proposal was reviewed by those on the call and there was no objection from the group.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/10</link>
+        <pubDate>Fri, 07 Jul 2017 12:18:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-10</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been included for consideration in the formal 2.03 proposal, subject to additional use-case being illustrated.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/7</link>
+        <pubDate>Fri, 16 Jun 2017 15:22:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-7</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[ximboden]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, we have several concrete use cases for this feature for humanitarian financial tracking.</p>
+<ol>
+<li>
+<p><strong>Traceability: for activities funded by multiple donors, the ability to trace funding from each upstream donor through the activity to its downstream use.</strong> This is not the same as a pooled fund - I fully agree with Herman that a genuine pooled fund is by definition not supposed to be able to trace funding through the pool. However, if a regular activity - representing any humanitarian intervention - is funded by several donors, and finances several implementing partners, then without this feature a user cannot add traceability info even if he/she actually has this information. What we are finding with FTS reporting is that there is a proliferation of pseudo-‘pools’ within regular organisations where they report in bulk on income and in bulk on allocations without bothering to make traceable links between the two, claiming that they operate an internal pool when in fact their internal systems do require actual allocation of funding to its use (even if the funding was not earmarked by the donor), and they happily report back to the individual donors on where their money went. I am aware that this situation can be avoided through the use of a parent activity and then multiple child activities, each of which is funded by only one donor - but IATI is designed to support activities having multiple transactions from multiple donors, so enforcing the single-donor single-activity approach seems like the wrong way to approach this. This is not about making IATI more like an accounting system: traceability is a key element of the Grand Bargain and essential for tracking funding to local actors, so IATI should make this as easy as possible.</p>
+</li>
+<li>
+<p><strong>Accountability: the ability to uniquely link pledges to commitments, and commitments to disbursements.</strong> This concerns accountability of donors to their implementing partners and the ability to use IATI to identify gaps between promises made and funding actually received. Again, without this feature this is currently only possible if an activity has a single disbursement or a single pledge, so that the correct association of transactions is obvious. However, it is not uncommon for an activity to be funded by several different commitments from the same donor at different points in time, and for each of those commitments to then have multiple disbursements. FTS aims to maintain a record of how much has been committed vs disbursed. Even more importantly, for resource mobilisation purposes many humanitarians aim to track pledges. With IATI 2.03 expanding to allow for ‘pledge’-type transactions, it is important for both donors and recipients to have easy ways to use IATI to indicate how actual commitments are ‘drawing down’ on pledges made (where this info exists), and then hold donors accountable for outstanding pledges. Again, there are workarounds - for example, limiting an activity to having only one pledge and one commitment from any one organisation - but again in our opinion IATI’s role should be to make this as easy as possible, and this feature would provide an additional tool to aid accountability.</p>
+</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/6</link>
+        <pubDate>Mon, 12 Jun 2017 15:36:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-6</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>I might get the scent of where you are heading, but I am not able to see it in <a href="http://d-portal.org/q.html?aid=GB-COH-04105827-AIDDIRECT" rel="nofollow noopener">the example</a> you point out in d-portal. This is just a big grant, allowing disbursements to a very large number of partners. But that points towards an entirely different issue – an issue where I’m quite sure that there will never be consensus about how to use the schema nor the optional hierarchy.</p>
+<p>(In our activity-file, the lowest level is the level of ‘commitment’ – not the transaction of course, but the ‘binding agreement with the partner’ meaning that each and every one of the many recipient organisations in the example would constitute a child-activity of it’s own, in DK’s activity file.)</p>
+<p>There are also an issue about the ‘role’ of organisations; as <a href="http://d-portal.org/q.html?aid=GB-COH-2100867-GPAF-IMP-040" rel="nofollow noopener">a random example in the example</a> I could refer to ‘SOS Sahel’, listed as implementing organisation no. 98. It appears however that this organisation calls itself ‘SOS Sahel International UK’, and claims to hold an extending role, with SOS Sahel Ethiopia as the implementing partner.</p>
+<p>So – looking into it in order to understand the motivation for enriched transaction-data, I arrive at entirely different issues. Issues that are probably less about the standard itself, but rather how we use it – how we recommend our partners to use it. In this case: Ensure mutual recognition of the ‘role’ undertaken by your organisation in the specific activity, and make sure that your identification of ‘iati-activities’ corresponds with a very tangible concept of ‘partnership’, already found in the very foundation of your operational procedures.</p>
+<p>I know it’s a far shot, but could that last observation be considered an alternative solution to the problem you address? If one activity has multiple sources, and one of these insists to ‘earmark’ their support for specific parts of the activity, then it just might be that you actually already are managing the complex as several separate activities, and ought to revise your definition of IATI-activities rather than the coding of IATI-transactions.?</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/5</link>
+        <pubDate>Fri, 02 Jun 2017 10:32:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-5</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Broadly, I agree with the nature of this proposal.  It is <em><strong>not possible</strong></em> to link specific activities via the standard.  We <a href="https://discuss.iatistandard.org/t/its-not-possible-to-follow-the-money-via-iati-transactions-discuss/724">have a discussion thread</a> on this, which isn’t referenced in this proposal.  NB:I’m not convinced we got to consensus in that thread either!</p>
+<p>However, I find the cited “issue” of pooled funds is too specific and narrow - and the concerns from <a class="mention" href="/u/herman">@Herman</a> and <a class="mention" href="/u/oj_">@OJ_</a> are well-grounded.</p>
+<p>Our point was that in use cases where transactions could - or should - be linked, then the standard simple does not enable this.  We have found instances where this would be very useful (see below).  However, to reiterate - and perhaps to <a href="https://discuss.iatistandard.org/t/our-shared-understanding-of-what-iati-is-and-is-not/893">points made by</a> <a class="mention" href="/u/rolfkleef">@rolfkleef</a> et al - this does not encompass a sudden move to make IATI an accounting system!</p>
+<p><a class="mention" href="/u/rory_scott">@rory_scott</a> and I have since explored <a href="https://discuss.iatistandard.org/t/tracing-transactions-a-first-draft-at-an-extension/832">an extension to illustrate this</a>.  This has been driven by our work with <a class="mention" href="/u/johnadams">@JohnAdams</a> at DFID, looking at traceability - <a href="http://d-portal.org/q.html?aid=GB-COH-04105827-AIDDIRECT" rel="nofollow noopener">the data is now live, in the use case of a fund manager for DFID</a>.</p>
+<p>I think there are plenty of use cases / support for the ability to link transactions, especially in certain aspects of delivery chain mapping / traceability.  We found some very interesting needs for this, but - <strong>and I repeat</strong> (!) - these are not universal, and not about mandating publishers to link each and every activity!</p>
+<p>tl;dr : I support the technical proposal, but not the specified use case.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/4</link>
+        <pubDate>Fri, 02 Jun 2017 07:17:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-4</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with Herman. It is a contradiction in terms to intend to trace earmarked transactions within a basket/pooled fund. If it is earmarked, then it can’t be part of the pool.</p>
+<p>I would suggest that the problem is better solved by application of NL’s guidance on this Funding model - establishing a parent-activity to hold the incoming, pooled funds and then have the individual activities as children, and thes childrren can then receive additional ‘earmarked’ contributions with no reference to the pool.</p>
+<p>One relevant clarification would be for the fund-manager to report the type_of_aid on incoming donor-contributions. It would be highly relevant to make sure that the donor and the fund-manager agrees on the classification of the modality Applied.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/3</link>
+        <pubDate>Tue, 30 May 2017 18:30:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-3</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I am a bit doubtful about this proposal since the origin of the money is by definition lost in pooled funding. So if you want to be able to track the financial flows for each funder, you shouldn’t use pooled funding at all. Instead make a separate activity for each funder.</p>
+<p>Are there any real world examples where a fund manager keeps track in the financial system of the actual  origin of the money at the time of disbursement?</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/2</link>
+        <pubDate>Fri, 19 May 2017 11:43:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-2</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Add related-transaction element (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal is part of the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p>
+**Schema Object**
+iati-activity/transaction/related-reference/@ref
+</p><p>
+**Type of Change**
+Schema addition
+</p><p>
+**Issue**
+In an activity that involves earmarked funding from more than one funder it is currently not possible to trace the financial flow through the activity. This is of particular relevance to pooled funds. A reference shared between a commitment (or incoming funds transaction) and a disbursement would  clarify this.
+</p><p>
+**Proposal**
+</p><ul>
+<li>Add element iati-activity/transaction/related-reference
+<ul>
+<li>Definition: An internal reference that creates a link between two transactions within a single activity. The value in transaction/related-reference/@ref should be the same as transaction/@ref in another transaction.
+</li>
+<li>Occurs: 0..*
+</li>
+</ul>
+</li>
+<li>Add attribute iati-activity/transaction/related-reference/@ref
+<ul>
+<li>Definition: A value that matches the value in transaction/@ref in another transaction.
+</li>
+<li>Occurs: 1..1
+</li>
+</ul>
+</li>
+</ul>
+**Standards Day**
+This was a late presentation - part of a group of proposals that will improve humanitarian use of the standard - and was not discussed.
+<p>
+**Links**
+N/A</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848/1</link>
+        <pubDate>Fri, 12 May 2017 12:18:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-848-1</guid>
+        <source url="https://discuss.iatistandard.org/t/add-related-transaction-element-excluded-2-03/848.rss">Add related-transaction element (excluded 2.03)</source>
+      </item>
+  </channel>
+</rss>

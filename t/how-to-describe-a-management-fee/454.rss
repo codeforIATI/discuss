@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to describe a &quot;management fee&quot;?</title>
+    <link>https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454</link>
+    <description>If an organisation - for a variety of reasons (and not the focus on this topic) - has a &quot;management fee&quot; for their work/project, how would they best describe this?  Is it a transaction of [type](http://iatistandard.org/202/codelists/TransactionType/) &quot;Expenditure&quot;?:
+
+&gt; Outgoing funds that are spent on goods and services for the activity. The recipients of expenditures fall outside of IATI traceability standards.
+
+Does that description / code cover a &quot;management fee&quot; type scenario?
+
+Any examples out there?</description>
+    
+    <lastBuildDate>Tue, 10 May 2016 13:21:58 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to describe a &quot;management fee&quot;?</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/stevieflow">@stevieflow</a> for the question and <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> for your comments above. Given the scenario that is described it looks as though three different options for how this could be handled have been identified?</p>
+<ol>
+<li>Don’t include any reference to the fee at all</li>
+<li>The donor (Org B) could just publish it as an expense (referencing the Fund Manager Org A) as the recipient and as <a class="mention" href="/u/bill_anderson">@bill_anderson</a> describes</li>
+<li>The donor (Org B) could include the fee in a disbursement to Org A. Org A defines the Incoming Funds but also include an Expenditure transaction (to themselves) to account for the ‘internal spend’ of the management fee</li>
+</ol>
+<p>I think of the three options, option 2 would be the one that I would prefer as I think it is the one that most closely describes what actually happens in the real world? However, other thoughts and comments are always welcome?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/7</link>
+        <pubDate>Tue, 10 May 2016 13:21:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-454-7</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454.rss">How to describe a &quot;management fee&quot;?</source>
+      </item>
+      <item>
+        <title>How to describe a &quot;management fee&quot;?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the clarification Steven</p>
+<p>I don’t think this should be reported as an expenditure - it’s certainly not “an outlay of funds” by Org A, whichever way you look at it. It’s an expenditure for the upstream publisher/funder (Org B), and incoming funds for this one (Org A).</p>
+<p>If they want to report it as a separate line of incoming funds, why not, but I’m not sure of the value of doing it.  In any chain of funder-implementer(s)-beneficiary, the total disbursements/expenditures at one stage won’t equal the incoming funds, since part of the funds will be used for admin costs (used in the broadest sense - offices, staff, phone lines etc).</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/6</link>
+        <pubDate>Mon, 25 Apr 2016 14:17:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-454-6</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454.rss">How to describe a &quot;management fee&quot;?</source>
+      </item>
+      <item>
+        <title>How to describe a &quot;management fee&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a></p>
+<p>The use case I was exploring was towards the second scenario:</p>
+<ul>
+<li>Org A publishes</li>
+<li>Org A act as the “fund manager” for a programme, directed by Donor B</li>
+<li>Org A receives funds from Donor B,</li>
+<li>Org A then disburse funds to multiple Implementing Orgs , who operate under this programme</li>
+</ul>
+<p>The “management fee” for Org A is related to managing this process/programme,  This could be described as IF (or E, as <a class="mention" href="/u/bill_anderson">@bill_anderson</a> describes)  - either would be better than not describing it, and requiring people to quantify the differences in values…</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/5</link>
+        <pubDate>Mon, 25 Apr 2016 07:30:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-454-5</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454.rss">How to describe a &quot;management fee&quot;?</source>
+      </item>
+      <item>
+        <title>How to describe a &quot;management fee&quot;?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Stever, you’re talking about the organization paying a management fee to their implementing partner, for instance?  So, perhaps they have an agremeent that Org A will deliver activities for a total of $400,000 and they agree to pay Org A an additional $25,000 as management fee?  Yes, that does sound like an expenditure.</p>
+<p>Or is the publishing organisation receiving a management fee, as your initial question seems to imply? (“has a management fee for their project”) In that case it’s incoming funds, isn’t it?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/4</link>
+        <pubDate>Fri, 22 Apr 2016 17:55:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-454-4</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454.rss">How to describe a &quot;management fee&quot;?</source>
+      </item>
+      <item>
+        <title>How to describe a &quot;management fee&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/3</link>
+        <pubDate>Thu, 21 Apr 2016 10:18:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-454-3</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454.rss">How to describe a &quot;management fee&quot;?</source>
+      </item>
+      <item>
+        <title>How to describe a &quot;management fee&quot;?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Can’t think of an example, but this is definitely expenditure and if you want to be completely accurate you  could use a transaction-level <a href="http://iatistandard.org/202/codelists/AidType/"> aid type</a> “G01” - "	Administrative costs not included elsewhere"</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/2</link>
+        <pubDate>Thu, 21 Apr 2016 07:43:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-454-2</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454.rss">How to describe a &quot;management fee&quot;?</source>
+      </item>
+      <item>
+        <title>How to describe a &quot;management fee&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>If an organisation - for a variety of reasons (and not the focus on this topic) - has a “management fee” for their work/project, how would they best describe this?  Is it a transaction of <a href="http://iatistandard.org/202/codelists/TransactionType/" rel="nofollow noopener">type</a> “Expenditure”?:</p>
+<blockquote>
+<p>Outgoing funds that are spent on goods and services for the activity. The recipients of expenditures fall outside of IATI traceability standards.</p>
+</blockquote>
+<p>Does that description / code cover a “management fee” type scenario?</p>
+<p>Any examples out there?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454/1</link>
+        <pubDate>Thu, 21 Apr 2016 07:24:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-454-1</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-describe-a-management-fee/454.rss">How to describe a &quot;management fee&quot;?</source>
+      </item>
+  </channel>
+</rss>

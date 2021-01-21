@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Differences between NGO Organisation Type codes</title>
+    <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380</link>
+    <description>Hello
+
+Looking at the **[Org Type codelist](http://iatistandard.org/201/codelists/OrganisationType/)** there are three codes for NGOs:
+
+* 21 - International NGO
+* 22 - National NGO
+* 23 - Regional NGO 
+
+I&#39;m curious as to how others have interpreted this - and whether people also consult advice &amp; guidance elsewhere.  For example:
+
+- Is a national office of an international NGO a national NGO (I know that *sounds* like it answers itself!)?
+- If my organisation *just* record &quot;NGO&quot; in our internal database, what would be an effective code to use?
+
+Thoughts and clarifications welcome.  Looking particularly at @SJohns @laia_grino &amp; @rolfkleef ...</description>
+    
+    <lastBuildDate>Tue, 14 Feb 2017 16:27:28 +0000</lastBuildDate>
+    <category>Humanitarian</category>
+    <atom:link href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Differences between NGO Organisation Type codes</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>As this is an issue that has been raised at different times and may have implications for better reporting of humanitarian activities I am moving this topic to the Standard ‘modification’ category</p>
+<p>See also other related topics</p>
+<p>Additions to Organisation Type - <a href="//discuss.iatistandard.org/t/additions-to-organisation-type-codelist/658">Additions to Organisation-Type codelist</a><br>
+Capturing information on funder type - <a href="//discuss.iatistandard.org/t/capturing-information-on-funder-type/29">Capturing information on funder type</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/9</link>
+        <pubDate>Tue, 14 Feb 2017 16:22:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-380-9</guid>
+        <source url="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss">Differences between NGO Organisation Type codes</source>
+      </item>
+      <item>
+        <title>Differences between NGO Organisation Type codes</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s also wise to look at how NGOs who are part of federations and who are using IATI self-describe themselves in the reporting- org type element. Some organisations that look like national-level offices of federations are actually independent affiliates (for example Action Aid network) or locally registered NGOs (for example Plan Liberia).</p>
+<p>In an example where you are funding Plan Liberia directly rather than through the central implementing part of the organisation (Plan International Inc)  or  via the accountable fundraising/grant management offices (Plan Canada), then Plan Liberia would self-describe as a National NGO, whereas Plan Canada and Plan International would both be International NGOs.</p>
+<p>Not sure how this maps onto DAC codes, but this describes NGO reality rather than donor classification. Any change in use of these codes for NGOs needs to reflect both.</p>
+          <p><a href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/8</link>
+        <pubDate>Mon, 08 Feb 2016 10:52:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-380-8</guid>
+        <source url="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss">Differences between NGO Organisation Type codes</source>
+      </item>
+      <item>
+        <title>Differences between NGO Organisation Type codes</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been giving this some thoughts this week as part of discussing what kind of filters might be useful to have when looking at data.  My initial thought would be to generally agree that the DAC list is clearer.</p>
+<p>In response to Stephen’s initial question, we’re encouraging our project officers to always refer to the HQ to identify the category of the implementing organisation, ignoring the national office if it’s simply a branch (rather than an independent org). What should help is the legal entity of the organisation - where is it registered? As we need this to construct its IATI ID, we should be able to find it.  “International NGOs” are actually a fairly small group (ie not hundreds), for which there’s an agreed list if I’m not mistaken?</p>
+<p>Our internal system has several sub-classifications (not all of which make that much sense, franckly).  What we expect most of our users will want to do is classify/filter organisations based on, inter alia:</p>
+<ul>
+<li>Canadian NGOs</li>
+<li>Canadian for-profit</li>
+<li>Foreign NGOs (national, but not from Canada - I think we do capture whether they are 22000 or 23000)</li>
+<li>International NGO</li>
+<li>Government</li>
+<li>Multilateral<br>
+This list is just from top of my head, we have more categories in our database that may or may not be worth offering as filters.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/7</link>
+        <pubDate>Fri, 05 Feb 2016 20:38:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-380-7</guid>
+        <source url="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss">Differences between NGO Organisation Type codes</source>
+      </item>
+      <item>
+        <title>Differences between NGO Organisation Type codes</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello, we differentiate between them by geographic boundaries and also by Charity Commission/ NGO Regulator classifications.</p>
+<p>International NGO - an NGO that operates externally to its country of registration.<br>
+So for example, World Vision International would be an International NGO even though it is based in Kenya (this is also Charity Commission/country regulator classification).</p>
+<p>National NGO - an NGO that is both registered in and operates in one country. So for example World Vision Nepal (this is also Charity Commission/country regulator classification).</p>
+<p>Regional NGO - an NGO whose activities are specific to a particular region but may be registered in one country. An example of this would be some of the Asia-Pacific regional networks (can’t think of a name off hand). This one has always been the hardest to interpret.</p>
+<p>If you want to change the meaning of these three categories, then I’d suggest you replicate the wording of the DAC codes exactly and lose particularly the words regional and national - to a development practitioner or journalist, there’s no way that they would interpret Regional NGO as ‘Developing country-based NGO’.</p>
+<p>Also if you are intending to change the meaning of the codes, you will need to have some kind of way for data users to interpret the meaning prior to the change, as it’s unlikely that NGO publishers will recode their historical data.</p>
+          <p><a href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/6</link>
+        <pubDate>Fri, 29 Jan 2016 16:43:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-380-6</guid>
+        <source url="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss">Differences between NGO Organisation Type codes</source>
+      </item>
+      <item>
+        <title>Differences between NGO Organisation Type codes</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Herman</p>
+<p>I think it makes sense to align definitions of these classifications. Something for the next TAG?</p>
+<p>As for coding, the DAC Code is part of a hybrid “Channel of delivery list” which contains both names of specific organisations as well as generic types of organisations. IATI’s approach - having separate rules for types of organisation and organisation identifiers - is, I would argue, a more logical one.</p>
+          <p><a href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/5</link>
+        <pubDate>Mon, 11 Jan 2016 12:47:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-380-5</guid>
+        <source url="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss">Differences between NGO Organisation Type codes</source>
+      </item>
+      <item>
+        <title>Differences between NGO Organisation Type codes</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I meant of course : “The meaning of these classifications is NOT very clear.”</p>
+          <p><a href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/4</link>
+        <pubDate>Mon, 11 Jan 2016 12:28:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-380-4</guid>
+        <source url="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss">Differences between NGO Organisation Type codes</source>
+      </item>
+      <item>
+        <title>Differences between NGO Organisation Type codes</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven and Rolf,<br>
+This data is in its present form not very useful. De meaning of these classification is very clear. In my opinion IATI should by fully compliant with the DAC classification of organizations, because this classification is widely used much clearer.</p>
+<p>21000 INTERNATIONAL NGO<br>
+22000 DONOR COUNTRY-BASED NGO<br>
+23000 DEVELOPING COUNTRY-BASED NGO</p>
+<p>Now we have two international standards for the classification of NGO’s. I see no compelling reason why we should have two standards.</p>
+          <p><a href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/3</link>
+        <pubDate>Mon, 11 Jan 2016 12:26:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-380-3</guid>
+        <source url="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss">Differences between NGO Organisation Type codes</source>
+      </item>
+      <item>
+        <title>Differences between NGO Organisation Type codes</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>hi Steven,</p>
+<p>It’s one that could use clearer guidance. If a national office publishes its own data, I’d call it a national NGO (unless they run offices in a couple of countries and could be labelled a regional NGO).</p>
+<p>That also begs the question: if all national offices of an NGO publish their own data, would you still call the head office an international NGO? Or is that because they fund work is in multiple countries? That would also help determine what could be a sensible default (21? 22?). Or to propose a more generic code “NGO” in a future version of the codelist.</p>
+<p>The question behind the question, though: who currently uses data gathered from this field, and for what?</p>
+          <p><a href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/2</link>
+        <pubDate>Thu, 07 Jan 2016 14:29:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-380-2</guid>
+        <source url="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss">Differences between NGO Organisation Type codes</source>
+      </item>
+      <item>
+        <title>Differences between NGO Organisation Type codes</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello</p>
+<p>Looking at the <strong><a href="http://iatistandard.org/201/codelists/OrganisationType/" rel="nofollow noopener">Org Type codelist</a></strong> there are three codes for NGOs:</p>
+<ul>
+<li>21 - International NGO</li>
+<li>22 - National NGO</li>
+<li>23 - Regional NGO</li>
+</ul>
+<p>I’m curious as to how others have interpreted this - and whether people also consult advice &amp; guidance elsewhere.  For example:</p>
+<ul>
+<li>Is a national office of an international NGO a national NGO (I know that <em>sounds</em> like it answers itself!)?</li>
+<li>If my organisation <em>just</em> record “NGO” in our internal database, what would be an effective code to use?</li>
+</ul>
+<p>Thoughts and clarifications welcome.  Looking particularly at <a class="mention" href="/u/sjohns">@SJohns</a> <a class="mention" href="/u/laia_grino">@laia_grino</a> &amp; <a class="mention" href="/u/rolfkleef">@rolfkleef</a> …</p>
+          <p><a href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380/1</link>
+        <pubDate>Wed, 06 Jan 2016 18:04:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-380-1</guid>
+        <source url="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss">Differences between NGO Organisation Type codes</source>
+      </item>
+  </channel>
+</rss>

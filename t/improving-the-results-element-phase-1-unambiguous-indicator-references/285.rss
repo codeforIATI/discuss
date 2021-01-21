@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Improving the results element, phase 1: Unambiguous indicator references</title>
+    <link>https://discuss.iatistandard.org/t/improving-the-results-element-phase-1-unambiguous-indicator-references/285</link>
+    <description>I&#39;ve submitted my first stab at the [phase 1 of improving the `result` element][1], which is making it possible for indicator results to refer unambiguously to known indicators. 
+
+There are two parts to this:
+
+1.  **Adding a `reference` element to the `indicator` element.** [(View on Github)][2]. Note that (a) this is **optional**, and (b) you can include multiple references (e.g. if the same indicator is referenced with different codes in different vocabularies). 
+2. **Creating a codelist of Indicator Vocabularies.** [(View on Github)][3]. I&#39;ve started with a few illustrative indicator repositories (US F Framework, World Bank World Development Indicators, UN SDGs, etc). No doubt this list will grow much larger. I&#39;ve added this to the non-embedded codelist repo, because much like the Organisation Registry codelist, additions will likely need to be made on short notice outside of published upgrade schedules.
+
+This is backwards-compatible; no existing tests have been broken.
+
+For now I&#39;ve just straight-up forked the IATI repositories and have submitted these changes as pull requests. If it turns out that these changes are controversial or will take months to be approved, I can refactor them into an extension. I&#39;m hoping that won&#39;t be necessary, and at any rate this seemed like the easiest way to make a concrete proposal. 
+
+Please let me know what you think. 
+
+Cheers
+Herb
+
+
+  [1]: http://blog.devresults.com/iati-results-standard/#1
+  [2]: https://github.com/HerbCaudill/IATI-Schemas/blob/results-1/iati-activities-schema.xsd#L1725-L1753
+  [3]: https://github.com/HerbCaudill/IATI-Codelists-NonEmbedded/blob/results-1/xml/IndicatorVocabulary.xml</description>
+    
+    <lastBuildDate>Wed, 03 May 2017 13:23:08 +0000</lastBuildDate>
+    <category>Results</category>
+    <atom:link href="https://discuss.iatistandard.org/t/improving-the-results-element-phase-1-unambiguous-indicator-references/285.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Improving the results element, phase 1: Unambiguous indicator references</title>
+        <dc:creator><![CDATA[Herb_Caudill]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve submitted my first stab at the <a href="http://blog.devresults.com/iati-results-standard/#1" rel="nofollow noopener">phase 1 of improving the <code>result</code> element</a>, which is making it possible for indicator results to refer unambiguously to known indicators.</p>
+<p>There are two parts to this:</p>
+<ol>
+<li>
+<strong>Adding a <code>reference</code> element to the <code>indicator</code> element.</strong> <a href="https://github.com/HerbCaudill/IATI-Schemas/blob/results-1/iati-activities-schema.xsd#L1725-L1753" rel="nofollow noopener">(View on Github)</a>. Note that (a) this is <strong>optional</strong>, and (b) you can include multiple references (e.g. if the same indicator is referenced with different codes in different vocabularies).</li>
+<li>
+<strong>Creating a codelist of Indicator Vocabularies.</strong> <a href="https://github.com/HerbCaudill/IATI-Codelists-NonEmbedded/blob/results-1/xml/IndicatorVocabulary.xml" rel="nofollow noopener">(View on Github)</a>. I’ve started with a few illustrative indicator repositories (US F Framework, World Bank World Development Indicators, UN SDGs, etc). No doubt this list will grow much larger. I’ve added this to the non-embedded codelist repo, because much like the Organisation Registry codelist, additions will likely need to be made on short notice outside of published upgrade schedules.</li>
+</ol>
+<p>This is backwards-compatible; no existing tests have been broken.</p>
+<p>For now I’ve just straight-up forked the IATI repositories and have submitted these changes as pull requests. If it turns out that these changes are controversial or will take months to be approved, I can refactor them into an extension. I’m hoping that won’t be necessary, and at any rate this seemed like the easiest way to make a concrete proposal.</p>
+<p>Please let me know what you think.</p>
+<p>Cheers<br>
+Herb</p>
+          <p><a href="https://discuss.iatistandard.org/t/improving-the-results-element-phase-1-unambiguous-indicator-references/285/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/improving-the-results-element-phase-1-unambiguous-indicator-references/285/1</link>
+        <pubDate>Fri, 05 Jun 2015 01:56:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-285-1</guid>
+        <source url="https://discuss.iatistandard.org/t/improving-the-results-element-phase-1-unambiguous-indicator-references/285.rss">Improving the results element, phase 1: Unambiguous indicator references</source>
+      </item>
+  </channel>
+</rss>

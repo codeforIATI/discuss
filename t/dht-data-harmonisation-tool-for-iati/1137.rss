@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>DHT: Data Harmonisation Tool for IATI</title>
+    <link>https://discuss.iatistandard.org/t/dht-data-harmonisation-tool-for-iati/1137</link>
+    <description>At ZZ we&#39;ve been looking at how to integrate available data services in the IATI realm and how they benefit a usecase we are working on for IOM.
+
+The basics:
+
+For this to happen we created a service that we named DHT (Data Harmonisation Tool). DHT has integrated CoVE and OIPA (+ some custom scripting) into an automated workflow:
+
+- Clean CSV (custom scripting)
+- Enabling a CSV template as provided by CoVe 
+- To be processed by CoVE
+- Export IATI XML by CoVE
+- Auto-import that IATM XML by OIPA
+- Push converted data to a Transparency Portal
+- Provide URI with IATI.XML for The Registry
+
+DHT nows allow all of this to be automated without intervention and I have included an overview of that flow. It took us 2 days to get this up and running.
+
+![22|690x434](upload://xM404JeX6DVasng2398TeK3lc0w.png)
+
+This is *not* a public facing service a such and will not become FTTB.
+
+Just wanted to share this with you.
+
+Siem</description>
+    
+    <lastBuildDate>Fri, 24 Nov 2017 13:47:18 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/dht-data-harmonisation-tool-for-iati/1137.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>DHT: Data Harmonisation Tool for IATI</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>At ZZ we’ve been looking at how to integrate available data services in the IATI realm and how they benefit a usecase we are working on for IOM.</p>
+<p>The basics:</p>
+<p>For this to happen we created a service that we named DHT (Data Harmonisation Tool). DHT has integrated CoVE and OIPA (+ some custom scripting) into an automated workflow:</p>
+<ul>
+<li>Clean CSV (custom scripting)</li>
+<li>Enabling a CSV template as provided by CoVe</li>
+<li>To be processed by CoVE</li>
+<li>Export IATI XML by CoVE</li>
+<li>Auto-import that IATM XML by OIPA</li>
+<li>Push converted data to a Transparency Portal</li>
+<li>Provide URI with IATI.XML for The Registry</li>
+</ul>
+<p>DHT nows allow all of this to be automated without intervention and I have included an overview of that flow. It took us 2 days to get this up and running.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/ecb6a57d715bdff930ba0fce859a1a39658ab718.png" data-download-href="https://discuss.iatistandard.org/uploads/default/ecb6a57d715bdff930ba0fce859a1a39658ab718" title="Screen Shot 2017-11-24 at 14.44.22.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/ecb6a57d715bdff930ba0fce859a1a39658ab718_2_690x434.png" alt="22" width="690" height="434" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/ecb6a57d715bdff930ba0fce859a1a39658ab718_2_690x434.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/ecb6a57d715bdff930ba0fce859a1a39658ab718_2_1035x651.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/ecb6a57d715bdff930ba0fce859a1a39658ab718_2_1380x868.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/ecb6a57d715bdff930ba0fce859a1a39658ab718_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2017-11-24 at 14.44.22.png</span><span class="informations">1558×981 52.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>This is <em>not</em> a public facing service a such and will not become FTTB.</p>
+<p>Just wanted to share this with you.</p>
+<p>Siem</p>
+          <p><a href="https://discuss.iatistandard.org/t/dht-data-harmonisation-tool-for-iati/1137/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dht-data-harmonisation-tool-for-iati/1137/1</link>
+        <pubDate>Fri, 24 Nov 2017 13:47:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1137-1</guid>
+        <source url="https://discuss.iatistandard.org/t/dht-data-harmonisation-tool-for-iati/1137.rss">DHT: Data Harmonisation Tool for IATI</source>
+      </item>
+  </channel>
+</rss>

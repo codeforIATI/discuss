@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+    <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395</link>
+    <description>(posting this in Data Quality to begin with...)
+
+The [**IATI Rulesets**](http://reference.iatistandard.org/203/rulesets/) are a set of conditions that it would be very useful for any IATI publisher to consider in their publication.  
+
+These are not enforced at the schema level, but additional. Think of these rules as the bits of &quot;guidance&quot; you often see in the IATI schema, which are then represented as rules to help us use them!  They represent logic (eg start date before end date!) and conditions (percenrages of multiple countries should add to 100%) and other things!
+
+These rulesets are very important, and have long been available around IATI.  We know that they are not currently used in the &quot;[official IATI validator](http://validator.iatistandard.org/)&quot;, but are used by others.  At Open Data Services, we use the rulesets in our tools, for example.
+
+Who else uses the rulsets?  @rolfkleef @rbesseling @JohnAdams maybe?   
+
+Looking at the [current IATI rules](https://github.com/IATI/IATI-Rulesets/blob/e77e6860ceba3be71d95c7ed95b9c78f3f29928e/rulesets/standard.json), and in discussion with others such as @YohannaLoucheur @Herman @robredpath &amp; @andylolz, there seem to be a couple of omissions, which I would suggest we incorporate:  
+
+**Sectors**
+There is no rule in terms of multiple sectors from the same vocabulary should add to 100%.  The standard text says:
+
+&gt; All reported sectors from the same vocabulary MUST add up to 100.
+
+There is no rule in the ruleset for this
+
+**Policy Markers**
+There is no rule in terms of conditions of the [Policy Marker codes](http://reference.iatistandard.org/203/codelists/PolicySignificance/)
+
+The standard says:
+
+&gt; Policy Significance code = 4 (Explicit primary objective) SHOULD ONLY be used in conjunction with Policy Marker code = 9 (Reproductive, Maternal, Newborn and Child Health)
+
+There is no rule in the ruleset for this
+
+
+==================
+
+There may be others too - so I wonder if there is chance to get a wider review of these rulesets...?</description>
+    
+    <lastBuildDate>Thu, 02 Aug 2018 13:43:31 +0000</lastBuildDate>
+    <category>Data Quality</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="4" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<blockquote>
+<p>Does anyone know what ruleset e.g. d-portal uses - is it the same as Andy’s?</p>
+</blockquote>
+<p>It appears to be the following:</p>
+</blockquote>
+</aside>
+<p>Thanks, <a class="mention" href="/u/andylolz">@andylolz</a> -  yup, that’s what we’ve done.</p>
+<p>If you don’t specify a number, we will treat it as 100% so this way, when multiple sectors are not given a percentage, we are still able to rescale the pie chart and they all get an equal share.</p>
+<p>We basically treat the numbers as ratios.</p>
+<p>Once we’ve got all of the sectors, we add them up and if it comes to more or less than 100%, we adjust it so it adds up to 100% by scaling; ie. if it adds up to 200%, we half it to fit.</p>
+<p>If the numbers don’t add up to 100%, we attribute this to a data quality issue.</p>
+<p>The original numbers are displayed in SAVi.</p>
+<aside class="quote no-group" data-post="3" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Does the same kind of issue apply in other places in the standard/rules e.g. in the percentage allocations to different countries for multi-country projects?</p>
+</blockquote>
+</aside>
+<p>In d-portal, yes. We can’t split the money unless it all adds up to 100% so we always make sure it adds up to that.</p>
+<p>If people are publishing the right numbers, this would not be a problem but when they don’t, we make a ‘best guess’. Otherwise, we will not be able to include that activity in the portal.</p>
+<p><strong>Ultimately, these graphs are not just visual representations of the data, we also use these calculated percentages for the rest of d-portal; ie. all the sector and publisher tables.</strong></p>
+<p>This means, the whole site is dependant on the quality of the data that has been published.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/14</link>
+        <pubDate>Thu, 02 Aug 2018 13:43:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-14</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Fair point <a class="mention" href="/u/herman">@Herman</a></p>
+<aside class="quote no-group" data-post="12" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>Do not agree with this statement. A <strong>IATI rule</strong> is imo opinion applicable to each and every IATI activity. An <strong>IATI guideline</strong> is an advise to IATI publishers, but does not need to apply to each activity.</p>
+</blockquote>
+</aside>
+<p>That’s useful, when put that way.  I guess the question is: have we any guidance that is currently a rule? Or vice versa?!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/13</link>
+        <pubDate>Fri, 20 Jul 2018 13:52:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-13</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven,</p>
+<blockquote>
+<p>I can appreciate this gets complicated, quickly - but I’m advocating for an inclusion of a rule in the rulesets, so people can at least use it. Of course, there will be exceptions and complications - but I also understand that is the purpose of rules in the rulesets: they are there for guidance - it’s not “essential” that every single activity pass them successfully (whereas schema validation is much more strict?)</p>
+</blockquote>
+<p>Do not agree with this statement. A <strong>IATI rule</strong> is imo opinion applicable to each and every IATI activity. An <strong>IATI guideline</strong> is an advise to IATI publishers, but does not need to apply to each activity.</p>
+<p>With regard to sector percentages in the same vocabulary: if percentages are published, then they should add up to 100%. Since percentages are optional, there should imo be another rule:<br>
+you publish for every sector a mandatory percentage, or you publish no percentages at all. So no mixed bags of some sectors having a percentage and some not.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/12</link>
+        <pubDate>Thu, 19 Jul 2018 10:24:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-12</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> <a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p>How about the Policy Marker rule <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/herman">@Herman</a> (<a class="mention" href="/u/andylolz">@andylolz</a> - could you do similar for this one, maybe?) ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/11</link>
+        <pubDate>Thu, 19 Jul 2018 06:02:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-11</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I also support adding this to the standard ruleset. But it would be great to firm up the docs so it’s clear.</p>
+<p>I’ve now sent a fix for v2.03, both for DAC and other vocabs:<br>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Rulesets/pull/81" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Rulesets</a>
+  </header>
+  <article class="onebox-body">
+      <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+    <img alt="andylolz" src="https://discuss.iatistandard.org/uploads/default/original/1X/0a02ce77e9c22a87ef229fd18fb9b5e8aebb5f31.jpeg" class="thumbnail onebox-avatar" width="90" height="90">
+  </a>
+
+<h4>
+  <a href="https://github.com/IATI/IATI-Rulesets/pull/81" target="_blank" rel="nofollow noopener">Add sector percentage rule (v2.03)</a>
+</h4>
+
+<div class="date">
+  by <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">andylolz</a>
+  on <a href="https://github.com/IATI/IATI-Rulesets/pull/81" target="_blank" rel="nofollow noopener">08:56PM - 18 Jul 18 UTC</a>
+</div>
+
+<div class="github-commit-stats">
+  <strong>3 commits</strong>
+  changed <strong>10 files</strong>
+  with <strong>116 additions</strong>
+  and <strong>2 deletions</strong>.
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p><s>It’s python only at the moment (hence PHP tests fail) but I might add PHP at some point.</s> Implemented in both PHP and python.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/10</link>
+        <pubDate>Wed, 18 Jul 2018 21:10:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-10</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stevieflow">@stevieflow</a> sorry for the drag into a discussion - also very much in favour of the rule from my side</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/9</link>
+        <pubDate>Wed, 18 Jul 2018 17:09:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-9</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the discussion and research on the <code>sector</code> issue <a class="mention" href="/u/andylolz">@andylolz</a> <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a></p>
+<p>I just want to circle back up to the original post I made:</p>
+<aside class="quote no-group" data-post="1" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>There is no rule in terms of multiple sectors from the same vocabulary should add to 100%.</p>
+</blockquote>
+</aside>
+<p>I can appreciate this gets complicated, quickly - but I’m advocating for an inclusion of <em>a</em> rule in the rulesets, so people can at <em>least</em> use it.  Of course, there will be exceptions and complications - but I also understand that is the purpose of rules in the rulesets: they are there for guidance - it’s not “essential” that every single activity pass them successfully (whereas schema validation is much more strict?)</p>
+<p>If we continue to avoid mention of sectors/percentages in the rulesets, then I think we can have a very long thread on where they are not working, but no means to help people address it, systematically.</p>
+<p>Therefore, I’d support the <a href="https://github.com/andylolz/IATI-Rulesets/commit/fb5590b0" rel="nofollow noopener">contribution</a> from <a class="mention" href="/u/andylolz">@andylolz</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/8</link>
+        <pubDate>Wed, 18 Jul 2018 16:48:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-8</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m reminded that there was also relevant discussion on this topic during the <a href="https://discuss.iatistandard.org/t/non-statistical-secondary-sectors-excluded-2-03/849">proposal for a <code>sector/@no-aggregation</code> attribute</a>, as part of the v2.03 upgrade.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/7</link>
+        <pubDate>Wed, 18 Jul 2018 07:29:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-7</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to illustrate one bit that I didn’t provide an example for…</p>
+<pre><code class="lang-xml">&lt;sector vocabulary="DAC" code="11220"/&gt;
+&lt;sector vocabulary="DAC" code="11230" percentage="50"/&gt;
+</code></pre>
+<p>^^ In this case, we have one sector with a <code>@percentage</code> and one without. The one without defaults to 100%, so this gets rendered as:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6.png" data-download-href="https://discuss.iatistandard.org/uploads/default/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6" title="Screen Shot 2018-07-17 at 22.54.38.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6_2_690x279.png" alt="38" width="690" height="279" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6_2_690x279.png, https://discuss.iatistandard.org/uploads/default/original/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/7150b27fe76dc6c796031cd3a1bc2dbace7b30e6_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2018-07-17 at 22.54.38.png</span><span class="informations">908×368 16.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><a href="https://d-portal.org/q.html?aid=GB-CHC-1071659-UGA-COMIC-SOUTHSUDAN" rel="nofollow noopener">ref.</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/6</link>
+        <pubDate>Tue, 17 Jul 2018 21:56:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-6</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>thanks <a class="mention" href="/u/andylolz">@andylolz</a> for the detective work - I guess I can see the logic in the second approach - stick to the given numbers (but as you say, the pie chart should really only show 50% accounted for) - as for the first one - no comment!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/5</link>
+        <pubDate>Tue, 17 Jul 2018 21:47:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-5</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Does anyone know what ruleset e.g. d-portal uses - is it the same as Andy’s?</p>
+</blockquote>
+</aside>
+<p>It appears to be the following:</p>
+<ul>
+<li>if there’s no <code>@percentage</code>, assume it’s 100% (even if there are multiple sectors)</li>
+<li>totals that don’t add to 100% are still shown</li>
+<li>everything gets rescaled for the pie chart. I.e. if the total is greater or less than 100%, rescale.</li>
+</ul>
+<p>For instance, here’s an activity in d-portal with 10 sectors, adding up to 1,000%:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436.png" data-download-href="https://discuss.iatistandard.org/uploads/default/0505ee86bc4d9ddc64c15016a86092bc081cd436" title="Screen Shot 2018-07-17 at 22.11.33.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436_2_690x281.png" alt="33" width="690" height="281" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436_2_690x281.png, https://discuss.iatistandard.org/uploads/default/original/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/0505ee86bc4d9ddc64c15016a86092bc081cd436_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2018-07-17 at 22.11.33.png</span><span class="informations">908×370 57 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><a href="https://d-portal.org/q.html?aid=DK-1-202839" rel="nofollow noopener">ref.</a></p>
+<p>Here’s one with 2 sectors adding up to 50%:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/2c493b2e431d41082f482410c82a971804c89e18.png" data-download-href="https://discuss.iatistandard.org/uploads/default/2c493b2e431d41082f482410c82a971804c89e18" title="Screen Shot 2018-07-17 at 22.27.54.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/2c493b2e431d41082f482410c82a971804c89e18_2_690x276.png" alt="54" width="690" height="276" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/2c493b2e431d41082f482410c82a971804c89e18_2_690x276.png, https://discuss.iatistandard.org/uploads/default/original/1X/2c493b2e431d41082f482410c82a971804c89e18.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/2c493b2e431d41082f482410c82a971804c89e18.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/2c493b2e431d41082f482410c82a971804c89e18_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2018-07-17 at 22.27.54.png</span><span class="informations">912×366 14.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><a href="https://d-portal.org/q.html?aid=BE-BCE_KBO-0410644946468" rel="nofollow noopener">ref.</a></p>
+<aside class="quote no-group" data-post="3" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Does the same kind of issue apply in other places in the standard/rules e.g. in the percentage allocations to different countries for multi-country projects?</p>
+</blockquote>
+</aside>
+<p><code>recipient-country</code> and <code>recipient-region</code> have their own issues! But we should probably save that for a separate discussion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/4</link>
+        <pubDate>Tue, 17 Jul 2018 21:31:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi both,</p>
+<p>I have also struggled with this when trying to use IATI data - as a result I would be in favour of adding a ‘must’ to the rule.</p>
+<p>Alternatively, would it be possible/helpful to add to the standard a section on ‘official approach to interpreting’ e.g. following the rules <a class="mention" href="/u/andylolz">@andylolz</a> uses so that publishers who did not give percentages adding to 100% could be sure of how it would be interpreted - and I would therefore hope that this would mean that all the platforms that publish IATI data would also use the same approach - otherwise we have the situation where different platforms could be showing different results for the same IATI data - which I think starts to really damage the standard.</p>
+<p>Does anyone know what ruleset e.g. d-portal uses - is it the same as Andy’s?</p>
+<p>I would prefer the ‘must add to 100 to be valid’ approach because when sector codes are not given, it is incredibly unlikely to be an even split - and so IATI data ends up inaccurate and gets rejected at the country level but users who are aware of the individual projects. When I have done number crunching with an ‘assume equal split’ approach (because I agree that there is not a better one) it has often ended up with a (false) upward bias to small sectors that often get thrown into many projects e.g. PFM, gender, human rights - leading to wrong policy conclusions.</p>
+<p>Does the same kind of issue apply in other places in the standard/rules e.g. in the percentage allocations to different countries for multi-country projects?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/3</link>
+        <pubDate>Tue, 17 Jul 2018 12:49:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="1" data-topic="1395">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>The standard says:</p>
+<blockquote>
+<p>Policy Significance code = 4 (Explicit primary objective) SHOULD ONLY be used in conjunction with Policy Marker code = 9 (Reproductive, Maternal, Newborn and Child Health)</p>
+</blockquote>
+</blockquote>
+</aside>
+<p>So, the <a href="http://iatistandard.org/203/activity-standard/iati-activities/iati-activity/sector/">same page</a> also says:</p>
+<blockquote>
+<p>When multiple <code>sector</code> are declared, then the <code>@percentage</code> values should sum to 100% for the specific <code>iati-activity</code>.</p>
+</blockquote>
+<p>I.e. the “must” becomes a “should”. Also:</p>
+<blockquote>
+<h3>1.03</h3>
+<p>Where used, the <span class="mention">@percentage</span> attribute is now designated as a decimal value and no longer as a positive Integer</p>
+</blockquote>
+<p>The “where used” here suggests <code>@percentage</code> isn’t required. But I don’t know what the rule should be when it isn’t provided. Indeed, there are examples on the page that don’t include a <code>@percentage</code> e.g. this one:</p>
+<blockquote>
+<pre><code class="lang-xml">&lt;sector vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1" /&gt;
+</code></pre>
+</blockquote>
+<p>I’m not trying to muddy the waters here – I’m just pointing out that the waters are muddy. The standard appears to leave things a bit open to interpretation. IIRC, my own code uses the following quite pragmatic interpretation:</p>
+<ul>
+<li>If percentages for a given sector vocab are <em>not</em> provided, assume equal split (e.g. if there are two, assume 50% each)</li>
+<li>If percentages for a given sector vocab are <em>sometimes</em> provided, assume they’re correct, and assume equal split of the remainder</li>
+<li>If percentages for a given sector vocab are <em>always</em> provided, but their total is greater than 100, rescale (i.e. don’t treat percentages as percentages, but treat them instead as a proportion of their sum)</li>
+<li>If percentages are <em>sometimes</em> provided, but their total is greater than 100, ignore them and assume equal split (since there’s no satisfactory way to work around this data error)</li>
+</ul>
+<p>TL;DR: for the data user, life is complicated.</p>
+<hr>
+<p>Anyway. Assuming the correct interpretation of this rule is the “MUST” one, <a href="https://github.com/andylolz/IATI-Rulesets/commit/fb5590b0">I made a start at adding it to the standard ruleset</a>. This fix adds a rule specifically for the DAC vocab (i.e. <code>@vocabulary="1"</code> or <code>@vocabulary</code> not present). Doing it for an arbitrary vocab would involve looping, which would constitute a bigger (though by no means insurmountable!) change.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/2</link>
+        <pubDate>Tue, 17 Jul 2018 12:18:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+      <item>
+        <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>(posting this in Data Quality to begin with…)</p>
+<p>The <a href="http://reference.iatistandard.org/203/rulesets/" rel="nofollow noopener"><strong>IATI Rulesets</strong></a> are a set of conditions that it would be very useful for any IATI publisher to consider in their publication.</p>
+<p>These are not enforced at the schema level, but additional. Think of these rules as the bits of “guidance” you often see in the IATI schema, which are then represented as rules to help us use them!  They represent logic (eg start date before end date!) and conditions (percenrages of multiple countries should add to 100%) and other things!</p>
+<p>These rulesets are very important, and have long been available around IATI.  We know that they are not currently used in the “<a href="http://validator.iatistandard.org/" rel="nofollow noopener">official IATI validator</a>”, but are used by others.  At Open Data Services, we use the rulesets in our tools, for example.</p>
+<p>Who else uses the rulsets?  <a class="mention" href="/u/rolfkleef">@rolfkleef</a> <a class="mention" href="/u/rbesseling">@rbesseling</a> <a class="mention" href="/u/johnadams">@JohnAdams</a> maybe?</p>
+<p>Looking at the <a href="https://github.com/IATI/IATI-Rulesets/blob/e77e6860ceba3be71d95c7ed95b9c78f3f29928e/rulesets/standard.json" rel="nofollow noopener">current IATI rules</a>, and in discussion with others such as <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/robredpath">@robredpath</a> &amp; <a class="mention" href="/u/andylolz">@andylolz</a>, there seem to be a couple of omissions, which I would suggest we incorporate:</p>
+<p><strong>Sectors</strong><br>
+There is no rule in terms of multiple sectors from the same vocabulary should add to 100%.  The standard text says:</p>
+<blockquote>
+<p>All reported sectors from the same vocabulary MUST add up to 100.</p>
+</blockquote>
+<p>There is no rule in the ruleset for this</p>
+<p><strong>Policy Markers</strong><br>
+There is no rule in terms of conditions of the <a href="http://reference.iatistandard.org/203/codelists/PolicySignificance/" rel="nofollow noopener">Policy Marker codes</a></p>
+<p>The standard says:</p>
+<blockquote>
+<p>Policy Significance code = 4 (Explicit primary objective) SHOULD ONLY be used in conjunction with Policy Marker code = 9 (Reproductive, Maternal, Newborn and Child Health)</p>
+</blockquote>
+<p>There is no rule in the ruleset for this</p>
+<p>==================</p>
+<p>There may be others too - so I wonder if there is chance to get a wider review of these rulesets…?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395/1</link>
+        <pubDate>Mon, 16 Jul 2018 16:48:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1395-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+      </item>
+  </channel>
+</rss>

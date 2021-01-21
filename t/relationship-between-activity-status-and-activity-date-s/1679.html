@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:49:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Relationship between `activity-status` and `activity-date`s - IATI Standard - IATI Community Discussions</title>
+    <meta name="description" content="I have some basic questions, after reading @anjesh’s excellent blog. 
+
+Should an activity in implementation (an activity-status of 2) be allowed an actual end date?
+Should an activity in pipeline/identification (an activ&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1679.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Relationship between `activity-status` and `activity-date`s&#39;" href="1679.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679" />
+<meta property="og:title" content="Relationship between `activity-status` and `activity-date`s" />
+<meta name="twitter:title" content="Relationship between `activity-status` and `activity-date`s" />
+<meta property="og:description" content="I have some basic questions, after reading @anjesh’s excellent blog.   Should an activity in implementation (an activity-status of 2) be allowed an actual end date? Should an activity in pipeline/identification (an activity-status of 1) be allowed an actual start date, or actual end date?  According to the standard, actual dates must be in the past. But the above rules aren’t currently included in the standard ruleset, or anywhere in the reference documentation. Should they be?  Asking this now ..." />
+<meta name="twitter:description" content="I have some basic questions, after reading @anjesh’s excellent blog.   Should an activity in implementation (an activity-status of 2) be allowed an actual end date? Should an activity in pipeline/identification (an activity-status of 1) be allowed an actual start date, or actual end date?  According to the standard, actual dates must be in the past. But the above rules aren’t currently included in the standard ruleset, or anywhere in the reference documentation. Should they be?  Asking this now ..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="3 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="5 ❤" />
+<meta property="article:published_time" content="2019-02-28T14:55:36+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1679.html">Relationship between `activity-status` and `activity-date`s</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/iati-standard/13.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #2695B8'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>IATI Standard</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-02-28T14:55:36Z'>
+              <time itemprop='dateModified' datetime='2019-03-04T12:51:28Z' class='post-time'>
+                March 4, 2019, 12:51pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I have some basic questions, after reading <a class="mention" href="../../u/anjesh.html">@anjesh</a>’s <a href="https://blog.yipl.com.np/quality-analysis-of-belgium-based-organisations-98614fb1d235">excellent blog</a>.</p>
+<ol>
+<li>Should an activity in implementation (an <code>activity-status</code> of 2) be allowed an actual end date?</li>
+<li>Should an activity in pipeline/identification (an <code>activity-status</code> of 1) be allowed an actual start date, or actual end date?</li>
+</ol>
+<p>According to the standard, actual dates <a href="http://reference.iatistandard.org/203/rulesets/standard-ruleset/#iati-activity"><strong>must</strong> be in the past</a>. But the above rules aren’t currently included in <a href="http://reference.iatistandard.org/203/rulesets/standard-ruleset/">the standard ruleset</a>, or anywhere in the reference documentation. Should they be?</p>
+<p>Asking this now because the ruleset is currently being worked on, and because the <a href="https://twitter.com/IATI_aid/status/1102542836476641280">new IATI Validator is around the corner</a> (congratulations, <a class="mention" href="../../u/rolfkleef.html">@rolfkleef</a>!) which will do ruleset testing.</p>
+<p>Thanks!</p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-03-01T08:04:48Z'>
+              <time itemprop='dateModified' datetime='2019-03-01T08:05:19Z' class='post-time'>
+                March 1, 2019,  8:05am
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Not the answer you are looking for, but if we are going to have rulesets, then I am even less clear that that we need an ‘activity-status’ field given that it can be imputed from the start/end dates and the current date.</p>
+<p>I think an issue is that the process/standard was designed for publishers who regularly re-publish and so the status gets updated when the start-date is passed, but as in the Belgian example (I guess) there are lots of publishers doing it irregularly - removing and instead imputing the activity-status would make it a lot easier for them. Of course it doesn’t solve the issue of a project that doesn’t actually start by the start date, but nor does the current situation.</p>
+<p>RE the actual questions, my take is:</p>
+<ol>
+<li>Yes, you want to be able to predict when the project will end - and I often end up using it to estimate the upcoming disbursements ((activity value - disbursements to date) / remaining years) where the forward spending data is not provided.</li>
+<li>Yes, because it is often helpful to know when a project is due to be active / be spending.</li>
+</ol>
+<p>As above, if the ruleset enforced forward spending data, then this would change - you wouldn’t need project dates, but could impute them from the spending i.e. date of first transaction = start date, date of last projected transation = end date.</p>
+<p>I think my thinking here, is that in the absence of a ruleset that works in all cases, or is enforced, then the more data the better to try and figure out what is happening, despite the business-logic flaws that this involves.</p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="3" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Michelle_IOM.html'><span itemprop='name'>Michelle_IOM</span></a>
+            (Michelle Levesque)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-03-01T11:29:26Z'>
+              <time itemprop='dateModified' datetime='2019-03-01T11:29:51Z' class='post-time'>
+                March 1, 2019, 11:29am
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Andy,</p>
+<p>In my humble opinion I don’t think it makes sense for something that hasn’t finished to have an actual end date nor a project that hasn’t started to have an actual start date.  Planned yes.  Actual no.</p>
+<p>Having the standard impute anything is a tad risky in my opinion.  What happens when a project starts or ends on the date of publishing and one isn’t in the same time-zone as IATI (GMT I believe)?  The system logic may not know what to do or give a result the publisher isn’t looking for.</p>
+<p>Hope that helps.<br>
+Michelle</p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="4" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-03-01T12:06:26Z' class='post-time'>
+                March 1, 2019, 12:06pm
+              </time>
+              <meta itemprop='dateModified' content='2019-03-01T12:06:26Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/michelle_iom-2.html">@Michelle_IOM</a> thanks - this points out that my suggestions of actual dates being important should actually refer to planned dates. Does this mean that you think the ruleset should now reject all activities with actual dates set in the future - <span class="mention">@andy</span> can you tell if there are there a lot of these?</p>
+<p>RE Imputing things - the technical answer to your example is for the date to also reference the timezone that it applies to (is this a feature that we have in the standard?).</p>
+<p>I often think that exact dates for activities are fairly meaningless (and aside from those for calculating loan disbursements would argue for just MM/YYYY) - if the actual start date was the 15th of May, but that is a Saturday and so work started until the 17th of May in reality no-one bats an eyelid - so why does IATI need to be so precise? Most projects have an 30th/31st of the month end date - again, likely to bear little relation to the actual end of activities, in which case we shouldn’t really worry about making dates seem more precise than they are in reality. Otherwise we should start putting in separate dates for the date a transaction was sent, and the date it arrived etc. It is also not clear what part of an activity the dates refer to - i.e. if the donor started thinking about a project in Jan, but its first expenditure was in June, the start date is already pretty useless to many users.</p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="3" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-03-01T12:24:39Z'>
+              <time itemprop='dateModified' datetime='2019-03-01T12:25:45Z' class='post-time'>
+                March 1, 2019, 12:25pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="2" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Not the answer you are looking for, but if we are going to have rulesets, then I am even less clear that that we need an ‘activity-status’ field given that it can be imputed from the start/end dates and the current date.</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="../../u/matmaxgeds.html">@matmaxgeds</a> Hmm… Perhaps… But also: removing <code>activity-status</code> would happen at a major upgrade, so that’s a v3.0.0 discussion! Can we park that one? <img src="../../images/emoji/twitter/slight_smileae52.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<aside class="quote no-group" data-post="3" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/michelle_iom/40/515_1.jpg" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>In my humble opinion I don’t think it makes sense for something that hasn’t finished to have an actual end date nor a project that hasn’t started to have an actual start date. Planned yes. Actual no.</p>
+</blockquote>
+</aside>
+<p>Great – thanks <a class="mention" href="../../u/michelle_iom-2.html">@Michelle_IOM</a>!</p>
+<aside class="quote no-group" data-post="4" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>RE Imputing things - the technical answer to your example is for the date to also reference the timezone that it applies to (is this a feature that we have in the standard?).</p>
+</blockquote>
+</aside>
+<p>It’s not a feature of the standard, no.</p>
+<p>Michelle raises a good point here, though. Perhaps some grace period would be good, to allow for these sorts of edge cases?</p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-03-01T12:50:16Z' class='post-time'>
+                March 1, 2019, 12:50pm
+              </time>
+              <meta itemprop='dateModified' content='2019-03-01T12:50:16Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="1" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/andylolz/40/495_1.jpg" class="avatar"> andylolz:</div>
+<blockquote>
+<p>According to the standard, actual dates <a href="http://reference.iatistandard.org/203/rulesets/standard-ruleset/#iati-activity"> <strong>must</strong> be in the past </a>. But the above rules aren’t currently included in <a href="http://reference.iatistandard.org/203/rulesets/standard-ruleset/">the standard ruleset</a>, or anywhere in the reference documentation. Should they be?</p>
+</blockquote>
+</aside>
+<p>Yes, every MUST in the standard that cannot be validated by the schema MUST have a rule in gthe standard ruleset.</p>
+<aside class="quote no-group" data-post="2" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I am even less clear that that we need an ‘activity-status’ field given that it can be imputed from the start/end dates and the current date.</p>
+</blockquote>
+</aside>
+<p>That works for “Implementation” but not for all status codes? (And we’re not in the business of re-egineering the standard at the moment, right?)</p>
+<aside class="quote no-group" data-post="3" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/michelle_iom/40/515_1.jpg" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>In my humble opinion I don’t think it makes sense for something that hasn’t finished to have an actual end date nor a project that hasn’t started to have an actual start date. Planned yes. Actual no.</p>
+</blockquote>
+</aside>
+<p>I agree</p>
+<aside class="quote no-group" data-post="4" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I often think that exact dates for activities are fairly meaningless</p>
+</blockquote>
+</aside>
+<p>Given that some exact dates may have meaning the original thinking was that using xsd:date (yyyy-mm-dd)** for all dates - and using the first and last days of the month for non-specific dates - was a pragmatic solution.</p>
+<p>** the attibute label <span class="mention">@iso-date</span> is misleading as yyyy-mm is valid for ISO 8601 but not for xsd:date. (I think I’m correct on this.) But we’re hardly going to re-engineer the standard now, right?</p>
+<aside class="quote no-group" data-post="5" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/andylolz/40/495_1.jpg" class="avatar"> andylolz:</div>
+<blockquote>
+<p>Perhaps some grace period would be good,</p>
+</blockquote>
+</aside>
+<p>I don’t think we need a grace period for how the validator approaches its work. (It has to be loyal to the standard alone.) The DataStore is a different matter: it should in my opinion ingest future actual dates (or correct them to planned?). No doubt this will arise in the forthcoming consultation on such issues.</p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-03-01T12:55:32Z' class='post-time'>
+                March 1, 2019, 12:55pm
+              </time>
+              <meta itemprop='dateModified' content='2019-03-01T12:55:32Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="6" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/bill_anderson/40/453_1.jpg" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Yes, every MUST in the standard that cannot be validated by the schema MUST have a rule in gthe standard ruleset.</p>
+</blockquote>
+</aside>
+<p>The rules mentioned above are not MUSTs in the standard (unless I am mistaken?) I don’t think they’re included anywhere in the reference documentation. Should they be?</p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/0ebfdf384e0be99e17f03bbf90f6afeb41fb2d4c.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-03-01T13:08:50Z' class='post-time'>
+                March 1, 2019,  1:08pm
+              </time>
+              <meta itemprop='dateModified' content='2019-03-01T13:08:50Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/0ebfdf384e0be99e17f03bbf90f6afeb41fb2d4c.png" data-download-href="https://discuss.iatistandard.org/uploads/default/0ebfdf384e0be99e17f03bbf90f6afeb41fb2d4c" title="rules.png"><img src="../../uploads/default/original/1X/0ebfdf384e0be99e17f03bbf90f6afeb41fb2d4c.png" alt="rules" width="690" height="406" data-small-upload="../../uploads/default/optimized/1X/0ebfdf384e0be99e17f03bbf90f6afeb41fb2d4c_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">rules.png</span><span class="informations">785×462 13.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-03-01T13:17:08Z'>
+              <time itemprop='dateModified' datetime='2019-03-01T13:18:47Z' class='post-time'>
+                March 1, 2019,  1:18pm
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/bill_anderson.html">@bill_anderson</a> Yes – exactly. None of those rules are about the relationship between <code>activity-date</code> and <code>activity-status</code>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-03-01T13:34:22Z' class='post-time'>
+                March 1, 2019,  1:34pm
+              </time>
+              <meta itemprop='dateModified' content='2019-03-01T13:34:22Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Ah, sorry. Missed that point. Yes, we should have related rules. NB. <a class="mention" href="../../u/amys.html">@amys</a> <a class="mention" href="../../u/petyakangalova.html">@petyakangalova</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/YohannaLoucheur.html'><span itemprop='name'>YohannaLoucheur</span></a>
+            (Yohanna Loucheur)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-03-01T15:55:16Z' class='post-time'>
+                March 1, 2019,  3:55pm
+              </time>
+              <meta itemprop='dateModified' content='2019-03-01T15:55:16Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="3" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/michelle_iom/40/515_1.jpg" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>In my humble opinion I don’t think it makes sense for something that hasn’t finished to have an actual end date nor a project that hasn’t started to have an actual start date. Planned yes. Actual no.</p>
+</blockquote>
+</aside>
+<p>Agree</p>
+<aside class="quote no-group" data-post="4" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>this points out that my suggestions of actual dates being important should actually refer to planned dates.</p>
+</blockquote>
+</aside>
+<p>That’s what I assumed, glad you confirmed.</p>
+<aside class="quote no-group" data-post="2" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>As above, if the ruleset enforced forward spending data, then this would change - you wouldn’t need project dates, but could impute them from the spending i.e. date of first transaction = start date, date of last projected transation = end date</p>
+</blockquote>
+</aside>
+<p>Absolutely not! The first transaction is not necessarily the start date, and more importantly the last projected transaction is very/most often not the end date. All kinds of things happen during the course of a project implementation that can require frontloading or delaying transactions.</p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1679.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-03-01T16:19:57Z' class='post-time'>
+                March 1, 2019,  4:19pm
+              </time>
+              <meta itemprop='dateModified' content='2019-03-01T16:19:57Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="11" data-topic="1679">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_1.jpg" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Absolutely not! The first transaction is not necessarily the start date, and more importantly the last projected transaction is very/most often not the end date. All kinds of things happen during the course of a project implementation that can require frontloading or delaying transactions.</p>
+</blockquote>
+</aside>
+<p>Completely understood, but then we have to be clear that the dates associated with activities certainly don’t have a financial meaning - but what meaning do they have? The standard <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/activity-date/" rel="nofollow noopener">says that</a> “Start dates may reflect either the commencement of funding, planning or physical activity. End dates should, wherever possible, reflect the ending of physical activity.” It could be very different for different donors and different projects - which starts to make it a bit useless if in some cases it means that a team is on the ground, and in other cases it might mean it has been allocated funds internally to the donor but you might not see activity for months? I guess I feel that the ruleset should enforce that the dates need to say which if these things (planning, funding, activity) they refer to in order to be more useful.</p>
+        </div>
+
+        <meta itemprop='headline' content='Relationship between `activity-status` and `activity-date`s'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/relationship-between-activity-status-and-activity-date-s/1679 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:49:58 GMT -->
+</html>

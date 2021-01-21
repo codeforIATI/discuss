@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Co-funded and thirdparty for related-activities</title>
+    <link>https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840</link>
+    <description>I&#39;ve been hunting through all of the old threads on this topic but I can&#39;t find any consensus, sorry.  This question refers to v2.03
+
+As I understand it we only use related-activity for internal relationships i.e. parent/child/sibling.  I&#39;ve already got a thread on this and from that and &quot;Publication Guidelines for Partners, Contractors and Suppliers of the Netherlands Ministry of Foreign Affairs&quot; it seems quite clear.   Given that we only link to external activities, either donors or contractors, via transactions is there a use for the &#39;co-funded&#39; and &#39;thirdparty&#39; relationship types?
+
+Thanks for that.  I&#39;m doing a bunch of restructuring of our systems and trying to look forwards to what might happen as to where we currently are
+
+Richard</description>
+    
+    <lastBuildDate>Mon, 09 Sep 2019 12:30:10 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Co-funded and thirdparty for related-activities</title>
+        <dc:creator><![CDATA[RichPepp]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/andylolz">@andylolz</a><br>
+Yes, that’s exactly correct.  I had seen the thread that you linked to but it didn’t manage to tie it down for me.  I’ll try looking through the publishers that already use it to get more of a clue of how it is being used at the moment - thanks for that link</p>
+<p>Hi <a class="mention" href="/u/amys">@amys</a><br>
+Thanks for your reply.  It was indeed from the relatedactivitytype codelist for transactions rather than activities.  I’m not in a hurry to use it really but just wanted to see if we needed to.  I think that participating-org is probably clearer at the activity level</p>
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840/4</link>
+        <pubDate>Mon, 09 Sep 2019 12:30:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1840-4</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840.rss">Co-funded and thirdparty for related-activities</source>
+      </item>
+      <item>
+        <title>Co-funded and thirdparty for related-activities</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I think <a class="mention" href="/u/richpepp">@RichPepp</a> is referring to the Co-funded (<code>4</code>) and Third Party (<code>5</code>) types from the <a href="http://reference.iatistandard.org/203/codelists/RelatedActivityType/" rel="nofollow noopener">RelatedActivityType</a> codelist.</p>
+<p>These types don’t see much use from publishers, <a href="http://dashboard.iatistandard.org/codelist/2/related-activity_@type.html" rel="nofollow noopener">according to the IATI Dashboard</a> (a total of 6 and 4 publishers using them, respectively).</p>
+<p>Usage of these types was discussed a bit last year. See <a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/1">this thread</a>, and in particular this post:</p>
+<aside class="quote quote-modified" data-post="13" data-topic="288">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/amys/40/288_2.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/using-related-activity-to-link-data-between-different-publishers/288/13">Using related-activity to link data between different publishers</a> <a class="badge-wrapper  box" href="/c/community-zone/iati-standard"><span class="badge-category-parent-bg" style="background-color: #155366;"></span><span class="badge-category-bg" style="background-color: #2695B8;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="If you have questions about the IATI Standard itself such as change requests for future versions, ideas for expansion or comments about upcoming changes then please use the existing IATI Standard Knowledgebase for this to ensure the right people will be viewing and available to help you.">IATI Standard</span></a>
+  </div>
+  <blockquote>
+    My advice was (and still is) that Parent/Child/Sibling relationships should only be used internally, and not refer to activities from external organisations. 
+My understanding of the other two types is: 
+Co-funded - where two donors fund the same project 
+Third party - is for instances where two organisations may be engaged in the same or similar activity but there is no funding connection 
+My other thoughts on co-funded are: 
+You can tell if there are multiple donors by looking at the recipient…
+  </blockquote>
+</aside>
+
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840/3</link>
+        <pubDate>Mon, 09 Sep 2019 11:43:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1840-3</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840.rss">Co-funded and thirdparty for related-activities</source>
+      </item>
+      <item>
+        <title>Co-funded and thirdparty for related-activities</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/richpepp">@RichPepp</a>,</p>
+<p>As well as linking to organisations in each transactions, you should provide their role e.g. 1 funder, using the <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/participating-org/" rel="nofollow noopener"><code>&lt;participating-org&gt;</code></a> element. You can have multiple funding organisations in one activity.</p>
+<p>Currently there is no option to mark a relationship as ‘co-funded’ or ‘thirdparty’. This you could add in narrative text?</p>
+<p>Other organisations may have ways of showing this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840/2</link>
+        <pubDate>Mon, 09 Sep 2019 10:56:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1840-2</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840.rss">Co-funded and thirdparty for related-activities</source>
+      </item>
+      <item>
+        <title>Co-funded and thirdparty for related-activities</title>
+        <dc:creator><![CDATA[RichPepp]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been hunting through all of the old threads on this topic but I can’t find any consensus, sorry.  This question refers to v2.03</p>
+<p>As I understand it we only use related-activity for internal relationships i.e. parent/child/sibling.  I’ve already got a thread on this and from that and “Publication Guidelines for Partners, Contractors and Suppliers of the Netherlands Ministry of Foreign Affairs” it seems quite clear.   Given that we only link to external activities, either donors or contractors, via transactions is there a use for the ‘co-funded’ and ‘thirdparty’ relationship types?</p>
+<p>Thanks for that.  I’m doing a bunch of restructuring of our systems and trying to look forwards to what might happen as to where we currently are</p>
+<p>Richard</p>
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840/1</link>
+        <pubDate>Fri, 06 Sep 2019 14:55:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1840-1</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840.rss">Co-funded and thirdparty for related-activities</source>
+      </item>
+  </channel>
+</rss>

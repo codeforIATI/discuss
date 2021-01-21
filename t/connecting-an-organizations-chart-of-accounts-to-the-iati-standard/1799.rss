@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Connecting an organization&#39;s Chart of Accounts to the IATI Standard</title>
+    <link>https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799</link>
+    <description>Hello,
+The organization I am working with is in the process of going through a merger, so we&#39;re trying to set up a combined chart of accounts system. Our Finance team has some concerns about how to do that and be able to generate the necessary information for IATI standard publishing. As I read it as long as we can aggregate information on disbursements, expenditures, etc. by project effectively, we may not need to worry about creating long strings pegging the Chart of Accounts down to the OECD DAC 5 digit code level. I was wondering what others&#39; experiences have been with doing the financial side of IATI reporting as it pertains to generating reports through your organizations&#39; accounting systems. Thanks.</description>
+    
+    <lastBuildDate>Wed, 24 Jul 2019 18:06:57 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Connecting an organization&#39;s Chart of Accounts to the IATI Standard</title>
+        <dc:creator><![CDATA[db2202000]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you, this reply is helpful. I am gaining more information on our proposed Chart of Accounts before fully articulating a response. I am gathering that we are looking at sector/functional classifications, and seeking to connect things we want to track against (or are required to by a donor, such as OECD DAC sector codes) without creating code strings that are too long. My thought is potentially to roll up to broader objective code and have a shadow structure that connects to it including things like OECD DAC codes, possibly Global Goals reference, Core Humanitarian Standard, etc. But I want to see more about what we’re working with first. I just hadn’t seen much activity on the discussion board on this topic. Thanks.<br>
+Dan</p>
+          <p><a href="https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799/3</link>
+        <pubDate>Wed, 24 Jul 2019 18:06:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1799-3</guid>
+        <source url="https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799.rss">Connecting an organization&#39;s Chart of Accounts to the IATI Standard</source>
+      </item>
+      <item>
+        <title>Connecting an organization&#39;s Chart of Accounts to the IATI Standard</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Welcome <a class="mention" href="/u/db2202000">@db2202000</a>, and thanks for the question!</p>
+<p>I think there are a couple of ways to think about this – depending on what your chart of accounts looks like. Is it generally economic/expense classifications (vehicles, salaries) or more sector/functional/thematic (education, health)?</p>
+<p>On <strong>sector/functional classifications</strong>, other large organisations have mapped from their list of internal sector codes to the CRS codelist - basically just a big mapping table with your internal codes on the left and the relevant CRS code on the right. Some (e.g. USAID) have published these sector codes at transaction level; others have this information only at activity level. The IATI Standard and D-Portal supports both approaches, so it’s up to you. The “<a href="http://aidonbudget.org/" rel="nofollow noopener">Aid on Budget</a>” work - basically mapping between the CRS and government charts of accounts - may be tangentially relevant.</p>
+<hr>
+<p>If you are talking more about <strong>economic/expense classifications</strong>: there is currently no real guidance on this, especially regarding how disaggregated your transactions should be (and there are some ongoing debates, e.g. <a href="https://twitter.com/Mark_Brough/status/1150730774758481921" rel="nofollow noopener">see this Twitter thread in relation to my below visualisation</a>).</p>
+<p>Just to have an example to look at – I put together <a href="http://brough.io/pwyf-visualisation/" rel="nofollow noopener">a quick visualisation</a> of <a href="http://publishwhatyoufund.org" rel="nofollow noopener">Publish What You Fund</a>’s <a href="http://sage2iati.publishwhatyoufund.org/publish-what-you-fund/activity.xml" rel="nofollow noopener">IATI data</a> last week (I used to work there 5 years ago). As the visualisation states clearly at the top, this is quite a radical approach in terms of granularity, and not necessarily something that other organisations can or should do. However, perhaps it’s helpful to see the full granularity and then decide at which level above this you would feel comfortable to aggregate to when generating data from your financial system (in PWYF’s case, Sage). A few things:</p>
+<ul>
+<li>we used the “Department code” in Sage to distinguish between activities.</li>
+<li>we used the “account number” to collect the Chart of Accounts (or expense classification), and published these as our Reporting Organisation sector codes on each transaction.</li>
+<li>certain account numbers (e.g. for salaries, pensions, consultancy, etc.) were aggregated each month for confidentiality reasons</li>
+<li>in addition, we used a general CRS sector code (I think <code>15163 Free flow of information</code> alongside each activity)</li>
+</ul>
+<p>See <a href="https://github.com/markbrough/sage-iati" rel="nofollow noopener">here the source code for the data generation</a> and <a href="https://github.com/markbrough/pwyf-visualisation/" rel="nofollow noopener">here for the source code for the visualisation</a>.</p>
+<p>I hope this is helpful!</p>
+          <p><a href="https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799/2</link>
+        <pubDate>Wed, 24 Jul 2019 14:27:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1799-2</guid>
+        <source url="https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799.rss">Connecting an organization&#39;s Chart of Accounts to the IATI Standard</source>
+      </item>
+      <item>
+        <title>Connecting an organization&#39;s Chart of Accounts to the IATI Standard</title>
+        <dc:creator><![CDATA[db2202000]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,<br>
+The organization I am working with is in the process of going through a merger, so we’re trying to set up a combined chart of accounts system. Our Finance team has some concerns about how to do that and be able to generate the necessary information for IATI standard publishing. As I read it as long as we can aggregate information on disbursements, expenditures, etc. by project effectively, we may not need to worry about creating long strings pegging the Chart of Accounts down to the OECD DAC 5 digit code level. I was wondering what others’ experiences have been with doing the financial side of IATI reporting as it pertains to generating reports through your organizations’ accounting systems. Thanks.</p>
+          <p><a href="https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799/1</link>
+        <pubDate>Wed, 24 Jul 2019 11:45:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1799-1</guid>
+        <source url="https://discuss.iatistandard.org/t/connecting-an-organizations-chart-of-accounts-to-the-iati-standard/1799.rss">Connecting an organization&#39;s Chart of Accounts to the IATI Standard</source>
+      </item>
+  </channel>
+</rss>

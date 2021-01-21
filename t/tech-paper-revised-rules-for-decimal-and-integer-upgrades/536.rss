@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Tech Paper: Revised rules for decimal and integer upgrades</title>
+    <link>https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536</link>
+    <description>The current upgrade rules were agreed by the IATI Steering Committee in October 2011 ([see Annex here](http://www.aidtransparency.net/wp-content/uploads/2013/09/Paper-4.b-First-Integer-Upgrade-to-the-Standard.doc)). It was agreed at the [Members Assembly meeting in June 2016](http://www.aidtransparency.net/wp-content/uploads/2016/06/Paper-7-Technical-updates.pdf) that they were in need of revision and that the Technical Team would prepare a proposal and consult on it so that it is ready for approval by the 2017 Members Assembly.
+
+A paper will be prepared which will review governance, content, timing and consultation processes.
+
+[Draft paper on revised rules for decimal and integer upgrades is now available here](https://docs.google.com/document/d/1UKTLLaQJfPX01EPNSaEESkJ-me9Zyh3-7hDKMztmPv4/edit?usp=sharing). This document outlines the problem and proposes a number of [changes to the page that describes the upgrade process](https://docs.google.com/document/d/1Exne9A88bPkfZYwBepwUIm4XayMBn_jUOYaSSpgvOU4/edit#).
+
+[This paper](https://docs.google.com/document/d/1UKTLLaQJfPX01EPNSaEESkJ-me9Zyh3-7hDKMztmPv4/edit?usp=sharing) (and [the proposed specifc changes to the upgrade process](https://docs.google.com/document/d/1Exne9A88bPkfZYwBepwUIm4XayMBn_jUOYaSSpgvOU4/edit#)) is part of the [Agenda](http://discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534) for the IATI TAG 2016 [Technical Consultation Workshop](http://discuss.iatistandard.org/t/technical-consultation-workshop/533)
+
+:bird: #IATI #TAG2016</description>
+    
+    <lastBuildDate>Thu, 08 Jun 2017 14:18:12 +0000</lastBuildDate>
+    <category>Issues for Members Assembly</category>
+    <atom:link href="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Tech Paper: Revised rules for decimal and integer upgrades</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I like this idea since it has the potential to let the vision and strategy of the Members Assembly explicitly define of what needs to be achieved with the next integer upgrade. It may put the Members Assembly more in the drivers seat than it is now, provided that the Members Assembly not only approves but is also actively involved in setting the goals.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/6</link>
+        <pubDate>Thu, 08 Jun 2017 14:18:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-536-6</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536.rss">Tech Paper: Revised rules for decimal and integer upgrades</source>
+      </item>
+      <item>
+        <title>Tech Paper: Revised rules for decimal and integer upgrades</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>There are three core types of change that could happen at an integer upgrade:</p>
+<ol>
+<li>Fixes to incorrect decisions or assumptions from the past (see: making root elements mandatory (<a href="https://docs.google.com/spreadsheets/d/1RRE5IjyirIp-JFRF94JUNL6IEKnEU42uGzlWoj1yJ0A/edit#gid=0">slide 90</a>))</li>
+<li>General changes akin to a decimal upgrade that are not backwards-compatible (see: making <code>participating-org/@role=”1”</code> mandatory (<a href="https://docs.google.com/spreadsheets/d/1RRE5IjyirIp-JFRF94JUNL6IEKnEU42uGzlWoj1yJ0A/edit#gid=0">slide 115</a>))</li>
+<li>A full and proper review of the standard with a defined purpose such as simplification or properly integrating changes that were added imperfectly at a decimal (see: discussion in the <em>IATI v3+: Imagining the future together</em> session at the TAG)</li>
+</ol>
+<p>The integer upgrade timetable <a href="https://docs.google.com/document/d/1Exne9A88bPkfZYwBepwUIm4XayMBn_jUOYaSSpgvOU4/edit#heading=h.txb12gdqg0p8">as defined</a> is able to deal with the first two situations (it’s fundamentally an extended version of the decimal proposal plus some Members Assembly approval points). It isn’t, however, able to successfully deal with the third, and fundamentally most important, point.</p>
+<p>Integer upgrades are an action that do not and should not occur on a regular basis, and as such should be utilised to improve the Standard in the best way possible. The currently defined piecemeal approach to proposals cannot gain this high-level consistency and vision.</p>
+<p>As such, a potential method of rectifying this is that for any integer upgrade that may fall into Category 3 (pretty much any):</p>
+<ul>
+<li>Move Members Assembly Approval to week -30</li>
+<li>Add that around the point of Members Assembly Approval, the reason(s) for starting the upgrade process are defined, potentially along with potential visions for the outcome (these should be extractable from <em>Ongoing</em> discussion, and be open for modification as the process continues)</li>
+<li>From week -26 (if not already occurring on an <em>Ongoing</em> basis), the Tech Team dedicates a couple of persons to work on the development of full and consistent sets of proposals that could satisfy the visions (through use of an informally defined consultation process)</li>
+<li>The developed proposals are submitted during weeks 1-4 and the process continues as defined (the sets of proposals developed by the Tech Team treated as any other)</li>
+</ul>
+<p>This change would allow time for a full review of every part of the Standard to occur, provide room for developing sets of proposals that are fully consistent, and make it clear that integers can be used to make sweeping improvements to the Standard rather than just changes that happen to be backwards-incompatible.</p>
+<p>It could alternatively/additionally be seen as noting that, given their other responsibilities, <em>Ongoing</em> may not provide capacity within the Tech Team to work on ensuring that proposals, and so integer upgrades, are the best they could be.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/5</link>
+        <pubDate>Tue, 25 Apr 2017 08:53:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-536-5</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536.rss">Tech Paper: Revised rules for decimal and integer upgrades</source>
+      </item>
+      <item>
+        <title>Tech Paper: Revised rules for decimal and integer upgrades</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree with <a class="mention" href="/u/markbrough">@markbrough</a>. In addition to that:</p>
+<ul>
+<li>
+<p>The timelines for community input should be longer, since an integer upgrade has potentially  large consequences, and only occurs once during two or three years.</p>
+</li>
+<li>
+<p>With regards to the clear set of criteria: change proposals should be assessed against the strategic direction of IATI as defined in the IATI strategy document.</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/4</link>
+        <pubDate>Tue, 21 Feb 2017 11:09:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-536-4</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536.rss">Tech Paper: Revised rules for decimal and integer upgrades</source>
+      </item>
+      <item>
+        <title>Tech Paper: Revised rules for decimal and integer upgrades</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I think this is good but I added two proposals to the <a href="https://docs.google.com/document/d/1Exne9A88bPkfZYwBepwUIm4XayMBn_jUOYaSSpgvOU4/edit#heading=h.25g2gwc0g2xw" rel="nofollow noopener">revised rules document</a>:</p>
+<ul>
+<li>
+<strong>Firmer deadlines</strong> (at the moment each stage is a “minimum duration”) - these deadlines should of course be able to be adjusted if unforeseen challenges arise, in which case the Governing Board could approve changes to the deadlines. But having more reliable deadlines would make it easier to feed into the process as well as to know when changes should / could be made to systems to publish or use the data.</li>
+<li>
+<strong>Clear set of criteria and process</strong> by which proposals would be assessed and accepted / rejected. At the moment this is not very clear. A clear set of criteria and process would make it easier for people to formulate proposals that are more likely to be accepted and lead to higher-quality proposals. It would hopefully also encourage more people to take part in the upgrade process, as they would have a better understanding of how their contributions would help shape the upgrade process.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/3</link>
+        <pubDate>Tue, 21 Feb 2017 08:31:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-536-3</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536.rss">Tech Paper: Revised rules for decimal and integer upgrades</source>
+      </item>
+      <item>
+        <title>Tech Paper: Revised rules for decimal and integer upgrades</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://docs.google.com/document/d/1UKTLLaQJfPX01EPNSaEESkJ-me9Zyh3-7hDKMztmPv4/edit?usp=sharing">Draft paper on revised rules for decimal and integer upgrades is now available here</a>. This document outlines the problem and proposes a number of <a href="https://docs.google.com/document/d/1Exne9A88bPkfZYwBepwUIm4XayMBn_jUOYaSSpgvOU4/edit#">changes to the page that describes the upgrade process</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/2</link>
+        <pubDate>Fri, 17 Feb 2017 15:12:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-536-2</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536.rss">Tech Paper: Revised rules for decimal and integer upgrades</source>
+      </item>
+      <item>
+        <title>Tech Paper: Revised rules for decimal and integer upgrades</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>The current upgrade rules were agreed by the IATI Steering Committee in October 2011 (<a href="http://www.aidtransparency.net/wp-content/uploads/2013/09/Paper-4.b-First-Integer-Upgrade-to-the-Standard.doc">see Annex here</a>). It was agreed at the <a href="http://www.aidtransparency.net/wp-content/uploads/2016/06/Paper-7-Technical-updates.pdf">Members Assembly meeting in June 2016</a> that they were in need of revision and that the Technical Team would prepare a proposal and consult on it so that it is ready for approval by the 2017 Members Assembly.</p>
+<p>A paper will be prepared which will review governance, content, timing and consultation processes.</p>
+<p><a href="https://docs.google.com/document/d/1UKTLLaQJfPX01EPNSaEESkJ-me9Zyh3-7hDKMztmPv4/edit?usp=sharing">Draft paper on revised rules for decimal and integer upgrades is now available here</a>. This document outlines the problem and proposes a number of <a href="https://docs.google.com/document/d/1Exne9A88bPkfZYwBepwUIm4XayMBn_jUOYaSSpgvOU4/edit#">changes to the page that describes the upgrade process</a>.</p>
+<p><a href="https://docs.google.com/document/d/1UKTLLaQJfPX01EPNSaEESkJ-me9Zyh3-7hDKMztmPv4/edit?usp=sharing">This paper</a> (and <a href="https://docs.google.com/document/d/1Exne9A88bPkfZYwBepwUIm4XayMBn_jUOYaSSpgvOU4/edit#">the proposed specifc changes to the upgrade process</a>) is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+          <p><a href="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536/1</link>
+        <pubDate>Mon, 08 Aug 2016 18:10:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-536-1</guid>
+        <source url="https://discuss.iatistandard.org/t/tech-paper-revised-rules-for-decimal-and-integer-upgrades/536.rss">Tech Paper: Revised rules for decimal and integer upgrades</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Future infrastructure to support the IATI Standard</title>
+    <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047</link>
+    <description>Since the TAG meeting in Tanzania, I have had several strands of thought floating around in my head and on scraps of paper. 
+
+These are concerned with the idea of how we in the tech community can help make IATI more **usable**. 
+
+I&#39;m encouraged by the range of people wanting to use the data for a wide range of purposes, but I also hear from people that they are frustrated at not being able to get hold of the data in the way that suits them best. 
+
+You can read the latest iteration on this [Google Doc](https://docs.google.com/document/d/1W86YvhKWaWJmETCJR3RW8MEBDoYAOLqnbqVLGFwZAdA/edit?usp=sharing). Thank you to those who have given constructive feedback so far.
+
+In summary, I am proposing four actions
+1. Separate the definition of the standard from its technical implementation
+2. Build a Repository, not just a Registry
+3. Simplify the standard for different user needs through a modular approach.
+4. Encourage the development of interoperable tool components as global public goods
+
+
+I&#39;d love to hear what you think, either online here or if you are able to be with the MA in Rome next week. Please post your comments in this discussion thread and not in the document.</description>
+    
+    <lastBuildDate>Mon, 23 Oct 2017 08:22:04 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>First version is going back to the registry. We have this <a href="http://data.devinit.org/unbundling-aid">“unbundling aid” tool</a> which presents 2006-2015 CRS data. We will be adding 2016-2020 data from IATI, which involves a partial IATI to CRS conversion.</p>
+<aside class="quote no-group" data-post="39" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>ability to select/unselect/order</p>
+</blockquote>
+</aside>
+<p>For this particular piece of work we could produce a superset of requirements which could be trimmed.</p>
+<aside class="quote no-group" data-post="39" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>might end up giving different results based on their different assumptions</p>
+</blockquote>
+</aside>
+<p>I think this is inevitable. We will share our methodology once finalised. There is, for example, the challenge of double nesting (multiple sectors and countries) which the standard doesn’t currently express an opinion on.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/40">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/40</link>
+        <pubDate>Mon, 23 Oct 2017 08:22:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-40</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> that sounds great (the datastore version too of course), is the first version a d-portal output?</p>
+<p>What is going to be the most helpful way to engage on the columns? No problem to give my choice, but I am sure there will be plenty of other variations/tweaks?</p>
+<p>How about a google doc where we could list the colums, and do the different use cases as rows, marking which fields they would need to see if that suggests a clear set?</p>
+<p>I am also mindful of <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>’s previous posts requesting the ability to select/unselect/order which columns appeared in a ‘flat file serialisation’.</p>
+<p>I am also aware that we are getting to the stage where different IATI tools (at least the ones that have to make decisions) might end up giving different results based on their different assumptions e.g. I think OPIA <a href="http://docs.oipa.nl/en/latest/api/#percentage-based-aggregations" rel="nofollow noopener">allocates a uniform distribution to sectors without percentages</a> but this raises the possibility that the different tools will start producing different outputs e.g. if the flat file tool that you are working on takes a different approach and this might lead to confusion about which is the ‘real’ IATI.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/39">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/39</link>
+        <pubDate>Fri, 20 Oct 2017 20:42:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-39</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Wearing my DI cap, we are preparing a flat file serialisation not a million miles from your needs. If we can agree on your required columns we can piggyback your job onto ours. Until we are in a position to provide this as a standard output from the data store …</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/38">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/38</link>
+        <pubDate>Fri, 20 Oct 2017 16:59:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-38</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> - completely with you on IATI needing to be driven by user feedback both in terms of demand i.e. few country level processes need individual disbursements, and also supply, e.g. your information that aggregation</p>
+<aside class="quote no-group" data-post="36" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>would remove an important barrier to getting buy-in from partners</p>
+</blockquote>
+</aside>
+<p><a href="https://www.aidtransparency.net/news/a-week-in-the-life-of-an-iati-developer" rel="nofollow noopener">This post</a> mentions a set of user stories that the IATI secretariat use to guide future developments - perhaps a a community we need to go through these again and check how they might have changed since they were first developed?</p>
+<p><a class="mention" href="/u/imogen_kutz">@Imogen_Kutz</a> are these something you can share - or am I getting the wrong end of the stick and they are user stories in terms of how users use e.g. d-portal etc, but not in terms of the supply and demand for IATI data? If so, are you aware of any user stories / IATI user profiles/analysis that has been done? I only know of the recent DI report <a href="http://devinit.org/wp-content/uploads/2017/03/reaching-the-potential-of-IATI-data.pdf" rel="nofollow noopener">here</a>? I guess there must have been right at the beginning?</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/37">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/37</link>
+        <pubDate>Fri, 20 Oct 2017 15:14:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-37</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="35" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>so for a flat reporting standard, it seems like <strong>it would hugely simplify the reports</strong>, without losing any/many use cases</p>
+</blockquote>
+</aside>
+<p>This is a very important point. Not only would it simplify the reports (ie the data), but in some cases it would remove an important barrier to getting buy-in from partners - for instance in cases where commercially-sensitive information may be revealed by publishing individual transactions.</p>
+<p>This is a great example why we need feedback from actual users of aid data (not necessarily IATI data), to better understand how they use it, what they need so IATI tools can be responsive.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/36</link>
+        <pubDate>Fri, 20 Oct 2017 14:02:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-36</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> exactly right, this would be aggregated disbursements. It is not like I can’t see the value of having the individual disbursements in the standard, just that none of the 5 recipient countries I have worked with recently actually uses them in that way e.g. for annual ODA reports, budget integration, sectoral planning, M&amp;E etc, so for a flat reporting standard, it seems like it would hugely simplify the reports, without losing any/many use cases.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/35</link>
+        <pubDate>Fri, 20 Oct 2017 08:42:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-35</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="19" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Or for the ‘basic’ needs, I can share the data that the various countries I work with would love to be able to easily access (in flat/excel) format, basically: a row per project: funder(s), implementer(s), total project value, local sector, start date, end date, grant/loan, disbursements to date, disbursement in last local FY, disbursements in next local FY, description (incl in local language), local contact name, local contact email. ADM1 geographic information, humanitarian/development.</p>
+</blockquote>
+</aside>
+<p>Mat, question of clarification on the disbursments info in the list above: if this is meant to be in a single line per project, I assume disbursments to date, in FY and new FY would be totals, not disaggregated by transactions (like we are asked to publish)?  This actually jives with data requests we get from the field ie adding up disbursments by year (or sometimes quarters), not by specific transaction. Just checking that I’m not misunderstanding.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/34</link>
+        <pubDate>Thu, 19 Oct 2017 22:03:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-34</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[Mhirji]]></dc:creator>
+        <description><![CDATA[
+            <p>There is at least one organization I know of whose business model operates at a national or higher level.  Why would you make sub-national locations mandatory when not everyone operates at that level.</p>
+<p>Reporting Results is another area I have concerns with as results frameworks vary across the multitude of domain we operate in.  In the case of health, we might be tracking, and have targets for, an indicator we would want to mention to help give context, but would not expect a result for another year or more.</p>
+<p>I fully agree to re-looking at what is mandatory, but it should be from the perspective of what all organizations have in common so that at the end of the day, when analyzing data you are getting closer to comparing apples to apples, which is not always the case today, or at least that is my 2 cents.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/33</link>
+        <pubDate>Thu, 12 Oct 2017 19:39:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-33</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> thanks - regarding recipient country data needs, it mainly references this <a href="https://www.usaid.gov/sites/default/files/documents/1870/AidTransparencyCountryPilotAssessment.pdf" rel="nofollow noopener">2014 USAID report</a> - which has three case studies - and each give their data needs on 34, 80 and 129 .</p>
+<p>I just put the three <a href="https://docs.google.com/spreadsheets/d/1jUlCD81a-rFw5xYpg3JXE9aoCLWybvv4VQiKyv_YAkw/edit?usp=sharing" rel="nofollow noopener">into a google doc</a>, and it is already quite suggestive on how the mandatory/core fields need to change in the next major upgrade if IATI is to meet the data needs of aid recipient countries. In summary, those requested across all three case studies, but not currently mandatory include:</p>
+<ul>
+<li>Reporting results</li>
+<li>Basic financials</li>
+<li>Sub-national locations</li>
+</ul>
+<p>I guess the next step is consultation with the data providers to see which of these they are able to supply?</p>
+<p>Edit: perhaps I am barking up the wrong tree here - a multiple year wait to change the mandatory fields is a very slow process, and I am not convinced that most of the countries I have tried to excite about IATI will have that much patience. Perhaps better is to gather together a definition of what data fields recipient countries need, and see if we can make a specific quality measurement with which to address donors for improvement. As well as a list of key fields, tt could also include things like requiring the activity description being provided in the national language of the recipient.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/32</link>
+        <pubDate>Tue, 10 Oct 2017 16:37:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-32</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://devinit.org/assets/favicons/favicon.85ce05716b7b.png" class="site-icon" width="133" height="133">
+      <a href="https://devinit.org/resources/reaching-the-potential-a-review-of-iati-data-use-and-ways-to-increase-it/" target="_blank">Development Initiatives</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="" height="">
+
+<h3><a href="https://devinit.org/resources/reaching-the-potential-a-review-of-iati-data-use-and-ways-to-increase-it/" target="_blank">Reaching the potential of IATI data</a></h3>
+
+<p>Reaching the potential of IATI data</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/31</link>
+        <pubDate>Tue, 10 Oct 2017 15:44:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-31</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Noted…campaign starting now <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Any ideas about the paper I thought that DI commissioned last year on IATI users?</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/30</link>
+        <pubDate>Tue, 10 Oct 2017 13:22:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-30</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="26" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>a slight expansion of the core/manadatory fields</p>
+</blockquote>
+</aside>
+<p>As this is a matter for a <a href="http://www.aidtransparency.net/wp-content/uploads/2017/09/Paper-10-Proposed-revisions-to-the-IATI-Standard-upgrade-process.pdf">Major upgrade</a> I guess we have a couple of years to prepare a campaign around this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/29</link>
+        <pubDate>Tue, 10 Oct 2017 12:13:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-29</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/ibrahim">@ibrahim</a></p>
+<p>Yes, I think that ‘basic’ and ‘extended’ are a good idea - although there might be ‘extended - results’ and ‘extended - openAG’ etc, i.e. multiple different extensions for different more specific use cases. The reason I like this idea is that it should make it easier to focus on comprehensiveness and usability in the key fields first - and at the same time, perhaps answer some of the needs of those currently campaigning for simplification, and those wanting more extensions. What worries me is that IATI already has some structures e.g. the different parts of the XML tree, and this would add another structure that runs across that which would add complexity.</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/28</link>
+        <pubDate>Tue, 10 Oct 2017 10:35:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-28</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[ibrahim]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="23" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>I’m disagreeing that your use case can be used to define the standard itself</p>
+</blockquote>
+</aside>
+<p>Agreed(100%)</p>
+<aside class="quote no-group" data-post="24" data-topic="1047" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Hi - also agreed, IATI is much more than just this one use case</p>
+</blockquote>
+</aside>
+<p>Agreed(100%)</p>
+<aside class="quote no-group" data-post="23" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>I am agreeing (110%) that your use case can be met by a standardised export - and we should do this.</p>
+</blockquote>
+</aside>
+<p>what I am proposing is that the standard has two parts: “Basic” and “Extended”, The “Basic” is the mandatory and the “Extended” is all the others.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/27</link>
+        <pubDate>Tue, 10 Oct 2017 10:24:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-27</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>aha - thanks <a class="mention" href="/u/bill_anderson">@bill_anderson</a>  - based on that, I think <a class="mention" href="/u/ibrahim">@ibrahim</a> and I are suggesting a slight expansion of the core/manadatory fields?</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/26</link>
+        <pubDate>Tue, 10 Oct 2017 10:23:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-26</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="22" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Is there a list of the mandatory fields somewhere?</p>
+</blockquote>
+</aside>
+<p><a href="http://dashboard.iatistandard.org/comprehensiveness_core.html" class="onebox" target="_blank">http://dashboard.iatistandard.org/comprehensiveness_core.html</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/25</link>
+        <pubDate>Tue, 10 Oct 2017 10:02:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-25</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi - also agreed, IATI is much more than just this one use case</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/24</link>
+        <pubDate>Tue, 10 Oct 2017 09:44:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-24</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="22" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>the quest for simple export of basic fields in a flat format</p>
+</blockquote>
+</aside>
+<p>I am agreeing (110%) that your use case can be met by a standardised <strong>export</strong> - and we should do this.</p>
+<p>I’m disagreeing that your use case can be used to define the standard itself</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/23</link>
+        <pubDate>Tue, 10 Oct 2017 09:32:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-23</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>Is there a list of the mandatory fields somewhere? I tried <a href="http://iatistandard.org/202/guidance/how-to-publish/" rel="nofollow noopener">here</a> in the guidance but couldn’t see it. There is mention in the upgrades for specific mandatory fields?</p>
+<p>[quote=“bill_anderson, post:21, topic:1047”]<br>
+Is this really what in-country decision-makers need?<br>
+[/quote] from my experience, yes - it is not everything they need, but a list of all the active and pipeline projects solves 80% of the needs for 80% of the users. At worst, it is a good starting point for them to be able to follow up further - at which point the use cases become too individual/unique to be able to cater for as a consistent group.</p>
+<p>[quote=“bill_anderson, post:21, topic:1047”]<br>
+is this really the IATI vision?<br>
+[/quote] - I am not sure what the IATI vision is, but it would seem to me that first catering to the dominant user need would be a good start - I could be wrong that this is the dominant user need - and I think that DI commissioned some research last year working out who the users of IATI data were, is that something that is public yet? If not, a public mapping of the different user groups and their data needs sounds sensible to help define what the IATI vision is - and to guide future iterations of the standard/effort.</p>
+<p>RE the UNDP example - of course we want the 4bn (UNDP mainly as an implementer, not as a funder), but are you suggesting that in the quest for simple export of basic fields in a flat format, we will not get the $4bn, but instead the $400mn?</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/22</link>
+        <pubDate>Tue, 10 Oct 2017 09:17:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-22</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="19" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I can share the data that the various countries I work with would love to be able to easily access (in flat/excel) format</p>
+</blockquote>
+</aside>
+<aside class="quote no-group" data-post="19" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>disbursements to date, disbursement in last local FY, disbursements in next local FY</p>
+</blockquote>
+</aside>
+<p>This sounds like ODA macro-management. I accept that this may be the most prevalent use of AIMS at present, but is this really the IATI vision? Is this really what in-country decision-makers need? I would go so far as to argue that ODA macro-management (for which double counting is an issue) is an edge case. Is IATI a bean-counting balance sheet, or part of what the data revolution promotes as data-driven decision-making?</p>
+<p>I agree that we can provide more focused (even standardised) <strong>outputs</strong> from IATI data, but for every person satisfied with this use case you will find many to the contrary. We already have a ‘basic’ standard, common to all: it is defined by mandatory fields.</p>
+<p>To return to my much-used UNDP example. Would you like to see the arithmetically clean $400m number they report to the CRS, or the $4bn they account through IATI for their activities on the ground?</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/21</link>
+        <pubDate>Tue, 10 Oct 2017 07:56:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-21</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[ibrahim]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>,<br>
+Thanks for your reply, to me these fields is fair enough, I only want to add a note for how to represent the multi-valued fields such as sectors or donors in a flat Excel file, I propose to separate them by either “,” or “/” or whatever else, this will help to import this in a database later, and keep that each row has one activity.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/20</link>
+        <pubDate>Mon, 09 Oct 2017 17:17:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-20</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/ibrahim">@ibrahim</a>,</p>
+<p>I think this is a great idea. Does the recent work that was done on ‘IATI users’ help to define what data is needed by the different use cases? Or for the ‘basic’ needs, I can share the data that the various countries I work with would love to be able to easily access (in flat/excel) format, basically: a row per project: funder(s), implementer(s), total project value, local sector, start date, end date, grant/loan, disbursements to date, disbursement in last local FY, disbursements in next local FY, description (incl in local language), local contact name, local contact email. ADM1 geographic information, humanitarian/development.</p>
+<p>If agreed, we could then work on making sure that that very restricted set of fields is comprehensive, not double-counted, uses local language.</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/19</link>
+        <pubDate>Mon, 09 Oct 2017 10:37:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-19</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[ibrahim]]></dc:creator>
+        <description><![CDATA[
+            <p>If you allow me,</p>
+<aside class="quote no-group" data-post="1" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/johnadams/40/11_1.png" class="avatar"> JohnAdams:</div>
+<blockquote>
+<p>Simplify the standard for different user needs through a modular approach.</p>
+</blockquote>
+</aside>
+<p>I do support this, most of the data users depend mainly on some of the attributes(fields), we could have something such as “Basic” data or “Core” data and “Extended” or “Complete” data, this will:</p>
+<ul>
+<li>
+<p>Simplify exporting the “Basic” data to Excel format for the user</p>
+</li>
+<li>
+<p>Simplify the publishing of the “Basic” data which minimize the invalid data and increase the reliability and quality of data</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/18</link>
+        <pubDate>Sun, 08 Oct 2017 16:07:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-18</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/oj_">@OJ_</a> really interesting to know - I found it <a href="https://iatitag2015.sched.com/event/3Ruu/master-data-management-managing-authoritative-codelists" rel="nofollow noopener">in the 2015 schedule</a> in case anyone else was there and can share the paper</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/17</link>
+        <pubDate>Thu, 05 Oct 2017 09:29:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-17</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+      <item>
+        <title>Future infrastructure to support the IATI Standard</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="15" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>why IATI &gt; CRS++ is not possible</p>
+</blockquote>
+</aside>
+<p>I made a paper for a session at one of the TAG’s in Canada - not at  hand right now - but the obstacle identified at that time was the org_type etc. codes of IATI that can’t be translated into CRS channel-codes. Will need to update that paper in order to verify wether this problem is solved with version 2.03 of our standard.</p>
+<p>Another issue should be noted as well: We must recognise that the DAC has a strong need for ‘single point of contact’ to governments of donor countries, for the dialogue and data-validation. Even though some of us are currently reporting on behalf of our Government, making sure that our IATI-reported ODA-volume reach 100% of our DAC-reported ODA, this is not the case for all donors, and might not continue to be the case for us; IATI is designed for reporting by individual organisations rather than Governments. There are advantages, certainly, but it will be an organisational challenge for IATI-formatted CRS-reporting.</p>
+          <p><a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/16</link>
+        <pubDate>Thu, 05 Oct 2017 09:12:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1047-16</guid>
+        <source url="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047.rss">Future infrastructure to support the IATI Standard</source>
+      </item>
+  </channel>
+</rss>

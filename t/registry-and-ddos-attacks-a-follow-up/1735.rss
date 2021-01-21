@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Registry and DDoS attacks, a follow up</title>
+    <link>https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735</link>
+    <description>As a result of the DDoS attacks we have had to put in place rate limits on the registry.  We apologise for any service disruption caused, we have been working with the vendor to try to come to a workable solution. 
+
+As we don’t yet have space for static pages on the registry site to present a change log we are posting the details here:
+
+**Current Configuration of IATI Registry NGINX Bot Blocker**
+ 
+**For Normal Users Rate Limits (per IP):**
+20 requests per second
+Queuing system for additional requests – 200 requests
+If the request is more than this gives 503 error
+
+Code:
+        limit_req_zone $binary_remote_addr zone=flood:50m rate=20r/s;
+        limit_conn_zone $binary_remote_addr zone=addr:50m;
+        limit_req_zone $server_name zone=perserver:1m rate=10r/s
+        limit_conn addr 200;
+        limit_req zone=flood burst=200 nodelay; &#39;&#39;&#39;
+ 
+**For Bots:**
+Bots are identified as known bots or those requests associated with agents below:
+ 
+        &quot;~*\bMozilla/4\.0\b&quot;            4;
+        &quot;~*\bOpera/9\.80\b&quot;             4;
+        &quot;~*\bFirefox/4\.0\.1\b&quot;           4;
+        &quot;~*\bSafari/534\.50\b&quot;           4;
+2 requests per second
+If the request is more than this gives 444 error
+Code:
+limit_conn_zone $bot_iplimit zone=bot2_connlimit:16m;
+limit_req_zone  $bot_iplimit zone=bot2_reqlimitip:16m  rate=2r/s;
+
+An agreement has been made to add a changelog to the Registry in order to keep track of these changes in the future.
+Please get in touch with us if you are experiencing issues or need further support or clarifications.</description>
+    
+    <lastBuildDate>Thu, 09 May 2019 10:06:06 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Registry and DDoS attacks, a follow up</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the response – that’s super helpful.</p>
+<p>One more thing has occurred to me…</p>
+<aside class="quote no-group" data-post="1" data-topic="1735">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>Bots are identified as known bots or those requests associated with agents below:</p>
+</blockquote>
+</aside>
+<p>So I think this indirectly encourages API users to set the <code>User-Agent</code> header to something browser-like (e.g. Firefox; Safari), so their bots look like a “normal user”.</p>
+<p>I think it would be preferable to encourage API users to set the <code>User-Agent</code> to something that describes the purpose of their bot, e.g. “Somali AIMS” or “IATI Data Dump”. This would be super helpful in making it possible to monitor who is using the API.</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735/5</link>
+        <pubDate>Thu, 09 May 2019 10:06:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1735-5</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735.rss">Registry and DDoS attacks, a follow up</source>
+      </item>
+      <item>
+        <title>Registry and DDoS attacks, a follow up</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>We can discuss with Derilinx changing the codes used for error messages at some point in the future, but we’d need to keep things obfuscated. This is a low priority.</p>
+<p>Thank you for pointing out about updating the website copy with this information about the API. we have added this task to our backlog.</p>
+<p>The work for having a changelog on the Registry is now pending with Derilinx.</p>
+<p>In terms of timeline, a large spike in requests had been noticed a week before than the attacks, and Derilinx started to blacklist IP addresses and user agents to assess the scale and type of situation. As the situation progressed it became clear it was the same bot hammering the server so the throttling was introduced instead.</p>
+<p>To Matt’s point the 14th of April was Datastore down time and not related to this incident.</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735/4</link>
+        <pubDate>Tue, 07 May 2019 15:55:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1735-4</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735.rss">Registry and DDoS attacks, a follow up</source>
+      </item>
+      <item>
+        <title>Registry and DDoS attacks, a follow up</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks also for this update <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Timeline-wise, I first reported this on the 14th of April  - and guess I first saw it a week earlier.</p>
+<p>When the new datastore goes live, perhaps several of the users (who I agree probably currently appear as bots) might transition to that? And maybe this is a longer term solution as the new datastore <a href="https://dev.oipa.nl/api/datasets/" rel="nofollow noopener">can already return the links to the activity and org files</a> and some of the associated metadata. I am not sure what metadata is therefore left that would require someone to use the registry?</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735/3</link>
+        <pubDate>Sat, 04 May 2019 18:40:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1735-3</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735.rss">Registry and DDoS attacks, a follow up</source>
+      </item>
+      <item>
+        <title>Registry and DDoS attacks, a follow up</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>This is <strong>really informative</strong> – thanks so much for posting details of the new rate limits! Rate limiting seems like a sensible feature to add to the registry API, so thanks &amp; well done for doing that!</p>
+<p>One comment: Since the service here is an API, “normal users” are probably all bots. (The non-bots are just bots posing as a different user-agent.) So I guess that means the 2 requests/s limit is the important one.</p>
+<p>One suggestion: Again, given this service is an API, it might be a bit friendlier to respond with a real status code, rather than <a href="https://httpstatuses.com/444">444</a>. In many cases, excessive requests will be an accident rather than malicious, so it’s useful to respond with e.g. a <a href="https://httpstatuses.com/429">429 status code</a> and perhaps a message explaining the problem.</p>
+<hr>
+<aside class="quote no-group" data-post="1" data-topic="1735">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>As we don’t yet have space for static pages on the registry site</p>
+</blockquote>
+</aside>
+<p>I think there previously was a static page on the registry site about the API? That was replaced by <a href="https://iatistandard.org/en/using-data/iati-tools-and-resources/using-iati-registry/">this page</a> (which can be reached by clicking the “API” button in the navigation menu on <a href="http://iatiregistry.org">iatiregistry.org</a>.)</p>
+<p>Given that, I think I’d expect to find details of rate limits under “<strong>Using the Registry metadata API</strong>” section of that page.</p>
+<hr>
+<p>As a bit of an aside: I’m a little confused about the timeline here, because I was hitting registry API rate limits as early as Wednesday last week (24/04), but the DDOS attack was subsequent to that (26/04?) I don’t know if it’s possible to elucidate on that… Or maybe post-mortem the DDOS event?</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735/2</link>
+        <pubDate>Fri, 03 May 2019 12:16:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1735-2</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735.rss">Registry and DDoS attacks, a follow up</source>
+      </item>
+      <item>
+        <title>Registry and DDoS attacks, a follow up</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>As a result of the DDoS attacks we have had to put in place rate limits on the registry.  We apologise for any service disruption caused, we have been working with the vendor to try to come to a workable solution.</p>
+<p>As we don’t yet have space for static pages on the registry site to present a change log we are posting the details here:</p>
+<p><strong>Current Configuration of IATI Registry NGINX Bot Blocker</strong></p>
+<p><strong>For Normal Users Rate Limits (per IP):</strong><br>
+20 requests per second<br>
+Queuing system for additional requests – 200 requests<br>
+If the request is more than this gives 503 error</p>
+<p>Code:<br>
+limit_req_zone $binary_remote_addr zone=flood:50m rate=20r/s;<br>
+limit_conn_zone $binary_remote_addr zone=addr:50m;<br>
+limit_req_zone $server_name zone=perserver:1m rate=10r/s<br>
+limit_conn addr 200;<br>
+limit_req zone=flood burst=200 nodelay; ‘’’</p>
+<p><strong>For Bots:</strong><br>
+Bots are identified as known bots or those requests associated with agents below:</p>
+<pre><code>    "~*\bMozilla/4\.0\b"            4;
+    "~*\bOpera/9\.80\b"             4;
+    "~*\bFirefox/4\.0\.1\b"           4;
+    "~*\bSafari/534\.50\b"           4;
+</code></pre>
+<p>2 requests per second<br>
+If the request is more than this gives 444 error<br>
+Code:<br>
+limit_conn_zone $bot_iplimit zone=bot2_connlimit:16m;<br>
+limit_req_zone  $bot_iplimit zone=bot2_reqlimitip:16m  rate=2r/s;</p>
+<p>An agreement has been made to add a changelog to the Registry in order to keep track of these changes in the future.<br>
+Please get in touch with us if you are experiencing issues or need further support or clarifications.</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735/1</link>
+        <pubDate>Thu, 02 May 2019 15:27:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1735-1</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-and-ddos-attacks-a-follow-up/1735.rss">Registry and DDoS attacks, a follow up</source>
+      </item>
+  </channel>
+</rss>

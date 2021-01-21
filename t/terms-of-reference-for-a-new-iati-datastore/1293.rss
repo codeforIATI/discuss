@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Terms of Reference for a new IATI Datastore</title>
+    <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293</link>
+    <description>We would like to invite you to participate in a consultation on the [Terms of Reference for a new IATI Data Store](https://docs.google.com/document/d/1-ejM-oGs9N-LhJBgduVvg8PJXhJhv6WdXz-KOT9TYxg/edit?usp=sharing)
+
+In realising IATI&#39;s vision that &quot;transparent, good quality information on development resources and results is available and used by all stakeholder groups&quot; it is the responsibility of the IATI secretariat to ensure a reliable aggregated flow of all data published to the standard is accessible. We need to provide a robust, timely and comprehensive data service which can be used by developers and data scientists to produce information products tailored to their specific needs.
+
+The current datastore, developed in the early days of IATI, is not fit for purpose and needs replacing.
+
+At a meeting of the IATI Governing Board in January this year it was agreed that it was now a priority to put a reliable and sustainable data service into place. The developer workshop held in Manchester in January had a brainstorming session on the desired functionality. This has formed the basis of these ToRs.
+
+![ds|612x500](upload://8peuur50clXZ5T9ygZOOc3PYEs7.jpg)
+
+As our Technical Team is currently stretched (over and above its day-to-day commitments) with the consolidation and re-design of IATI&#39;s many websites and web-delivered services, we advised the Board in its March meeting that we should consider outsourcing both the build and initial maintenance of a new datastore. 
+
+Your comments [on our draft document](https://docs.google.com/document/d/1-ejM-oGs9N-LhJBgduVvg8PJXhJhv6WdXz-KOT9TYxg/edit?usp=sharing) are most welcome. If you could manage this in the next two weeks we would be very grateful. 
+
+Please add comments relating to specific text in the document itself, but add more general feedback in this thread.</description>
+    
+    <lastBuildDate>Wed, 08 May 2019 08:04:58 +0000</lastBuildDate>
+    <category>Consultations</category>
+    <atom:link href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a></p>
+<p>One migrations (new vs old IATI Datastore endpoints) I’d think <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> needs to come up with some ideas here. I don’t think any URI persistence policy was created to smoothen this out next year, but we could think about how much work it would be to introduce URI persistence to cover the issue of migration.</p>
+<p>Happy to contribute but <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> should probably take the lead here.</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/21</link>
+        <pubDate>Thu, 06 Dec 2018 14:07:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-21</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/siemvaessen">@siemvaessen</a> - great to see the detail.</p>
+<p>Can you or <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> explain a bit more about what a ‘standardised output/activity’ is, ideally giving an example of a standardised activity with a diff against the original XML?</p>
+<p>Can I also confirm whether this will be a breaking change to the current datastore API endpoints? If so, I think we need to discuss how this is going to be managed for all the existing tools that use the current datastore API. Is someone able to share a list (and/or perhaps start logging) all the current datastore API requests so we can see what level of issue this is going to be?</p>
+<p>I also wanted to comment on the conversion to USD - this doesn’t seem like a task for a datastore to me, rather it is the role of the different tools that draw on the datastore as a data source, and repackage it for users, to provide their own exchange rates and in doing so, explain their choice of rates to the users.</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/20</link>
+        <pubDate>Thu, 06 Dec 2018 13:40:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-20</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi  <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> <a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a>  and Zimmerman &amp; Zimmerman indeed have a kick-off post IATI TAG in Kathmandu. Based on that conversation Zimmerman &amp; Zimmerman requested some clarifications. ZZ <a href="https://docs.google.com/spreadsheets/d/1dvfJse7_2CZ8wXqNiV5HzQoJUVVDEXRmSrMk9HMEs_c/edit#gid=0" rel="nofollow noopener">extracted point by point tasks</a> from the original ToR.</p>
+<p>Those tasks have been transferred to a Github project running under the OIPA repository, which anyone can (re)view <a href="https://github.com/zimmerman-zimmerman/OIPA/projects/2" rel="nofollow noopener">here</a>.</p>
+<p>Essentially the focus forward is to plan and deliver Phase 1 from the ToR as an initial deliverable early 2019. Any other outstanding issues that Zimmerman &amp; Zimmerman have for OIPA will also be included into that same project, otherwise we have to manage multiple boards. We expect Phase 2 to follow directly so we are currently aiming at delivering both phases in Q1 2019.</p>
+<p>On the topic of non ToR work, we should find a way on how to create and maintain an inventory of potential features/requirements/nice-to-haves etc. by and for the community and come up with a good way of ‘upvoting’ or ‘downvoting’ them?</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/19</link>
+        <pubDate>Thu, 06 Dec 2018 12:48:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-19</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I believe Zimmerman &amp; Zimmerman and the IATI secretariat sat down to define final technical requirements on the Friday after the TAG in Kathmandu. It would be great if someone from the secretariat or Zimmerman &amp; Zimmerman could share this so we all have an idea what’s currently in/out of scope.</p>
+<p>/cc <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> <a class="mention" href="/u/siemvaessen">@siemvaessen</a> <a class="mention" href="/u/iati-techteam">@IATI-techteam</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/18</link>
+        <pubDate>Thu, 06 Dec 2018 10:43:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-18</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> did not see it. do send a PM or use my first name @ companyname.nl</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/17</link>
+        <pubDate>Mon, 12 Nov 2018 07:07:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-17</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>hi <a class="mention" href="/u/siemvaessen">@siemvaessen</a> - I don’t have your email address, so I emailed the generic Zimmerman one - checking whether it has reached you, or if there is a better way - should I send you a twitter PM to get sent your email address back?</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/16</link>
+        <pubDate>Wed, 07 Nov 2018 11:53:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-16</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/siemvaessen">@siemvaessen</a> - slow is fine by me - just keen to know which train is coming <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> will message offline to ask more details.</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/15</link>
+        <pubDate>Thu, 01 Nov 2018 10:54:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-15</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Matt,</p>
+<p>Contract process in place, but nothing signed yet. This is the slow train…</p>
+<p>If you have any questions, do send me a message offline.</p>
+<p>Thanks, Siem</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/14</link>
+        <pubDate>Thu, 01 Nov 2018 10:41:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-14</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>,</p>
+<p>Sorry to impatiently bump this, but we are in the middle of development and needing to take decisions - I think I have identified that Zimmerman &amp; Zimmerman are building the new Datastore - if you can confirm, I can contact them directly - or can you confirm <a class="mention" href="/u/siemvaessen">@siemvaessen</a> and perhaps share some more information on what the new datastore will be able to do?</p>
+<p>Thanks a lot,</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/13</link>
+        <pubDate>Wed, 31 Oct 2018 12:05:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-13</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>,</p>
+<p>I think I read somewhere that the contractor for this had been selected, is there anywhere we can follow the development progress?</p>
+<p>I also wanted to know who to ask a) to confirm whether the query API will remain stable between the current datastore and the new one and b) whether the datastore will supply the original data, as well as the version mentioned in the ToR that has been transformed to other versions of the standard?</p>
+<p>Thanks a lot, Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/12</link>
+        <pubDate>Thu, 25 Oct 2018 11:33:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-12</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>Are bids going to be made public or portions of information about bids? It would be interesting to see who responded and generally what folks are proposing to do, mainly out of curiosity.</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/11</link>
+        <pubDate>Tue, 04 Sep 2018 03:17:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-11</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The deadline to submit proposals to create IATI’s new Datastore has been briefly extended to 23:59 UTC, Tuesday, 7 August 2018 to avoid closing the bidding on a Sunday night. Please see the <a href="https://www.ungm.org/Public/Notice/74108">UN Global Marketplace</a> for more.</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/10</link>
+        <pubDate>Fri, 03 Aug 2018 14:54:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-10</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah, very good point <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a>! It’s available here:</p>
+<p><a href="https://www.ungm.org/Public/Notice/74108" class="onebox" target="_blank">https://www.ungm.org/Public/Notice/74108</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/9</link>
+        <pubDate>Wed, 18 Jul 2018 13:57:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-9</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>My understanding from the discussion at MA was that the RFP has been finalized and we are actively soliciting bids.  With that understanding I’ve been trying to find the final version of the specs/ToR so I can attempt to get my head around what the query capabilities are going to be from the new and improved datastore.  Above is a link to drafts but I can’t seem to find “final” documents. Can someone point me to the correct place on the site to find the RFP currently circulating.</p>
+<p>Thanks in advance for your help.<br>
+Kind Regards,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/8</link>
+        <pubDate>Wed, 18 Jul 2018 12:48:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-8</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I wanted to bring out one conversation from the document. This may seem a somewhat esoteric discussion for most of the community but I think it is important for ensuring we get a useful and working Datastore as soon as possible.</p>
+<p>For me the Datastore is the <span class="hashtag">#1</span> most important tool for enabling data use at country level. Given that pyIATI has not yet been implemented in any user-facing tools, I am against using the Datastore as a “guinea-pig” to attempt to demonstrate the usefulness of pyIATI – and thereby potentially holding up Datastore development even more. If there are useful features of pyIATI then the developers should want to use this library anyway. <strong>So I am against including this as a requirement in the ToRs.</strong></p>
+<p>Finally, would be great to understand how this conversation proceeds from here! Will a more formal ToR / specifications document now be shared for community feedback? Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/7</link>
+        <pubDate>Fri, 11 May 2018 16:53:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-7</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Ad 1:<br>
+The wording was too strong (‘possibly’ should be ‘e.g.’). Discussion should indeed be about requirements and acceptance criteria.</p>
+<p>Since the consensus seems to be that that data validation is not a part of the data store functionality, this discussion is not directly relevant for the data store requirements. What is important though is to make sure that bad quality data are not fed into the data store and that we have clear criteria what constitutes bad data.</p>
+<p>Ad 2:<br>
+A ‘data mart’ is a well known data warehouse  component, which enables high volume data queries with flexibility and  good response times.</p>
+<p>Ad 3:<br>
+Agree, reuse should not be done for the sake of reuse. It should be done to avoid duplication of effort, limit throughput times and reduce costs. Especially important given the limited IATI budgets.</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/6</link>
+        <pubDate>Tue, 24 Apr 2018 15:49:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-6</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/herman">@herman</a></p>
+<p><strong>On Ad 1:</strong><br>
+I feel this is derailing the main objective of a DS ToR tbh. Stating supplier preference is something we should avoid at this stage. Lets keep this exercise very agnostic and functional.</p>
+<p>Ad 1 is based on to either accept all data or not. Lets talk about acceptance criteria first then before talking about <strong>the many</strong> validators out there.</p>
+<p><strong>On Ad 2</strong><br>
+I believe the ToR has been produced with the user need in mind (Userstories), or that’s my understanding when reviewing the ToR. I see the user stories definitely need more work, but they are in essence build on the user needs.</p>
+<p>Perhaps as part of the RfP it should require an analysis phase with different types of users panning out user stories that may use DS, rather than speccing all the user needs upfront.</p>
+<p>And what is a ‘Data Mart’?</p>
+<p><strong>On Ad 3</strong><br>
+On Ad 3 I agree about re-using software. But re-using for the sake of re-usability does not make sense to me.</p>
+<p>I am not too sure either about rallying around pyIATI w/o any real-life scenario’s on how pyIATI is currently being used by IATI Publishers and consumers alike. I am not aware of any platforms/tools that currently make use of pyIATI.</p>
+<p>I also agree with the scoping the technical architecture that would allow for multiple vendors to take part in an eco-system of IATI data services, with the IATI technical team leading the technical architecture effort, oversight and overall strategy for technical development on the short and long term.</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/5</link>
+        <pubDate>Tue, 24 Apr 2018 11:52:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-5</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Bill for sharing these specs with us. Reading through the specs and all the comments already presented I see 3 crucial topics being discussed:</p>
+<p>1 - Should the DS accept all publisher data or not? And if not, what are the acceptance criteria. Derived from this question is the question if an IATI data validator should be part of the datastore (DS) or not.</p>
+<p>2 - Should the DS  limit the users how often, how much and what they can search on? This question seems to be driven from perceived technological limitations.</p>
+<p>3 - The requirement that all software developed for the IATI validator, should be written in pyIATI with as assumption that in the end the IATI technical team will maintain all IATI core software products.</p>
+<p><strong>Ad 1</strong><br>
+Since the existing IATI data quality is one of major obstacles for using IATI data in practice, I think the answer on the first question should be no. This implies that the definition of the acceptance/rejection criteria should be a part of the design of the DS. It is argued by several people that data validation should not be part of the DS, to keep its functionality ‘lean &amp; mean’.<br>
+Therefore I suggest that a separate data validator should be developed, possibly reusing the software already being developed by Rolf Kleef for a number of organizations, including the Netherlands MFA and the DFID.</p>
+<p><strong>Ad 2</strong><br>
+Although I understand the inclination of the more technical people to limit the technical complexity of the DS, i.m.o. the <strong>user needs</strong> should drive the design process. Technology should follow (and not the other way around). We are not talking ‘big data’ here and there is a lot of experience in the market to design flexible and robust Data Marts.</p>
+<p><strong>Ad 3</strong><br>
+When we want to have a chance to achieve any results the next 12 - 18 months, I think we should reuse as much existing software as we can. Rebuilding everything from scratch with a yet unproven pyIATI library, would preclude the reuse of any existing software components (e.g. the Data Validator software mentioned under point 1).</p>
+<p>I think we should seriously consider if all IATI core products in the long term must be maintained solely by the IATI technical team. In a loosly coupled ecosystem of applications/software components, it is i.m.o. quite possible to have multiple vendors being responsible for the maintenance of IATI core products. The most important crucial responsibility of the IATI technical team in such a scenario, would be to define and guard the overall conceptual and technical architecture, especially with regards to the interfaces between the software components. This would have the additional benefit of limiting the resources needed from the IATI technical team, which is already overburdened as it is.</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/4</link>
+        <pubDate>Mon, 23 Apr 2018 12:56:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-4</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d be interested in the user research too. Is this something <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> could share?</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/3</link>
+        <pubDate>Thu, 19 Apr 2018 16:00:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-3</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[robredpath]]></dc:creator>
+        <description><![CDATA[
+            <p>Is there some user research for each of the 3 personas identified (and which <a class="mention" href="/u/stevieflow">@stevieflow</a> wants to add a 4th) to supplement the work we did in Manchester? It’d be great to see the “so that…” part of the user stories. Reading through, I felt like it read a bit more like a requirement spec using parts of user story language, rather than user stories.</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/2</link>
+        <pubDate>Tue, 17 Apr 2018 14:53:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-2</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+      <item>
+        <title>Terms of Reference for a new IATI Datastore</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>We would like to invite you to participate in a consultation on the <a href="https://docs.google.com/document/d/1-ejM-oGs9N-LhJBgduVvg8PJXhJhv6WdXz-KOT9TYxg/edit?usp=sharing" rel="nofollow noopener">Terms of Reference for a new IATI Data Store</a></p>
+<p>In realising IATI’s vision that “transparent, good quality information on development resources and results is available and used by all stakeholder groups” it is the responsibility of the IATI secretariat to ensure a reliable aggregated flow of all data published to the standard is accessible. We need to provide a robust, timely and comprehensive data service which can be used by developers and data scientists to produce information products tailored to their specific needs.</p>
+<p>The current datastore, developed in the early days of IATI, is not fit for purpose and needs replacing.</p>
+<p>At a meeting of the IATI Governing Board in January this year it was agreed that it was now a priority to put a reliable and sustainable data service into place. The developer workshop held in Manchester in January had a brainstorming session on the desired functionality. This has formed the basis of these ToRs.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/3aeb9cece941e88d2b3b3e8fb8258ecd5a49da5f.jpg" data-download-href="https://discuss.iatistandard.org/uploads/default/3aeb9cece941e88d2b3b3e8fb8258ecd5a49da5f" title="ds.jpg"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/3aeb9cece941e88d2b3b3e8fb8258ecd5a49da5f_2_612x500.jpg" alt="ds" width="612" height="500" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/3aeb9cece941e88d2b3b3e8fb8258ecd5a49da5f_2_612x500.jpg, https://discuss.iatistandard.org/uploads/default/optimized/1X/3aeb9cece941e88d2b3b3e8fb8258ecd5a49da5f_2_918x750.jpg 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/3aeb9cece941e88d2b3b3e8fb8258ecd5a49da5f_2_1224x1000.jpg 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/3aeb9cece941e88d2b3b3e8fb8258ecd5a49da5f_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">ds.jpg</span><span class="informations">1337×1092 400 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>As our Technical Team is currently stretched (over and above its day-to-day commitments) with the consolidation and re-design of IATI’s many websites and web-delivered services, we advised the Board in its March meeting that we should consider outsourcing both the build and initial maintenance of a new datastore.</p>
+<p>Your comments <a href="https://docs.google.com/document/d/1-ejM-oGs9N-LhJBgduVvg8PJXhJhv6WdXz-KOT9TYxg/edit?usp=sharing" rel="nofollow noopener">on our draft document</a> are most welcome. If you could manage this in the next two weeks we would be very grateful.</p>
+<p>Please add comments relating to specific text in the document itself, but add more general feedback in this thread.</p>
+          <p><a href="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293/1</link>
+        <pubDate>Fri, 13 Apr 2018 08:32:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1293-1</guid>
+        <source url="https://discuss.iatistandard.org/t/terms-of-reference-for-a-new-iati-datastore/1293.rss">Terms of Reference for a new IATI Datastore</source>
+      </item>
+  </channel>
+</rss>

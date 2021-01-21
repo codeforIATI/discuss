@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using IATI data - uniquely identifying transactions</title>
+    <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549</link>
+    <description>Hi everyone
+
+I wanted to share something @David_Megginson &amp; @ximboden encountered via importing IATI data into the Financial Tracking System (FTS).  
+
+This might is an issue that some may have hit before.  It&#39;d be great to hear from others who **_regularly_** ingest IATI data into their projects, to understand if this is a headache, or not, or whether you have a workaround.  Thinking of @Herman @markbrough @tdavis  @siemvaessen @matmaxgeds and others....
+
+**Scenario**
+
+With FTS, we want to import IATI activities, to construct Flows.  A (obvious) vital cog to this is the IATI transaction.
+
+We also know that IATI publishers will be adding transactions to their activities over time - which is expected behavior.
+
+So - 
+
+- On first import an activity has **two transactions**.   
+- When the activity is updated, a month later, two more transactions have been added by the publisher.  The activity now has **four transactions**.
+- When we import the updated activity, we know it&#39;s some data we&#39;ve encountered before, because the ``activity-identifier`` is present.  That&#39;s helpful!
+- However, the transactions have no identifier.  Our import now gives us **six transactions** (the first two, plus the new four)!
+
+I can picture people frowning at this!  Of _course_, our system and data import routines _could_ have some extra process to generate and store a [hash of the data](https://en.wikipedia.org/wiki/Hash_function), for example - or even check the transactions dates and values etc etc.  We understand that, but the point is: **do we think it efficient to shift this overhead from the publisher to data users, each of whom would have to work out the problem and compute a workaround?**
+
+**A solution**
+
+The IATI ``transaction`` element does actually include a @ref attribute, which could be use to declare an identifier for a transaction.  For example:
+
+    &lt;transaction ref=&quot;1&quot;&gt;
+    &lt;transaction ref=&quot;2&quot;&gt;
+    &lt;transaction ref=&quot;3&quot;&gt;
+    &lt;transaction ref=&quot;4&quot;&gt;
+
+Or, more verbosely:
+
+    &lt;transaction ref=&quot;EX-AMPLE-ORG-ACTIVITY100-transaction1&quot;&gt;
+    &lt;transaction ref=&quot;EX-AMPLE-ORG-ACTIVITY100-transaction2&quot;&gt;
+    &lt;transaction ref=&quot;EX-AMPLE-ORG-ACTIVITY100-transaction3&quot;&gt;
+    &lt;transaction ref=&quot;EX-AMPLE-ORG-ACTIVITY100-transaction4&quot;&gt;
+
+Or even:
+
+    &lt;transaction ref=&quot;oranges&quot;&gt;
+    &lt;transaction ref=&quot;apples&quot;&gt;
+    &lt;transaction ref=&quot;pears&quot;&gt;
+    &lt;transaction ref=&quot;cashews&quot;&gt;
+
+(OK, that last example isn&#39;t advisable, but @reidmporter might like it)
+
+For our import to FTS, we know this solution actually works!  When publishers include a @ref, it acts as an identifier we can check, to understand if this is a transaction we&#39;ve seen before.
+
+We are aware of scenarios such as transactions being edited, or data being added to a transaction (a receiver-org activity-identifier, for example), but would appreciate we try and stick to the main point here: **should we strive to include a @ref that can act as a transaction identifier within any activity, to help data users?**
+ 
+It&#39;d be great to hear from others.</description>
+    
+    <lastBuildDate>Tue, 27 Nov 2018 17:58:37 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Bill – your suggestion to replace all transactions on every import is suitable for a system that passively tracks IATI reporting. For any system that involves active curation (e.g. transactions manually checked for duplicates, linked to non-IATI information like ministry accounting systems, etc) that requires an enormous amount of redundant manual effort on every import, which means that (at best) such systems will update from IATI less often because of the high cost.</p>
+<p>I agree with leaving them optional, but I think it would be good (a) to update the guidance in the next major number release to require persistence and activity-scope uniqueness, and (b) to require them for specific initiatives.</p>
+<p>In fact, there’s nothing inconsistent with the standard in formulating stronger requirements for specific applications (e.g. if you want your IATI reporting to be counted for humanitarian response plan or Grand Bargain counting, you <em>must</em> follow these additional constraints). But it sounds like making those constraints general (when transaction refs are present) in the next major release would be helpful to a wide range of users, not just FTS.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/19</link>
+        <pubDate>Tue, 27 Nov 2018 17:58:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-19</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="17" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>those using IATI for e.g. results data might prefer accuracy</p>
+</blockquote>
+</aside>
+<p>Don’t want to sidetrack this conversation, but results data and accuracy are a bit of an oxymoron.</p>
+<aside class="quote no-group" data-post="17" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>accounting systems</p>
+</blockquote>
+</aside>
+<p>I think <a class="mention" href="/u/herman">@Herman</a> makes an important point. Neither IATI nor AIMS are accounting systems. IATI data <strong><em>may</em></strong> be derived from a selective report run off a publisher’s accounting system. Most AIMS are a couple of steps removed from treasury systems. With a bit of luck they both contain good management information, but that is not the same thing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/18</link>
+        <pubDate>Mon, 12 Nov 2018 06:13:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-18</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="16" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>unique identifier can be derived by the data ingesting system (e.g. FTS) by combining the existing transaction elements</p>
+</blockquote>
+</aside>
+<p>I think this was the point of <a class="mention" href="/u/stevieflow">@stevieflow</a>’s original post</p>
+<aside class="quote no-group" data-post="1" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p><strong>do we think it efficient to shift this overhead from the publisher to data users, each of whom would have to work out the problem and compute a workaround?</strong></p>
+</blockquote>
+</aside>
+<p>I agree with <a class="mention" href="/u/stevieflow">@stevieflow</a> that it would be more efficient if this was shifted to data publishers, rather than data users (especially as I suspect that most publishers have this data already), with the benefits outlined by <a class="mention" href="/u/david_megginson">@David_Megginson</a>, and side benefits of a) no more edge cases, and b) the ability to directly link to transactions.</p>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> - good point, without making it mandatory, we will need both the <span class="mention">@ref</span> and logic - but it seems like a step in the right direction (with no impact for those publishers who want to opt out) to me. For users who want to use data from secondary publishers, the <span class="mention">@ref</span> will become even more useful as an alternative to adding the publisher  to lengthening list of factors needed to make a transaction unique.</p>
+<p><a class="mention" href="/u/herman">@Herman</a> - it sounds like you have had some bad experiences with accounting systems! However, I suspect that those using IATI for e.g. results data might prefer accuracy, as might those importing IATI data into systems like the FTS/AIMS, where things often need to add up a little bit more more precisely.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/17</link>
+        <pubDate>Sun, 11 Nov 2018 21:24:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-17</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="14" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>a) I am not sure I understand your technical vs functional differentiation - the case for a transaction ID is a technical thing that would help systems that use IATI data to function better (plus other stuff like direct links to specific transactions).</p>
+</blockquote>
+</aside>
+<p>I.m.o. the IATI standard should only contain non-derivable atomic business object for which there is a common understanding(e.g. ‘currency’, ‘disbursement’, ‘sector’, etc.).</p>
+<aside class="quote no-group" data-post="14" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>b) It is not necessary to be 100% accurate but this change would make it easier to be - why wouldn’t we want that? Is the ‘accounting system’ reference your way of saying that you feel that the extra effort to use unique transaction references is not worth the benefit?</p>
+</blockquote>
+</aside>
+<p>What I mean is that an unique identifier can be derived by the data ingesting system (e.g. FTS)  by combining the existing transaction elements (as mentioned by <a class="mention" href="/u/danmihaila">@danmihaila</a>).  As you already mentioned, there might be some edge cases, but as long as those have a low frequency, it might be sufficient to produce sensible information. It is i.m.o. not necessary that IATI has the same accuracy as an accounting system (where those edge-cases would not be acceptable).</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/16</link>
+        <pubDate>Fri, 09 Nov 2018 15:44:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-16</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="14" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I am not sure why anything would have to be made mandatory - a first step could be changing the guidance to say that if you do use transaction references, please keep them unique within an activity</p>
+</blockquote>
+</aside>
+<p>Surely, from a user point of view you need to adopt a lowest common denomenator scenario. If some publishers don’t have refs you need logic to deal with them, so you might as well apply that logic to everybody. Personally I have no objection to changing the guidance, but, being pragmatic, I’m not sure it would help you that much.</p>
+<aside class="quote no-group" data-post="14" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>seven respondents (out of 9)</p>
+</blockquote>
+</aside>
+<p>For all our good intentions this forum is a bit of an echo chamber for quite a small group of committed enthusiasts</p>
+<aside class="quote no-group" data-post="14" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Would members object…it would be great to know - how do we ask them?</p>
+</blockquote>
+</aside>
+<p>Here, but see ^^</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/15</link>
+        <pubDate>Fri, 09 Nov 2018 13:51:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-15</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/herman">@Herman</a> - a) I am not sure I understand your technical vs functional differentiation - the case for a transaction ID is a technical thing that would help systems that use IATI data to function better (plus other stuff like direct links to specific transactions). b) It is not necessary to be 100% accurate but this change would make it easier to be - why wouldn’t we want that? Is the ‘accounting system’ reference your way of saying that you feel that the extra effort to use unique transaction references is not worth the benefit?</p>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> - a) seven respondents (out of 9) said that having transaction IDs would be helpful/the best option, as they currently have to use a workaround that has some flaws identified in the thread. b) Would members object…it would be great to know - how do we ask them? c) If actioned, it would take several years to be implemented…sounds like we had better get started asap then! d) I am not sure why anything would have to be made mandatory - a first step could be changing the guidance to say that if you do use transaction references, please keep them unique within an activity?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/14</link>
+        <pubDate>Fri, 09 Nov 2018 12:25:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-14</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>  The comparison between the activity-id and the transaction-id is an interesting point you raised. The key difference i.m.o. between those two identifiers is that the activity-id should be <strong>globally unique</strong> and the transaction-id is <strong>publisher-unique</strong>. That is the reason why i.m.o. the transaction does not ‘deserve’ its own identifier. The use case for the transaction-id seems to be purely technical, and not functional.</p>
+<p>Another question I have is if it is really necessary to have 100% correctness by handling all edge-cases, since IATI is not an accounting system?</p>
+<p>I doubt that there are many real life transactions with the same amount on the same date to the same receiver with the same currency. When I find such transactions in an IATI publication, I treat them as duplicates since it happens that activities are being published in multiple files from the same publisher.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/13</link>
+        <pubDate>Fri, 09 Nov 2018 11:32:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-13</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>The intention of the (optional) <code>transaction/@ref</code> was to allow publishers to make a link back to their own systems.</p>
+<p>To change the standard to make this mandatory would involve:</p>
+<ul>
+<li>A major upgrade</li>
+<li>Backfilling all existing activities</li>
+</ul>
+<p>While I understand the problem, I don’t think <code>transaction/@ref</code> is the solution.</p>
+<ul>
+<li>Firstly, my reading of the community is that there is currently no appetite for a major upgrade.</li>
+<li>Secondly, it is possible that members could object to such a proposal.</li>
+<li>Thirdly, if actioned, it would take a further couple of years to be implemented.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/12</link>
+        <pubDate>Fri, 09 Nov 2018 10:48:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-12</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="10" data-topic="1549">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>When the trx id is a composition of existing trx elements, there is no need anymore for a seperate technical id</p>
+</blockquote>
+</aside>
+<p>I understand the logic, but on that basis, shouldn’t we also campaign for removing the activity IDs on the basis that they complicate the standard, as presumably they could also be replaced by an ID made from a composition of their elements?</p>
+<p>I suspect that either making a composite ID that is valid in all the edge cases is too complex (is it not valid/possible to have two transactions on the same day for the same amount?), or that there is also something inherently useful about having an independent ID e.g. as a simple reference - assuming that we are not suggesting to hash the unique information for each transaction to get the composite ID?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/11</link>
+        <pubDate>Fri, 09 Nov 2018 09:04:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-11</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>When the trx id is a composition of existing trx elements, there is no need anymore for a seperate technical id (it can be derived automatically if needed, so there is no need for complicating the standard). So the question seems to be what are the elements which make a real world trx unique and immutable?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/10</link>
+        <pubDate>Fri, 09 Nov 2018 08:39:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-10</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[samueldjohnson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m very new to IATI (just trying to get my head around it all), but I’ve worked with a wide range of information systems, and although your suggestion to replace all transactions makes sense, the problem with doing this without an identifier is that you’re very limited in the processing and analysis that you can then do with this data.  If, for example, you add further coding or link this data to other datasets, then without identifiers you’ll have to re-do this coding/linking for the full history of your data every time it’s re-imported - whereas if you use identifiers, then even if you refresh the full dataset, your existing codes and mappings will still work.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/9</link>
+        <pubDate>Wed, 07 Nov 2018 16:07:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-9</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[danmihaila]]></dc:creator>
+        <description><![CDATA[
+            <p>My 2 cents about this.<br>
+When I’ve been in DRC with <a class="mention" href="/u/bill_anderson">@bill_anderson</a> for the first IATI Pilot, we wiped all existing transactions (for 3 donors) and imported the transactions coming from IATI feeds. It was a matter of trust and decision with local AIMS which decided that the IATI transactions were more accurate compared with what they had.<br>
+This can also happen if there is an update: old transaction will be dropped and the system will get the latest published transactions.</p>
+<p>It will be indeed great if transaction could carry an ID (similar with activities or organizations). I assume it is not an easy task, but it could be a composite ID: date, type, value, ref, etc.<br>
+As recommendation: at AIMS level there could be some rules that will allow transactions to be updated, dropped, not touched in case IATI feeds are bringing in or other input.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/8</link>
+        <pubDate>Wed, 07 Nov 2018 14:02:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-8</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/stevieflow">@stevieflow</a> thanks for raising this isssue. Here is <a href="http://bd-iati.github.io/development/sprint-6/#3-handling-updates-of-iati-financial-data" rel="nofollow noopener">the methodology we used in Bangladesh for handling updates</a>. We use a similar process to <a class="mention" href="/u/tdavis">@tdavis</a>’ approach in AMP. We first see whether the transaction already exists in the AIMS, considering a transaction as unique based on the transaction date, the transaction type and the transaction value (<a href="https://github.com/BD-IATI/edi/blob/master/AIMS_BD_IATI.DAL/AimsDAL.cs#L1117" rel="nofollow noopener">see the code here</a>). We stop import if there is data in the AIMS that is not in IATI, on the basis that a user may have entered data into the AIMS that they wouldn’t then want overwritten by IATI (because the effect would be to either double-count funds or to remove existing information).</p>
+<p>This seems to have worked in practice (because it is unlikely to happen that a transaction with identical values for (<code>date</code>, <code>type</code>, <code>value</code>) is retrospectively added on the same date as an existing transaction). Having said that, I think I agree with <a class="mention" href="/u/bill_anderson">@bill_anderson</a> that wiping all the transactions and then inserting new ones is the safest way of proceeding. I guess it would just make things slower, though possibly not that much slower, I’m not sure.</p>
+<p>It agree it would be nice to have unique references for transactions and perhaps we can move that way over time, but in the interim we will need techniques like this to continue to handle this kind of issue.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/7</link>
+        <pubDate>Tue, 06 Nov 2018 17:33:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-7</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I know FTS is different from an AIMS, but I would still opt for this advice. Replace all transactions on every import.</p>
+<blockquote>
+<p><strong>Handling Activity Updates</strong></p>
+<p>As an activity progresses your development partners will continue to keep their project and financial management records up to date and modified versions of the activity will be published. The way IATI works is for the whole record, not just those parts that have been changed, to be republished each time. In a typical IATI reporting scenario most of the details of the activity are in place when first reported, and updates contain new financial transactions, activity budgets (forward-looking predictions of spend) and, where reported, information on results.</p>
+<p>If your import system is configured to alert you to any and every difference between your partner’s version of an activity and your own record, all the changes you made when the activity was new (as suggested in the previous section), will be flagged up as discrepancies to be resolved every time the activity is updated. This will bog your staff down in hours of unnecessary time wasting. For that reason it is suggested that:</p>
+<ul>
+<li>Financial transactions, budgets and results are automatically accepted during updates.</li>
+<li>Other fields that you decide (in your configuration) you will never modify may be added to this list.</li>
+<li>You NEVER make any changes to these fields. (See the next section on fixing data in these fields)</li>
+<li>All other fields are NOT updated. If your system is clever enough to alert you to when your partner has made a change (from their original) to one of these field – this is a bonus.<br>
+<a href="https://sites.google.com/site/useofiatidataincountrysystems/the-guide/auto-configure">https://sites.google.com/site/useofiatidataincountrysystems/the-guide/auto-configure</a>
+</li>
+</ul>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/6</link>
+        <pubDate>Tue, 06 Nov 2018 16:20:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-6</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>As mentioned above, transaction refs do already exist in the standard. <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/transaction/#attributes" rel="nofollow noopener">From the definition</a>, it’s apparent that they weren’t originally intended for this purpose, though. They’re missing some guarantees that would make them useful for this purpose.</p>
+<p>For this to work, transaction refs would need to at least be guaranteed <strong>immutable</strong> (i.e. can’t change over time), and (as <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> mentions) <strong>unique within an activity</strong>. This would mean changing the definition.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/5</link>
+        <pubDate>Tue, 06 Nov 2018 11:06:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-5</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[tdavis]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven, indeed we have encountered this issue. To avoid duplicates when importing IATI data to AMP, we check if the transaction already exists in the AMP activity by checking if the transaction type,  adjustment type, transaction date, currency and transaction amount in the source activity match any of transactions in the AMP activity. Having a unique identifier for the transaction would make that a simpler process.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/4</link>
+        <pubDate>Mon, 05 Nov 2018 21:07:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-4</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks from me too for setting this all out <a class="mention" href="/u/stevieflow">@stevieflow</a></p>
+<p>Because of the difficulties of transactions not having any unique reference all the imports I have worked on have been to present all the transactions available to the user importing the activity, and allowing them to select the specific transactions to import. As you can tell - this means that using IATI data is semi-automatic at best - and only one activity at a time - certainly not the sales pitch that is circulated at the high level meetings about machines talking to machines etc! I know the system <a class="mention" href="/u/markbrough">@markbrough</a> and I worked on in Bangladesh allowed for a degree of dynamic import e.g. once a user has initially semi-automatically imported an activity, then the system can interpret those choices going forwards to keep it up to date - but Mark is much better placed to explain how.</p>
+<p>I think transaction refs would be great (what can we do to make this happen?) - and the publisher systems I have seen either have them anyway, or if not, could easily make them by concatenating  timestamps with some other transaction data.</p>
+<p>My only other thought was that these references only have to be unique within the activity (could they even be just a counter that increases by 1 for each transaction?) and in combination with the activity code, they would then be globally unique - and that would be very cool to be able to instantly point to a single transaction.</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/3</link>
+        <pubDate>Sun, 04 Nov 2018 20:55:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-3</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, <a class="mention" href="/u/stevieflow">@stevieflow</a> — that was a good overview of the problem.</p>
+<p>We’ve always assumed that activities would be first-class objects in an IATI user’s database — we attach identifiers not only for cross-references, but so that the user knows if they’re dealing with the same activity they saw last time (possibly with some updates), or an entirely-new activity.</p>
+<p>Unfortunately, without transaction/<span class="mention">@ref</span>, we can’t keep track of transactions the same way. So if a data user does extra work, like linking a transaction to one of their own business objects (eg a budget line in a partner country’s accounting system), they have to redo that work every time they read an updated IATI activity file.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/2</link>
+        <pubDate>Thu, 01 Nov 2018 21:23:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-2</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+      <item>
+        <title>Using IATI data - uniquely identifying transactions</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone</p>
+<p>I wanted to share something <a class="mention" href="/u/david_megginson">@David_Megginson</a> &amp; <a class="mention" href="/u/ximboden">@ximboden</a> encountered via importing IATI data into the Financial Tracking System (FTS).</p>
+<p>This might is an issue that some may have hit before.  It’d be great to hear from others who <strong><em>regularly</em></strong> ingest IATI data into their projects, to understand if this is a headache, or not, or whether you have a workaround.  Thinking of <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/markbrough">@markbrough</a> <a class="mention" href="/u/tdavis">@tdavis</a>  <a class="mention" href="/u/siemvaessen">@siemvaessen</a> <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> and others…</p>
+<p><strong>Scenario</strong></p>
+<p>With FTS, we want to import IATI activities, to construct Flows.  A (obvious) vital cog to this is the IATI transaction.</p>
+<p>We also know that IATI publishers will be adding transactions to their activities over time - which is expected behavior.</p>
+<p>So -</p>
+<ul>
+<li>On first import an activity has <strong>two transactions</strong>.</li>
+<li>When the activity is updated, a month later, two more transactions have been added by the publisher.  The activity now has <strong>four transactions</strong>.</li>
+<li>When we import the updated activity, we know it’s some data we’ve encountered before, because the <code>activity-identifier</code> is present.  That’s helpful!</li>
+<li>However, the transactions have no identifier.  Our import now gives us <strong>six transactions</strong> (the first two, plus the new four)!</li>
+</ul>
+<p>I can picture people frowning at this!  Of <em>course</em>, our system and data import routines <em>could</em> have some extra process to generate and store a <a href="https://en.wikipedia.org/wiki/Hash_function" rel="nofollow noopener">hash of the data</a>, for example - or even check the transactions dates and values etc etc.  We understand that, but the point is: <strong>do we think it efficient to shift this overhead from the publisher to data users, each of whom would have to work out the problem and compute a workaround?</strong></p>
+<p><strong>A solution</strong></p>
+<p>The IATI <code>transaction</code> element does actually include a <span class="mention">@ref</span> attribute, which could be use to declare an identifier for a transaction.  For example:</p>
+<pre><code>&lt;transaction ref="1"&gt;
+&lt;transaction ref="2"&gt;
+&lt;transaction ref="3"&gt;
+&lt;transaction ref="4"&gt;
+</code></pre>
+<p>Or, more verbosely:</p>
+<pre><code>&lt;transaction ref="EX-AMPLE-ORG-ACTIVITY100-transaction1"&gt;
+&lt;transaction ref="EX-AMPLE-ORG-ACTIVITY100-transaction2"&gt;
+&lt;transaction ref="EX-AMPLE-ORG-ACTIVITY100-transaction3"&gt;
+&lt;transaction ref="EX-AMPLE-ORG-ACTIVITY100-transaction4"&gt;
+</code></pre>
+<p>Or even:</p>
+<pre><code>&lt;transaction ref="oranges"&gt;
+&lt;transaction ref="apples"&gt;
+&lt;transaction ref="pears"&gt;
+&lt;transaction ref="cashews"&gt;
+</code></pre>
+<p>(OK, that last example isn’t advisable, but <a class="mention" href="/u/reidmporter">@reidmporter</a> might like it)</p>
+<p>For our import to FTS, we know this solution actually works!  When publishers include a <span class="mention">@ref</span>, it acts as an identifier we can check, to understand if this is a transaction we’ve seen before.</p>
+<p>We are aware of scenarios such as transactions being edited, or data being added to a transaction (a receiver-org activity-identifier, for example), but would appreciate we try and stick to the main point here: <strong>should we strive to include a <span class="mention">@ref</span> that can act as a transaction identifier within any activity, to help data users?</strong></p>
+<p>It’d be great to hear from others.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549/1</link>
+        <pubDate>Thu, 01 Nov 2018 21:01:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1549-1</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-uniquely-identifying-transactions/1549.rss">Using IATI data - uniquely identifying transactions</source>
+      </item>
+  </channel>
+</rss>

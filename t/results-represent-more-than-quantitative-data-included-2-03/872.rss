@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Results – represent more than quantitative data (included 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872</link>
+    <description>**Title**
+Results – represent more than quantitative data
+
+**Standard**
+Activity
+
+**Schema Object**
+1)	IndicatorMeasure Codelist
+2)	iati-activities/iati-activity/result/indicator/baseline
+iati-activities/iati-activity/result/indicator/period/target
+iati-activities/iati-activity/result/indicator/period/actual
+
+**Type of Change**
+1) Add code to codelist
+2) Change to Schema
+
+**Issue**
+•	Currently, only quantitative indicators (units or percentages) may be represented using the IATI standard.
+•	_Why is this a problem?_: While some quantitative indicators can provide direct meaning (for example: percentage of patients that responded positively to drug X) they cannot reflect the qualitative context that is often necessary to articulate the meaning behind the values. 
+
+There are many interventions in international development where quantitative measures are not relevant or meaningful, for example in relation to policy-influencing and advocacy work, and in some forms of capacity-development and empowerment interventions. These are common areas of work for civil society organisations. 
+
+If there is not scope to report such results, CSOs will try to &#39;play the game&#39; either by doing more of the measurable work and less of the hard-to-measure work, even if the latter is vital, or as we are already seeing, by converting qualitative results into quantitative results. Conversion of results into a quantitative format can be time-consuming and expensive, provides little or no value to the initiative, risks poor quality and redundant data, and provides little value for money.   
+
+
+**Proposal**
+1)	Add a new code to the Indicator Measure codelist for Indicator attribute @measure 
+Code = qualitative  
+Description = This indicator is qualitative
+
+(see http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/ and http://iatistandard.org/202/codelists/IndicatorMeasure/ for relevant sections of the standard)
+
+2)	In order to avoid having to use a unit or a percentage, make the @value attribute for indicator/baseline, and period/target and period/actual elements optional
+(http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/period/target/ for example relevant section of the standard)
+This will have the additional advantage of avoiding having to record ‘no baseline available’ as a zero (0) value – no value and zero value are very different concepts in monitoring and evaluation and having to record a zero value may cause issues with data quality.
+
+**Standards Day**
+Workshopped at the TAG 2017 and mentioned at the end of the Standards day as part of the results section.  Although there was very little time to discuss the proposal, no criticism of the proposal was offered. Proposal has been on IATI Discuss since March 2017.
+
+**Links**
+•	This topic is discussed here: http://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749 
+•	This topic addresses Principle 1 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – see http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/.  Technical suggestions were devised by technology specialists at the Nethope Athens conference March 2017.  In all around 30 M&amp;E and technical specialists were involved in this consultation and it builds on a previous consultation by Bond 2015-16 (https://www.bond.org.uk/resources/publishing-results-to-iati - also on discuss.iatistandard : https://discuss.iatistandard.org/t/sharing-results-using-iati-data-standard-will-it-improve-learning-and-accountability/431 ).</description>
+    
+    <lastBuildDate>Wed, 25 Oct 2017 13:55:55 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/52">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/52</link>
+        <pubDate>Wed, 25 Oct 2017 13:55:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-52</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal has been been included in the 2.03 upgrade. It can be viewed in the following two Discuss posts:</p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Proposal of 2.03 Content</a></p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Technical Proposal for the 2.03 Upgrade</a></p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/51">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/51</link>
+        <pubDate>Wed, 25 Oct 2017 13:55:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-51</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks so much <a class="mention" href="/u/mikesmith">@mikesmith</a> <a class="mention" href="/u/bwalkden">@bwalkden</a> <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/markbrough">@markbrough</a>. I will change the status of this issue to a big YES.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/50">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/50</link>
+        <pubDate>Fri, 18 Aug 2017 08:50:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-50</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree! To pull it all together I think its:</p>
+<p>Add three codes to the IndicatorMeasure codelist:</p>
+<ul>
+<li>Nominal - the indicator is measured as a quantitative nominal scale.</li>
+<li>Ordinal - the indicator is measured as a quantitative ordinal scale.</li>
+<li>Qualitative - the indicator is qualitative</li>
+</ul>
+<p>and make the following value attributes optional</p>
+<ul>
+<li>result/indicator/baseline/<span class="mention">@value</span>
+</li>
+<li>result/indicator/period/target/<span class="mention">@value</span>
+</li>
+<li>result/indicator/period/actual/<span class="mention">@value</span>
+</li>
+</ul>
+<p>add 3 rules for the IATI guidelines:<br>
+1 - the <span class="mention">@value</span> must be omitted for qualitative measures<br>
+2 - The <span class="mention">@value</span> must be included for non-qualitative measures<br>
+3 - The <span class="mention">@value</span> must be a valid number for all non-qualitative measures.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/49">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/49</link>
+        <pubDate>Thu, 17 Aug 2017 14:43:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-49</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[bwalkden]]></dc:creator>
+        <description><![CDATA[
+            <p>Actually, I’d go slightly further than my previous reply and suggest that for qualitative results the <span class="mention">@value</span> must be omitted (not even an option), and for quantitative results it must be present. However I’d be perfectly content with Herman’s suggestion rather than delay further.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/48">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/48</link>
+        <pubDate>Thu, 17 Aug 2017 14:02:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-48</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[bwalkden]]></dc:creator>
+        <description><![CDATA[
+            <p>Makes good sense to me.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/47">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/47</link>
+        <pubDate>Thu, 17 Aug 2017 13:58:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-47</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/annadownie">@annadownie</a>  <a class="mention" href="/u/bwalkden">@bwalkden</a>  Yes, you are right. these are the two major points. The discussion is not about whether or not IATI should support qualitative results for a single activity, but about how qualitative results can be modelled in IATI without complicating data-use. When you want to do an statistical analysis over multiple activities, then you really need non-qualitative results.</p>
+<p><a class="mention" href="/u/mikesmith">@mikesmith</a> Thanks for your comments. I think we could have an agreement</p>
+<aside class="quote no-group" data-post="43" data-topic="872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/mikesmith/40/252_1.png" class="avatar"> mikesmith:</div>
+<blockquote>
+<p>Add three codes to the IndicatorMeasure codelist:</p>
+<p>Nominal - the indicator is measured as a quantitative nominal scale.<br>
+Ordinal - the indicator is measured as a quantitative ordinal scale.<br>
+Qualitative - the indicator is qualitative</p>
+<p>and make the following value attributes optional</p>
+<p>result/indicator/baseline/<span class="mention">@value</span></p>
+<p>result/indicator/period/target/<span class="mention">@value</span></p>
+<p>result/indicator/period/actual/<span class="mention">@value</span></p>
+</blockquote>
+</aside>
+<p>if we add 2 <strong>rules</strong> for the IATI guidelines:<br>
+<strong>1 - The <span class="mention">@value</span> may only be optional if the indicator measure is 'Qualitative’</strong><br>
+<strong>2 - The <span class="mention">@value</span> must be a valid number for all non-qualitative measures.</strong></p>
+<p>Does this make sense?</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/46">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/46</link>
+        <pubDate>Thu, 17 Aug 2017 13:31:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-46</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[bwalkden]]></dc:creator>
+        <description><![CDATA[
+            <p>I have no issues with these suggestions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/45">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/45</link>
+        <pubDate>Thu, 17 Aug 2017 12:23:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-45</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>TL;DR:<br>
++1 on using narrative rather than <code>&lt;document-link&gt;</code><br>
++1 on making <code>@value</code> optional</p>
+<aside class="quote no-group" data-post="42" data-topic="872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/b/5f9b8f/40.png" class="avatar"> bwalkden:</div>
+<blockquote>
+<p>the narrative can contain a summary that is conveniently displayed by visualisation tools, and people are not obliged to follow links (sometimes over slow and difficult connections) to arbitrary document types which are not easily amenable to further analysis / use by query &amp; other tools</p>
+</blockquote>
+</aside>
+<p>Fully agree with this. It would be much easier to use such data.</p>
+<p>I have a lot of time for the goal of making all the data easy to process and use, for assessing programmatically whether projects have succeeded (in the sense that they have met their intended goals). However, on the question of whether the IATI Standard should require qualitative results to be quantified – my strong suggestion is not. I think we should be guided by the M&amp;E community (and we have received some pretty clear feedback from them).</p>
+<p>There are clearly good reasons for not quantifying particular results (I guess particularly when looking at complex change, where pre-planned quantitative indicators can just lead to isomorphic mimicry; and where qualitative results may provide a richer depth and more accurate picture than quantitative ones).</p>
+<p>Secondly, the IATI Standard shouldn’t be trying to force changes in the way that monitoring and evaluation proceeds especially when M&amp;E experts are telling us that this is not a good idea.</p>
+<p>Finally, from a practical perspective, many systems that have some good results data do not have that data available in ways that would allow results to be quantified. Requiring them to be quantified is likely to lead to less useful data (e.g. just putting “unquantifiable” as the value).</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/44">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/44</link>
+        <pubDate>Thu, 17 Aug 2017 12:09:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-44</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>(apologies for my lack of responsiveness)</p>
+<p>Without forcing a change in M&amp;E practice and/or distorting/shoehorning data (incorporating <a class="mention" href="/u/herman">@Herman</a>’s view about allowing ordinal scales, <a class="mention" href="/u/bart_stevens">@Bart_Stevens</a>’ about nominal scales, and the M&amp;E and <a class="mention" href="/u/bart_stevens">@Bart_Stevens</a>’ view about allowing qualitative data) can we agree to:</p>
+<p>Add three codes to the IndicatorMeasure codelist:</p>
+<ul>
+<li>Nominal - the indicator is measured as a quantitative nominal scale.</li>
+<li>Ordinal - the indicator is measured as a quantitative ordinal scale.</li>
+<li>Qualitative - the indicator is qualitative</li>
+</ul>
+<p>and make the following value attributes optional</p>
+<ul>
+<li>result/indicator/baseline/<span class="mention">@value</span>
+</li>
+<li>result/indicator/period/target/<span class="mention">@value</span>
+</li>
+<li>result/indicator/period/actual/<span class="mention">@value</span>
+</li>
+</ul>
+<p>Using only document-link to record qualitative actuals (per <a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895">Add document-link to Results indicator (included 2.03)</a> ) would also require <span class="mention">@value</span> to be optional, but suggest “Qualitative” could be used for IndicatorMeasure rather than adding a fourth code to the codelist.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/43">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/43</link>
+        <pubDate>Thu, 17 Aug 2017 11:56:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-43</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[bwalkden]]></dc:creator>
+        <description><![CDATA[
+            <p>I said in an earlier contribution that just because something can be quantified, it doesn’t mean it’s desirable or practical to quantify it. Qualitative research is a standard part of participatory studies and is widely used in the sector, so by including it we are not doing anything that is outside the scope of the subject matter. The M&amp;E people asked for this to be included in the standard, and therefore in my view the ability to report qualitative results should be included – I can certainly see no reason not to. This implies that for qualitative results the <span class="mention">@value</span> attributes must be optional; however, if for some reason they remain mandatory then the associated documentation should state that the numbers in the attribute are meaningless by definition.</p>
+<p>The question then remains of how to implement it. The choices seem to be between a narrative field and a document link. Technically speaking I have a slight preference for a narrative, and indeed I think the best approach might be to allow both (at least one being mandatory), so that the narrative can contain a summary that is conveniently displayed by visualisation tools, and people are not obliged to follow links (sometimes over slow and difficult connections) to arbitrary document types which are not easily amenable to further analysis / use by query &amp; other tools.</p>
+<p>Bob Walkden<br>
+Business Architect<br>
+Save the Children UK</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/42">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/42</link>
+        <pubDate>Thu, 17 Aug 2017 10:01:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-42</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/annadownie">@annadownie</a> I agree that another call - involving all interested parties reviewing all outstanding results issues - is a very good idea.</p>
+<p>We can draft an agenda (summarising where we are on all outstanding issues) and a doodle poll to agree on a date.</p>
+<p>If I may be so bold I think it would also be extremely helpful if the interested NGO communities in the UK and Netherlands could also speak with a more collaborative voice on some of these issues.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/41">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/41</link>
+        <pubDate>Thu, 17 Aug 2017 09:21:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-41</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[annadownie]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve just re-read this thread following Bill’s email asking us to review the discussion as I’m disappointed this hasn’t reached consensus (as it’s a big challenge in our work). To summarise:</p>
+<p>The IATI Technical Team put forward the original submission (which was based on a consultation with M&amp;E people in a wide variety of organisations):</p>
+<p>Add “9 - Qualitative” to the IndicatorMeasure codelist<br>
+Make the following value attributes optional<br>
+result/indicator/baseline/<span class="mention">@value</span><br>
+result/indicator/period/target/<span class="mention">@value</span><br>
+result/indicator/period/actual/<span class="mention">@value</span></p>
+<p>At the consultation call the proposal received no objections.</p>
+<p>I may have missed something someone said in the thread, but I think the subsequent comments all agreed with the proposal with the exception of <a class="mention" href="/u/herman">@Herman</a> (sorry to single you out!).</p>
+<p>If I’ve understood correctly, the points of disagreement are views on whether:</p>
+<ol>
+<li>All results can be translated meaningfully and usefully into a quantitative scale of some kind</li>
+<li>If they can’t, qualitative results should only be communicated through a document link</li>
+</ol>
+<p>This may have already happened, but would a call between <a class="mention" href="/u/herman">@Herman</a> and the original proposers of the change, such as <a class="mention" href="/u/mikesmith">@mikesmith</a> be helpful to talk directly about the point of disagreement and see if we can find a way forward?</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/40">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/40</link>
+        <pubDate>Thu, 17 Aug 2017 08:49:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-40</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bart_stevens">@Bart_Stevens</a> made the interesting point that there are also nominal scales, in which one value is not better than the other. That kind of ‘result’ could also be expressed by adding a measure type ‘nominal’. I have the feeling though that this does not represent an actual result. But I might be wrong here: an typical example showing that a nominal scale can represent a valid result would be helpful in this discussion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/39">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/39</link>
+        <pubDate>Thu, 10 Aug 2017 07:56:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-39</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <ol>
+<li>I would suggest to add and value in the IndicatorMeasure codelist “Ordinal” (see  <a href="https://en.wikipedia.org/wiki/Ordinal_data" rel="nofollow noopener">WiKi</a>). The rule is that when you use this measure type the <span class="mention">@value</span> must be a positive integer.  In this way also other ordinal scales can be accommodated (see the example in the <a href="https://en.wikipedia.org/wiki/Ordinal_data" rel="nofollow noopener">WiKi</a> on ordinal data). The meaning of the ordinal values can be described in the indicator narrative.</li>
+</ol>
+<p>This setup would allow great flexibility to model all kind of results, eg responses in surveys, questionnaires, etc.</p>
+<ol start="2">
+<li>Yes definitely: measures should not be in text. Text measures can not be summarized, aggregated or otherwise analyzed thus making the use of results-data very difficult if not impossible.</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/38">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/38</link>
+        <pubDate>Thu, 10 Aug 2017 07:46:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-38</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, <a class="mention" href="/u/herman">@Herman</a> that does make sense. To make sure I do understand …</p>
+<ul>
+<li>A value should be added to the <a href="http://iatistandard.org/202/codelists/IndicatorMeasure/">IndicatorMeasure</a> codelist that is associated with a rule that the related <code>@value</code> can only be not/partly/fully achieved. (Naming this ‘Qualitative’ is perhaps misleading as it is defining a specific way of measuring a qualitative condition)</li>
+<li>The proposal to accept qualitative results where the ‘measure’ is explained in text, not in the <code>@value</code> should not be accepted.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/37">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/37</link>
+        <pubDate>Wed, 09 Aug 2017 16:14:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-37</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_Anderson</a> The real point I tried to make was that the whole design of the results framework in IATI is geared towards publishing MEASURABLE results. Therefore we have baseline, target and actual values which enable the publisher to express in howfar the results of the activity are being achieved in a certain timeframe.</p>
+<p>Therefore the value is mandatory.</p>
+<p>If you want to publish qualitative results, the results are by definition not measurable. Therefore I think qualitative results should be published as a linked document as suggested by <a class="mention" href="/u/rolfkleef">@rolfkleef</a>, using a document category ‘Qualitative results’.</p>
+<p>The other part of the discussion was that what is seen as a qualitative result, can often be expressed on an ordinal scale (see example above). This type of results does belong i.m.o. the IATI results framework. In that case, as always, the value is mandatory.</p>
+<p>So in summary: I suggest to add the ordinal scale as a measure type , thus allowing a lot more flexibility in results reporting (no need for objective quantification). True qualitative results can easily be accommodated with the current link-document functionality. Hope this makes sense.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/36</link>
+        <pubDate>Wed, 09 Aug 2017 15:22:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-36</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/erikh">@ErikH</a> I think there is consensus to include qualitative indicators. The outstanding issue is whether to make <code>@value</code> optional and/or assign an ordinal value.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/35</link>
+        <pubDate>Wed, 09 Aug 2017 12:04:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-35</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[ErikH]]></dc:creator>
+        <description><![CDATA[
+            <p>As stated earlier by my colleague, the Netherlands Enterprise Ageny is in favor of having the opportunity to represent qualitative indicators using the IATI standard.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/34</link>
+        <pubDate>Wed, 09 Aug 2017 11:50:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-34</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/herman">@Herman</a> in my view the decision to classify qualitative results as not/partly/fully achieved is one for the M&amp;E community to agree upon. Are there similar approaches used in other systems? (<a class="mention" href="/u/mikesmith">@mikesmith</a> et al?)</p>
+<p>Also, I’m not sure that having a meaningful value of ‘0’ is helpful for data users needing to distinguish between different meanings for zero and null.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/33</link>
+        <pubDate>Wed, 09 Aug 2017 10:07:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-33</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/herman">@Herman</a> Thank you for your comments. During the consultation call the proposal about using ordinal scale was mentioned but no views were expressed either way (for or against).<br>
+The consultation call was attended by 8 representatives from different organisations, including <a class="mention" href="/u/mikesmith">@mikesmith</a> and other members who have previously engaged with the results agenda.</p>
+<p>We welcome further discussion on this proposal.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/32</link>
+        <pubDate>Thu, 20 Jul 2017 14:17:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-32</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a>:  Who where involve in the consultation call?</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/31</link>
+        <pubDate>Wed, 19 Jul 2017 09:27:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-31</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Back from vacation I read through all comments resulting in the decision to add this proposal to 2.03. I still have severe doubts that this is the correct way forward.</p>
+<p>The example given by <a class="mention" href="/u/mikesmith">@mikesmith</a> does i.m.o. clearly shows that an ordinal value could easily be defined to measure the success of reaching the goal of the intended intervention:<br>
+0 - not achieved (it is not feasible to integrate hygiene promotion into the vaccination program)<br>
+1 - partly achieved (it is partly feasible to integrate hygiene promotion into the vaccination program)<br>
+2 - fully achieved (it is fully feasible to integrate hygiene promotion into the vaccination program)</p>
+<p>Adding this type of ordinal values, would enable answering very interesting questions, especially when multiple organizations and many activities are involved in the implementation of such a programme eg:</p>
+<ul>
+<li>which programme improvement interventions are actually successful?</li>
+<li>which programme intervention prove unsuccessful and what can we learn from it?</li>
+<li>in which countries is such an intervention successful?</li>
+<li>…</li>
+</ul>
+<p>From the viewpoint of a single activity, it does not matter very much if an result value is not defined. From the viewpoint of portfolio management when you are dealing with many activities implemented by many organizations, you lose a lot of analytical power by allowing qualitative results only. I.m.o. you should always be able to define a measure for success. If you can’t, than what is the point of doing the activity at all?</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/30</link>
+        <pubDate>Wed, 19 Jul 2017 09:26:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-30</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Notes from consultation calls w/c 3rd July</p>
+<p>Outcome:<br>
+The proposal was reviewed by those on the call and there was no objection from the group.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/29</link>
+        <pubDate>Fri, 07 Jul 2017 12:10:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-29</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – represent more than quantitative data (included 2.03)</title>
+        <dc:creator><![CDATA[Bart_Stevens]]></dc:creator>
+        <description><![CDATA[
+            <p>Maybe a bit late, but I would still like to add my 2 cents from a measurement- technical point of view:</p>
+<p>Qualitative measurements are fundamentally different from value-based measurements and ordinal measurements. As other commenters rightly remarked, we shouldn’t force people to reduce everything to values. However, you can’t in all circumstances reduce qualitative measurements to an ordinal scale either.</p>
+<p>Ordinal scales are a breed on their own. Should we wish to integrate ordinal scales in the activity standard then it’s not sufficient to have tags for target and actual values. You need additional provisions to be able to register the list of codes/values and their respective explanation (text).</p>
+<p>In some cases you can make a summary of qualitative information by using a nominal scale rather than an ordinal one. This means you can use values but one value is not better than the other.</p>
+<p>About targets: in some cases you can have a target even when you use qualitative information in the sense that you describe a desired situation. But in other cases this may not be possible. Qualitative information is also useful to describe unexpected but very important effects, in which case you don’t have a target.</p>
+<p>Finally, there is more than just numbers or (qualitative) text. Working on project management software I identified 17 different kinds of indicators so far and that is certainly not the end of it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/26</link>
+        <pubDate>Thu, 22 Jun 2017 10:33:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-872-26</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872.rss">Results – represent more than quantitative data (included 2.03)</source>
+      </item>
+  </channel>
+</rss>

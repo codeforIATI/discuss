@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Invitation: IATI Standard guidance review webinar 3</title>
+    <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904</link>
+    <description>Following the success of last year’s [guidance consultations](https://iatistandard.org/en/news/interpreting_iatis_standard_made_easier_with_new_guidance/), the IATI technical team is inviting the IATI Community to join the third guidance webinar on 1st April. We’ll be reviewing the newly improved IATI results and conditions guidance and discussing what ‘recommendations’ should be included. You don’t need to have participated in the previous webinars to contribute. **The deadline to sign-up is Friday 13th of March.**
+
+**What will the webinar cover?**
+
+The IATI technical team has rewritten and added additional content to existing IATI Standard guidance currently published on the [Activity](http://reference.iatistandard.org/203/activity-standard/overview/) and [Organisation](http://reference.iatistandard.org/203/organisation-standard/overview/) overview pages on [reference.iatistandard.org](http://reference.iatistandard.org/). This webinar will look specifically at the result and conditions elements. We want you to review the content of the new pages and provide feedback:
+
+* Review pieces of additional guidance
+
+* Highlight and suggest areas of the guidance which could be better explained
+
+* Identify gaps
+
+* Provide use cases for IATI data where relevant
+
+If you are interested in helping us, please send an e-mail to support@iatistandard.org indicating if you would like to join the webinar and / or the review process. We will share the guidance to be reviewed and commented on with participants before the webinars.
+
+**Why rewrite IATI Standard guidance?**
+
+The IATI technical team is undertaking this process as part of our ongoing project to consolidate and improve the guidance documentation and make it available on the [IATI Standard ](https://iatistandard.org/en/)website, which was launched in 2018.
+
+We hope to:
+
+* Ensure the overview guidance pages are written in a user-friendly language to help data publishers and users better understand the IATI Standard
+
+* Add additional guidance for publishers to help improve the consistency of data published to IATI
+
+*Do note:*
+
+We have split the overview guidance pages into various groups. Further guidance pages will be reviewed throughout the year.
+
+**Webinar dates**
+
+* &lt;b&gt;&lt;i&gt;Webinar 3 Wednesday 1 April 3.30pm - 4.30pm UK time.&lt;/i&gt;&lt;/b&gt; This webinar will cover three pages of guidance covering results and conditions.
+
+* &lt;b&gt;&lt;i&gt;Upcoming webinar 4 (tbc).&lt;/i&gt;&lt;/b&gt; This webinar will cover three pages of guidance, covering identifiers, converting currencies and extending the standard (namespaces). More details coming soon.
+
+*Cannot attend?*
+
+If you are keen to review the updated guidance but cannot attend the webinar, you can still add your voice by providing written feedback. The webinar will be recorded and can be sent to you to listen. Please let us know.
+
+**Sign-up by Friday 13th of March**
+
+To sign-up please e-mail support@iatistandard.org letting us know you are interested in being part of the process and state if you can attend. We encourage you to share this invitation with relevant people in your networks.
+
+Let us know if you have any questions and we look forward to working with you on this important piece of work!</description>
+    
+    <lastBuildDate>Fri, 21 Aug 2020 07:01:03 +0000</lastBuildDate>
+    <category>Consultations</category>
+    <atom:link href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Ahh, I see. Great – thanks for clarifying, <a class="mention" href="/u/alex_miller">@alex_miller</a>.</p>
+<p>EDIT: Did you consider fetching the last updated timestamp from version control, instead of using page metadata? Version control stores this information, and duplicating it adds extra work and is likely to cause discrepancies (<a href="https://github.com/IATI/IATI-Guidance/pull/349#issuecomment-678030064" rel="nofollow noopener">as seen here</a>).</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/15</link>
+        <pubDate>Thu, 20 Aug 2020 09:29:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-15</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[alex_miller]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Andy,</p>
+<p>Wagtail attempts to pick up the date encoded in the metadata of the guidance RST files, and failing that defaults to the date the page itself was updated. It’s hard to see the metadata tags because Github renders the RST, but you can see them at the bottom of the raw file: <a href="https://raw.githubusercontent.com/IATI/IATI-Guidance/master/en/understanding-results.rst">https://raw.githubusercontent.com/IATI/IATI-Guidance/master/en/understanding-results.rst</a></p>
+<p>Wagtail wasn’t picking up the date in “Understanding Results” before removing the meta tag from the rendered HTML, so I’ve modified the import procedure to retain the meta tags in the body of the rendered HTML. If you check it again it should say “July 27, 2020” to match the date at the bottom of the RST.</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/14</link>
+        <pubDate>Wed, 19 Aug 2020 14:47:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-14</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I notice the new guidance has a “last updated” date, and a prominent link back to the source showing the changelog, which is <strong>excellent</strong>. It would be great to include something similar on reference pages, too.</p>
+<p>However, it’s not clear to me how the last updated date relates to the source… In some cases <a href="https://iatistandard.org/en/guidance/standard-guidance/understanding-results/" rel="nofollow noopener">it’s ahead</a>, in some cases <a href="https://iatistandard.org/en/guidance/standard-guidance/results/" rel="nofollow noopener">it’s behind</a>. Is this expected, or is there an issue here, <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>? Thanks in advance</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/13</link>
+        <pubDate>Tue, 18 Aug 2020 14:11:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-13</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Bill - I think it depends on what you’re trying to do with the data. I agree that cross-publisher/country/sector comparisons can be useful, but I don’t see how this negates the value of detailed activity-specific information which is not comparable across those dimensions (but which can still be very useful for the purposes of aid management).</p>
+<aside class="quote no-group" data-username="bill_anderson" data-post="11" data-topic="1904">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>I’m suggesting that free text (that needs to be read by a human) in a structured format is not particularly helpful and is equally served by a document link.</p>
+</blockquote>
+</aside>
+<p>I disagree. I think that the conditions element could be structured in a more helpful way, but having a list of conditions explicitly stated is much more useful than having to hunt around in a number of different PDFs which may or may not contain this information.</p>
+<p>(NB you could also make the same argument about descriptions – why have the <code>&lt;description&gt;</code> element when you could just stick the same information in a PDF?)</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/12</link>
+        <pubDate>Tue, 18 Aug 2020 13:35:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-12</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m suggesting that free text (that needs to be read by a human) in a structured format is not particularly helpful and is equally served by a document link. The value of the standard (from my point of view) is to produce information by comparing activities (across publishers, countries, sectors, etc) - not just list and view.</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/11</link>
+        <pubDate>Tue, 18 Aug 2020 12:46:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-11</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Bill, I agree it’s great that the World Bank publishes a lot of documents alongside its projects, though I’m not sure I understand what you are saying here. Are you suggesting it doesn’t make a difference to transparency whether information is provided in a structured format or found somewhere within a long PDF?</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/10</link>
+        <pubDate>Tue, 18 Aug 2020 12:00:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-10</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not sure this example does makes the case. The conditions narrative has been copied from the finance agreement which is available (in all World Bank activities) via the document links.</p>
+<p>Is the AAA commitment to be transparent on conditionality best served by a structured IATI field? Or by better linking to contract documentation?</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/9</link>
+        <pubDate>Tue, 18 Aug 2020 11:13:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-9</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the clarification <a class="mention" href="/u/amys">@amys</a>! Agree it may well be the case that there is a lot of poor quality data in this element, though I think we should not lose sight of why this element was included in the Standard in the first place.</p>
+<p>I would also suggest looking at some of the better examples (e.g. <a href="http://d-portal.org/q.html?aid=44000-P127734" rel="nofollow noopener">see this project</a>, which is not bad) and the extent to which they meet organisations’ AAA commitments.</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/8</link>
+        <pubDate>Tue, 18 Aug 2020 10:37:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-8</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/markbrough">@markbrough</a>. The idea of removing the conditions element was brought up and discussed in the consultation. It could indeed be a version 3 proposal and worthy of discussion.</p>
+<p>As you’ve said. We’re not there yet.</p>
+<p>What would be interesting is to look at how it’s currently being used by publishers. If used properly I agree it’s super useful. However, my hunch is that a lot of published conditions don’t provide useful information.</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/7</link>
+        <pubDate>Tue, 18 Aug 2020 09:54:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-7</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> for this update!</p>
+<p>I wanted to flag one issue:</p>
+<aside class="quote no-group" data-username="IATI-techteam" data-post="5" data-topic="1904">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_2.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>Whilst the conditions guidance has been updated, consultation participants questioned its current use and benefit in the IATI Standard. It has been in the Standard since version 1.01. However, due to it being rarely used by publishers, it could be a contender for removal at the next IATI major upgrade in order to help streamline the Streamline and simplify the Standard.</p>
+</blockquote>
+</aside>
+<p>I am not quite sure what this means – is it suggesting that the <code>conditions</code> element could be removed at the next integer upgrade?</p>
+<p>I know that this is not an explicit proposal at this stage, but I would still really caution against this. Almost <a href="http://dashboard.iatistandard.org/elements.html" rel="nofollow noopener">20% of publishers are using the conditions element</a>, and it’s an explicit commitment under the <a href="https://www.afdb.org/fileadmin/uploads/afdb/Documents/AccraAgendaAaction-4sept2008-FINAL-ENG_16h00.pdf" rel="nofollow noopener">Accra Agenda for Action</a> (§25b):</p>
+<blockquote>
+<p>b) Beginning now, donors and developing countries will regularly make public all conditions linked to disbursements.</p>
+</blockquote>
+<p>This is particularly important in the context of budget support, where the amounts can be large and have non-trivial impacts on the budget, so having clarity about the disbursement triggers is really important. It’s also important for civil society to be able to monitor conditionality that governments have signed up to.</p>
+<p>However, it’s also important for large loan projects, where the country may already have started paying for the loan (because of commitment charges) but disbursements cannot yet begin as preconditions (e.g. establishing a bank account, passing  certain legislation) have not yet been met. I guess publishing conditions may be less important for smaller grant-funded projects.</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/6</link>
+        <pubDate>Tue, 18 Aug 2020 09:47:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-6</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>IATI has launched new guidance on publishing and interpreting data on the results and conditions of development and humanitarian activities using the IATI Standard. The new guidance follows the third consultation on Standard guidance with IATI’s community.</p>
+<p><strong>IATI community consultation</strong></p>
+<p>The third round of IATI’s Standard Guidance Review consultations took place in March and April 2020. The IATI Secretariat then paused work on the guidance pages to focus on creating IATI COVID-19 data use and publishing guidance. As with previous IATI guidance reviews, the IATI community was invited to provide feedback on draft guidance pages. The IATI Technical Team reviewed incoming feedback then held a webinar to discuss areas requiring further detail; this included exploring differing views and whether we could include any best practice recommendations. Following the webinar, the Technical Team updated the new guidance, incorporating the feedback received and noting areas for further consultation or those which will require an upgrade to the IATI Standard.</p>
+<p><strong>Results guidance</strong></p>
+<p>There are now two new guidance documents on how to use the IATI Standard to publish and interpret data on the results that development and humanitarian activities have achieved:</p>
+<ul>
+<li>
+<p><a href="https://iatistandard.org/en/guidance/standard-guidance/results/">Results information</a> - provides an overview of IATI results data, an explanation of what data the IATI Standard requires and how results can be made useful for data users.</p>
+</li>
+<li>
+<p><a href="https://iatistandard.org/en/guidance/standard-guidance/understanding-results/">Understanding results data</a> - presents results data based on a visualisation IATI’s <a href="http://d-portal.org/ctrack.html#view=search">d-portal</a>. This allows users to understand how to combine and interpret the range of data published as part of a result.</p>
+</li>
+</ul>
+<p>Consultation participants recognised that the results guidance is a great start at explaining the elements and attributes available in the IATI Standard. However, the standard is not set up, nor does the guidance go far enough for us to be able to provide ‘best practice’. The group proposed that a working group, made up primarily of data users and M&amp;E colleagues, should be formed to explore this area further.</p>
+<p><strong>Conditions guidance</strong></p>
+<p>Data on conditions helps users to understand what requirements are attached to an organisation receiving funds. For example, these could be the requirements issued by a funder who requires a six month review to assess whether or not the activity is worth continuing. The following guidance received updates during the consultation process:</p>
+<ul>
+<li>
+<a href="https://iatistandard.org/en/guidance/standard-guidance/conditions/">Conditions</a> - explains why conditions are useful and what kind of conditions can be published in IATI.</li>
+</ul>
+<p>Whilst the conditions guidance has been updated, consultation participants questioned its current use and benefit in the IATI Standard. It has been in the Standard since version 1.01. However, due to it being rarely used by publishers, it could be a contender for removal at the next IATI major upgrade in order to help streamline the Streamline and simplify the Standard.</p>
+<p><strong>Support</strong></p>
+<p>For any questions or comments on the guidance documents, please email the IATI Technical Team: <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> or post a message on IATI’s forum, Discuss.</p>
+<p><strong>Next steps</strong></p>
+<p>The Technical Team will continue to identify additional areas of guidance for the IATI community to review and feedback on. If you would like to be a part of the guidance review process then do let us know by emailing the team at <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>. Alternatively, keep an eye out on Discuss and the IATI newsletter for additional information.</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/5</link>
+        <pubDate>Thu, 13 Aug 2020 15:30:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-5</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Linking this conversation with other <a href="https://discuss.iatistandard.org/t/technical-notice-moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1897">posts</a>, all the new IATI guidance material can be found in the <a href="https://github.com/IATI/IATI-Guidance/tree/master/en">IATI-Guidance</a> GitHub repo.</p>
+<p>This means the IATI community can raise issues and make suggestions here. The tech team can also raise issues on behalf of users not familiar with GitHub.</p>
+<p>Alongside this, we are working on establishing a process for managing the guidance going forward and will share when we are able to.</p>
+<p>Please do continue to flag discrepancies between the schema and guidance pages! We will investigate them.</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/4</link>
+        <pubDate>Thu, 13 Aug 2020 14:47:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-4</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="stevieflow" data-post="2" data-topic="1904">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_2.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>I am also keen to understand the status of the previous materials, and how these will be openly version controlled. Right now, it seems these documents are in PDF format, with no clear process outlined for querying their validity.</p>
+</blockquote>
+</aside>
+<p>+1 to this point. Back in September, I raised a github ticket for the bug given as an example in Steven’s post, but I’m unsure what the process is for addressing it:<br>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/575" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Extra-Documentation</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/575" target="_blank" rel="nofollow noopener">BUG: `document-link/category` can occur multiple times</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2019-09-24" data-time="08:29:28" data-timezone="UTC">08:29AM - 24 Sep 19 UTC</span>
+      </div>
+
+
+      <div class="user">
+        <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+          <img alt="andylolz" src="https://avatars1.githubusercontent.com/u/464193?v=4" class="onebox-avatar-inline" width="20" height="20">
+          andylolz
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">The related documents guidance says:
+According to the schema, category must occur at least once (not only once). There’s no upper bound...</p>
+</div>
+
+<div class="labels">
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/3</link>
+        <pubDate>Wed, 04 Mar 2020 15:35:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-3</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for continuing to drive forward the need for more precise and thorough guidance material <a class="mention" href="/u/iati-techteam">@IATI-techteam</a></p>
+<p>Can I also highlight how this is related to the thread around how we best <a href="https://discuss.iatistandard.org/t/technical-notice-moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1897/">version control and safeguard such materials</a>.</p>
+<p>I am also keen to understand the status of the previous materials, and how these will be openly version controlled.  Right now, it seems these documents are in PDF format, with no clear process outlined for querying their validity.  For example, on document-link categories, <a href="https://drive.google.com/file/d/1TI9PU5dyyRE2IzervFPUZz_Xfue16xYC/view" rel="nofollow noopener">the PDF guidance currently says</a>:</p>
+<blockquote>
+<p>This must be included at least <strong>and only once</strong> for<br>
+each document-link.</p>
+</blockquote>
+<p>(my emphasis ^)</p>
+<p>This seems to be in contradiction to <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/document-link/category/" rel="nofollow noopener">the IATI schema, which says</a>:</p>
+<blockquote>
+<p>This element must occur at least once (within each parent element).</p>
+</blockquote>
+<p>I would suggest as part of this consultative process it is made clear how we can share such observations, synch up the materials, and ensure collective and open version control.</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/2</link>
+        <pubDate>Wed, 04 Mar 2020 07:37:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-2</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+      <item>
+        <title>Invitation: IATI Standard guidance review webinar 3</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Following the success of last year’s <a href="https://iatistandard.org/en/news/interpreting_iatis_standard_made_easier_with_new_guidance/">guidance consultations</a>, the IATI technical team is inviting the IATI Community to join the third guidance webinar on 1st April. We’ll be reviewing the newly improved IATI results and conditions guidance and discussing what ‘recommendations’ should be included. You don’t need to have participated in the previous webinars to contribute. <strong>The deadline to sign-up is Friday 13th of March.</strong></p>
+<p><strong>What will the webinar cover?</strong></p>
+<p>The IATI technical team has rewritten and added additional content to existing IATI Standard guidance currently published on the <a href="http://reference.iatistandard.org/203/activity-standard/overview/">Activity</a> and <a href="http://reference.iatistandard.org/203/organisation-standard/overview/">Organisation</a> overview pages on <a href="http://reference.iatistandard.org/">reference.iatistandard.org</a>. This webinar will look specifically at the result and conditions elements. We want you to review the content of the new pages and provide feedback:</p>
+<ul>
+<li>
+<p>Review pieces of additional guidance</p>
+</li>
+<li>
+<p>Highlight and suggest areas of the guidance which could be better explained</p>
+</li>
+<li>
+<p>Identify gaps</p>
+</li>
+<li>
+<p>Provide use cases for IATI data where relevant</p>
+</li>
+</ul>
+<p>If you are interested in helping us, please send an e-mail to <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> indicating if you would like to join the webinar and / or the review process. We will share the guidance to be reviewed and commented on with participants before the webinars.</p>
+<p><strong>Why rewrite IATI Standard guidance?</strong></p>
+<p>The IATI technical team is undertaking this process as part of our ongoing project to consolidate and improve the guidance documentation and make it available on the <a href="https://iatistandard.org/en/">IATI Standard </a>website, which was launched in 2018.</p>
+<p>We hope to:</p>
+<ul>
+<li>
+<p>Ensure the overview guidance pages are written in a user-friendly language to help data publishers and users better understand the IATI Standard</p>
+</li>
+<li>
+<p>Add additional guidance for publishers to help improve the consistency of data published to IATI</p>
+</li>
+</ul>
+<p><em>Do note:</em></p>
+<p>We have split the overview guidance pages into various groups. Further guidance pages will be reviewed throughout the year.</p>
+<p><strong>Webinar dates</strong></p>
+<ul>
+<li>
+<p><b><i>Webinar 3 Wednesday 1 April 3.30pm - 4.30pm UK time.</i></b> This webinar will cover three pages of guidance covering results and conditions.</p>
+</li>
+<li>
+<p><b><i>Upcoming webinar 4 (tbc).</i></b> This webinar will cover three pages of guidance, covering identifiers, converting currencies and extending the standard (namespaces). More details coming soon.</p>
+</li>
+</ul>
+<p><em>Cannot attend?</em></p>
+<p>If you are keen to review the updated guidance but cannot attend the webinar, you can still add your voice by providing written feedback. The webinar will be recorded and can be sent to you to listen. Please let us know.</p>
+<p><strong>Sign-up by Friday 13th of March</strong></p>
+<p>To sign-up please e-mail <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> letting us know you are interested in being part of the process and state if you can attend. We encourage you to share this invitation with relevant people in your networks.</p>
+<p>Let us know if you have any questions and we look forward to working with you on this important piece of work!</p>
+          <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904/1</link>
+        <pubDate>Tue, 03 Mar 2020 10:26:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1904-1</guid>
+        <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+      </item>
+  </channel>
+</rss>

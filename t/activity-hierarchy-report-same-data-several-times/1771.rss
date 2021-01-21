@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Activity hierarchy- report same data several times?</title>
+    <link>https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771</link>
+    <description>Apologies if this has been discussed before, I can&#39;t find the answer to what I am looking for
+
+As I understand the 2.03 version allows for parent/child relationships between activities.  This works well for us, especially for framework agreements as we receive donor payments into a parent activity but then run individual activities in different countries and these can be handled as child activities.
+
+My question then is to do with reporting things like sectors, sdg codes and countries.  If we ran one child activity in Afghanistan and another in Tajikistan would we declare each of those activities as being 100% Afghanistan and 100% Tajikistan (assuming equal financial value) and then the parent activity as 50% Afghanistan and 50% Tajikistan?
+
+Similarly with sectors - do we declare everything both at the parent AND child level but with the appropriate percentages or is it assumed that the data flows up the chain towards the parent and we only declare it once at the furthest child level?
+
+It&#39;s easy enough to do either - I just want to get it right
+
+Thanks all
+
+Richard</description>
+    
+    <lastBuildDate>Mon, 24 Jun 2019 16:32:35 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Activity hierarchy- report same data several times?</title>
+        <dc:creator><![CDATA[RichPepp]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1771">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I think you can also declare sectors on transactions (not sure about tags on transactions - needed for SDGs) in case that helps</p>
+</blockquote>
+</aside>
+<p>As far as I understand you can declare sectors on transactions OR activities but not both.    For the moment I think I’m going to end up declaring at activity level as that works better for framework agreements where funding happens in several stages.  At the point where we allocate funds internally to our activities then it would be possible to do it per transaction as I could theoretically do it all in one go per activity but for the moment I suspect that declaring sectors at activity level is clearer.   It’s not set it stone though so I’ll watch what develops</p>
+          <p><a href="https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771/4</link>
+        <pubDate>Mon, 24 Jun 2019 16:32:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1771-4</guid>
+        <source url="https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771.rss">Activity hierarchy- report same data several times?</source>
+      </item>
+      <item>
+        <title>Activity hierarchy- report same data several times?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/richpepp">@RichPepp</a> - I would support your idea of duplicating the information (sector, sdg splits etc) at both the parent and child activity levels (although this is wasteful and not ‘beautiful’) on the basis that lots of the systems using this data may not be able to doing the advanced joining of parent, child and related activities that would be needed otherwise - or may do it is a different way to how you imagined.</p>
+<p>I think you can also declare sectors on transactions (not sure about tags on transactions - needed for SDGs) in case that helps.</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771/3</link>
+        <pubDate>Mon, 24 Jun 2019 15:41:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1771-3</guid>
+        <source url="https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771.rss">Activity hierarchy- report same data several times?</source>
+      </item>
+      <item>
+        <title>Activity hierarchy- report same data several times?</title>
+        <dc:creator><![CDATA[RichPepp]]></dc:creator>
+        <description><![CDATA[
+            <p>To sort of answer my own question, I’ve been hunting through other organisations data sets to see what is currently happening.  I could only find a couple of examples of what I am looking for but in those cases what would happen is that the receiving org would receive funds into it’s own ‘pool activity’ and would declare the sector and country split for that activity.</p>
+<p>They would then also declare their own related-activities and then have transactions to those activities.  Those activities would then have their own sector and country split which was exactly what I was trying to do.</p>
+<p>For me this method makes sense as when you look at any individual activity you can easily see the countries and sectors it applies to.  Making the numbers add up is just a case of building that into our publishing system</p>
+          <p><a href="https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771/2</link>
+        <pubDate>Mon, 24 Jun 2019 08:49:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1771-2</guid>
+        <source url="https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771.rss">Activity hierarchy- report same data several times?</source>
+      </item>
+      <item>
+        <title>Activity hierarchy- report same data several times?</title>
+        <dc:creator><![CDATA[RichPepp]]></dc:creator>
+        <description><![CDATA[
+            <p>Apologies if this has been discussed before, I can’t find the answer to what I am looking for</p>
+<p>As I understand the 2.03 version allows for parent/child relationships between activities.  This works well for us, especially for framework agreements as we receive donor payments into a parent activity but then run individual activities in different countries and these can be handled as child activities.</p>
+<p>My question then is to do with reporting things like sectors, sdg codes and countries.  If we ran one child activity in Afghanistan and another in Tajikistan would we declare each of those activities as being 100% Afghanistan and 100% Tajikistan (assuming equal financial value) and then the parent activity as 50% Afghanistan and 50% Tajikistan?</p>
+<p>Similarly with sectors - do we declare everything both at the parent AND child level but with the appropriate percentages or is it assumed that the data flows up the chain towards the parent and we only declare it once at the furthest child level?</p>
+<p>It’s easy enough to do either - I just want to get it right</p>
+<p>Thanks all</p>
+<p>Richard</p>
+          <p><a href="https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771/1</link>
+        <pubDate>Fri, 21 Jun 2019 12:01:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1771-1</guid>
+        <source url="https://discuss.iatistandard.org/t/activity-hierarchy-report-same-data-several-times/1771.rss">Activity hierarchy- report same data several times?</source>
+      </item>
+  </channel>
+</rss>

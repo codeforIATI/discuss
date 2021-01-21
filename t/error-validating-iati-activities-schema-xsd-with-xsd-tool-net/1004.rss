@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Error validating iati-activities-schema.xsd with xsd tool .net</title>
+    <link>https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004</link>
+    <description>Hello everyone
+im getting an error validating iati-activities-schema.xsd
+file with xsd tool .net framework.
+i would like create a class and then serialize data, read from db into
+xml (iati valid)
+
+this is error
+
+Schema validation warning: Global element &#39;iati-identifier&#39; already declared. Line 220, position 4.
+Schema validation warning: Global element &#39;document-link&#39; already declared. Line 2749, position 4.
+Schema validation warning: ComplexType element &#39;currencyType&#39; already declared. Line 2838, position 4.
+Schema validation warning: Global attribute &#39;currency&#39; already declared. Line 2853, position 4.
+
+Warning: Schema could not be validated. Class generation may fail or may produce incorrect results.	
+
+thanks in advance</description>
+    
+    <lastBuildDate>Thu, 24 Aug 2017 15:21:43 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Error validating iati-activities-schema.xsd with xsd tool .net</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Francesco,<br>
+I have downloaded all 5 XSD files in one directory. XMLLINT under Linux works fine.</p>
+<p>Installing XMLLINT under W10 is also possible, but is a bit tricky.</p>
+<p>Regards<br>
+Herman</p>
+          <p><a href="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004/5</link>
+        <pubDate>Thu, 24 Aug 2017 15:21:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1004-5</guid>
+        <source url="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004.rss">Error validating iati-activities-schema.xsd with xsd tool .net</source>
+      </item>
+      <item>
+        <title>Error validating iati-activities-schema.xsd with xsd tool .net</title>
+        <dc:creator><![CDATA[developer]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks to answer me, the version is 2.02 and this is files list:</p>
+<ol>
+<li>iati-activities-schema.xsd</li>
+<li>iati-common.xsd</li>
+<li>xml.xsd</li>
+</ol>
+<p>Tool used: xsd.exe .net Microsoft<br>
+can you suggest me usefull tool to split over multiple files</p>
+<p>Regards<br>
+Francesco</p>
+          <p><a href="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004/4</link>
+        <pubDate>Thu, 24 Aug 2017 14:29:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1004-4</guid>
+        <source url="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004.rss">Error validating iati-activities-schema.xsd with xsd tool .net</source>
+      </item>
+      <item>
+        <title>Error validating iati-activities-schema.xsd with xsd tool .net</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>BTW: would you please be so kind to use your real name?</p>
+<p>Regards<br>
+Herman</p>
+          <p><a href="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004/3</link>
+        <pubDate>Thu, 24 Aug 2017 14:04:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1004-3</guid>
+        <source url="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004.rss">Error validating iati-activities-schema.xsd with xsd tool .net</source>
+      </item>
+      <item>
+        <title>Error validating iati-activities-schema.xsd with xsd tool .net</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear developer,<br>
+Which version of IATI are you using? I am using xmllint (both under W10 and CentOS) and that works without any problems. Make sure you have all XSD files downloaded:</p>
+<blockquote>
+<p>Core Schema¶</p>
+</blockquote>
+<blockquote>
+<p>The current suite IATI XML schemas consists of the following components:<br>
+iati-organisations-schema.xsd - XML schema for describing an organisation involved in any stage development cooperation (funding, implementing etc.).<br>
+iati-activities-schema.xsd - XML Schema for describing the details of individual development cooperation activities/projects.</p>
+</blockquote>
+<blockquote>
+<p>Supplementary Schema</p>
+</blockquote>
+<blockquote>
+<p>In addition to the Organisation and Activity. core terms are described in the following:<br>
+iati-common.xsd - A supplementary schema with common IATI markup.  Must be in the same directory as the Organisation and Activity schema.<br>
+xml.xsd -  A supplementary schema that must be in the same directory as the Organisation and Activity schema.</p>
+</blockquote>
+<blockquote>
+<p>Metadata Schema</p>
+</blockquote>
+<blockquote>
+<p>The Registry Record provides a common format for the reporting of metadata to the IATI Registry.</p>
+</blockquote>
+<blockquote>
+<p>Please note: Usage of this schema is not mandatory.<br>
+iati-registry-record-schema.xsd - An application-specific extension schema for importing documents into the IATI registry</p>
+</blockquote>
+<p>Some tools have problems with the fact that the XSD is split over multiple files.</p>
+          <p><a href="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004/2</link>
+        <pubDate>Thu, 24 Aug 2017 14:03:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1004-2</guid>
+        <source url="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004.rss">Error validating iati-activities-schema.xsd with xsd tool .net</source>
+      </item>
+      <item>
+        <title>Error validating iati-activities-schema.xsd with xsd tool .net</title>
+        <dc:creator><![CDATA[developer]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello everyone<br>
+im getting an error validating iati-activities-schema.xsd<br>
+file with xsd tool .net framework.<br>
+i would like create a class and then serialize data, read from db into<br>
+xml (iati valid)</p>
+<p>this is error</p>
+<p>Schema validation warning: Global element ‘iati-identifier’ already declared. Line 220, position 4.<br>
+Schema validation warning: Global element ‘document-link’ already declared. Line 2749, position 4.<br>
+Schema validation warning: ComplexType element ‘currencyType’ already declared. Line 2838, position 4.<br>
+Schema validation warning: Global attribute ‘currency’ already declared. Line 2853, position 4.</p>
+<p>Warning: Schema could not be validated. Class generation may fail or may produce incorrect results.</p>
+<p>thanks in advance</p>
+          <p><a href="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004/1</link>
+        <pubDate>Thu, 24 Aug 2017 10:19:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1004-1</guid>
+        <source url="https://discuss.iatistandard.org/t/error-validating-iati-activities-schema-xsd-with-xsd-tool-net/1004.rss">Error validating iati-activities-schema.xsd with xsd tool .net</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Registry publisher_iati_id inconsistencies</title>
+    <link>https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773</link>
+    <description>A while ago I found a publisher that was publishing an activity under the IATI identifier GB-1-123456 (one of DFID&#39;s activities). This was by a publisher that was publishing through CSV2IATI and probably misunderstood the guidance to refer to GB-1-123456 as provider-activity-id for its DFID funded transactions within the activity. 
+
+Of course we wanted to invalidate this data as it was not DFID&#39;s. I could do that quite easily because the reporting-org ref was set correctly, and when when you don&#39;t use that reporting-org ref as your prefix, I&#39;ll just invalidate the activity. 
+
+It becomes more error prone if the reporting-org is also set incorrectly, how do I know who&#39;s speaking truth then? I don&#39;t expect anyone to purposely do this but I&#39;ve seen odder mistakes in IATI and try to avoid assumptions where possible. 
+
+For this we need a validation check to see if the activity reporting-org is the publisher of the dataset (are there any edge cases on this?). This is possible by using the publisher_iati_id key on the IATI Registry CKAN API endpoint to get all publishers: https://iatiregistry.org/api/action/organization_list?all_fields=true&amp;include_extras=true&amp;limit=10
+
+Though unfortunately, this is not always set correctly:
+https://docs.google.com/spreadsheets/d/1-RkRlT1r3dgm047rAv91O0dbrev5T9ITXVL6JPwFXK8
+
+Another use scenario this would help is; I&#39;m building an IATI publishing tool and would like to make it easier for new publishers to start publishing correctly. I ask them to make an IATI registry account and after registration ask them for their IATI Registry user name and API key. Based upon that I fetch the publisher with its iati id, I validate the user and automatically set the reporting-org correctly so they can&#39;t make any errors on that.
+
+**Questions**
+
+-Is this a shared need?
+
+-How can we keep the IATI Registry publisher_iati_id in sync? It seems like quite some orgs did not correctly fill in the publisher_iati_id on registration, but afterwards did use the correct one on their reporting-org (see the gdoc). @dalepotter @hayfield can this be included in the new validator?</description>
+    
+    <lastBuildDate>Tue, 18 Apr 2017 14:18:27 +0000</lastBuildDate>
+    <category>Data Quality</category>
+    <atom:link href="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Registry publisher_iati_id inconsistencies</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the reply <a class="mention" href="/u/hayfield">@hayfield</a> !</p>
+<p>Small additional bug related to this; IR iati_publisher_id’s are also not unique.</p>
+<p>NL-KVK-30285304<br>
+<a href="https://www.iatiregistry.org/publisher/about/humana_houben" class="onebox" target="_blank" rel="nofollow noopener">https://www.iatiregistry.org/publisher/about/humana_houben</a><br>
+<a href="https://www.iatiregistry.org/publisher/about/simone_sympany" class="onebox" target="_blank" rel="nofollow noopener">https://www.iatiregistry.org/publisher/about/simone_sympany</a></p>
+<p>NL-KVK-41201806<br>
+<a href="https://www.iatiregistry.org/publisher/about/tni" class="onebox" target="_blank" rel="nofollow noopener">https://www.iatiregistry.org/publisher/about/tni</a><br>
+<a href="https://www.iatiregistry.org/publisher/about/transnational_institute" class="onebox" target="_blank" rel="nofollow noopener">https://www.iatiregistry.org/publisher/about/transnational_institute</a></p>
+<p>NL-KVK-41198890<br>
+<a href="https://www.iatiregistry.org/publisher/about/nlno" class="onebox" target="_blank" rel="nofollow noopener">https://www.iatiregistry.org/publisher/about/nlno</a><br>
+<a href="https://www.iatiregistry.org/publisher/about/plannlno" class="onebox" target="_blank" rel="nofollow noopener">https://www.iatiregistry.org/publisher/about/plannlno</a></p>
+<p>GB-COH-SC301345<br>
+<a href="https://www.iatiregistry.org/publisher/about/upperquartile" class="onebox" target="_blank" rel="nofollow noopener">https://www.iatiregistry.org/publisher/about/upperquartile</a><br>
+<a href="https://www.iatiregistry.org/publisher/about/uq" class="onebox" target="_blank" rel="nofollow noopener">https://www.iatiregistry.org/publisher/about/uq</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/6</link>
+        <pubDate>Tue, 18 Apr 2017 14:18:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-773-6</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773.rss">Registry publisher_iati_id inconsistencies</source>
+      </item>
+      <item>
+        <title>Registry publisher_iati_id inconsistencies</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>can this be included in the new validator?</p>
+</blockquote>
+<p>Part of the <a href="https://github.com/IATI/iati.core">PyLib</a> work we were doing last week was on metadata. The outcome of this was that Datasets should have metadata (including that from the Registry where appropriate) directly associated with them.</p>
+<p>The new validator (to be built on top of the library) will take a Dataset as part of its input. As such, it will be possible to write rules to make checks like this, yes.</p>
+<ul>
+<li>
+</li>
+</ul>
+<p>Tagging <a class="mention" href="/u/petyakangalova">@petyakangalova</a> because of the Org IDs discussion in this thread.</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/5</link>
+        <pubDate>Mon, 03 Apr 2017 12:00:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-773-5</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773.rss">Registry publisher_iati_id inconsistencies</source>
+      </item>
+      <item>
+        <title>Registry publisher_iati_id inconsistencies</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>Right <a class="mention" href="/u/sjohns">@SJohns</a> I forgot about that table here <a href="http://dashboard.iatistandard.org/reporting_orgs.html" rel="nofollow noopener">http://dashboard.iatistandard.org/reporting_orgs.html</a> (which even has more info than that spreadsheet). Anyway, good that we got this discussion started here, all good suggestions in the above messages imo.</p>
+<p>I don’t know what effort is already put into getting these mismatches to zero, but I would like to note that as a user of all IATI data this is one of the few issues where we are dependent on others.</p>
+<p>IATI challenges like org names, traceability, data validation and such are something data users can handle in their own way, but here we are forced into two options of dealing with invalid publisher iati id’s/reporting-org refs and both look awkward. Invalidating them feels harsh and is bad for the usefulness of my application, accepting them opens my application up to erroneous data.</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/4</link>
+        <pubDate>Wed, 29 Mar 2017 20:48:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-773-4</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773.rss">Registry publisher_iati_id inconsistencies</source>
+      </item>
+      <item>
+        <title>Registry publisher_iati_id inconsistencies</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi this spreadsheet is really useful, thank you! There is a similar function on IATI dashboard where it shows whether an organisations ID on the Registry and in their data match.</p>
+<p>I think something to be aware of is that some publishing tools (eg. AidStream) help you build the organisation identifier based on the rules - so it asks you to identify your country of registration, then identify the registration authority you are registered under (using the centralised list of registration authorities), then provide your registration number/code.  Then it creates your organisation ID for you. It also asks you whether you are duplicating an organisation entry. We’ve seen this cut down the number of mistakes made by organisations publishing recently.</p>
+<p>However, this function is not currently available on the Registry, so it is still possible to make mistakes there as it is manually typed in. And there are legacy issues as well (ie where an organisation was publishing for a grant, that grant has stopped and the Registry account is just languishing).</p>
+<p>So using the Registry as the definitive list may not be the best way to go.</p>
+<p>My thoughts are:</p>
+<ol>
+<li>( I think this is already planned) IATI uses the Org IDs list of lists as the source for registration authorities and perhaps registration numbers where APIs into the data exist.</li>
+<li>Creat something similar to AidStream’s managed creation process into the IATI Registry account set up to cut down on mistakes.</li>
+<li>Tech team need to feed back to organisations where there is a mis-match between the ID on the Registry and the ID in the data. For example, where a UK govt department has switched to the new GB-GOV- format for the organisation ID in their data, they may not know/remember to change it in their Registry account.</li>
+</ol>
+<p>Cheers, Sarah</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/3</link>
+        <pubDate>Wed, 29 Mar 2017 13:51:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-773-3</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773.rss">Registry publisher_iati_id inconsistencies</source>
+      </item>
+      <item>
+        <title>Registry publisher_iati_id inconsistencies</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Good point <a class="mention" href="/u/vincentvw">@VincentVW</a>! (and very useful spreadsheet!)</p>
+<p>I agree it would be useful to at least have a canonical set of <code>publisher_iati_id</code>s in publishers’ metadata, to validate against.</p>
+<p>Am I correct in thinking the <a href="https://github.com/openDataServices/org-ids">Org IDs project</a> can help check the <code>publisher_iati_id</code>s? I’ve used it to find the relevant APIs, and have added a few comments to your spreadsheet with URLs to verify IDs, just as a proof of concept.</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/2</link>
+        <pubDate>Wed, 29 Mar 2017 09:11:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-773-2</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773.rss">Registry publisher_iati_id inconsistencies</source>
+      </item>
+      <item>
+        <title>Registry publisher_iati_id inconsistencies</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>A while ago I found a publisher that was publishing an activity under the IATI identifier GB-1-123456 (one of DFID’s activities). This was by a publisher that was publishing through CSV2IATI and probably misunderstood the guidance to refer to GB-1-123456 as provider-activity-id for its DFID funded transactions within the activity.</p>
+<p>Of course we wanted to invalidate this data as it was not DFID’s. I could do that quite easily because the reporting-org ref was set correctly, and when when you don’t use that reporting-org ref as your prefix, I’ll just invalidate the activity.</p>
+<p>It becomes more error prone if the reporting-org is also set incorrectly, how do I know who’s speaking truth then? I don’t expect anyone to purposely do this but I’ve seen odder mistakes in IATI and try to avoid assumptions where possible.</p>
+<p>For this we need a validation check to see if the activity reporting-org is the publisher of the dataset (are there any edge cases on this?). This is possible by using the publisher_iati_id key on the IATI Registry CKAN API endpoint to get all publishers: <a href="https://iatiregistry.org/api/action/organization_list?all_fields=true&amp;include_extras=true&amp;limit=10" rel="nofollow noopener">https://iatiregistry.org/api/action/organization_list?all_fields=true&amp;include_extras=true&amp;limit=10</a></p>
+<p>Though unfortunately, this is not always set correctly:<br>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/spreadsheets/d/1-RkRlT1r3dgm047rAv91O0dbrev5T9ITXVL6JPwFXK8/edit" target="_blank" rel="nofollow noopener">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/spreadsheets/d/1-RkRlT1r3dgm047rAv91O0dbrev5T9ITXVL6JPwFXK8/edit" target="_blank" rel="nofollow noopener"><span class="googledocs-onebox-logo g-sheets-logo"></span></a>
+
+<h3><a href="https://docs.google.com/spreadsheets/d/1-RkRlT1r3dgm047rAv91O0dbrev5T9ITXVL6JPwFXK8/edit" target="_blank" rel="nofollow noopener">Registry publisher_iati_id inconsistencies</a></h3>
+
+<p>Sheet1
+
+ publisher id, publisher_iati_id, used reporting-org, publisher_iati_id correct?, publisher name, publisher display name
+ f78e4a4f-951e-43f8-843b-9d35f1dfa702, No activities found, cant check, 49374507, Haitelmex Foundation
+...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>Another use scenario this would help is; I’m building an IATI publishing tool and would like to make it easier for new publishers to start publishing correctly. I ask them to make an IATI registry account and after registration ask them for their IATI Registry user name and API key. Based upon that I fetch the publisher with its iati id, I validate the user and automatically set the reporting-org correctly so they can’t make any errors on that.</p>
+<p><strong>Questions</strong></p>
+<p>-Is this a shared need?</p>
+<p>-How can we keep the IATI Registry publisher_iati_id in sync? It seems like quite some orgs did not correctly fill in the publisher_iati_id on registration, but afterwards did use the correct one on their reporting-org (see the gdoc). <a class="mention" href="/u/dalepotter">@dalepotter</a> <a class="mention" href="/u/hayfield">@hayfield</a> can this be included in the new validator?</p>
+          <p><a href="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773/1</link>
+        <pubDate>Tue, 28 Mar 2017 19:43:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-773-1</guid>
+        <source url="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773.rss">Registry publisher_iati_id inconsistencies</source>
+      </item>
+  </channel>
+</rss>

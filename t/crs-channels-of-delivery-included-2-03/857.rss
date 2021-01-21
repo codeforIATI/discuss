@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>CRS Channels of Delivery (included 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857</link>
+    <description>This proposal is part of the [2.03 upgrade process](https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838), please comment by replying below.
+
+**Standard**
+Activity
+&lt;p&gt;
+**Schema Object**
+iati-activity/participating-org
+&lt;p&gt;
+**Type of Change**
+Add attribute and codelist
+&lt;p&gt;
+**Issue**
+The IATI standard is meant to be fully compatible with OECD DAC CRS++ reporting directives. While the IATI  OrganisationType codelist is similar to the generic CRS channel codes they are not the same and it is therefore not possible to derive CRS++ from IATI data.
+&lt;p&gt;
+**Proposal**
+&lt;ul&gt;
+&lt;li&gt;Add attribute participating-org/@crs-channel-code
+&lt;ul&gt;
+&lt;li&gt;Occurrence: min = 0; max = 1
+&lt;li&gt;Definition: Under CRS++ Reporting Directives this code identifies the implementing agency. Codes ending in ‘00’ are generic and are similar to the [OrganisationType](http://iatistandard.org/202/codelists/OrganisationType/) code. 
+&lt;li&gt;Rule: Must contain a valid value from the CRSChannelCode codelist.
+&lt;/ul&gt;
+&lt;li&gt;Add a non-embedded codelist : CRSChannelCode
+&lt;ul&gt;
+&lt;li&gt;Values are from latest published DAC and CRS code lists published [here](http://www.oecd.org/dac/stats/dacandcrscodelists.htm).
+&lt;/ul&gt;
+&lt;/ul&gt;
+**Standards Day**
+An option to harmonise DAC Channels and IATI Organisation types was rejected. The above proposal was accepted subject to further consultation.
+&lt;p&gt;
+**Links**
+http://bit.ly/2lCMYvS</description>
+    
+    <lastBuildDate>Wed, 25 Oct 2017 13:57:52 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>CRS Channels of Delivery (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/8</link>
+        <pubDate>Wed, 25 Oct 2017 13:57:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-857-8</guid>
+        <source url="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857.rss">CRS Channels of Delivery (included 2.03)</source>
+      </item>
+      <item>
+        <title>CRS Channels of Delivery (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal has been been included in the 2.03 upgrade. It can be viewed in the following two Discuss posts:</p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Proposal of 2.03 Content</a></p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Technical Proposal for the 2.03 Upgrade</a></p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/7</link>
+        <pubDate>Wed, 25 Oct 2017 13:57:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-857-7</guid>
+        <source url="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857.rss">CRS Channels of Delivery (included 2.03)</source>
+      </item>
+      <item>
+        <title>CRS Channels of Delivery (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="4" data-topic="857" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>There is no problem for us to add the category as <strong><em>metadata</em></strong>. The <a href="http://iatistandard.org/202/codelists/AidType-category/">AidType Category</a> codelist, for example, “exists to group the Aid Type codelist into categories. It is not used as a codelist in its own right.”</p>
+</blockquote>
+</aside>
+<p>Yeah, exactly – <a href="https://discuss.iatistandard.org/t/added-updates-to-the-crschannelcode-codelist/797/5">AidType Category was the example I highlighted here</a>.</p>
+<p>Okay, ace – let’s do that <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/5</link>
+        <pubDate>Mon, 19 Jun 2017 18:02:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-857-5</guid>
+        <source url="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857.rss">CRS Channels of Delivery (included 2.03)</source>
+      </item>
+      <item>
+        <title>CRS Channels of Delivery (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>There is no problem for us to add the category as <strong><em>metadata</em></strong>. The <a href="http://iatistandard.org/202/codelists/AidType-category/">AidType Category</a> codelist, for example, “exists to group the Aid Type codelist into categories. It is not used as a codelist in its own right.”</p>
+          <p><a href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/4</link>
+        <pubDate>Mon, 19 Jun 2017 16:37:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-857-4</guid>
+        <source url="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857.rss">CRS Channels of Delivery (included 2.03)</source>
+      </item>
+      <item>
+        <title>CRS Channels of Delivery (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="857">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/262_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>The CRSChannelCode codelist already exists and does not need adding.</p>
+</blockquote>
+</aside>
+<p>That’s true… But note <a href="https://discuss.iatistandard.org/t/added-updates-to-the-crschannelcode-codelist/797">this discussion on adding the CRSChannelCode-category codelist</a>. I wonder if it would constitute scope creep to include that here?</p>
+          <p><a href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/3</link>
+        <pubDate>Mon, 19 Jun 2017 08:39:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-857-3</guid>
+        <source url="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857.rss">CRS Channels of Delivery (included 2.03)</source>
+      </item>
+      <item>
+        <title>CRS Channels of Delivery (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The attribute discussed in this topic has been included for consideration in the formal 2.03 proposal. The CRSChannelCode codelist already exists and does not need adding.</p>
+          <p><a href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/2</link>
+        <pubDate>Fri, 16 Jun 2017 15:17:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-857-2</guid>
+        <source url="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857.rss">CRS Channels of Delivery (included 2.03)</source>
+      </item>
+      <item>
+        <title>CRS Channels of Delivery (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal is part of the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p>
+**Schema Object**
+iati-activity/participating-org
+</p><p>
+**Type of Change**
+Add attribute and codelist
+</p><p>
+**Issue**
+The IATI standard is meant to be fully compatible with OECD DAC CRS++ reporting directives. While the IATI  OrganisationType codelist is similar to the generic CRS channel codes they are not the same and it is therefore not possible to derive CRS++ from IATI data.
+</p><p>
+**Proposal**
+</p><ul>
+<li>Add attribute participating-org/@crs-channel-code
+<ul>
+<li>Occurrence: min = 0; max = 1
+</li>
+<li>Definition: Under CRS++ Reporting Directives this code identifies the implementing agency. Codes ending in ‘00’ are generic and are similar to the [OrganisationType](http://iatistandard.org/202/codelists/OrganisationType/) code. 
+</li>
+<li>Rule: Must contain a valid value from the CRSChannelCode codelist.
+</li>
+</ul>
+</li>
+<li>Add a non-embedded codelist : CRSChannelCode
+<ul>
+<li>Values are from latest published DAC and CRS code lists published [here](http://www.oecd.org/dac/stats/dacandcrscodelists.htm).
+</li>
+</ul>
+</li>
+</ul>
+**Standards Day**
+An option to harmonise DAC Channels and IATI Organisation types was rejected. The above proposal was accepted subject to further consultation.
+<p>
+**Links**
+http://bit.ly/2lCMYvS</p>
+          <p><a href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857/1</link>
+        <pubDate>Fri, 12 May 2017 12:47:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-857-1</guid>
+        <source url="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857.rss">CRS Channels of Delivery (included 2.03)</source>
+      </item>
+  </channel>
+</rss>

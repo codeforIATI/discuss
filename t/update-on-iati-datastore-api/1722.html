@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/update-on-iati-datastore-api/1722 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:32:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Update on IATI Datastore API - Notifications - IATI Community Discussions</title>
+    <meta name="description" content="New DataStore API 
+As everyone is aware the new IATI DataStore is in the process of being built. There have been a few questions about the API that this discuss post seeks to address. We have a bit of background on the o&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="1722.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Update on IATI Datastore API&#39;" href="1722.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722" />
+<meta property="og:title" content="Update on IATI Datastore API" />
+<meta name="twitter:title" content="Update on IATI Datastore API" />
+<meta property="og:description" content="New DataStore API  As everyone is aware the new IATI DataStore is in the process of being built. There have been a few questions about the API that this discuss post seeks to address. We have a bit of background on the old DataStore for context then the information about the new DataStore API.  History of the old Datastore  When the IATI Standard was launched there were strong arguments against IATI maintaining a database: this was seen to be overlapping the service provided by the OECD CRS whic..." />
+<meta name="twitter:description" content="New DataStore API  As everyone is aware the new IATI DataStore is in the process of being built. There have been a few questions about the API that this discuss post seeks to address. We have a bit of background on the old DataStore for context then the information about the new DataStore API.  History of the old Datastore  When the IATI Standard was launched there were strong arguments against IATI maintaining a database: this was seen to be overlapping the service provided by the OECD CRS whic..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="5 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="18 ❤" />
+<meta property="article:published_time" content="2019-04-23T15:19:39+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="1722.html">Update on IATI Datastore API</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/notifications/29.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F73357'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Notifications</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-23T15:19:39Z' class='post-time'>
+                April 23, 2019,  3:19pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-23T15:19:39Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><strong>New DataStore API</strong></p>
+<p>As everyone is aware the new IATI DataStore is in the process of being built. There have been a few questions about the API that this discuss post seeks to address. We have a bit of background on the old DataStore for context then the information about the new DataStore API.</p>
+<p><strong>History of the old Datastore</strong></p>
+<p>When the IATI Standard was launched there were strong arguments against IATI maintaining a database: this was seen to be overlapping the service provided by the OECD CRS which is a curated database. The datastore was instead agreed as an uncurated view of the files held on the Registry.</p>
+<p>The original datastore was built in 2011/12 by Open Knowledge (who also managed the IATI Registry at the time). It replicated all (readable) data on the Registry. It was sold as everything in the Registry today will be in the datastore (DS) tomorrow.<br>
+Locations and results data were not included in this alpha - only transactions, budgets and activity-level data were imported into the DataStore (the whole activity was only available through an xml blob stored for each activity). The alpha product did not clean data, it just show exactly what was on the Registry.</p>
+<p>The plan had been that these additional features would be added in future phases of the DataStore but due to a number of reasons (including budget and contractual matters) the project never went beyond phase one.</p>
+<p><strong>New IATI datastore</strong></p>
+<p>The new datastore is based on existing open source software <a href="https://github.com/zimmerman-zimmerman/OIPA">‘OIPA’</a> and is actively being maintained by <a href="https://www.zimmermanzimmerman.nl/">Zimmerman &amp; Zimmerman</a>. OIPA has been in use with a variety of international organisations and governments like UNESCO, IOM, DFID, MFA and many others. This new datastore will scrape the IATI Registry for IATI Publishers and their XML data sources, validate XML using the new IATI Validator service and will then transform, store and interface that data into API for anyone to use. The API has 14 different API endpoints each with their specific purpose. The datastore will also allow users to export XML, CSV and xlsx format if so desired. Snapshot of functionality as per original specification:</p>
+<ol>
+<li>
+<p>ETL (Extract, Transform, Load) from XML to JSON</p>
+</li>
+<li>
+<p>Validation provided by new IATI Validator</p>
+</li>
+<li>
+<p>IATI Version support</p>
+</li>
+<li>
+<p>XML exports</p>
+</li>
+<li>
+<p>Range of filters available</p>
+</li>
+<li>
+<p>API output</p>
+</li>
+<li>
+<p>CSV/XLSX Serialisations</p>
+</li>
+</ol>
+<p><strong>Timeline for delivery</strong></p>
+<p>The new DataStore will be launched together with the IATI Validator this summer.</p>
+<p>The IATI technical team met with Zimmerman and Zimmerman along with Data4Development earlier this month to agree how the two systems will integrate. We will share more information on the system integration of the two products in early May with an update on the timeline.</p>
+<p><strong>Moving from old to new API</strong></p>
+<p>The new OIPA-powered Datastore will differ from the current one both in API calls and results returned. This is because as it shows more of IATI data, a new structure is needed to do so logically.</p>
+<p>For API calls we have limited the changes as much as was possible to do whilst still delivering a product that has a different core structure and more capabilities. Mostly what will be required is small tweaks in the url in use so that it points to the new location. The mapping is not going to be a 1:1 mapping so we cannot use the old API structure with redirects.</p>
+<p>For returned results, the underlying structure will once again be mostly the same, with a few changes. The new Datastore allows for a more comprehensive and precise resultset to be explored. An example is the participating-org result row: in the current system, the users will receive a result containing participating-org.role = 3, while the new Datastore offers an expanded view, providing both participating-org.role.code = 3 and participating-org.role.name = Extending, effectively removing the need for cross checks and extra calls.</p>
+<p><strong>Don’t panic!</strong></p>
+<p>The technical team are here to help. There will be documentation of all the new parameters, queries possible and outputs so that the transition can happen as smoothly as possible.</p>
+<p>We are also making sure there is a grace period where the old DataStore will exist in parallel till the end of 2019 so that there is plenty of time to make necessary changes.</p>
+<p>Details of who is using the current DataStore are being collected<a href="https://docs.google.com/spreadsheets/d/1beLGWtExOUnAMFthVppt44aUsGTeVMSES4-1R3BiU0I/edit#gid=867726358"> here. </a></p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../datastore-update/1695/25.html" itemprop='item'>
+                      <meta itemprop='url' content='../datastore-update/1695/25.html'>
+                      <meta itemprop='position' content='4'>
+                      <span itemprop='name'>Datastore update?</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-29T12:37:12Z' class='post-time'>
+                April 29, 2019, 12:37pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-29T12:37:12Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the update on the status of the DS. Is there an overview of what functionality will be delivered when against the functional requirements as specified in the final version of the Terms of Reference for the DS? If not, it would be very helpful to have such an overview because it will enable planning of the migration of existing applications of the old DS to the new DS.</p>
+<p>Kind regards<br>
+Herman</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-04-30T14:05:39Z' class='post-time'>
+                April 30, 2019,  2:05pm
+              </time>
+              <meta itemprop='dateModified' content='2019-04-30T14:05:39Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>+1 for the overview against the ToR</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-01T12:27:11Z' class='post-time'>
+                May 1, 2019, 12:27pm
+              </time>
+              <meta itemprop='dateModified' content='2019-05-01T12:27:11Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Full details of the project are publically available here: <a href="https://github.com/zimmerman-zimmerman/OIPA/projects/2">https://github.com/zimmerman-zimmerman/OIPA/projects/2</a> so you can clearly see the implementation of the project.</p>
+<p>When the IATI DataStore is launched there will be clear user documentation and developer documentation made available that will help to smooth the transition between old DataStore and new. For the question “what will be delivered when” the full TOR will be met at the point of release. Any future releases would be for upgrades / new features.</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/markbrough.html'><span itemprop='name'>markbrough</span></a>
+            (Mark Brough)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-02T21:19:28Z' class='post-time'>
+                May 2, 2019,  9:19pm
+              </time>
+              <meta itemprop='dateModified' content='2019-05-02T21:19:28Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the update.</p>
+<p>Please can you explain / review the below paragraph? If the new API will return the original XML and full, unpaginated results (as I believe it will), then I don’t understand why it would not basically be a fairly trivial process to convert the old URLs to the new URLs, by passing the <a href="http://reference.iatistandard.org/203/guidance/datastore/reference/data-api/" rel="nofollow noopener">current (very limited!) list of filters</a> on the old Datastore to their equivalent values on the new Datastore.</p>
+<aside class="quote no-group" data-post="1" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>For API calls we have limited the changes as much as was possible to do whilst still delivering a product that has a different core structure and more capabilities. Mostly what will be required is small tweaks in the url in use so that it points to the new location. The mapping is not going to be a 1:1 mapping so we cannot use the old API structure with redirects.</p>
+</blockquote>
+</aside>
+<aside class="quote no-group" data-post="4" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>the full TOR will be met at the point of release</p>
+</blockquote>
+</aside>
+<p>Please can you confirm that this will include meeting the following requirement included in the <a href="https://docs.google.com/document/d/1-ejM-oGs9N-LhJBgduVvg8PJXhJhv6WdXz-KOT9TYxg/edit" rel="nofollow noopener">draft ToR</a>, and if not, why the Secretariat decided to remove this requirement?</p>
+<blockquote>
+<p>Provides support for (all ?) existing routes for the IATI Datastore? So that existing software using the current Datastore API does not break.</p>
+</blockquote>
+<p>At the very least, the IATI Secretariat should be working to ensure continuity of service for anyone who has managed to begin using IATI data over the last ten years, especially when it should be fairly simple to implement <strong>once</strong> on the IATI Secretariat’s end rather than <strong>many times</strong> on many users’ ends. Please can this be reconsidered? <img src="../../images/emoji/twitter/slight_smileae52.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-08T13:13:24Z' class='post-time'>
+                May 8, 2019,  1:13pm
+              </time>
+              <meta itemprop='dateModified' content='2019-05-08T13:13:24Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="5" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/markbrough/40/557_2.jpg" class="avatar"> markbrough:</div>
+<blockquote>
+<p>Please can you explain / review the below paragraph? If the new API will return the original XML and full, unpaginated results (as I believe it will), then I don’t understand why it would not basically be a fairly trivial process to convert the old URLs to the new URLs, by passing the <a href="http://reference.iatistandard.org/203/guidance/datastore/reference/data-api/">current (very limited!) list of filters</a> on the old Datastore to their equivalent values on the new Datastore.</p>
+</blockquote>
+</aside>
+<p>As mentioned in our original post, there is no 1:1 mapping therefore the mapping would be infinite. It also would introduce a new potential for technical debt on the new Datastore. By issuing a redirect at Datastore level:</p>
+<ul>
+<li>
+<p>We would essentially be Introducing a static mapping file</p>
+</li>
+<li>
+<p>It would by no means sort the old domain to new domain out (eg: the redirect from <code>old-datastore.iatistandard.org</code> to <code>new-datastore.iatistandard.org</code> should live on the old Datastore’s server; this redirect will cease to exist once the old datastore is switched off, so there’s no benefit to it</p>
+</li>
+<li>
+<p>In future iterations of 3rd party software, the new urls will need to be used</p>
+</li>
+</ul>
+<p>There are 6 months available to update the API calls and there will be information available with the launch of the new Datastore to help people transition.</p>
+<aside class="quote no-group" data-post="5" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/markbrough/40/557_2.jpg" class="avatar"> markbrough:</div>
+<blockquote>
+<p>Please can you confirm that this will include meeting the following requirement included in the <a href="https://docs.google.com/document/d/1-ejM-oGs9N-LhJBgduVvg8PJXhJhv6WdXz-KOT9TYxg/edit">draft ToR </a>, and if not, why the Secretariat decided to remove this requirement?</p>
+</blockquote>
+</aside>
+<p>We have already said that we will be meeting the terms of the TOR, where there has had to be a deviation in order to bring technical benefits to the whole community we have posted here to notify users.  If there are any other changes there will be notifications.</p>
+<aside class="quote no-group" data-post="5" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/markbrough/40/557_2.jpg" class="avatar"> markbrough:</div>
+<blockquote>
+<p>At the very least, the IATI Secretariat should be working to ensure continuity of service for anyone who has managed to begin using IATI data over the last ten years, especially when it should be fairly simple to implement <strong>once</strong> on the IATI Secretariat’s end rather than <strong>many times</strong> on many users’ ends. Please can this be reconsidered? <img src="../../images/emoji/twitter/slight_smileae52.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>The IATI Secretariat are committed to ongoing improvement to services. In in order to do this change will sometimes be required. Changes are not made in an arbitrary way; they are considered carefully and we engage with the community to keep everyone informed of possible impacts. . In this instance, in order to provide a better datastore the structure of things has had to shift. We are providing a long grace period within which we are happy to speak to you directly if you need further support.</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/markbrough.html'><span itemprop='name'>markbrough</span></a>
+            (Mark Brough)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-08T17:36:01Z' class='post-time'>
+                May 8, 2019,  5:36pm
+              </time>
+              <meta itemprop='dateModified' content='2019-05-08T17:36:01Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The response above has worried me a lot. This decision breaks many of the few country systems using IATI data, so it seems worth spending some time seeing if we can avoid this, which will set us back significantly in terms of data use at country level. I put together <a href="https://docs.google.com/spreadsheets/d/19Qs6naJhoMIDpgbtNWr2Uab1mzzJge61_vfP4mEYCTs/edit#gid=0" rel="nofollow noopener">a quick mapping file</a> here which suggests it could be fairly straightforward to redirect requests (at least for XML data). Perhaps we can have a quick chat about any remaining technical barriers?</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-09T00:33:17Z' class='post-time'>
+                May 9, 2019, 12:33am
+              </time>
+              <meta itemprop='dateModified' content='2019-05-09T00:33:17Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve had a go at turning <a class="mention" href="../../u/markbrough.html">@markbrough</a>’s <a href="https://docs.google.com/spreadsheets/d/19Qs6naJhoMIDpgbtNWr2Uab1mzzJge61_vfP4mEYCTs/edit">quick mapping file</a> into a tiny redirect application:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://v1-iati-datastore.herokuapp.com/" target="_blank">datastore-redirects</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://v1-iati-datastore.herokuapp.com/" target="_blank">Datastore Redirects</a></h3>
+
+<p>A tiny flask app to redirect v1 -&gt; v2 datastore</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>The code is <a href="https://github.com/andylolz/datastore-redirects">on github</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../current-datastore-api-use/1761/4.html" itemprop='item'>
+                      <meta itemprop='url' content='../current-datastore-api-use/1761/4.html'>
+                      <meta itemprop='position' content='4'>
+                      <span itemprop='name'>Current Datastore API use</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-05-09T07:17:23Z'>
+              <time itemprop='dateModified' datetime='2019-05-09T07:19:08Z' class='post-time'>
+                May 9, 2019,  7:19am
+              </time>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks (amazing) <a class="mention" href="../../u/andylolz.html">@andylolz</a></p>
+<p>Not suggesting you should do it now now, but trying to think about any other potential issues, I guess it wouldn’t be hard to add the header that comes with datastore xml?</p>
+<pre><code>&lt;result&gt;&lt;ok&gt;True&lt;/ok&gt;
+&lt;iati-activities generated-datetime="2019-05-09T10:11:11.870934"
+&lt;query&gt;&lt;total-count&gt;1&lt;/total-count&gt;&lt;start&gt;0&lt;/start&gt;
+&lt;limit&gt;50&lt;/limit&gt;&lt;/query&gt;
+</code></pre>
+<p>The redirects for the datafiles route seem to require the internal name? but I guess we could do a lookup for this - or maybe the new datastore will include both options.</p>
+<p>It also looks like as soon as the new datastore can do =activity&amp;transaction, not just =transaction then we should also be able to redirect those.</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/markbrough.html'><span itemprop='name'>markbrough</span></a>
+            (Mark Brough)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-05-09T11:40:50Z' class='post-time'>
+                May 9, 2019, 11:40am
+              </time>
+              <meta itemprop='dateModified' content='2019-05-09T11:40:50Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This is super good, thanks <a class="mention" href="../../u/andylolz.html">@andylolz</a>! I think it shows how simple it would be to avoid breaking systems at country level. On <a class="mention" href="../../u/matmaxgeds.html">@matmaxgeds</a> point, as the XML output is still under active development and some additional metadata (total number of results and status) would be useful and something similar is in the JSON output already, perhaps <a class="mention" href="../../u/siemvaessen.html">@siemvaessen</a> could just adjust the XML output to include this metadata?</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-06-06T13:13:05Z'>
+              <time itemprop='dateModified' datetime='2019-06-06T13:53:50Z' class='post-time'>
+                June 6, 2019,  1:53pm
+              </time>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Can I make the suggestion that we refer to “datastore v1” and “datastore v2”, rather than “old datastore” and “new datastore”?</p>
+<p>“Old” and “new” are not future-proof terms. The passage of time means “new” will inevitably become “old” some day!</p>
+<p>But more importantly, I think this helps encourage a more agile mindset. The “new” datastore is not the solution, but rather the next iteration. As with all software projects, it probably won’t perfectly solve all problems for all users. There will probably be future iterations (the “<strong>new</strong> new” datastore? Or v3, v4 etc.)</p>
+<p>Similarly, the “old” datastore was part of the same process – an iteration we can gain insights from. It should be deprecated in such a way as to minimise disruption to existing users, just as we’d deprecate other end-of-life software products and services.</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/samuele-mattiuzzo.html'><span itemprop='name'>samuele-mattiuzzo</span></a>
+            (Samuele Mattiuzzo)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-06-10T10:35:17Z' class='post-time'>
+                June 10, 2019, 10:35am
+              </time>
+              <meta itemprop='dateModified' content='2019-06-10T10:35:17Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="11" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/andylolz/40/495_2.jpg" class="avatar"> andylolz:</div>
+<blockquote>
+<p>Can I make the suggestion that we refer to “datastore v1” and “datastore v2”, rather than “old datastore” and “new datastore”?</p>
+</blockquote>
+</aside>
+<p>Considering the difference between the two Datastores for what concerns v1 and v2 data, I’d say even that’s confusing.</p>
+<p>Luckily enough, we only have 2 products, so it should be easy enough for everyone to know which one is the current and which one is the next iteration of it. Plus (fingers crossed!) we’ll have this new iteration for quite a long time, and we should never end up in a situation where we have more than 2 tools.</p>
+<p>Whether we call it v1/v2, current/next, old/new, it makes absolutely no difference and it’s anyway clear enough which one is which</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-08-06T15:32:45Z' class='post-time'>
+                August 6, 2019,  3:32pm
+              </time>
+              <meta itemprop='dateModified' content='2019-08-06T15:32:45Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="12" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/samuele-mattiuzzo/40/485_2.png" class="avatar"> samuele-mattiuzzo:</div>
+<blockquote>
+<p>Plus (fingers crossed!) we’ll have this new iteration for quite a long time</p>
+</blockquote>
+</aside>
+<p>It would be good to talk about the lifecycle of the new datastore. Will it launch as alpha / beta / stable? Is there a planned timeline for moving to a stable release?</p>
+<p>I ask this with the current datastore in mind, which never progressed out of its alpha release. Providing a schedule for moving to a stable release could help give developers and users the confidence to rely on the new datastore.</p>
+<p>Thanks</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/samuele-mattiuzzo.html'><span itemprop='name'>samuele-mattiuzzo</span></a>
+            (Samuele Mattiuzzo)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-08-07T09:00:18Z' class='post-time'>
+                August 7, 2019,  9:00am
+              </time>
+              <meta itemprop='dateModified' content='2019-08-07T09:00:18Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi Andy, like we said the new Datastore will be soft-launched for a month of testing (which we can consider our public Beta release) after which we’ll start, for a period currently set to 5 months but flexible, supporting our stakeholders with their upgrades and migrations. This can be called the Release Candidate period, during which both iterations of the Datastores will live alongside each other. Automatic redirects will start being rolled out.</p>
+<p>After these months, we’ll have the Stable release, which will also see the old Datastore being dismissed.</p>
+<p>Locations (URLS, that is) of each instance and a basic user manual will be shared promptly with users as we approach the soft-launch (which will also be announced on Discuss, so watch this space).</p>
+<p>For what is worth, the Beta testing month is aimed at having our stakeholders and whoever else is interested in this try the Datastore and feed back on it, so no redirects will be in place nor we’ll support usage of the tool in an existing production environment (as we need to consolidate its functionality in a real life scenario)</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="5" />
+           <span class='post-likes'>5 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-08-07T10:20:16Z' class='post-time'>
+                August 7, 2019, 10:20am
+              </time>
+              <meta itemprop='dateModified' content='2019-08-07T10:20:16Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Great – many thanks for this update.</p>
+<p>So: a month of beta, ~5 months of RC, and a production-ready release in early 2020.</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/samuele-mattiuzzo.html'><span itemprop='name'>samuele-mattiuzzo</span></a>
+            (Samuele Mattiuzzo)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="1722.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-08-07T10:59:31Z' class='post-time'>
+                August 7, 2019, 10:59am
+              </time>
+              <meta itemprop='dateModified' content='2019-08-07T10:59:31Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes, with caveats. The decision to extend beyond those months ultimately will sit with us after proper consultation with our active stakeholders during those ~6 months prior to live release + deprecation of the old one.<br>
+(The above simply means that it’s a rough estimate of the upcoming months, and we are happy to be accommodating and flexible around it, so nothing’s set in stone)</p>
+        </div>
+
+        <meta itemprop='headline' content='Update on IATI Datastore API'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/update-on-iati-datastore-api/1722 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:32:10 GMT -->
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Detail on DFID implementers and procurement modalities</title>
+    <link>https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182</link>
+    <description>I&#39;m doing some analysis of DFID projects, looking at the relationship between procurement modalities (single source, competitive tender, etc), the type of implementer (agency, NGO, private sector, multi-lateral etc) and project results. The IATI format doesn&#39;t appear to present this sort of information and information on DFID&#39;s devtracker doesn&#39;t indicate what procurement approach was undertaken or who the implementer was beyond some very broad descriptions. Does anyone know if this information is publicly available anywhere?</description>
+    
+    <lastBuildDate>Tue, 12 May 2015 02:24:48 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Detail on DFID implementers and procurement modalities</title>
+        <dc:creator><![CDATA[MichaelMedley]]></dc:creator>
+        <description><![CDATA[
+            <p>As well as participating-org it may also be useful to look at transaction/receiver-org.</p>
+<p>The IATI standard also includes a document-link element and a code list for types of document that may be linked. One of the items in the code list is “tender”. Perhaps other items should be added. Although aid agency procurement may be covered by clear rules - like the EU rules - this does not mean there is not a role for greater public transparency in the way that procurement is done. As far as I can see, the EU leaves its member states to devise their own monitoring systems for adherence to the rules. I don’t know what the monitoring system is in the case of DFID, but it would be interesting to look into this and see if it needs to be made more open.</p>
+<p>One of the biggest obstacles you face in your analysis is the lack of consistent information about project results. DFID does not seem to use the results element in the standard. And although it often provides document-links, my impression is that usually you do not get a final report on performance.</p>
+          <p><a href="https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182/3</link>
+        <pubDate>Tue, 12 May 2015 02:24:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-182-3</guid>
+        <source url="https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182.rss">Detail on DFID implementers and procurement modalities</source>
+      </item>
+      <item>
+        <title>Detail on DFID implementers and procurement modalities</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Daniel,</p>
+<p>The type of implementer is in the IATI data under participating-org/<span class="mention">@ref</span>, for example<br>
+</p>
+<p>The <span class="mention">@ref</span> is actually a DAC Channel Code (see <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm">http://www.oecd.org/dac/stats/dacandcrscodelists.htm</a> for a list of codes). Major orgs (multilateral, INGO etc) are named in the channel code list, other orgs are in 51000/52000 “other” categories.</p>
+<p>DFID also publish contracts on the UK’s ContractsFinder (<a href="https://www.gov.uk/contracts-finder">https://www.gov.uk/contracts-finder</a>) and include the link to the ContractsFinder contract where possible. This is in the  for each project and shown on DevTracker.</p>
+<p>Let me check with colleagues on procurement modalities but the vast majority of DFID procurements are covered by clear EU rules.</p>
+<p>I hope this is helpful.</p>
+<p>John</p>
+          <p><a href="https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182/2</link>
+        <pubDate>Sun, 10 May 2015 15:31:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-182-2</guid>
+        <source url="https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182.rss">Detail on DFID implementers and procurement modalities</source>
+      </item>
+      <item>
+        <title>Detail on DFID implementers and procurement modalities</title>
+        <dc:creator><![CDATA[d22p22]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m doing some analysis of DFID projects, looking at the relationship between procurement modalities (single source, competitive tender, etc), the type of implementer (agency, NGO, private sector, multi-lateral etc) and project results. The IATI format doesn’t appear to present this sort of information and information on DFID’s devtracker doesn’t indicate what procurement approach was undertaken or who the implementer was beyond some very broad descriptions. Does anyone know if this information is publicly available anywhere?</p>
+          <p><a href="https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182/1</link>
+        <pubDate>Sat, 09 May 2015 11:01:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-182-1</guid>
+        <source url="https://discuss.iatistandard.org/t/detail-on-dfid-implementers-and-procurement-modalities/182.rss">Detail on DFID implementers and procurement modalities</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>File format code list</title>
+    <link>https://discuss.iatistandard.org/t/file-format-code-list/381</link>
+    <description>Please would someone give me a short version of this list: http://iatistandard.org/201/codelists/FileFormat/ which just includes the codes I should be using for the following:
+
+Word document
+PDF
+Excel file
+CSV file
+
+and give me an example of how it would be used? I think there&#39;s a URL or something to signpost to the code list as it&#39;s non-embedded?
+
+The list itself makes absolutely no sense at all to me.  Thanks! Sarah</description>
+    
+    <lastBuildDate>Fri, 29 Jan 2016 16:31:25 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/file-format-code-list/381.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>File format code list</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, big thank you to everyone who replied - this info was very helpful!</p>
+          <p><a href="https://discuss.iatistandard.org/t/file-format-code-list/381/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/file-format-code-list/381/6</link>
+        <pubDate>Fri, 29 Jan 2016 16:31:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-381-6</guid>
+        <source url="https://discuss.iatistandard.org/t/file-format-code-list/381.rss">File format code list</source>
+      </item>
+      <item>
+        <title>File format code list</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Crikey - that’s more than a mouthful<br>
+Let’s hope the Plain English Campaign never needs to publish to IATI</p>
+          <p><a href="https://discuss.iatistandard.org/t/file-format-code-list/381/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/file-format-code-list/381/5</link>
+        <pubDate>Wed, 13 Jan 2016 16:35:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-381-5</guid>
+        <source url="https://discuss.iatistandard.org/t/file-format-code-list/381.rss">File format code list</source>
+      </item>
+      <item>
+        <title>File format code list</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>BTW, <code>application/msword</code> and <code>application/vnd.ms-excel</code> are for the older .doc and .xls files.</p>
+<p>For newer Word and Excel files, you should use:<br>
+Word (.docx): <code>application/vnd.openxmlformats-officedocument.wordprocessingml.document</code><br>
+Excel (.xlsx): <code>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</code></p>
+          <p><a href="https://discuss.iatistandard.org/t/file-format-code-list/381/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/file-format-code-list/381/4</link>
+        <pubDate>Wed, 13 Jan 2016 16:17:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-381-4</guid>
+        <source url="https://discuss.iatistandard.org/t/file-format-code-list/381.rss">File format code list</source>
+      </item>
+      <item>
+        <title>File format code list</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Word document               application/msword<br>
+PDF     application/pdf<br>
+Excel   application/vnd.ms-excel<br>
+CSV    text/csv</p>
+<p>Example usage:</p>
+
+   
+    Project Report 2013
+   
+   
+   
+  
+<p>From <a href="http://iatistandard.org/201/activity-standard/iati-activities/iati-activity/document-link/" rel="nofollow noopener">http://iatistandard.org/201/activity-standard/iati-activities/iati-activity/document-link/</a></p>
+<p>John<br>
+<img src="https://discuss.iatistandard.org/uploads/default/original/1X/8440e26a8ccbe5a3a3f71745b569fbb43a74df60.png" width="45" height="45"></p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/e8ac224ba9ee97e87670ed6f3a2f0128b7af9fe4.gif" width="1" height="1"></p>
+          <p><a href="https://discuss.iatistandard.org/t/file-format-code-list/381/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/file-format-code-list/381/3</link>
+        <pubDate>Tue, 12 Jan 2016 14:45:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-381-3</guid>
+        <source url="https://discuss.iatistandard.org/t/file-format-code-list/381.rss">File format code list</source>
+      </item>
+      <item>
+        <title>File format code list</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>application/msword<br>
+application/pdf<br>
+application/vnd.ms-excel<br>
+text/csv</p>
+<p>Don’t shoot the messenger! <a href="http://www.iana.org/">Here’s the culprit</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/file-format-code-list/381/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/file-format-code-list/381/2</link>
+        <pubDate>Tue, 12 Jan 2016 14:42:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-381-2</guid>
+        <source url="https://discuss.iatistandard.org/t/file-format-code-list/381.rss">File format code list</source>
+      </item>
+      <item>
+        <title>File format code list</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Please would someone give me a short version of this list: <a href="http://iatistandard.org/201/codelists/FileFormat/" rel="nofollow noopener">http://iatistandard.org/201/codelists/FileFormat/</a> which just includes the codes I should be using for the following:</p>
+<p>Word document<br>
+PDF<br>
+Excel file<br>
+CSV file</p>
+<p>and give me an example of how it would be used? I think there’s a URL or something to signpost to the code list as it’s non-embedded?</p>
+<p>The list itself makes absolutely no sense at all to me.  Thanks! Sarah</p>
+          <p><a href="https://discuss.iatistandard.org/t/file-format-code-list/381/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/file-format-code-list/381/1</link>
+        <pubDate>Tue, 12 Jan 2016 14:23:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-381-1</guid>
+        <source url="https://discuss.iatistandard.org/t/file-format-code-list/381.rss">File format code list</source>
+      </item>
+  </channel>
+</rss>

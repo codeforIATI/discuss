@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using IATI in Bangladesh</title>
+    <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338</link>
+    <description>I wanted to give a quick heads up to the community that Matt Geddes and I are [working on a project][1] with the Economic Relations Division in the Ministry of Finance and UNDP, to begin using IATI data as part of Bangladesh&#39;s Aid Information Management System. 
+
+We&#39;re in Dhaka this week meeting with government officials and the donor community, so colleagues may get some enquiries from their country offices. We will also aim to give heads up where we&#39;re meeting with specific organisations.
+
+We&#39;ll keep the community updated here as we progress. Feel free to get in touch if you want more information.
+
+
+  [1]: http://jobs.undp.org/cj_view_job.cfm?cur_job_id=57889</description>
+    
+    <lastBuildDate>Thu, 28 Jul 2016 09:16:24 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Yohanna,</p>
+<p>It is very deliberately available for others. Full code (open source licensed) publicly available <a href="https://github.com/BD-IATI/edi" rel="nofollow noopener">here</a>.</p>
+<p>In terms of compatibility with DADs and AMPS, we designed it with this in mind. The module is freestanding i.e. does not require changes to the core DAD/AMP to work. It functions as an alternative data entry interface (leaving the standard manual one untouched) and as far as I am aware (although Mark would be a better guide), it would just need some tweaking to select the appropriate fields in the DAD/AMP to read from and write to (e.g. DG document the fields for an AMP <a href="https://github.com/devgateway/iatiimport/wiki" rel="nofollow noopener">here</a>). This should be helped by the latest UNDP LTA which I think requires the three companies (Synergy, DG and Catalpa) to open their systems to allow third-party improvements.</p>
+<p>Perhaps in some cases, we could do even more e.g. the BD AIMS does not yet have results data fields for the module to write to. Finally, in Bangladesh we also have the module authenticating users with the same usernames and passwords that they access the main AIMS and similar user friendly features like this should also be possible elsewhere.</p>
+<p>One idea we had was that as the IATI community identifies newer and better ways of dealing with these IATI refactoring issues (and as the standard changes), that we (and the community) could carry on implementing them in the module so that the benefits are easily rolled out to all of the module’s users - in a similar way to the auto updates that an operating system might get.</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/15</link>
+        <pubDate>Thu, 28 Jul 2016 09:16:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-15</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Matt, I had just been wondering if the module was available for others to use.</p>
+<p>Do you have a sense of whether (or how much) it would be compatible with other AIMS, like those from Development Gateway or Synergy?</p>
+<p>Fully agree that as the module (and IATI data) starts being used, we will likely learn a lot about how to improve our data, and how to represent it. That thought crossed my mind earlier this week as I warned colleagues to keep duplication of projects in mind when looking at the D-Portal.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/14</link>
+        <pubDate>Wed, 27 Jul 2016 18:09:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-14</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>My thanks too Yohanna,</p>
+<p>It was a really fun project to work on and great to be moving IATI data a bit closer to end users. As Mark said, we are very keen to go back and understand what parts are working and what parts need further tweaking, both from the perspectives of the donor staff who save days of work each quarter to enter their projects, and from the government staff to see how it is changing their procedures. We already have a list of extensions we would like to work on in the report e.g. extending it deeper (e.g. results data), and wider (e.g. NGO data) and further (IATI data directly into other Gov of Bangladesh processes (e.g. stats systems or investment planning).</p>
+<p>In addition, because the entire module is open-source and so free to use and modify, we are hoping that there may be interest to install it in many other AIMS systems around the world so that other countries can benefit. I also think that a lot of the lessons on e.g. what inputs are needed to avoid double counting, or to decide how to capture and present large and multi aspect projects will also be useful for the various other sites that use and present IATI data e.g. d-portal, openaidsearch, devtracker, iatistudio etc.</p>
+<p>Matt</p>
+<p>PS - if anyone is feeling super nerdy, I am sure that Mark and I can give you a run-through of the actual module in use to see what it involves in practice.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/13</link>
+        <pubDate>Wed, 27 Jul 2016 12:28:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-13</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, Yohanna!</p>
+<p>Yes – our work is over as we were tasked only with undertaking a pilot (though I think we went quite a bit beyond that). However, there is clearly a lot of work left to do and we’re looking into how we could take this forward. I’m sure we would want to continue to collect feedback and lessons learned during implementation of the module.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/12</link>
+        <pubDate>Tue, 26 Jul 2016 11:29:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-12</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Mark (and Matt), great job!</p>
+<p>I understand your work on the module is over.  Do you know if feedback and lessons will be collected on the implementation stage of the module? This could be useful in informing other roll-out strategies.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/11</link>
+        <pubDate>Mon, 25 Jul 2016 20:55:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-11</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>We’ve now finished development on the IATI import module for Bangladesh’s AIMS. We’ve written up <a href="http://bd-iati.github.io/blog/2016/07/21/using-open-data-solve-development-challenges/" rel="nofollow noopener">a short blog</a> summarising what we learned and some suggested next steps. The <a href="http://bd-iati.github.io/final-report/" rel="nofollow noopener">report in full</a> is also available to view online or download. The <a href="http://bd-iati.github.io/final-report/recommendations/" rel="nofollow noopener">detailed recommendations</a> include sections for donors, partner countries and the rest of the IATI community.</p>
+<p>As the blog states, now that we’ve begun to work out how to use this data, our view is that the next (and quite exciting stage) could be to begin applying data to solve real development challenges, bringing us back to the original aid effectiveness goals of IATI.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/10</link>
+        <pubDate>Thu, 21 Jul 2016 10:55:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-10</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/wendy">@Wendy</a>, <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>, thanks for your comments! Yes, absolutely.</p>
+<p>We’re in the final stages of development and will have the work complete by the end of May. We certainly have a lot of learning around using the data which we’ve tried to capture along the way (either on the website or on Github). It has also been very useful from the perspective of gaining a greater understanding of the way the data currently being published can (and in some cases, cannot) be used.</p>
+<p>We will pull together a final report at the end of the project and as part of that will aim to pull together a clear section on learning and recommended best practice for both publishers and data users as you’ve suggested. We’ve certainly benefited from the work that others have undertaken in the past and are likewise keen to contribute back.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/9</link>
+        <pubDate>Thu, 12 May 2016 11:28:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-9</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I think that would be extremely useful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/8</link>
+        <pubDate>Wed, 11 May 2016 21:49:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-8</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/markbrough">@markbrough</a> for all the information you have been posting about your experiences in undertaking this exercise. It is extremely interesting and enlightening to see IATI data being used in the field. It would also be great if at a suitable point in the project we could pull together all the ‘lessons learnt’ and see if we can distill your findings into some recommendations for best practice for both publishers and data users? I hope that would be useful for others?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/7</link>
+        <pubDate>Tue, 10 May 2016 08:52:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-7</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>We spent a bit of time last week working on the design and user interface, as well as handling financial data (making sure we’re getting all the maths right and performing currency conversion accurately) and improving the way we handle co-financed projects / trust funds.</p>
+<p>The following blog explains in more detail:<br>
+<a href="http://bd-iati.github.io/blog/2016/04/08/automatically-importing-financial-data/" class="onebox" target="_blank" rel="nofollow noopener">http://bd-iati.github.io/blog/2016/04/08/automatically-importing-financial-data/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/6</link>
+        <pubDate>Fri, 08 Apr 2016 15:14:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-6</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Working with <a href="http://www.technovista.com.bd/" rel="nofollow noopener">Technovista</a>, we’ve made more progress in using IATI data in Bangladesh. We’re now handling double-counting and merging IATI and AIMS data by allowing users to select which they would prefer to use. You can read more in our latest blog:<br>
+<a href="http://bd-iati.github.io/blog/2016/03/21/five-weeks-into-using-iati/" class="onebox" target="_blank" rel="nofollow noopener">http://bd-iati.github.io/blog/2016/03/21/five-weeks-into-using-iati/</a></p>
+<p>In addition to Canada and DFID, we’ve now worked with data from the EU, Netherlands, UNDP and the World Bank.</p>
+<p>The interface will certainly need some more work to polish it up and make it simpler to use. However, it’s pretty reassuring that we have managed to get this functionality up and running without too much difficulty. In time and after further testing and learning we’ll probably have some recommendations to feed back to the IATI community on how the standard (or the way publishers use it) could be improved to make this process easier and more automated. But for now, we will press ahead with using IATI data as it currently stands.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/5</link>
+        <pubDate>Mon, 21 Mar 2016 18:20:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-5</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Mark,<br>
+thanks for sharing all this information with the community.  It’s really interesting to follow your progress, and there’s quite a bit of food for thought for publishers (and others) in the various issues being raised.</p>
+<p>Look forward to the next update!</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/4</link>
+        <pubDate>Fri, 11 Mar 2016 17:22:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-4</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>We just published <a href="http://bd-iati.github.io/blog/2016/03/07/what-we-learned-in-3-weeks/" rel="nofollow noopener">a blog on our findings from the first three weeks of development</a> in importing IATI data to the Bangladesh AIMS, working with <a href="http://www.technovista.com.bd/" rel="nofollow noopener">Technovista</a>.</p>
+<p>Aside from a bunch of pretty important technical work we’ve now got working smoothly (retrieving data, converting between versions of the IATI Standard, etc), we have the following pieces of the user interface working well:</p>
+<ul>
+<li>handling data with multiple hierarchies</li>
+<li>filtering out projects not relevant to Bangladesh</li>
+<li>beginning to handle double-counting, where projects are reported by multiple DPs</li>
+<li>matching projects to the AIMS.</li>
+</ul>
+<p>Take a look at the blog for more details on all of this work. We will be proceeding in the next two weeks with the following two areas:</p>
+<ol>
+<li>a field-level import interface (to select where data should be taken from - IATI or the AIMS)</li>
+<li>a rough first interface to handle more complicated projects published by multiple DPs (trust fund and co-financed projects)</li>
+</ol>
+<p>The initial interface has been tested with Canadian and DFID projects. In the next two weeks, we will also be testing with EU, UNDP and World Bank projects.</p>
+<p>Our <a href="http://bd-iati.github.io/development/" rel="nofollow noopener">sprint work plans</a> are also always publicly available (see the links in the blog) and we welcome feedback on all of this from others in the IATI community!</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/3</link>
+        <pubDate>Wed, 09 Mar 2016 10:01:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-3</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>To those who are following, we now have the site for sharing our code and findings up an running here: <a href="http://bd-iati.github.io/" rel="nofollow noopener">http://bd-iati.github.io/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/2</link>
+        <pubDate>Fri, 04 Dec 2015 17:46:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-2</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+      <item>
+        <title>Using IATI in Bangladesh</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I wanted to give a quick heads up to the community that Matt Geddes and I are <a href="http://jobs.undp.org/cj_view_job.cfm?cur_job_id=57889" rel="nofollow noopener">working on a project</a> with the Economic Relations Division in the Ministry of Finance and UNDP, to begin using IATI data as part of Bangladesh’s Aid Information Management System.</p>
+<p>We’re in Dhaka this week meeting with government officials and the donor community, so colleagues may get some enquiries from their country offices. We will also aim to give heads up where we’re meeting with specific organisations.</p>
+<p>We’ll keep the community updated here as we progress. Feel free to get in touch if you want more information.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338/1</link>
+        <pubDate>Tue, 13 Oct 2015 06:53:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-338-1</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-in-bangladesh/338.rss">Using IATI in Bangladesh</source>
+      </item>
+  </channel>
+</rss>

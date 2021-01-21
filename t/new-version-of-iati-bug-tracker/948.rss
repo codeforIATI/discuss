@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>New version of IATI Bug Tracker</title>
+    <link>https://discuss.iatistandard.org/t/new-version-of-iati-bug-tracker/948</link>
+    <description>Last year around this time I put http://www.iatibugtracker.org/ online, which was an incomplete, example-ish tool that displayed validation logs on ~250 checks being applied in OIPA. 
+
+Since then, nothing really changed in being able to validate your data, nor in the (technical) data quality itself. So in an effort to give more feedback to data publishers I&#39;ve been working on finishing this tool. An updated version of it is now online. The update includes:
+
+* A list of all validation checks I could think of http://www.iatibugtracker.org/implemented-checks
+* Better search functionalities in publisher / dataset lists
+* Better functionalities to filter validation errors (select element/attribute)
+* More in depth info; the line number where the error occurs (for most of them at least), the used value in the XML in case its an &#39;not on codelist&#39; or &#39;incorrect format&#39; error. 
+* An updated, easier to maintain design (with a favicon of a bug)
+
+
+Further more, a couple notes on dubious errors;
+
+* When an element is used, its expected to have valid data (hence something like an empty narrative will show as an error).
+* When an attribute is used, its expected to have valid data (hence an empty transaction/provider-org/provider-activity-id will show as an error).
+* The &quot;Must be in the format {Registration Agency} - (Registration Number}&quot; check for org refs is a bit awkward; with that rule you can&#39;t correctly mention an organisation that uses a 1.0x ref (for example, unhabitat with ref 41120) from 2.0x data. This should solve itself when all orgs publish in 2.01+ though.
+* Some errors might throw for 1.0x data while they only apply to 2.0x. I was a bit lazy on this, but at the same time it gives publishers valuable info for their to do&#39;s when moving to 2.0x. 
+
+
+I hope this helps some publishers with improving their data, the tool is obviously not meant to blame anyone or rank something like technical data correctness, its just an extra aid. 
+
+Feedback is very welcome of course!
+
+
+
+p.s. excuse me for the name of the tool, software has bugs, data has errors.
+
+p.s.2 I&#39;ve got very limited ambition to further improve this tool anytime soon, its an evening hours side-project that took me too much time already.</description>
+    
+    <lastBuildDate>Wed, 12 Jul 2017 07:47:13 +0000</lastBuildDate>
+    <category>Data Quality</category>
+    <atom:link href="https://discuss.iatistandard.org/t/new-version-of-iati-bug-tracker/948.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>New version of IATI Bug Tracker</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>Last year around this time I put <a href="http://www.iatibugtracker.org/" rel="nofollow noopener">http://www.iatibugtracker.org/</a> online, which was an incomplete, example-ish tool that displayed validation logs on ~250 checks being applied in OIPA.</p>
+<p>Since then, nothing really changed in being able to validate your data, nor in the (technical) data quality itself. So in an effort to give more feedback to data publishers I’ve been working on finishing this tool. An updated version of it is now online. The update includes:</p>
+<ul>
+<li>A list of all validation checks I could think of <a href="http://www.iatibugtracker.org/implemented-checks" rel="nofollow noopener">http://www.iatibugtracker.org/implemented-checks</a>
+</li>
+<li>Better search functionalities in publisher / dataset lists</li>
+<li>Better functionalities to filter validation errors (select element/attribute)</li>
+<li>More in depth info; the line number where the error occurs (for most of them at least), the used value in the XML in case its an ‘not on codelist’ or ‘incorrect format’ error.</li>
+<li>An updated, easier to maintain design (with a favicon of a bug)</li>
+</ul>
+<p>Further more, a couple notes on dubious errors;</p>
+<ul>
+<li>When an element is used, its expected to have valid data (hence something like an empty narrative will show as an error).</li>
+<li>When an attribute is used, its expected to have valid data (hence an empty transaction/provider-org/provider-activity-id will show as an error).</li>
+<li>The “Must be in the format {Registration Agency} - (Registration Number}” check for org refs is a bit awkward; with that rule you can’t correctly mention an organisation that uses a 1.0x ref (for example, unhabitat with ref 41120) from 2.0x data. This should solve itself when all orgs publish in 2.01+ though.</li>
+<li>Some errors might throw for 1.0x data while they only apply to 2.0x. I was a bit lazy on this, but at the same time it gives publishers valuable info for their to do’s when moving to 2.0x.</li>
+</ul>
+<p>I hope this helps some publishers with improving their data, the tool is obviously not meant to blame anyone or rank something like technical data correctness, its just an extra aid.</p>
+<p>Feedback is very welcome of course!</p>
+<p>p.s. excuse me for the name of the tool, software has bugs, data has errors.</p>
+<p>p.s.2 I’ve got very limited ambition to further improve this tool anytime soon, its an evening hours side-project that took me too much time already.</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-version-of-iati-bug-tracker/948/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-version-of-iati-bug-tracker/948/1</link>
+        <pubDate>Wed, 12 Jul 2017 07:47:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-948-1</guid>
+        <source url="https://discuss.iatistandard.org/t/new-version-of-iati-bug-tracker/948.rss">New version of IATI Bug Tracker</source>
+      </item>
+  </channel>
+</rss>

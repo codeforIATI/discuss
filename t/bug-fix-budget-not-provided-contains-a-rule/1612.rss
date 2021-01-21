@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Bug fix: @budget-not-provided contains a rule</title>
+    <link>https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612</link>
+    <description>At the 2.03 upgrade the attribute @budget-not provided was added:
+
+    @budget-not-provided
+
+    A code indicating the reason why this activity does not contain any iati-activity/budget elements. The value must exist in the BudgetNotProvided codelist.
+
+    This value must be of type xsd:string.
+
+    This value must be on the BudgetNotProvided codelist
+
+The description contains a _rule_ that the attribute is only to be used when no budget elements are reported for the activity.
+
+The IATI Technical team consider adding the rule more clearly as a must to be a bug fix. At the same time, we will remove the duplicated sentence to read:
+
+     A code indicating the reason why this activity does not contain any iati-activity/budget elements. The code MUST only be used when no budget elements are present.
+
+Unless an objection is received we plan to implement this pull request for version 2.03 of the Activity Standard after seven days.</description>
+    
+    <lastBuildDate>Mon, 12 Aug 2019 14:37:12 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Bug fix: @budget-not-provided contains a rule</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>The code MUST only be used when no budget elements are present.</p>
+</blockquote>
+<p>^^ Maybe just me, but I find this sentence a bit difficult to parse.</p>
+<p>I wonder if the following is clearer? (I’m not sure myself – it seems quite difficult to phrase this in a clear way!)</p>
+<blockquote>
+<p>This attribute MUST NOT be set when one or more <code>budget</code> elements are present.</p>
+</blockquote>
+<p>(Also, I think we’re talking about an attribute here, rather than a code.)</p>
+          <p><a href="https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612/2</link>
+        <pubDate>Mon, 12 Aug 2019 14:37:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1612-2</guid>
+        <source url="https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612.rss">Bug fix: @budget-not-provided contains a rule</source>
+      </item>
+      <item>
+        <title>Bug fix: @budget-not-provided contains a rule</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>At the 2.03 upgrade the attribute <span class="mention">@budget-not</span> provided was added:</p>
+<pre><code>@budget-not-provided
+
+A code indicating the reason why this activity does not contain any iati-activity/budget elements. The value must exist in the BudgetNotProvided codelist.
+
+This value must be of type xsd:string.
+
+This value must be on the BudgetNotProvided codelist
+</code></pre>
+<p>The description contains a <em>rule</em> that the attribute is only to be used when no budget elements are reported for the activity.</p>
+<p>The IATI Technical team consider adding the rule more clearly as a must to be a bug fix. At the same time, we will remove the duplicated sentence to read:</p>
+<pre><code> A code indicating the reason why this activity does not contain any iati-activity/budget elements. The code MUST only be used when no budget elements are present.
+</code></pre>
+<p>Unless an objection is received we plan to implement this pull request for version 2.03 of the Activity Standard after seven days.</p>
+          <p><a href="https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612/1</link>
+        <pubDate>Wed, 09 Jan 2019 17:17:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1612-1</guid>
+        <source url="https://discuss.iatistandard.org/t/bug-fix-budget-not-provided-contains-a-rule/1612.rss">Bug fix: @budget-not-provided contains a rule</source>
+      </item>
+  </channel>
+</rss>

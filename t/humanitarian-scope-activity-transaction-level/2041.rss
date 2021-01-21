@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Humanitarian Scope - Activity/Transaction Level</title>
+    <link>https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041</link>
+    <description>Colleagues -
+
+Earlier this summer USAID realized that placement of the Humanitarian Scope at the transaction level was causing a critical validation error in the IATI Validator (original post [here](https://discuss.iatistandard.org/t/current-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19/1939/7)). USAID puts many details (such as country, sector) at the transaction level to improve the granularity of activity information. If we put Humanitarian Scope with the activity level, we will lose significant granularity in our information, as well as dramatically over-count USAID efforts to specific responses. Additionally, elements such as cluster code and glide code can differ among the transactions within one USAID activity.
+
+Initially, USAID decided the best interim solution would be to intentionally continue reporting Humanitarian Scope at the transaction level in order to preserve the granularity of our data. Because this is a critical validation error, however, we have now transitioned to “namespace” the element.
+
+Rather than continue using this workaround, USAID would like to see the IATI standard revised to accommodate the Humanitarian Scope at the transaction level in the same way recipient countries and sectors can be reported at the activity level or transaction level. This will not affect publishers who include this data at the activity level, but will allow for more granularity for those who want to publish transaction-level data. Additionally, we believe this improved granularity will be more useful for data users. 
+
+It would be great to discuss this with others.</description>
+    
+    <lastBuildDate>Mon, 26 Oct 2020 16:29:09 +0000</lastBuildDate>
+    <category>Humanitarian</category>
+    <atom:link href="https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Humanitarian Scope - Activity/Transaction Level</title>
+        <dc:creator><![CDATA[AVaughn]]></dc:creator>
+        <description><![CDATA[
+            <p>Colleagues -</p>
+<p>Earlier this summer USAID realized that placement of the Humanitarian Scope at the transaction level was causing a critical validation error in the IATI Validator (original post <a href="https://discuss.iatistandard.org/t/current-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19/1939/7">here</a>). USAID puts many details (such as country, sector) at the transaction level to improve the granularity of activity information. If we put Humanitarian Scope with the activity level, we will lose significant granularity in our information, as well as dramatically over-count USAID efforts to specific responses. Additionally, elements such as cluster code and glide code can differ among the transactions within one USAID activity.</p>
+<p>Initially, USAID decided the best interim solution would be to intentionally continue reporting Humanitarian Scope at the transaction level in order to preserve the granularity of our data. Because this is a critical validation error, however, we have now transitioned to “namespace” the element.</p>
+<p>Rather than continue using this workaround, USAID would like to see the IATI standard revised to accommodate the Humanitarian Scope at the transaction level in the same way recipient countries and sectors can be reported at the activity level or transaction level. This will not affect publishers who include this data at the activity level, but will allow for more granularity for those who want to publish transaction-level data. Additionally, we believe this improved granularity will be more useful for data users.</p>
+<p>It would be great to discuss this with others.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041/1</link>
+        <pubDate>Mon, 26 Oct 2020 16:29:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2041-1</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041.rss">Humanitarian Scope - Activity/Transaction Level</source>
+      </item>
+  </channel>
+</rss>

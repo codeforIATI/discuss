@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using participating-org to label cross-government funds</title>
+    <link>https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820</link>
+    <description>Most DFID projects are funded from DFID core funding (parliamentary vote). However DFID and other UK government bodies can also bid for funding from cross-government international development funds, such as Prosperity Fund, Conflict, Stabilisation and Security Fund (CSSF), Empowerment Fund, Ross Fund, Newton Fund. 
+
+These cross-government funds need to be clearly labelled in our open data (IATI) and on DevTracker, so that data users are aware of the difference between projects funded by these funds or from core funding. 
+
+We propose the following approach to clarify this for both core funding and cross-government funds, and would appreciate any feedback.
+
+## Core funding
+
+This will label the core funds element as from DFID. This is a similar pattern to that used by other national donors, for example The Netherlands. 
+
+Funding organisation - DFID core funds
+&gt;     &lt;participating-org ref=&quot;GB-GOV-1&quot; type=&quot;10&quot; role=&quot;1&quot;&gt;
+&gt;     &lt;narrative&gt;Department for International Development (core funds)&lt;/narrative&gt;
+&gt;     &lt;/participating-org&gt;
+
+Accountable org - DFID - note the relabel of this element to “accountable”.
+&gt;     &lt;participating-org ref=&quot;GB-GOV-1&quot; type=&quot;10&quot; role=&quot;2&quot;&gt;
+&gt;     &lt;narrative&gt;Department for International Development&lt;/narrative&gt;
+&gt;     &lt;/participating-org&gt;
+
+## Cross-government funds
+
+For cross-government funds, we will specify the fund used as the source. 
+
+Our options are broadly:
+
+1. Separate **organisation** for each of the Funds. This has the advantage that the participating-org is a specific organisation. However there is a risk that this does not match reality of the organisations.
+
+1. Separate **activity** for each of the Funds, managed by the responsible organisation (FCO, HMT, BEIS) and referred to in the participating-org field. 
+
+Option 2 makes more sense. Is this a similar approach to other funding models like Trust Funds?
+
+Option 1 - Funding **organisation** - Prosperity Fund
+&gt;     &lt;participating-org ref=&quot;GB-GOV-xx&quot; type=&quot;10&quot; role=&quot;1&quot;&gt;
+&gt;     &lt;narrative&gt;UK Government Prosperity Fund&lt;/narrative&gt;
+&gt;     &lt;/participating-org&gt;
+
+Preferred option 2 - Funding **activity** - Prosperity Fund as part of HMT
+&gt;     &lt;participating-org ref=&quot;GB-GOV-xx&quot; type=&quot;10&quot; role=&quot;1&quot; activity-id=”GB-GOV-xx-ProsperityFund”&gt; 
+&gt;     &lt;narrative&gt;UK Government Prosperity Fund&lt;/narrative&gt;
+&gt;     &lt;/participating-org&gt;
+
+Accountable org - DFID 
+&gt;     &lt;participating-org ref=&quot;GB-GOV-1&quot; type=&quot;10&quot; role=&quot;2&quot;&gt; 
+&gt;     &lt;narrative&gt;Department for International Development&lt;/narrative&gt;
+&gt;     &lt;/participating-org&gt;
+
+## Questions
+1. Does this model make sense?
+1. Is it consistent with similar funding models in other areas (trust funds etc)?</description>
+    
+    <lastBuildDate>Mon, 19 Jun 2017 20:12:53 +0000</lastBuildDate>
+    <category>Traceability</category>
+    <atom:link href="https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using participating-org to label cross-government funds</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>This is pretty much the same question I posted today. Have you gotten any feedback on this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820/3</link>
+        <pubDate>Mon, 19 Jun 2017 20:12:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-820-3</guid>
+        <source url="https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820.rss">Using participating-org to label cross-government funds</source>
+      </item>
+      <item>
+        <title>Using participating-org to label cross-government funds</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>As this post is to do with traceability, I am moving this post to Community Zone - Traceability.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820/2</link>
+        <pubDate>Thu, 25 May 2017 09:49:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-820-2</guid>
+        <source url="https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820.rss">Using participating-org to label cross-government funds</source>
+      </item>
+      <item>
+        <title>Using participating-org to label cross-government funds</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Most DFID projects are funded from DFID core funding (parliamentary vote). However DFID and other UK government bodies can also bid for funding from cross-government international development funds, such as Prosperity Fund, Conflict, Stabilisation and Security Fund (CSSF), Empowerment Fund, Ross Fund, Newton Fund.</p>
+<p>These cross-government funds need to be clearly labelled in our open data (IATI) and on DevTracker, so that data users are aware of the difference between projects funded by these funds or from core funding.</p>
+<p>We propose the following approach to clarify this for both core funding and cross-government funds, and would appreciate any feedback.</p>
+<h2>Core funding</h2>
+<p>This will label the core funds element as from DFID. This is a similar pattern to that used by other national donors, for example The Netherlands.</p>
+<p>Funding organisation - DFID core funds</p>
+<blockquote>
+<pre><code>&lt;participating-org ref="GB-GOV-1" type="10" role="1"&gt;
+&lt;narrative&gt;Department for International Development (core funds)&lt;/narrative&gt;
+&lt;/participating-org&gt;
+</code></pre>
+</blockquote>
+<p>Accountable org - DFID - note the relabel of this element to “accountable”.</p>
+<blockquote>
+<pre><code>&lt;participating-org ref="GB-GOV-1" type="10" role="2"&gt;
+&lt;narrative&gt;Department for International Development&lt;/narrative&gt;
+&lt;/participating-org&gt;
+</code></pre>
+</blockquote>
+<h2>Cross-government funds</h2>
+<p>For cross-government funds, we will specify the fund used as the source.</p>
+<p>Our options are broadly:</p>
+<ol>
+<li>
+<p>Separate <strong>organisation</strong> for each of the Funds. This has the advantage that the participating-org is a specific organisation. However there is a risk that this does not match reality of the organisations.</p>
+</li>
+<li>
+<p>Separate <strong>activity</strong> for each of the Funds, managed by the responsible organisation (FCO, HMT, BEIS) and referred to in the participating-org field.</p>
+</li>
+</ol>
+<p>Option 2 makes more sense. Is this a similar approach to other funding models like Trust Funds?</p>
+<p>Option 1 - Funding <strong>organisation</strong> - Prosperity Fund</p>
+<blockquote>
+<pre><code>&lt;participating-org ref="GB-GOV-xx" type="10" role="1"&gt;
+&lt;narrative&gt;UK Government Prosperity Fund&lt;/narrative&gt;
+&lt;/participating-org&gt;
+</code></pre>
+</blockquote>
+<p>Preferred option 2 - Funding <strong>activity</strong> - Prosperity Fund as part of HMT</p>
+<blockquote>
+<pre><code>&lt;participating-org ref="GB-GOV-xx" type="10" role="1" activity-id=”GB-GOV-xx-ProsperityFund”&gt; 
+&lt;narrative&gt;UK Government Prosperity Fund&lt;/narrative&gt;
+&lt;/participating-org&gt;
+</code></pre>
+</blockquote>
+<p>Accountable org - DFID</p>
+<blockquote>
+<pre><code>&lt;participating-org ref="GB-GOV-1" type="10" role="2"&gt; 
+&lt;narrative&gt;Department for International Development&lt;/narrative&gt;
+&lt;/participating-org&gt;
+</code></pre>
+</blockquote>
+<h2>Questions</h2>
+<ol>
+<li>Does this model make sense?</li>
+<li>Is it consistent with similar funding models in other areas (trust funds etc)?</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820/1</link>
+        <pubDate>Thu, 27 Apr 2017 13:11:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-820-1</guid>
+        <source url="https://discuss.iatistandard.org/t/using-participating-org-to-label-cross-government-funds/820.rss">Using participating-org to label cross-government funds</source>
+      </item>
+  </channel>
+</rss>

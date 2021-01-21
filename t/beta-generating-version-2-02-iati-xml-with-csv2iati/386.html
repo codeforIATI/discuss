@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:23:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>[Beta] Generating version 2.02 IATI XML with CSV2IATI - Using IATI Data - IATI Community Discussions</title>
+    <meta name="description" content="Hi everyone 
+
+Thanks to @bjwebb and @siemvaessen I&amp;#39;ve recently been able to generate version 2.02 IATI data out of the CSV2IATI tool   
+
+A word of caution - this isnt a straightforward process -so please only try/test th&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="386.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;[Beta] Generating version 2.02 IATI XML with CSV2IATI&#39;" href="386.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386" />
+<meta property="og:title" content="[Beta] Generating version 2.02 IATI XML with CSV2IATI" />
+<meta name="twitter:title" content="[Beta] Generating version 2.02 IATI XML with CSV2IATI" />
+<meta property="og:description" content="Hi everyone  Thanks to @bjwebb and @siemvaessen I’ve recently been able to generate version 2.02 IATI data out of the CSV2IATI tool  A word of caution - this isnt a straightforward process -so please only try/test this on non-production data models to begin with.  Ideally - create a brand new model in CSV2IATI to test it out for yourself.  The key to this project is this JSON code.  What this does is generate the “mapping” model in CSV2IATI according to the 2.02 schema.  As people might be aware..." />
+<meta name="twitter:description" content="Hi everyone  Thanks to @bjwebb and @siemvaessen I’ve recently been able to generate version 2.02 IATI data out of the CSV2IATI tool  A word of caution - this isnt a straightforward process -so please only try/test this on non-production data models to begin with.  Ideally - create a brand new model in CSV2IATI to test it out for yourself.  The key to this project is this JSON code.  What this does is generate the “mapping” model in CSV2IATI according to the 2.02 schema.  As people might be aware..." />
+<meta property="article:published_time" content="2016-01-21T15:49:26+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="386.html">[Beta] Generating version 2.02 IATI XML with CSV2IATI</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/iati-applied/21.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #2695B8'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Using IATI Data</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2016-01-21T15:49:26Z'>
+              <time itemprop='dateModified' datetime='2016-01-22T13:10:05Z' class='post-time'>
+                January 22, 2016,  1:10pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi everyone</p>
+<p>Thanks to <a class="mention" href="../../u/bjwebb.html">@bjwebb</a> and <a class="mention" href="../../u/siemvaessen.html">@siemvaessen</a> I’ve recently been able to generate version 2.02 IATI data out of the <a href="http://csv2iati.iatistandard.org/" rel="nofollow noopener">CSV2IATI tool</a></p>
+<p><em>A word of caution - this isnt a straightforward process -so please only try/test this on non-production data models to begin with.  Ideally - create a brand new model in CSV2IATI to test it out for yourself.</em></p>
+<p>The key to this project is <a href="https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83" rel="nofollow noopener">this JSON code</a>.  What this does is generate the “mapping” model in CSV2IATI according to the 2.02 schema.  As people might be aware, CSV2IATI currently outputs to version 1.03 by default.  It is actually possible to construct a model in line with any version of the schema - but this requires some careful work, planning and clicking.  Hence, this code helps generate the template according to 2.02, giving you the foundation to build on.</p>
+<p>To do this, try the following steps:</p>
+<ol>
+<li>Create a new model in CSV2IATI, with the source data CSV file you want to convert</li>
+<li>When in this model, click the link on the right hand side “<strong>Show JSON</strong>” - this is the current model in JSON format</li>
+<li>In a new tab, open the <a href="https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83" rel="nofollow noopener">2.02 JSON file</a> - and copy the JSON (tip: click on the Raw button to the <a href="https://gist.githubusercontent.com/Bjwebb/b3eccf2d314a2bdd3c83/raw/9bd633335dcc05117c66a0c8cab0702c6e944e68/mapping.json" rel="nofollow noopener">same code without the surrounding web page</a>)</li>
+<li>Go back to CSV2IATI, select the existing code, and then paste in the 2.02 version - this replaces the underlying code for your model</li>
+<li>Whilst the JSON window is still open, find the “Save Model” button click it.  This can be tricky in some browsers/interfaces - but it’s essential (I found) to save the model whilst the JSON is still open</li>
+<li>Once saved, you can close the JSON and moved to the model and mapping.</li>
+<li>In the mapping page you should see the whole of the activity standard elements and attributes, to map you source file again.</li>
+<li>If you really dont need a particular element you cna delete it with the small trashcan icon for each element/attribute.</li>
+<li>Tip: As you do so, dont forget to save!</li>
+<li>When you’ve finished, you can move directly to the convert page, and convert to XML.</li>
+</ol>
+<p>The resultant file is structured according to 2.02 , but with two small issues. To fix these, you’ll then need to download the XML and edit it:</p>
+<ol>
+<li>The version attribute of <code>iati-activities</code> will still be 1.03.  Manually edit this to 2.02</li>
+<li>The <code>reporting-org</code> element will not be formatted according to 2.02, if you have provided an Organisation Name in the first page of CSV2IATI - eg:</li>
+</ol>
+<p><code>&lt;reporting-org ref="12345" type="60"&gt;Org Name&lt;/reporting-org&gt;</code></p>
+<p>Find and replace the existing code with something like:</p>
+<p><code>&lt;reporting-org ref="12345" type="60"&gt;&lt;narrative&gt;Org Name&lt;/narrative&gt;&lt;/reporting-org&gt;</code></p>
+<p>As highlighted, this is quite involved, but does work if you make some time for it.  Would be great to hear from others who try it</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-01-22T13:10:54Z' class='post-time'>
+                January 22, 2016,  1:10pm
+              </time>
+              <meta itemprop='dateModified' content='2016-01-22T13:10:54Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>NB: post edited on 22nd Jan - the <code>&lt;narrative&gt;</code> element of <code>&lt;participating-org&gt;</code> is required</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-01-22T14:04:15Z' class='post-time'>
+                January 22, 2016,  2:04pm
+              </time>
+              <meta itemprop='dateModified' content='2016-01-22T14:04:15Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Update: There’s a slight snag with this in that when the CSV is converted to XML, the elements are not presented in the exact order required by the IATI 2.02 schema. We’ll look at a fix and update…</p>
+<p>(<a class="mention" href="../../u/rolfkleef.html">@rolfkleef</a> might be keen to know this)</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/pelleaardema.html'><span itemprop='name'>pelleaardema</span></a>
+            (Pelle Aardema)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-01-25T12:39:13Z' class='post-time'>
+                January 25, 2016, 12:39pm
+              </time>
+              <meta itemprop='dateModified' content='2016-01-25T12:39:13Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi Steven, great stuff!<br>
+I was just looking into possible tools to support all the upcoming Dutch publishers.</p>
+<p>I’ll give this a try in the coming week. Keep you posted.</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/rolfkleef.html'><span itemprop='name'>rolfkleef</span></a>
+            (Rolf Kleef)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-01-27T14:39:16Z' class='post-time'>
+                January 27, 2016,  2:39pm
+              </time>
+              <meta itemprop='dateModified' content='2016-01-27T14:39:16Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Ok, I’ve tried to adapt the model for an existing test dataset, and managed to get a “2.02-ish” file.</p>
+<p>Too bad this mandatory ordering of elements was introduced in version 2.01, just to make life harder for the producers <img src="../../images/emoji/twitter/winkae52.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>I haven’t completely re-arranged everything to pass the test, just one activity, and that works.</p>
+<p>A few observations:</p>
+<ul>
+<li>Under budget there is an attribute <code>status</code> that I don’t see in the standard.</li>
+<li>
+<code>activity-status</code> suggests to map a text value as well as the status code, but any text value will break validation.</li>
+<li>In my sample set (for 1.03), it would need some additional conversions from text to numeric codes, something to factor in.</li>
+</ul>
+<p>Will be good to try with a real-life example, just need a simpler way to re-arrange elements in the proper order…</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bjwebb.html'><span itemprop='name'>bjwebb</span></a>
+            (Ben Webb)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-01-27T15:44:01Z' class='post-time'>
+                January 27, 2016,  3:44pm
+              </time>
+              <meta itemprop='dateModified' content='2016-01-27T15:44:01Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve created a Python script to order an XML file according to the schema: <a href="https://github.com/OpenDataServices/iati-utils/blob/master/sort_iati.py" rel="nofollow noopener">https://github.com/OpenDataServices/iati-utils/blob/master/sort_iati.py</a></p>
+<p>Usage on Ubuntu:</p>
+<pre><code class="lang-auto"># get the script
+git clone https://github.com/OpenDataServices/iati-utils.git
+cd iati-utils
+# install lxml
+sudo apt-get install python3-lxml
+# get the schemas
+git clone https://github.com/IATI/IATI-Schemas.git
+# sort the xml
+python3 sort_iati.py input_file.xml output_file.xml
+</code></pre>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/rolfkleef.html'><span itemprop='name'>rolfkleef</span></a>
+            (Rolf Kleef)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-01-28T11:17:26Z' class='post-time'>
+                January 28, 2016, 11:17am
+              </time>
+              <meta itemprop='dateModified' content='2016-01-28T11:17:26Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks Ben, very helpful, played with it yesterday!</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/SJohns.html'><span itemprop='name'>SJohns</span></a>
+            (SJohns)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-02-04T11:26:16Z' class='post-time'>
+                February 4, 2016, 11:26am
+              </time>
+              <meta itemprop='dateModified' content='2016-02-04T11:26:16Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hello - yesterday Pelle and Theo mentioned that Open Data Services Cooperative are working on a CSV to XML Convertor that does 2.02. Any more info on that please? <a class="mention" href="../../u/stevieflow.html">@stevieflow</a> <a class="mention" href="../../u/bjwebb.html">@bjwebb</a> cc. <a class="mention" href="../../u/rolfkleef.html">@rolfkleef</a>   We need it for some of our orgs that have MFA funding please, and the above workaround is way too complicated for us mortals.</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-02-05T10:26:52Z' class='post-time'>
+                February 5, 2016, 10:26am
+              </time>
+              <meta itemprop='dateModified' content='2016-02-05T10:26:52Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/sjohns-2.html">@SJohns</a></p>
+<p>Thanks.  Everything that we (at Open Data Services Co-operative) have worked on is shared in the post I’m afraid.</p>
+<p>The CSV2IATI tool is hosted by the Secretariat  - I’m not aware of any roadmap to enable this to be 2.0x out of the box.</p>
+<p>As a community, we probably need to think about what is useful for us, and how this is then resourced and maintained.  In the case of CSV2IATI, I’m aware of how complex flat files can be (including the work we did <a href="https://www.bond.org.uk/strengthen/csv-converter-guidance-using-bond-templates" rel="nofollow noopener">on tabbed spreadsheets</a> with <a class="mention" href="../../u/danielmackenzie-2.html">@DanielMackenzie</a>), and how far we can get from “plug and play”.  However, the nature of IATI (multiples of multiples within multiples!) does demand a lot of attention in many cases.</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bjwebb.html'><span itemprop='name'>bjwebb</span></a>
+            (Ben Webb)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2016-02-08T16:02:33Z'>
+              <time itemprop='dateModified' datetime='2016-02-08T16:03:21Z' class='post-time'>
+                February 8, 2016,  4:03pm
+              </time>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>[Apologies for the deleted post, hit send too early].</p>
+<p>Some further technical details.</p>
+<p>The <a href="https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83" rel="nofollow noopener">CSV2IATI 2.02 JSON mapping</a> was generated by modifying a local instance of the CSV2IATI metadata generation code to use the 2.02 schema. I then created a mapping in the (local) interface, and exported the JSON from “Show JSON”). The JSON then needed manual editing to convert properly, this can be seen at: <a href="https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83/revisions" rel="nofollow noopener">https://gist.github.com/Bjwebb/b3eccf2d314a2bdd3c83/revisions</a></p>
+<p>The modified metadata generation can be seen at: <a href="https://github.com/OpenDataServices/CSV2IATI/commit/6677296976feb75e93e476d1edec7a38a34a7c3d" rel="nofollow noopener">https://github.com/OpenDataServices/CSV2IATI/commit/6677296976feb75e93e476d1edec7a38a34a7c3d</a> (I’ve shared this with Dale and Rory, but I don’t think it’s posted on this thread yet as it’s not needed to follow Steven’s instructions).<br>
+This change, and the XML sorting code also linked above might be useful to create a 2.02 version of CSV2IATI, but more development (and deployment) work would be required.</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/BrentPhillips.html'><span itemprop='name'>BrentPhillips</span></a>
+            (Brent Phillips)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-10-12T05:59:26Z' class='post-time'>
+                October 12, 2016,  5:59am
+              </time>
+              <meta itemprop='dateModified' content='2016-10-12T05:59:26Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m curious if anyone has experimented with the reverse and gotten the IATI XML to CSV tool to work recently? <a class="mention" href="../../u/bjwebb.html">@bjwebb</a> contributed some code to it last on GitHub: <a href="https://github.com/IATI/IATI-XSLT" rel="nofollow noopener">https://github.com/IATI/IATI-XSLT</a> and here’s some information on using it published by Adrian Collier: <a href="http://adrian-collier.com/converting-iati-xml-data-to-csv/" rel="nofollow noopener">http://adrian-collier.com/converting-iati-xml-data-to-csv/</a></p>
+<p>I’m testing it but can’t get it to work and wondering what I’m doing wrong. I’m mainly interested in examining what it outputs depending on what files are used as input.</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="386.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-10-17T12:33:03Z' class='post-time'>
+                October 17, 2016, 12:33pm
+              </time>
+              <meta itemprop='dateModified' content='2016-10-17T12:33:03Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/brentphillips-2.html">@BrentPhillips</a> - The CSV2IATI tool was decommissioned last summer. Perhaps you missed, but just in case:  <a href="http://www.aidtransparency.net/news/iati-publishing-tool-csv2iati-to-be-decommissioned" rel="nofollow noopener">http://www.aidtransparency.net/news/iati-publishing-tool-csv2iati-to-be-decommissioned</a></p>
+<p><a href="https://www.oipa.nl/" rel="nofollow noopener">https://www.oipa.nl</a>  does IATI XML export + CSV export. <a class="mention" href="../../u/vincentvw-2.html">@VincentVW</a> should be able to get you up to speed on that.</p>
+        </div>
+
+        <meta itemprop='headline' content='[Beta] Generating version 2.02 IATI XML with CSV2IATI'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/beta-generating-version-2-02-iati-xml-with-csv2iati/386 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:23:16 GMT -->
+</html>

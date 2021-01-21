@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Should the value-date attribute be required?</title>
+    <link>https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364</link>
+    <description>The value-date attribute of an value element is not marked as required in recent IATI versions at iatistandard.org (for example transaction value -&gt; value-date).
+
+To perform currency conversion correctly, and hence, cross IATI source comparison, this date would preferably be required. I&#39;m interested to know everyone else&#39;s opinion on this. 
+
+
+p.s. 
+
+In the old docs it was marked as required. Which makes me wonder if it was made non-required on purpose. 
+
+http://iatistandard.org/103/activities-standard/transaction/value/
+
+I also checked the IATI 1.04/1.05/2.01 xsd schema files, the value-date attribute is missing there for most occurrences of the value element.</description>
+    
+    <lastBuildDate>Sun, 18 Nov 2018 03:08:28 +0000</lastBuildDate>
+    <category>3.0.0 Major Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Should the value-date attribute be required?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I think this was reported in error, and should be closed as invalid. <code>value/@value-date</code> has always been required. It was <a href="http://reference.iatistandard.org/103/activities-standard/transaction/value/" rel="nofollow noopener">marked as required at v1.03</a>. I think the fact it is now marked as optional is a bug with the reference site, rather than the schema. I’ve created <a href="https://github.com/IATI/IATI-Standard-SSOT/issues/226" rel="nofollow noopener">a github ticket for that</a>.</p>
+<p>The only time <code>@value-date</code> is optional is in the <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/fss/forecast/" rel="nofollow noopener">fss element</a>, which is completely unused anyway <a href="http://dashboard.iatistandard.org/elements.html" rel="nofollow noopener">according to the dashboard</a>. Apart from that, <code>@value-date</code> is required.</p>
+<p>This proposal was on the list for discussion at the TAG, so I suggest closing (after checking what I’ve put here is correct!) to remove it from future discussions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/3</link>
+        <pubDate>Sun, 18 Nov 2018 03:08:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-364-3</guid>
+        <source url="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364.rss">Should the value-date attribute be required?</source>
+      </item>
+      <item>
+        <title>Should the value-date attribute be required?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Vincent</p>
+<p>It was never changed on purpose. In my view this is a bug which crept in between 1.03 and 1.04. We are allowed to fix bugs as and when they occur. However this does have implication for those publishers not currently using this attribute - see the dashboard breakdown <a href="http://dev.dashboard.iatistandard.org/element/iati-activity_transaction_value_@value-date.html">here</a>. I will take this to our next Technical Team meeting to discuss how best we can proceed.</p>
+<p>Bill</p>
+          <p><a href="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/2</link>
+        <pubDate>Tue, 17 Nov 2015 14:12:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-364-2</guid>
+        <source url="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364.rss">Should the value-date attribute be required?</source>
+      </item>
+      <item>
+        <title>Should the value-date attribute be required?</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>The value-date attribute of an value element is not marked as required in recent IATI versions at <a href="http://iatistandard.org" rel="nofollow noopener">iatistandard.org</a> (for example transaction value -&gt; value-date).</p>
+<p>To perform currency conversion correctly, and hence, cross IATI source comparison, this date would preferably be required. I’m interested to know everyone else’s opinion on this.</p>
+<p>p.s.</p>
+<p>In the old docs it was marked as required. Which makes me wonder if it was made non-required on purpose.</p>
+<p><a href="http://iatistandard.org/103/activities-standard/transaction/value/" class="onebox" target="_blank" rel="nofollow noopener">http://iatistandard.org/103/activities-standard/transaction/value/</a></p>
+<p>I also checked the IATI 1.04/1.05/2.01 xsd schema files, the value-date attribute is missing there for most occurrences of the value element.</p>
+          <p><a href="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/1</link>
+        <pubDate>Tue, 17 Nov 2015 13:31:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-364-1</guid>
+        <source url="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364.rss">Should the value-date attribute be required?</source>
+      </item>
+  </channel>
+</rss>

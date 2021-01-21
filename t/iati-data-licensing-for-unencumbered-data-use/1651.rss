@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI data licensing (for unencumbered data use!)</title>
+    <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651</link>
+    <description>@stevieflow’s [recent datastore discuss post](https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631) raised some issues about IATI data licenses that we should aim to resolve, in order to facilitate unencumbered and unfettered data use.
+
+For context, [the licensing section of the publishing guidance](https://github.com/IATI/IATI-Guidance/blob/4fc9723b/en/how-to-publish/establish-publishing-policies.rst#licensing) on the (old) IATI website says:
+
+&gt; The TAG secretariat, in collaboration with a small group chaired by the World Bank and including an open data/intellectual property lawyer, produced a set of recommendations for licensing. The IATI Licensing Standard, agreed in February 2011 at a meeting of signatories and the IATI Steering Committee, is that **information published through the IATI standard should be licensed under an open license. It is a set of principles that must be adhered to**, rather than a prescriptive set of terms and conditions.
+
+(Emphasis mine. NB it looks like the above paragraph was [lost in the move](https://github.com/IATI/IATI-Guidance/pull/329) to the new iatistandard.org site, and so it’s missing from [the corresponding page](https://iatistandard.org/en/guidance/preparing-organisation/organisation-data-publication/how-to-license-your-data/). Thanks to @markbrough for this institutional knowledge!)
+
+So, here are four proposed action points aimed at providing a consistent approach to IATI data licensing:
+
+ 1. Make data licenses mandatory for all new datasets in the registry (i.e. make it a required field, and remove the “Not specified” option). @amys has [already created a ticket for this](https://github.com/IATI/ckanext-iati/issues/229).
+ 2. Improve the licensing guidance on the IATI site so that it is (i) self-consistent and clear that IATI data is open data (see: the contradictory wording that @siemvaessen [flags on discuss](https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/11)) and (ii) provides a bit more explanation of why e.g. non-commercial (or closed more generally) is problematic.
+ 3. Fix existing &quot;closed&quot; and &quot;no license specified&quot; data in the registry, by contacting publishers and asking them to select an open license. I guess if these aren’t updated **after some pre-defined notice period** (h/t @stevieflow), these datasets would either need to default to an open license or be removed in order to be consistent with the IATI Licensing Standard.
+ 4. Remove the closed license options from the &quot;choose a license&quot; dropdown on the registry.
+
+How does that sound? Tagging people who commented on licensing in the datastore thread: @stevieflow @Herman @yohannaloucheur @bill_anderson @siemvaessen @David_Megginson</description>
+    
+    <lastBuildDate>Thu, 23 May 2019 08:17:13 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://www.namenerds.com/uucn/advice/dave.html" rel="nofollow noopener">Too many Josh</a> <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/28</link>
+        <pubDate>Thu, 23 May 2019 08:17:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-28</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[Joshua_Powell]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/stevieflow">@stevieflow</a>, I’ll happily take the credit for what <a class="mention" href="/u/joshstanley">@JoshStanley</a> has delivered <img src="https://discuss.iatistandard.org/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/27</link>
+        <pubDate>Wed, 22 May 2019 13:20:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-27</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Fantastic news, thanks <a class="mention" href="/u/petyakangalova">@petyakangalova</a>, <a class="mention" href="/u/joshua_powell">@Joshua_Powell</a> for the diligence and delivery - and to all others putting time and effort into this</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/26</link>
+        <pubDate>Wed, 22 May 2019 09:57:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-26</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/stevieflow">@stevieflow</a>. Changes did go live as notified by <a class="mention" href="/u/joshstanley">@JoshStanley</a>  6 days ago.</p>
+<p>In terms of the proposed steps, they have now all taken place and <a class="mention" href="/u/joshstanley">@JoshStanley</a> is in the process of contacting all users directly via email this week.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/25</link>
+        <pubDate>Tue, 21 May 2019 08:41:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-25</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/joshstanley">@JoshStanley</a> thanks - just to check: did this go live?</p>
+<p><a class="mention" href="/u/petyakangalova">@petyakangalova</a> in terms of your <a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/8">steps proposed in February</a>, where do you think we now are (nearly there, I think!) ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/24</link>
+        <pubDate>Mon, 20 May 2019 17:13:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-24</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[JoshStanley]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>Please note that there has been a slight delay to the deployment, which is now due to take place today.</p>
+<p>It is possible that the Registry will be down for a very short period (around 5 mins) while the site is rebuilt.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/23</link>
+        <pubDate>Wed, 15 May 2019 09:15:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-23</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[JoshStanley]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>Derilinx have been working on the changes to the License field on the Registry. The following changes have been made:</p>
+<ol>
+<li>
+<p>When a new publisher account is created, selecting a licence is mandatory.</p>
+</li>
+<li>
+<p>When an existing publisher amends their publisher details, and they have not previously selected a license, they must select a license before they are able to update.</p>
+</li>
+<li>
+<p>The following 4 options have been removed:</p>
+</li>
+</ol>
+<ul>
+<li>License not specified</li>
+<li>Creative Commons Non-Commercial (Any)</li>
+<li>Other (Non-Commercial)</li>
+<li>Other (Not Open)</li>
+</ul>
+<p>Derilinx are aiming to deploy these changes next week.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/22</link>
+        <pubDate>Thu, 25 Apr 2019 15:15:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-22</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all, thank you for your contributions. We’ll review this thread in the coming week, as well as the responses from organisations we’ve contacted and the Registry supplier.</p>
+<p>We’ll then confirm the list of licenses we’ll keep and how we’ll progress this work.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/21</link>
+        <pubDate>Fri, 08 Mar 2019 17:05:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-21</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[assem.kassim]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Andy</p>
+<p>The above points sound good and I don’t have an issue with them.  I just need to somehow review the licence for our organisation.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/20</link>
+        <pubDate>Wed, 06 Mar 2019 11:54:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-20</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for flagging <a class="mention" href="/u/mariamo">@MariaMO</a>! I’ve raised the issue with our Registry supplier for them to look into. You/we can reset the date in the same page where you choose a license.</p>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/IATI/ckanext-iati/issues/240" target="_blank">github.com/IATI/ckanext-iati</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/ckanext-iati/issues/240" target="_blank">Bug - first published date being reset</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2019-03-05" data-time="10:01:55" data-timezone="UTC">10:01AM - 05 Mar 19 UTC</span>
+      </div>
+
+        <div class="date">
+          closed <span class="discourse-local-date" data-format="ll" data-date="2019-06-17" data-time="08:42:49" data-timezone="UTC">08:42AM - 17 Jun 19 UTC</span>
+        </div>
+
+      <div class="user">
+        <a href="https://github.com/amy-silcock" target="_blank">
+          <img alt="amy-silcock" src="https://avatars1.githubusercontent.com/u/27764077?v=4" class="onebox-avatar-inline" width="20" height="20">
+          amy-silcock
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">Please the end of the discussion thread here: https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/17
+UNOPS have recently changed their licensing type, and doing so re-set their first...</p>
+</div>
+
+<div class="labels">
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">High priority</span>
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">bug</span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/19</link>
+        <pubDate>Tue, 05 Mar 2019 10:01:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-19</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[MariaMO]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you <a class="mention" href="/u/andylolz">@andylolz</a> Could not have done it without you. We are live now with the new licence category.</p>
+<p>What we noticed was that after updating, our user description changed to “First published date: 29 August 2018” which is of course incorrect, as the original date was September 2011. If there is a way to correct, so let us know. Flagging this again just in case happens also to others.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/18</link>
+        <pubDate>Mon, 04 Mar 2019 16:52:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-18</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/mariamo">@MariaMO</a> For UNOPS, it should be on this page: <a href="https://iatiregistry.org/publisher/edit/unops">https://iatiregistry.org/publisher/edit/unops</a></p>
+<p>The “License” dropdown ought to be the fifth field on the form.</p>
+<p>In general, this page can be reached by:</p>
+<ol>
+<li><a href="https://iatiregistry.org/user/login">Logging into the Registry here</a></li>
+<li>Clicking <a href="https://iatiregistry.org/dashboard/organizations">My Publishers</a>
+</li>
+<li>Clicking on the name of the relevant publisher in the table</li>
+<li>Clicking the <img src="https://discuss.iatistandard.org/images/emoji/twitter/wrench.png?v=5" title=":wrench:" class="emoji" alt=":wrench:"> <strong>Manage</strong> button</li>
+</ol>
+<p>I guess the important bit to note is that the license is set for the publisher, not for the individual dataset(s).</p>
+<p>Hope that helps.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/17</link>
+        <pubDate>Mon, 04 Mar 2019 11:31:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-17</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[MariaMO]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi again and many thanks Josh,<br>
+Yes we looked for one on Friday already and again now, and we don’t seem to have a licence drop down - perhaps because our account is from 2011? This might be prompted now for new(er) accounts? Let me know if I should raise a ticket for this, just mentioning here, in case others have the same issue.</p>
+<p>Best regards,<br>
+Maria</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/16</link>
+        <pubDate>Mon, 04 Mar 2019 10:56:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-16</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[JoshStanley]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Maria,</p>
+<p>Thanks for getting in touch.</p>
+<p>You are able to change the License yourself by logging into the Registry and selecting OKD Compliant::Creative Commons Attribution from the License drop-down.</p>
+<p>We are still working with the Registry’s hosts to ascertain our options with regard to publishers who do not change their license themselves in the coming weeks.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/15</link>
+        <pubDate>Mon, 04 Mar 2019 10:22:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-15</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[MariaMO]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there and thanks for your mail Josh. Back in the day, we chose: OKD Compliant::Other (Attribution) as a license, because in 2011 there’s was less developed Creative Commons guidance.</p>
+<p>We would be fine to change our licensing to ‘OKD Compliant::Creative Commons Attribution’.</p>
+<p>The question from my side is: now that we know that we would like to change the licencing category, how would we best go about it? Is there an option to change the status ourselves or would the technical team need to change the settings for us?</p>
+<p>Best,<br>
+Maria / UNOPS</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/14</link>
+        <pubDate>Fri, 01 Mar 2019 16:43:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-14</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[JoshStanley]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>Just a note to say that an email will be going out this afternoon to our main contacts at all Orgs where their License type is one of the ‘others’; inviting them to join this discussion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/13</link>
+        <pubDate>Fri, 01 Mar 2019 15:01:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-13</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Great to see this moving forward! 100% in favour of removing the first set (i.e. no longer allowing it to be selected, and encouraging publishers to re-select a compliant license).</p>
+<p>I understand some of the “other” licenses can be country-specific variants of other CC licenses, e.g. similar to the UK Open Government License (which IIRC is more or less equivalent to CC-BY). I think several countries may have policies to use their own equivalents (e.g. <a href="https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf" rel="nofollow noopener">France</a>, <a href="https://www.govdata.de/dl-de/by-2-0" rel="nofollow noopener">Germany</a>, <a href="https://www.usa.gov/government-works" rel="nofollow noopener">USA</a>), so might be worth checking with those publishers… But as <a class="mention" href="/u/andylolz">@andylolz</a> <a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/7">says</a>, perhaps the fact that they have stated the license is OKD compliant is sufficient!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/12</link>
+        <pubDate>Mon, 25 Feb 2019 18:19:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-12</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, thanks <a class="mention" href="/u/petyakangalova">@petyakangalova</a> and everyone.</p>
+<p>Re. Step 2: here are the lists of organisations using the “Other” open licenses:</p>
+<ul>
+<li><a href="http://dashboard.iatistandard.org/license/other-at.html">Other (Attribution)</a></li>
+<li><a href="http://dashboard.iatistandard.org/license/other-pd.html">Other (Public Domain)</a></li>
+<li><a href="http://dashboard.iatistandard.org/license/other-open.html">Other (Open)</a></li>
+</ul>
+<p>Would probably be useful to contact some of the organisations on these lists (e.g. UNOPS; Sida; EC DEVCO to name three) just to get an understanding of their choice.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/11</link>
+        <pubDate>Mon, 25 Feb 2019 15:03:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-11</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Great summary and steps forward <a class="mention" href="/u/petyakangalova">@petyakangalova</a> - look forward to seeing what happens. The core list looks fine to me. The organisations I work with use CC in the main so I’m not sure of the use cases for the ‘other’ categories - other people will have more input I’m sure.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/10</link>
+        <pubDate>Sun, 24 Feb 2019 21:26:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-10</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/petyakangalova">@petyakangalova</a> for summarizing this thread in this very clear action list.</p>
+<p>As pointed out by  <a class="mention" href="/u/sjohns">@SJohns</a> above, the ''Other" category is rather vague and it is tempting to choose. My preference would be to exclude them from the list of acceptable licences.</p>
+<p>Might it be an idea to summarize the main features of each license type on the IATI website so that new publishers can make an informed decision?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/9</link>
+        <pubDate>Fri, 22 Feb 2019 13:11:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-9</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you all for engaging in this really important conversation about licensing. In order to move things forward and action this, I propose the following step-by-step approach:</p>
+<p><strong>Step 1:</strong> Make the licensing field in the IATI Registry mandatory. We aim for this to happen in the next few weeks.</p>
+<p><strong>Step 2</strong>: We need an agreement on which types of licenses should be removed from the current list available on the IATI Registry. I propose the following and would really welcome views and discussion specifically on the ‘Other’ options and whether they should be kept or removed. If people can contribute by <strong>Friday 8th of March</strong> so that we can take a decision that will be much appreciated.</p>
+<p><em><strong>Remove</strong> the licenses below:</em></p>
+<blockquote>
+<ul>
+<li>License not specified</li>
+<li>Creative Commons Non-Commercial (Any)</li>
+<li>Other (Non-Commercial)</li>
+<li>Other (Not Open)</li>
+</ul>
+</blockquote>
+<p><em><strong>Discuss</strong> whether to remove the three licenses specified below:</em></p>
+<blockquote>
+<ul>
+<li>Other (Open)</li>
+<li>Other (Public Domain)</li>
+<li>Other (Attribution)</li>
+</ul>
+</blockquote>
+<p><em><strong>Keep</strong> the below list:</em></p>
+<blockquote>
+<ul>
+<li>Open Data Commons Public Domain Dedication and License (PDDL)</li>
+<li>Open Data Commons Open Database License (ODbL)</li>
+<li>Open Data Commons Attribution License</li>
+<li>Creative Commons CCZero</li>
+<li>Creative Commons Attribution</li>
+<li>Creative Commons Attribution Share-Alike</li>
+<li>GNU Free Documentation License</li>
+<li>UK Open Government Licence (OGL)</li>
+</ul>
+</blockquote>
+<p><strong>Step 3:</strong> The technical team will  investigate what are the options for those publishers who are not using an open license, working with our registry provider Derilinx. Possible options being either automatically defaulting to an open license OR having the option to keep them as is.</p>
+<p><strong>Step 4:</strong> Update the drop-down list on the IATI Registry (following agreement on Step 1). Then update the licensing guidance on the IATI website to reflect the changes made and provide more clarity. The guidance will be improved as suggested below.</p>
+<blockquote>
+<p>Improve the licensing guidance on the IATI site so that it is (i) self-consistent and clear that IATI data is open data (see: the contradictory wording that <a href="https://discuss.iatistandard.org/u/siemvaessen">@siemvaessen</a> <a href="https://discuss.iatistandard.org/t/iati-datastore-what-data-should-go-in/1631/11">flags on discuss</a>) and (ii) provides a bit more explanation of why e.g. non-commercial (or closed more generally) is problematic.</p>
+</blockquote>
+<p>Then we will inform IATI publishers affected by the changes through email to advise them on the actions they should take. This will include a set deadline, which will be appropriate to the requests made.</p>
+<p>Please comment on which licenses should be removed and kept by responding to this post by <strong>Friday 8th of March</strong>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/8</link>
+        <pubDate>Thu, 21 Feb 2019 17:45:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-8</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>This is great – thanks <a class="mention" href="/u/sjohns">@SJohns</a>! I had no idea about <a href="http://dashboard.iatistandard.org/licenses.html">the license page</a> on the IATI dashboard – thanks for sharing!</p>
+<aside class="quote no-group" data-post="6" data-topic="1651">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/s/65b543/40.png" class="avatar"> SJohns:</div>
+<blockquote>
+<p>Given that licenses are there for data users to check how the data is allowed to be used, having undefined/vague license information is not very useful.</p>
+</blockquote>
+</aside>
+<p>Agree that undefined/vague license information is bad! If an “other” license is chosen, there would ideally be a way to specify it by linking to or embedding some license text. Fortunately, all 9 of the open licenses available in the Registry dropdown declare <a href="https://opendefinition.org/licenses/">open definition compliance</a> (see the “ OKD Compliant::” prefix <a href="http://dashboard.iatistandard.org/licenses.html">in this list</a>) so that’s definitely something.</p>
+<p>I’m certainly in favour of pushing publishers towards choosing well-known open license options, such as the Creative Commons suite.</p>
+<p>However, I think it could be a problem to remove the “other” open license options, because a publisher isn’t necessarily choosing the data license for the first time when they select it in the registry. They might be publishing some already-licensed data, so need a way to select the existing license.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/7</link>
+        <pubDate>Tue, 12 Feb 2019 12:31:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-7</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Just thinking this through for CSOs. Anything that makes it super-simple to do the right thing, for example making the license field mandatory and only making it possible to only choose an open license is very welcome. Looking at the dashboard, losing the ‘licence not specified’ would affect 1395 activities from 443 organsations, and losing the non-open options would affect 54 activities from 23 organisations.</p>
+<p>I wonder if we should go further and reduce the number of options on the dropdown list (currently 10 excluding ‘not specified’) to just the 6 open data licenses that meet the <a href="https://opendefinition.org/licenses/" rel="nofollow noopener">open definition requirements</a> plus one category that allows governments to show their data licensed under an OGL or similar.</p>
+<p>Reason is that 2929 activities are currently licensed under the license “OKD Compliant::Other (Attribution)” and there are several more ‘Other’ options.</p>
+<p>Given that licenses are there for data users to check how the data is allowed to be used, having undefined/vague license information is not very useful.</p>
+<p>And for civil society data providers it’s already hard to understand the difference between <a href="https://creativecommons.org/" rel="nofollow noopener">CC</a> and <a href="https://opendatacommons.org/" rel="nofollow noopener">ODC</a> - throw in an option for ‘Other’ and they will go for that by default (to see what I mean, see the <a href="http://dashboard.iatistandard.org/license/other-at.html" rel="nofollow noopener">list of organisations</a> using the “OKD Compliant::Other (Attribution)” option.</p>
+<p>What do you think?</p>
+<p>Also, what about having an element or attribute in the Standard which defines which open data license is attached to the data? For example as an attribute of iati-activities? Then the license is right there in the data, the same way you can embed a CC license in other open works.</p>
+<p>I’m not a technical person so it may have been considered before and thrown out! <a class="mention" href="/u/markbrough">@markbrough</a> might know.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/6</link>
+        <pubDate>Mon, 11 Feb 2019 13:54:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-6</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="1651">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>This should therefore involve a period of notice</p>
+</blockquote>
+</aside>
+<p>+1. Have amended the original post.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/5</link>
+        <pubDate>Sat, 09 Feb 2019 15:45:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-5</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+      <item>
+        <title>IATI data licensing (for unencumbered data use!)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Excellent, thanks <a class="mention" href="/u/andylolz">@andylolz</a>.  I agree - this is a very practical list to implement</p>
+<aside class="quote no-group" data-post="1" data-topic="1651">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>I guess if these aren’t updated, these datasets would either need to default to an open license or be removed in order to be consistent with the IATI Licensing Standard.</p>
+</blockquote>
+</aside>
+<p>I see some difficulty here, as we are actually saying that non-open data would no longer be accessible via the IATI Registry?  This should therefore involve a period of notice (as with the deprecation of version 1) to enable these publishers to schedule their action (if any)?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651/4</link>
+        <pubDate>Sat, 09 Feb 2019 11:16:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1651-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-data-licensing-for-unencumbered-data-use/1651.rss">IATI data licensing (for unencumbered data use!)</source>
+      </item>
+  </channel>
+</rss>

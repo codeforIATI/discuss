@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Update on IATI Datastore API</title>
+    <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722</link>
+    <description>**New DataStore API**
+
+As everyone is aware the new IATI DataStore is in the process of being built. There have been a few questions about the API that this discuss post seeks to address. We have a bit of background on the old DataStore for context then the information about the new DataStore API.
+
+**History of the old Datastore**
+
+When the IATI Standard was launched there were strong arguments against IATI maintaining a database: this was seen to be overlapping the service provided by the OECD CRS which is a curated database. The datastore was instead agreed as an uncurated view of the files held on the Registry.
+
+The original datastore was built in 2011/12 by Open Knowledge (who also managed the IATI Registry at the time). It replicated all (readable) data on the Registry. It was sold as everything in the Registry today will be in the datastore (DS) tomorrow.
+Locations and results data were not included in this alpha - only transactions, budgets and activity-level data were imported into the DataStore (the whole activity was only available through an xml blob stored for each activity). The alpha product did not clean data, it just show exactly what was on the Registry.
+
+The plan had been that these additional features would be added in future phases of the DataStore but due to a number of reasons (including budget and contractual matters) the project never went beyond phase one.
+
+**New IATI datastore**
+
+The new datastore is based on existing open source software [&amp;lsquo;OIPA&amp;rsquo;](https://github.com/zimmerman-zimmerman/OIPA) and is actively being maintained by [Zimmerman &amp;amp; Zimmerman](https://www.zimmermanzimmerman.nl/). OIPA has been in use with a variety of international organisations and governments like UNESCO, IOM, DFID, MFA and many others. This new datastore will scrape the IATI Registry for IATI Publishers and their XML data sources, validate XML using the new IATI Validator service and will then transform, store and interface that data into API for anyone to use. The API has 14 different API endpoints each with their specific purpose. The datastore will also allow users to export XML, CSV and xlsx format if so desired. Snapshot of functionality as per original specification:
+
+1. ETL (Extract, Transform, Load) from XML to JSON
+
+2. Validation provided by new IATI Validator
+
+3. IATI Version support
+
+4. XML exports
+
+5. Range of filters available
+
+6. API output
+
+7. CSV/XLSX Serialisations
+
+**Timeline for delivery**
+
+The new DataStore will be launched together with the IATI Validator this summer.
+
+The IATI technical team met with Zimmerman and Zimmerman along with Data4Development earlier this month to agree how the two systems will integrate. We will share more information on the system integration of the two products in early May with an update on the timeline.
+
+**Moving from old to new API**
+
+The new OIPA-powered Datastore will differ from the current one both in API calls and results returned. This is because as it shows more of IATI data, a new structure is needed to do so logically.
+
+For API calls we have limited the changes as much as was possible to do whilst still delivering a product that has a different core structure and more capabilities. Mostly what will be required is small tweaks in the url in use so that it points to the new location. The mapping is not going to be a 1:1 mapping so we cannot use the old API structure with redirects.
+
+For returned results, the underlying structure will once again be mostly the same, with a few changes. The new Datastore allows for a more comprehensive and precise resultset to be explored. An example is the participating-org result row: in the current system, the users will receive a result containing participating-org.role = 3, while the new Datastore offers an expanded view, providing both participating-org.role.code = 3 and participating-org.role.name = Extending, effectively removing the need for cross checks and extra calls.
+
+**Don&amp;rsquo;t panic!**
+
+
+The technical team are here to help. There will be documentation of all the new parameters, queries possible and outputs so that the transition can happen as smoothly as possible.
+
+We are also making sure there is a grace period where the old DataStore will exist in parallel till the end of 2019 so that there is plenty of time to make necessary changes.
+
+Details of who is using the current DataStore are being collected[ here. ](https://docs.google.com/spreadsheets/d/1beLGWtExOUnAMFthVppt44aUsGTeVMSES4-1R3BiU0I/edit#gid=867726358)</description>
+    
+    <lastBuildDate>Wed, 07 Aug 2019 10:59:31 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, with caveats. The decision to extend beyond those months ultimately will sit with us after proper consultation with our active stakeholders during those ~6 months prior to live release + deprecation of the old one.<br>
+(The above simply means that it’s a rough estimate of the upcoming months, and we are happy to be accommodating and flexible around it, so nothing’s set in stone)</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/16</link>
+        <pubDate>Wed, 07 Aug 2019 10:59:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-16</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Great – many thanks for this update.</p>
+<p>So: a month of beta, ~5 months of RC, and a production-ready release in early 2020.</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/15</link>
+        <pubDate>Wed, 07 Aug 2019 10:20:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-15</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Andy, like we said the new Datastore will be soft-launched for a month of testing (which we can consider our public Beta release) after which we’ll start, for a period currently set to 5 months but flexible, supporting our stakeholders with their upgrades and migrations. This can be called the Release Candidate period, during which both iterations of the Datastores will live alongside each other. Automatic redirects will start being rolled out.</p>
+<p>After these months, we’ll have the Stable release, which will also see the old Datastore being dismissed.</p>
+<p>Locations (URLS, that is) of each instance and a basic user manual will be shared promptly with users as we approach the soft-launch (which will also be announced on Discuss, so watch this space).</p>
+<p>For what is worth, the Beta testing month is aimed at having our stakeholders and whoever else is interested in this try the Datastore and feed back on it, so no redirects will be in place nor we’ll support usage of the tool in an existing production environment (as we need to consolidate its functionality in a real life scenario)</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/14</link>
+        <pubDate>Wed, 07 Aug 2019 09:00:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-14</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="12" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/samuele-mattiuzzo/40/485_2.png" class="avatar"> samuele-mattiuzzo:</div>
+<blockquote>
+<p>Plus (fingers crossed!) we’ll have this new iteration for quite a long time</p>
+</blockquote>
+</aside>
+<p>It would be good to talk about the lifecycle of the new datastore. Will it launch as alpha / beta / stable? Is there a planned timeline for moving to a stable release?</p>
+<p>I ask this with the current datastore in mind, which never progressed out of its alpha release. Providing a schedule for moving to a stable release could help give developers and users the confidence to rely on the new datastore.</p>
+<p>Thanks</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/13</link>
+        <pubDate>Tue, 06 Aug 2019 15:32:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-13</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_2.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>Can I make the suggestion that we refer to “datastore v1” and “datastore v2”, rather than “old datastore” and “new datastore”?</p>
+</blockquote>
+</aside>
+<p>Considering the difference between the two Datastores for what concerns v1 and v2 data, I’d say even that’s confusing.</p>
+<p>Luckily enough, we only have 2 products, so it should be easy enough for everyone to know which one is the current and which one is the next iteration of it. Plus (fingers crossed!) we’ll have this new iteration for quite a long time, and we should never end up in a situation where we have more than 2 tools.</p>
+<p>Whether we call it v1/v2, current/next, old/new, it makes absolutely no difference and it’s anyway clear enough which one is which</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/12</link>
+        <pubDate>Mon, 10 Jun 2019 10:35:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-12</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Can I make the suggestion that we refer to “datastore v1” and “datastore v2”, rather than “old datastore” and “new datastore”?</p>
+<p>“Old” and “new” are not future-proof terms. The passage of time means “new” will inevitably become “old” some day!</p>
+<p>But more importantly, I think this helps encourage a more agile mindset. The “new” datastore is not the solution, but rather the next iteration. As with all software projects, it probably won’t perfectly solve all problems for all users. There will probably be future iterations (the “<strong>new</strong> new” datastore? Or v3, v4 etc.)</p>
+<p>Similarly, the “old” datastore was part of the same process – an iteration we can gain insights from. It should be deprecated in such a way as to minimise disruption to existing users, just as we’d deprecate other end-of-life software products and services.</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/11</link>
+        <pubDate>Thu, 06 Jun 2019 13:13:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-11</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>This is super good, thanks <a class="mention" href="/u/andylolz">@andylolz</a>! I think it shows how simple it would be to avoid breaking systems at country level. On <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> point, as the XML output is still under active development and some additional metadata (total number of results and status) would be useful and something similar is in the JSON output already, perhaps <a class="mention" href="/u/siemvaessen">@siemvaessen</a> could just adjust the XML output to include this metadata?</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/10</link>
+        <pubDate>Thu, 09 May 2019 11:40:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-10</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks (amazing) <a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p>Not suggesting you should do it now now, but trying to think about any other potential issues, I guess it wouldn’t be hard to add the header that comes with datastore xml?</p>
+<pre><code>&lt;result&gt;&lt;ok&gt;True&lt;/ok&gt;
+&lt;iati-activities generated-datetime="2019-05-09T10:11:11.870934"
+&lt;query&gt;&lt;total-count&gt;1&lt;/total-count&gt;&lt;start&gt;0&lt;/start&gt;
+&lt;limit&gt;50&lt;/limit&gt;&lt;/query&gt;
+</code></pre>
+<p>The redirects for the datafiles route seem to require the internal name? but I guess we could do a lookup for this - or maybe the new datastore will include both options.</p>
+<p>It also looks like as soon as the new datastore can do =activity&amp;transaction, not just =transaction then we should also be able to redirect those.</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/9</link>
+        <pubDate>Thu, 09 May 2019 07:17:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-9</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve had a go at turning <a class="mention" href="/u/markbrough">@markbrough</a>’s <a href="https://docs.google.com/spreadsheets/d/19Qs6naJhoMIDpgbtNWr2Uab1mzzJge61_vfP4mEYCTs/edit">quick mapping file</a> into a tiny redirect application:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://v1-iati-datastore.herokuapp.com/" target="_blank">datastore-redirects</a>
+  </header>
+  <article class="onebox-body">
+    
+
+<h3><a href="https://v1-iati-datastore.herokuapp.com/" target="_blank">Datastore Redirects</a></h3>
+
+<p>A tiny flask app to redirect v1 -&gt; v2 datastore</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>The code is <a href="https://github.com/andylolz/datastore-redirects">on github</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/8</link>
+        <pubDate>Thu, 09 May 2019 00:33:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-8</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>The response above has worried me a lot. This decision breaks many of the few country systems using IATI data, so it seems worth spending some time seeing if we can avoid this, which will set us back significantly in terms of data use at country level. I put together <a href="https://docs.google.com/spreadsheets/d/19Qs6naJhoMIDpgbtNWr2Uab1mzzJge61_vfP4mEYCTs/edit#gid=0" rel="nofollow noopener">a quick mapping file</a> here which suggests it could be fairly straightforward to redirect requests (at least for XML data). Perhaps we can have a quick chat about any remaining technical barriers?</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/7</link>
+        <pubDate>Wed, 08 May 2019 17:36:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-7</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/457_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>Please can you explain / review the below paragraph? If the new API will return the original XML and full, unpaginated results (as I believe it will), then I don’t understand why it would not basically be a fairly trivial process to convert the old URLs to the new URLs, by passing the <a href="http://reference.iatistandard.org/203/guidance/datastore/reference/data-api/">current (very limited!) list of filters</a> on the old Datastore to their equivalent values on the new Datastore.</p>
+</blockquote>
+</aside>
+<p>As mentioned in our original post, there is no 1:1 mapping therefore the mapping would be infinite. It also would introduce a new potential for technical debt on the new Datastore. By issuing a redirect at Datastore level:</p>
+<ul>
+<li>
+<p>We would essentially be Introducing a static mapping file</p>
+</li>
+<li>
+<p>It would by no means sort the old domain to new domain out (eg: the redirect from <code>old-datastore.iatistandard.org</code> to <code>new-datastore.iatistandard.org</code> should live on the old Datastore’s server; this redirect will cease to exist once the old datastore is switched off, so there’s no benefit to it</p>
+</li>
+<li>
+<p>In future iterations of 3rd party software, the new urls will need to be used</p>
+</li>
+</ul>
+<p>There are 6 months available to update the API calls and there will be information available with the launch of the new Datastore to help people transition.</p>
+<aside class="quote no-group" data-post="5" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/457_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>Please can you confirm that this will include meeting the following requirement included in the <a href="https://docs.google.com/document/d/1-ejM-oGs9N-LhJBgduVvg8PJXhJhv6WdXz-KOT9TYxg/edit">draft ToR </a>, and if not, why the Secretariat decided to remove this requirement?</p>
+</blockquote>
+</aside>
+<p>We have already said that we will be meeting the terms of the TOR, where there has had to be a deviation in order to bring technical benefits to the whole community we have posted here to notify users.  If there are any other changes there will be notifications.</p>
+<aside class="quote no-group" data-post="5" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/457_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>At the very least, the IATI Secretariat should be working to ensure continuity of service for anyone who has managed to begin using IATI data over the last ten years, especially when it should be fairly simple to implement <strong>once</strong> on the IATI Secretariat’s end rather than <strong>many times</strong> on many users’ ends. Please can this be reconsidered? <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>The IATI Secretariat are committed to ongoing improvement to services. In in order to do this change will sometimes be required. Changes are not made in an arbitrary way; they are considered carefully and we engage with the community to keep everyone informed of possible impacts. . In this instance, in order to provide a better datastore the structure of things has had to shift. We are providing a long grace period within which we are happy to speak to you directly if you need further support.</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/6</link>
+        <pubDate>Wed, 08 May 2019 13:13:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-6</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the update.</p>
+<p>Please can you explain / review the below paragraph? If the new API will return the original XML and full, unpaginated results (as I believe it will), then I don’t understand why it would not basically be a fairly trivial process to convert the old URLs to the new URLs, by passing the <a href="http://reference.iatistandard.org/203/guidance/datastore/reference/data-api/" rel="nofollow noopener">current (very limited!) list of filters</a> on the old Datastore to their equivalent values on the new Datastore.</p>
+<aside class="quote no-group" data-post="1" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>For API calls we have limited the changes as much as was possible to do whilst still delivering a product that has a different core structure and more capabilities. Mostly what will be required is small tweaks in the url in use so that it points to the new location. The mapping is not going to be a 1:1 mapping so we cannot use the old API structure with redirects.</p>
+</blockquote>
+</aside>
+<aside class="quote no-group" data-post="4" data-topic="1722">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>the full TOR will be met at the point of release</p>
+</blockquote>
+</aside>
+<p>Please can you confirm that this will include meeting the following requirement included in the <a href="https://docs.google.com/document/d/1-ejM-oGs9N-LhJBgduVvg8PJXhJhv6WdXz-KOT9TYxg/edit" rel="nofollow noopener">draft ToR</a>, and if not, why the Secretariat decided to remove this requirement?</p>
+<blockquote>
+<p>Provides support for (all ?) existing routes for the IATI Datastore? So that existing software using the current Datastore API does not break.</p>
+</blockquote>
+<p>At the very least, the IATI Secretariat should be working to ensure continuity of service for anyone who has managed to begin using IATI data over the last ten years, especially when it should be fairly simple to implement <strong>once</strong> on the IATI Secretariat’s end rather than <strong>many times</strong> on many users’ ends. Please can this be reconsidered? <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/5</link>
+        <pubDate>Thu, 02 May 2019 21:19:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-5</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Full details of the project are publically available here: <a href="https://github.com/zimmerman-zimmerman/OIPA/projects/2">https://github.com/zimmerman-zimmerman/OIPA/projects/2</a> so you can clearly see the implementation of the project.</p>
+<p>When the IATI DataStore is launched there will be clear user documentation and developer documentation made available that will help to smooth the transition between old DataStore and new. For the question “what will be delivered when” the full TOR will be met at the point of release. Any future releases would be for upgrades / new features.</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/4</link>
+        <pubDate>Wed, 01 May 2019 12:27:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-4</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 for the overview against the ToR</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/3</link>
+        <pubDate>Tue, 30 Apr 2019 14:05:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-3</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the update on the status of the DS. Is there an overview of what functionality will be delivered when against the functional requirements as specified in the final version of the Terms of Reference for the DS? If not, it would be very helpful to have such an overview because it will enable planning of the migration of existing applications of the old DS to the new DS.</p>
+<p>Kind regards<br>
+Herman</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/2</link>
+        <pubDate>Mon, 29 Apr 2019 12:37:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-2</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+      <item>
+        <title>Update on IATI Datastore API</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>New DataStore API</strong></p>
+<p>As everyone is aware the new IATI DataStore is in the process of being built. There have been a few questions about the API that this discuss post seeks to address. We have a bit of background on the old DataStore for context then the information about the new DataStore API.</p>
+<p><strong>History of the old Datastore</strong></p>
+<p>When the IATI Standard was launched there were strong arguments against IATI maintaining a database: this was seen to be overlapping the service provided by the OECD CRS which is a curated database. The datastore was instead agreed as an uncurated view of the files held on the Registry.</p>
+<p>The original datastore was built in 2011/12 by Open Knowledge (who also managed the IATI Registry at the time). It replicated all (readable) data on the Registry. It was sold as everything in the Registry today will be in the datastore (DS) tomorrow.<br>
+Locations and results data were not included in this alpha - only transactions, budgets and activity-level data were imported into the DataStore (the whole activity was only available through an xml blob stored for each activity). The alpha product did not clean data, it just show exactly what was on the Registry.</p>
+<p>The plan had been that these additional features would be added in future phases of the DataStore but due to a number of reasons (including budget and contractual matters) the project never went beyond phase one.</p>
+<p><strong>New IATI datastore</strong></p>
+<p>The new datastore is based on existing open source software <a href="https://github.com/zimmerman-zimmerman/OIPA">‘OIPA’</a> and is actively being maintained by <a href="https://www.zimmermanzimmerman.nl/">Zimmerman &amp; Zimmerman</a>. OIPA has been in use with a variety of international organisations and governments like UNESCO, IOM, DFID, MFA and many others. This new datastore will scrape the IATI Registry for IATI Publishers and their XML data sources, validate XML using the new IATI Validator service and will then transform, store and interface that data into API for anyone to use. The API has 14 different API endpoints each with their specific purpose. The datastore will also allow users to export XML, CSV and xlsx format if so desired. Snapshot of functionality as per original specification:</p>
+<ol>
+<li>
+<p>ETL (Extract, Transform, Load) from XML to JSON</p>
+</li>
+<li>
+<p>Validation provided by new IATI Validator</p>
+</li>
+<li>
+<p>IATI Version support</p>
+</li>
+<li>
+<p>XML exports</p>
+</li>
+<li>
+<p>Range of filters available</p>
+</li>
+<li>
+<p>API output</p>
+</li>
+<li>
+<p>CSV/XLSX Serialisations</p>
+</li>
+</ol>
+<p><strong>Timeline for delivery</strong></p>
+<p>The new DataStore will be launched together with the IATI Validator this summer.</p>
+<p>The IATI technical team met with Zimmerman and Zimmerman along with Data4Development earlier this month to agree how the two systems will integrate. We will share more information on the system integration of the two products in early May with an update on the timeline.</p>
+<p><strong>Moving from old to new API</strong></p>
+<p>The new OIPA-powered Datastore will differ from the current one both in API calls and results returned. This is because as it shows more of IATI data, a new structure is needed to do so logically.</p>
+<p>For API calls we have limited the changes as much as was possible to do whilst still delivering a product that has a different core structure and more capabilities. Mostly what will be required is small tweaks in the url in use so that it points to the new location. The mapping is not going to be a 1:1 mapping so we cannot use the old API structure with redirects.</p>
+<p>For returned results, the underlying structure will once again be mostly the same, with a few changes. The new Datastore allows for a more comprehensive and precise resultset to be explored. An example is the participating-org result row: in the current system, the users will receive a result containing participating-org.role = 3, while the new Datastore offers an expanded view, providing both participating-org.role.code = 3 and participating-org.role.name = Extending, effectively removing the need for cross checks and extra calls.</p>
+<p><strong>Don’t panic!</strong></p>
+<p>The technical team are here to help. There will be documentation of all the new parameters, queries possible and outputs so that the transition can happen as smoothly as possible.</p>
+<p>We are also making sure there is a grace period where the old DataStore will exist in parallel till the end of 2019 so that there is plenty of time to make necessary changes.</p>
+<p>Details of who is using the current DataStore are being collected<a href="https://docs.google.com/spreadsheets/d/1beLGWtExOUnAMFthVppt44aUsGTeVMSES4-1R3BiU0I/edit#gid=867726358"> here. </a></p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722/1</link>
+        <pubDate>Tue, 23 Apr 2019 15:19:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1722-1</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-iati-datastore-api/1722.rss">Update on IATI Datastore API</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851</link>
+    <description>This proposal is part of the [2.03 upgrade process](https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838), please comment by replying below.
+
+**Standard**
+Activity and Organisation
+&lt;p&gt;
+**Schema Object**
+All elements containing an organisation/@ref
+&lt;p&gt;
+**Type of Change**
+Codelist management
+&lt;p&gt;
+**Issue**
+All organisation and activity identifiers must be prefixed with a code from the IATI-maintained OrganisationRegistrationAgency codelist. As the result of collaboration between IATI, Open Contracting, 360 Giving and OpenCorporates administration of this list will be transferred to the jointly governed http://org-id.guide.
+&lt;p&gt;
+**Proposal**
+For information only. There is no change to the standard.
+&lt;p&gt;
+**Standards Day**
+No information available
+&lt;p&gt;
+**Links**
+Previous discussions - https://discuss.iatistandard.org/t/tech-paper-codelist-management/538/4</description>
+    
+    <lastBuildDate>Wed, 12 Jul 2017 07:51:22 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/14</link>
+        <pubDate>Wed, 25 Oct 2017 13:57:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-14</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>Awesome. The current list seems quite incomplete so I’m looking forward to this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/13</link>
+        <pubDate>Wed, 12 Jul 2017 07:51:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-13</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/vincentvw">@VincentVW</a> Yes - org-id.guide will output IATI codelist XML format.</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/12</link>
+        <pubDate>Wed, 12 Jul 2017 07:42:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-12</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>To be able to do proper data validation on usage of existing registration agencies, the full list of registration agencies should be available in a machine readable format, preferably the default IATI codelist XML format ( <a href="http://iatistandard.org/202/codelists/downloads/clv3/xml/OrganisationRegistrationAgency.xml" rel="nofollow noopener">http://iatistandard.org/202/codelists/downloads/clv3/xml/OrganisationRegistrationAgency.xml</a> ).</p>
+<p>Example on this validation being applied; <a href="http://www.iatibugtracker.org/datasets/2951" rel="nofollow noopener">http://www.iatibugtracker.org/datasets/2951</a></p>
+<p><a class="mention" href="/u/timdavies">@TimDavies</a> is there such a list available from org-id.guide ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/11</link>
+        <pubDate>Wed, 12 Jul 2017 07:04:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-11</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Notes from consultation calls w/c 3rd July</p>
+<p>Discussion:<br>
+The IATI technical team explained a bit more on the process for transition to org-id.guide and clarified that there will be no change to the structure of the IATI organisation identifiers.</p>
+<p>Outcomes:<br>
+The proposal was reviewed by those on the call and there was no objection from the group.</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/10</link>
+        <pubDate>Fri, 07 Jul 2017 12:31:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-10</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic is primarily for information purposes only. It has been included in the formal 2.03 proposal to allow for the modification of the <span class="mention">@ref</span> definition.</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/7</link>
+        <pubDate>Fri, 16 Jun 2017 15:21:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-7</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/hayfield">@Hayfield</a> Thanks for flagging this.</p>
+<p>This is a really good point. The AE codes were imported from<br>
+OpenCorporates, and are not yet in the confirmed list - but I believe we<br>
+had wrongly cleaned up some Canada codes on a branch to be CA-MB-MBT for<br>
+example, when this should be:</p>
+<p>CA_MB-MBT</p>
+<p>I think here we need to clarify the methodology so that:</p>
+<ul>
+<li>First two digits are national jurisdiction</li>
+<li>If a sub-national jurisdiction is used, this may be given following _<br>
+underscore</li>
+<li>The abbreviation of the list should be provided following a dash</li>
+</ul>
+<p>When back online I’ll check that the master branch is consistent on this<br>
+for all confirmed codes, and will look at getting the AE codes updated too.</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/6</link>
+        <pubDate>Tue, 23 May 2017 16:56:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-6</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>At the moment, the <a href="http://iatistandard.org/202/organisation-identifiers/">Organisation Identifiers</a> methodology states that <code>The namespace code (1) may contain a dash -</code> and the <a href="http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/">ORA Codelist</a> contains only codes with a single dash. The Base Identifier is then joined with the Namespace Code by a dash to create an Org ID.</p>
+<p>Looking at the org-id list, there are some codes with <a href="https://github.com/OpenDataServices/org-ids/tree/master/codes/ae">multiple dashes</a>, which is not permitted within the IATI methodology (not looked to see if there are any with no dashes, which is technically permitted but would be inadvisable).</p>
+<p><a class="mention" href="/u/timdavies">@TimDavies</a> Are there checks within the org-id methodology to ensure Namespace Codes may be unambiguously extracted from an IATI-format Organisation Identifier? For example, if there is a code <code>AE-AJ-CR</code>, there may not be codes <code>AE</code> or <code>AE-AJ</code>, but there may be code <code>AE-A</code> or <code>AE-AJ-C</code>.</p>
+<hr>
+<p>Along this point, this proposal does change the Standard because (assuming values currently present in the org-id list are permitted), it changes the permitted format of a Namespace Code.</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/5</link>
+        <pubDate>Mon, 22 May 2017 08:43:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-5</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m supportive of this change. It would reduce pressure on IATI to handle organisation identification requirements of other standards (which are currently deferring to the IATI list) and will open up the possibility of creating additional tooling to improve validation and quality assurance of organisation identifiers.</p>
+<p>(Full disclosure: I wrote the original IATI organisation identification methodology, and have been working on the development of org-id.guide)</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/4</link>
+        <pubDate>Sun, 21 May 2017 15:55:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-4</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>The org-id methodology is based directly on the existing IATI methodology - which already has the potential for a single organisation to be referred to with different identifiers.</p>
+<p>What org-id.guide adds is the meta-data required to discriminate between the possible sources of identification for an organisation, and to choose preferred sources of identification.</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/3</link>
+        <pubDate>Sun, 21 May 2017 15:54:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-3</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Since the org-id methodology seems to support multiple lists of org id’s, isn’t there a risk that the same organization is being referred to with different identifiers?</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/2</link>
+        <pubDate>Fri, 19 May 2017 11:49:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-2</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+      <item>
+        <title>Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal is part of the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity and Organisation</p>
+<p>
+**Schema Object**
+All elements containing an organisation/@ref
+</p><p>
+**Type of Change**
+Codelist management
+</p><p>
+**Issue**
+All organisation and activity identifiers must be prefixed with a code from the IATI-maintained OrganisationRegistrationAgency codelist. As the result of collaboration between IATI, Open Contracting, 360 Giving and OpenCorporates administration of this list will be transferred to the jointly governed http://org-id.guide.
+</p><p>
+**Proposal**
+For information only. There is no change to the standard.
+</p><p>
+**Standards Day**
+No information available
+</p><p>
+**Links**
+Previous discussions - https://discuss.iatistandard.org/t/tech-paper-codelist-management/538/4</p>
+          <p><a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/1</link>
+        <pubDate>Fri, 12 May 2017 12:24:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-851-1</guid>
+        <source url="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851.rss">Migration of OrganisationRegistrationAgency codelist to Org-id.guide (included 2.03)</source>
+      </item>
+  </channel>
+</rss>

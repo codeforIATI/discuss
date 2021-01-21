@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Importing XML into Excel using the Developer function?</title>
+    <link>https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403</link>
+    <description>Hello, I&#39;m trying to import an IATI XML file straight into Excel, following the instructions here: https://support.office.com/en-us/article/Import-XML-data-6eca3906-d6c9-4f0d-b911-c736da817fa4?ui=en-US&amp;rs=en-US&amp;ad=US#bmimport_an_xml_file_as_an_xml_list_wit
+
+First, I tried to import the iati-activities-schema.xsd to create a map (using Developer&gt;Source, as per the instructions) but got an error message. Now I&#39;m trying to import a relatively small XML file into Excel, but it keeps crashing.
+
+Anyone with experience of doing this method? Or with using a XML to CSV convertor which will &#39;unfold&#39; all the elements if you import the raw data? 
+
+Reflecting on ... why couldn&#39;t we just have asked people to upload data in a spreadsheet file: http://www.threesixtygiving.org/standard/ ....</description>
+    
+    <lastBuildDate>Fri, 12 Feb 2016 18:47:56 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Importing XML into Excel using the Developer function?</title>
+        <dc:creator><![CDATA[Ben_Parker]]></dc:creator>
+        <description><![CDATA[
+            <p>I have had some fair success with ImportXML in Google Sheets on various XML.</p>
+<p>The inherent problem though, is that IATI data is “3D” - it doesn’t translate easily into rows.</p>
+<p>I can get all BOND transactions from one of BOND’s XML files like this: =ImportXML(“<a href="http://109.123.121.248/csviati/static/2015-10-22/1445522882.92.xml%22,%22//transaction" rel="nofollow noopener">http://109.123.121.248/csviati/static/2015-10-22/1445522882.92.xml","//transaction</a>”)</p>
+<p>Here’s ImportXML trying to ingest all of it:</p>
+<p>=ImportXML(“<a href="http://109.123.121.248/csviati/static/2015-10-22/1445522882.92.xml%22,%22//*" rel="nofollow noopener">http://109.123.121.248/csviati/static/2015-10-22/1445522882.92.xml","//*</a>”)</p>
+<p>Good luck</p>
+<p>Ben</p>
+          <p><a href="https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403/3</link>
+        <pubDate>Fri, 12 Feb 2016 18:47:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-403-3</guid>
+        <source url="https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403.rss">Importing XML into Excel using the Developer function?</source>
+      </item>
+      <item>
+        <title>Importing XML into Excel using the Developer function?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>In the blog post he published this week, Liam Swiss says it was really difficult to do xml-to-csv but that the Datastore made it much easier.  <a href="http://blog.liamswiss.com/2016/02/09/iati-import-for-stata/">http://blog.liamswiss.com/2016/02/09/iati-import-for-stata/</a></p>
+<p>He might have more to share, I could try to connect you two on Twitter.</p>
+          <p><a href="https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403/2</link>
+        <pubDate>Fri, 12 Feb 2016 17:52:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-403-2</guid>
+        <source url="https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403.rss">Importing XML into Excel using the Developer function?</source>
+      </item>
+      <item>
+        <title>Importing XML into Excel using the Developer function?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello, I’m trying to import an IATI XML file straight into Excel, following the instructions here: <a href="https://support.office.com/en-us/article/Import-XML-data-6eca3906-d6c9-4f0d-b911-c736da817fa4?ui=en-US&amp;rs=en-US&amp;ad=US#bmimport_an_xml_file_as_an_xml_list_wit" rel="nofollow noopener">https://support.office.com/en-us/article/Import-XML-data-6eca3906-d6c9-4f0d-b911-c736da817fa4?ui=en-US&amp;rs=en-US&amp;ad=US#bmimport_an_xml_file_as_an_xml_list_wit</a></p>
+<p>First, I tried to import the iati-activities-schema.xsd to create a map (using Developer&gt;Source, as per the instructions) but got an error message. Now I’m trying to import a relatively small XML file into Excel, but it keeps crashing.</p>
+<p>Anyone with experience of doing this method? Or with using a XML to CSV convertor which will ‘unfold’ all the elements if you import the raw data?</p>
+<p>Reflecting on … why couldn’t we just have asked people to upload data in a spreadsheet file: <a href="http://www.threesixtygiving.org/standard/" rel="nofollow noopener">http://www.threesixtygiving.org/standard/</a> …</p>
+          <p><a href="https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403/1</link>
+        <pubDate>Fri, 12 Feb 2016 15:03:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-403-1</guid>
+        <source url="https://discuss.iatistandard.org/t/importing-xml-into-excel-using-the-developer-function/403.rss">Importing XML into Excel using the Developer function?</source>
+      </item>
+  </channel>
+</rss>

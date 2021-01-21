@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Small SEO suggestion regarding documentation</title>
+    <link>https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453</link>
+    <description>When googling iati-standard related documents, I often times get old documentation. It might be preferable to have a /latest/ URL, and refer to that throughout the website, so Google can index it instead of older versions of  IATI. Hence, http://iatistandard.org/202/activity-standard/ would become http://iatistandard.org/latest/activity-standard/.</description>
+    
+    <lastBuildDate>Wed, 04 May 2016 06:47:50 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Small SEO suggestion regarding documentation</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>I think the reason this is not in git is that you want the same branch/commit to be deployed in different places. E.g. it might be first deployed on <a href="http://dev.iatistandard.org" rel="nofollow noopener">dev.iatistandard.org</a> with one URL, and later on the live site with a different URL. OTOH, this might no be a problem in practice, so adding it to git may be worthwhile.</p>
+          <p><a href="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453/5</link>
+        <pubDate>Wed, 04 May 2016 06:47:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-453-5</guid>
+        <source url="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453.rss">Small SEO suggestion regarding documentation</source>
+      </item>
+      <item>
+        <title>Small SEO suggestion regarding documentation</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="453">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bjwebb/40/7_1.png" class="avatar"> bjwebb:</div>
+<blockquote>
+<p>uses a file called URL in the same directory to populate this. That probably needs updating.</p>
+</blockquote>
+</aside>
+<p>Thanks for the diagnostics on this one Ben. I’ve changed URL in that file in our development environment and it’ll get pushed though to the outputted site map when we next do a full regeneration.</p>
+<p>I’m tempted to add this URL file to git tracking, although there may have been a reason why it wasn’t when initially created? Just thought I’d ask…</p>
+          <p><a href="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453/4</link>
+        <pubDate>Fri, 29 Apr 2016 15:35:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-453-4</guid>
+        <source url="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453.rss">Small SEO suggestion regarding documentation</source>
+      </item>
+      <item>
+        <title>Small SEO suggestion regarding documentation</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>Part of the reason that 2.01 documentation is preferred is due to this sitemap <a href="http://iatistandard.org/202/sitemap.xml" rel="nofollow noopener">http://iatistandard.org/202/sitemap.xml</a> which still contains /201/ urls.</p>
+<p><a href="https://github.com/IATI/IATI-Standard-SSOT/blob/version-2.02/combined_gen.sh#L31" rel="nofollow noopener">https://github.com/IATI/IATI-Standard-SSOT/blob/version-2.02/combined_gen.sh#L31</a> uses a file called URL in the same directory to populate this. That probably needs updating.</p>
+          <p><a href="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453/3</link>
+        <pubDate>Wed, 27 Apr 2016 15:30:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-453-3</guid>
+        <source url="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453.rss">Small SEO suggestion regarding documentation</source>
+      </item>
+      <item>
+        <title>Small SEO suggestion regarding documentation</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this suggestion <a class="mention" href="/u/bryanph">@bryanph</a> - we’ve noticed that the v2.01 documentation seems to be preferred by Google over the latest v2.02 pages.</p>
+<p>In light of the IATI Technical Team’s ongoing work on Dashboard coverage at the moment, we have limited capacity for other improvements, but I’ll try to have a look at this over the coming days, with the aim to add a <code>/latest/</code> URL as suggested.</p>
+<p>As a side point, similar functionality already exists if no version number is specified in the URL- for example <code>http://iatistandard.org/activity-standard/iati-activities/iati-activity/sector/</code> redirects to the v2.02 documentation page at <code>http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/sector/</code></p>
+          <p><a href="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453/2</link>
+        <pubDate>Thu, 21 Apr 2016 11:10:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-453-2</guid>
+        <source url="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453.rss">Small SEO suggestion regarding documentation</source>
+      </item>
+      <item>
+        <title>Small SEO suggestion regarding documentation</title>
+        <dc:creator><![CDATA[bryanph]]></dc:creator>
+        <description><![CDATA[
+            <p>When googling iati-standard related documents, I often times get old documentation. It might be preferable to have a /latest/ URL, and refer to that throughout the website, so Google can index it instead of older versions of  IATI. Hence, <a href="http://iatistandard.org/202/activity-standard/" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/</a> would become <a href="http://iatistandard.org/latest/activity-standard/" rel="nofollow noopener">http://iatistandard.org/latest/activity-standard/</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453/1</link>
+        <pubDate>Wed, 20 Apr 2016 13:14:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-453-1</guid>
+        <source url="https://discuss.iatistandard.org/t/small-seo-suggestion-regarding-documentation/453.rss">Small SEO suggestion regarding documentation</source>
+      </item>
+  </channel>
+</rss>

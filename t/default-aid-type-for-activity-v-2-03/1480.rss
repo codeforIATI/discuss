@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>&#39;Default aid type&#39; for Activity (v. 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480</link>
+    <description>Hey guys,
+
+I have a question. I&#39;m looking into the 2.03 [documentation page](http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/default-aid-type/) for default-aid-type element for Activity and I can not understand the relationship between the &quot;vocabulary&quot; and &quot;code&quot; elements for this &quot;default-aid-type&quot; element.
+
+If I understand everything correctly, for &quot;default-aid-type&quot; element, you have to specify a vocabulary code from the Aid Type Vocabulary codelist (it&#39;s either 1 (OECD DAC), 2 (Earmarking Category) or 3 (Earmarking Modality)) and the the &quot;code&quot; attribute for this same &quot;default-aid-type&quot; is &quot;A code **from the specified** vocabulary.&quot;. So the &#39;code&#39; attribute for this &quot;default-aid-type&quot; element has to come either from [http://www.oecd.org/dac/stats/dacandcrscodelists.htm](http://www.oecd.org/dac/stats/dacandcrscodelists.htm), from [http://reference.iatistandard.org/202/codelists/EarmarkingCategory/](http://reference.iatistandard.org/202/codelists/EarmarkingCategory/) or from [https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf](https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf).
+
+My questions are:
+
+1) Am I right ?
+2) If yes, why the docs say that &quot;the &#39;code&#39; attribute for default-aid-type  must be on the AidType codelist&quot; ? I don&#39;t understand this.
+3) Could someone give me a single proper XML example of Activity which has multiple &#39;default-aid-type&#39; elements which would be according to the standard? I&#39;m really surprised that this is so (over)complex and there is none in the documentation.
+
+cheers,</description>
+    
+    <lastBuildDate>Tue, 18 Sep 2018 15:59:01 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>&#39;Default aid type&#39; for Activity (v. 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="1480">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/amys/40/288_1.png" class="avatar"> amys:</div>
+<blockquote>
+<p>Apologies, I forgot that this discussion took place: <a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">Add vocabularies to aid-type (included 2.03)</a></p>
+</blockquote>
+</aside>
+<p>Yes, exactly.</p>
+<p>So to clarify: At v2.03, an activity is now allowed multiple <code>default-aid-type</code>s. That’s in order to accommodate one default per vocabulary.</p>
+<p>Max one default per vocabulary could be enforced with a ruleset rule, but it’s not enforceable at schema level.</p>
+<p>The change was made here: <a href="https://github.com/IATI/IATI-Schemas/issues/350" rel="nofollow noopener">https://github.com/IATI/IATI-Schemas/issues/350</a></p>
+<p>In fact, <a class="mention" href="/u/amys">@amys</a> I’d suggest removing <a href="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/5">this post</a>, because it’s potentially confusing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/7</link>
+        <pubDate>Tue, 18 Sep 2018 15:12:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1480-7</guid>
+        <source url="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480.rss">&#39;Default aid type&#39; for Activity (v. 2.03)</source>
+      </item>
+      <item>
+        <title>&#39;Default aid type&#39; for Activity (v. 2.03)</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Apologies, I forgot that this discussion took place: <a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">Add vocabularies to aid-type (included 2.03)</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/6</link>
+        <pubDate>Tue, 18 Sep 2018 15:06:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1480-6</guid>
+        <source url="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480.rss">&#39;Default aid type&#39; for Activity (v. 2.03)</source>
+      </item>
+      <item>
+        <title>&#39;Default aid type&#39; for Activity (v. 2.03)</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s another bug here. You should only be allowed one <code>&lt;default-aid-type&gt;</code>. Otherwise it’s not a default</p>
+<p>It’s marked as this on the IATI Summary Table: <a href="http://reference.iatistandard.org/202/activity-standard/summary-table/" rel="nofollow noopener">http://reference.iatistandard.org/202/activity-standard/summary-table/</a></p>
+<p>This would be why the documentation only shows one example of having the <code>&lt;default-aid-type&gt;</code> <img src="https://discuss.iatistandard.org/uploads/default/original/1X/0afdb4c898c4776a29187f2ece08da0d5bc82996.png" alt="image" width="684" height="197"></p>
+<p>It looks like these errors were introduced at 2.03 and when we added the other aid type vocabularies.</p>
+          <p><a href="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/5</link>
+        <pubDate>Tue, 18 Sep 2018 14:43:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1480-5</guid>
+        <source url="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480.rss">&#39;Default aid type&#39; for Activity (v. 2.03)</source>
+      </item>
+      <item>
+        <title>&#39;Default aid type&#39; for Activity (v. 2.03)</title>
+        <dc:creator><![CDATA[Eimis]]></dc:creator>
+        <description><![CDATA[
+            <p>A big thanks for your help Andy, it’s much more clear now. I’m surprised though that this needs such a separate detailed explanation. In my humble opinion, all these things (or <strong>at least</strong> your example) should appear in the official documentation page for this element.</p>
+          <p><a href="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/4</link>
+        <pubDate>Tue, 18 Sep 2018 12:36:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1480-4</guid>
+        <source url="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480.rss">&#39;Default aid type&#39; for Activity (v. 2.03)</source>
+      </item>
+      <item>
+        <title>&#39;Default aid type&#39; for Activity (v. 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve added <a href="https://github.com/IATI/IATI-Codelists/issues/169" rel="nofollow noopener">a github issue</a> that explains my above post a bit more succinctly.</p>
+          <p><a href="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/3</link>
+        <pubDate>Tue, 18 Sep 2018 11:49:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1480-3</guid>
+        <source url="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480.rss">&#39;Default aid type&#39; for Activity (v. 2.03)</source>
+      </item>
+      <item>
+        <title>&#39;Default aid type&#39; for Activity (v. 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1480">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/eimis/40/409_1.png" class="avatar"> Eimis:</div>
+<blockquote>
+<p>If I understand everything correctly, for “default-aid-type” element, you have to specify a vocabulary code from the Aid Type Vocabulary codelist</p>
+</blockquote>
+</aside>
+<p>No, you don’t. If you don’t specify a vocabulary, OECD DAC is assumed. Or rather: <a href="http://reference.iatistandard.org/codelists/AidType/" rel="nofollow noopener">the replicated version of the OECD DAC aid type codelist</a> is assumed.</p>
+<aside class="quote no-group" data-post="1" data-topic="1480">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/eimis/40/409_1.png" class="avatar"> Eimis:</div>
+<blockquote>
+<p>So the ‘code’ attribute for this “default-aid-type” element has to come either from <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm" rel="nofollow noopener">http://www.oecd.org/dac/stats/dacandcrscodelists.htm</a>, from <a href="http://reference.iatistandard.org/202/codelists/EarmarkingCategory/" rel="nofollow noopener">http://reference.iatistandard.org/202/codelists/EarmarkingCategory/</a> or from <a href="https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf" rel="nofollow noopener">https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf</a>.</p>
+</blockquote>
+</aside>
+<p>That’s right (but with the caveat above that the first one is actually the <a href="http://reference.iatistandard.org/codelists/AidType/" rel="nofollow noopener">IATI replicated codelist</a> and not <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm" rel="nofollow noopener">the DAC source</a>).</p>
+<aside class="quote no-group" data-post="1" data-topic="1480">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/eimis/40/409_1.png" class="avatar"> Eimis:</div>
+<blockquote>
+<ol>
+<li>Am I right ?</li>
+</ol>
+</blockquote>
+</aside>
+<p>Basically yes!</p>
+<aside class="quote no-group quote-modified" data-post="1" data-topic="1480">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/eimis/40/409_1.png" class="avatar"> Eimis:</div>
+<blockquote>
+<blockquote>
+<ol start="2">
+<li>If yes, why the docs say that “the ‘code’ attribute for default-aid-type must be on the AidType codelist” ? I don’t understand this.</li>
+</ol>
+</blockquote>
+</blockquote>
+</aside>
+<p>Oh, good point. That’s an error. It’s a result of a mapping that should have been amended at v2.03. Specifically, <a href="https://github.com/IATI/IATI-Codelists/blob/2e4d110dff05e03e82de90f892ceae28afe31462/mapping.xml#L83-L86" rel="nofollow noopener">this one</a> should look more like <a href="https://github.com/IATI/IATI-Codelists/blob/2e4d110dff05e03e82de90f892ceae28afe31462/mapping.xml#L305-L309" rel="nofollow noopener">this one</a>, in that it should include a condition element that looks like this:</p>
+<pre><code class="lang-xml">&lt;condition&gt;@vocabulary = '1' or not(@vocabulary)&lt;/condition&gt;
+</code></pre>
+<p>I guess the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> should fix this as a bug.</p>
+<aside class="quote no-group" data-post="1" data-topic="1480">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/eimis/40/409_1.png" class="avatar"> Eimis:</div>
+<blockquote>
+<ol start="3">
+<li>Could someone give me a single proper XML example of Activity which has multiple ‘default-aid-type’ elements which would be according to the standard? I’m really surprised that this is so (over)complex and there is none in the documentation.</li>
+</ol>
+</blockquote>
+</aside>
+<p>So, something like this:</p>
+<pre><code class="lang-xml">&lt;iati-activity&gt;
+    …
+    &lt;default-aid-type code="A01" /&gt;
+    &lt;default-aid-type code="1" vocabulary="2" /&gt;
+    …
+&lt;/iati-activity&gt;
+</code></pre>
+<p>This sets the default DAC aid type to <code>A01</code> (General budget support) and the default earmarking category to <code>1</code> (Unearmarked).</p>
+          <p><a href="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/2</link>
+        <pubDate>Tue, 18 Sep 2018 11:24:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1480-2</guid>
+        <source url="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480.rss">&#39;Default aid type&#39; for Activity (v. 2.03)</source>
+      </item>
+      <item>
+        <title>&#39;Default aid type&#39; for Activity (v. 2.03)</title>
+        <dc:creator><![CDATA[Eimis]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey guys,</p>
+<p>I have a question. I’m looking into the 2.03 <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/default-aid-type/" rel="nofollow noopener">documentation page</a> for default-aid-type element for Activity and I can not understand the relationship between the “vocabulary” and “code” elements for this “default-aid-type” element.</p>
+<p>If I understand everything correctly, for “default-aid-type” element, you have to specify a vocabulary code from the Aid Type Vocabulary codelist (it’s either 1 (OECD DAC), 2 (Earmarking Category) or 3 (Earmarking Modality)) and the the “code” attribute for this same “default-aid-type” is “A code <strong>from the specified</strong> vocabulary.”. So the ‘code’ attribute for this “default-aid-type” element has to come either from <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm" rel="nofollow noopener">http://www.oecd.org/dac/stats/dacandcrscodelists.htm</a>, from <a href="http://reference.iatistandard.org/202/codelists/EarmarkingCategory/" rel="nofollow noopener">http://reference.iatistandard.org/202/codelists/EarmarkingCategory/</a> or from <a href="https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf" rel="nofollow noopener">https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf</a>.</p>
+<p>My questions are:</p>
+<ol>
+<li>Am I right ?</li>
+<li>If yes, why the docs say that “the ‘code’ attribute for default-aid-type  must be on the AidType codelist” ? I don’t understand this.</li>
+<li>Could someone give me a single proper XML example of Activity which has multiple ‘default-aid-type’ elements which would be according to the standard? I’m really surprised that this is so (over)complex and there is none in the documentation.</li>
+</ol>
+<p>cheers,</p>
+          <p><a href="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480/1</link>
+        <pubDate>Tue, 18 Sep 2018 08:26:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1480-1</guid>
+        <source url="https://discuss.iatistandard.org/t/default-aid-type-for-activity-v-2-03/1480.rss">&#39;Default aid type&#39; for Activity (v. 2.03)</source>
+      </item>
+  </channel>
+</rss>

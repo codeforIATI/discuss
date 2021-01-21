@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>A response to “A week in the life of an IATI developer”</title>
+    <link>https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018</link>
+    <description>@Imogen_Kutz’s ‘[A week in the life of an IATI developer](http://www.aidtransparency.net/news/a-week-in-the-life-of-an-iati-developer)’ describes the @IATI-techteam’s work on the forthcoming IATI python library – now known as pyIATI – and how it relates to other tools that the @IATI-techteam maintain. It’s great to have insights into the work of the technical team and sharing an overview of how different tasks are prioritised is much appreciated.
+
+The blog describes the team following a number of software development best practices, some of which hint at an [Agile approach](https://en.wikipedia.org/wiki/Agile_software_development). But none of them are explicit about delivering software early and often (i.e. [iterative development](https://en.wikipedia.org/wiki/Agile_software_development#Iterative.2C_incremental_and_evolutionary)), or customer collaboration (i.e. feedback from users).
+
+I’m pleased to know that [the PyIATI library is open source](https://github.com/iati/iati.core). And I understand that the tech team need to spend time building solid foundations. But I’m concerned about working for [A Long Time](https://github.com/IATI/iati.core/graphs/contributors) on something without demonstrable output. As the UK Government Digital Service says: [“Show The Thing!”](https://gdsengagement.blog.gov.uk/2016/11/04/what-we-mean-when-we-say-show-the-thing/) Delivering early and often mitigates risk – and in this case, this risk is felt by the whole IATI community.
+
+With finite resources, work on this library comes at the expense of work on other IATI tools and services such as the [IATI Datastore](http://datastore.iatistandard.org), the [query builder](http://datastore.iatistandard.org/query/), [d-portal](http://d-portal.org), the [IATI registry](https://iatiregistry.org) etc. Many of us here attended sessions on IATI tools at [TAG](https://iatitag2017.sched.com), and suggested features and improvements. Having contributed to a number of IATI codebases, I have some familiarity with how they work. But I’m not really sure I understand how pyIATI will help address major issues with these existing tools.
+
+I’ve [made these points elsewhere](https://github.com/IATI/IATI-Datastore/issues/268#issuecomment-321307777), and @markbrough has [made similar points here](https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/2). But I thought it worth reiterating. I appreciate the answer will probably be “have patience” (indeed, I’m not sure there’s another response at this point) but I hope that in the future we’ll be able to avoid long periods where there are no discernable improvements to IATI tools for end users.</description>
+    
+    <lastBuildDate>Mon, 13 Nov 2017 12:09:06 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>A response to “A week in the life of an IATI developer”</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, both.</p>
+<aside class="quote no-group" data-post="3" data-topic="1018">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/imogen_kutz/40/299_1.png" class="avatar"> Imogen_Kutz:</div>
+<blockquote>
+<p>In total we came up with 50 stories that we ranked using the MoSCoW method, leaving 7 essential features based on 27 user stories.</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/imogen_kutz">@Imogen_Kutz</a>: Would it be possible to share these user stories / features?</p>
+          <p><a href="https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018/4</link>
+        <pubDate>Mon, 13 Nov 2017 12:09:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1018-4</guid>
+        <source url="https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018.rss">A response to “A week in the life of an IATI developer”</source>
+      </item>
+      <item>
+        <title>A response to “A week in the life of an IATI developer”</title>
+        <dc:creator><![CDATA[Imogen_Kutz]]></dc:creator>
+        <description><![CDATA[
+            <p>The blog was written to be accessible by the wider IATI community, so avoids many of the technical details of how we use specific agile processes. For example, we use daily standups, sprint boards and more to manage our work. These processes are under continual review and we aim to be as flexible as possible while maintaining a high standard of work.</p>
+<p>In terms of pyIATI, it seems there is some confusion as to what it is. Rather than a specific tool the core focus has, as <a href="https://discuss.iatistandard.org/t/our-shared-understanding-of-what-iati-is-and-is-not/893/9?u=hayfield">mentioned previously</a>, been to create a software library to act as a reference implementation of ‘The Standard’. Other tools may then be built upon the library without having to worry about the complexities and issues introduced in historic Standard versions (each of which greatly increases implementation difficulty). It should also be noted that pyIATI will by no means be feature-complete by the end of our current set of sprints.</p>
+<p>The project, as required in the <a href="http://www.aidtransparency.net/governance/iati-workplan">workplan</a> section 3A, is based on input from a range of people. This includes feedback from the TAG; the business analysts in the tech team; our past and present experiences of the many codebases we have to maintain; and general feedback about the future of IATI. This input was analysed to come up with the range of user stories as mentioned in the blog post. In total we came up with 50 stories that we ranked using the MoSCoW method, leaving 7 essential features based on 27 user stories. These were added to an internal Trello board and have been used to guide the direction of development.</p>
+<p>During development of pyIATI, we’re working to engineer <a href="https://robots.thoughtbot.com/what-is-good-code">good code</a> through use of test-driven development, documentation, consistent linting, human-readable variable names, SOLID principles and more. Each of these are frequently missing from existing IATI code for a number of historical reasons. With the requirements of the present and future we need to look at how to provide, not for 50 or 500 publishers but for 5000 or 50,000.</p>
+<p>Take the Dashboard, for example: it is built with an architecture that is unable to scale much further without having to sacrifice key features such as daily updates - even now it can take over 48 hours for it to update after publishing new data. pyIATI is designed to streamline processes and act as a new architecture that will be able to scale for the future in a way that current tools cannot.</p>
+<p>Hopefully this gives a bit more information than could be reasonably conveyed in the blog post. There is due to be another post in the near future providing even more detail as to why pyIATI is so vitally important for the continued success of IATI. This will go into more detail than has been provided here - if there are any more questions we could look to answer them there.</p>
+          <p><a href="https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018/3</link>
+        <pubDate>Wed, 13 Sep 2017 11:48:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1018-3</guid>
+        <source url="https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018.rss">A response to “A week in the life of an IATI developer”</source>
+      </item>
+      <item>
+        <title>A response to “A week in the life of an IATI developer”</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>With regards to the points about working on pyIATI for an extended period without a clear released product…</p>
+<p>As <a href="https://discuss.iatistandard.org/t/our-shared-understanding-of-what-iati-is-and-is-not/893/9?u=hayfield">mentioned previously</a>, the initial work on pyIATI has been to implement a reference implementation of multiple versions of ‘The Standard’. This is an essential single piece of work that is not particularly useful until complete - we could ‘deliver’ a copy of this that works with only v2.02 data, though the practical use of this is extremely limited. This has been shown by small one-off scripts and programs we’ve built upon pyIATI to fulfil internal needs (which additionally help to demonstrate that the functionality will be super useful once complete).</p>
+<p>In terms of this phase taking as long as it has, we have spent around 2 months actively working on implementing ‘The Standard’, earlier work primarily being prototyping and proof-of-concept phases. A major part of this has been actively working to deal with the various oddities of IATI. Our work has uncovered a range of issues with ‘The Standard’ that had been missed previously. In terms of the scale of these problems, we currently have a list of 67 non-trivial issues with the Standard, 22 of which are categorised as ‘Critical’ - <a class="mention" href="/u/dalepotter">@dalepotter</a> <a href="https://discuss.iatistandard.org/t/under-the-bonnet-various-improvements-to-guidelines/837/3?u=hayfield">is leading</a> on how to take these issues forward. With the limited capacity that we have, 2-3 calendar months is not an unreasonable amount of time to implement a tested reference implementation of ‘The Standard’ that is as <em>to-the-letter</em> as possible.</p>
+<p>We’d love to spend our time working on other things, though more importantly we want to make sure that what we’re working on is based on a correct understanding of IATI. Without this foundational work (as required by <a href="http://www.aidtransparency.net/wp-content/uploads/2013/05/IATI-Workplan-updated-Dec-2016.pdf">3A in the workplan</a> agreed by the MA in 2016), other tools are guaranteed to either only partially implement ‘The Standard’, or replicate effort in some manner.</p>
+          <p><a href="https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018/2</link>
+        <pubDate>Wed, 13 Sep 2017 11:46:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1018-2</guid>
+        <source url="https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018.rss">A response to “A week in the life of an IATI developer”</source>
+      </item>
+      <item>
+        <title>A response to “A week in the life of an IATI developer”</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/imogen_kutz">@Imogen_Kutz</a>’s ‘<a href="http://www.aidtransparency.net/news/a-week-in-the-life-of-an-iati-developer">A week in the life of an IATI developer</a>’ describes the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>’s work on the forthcoming IATI python library – now known as pyIATI – and how it relates to other tools that the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> maintain. It’s great to have insights into the work of the technical team and sharing an overview of how different tasks are prioritised is much appreciated.</p>
+<p>The blog describes the team following a number of software development best practices, some of which hint at an <a href="https://en.wikipedia.org/wiki/Agile_software_development">Agile approach</a>. But none of them are explicit about delivering software early and often (i.e. <a href="https://en.wikipedia.org/wiki/Agile_software_development#Iterative.2C_incremental_and_evolutionary">iterative development</a>), or customer collaboration (i.e. feedback from users).</p>
+<p>I’m pleased to know that <a href="https://github.com/iati/iati.core">the PyIATI library is open source</a>. And I understand that the tech team need to spend time building solid foundations. But I’m concerned about working for <a href="https://github.com/IATI/iati.core/graphs/contributors">A Long Time</a> on something without demonstrable output. As the UK Government Digital Service says: <a href="https://gdsengagement.blog.gov.uk/2016/11/04/what-we-mean-when-we-say-show-the-thing/">“Show The Thing!”</a> Delivering early and often mitigates risk – and in this case, this risk is felt by the whole IATI community.</p>
+<p>With finite resources, work on this library comes at the expense of work on other IATI tools and services such as the <a href="http://datastore.iatistandard.org">IATI Datastore</a>, the <a href="http://datastore.iatistandard.org/query/">query builder</a>, <a href="http://d-portal.org">d-portal</a>, the <a href="https://iatiregistry.org">IATI registry</a> etc. Many of us here attended sessions on IATI tools at <a href="https://iatitag2017.sched.com">TAG</a>, and suggested features and improvements. Having contributed to a number of IATI codebases, I have some familiarity with how they work. But I’m not really sure I understand how pyIATI will help address major issues with these existing tools.</p>
+<p>I’ve <a href="https://github.com/IATI/IATI-Datastore/issues/268#issuecomment-321307777">made these points elsewhere</a>, and <a class="mention" href="/u/markbrough">@markbrough</a> has <a href="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/2">made similar points here</a>. But I thought it worth reiterating. I appreciate the answer will probably be “have patience” (indeed, I’m not sure there’s another response at this point) but I hope that in the future we’ll be able to avoid long periods where there are no discernable improvements to IATI tools for end users.</p>
+          <p><a href="https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018/1</link>
+        <pubDate>Mon, 04 Sep 2017 12:02:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1018-1</guid>
+        <source url="https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018.rss">A response to “A week in the life of an IATI developer”</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:25:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Flatten-tool: New approach for Spreadsheet to IATI conversion - Community Zone - IATI Community Discussions</title>
+    <meta name="description" content="This post is mostly a write up of the lightening talk I gave at the TAG, with some additional info on how the work is progressing. 
+
+CSV2IATI is going to be retired this year, so at Open Data Services Co-operative we&amp;#39;ve &amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="777.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Flatten-tool: New approach for Spreadsheet to IATI conversion&#39;" href="777.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_1024x110.png" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_1024x110.png" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777" />
+<meta property="og:title" content="Flatten-tool: New approach for Spreadsheet to IATI conversion" />
+<meta name="twitter:title" content="Flatten-tool: New approach for Spreadsheet to IATI conversion" />
+<meta property="og:description" content="This post is mostly a write up of the lightening talk I gave at the TAG, with some additional info on how the work is progressing.  CSV2IATI is going to be retired this year, so at Open Data Services Co-operative we’ve been looking at alternate approaches for converting spreadsheets to IATI XML.  For OCDS (Open Contracting Data Standard) and 360Giving, we built flatten-tool.  This is a command line tool, and python library, for converting from flat spreadsheet formats to nested structured format..." />
+<meta name="twitter:description" content="This post is mostly a write up of the lightening talk I gave at the TAG, with some additional info on how the work is progressing.  CSV2IATI is going to be retired this year, so at Open Data Services Co-operative we’ve been looking at alternate approaches for converting spreadsheets to IATI XML.  For OCDS (Open Contracting Data Standard) and 360Giving, we built flatten-tool.  This is a command line tool, and python library, for converting from flat spreadsheet formats to nested structured format..." />
+<meta property="article:published_time" content="2017-03-31T17:03:09+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="777.html">Flatten-tool: New approach for Spreadsheet to IATI conversion</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bjwebb.html'><span itemprop='name'>bjwebb</span></a>
+            (Ben Webb)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="777.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/8a7946636d00e1297e4f13489b699594f2bf7bad.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-31T17:03:09Z' class='post-time'>
+                March 31, 2017,  5:03pm
+              </time>
+              <meta itemprop='dateModified' content='2017-03-31T17:03:09Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This post is mostly a write up of the lightening talk I gave at the TAG, with some additional info on how the work is progressing.</p>
+<p><a href="http://csv2iati.iatistandard.org/" rel="nofollow noopener">CSV2IATI</a> is going to be retired this year, so at <a href="http://opendataservices.coop/" rel="nofollow noopener">Open Data Services Co-operative</a> we’ve been looking at alternate approaches for converting spreadsheets to IATI XML.</p>
+<p>For <a href="http://standard.open-contracting.org/" rel="nofollow noopener">OCDS (Open Contracting Data Standard)</a> and <a href="http://www.threesixtygiving.org/standard/" rel="nofollow noopener">360Giving</a>, we built <a href="https://github.com/OpenDataServices/flatten-tool" rel="nofollow noopener">flatten-tool</a>.  This is a command line tool, and python library, for converting from flat spreadsheet formats to nested structured formats (JSON or XML). We’re working on adding IATI XML support to this.</p>
+<h2>Key features of flatten-tool:</h2>
+<h3>No mapping tool</h3>
+<p>Instead of a mapping tool, we require that headings contain an xpath (or close to an xpath) for the part of the IATI XML the column corresponds to.</p>
+<p>e.g. this spreadsheet:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/8a7946636d00e1297e4f13489b699594f2bf7bad.png" data-download-href="https://discuss.iatistandard.org/uploads/default/8a7946636d00e1297e4f13489b699594f2bf7bad" title="image.png"><img src="../../uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_689x74.png" width="689" height="74" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_689x74.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_1033x111.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/8a7946636d00e1297e4f13489b699594f2bf7bad.png 2x" data-small-upload="../../uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1308×141 22.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>becomes this XML:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2.png" data-download-href="https://discuss.iatistandard.org/uploads/default/7cba10e3803b8b5cd97af915e81797b2013f27d2" title="image.png"><img src="../../uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_345x57.png" width="345" height="57" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_345x57.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_517x85.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_690x114.png 2x" data-small-upload="../../uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">2110×351 77.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Most users won’t need to worry about xpath though, as we’ll have a pre-made template for them to download and populate. However, the approach does also allow custom templates to be easily crafted for particular use cases.</p>
+<p>Since all information is contained in the spreadsheet, it will be possible to upgrade to a new IATI standard version by just changing the data, without any change required to the tool.</p>
+<h3>One-to-many relationships</h3>
+<p>In IATI, one activity usually has multiple child elements of certain types (e.g. multiple transactions). flatten-tool supports multiple ways of representing this:</p>
+<ul>
+<li>Multiple columns</li>
+<li>Separate sheets, linked by the IATI Identifier in both sheets</li>
+<li>Repeated rows, for compatibility with CSV2IATI</li>
+</ul>
+<p>e.g. multiple columns might be convenient for mulitiple recipient countries:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5.png" data-download-href="https://discuss.iatistandard.org/uploads/default/3a484b93bde1094cfdfbedf2d2da0f999f4498a5" title="image.png"><img src="../../uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_690x69.png" width="690" height="69" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_690x69.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_1035x103.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5.png 2x" data-small-upload="../../uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1325×134 13.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>but a separate sheet might be more convenient for multiple transactions:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/6fba25080a085599c1f4d81951a365e46aa9d46f.png" data-download-href="https://discuss.iatistandard.org/uploads/default/6fba25080a085599c1f4d81951a365e46aa9d46f" title="image.png"><img src="../../uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_690x74.png" width="690" height="74" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_690x74.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_1035x111.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_1380x148.png 2x" data-small-upload="../../uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1807×195 32.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<h3>Excel workbook (XLSX) support, in addition to CSV</h3>
+<p>CSV and XLSX are the supported input file formats.</p>
+<p>CSVs exported from Excel often have problems - e.g. encodings and date formats. By supporting XLSX we can more easily get at the original data. It’s also an easy way to supply multiple sheets with one-to-many relationships (above).</p>
+<h2>Progress so far</h2>
+<p>Basic XML support has been merged into flatten-tool, and there’s <a href="https://flatten-tool.readthedocs.io/en/latest/usage-iati/" rel="nofollow noopener">instructions for using it to produce IATI XML in the docs</a>. We’re already using this code internally to help people publish IATI data. As <a class="mention" href="../../u/johnadams-2.html">@johnadams</a> would say, we’re eating our own dog food.</p>
+<p>There’s a bunch of <a href="https://github.com/OpenDataServices/flatten-tool/issues?q=is%3Aopen+is%3Aissue+label%3AXML" rel="nofollow noopener">issues still to be worked on</a>. The most pressing, which we’re working on currently, are <a href="https://github.com/OpenDataServices/flatten-tool/issues/146" rel="nofollow noopener">sorting the XML correctly</a>, and <a href="https://github.com/OpenDataServices/flatten-tool/pull/144" rel="nofollow noopener">allowing spreadsheets to specify the IATI standard version</a>. We’re currently working around these by manually adding the version number, and <a href="https://github.com/OpenDataServices/iati-utils/blob/master/sort_iati.py" rel="nofollow noopener">sorting with this script</a>.</p>
+<h2>Future plans</h2>
+<p>We’re working on a web interface, so that users can upload a file, instead of having to use a commandline tool.</p>
+<p>We want this web interface to have integrated validation. Additionally validation messages will list the cell in the spreadsheet that caused the error, allowing data to be fixed more easily. <a class="mention" href="../../u/stevieflow.html">@stevieflow</a> made a presentation about this approach to the IATI Members’ Assembly. Here’s a screenshot of what this currently looks like for 360Giving:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad.png" data-download-href="https://discuss.iatistandard.org/uploads/default/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad" title="image.png"><img src="../../uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_690x159.png" width="690" height="159" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_690x159.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_1035x238.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_1380x318.png 2x" data-small-upload="../../uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">2153×498 68.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>For OCDS and 360Giving we also have conversion <strong>to</strong> spreadsheet (which means it’s possible to roundtrip, ie. edit and then convert back to XML). We think this could be useful for IATI too, but at the moment we’re focusing on conversion <strong>from</strong> spreadsheet first, because that appears to have the greater need.</p>
+        </div>
+
+        <meta itemprop='headline' content='Flatten-tool: New approach for Spreadsheet to IATI conversion'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/14.html" itemprop='item'>
+                      <meta itemprop='url' content='../challenge-create-super-simple-conversion-from-excel-to-iati-xml/630/14.html'>
+                      <meta itemprop='position' content='16'>
+                      <span itemprop='name'>Challenge: create super-simple conversion from Excel to IATI XML</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="777.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-03-31T20:01:00Z'>
+              <time itemprop='dateModified' datetime='2017-04-01T14:55:25Z' class='post-time'>
+                April 1, 2017,  2:55pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Super cool.</p>
+<p>Was just going to suggest doing this <a href="http://hxlstandard.org/">the HXL way</a>, with a human-readable header row followed by the flatten-tool-readable xpath-like header row. But I see <a class="mention" href="../../u/timdavies-2.html">@TimDavies</a> has <a href="https://github.com/OpenDataServices/flatten-tool/issues/130">already suggested it</a> <img src="../../images/emoji/twitter/slight_smileae52.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<aside class="quote no-group" data-post="1" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/bjwebb/40/452_2.jpg" class="avatar"> bjwebb:</div>
+<blockquote>
+<p>allowing spreadsheets to specify the IATI standard version.</p>
+</blockquote>
+</aside>
+<p>Sorry if this is a silly question… Are you talking about specifying the output version? If so, it seems odd to store this in with the spreadsheet. If you’re instead talking about the IATI version used by the spreadsheet, isn’t it possible to infer this from the headers / data?</p>
+<aside class="quote no-group quote-modified" data-post="1" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/bjwebb/40/452_2.jpg" class="avatar"> bjwebb:</div>
+<blockquote>
+<p>we also have conversion to spreadsheet (which means it’s possible to roundtrip, ie. edit and then convert back to XML)</p>
+</blockquote>
+</aside>
+<p>Oh yeah for sure, this would be really great. Loads of applications for this.</p>
+        </div>
+
+        <meta itemprop='headline' content='Flatten-tool: New approach for Spreadsheet to IATI conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/robredpath.html'><span itemprop='name'>robredpath</span></a>
+            (Rob Redpath)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="777.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-03T05:53:03Z' class='post-time'>
+                April 3, 2017,  5:53am
+              </time>
+              <meta itemprop='dateModified' content='2017-04-03T05:53:03Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="2" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/andylolz/40/495_2.jpg" class="avatar"> andylolz:</div>
+<blockquote>
+<p>Loads of applications for this.</p>
+</blockquote>
+</aside>
+<p>Forgive my IATI naïvité - can you give me some examples? I’m working on all the product owner-ey bits of making all this happen!</p>
+        </div>
+
+        <meta itemprop='headline' content='Flatten-tool: New approach for Spreadsheet to IATI conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="777.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-04-04T10:10:13Z'>
+              <time itemprop='dateModified' datetime='2017-04-04T10:41:34Z' class='post-time'>
+                April 4, 2017, 10:41am
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="3" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/robredpath/40/193_1.png" class="avatar"> robredpath:</div>
+<blockquote>
+<p>Forgive my IATI naïvité</p>
+</blockquote>
+</aside>
+<p>On the contrary! I’m fairly new to IATI, so I may well be wrong!</p>
+<aside class="quote no-group" data-post="3" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/robredpath/40/193_1.png" class="avatar"> robredpath:</div>
+<blockquote>
+<p>can you give me some examples?</p>
+</blockquote>
+</aside>
+<p>I was specifically thinking about CSV export from the datastore (but I suppose CSV export from d-portal, too?) Getting flattened data out so it can be manipulated using familiar tools (e.g. Excel) is helpful for a set of data users.</p>
+<p>I’ve seen some issues about the way the datastore does CSV export. If it were to use flatten-tool that could at least help in standardising IATI to spreadsheet export across tools.</p>
+        </div>
+
+        <meta itemprop='headline' content='Flatten-tool: New approach for Spreadsheet to IATI conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bjwebb.html'><span itemprop='name'>bjwebb</span></a>
+            (Ben Webb)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="777.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-04T10:41:31Z' class='post-time'>
+                April 4, 2017, 10:41am
+              </time>
+              <meta itemprop='dateModified' content='2017-04-04T10:41:31Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="2" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/andylolz/40/495_2.jpg" class="avatar"> andylolz:</div>
+<blockquote>
+<p>If you’re instead talking about the IATI version used by the spreadsheet, isn’t it possible to infer this from the headers / data?</p>
+</blockquote>
+</aside>
+<p>Yes, it’s the IATI version used by the spreadsheet. Currently all info in the spreadsheet is assumed to be about <code>iati-activity</code> and child elements, whereas <code>@version</code> is found on the <code>iati-activities</code> root element. What we’re working on is letting people add an extra tab for these root level attributes.</p>
+        </div>
+
+        <meta itemprop='headline' content='Flatten-tool: New approach for Spreadsheet to IATI conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/dalepotter.html'><span itemprop='name'>dalepotter</span></a>
+            (Dale Potter)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="777.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-06T09:34:03Z' class='post-time'>
+                April 6, 2017,  9:34am
+              </time>
+              <meta itemprop='dateModified' content='2017-04-06T09:34:03Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for posting this update, especially for those who were not at the TAG lightning talk session.  Good to hear of progress too!</p>
+<p>Just reading though the discussion on how versions will be specified, it implies that the output XML can be produced to any versions of IATI Standard (v1.01 to v2.02) - is this correct?</p>
+<p>I know <a class="mention" href="../../u/wendy-2.html">@Wendy</a> was curious about this a few weeks ago.</p>
+        </div>
+
+        <meta itemprop='headline' content='Flatten-tool: New approach for Spreadsheet to IATI conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/rory_scott.html'><span itemprop='name'>rory_scott</span></a>
+            (Rory Scott)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="777.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-07T13:38:58Z' class='post-time'>
+                April 7, 2017,  1:38pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-07T13:38:58Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yup! xpaths in headings mean that you can specify where in the tree the value should go so, for example, if you had a sheet which had in it:</p>
+<pre><code class="lang-auto">+-----------------+--------------------+-------------------------------------+
+| iati-identifier | ...other values... | transaction/transaction/description |
++-----------------+--------------------+-------------------------------------+
+| GB-TEST-1       |                ... | Test description for fake activity  |
++-----------------+--------------------+-------------------------------------+
+</code></pre>
+<p>This would result in something like:</p>
+<pre><code class="lang-xml">&lt;iati-activities version="1.05" etc...&gt;
+  &lt;iati-activity&gt;
+    &lt;iati-identifier&gt;GB-TEST-1&lt;/iati-identifier&gt;
+    &lt;!-- other columns --&gt;
+      &lt;transaction&gt;
+        &lt;description&gt;Test description for fake activity&lt;/description&gt;
+      &lt;/transaction
+    &lt;!-- other columns --&gt;
+  &lt;/iati-activity&gt;
+&lt;/iati-activities&gt;
+</code></pre>
+<p>Change that to:</p>
+<pre><code class="lang-auto">+-----------------+--------------------+-----------------------------------------------+
+| iati-identifier | ...other values... | transaction/transaction/description/narrative |
++-----------------+--------------------+-----------------------------------------------+
+| GB-TEST-1       |                ... | Test description for fake activity            |
++-----------------+--------------------+-----------------------------------------------+
+</code></pre>
+<p>And it would be more like:</p>
+<pre><code class="lang-xml">&lt;iati-activities version="2.01" etc...&gt;
+  &lt;iati-activity&gt;
+    &lt;iati-identifier&gt;GB-TEST-1&lt;/iati-identifier&gt;
+    &lt;!-- other columns --&gt;
+      &lt;transaction&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Test description for fake activity&lt;/narrative&gt;
+        &lt;/description&gt;
+      &lt;/transaction
+    &lt;!-- other columns --&gt;
+  &lt;/iati-activity&gt;
+&lt;/iati-activities&gt;
+</code></pre>
+<p>Though I’ve skimmed over the version declaration and other elements.</p>
+<p>Ultimately it’s just very flexible, but would require a good template for each version or a good level of IATI knowledge to make a spreadsheet work well i.e. knowing the difference between a 1.05 transaction description and a 2.01 one.</p>
+<p>Hope this is clear <img src="../../images/emoji/twitter/slight_smileae52.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Flatten-tool: New approach for Spreadsheet to IATI conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/dalepotter.html'><span itemprop='name'>dalepotter</span></a>
+            (Dale Potter)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="777.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-04-07T14:04:00Z' class='post-time'>
+                April 7, 2017,  2:04pm
+              </time>
+              <meta itemprop='dateModified' content='2017-04-07T14:04:00Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for the extra detail. Looking forward to giving it a go sometime…</p>
+<aside class="quote no-group quote-modified" data-post="7" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/rory_scott/40/247_1.png" class="avatar"> rory_scott:</div>
+<blockquote>
+<p>Ultimately it’s just very flexible, but would require a good template for each version or a good level of IATI knowledge to make a spreadsheet work well i.e. knowing the difference between a 1.05 transaction description and a 2.01 one.</p>
+</blockquote>
+</aside>
+<p>Re templates - would it make sense to just have a v1.05 template, plus a v2.02 template?</p>
+<p>Therefore – unless a user specifically wants another point version (and wants to do the work to figure out which fields didn’t exist in earlier versions) – the tool outputs at these versions.</p>
+<p>When v2.03 is released, just add any new fields into the sheet and the default output options are then v1.05 and v2.03.</p>
+        </div>
+
+        <meta itemprop='headline' content='Flatten-tool: New approach for Spreadsheet to IATI conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:25:57 GMT -->
+</html>

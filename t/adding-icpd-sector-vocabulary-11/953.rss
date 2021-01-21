@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Adding ICPD Sector Vocabulary # 11</title>
+    <link>https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953</link>
+    <description>ICPD markers are needed to track FFD of Framework of Actions. Discussed and approved in Dar TAG. Waiting on decimal upgrade to make Sector Vocabulary not embedded.
+
+http://www.unfpa.org/icpd</description>
+    
+    <lastBuildDate>Wed, 19 Jul 2017 08:49:58 +0000</lastBuildDate>
+    <category>Non-Core Codelist Amendments</category>
+    <atom:link href="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Adding ICPD Sector Vocabulary # 11</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/akermanmartin">@AkermanMartin</a> and I understand that UNFPA will host the list of sector codes and descriptions etc on their website? Assuming this is the case please could you post the relevant URL to the codes once it is available as this will be required in order to add the list to the <a href="http://iatistandard.org/202/codelists/SectorVocabulary/">Sector Vocabulary</a> codelist.</p>
+<p>Also, will UNFPA be managing a public change process for this list?</p>
+          <p><a href="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953/5</link>
+        <pubDate>Wed, 19 Jul 2017 08:49:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-953-5</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953.rss">Adding ICPD Sector Vocabulary # 11</source>
+      </item>
+      <item>
+        <title>Adding ICPD Sector Vocabulary # 11</title>
+        <dc:creator><![CDATA[AkermanMartin]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/markbrough">@markbrough</a> Could work if it was just UNFPA publishing but will be really<br>
+important to have the link for other agencies to reference the codelist and<br>
+guidance on the IATI site. Will need to have its own vocab referenced…</p>
+          <p><a href="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953/4</link>
+        <pubDate>Tue, 18 Jul 2017 22:41:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-953-4</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953.rss">Adding ICPD Sector Vocabulary # 11</source>
+      </item>
+      <item>
+        <title>Adding ICPD Sector Vocabulary # 11</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/akermanmartin">@AkermanMartin</a> While not ideal, could you not publish this using some combination of existing attributes on the <code>sector</code> element? Maybe something like:<br>
+<code>&lt;sector vocabulary="99" vocabulary-uri="http://unfpa.org/icpd" code="1"&gt;</code></p>
+<p>I still think the <code>RO</code> sector vocabularies are a bit of a mess, and it would be good to have a better solution than just <code>99</code> and <code>98</code>. There were a couple of discussions around this previously <a href="https://support.iatistandard.org/hc/en-us/articles/214391946-Add-US-Sector-Framework-to-the-Vocabulary-Codelist" rel="nofollow noopener">here</a> and <a href="https://support.iatistandard.org/hc/en-us/articles/214390706-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used" rel="nofollow noopener">here</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953/3</link>
+        <pubDate>Tue, 18 Jul 2017 22:12:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-953-3</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953.rss">Adding ICPD Sector Vocabulary # 11</source>
+      </item>
+      <item>
+        <title>Adding ICPD Sector Vocabulary # 11</title>
+        <dc:creator><![CDATA[AkermanMartin]]></dc:creator>
+        <description><![CDATA[
+            <p>Sector Vocabulary in 2.02 is considered an embedded codelist <img src="//discuss.iatistandard.org/images/emoji/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"></p>
+<p>Sector vocabulary should not be considered embedded.</p>
+<p>UNFPA is asking for its ICPD sector vocabulary to be included in the standard as a non-embedded codelist (the 11th)</p>
+          <p><a href="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953/2</link>
+        <pubDate>Tue, 18 Jul 2017 21:09:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-953-2</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953.rss">Adding ICPD Sector Vocabulary # 11</source>
+      </item>
+      <item>
+        <title>Adding ICPD Sector Vocabulary # 11</title>
+        <dc:creator><![CDATA[AkermanMartin]]></dc:creator>
+        <description><![CDATA[
+            <p>ICPD markers are needed to track FFD of Framework of Actions. Discussed and approved in Dar TAG. Waiting on decimal upgrade to make Sector Vocabulary not embedded.</p>
+<p><a href="http://www.unfpa.org/icpd" class="onebox" target="_blank" rel="nofollow noopener">http://www.unfpa.org/icpd</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953/1</link>
+        <pubDate>Tue, 18 Jul 2017 15:02:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-953-1</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-icpd-sector-vocabulary-11/953.rss">Adding ICPD Sector Vocabulary # 11</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Dashboard &gt; Publishing Statistics - use of BudgetNotProvided?</title>
+    <link>https://discuss.iatistandard.org/t/iati-dashboard-publishing-statistics-use-of-budgetnotprovided/1410</link>
+    <description>The IATI Dashboard contains a metric for provision of the [Budget element in Comprehensiveness](http://dashboard.iatistandard.org/comprehensiveness_financials.html).
+
+&gt; For the hierarchy which contains the greatest number of budgets, the percentage of all current activities that contain at least one valid budget entry. A valid budget entry must contain a valid period-start AND a valid period-end AND a valid value AND a valid value-date.
+
+In 2.03 a new attribute was introduce [@budget-not-provided](http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/#iati-activities-iati-activity-budget-not-provided):
+
+&gt; A code indicating the reason why this activity does not contain any iati-activity/budget elements. The value must exist in the BudgetNotProvided codelist.
+
+The question therefore - do activities with the @budget-not-provided attribute get omitted from the Dashboard budget metric?</description>
+    
+    <lastBuildDate>Wed, 25 Jul 2018 11:05:57 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-dashboard-publishing-statistics-use-of-budgetnotprovided/1410.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Dashboard &gt; Publishing Statistics - use of BudgetNotProvided?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>do activities with the <span class="mention">@budget-not-provided</span> attribute get omitted from the Dashboard budget metric?</p>
+</blockquote>
+<p>The answer at present is: No.</p>
+<p>There are two relevant github issues:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Dashboard/issues/454">Forward looking - requires changes (#454)</a></li>
+<li><a href="https://github.com/IATI/IATI-Dashboard/issues/455">Comprehensiveness financials - requires changes (#455)</a></li>
+</ul>
+<hr>
+<p>More generally: There are other outstanding issues regarding the v2.03 upgrade. Some of these relate to the standard itself (e.g. <a href="https://github.com/IATI/IATI-Codelists/pull/139">[1]</a>; <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/242">[2]</a>; possibly others). It would be great to fully review the remaining issues, and set a timeline for resolving these issues.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-dashboard-publishing-statistics-use-of-budgetnotprovided/1410/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-dashboard-publishing-statistics-use-of-budgetnotprovided/1410/2</link>
+        <pubDate>Wed, 25 Jul 2018 10:54:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1410-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-dashboard-publishing-statistics-use-of-budgetnotprovided/1410.rss">IATI Dashboard &gt; Publishing Statistics - use of BudgetNotProvided?</source>
+      </item>
+      <item>
+        <title>IATI Dashboard &gt; Publishing Statistics - use of BudgetNotProvided?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>The IATI Dashboard contains a metric for provision of the <a href="http://dashboard.iatistandard.org/comprehensiveness_financials.html" rel="nofollow noopener">Budget element in Comprehensiveness</a>.</p>
+<blockquote>
+<p>For the hierarchy which contains the greatest number of budgets, the percentage of all current activities that contain at least one valid budget entry. A valid budget entry must contain a valid period-start AND a valid period-end AND a valid value AND a valid value-date.</p>
+</blockquote>
+<p>In 2.03 a new attribute was introduce <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/#iati-activities-iati-activity-budget-not-provided" rel="nofollow noopener">@budget-not-provided</a>:</p>
+<blockquote>
+<p>A code indicating the reason why this activity does not contain any iati-activity/budget elements. The value must exist in the BudgetNotProvided codelist.</p>
+</blockquote>
+<p>The question therefore - do activities with the <span class="mention">@budget-not-provided</span> attribute get omitted from the Dashboard budget metric?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-dashboard-publishing-statistics-use-of-budgetnotprovided/1410/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-dashboard-publishing-statistics-use-of-budgetnotprovided/1410/1</link>
+        <pubDate>Wed, 25 Jul 2018 10:24:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1410-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-dashboard-publishing-statistics-use-of-budgetnotprovided/1410.rss">IATI Dashboard &gt; Publishing Statistics - use of BudgetNotProvided?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Guidance on implementing aid and budget alignment</title>
+    <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831</link>
+    <description>In the Standards Day at the 2017 IATI TAG in Dar es Salaam, [we agreed](https://docs.google.com/spreadsheets/d/1RRE5IjyirIp-JFRF94JUNL6IEKnEU42uGzlWoj1yJ0A/edit#gid=0) to deprecate the BudgetIdentifier codelist and provide communications materials to publishers on implementing aid and budget alignment.
+
+This guidance explains how the methodology now works. It stems from work conducted by the IATI TAG Working Group on Aid and Budget Alignment, and reflects decisions made by the WP-STAT and IATI Steering Committee. In summary:
+
+1. Use the `capital-spend` field
+2. Use detailed CRS purpose codes
+  a) don&#39;t use very broad purpose codes like `43010 - Multisector aid`
+  b) use the more detailed &quot;voluntary&quot; CRS purpose codes.
+
+# 1) Publish the capital-spend field
+
+For activities at the commitment stage, the percentage of an activity that is capital expenditure should be published using the `capital-spend` field. The definition of capital expenditure follows the IMF GFS definition:
+
+&gt; Capital spending is generally defined as physical assets with a useful life of more than one year. But it also includes capital improvements or the rehabilitation of physical assets that enhance or extend the useful life of the asset (as distinct from repair or maintenance, which assures that the asset is functional for its planned life). Capital includes all aspects of design and construction that are required to make the asset operational. Source: D Jacobs, 2009, Capital Expenditures and the Budget, IMF PFM Technical Guidance Note No 8. (IMF, Washington)]
+
+This definition was [approved by WP-STAT under the written procedure]( http://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2015)30/REV1&amp;docLanguage=En) in February 2016.
+
+# 2) Publish detailed CRS purpose codes
+## (a) Don’t use very broad codes
+
+Broad &quot;multisector aid&quot; or &quot;sector not specified&quot; purpose codes are not mappable to budgets and are too aggregate to tell you much that is useful about the activity. Publishers should not use these purpose codes if they want activities to be mappable to budgets.
+
+List of multisector codes that should not be used (source: [IATI 2012 Study on Better Reflecting Aid Flows in Country Budgets](http://www.aidtransparency.net/wp-content/uploads/2013/05/Study-on-better-reflecting-aid-flows-in-country-budgets.doc), [Annex 4](http://www.aidtransparency.net/wp-content/uploads/2013/05/Annex-4-Common-Code-and-CRS-Spreadsheet.xls) - codes that are &quot;not classifiable - multisector&quot;):
+
+* 43010 - Multisector aid
+* 43050 - Non-agricultural alternative development
+* 43081 - Multisector education / training
+* 43082 - Research / scientific institutions
+* 52010 - Food aid/food security programmes
+* 99810 - Sectors not specified
+
+## (b) Use the more detailed &quot;voluntary&quot; CRS purpose codes, not “parent” codes
+
+In a fairly broad sample of 35-40 countries, various studies found that more disaggregated (&quot;voluntary&quot;) codes under 15 existing CRS purpose codes were needed to map to budgets. Publishers should use the voluntary codes instead of the &quot;parent&quot; codes if they want their activities to be mappable to budgets.
+
+The CRS purpose codes, including the more detailed voluntary codes, are listed in the [DAC and CRS codelists Excel sheet](http://www.oecd.org/dac/financing-sustainable-development/development-finance-standards/DAC-CRS-CODES.xls), which has also been [provided in a more accessible format](https://andylolz.github.io/dac-crs-codes/data/sector/) by @andylolz.
+
+The additional codes were [approved by WP-STAT under the written procedure]( http://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2015)30/REV1&amp;docLanguage=En) in February 2016. The IATI Steering Committee [approved the use of the more detailed CRS purpose codes](http://www.aidtransparency.net/wp-content/uploads/2013/01/Paper-4c-from-TAG-Working-Group-on-Budget-Identifier.pdf) (instead of using the “Common Code&quot; codelist) in March 2014.
+
+---
+
+Feedback on this guidance is welcome.</description>
+    
+    <lastBuildDate>Thu, 21 Jun 2018 12:36:45 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>This guidance has now been published by <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> live on the IATI Standard website:</p>
+<p><a href="http://iatistandard.org/203/activity-standard/overview/country-budget-alignment/" class="onebox" target="_blank" rel="nofollow noopener">http://iatistandard.org/203/activity-standard/overview/country-budget-alignment/</a></p>
+<p>Now that this guidance is finalised and live, it would be great if:</p>
+<ul>
+<li>
+<strong>publishers</strong> can take a quick look at the guidance (it is pretty short and clear) and see what steps they could take towards making their data more useful as part of the budget process at country level;</li>
+<li>
+<strong>organisations using the data</strong> can look at how they could stand to benefit from using this data, and how they can begin to integrate into their own systems.</li>
+</ul>
+<p>Many thanks to <a class="mention" href="/u/petyakangalova">@petyakangalova</a> and <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> for getting this on the IATI Standard site, and to all of the organisations involved in the many years of work to get us to this point, particuarly Canada and <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> .</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/33</link>
+        <pubDate>Thu, 21 Jun 2018 12:36:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-33</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks a lot for this <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> – I suggested one small change following <a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/17">feedback received above</a> from <a class="mention" href="/u/stevieflow">@stevieflow</a> – otherwise think this is good to go!!</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/32</link>
+        <pubDate>Fri, 11 May 2018 12:34:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-32</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/markbrough">@markbrough</a> Apologies for the significant delay in adding the guidance. I have now submitted a <a href="https://github.com/IATI/IATI-Extra-Documentation/pull/481">pull request for the guidance</a>- please have a look and let me know if any changes are required, so that we can approve and merge next week.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/31</link>
+        <pubDate>Fri, 27 Apr 2018 15:33:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-31</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve written a blog on this topic:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://www.publishwhatyoufund.org/wp-content/themes/pwyf/assets/images/favicon.ico" class="site-icon" width="64" height="64">
+      <a href="https://www.publishwhatyoufund.org/2018/04/time-act-aid-budgets/" target="_blank" rel="nofollow noopener" title="04:05PM - 26 April 2018">Publish What You Fund – 26 Apr 18</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/345;"><img src="https://www.publishwhatyoufund.org/wp-content/uploads/2020/06/twitter-card.jpg" class="thumbnail" width="690" height="345"></div>
+
+<h3><a href="https://www.publishwhatyoufund.org/2018/04/time-act-aid-budgets/" target="_blank" rel="nofollow noopener">It's time to act on aid and budgets - Publish What You Fund</a></h3>
+
+<p>UPDATE 30/04/18: We are encouraged to see that IATI have committed to publishing their guidance on how to implement aid and budget alignment this week.&nbsp;&nbsp; Information on aid that is aligned with country budget classifications is a key demand...</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>It includes a graph of all (more than 1 million) IATI activities, grouped by their 5-digit DAC sector code:</p>
+<p><a href="https://rawgit.com/andylolz/a4d89807434f5b9c326ebcd310f92d15/raw/chart.html" rel="nofollow noopener"><img src="https://discuss.iatistandard.org/uploads/default/original/1X/fd310d573761398264382bea3fa0527b7fecc9f8.png" alt="38" data-base62-sha1="A7PTpl7iuGe9RNh0nIGBsH1xBKo" width="690" height="368"></a></p>
+<p>A large number of activities use sector codes that can’t be aligned to recipient country budgets. A good first step to addressing this would be to get this guidance published.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/30</link>
+        <pubDate>Fri, 27 Apr 2018 12:05:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-30</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I also want to bump this thread. I am really trying to be polite and patient but we will be celebrating this thread’s first birthday in one month – would be great to know how we can move this guidance forward. Is there a reason why it is taking so long to add this to the IATI website?</p>
+<p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a> <a class="mention" href="/u/petyakangalova">@petyakangalova</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a> would you like a pull request for adding this guidance the IATI website? I am happy to provide. Please let me know (also if there is anywhere particular you would like it to go).</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/29</link>
+        <pubDate>Thu, 05 Apr 2018 18:59:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-29</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Gah… Polite impatience is exactly the tone I aim for. Apologies <a class="mention" href="/u/bill_anderson">@bill_anderson</a>.</p>
+<aside class="quote no-group" data-username="bill_anderson" data-post="27" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>The plan has always been to implement the deprecation of Code 1</p>
+</blockquote>
+</aside>
+<p>Great! I didn’t see a github issue for this, so I’ve created one:<br>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/240" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Codelists-NonEmbedded</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/240" target="_blank" rel="nofollow noopener">Mark BudgetIdentifierVocabulary code 1 as withdrawn (to indicate deprecation)</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2018-02-23" data-time="13:23:36" data-timezone="UTC">01:23PM - 23 Feb 18 UTC</span>
+      </div>
+
+        <div class="date">
+          closed <span class="discourse-local-date" data-format="ll" data-date="2018-08-15" data-time="15:57:26" data-timezone="UTC">03:57PM - 15 Aug 18 UTC</span>
+        </div>
+
+      <div class="user">
+        <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+          <img alt="andylolz" src="https://avatars1.githubusercontent.com/u/464193?v=4" class="onebox-avatar-inline" width="20" height="20">
+          andylolz
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">This comment on IATI discuss confirms that BudgetIdentifierVocabulary code 1 should be deprecated.
+I think as far as codelists are concerned, withdrawn...</p>
+</div>
+
+<div class="labels">
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>I’ve also created the <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/242" rel="nofollow noopener">related pull request</a>, and <a href="https://discuss.iatistandard.org/t/mark-iati-1-as-withdrawn-in-budgetidentifiervocabulary-codelist/1235">requisite discuss post</a>.</p>
+<p>I don’t think this addresses the accepted proposals from standards day <a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/22">mentioned above, though</a>. Or the agreed plan to add <a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831">the aid and budget alignment guidance</a>, that this thread is about.</p>
+<hr>
+<p>UPDATE: I think <a href="https://github.com/IATI/IATI-Codelists/pull/139" rel="nofollow noopener">this pull request</a> ought to fix the second accepted proposal mentioned above.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/28</link>
+        <pubDate>Fri, 23 Feb 2018 14:49:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-28</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>As part of the Version 2.03 upgrade the <a href="http://iatistandard.org/203/codelists/BudgetIdentifierVocabulary/">Budget Identifier Vocabulary</a> codelist was changed from being embedded to non-embedded.</p>
+<p>The plan has always been to implement the deprecation of Code 1 in this list as part of the <a href="http://iatistandard.org/203/upgrades/nonembedded-codelist-changelog/">standard procedures for making changes to non-embedded codelists</a>.</p>
+<p>If I could add a personal note on this: It seems to me that a number of comments on this issue are getting close to the limit of what might be called “polite impatience”. Give us a break folks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/27</link>
+        <pubDate>Fri, 23 Feb 2018 11:31:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-27</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="22" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>I’m not sure what happened with these, but <a class="mention" href="/u/stevieflow">@stevieflow</a> is right in pointing out that neither has been actioned in v2.03.</p>
+</blockquote>
+</aside>
+<p>What’s the best way to remedy this <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/26</link>
+        <pubDate>Fri, 23 Feb 2018 08:15:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-26</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>The methodology was written by Simon, but the report itself is more recent, having been published in January 2018 (thus presumably written in 2017).  Though it does refer to the “common code” as a recent proposal, which is very confusing.</p>
+<p>In any case, clearly marking this codelist as deprecated, as decided by the TAG a year ago, and adding the guidelines, would help avoid further confusion for both publishers and users of IATI data.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/25</link>
+        <pubDate>Thu, 22 Feb 2018 14:55:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-25</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="23" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>One concrete consequence of this not being actioned</p>
+</blockquote>
+</aside>
+<p>This is not correct.</p>
+<p>If you read the acknowledgements in the report you will see that the methodology was written by Simon Parrish. This would have been before the agreement by WP-STAT of new CRS purpose codes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/24</link>
+        <pubDate>Thu, 22 Feb 2018 14:36:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-24</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>One concrete consequence of this not being actioned is the recent <a href="https://www.oxfamamerica.org/explore/research-publications/tracing-us-development-flows-a-study-of-the-traceability-of-us-aid-to-ghana/">report</a> by Cohen and Mekuria that is based on the Budget ID codelist rather than the expanded CRS codelist. That’s a missed opportunity to see what IATI can tell us about aid flows to a specific country.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/23</link>
+        <pubDate>Thu, 22 Feb 2018 14:15:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-23</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Bumping this. I found the relevant bit in <a href="https://docs.google.com/spreadsheets/d/1RRE5IjyirIp-JFRF94JUNL6IEKnEU42uGzlWoj1yJ0A/edit#gid=0">the standards day notes</a> (rows 102 and 103):</p>
+<blockquote>
+<p><em>Proposal</em>: Deprecate the BudgetIdentifier codelist<br>
+<em>Outcome</em>: <strong>Accept</strong><br>
+<em>Discussion</em>: Consensus as codelist has been replaced by expanded CRS Purpose codes</p>
+</blockquote>
+<blockquote>
+<p><em>Proposal</em>: Remove reference to the <code>BudgetIdentifier</code> codelist in the definition of <code>country-budget-items/budget-item/@code</code><br>
+<em>Outcome</em>: <strong>Accept</strong><br>
+<em>Discussion</em>: We would deprecate at 2.03 and remove in integer, although it was noted that there is no process on the deprecation of individual elements. Comms would need to be provided to publishers about this, perhaps as separate guidelines.</p>
+</blockquote>
+<p>I’m not sure what happened with these, but <a class="mention" href="/u/stevieflow">@stevieflow</a> is right in pointing out that neither has been actioned in v2.03.</p>
+<p>Relatedly, the aid and budget alignment guidelines were bumped to v2.03, but haven’t been added yet.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/22</link>
+        <pubDate>Thu, 22 Feb 2018 14:07:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-22</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a> is this guidance also going to be added on the website sometime in the near future? Do you want a pull request from me to do this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/21</link>
+        <pubDate>Fri, 16 Feb 2018 16:08:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-21</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="19" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>I can see that the voluntary purpose codes are now in both the 2.03 5-digit sector list, and also the source OECD DAC XML (<a class="mention" href="/u/andylolz">@andylolz</a> can confirm)</p>
+</blockquote>
+</aside>
+<p>I can indeed confirm this. In fact, the OECD DAC <a href="http://vs-web-fs-1.oecd.org/crs-iati-xml/Lookup/DAC_codeLists_iati.xml">XML</a> adds the “voluntary” purpose codes as codes (i.e. consistent with the way they’re included in the <a href="http://iatistandard.org/202/codelists/Sector/">IATI codelist</a>), and just flags the voluntary bit in the <code>status</code> (it says “vonlontary” but that’s a typo).</p>
+<aside class="quote no-group" data-post="19" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Should the <a href="http://dev.iatistandard.org/203/codelists/BudgetIdentifier/">BudgetIdentifier</a> codelist have been deprecated?</p>
+</blockquote>
+</aside>
+<p>Searching back through this forum, it appears the answer to this is yes it should.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/20</link>
+        <pubDate>Fri, 16 Feb 2018 15:31:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-20</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Im trying to figure out if anything around this has happened via 2.03.</p>
+<p>Should the <a href="http://dev.iatistandard.org/203/codelists/BudgetIdentifier/" rel="nofollow noopener">BudgetIdentifier</a> codelist have been deprecated?</p>
+<p>Any idea <a class="mention" href="/u/petyakangalova">@petyakangalova</a> <a class="mention" href="/u/markbrough">@markbrough</a> <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/andylolz">@andylolz</a> ?</p>
+<p>I can see that the voluntary purpose codes are now in both the <a href="http://dev.iatistandard.org/203/codelists/Sector/" rel="nofollow noopener">2.03 5-digit sector</a> list, and also the source OECD DAC <a href="http://vs-web-fs-1.oecd.org/crs-iati-xml/Lookup/DAC_codeLists_iati.xml" rel="nofollow noopener">XML</a> (<a class="mention" href="/u/andylolz">@andylolz</a> can confirm) - so that might now affect this:</p>
+<aside class="quote no-group" data-post="1" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>The CRS purpose codes, including the more detailed voluntary codes, are listed in the DAC and CRS codelists Excel sheet, which has also been provided in a more accessible format by <a class="mention" href="/u/andylolz">@andylolz</a>.</p>
+</blockquote>
+</aside>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/19</link>
+        <pubDate>Fri, 16 Feb 2018 14:25:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-19</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Great, thanks Mark</p>
+<aside class="quote no-group" data-post="17" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>However, I am not sure what you mean by complexities in terms of multiple or secondary sectors. You use these sectors / more detailed purpose codes in the same way as you would use any other CRS purpose codes.</p>
+</blockquote>
+</aside>
+<p>Was just thinking of scenarios whereby publishers might want to maintain a <code>sector</code> code as a primary classification, but then also utilise the voluntary codes for potential “<a href="https://discuss.iatistandard.org/t/non-statistical-secondary-sectors-excluded-2-03/849">non-statistical</a>” classifications.  This might be a tangent though - so better to focus on the other parts of this thread!</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/18</link>
+        <pubDate>Fri, 01 Sep 2017 12:33:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-18</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback on this <a class="mention" href="/u/stevieflow">@stevieflow</a>! On deprecation, I do not know how this is supposed to happen (I am not aware of any particular process around deprecation). But yes, this thread is very much focused on providing guidance.</p>
+<aside class="quote no-group" data-post="16" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Does it need to be made explicit that publishers should use sector rather than country-budget-item ?</p>
+</blockquote>
+</aside>
+<p>Yeah perhaps. Maybe the point 2. in the draft guidance should be changed to:</p>
+<aside class="quote no-group quote-modified" data-post="1" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>Use detailed CRS purpose codes <strong>in the <code>&lt;sector&gt;</code> element</strong></p>
+</blockquote>
+</aside>
+<p>However, I am not sure what you mean by complexities in terms of multiple or secondary sectors. You use these sectors / more detailed purpose codes in the same way as you would use any other CRS purpose codes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/17</link>
+        <pubDate>Fri, 01 Sep 2017 12:11:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-17</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Other thing.</p>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a href="https://twitter.com/YohannaLoucheur/status/903301953647759361" rel="nofollow noopener">mentions</a></p>
+<blockquote>
+<p>Obviously, CRS purpose codes are published in Sector element. Country-budget-item no longer needed - but kept for potential future needs</p>
+</blockquote>
+<p>(see <a href="https://twitter.com/stevieflow/status/903278592884387842" rel="nofollow noopener">full thread</a>):</p>
+<p>Am I correct in thinking that this proposal misses out this point.  Does it need to be made explicit that publishers should use <code>sector</code> rather than <code>country-budget-item</code> ?</p>
+<p>(In turn, I think this then starts to raise complexities in terms of multiple sectors and, even, <a href="https://discuss.iatistandard.org/t/clarification-multiple-ro-sector-vocabularies/576">secondary sectors</a>, potentially.  <em>Sorry</em>)</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/16</link>
+        <pubDate>Fri, 01 Sep 2017 11:38:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-16</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>HI</p>
+<aside class="quote no-group" data-post="1" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>deprecate the BudgetIdentifier codelist</p>
+</blockquote>
+</aside>
+<p>I’m interested in how this will happen.  The rest of this thread seems to be about adding / changing guidance around the standard.  If the actual <a href="http://iatistandard.org/202/codelists/BudgetIdentifier/" rel="nofollow noopener">BudgetIdentifier</a> codelist is to be acted upon, then <em>something</em> needs to happen?</p>
+<p>For reference / more widely, I don’t think we should do similar to <a href="http://iatistandard.org/202/codelists/OrganisationIdentifier/" rel="nofollow noopener">OrganisationIdentifier</a> “codelist”, which has some narrative to declare that it is deprecated, but is still “included” in the standard.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/15</link>
+        <pubDate>Fri, 01 Sep 2017 11:01:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-15</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>As a process point: Perhaps stuff that doesn’t <em>need</em> to be part of the standard upgrade shouldn’t be lumped in with it. It seems like it just makes the standard upgrade more confusing, and I’m unsure what the benefit is.</p>
+<p><a href="https://discuss.iatistandard.org/t/proposed-addition-to-the-indicator-vocabulary-codelist/946">Here’s an example where doing this appears to have caused some confusion.</a></p>
+<p>Anyway – just a suggestion.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/14</link>
+        <pubDate>Wed, 23 Aug 2017 10:57:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-14</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/petyakangalova">@petyakangalova</a>!</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/13</link>
+        <pubDate>Thu, 20 Jul 2017 11:28:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-13</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/markbrough">@markbrough</a> I have amended the text in the proposal. As with other guidance (see point 3 in the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">index</a>), we will be following the same timetable for the upgrade process and will add to the IATI standard website.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/12</link>
+        <pubDate>Wed, 19 Jul 2017 14:14:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-12</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for flagging this <a class="mention" href="/u/andylolz">@andylolz</a>, agree it would be a good addition. <a class="mention" href="/u/petyakangalova">@petyakangalova</a> - I cannot edit my post above anymore, so please can you add this in? Also, what is the progress on adding this guidance (I presume it would be to the IATI Standard website)? I am not really sure what needs to happen next.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/11</link>
+        <pubDate>Mon, 17 Jul 2017 17:07:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-11</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Just spotted something, <a class="mention" href="/u/markbrough">@markbrough</a>:</p>
+<aside class="quote no-group quote-modified" data-post="1" data-topic="831">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>Publishers should use the voluntary codes instead of the “parent” codes</p>
+</blockquote>
+</aside>
+<p>This line is very important – I think it would be clearer to say this in the first line of 2b. So instead of:</p>
+<blockquote>
+<p>(b) Use the more detailed “voluntary” CRS purpose codes</p>
+</blockquote>
+<p>you could say:</p>
+<blockquote>
+<p>(b) Use the more detailed “voluntary” CRS purpose codes, <em>not “parent” codes</em></p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/10</link>
+        <pubDate>Mon, 17 Jul 2017 16:44:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-10</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+      <item>
+        <title>Guidance on implementing aid and budget alignment</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a> I forgot to say in my previous response that I have already added this one to the index.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831/9</link>
+        <pubDate>Thu, 08 Jun 2017 13:31:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-831-9</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831.rss">Guidance on implementing aid and budget alignment</source>
+      </item>
+  </channel>
+</rss>

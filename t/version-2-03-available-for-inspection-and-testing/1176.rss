@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Version 2.03 Available for Inspection and Testing</title>
+    <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176</link>
+    <description>The IATI Technical Team is pleased to announce that the IATI Standard Version 2.03 Schema is now available for inspection and testing. The full schema can be found on [GitHub](https://github.com/IATI/IATI-Schemas/blob/version-2.03dev/iati-activities-schema.xsd#)
+
+**What does this mean?**
+
+All additions which were proposed and accepted during the 2.03 upgrade period have been added into the three IATI Schemas: Activities, Organisations and Common, as well as the Codelists and Rulesets. Together these make up the IATI Standard. This has involved editing the xml and testing that from a technical point of view all of the proposals work and, where possible, are consistent with the current IATI Standard.
+
+You can look on github to see how the proposals have been implemented. 
+
+Please see the section below for details on how to comment on the v2.03 IATI schema.
+
+**When can I start using v2.03?**
+
+Version 2.03 of the IATI website will go live by the 19th Feb 2018. This will include guidance on how to implement the new additions as well as a full change log. We will also have updated the [IATI Public Validator](http://validator.iatistandard.org/) so that you can check your version 2.03 IATI files. At this point you can publish your version 2.03 file/s.
+
+The different publishing tool and service providers will be working to update their products to version 2.03. Please look out for communications from them about when this will be ready for you to use.
+
+--------------------------------------------------------------------
+
+**How do I comment on the v2.03 schema?**
+
+The changes made across the v2.03 schema can be found in the following branches on github:
+
+1.https://github.com/IATI/IATI-Schemas/tree/version-2.03dev 
+- [comments*](https://github.com/IATI/IATI-Schemas/pull/391)
+
+2.https://github.com/IATI/IATI-Codelists/tree/version-2.03dev 
+- [comments*](https://github.com/IATI/IATI-Codelists/pull/134)
+
+3.https://github.com/IATI/IATI-Codelists-Nonembedded/tree/version-2.03dev  
+- [comments*](https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/232)
+
+4.https://github.com/IATI/IATI-Rulesets/tree/version-2.03dev 
+- [comments*](https://github.com/IATI/IATI-Rulesets/pull/57)
+
+&#39;*&#39; Comments are welcome using the above ‘comments’ links where members of the community identify that technical implementation is incorrect (given the [final technical proposal](https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097))
+
+**Improvements to the process used to develop the v2.03 schemas**
+
+The development process for the schemas has been enhanced in this upgrade through a thorough TDD (test-driven development) approach, with a [schema test runner](https://github.com/IATI/IATI-Schemas/blob/version-2.03dev/tests/test_schemas.py) built using schema validation functionality in [pyIATI](https://github.com/IATI/pyIATI). Additionally, various elements of the schemas have been reorganised to improve adherence to software development best practices.</description>
+    
+    <lastBuildDate>Wed, 21 Feb 2018 16:09:29 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stolk">@stolk</a> Yes we are, but since the current version is an early alpha version yet, granting access will take some time. <a class="mention" href="/u/rolfkleef">@rolfkleef</a> is now working on getting all IATI files preprocessed at a daily basis, so that the API will have a good performace and will be scalable (even when processing larger volumes).</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/19</link>
+        <pubDate>Wed, 21 Feb 2018 16:09:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-19</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[stolk]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Amy !  this is clear now.<br>
+greetings</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/18</link>
+        <pubDate>Wed, 21 Feb 2018 15:41:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-18</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stolk">@stolk</a> 2.03 is backwards compatible. So a valid 2.x file which says 2.03 at the top will validate.</p>
+<p>The IATI Public Validtor is also set up to check against all of the additions included in 2.03.</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/17</link>
+        <pubDate>Wed, 21 Feb 2018 15:25:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-17</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[stolk]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi tech team, what are the bottom line criteria in relation to declaring 2.03 as versions in your xml.<br>
+Just used the validator on a sample of our publication with a declared version of 2.03 and it was accepted as a sound xml and as a validated xml against 2.03.<br>
+Is it than responsible to declare 2.03?  <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/rolfkleef">@rolfkleef</a>  are you planning to offer access to your validator?</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/16</link>
+        <pubDate>Wed, 21 Feb 2018 14:48:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-16</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>We are pleased to announce that as of Mon 19th February version 2.03 of the IATI Standard is live.</p>
+<p>Read more details here: <a href="https://www.aidtransparency.net/news/iati-upgrade-to-version-2-03-goes-live">https://www.aidtransparency.net/news/iati-upgrade-to-version-2-03-goes-live</a></p>
+<p>Thank you to all of you who have contributed to in the upgrade discussions, submitting proposals and testing. If you do have further comments please do let us know at: <a href="mailto:support@iatistandard.org">support@iatistandard.org</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/15</link>
+        <pubDate>Wed, 21 Feb 2018 11:44:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-15</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, this is very much a changelog. Fabulous.</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/14</link>
+        <pubDate>Sat, 17 Feb 2018 16:03:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-14</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>ok thanks <a class="mention" href="/u/hayfield">@hayfield</a></p>
+<aside class="quote no-group" data-post="3" data-topic="1176">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/410_1.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>Great. I am unable to find a changelog comparing branches 2.02 and version-2.03dev.</p>
+</blockquote>
+</aside>
+<p>I guess this now does that: <a href="http://dev.iatistandard.org/203/upgrades/decimal-upgrade-to-2-03/2-03-changes/" rel="nofollow noopener">http://dev.iatistandard.org/203/upgrades/decimal-upgrade-to-2-03/2-03-changes/</a> ?</p>
+<p>Note: if this site was also generated at the same time as original notice, it would have been really helpful to point us to it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/13</link>
+        <pubDate>Fri, 16 Feb 2018 11:27:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-13</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="http://dev.iatistandard.org/203/">http://dev.iatistandard.org/203/</a> is the dev site. This was last generated around 6 hours ago.</p>
+<p>It currently has a few issues around Examples, Codelists and Rules, though the fixes for these are known / in-progress / complete and waiting for deployment.</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/12</link>
+        <pubDate>Thu, 15 Feb 2018 18:11:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-12</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="10" data-topic="1176">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>when would a dev version of the 2.03 IATI standard site be available?</p>
+</blockquote>
+</aside>
+<p>Given that I understand 2.03 will be going live on Monday 19th Feb, then I guess we won’t see this <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>?</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/11</link>
+        <pubDate>Thu, 15 Feb 2018 16:48:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-11</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Regarding changelog - am I right to assume that something along the lines of all other updates being prepared - as in <a href="http://iatistandard.org/202/upgrades/decimal-upgrade-to-2-02/2-02-changes/" rel="nofollow noopener">http://iatistandard.org/202/upgrades/decimal-upgrade-to-2-02/2-02-changes/</a> ?</p>
+<p>With all the documentation changes needed - when would a dev version of the 2.03 IATI standard site be available?</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/10</link>
+        <pubDate>Thu, 18 Jan 2018 08:07:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-10</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="8" data-topic="1176">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/262_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>The diffs for to the schemas themselves (i.e. excluding other changes made regarding test cases and the testrunner) are visible here:</p>
+</blockquote>
+</aside>
+<p>Those diffs don’t exclude other changes, so they struggle to render on old computers (like mine). These are a bit better (and exclude whitespace changes):</p>
+<ul>
+<li><a href="https://github.com/andylolz/IATI-Schemas/pull/1/commits/97732bdaa5543aa657d2a667f5b23fdfd9ac8f36">IATI Activities Schema</a></li>
+<li><a href="https://github.com/andylolz/IATI-Schemas/pull/1/commits/fa9898cd7f867741aa8a06d90c9b63d30e2d5937">IATI Organisations Schema</a></li>
+<li><a href="https://github.com/andylolz/IATI-Schemas/pull/1/commits/0b51e6ee4d2231c64857216e5cb675ac8ccbf305">IATI Common Schema</a></li>
+</ul>
+<p>[UPDATE: it turns out this is specifically a Chrome/OSX issue. Those big diffs render nicely elsewhere.]</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/9</link>
+        <pubDate>Wed, 17 Jan 2018 10:48:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-9</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a valid point <a class="mention" href="/u/siemvaessen">@siemvaessen</a> and <a class="mention" href="/u/andylolz">@andylolz</a>. For future upgrade schema releases we would consider adding a changelog.rst file for all of the SSOT repositories (Schemas, Codelists and Rulesets) with pull request numbers to each line, so that it is easier for developers to track the changes.</p>
+<p>At the moment you can view the changes from 2.02 to 2.03 in:</p>
+<ul>
+<li>
+<a href="https://docs.google.com/spreadsheets/d/1XWnzesMvLebIVLk47OIXATfhcjESVcaGnw8SJpOuCCk/edit#gid=888934926">Final Technical Summary</a> as per the Final Technical Proposal post (<a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097">Final Technical Proposal for the 2.03 Upgrade</a>)- you can refer to the tabs <code>2.03 Activity Standard (Changes)</code> and <code>2.03 Organisation Standard (Changes)</code>.</li>
+<li>The diffs for to the schemas themselves (i.e. excluding other changes made regarding test cases and the testrunner) are visible here:
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/pull/391/files#diff-46131fa5e23b9cbfa810dde2d316734e">IATI Activities Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Schemas/pull/391/files#diff-0ba472027e546272291962f14f280603">IATI Organisations Schema</a></li>
+</ul>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/8</link>
+        <pubDate>Wed, 17 Jan 2018 10:30:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-8</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree we need to include a changelog <em>for developers</em> with the release candidate. Will happen next time around.</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/7</link>
+        <pubDate>Tue, 16 Jan 2018 19:46:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-7</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry yeah – I was agreeing with you, Siem.</p>
+<p>And when I say “Perhaps It would be easier to exclude [schema test runner-related stuff]”, that was intended to be directed at <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/6</link>
+        <pubDate>Tue, 16 Jan 2018 19:25:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-6</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Well, I understand, but could an IATI tech teammember please do that and publish that? This will ensure we are <em>all</em> on the same pages, rather than developers checking the differences in between branches… Pretty sure anyone non technical is now unable to check the difference.</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/5</link>
+        <pubDate>Tue, 16 Jan 2018 09:14:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-5</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>tl;dr: +1 to Siem’s comment. What’s the best way for the IATI community to do a final review of these changes?</p>
+<hr>
+<p><a class="mention" href="/u/siemvaessen">@siemvaessen</a> the <code>version-2.03</code> branch is currently a copy of <code>version-2.02</code> (more or less. It has <a href="https://github.com/IATI/IATI-Schemas/commit/aec67de5005c17e6816b8e41eb83ec239b60c26b">one commit</a>, but that’s mostly whitespace fixes.) So I think <a href="https://github.com/IATI/IATI-Schemas/pull/391">the diff of <code>version-2.03dev</code> with <code>version-2.03</code></a> (linked above) is the thing you’re after.</p>
+<p>That said, it looks like there’s quite a lot of schema test runner-related stuff in that diff now, which adds a lot of noise… Perhaps It would be easier to exclude that? (e.g. by merging it into <code>version-2.02</code> as well).</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/4</link>
+        <pubDate>Fri, 12 Jan 2018 11:03:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-4</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Great. I am unable to find a changelog comparing branches 2.02 and version-2.03dev. We could do it ourselves, but is this supplied anywhere, so we can all look at the same document of changes? Thanks.</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/3</link>
+        <pubDate>Fri, 12 Jan 2018 09:25:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-3</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/2</link>
+        <pubDate>Thu, 11 Jan 2018 16:18:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-2</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+      <item>
+        <title>Version 2.03 Available for Inspection and Testing</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The IATI Technical Team is pleased to announce that the IATI Standard Version 2.03 Schema is now available for inspection and testing. The full schema can be found on <a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03dev/iati-activities-schema.xsd#">GitHub</a></p>
+<p><strong>What does this mean?</strong></p>
+<p>All additions which were proposed and accepted during the 2.03 upgrade period have been added into the three IATI Schemas: Activities, Organisations and Common, as well as the Codelists and Rulesets. Together these make up the IATI Standard. This has involved editing the xml and testing that from a technical point of view all of the proposals work and, where possible, are consistent with the current IATI Standard.</p>
+<p>You can look on github to see how the proposals have been implemented.</p>
+<p>Please see the section below for details on how to comment on the v2.03 IATI schema.</p>
+<p><strong>When can I start using v2.03?</strong></p>
+<p>Version 2.03 of the IATI website will go live by the 19th Feb 2018. This will include guidance on how to implement the new additions as well as a full change log. We will also have updated the <a href="http://validator.iatistandard.org/">IATI Public Validator</a> so that you can check your version 2.03 IATI files. At this point you can publish your version 2.03 file/s.</p>
+<p>The different publishing tool and service providers will be working to update their products to version 2.03. Please look out for communications from them about when this will be ready for you to use.</p>
+<hr>
+<p><strong>How do I comment on the v2.03 schema?</strong></p>
+<p>The changes made across the v2.03 schema can be found in the following branches on github:</p>
+<p>1.<a href="https://github.com/IATI/IATI-Schemas/tree/version-2.03dev">https://github.com/IATI/IATI-Schemas/tree/version-2.03dev</a></p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/pull/391">comments*</a></li>
+</ul>
+<p>2.<a href="https://github.com/IATI/IATI-Codelists/tree/version-2.03dev">https://github.com/IATI/IATI-Codelists/tree/version-2.03dev</a></p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Codelists/pull/134">comments*</a></li>
+</ul>
+<p>3.<a href="https://github.com/IATI/IATI-Codelists-Nonembedded/tree/version-2.03dev">https://github.com/IATI/IATI-Codelists-Nonembedded/tree/version-2.03dev</a></p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/232">comments*</a></li>
+</ul>
+<p>4.<a href="https://github.com/IATI/IATI-Rulesets/tree/version-2.03dev">https://github.com/IATI/IATI-Rulesets/tree/version-2.03dev</a></p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Rulesets/pull/57">comments*</a></li>
+</ul>
+<p>‘*’ Comments are welcome using the above ‘comments’ links where members of the community identify that technical implementation is incorrect (given the <a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097">final technical proposal</a>)</p>
+<p><strong>Improvements to the process used to develop the v2.03 schemas</strong></p>
+<p>The development process for the schemas has been enhanced in this upgrade through a thorough TDD (test-driven development) approach, with a <a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03dev/tests/test_schemas.py">schema test runner</a> built using schema validation functionality in <a href="https://github.com/IATI/pyIATI">pyIATI</a>. Additionally, various elements of the schemas have been reorganised to improve adherence to software development best practices.</p>
+          <p><a href="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176/1</link>
+        <pubDate>Thu, 11 Jan 2018 16:14:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1176-1</guid>
+        <source url="https://discuss.iatistandard.org/t/version-2-03-available-for-inspection-and-testing/1176.rss">Version 2.03 Available for Inspection and Testing</source>
+      </item>
+  </channel>
+</rss>

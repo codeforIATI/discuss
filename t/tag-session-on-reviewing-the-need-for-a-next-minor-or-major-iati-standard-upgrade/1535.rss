@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+    <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535</link>
+    <description>At the TAG 2018, we want to review the community need for a next IATI Standard upgrade. The IATI technical team will run a short session that will focus on the appetite for a next upgrade ([minor or major](http://reference.iatistandard.org/203/upgrades/)) and discuss the potential timeline if there is a need for one.
+
+Before we get to the TAG we want participants to be aware of outstanding minor and major upgrade proposals, and to have a discussion about whether or not they are still relevant. Please refer to all proposals listed below. If you think there are proposals we have missed out, please add a link to the relevant Discuss post on this thread.
+
+Please note that at this year&amp;rsquo;s TAG there won&amp;rsquo;t be a full IATI standards day and the TAG will not be a place to raise new proposals. This can be done at any time via the normal process on [IATI Discuss](https://discuss.iatistandard.org/c/standard-management). We want to review the appetite for an upgrade given the current state of play.
+
+**Outstanding minor upgrade changes:**
+
+* [Exchange rate options](https://discuss.iatistandard.org/t/exchange-rate-options-excluded-2-03/) (Needs further consultation and alignment with the open contracting community before being taken forward)
+
+* [Publishing Application](https://discuss.iatistandard.org/t/publishing-application-excluded-2-03) (Requires further discussion about whether it&#39;s needed and why)
+
+* [Adding links to related OCDS contracts](https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03) (Agreed that more work was needed to get this right)
+
+* [Results – recognising partner contributions](https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/) (Need to gain more experience and use cases first)
+
+* [Outgoing Commitment - conflicting description &amp;amp; use?](https://discuss.iatistandard.org/t/outgoing-commitment-conflicting-description-use/) (Need more consensus and worked examples)
+
+**Outstanding major upgrade changes:**
+
+_**Proposals from the IATI community:**_
+
+* [Fix Activity Status Mix Up](https://discuss.iatistandard.org/t/activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/43) (agreement reached, but solution changes the meaning of the code and is therefore not backward compatible)
+
+* [Add a new transaction type](https://discuss.iatistandard.org/t/introduce-a-new-transaction-type-for-internally-sourced-funds/662/3) (no consensus and needs further discussion)
+
+* [Add an indicator schema to the IATI Standard ](https://support.iatistandard.org/hc/en-us/articles/214389106-Add-an-indicator-schema-to-the-IATI-standard)(needs discussion)
+
+* Deprecate: location/coordinates elements; legacy data element; organisation type &amp;lsquo;Accountable&amp;rsquo;. (agreement reached)
+
+* Make mandatory: elements &amp;lsquo;[iati-activities&amp;rsquo; and &amp;lsquo;iati-organisations](https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679/)&amp;rsquo; (consensus); attribute [@generated-datetime](https://discuss.iatistandard.org/t/making-the-generated-datetime-element-mandatory/1204) (not discussed); [@value-date](https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/)
+
+  * Need a major upgrade to include new rules
+
+_**Creation of rules following previous minor upgrade proposals:**_
+
+* There are multiple occasions where rules need to be created. This is where &amp;lsquo;shoulds&amp;rsquo; have been added as part of previous decimal upgrades, with the agreement they would become &amp;lsquo;musts&amp;rsquo; at version 3.0.0.
+
+**_Technical changes to &amp;lsquo;fix&amp;rsquo; the standard:_**
+
+* Contradictions within the schema: There are number of rules and guidelines within the schema which contradict each other. E.g.
+
+  * For a &amp;lt;sector&amp;gt; at activity level both are true: &amp;ldquo;Each vocabulary&amp;rsquo;s percentages **should** add up to 100%&amp;rdquo; compared with, &amp;ldquo;All reported sectors from the same vocabulary **must** add up to 100%&amp;rdquo;.
+
+* There are a number of places in the standard, in which documentation can be made consistent. This does not change the meaning of the Standard, but will make it easier to use for publishers, data users and tool providers.
+
+**Note**: The IATI tech team will separately run a workshop on how to engage in a possible next upgrade. IATI has a [new upgrade process](http://reference.iatistandard.org/203/upgrades/), which requires changes to the standard to be suggested in non-technical language and to be presented with use cases. We want to test how this works in practice, and help attendees gain confidence in writing proposals.</description>
+    
+    <lastBuildDate>Wed, 14 Nov 2018 12:02:41 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1535">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<ul>
+<li>Make mandatory: elements ‘<a href="https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679/">iati-activities’ and ‘iati-organisations</a>’ (consensus); attribute <a href="https://discuss.iatistandard.org/t/making-the-generated-datetime-element-mandatory/1204">@generated-datetime</a> (not discussed); <a href="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/">@value-date</a>
+</li>
+</ul>
+</blockquote>
+</aside>
+<p>I’m pretty sure <a href="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/">@value-date</a> is already required. I’m afraid I’m not sure exactly when that was changed, though. In any case, I think <a href="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/">this proposal</a> can be marked as done / closed.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/14</link>
+        <pubDate>Wed, 14 Nov 2018 12:02:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-14</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1535">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>n/coordinates elements;</p>
+</blockquote>
+</aside>
+<p>Thanks for reminding me.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/13</link>
+        <pubDate>Mon, 12 Nov 2018 07:04:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-13</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Replaced in v1.04 with location/point/pos</p>
+<p><a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/location/point/pos/" class="onebox" target="_blank">http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/location/point/pos/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/12</link>
+        <pubDate>Mon, 12 Nov 2018 06:39:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-12</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1535">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>Deprecate: <strong>location/coordinates elements</strong>; legacy data element; organisation type ‘Accountable’. (agreement reached)</p>
+</blockquote>
+</aside>
+<p>What is the rational of removing <strong>location/coordinates elements</strong> and when was agreement reached on this? Any community paper trail on this? I’d vote against it.</p>
+<p>This defies the concept of location and would render location incomplete (“global to local”). There are use cases around the actual use of <strong>location/coordinates elements</strong> even outside of the IATI realm where analysis and comparison is done combined with other data sets… Perhaps misreading, but this actually proposes to get rid of the element <strong>location/coordinates elements</strong>  right?</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/11</link>
+        <pubDate>Mon, 12 Nov 2018 06:22:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-11</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>I am neither arguing for nor against it, but should <a class="mention" href="/u/amys">@amys</a>’s <a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338">Future use of Hierarchies</a> proposal be included in the list as well?</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/10</link>
+        <pubDate>Fri, 09 Nov 2018 20:57:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-10</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Okay excellent – great to get this resolved!</p>
+<p>I’ve opened <a href="https://github.com/IATI/IATI-Codelists/issues/172" rel="nofollow noopener">a github issue</a> and sent all the <a href="https://github.com/IATI/IATI-Codelists/pull/173" rel="nofollow noopener">relevant</a> <a href="https://github.com/IATI/IATI-Codelists/pull/174" rel="nofollow noopener">pull</a> <a href="https://github.com/IATI/IATI-Codelists/pull/175" rel="nofollow noopener">requests</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/9</link>
+        <pubDate>Thu, 08 Nov 2018 09:59:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-9</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>In the interests of peace and progress the Tech Team is happy to treat the Activity Status codes issue as a bug fix. We will slot this into the job queue.</p>
+<p>(For the record, we still disagree…)</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/8</link>
+        <pubDate>Wed, 07 Nov 2018 13:25:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-8</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you, will add the proposal then.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/7</link>
+        <pubDate>Tue, 06 Nov 2018 17:11:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-7</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> Adding a new <a href="http://reference.iatistandard.org/203/codelists/TagVocabulary/">TagVocabularies</a> to incorporate SDG goals, targets and sectors does not require a minor upgrade. <a href="http://reference.iatistandard.org/203/codelists/TagVocabulary/">TagVocabulary</a> is a non-embedded codelist which means additions can happen at anytime by adding a proposal in <a href="https://discuss.iatistandard.org/c/standard-management/non-embedded-codelist-amendments">this section</a>.</p>
+<p>I agree that this is a relevant discussion to be had at the TAG to talk about the most suitable place for publishing SDG data- some of those discussions can take place during one of the<a href="https://iatitag2018.sched.com/event/INU3/how-can-iati-data-be-used-in-monitoring-the-progress-toward-the-sdgs-progress-and-challenges">SDG workshops at the TAG</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/6</link>
+        <pubDate>Tue, 06 Nov 2018 17:04:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-6</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Please add to the outstanding minor upgrade changes:</p>
+<p>Addition of the SDG codelists to the tag element in order to align with the WP-STAT decision (per this <a href="https://discuss.iatistandard.org/t/dac-wp-stat-group-redefining-purpose-codes-sector-codes-to-align-with-sdgs/433/11?u=yohannaloucheur">post</a> )</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/5</link>
+        <pubDate>Thu, 01 Nov 2018 16:37:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-5</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Unsurprisingly (given the discussion on that thread) I agree with <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> on ActivityStatus. I think we are quite clearly talking about a bug fix here, and it shouldn’t need an integer upgrade to fix this kind of mistake. It is a little unfortunate that it’s been over three years since this inconsistency was first pointed out – this suggests there is something more generally wrong with the process around handling these kind of issues. It also means that those of us implementing tools that use IATI data have to label these codes differently from the “official” codes to avoid confusing our own users (or stick with confusing and logically inconsistent labelling).</p>
+<p>In general, regarding integer upgrades: I think the possible benefits of making changes to the Standard should be balanced against the costs. I don’t think any of the changes identified above under “major upgrade changes” above are particularly important or urgent – implying that an integer upgrade would have limited benefits – but quite high costs.</p>
+<p>Integer upgrades make using the data much harder (even if undertaken under the banner of “simplification”) because it means you have to:</p>
+<ol>
+<li>go back and change existing software – which often requires more TA and a fresh round of procurement, i.e. money and contracts – and</li>
+<li>support another version of the Standard.</li>
+</ol>
+<p>At this point, I really think we should be focusing our efforts on making sure it is easier to use the data, rather than forcing the rather unsatisfyingly limited number of systems that are using the data to make complicated or costly changes just to provide continuity of service. Accordingly, I am very much against a new integer upgrade.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/4</link>
+        <pubDate>Mon, 29 Oct 2018 22:19:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-4</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you <a class="mention" href="/u/amys">@amys</a> for fixing the post, and to the Techteam for sharing information on the very important TAG session on the next minor or major IATI standard upgrade.</p>
+<p>As mentioned in the <a href="https://discuss.iatistandard.org/t/activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/49?u=yohannaloucheur">related post</a>, Canada disagrees with the inclusion of the Activity Status mix-up issue in the “Outstanding major upgrade changes”. Fixing this mix-up does not require a major upgrade (or a minor one for that matter), as has been discussed at lenght already.</p>
+<p>It should be removed from the upgrade list, and clear timelines provided to fix it already.</p>
+<p>Thanks</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/3</link>
+        <pubDate>Mon, 29 Oct 2018 17:31:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-3</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/markbrough">@markbrough</a> and <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> you should now be able to comment. I’ve moved the post to another category, as the previous one was closed for public comments. My apologies for not realising.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/2</link>
+        <pubDate>Mon, 29 Oct 2018 16:21:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-2</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+      <item>
+        <title>TAG session on reviewing the need for a next minor or major IATI standard upgrade</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>At the TAG 2018, we want to review the community need for a next IATI Standard upgrade. The IATI technical team will run a short session that will focus on the appetite for a next upgrade (<a href="http://reference.iatistandard.org/203/upgrades/">minor or major</a>) and discuss the potential timeline if there is a need for one.</p>
+<p>Before we get to the TAG we want participants to be aware of outstanding minor and major upgrade proposals, and to have a discussion about whether or not they are still relevant. Please refer to all proposals listed below. If you think there are proposals we have missed out, please add a link to the relevant Discuss post on this thread.</p>
+<p>Please note that at this year’s TAG there won’t be a full IATI standards day and the TAG will not be a place to raise new proposals. This can be done at any time via the normal process on <a href="https://discuss.iatistandard.org/c/standard-management">IATI Discuss</a>. We want to review the appetite for an upgrade given the current state of play.</p>
+<p><strong>Outstanding minor upgrade changes:</strong></p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/exchange-rate-options-excluded-2-03/">Exchange rate options</a> (Needs further consultation and alignment with the open contracting community before being taken forward)</p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/publishing-application-excluded-2-03">Publishing Application</a> (Requires further discussion about whether it’s needed and why)</p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03">Adding links to related OCDS contracts</a> (Agreed that more work was needed to get this right)</p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/">Results – recognising partner contributions</a> (Need to gain more experience and use cases first)</p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/outgoing-commitment-conflicting-description-use/">Outgoing Commitment - conflicting description &amp; use?</a> (Need more consensus and worked examples)</p>
+</li>
+</ul>
+<p><strong>Outstanding major upgrade changes:</strong></p>
+<p><em><strong>Proposals from the IATI community:</strong></em></p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/43">Fix Activity Status Mix Up</a> (agreement reached, but solution changes the meaning of the code and is therefore not backward compatible)</p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/introduce-a-new-transaction-type-for-internally-sourced-funds/662/3">Add a new transaction type</a> (no consensus and needs further discussion)</p>
+</li>
+<li>
+<p><a href="https://support.iatistandard.org/hc/en-us/articles/214389106-Add-an-indicator-schema-to-the-IATI-standard">Add an indicator schema to the IATI Standard </a>(needs discussion)</p>
+</li>
+<li>
+<p>Deprecate: location/coordinates elements; legacy data element; organisation type ‘Accountable’. (agreement reached)</p>
+</li>
+<li>
+<p>Make mandatory: elements ‘<a href="https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679/">iati-activities’ and ‘iati-organisations</a>’ (consensus); attribute <a href="https://discuss.iatistandard.org/t/making-the-generated-datetime-element-mandatory/1204">@generated-datetime</a> (not discussed); <a href="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364/">@value-date</a></p>
+<ul>
+<li>Need a major upgrade to include new rules</li>
+</ul>
+</li>
+</ul>
+<p><em><strong>Creation of rules following previous minor upgrade proposals:</strong></em></p>
+<ul>
+<li>There are multiple occasions where rules need to be created. This is where ‘shoulds’ have been added as part of previous decimal upgrades, with the agreement they would become ‘musts’ at version 3.0.0.</li>
+</ul>
+<p><strong><em>Technical changes to ‘fix’ the standard:</em></strong></p>
+<ul>
+<li>
+<p>Contradictions within the schema: There are number of rules and guidelines within the schema which contradict each other. E.g.</p>
+<ul>
+<li>For a &lt;sector&gt; at activity level both are true: “Each vocabulary’s percentages <strong>should</strong> add up to 100%” compared with, “All reported sectors from the same vocabulary <strong>must</strong> add up to 100%”.</li>
+</ul>
+</li>
+<li>
+<p>There are a number of places in the standard, in which documentation can be made consistent. This does not change the meaning of the Standard, but will make it easier to use for publishers, data users and tool providers.</p>
+</li>
+</ul>
+<p><strong>Note</strong>: The IATI tech team will separately run a workshop on how to engage in a possible next upgrade. IATI has a <a href="http://reference.iatistandard.org/203/upgrades/">new upgrade process</a>, which requires changes to the standard to be suggested in non-technical language and to be presented with use cases. We want to test how this works in practice, and help attendees gain confidence in writing proposals.</p>
+          <p><a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/1</link>
+        <pubDate>Thu, 25 Oct 2018 11:25:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1535-1</guid>
+        <source url="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535.rss">TAG session on reviewing the need for a next minor or major IATI standard upgrade</source>
+      </item>
+  </channel>
+</rss>

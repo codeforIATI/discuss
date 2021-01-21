@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Results – improve consistency of results standard (included 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874</link>
+    <description>**Title**
+Results – improve consistency of results standard
+
+**Standard**
+Activity
+
+**Schema Object**
+1)	iati-activities/iati-activity/result/indicator
+2)	iati-activities/iati-activity/result/indicator/baseline
+
+**Type of Change**
+1) Addition to Schema
+2) Addition and change to Schema
+
+**Issue**
+There are a number of areas of the result standard that are inconsistent (capability in one area is missing in other), making it more difficult to understand and use the standard than it could be otherwise.  For example, currently:
+1)	you can only flag if results are suitable for aggregation, not underlying indicators that make up the result.
+2)	indicator “baselines” cannot be reported in the same way as “targets” and “actuals” (e.g. there is no way to report disaggregation’s, or use dates rather than just years etc.)
+
+**Proposal**
+1)	Add optional “aggregation-status” attribute (per result/@aggregation-status ) to result/indicator 
+
+(compare relevant sections of http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/ and http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result)
+2)	Make the following additions and changes to result/indicator/baseline :
+a.	Add location and dimension elements (per result/indicator/period/actual/location and result/indicator/period/actual/dimension respectively)
+b.	Change baseline cardinality from 0..1 to 0..* to permit disaggregations (per proposal https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data/871 )
+c.	Add iso-date attribute (type xsd:date)
+
+(compare relevant sections of http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/baseline and eg:  http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/ )
+
+
+**Standards Day**
+Workshopped at the TAG 2017 and mentioned at the end of the Standards day as part of the results section.  Although there was very little time to discuss the proposal, no criticism of the proposal was offered. Proposal has been on IATI Discuss since March 2017.
+
+**Links**
+•	This topic is discussed here:
+1)	 http://discuss.iatistandard.org/t/results-improve-consistency-of-result-standard-aggregations-status/748 
+2)	http://discuss.iatistandard.org/t/results-improve-consistency-of-result-standard-baseline/747
+•	Proposal 2)b. is for consistency with another v2.03 proposal (permitting disaggregation): https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data/871 
+•	This topic addresses Principle 7 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – see http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/.  Technical suggestions were devised by technology specialists at the Nethope Athens conference March 2017.  In all around 30 M&amp;E and technical specialists were involved in this consultation and it builds on a previous consultation by Bond 2015-16 (https://www.bond.org.uk/resources/publishing-results-to-iati - also on discuss.iatistandard : https://discuss.iatistandard.org/t/sharing-results-using-iati-data-standard-will-it-improve-learning-and-accountability/431 ).</description>
+    
+    <lastBuildDate>Wed, 25 Oct 2017 13:54:48 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/23</link>
+        <pubDate>Wed, 25 Oct 2017 13:54:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-23</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal has been been included in the 2.03 upgrade. It can be viewed in the following two Discuss posts:</p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Proposal of 2.03 Content</a></p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Technical Proposal for the 2.03 Upgrade</a></p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/22</link>
+        <pubDate>Wed, 25 Oct 2017 13:54:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-22</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Yes there’s still the original suggestion (potentially using a start and end data, unless anyone see’s drawbacks)</p>
+</blockquote>
+<p>I agree – in order to be consistent, the original proposal would need to be amended to include <code>&lt;period-start&gt;</code> and <code>&lt;period-end&gt;</code> (or similar) data. Also, “Add iso-date attribute” (2c) should be removed.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/21</link>
+        <pubDate>Thu, 24 Aug 2017 18:58:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-21</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="15" data-topic="874">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Which leaves us with the original proposal: to make the &lt;baseline&gt; sub-elements consistent with &lt;target&gt; and &lt;actual&gt;.</p>
+<p>Can we reach consensus on that?</p>
+</blockquote>
+</aside>
+<p>Agree, maybe not perfect but more consistent than it is right now.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/20</link>
+        <pubDate>Tue, 22 Aug 2017 08:41:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-20</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[pelleaardema]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> Sounds like the most feasible solution to me</p>
+<p><a class="mention" href="/u/johnadams">@JohnAdams</a>  I know that names were collected during the TAG. <a class="mention" href="/u/sjohns">@SJohns</a> and <a class="mention" href="/u/rbesseling">@rbesseling</a> may have those? I would be happy to contribute.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/19</link>
+        <pubDate>Mon, 21 Aug 2017 12:47:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-19</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[pelleaardema]]></dc:creator>
+        <description><![CDATA[
+            <p>Sounds like the most feasible solution to me.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/18</link>
+        <pubDate>Mon, 21 Aug 2017 12:40:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-18</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with <a class="mention" href="/u/bill_anderson">@bill_anderson</a> to make the <code>&lt;baseline&gt;</code> sub-elements consistent with <code>&lt;target&gt;</code> and <code>&lt;actual&gt;</code>.</p>
+<p>We will also need further discussion leading up to a potential <code>&lt;results&gt;</code> redesign for a future integer update.</p>
+<p><a class="mention" href="/u/pelleaardema">@pelleaardema</a> you mentioned a TAG Results Working Group. Would someone like to volunteer to co-ordinate that? That group will need time to come up with a set of proposals that can meet consensus across a range of M&amp;E people.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/17</link>
+        <pubDate>Sat, 19 Aug 2017 13:10:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-17</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/bill_anderson">@bill_anderson</a>, you beat me to it! Yes there’s still the original suggestion (potentially using a start and end data, unless anyone see’s drawbacks), which, as mentioned would also satisfy M&amp;E folks, but as <a class="mention" href="/u/hayfield">@hayfield</a> points out is not DRY.  I don’t think that logical elegance (DRY) is a reason not to make up for a shortfall in the standard that M&amp;E folks have identified and asked to change (especially given its about consistency of the standard).</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/16</link>
+        <pubDate>Fri, 18 Aug 2017 16:23:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-16</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I think we are heading towards a position where any change to existing elements is untenable.</p>
+<p>Which leaves us with the original proposal: to make the &lt;<code>baseline&gt;</code> sub-elements consistent with <code>&lt;target&gt;</code> and <code>&lt;actual&gt;</code>.</p>
+<p>Can we reach consensus on that?</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/15</link>
+        <pubDate>Fri, 18 Aug 2017 16:09:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-15</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[pelleaardema]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="874">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>The baseline element is currently used by 117 publishers in over 150,000 activities so we are in integer terrain.</p>
+</blockquote>
+</aside>
+<p>I think that is exactly what it is.</p>
+<p>I really think the results area needs more insights from experience - thus time - to facilitate a proper redesign. Looking at the organisations currently using the baseline element, the majority seem to publish in accordance with the Dutch publication guidelines, hence experiences will still be ‘fresh’.</p>
+<p>I think IATI would benefit from a proper Results Working group, which was announced at the TAG, but doesn’t seem to have materialized yet. I’d be more than happy to participate.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/14</link>
+        <pubDate>Fri, 18 Aug 2017 10:52:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-14</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="11" data-topic="874">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>A temporary <span class="mention">@baseline</span> attribute (implemented now in anticipation of the bigger integer change) would require users to look in two places for baseline data so I’m not convinced that it is a viable option.</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> I completely agree with you. This is not viable. The extension proposal would be detrimental for ease of data-use and data-quality.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/13</link>
+        <pubDate>Fri, 18 Aug 2017 10:49:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-13</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[bwalkden]]></dc:creator>
+        <description><![CDATA[
+            <p>I would support the extension. It would not be enough to provide a conversion utility because existing publishers would need to change their software at very short notice to write to the new structure or to run the utility. If they have a few years’ notice they should be able to factor the integer upgrade changes into their road maps.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/12</link>
+        <pubDate>Fri, 18 Aug 2017 10:28:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-12</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>My understanding of where we have got to is …</p>
+<p>The ideal solution is:</p>
+<ol>
+<li>We deprecate the <code>&lt;baseline&gt;</code>, <code>&lt;target&gt;</code> and <code>&lt;actual&gt;</code> elements</li>
+<li>We add a new complex element (called <code>&lt;measurement&gt;</code> ??) which inherits the existing <code>target/actual</code> content.</li>
+<li>We add an attribute (called <code>measurement\@measurementtype</code> ??) which has values baseline, target, actual</li>
+</ol>
+<p>But …</p>
+<p>The baseline element is currently used by <a href="http://dashboard.iatistandard.org/element/iati-activity_result_indicator_baseline.html">117 publishers in over 150,000 activities</a> so we are in integer terrain. Given that the next integer is most likely a few years away there are a couple of options that could be possibly be considered</p>
+<ul>
+<li>We could implement the changes now if we could provided data users with a utility that converted data in deprecated elements into the new format.</li>
+<li>We could implement an extension for the new format now that could be used <strong><em>in addition</em></strong> to the existing elements. (The integer upgrade would then merely move the extension into the main schema.)</li>
+</ul>
+<p>A temporary <code>@baseline</code> attribute (implemented now in anticipation of the bigger integer change) would require users to look in two places for baseline data so I’m not convinced that it is a viable option.</p>
+<p>Thoughts?</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/11</link>
+        <pubDate>Fri, 18 Aug 2017 10:06:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-11</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[bwalkden]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with the idea of using a code to distinguish between baseline, target and actual. A baseline is just a measurement that has been chosen as a reference point for other measurements, it is not inherently different from other types - I don’t think it should be treated any differently. This has practical benefits in that it simplifies the schema considerably without loss of any capability.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/10</link>
+        <pubDate>Thu, 17 Aug 2017 12:30:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-10</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/bill_anderson">@bill_anderson</a>, thanks for this, yes there will only ever be one set of baseline data (set, meaning that actual “baseline” element in IATI would be repeated once for each disaggregation, but all referring to the same baseline set) for an indicator (note sometimes people refer to mid-lines and end-lines but think of these more as reviews, sometimes where new indicators are introduced and old retired).  Sometimes you take a baseline over a period of time (number of water shortages during last year’s drought) and we were thinking this would be recorded in the comment, but I can see how the period functionality could be useful here (unless anyone can see drawbacks?).</p>
+<p>In terms of following DRY principles and logical elegance, you could extend the aforementioned iati-activities/iati-activity/result/indicator/period/<span class="mention">@baseline</span> to use a codelist (maybe called Indicator Value Type) that can be one of baseline, target and actual - then you only need one set of locations, dimensions, comments in the schema for all three constructs (baseline, target and actual) thereby creating opportunity to simplify the current Results elements at integer update.  It would be helpful to make guidelines to indicate that there should only ever be one set of baselines.  Happy with either approaches as both achieve the same M&amp;E requirement.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/9</link>
+        <pubDate>Thu, 17 Aug 2017 12:10:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-9</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I think this thread is falling between discussion on M&amp;E best practice and logical elegance.</p>
+<p>When the results element was designed the assumption was explicitly made that each indicator (or disaggregations within the indicator) can only have one baseline value which is established at the outset of the activity. For this reason the baseline element was deliberately kept outside of the period element (which allows for targets and actuals to be reported on a period-by-period basis).</p>
+<p>Can M&amp;E experts comment on this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/8</link>
+        <pubDate>Wed, 09 Aug 2017 10:23:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-8</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been included for consideration in the formal 2.03 proposal depending on further clarification relating to how baselines are handled</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/6</link>
+        <pubDate>Fri, 16 Jun 2017 15:31:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-6</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree with the suggestion from <a class="mention" href="/u/rolfkleef">@rolfkleef</a> to add a boolean attribute to <code>&lt;period&gt;</code> rather than extending the baseline element through replication of the majority of period (this isn’t very DRY).</p>
+<p>As such, a proposal in place of (2) in the post by <a class="mention" href="/u/mikesmith">@mikesmith</a> would be:</p>
+<ul>
+<li>Add an optional boolean <code>iati-activities/iati-activity/result/indicator/period/@baseline</code>
+</li>
+<li>Deprecate use of <code>iati-activities/iati-activity/result/indicator/baseline</code> plus its attributes and sub-element (remove element at integer)</li>
+<li>Add Rules:
+<ul>
+<li>If <code>iati-activities/iati-activity/result/indicator/period/@baseline</code> is present for a given indicator, <code>iati-activities/iati-activity/result/indicator/baseline</code> must not be present for that indicator (remove rule at integer)</li>
+<li>If <code>iati-activities/iati-activity/result/indicator/period/@baseline</code> is <code>true</code> or <code>1</code> for a given indicator, <code>iati-activities/iati-activity/result/indicator/period/actual</code> must be present</li>
+</ul>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/5</link>
+        <pubDate>Tue, 13 Jun 2017 13:41:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-5</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t think adding the attribute to the indicator solves it. Aggregation should be defined with respect to dimensions, not to facts.</p>
+<ul>
+<li>Can I aggregate the numbers across periods?</li>
+<li>Can I aggregate the numbers across activities?</li>
+<li>Can I aggregate the numbers across organisations?</li>
+<li>Can I aggregate the numbers across countries or locations?</li>
+</ul>
+<p>There also should be documentation about what we mean with <code>@aggregation-status="true"</code>. Aggregation is possible across all dimension for the indicator within a single publisher? (So not across organisations.)</p>
+<p>You can say:</p>
+<pre><code>&lt;result aggregation-status="true"&gt;(result A)&lt;indicator 1&gt;&lt;/result&gt;
+&lt;result aggregation-status="false"&gt;(result A)&lt;indicator 2&gt;&lt;/result&gt;
+</code></pre>
+<p>So basically it is already possible to separate indicators that can be aggregated from those that cannot. I agree this is not elegant, but more a matter of documentation and guidance at this point.</p>
+<hr>
+<p>I’m also not sure about adding a single date: that seems to make sense when the baseline is more a “point in time” rather than a “year in time” or “some point in a year”.</p>
+<p>It depends on the indicator as well: for output indicators, it seems more appropriate to add a period to the baseline?</p>
+<p>If we want to achieve consistency between baseline and periods, we should go all the way.</p>
+<p>Perhaps an easier way is to add a <code>@baseline</code> boolean flag to <code>&lt;period&gt;</code> to indicate it represents a baseline? It would only be expected to have an <code>&lt;actual&gt;</code>. With <code>period-start</code> and <code>period-end</code> the same, it offers the equivalent of the iso-date.</p>
+<p>And to propose some syntactic sugar-type solutions: we could introduce shorthand notations in version 2.03 or 3.01:</p>
+<pre><code> &lt;baseline year="2012" value="10"&gt;
+  &lt;comment&gt;
+   &lt;narrative&gt;Baseline comment text&lt;/narrative&gt;
+  &lt;/comment&gt;
+ &lt;/baseline&gt;
+</code></pre>
+<p>as equivalent to:</p>
+<pre><code> &lt;period baseline="true"&gt;
+  &lt;period-start iso-date="2012-01-01" /&gt;
+  &lt;period-end iso-date="2012-12-31" /&gt;
+  &lt;actual value="10"&gt;
+   &lt;comment&gt;
+     &lt;narrative&gt;Baseline comment text&lt;/narrative&gt;
+   &lt;/comment&gt; 
+  &lt;/actual&gt;
+ &lt;/period&gt;
+</code></pre>
+<p>and likewise:</p>
+<pre><code> &lt;baseline iso-date="2012-06-02" value="10"/&gt;
+</code></pre>
+<p>as</p>
+<pre><code> &lt;period baseline="true"&gt;
+  &lt;period-start iso-date="2012-06-02" /&gt;
+  &lt;period-end iso-date="2012-06-02" /&gt;
+  &lt;actual value="10"/&gt;
+ &lt;/period&gt;</code></pre>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/4</link>
+        <pubDate>Fri, 02 Jun 2017 20:11:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-4</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree with Herman – these seem like good fixes.</p>
+<p>Is adding <code>@iso-date</code> to <code>baseline</code> done with a view to potentially removing <code>@year</code> in the next integer upgrade? If so, would it be possible to also add something to the guidelines discouraging the use of <code>baseline/@year</code>?</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/3</link>
+        <pubDate>Wed, 24 May 2017 10:56:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-3</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, this is definitely an improvement. It is indicator values which can be aggregated or not. Not results.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/2</link>
+        <pubDate>Fri, 19 May 2017 15:13:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-2</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+      <item>
+        <title>Results – improve consistency of results standard (included 2.03)</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Title</strong><br>
+Results – improve consistency of results standard</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p><strong>Schema Object</strong></p>
+<ol>
+<li>iati-activities/iati-activity/result/indicator</li>
+<li>iati-activities/iati-activity/result/indicator/baseline</li>
+</ol>
+<p><strong>Type of Change</strong></p>
+<ol>
+<li>Addition to Schema</li>
+<li>Addition and change to Schema</li>
+</ol>
+<p><strong>Issue</strong><br>
+There are a number of areas of the result standard that are inconsistent (capability in one area is missing in other), making it more difficult to understand and use the standard than it could be otherwise.  For example, currently:</p>
+<ol>
+<li>you can only flag if results are suitable for aggregation, not underlying indicators that make up the result.</li>
+<li>indicator “baselines” cannot be reported in the same way as “targets” and “actuals” (e.g. there is no way to report disaggregation’s, or use dates rather than just years etc.)</li>
+</ol>
+<p><strong>Proposal</strong></p>
+<ol>
+<li>Add optional “aggregation-status” attribute (per result/<span class="mention">@aggregation-status</span> ) to result/indicator</li>
+</ol>
+<p>(compare relevant sections of <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/</a> and <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result</a>)<br>
+2)	Make the following additions and changes to result/indicator/baseline :<br>
+a.	Add location and dimension elements (per result/indicator/period/actual/location and result/indicator/period/actual/dimension respectively)<br>
+b.	Change baseline cardinality from 0…1 to 0…* to permit disaggregations (per proposal <a href="https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data/871">Results – allow disaggregations of results data (included 2.03)</a> )<br>
+c.	Add iso-date attribute (type xsd:date)</p>
+<p>(compare relevant sections of <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/baseline" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/baseline</a> and eg:  <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/</a> )</p>
+<p><strong>Standards Day</strong><br>
+Workshopped at the TAG 2017 and mentioned at the end of the Standards day as part of the results section.  Although there was very little time to discuss the proposal, no criticism of the proposal was offered. Proposal has been on IATI Discuss since March 2017.</p>
+<p><strong>Links</strong><br>
+•	This topic is discussed here:</p>
+<ol>
+<li><a href="//discuss.iatistandard.org/t/results-improve-consistency-of-result-standard-aggregations-status/748">Results: improve consistency of result standard: aggregations-status</a></li>
+<li>
+<a href="//discuss.iatistandard.org/t/results-improve-consistency-of-result-standard-baseline/747">Results: improve consistency of result standard: baseline</a><br>
+•	Proposal 2)b. is for consistency with another v2.03 proposal (permitting disaggregation): <a href="https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data/871">Results – allow disaggregations of results data (included 2.03)</a><br>
+•	This topic addresses Principle 7 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – see <a href="//discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/">Results: discussion space and TAG 2016/17 path</a>.  Technical suggestions were devised by technology specialists at the Nethope Athens conference March 2017.  In all around 30 M&amp;E and technical specialists were involved in this consultation and it builds on a previous consultation by Bond 2015-16 (<a href="https://www.bond.org.uk/resources/publishing-results-to-iati" rel="nofollow noopener">https://www.bond.org.uk/resources/publishing-results-to-iati</a> - also on discuss.iatistandard : <a href="https://discuss.iatistandard.org/t/sharing-results-using-iati-data-standard-will-it-improve-learning-and-accountability/431">Sharing Results using IATI data standard: will it improve learning and accountability?</a> ).</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874/1</link>
+        <pubDate>Wed, 17 May 2017 12:41:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-874-1</guid>
+        <source url="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874.rss">Results – improve consistency of results standard (included 2.03)</source>
+      </item>
+  </channel>
+</rss>

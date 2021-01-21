@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/challenge-results-with-multiple-indicators-and-multiple-measures/1108/9?u=hayfield by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:16:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Challenge: results with multiple indicators and multiple measures - Results - IATI Community Discussions</title>
+    <meta name="description" content="I’m working with an organisation who wish to publish results data. 
+For any indicator, there will be multiple measurements (periods) that provide target and actuals, like this: 
+[results] 
+The standard allows this: 
+
+a r&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1108.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Challenge: results with multiple indicators and multiple measures&#39;" href="../1108.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/ee1a6a368c1d4000d814b288873a1885d64c4c2a.png" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/ee1a6a368c1d4000d814b288873a1885d64c4c2a.png" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/challenge-results-with-multiple-indicators-and-multiple-measures/1108/9?u=hayfield" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/challenge-results-with-multiple-indicators-and-multiple-measures/1108/9?u=hayfield" />
+<meta property="og:title" content="Challenge: results with multiple indicators and multiple measures" />
+<meta name="twitter:title" content="Challenge: results with multiple indicators and multiple measures" />
+<meta property="og:description" content="I don’t know which indicators / periods belong to which results, for example.   During the flattening process, your own UIDs can be added. This would allow you to piece the information back together.  As @pelleaardema noted, the relation comes from the nested structure. As such, whatever manipulation is undertaken needs to maintain a representation this nesting if no information is to be lost.  The addition of a UID to the source XML would help, but it does not prevent this task from being unde..." />
+<meta name="twitter:description" content="I don’t know which indicators / periods belong to which results, for example.   During the flattening process, your own UIDs can be added. This would allow you to piece the information back together.  As @pelleaardema noted, the relation comes from the nested structure. As such, whatever manipulation is undertaken needs to maintain a representation this nesting if no information is to be lost.  The addition of a UID to the source XML would help, but it does not prevent this task from being unde..." />
+<meta property="article:published_time" content="2017-11-16T08:58:17+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../../index.html">
+          <img src="../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1108.html">Challenge: results with multiple indicators and multiple measures</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/community-zone/results/30.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #2695B8'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Results</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='../../../tag/results.html' class='discourse-tag' rel="tag">results</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/hayfield.html'><span itemprop='name'>hayfield</span></a>
+            (Hayden Field)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-10-31T09:25:48Z'>
+              <time itemprop='dateModified' datetime='2017-10-31T11:13:27Z' class='post-time'>
+                October 31, 2017, 11:13am
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="1" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>It doesn’t seem possible to declare the concepts of Result 1 and Indicator A.</p>
+</blockquote>
+</aside>
+<p><a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/">Indicators</a> have a <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/reference/"><code>reference</code></a> element, so you could potentially declare the UID of <code>Indicator A</code> by adding the following within an <code>&lt;indicator&gt;</code>:</p>
+<p><code>&lt;reference vocabulary="99" code="Indicator A" indicator-uri="http://example.com/document-detailing-indicator-usage" /&gt;</code></p>
+<p>There is not currently a similar element or attribute to define a UID for <code>result</code>s… though one is to be added at <code>2.03</code>.</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+          <meta itemprop='keywords' content='results'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/pelleaardema.html'><span itemprop='name'>pelleaardema</span></a>
+            (Pelle Aardema)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+            <link itemprop="image" href="../../../uploads/default/original/1X/b744a6e52c6b573b6ae9eefb1d0f9258646c1e12.png">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-10-31T13:51:33Z'>
+              <time itemprop='dateModified' datetime='2017-10-31T14:15:51Z' class='post-time'>
+                October 31, 2017,  2:15pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi Steven,</p>
+<p>Yes, we’re gaining more and more experience with this.</p>
+<aside class="quote no-group" data-post="1" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_2.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Missing in the schema is the ability to somehow identify the result(s) and indicator(s), meaning that whilst you might want to say in the above model:</p>
+<p>the actual value 100 relates to the period Q2 1617, and contributes to Indicator A, which is a part of Result 1.</p>
+</blockquote>
+</aside>
+<p>The relation between the actual and the indicator (and result) it provides a value for, comes from the nested structure.</p>
+<p>Your example is still a relatively straightforward one: with a limited number of indicators, and the periods for target and actual values being the same. In practice I often see:<br>
+period: 5 years<br>
+target: X<br>
+period: year 1<br>
+actual: Y<br>
+period: year 2<br>
+actual: Z</p>
+<p>The Aidstream import function is perfectly capable of handling the kind of table structure in your example.<br>
+But managing <em>many</em> activities with <em>many</em> results and indicators does indeed become rather laborious. I get the feeling that the easiest way to maintain the structure in Aidstream is to keep the result sheets as a spreadsheet, and make a clean import for each publication.</p>
+<p>Things become a bit more interesting when organisations use the same indicators in different activities (and even in different datasets by different organisations). That is where the references come in handy.</p>
+<p>Another nice exercise is to add another level and start adding <em>dimensions</em>.</p>
+<p>Concerning the conversion of XML to spreadsheet: I would make it a ‘proper’ data table again, so repeat the result and indicator elements in each row in order to maintain the relation.</p>
+<p><img src="../../../uploads/default/original/1X/b744a6e52c6b573b6ae9eefb1d0f9258646c1e12.png" alt="table" width="574" height="169"></p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+            <link itemprop="image" href="../../../uploads/default/original/1X/a65d4ed2dac7d9cddbce11fc31535a65c9a33f9b.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-02T20:50:15Z' class='post-time'>
+                November 2, 2017,  8:50pm
+              </time>
+              <meta itemprop='dateModified' content='2017-11-02T20:50:15Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/pelleaardema.html">@pelleaardema</a> <a class="mention" href="../../../u/hayfield.html">@hayfield</a> many thanks for your thoughts - much appreciated</p>
+<p>Side note: With Organisations we are well-drilled into terms of the fact that the string DFID, or D.F.I.D is not really satisfactory to point <em>precisely</em> at the entity known-as DFID.  To do this, we also need to include the reference attribute GB-GOV-1, which uniquely identifies that organisation.  We know that isn’t widespread in IATI, but the mechanism and willing is there</p>
+<p>This is what I miss in results.   My example may have mislead, as it <em>looked</em> like the results and indicators <em>had</em> unique references.  I’ve tried the following (please note - this is not meant to indicate any actual real data / context).</p>
+<p>In this example an organisation is publishing results in two different activities.  It’s a one-to-one relationship though, so any measurements are just associated with the relevant indicator and result via the Activity ID</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../../uploads/default/original/1X/a65d4ed2dac7d9cddbce11fc31535a65c9a33f9b.png" data-download-href="https://discuss.iatistandard.org/uploads/default/a65d4ed2dac7d9cddbce11fc31535a65c9a33f9b" title="handwashng1.png"><img src="../../../uploads/default/original/1X/a65d4ed2dac7d9cddbce11fc31535a65c9a33f9b.png" alt="handwashng1" width="690" height="133" data-small-upload="../../../uploads/default/optimized/1X/a65d4ed2dac7d9cddbce11fc31535a65c9a33f9b_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">handwashng1.png</span><span class="informations">694×134 12.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>But then:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../../uploads/default/original/1X/14120b9bf3615bf9928832d44ee6fe28f94f0b7a.png" data-download-href="https://discuss.iatistandard.org/uploads/default/14120b9bf3615bf9928832d44ee6fe28f94f0b7a" title="handwashing2.png"><img src="../../../uploads/default/original/1X/14120b9bf3615bf9928832d44ee6fe28f94f0b7a.png" alt="handwashing2" width="690" height="213" data-small-upload="../../../uploads/default/optimized/1X/14120b9bf3615bf9928832d44ee6fe28f94f0b7a_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">handwashing2.png</span><span class="informations">697×216 18.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>By luck (!) the names of the indicators are <em>slightly</em> different, so we can still identify the measurements accordingly, but I think this illustrates your point:</p>
+<aside class="quote no-group" data-post="3" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/pelleaardema/40/108_2.jpg" class="avatar"> pelleaardema:</div>
+<blockquote>
+<p>Things become a bit more interesting when organisations use the same indicators in different activities (and even in different datasets by different organisations). That is where the references come in handy.</p>
+</blockquote>
+</aside>
+<p>Are we therefore expecting people to <em>manage</em> the data (whether they are publishing it via any means, or trying to use it via some other way) to <em>rely</em> on strings for identification?</p>
+<p>Apologies - I still don’t think I’m explaining the issue in prose tremendously well.  I’m thinking specifically of instances when this data is flat/normalised either before publication or in use.  I spoke to <a class="mention" href="../../../u/bjwebb.html">@bjwebb</a> briefly about this,  He said: “In Open Contracting <em>everything</em> has a UID…”</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/pelleaardema.html'><span itemprop='name'>pelleaardema</span></a>
+            (Pelle Aardema)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-03T16:31:32Z' class='post-time'>
+                November 3, 2017,  4:31pm
+              </time>
+              <meta itemprop='dateModified' content='2017-11-03T16:31:32Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Sorry, I’m not sure if I understand the problem you’re trying to express here.<br>
+The relation between the value-&gt;indicator-&gt;result comes from the nested structure… and if organisations choose to include two (nearly) similar indicators under the same result that sounds like a badly designed result framework, rather than an IATI problem.</p>
+<p>And with the new upgrade indicators already get the possibility to include a unique reference.</p>
+<p>Where am I missing the point?</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/hayfield.html'><span itemprop='name'>hayfield</span></a>
+            (Hayden Field)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-13T09:52:00Z' class='post-time'>
+                November 13, 2017,  9:52am
+              </time>
+              <meta itemprop='dateModified' content='2017-11-13T09:52:00Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/rory_scott.html">@rory_scott</a> has attempted to explain the context of this in-person, so I understand it’s to do with the lack of UIDs and the difficulty this presents in creating a normalised data structure that can handle more than a single snapshot of information.</p>
+<hr>
+<p>On the publishing-side:</p>
+<ul>
+<li>Assuming full control of the end-to-end system: it should be possible to add UIDs to the system. These are then stripped out (ie. not displayed) during the process of converting to IATI XML.</li>
+<li>Without full control of the end-to-end system (eg. using Aidstream): there is no UID in IATI to map “new data” to “old data” to know exactly what you are updating. If the internal Results system is reasonable some combination of other values should be able to act as a UID, though this could lead to problems if fixing typos or whatever.</li>
+</ul>
+<p>On the data-use side:</p>
+<ul>
+<li>Using a Dataset once: add some keys to the database and use it.</li>
+<li>Updating data in a database to, eg. see changes between publications: use some heuristic that probably differs based on the publisher, isn’t entirely reliable, and in general is a pain to work with.</li>
+</ul>
+<p>So…</p>
+<ul>
+<li>Dealing with one-off actions is fine.</li>
+<li>Handling data-over-time cannot reasonably be undertaken with the Standard as it stands.</li>
+</ul>
+<hr>
+<p>The <code>reference</code> elements, available <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/reference/">on an indicator</a> at <code>2.02</code>, and to be added to <code>result</code> at <code>2.03</code> codify what the information is about, but is not suitable for acting as a UID. This is especially true with the addition of the <code>The reference element MUST ONLY be reported once. Either [at indicator] OR at result level</code>.</p>
+<hr>
+<p>Soooo, due to the <code>1:many</code> and <code>many:many</code> relationships and lack of UID in the data, it is extremely challenging to track results data over time - on both the publishing and data use sides.</p>
+<p>Adding UIDs (akin to <code>transaction/@ref</code>) would help here. There may also be other places in the Standard where it would be helpful to add UIDs for similar reasons.</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-13T11:15:20Z' class='post-time'>
+                November 13, 2017, 11:15am
+              </time>
+              <meta itemprop='dateModified' content='2017-11-13T11:15:20Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="6" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/hayfield/40/202_1.jpg" class="avatar"> hayfield:</div>
+<blockquote>
+<p>Soooo, due to the 1:many and many:many relationships and lack of UID in the data, it is extremely challenging to track results data over time - on both the publishing and data use sides.</p>
+</blockquote>
+</aside>
+<p>+1</p>
+<p>Thanks <a class="mention" href="../../../u/hayfield.html">@hayfield</a> &amp; <a class="mention" href="../../../u/rory_scott.html">@rory_scott</a> for talking this through, and writing up</p>
+<p>Apologies <a class="mention" href="../../../u/pelleaardema.html">@pelleaardema</a> that I couldn’t explain in my post(s)!</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-11-15T19:39:03Z'>
+              <time itemprop='dateModified' datetime='2017-11-15T19:40:28Z' class='post-time'>
+                November 15, 2017,  7:40pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/pelleaardema.html">@pelleaardema</a> so… I’ve an example from Nederlands Red Cross that might be of interest:</p>
+<p><a href="http://d-portal.org/q.html?aid=NL-KVK-40409352-PRJ08-260-0009" class="onebox" target="_blank" rel="nofollow noopener">http://d-portal.org/q.html?aid=NL-KVK-40409352-PRJ08-260-0009</a></p>
+<p>As you can see, this activity has <strong>three results</strong>, which each have <strong>multiple indicators</strong>.  And then - most indicators seem to have <strong>two periods</strong>.  Of course, we’re lacking the “data” in the form of targets and actual in most cases, but that doesn’t matter…</p>
+<p>I took the XML and “flattened” this - taking the nested data and representing it into flat files - in this case a tabbed workbook:</p>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/spreadsheets/d/1nnUbK6rpC5WplZXSDh4h0e7XrcnQbt45JV9EATlKfws/edit?usp=sharing" target="_blank" rel="nofollow noopener">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/spreadsheets/d/1nnUbK6rpC5WplZXSDh4h0e7XrcnQbt45JV9EATlKfws/edit?usp=sharing" target="_blank" rel="nofollow noopener"><span class="googledocs-onebox-logo g-sheets-logo"></span></a>
+
+<h3><a href="https://docs.google.com/spreadsheets/d/1nnUbK6rpC5WplZXSDh4h0e7XrcnQbt45JV9EATlKfws/edit?usp=sharing" target="_blank" rel="nofollow noopener">PRJ08-260-0009-flattened.xlsx</a></h3>
+
+<p>iati-activity
+
+ iati-identifier,@ last-updated-datetime,@ xml: lang,@ humanitarian,@ default-currency,@ hierarchy,@ xmlns: xsi,@ xmlns: xsd,@ generated-datetime,@ version, reporting-org/@ ref, reporting-org/@ type, reporting-org/ narrative, title/...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>This process results in three sheets to look at - the results, the indicators and the periods.  Hopefully you can then see, there doesnt seem to be a way to piece these together into the original arrangement.  I don’t know which indicators / periods belong to which results, for example.</p>
+<p>This - as <a class="mention" href="../../../u/hayfield.html">@hayfield</a> &amp; <a class="mention" href="../../../u/rory_scott.html">@rory_scott</a> discuss - looks to be because we dont have UID in the XML , which could help…</p>
+<p>Is that a useful example?</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/hayfield.html'><span itemprop='name'>hayfield</span></a>
+            (Hayden Field)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-16T08:58:17Z' class='post-time'>
+                November 16, 2017,  8:58am
+              </time>
+              <meta itemprop='dateModified' content='2017-11-16T08:58:17Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>I don’t know which indicators / periods belong to which results, for example.</p>
+</blockquote>
+<p>During the flattening process, your own UIDs can be added. This would allow you to piece the information back together.</p>
+<p>As <a class="mention" href="../../../u/pelleaardema.html">@pelleaardema</a> noted, the relation comes from the nested structure. As such, whatever manipulation is undertaken needs to maintain a representation this nesting if no information is to be lost.</p>
+<p>The addition of a UID to the source XML would help, but it does not prevent this task from being undertaken.</p>
+<blockquote>
+<p>This - as <a class="mention" href="../../../u/hayfield.html">@hayfield</a> &amp; <a class="mention" href="../../../u/rory_scott.html">@rory_scott</a> discuss - looks to be because we dont have UID in the XML , which could help…</p>
+</blockquote>
+<p>The “this can’t be done without a UID” problem requires multiple snapshots of data.</p>
+<ol>
+<li>I have a copy of that same activity file, containing 3 results.</li>
+<li>The Netherlands Red Cross update the data so that each of the 3 results has changed.</li>
+<li>I cannot with certainty say which of the results in the new file relates to which of the results in the original file.</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-16T09:53:45Z' class='post-time'>
+                November 16, 2017,  9:53am
+              </time>
+              <meta itemprop='dateModified' content='2017-11-16T09:53:45Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="9" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/hayfield/40/202_1.jpg" class="avatar"> hayfield:</div>
+<blockquote>
+<p>During the flattening process, your own UIDs can be added. This would allow you to piece the information back together.</p>
+</blockquote>
+</aside>
+<p>Sure.  But that places an overhead on <em>me</em> to do this.  If I figure that out, it might not be the case that my neighbour has.</p>
+<p>We have a focus on people <em>using</em> IATI data, no?</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/hayfield.html'><span itemprop='name'>hayfield</span></a>
+            (Hayden Field)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-16T10:42:08Z' class='post-time'>
+                November 16, 2017, 10:42am
+              </time>
+              <meta itemprop='dateModified' content='2017-11-16T10:42:08Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>But that places an overhead on <em>me</em> to do this.</p>
+</blockquote>
+<p>The publisher has already provided details of the relationships in the Dataset through use of child-elements. Adding UIDs to ‘solve’ this problem would be duplicating information in the XML, something which is bad.</p>
+<p>One reasonable solution to the situation you are detailing would be <a href="../../future-infrastructure-to-support-the-iati-standard/1047.html">proposal number 1</a> by <a class="mention" href="../../../u/johnadams-2.html">@JohnAdams</a> - mappings between and details of technical implementations of the Standard could define how nesting is handled in varying formats.</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-16T12:51:53Z' class='post-time'>
+                November 16, 2017, 12:51pm
+              </time>
+              <meta itemprop='dateModified' content='2017-11-16T12:51:53Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="11" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/hayfield/40/202_1.jpg" class="avatar"> hayfield:</div>
+<blockquote>
+<p>The publisher has already provided details of the relationships in the Dataset through use of child-elements.</p>
+</blockquote>
+</aside>
+<p>I’d rephrase: The publisher has provided details of the relationships using the <em>existing</em> standard.  The existing standard doesn’t easily enable UIDs for these sub elements.</p>
+<aside class="quote no-group" data-post="11" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/hayfield/40/202_1.jpg" class="avatar"> hayfield:</div>
+<blockquote>
+<p>Adding UIDs to ‘solve’ this problem would be duplicating information in the XML, something which is bad.</p>
+</blockquote>
+</aside>
+<p>Bad for whom?</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/hayfield.html'><span itemprop='name'>hayfield</span></a>
+            (Hayden Field)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-16T13:25:48Z' class='post-time'>
+                November 16, 2017,  1:25pm
+              </time>
+              <meta itemprop='dateModified' content='2017-11-16T13:25:48Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <blockquote>
+<p>The publisher has provided details of the relationships using the existing standard.</p>
+</blockquote>
+<p>The Standard needs to enable the relationships between elements in a single snapshot of data to be defined and understood. As stated here, it does that.</p>
+<blockquote>
+<p>The existing standard doesn’t easily enable UIDs for these sub elements.</p>
+</blockquote>
+<p>UIDs are not required in the XML to understand the relationships that exist within a single data snapshot.</p>
+<blockquote>
+<p>Bad for whom?</p>
+</blockquote>
+<p>Users of data - it would lead to multiple ways to define literally the same information.</p>
+<p>Create proper conversion tools and there is zero information missing to undertake 2-way snapshot conversion to and from a custom flattened format. It’s a tooling problem, not a data problem.</p>
+<hr>
+<p>I’m not against UIDs where they enable something that is not otherwise possible (see: <a href="97d48.html?u=hayfield">above</a>). For this use case, however, they provide no information that is otherwise unavailable in the XML.</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/pelleaardema.html'><span itemprop='name'>pelleaardema</span></a>
+            (Pelle Aardema)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-16T15:29:40Z' class='post-time'>
+                November 16, 2017,  3:29pm
+              </time>
+              <meta itemprop='dateModified' content='2017-11-16T15:29:40Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="11" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/hayfield/40/202_1.jpg" class="avatar"> hayfield:</div>
+<blockquote>
+<p>The publisher has already provided details of the relationships in the Dataset through use of child-elements.</p>
+</blockquote>
+</aside>
+<p>I agree.</p>
+<p><a class="mention" href="../../../u/stevieflow.html">@stevieflow</a> Looking at your ‘Flattened data’  example, I get the impression you’re separating elements that belong together, and I still don’t understand what you’re trying to do:</p>
+<ul>
+<li>Why would you separate the indicators from the results they aim to measure?</li>
+<li>And why would you separate the periods from the indicators they belong to?</li>
+</ul>
+<p>Concerning the issue of measuring/showing changes over time: the IATI Standard wasn’t designed to facilitate a diff analyses between files, but rather keep the history available in one place:</p>
+<blockquote>
+<p>“Publishers should NOT create additional new files that only contain the most recent information each time they publish. Ideally all the information that relates to a specific activity should be kept together as much as is possible as this makes the ultimate use of the data by any third party much more efficient. <a href="http://iatistandard.org/202/guidance/how-to-publish/regular-updates/" rel="nofollow noopener">Data should be cumulative</a> (e.g. if publishing every quarter, the new files will include the quarter being reported on, and the previous quarter reported last time, and so on). It will also enable amendments to be made to existing data.”</p>
+</blockquote>
+<p>At the Netherlands Red Cross we keep track of changes over time by defining different periods for targets and actuals:</p>
+<ul>
+<li>the target is usually valid for the entire activity period (but it’s also possible to work with annual targets)</li>
+<li>the actual values will reflect the progress made over a shorter period of time, e.g. a quarter. In this case it is important that the actual value shows the increment in that period, rather than the cumulative value.</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-11-17T18:48:47Z' class='post-time'>
+                November 17, 2017,  6:48pm
+              </time>
+              <meta itemprop='dateModified' content='2017-11-17T18:48:47Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="14" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/pelleaardema/40/108_1.jpg" class="avatar"> pelleaardema:</div>
+<blockquote>
+<p>I get the impression you’re separating elements that belong together, and I still don’t understand what you’re trying to do</p>
+</blockquote>
+</aside>
+<p><em>I’m</em> not doing anything - I just asked a machine (in the form of <a href="https://github.com/OpenDataServices/cove/" rel="nofollow noopener">CoVE code</a>) to output the XML as spreadsheet!</p>
+<p>I can also go and use also some xslt that <a class="mention" href="../../../u/timdavies-2.html">@TimDavies</a> wrote way back, which is still <a href="https://iatiregistry.org/publisher/nlrc" rel="nofollow noopener">integrated with the Registry</a>.  Hence, I can get a <a href="http://tools.aidinfolabs.org/csv/direct_from_registry/?xml=https%3A//www.rodekruis.nl/download/document/%3Fwpdmdl%3D27364" rel="nofollow noopener">flattened version of the XML for this publisher</a>. Take a look at the Full Activity CSV.  Does that work?</p>
+<p>I’d be interested to know what the IATI datastore does with results data when you request a csv output, but I <a href="http://datastore.iatistandard.org/docs/api/" rel="nofollow noopener">dont think the datastore API outputs results data</a> - correct <a class="mention" href="../../../u/dalepotter.html">@dalepotter</a>?</p>
+<p><a class="mention" href="../../../u/vincentvw-2.html">@VincentVW</a> can I request results data from OIPA in CSV?  If I do, what does NL-KVK-40409352-PRJ08-260-0009 look like?</p>
+<p>In short - IATI XML is <a href="https://www.aidtransparency.net/about/how-iati-works" rel="nofollow noopener">machine readable format</a>:</p>
+<blockquote>
+<p>IATI uses a data format called XML. It is very easy to convert this format into more accessible formats – such as CSV, or even use it to drive tools that can generate graphs and tables of data from queries.</p>
+</blockquote>
+<blockquote>
+<p>Use of XML enables swift, machine-readable data to be easily exchanged, compared, and mashed up with other data published in the XML format.</p>
+</blockquote>
+<p>Therefore, when we ask these machines to exchange the data into other formats, can it still be used (in the context of results)?  To repeat: this is <em>not</em> about me pasting data into spreadsheets or something!  And - I <em>get</em> that it’s nested in the XML!</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/hayfield.html'><span itemprop='name'>hayfield</span></a>
+            (Hayden Field)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-11-20T09:52:02Z'>
+              <time itemprop='dateModified' datetime='2017-11-20T09:53:48Z' class='post-time'>
+                November 20, 2017,  9:53am
+              </time>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="15" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>I’m not doing anything - I just asked a machine (in the form of CoVE code) to output the XML as spreadsheet!</p>
+</blockquote>
+</aside>
+<p>The confusion is therefore that you are expecting that a tool that performs one-way transformation of published data (XML -&gt; spreadsheet) to provide an output that can be used for two-way transformation (and back again).</p>
+<p>The IATI XML contains information about the relationships between results and their nested elements such as indicators. That these relationships are lost during transformation is a problem with CoVE, not with the IATI XML.</p>
+<aside class="quote no-group quote-modified" data-post="15" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>I’d be interested to know what the IATI datastore does with results data when you request a csv output, but I dont think the datastore API outputs results data - correct?</p>
+</blockquote>
+</aside>
+<p>Correct.</p>
+<aside class="quote no-group" data-post="15" data-topic="1108">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Therefore, when we ask these machines to exchange the data into other formats, can it still be used (in the context of results)?</p>
+</blockquote>
+</aside>
+<p>Yes.</p>
+<p>IATI XML is an XML-based format for data exchange. As such, any tool that wishes to exchange data in other formats cannot assume that the other formats will be fully compatible with each other - they will be compatible with the specific tool(s) they take input from.</p>
+<p>IATI XML contains all the information (eg. nested elements) and capabilities (eg. custom namespaces) required for 2-way transformation. If a specific tool only provides one-way transformation, that’s a tool design decision rather than an IATI XML bug.</p>
+<hr>
+<p>Should it be deemed that exchanging data in non-XML formats is a fundamental requirement of IATI, <a href="../../future-infrastructure-to-support-the-iati-standard/1047.html">proposal number 1 from this linked post</a> should be taken forward.</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/pelleaardema.html'><span itemprop='name'>pelleaardema</span></a>
+            (Pelle Aardema)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-11-20T09:53:29Z'>
+              <time itemprop='dateModified' datetime='2017-11-20T09:55:14Z' class='post-time'>
+                November 20, 2017,  9:55am
+              </time>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Then CoVE doesn’t seem to be the right machine to ask for this specific job. It loses vital information while deconstructing the results framework.</p>
+<p>The XSLT that Tim wrote isn’t adjusted to IATI 2.0x.<br>
+I have made an attempt to fit it to 2.01 in the past. Not 100% accurate, but helpful for quick analysis.<br>
+This code, however, combines multiple values in one cell - so it won’t do the job for this specific use case either.</p>
+<p>As far as I know the IATI datastore doesn’t output results data…</p>
+<p>Simplest solutions I know:</p>
+<ul>
+<li>Import an IATI file in OpenRefine, and limit the colums to iati-identifier + the results section.</li>
+<li>I’ve played for half an hour with Excel Query on the NLRC dataset, and fairly easily pulled out the results framework (although I somehow missed the actuals) - see the attached file</li>
+</ul>
+<p><a class="attachment" href="../../../uploads/default/original/1X/NLRC%20results.xlsx_%3b%20filename_%3dUTF-8%27%27NLRC%2520results.xlsx">NLRC results.xlsx</a> (86.0 KB)</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+            <link itemprop="image" href="../../../uploads/default/original/1X/3149b2c5d90d0ade7e9a674ce2379c58b8a862c0.png">
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-02-10T09:19:52Z'>
+              <time itemprop='dateModified' datetime='2018-02-10T09:26:10Z' class='post-time'>
+                February 10, 2018,  9:26am
+              </time>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’m not going to let this one go btw <img src="../../../images/emoji/twitter/slight_smilec164.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Looking at data users, I noticed that d-portal actually present a form of numbering/ordering when there are results data.  Two random examples:</p>
+<p><a href="http://d-portal.org/q.html?aid=44000-P106390" class="onebox" target="_blank" rel="nofollow noopener">http://d-portal.org/q.html?aid=44000-P106390</a><br>
+<a href="http://d-portal.org/q.html?aid=NL-KVK-41198677-AFGO_PROJECTCLUSTER-1006719" class="onebox" target="_blank" rel="nofollow noopener">http://d-portal.org/q.html?aid=NL-KVK-41198677-AFGO_PROJECTCLUSTER-1006719</a></p>
+<p>The latter example is interesting, as the publisher has actually included some form of UID in the narrative.  Obviously, d-portal doesn’t recognise this, and presents a different take:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../../uploads/default/original/1X/3149b2c5d90d0ade7e9a674ce2379c58b8a862c0.png" data-download-href="https://discuss.iatistandard.org/uploads/default/3149b2c5d90d0ade7e9a674ce2379c58b8a862c0" title="results.png"><img src="../../../uploads/default/optimized/1X/3149b2c5d90d0ade7e9a674ce2379c58b8a862c0_2_353x500.png" alt="results" width="353" height="500" data-small-upload="../../../uploads/default/optimized/1X/3149b2c5d90d0ade7e9a674ce2379c58b8a862c0_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">results.png</span><span class="informations">353×829 42.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>So - here’s an example of a publisher trying to include an identifier for  results (in narrative) and a <a href="https://github.com/devinit/D-Portal/issues/442" rel="nofollow noopener">data user applying its own</a>.  Would be a lot easier if this could be expressed and used via the actual XML, no?</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-02-12T08:33:14Z' class='post-time'>
+                February 12, 2018,  8:33am
+              </time>
+              <meta itemprop='dateModified' content='2018-02-12T08:33:14Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Are you saying that for every case of double-nesting the standard should insist on UIDs?</p>
+<ul>
+<li>Isn’t the alternative a set of guidance for those wanting to create flat files?</li>
+<li>Or campaigning for the standardisation of indicators (which would provide a UID and make it possible  to compare results across publishers and activities)?</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-02-13T10:06:53Z' class='post-time'>
+                February 13, 2018, 10:06am
+              </time>
+              <meta itemprop='dateModified' content='2018-02-13T10:06:53Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/bill_anderson.html">@bill_anderson</a> I’m not campaigning for anything!  I’ve been trying to reflect how problematic it can be to prepare and use results data, with the lack of UID in the IATI schema.</p>
+<p>I’m working with a publisher who have UIDs for their results and indicators (and even the time periods) in their database (obviously!) - so we will try and output this in IATI XML as an extension.</p>
+<p><a class="mention" href="../../../u/hayfield.html">@hayfield</a> &amp; <a class="mention" href="../../../u/pelleaardema.html">@pelleaardema</a> seem to <em>actively</em> disagree with everything I suggest, so Ill try and demonstrate it in some published data…</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1108.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-02-28T17:30:47Z'>
+              <time itemprop='dateModified' datetime='2018-02-28T17:31:00Z' class='post-time'>
+                February 28, 2018,  5:31pm
+              </time>
+          <span itemprop='position'>#21</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Related tangent: with the inclusion in 2.03 of additional elements in the result block, I took a quick look at how it <a href="https://github.com/devinit/D-Portal/issues/443" rel="nofollow noopener">looks out in d-portal</a>.</p>
+<p><a class="mention" href="../../../u/hayfield.html">@hayfield</a> <a class="mention" href="../../../u/pelleaardema.html">@pelleaardema</a> <a class="mention" href="../../../u/bill_anderson.html">@bill_anderson</a> might be of interest.</p>
+        </div>
+
+        <meta itemprop='headline' content='Challenge: results with multiple indicators and multiple measures'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/challenge-results-with-multiple-indicators-and-multiple-measures/1108/9?u=hayfield by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:16:05 GMT -->
+</html>

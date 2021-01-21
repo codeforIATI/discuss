@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Remove attribute aggregation-status from &lt;result&gt;</title>
+    <link>https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663</link>
+    <description>At the moment, the &lt;result&gt; field has an attribute aggregation-status: &quot;Boolean flag indicating whether the data in the result set are suitable for aggregation.&quot;
+
+ 
+
+I propose to remove this attribute:
+
+ 
+
+- It is defined at the &lt;result&gt; level. There can be multiple &lt;indicator&gt; elements in a &lt;result&gt;, and some may be suitable for aggregation, while others are not. Would I then set this flag to &quot;true&quot; (some data in the result set is suitable for aggregation) or to &quot;false&quot; (not all the data is suitable for aggregation)?
+
+ 
+
+- It doesn&#39;t let me specify over which dimensions it can be aggregated. &quot;Households reached&quot; can usually be aggregated over regions, but not over time spans.</description>
+    
+    <lastBuildDate>Fri, 10 Feb 2017 18:45:36 +0000</lastBuildDate>
+    <category>Results</category>
+    <atom:link href="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Remove attribute aggregation-status from &lt;result&gt;</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,<br>
+<a class="mention" href="/u/rolfkleef">@rolfkleef</a> certainly has a point. The aggregation status field on the result level is not very useful, unless all indicators under that result, can be aggregated.</p>
+<p>I concur with <a class="mention" href="/u/sjohns">@SJohns</a> that we definitly need an aggregation status flag on the indicator level. When you start developing visualizations of IATI results data, you always need to know if you can aggregate or not. Otherwise the data might not make much sense.</p>
+<p>Could we not redefine the  aggregation status attribute on the results level to ‘default aggregation status’ meaning that, if not specified at the indicator level, this aggregation status will be in effect for all indicators? On the indicator level the ‘aggregation status’ attribute is added, used to specify a result indicator specific aggregation status. If this attribute is not present, the default aggregation status in in effect.</p>
+          <p><a href="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663/4</link>
+        <pubDate>Fri, 10 Feb 2017 18:45:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-663-4</guid>
+        <source url="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663.rss">Remove attribute aggregation-status from &lt;result&gt;</source>
+      </item>
+      <item>
+        <title>Remove attribute aggregation-status from &lt;result&gt;</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d agree with Rolf that it’s not helpful to have this attribution at activity level when organisations will be reporting on a range of different types of indicators. However, I also think that it’s important to have some kind of flag on the data to show that the data under the indicators should not be aggregated, especially where indicators have been developed for a specific project/context and it would not be appropriate to aggregate the data with that from another context.</p>
+<p>Data users will naturally want to aggregate, and a flag is not going to stop them from doing so. However, it’s a way for the reporting agency to flag to users that it should not be aggregated, in order to protect the integrity and trust in the source data.</p>
+<p>I think the results element is very much still in development and as more organisations start using it, it will be improved and there may be less of a need for this flag. However where we are at present, I feel it should be preserved at indicator level.</p>
+<p>I think Rolf has also raised an important question around dimensions, and I’d be interested to hear from others about a potential solution?</p>
+          <p><a href="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663/3</link>
+        <pubDate>Thu, 05 Jan 2017 13:51:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-663-3</guid>
+        <source url="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663.rss">Remove attribute aggregation-status from &lt;result&gt;</source>
+      </item>
+      <item>
+        <title>Remove attribute aggregation-status from &lt;result&gt;</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>This <a href="http://support.iatistandard.org/hc/en-us/articles/214388526-Remove-attribute-aggregation-status-from-">issue</a> was originally added and discussed on the previous version IATI Standard Upgrade forum. However that forum has now itself moved to the IATI Discuss platform so this topic has been created in order that discussions can continue here.</p>
+          <p><a href="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663/2</link>
+        <pubDate>Wed, 04 Jan 2017 12:27:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-663-2</guid>
+        <source url="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663.rss">Remove attribute aggregation-status from &lt;result&gt;</source>
+      </item>
+      <item>
+        <title>Remove attribute aggregation-status from &lt;result&gt;</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>At the moment, the  field has an attribute aggregation-status: “Boolean flag indicating whether the data in the result set are suitable for aggregation.”</p>
+<p>I propose to remove this attribute:</p>
+<ul>
+<li>
+<p>It is defined at the  level. There can be multiple  elements in a , and some may be suitable for aggregation, while others are not. Would I then set this flag to “true” (some data in the result set is suitable for aggregation) or to “false” (not all the data is suitable for aggregation)?</p>
+</li>
+<li>
+<p>It doesn’t let me specify over which dimensions it can be aggregated. “Households reached” can usually be aggregated over regions, but not over time spans.</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663/1</link>
+        <pubDate>Wed, 04 Jan 2017 12:26:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-663-1</guid>
+        <source url="https://discuss.iatistandard.org/t/remove-attribute-aggregation-status-from-result/663.rss">Remove attribute aggregation-status from &lt;result&gt;</source>
+      </item>
+  </channel>
+</rss>

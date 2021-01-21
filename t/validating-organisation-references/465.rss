@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Validating organisation references</title>
+    <link>https://discuss.iatistandard.org/t/validating-organisation-references/465</link>
+    <description>I&#39;m interested to know if anybody &quot;validates&quot; organisation identifiers, either prior to publication, or when using IATI data.
+
+The Org ID methodology specifies how these references should be constructed, but I&#39;m unsure if anyone actively checks the identifiers in terms of 
+
+* whether the country/agency prefix is on the &quot;codelist&quot;: http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/
+
+* whether the actual number/reference for the organisation is on the relevant agency list
+
+Anybody anything to share - at either input, output or data use angle ?
+
+Side tangent - if anyone has written any checks, I&#39;d be interested in how they&#39;ve dealt with the fact that agency prefixes can vary in length...</description>
+    
+    <lastBuildDate>Fri, 27 Oct 2017 14:05:24 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Validating organisation references</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="1" data-topic="465">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Side tangent - if anyone has written any checks, I’d be interested in how they’ve dealt with the fact that agency prefixes can vary in length…</p>
+</blockquote>
+</aside>
+<p>This seems to work: <a href="https://regexr.com/3h2c6">https://regexr.com/3h2c6</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/validating-organisation-references/465/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/validating-organisation-references/465/10</link>
+        <pubDate>Fri, 27 Oct 2017 14:05:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-465-10</guid>
+        <source url="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss">Validating organisation references</source>
+      </item>
+      <item>
+        <title>Validating organisation references</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="465">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/o/e19adc/40.png" class="avatar"> OJ_:</div>
+<blockquote>
+<p>We will be setting up an interface where our responsible desk-officers will be requested 1. to demand that any disbursement request from partners identifies the partner as the legal entity (registry &amp; number) and 2. to feed that information into the DB that serves as source for our IATI publication.</p>
+</blockquote>
+</aside>
+<p>A further answer to <a class="mention" href="/u/stevieflow">@stevieflow</a>’s second question: CIDA (former Canadian agency) already had an internal process to require the legal entity from all Canadian partners and capture their business/tax number in an internal DB. This process remained in place when CIDA was merged into Global Affairs Canada, thankfully. Unfortunately, the process did not apply to non-Canadian partners.</p>
+<p>I started around 2013 to make the case that we should require ALL partners to provide their legal entity. We’ve been making slow but steady progress on the principle (for which I can’t take too much credit, as this is driven more by open contracting-type of considerations); however we’re not yet at implementation. The Identify Org project will be crucial for implementation, as the greatest hurdle is for our in-country staff to find the information about local partners.</p>
+          <p><a href="https://discuss.iatistandard.org/t/validating-organisation-references/465/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/validating-organisation-references/465/9</link>
+        <pubDate>Thu, 26 Oct 2017 16:30:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-465-9</guid>
+        <source url="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss">Validating organisation references</source>
+      </item>
+      <item>
+        <title>Validating organisation references</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="1" data-topic="465">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>whether the country/agency prefix is on the “codelist”: <a href="http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/" rel="nofollow noopener">http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/</a></p>
+</blockquote>
+</aside>
+<p>FYI, <a href="http://www.iatibugtracker.org" rel="nofollow noopener">www.iatibugtracker.org</a> checks the prefix with the rule “Must be in the format {Registration Agency} - (Registration Number}” for all versions. It’s actually only a guidance since 1.04 and a rule since 2.01 I think, but it might help organisations that want to upgrade. There are still many violations of the rule; <a href="http://www.iatibugtracker.org/common-bugs" rel="nofollow noopener">http://www.iatibugtracker.org/common-bugs</a></p>
+<p>Fun fact that does not matter; when publishing in version 2.01+ it is impossible to reference an organisation that publishes in the 1.03 standard with a then valid ref that does not follow the registration agency rule?</p>
+          <p><a href="https://discuss.iatistandard.org/t/validating-organisation-references/465/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/validating-organisation-references/465/8</link>
+        <pubDate>Wed, 04 Oct 2017 16:22:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-465-8</guid>
+        <source url="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss">Validating organisation references</source>
+      </item>
+      <item>
+        <title>Validating organisation references</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/oj_">@OJ_</a></p>
+<p>I just posted <a href="https://discuss.iatistandard.org/t/getting-to-a-list-of-organisation-references-for-iati-publishers/1060">some feedback we did in terms of researching the org references in the Org file</a>.  This doesn’t answer your points, but it might be useful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/validating-organisation-references/465/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/validating-organisation-references/465/7</link>
+        <pubDate>Wed, 04 Oct 2017 11:19:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-465-7</guid>
+        <source url="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss">Validating organisation references</source>
+      </item>
+      <item>
+        <title>Validating organisation references</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="1" data-topic="465">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>The Org ID methodology specifies how these references should be constructed, but I’m unsure if anyone actively checks the identifiers in terms of</p>
+<p>whether the country/agency prefix is on the “codelist”: <a href="http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/" rel="nofollow noopener">http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/</a></p>
+<p>whether the actual number/reference for the organisation is on the relevant agency list</p>
+</blockquote>
+</aside>
+<p>We (Denmark) are testing an internal set-up where a small DB pulls the registries from IATI, making sure that we only use valid references in our output.</p>
+<p>But this is the minor issue in that context. We will be setting up an interface where our responsible desk-officers will be requested 1. to demand that any disbursement request from partners identifies the partner as the legal entity (registry &amp; number) and 2. to feed that information into the DB that serves as source for our IATI publication.</p>
+<p>This raises (once more) a question of IATI MasterDataManagement: Any organisation that wishes to present itself as one Publisher should be requested to point out all the legal entities they wish to represent. It is not feasible for us, as a Funding organisation, to change the legal entity quoted on a disbursement request, and use an identifyer quoted in IATI’s agency-list instead.</p>
+<p>If we were  only allowed to use the org_id’s of registered IATI-Publishers, we could just have continued to use the old ID’s - then there would be no reason to establish the ‘legal entity’ code-structure.</p>
+<p>But if we feed in the real entities, we will be creating a much clearer picture of the ‘missing reporters’ in IATI.</p>
+          <p><a href="https://discuss.iatistandard.org/t/validating-organisation-references/465/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/validating-organisation-references/465/6</link>
+        <pubDate>Wed, 04 Oct 2017 06:09:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-465-6</guid>
+        <source url="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss">Validating organisation references</source>
+      </item>
+      <item>
+        <title>Validating organisation references</title>
+        <dc:creator><![CDATA[jonesiom]]></dc:creator>
+        <description><![CDATA[
+            <p>is there a best practice to filter out a problematic/uncodeable transaction from a dataset?<br>
+a text footnote in the description is not machine readable so it would almost be better to allow a row with value to retain a budget number and a total budget that matches with any other information sources but a status code that flags an org id specific issue</p>
+          <p><a href="https://discuss.iatistandard.org/t/validating-organisation-references/465/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/validating-organisation-references/465/5</link>
+        <pubDate>Wed, 11 Jan 2017 15:53:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-465-5</guid>
+        <source url="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss">Validating organisation references</source>
+      </item>
+      <item>
+        <title>Validating organisation references</title>
+        <dc:creator><![CDATA[jonesiom]]></dc:creator>
+        <description><![CDATA[
+            <p>steven, I looked at the website</p>
+<p>my most problematic org refs to date appear to be the non-standard or exempt institutions/branches/NPOs such as matched funding to churches, private aid flow to universities to focus on development issues (education/health/infrastructure), unincorporated clubs and civil society organisations</p>
+          <p><a href="https://discuss.iatistandard.org/t/validating-organisation-references/465/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/validating-organisation-references/465/4</link>
+        <pubDate>Wed, 11 Jan 2017 15:47:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-465-4</guid>
+        <source url="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss">Validating organisation references</source>
+      </item>
+      <item>
+        <title>Validating organisation references</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/jonesiom">@jonesiom</a> I dont think there is an established best practice just yet- but we’ve been exploring some of these issues via the Identify Org project: <a href="https://identify-org.net/" rel="nofollow noopener">https://identify-org.net/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/validating-organisation-references/465/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/validating-organisation-references/465/3</link>
+        <pubDate>Mon, 09 Jan 2017 12:30:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-465-3</guid>
+        <source url="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss">Validating organisation references</source>
+      </item>
+      <item>
+        <title>Validating organisation references</title>
+        <dc:creator><![CDATA[jonesiom]]></dc:creator>
+        <description><![CDATA[
+            <p>a related question from an experiment coding 2004 public aid flow from the Isle of Man and Jersey</p>
+<p>what is the best practice re coding organisations that have<br>
+(a) renamed but retained the same org id<br>
+(b) merged into another org – Merlin re Save the Children<br>
+© ceased</p>
+          <p><a href="https://discuss.iatistandard.org/t/validating-organisation-references/465/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/validating-organisation-references/465/2</link>
+        <pubDate>Mon, 09 Jan 2017 01:06:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-465-2</guid>
+        <source url="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss">Validating organisation references</source>
+      </item>
+      <item>
+        <title>Validating organisation references</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m interested to know if anybody “validates” organisation identifiers, either prior to publication, or when using IATI data.</p>
+<p>The Org ID methodology specifies how these references should be constructed, but I’m unsure if anyone actively checks the identifiers in terms of</p>
+<ul>
+<li>
+<p>whether the country/agency prefix is on the “codelist”: <a href="http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/" rel="nofollow noopener">http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/</a></p>
+</li>
+<li>
+<p>whether the actual number/reference for the organisation is on the relevant agency list</p>
+</li>
+</ul>
+<p>Anybody anything to share - at either input, output or data use angle ?</p>
+<p>Side tangent - if anyone has written any checks, I’d be interested in how they’ve dealt with the fact that agency prefixes can vary in length…</p>
+          <p><a href="https://discuss.iatistandard.org/t/validating-organisation-references/465/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/validating-organisation-references/465/1</link>
+        <pubDate>Mon, 16 May 2016 09:39:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-465-1</guid>
+        <source url="https://discuss.iatistandard.org/t/validating-organisation-references/465.rss">Validating organisation references</source>
+      </item>
+  </channel>
+</rss>

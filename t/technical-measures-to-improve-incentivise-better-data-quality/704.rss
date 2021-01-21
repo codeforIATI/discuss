@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Technical measures to improve/incentivise better data quality</title>
+    <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704</link>
+    <description>Following the conversations in thread: [TAG Tech Consult: Outline Agenda](http://discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534/8), this tread is set-up to discuss technical measures that could be introduced to incentivise/improve better data quality.
+
+
+## Problem
+
+The need for improved data quality follows recent shortfalls identified by real-world attempts to use IATI data, most notably Young Innovations attempts to use [Tanzanian IATI Data](https://blog.yipl.com.np/tanzanian-iati-data-diving-into-sectors-with-focus-on-health-ba71398fd1e#.3wix20hz5). The [Bangladesh IATI – AIMS import project](http://bd-iati.github.io/blog/2016/03/08/what-we-learned-in-3-weeks/), [other threads on IATI Discuss](http://discuss.iatistandard.org/t/data-quality-issues/488/7) and the [IATI Dashboard](http://dashboard.iatistandard.org/data_quality.html) also highlight other issues with the use of IATI data.
+
+
+## Discussion
+
+@bill_anderson has suggested some specific ideas are needed regarding, for instance:
+
+* What should be validated?
+* How should it be validated?
+* What happens with invalid data?
+* How should the Registry handle invalid data?
+* How should the Dashboard handle invalid data?
+* How should Publisher Statistics handle invalid data?
+* Should good quality data be &#39;kitemarked&#39;?
+* NB If there is a need for discussions on tools, support, etc these belong on Day 2 and 3
+
+
+## One tangible proposal: Force initial publication and updates through the IATI Registry
+
+@Herman has [suggested on Twitter](https://twitter.com/HermanLoon/status/826817934152589312) that most issues could be solved by making the IATI validation more restrictive and mandatory for publishing on the Registry.
+
+This is a sensible idea and would stop publication of bad data at source. However, this would not necessarily make the situation better, as, under the current situation, publishers post a URL of their self-hosted IATI XML file on the [IATI Registry](http://www.iatiregistry.org/). This self-hosted file can then be modified any number of times without re-posting to the Registry, providing that the URL itself does not change.  This means that checking a file is valid on initial publication does not mean it will be valid when a publisher updates the location that file.
+
+To solve this problem - and if it is agreed that forcing initial publication **and** all updates to be published through the Registry (with validation on each publication) is a good idea - changes would need to be made to how updated data is accessed. Some options:
+
+1. All IATI data would be held on the IATI Registry
+
+2. Find a clever way to keep IATI XML files self-hosted but &#39;cache&#39; each update.  Each publication (initial or update) via the Registry would generate a unique Registry URL, which resolves to the data that was published at that point.
+
+Would be good to hear everyone&#39;s thoughts on these technical measures.</description>
+    
+    <lastBuildDate>Thu, 08 Jun 2017 18:22:04 +0000</lastBuildDate>
+    <category>Issues for Members Assembly</category>
+    <atom:link href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="25" data-topic="704">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>I think it is important though to adhere to the ‘Publish once, use often’ principle, avoiding republication of IATI data by anyone else than the original publisher. The original publisher is and should be ultimately fully responsible for the data quality of its own data.</p>
+</blockquote>
+</aside>
+<p>Absolutely agree, and we actually stepped away from the idea of auto-republishing for technical and principle-based reasons.</p>
+<aside class="quote no-group quote-modified" data-post="25" data-topic="704">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>Wouldn’t it be nice if this data enrichment (machine learning) software would be made available as an API, enabling the original publisher to improve its own IATI dataset? Such content specific (e.g. agriculture) enrichment API could even be build in tools like Aidstream, providing suggestions for data improvement at the moment of registering or uploading data. In that way the IATI data is not replicated and data quality is improved at the source.</p>
+</blockquote>
+</aside>
+<p>This is actually the approach we settled on - make the enhancement tools available via API, bake them into the publication process of donors and other publishers, and if we do find that we can grab and enhance data automatically (or a research consultant does so as part of their contracted scope of work), we provide it semi-publicly* for the data owner to validate/reingest/approve/publish themselves.</p>
+<p>*think Google Docs with link sharing - anyone can access, so technically it’s public, but it’s not findable, someone has to share the link with you, so it’s effectively private until you make it public.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/26</link>
+        <pubDate>Thu, 08 Jun 2017 18:22:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-26</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/reidmporter">@reidmporter</a> I like the idea of using machine learning in order to enrich the IATI data with additional classifications.</p>
+<p>I think it is important though to adhere to the ‘Publish once, use often’ principle, avoiding republication of IATI data by anyone else than the original publisher. The original publisher is and should be ultimately fully responsible for the data quality of its own data.</p>
+<p>Wouldn’t it be nice if this data enrichment (machine learning) software would be made available as an API, enabling the original publisher to improve its own IATI dataset? Such content specific (e.g. agriculture) enrichment API could even be build in tools like Aidstream, providing suggestions for data improvement at the moment of registering or uploading data. In that way the IATI data is not replicated and data quality is improved at the source.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/25</link>
+        <pubDate>Thu, 08 Jun 2017 14:00:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-25</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Perhaps another thread on Discuss to signal this work is underway and invite others to join + document(s)* on googledocs to co-create?</p>
+<ul>
+<li>Not sure what would be best basis to work. It may be good to have one document as the master list of questions, but working in another document (or several) to explore &amp; refine each one.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/24</link>
+        <pubDate>Wed, 19 Apr 2017 20:14:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-24</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="22" data-topic="704" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>I’d be happy to work offline with others to develop a set of questions and see how the work as a basis for a quality assessment.</p>
+</blockquote>
+</aside>
+<p>I LOVE the idea of framing it by questions (we were doing the framing by “themes” but I think questions are more interoperable). I think OpenAg could contribute a batch of questions and we can see which ones stick, which ones need to be merged to serve as a multi-purpose quality check, and which ones are maybe a bit more sector-specific.</p>
+<p>Shall we open a new thread in Discuss or just find each other (hopefully others) in the wilds of the interwebs?</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/23</link>
+        <pubDate>Wed, 19 Apr 2017 19:20:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-23</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Only seeing Reid’s input today.</p>
+<aside class="quote no-group quote-modified" data-post="21" data-topic="704">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/reidmporter/40/204_1.png" class="avatar"> reidmporter:</div>
+<blockquote>
+<p>Out of that experience, we discussed an opinionated review that was much more appreciative in nature - “here’s what your data can do: allow for sub-national mapping thanks to all that wonderful location data you provided; allow for granular analysis thanks to your classifications of project type and services; maaaybe you could do a bit more on linking to donors/partners to improve traceability.” Something like that.</p>
+</blockquote>
+</aside>
+<p>This is somewhat similar to an idea starting to form in my mind about a different approach to data quality assessment. Rather than assessing elements/attributes individually, we could check whether the data is sufficient/good enough to provide answers to specific questions (ie data uses). For one thing, it would highlight the dependencies between data elements, and the importance of attributes (which tend to be overlooked in current assessment approaches). It would also make the impact of quality issues more concrete, especially if the questions are relevant to the publisher itself.</p>
+<p>I believe with a set of 8-10 questions we would cover most important use cases (and most elements/attributes). For instance:</p>
+<ul>
+<li>How much will publisher’s operational projects disburse in country x in the next 12 months? (this requires planned disbursements broken down by quarter)</li>
+<li>Which national NGOs are involved in the delivery of the publisher’s activities? (this requires all the details on the implementing partner)</li>
+<li>Has the publisher implemented projects in support of the following sectors (work needed to create a list of sectors where 5-digits are necessary, eg primary education, basic health infrastructure)? (this would test the use of 5-digit DAC codes instead of 3-digit)</li>
+<li>Has the publisher implemented projects at the district/village/something level (choosing a relevant admin 3 level)? (this would test geographic data)</li>
+</ul>
+<p>I’d be happy to work offline with others to develop a set of questions and see how the work as a basis for a quality assessment.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/22</link>
+        <pubDate>Wed, 19 Apr 2017 16:07:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-22</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>Late to this discussion but I have some thoughts from OpenAg’s recent Tool Accelerator Workshop in London, some already partially represented, others newer/more controversial. (Obligatory disclaimer: I’m blissfully ignorant as a newcomer to this community of all the reasons why things are the way they are - not sure if this is a help or a hiderance, probably both in equal measure:)</p>
+<ul>
+<li>As <a class="mention" href="/u/rory_scott">@rory_scott</a> mentioned, there can and should be levels of validation (checks out vs. opinionated review). However, we’ve found that in our discussions about data quality with publishers, we get much farther focusing on concepts rather than fields. Out of that experience, we discussed an opinionated review that was much more appreciative in nature - “here’s what your data can do: allow for sub-national mapping thanks to all that wonderful location data you provided; allow for granular analysis thanks to your classifications of project type and services; maaaybe you could do a bit more on linking to donors/partners to improve traceability.” Something like that.</li>
+<li>While some data quality issues can only be addressed by the publisher, OpenAg is also investigating ways we can grab their pen and add value to the data on our own. This is represented by two early-stage concepts: 1) an auto-classification algorithm that uses machine learning to match concepts (in our case, potentially from an agricultural vocabulary like AGROVOC, though other sector-specific codelists would theoretically work just as well) based on project descriptions (if available) or project documents (if linked); 2) a text extraction and matching algorithm that searches docs/descriptions for names of regions/districts/zones/towns and tags each that it finds via fuzzy match, perhaps with some human validation or logic to filter out the various mentions of Washington, DC or London, UK that appear in various donor-produced documents.</li>
+<li>Following on that idea, if we can add value to the data, there are then two options: privately hand it back to publishers and ask nicely if they want to import it to their system, or (I can anticipate the tension this will generate, but hear me out) we create a separate “IATI Improved” data store/registry that makes improved data immediately available without waiting for the publisher to approve it.</li>
+<li>Young Innovations also proposed a tool (which they discussed elsewhere I think, though I can’t find the blog link right now) that would allow data users to suggest changes and updates to things like generic org names and IDs.</li>
+</ul>
+<p>Happy to share/discuss more next week.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/21</link>
+        <pubDate>Sat, 04 Mar 2017 06:04:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-21</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I have tried to capture this discussion and simplify it into some high-level options in <a href="https://docs.google.com/document/d/1QqL7JxZYFw6uZjiaNv90xy5bIfKSi-Lv2okKf1GS0zU/edit?usp=sharing">this paper for Standards Day</a>. If we can reach consensus at this level we can then explore the technology and capacity required to implement a coherent policy.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/20</link>
+        <pubDate>Fri, 03 Mar 2017 07:28:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-20</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> I agree that some errors have a greater impact depending on the use case. A distinction can be made between use-case specific errors/omissions and errors which are use-case independant (e.g. publication of not well formed XML and invalid codes). I would be in favor of blocking the use-case independant error types.</p>
+<p>Leaving the current acceptance policy (‘anything goes’) will i.m.o. not improve data quality. This will be detrimental for the use and the long term succes of IATI. This is demonstrated quite well by the many IATI pilots which suffered from bad data.</p>
+<p>A carefull implementation approach is necessary when validation rules are enforced.  For the next decimal upgrades they will produce warnings. After migrating to a new integer upgrade they will be blocking.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/19</link>
+        <pubDate>Wed, 01 Mar 2017 14:55:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-19</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a very interesting discussion, tks for starting it. And thanks in particular to Herman for offering an initial typology of errors.</p>
+<p>I tend to be with Bill on the issue of banning “bad quality” data, except perhaps in some extreme cases. As someone mentioned above, something may make data unusable for use case A but go unnoticed for use case B - if it’s banned, use case B doesn’t have it.</p>
+<p>One reason to not go to such extremes is that as far as I know, there has not been that much to individual publishers on specific data quality issues, especially for issues like codelist, guideline, reference errors (to use Herman’s typology). In particular, there haven’t been a lot of demonstrations like the recent ones from Anjesh and Mark pointing out how very specific errors/problems had an impact on data use.</p>
+<p>Suggestions have been made recently, here and in other threads, to create more active feedback mechanisms. Before concluding that flagging issues to publishers doesn’t work, perhaps we should try these ideas out. And, as was said repeatedly in the last TAG, we need to be very clear when defining and identifying quality issues, and linking them whenever possible with the related use case.</p>
+<p>As an example, in the recent research on Tanzania data, we had to exclude all the data from DFID and The Netherlands (among many others) because the implementing partner name was not there (or not in the right place, which is the same for our purpose). On the other hand, Canada’s data would fail for Herman’s interest in cross-referencing activities. These examples may or may not be capital sins, depending on what you want to do with the data. I don’t think banning this data would help.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/18</link>
+        <pubDate>Fri, 24 Feb 2017 22:25:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-18</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[jonesiom]]></dc:creator>
+        <description><![CDATA[
+            <p>similar to <a class="mention" href="/u/herman">@Herman</a>, i noted incorrect dates etc when i explored legacy public aid flow<br>
+<a class="mention" href="/u/dalepotter">@dalepotter</a>: an extra option would be to support a preferred default IATI hosted copy of the hashed dataset with crowdsourced amendments but maintain access to the registered default dataset</p>
+<p>i also think a donors tab to complement the publishers tab on the IATI registry home page is needed in the roadmap as it would not be obvious to a primary publisher that a secondary publisher has progressed datasets to prompt outreach</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/17</link>
+        <pubDate>Mon, 13 Feb 2017 01:20:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-17</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>This is my initial attempt to classify the types of errors I’ve encountered frequently. A lot of them would fall under the category ‘content_errors’. This list is  by no means complete. Please feel free to extend this list with your own experiences working with IATI data:</p>
+<p><strong>Code list errors</strong>	<br>
+•	Non existing codes published for code list fields</p>
+<p><strong>Data entry errors</strong>	<br>
+•	Frequent use of unlikely dates</p>
+<p><strong>Duplicate errors</strong><br>
+•	Duplicate data of one publisher in IATI files split by country<br>
+•	Duplicate data of one publisher in one IATI file.<br>
+•	Duplicate datasets with different publication times</p>
+<p><strong>Guideline errors</strong>	<br>
+•	Activity files containing multiple IATI versions in one file.<br>
+•	Country and region percentages not adding up to 100%<br>
+•	Inconsistent use of the organization roles.<br>
+•	Missing organization names if no IATI identifier exists for the organization<br>
+•	Organization identifiers not following IATI guidelines<br>
+•	Sector percentages not adding up to 100%</p>
+<p><strong>Reference errors</strong> 	<br>
+•	Missing and/or invalid funding activity ids in related activities.<br>
+•	Missing IATI identifiers for known IATI organizations.<br>
+•	Missing or invalid references (IATI activity identifiers) to providing activities for incoming transactions<br>
+•	Use of non-existing IATI identifiers for organizations</p>
+<p><strong>Registration errors</strong>	<br>
+•	Incorrect registry metadata (activity files registered with an organization file type and vice versa)<br>
+•	Registration of publisher organizations with the organization reference as publisher name.</p>
+<p><strong>Registry errors</strong>	<br>
+•	Numerous download errors, invalid files.<br>
+•	Registering non validated data in the registry<br>
+•	Registry entries with incomplete IATI files of even non-IATI files like HTML</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/16</link>
+        <pubDate>Fri, 10 Feb 2017 16:13:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-16</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/herman">@Herman</a> It seems posts can only be assigned to one category. I’ve added this to <span class="hashtag">#iati-tag-2017</span> for the time being, as I imagine we will want to discuss further at the event.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/15</link>
+        <pubDate>Fri, 10 Feb 2017 15:12:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-15</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/dalepotter">@dalepotter</a> Is it possible to assign this topic to the groups  ‘Data quality’ and ‘Tag 2017’?</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/14</link>
+        <pubDate>Fri, 10 Feb 2017 15:01:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-14</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/dalepotter">@dalepotter</a> and <a class="mention" href="/u/rory_scott">@rory_scott</a> for this detailed scetch of the IATI validation process. Looks like a very good starting point for improving the technical part of assuring data quality.  A couple of observations:</p>
+<ul>
+<li>
+<p>The most challenging ‘health’ category will be ‘invalid content’. From the users point of view, depending on your use case, some content errors might be acceptable in one case, but not in another. An example: a viz showing the financial relation between publishers might accept an error in the policy marker field, but certainly not in references to other activities. So the ‘invalid content’ category needs to be more fine grainded to be usable in practice. I will try to come up with some classification based on the many types of error we encountered during the processing of IATI data.</p>
+</li>
+<li>
+<p>Some errors, like duplicate activities published be one publisher, will cause great functional and technical problems. This class of errors should not be allowed in the registry at all. The same is true for XML or XSD validation errors: these can and should be fixed by the publisher.</p>
+</li>
+<li>
+<p>Clear and active feedback to the publisher is critically important. What good is an automated validation process if the publisher is not aware that there are problems? Many publishers using Aidstream for instance, understandably think everything is fine when the click on the ‘Publish’ button. Since Aidstream is very relaxed about data quality, these publishers are often unaware that there are serious problems with their data. The same is true for other publising tools.</p>
+</li>
+<li>
+<p>Some IATI publishers will need guidance to improve data quality. This will cost time and effort from IATI support. So an option migth be to couple this kind of premium support to wether or not a publisher has paid its membership fee.</p>
+</li>
+<li>
+<p>The transparency index now rewards completeness of publication. To add an incentive to improve data quality, an important part of the ranking should be coupled to the consistent publication of quality data, preferably measured on the basis of the health status of the data in the registry over a longer period of time.</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/13</link>
+        <pubDate>Fri, 10 Feb 2017 12:59:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-13</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this <a class="mention" href="/u/rory_scott">@rory_scott</a>  - good to see such detailed thinking on how a proposal could work in practice!</p>
+<p>This suggestion has the benefit of adding some clear metadata to each dataset, and provide a framework whereby IATI secretariat and community tools could skip datasets with known technical issues.</p>
+<p>Aside from this, I would contest that this proposal would have limited (if any) impact on addressing the data quality issues that occur within IATI datasets.  I agree with <a class="mention" href="/u/siemvaessen">@siemvaessen</a> <a class="mention" href="/u/herman">@Herman</a> and <a class="mention" href="/u/wendy">@Wendy</a> that we need to prevent bad data getting into the room. I would argue that the current approach (of allowing any data to be published and flagging up issues with data publishers) is clearly not working - whilst at the same time placing significant technical burdens on users and tool providers to make IATI data usable at scale.</p>
+<p>Preventing new/updated invalid data being published may seem harsh but it would prevent data quality issues from occurring in new datasets. Changing the process so that all updates to already-published IATI datasets pass through the Registry will (albeit slowly) begin to resolve issues with current datasets.</p>
+<p>Even if this change were to be agreed (presumably at the TAG, then other <a href="http://www.aidtransparency.net/governance">IATI governance processes</a>), it would be fair to assume there would be a grace period to enable the validation process to be established on the IATI Registry, alongside allowing publishers to adapt their processes.  In the immediate term, your idea to set-up a batch process and report on ‘dataset health’ is definitely worth taking forward. We’ve added a task to investigate setting something like this up to our weekly list of maintenance and improvement jobs <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/12</link>
+        <pubDate>Fri, 10 Feb 2017 11:14:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-12</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Everyone!</p>
+<p>Firstly, Bill is absolutely right to say that invalid data shouldn’t be banned, and I think that it might be helpful to flesh out one consideration so that people can reflect on it. I’m not wedded to the following idea, but it’d be interested to hear <a class="mention" href="/u/siemvaessen">@siemvaessen</a> and <a class="mention" href="/u/herman">@Herman</a>’s thoughts as users, and it might move this conversation along to other, better proposals <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<h2>Technical implementation</h2>
+<p>The registry gets a new protected field (i.e. set by <code>sys</code>, <strong>not</strong> the publisher) that has the following values:</p>
+<ul>
+<li>
+<strong>1</strong>: ‘invalid_xml’ - <em>xml validation fails</em>
+</li>
+<li>
+<strong>2</strong>: ‘invalid_IATI’ - <em>xmllint schema validation fails</em>
+</li>
+<li>
+<strong>3</strong>: ‘invalid_content’ (arithmetic errors etc.) - <em>opinionated content validation fails</em>
+</li>
+<li>
+<strong>4</strong>: ‘healthy_dataset’ - <em>all good</em>
+</li>
+</ul>
+<p>Call this field ‘Health’</p>
+<p>There is a daily batch process which does the following on every registered dataset:</p>
+<pre><code class="lang-python"># This is pseudocode!
+def daily_check(dataset):
+    if dataset is newly_registered:
+        # the 'validate()' method would be a xmllint+ content validator
+        dataset.health = validate(dataset)
+        add_to_md5_cache_register(dataset)
+        # then do any initial setup of the dataset necessary
+    else:
+        if md5(dataset) not in md5_cache_register:
+            dataset.health = validate(dataset)
+            add_to_md5_cache_register(dataset)
+            # other operations such as updating the activity count and `IATI data updated` time field
+        else:
+            # record somewhere that the check has been run
+</code></pre>
+<p>In plain english: this checks if a dataset has been recently registered (which is available in CKAN metadata).</p>
+<ul>
+<li>If the dataset has been recently registered, the method runs a validator to define the ‘health’ field and adds an md5 hash string for that activity to a register.</li>
+<li>If it hasn’t, the method checks to see if the md5 hash exists already
+<ul>
+<li>If it doesn’t, the method runs the checks and updates the cache</li>
+<li>If it does, then nothing happens</li>
+</ul>
+</li>
+</ul>
+<p>In every step except the last one, the <code>IATI Data Updated</code> field would be updated, possibly along with other fields (see below for why)</p>
+<p>So far, so good? (<a class="mention" href="/u/dalepotter">@dalepotter</a>, <a class="mention" href="/u/hayfield">@hayfield</a> - please let me know if I’m making naive assumptions about what is possible in CKAN.)</p>
+<h2>Direct uses in the IATI infrastructure</h2>
+<p>Consider the following metadata from an IRC_UK activity:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/b65c167f83fd91aef87dc36ec327a98db0ce1288.png" data-download-href="https://discuss.iatistandard.org/uploads/default/b65c167f83fd91aef87dc36ec327a98db0ce1288" title="Pasted image"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/b65c167f83fd91aef87dc36ec327a98db0ce1288_2_345x247.png" width="345" height="247" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/b65c167f83fd91aef87dc36ec327a98db0ce1288_2_345x247.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/b65c167f83fd91aef87dc36ec327a98db0ce1288_2_517x370.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/b65c167f83fd91aef87dc36ec327a98db0ce1288_2_690x494.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/b65c167f83fd91aef87dc36ec327a98db0ce1288_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Pasted image</span><span class="informations">706×506 27.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Imagine that ‘Health’ now sits in the <strong>Contents</strong> section (as does IATI data updated, ideally), and that all of the fields in that section are set by sys, not publisher, in a method similar to the one above.</p>
+<p>This has the following advantages:</p>
+<ol>
+<li>The dashboard, datastore, and other systems which use the registry API could just decide to retrieve activities which have a <code>health</code> rating of 3 or higher, and simply count the files in the other categories for the sake of gathering statistics (without trying to parse them, or spend computation time on validating them).</li>
+<li>OIPA / other parsers could do something similar.</li>
+<li>No transparency is lost, i.e. all files are still accessible, and users who want to dredge through the invalid data can attempt to (though I’d say there’s little value, particularly for <code>health &lt; 2</code>.</li>
+<li>Because the <code>IATI data updated</code> field would be trustworthy, a lot of computation time throughout the technical ecosystem could be saved; I’m sure the dashboard / datastore / OIPA run times could be cut in half, or possibly down below a quarter, just by skipping any datasets that haven’t been updated since their last run.</li>
+<li>With the right UX considerations, users could be given the choice between ‘clean’ IATI and ‘comprehensive’ IATI, where the former is good for data analysis, and the latter is good for transparency and accountability.</li>
+</ol>
+<p>Thoughts? I look forward to some debates about this at the TAG <img src="https://discuss.iatistandard.org/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/11</link>
+        <pubDate>Fri, 10 Feb 2017 09:55:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-11</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>I would also agree that it would be better to validate data as it is published and prevent the publication of any invalid data. I can echo from experience the comment made above by <a class="mention" href="/u/dalepotter">@dalepotter</a> that publishers are indeed most likely to amend and correct their data when they are specifically focused on initially publishing or at the time when they are making updates.</p>
+<p>I also agree with <a class="mention" href="/u/siemvaessen">@siemvaessen</a> about extending the validation beyond just schema validation and our <a href="//discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524">plans</a> of enhancing the IATI validator do include doing just that</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/10</link>
+        <pubDate>Wed, 08 Feb 2017 14:14:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-10</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Regarding the three options raised. As stated by <a class="mention" href="/u/hayfield">@hayfield</a>, option 3 feels like a status quo, which has proved to be ineffective to the ambition set. That would leave us with options 1 &amp; 2, which could be read as a single option/solution as described by <a class="mention" href="/u/dalepotter">@dalepotter</a></p>
+<p>If the Registry would to be enriched with a Registry Validator, which ensures data coming in is validated (not just according to the XSD but a wider range of validations tbd), we could solve this issue at the door, rather than in the room. Solving this issue in the room has proved ineffective and I propose we deviate from that road.</p>
+<p>I also disagree this method would censor data. It will effectively ensure data quality published at the Registry and avoid the current state of garbage in, garbage out.</p>
+<p>So, I’d vote in favour of strict validation at the Registry.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/9</link>
+        <pubDate>Wed, 08 Feb 2017 12:49:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-9</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/dalepotter">@dalepotter</a> I fully agree with you. Accepting bad data (= data with severe errors) in the registry will not only increase the workload fix the data later but will also lead to wrong information. If we use IATI data as a means to improve aid effectiveness (as opposed to only improving transparency), bad data will be harmful because wrong conclusions can easily be drawn.</p>
+<p>The key to data quality management is stopping errors as soon as possible. The registry is the natural place to do this, since all IATI data must pass through the registry.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/8</link>
+        <pubDate>Wed, 08 Feb 2017 12:08:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-8</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for your thoughts <a class="mention" href="/u/bill_anderson">@bill_anderson</a>, <a class="mention" href="/u/siemvaessen">@siemvaessen</a>, <a class="mention" href="/u/hayfield">@hayfield</a> and <a class="mention" href="/u/herman">@Herman</a></p>
+<p>I would still strongly argue that preventing the publication of invalid data via the Registry will make a needed difference to the quality and usability of IATI data, which is key to IATI achieving the impact it seeks.</p>
+<p>The key benefit of validating data on initial publication and each update is that it ensures we catch errors at the point of entry - and <strong>at the time when publishers are most invested in making their data available</strong>.</p>
+<p>If such a measure is introduced, we must think carefully about the publisher experience. If a user attempts to publish invalid data via the Registry, there should be a clear user interface to help users understand:</p>
+<ol>
+<li>If there are technical issues with their data</li>
+<li>Exactly where these issues appear in their file/s, and</li>
+<li>Clear guidance on how to fix each issue, so that they can publish their data.</li>
+</ol>
+<p>Other approaches (including scoring invalid data more harshly in publisher statistics) are good ideas but are inherently reactive approaches. I.e we would be trying to chase publishers to resolve issues (hours/weeks/months later?) when they have moved already onto other tasks.  Previous experience along these lines have resulted in limited impact, whilst inefficiently consuming support resources.</p>
+<p>With particular regard to publisher statistics, the effectiveness of this approach assumes publishers routinely look at and care about their performance there - which may or may not be the case.</p>
+<p>I disagree that preventing publication of invalid data amounts to censorship. It seems that all serious attempts to make use of IATI data at any scale have encountered significant data quality issues limiting outcomes. Given the renewed focus on data usage, we are saying that we want IATI to be a good quality and usable source of data, thus fulfilling IATI’s mission to ‘<em>make information about aid spending easier to access, use and understand</em>’.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/7</link>
+        <pubDate>Wed, 08 Feb 2017 11:43:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-7</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I hear a number of voices calling for a far tougher regime than we have operated to date. I am in favour of this with one exception:</p>
+<p>I am strongly opposed to data being ‘banned’ or excluded by the Registry. Firstly this is not the way for an open data standard to do its business. Secondly this could well deny users of a huge amount of data that fails validation for relatively trivial reasons.</p>
+<p>Flag invalid data with big warning signs. Punish it far more harshly in the publisher statistics. Name and shame. But don’t censor.</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/6</link>
+        <pubDate>Wed, 08 Feb 2017 06:57:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-6</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>IATI files should not be replaced without updating the metadata in the registry. Accurate metadata is key for the succesfull use of data. This could be checked automatically by saving the md5 checksum  in the registry on initial load, and periodically scanning the corresponding IATI file to see if its md5 checksum matches. If not, mark the registry entry for that file as ‘invalid’.</p>
+<p>For determining wether or not a file has a good enough data quality to be qualified as usable in the registry, maybe the severity of the errors should be taken in consideration using traffic lighting:<br>
+Green - everything ok<br>
+Yellow - minor errors in the file (e.g. some invalid dates)<br>
+Red - major unacceptable errors in the file (e.g. Duplicate activities, invalid references, non existing code values, etc). In that case the file will be rejected and marked as ‘invalid’ in the registry and the publisher will be activily informed (e.g. Automatically by an e-mail)</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/5</link>
+        <pubDate>Tue, 07 Feb 2017 21:05:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-5</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>With regards to <em>How should the Registry handle invalid data?</em></p>
+<p>At present, all that is published to the Registry is a URL that points to data rather than the data itself. This means that while it may be possible to undertake validation at the point of initial publication and ensure that data is fully valid at that point, the content of the file at the specified URL can be modified to contain invalid data at a later point.</p>
+<p>In this situation, there are multiple ways that the Registry could respond.</p>
+<ol>
+<li>See that the data is no longer valid and prevent it from being accessed until it is made valid again</li>
+<li>Provide access to the last known-valid data</li>
+<li>Allow access to the invalid data, potentially marking it as invalid in some manner</li>
+</ol>
+<p>In the first of these options, a very minor error could cause large amounts of useful data to become inaccessible. This does not appear an ideal situation.</p>
+<p>In the second option, it would require the Registry to store a copy of the data. This would mean weakening or abandoning the principle that publishers own their data since the ‘official’ copy of data would not necessarily be the latest version provided by a publisher.</p>
+<p>In the third option, it would mean the Registry provides access to data that does not validate against the Standard, the situation that exists at present. An improved UI (Registry, Dashboard, elsewhere) could, however, better indicate when data is not valid while not modifying the role of the Registry or redefining who ‘owns’ data.<br>
+Other tools, such as an updated Datastore, could then pick up the task of restricting access to invalid data or filtering invalid elements / attributes so data users may know that data they are using is fully valid against the Standard (should they desire this).</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/4</link>
+        <pubDate>Tue, 07 Feb 2017 17:44:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-4</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Dale,<br>
+Thanks for setting op this thread. The questions raised by <a class="mention" href="/u/bill_anderson">@bill_anderson</a> make clear that there are several viewpoints to look at when discussing data quality.</p>
+<p>The first 2 questions (What should be validated?, How could be validated?) be linked to the question ‘What are we using IATI data for?’. In other words what is the IATI use case. In the example of monitoring activity progress with IATI for instance, its critically important that references between activities are valid and complete. Only that way, you can avoid double counting and provide insight in the network of activities funded for a specific goal or purpose. From the technical point of view there needs to be a way to determine if a reference is valid or not. It would be worthwhile to  compare the experience of several IATI developers with the goal to take stock of the major classes of data quality problems and their impact on the usability of IATI data. This could be a separate session(s) on the TAG (e.g. a number of 20 minutes presentations, each highlighting a specific use case)</p>
+<p>The question ‘What happens with invalid data’ could be the topic of another separate session on the TAG. This session should also address the question ‘How should the registry handle invalid data’, since the registry is the official entry point for metadata on all publisher files.</p>
+<p>The questions about the Dashboard and Publisher Statistics refer to the question how to provide feedback to publishers about their data quality and how the appreciate data quality issues. Also the question can be raised here if technical means to provide feedback, are a sufficient incentive for publishers to improve their data quality or that more is needed (e.g. specific support). This could be the topic of a session called ‘How to provide data quality feedback’ .</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/3</link>
+        <pubDate>Tue, 07 Feb 2017 15:53:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-3</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+      <item>
+        <title>Technical measures to improve/incentivise better data quality</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Dale,</p>
+<p>We would be very supportive to improve data quality. From our perspective there is still too much <strong>garbage in, garbage out</strong>, which is a major headache.</p>
+<p>Any initiative that could tackle this problem this would be very welcome. I’d even say it should surpass anything else at the upcoming TAG, seeing bad quality data is seemingly holding IATI hostage.</p>
+<p>Looking forward to new insights and fruitful discussions at the TAG on data quality.</p>
+<p>Siem</p>
+          <p><a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/2</link>
+        <pubDate>Tue, 07 Feb 2017 15:31:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-704-2</guid>
+        <source url="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704.rss">Technical measures to improve/incentivise better data quality</source>
+      </item>
+  </channel>
+</rss>

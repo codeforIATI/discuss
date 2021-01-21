@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How can we trust IATI data?</title>
+    <link>https://discuss.iatistandard.org/t/how-can-we-trust-iati-data/575</link>
+    <description>(or, how can _the computers_ trust the data?)
+
+We know from the &quot;[Use of IATI in Country Systems](http://www.developmentgateway.org/assets/post-resources/IATI-JuneSCMeetings-FINAL.pdf)&quot; paper (written by @Joshua_Powell and team) and from user research around the [Initiative for Open Ag Funding](https://www.interaction.org/project/open-ag-funding/resources) (myself, @laia_grino &amp; @TimDavies) that access to _information about_ the production, upkeep and conditions of any IATI data file are key aspects to building trust, which then play a key part in any decision for people to use it.
+
+Currently, it seems that this &quot;metadata&quot; is recorded in two possible places:
+
+- The publisher Implementation Schedule (IS).  This is usually a spreadsheet.  It&#39;s not published by all.
+- The &quot;About&quot; section for a publisher on the IATI Registry.  This mirrors some of the fields in the IS, but not all.  It is only available (I think) as a web page.
+
+It could be argued that these two documents are enough, when viewed alongside the &quot;last updated&quot; data points for files, for people to understand and evaluate datasets, before accessing them.  Granted, it could also be possible to access the [IATI Dashboard](http://dashboard.iatistandard.org/index.html) to evaluate data - and perhaps there is chance to build more services around this.
+ 
+However, a brief tour of the forms on the IATI Registry can illustrate that these are quite often &quot;blank&quot;: [here](https://iatiregistry.org/publisher/about/abt) and [here](https://iatiregistry.org/publisher/about/defra_transparency) (picked at random).  Additionally, we have no information as to when this data was last updated, etc.  It also seems the formats of this information is less &quot;standardised&quot; and &quot;machine readable&quot;, which is curious, considering the focus of IATI.
+
+I therefore wanted to ask if others in the community have any interest to support greater production and access to &quot;_data on the data_&quot;, which might make for an interesting TAG discussion.  
+
+With this in mind, there could be two related topics:
+
+- What purpose does the [IATI Registry Record Schema](http://iatistandard.org/202/schema/downloads/iati-registry-record-schema.xsd) serve in all this?  It&#39;s been around since the very start of IATI, but not often utilised.
+- Services such as the [ODI Certificates](https://certificates.theodi.org/en/) have gained traction recently, in terms of methods to record such information - are they useful to the IATI community?
+
+Fundamentally, we may need to close the gap between the timeliness and comprehensiveness of the information recorded _about_ IATI data, so that data users can easily and effectively process it for their needs.</description>
+    
+    <lastBuildDate>Thu, 27 Apr 2017 08:13:49 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/how-can-we-trust-iati-data/575.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How can we trust IATI data?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>(or, how can <em>the computers</em> trust the data?)</p>
+<p>We know from the “<a href="http://www.developmentgateway.org/assets/post-resources/IATI-JuneSCMeetings-FINAL.pdf" rel="nofollow noopener">Use of IATI in Country Systems</a>” paper (written by <a class="mention" href="/u/joshua_powell">@Joshua_Powell</a> and team) and from user research around the <a href="https://www.interaction.org/project/open-ag-funding/resources" rel="nofollow noopener">Initiative for Open Ag Funding</a> (myself, <a class="mention" href="/u/laia_grino">@laia_grino</a> &amp; <a class="mention" href="/u/timdavies">@TimDavies</a>) that access to <em>information about</em> the production, upkeep and conditions of any IATI data file are key aspects to building trust, which then play a key part in any decision for people to use it.</p>
+<p>Currently, it seems that this “metadata” is recorded in two possible places:</p>
+<ul>
+<li>The publisher Implementation Schedule (IS).  This is usually a spreadsheet.  It’s not published by all.</li>
+<li>The “About” section for a publisher on the IATI Registry.  This mirrors some of the fields in the IS, but not all.  It is only available (I think) as a web page.</li>
+</ul>
+<p>It could be argued that these two documents are enough, when viewed alongside the “last updated” data points for files, for people to understand and evaluate datasets, before accessing them.  Granted, it could also be possible to access the <a href="http://dashboard.iatistandard.org/index.html" rel="nofollow noopener">IATI Dashboard</a> to evaluate data - and perhaps there is chance to build more services around this.</p>
+<p>However, a brief tour of the forms on the IATI Registry can illustrate that these are quite often “blank”: <a href="https://iatiregistry.org/publisher/about/abt" rel="nofollow noopener">here</a> and <a href="https://iatiregistry.org/publisher/about/defra_transparency" rel="nofollow noopener">here</a> (picked at random).  Additionally, we have no information as to when this data was last updated, etc.  It also seems the formats of this information is less “standardised” and “machine readable”, which is curious, considering the focus of IATI.</p>
+<p>I therefore wanted to ask if others in the community have any interest to support greater production and access to “<em>data on the data</em>”, which might make for an interesting TAG discussion.</p>
+<p>With this in mind, there could be two related topics:</p>
+<ul>
+<li>What purpose does the <a href="http://iatistandard.org/202/schema/downloads/iati-registry-record-schema.xsd" rel="nofollow noopener">IATI Registry Record Schema</a> serve in all this?  It’s been around since the very start of IATI, but not often utilised.</li>
+<li>Services such as the <a href="https://certificates.theodi.org/en/" rel="nofollow noopener">ODI Certificates</a> have gained traction recently, in terms of methods to record such information - are they useful to the IATI community?</li>
+</ul>
+<p>Fundamentally, we may need to close the gap between the timeliness and comprehensiveness of the information recorded <em>about</em> IATI data, so that data users can easily and effectively process it for their needs.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-can-we-trust-iati-data/575/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-can-we-trust-iati-data/575/1</link>
+        <pubDate>Tue, 20 Sep 2016 22:50:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-575-1</guid>
+        <source url="https://discuss.iatistandard.org/t/how-can-we-trust-iati-data/575.rss">How can we trust IATI data?</source>
+      </item>
+  </channel>
+</rss>

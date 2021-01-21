@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Parsing IATI data from JSON using Ruby</title>
+    <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445</link>
+    <description>Hello, I&#39;m trying to parse IATI data from JSON format using Ruby rather than Python. Has anyone done this? I&#39;ve got halfway using JSON that I downloaded via OIPA but I&#39;m getting an unexpected token error. Anyone know what that means? This didn&#39;t work (found on stack overflow):
+
+JSON.parse somehow did not like UTF-8-encoded files. Encode the files to ASCII (= ISO 8859-1)
+
+Any help appreciated!</description>
+    
+    <lastBuildDate>Wed, 20 Apr 2016 10:31:19 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Parsing IATI data from JSON using Ruby</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="9" data-topic="445">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>such a shame that the aidinfo labs site has been taken down, there’s a load of useful information in there</p>
+</blockquote>
+</aside>
+<p>Thanks for flagging this <a class="mention" href="/u/markbrough">@markbrough</a> - I’ll look into this and report back shortly.</p>
+          <p><a href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/10</link>
+        <pubDate>Wed, 20 Apr 2016 10:31:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-445-10</guid>
+        <source url="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss">Parsing IATI data from JSON using Ruby</source>
+      </item>
+      <item>
+        <title>Parsing IATI data from JSON using Ruby</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Sarah - I just remembered that I also wrote a little Ruby/Rails application to pull IATI data from the Registry and display it. It’s about 5 years old and the code might not be that nice but this is the main bit that gets data from the Registry and parses it (from XML) into a database – perhaps it is helpful:<br>
+<aside class="onebox githubblob">
+  <header class="source">
+      <a href="https://github.com/markbrough/IATI-Data/blob/master/app/controllers/iatiregistry_controller.rb" target="_blank" rel="nofollow noopener">github.com</a>
+  </header>
+  <article class="onebox-body">
+    <h4><a href="https://github.com/markbrough/IATI-Data/blob/master/app/controllers/iatiregistry_controller.rb" target="_blank" rel="nofollow noopener">markbrough/IATI-Data/blob/master/app/controllers/iatiregistry_controller.rb</a></h4>
+<pre><code class="lang-rb">class IatiregistryController &lt; ApplicationController
+  def getPackage
+    @package = Package.find(params[:id])
+	  pu = {}
+	  pu[:retrieved] = 1
+	  pu[:retrieved_date] = DateTime.now
+	  @package.update_attributes(pu)
+
+    # check if this package is already in db
+    @thetext ='';
+    @activity_exists = Activity.find_by_package_id(@package.packageid)
+    if @activity_exists
+	@thetext += "&lt;p&gt;The package &lt;b&gt;" + @package.name + "&lt;/b&gt; (" + @package.title + ") has already been downloaded.&lt;/p&gt;"
+    else
+	@thetext += "&lt;p&gt;Downloading new package &lt;b&gt;" + @package.name + "&lt;/b&gt; (" + @package.title + ").&lt;/p&gt;"
+    url = @package.resources_url
+	require 'net/http'
+	require 'rexml/document'
+
+	# get the XML data as a string
+</code></pre>
+
+  This file has been truncated. <a href="https://github.com/markbrough/IATI-Data/blob/master/app/controllers/iatiregistry_controller.rb" target="_blank" rel="nofollow noopener">show original</a>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>There’s a very brief write-up on the aidinfo labs site:<br>
+<a href="https://web.archive.org/web/20110927111130/http://www.aidinfolabs.org/archives/416" class="onebox" target="_blank" rel="nofollow noopener">https://web.archive.org/web/20110927111130/http://www.aidinfolabs.org/archives/416</a></p>
+<p>Incidentally, that link was via the internet archive - such a shame that the aidinfo labs site has been taken down, there’s a load of useful information in there; can someone from DI try and get it back up again, even just as a historical record?</p>
+          <p><a href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/9</link>
+        <pubDate>Sat, 16 Apr 2016 11:27:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-445-9</guid>
+        <source url="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss">Parsing IATI data from JSON using Ruby</source>
+      </item>
+      <item>
+        <title>Parsing IATI data from JSON using Ruby</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Ross and Vincent <a class="mention" href="/u/r_clements">@r_clements</a> <a class="mention" href="/u/vincentvw">@VincentVW</a>, thanks for the link, exactly what I was looking for!</p>
+<p>Sarah</p>
+          <p><a href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/8</link>
+        <pubDate>Fri, 08 Apr 2016 13:42:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-445-8</guid>
+        <source url="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss">Parsing IATI data from JSON using Ruby</source>
+      </item>
+      <item>
+        <title>Parsing IATI data from JSON using Ruby</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/siemvaessen">@siemvaessen</a>  it’s a Ruby error.</p>
+          <p><a href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/7</link>
+        <pubDate>Fri, 08 Apr 2016 13:22:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-445-7</guid>
+        <source url="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss">Parsing IATI data from JSON using Ruby</source>
+      </item>
+      <item>
+        <title>Parsing IATI data from JSON using Ruby</title>
+        <dc:creator><![CDATA[r_clements]]></dc:creator>
+        <description><![CDATA[
+            <p>[parsing examples] (<a href="https://github.com/DFID/devtracker-from-api/blob/master/helpers/country_helpers.rb" rel="nofollow noopener">https://github.com/DFID/devtracker-from-api/blob/master/helpers/country_helpers.rb</a>)</p>
+          <p><a href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/6</link>
+        <pubDate>Thu, 07 Apr 2016 15:15:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-445-6</guid>
+        <source url="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss">Parsing IATI data from JSON using Ruby</source>
+      </item>
+      <item>
+        <title>Parsing IATI data from JSON using Ruby</title>
+        <dc:creator><![CDATA[r_clements]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Sara, you can find some (parsing examples) [<a href="https://github.com/DFID/devtracker-from-api/blob/master/helpers/country_helpers.rb" rel="nofollow noopener">https://github.com/DFID/devtracker-from-api/blob/master/helpers/country_helpers.rb</a>] in the helpers directory of the devtracker-from-api code.</p>
+<p>I have userd the country_helpers example as I think that that one is pretty intuative but most of the files in the helpers directory would contain at least a few OIPA api calls.</p>
+          <p><a href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/5</link>
+        <pubDate>Thu, 07 Apr 2016 15:13:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-445-5</guid>
+        <source url="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss">Parsing IATI data from JSON using Ruby</source>
+      </item>
+      <item>
+        <title>Parsing IATI data from JSON using Ruby</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>DevTracker is an Sinatra (Ruby) app that runs on the OIPA API, maybe there’s suggestions to be found there; <a href="https://github.com/DFID/devtracker-from-api/search?utf8=%E2%9C%93&amp;q=json.parse" rel="nofollow noopener">https://github.com/DFID/devtracker-from-api/search?utf8=✓&amp;q=json.parse</a></p>
+<p>I’ll also mention <a class="mention" href="/u/r_clements">@r_clements</a> here (developer on DevTracker).</p>
+          <p><a href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/4</link>
+        <pubDate>Thu, 07 Apr 2016 14:48:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-445-4</guid>
+        <source url="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss">Parsing IATI data from JSON using Ruby</source>
+      </item>
+      <item>
+        <title>Parsing IATI data from JSON using Ruby</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Sara,</p>
+<p>We don’t do Ruby, so can’t help you out there.</p>
+<p>When you say ‘halfway using JSON &amp; the unexpected token error’ =&gt; do you mean an OIPA unexpected token error or a Ruby error?</p>
+<p>Siem</p>
+          <p><a href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/3</link>
+        <pubDate>Thu, 07 Apr 2016 10:16:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-445-3</guid>
+        <source url="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss">Parsing IATI data from JSON using Ruby</source>
+      </item>
+      <item>
+        <title>Parsing IATI data from JSON using Ruby</title>
+        <dc:creator><![CDATA[Kasper]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m pretty sure that <a class="mention" href="/u/siemvaessen">@siemvaessen</a> or <a class="mention" href="/u/vincentvw">@VincentVW</a> could help you with that :)…</p>
+          <p><a href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/2</link>
+        <pubDate>Wed, 06 Apr 2016 18:58:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-445-2</guid>
+        <source url="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss">Parsing IATI data from JSON using Ruby</source>
+      </item>
+      <item>
+        <title>Parsing IATI data from JSON using Ruby</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello, I’m trying to parse IATI data from JSON format using Ruby rather than Python. Has anyone done this? I’ve got halfway using JSON that I downloaded via OIPA but I’m getting an unexpected token error. Anyone know what that means? This didn’t work (found on stack overflow):</p>
+<p>JSON.parse somehow did not like UTF-8-encoded files. Encode the files to ASCII (= ISO 8859-1)</p>
+<p>Any help appreciated!</p>
+          <p><a href="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445/1</link>
+        <pubDate>Tue, 05 Apr 2016 15:53:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-445-1</guid>
+        <source url="https://discuss.iatistandard.org/t/parsing-iati-data-from-json-using-ruby/445.rss">Parsing IATI data from JSON using Ruby</source>
+      </item>
+  </channel>
+</rss>

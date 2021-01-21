@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How do you structure your projects?</title>
+    <link>https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579</link>
+    <description>We are carrying out some work to refine and improve the way we structure programmes and projects within DFID. 
+
+At present we have a &quot;simple&quot; two-tier structure (called Project and Component). The Project level contains the overall purpose and narrative for the activity - including business case, reviews and logframe. The Component level contains one or more agreements (purchase orders, grants, MOUs) with details of geography, sector, funding arrangement, transactions etc. 
+
+This works for some simple programmes, but breaks down where there are more complex arrangements such as umbrella programmes, where there can be hundreds of Components under one Project. The 2-tier model doesn&#39;t match the reality of our range of programming.
+
+We would like to move to a structure that better reflects this reality and diversity of programming, that helps programme managers to describe their programmes well, and that captures the important data at the right level. 
+
+What do other donors do? Do you have a multi-level structure or do you have a single tier activity level? How do you map your structure to IATI?
+
+Please either share here or email me directly with your diagrams!
+
+Thanks
+
+John</description>
+    
+    <lastBuildDate>Thu, 13 Dec 2018 13:54:22 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How do you structure your projects?</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry to be a little late to this discussion! My one plea would be to keep the hierarchy consistent across your projects, if this is possible. This is part of the way we designed the import interface in Bangladesh and seemed to make the import process a lot simpler.</p>
+<p>Perhaps there are some big advantages to allowing multiple different hierarchies for the same publisher, but it would be good if this can be balanced against increasing complexity on the users’ end. It would be good if thinking through the import routines required (in a way that would scale across many publishers rather than be specific to one) could be included as part of thinking about how to arrange an individual publisher’s hierarchy.</p>
+<p>Actually, I would guess you would already be thinking about this issue <a class="mention" href="/u/johnadams">@JohnAdams</a> as it would obviously have implications for DevTracker.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579/5</link>
+        <pubDate>Thu, 13 Dec 2018 13:54:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1579-5</guid>
+        <source url="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579.rss">How do you structure your projects?</source>
+      </item>
+      <item>
+        <title>How do you structure your projects?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1579">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/b9e5f3/40.png" class="avatar"> Melinda:</div>
+<blockquote>
+<p>Well… I was hoping others would take the dive and give it a go. But fine, Sweden will go first.</p>
+</blockquote>
+</aside>
+<p>Have been watching, but just wasn’t sure what would be useful to share. From what I’ve seen/understood of DFID and SIDA models, GAC seems much simpler:</p>
+<ul>
+<li>
+<p>A project in our (SAP) system has single funding recipient (implementing partner) and normally a single contractual instrument (e.g. a grant agreement, a contract). This is what we publish as an activity in IATI.</p>
+</li>
+<li>
+<p>When a projet has more than one funding recipient or contractual instrument, this second component is much smaller and is for monitoring or evaluation of the project, so it is still part of the same project. At the moment we are not able to extract these additional components for publication.</p>
+</li>
+<li>
+<p>We publish “siblings” when projects are related to each other. This is often when there are subsequent phases to a project (with the same partner).</p>
+</li>
+</ul>
+<p>All this seems very simple to me (of course <img src="https://discuss.iatistandard.org/images/emoji/twitter/grin.png?v=5" title=":grin:" class="emoji" alt=":grin:">).  Future improvements could include linking projects related to the same e.g. Call for Proposals, but this is not our dominant business model (nor is it being asked by stakeholders) so it has not been a priority.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579/4</link>
+        <pubDate>Fri, 07 Dec 2018 22:09:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1579-4</guid>
+        <source url="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579.rss">How do you structure your projects?</source>
+      </item>
+      <item>
+        <title>How do you structure your projects?</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>Well… I was hoping others would take the dive and give it a go. But fine, Sweden will go first.</p>
+<p>We have been struggling with this issue right off bat and have resorted to publishing independent activities that represent the unique combination of statistics per economic entity. Our general model is one contribution that can have one or more agreements that in turn can have one or more componets. In many cases this results in one activity. But to complicate things we:</p>
+<ol>
+<li>report the multiple country- and sector combinations from our CSO frame agreements with an allocation template. Resulting in every unique contribution/agreement/component/country/sector combination having its own activity (thus our sickening long IATI Id’s <img src="https://discuss.iatistandard.org/images/emoji/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"> and plentitude of activities).</li>
+<li>In 2015 we changed to this model from previously having the model agreement/contribution/component/allocation template.</li>
+<li>We still use a combination of the two models when we have umbrella agreements with multilaterals.</li>
+<li>We have expanded our publications to a more detailed humanitarian division where crisis/cash/RRM etc. make up unique combinations.</li>
+<li>At some point we will probably want to publish loans and guarantees.</li>
+<li>Don’t even get me started on the SDG discussion and what impact it would have on the number of activities we would need to publish.</li>
+</ol>
+<p>The point is, the information is more and more detailed, and obviously we need to find a new way of coding our activities and review the possibility of publishing the percentage distributions of at least sectors in our activities. But we also need to bring our information together to join related activities, otherwise our publications are full of “noise” instead of meaningful tones in a bigger harmony.</p>
+<p>In the early days I tried representing this by using parents and children to represent information hierarchies, that is, information that was common for a larger group of activities was reported as a parent and didn’t have to be repeated for all activities. Given our old data model we published our agreement files where the agreement had hierarchy 1 and activity files where all activities under it had hierarchy 2, relating to the agreement. The idea was that the data user would be able to find all the activities that “belonged together”.</p>
+<p>And back then I made the preposterous mistake of listing all activities under one agreement as sibling and related them into absurdum (my eternal apologies for this Bill and Steven). This meant that an agreement with a contribution where an allocation template was used, giving 100 unique country/sector combinations, was each of one of them related to 99 other activities.</p>
+<p>We haven’t been publishing our agreements for a while and we just recently cleaned our activity files from the residue of this logic due to Marc B’s signal that it disrupted the reading of our data, the agreement data never seemed to be sought after, we’ve changed our model, and whatever was left in our files was causing confusion.</p>
+<p>We do not intend to repeat this last mistake but having some sort of information hierarchy in our reporting still makes sense to us. And something definitely needs to be done to hold the related information together. Otherwise it makes no sense and isn’t transparent.</p>
+<p>Given our present model, contribution would have hierarchy =1. But I am reluctant to go forward with this re-coding and I’m hoping for a more publisher harmonized solution. What makes sense for us to publish on this level may not be the same for another publisher who also has a contribution/component structure. I know I should have followed Amys threads closer, but I didn’t see any consensus there either.</p>
+<p>All can’t fit the same form, but we don’t want the users to have to read 50 different manuals to understand each and every publisher’s data. And code thereafter. Which was evident when we looked at the data in the AIMS. But maybe have a set of information logics available and then the publisher can provide information which they we follow (the same way we announce which standard version we use).</p>
+<p>Sorry for drowning this thread with such detail without any conclusions. Hoping somebody else will be a wizard and come up with a solution (that the rest of us can complain about <img src="https://discuss.iatistandard.org/images/emoji/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"> )</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579/3</link>
+        <pubDate>Wed, 05 Dec 2018 15:35:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1579-3</guid>
+        <source url="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579.rss">How do you structure your projects?</source>
+      </item>
+      <item>
+        <title>How do you structure your projects?</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ll look forward to the summary of your findings, John. As you probably remember, when we were looking into this in 2010/11, we discovered that if you asked five reporters you’d end up with six different answers.</p>
+<p>This is especially fraught because the different levels tend to be hard-coded both into reporters’ grant-management systems <em>and</em> into their administrative hierarchies, so asking them to standardise would be analogous to asking them to restructure their entire organisations.</p>
+<p>D</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579/2</link>
+        <pubDate>Tue, 27 Nov 2018 16:20:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1579-2</guid>
+        <source url="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579.rss">How do you structure your projects?</source>
+      </item>
+      <item>
+        <title>How do you structure your projects?</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>We are carrying out some work to refine and improve the way we structure programmes and projects within DFID.</p>
+<p>At present we have a “simple” two-tier structure (called Project and Component). The Project level contains the overall purpose and narrative for the activity - including business case, reviews and logframe. The Component level contains one or more agreements (purchase orders, grants, MOUs) with details of geography, sector, funding arrangement, transactions etc.</p>
+<p>This works for some simple programmes, but breaks down where there are more complex arrangements such as umbrella programmes, where there can be hundreds of Components under one Project. The 2-tier model doesn’t match the reality of our range of programming.</p>
+<p>We would like to move to a structure that better reflects this reality and diversity of programming, that helps programme managers to describe their programmes well, and that captures the important data at the right level.</p>
+<p>What do other donors do? Do you have a multi-level structure or do you have a single tier activity level? How do you map your structure to IATI?</p>
+<p>Please either share here or email me directly with your diagrams!</p>
+<p>Thanks</p>
+<p>John</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579/1</link>
+        <pubDate>Fri, 23 Nov 2018 10:08:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1579-1</guid>
+        <source url="https://discuss.iatistandard.org/t/how-do-you-structure-your-projects/1579.rss">How do you structure your projects?</source>
+      </item>
+  </channel>
+</rss>

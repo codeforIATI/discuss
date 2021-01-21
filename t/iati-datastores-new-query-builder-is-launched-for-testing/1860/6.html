@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/iati-datastores-new-query-builder-is-launched-for-testing/1860/6 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:03:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>IATI Datastore&#39;s new Query Builder is launched for testing - Notifications - IATI Community Discussions</title>
+    <meta name="description" content="IATI has launched a new online tool offering easy access to development and humanitarian data published according to the IATI Standard. This complements IATI’s existing suite of online tools for data users such as d-port&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1860.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;IATI Datastore&#39;s new Query Builder is launched for testing&#39;" href="../1860.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/iati-datastores-new-query-builder-is-launched-for-testing/1860/6" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/iati-datastores-new-query-builder-is-launched-for-testing/1860/6" />
+<meta property="og:title" content="IATI Datastore&#39;s new Query Builder is launched for testing" />
+<meta name="twitter:title" content="IATI Datastore&#39;s new Query Builder is launched for testing" />
+<meta property="og:description" content="Congratulations to @IATI-techteam and @siemvaessen and colleagues for amazing work, the Query Builder is looking great! Thanks also for the opportunity to provide input. I can see that an enormous amount of work has gone into this, so hopefully you are now into the final stretch.  I just wanted to check my understanding – I know that you can download the full set of results in XML. However, that XML output is not currently IATI Standard XML. I think the plan is to make full IATI-XML data availab..." />
+<meta name="twitter:description" content="Congratulations to @IATI-techteam and @siemvaessen and colleagues for amazing work, the Query Builder is looking great! Thanks also for the opportunity to provide input. I can see that an enormous amount of work has gone into this, so hopefully you are now into the final stretch.  I just wanted to check my understanding – I know that you can download the full set of results in XML. However, that XML output is not currently IATI Standard XML. I think the plan is to make full IATI-XML data availab..." />
+<meta property="article:published_time" content="2019-11-04T17:30:04+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../../index.html">
+          <img src="../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1860.html">IATI Datastore&#39;s new Query Builder is launched for testing</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/notifications/29.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #F73357'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Notifications</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-10-08T12:28:23Z' class='post-time'>
+                October 8, 2019, 12:28pm
+              </time>
+              <meta itemprop='dateModified' content='2019-10-08T12:28:23Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>IATI has launched a new online tool offering easy access to development and humanitarian data published according to the IATI Standard. This complements IATI’s existing suite of online tools for data users such as <a href="http://www.d-portal.org/ctrack.html#view=search">d-portal.org</a>, and allows for much more detailed queries and searches of published data than previously possible.</p>
+<p><strong><a href="https://iatidatastore.iatistandard.org/">Try the new IATI Datastore Query Builder now.</a></strong></p>
+<p><strong>About the IATI Datastore Query Builder</strong></p>
+<p>The new <a href="https://iatidatastore.iatistandard.org/">IATI Datastore Query Builder</a> allows complex searches of spending and activities published according to the IATI Standard by donor governments, development finance institutions, UN agencies, non-governmental organisations, foundations and private sector organisations. The Query Builder uses data available from IATI’s <a href="https://iatistandard.org/en/news/new-iati-datastore-api-launched-for-testing/">new Datastore</a>, released in September 2019.</p>
+<p>By entering search parameters into the online tool, users can access development and humanitarian activities across 32 different fields (elements) of the IATI Standard. For example, users can filter by transaction type, activity status, or whether an activity is specifically addressing a humanitarian crisis.</p>
+<p><strong><div class="lightbox-wrapper"><a class="lightbox" href="https://lh5.googleusercontent.com/ILcVcW4a2AjY5el7-Q4TamJZM_9f1yLBlxtNE7qkqeajh6CWkKZ_GKRBcgVdgjmnxwXVI6Q1XE6oNTPlPcdYFcPh11ZWJqG2lRMbP57B4VL0dxaa1RKkVBPqDcTPXOfymYIfrZWy" title=""><img src="https://lh5.googleusercontent.com/ILcVcW4a2AjY5el7-Q4TamJZM_9f1yLBlxtNE7qkqeajh6CWkKZ_GKRBcgVdgjmnxwXVI6Q1XE6oNTPlPcdYFcPh11ZWJqG2lRMbP57B4VL0dxaa1RKkVBPqDcTPXOfymYIfrZWy" alt="" width="500" height="418"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename"></span><span class="informations">1097×919</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></strong></p>
+<p><strong>Improved access to IATI data</strong></p>
+<p>The new IATI Datastore Query Builder provides access to data that complies with the most up-to-date rules of the IATI Standard. The new tool will:</p>
+<ul>
+<li>
+<p>Provide data from organisations that have used version 2 of the IATI Standard.</p>
+</li>
+<li>
+<p>Provide data that adheres to the Standard’s Schema. The IATI Schema provides the exact order and format in which publishers provide their IATI files. Technical information about the IATI Schema can be found on <a href="http://reference.iatistandard.org/203/schema/">IATI’s Reference site</a>.</p>
+</li>
+<li>
+<p>Provide more fields for querying and searching IATI data.</p>
+</li>
+</ul>
+<p><strong>CALL TO ACTION: Please test the IATI Datastore Query Builder 08th October - 05th November)</strong></p>
+<p>Users familiar with the IATI Standard are invited to test the new IATI Datastore Query Builder and provide feedback to the IATI Technical Team and <a href="https://www.zimmermanzimmerman.nl/">Zimmerman and Zimmerman</a>, which have worked closely together to develop this new tool. Specifically, users are invited to:</p>
+<ul>
+<li>Build queries and review the content of the data returned to ensure it accurately matches the elements/parameters selected</li>
+<li>Check that the data returned is usable in its selected format (CSV, JSON, XML)</li>
+<li>Report any issues</li>
+</ul>
+<p>Feedback should be provided by raising an issue with <a href="https://github.com/zimmerman-zimmerman/OIPA/issues">Github on the IATI Datastore</a> project. Users who are unable to access Github are welcome to share their feedback by emailing <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>.</p>
+<p>If after trying the tool users would like a demonstration of the Query Builder, they should send an email with specific questions to <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> and if there is sufficient demand, the Technical Team will set up a webinar demonstration during the testing phase.</p>
+<p><strong>What will happen after the new Datastore Query Builder testing phase?</strong></p>
+<p>After the testing period ends on 5th November, the team will review all suggestions for changes that were not addressed during the testing phase to inform the next phase of work on the tool.</p>
+<p>Based on the scope of changes needed following the testing phase, a date for the official launch of the Datastore Query Builder will be announced, and the old query builder will be phased out six months afterward.</p>
+<p>Thanks in advance to IATI’s dedicated community who are able to support the testing phase of the IATI Datastore Query Builder. For any questions please email: <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="6" />
+           <span class='post-likes'>6 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/YohannaLoucheur.html'><span itemprop='name'>YohannaLoucheur</span></a>
+            (Yohanna Loucheur)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-01T15:51:10Z' class='post-time'>
+                November 1, 2019,  3:51pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-01T15:51:10Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thank you to the Tech Team and Zimmerman and Zimmerman for giving us an opportunity to test-drive the new Query Builder. I spend some time trying it, and also enrolled colleagues for additional sets of eyes.<br>
+While specific issues were raised via the Github platform (kudos for the input forms provided on Github, they were very helpful!), I thought I would share some of our input here in a more reader-friendly form, for discussion and future reference.</p>
+<ul>
+<li>
+<p>General reactions were quite positive. People were glad to have fairly easy access to a lot of data. One person reported that the QB was much nicer to use than QWIDS (the DAC tool).</p>
+</li>
+<li>
+<p>Some people raised concerns about accessibility issues, for instance the insufficient contrast between the background colour of the QB, the input fields and the drop-down text. It may look fine on bigger &amp; newer screens, but on other screens it can be quite hard to see the fields or the text. This sounds fairly easy to fix so hopefully something can be done. More generally, we would suggest to submit the QB to an overall accessibility assessment to improve the experience for all users.</p>
+</li>
+<li>
+<p>Other concrete suggestions for improvements include:</p>
+</li>
+</ul>
+<ul>
+<li>adding filters for tags (especially SDGs) and policy markers (especially Gender Equality);</li>
+<li>a “preview” function before generating the data file (to e.g. see errors in the selection of filters without having to download and open the file);</li>
+<li>providing better namefiles, perhaps with time stamps, to distinguish them (useful when several files are generated in short order);</li>
+<li>enabling combined searches by role and type of organizations.</li>
+</ul>
+<p>We hope our input will be useful and look forward to the release of an even better Query Builder soon.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="5" />
+           <span class='post-likes'>5 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/YohannaLoucheur.html'><span itemprop='name'>YohannaLoucheur</span></a>
+            (Yohanna Loucheur)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-01T21:07:28Z'>
+              <time itemprop='dateModified' datetime='2019-11-01T21:10:00Z' class='post-time'>
+                November 1, 2019,  9:10pm
+              </time>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I have received additional feedback from another colleague that I thought I’d share as-is. This comes from someone who does not know - nor care - about the IATI Standard; she just wants to find information on aid activities.</p>
+<p>I know this “unexpert” use wasn’t the focus for this initial round of testing. And I don’t agree with all her remarks/suggestions (for instance, some things may be better addressed through the D-Portal). However, this feedback is worth considering as we continue to work on ways to increase the use of IATI data, via the QB and other tools.</p>
+<hr>
+<ol>
+<li>Would be preferable to not have the coding appear before the organization name, or at all (e.g. “NL-KVK-40530953: Amnesty International The Netherlands”). Is there a reason why it needs to be visible to the user?</li>
+<li>I wish that the field labelled “Search in title, activity or description” under Additional Filters appeared instead on the first screen, under Core Filters. This seems to be the most user-friendly field of all.</li>
+<li>The Query Builder “allows you to build common queries… in CSV, XML, and JSON format” might be important to users, but does not need to be so prominent.</li>
+<li>I tried to find out about secondary education in Vietnam involving international orgs. Five minutes later, I had no information and gave up.</li>
+<li>I wish that selecting a “sector category” would then prompt the “sector” field to show only the items that fall within the sector. Ditto selecting a recipient country: I tried Afghanistan and Mozambique, but none of those countries’ provinces appeared.</li>
+<li>“Transaction Provider Org” and “Transaction Receiver Org” (under Additional Filters) were terms that I am not familiar with. I did not know what to do with either, and the drop-down menus did not help.</li>
+<li>A proposed enhancement would be to avoid assuming the user knows things like the DAC Sector Codes or sub-national country regions.</li>
+<li>Another proposed enhancement would be to indicate which are mandatory fields, and which are optional.</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-04T08:09:13Z' class='post-time'>
+                November 4, 2019,  8:09am
+              </time>
+              <meta itemprop='dateModified' content='2019-11-04T08:09:13Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I think the query builder should be accessible to analysts who are not necessarily familiar with DAC and IATI terminologies and methodologies. It shouldn’t be too difficult to construct a short guidance note that explains core concepts.</p>
+<p>I think it should be possible to guide “unexperts” through queries such as “secondary education in Vietnam” through a brief list of tips.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/JoshStanley.html'><span itemprop='name'>JoshStanley</span></a>
+            (Josh Stanley)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-04T16:30:08Z'>
+              <time itemprop='dateModified' datetime='2019-11-07T14:22:28Z' class='post-time'>
+                November 7, 2019,  2:22pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/bill_anderson.html">@bill_anderson</a> I have been putting together a User Guide for the Query Builder which until now focuses largely on functionality.</p>
+<p>It does however give a brief outline of how to use each filter, and links to the appropriate guidance page or codelist.</p>
+<p>Do you agree that this would be sufficient in helping to guide a non-expert through their query or do you think there should be very brief terminology guidance (a glossary even) within the user guide itself?</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/markbrough.html'><span itemprop='name'>markbrough</span></a>
+            (Mark Brough)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-04T17:30:04Z' class='post-time'>
+                November 4, 2019,  5:30pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-04T17:30:04Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Congratulations to <a class="mention" href="../../../u/iati-techteam-2.html">@IATI-techteam</a> and <a class="mention" href="../../../u/siemvaessen.html">@siemvaessen</a> and colleagues for amazing work, the Query Builder is looking great! Thanks also for the opportunity to provide input. I can see that an enormous amount of work has gone into this, so hopefully you are now into the final stretch.</p>
+<p>I just wanted to check my understanding – I know that you can download the full set of results in XML. However, that XML output is not currently IATI Standard XML. I <em>think</em> the plan is to <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/1763" rel="nofollow noopener">make full IATI-XML data available in the near future</a>, but it would be great if you’d be able to confirm that, to ensure that the Datastore can be used by applications expecting IATI data.</p>
+<p>Many thanks!</p>
+<hr>
+<p>(For example, the title for <a href="https://test-datastore.iatistandard.org/search/activity/select?q=*:*&amp;wt=xml&amp;rows=1" rel="nofollow noopener">one random activity</a> currently looks like this):</p>
+<pre><code class="lang-xml">&lt;arr name="title"&gt;
+  &lt;str&gt;[{"lang":"en","narrative":"GCE: Maternal Immunization to protect infants against malaria"}]&lt;/str&gt;
+&lt;/arr&gt;
+</code></pre>
+<p>rather than this (which would be valid IATI-XML):</p>
+<pre><code class="lang-xml">&lt;title&gt;
+  &lt;narrative xml:lang="en"&gt;GCE: Maternal Immunization to protect infants against malaria&lt;/narrative&gt;
+&lt;/title&gt;
+</code></pre>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="4" />
+           <span class='post-likes'>4 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-05T12:31:32Z' class='post-time'>
+                November 5, 2019, 12:31pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-05T12:31:32Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="4" data-topic="1860">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.jpg" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>I think it should be possible to guide “unexperts” through queries such as “secondary education in Vietnam” through a brief list of tips.</p>
+</blockquote>
+</aside>
+<p>Perhaps even a ‘simple’ vs ‘expert’ switch which defaults to ‘simple’ for the unexpert.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Michelle_IOM.html'><span itemprop='name'>Michelle_IOM</span></a>
+            (Michelle Levesque)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-05T13:20:58Z'>
+              <time itemprop='dateModified' datetime='2019-11-05T13:21:17Z' class='post-time'>
+                November 5, 2019,  1:21pm
+              </time>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/joshstanley-2.html">@JoshStanley</a>,</p>
+<p>I’m happy to read through what you’ve written.  It is not wrong to assume that if I can understand it than anyone should be able to understand it.  I’m very far from being a technical expert.  Just ask <a class="mention" href="../../../u/siemvaessen.html">@siemvaessen</a>.</p>
+<p>Kind Regards,<br>
+Michelle</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-05T14:25:47Z' class='post-time'>
+                November 5, 2019,  2:25pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-05T14:25:47Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="8" data-topic="1860">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/michelle_iom/40/515_2.jpg" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>anyone should be able to understand it. I’m very far from being a technical expert. Just ask <a class="mention" href="../../../u/siemvaessen.html">@siemvaessen</a>.</p>
+</blockquote>
+</aside>
+<p>Stop saying that <img src="../../../images/emoji/twitter/slight_smilec164.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Michelle_IOM.html'><span itemprop='name'>Michelle_IOM</span></a>
+            (Michelle Levesque)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-05T14:59:21Z' class='post-time'>
+                November 5, 2019,  2:59pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-05T14:59:21Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Ok so I’m an IATI subject matter expert but the IT technical stuff still kicks me in the #*$&amp;.  <img src="../../../images/emoji/twitter/blushc164.png?v=9" title=":blush:" class="emoji" alt=":blush:"></p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-05T15:22:35Z' class='post-time'>
+                November 5, 2019,  3:22pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-05T15:22:35Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="7" data-topic="1860">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.jpg" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>Perhaps even a ‘simple’ vs ‘expert’ switch which defaults to ‘simple’ for the unexpert.</p>
+</blockquote>
+</aside>
+<p>Ooh… I’m a fan of this idea.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-05T16:02:12Z' class='post-time'>
+                November 5, 2019,  4:02pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-05T16:02:12Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="3" data-topic="1860">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_2.jpg" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>I have received additional feedback from another colleague that I thought I’d share as-is.</p>
+</blockquote>
+</aside>
+<p>Could you share them item by item on the <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues" rel="nofollow noopener">Github issue tracker</a> by any chance…?</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/YohannaLoucheur.html'><span itemprop='name'>YohannaLoucheur</span></a>
+            (Yohanna Loucheur)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-05T18:00:15Z' class='post-time'>
+                November 5, 2019,  6:00pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-05T18:00:15Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="12" data-topic="1860">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.jpg" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>Could you share them item by item on the <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues" rel="nofollow noopener">Github issue tracker</a> by any chance…?</p>
+</blockquote>
+</aside>
+<p>As I said as intro, I don’t necessarily agree with all of them - or don’t necessarily agree they should be addressed for initial release - which is why I didn’t put them on Github. But if you want to have all suggestions in a single location for future reference, happy to put them on Github.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/YohannaLoucheur.html'><span itemprop='name'>YohannaLoucheur</span></a>
+            (Yohanna Loucheur)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-05T18:05:12Z' class='post-time'>
+                November 5, 2019,  6:05pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-05T18:05:12Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="7" data-topic="1860">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.jpg" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>Perhaps even a ‘simple’ vs ‘expert’ switch which defaults to ‘simple’ for the unexpert.</p>
+</blockquote>
+</aside>
+<p>Not sure about this. I wonder if the “simple” queries should be re-directed to the D-Portal instead?<br>
+Though yeah, perhaps users could have options to make things more or less complicated (e.g. show/hide guidance, show/hide codes)</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-05T22:39:09Z' class='post-time'>
+                November 5, 2019, 10:39pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-05T22:39:09Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>It would be great to see the user stories etc of what the two different tools (QB vs D-portal) are targetting e.g. at the moment, d-portal has limited search options, so the role for the QB might be that it allows searching via all IATI fields (as made available by the DSv2) - this would be consistent with the suggestion that “simple” queries should be sent to d-portal, whereas the QB is for complex queries, from non-technical (non-programmer) users. Or maybe it is something different, but it would be good to share what the aim is for how these different IATI tools will coexist as it might make answering these questions much easier, also the ones on whether to e.g. have searching by finance_type, or untying_status etc in the QB interface.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Michelle_IOM.html'><span itemprop='name'>Michelle_IOM</span></a>
+            (Michelle Levesque)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-06T09:45:57Z' class='post-time'>
+                November 6, 2019,  9:45am
+              </time>
+              <meta itemprop='dateModified' content='2019-11-06T09:45:57Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My constant reminder that I’m not a “technical” person stems from my US/private sector background where “technical” generally refers to IT/computer folks whereas someone with a deep knowledge of something is a subject matter expert or SME.</p>
+<p>I don’t want to slip hairs here by starting a big discussion on the use of “technical”. But I do think what we are getting at is the use of the datastore for people who are not deeply versed in the data elements and their quirky definitions now how to extract info using an API.  Perhaps “Datastore Guidance for non-IATI Specialists”</p>
+<p>But I still offer my services as a reviewer.  I’ve only been working in this space for 2 years and I still remember how painful and steep the learning curve is for IATI.  I still struggle really.</p>
+<p>Kind Regards,<br>
+Michelle</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-06T16:21:00Z' class='post-time'>
+                November 6, 2019,  4:21pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-06T16:21:00Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="13" data-topic="1860">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_2.jpg" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>But if you want to have all suggestions in a single location for future reference, happy to put them on Github.</p>
+</blockquote>
+</aside>
+<p>Thanks <a class="mention" href="../../../u/yohannaloucheur-2.html">@YohannaLoucheur</a></p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-14T17:38:18Z' class='post-time'>
+                November 14, 2019,  5:38pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-14T17:38:18Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="6" data-topic="1860">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/markbrough/40/557_2.jpg" class="avatar"> markbrough:</div>
+<blockquote>
+<p>I <em>think</em> the plan is to <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/1763" rel="nofollow noopener">make full IATI-XML data available in the near future </a>, but it would be great if you’d be able to confirm that, to ensure that the Datastore can be used by applications expecting IATI data.</p>
+</blockquote>
+</aside>
+<p>Re-raising this question from <a class="mention" href="../../../u/markbrough.html">@markbrough</a> <a href="6.html">earlier in the thread</a>.</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/samuele-mattiuzzo.html'><span itemprop='name'>samuele-mattiuzzo</span></a>
+            (Samuele Mattiuzzo)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1860.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-15T16:15:14Z' class='post-time'>
+                November 15, 2019,  4:15pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-15T16:15:14Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Yes, it’s still planned and it’s currently being assessed by the Datastore team.<br>
+We will update once we have a final roadmap and eta status (which we’re working on at the moment)</p>
+        </div>
+
+        <meta itemprop='headline' content='IATI Datastore&#39;s new Query Builder is launched for testing'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="3" />
+           <span class='post-likes'>3 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/iati-datastores-new-query-builder-is-launched-for-testing/1860/6 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:03:20 GMT -->
+</html>

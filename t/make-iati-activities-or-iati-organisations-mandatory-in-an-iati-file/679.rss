@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Make `iati-activities` or `iati-organisations` mandatory in an IATI file</title>
+    <link>https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679</link>
+    <description>It has been spotted that the root `&lt;iati-activities&gt;` or `&lt;iati-organisations&gt;` elements are not set by the IATI schemas as a mandatory component of an IATI file.  Therefore, a file containing only the following would pass validation in the v2.02 schema:
+ 
+```
+&lt;title&gt;
+   &lt;narrative&gt;Activity title&lt;/narrative&gt;
+   &lt;narrative xml:lang=&quot;fr&quot;&gt;Titre de l&#39;activité&lt;/narrative&gt;
+   &lt;narrative xml:lang=&quot;es&quot;&gt;Título de la actividad&lt;/narrative&gt;
+&lt;/title&gt;
+```
+
+This type of thing is referred to as a type of ‘[XML error](http://dashboard.iatistandard.org/xml.html)’ on the Dashboard, under &#39;Files with non-standard roots’.  
+
+This would likely require a major version upgrade as the change would not be backwardly compatible.</description>
+    
+    <lastBuildDate>Wed, 22 Feb 2017 14:58:24 +0000</lastBuildDate>
+    <category>3.0.0 Major Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Make `iati-activities` or `iati-organisations` mandatory in an IATI file</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Since omitting the root elements, clearly is an error in the production of IATI files, this should definitely be part of 3.01. The same is true for other topics such as the use of invalid codes, non-existing version identifications, etc.</p>
+          <p><a href="https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679/2</link>
+        <pubDate>Wed, 22 Feb 2017 14:58:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-679-2</guid>
+        <source url="https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679.rss">Make `iati-activities` or `iati-organisations` mandatory in an IATI file</source>
+      </item>
+      <item>
+        <title>Make `iati-activities` or `iati-organisations` mandatory in an IATI file</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>It has been spotted that the root <code>&lt;iati-activities&gt;</code> or <code>&lt;iati-organisations&gt;</code> elements are not set by the IATI schemas as a mandatory component of an IATI file.  Therefore, a file containing only the following would pass validation in the v2.02 schema:</p>
+<pre><code class="lang-auto">&lt;title&gt;
+   &lt;narrative&gt;Activity title&lt;/narrative&gt;
+   &lt;narrative xml:lang="fr"&gt;Titre de l'activité&lt;/narrative&gt;
+   &lt;narrative xml:lang="es"&gt;Título de la actividad&lt;/narrative&gt;
+&lt;/title&gt;
+</code></pre>
+<p>This type of thing is referred to as a type of ‘<a href="http://dashboard.iatistandard.org/xml.html">XML error</a>’ on the Dashboard, under 'Files with non-standard roots’.</p>
+<p>This would likely require a major version upgrade as the change would not be backwardly compatible.</p>
+          <p><a href="https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679/1</link>
+        <pubDate>Mon, 23 Jan 2017 17:59:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-679-1</guid>
+        <source url="https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679.rss">Make `iati-activities` or `iati-organisations` mandatory in an IATI file</source>
+      </item>
+  </channel>
+</rss>

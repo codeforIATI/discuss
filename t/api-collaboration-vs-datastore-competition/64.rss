@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>API Collaboration vs datastore competition</title>
+    <link>https://discuss.iatistandard.org/t/api-collaboration-vs-datastore-competition/64</link>
+    <description>Based on a diagram @JohnAdams drew on a whiteboard:
+
+    FRONT-END  /-------------\ /-------------\  - - - -
+    APPS       | HTML Jquery | | iOS/Android | | etc. |  COMPETITION
+               \-------------/ \-------------/  - - - -
+
+               /--------------------------------------\
+               | API          - activity              |
+               |              - aggregate             |  COLLABORATION
+               |              - organisation          |
+               \--------------------------------------/
+
+               /-----------\ /------\  - - -
+    DATASTORES | IATI      | | OIPA | | etc. |           COMPETITION
+               | Datastore | |      | |      |
+               \-----------/ \------/  - - -
+
+               /--------------------------------------\
+               |           IATI REGISTRY              |  IATI MANAGED
+               \--------------------------------------/
+
+This diagram is similar to that in the slides for his talk at the 2014 TAG: http://discuss.iatistandard.org/uploads/default/40/a386e8913836a7a0.pdf</description>
+    
+    <lastBuildDate>Fri, 26 Sep 2014 10:10:54 +0000</lastBuildDate>
+    <category>APIs</category>
+    <atom:link href="https://discuss.iatistandard.org/t/api-collaboration-vs-datastore-competition/64.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>API Collaboration vs datastore competition</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>(from call 26th September)</p>
+<p>It would be useful for WG members to discuss the vision of how datastores and APIs can operate independently.  In other words, they may not always be from the same service provider.</p>
+<ul>
+<li>A datastore could be selected by a user around several factors (curation, quality, cost, service).</li>
+<li>With an API standard, people could then select an API provider along similar factors</li>
+</ul>
+<p>It may be important for this WG to discuss this, in order to clarify our focus</p>
+          <p><a href="https://discuss.iatistandard.org/t/api-collaboration-vs-datastore-competition/64/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/api-collaboration-vs-datastore-competition/64/2</link>
+        <pubDate>Fri, 26 Sep 2014 10:10:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-64-2</guid>
+        <source url="https://discuss.iatistandard.org/t/api-collaboration-vs-datastore-competition/64.rss">API Collaboration vs datastore competition</source>
+      </item>
+      <item>
+        <title>API Collaboration vs datastore competition</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>Based on a diagram <a class="mention" href="/u/johnadams">@JohnAdams</a> drew on a whiteboard:</p>
+<pre><code>FRONT-END  /-------------\ /-------------\  - - - -
+APPS       | HTML Jquery | | iOS/Android | | etc. |  COMPETITION
+           \-------------/ \-------------/  - - - -
+
+           /--------------------------------------\
+           | API          - activity              |
+           |              - aggregate             |  COLLABORATION
+           |              - organisation          |
+           \--------------------------------------/
+
+           /-----------\ /------\  - - -
+DATASTORES | IATI      | | OIPA | | etc. |           COMPETITION
+           | Datastore | |      | |      |
+           \-----------/ \------/  - - -
+
+           /--------------------------------------\
+           |           IATI REGISTRY              |  IATI MANAGED
+           \--------------------------------------/
+</code></pre>
+<p>This diagram is similar to that in the slides for his talk at the 2014 TAG: <a href="http://discuss.iatistandard.org/uploads/default/40/a386e8913836a7a0.pdf">http://discuss.iatistandard.org/uploads/default/40/a386e8913836a7a0.pdf</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/api-collaboration-vs-datastore-competition/64/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/api-collaboration-vs-datastore-competition/64/1</link>
+        <pubDate>Fri, 18 Jul 2014 12:01:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-64-1</guid>
+        <source url="https://discuss.iatistandard.org/t/api-collaboration-vs-datastore-competition/64.rss">API Collaboration vs datastore competition</source>
+      </item>
+  </channel>
+</rss>

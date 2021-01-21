@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/about-the-apis-working-group/13 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:50:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>About the APIs Working Group - APIs - IATI Community Discussions</title>
+    <meta name="description" content="INTRODUCTION This working group is a continuation of the previous work at http://wiki.iatistandard.org/wg/api/start 
+
+At the TAG meeting in Montreal, one of the sessions discussed the overall architecture of tools that h&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="13.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;About the APIs Working Group&#39;" href="13.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/about-the-apis-working-group/13" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/about-the-apis-working-group/13" />
+<meta property="og:title" content="About the APIs Working Group" />
+<meta name="twitter:title" content="About the APIs Working Group" />
+<meta property="og:description" content="INTRODUCTION  This working group is a continuation of the previous work at http://wiki.iatistandard.org/wg/api/start  At the TAG meeting in Montreal, one of the sessions discussed the overall architecture of tools that have been built on IATI data. The tools (OIPA, DevTracker, d-Portal, Sida etc) all appear to have a similar overall architecture:   Web presentation front-end API layer Data repository (SQL or noSQL database) including import from IATI Registry.  This working group exists to furth..." />
+<meta name="twitter:description" content="INTRODUCTION  This working group is a continuation of the previous work at http://wiki.iatistandard.org/wg/api/start  At the TAG meeting in Montreal, one of the sessions discussed the overall architecture of tools that have been built on IATI data. The tools (OIPA, DevTracker, d-Portal, Sida etc) all appear to have a similar overall architecture:   Web presentation front-end API layer Data repository (SQL or noSQL database) including import from IATI Registry.  This working group exists to furth..." />
+<meta property="article:published_time" content="2014-06-03T09:01:16+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="13.html">About the APIs Working Group</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/community-zone/apis/10.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #2695B8'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>APIs</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="13.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2014-06-03T09:01:16Z'>
+              <time itemprop='dateModified' datetime='2014-06-13T15:41:55Z' class='post-time'>
+                June 13, 2014,  3:41pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><strong>INTRODUCTION</strong><br>
+This working group is a continuation of the previous work at <a href="http://wiki.iatistandard.org/wg/api/start" rel="nofollow noopener">http://wiki.iatistandard.org/wg/api/start</a></p>
+<p>At the TAG meeting in Montreal, one of the sessions discussed the overall architecture of tools that have been built on IATI data. The tools (OIPA, DevTracker, d-Portal, Sida etc) all appear to have a similar overall architecture:</p>
+<ul>
+<li>Web presentation front-end</li>
+<li>API layer</li>
+<li>Data repository (SQL or noSQL database) including import from IATI Registry.</li>
+</ul>
+<p>This working group exists to further develop an IATI API Standard or Convention that can be used by implementers. Having a common API standard will properly decouple the presentation and data layers<br>
+enabling implementers to concentrate on building the best presentation or data layer they an.</p>
+<p><strong>OBJECTIVES</strong><br>
+Seek agreement on whether an API Convention is a desirable thing.</p>
+<p>A shared IATI API convention</p>
+<p>Work on APIs including:</p>
+<ul>
+<li>IATI API Convention (current google doc)</li>
+<li>Customisable queries for the API</li>
+<li>Linked Data representation of IATI data (SPARQL)</li>
+</ul>
+<p><strong>DELIVERABLES</strong><br>
+Updated API Convention document including:</p>
+<ul>
+<li>Activity API</li>
+<li>Organisation API</li>
+<li>Aggregate API</li>
+</ul>
+<p>Schemas describing XML/JSON responses<br>
+Comparison table of current APIs to the updated convention document<br>
+Standards on how to construct APIs for different purposes.<br>
+Reference implementations for the API<br>
+Description of upgrade process/change control process for APIs</p>
+<p><strong>TIMESCALE</strong><br>
+The API Working Group will operate until the members of the group decide that there is no longer a requirement for the group to exist (Maybe this could timebound to some deliverables)</p>
+<p><strong>MEMBERSHIP</strong><br>
+The group should be open to anyone TAG member to participate and contribute.</p>
+<p><strong>MEETINGS</strong><br>
+The primary means of communication for the working group will be a mailing list (or Discourse).Skype? Do we want to set some regular meeting dates/frequencies?</p>
+<p><strong>ACCOUNTABILITY</strong><br>
+The group is accountable to the wider IATI TAG and will report back to the IATI TAG through the IATI TAG Newsletter and at the annual IATI TAG Meeting.</p>
+<p><strong>CO-ORDINATORS</strong><br>
+Ben Webb (<a class="mention" href="../../u/bjwebb.html">@bjwebb</a>): IATI Technical Team<br>
+Steven Flower (<a class="mention" href="../../u/stevieflow.html">@stevieflow</a>): IATI Technical Team</p>
+<p><strong>MEMBERS</strong><br>
+Please indicate your interest below, by 30 June 2014</p>
+<p><a class="mention" href="../../u/siemvaessen.html">@siemvaessen</a> is in<br>
+<a class="mention" href="../../u/jonesiom.html">@jonesiom</a> interested in automated private aid flow uploads from offshore “open banking” accounts to IATI metadata directory; attended TAG conference in Montreal (January 2014)</p>
+        </div>
+
+        <meta itemprop='headline' content='About the APIs Working Group'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Adrian.html'><span itemprop='name'>Adrian</span></a>
+            (Adrian Collier)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="13.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-06-27T08:03:00Z' class='post-time'>
+                June 27, 2014,  8:03am
+              </time>
+              <meta itemprop='dateModified' content='2014-06-27T08:03:00Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../u/adrian-2.html">@Adrian</a> is in too <img src="../../images/emoji/twitter/smileae52.png?v=5" title=":smile:" class="emoji" alt=":smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='About the APIs Working Group'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/bjwebb.html'><span itemprop='name'>bjwebb</span></a>
+            (Ben Webb)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="13.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-25T15:12:31Z' class='post-time'>
+                July 25, 2014,  3:12pm
+              </time>
+              <meta itemprop='dateModified' content='2014-07-25T15:12:31Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="1" data-topic="13">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Please indicate your interest below, by 30 June 2014</p>
+</blockquote>
+</aside>
+<p>Since this is passed, do we want a new way for people to join as a member? People can just reply to this post as <a class="mention" href="../../u/adrian-2.html">@Adrian</a> has done, but that might make looking through the membership list more difficult. Would it be a good idea to have a table of  members (maybe as a new post), which could also be a wiki post, so anyone could add themselves? Having a table would also allow us to add columns for what a member’s background/interests are (eg. do they work on one of the APIs).</p>
+        </div>
+
+        <meta itemprop='headline' content='About the APIs Working Group'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/danmihaila.html'><span itemprop='name'>danmihaila</span></a>
+            (danmihaila)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="13.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2014-07-31T07:17:50Z' class='post-time'>
+                July 31, 2014,  7:17am
+              </time>
+              <meta itemprop='dateModified' content='2014-07-31T07:17:50Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am in too. I will try to focus on this topic and am open to a skype chat if needed as well.</p>
+        </div>
+
+        <meta itemprop='headline' content='About the APIs Working Group'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/about-the-apis-working-group/13 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:50:03 GMT -->
+</html>

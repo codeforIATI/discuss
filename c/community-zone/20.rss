@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Community Zone - IATI Community Discussions</title>
+    <link>https://discuss.iatistandard.org/c/community-zone/20</link>
+    <description>Topics in the &#39;Community Zone&#39; category This is where to post your questions, queries or requests for support from the IATI Community.</description>
+    
+      <lastBuildDate>Wed, 18 Nov 2020 15:17:01 +0000</lastBuildDate>
+      <atom:link href="https://discuss.iatistandard.org/c/community-zone/20.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Using near real-time IATI data to track aid flows</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>Using IATI Data</category>
+          <description><![CDATA[
+            <p><strong>Webinar: Using near real-time IATI data to track aid flows during the Covid-19 crisis</strong></p>
+<p><strong>Date: 30th November 2020</strong></p>
+<p><strong>Time: 12 noon-1pm GMT</strong></p>
+<p><strong>Hosted by: Development Initiatives</strong></p>
+<p><a href="https://zoom.us/meeting/register/tJYoc-mvrTwtE9I36cFB2b2sa_v9WsLGpgbc"><strong>Register here</strong></a></p>
+<p><strong>Moderator: Carolyn Culey, Director of Engagement and Partnerships</strong></p>
+<p><strong>Speakers:</strong></p>
+<ul>
+<li><strong>Global analysis – Amy Dodd, Head of Engagement</strong></li>
+<li><strong>East Africa analysis – Martha Bekele, Senior Analyst</strong></li>
+<li><strong>Methodology – Bill Anderson, Information Architect</strong></li>
+</ul>
+<p>During the current Covid-19 crisis, having data on aid spending in as near to real-time as possible, has never been more important in understanding current trends and informing decisions. Detailed information on ODA spending in 2020 will not be published by the OECD DAC until the end of 2021. DI’s analysis uses near real-time IATI data to show <a href="https://devinit.org/resources/how-aid-changing-covid-19-pandemic/">how aid is changing during the Covid-19 pandemic</a>, and examines the implications of this. While our initial report focusses on global trends, a forthcoming report by our analysts’ team in East Africa looks at country-level data in Kenya, Uganda, Tanzania, and Rwanda.</p>
+<p><strong>DI will present key findings from both reports, followed by a Q&amp;A session on these.</strong></p>
+<p>Using IATI data in this way has presented both opportunities and challenges. In the second part of this webinar, DI will explain the methodology behind our analysis and highlight some of the issues we have encountered in using real-time IATI data. These are being logged and shared with IATI’s business analysts, to provide a feedback loop to publishers so they can further improve the quality of their data, to make it more usable for analysts.</p>
+<p><strong>There will be a further round of Q&amp;A on methodology and on data challenges.</strong></p>
+<p><a href="https://zoom.us/meeting/register/tJYoc-mvrTwtE9I36cFB2b2sa_v9WsLGpgbc"><strong>Register here</strong></a></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/using-near-real-time-iati-data-to-track-aid-flows/2050">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/using-near-real-time-iati-data-to-track-aid-flows/2050</link>
+          <pubDate>Wed, 18 Nov 2020 15:17:01 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-2050</guid>
+          <source url="https://discuss.iatistandard.org/t/using-near-real-time-iati-data-to-track-aid-flows/2050.rss">Using near real-time IATI data to track aid flows</source>
+        </item>
+        <item>
+          <title>Humanitarian Scope - Activity/Transaction Level</title>
+          <dc:creator><![CDATA[AVaughn]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Colleagues -</p>
+<p>Earlier this summer USAID realized that placement of the Humanitarian Scope at the transaction level was causing a critical validation error in the IATI Validator (original post <a href="https://discuss.iatistandard.org/t/current-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19/1939/7">here</a>). USAID puts many details (such as country, sector) at the transaction level to improve the granularity of activity information. If we put Humanitarian Scope with the activity level, we will lose significant granularity in our information, as well as dramatically over-count USAID efforts to specific responses. Additionally, elements such as cluster code and glide code can differ among the transactions within one USAID activity.</p>
+<p>Initially, USAID decided the best interim solution would be to intentionally continue reporting Humanitarian Scope at the transaction level in order to preserve the granularity of our data. Because this is a critical validation error, however, we have now transitioned to “namespace” the element.</p>
+<p>Rather than continue using this workaround, USAID would like to see the IATI standard revised to accommodate the Humanitarian Scope at the transaction level in the same way recipient countries and sectors can be reported at the activity level or transaction level. This will not affect publishers who include this data at the activity level, but will allow for more granularity for those who want to publish transaction-level data. Additionally, we believe this improved granularity will be more useful for data users.</p>
+<p>It would be great to discuss this with others.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041</link>
+          <pubDate>Mon, 26 Oct 2020 16:29:08 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-2041</guid>
+          <source url="https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041.rss">Humanitarian Scope - Activity/Transaction Level</source>
+        </item>
+        <item>
+          <title>Publisher ID issue</title>
+          <dc:creator><![CDATA[nlr]]></dc:creator>
+          <category>IATI Standard</category>
+          <description><![CDATA[
+            <p>Dear reader,</p>
+<p>I have been including transactions for my organization into AIDstream. I tried to publish our data to IATI but I repeatedly receive a pop-up warning that our publisher ID (under registry information) was not correct. However, I don’t understand which publisher ID should be placed, because our IATI publisher ID is somehow not valid.</p>
+<p>If anyone can help me in this issue, I look very much forward to your reply. The AIDstream support desk was unfortunately not of any help.</p>
+<p>Warm regards from the Netherlands,<br>
+Naomi</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/publisher-id-issue/2030">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/publisher-id-issue/2030</link>
+          <pubDate>Fri, 09 Oct 2020 13:53:50 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-2030</guid>
+          <source url="https://discuss.iatistandard.org/t/publisher-id-issue/2030.rss">Publisher ID issue</source>
+        </item>
+        <item>
+          <title>SDGs &amp; IATI - who is using the data?</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Using IATI Data</category>
+          <description><![CDATA[
+            <p>HI everyone</p>
+<p>Thanks to d-portal, I noticed that there are 25,742 activities that have an SDG target or goal at the <code>tag</code> element</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/ccb93482e72ac348979596122184d95e97aa42f8.jpeg" data-download-href="https://discuss.iatistandard.org/uploads/default/ccb93482e72ac348979596122184d95e97aa42f8" title="d-portal"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/ccb93482e72ac348979596122184d95e97aa42f8_2_690x373.jpeg" alt="d-portal" data-base62-sha1="td4cECE5yZXNZDumYJcyjGVR5qM" width="690" height="373" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/ccb93482e72ac348979596122184d95e97aa42f8_2_690x373.jpeg, https://discuss.iatistandard.org/uploads/default/optimized/1X/ccb93482e72ac348979596122184d95e97aa42f8_2_1035x559.jpeg 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/ccb93482e72ac348979596122184d95e97aa42f8_2_1380x746.jpeg 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/ccb93482e72ac348979596122184d95e97aa42f8_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">d-portal</span><span class="informations">1982×1074 329 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>d-portal also shows me that these activities are provided by 14 IATI publishers:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/44cff458c5f7bf25fc7212733b6fbca7349a3c7d.jpeg" data-download-href="https://discuss.iatistandard.org/uploads/default/44cff458c5f7bf25fc7212733b6fbca7349a3c7d" title="d-portal (1)"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/44cff458c5f7bf25fc7212733b6fbca7349a3c7d_2_690x230.jpeg" alt="d-portal (1)" data-base62-sha1="9OK0wjUy3Nc5s7pvefU2yfHG5Xv" width="690" height="230" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/44cff458c5f7bf25fc7212733b6fbca7349a3c7d_2_690x230.jpeg, https://discuss.iatistandard.org/uploads/default/optimized/1X/44cff458c5f7bf25fc7212733b6fbca7349a3c7d_2_1035x345.jpeg 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/44cff458c5f7bf25fc7212733b6fbca7349a3c7d_2_1380x460.jpeg 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/44cff458c5f7bf25fc7212733b6fbca7349a3c7d_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">d-portal (1)</span><span class="informations">1968×658 253 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>And - you guessed it - <a href="http://d-portal.org/ctrack.html?/tag@vocabulary=2%2C3#view=list_publishers" rel="nofollow noopener">d-portal then lets me see who these are</a>:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/4aa2b61d0ac58f3417b0cfef878ea1d205581b06.png" data-download-href="https://discuss.iatistandard.org/uploads/default/4aa2b61d0ac58f3417b0cfef878ea1d205581b06" title="d-portal (2)"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/4aa2b61d0ac58f3417b0cfef878ea1d205581b06_2_690x460.png" alt="d-portal (2)" data-base62-sha1="aEfWiEZHTMnLj532SXE0nfhp5bw" width="690" height="460" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/4aa2b61d0ac58f3417b0cfef878ea1d205581b06_2_690x460.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/4aa2b61d0ac58f3417b0cfef878ea1d205581b06_2_1035x690.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/4aa2b61d0ac58f3417b0cfef878ea1d205581b06_2_1380x920.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/4aa2b61d0ac58f3417b0cfef878ea1d205581b06_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">d-portal (2)</span><span class="informations">1940×1294 588 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>So - it’s good to see some usage.</p>
+<p>However, does this match the user needs that drove the initial need to <a href="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783">produce focused guidance</a> on SDGs?</p>
+<p>The number of publishers seem particularly low, vis-a-vis those that engaged in that whole process.</p>
+<p>Should we expect more?  Has anyone attempted to use this data?  What can it tell us?</p>
+<p>Look forward to any thoughts or insights!</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/sdgs-iati-who-is-using-the-data/2019">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/sdgs-iati-who-is-using-the-data/2019</link>
+          <pubDate>Tue, 15 Sep 2020 16:22:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-2019</guid>
+          <source url="https://discuss.iatistandard.org/t/sdgs-iati-who-is-using-the-data/2019.rss">SDGs &amp; IATI - who is using the data?</source>
+        </item>
+        <item>
+          <title>Show IATI: IATI Status</title>
+          <dc:creator><![CDATA[andylolz]]></dc:creator>
+          <category>Community Zone</category>
+          <description><![CDATA[
+            <p>A month ago, <a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/14">I mentioned</a> a status dashboard for monitoring IATI services. We’ve improved it a bit, and I’ve written about it here:<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://codeforiati.org/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://codeforiati.org/blog/2020/08/17/iati-status/" target="_blank" rel="nofollow noopener">Code for IATI</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://codeforiati.org/assets/img/logo-square.png?v=c6aaae6a5c27cb28b862a613a715216ab1428c38" class="thumbnail onebox-avatar" width="192" height="192">
+
+<h3><a href="https://codeforiati.org/blog/2020/08/17/iati-status/" target="_blank" rel="nofollow noopener">A status dashboard for IATI services - Code for IATI</a></h3>
+
+<p>Sometimes, web services break. They stop working. For all sorts of reasons. This code runs automated tests on various IATI services, to check they are performing as expected.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>The improved status dashboard is available here:<br>
+</p><aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://status.codeforiati.org/favicon.ico" class="site-icon" width="32" height="32">
+      <a href="https://status.codeforiati.org?utm_source=discuss" target="_blank" rel="nofollow noopener">IATI Status</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://status.codeforiati.org/assets/img/status.jpg" class="thumbnail onebox-avatar" width="240" height="240">
+
+<h3><a href="https://status.codeforiati.org?utm_source=discuss" target="_blank" rel="nofollow noopener">IATI Status</a></h3>
+
+<p>Monitoring the status of live IATI services and websites.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/show-iati-iati-status/2009">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/show-iati-iati-status/2009</link>
+          <pubDate>Mon, 17 Aug 2020 13:01:40 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-2009</guid>
+          <source url="https://discuss.iatistandard.org/t/show-iati-iati-status/2009.rss">Show IATI: IATI Status</source>
+        </item>
+        <item>
+          <title>Dashboard isn’t currently updating</title>
+          <dc:creator><![CDATA[andylolz]]></dc:creator>
+          <category>Community Zone</category>
+          <description><![CDATA[
+            <p>I’ve <a href="https://github.com/IATI/IATI-Dashboard/issues/575" rel="nofollow noopener">raised a ticket on github</a>, but flagging here as well for greater visibility:</p>
+<p><a href="https://status.codeforiati.org/" rel="nofollow noopener">IATI Service Monitor</a> is reporting that the dashboard was last updated more than 7 days ago. The timestamp in the footer suggests it was last updated on 5 August.</p>
+<p>Is this a known issue? Thanks</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/dashboard-isn-t-currently-updating/2005">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/dashboard-isn-t-currently-updating/2005</link>
+          <pubDate>Fri, 14 Aug 2020 06:50:50 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-2005</guid>
+          <source url="https://discuss.iatistandard.org/t/dashboard-isn-t-currently-updating/2005.rss">Dashboard isn’t currently updating</source>
+        </item>
+        <item>
+          <title>Lebanon disaster - GLIDE Code</title>
+          <dc:creator><![CDATA[SJohns]]></dc:creator>
+          <category>Community Zone</category>
+          <description><![CDATA[
+            <p>Hi, in case it’s useful, the GLIDE code for the Lebanon disaster (port explosion) is OT-2020-000177-LBN</p>
+<p><a href="https://glidenumber.net/glide/public/search/details.jsp?glide=22036&amp;record=1&amp;last=14" class="onebox" target="_blank" rel="nofollow noopener">https://glidenumber.net/glide/public/search/details.jsp?glide=22036&amp;record=1&amp;last=14</a></p>
+<p>and</p>
+<aside class="onebox allowlistedgeneric">
+  <header class="source">
+      <img src="https://reliefweb.int/favicon-32x32.png" class="site-icon" width="16" height="16">
+      <a href="https://reliefweb.int/disaster/ot-2020-000177-lbn" target="_blank" rel="nofollow noopener">ReliefWeb</a>
+  </header>
+  <article class="onebox-body">
+    <img src="" class="thumbnail" width="16" height="16">
+
+<h3><a href="https://reliefweb.int/disaster/ot-2020-000177-lbn" target="_blank" rel="nofollow noopener">Lebanon: Beirut Port Explosions - Aug 2020</a></h3>
+
+<p>Humanitarian situation reports, response plans, news, analyses, evaluations, assessments, maps, infographics and more on Lebanon: Beirut Port Explosions - Aug 2020</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>Really interesting to see reliefweb using the GLIDE code as the page ref for the disaster.</p>
+<p>Not sure what the HRP code is so if anyone has it, please share here.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/lebanon-disaster-glide-code/2004">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/lebanon-disaster-glide-code/2004</link>
+          <pubDate>Tue, 11 Aug 2020 14:46:54 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-2004</guid>
+          <source url="https://discuss.iatistandard.org/t/lebanon-disaster-glide-code/2004.rss">Lebanon disaster - GLIDE Code</source>
+        </item>
+        <item>
+          <title>Region codelist is out-of-date (from OECD DAC source)</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>IATI Standard</category>
+          <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/iati-techteam">@IATI-techteam</a></p>
+<p>The Region codelist seems out-of-date with the OECD DAC source.  There seem to be <a href="https://codelists.codeforiati.org/Region/" rel="nofollow noopener">nine new regional codes available</a>, which might be useful to publishers.</p>
+<p>I can see that the <a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895">community-run codelist</a> was updated on <a href="https://github.com/codeforIATI/IATI-Codelists-NonEmbedded/commits/master/xml/Region.xml" rel="nofollow noopener">13th April</a>, as the codelist “bot” identified an update to the OECD DAC source.</p>
+<p>It’d be great to know the timescales for the central IATI documentation to follow this.  I had understood similar automations were already in place.</p>
+<p>Thanks</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/region-codelist-is-out-of-date-from-oecd-dac-source/1992">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/region-codelist-is-out-of-date-from-oecd-dac-source/1992</link>
+          <pubDate>Wed, 15 Jul 2020 15:10:26 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1992</guid>
+          <source url="https://discuss.iatistandard.org/t/region-codelist-is-out-of-date-from-oecd-dac-source/1992.rss">Region codelist is out-of-date (from OECD DAC source)</source>
+        </item>
+        <item>
+          <title>Best Practices - Aid Type and Grand Bargain</title>
+          <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+          <category>Using IATI Data</category>
+          <description><![CDATA[
+            <p>Hello Everyone,</p>
+<p>Hoping to crowd source some ideas on best practices.  Apologies if this has been discussed before but I didn’t see it in previous discussions but admittedly I’m crap at finding old threads.  If I missed it don’t hesitate to point me to it.</p>
+<p>There are AidType vocabulary for both OECD and Grand Bargain (GB) and from what I can tell  you can code the same activity (default level) or transaction (transaction level) against both.</p>
+<p>Assuming that a publisher is:</p>
+<ol>
+<li>receiving money from a donor</li>
+<li>is not passing it on to an implementing partner</li>
+<li>coding at the transaction not activity level</li>
+</ol>
+<p>Questions, is it correct to assume:</p>
+<ol>
+<li>that codes 1-3 would only be used for incoming commitment (transaction type 11) or incoming funds (transaction type 1)</li>
+<li>code 4 would be for expenditures?</li>
+<li>is it best practice to code both transaction types 1 and 11 with aid types 1-3 or would it only be for the incoming commitment?</li>
+</ol>
+<p>Rather than replicating AidTypes in two different transaction types, it could simply be coded at the activity level.  But if these 3 vocabularies are only related to two transaction types won’t that mess up assumptions on the disbursement (3) and Expenditure (4) transaction types?</p>
+<p>In looking at the list of GB signatories, only a handful actually code to the GB aid type vocabulary 2-4 so perhaps <a class="mention" href="/u/stolk">@stolk</a>, <a class="mention" href="/u/pelleaardema">@pelleaardema</a>, <a class="mention" href="/u/stevieflow">@stevieflow</a> can chime in here as they work for/with a few of them.</p>
+<p>Thanks in advance.<br>
+Michelle</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983</link>
+          <pubDate>Thu, 02 Jul 2020 17:12:30 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1983</guid>
+          <source url="https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983.rss">Best Practices - Aid Type and Grand Bargain</source>
+        </item>
+        <item>
+          <title>IATI Switcheroo</title>
+          <dc:creator><![CDATA[shi]]></dc:creator>
+          <category>Community Zone</category>
+          <description><![CDATA[
+            <p>Hello,</p>
+<p>Hope all is well where you are. We made this over last weekend and thought we’d share it with you.</p>
+<p><a href="https://notshi.github.io/IATIswitcheroo/" class="onebox" target="_blank" rel="nofollow noopener">https://notshi.github.io/IATIswitcheroo/</a></p>
+<p>It’s a website that exposes some of d-portal’s internal data conversions; you could use it to convert an xml file to csv, make changes to that csv and upload it again to convert back to xml so this could be useful for small publishers.</p>
+<p>Optionally, you can use this to convert to html and have a quick preview of the data in print-friendly SAVi.</p>
+<p>Feedback and comments are much appreciated.</p>
+            <p><small>11 posts - 5 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/iati-switcheroo/1976">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/iati-switcheroo/1976</link>
+          <pubDate>Fri, 26 Jun 2020 17:59:02 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1976</guid>
+          <source url="https://discuss.iatistandard.org/t/iati-switcheroo/1976.rss">IATI Switcheroo</source>
+        </item>
+        <item>
+          <title>IATI Working Group &amp; Community of Practice: COVID-19?</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>IATI Standard</category>
+          <description><![CDATA[
+            <p>It’s great to see so much discussion and activity within the community in terms of how COVID-19 relates to the IATI standard</p>
+<p>Once again, many thanks to the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> for acting so quickly and efficiently to provide initial guidance and support to the community.</p>
+<p>We now seem to have a groundswell of activity and action, along with a fair number of challenges and considerations.  A lot of these are detailed in Discuss threads, but also in other discussions, webinars and non-digital channels (aka people talking to each other!).</p>
+<p>Back in September 2019, at the <a href="https://iatistandard.org/en/events/iati-members-assembly-2019/" rel="nofollow noopener">last Members’ Assembly</a>, the IATI membership endorsed the plan for us to move “beyond the TAG” as our only channel for discussion and deliberation, and into two main vehicles:</p>
+<ul>
+<li>
+<p><strong>Communities of Practice</strong> are the fora for practitioners to share, ask, answer and support one another.  Ideally, Communities of Practice are run on an open model, with some resource needed to avoid overlap and ensure engagement.</p>
+</li>
+<li>
+<p><strong>Working Groups</strong> are tasked by the Board (maybe at the request of Members) to research, consider, discuss and propose answers to <em>specific</em> challenges we are facing.  They are time-bound, have resource to conduct themselves and are accountable.  We might consider them to be “technical”, but they also need to speak to, and involve those, that are not so “technical”.</p>
+</li>
+</ul>
+<p>Right now, I can’t see any evidence of WGs or CoP being in existence.  <strong>Please can someone on the IATI Board provide an update?</strong></p>
+<p>And of course, to round off this thread - I think we have <strong>a perfect candidate for a Working Group and Community of Practice in terms the challenges COVID-19 is presenting</strong>.</p>
+<p>Do others agree?</p>
+            <p><small>4 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/iati-working-group-community-of-practice-covid-19/1956">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/iati-working-group-community-of-practice-covid-19/1956</link>
+          <pubDate>Thu, 07 May 2020 14:54:42 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1956</guid>
+          <source url="https://discuss.iatistandard.org/t/iati-working-group-community-of-practice-covid-19/1956.rss">IATI Working Group &amp; Community of Practice: COVID-19?</source>
+        </item>
+        <item>
+          <title>Open Contracting: COVID-19 Action Research Grants</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Using IATI Data</category>
+          <description><![CDATA[
+            <p>I noticed that the Open Contracting Partnership (cc <a class="mention" href="/u/james_mckinney">@James_McKinney</a>) have published a <a href="https://www.open-contracting.org/what-is-open-contracting/covid19/" rel="nofollow noopener">guidance page and request for proposals</a> relating to $3,000 action research projects on procurement data and COVID-19</p>
+<p>Alongside the current guidance and discussions of how best to use the IATI Standard, would we expect to also see something similar from “IATI” (board / secretariat / data use task force / publishers / donors), perhaps?</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/open-contracting-covid-19-action-research-grants/1942">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/open-contracting-covid-19-action-research-grants/1942</link>
+          <pubDate>Fri, 24 Apr 2020 11:46:13 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1942</guid>
+          <source url="https://discuss.iatistandard.org/t/open-contracting-covid-19-action-research-grants/1942.rss">Open Contracting: COVID-19 Action Research Grants</source>
+        </item>
+        <item>
+          <title>Tracking UK covid-19 grants - what could our IATI community learn?</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Community Zone</category>
+          <description><![CDATA[
+            <p>I wanted to share with the IATI community a project that uses data on financial flows in response to the covid-19 crisis, to provide a simple-yet-effective interface and call-to-action:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe.png" data-download-href="https://discuss.iatistandard.org/uploads/default/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe" title="Coronavirus response grants"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe_2_546x500.png" alt="Coronavirus response grants" data-base62-sha1="nxzrjq2co3JZu6DzA0wFRDzb0Jw" width="546" height="500" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe_2_546x500.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe_2_819x750.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Coronavirus response grants</span><span class="informations">979×896 41.3 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>The <a href="https://www.threesixtygiving.org/" rel="nofollow noopener">360Giving</a> initiative - which encourages grantmakers and foundations to publish their grant portfolio with an open data standard - launched the <strong><a href="https://covidtracker.threesixtygiving.org/" rel="nofollow noopener">Coronavirus response grants</a></strong> tracker a couple of weeks ago.</p>
+<p>On a nightly basis, it checks across the (as of today, April 10th) 362,077 records from 122 publishers for mentions of various text strings that could describe the crisis.  These could be in the title, description or even the name of the grant programme.</p>
+<p>These are then detailed in a dedicated tracker that visualises the key stats, lists the grants, and provides links for more info:<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486.png" data-download-href="https://discuss.iatistandard.org/uploads/default/3d519f89ebdc41bb88e7544ebed2aef7673f7486" title="Coronavirus response grants (1)"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486_2_690x221.png" alt="Coronavirus response grants (1)" data-base62-sha1="8Ks09Y1cbaMed9noV8pWqeLWllY" width="690" height="221" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486_2_690x221.png, https://discuss.iatistandard.org/uploads/default/original/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Coronavirus response grants (1)</span><span class="informations">969×311 36.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>360 have a similar operating model to IATI:</p>
+<ul>
+<li>Publishers share their data in a <a href="http://standard.threesixtygiving.org/en/latest/" rel="nofollow noopener">standardised format</a>, at their own URL</li>
+<li>A <a href="http://data.threesixtygiving.org/" rel="nofollow noopener">Registry</a> collates the links to this data</li>
+<li>A <a href="https://github.com/ThreeSixtyGiving/datastore" rel="nofollow noopener">Datastore</a> pulls this, and provides query APIs</li>
+<li>Tools visualise the data (eg <a href="http://grantnav.threesixtygiving.org/" rel="nofollow noopener">GrantNav</a>; <a href="https://insights.threesixtygiving.org/" rel="nofollow noopener">Insights</a>)</li>
+</ul>
+<p>360 have long had a catchall interface for users to search across all grants and (when publishers use <a href="https://grantnav.threesixtygiving.org/recipient/GB-CHC-1123908" rel="nofollow noopener">the same organisation reference</a>) recipients.  It’s very possible to <a href="https://grantnav.threesixtygiving.org/search?json_query=%7B%22query%22%3A+%7B%22bool%22%3A+%7B%22must%22%3A+%7B%22query_string%22%3A+%7B%22query%22%3A+%22%5C%22covid-19%5C%22+OR+%5C%22covid19%5C%22+OR+%5C%22coronavirus%5C%22%22%2C+%22default_field%22%3A+%22%2A%22%7D%7D%2C+%22filter%22%3A+%5B%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%2C+%22must%22%3A+%7B%7D%2C+%22minimum_should_match%22%3A+1%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%7B%22range%22%3A+%7B%22amountAwarded%22%3A+%7B%7D%7D%7D%2C+%22must%22%3A+%7B%7D%2C+%22minimum_should_match%22%3A+1%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%5D%7D%7D%2C+%22sort%22%3A+%7B%22_score%22%3A+%7B%22order%22%3A+%22desc%22%7D%7D%2C+%22aggs%22%3A+%7B%22fundingOrganization%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22fundingOrganization.id_and_name%22%2C+%22size%22%3A+3%7D%7D%2C+%22recipientOrganization%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22recipientOrganization.id_and_name%22%2C+%22size%22%3A+3%7D%7D%2C+%22recipientRegionName%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22recipientRegionName%22%2C+%22size%22%3A+3%7D%7D%2C+%22recipientDistrictName%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22recipientDistrictName%22%2C+%22size%22%3A+3%7D%7D%2C+%22currency%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22currency%22%2C+%22size%22%3A+3%7D%7D%7D%2C+%22extra_context%22%3A+%7B%22awardYear_facet_size%22%3A+3%2C+%22amountAwardedFixed_facet_size%22%3A+3%7D%7D" rel="nofollow noopener">search this for variations of covid-19, covid19, coronavirus</a> etc.</p>
+<p>But - the team a 360 chose to take advantage of their infrastructure and provide users with a direct and dedicated interface to this emerging corpus.</p>
+<p>It’s growing fast - yesterday (April 9th) I noticed 91 grants. Today (April 10th) there are 180.  Some 360 publishers are now switching their <strong>update frequency to daily</strong> - given that they can see an immediate and relevant outlet for their data.</p>
+<p>There’s also a key and vital outcome.: as more organisation start to access and use this interface, <em><strong>more want to then participate and openly share their own data</strong></em>.   Here we have the <a href="https://twitter.com/johnthegeo/status/606562725427159041" rel="nofollow noopener">virtuous circle</a>, <a class="mention" href="/u/johnadams">@JohnAdams</a> once mentioned at a TAG meeting (in 2015!)</p>
+<p><strong>So - what can we learn in the IATI community?</strong></p>
+<p>I can think of three things (which kind of interlink):</p>
+<ul>
+<li>
+<strong>Show, then tell</strong><br>
+360 put something up quickly and efficiently.  <em>This</em> is now the focus for conversation and action with existing and new users.<br>
+<strong>- Use, then build</strong><br>
+360 used their existing infrastructure to quickly build this new addition.  No changes to the standard, no hacks of existing tools.<br>
+<strong>- Listen, then iterate</strong><br>
+It’s no coincidence that this tracker presents data simply and intuitively - 360 spend a great deal of time <a href="https://www.threesixtygiving.org/support/data-expeditions/" rel="nofollow noopener">understanding who their users are, and what needs they have</a>.</li>
+</ul>
+<p>I <em>know</em> there’s the experience, knowledge, skill and ability in the IATI community to do similar.  We’ve a <a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/">fantastic conversation</a> about how to use the standard, and a <a href="https://discuss.iatistandard.org/t/covid-19-publishing-guidance/1923">rapid response in terms of guidance</a>.</p>
+<p>Right now though, I’d really like to hear how we <em>can</em> do this, rather than how the world that IATI inhabits is too complicated…</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/tracking-uk-covid-19-grants-what-could-our-iati-community-learn/1931">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/tracking-uk-covid-19-grants-what-could-our-iati-community-learn/1931</link>
+          <pubDate>Fri, 10 Apr 2020 14:49:03 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1931</guid>
+          <source url="https://discuss.iatistandard.org/t/tracking-uk-covid-19-grants-what-could-our-iati-community-learn/1931.rss">Tracking UK covid-19 grants - what could our IATI community learn?</source>
+        </item>
+        <item>
+          <title>Strengthening IATI data quality: towards a comprehensive user feedback system</title>
+          <dc:creator><![CDATA[markbrough]]></dc:creator>
+          <category>Using IATI Data</category>
+          <description><![CDATA[
+            <p>Hi all – cross posting here <a href="https://iatistandard.org/en/news/strengthening-iati-data-quality-towards-comprehensive-user-feedback-system/" rel="nofollow noopener">a blog just published on the IATI website</a> on our research (with <a class="mention" href="/u/claudia_schwegmann">@Claudia_Schwegmann</a>) around a user feedback mechanism for IATI data.</p>
+<hr>
+<p>Over the last ten years, a wide range of organisations have invested considerable efforts in publishing IATI data. However, the consensus is that there is still a need to increase and diversify the usage of IATI data. The new <a href="https://iatistandard.org/en/governance/iati-strategic-plan-2020-2025/" rel="nofollow noopener">IATI Strategic Plan (2020-2025)</a> commits to “develop feedback mechanisms so users can alert publishers to issues with their data”.</p>
+<p><strong>Data Quality Feedback Mechanism project</strong></p>
+<p>UNDP, on behalf of the <a href="https://iatistandard.org/en/using-data/how-iati-improves-data-use/" rel="nofollow noopener">IATI Data Use Task Force</a>, commissioned Catalpa to undertake research “to explore the opportunities for increasing the communication between data users and publishers, with the primary goal of improving the quality of IATI data”.</p>
+<p>As agreed, the research will focus particularly on partner countries, but our aim is for the recommendations to be applicable to a broad set of IATI data users. Claudia Schwegmann is the lead author on this work, supported by myself and Anders Hofstee (<a href="https://procurement-notices.undp.org/view_file.cfm?doc_id=150081" rel="nofollow noopener">read UNDP’s Request For Proposal in full</a>).</p>
+<p>While a range of different tools and processes currently exist to measure data quality, at the moment, there are limited avenues for individual users to provide feedback to publishers.</p>
+<p>Last year UNDP conducted an IATI Data Use Survey, which found that 58% of publishers do not have any mechanism in place for “seeking or receiving feedback from users” of their published data - though 97% said they would be interested in receiving feedback on their data.</p>
+<p>The survey showed that the remaining 42% of feedback received by publishers is principally via email. Email clearly has advantages as an established communications channel, but it also has its limitations. As feedback is not captured in a structured and systematic way across different users and different publishers, it is hard to curate and coordinate different users’ inputs, and there is no systematic way of tracking when publishers have resolved particular issues.</p>
+<p>Over the coming weeks, we’ll be reaching out to a wide range of IATI stakeholders to understand how feedback on data could best be channeled back to publishers and made accessible to other data users, in a way that is most likely to lead to improvements in data quality. We’ll be sharing more information throughout this process, and you’re welcome to get in touch with us if you’d like to hear more about our work. Contact Claudia and myself by emailing <a href="mailto:cl.schwegmann@gmail.com">cl.schwegmann@gmail.com</a> and <a href="http://mark@brough.io/" rel="nofollow noopener">mark@brough.io</a> (or commenting below!)</p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/strengthening-iati-data-quality-towards-a-comprehensive-user-feedback-system/1919">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/strengthening-iati-data-quality-towards-a-comprehensive-user-feedback-system/1919</link>
+          <pubDate>Wed, 01 Apr 2020 15:49:49 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1919</guid>
+          <source url="https://discuss.iatistandard.org/t/strengthening-iati-data-quality-towards-a-comprehensive-user-feedback-system/1919.rss">Strengthening IATI data quality: towards a comprehensive user feedback system</source>
+        </item>
+        <item>
+          <title>Covid19 - checking in</title>
+          <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+          <category>Community Zone</category>
+          <description><![CDATA[
+            <p>Dear Community,</p>
+<p>Just thought I’d throw a message out here to say I hope everyone is doing well and able to stay safe.  As I work from home for the next three weeks, I have my cat to keep me company.  Unfortunately, he isn’t very transparent so it isn’t always easy.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/26cf3287747e338e4060a033860e27f71f661b6d.jpeg" data-download-href="https://discuss.iatistandard.org/uploads/default/26cf3287747e338e4060a033860e27f71f661b6d" title="Diesel and IATI"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/26cf3287747e338e4060a033860e27f71f661b6d_2_666x500.jpeg" alt="Diesel and IATI" data-base62-sha1="5xk3R9AzLKhNRINE6NOHwTirkWF" width="666" height="500" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/26cf3287747e338e4060a033860e27f71f661b6d_2_666x500.jpeg, https://discuss.iatistandard.org/uploads/default/optimized/1X/26cf3287747e338e4060a033860e27f71f661b6d_2_999x750.jpeg 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/26cf3287747e338e4060a033860e27f71f661b6d_2_1332x1000.jpeg 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/26cf3287747e338e4060a033860e27f71f661b6d_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Diesel and IATI</span><span class="informations">4032×3024 2.63 MB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Stay Safe,<br>
+Michelle (and Diesel)</p>
+            <p><small>13 posts - 8 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/covid19-checking-in/1908">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/covid19-checking-in/1908</link>
+          <pubDate>Tue, 17 Mar 2020 08:53:08 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1908</guid>
+          <source url="https://discuss.iatistandard.org/t/covid19-checking-in/1908.rss">Covid19 - checking in</source>
+        </item>
+        <item>
+          <title>Making codelists more accessible</title>
+          <dc:creator><![CDATA[andylolz]]></dc:creator>
+          <category>Using IATI Data</category>
+          <description><![CDATA[
+            <p>See below for the latest short post, cross-posted from <a href="https://codeforiati.org/blog/2020/02/10/making-third-party-codelists-more-accessible/" rel="nofollow noopener">the Code for IATI blog</a> – this time to launch our new <a href="https://codelists.codeforiati.org/" rel="nofollow noopener">replicated codelists website</a>.</p>
+<hr>
+<h1>Making codelists more accessible</h1>
+<p>When using IATI data, there are a number of reference codelists that are needed to make sense of the data. Some of these codelists are controlled by IATI directly, but others are controlled by a number of other organisations: for example, the <a href="https://reference.iatistandard.org/codelists/Country" rel="nofollow noopener">Country</a> codelist (the <a href="https://www.iso.org/obp/ui#iso:pub:PUB500001:en" rel="nofollow noopener">ISO-managed list of countries</a>) or the <a href="https://reference.iatistandard.org/codelists/Sector" rel="nofollow noopener">Sector</a> codelist (the <a href="https://www.oecd.org/development/financing-sustainable-development/development-finance-standards/dacandcrscodelists.htm" rel="nofollow noopener">OECD DAC list of Purpose Codes</a>).</p>
+<p>IATI maintains copies of these third-party codelists – called replicated codelists – but there are a number of reasons why, as users of IATI data, we would often have to construct our own versions directly from the source. We built the <a href="https://codelists.codeforiati.org/" rel="nofollow noopener">the replicated codelists interface</a> to share this work with others who could stand to benefit from it.</p>
+<h2>Aims and additional functionality</h2>
+<p>We had three main aims in building this new interface. We wanted to ensure that replicated codelists are:</p>
+<ul>
+<li>as up to date as possible;</li>
+<li>provided in formats that are most useful for users of IATI data (including via an intuitive API);</li>
+<li>accessible in multiple languages - initially in English and French, with scope to expand the range of supported languages depending on availability of translated codelists.</li>
+</ul>
+<p>We’ve gone through most of the replicated codelists to ensure they are fully up to date and consistent with the source, including adding in historical codes that have subsequently been withdrawn, and adding in official French translations. The entire interface can be switched from English to French (with thanks to <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>!) and codelists can be downloaded in a range of formats (including Excel) in either language.</p>
+<p>We added in a codelist for <a href="https://codelists.codeforiati.org/HumanitarianGlobalClusters/" rel="nofollow noopener">Humanitarian Global Cluster codes</a>, and a link to a separate set of work around <a href="https://codelists.codeforiati.org/ExchangeRates/" rel="nofollow noopener">exchange rates data</a> - vital reference data when working with IATI data. We made all codelists accessible through <a href="https://codelists.codeforiati.org/api/" rel="nofollow noopener">a simple API for developers</a>. Finally, we have a workflow in place to ensure that everything is kept up to date and consistent whenever the source codelists change.</p>
+<h2>Next steps</h2>
+<p>We already <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pulls" rel="nofollow noopener">sent our proposed updates to the underlying codelists to IATI</a>, who can decide whether they would like to incorporate these changes.</p>
+<p>Let us know if you think this is useful for accessing codelists, and what else you think should be included! We have logged <a href="https://github.com/codeforIATI/codelists/issues" rel="nofollow noopener">a number of issues we plan to work on here</a>.</p>
+            <p><small>21 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895</link>
+          <pubDate>Mon, 10 Feb 2020 16:45:30 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1895</guid>
+          <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+        </item>
+        <item>
+          <title>Working with data in multiple currencies: exchange rates data</title>
+          <dc:creator><![CDATA[markbrough]]></dc:creator>
+          <category>Using IATI Data</category>
+          <description><![CDATA[
+            <p>See below another short post cross-posted from <a href="https://codeforiati.org/blog/2020/02/03/working-with-data-multiple-currencies-exchange-rates-data/" rel="nofollow noopener">the Code for IATI blog</a> on some tools to make it easier to use data published in multiple currencies.</p>
+<hr>
+<h1>Working with data in multiple currencies: exchange rates data</h1>
+<p>IATI data is published in different currencies by different organisations - data often comes out of each organisation’s own financial system. That’s great, because it provides a great deal of detail and precision, but it also presents a challenge for data users. In order to compare data published in different currencies, we need to convert to a common or “base” currency such as U.S. Dollars.</p>
+<p>One option is to simply use annual averages, but in environments where currencies can vary substantially, this is not always accurate enough for the use case. As an alternative, there are services such as <a href="https://openexchangerates.org/" rel="nofollow noopener">Open Exchange Rates</a>, which even has a free plan, but with a limited number of requests allowed (1,000 per month). This can become problematic when dealing with very large datasets - the new IATI Datastore suggests there are currently about 4.5 million transactions in IATI data.</p>
+<h2>Building a service for supporting use at country level</h2>
+<p>For building IATI integrations in Bangladesh and Liberia, we therefore settled on another approach. We set <a href="https://morph.io/markbrough/exchangerates-scraper" rel="nofollow noopener">up a service</a> to extract exchange rates data from the <a href="https://fred.stlouisfed.org/categories/94" rel="nofollow noopener"><strong>U.S. Federal Reserve (FRED)</strong></a>, containing daily data for a number of currencies. It also captures monthly averages data from the <a href="https://stats.oecd.org/" rel="nofollow noopener"><strong>OECD</strong></a> in a broader range of currencies and for a longer historical period, which can be used as a fallback option. The service checks for new data from both sources each night and puts all the data into a single dataset. This can either be downloaded as a spreadsheet, or accessed via an API which developers can query (for example, “give me only the new rates since the last time I checked”).</p>
+<p>We also set up a <a href="https://exchangerates.codeforiati.org/" rel="nofollow noopener">simple online exchange rates calculator</a> so you can see how it works.</p>
+<h2>Selecting the best rate from multiple sources</h2>
+<p>As the dataset contains exchange rates data from multiple sources, we need some logic in the target system to decide which source to use. For example: we prefer FRED rates (as they are daily rates, and so more accurate), and then fall back to using OECD rates (which are monthly), if no FRED exchange rate is available within a reasonable timeframe.</p>
+<h2>Next steps</h2>
+<p>There are a couple of things that could potentially be useful to add. For example, we could incorporate more sources (e.g. IMF or AfDB rates), which could potentially also open up a number of additional currencies. Depending on exactly how the data from other sources is published, the maintenance could become a bit more challenging – everything works very smoothly and automatically at the moment, so we would be keen to keep things manageable to ensure everything is sustainable.</p>
+<p>Let us know what you think below, or if you have specific bug reports or feature requests, <a href="https://github.com/codeforIATI/exchangerates-scraper/issues" rel="nofollow noopener">you can add them on the Github Issues page</a>.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/working-with-data-in-multiple-currencies-exchange-rates-data/1891">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/working-with-data-in-multiple-currencies-exchange-rates-data/1891</link>
+          <pubDate>Mon, 03 Feb 2020 15:29:32 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1891</guid>
+          <source url="https://discuss.iatistandard.org/t/working-with-data-in-multiple-currencies-exchange-rates-data/1891.rss">Working with data in multiple currencies: exchange rates data</source>
+        </item>
+        <item>
+          <title>Code for IATI: sharing and collaborating on IATI tools</title>
+          <dc:creator><![CDATA[markbrough]]></dc:creator>
+          <category>Community Zone</category>
+          <description><![CDATA[
+            <p>Happy new year! I hope everyone had a great break over the new year period.</p>
+<p>A lot of us in the IATI community have been working on a bunch of IATI-related projects and tools for a number of years. The tools we’re each working on are often useful to other people. A few of us decided to try and make it easier to share and collaborate on our projects, under the banner of <em>“<a href="https://codeforiati.org" rel="nofollow noopener">Code for IATI</a>”</em> (inspired by <a href="https://codeforamerica.org/" rel="nofollow noopener">Code for America</a>). I’ve posted below our <a href="https://codeforiati.org/blog/2020/01/27/hello-world/" rel="nofollow noopener">first blog post</a> which explains a little bit what we’re trying to achieve. Feedback and collaboration very welcome!</p>
+<hr>
+<h1>Hello, World!</h1>
+<p>Welcome to <a href="https://codeforiati.org" rel="nofollow noopener">Code for IATI</a>! This website (and <a href="https://github.com/codeforiati" rel="nofollow noopener">a Github repository</a>) has been set up to bring together tools and techniques that members of the IATI community regularly make use of when working with IATI data. Some of the tools are solving quite specific or niche problems, but many others are commonly required for interpreting IATI data or for building tools that use IATI data.</p>
+<p>By bringing them together in one place, with a brief description of each, we hope to make it easier for us all to share and discover these tools, as well as to sustainably maintain them.</p>
+<h3>Examples of tools so far</h3>
+<ul>
+<li>
+<a href="https://codelists.codeforiati.org/" rel="nofollow noopener">Replicated codelists</a>: A nice (bilingual) interface for accessing up-to-date third-party codelists used in IATI data, including historical withdrawn codes.</li>
+<li>
+<a href="https://exchangerates.codeforiati.org/" rel="nofollow noopener">Exchange Rate Calculator</a>: an online exchange rate converter for historical exchange rates, from the OECD and US Federal Reserve (the underlying data is also available to download).</li>
+<li>
+<a href="https://org-id-finder.codeforiati.org/" rel="nofollow noopener">Org ID Finder</a>: A tool to find organisation IDs of publishers in IATI data</li>
+<li>
+<a href="https://iatikit.readthedocs.io/" rel="nofollow noopener">iatikit</a>: A python toolkit for using IATI data</li>
+</ul>
+<h3>Who is Code for IATI for?</h3>
+<p>Code for IATI is for anyone who finds these resources useful or stands to benefit from using IATI data, and for anyone who would like to contribute and share their own resources. That means both technical and non-technical users. We’re very keen to work with other developers in terms of building and maintaining tools - and that will likely be a big focus initially - but our goal is to build tools that are ultimately useful for non-developers, in order to make it easier to use IATI data across the board:</p>
+<ul>
+<li>to ensure tools are useful, we need a lot of input from those working in <strong>policy environments</strong> - that could mean anything from detailed knowledge of the meaning of individual codelists to a more high-level strategic vision of how information can help solve problems in the way development cooperation and humanitarian aid is delivered</li>
+<li>to communicate between the technical and policy levels we also need <strong>writers</strong>
+</li>
+<li>to translate resources into different languages we need those with <strong>language skills</strong> (starting with French, but we’re keen to expand to other languages, preferably with some thinking about how we would maintain multiple languages going forward).</li>
+</ul>
+<h3>How Code for IATI works</h3>
+<p>Code for IATI is <strong>practical and positive</strong>. We want to make and do things, and we want to encourage others to make and do things, but we don’t volunteer other people for work. Is there something that doesn’t work the way you would like, or something you would like to exist but doesn’t? Great! Dive in and be the change you want to see <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>We also want it to be <strong>fun</strong>. There’s an enormous amount of potential of IATI data, and a lot of people in the IATI community with great ideas. We will encourage anyone to do anything they want to with IATI data, and will give open and friendly advice.</p>
+<p>We hope that new tools will be added regularly and anyone can submit them. We’re happy to <a href="https://codeforiati.org/" rel="nofollow noopener">list them here</a> (or include them on the Code for IATI Github repository as requested) as long as they are open source, somehow related to IATI data (even loosely), and interested in collaboration in some form (note, we also have a <a href="https://codeforiati.org/code-of-conduct" rel="nofollow noopener">Code of Conduct</a>).</p>
+<h3>Sounds cool! How can I get involved?</h3>
+<p>Well, it’s up to you!</p>
+<ul>
+<li>Want to chat? Join us on IRC: <a href="https://webchat.freenode.net/#codeforiati" rel="nofollow noopener">https://webchat.freenode.net/#codeforiati</a>
+</li>
+<li>Want to talk? Join us for the (approximately) monthly community calls (we’ll announce the next one on <a href="https://discuss.iatistandard.org/latest">IATI Discuss</a>, on <a href="https://webchat.freenode.net/#codeforiati" rel="nofollow noopener">IRC</a> and on <a href="https://twitter.com/search?q=%23iati&amp;f=live" rel="nofollow noopener">Twitter</a>)</li>
+<li>Want to suggest improvements or flag issues with tools? <a href="https://github.com/codeforIATI" rel="nofollow noopener">Add them on Github</a>
+</li>
+<li>Want to suggest a new tool or idea? <a href="https://github.com/codeforIATI/iati-ideas/issues" rel="nofollow noopener">See all existing ideas, or create a new issue here</a>
+</li>
+<li>Want to to email us? <a href="mailto:hello@codeforiati.org">hello@codeforiati.org</a>
+</li>
+</ul>
+            <p><small>9 posts - 5 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/code-for-iati-sharing-and-collaborating-on-iati-tools/1889">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/code-for-iati-sharing-and-collaborating-on-iati-tools/1889</link>
+          <pubDate>Mon, 27 Jan 2020 16:35:53 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1889</guid>
+          <source url="https://discuss.iatistandard.org/t/code-for-iati-sharing-and-collaborating-on-iati-tools/1889.rss">Code for IATI: sharing and collaborating on IATI tools</source>
+        </item>
+        <item>
+          <title>Fee on AidStream features?</title>
+          <dc:creator><![CDATA[tanakanyamadzawo]]></dc:creator>
+          <category>CSOs</category>
+          <description><![CDATA[
+            <p>Hi all,</p>
+<p>Having logged into AidStream earlier, I came across the option of “Unpublish”, with a description over the tab of it being a “paid feature and free users being able to use the feature for a limited period”.</p>
+<p>I wondered if anyone else has had heard any more about any upgrades or shifts towards some of AidStream’s features having a fee ?</p>
+<p>All the best,</p>
+<p>Tanaka</p>
+            <p><small>5 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/fee-on-aidstream-features/1882">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/fee-on-aidstream-features/1882</link>
+          <pubDate>Wed, 11 Dec 2019 15:37:42 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1882</guid>
+          <source url="https://discuss.iatistandard.org/t/fee-on-aidstream-features/1882.rss">Fee on AidStream features?</source>
+        </item>
+        <item>
+          <title>IATI rules, guidance, validator - standardise language</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>I would like to ask if there is support for simplifying/standardising the language that we are using across these various tools as it is getting incredibly difficult to know how the words were intended and therefore what to publish to meet each one, especially as the validator is going to start adjudicating on them:</p>
+<p>My non-exhaustive list:</p>
+<ul>
+<li>The SSOT has “rules”</li>
+<li>The Github additional guidance has “should”, “can”, and “is used to”</li>
+<li>The Guidance has “must”, “should”, “can”, “preferable”, “recommends”, “may” and “tips”</li>
+<li>The new Validator has “error”, “warning”, “improvement” and “optimise”</li>
+<li>DFID Guidance has “required”, “not required”, “please include”, “if available”, “should” and “must”</li>
+</ul>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/iati-rules-guidance-validator-standardise-language/1853">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/iati-rules-guidance-validator-standardise-language/1853</link>
+          <pubDate>Tue, 24 Sep 2019 11:05:50 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1853</guid>
+          <source url="https://discuss.iatistandard.org/t/iati-rules-guidance-validator-standardise-language/1853.rss">IATI rules, guidance, validator - standardise language</source>
+        </item>
+        <item>
+          <title>Happy birthday John!</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>Community Zone</category>
+          <description><![CDATA[
+            <p>A bit of a different community post this one, but on Saturday we celebrated the birthday of our very own developer, <a class="mention" href="/u/john_askew">@John_Askew</a> !</p>
+<p>John is a tireless worker that has poured a lot of effort all over our tools during the past year and brings a great daily deal of joy and fun to all of us in the Tech Team! And last but not least, he’s the Friday in-house doughnut master!</p>
+<p>Please join me in wishing John a very happy birthday and a great week off!</p>
+<p>Happy birthday again John, we’re truly blessed to have you!</p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/happy-birthday-john/1852">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/happy-birthday-john/1852</link>
+          <pubDate>Mon, 23 Sep 2019 10:00:11 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1852</guid>
+          <source url="https://discuss.iatistandard.org/t/happy-birthday-john/1852.rss">Happy birthday John!</source>
+        </item>
+        <item>
+          <title>What organizations (around the world) offer capacity-building or training for publishing to IATI?</title>
+          <dc:creator><![CDATA[amelvin]]></dc:creator>
+          <category>Community Zone</category>
+          <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>I’m from Ajah (the company that started PoweredbyData) and we are looking to develop our IATI support services for Canadian NGOs. In order to do that, I’m creating a list of organizations that provide training or capacity-building services to IATI publishers (especially first-time publishers) for us to review.</p>
+<p>I’ve only managed to find a few and am writing here to see if anyone knows of any others (or offers any of these services themselves) and can share that info. Comments below are very appreciated, but I’ve also started a google sheet that you can add to directly:<br>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/spreadsheets/d/1OxRJH8Cz0Tcyg968Yk-r6gAffLRD14BsTkRn5TCjR7I/edit?usp=sharing" target="_blank" rel="nofollow noopener">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/spreadsheets/d/1OxRJH8Cz0Tcyg968Yk-r6gAffLRD14BsTkRn5TCjR7I/edit?usp=sharing" target="_blank" rel="nofollow noopener"><span class="googledocs-onebox-logo g-sheets-logo"></span></a>
+
+<h3><a href="https://docs.google.com/spreadsheets/d/1OxRJH8Cz0Tcyg968Yk-r6gAffLRD14BsTkRn5TCjR7I/edit?usp=sharing" target="_blank" rel="nofollow noopener">Organizations offering capacity-building &amp; support services for publishing to IATI</a></h3>
+
+<p>Sheet1
+
+Name,Country(ies) Located In,Type ,Service(s) Offered,Paid/Free,Notes
+Data4Development,The Netherlands,For-Profit,Consulting (IATI as a service); IATI publishing starter training; Product for converting data to IATI xml...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>We will leave this list up for everyone to use and build upon, but let me know if there is already something like this that I should be adding to instead. I know there have been a few lists in the past that focused on tools for publishing, but what we are trying to pull out are training, capacity-building, and other support services.</p>
+<p>Thanks in advance!<br>
+Amy</p>
+            <p><small>7 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/what-organizations-around-the-world-offer-capacity-building-or-training-for-publishing-to-iati/1850">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/what-organizations-around-the-world-offer-capacity-building-or-training-for-publishing-to-iati/1850</link>
+          <pubDate>Fri, 20 Sep 2019 19:37:29 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1850</guid>
+          <source url="https://discuss.iatistandard.org/t/what-organizations-around-the-world-offer-capacity-building-or-training-for-publishing-to-iati/1850.rss">What organizations (around the world) offer capacity-building or training for publishing to IATI?</source>
+        </item>
+        <item>
+          <title>Co-funded and thirdparty for related-activities</title>
+          <dc:creator><![CDATA[RichPepp]]></dc:creator>
+          <category>Community Zone</category>
+          <description><![CDATA[
+            <p>I’ve been hunting through all of the old threads on this topic but I can’t find any consensus, sorry.  This question refers to v2.03</p>
+<p>As I understand it we only use related-activity for internal relationships i.e. parent/child/sibling.  I’ve already got a thread on this and from that and “Publication Guidelines for Partners, Contractors and Suppliers of the Netherlands Ministry of Foreign Affairs” it seems quite clear.   Given that we only link to external activities, either donors or contractors, via transactions is there a use for the ‘co-funded’ and ‘thirdparty’ relationship types?</p>
+<p>Thanks for that.  I’m doing a bunch of restructuring of our systems and trying to look forwards to what might happen as to where we currently are</p>
+<p>Richard</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840</link>
+          <pubDate>Fri, 06 Sep 2019 14:55:01 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1840</guid>
+          <source url="https://discuss.iatistandard.org/t/co-funded-and-thirdparty-for-related-activities/1840.rss">Co-funded and thirdparty for related-activities</source>
+        </item>
+        <item>
+          <title>Thematic tags for datasets on registry</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>Using IATI Data</category>
+          <description><![CDATA[
+            <p>Hi,</p>
+<p>I was browsing <a href="https://www.iatiregistry.org/dataset/plannlno-ao" rel="nofollow noopener">a dataset on the registry</a>, and saw for the first time (did I just miss it before?) some thematic tags, in this case “child rights” and “gender equality” - please can I ask where these come from, and what are they used for? Is there a codelist for the tags somewhere?</p>
+<p>Thanks!</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/thematic-tags-for-datasets-on-registry/1828">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/thematic-tags-for-datasets-on-registry/1828</link>
+          <pubDate>Tue, 27 Aug 2019 10:39:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1828</guid>
+          <source url="https://discuss.iatistandard.org/t/thematic-tags-for-datasets-on-registry/1828.rss">Thematic tags for datasets on registry</source>
+        </item>
+        <item>
+          <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Within the Humanitarian <a href="https://interagencystandingcommittee.org/more-support-and-funding-tools-local-and-national-responders" rel="nofollow noopener">Grand Bargain (GB) Localisation</a> commitment, not only is there a requirement for donors and responders to increase the amount of funding that goes both directly and indirectly to in-country NGOS and responders but there is also a requirement to increase the % of funding that goes directly to humanitarian pooled funds such as those managed by UN OCHA’s CERF and Country Based Pooled Funds.<br>
+As part of the prototyping work that we are undertaking within the Grand Bargain Transparency workstream we would like to be able to demonstrate how the percentage of funding disbursed to pooled funds could be calculated by using the published IATI data of the GB Signatories. The intention was to identify such payments via the use of the element   for OECD DAC Aid Types with a value of ‘B04’?  However, having looked at the data of a number of different donors I have noticed that different donors are using different codes (mainly ‘B02’, ‘BO3’ or ‘B04’) in relation to their CERF or CBPF contributions.<br>
+In order to calculate an aggregated pooled fund contribution value it would of course be preferable if all donors used the same code for contributions to the same fund (and we could even eventually provide a look up list for which code(s) to use for which fund to assist with this process). However, I first wanted to better understand why donors were currently using the different specific codes for CERF &amp; CBPF? Are there other criteria that you would take into account for using eg ‘B03’ rather than ‘B04’ or are there more practical issues such as current constraints within your organisation own’s systems etc?</p>
+<p>Any thoughts or comments from <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/rbesseling">@rbesseling</a> <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <span class="mention">@OJ</span>_ <a class="mention" href="/u/avaughn">@AVaughn</a>  or anyone else would be very welcome</p>
+            <p><small>9 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821</link>
+          <pubDate>Thu, 22 Aug 2019 08:56:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1821</guid>
+          <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+        </item>
+  </channel>
+</rss>

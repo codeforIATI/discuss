@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+    <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304</link>
+    <description>I few people have mentioned that the codelist descriptions for codes 3 (Completion) and 4 (Post Completion) ActivityStatus seem to be mixed up:
+
+http://iatistandard.org/201/codelists/ActivityStatus/
+
+&gt; 3 - Completion: Physical activity is complete or the final disbursement has been made.
+
+&gt; 4 - Post Completion: Physical activity is complete or the final disbursement has been made, 
+but the activity remains open pending financial sign off or M&amp;E
+
+The description for 4 should be with code 3, and vice versa!
+
+These descriptions were added in the 2.01 process, as they do not exist in 1.05: http://iatistandard.org/105/codelists/ActivityStatus/
+
+Do others agree?</description>
+    
+    <lastBuildDate>Fri, 11 Jan 2019 11:04:26 +0000</lastBuildDate>
+    <category>3.0.0 Major Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The changelog can now be seen here: <a href="http://reference.iatistandard.org/203/codelists/ActivityStatus/">http://reference.iatistandard.org/203/codelists/ActivityStatus/</a>.</p>
+<p>Thanks <a class="mention" href="/u/andylolz">@andylolz</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/69">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/69</link>
+        <pubDate>Fri, 11 Jan 2019 11:04:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-69</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="67" data-topic="304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Great to see! Thanks all</p>
+</blockquote>
+</aside>
+<p>Agreed! <img src="https://discuss.iatistandard.org/images/emoji/twitter/clap.png?v=5" title=":clap:" class="emoji" alt=":clap:"></p>
+<aside class="quote no-group" data-post="67" data-topic="304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Given there <em>is</em> a change in this codelist, it would seem very useful to include a notice for people to understand when this took place, and the underlying discussion that informed it.</p>
+</blockquote>
+</aside>
+<p>Absolutely right. I’ve <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/531">created a ticket for this</a>, and have sent the requisite pull requests ([<a href="https://github.com/IATI/IATI-Extra-Documentation/pull/529">v2.01</a>] [<a href="https://github.com/IATI/IATI-Extra-Documentation/pull/530">v2.02</a>] [<a href="https://github.com/IATI/IATI-Extra-Documentation/pull/528">v2.03</a>]).</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/68">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/68</link>
+        <pubDate>Fri, 21 Dec 2018 10:01:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-68</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Great to see! Thanks all</p>
+<p>It’s a shame that we have no changelog notice alongside this, however (see <a href="http://reference.iatistandard.org/203/codelists/TransactionType/" rel="nofollow noopener">transactionType</a> for an example).  I understand this documentation routine was removed during the upgrade to 2.03 ?</p>
+<p>Given there <em>is</em> a change in this codelist, it would seem very useful to include a notice for people to understand when this took place, and the underlying discussion that informed it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/67">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/67</link>
+        <pubDate>Thu, 06 Dec 2018 14:21:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-67</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The changes have now been implemented and are live on the <a href="http://reference.iatistandard.org/203/codelists/ActivityStatus/">IATI website</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/66">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/66</link>
+        <pubDate>Thu, 06 Dec 2018 10:45:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-66</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everyone for the clarifications and suggestion.</p>
+<p>We will proceed with making the below changes to the activity status codelist as a <strong>bug fix</strong> and will implement by <strong>Tuesday 4th of December.</strong></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/7375852e96692e3d61c67728a79ab8ab1724744b.png" data-download-href="https://discuss.iatistandard.org/uploads/default/7375852e96692e3d61c67728a79ab8ab1724744b" title="image.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/7375852e96692e3d61c67728a79ab8ab1724744b_2_690x294.png" alt="image" width="690" height="294" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/7375852e96692e3d61c67728a79ab8ab1724744b_2_690x294.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/7375852e96692e3d61c67728a79ab8ab1724744b_2_1035x441.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/7375852e96692e3d61c67728a79ab8ab1724744b.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/7375852e96692e3d61c67728a79ab8ab1724744b_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1059×452 43.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>We will also update this post once changes are live on the website.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/65">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/65</link>
+        <pubDate>Tue, 27 Nov 2018 10:23:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-65</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 to <a class="mention" href="/u/andylolz">@andylolz</a>’ summary and proposal. Basically just switching the descriptions and taking the opportunity to clarify the names.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/64">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/64</link>
+        <pubDate>Thu, 22 Nov 2018 12:34:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-64</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a>,</p>
+<p>Both the <a href="https://discuss.iatistandard.org/t/activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/25">proposal I made here</a> in April, and the one <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a href="https://discuss.iatistandard.org/t/activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/57">made earlier this month</a> remove the word “completion”, so should help avoid the confusion you’re talking about.</p>
+<p>Just to restate <a href="https://discuss.iatistandard.org/t/activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/25">my proposal</a> (which is slightly different to Bill’s) the codelist would become:</p>
+<p><strong>Activity Status Codelist (updated)</strong></p>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Name (en)</th>
+<th>Name (fr)</th>
+<th>Description (en)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Pipeline/identification</td>
+<td>Planification</td>
+<td>The activity is being scoped or planned</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Implementation</td>
+<td>Actif</td>
+<td>The activity is currently being implemented</td>
+</tr>
+<tr>
+<td>3</td>
+<td>
+<s>Completion</s>   <strong>Finalisation</strong>
+</td>
+<td>Finalisation</td>
+<td>Physical activity is complete or the final disbursement has been made, <strong>but the activity remains open pending financial sign off or M&amp;E</strong>.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>
+<s>Post-completion</s>   <strong>Closed</strong>
+</td>
+<td>Fermé</td>
+<td>Physical activity is complete or the final disbursement has been made <s>, but the activity remains open pending financial sign off or M&amp;E</s>.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Cancelled</td>
+<td>Annulé</td>
+<td>The activity has been cancelled</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Suspended</td>
+<td>Suspendu</td>
+<td>The activity has been temporarily suspended</td>
+</tr>
+</tbody>
+</table>
+</div><p>I’ve attempted to highlight the changes above, but just to state explicitly, there are two parts to this change:</p>
+<ul>
+<li>switching the descriptions for codes 3 and 4 (this is necessary)</li>
+<li>renaming codes 3 and 4 in an attempt to make them a bit clearer, and avoid potentially ambiguous use of “completion” (this is not strictly necessary, but is a nice-to-have that appears to have near-universal support)</li>
+</ul>
+<p>A couple of supporting points to mention:</p>
+<ul>
+<li>The English name change is just for clarity, and <strong>doesn’t change the meaning</strong>.</li>
+<li>There are <strong>no changes</strong> to the French names here. Ever since they were <a href="https://github.com/IATI/IATI-Codelists/commit/8c24692bfc388091c86a411d90f4c2877025a63c">added in Oct 2013</a>, they’ve always been <em>Planification</em>, <em>Actif</em>, <em>Finalisation</em>, <em>Fermé</em>, <em>Annulé</em> et <em>Suspendu</em> (in that order). So the renaming here would bring the English names in line with the French.</li>
+<li>In v1.0x, <strong>there were no codelist descriptions</strong>. These were first added at v2.01, and that’s where this confusion started. That’s the key reason we think it makes more sense to fix the descriptions. This thread starts with <a class="mention" href="/u/stevieflow">@stevieflow</a> <a href="https://discuss.iatistandard.org/t/activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304">flagging the bug back in July 2015</a>, and proposing that the descriptions should be switched.</li>
+</ul>
+<hr>
+<p>After <a class="mention" href="/u/bill_anderson">@bill_anderson</a>’s <a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/8">message prior to the TAG</a>, I thought we’d resolved this issue. However, I see now that perhaps the details were still up in the air. I agree with <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a> that it would be great to get this resolved soon.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/63">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/63</link>
+        <pubDate>Thu, 22 Nov 2018 12:18:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-63</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>My post was not indicating what “completion” means but rather how it can be so easily confused as completion by normal (non-iati) definitions is that something is complete with nothing more to do.  For IATI it only refers to the physical activity being complete but we all know there is “stuff” to do afterwards hence the use of 'post-completion".</p>
+<p>The fact that this discussion string is as long as it is,to me, indicates that words and definitions are clear.  As a native English speaker, I figure is I can’t figure it out then there are others who will struggle even further.</p>
+<p>Whatever words are chosen I suggest we change them soon and expand the definitions well enough to ensure clarity.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/62">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/62</link>
+        <pubDate>Thu, 22 Nov 2018 02:21:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-62</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>We already had ‘finalization’ and ‘closed’ proposed to replace “completion” and “post-completion”.  I would prefer that option to avoid entirely the use of "post’ - I’m concerned it could create confusion (given there was already a ‘post’-something).</p>
+<p>Also, for the record I want to flag that Michelle’s latest response incorrectly describes 'post-completion". Post-completion is the final stage, when everything is done, NOT the penultimate stage when some admin/M&amp;E remains to be done.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/61">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/61</link>
+        <pubDate>Wed, 21 Nov 2018 14:22:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-61</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I like ‘post-implementation’</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/60">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/60</link>
+        <pubDate>Wed, 21 Nov 2018 08:30:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-60</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Dare I suggest that rather than calling it completion and post-completion the order be called</p>
+<p>1- pipeline<br>
+2 - implementation<br>
+3 - post-implementation<br>
+4 - completion</p>
+<p>Completion, in my head, is that everything is complete and yet that isn’t what we have. We have post-completion which really means the activity itself is physically done but there is paperwork/admin/finance/M&amp;E to do.</p>
+<p>Now I have no idea if this is a minor, major or bug or ??? but from a non-tech perspective this makes more sense in terms of descriptions and order of things.</p>
+<p>Just a suggestion.<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/59">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/59</link>
+        <pubDate>Wed, 21 Nov 2018 01:55:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-59</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Everything including M&amp;E must be finished before the activity is closed. Yes, it can go on for a while (years even).<br>
+There’s a logic there: if M&amp;E is not finished, then further expenses are likely (to pay the M&amp;E work) so the activity remains in finalization status.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/58">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/58</link>
+        <pubDate>Wed, 14 Nov 2018 01:04:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-58</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Before <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> implements this can we have final agreement on the wording. We have agreement on the logic (i.e. 3 comes before 4) but there are differing opinions on naming and the description for 4. Can I propose:</p>
+<blockquote>
+<p>3 - Finalisation<br>
+Physical activity is complete or the final disbursement has been made, but the activity remains open pending financial sign off or M&amp;E</p>
+<p>4 - Closed<br>
+Physical activity, financial sign-off and/or M&amp;E are complete.</p>
+</blockquote>
+<p>re: the description for 4 - I would assume physical activity and financial sign-off are necessary conditions, but M&amp;E could go on for years after an activity has been closed, right?</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/57">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/57</link>
+        <pubDate>Mon, 12 Nov 2018 05:24:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-57</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a><br>
+Thanks for your patience.</p>
+<p>Change will be:<br>
+3-Completion = physical activity is complete or the final disbursement has been made BUT the activity remains open pending financial sign off or M&amp;E<br>
+4 - post-completion = physical activity is complete or the final disbursement has been made (and no more financial sign off or M&amp;E - all is done, done,done)</p>
+<p>I can get my head around that.  No need to shoot anyone.  On the contrary I may owe you a drink in Kathmandu.</p>
+<p>Merci,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/56">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/56</link>
+        <pubDate>Fri, 09 Nov 2018 16:14:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-56</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> Yes, I think this change in the description of the status nails it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/55">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/55</link>
+        <pubDate>Fri, 09 Nov 2018 16:13:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-55</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Michelle</p>
+<aside class="quote no-group" data-post="53" data-topic="304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/michelle_iom/40/443_1.png" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>Change will be:<br>
+3 - post-completion - physical activity is complete or the final disbursement has been made BUT the activity remains open pending financial sing off or M&amp;E.<br>
+4 - completion - physical activity is complete or the final disbursement has been made</p>
+</blockquote>
+</aside>
+<p>Ha, that’s where the confusion lies!  You misunderstood the issue: the names and definitions are mismatched, not the codes and names.</p>
+<p>The change will be:<br>
+3 - completion - physical activity is complete or the final disbursement has been made BUT the activity remains open pending financial sign-off or M&amp;E<br>
+4 - post-completion - physical activity is complete or the final disbursement has been made</p>
+<p>(Sorry, it’s IATI jargon: “completion” describes the state of the activities on the ground, from the point of view of stakeholders / beneficiaries. The project looks like it’s completed on the ground, even though stuff remains to be done on the admin side.  “Post-completion” is the real end, nothing remains to tidy up. A project can go from Implementation straight to Post-Completion if everything ends at the same time.</p>
+<p>Don’t shoot the messenger, I didn’t come up with these terms <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> )</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/54">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/54</link>
+        <pubDate>Fri, 09 Nov 2018 15:02:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-54</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a></p>
+<p>We assigned codes based on our understanding of the definitions assigned to the codes.  I’m still confused now as to what is going to change.</p>
+<p>Can someone confirm if I have this correct?</p>
+<p>Currently:<br>
+3 - completion - physical activity is complete or the final disbursement has been made<br>
+4 - post-completion - same as above BUT the activity remains open pending financial sing off or M&amp;E.</p>
+<p>Change will be:<br>
+3 - post-completion - physical activity is complete or the final disbursement has been made BUT the activity remains open pending financial sing off or M&amp;E.<br>
+4 -  completion - physical activity is complete or the final disbursement has been made</p>
+<p>That sounds strange to me but I sure wasn’t around when all of this was initially discussed.  If 3 (three) is really supposed to be something between implementation and completion then wouldn’t it be better to call it post-implementation rather than post-completion?</p>
+<p>Happy to discuss this next week at TAG but we go to publish a new set of data the week after so I’d love to make sure we have our scripts right before that.</p>
+<p>Sorry if I’m just making a mess of this but, well, consider me a great example on how newbies get lost in all this documentation.</p>
+<p>Kind Regards,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/53">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/53</link>
+        <pubDate>Fri, 09 Nov 2018 14:16:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-53</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="51" data-topic="304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/michelle_iom/40/443_1.png" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>We have custom scripts written in our accounting system to assign the codes based on dates and system status. We will need to adjust the script when the definitions change.</p>
+</blockquote>
+</aside>
+<p>Michelle, if you are assigning proper codes to projects, you probably won’t have to change the script. The codes won’t change.</p>
+<p>If you were assigning codes based on the definitions instead of the names, then your projects are miscoded &amp; I’d recommend changing the script as soon as possible. No need to wait for the bug to be fixed since the codes are not changing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/52">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/52</link>
+        <pubDate>Thu, 08 Nov 2018 17:14:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-52</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>I understand this is now in the job queue but can someone help me understand when this change is going to take place?  We have custom scripts written in our accounting system to assign the codes based on dates and system status.  We will need to adjust the script when the definitions change.</p>
+<p>Kind Regards,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/51">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/51</link>
+        <pubDate>Thu, 08 Nov 2018 10:37:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-51</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s now agreement on resolving this as a <strong>bugfix</strong>, by swapping the descriptions for codes 3 &amp; 4. Please refer to the following post:<br>
+<aside class="quote" data-post="8" data-topic="1535">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_1.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/8">TAG session on reviewing the need for a next minor or major IATI standard upgrade</a> <a class="badge-wrapper  box" href="/c/standard-management/modifications-additions-improvements"><span class="badge-category-parent-bg" style="background-color: #5719A3;"></span><span class="badge-category-bg" style="background-color: #A66EE9;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Inbox for suggestions - post will be moved into appropriate upgrade forums as they are made. For instance, if a proposal would constitute a non-backwardly compatible change to the IATI standard, it would most likely be moved into the nearest Integer upgrade forum.">Modifications, Additions, Improvements</span></a>
+  </div>
+  <blockquote>
+    In the interests of peace and progress the Tech Team is happy to treat the Activity Status codes issue as a bug fix. We will slot this into the job queue. 
+(For the record, we still disagree…)
+  </blockquote>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/50">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/50</link>
+        <pubDate>Thu, 08 Nov 2018 10:03:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-50</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I see this is now listed as part of a potential integer upgrade:<br>
+“[Fix Activity Status Mix Up 2] (agreement reached, but solution changes the meaning of the code and is therefore not backward compatible)”<br>
+<aside class="quote quote-modified" data-post="1" data-topic="1535">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_1.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535?u=yohannaloucheur">TAG session on reviewing the need for a next minor or major IATI standard upgrade</a> <a class="badge-wrapper  box" href="/c/standard-management"><span class="badge-category-bg" style="background-color: #5719A3;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="This category is a place for suggestions and consultations around the IATI Standard itself. This includes ideas for new features, requests for new codes or codelists, or any other technical proposal.">Standard Management</span></a>
+  </div>
+  <blockquote>
+    At the TAG 2018, we want to review the community need for a next IATI Standard upgrade. The IATI technical team will run a short session that will focus on the appetite for a next upgrade (<a href="http://reference.iatistandard.org/203/upgrades/" rel="nofollow noopener">minor or major</a>) and discuss the potential timeline if there is a need for one. 
+Before we get to the TAG we want participants to be aware of outstanding minor and major upgrade proposals, and to have a discussion about whether or not they are still relevant. Please refer to all proposals listed below. If you t…
+  </blockquote>
+</aside>
+</p>
+<p>I disagree with the statement that the solution changes the meaning of the code. Bill, you stated that clarifying the names was a bug-fix. Hence, correcting the descriptions cannot require an integer upgrade, it’s simply fixing a mistake.</p>
+<p>Unfortunately the Discuss post listing the potential changes to the standard is not open for discussion, so I cannot put this comment there.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/49">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/49</link>
+        <pubDate>Thu, 25 Oct 2018 14:05:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-49</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Bringing this back up after the summer break.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/48">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/48</link>
+        <pubDate>Thu, 13 Sep 2018 18:03:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-48</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="41" data-topic="304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>With the greatest of respect four people do not create a consensus - even in the relatively closed world of Discuss.</p>
+</blockquote>
+</aside>
+<p>So how do we move this forward as a bugfix? What sort of signoff do we need? What’s the protocol here?</p>
+<p>Is there some documentation of process that you can refer us to, <a class="mention" href="/u/bill_anderson">@bill_anderson</a>?</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/47">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/47</link>
+        <pubDate>Mon, 25 Jun 2018 17:00:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-47</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Come on Bill. Changing the order of the codes clearly changes their meaning. And for newcomers to IATI, the idea that 4 comes before 3 will only add more confusion.</p>
+<aside class="quote no-group" data-post="44" data-topic="304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>The descriptions (definitions) were, in my recollection, the original intended definition.</p>
+</blockquote>
+</aside>
+<p>Do you have a source for this? Because I cannot find the current descriptions in any of the original consultation documents, whereas the codes and names have remained the same since 1.01. <a class="mention" href="/u/stevieflow">@stevieflow</a>, the first time the descriptions appear is <a href="https://support.iatistandard.org/hc/en-us/articles/214393546-Version-2-01-Iteration-3-8-Miscellaneous" rel="nofollow noopener">in the 2.01 upgrade process</a>, right at the end in iteration 3, so it is not surprising that there was a mistake introduced here (below screenshot is from the <a href="https://docs.google.com/spreadsheets/d/1gVpcS8DR_-QDB8pxKdPHRuuRPmWs1yIWfBaGAhXDwew/edit#gid=0" rel="nofollow noopener">linked Google Doc</a>, clearly showing the descriptions did not exist before).</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/11b867eec673ae99e32773afa57520c571e58af8.png" data-download-href="https://discuss.iatistandard.org/uploads/default/11b867eec673ae99e32773afa57520c571e58af8" title="Screen Shot 2018-06-25 at 17.36.32.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/11b867eec673ae99e32773afa57520c571e58af8_2_690x93.png" alt="32" width="690" height="93" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/11b867eec673ae99e32773afa57520c571e58af8_2_690x93.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/11b867eec673ae99e32773afa57520c571e58af8_2_1035x139.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/11b867eec673ae99e32773afa57520c571e58af8.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/11b867eec673ae99e32773afa57520c571e58af8_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2018-06-25 at 17.36.32.png</span><span class="informations">1337×181 31.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<aside class="quote no-group" data-post="44" data-topic="304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>In my view Code 3 = Closed and Code 4 = Finalisation is a valid bug-fix.</p>
+</blockquote>
+</aside>
+<p>In which case, changing the English-language descriptions (introduced only at 2.01) would clearly also be a valid bug-fix, as it does not involve both re-ordering the codes in an illogical way (so that 4 comes before 3) and changing the English and French names.</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/46">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/46</link>
+        <pubDate>Mon, 25 Jun 2018 15:45:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-46</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+      <item>
+        <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="40" data-topic="304">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>The descriptions were only added in 2.01</p>
+</blockquote>
+</aside>
+<p>Strangely - I can’t see this addition of the ActivityStatus in the <a href="http://iatistandard.org/202/upgrades/integer-upgrade-to-2-01/2-01-changes/#changelog" rel="nofollow noopener">2.01 changelog</a>, nor the <a href="https://support.iatistandard.org/hc/en-us/sections/203051226-2-01-Integer-Upgrade-Proposals-History" rel="nofollow noopener">original proposals</a>.</p>
+<p>There is an indication that this code list might be modified in the <a href="https://docs.google.com/spreadsheets/d/1iHqYHqtuY-sfafEMRGw3nODjVY4BjutYsm0iFRYNJck/edit#gid=1246587534" rel="nofollow noopener">color-coded table view for 2.01</a>, but I can’t see where the text is derived from.</p>
+<p>At GitHub, we can see that the <a href="https://github.com/IATI/IATI-Codelists/commits/version-2.03/xml/ActivityStatus.xml" rel="nofollow noopener">all changes on this list were undertaken in 2013 &amp; 14</a>.</p>
+<p>NB: I’m not trying to “blame” anyone here, but find it interesting in that we can’t pinpoint the exact source of the issue we’re discussing - this is also very important for standards!</p>
+          <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/45">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304/45</link>
+        <pubDate>Mon, 25 Jun 2018 15:26:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-304-45</guid>
+        <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+      </item>
+  </channel>
+</rss>

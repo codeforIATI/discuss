@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to place activities of national scope on a map</title>
+    <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053</link>
+    <description>A discussion took place on twitter in the wee hours of Friday night. It started with [a d-portal map of UNDP activities](http://www.d-portal.org/ctrack.html?search&amp;publisher=XM-DAC-41114#view=main)
+
+![undp|690x237](upload://3XSxgx1LRR9VCQKOGXE9n6GlgX4.jpg)
+
+[Jonathan van Geuns](https://twitter.com/JHvanGeuns) commented:
+
+&gt; Hmm... &quot;This is a heat map of all activities that have been provided with precise locations.&quot;
+
+And so it started:
+
+[RE Sieber](https://twitter.com/re_sieber)
+&gt;Just realized that most of these are likely &quot;heat maps&quot; of a country&#39;s centroid #FakeHeatMaps
+
+@bill_anderson
+&gt; Numbers in the centre of a country refer to national programmes. Others will have more refined coordinates
+
+@james.coe
+ &gt;If truly national, surely a country code is suffice? A geocode only makes sense for a precise location (as stated). If implemented in one place but helps people nationally then geocode capital and use geographic location reach element?
+
+@bill_anderson
+&gt;Don&#39;t you want to see all activities on a map?
+
+@james.coe
+&gt;Yes, but properly coded. If activity is in 1 place but impacts nationally, use geographic reach element. Central geocodes add nothing. 
+
+RE Sieber
+&gt;A map is a meaningful communication medium only if the spatial distributions are meaningful. Bunch of centroids w fake hotspots? Not so much.
+
+@Joshua_Powell
+&gt;I believe the[ location standard is explicitly subnational,](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/location/) no? 
+
+![location|690x307](upload://9UTiR2NIS88ZzrueCSxh9mbYhnE.PNG)
+
+@bill_anderson
+&gt;Who wrote that? (Watch out for 2.04 proposals) :grinning:
+
+&gt;So how would you represent an activity of national scope alongside others with specific locations?
+
+RE Sieber
+&gt;Cartographically, you can&#39;t do both on the same map. Either show choropleth or pointilize all: call national scope a capitol (bldg) activity
+
+@james.coe 
+&gt;Could colour code difference between an activity w/ &quot;actual location&quot; and activity w/ &quot;impact location&quot;? TA projects being the former.
+
+RE Sieber
+&gt;It&#39;s a feature dimension problem: points r 0D. If you really want 2D areas then you need to demand more x,ys. Long-standing prob w #IATI
+
+@andylolz
+&gt;* This is presentational, though. d-portal could choose to do it this way (or other ways) by deriving co-ords from recipient country(s). 
+&gt;* But adding spurious co-ords to data for presentational reasons seems objectively incorrect. 
+&gt;* Forces hand of presentational tools, &amp; dilutes other data bc no way to tell which are accurate. 
+
+@bill_anderson
+&gt;Do you honestly think that is a realistic, pragmatic solution? 
+
+RE Sieber
+&gt; Realistic if IATI folks got together w GIS techs, who have lots of country &amp; subnational boundary files. Maybe more users if data qual improved
+
+[Ana Brandusescu](https://twitter.com/anabmap)
+&gt;I understand that impacts aren&#39;t exact. But the all-areas-can-be-represented-by-centroids-and-we-can-lump-them-together isn&#39;t working.
+ 
+ @bill_anderson
+&gt;Perhaps standardising around administrative areas is a better option. But they do tend to change substantially over time ...
+
+RE Sieber
+&gt;If that&#39;s a problem, 1 option is to provide a GUI in schema for location: draw impact area on map. Another is bounding box</description>
+    
+    <lastBuildDate>Thu, 19 Oct 2017 18:46:34 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I’d say a cautious yes (pending travel approval) to mid-late week of November 15.  Also hope to bring a colleague with far more technical knowledge than mine!</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/13</link>
+        <pubDate>Thu, 19 Oct 2017 18:46:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-13</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> and <a class="mention" href="/u/tdavis">@tdavis</a> pick a week for a DC miniTAG and either DevGateway or InterAction can host! What about November 15? Who else should we invite to present?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/12</link>
+        <pubDate>Tue, 17 Oct 2017 12:53:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-12</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/tdavis">@tdavis</a>  That separation indeed makes it very clear, I’d much prefer that to trying to show all levels in one view. Also, that app is very feature rich!</p>
+<p>I did give it a try though to merge a national and exact location layer. <a class="mention" href="/u/david_megginson">@David_Megginson</a> based upon your suggestions, here’s 2 approaches.</p>
+<p><a href="http://iatibugtracker.org/locs/1/" rel="nofollow noopener">http://iatibugtracker.org/locs/1/</a> centroid boxes.<br>
+<a href="http://iatibugtracker.org/locs/2/" rel="nofollow noopener">http://iatibugtracker.org/locs/2/</a> color differences on country borders… it causes some conflicts on color display at overlapping borders which could be solved by drawing the borders with an inset instead of on the border itself.</p>
+<p>Conclusion on my side; theoretically we could probably get there, but could it be as useful (or complementary) as the approach Taryn showed… probably not.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/11</link>
+        <pubDate>Tue, 17 Oct 2017 08:17:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-11</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[tdavis]]></dc:creator>
+        <description><![CDATA[
+            <p>Just wanted to share how we’ve done this for our AMPs (example <a href="http://amp.finance.gov.mw/TEMPLATE/ampTemplate/gisModule/dist/index.html" rel="nofollow noopener">here</a>) we allow the user to select which level they are looking at, so it’s clear that you are looking at those coded to country level, or whichever admin level you select. Sure they are points which make them clearly clickable for the additional visual features, but you could just as easily highlight the whole country or regions. The important part is that you’re making it clear what level the user is looking at.</p>
+<p>We would be happy to participate in a geocoding MiniTAG!</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/10</link>
+        <pubDate>Mon, 16 Oct 2017 19:59:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-10</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah, on my tablet I missed that Vincent wrote basically the same thing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/9</link>
+        <pubDate>Tue, 10 Oct 2017 11:09:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-9</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Assuming we’re marking national-scope activities (e.g. general education-ministry budget support; national women’s health helpline), the mapmakers can distinguish then with different iconography—for example, the number of national activities could appear at the country’s geographical  centroid in a rectangle (instead of circle), larger font, and different background colour.</p>
+<p>We could also consider what to do when the user is zoomed in very close (eg move the national number off to the side).</p>
+<p>D</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/8</link>
+        <pubDate>Tue, 10 Oct 2017 11:08:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-8</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been hacking around with exact locations a bit yesterday to see if the approximate locations were re-used a lot (since you can’t exactly see that from a heatmap). Not sure how useful this visualisation is but I’ll just share it here in case it helps anyone to bring new insights.</p>
+<p><a href="http://bit.ly/2g9uBu0" rel="nofollow noopener">http://bit.ly/2g9uBu0</a> (full speed fan warning, its quite heavy to load and might take some time, 130k IATI location coordinates). The more occurrences within one of those hexagons, the higher the hexagon will be.</p>
+<p>You could add national scope activities without exact locations in a centroid hexagon, per country, in a different color, and a different height scale, if you would want to show it all in one map.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/7</link>
+        <pubDate>Wed, 04 Oct 2017 09:50:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-7</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="1053">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>If activities of national scope are not assigned coordinates the onus is placed on the user to construct the information on all activities from two sources (coordinates or country codes). The whole thrust of IATI data use strategy is to make things easier for the user.</p>
+</blockquote>
+</aside>
+<p>The onus isn’t placed on the user to do this – it’s on the presentational tools (e.g. d-portal; perspective). The end user should not be forced to deal directly with XML, or with co-ordinates, or derive co-ordinates from recipient countries. The tools should be in place to handle that.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/6</link>
+        <pubDate>Tue, 03 Oct 2017 15:29:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-6</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1053">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Simply assigning projects to an arbitrary point (eg the capital city) is very misleading or, worse, can confirm misconceptions that donors are favouring/neglecting some regions</p>
+</blockquote>
+</aside>
+<p>It also makes it harder to find out which activities actually do take place in those capital cities.</p>
+<p>I would say we actually lose accuracy instead of gaining it through those “precise locations”. It is derivable data and a presentation layer issue that imo does not help to make it easier when added to the data layer.</p>
+<p>To add to the related discussion on how to visualize:</p>
+<aside class="quote no-group">
+<div class="title">
+<div class="quote-controls"></div>
+ RE sieber:</div>
+<blockquote>
+<p>Cartographically, you can’t do both on the same map. Either show choropleth or pointilize all: call national scope a capitol (bldg) activity</p>
+</blockquote>
+</aside>
+<p>Agree. If the goal is to show <strong>all</strong> IATI activities on a map you would also miss out on all (supranational) regional activities. Regions, countries and exact locations just visualize differently and imo making them all act like exact locations in a heatmap will be quite subjective. Wouldn’t it be more useful for the user to visualize this in three switchable layers on a map?</p>
+<ul>
+<li>45% of activities have provided a recipient region -&gt; visualize as desired ; )</li>
+<li>60% of activities have provided a recipient country -&gt; choropleth layer, could have an optional switch to just show the ones without a exact location if thats desired</li>
+<li>33% of activities have provided exact locations -&gt; heatmap layer.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/5</link>
+        <pubDate>Tue, 03 Oct 2017 00:34:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-5</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[james.coe]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with the vast majority, but throughout our consultations, Open Ag heard the case for publishing the physical location of the activity and the area of impact. As I understand it, publishers can distinguish between the two using the <a href="http://iatistandard.org/202/codelists/GeographicLocationReach/" rel="nofollow noopener">Standard</a>.I dug into the issue a little more on this <a href="http://www.publishwhatyoufund.org/more-than-digits-why-location-data-matters/" rel="nofollow noopener">blog</a> I wrote a short while ago. I also agree that there’s no benefit to publishing centroids.</p>
+<p>That said, there’s a lot of nuances and different perspectives around location data so I’m 100% behind some sort of ‘mini-tag’ / event on it. I actually think we could fill a full day digging into the different issues, and would probably want a solid way of VC’ing people in. Tagging <a class="mention" href="/u/reidmporter">@reidmporter</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/4</link>
+        <pubDate>Mon, 02 Oct 2017 13:16:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-4</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>The point of using a gazeteer is that it allows publishers to map their activities accurately AND visualization tools to show the activities as they want. A project with national impact should be coded at national level; providing coordinates is meaningless. If someone decides to show this project on the capital or centroid, they can retrieve this info from the gazeteer and the onus is on this user to indicate in the representation that this project is national (and not only benefiting the capital).</p>
+<p>It’s really important to convey the scope of a project’s impact. Simply assigning projects to an arbitrary point (eg the capital city) is very misleading or, worse, can confirm misconceptions that donors are favouring/neglecting some regions, which can have serious political consequences.</p>
+<p>So when are we having this miniTAG on geocoding? Those are exactly the kind of issues I think we need to discuss: how to geo-code and how to represent projects on maps in meaningful ways.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/3</link>
+        <pubDate>Mon, 02 Oct 2017 11:03:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-3</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>My 2p</p>
+<ul>
+<li>Different users need different levels of accuracy from geo-referenced data.</li>
+<li>There is a strong argument for providing information on all activities on a map. It may not be geospatially pure, but it tells a useful story. Data doesn’t have to be perfect to be useful.</li>
+<li>If activities of national scope are not assigned coordinates the onus is placed on the user to construct the information on all activities from two sources (coordinates or country codes). The whole thrust of IATI data use strategy is to make things easier for the user.</li>
+<li>I’m not bothered whether these coordinates are for the capital city or the country’s centroid.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/2</link>
+        <pubDate>Sun, 01 Oct 2017 16:09:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-2</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+      <item>
+        <title>How to place activities of national scope on a map</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>A discussion took place on twitter in the wee hours of Friday night. It started with <a href="http://www.d-portal.org/ctrack.html?search&amp;publisher=XM-DAC-41114#view=main" rel="nofollow noopener">a d-portal map of UNDP activities</a></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/1bcb55f45fd48465ea8790777e303d908ce01206.jpg" data-download-href="https://discuss.iatistandard.org/uploads/default/1bcb55f45fd48465ea8790777e303d908ce01206" title="undp.jpg"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/1bcb55f45fd48465ea8790777e303d908ce01206_2_690x237.jpg" alt="undp" width="690" height="237" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/1bcb55f45fd48465ea8790777e303d908ce01206_2_690x237.jpg, https://discuss.iatistandard.org/uploads/default/optimized/1X/1bcb55f45fd48465ea8790777e303d908ce01206_2_1035x355.jpg 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/1bcb55f45fd48465ea8790777e303d908ce01206_2_1380x474.jpg 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/1bcb55f45fd48465ea8790777e303d908ce01206_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">undp.jpg</span><span class="informations">1471×507 309 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><a href="https://twitter.com/JHvanGeuns" rel="nofollow noopener">Jonathan van Geuns</a> commented:</p>
+<blockquote>
+<p>Hmm… “This is a heat map of all activities that have been provided with precise locations.”</p>
+</blockquote>
+<p>And so it started:</p>
+<p><a href="https://twitter.com/re_sieber" rel="nofollow noopener">RE Sieber</a></p>
+<blockquote>
+<p>Just realized that most of these are likely “heat maps” of a country’s centroid <span class="hashtag">#FakeHeatMaps</span></p>
+</blockquote>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+<blockquote>
+<p>Numbers in the centre of a country refer to national programmes. Others will have more refined coordinates</p>
+</blockquote>
+<p><a class="mention" href="/u/james.coe">@james.coe</a></p>
+<blockquote>
+<p>If truly national, surely a country code is suffice? A geocode only makes sense for a precise location (as stated). If implemented in one place but helps people nationally then geocode capital and use geographic location reach element?</p>
+</blockquote>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+<blockquote>
+<p>Don’t you want to see all activities on a map?</p>
+</blockquote>
+<p><a class="mention" href="/u/james.coe">@james.coe</a></p>
+<blockquote>
+<p>Yes, but properly coded. If activity is in 1 place but impacts nationally, use geographic reach element. Central geocodes add nothing.</p>
+</blockquote>
+<p>RE Sieber</p>
+<blockquote>
+<p>A map is a meaningful communication medium only if the spatial distributions are meaningful. Bunch of centroids w fake hotspots? Not so much.</p>
+</blockquote>
+<p><a class="mention" href="/u/joshua_powell">@Joshua_Powell</a></p>
+<blockquote>
+<p>I believe the<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/location/" rel="nofollow noopener"> location standard is explicitly subnational,</a> no?</p>
+</blockquote>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/4581ec47332a774f5be82ea0d827d790435aebce.PNG" data-download-href="https://discuss.iatistandard.org/uploads/default/4581ec47332a774f5be82ea0d827d790435aebce" title="location.PNG"><img src="https://discuss.iatistandard.org/uploads/default/original/1X/4581ec47332a774f5be82ea0d827d790435aebce.PNG" alt="location" width="690" height="307" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/4581ec47332a774f5be82ea0d827d790435aebce_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">location.PNG</span><span class="informations">811×361 13.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+<blockquote>
+<p>Who wrote that? (Watch out for 2.04 proposals) <img src="https://discuss.iatistandard.org/images/emoji/twitter/grinning.png?v=9" title=":grinning:" class="emoji" alt=":grinning:"></p>
+</blockquote>
+<blockquote>
+<p>So how would you represent an activity of national scope alongside others with specific locations?</p>
+</blockquote>
+<p>RE Sieber</p>
+<blockquote>
+<p>Cartographically, you can’t do both on the same map. Either show choropleth or pointilize all: call national scope a capitol (bldg) activity</p>
+</blockquote>
+<p><a class="mention" href="/u/james.coe">@james.coe</a></p>
+<blockquote>
+<p>Could colour code difference between an activity w/ “actual location” and activity w/ “impact location”? TA projects being the former.</p>
+</blockquote>
+<p>RE Sieber</p>
+<blockquote>
+<p>It’s a feature dimension problem: points r 0D. If you really want 2D areas then you need to demand more x,ys. Long-standing prob w <span class="hashtag">#IATI</span></p>
+</blockquote>
+<p><a class="mention" href="/u/andylolz">@andylolz</a></p>
+<blockquote>
+<ul>
+<li>This is presentational, though. d-portal could choose to do it this way (or other ways) by deriving co-ords from recipient country(s).</li>
+<li>But adding spurious co-ords to data for presentational reasons seems objectively incorrect.</li>
+<li>Forces hand of presentational tools, &amp; dilutes other data bc no way to tell which are accurate.</li>
+</ul>
+</blockquote>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+<blockquote>
+<p>Do you honestly think that is a realistic, pragmatic solution?</p>
+</blockquote>
+<p>RE Sieber</p>
+<blockquote>
+<p>Realistic if IATI folks got together w GIS techs, who have lots of country &amp; subnational boundary files. Maybe more users if data qual improved</p>
+</blockquote>
+<p><a href="https://twitter.com/anabmap" rel="nofollow noopener">Ana Brandusescu</a></p>
+<blockquote>
+<p>I understand that impacts aren’t exact. But the all-areas-can-be-represented-by-centroids-and-we-can-lump-them-together isn’t working.</p>
+</blockquote>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+<blockquote>
+<p>Perhaps standardising around administrative areas is a better option. But they do tend to change substantially over time …</p>
+</blockquote>
+<p>RE Sieber</p>
+<blockquote>
+<p>If that’s a problem, 1 option is to provide a GUI in schema for location: draw impact area on map. Another is bounding box</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053/1</link>
+        <pubDate>Sun, 01 Oct 2017 15:35:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1053-1</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-place-activities-of-national-scope-on-a-map/1053.rss">How to place activities of national scope on a map</source>
+      </item>
+  </channel>
+</rss>

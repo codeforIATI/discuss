@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854</link>
+    <description>This proposal is part of the [2.03 upgrade process](https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838), please comment by replying below.
+
+**Standard**
+Activity and Organisation
+&lt;p&gt;
+**Schema Object**
+None
+&lt;p&gt;
+**Type of Change**
+Redefine embedded codelist as non-embedded
+&lt;p&gt;
+**Issue**
+The IATI standard contains a  mixture of “embedded” and “non-embedded” codelists. Embedded codelists can only be modified through the formal upgrade process. Non-embedded codelists can be modified through a [light-touch consultation process](http://iatistandard.org/202/codelists/codelist-management/). In order to increase the flexibility and responsiveness of the standard only those codelists that impact on the functionality of data processing should remain embedded and all others should be redefined as “Non-embedded”.
+&lt;p&gt;
+**Proposal**
+Redefine the following Embedded codelists as Non-embedded.
+&lt;ul&gt;
+&lt;li&gt;ActivityScope; BudgetIdentifier; BudgetIdentifierSector-category; BudgetIdentifierSector; BudgetIdentifierVocabulary; CRSAddOtherFlags; ConditionType; ContactType; DescriptionType; DisbursementChannel; DocumentCategory-category; DocumentCategory; GazetteerAgency; GeographicExactness; GeographicLocationClass; GeographicLocationReach; GeographicVocabulary; GeographicalPrecision; IndicatorMeasure; LoanRepaymentPeriod; LoanRepaymentType; OtherIdentifierType; PolicyMarker; PolicyMarkerVocabulary; PublisherType; RegionVocabulary; ResultType; SectorVocabulary; TiedStatus; VerificationStatus
+&lt;/ul&gt;
+**Standards Day**
+Accepted in principle but check details of which should be moved
+&lt;p&gt;
+**Links**
+http://bit.ly/2m1jy70
+Previous discussions - https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495</description>
+    
+    <lastBuildDate>Wed, 25 Oct 2017 13:59:33 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/21</link>
+        <pubDate>Wed, 25 Oct 2017 13:59:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-21</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal has been been included in the 2.03 upgrade. It can be viewed in the following two Discuss posts:</p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Proposal of 2.03 Content</a></p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Technical Proposal for the 2.03 Upgrade</a></p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/20</link>
+        <pubDate>Wed, 25 Oct 2017 13:59:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-20</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="6" data-topic="854">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bjwebb/40/7_1.png" class="avatar"> bjwebb:</div>
+<blockquote>
+<p>As they are currently required to be used (if supplying conditions/indicators respectively), and there’s no “Other” code, so a data processing application may have custom logic for each option.</p>
+</blockquote>
+</aside>
+<p>I don’t have any specific reasons for ConditionType, only the reasoning that a code that can’t be “other” and is required might be handled in a way that assumes it’s one of those three codes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/19</link>
+        <pubDate>Mon, 14 Aug 2017 14:40:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-19</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bjwebb">@bjwebb</a> Could you please elaborate on the reasons for keeping ConditionType as embedded? We agree that there is a case for keeping IndicatorMeasure as embedded, but cannot see how ConditionType impacts on the functionality of data processing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/18</link>
+        <pubDate>Wed, 09 Aug 2017 10:38:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-18</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="15" data-topic="854">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"> dalepotter:</div>
+<blockquote>
+<p>The existing category-codelist attribute seems to cover something different, but I’m unsure how this is meant to be used.</p>
+</blockquote>
+</aside>
+<p>Yes, <code>category-codelist</code> is the codelist for the category, not the category for the codelist.<br>
+As an example, the <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/blob/bf14b4ff4db4561542e5ecc6912c361a1a7f3ee3/xml/AidType.xml" rel="nofollow noopener">AidType</a> code <code>A01</code> has category <code>A</code>. <code>category-codelist="AidType-category"</code> tells us that we can go look this up on the <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/blob/bf14b4ff4db4561542e5ecc6912c361a1a7f3ee3/xml/AidType-category.xml" rel="nofollow noopener">AidType-category</a> codelist, to find out that the English name for that category is: “Budget support”, and a description explaining how it is used.</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/17</link>
+        <pubDate>Mon, 07 Aug 2017 16:02:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-17</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[makerman]]></dc:creator>
+        <description><![CDATA[
+            <p>This is not the intent as far as I understand. This is about an internal IATI registry rule which will stop validating sector vocabulary codes as part of the standard check. Will not affect the IATI standard itself.</p>
+<p>-MA</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/16</link>
+        <pubDate>Mon, 07 Aug 2017 12:09:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-16</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Linked to the issue of redefining codelists, I’d also suggest adding something to the <a href="https://github.com/IATI/IATI-Codelists/blob/version-2.02/codelist.xsd">codelist schema</a>, so that the category a codelist is in can be defined within the source.  I’d suggest a new attribute under the top-level <code>codelist</code> element, perhaps <code>source-category</code>, with allowed values: ‘core<code>,</code>flexible’, and <code>replicated</code>.</p>
+<p>The existing <code>category-codelist</code> attribute seems to cover <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/search?utf8=%E2%9C%93&amp;q=category-codelist&amp;type=">something different</a>, but I’m unsure how this is meant to be used.</p>
+<p>Indeed, related to the codelist schema, many of the elements and attributes could also do with an <code>xs:documentation</code> element to add a definition on their purpose, however the may be classed as a bug fix - will leave <a class="mention" href="/u/bill_anderson">@bill_anderson</a> to comment.</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/15</link>
+        <pubDate>Mon, 07 Aug 2017 11:11:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-15</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="10" data-topic="854">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>Eek… This suggests losing status=“withdrawn” code information… Is that right? I think it’s probably preferable to maintain that information for replicated lists <img src="//discuss.iatistandard.org/images/emoji/twitter/sweat.png?v=5" title=":sweat:" class="emoji" alt=":sweat:"></p>
+</blockquote>
+</aside>
+<p>Was thinking about this and policies for externally-managed codelists.  I understand there is an argument that including <code>status="withdrawn"</code> information is useful so that withdrawn codes that are referenced in publisher’s datasets can be identified later.</p>
+<p>However is there an argument that IATI should not store <code>modified</code> or <code>withdrawn</code> codes for these lists precisely because external codelists are meant to be externally managed by someone else? Should IATI be getting into the business of archiving codes for codelists that we have no jurisdiction over? Just a thought anyway…</p>
+<aside class="quote no-group" data-post="13" data-topic="854">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>I wonder if renaming codelist types (i.e. embedded; non-embedded) should become a new thread. Is it actually a doable thing in the near future?</p>
+</blockquote>
+</aside>
+<p>This is a good question! Perhaps the official <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> account can comment about this given the rules for <a href="http://iatistandard.org/202/upgrades/">decimal upgrades</a>?</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/14</link>
+        <pubDate>Fri, 07 Jul 2017 16:02:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-14</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>This discussion digressed quite far from the proposal! I wonder if renaming codelist types (i.e. embedded; non-embedded) should become a new thread. Is it actually a doable thing in the near future?</p>
+<p>Btw I suspect that the meaning of embedded &amp; non-embedded changed over time, but the names were never updated. The description of the <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded">non-embedded codelist repo</a> is: “IATI codelists that are derived from third party lists.” which is not entirely correct. Pretty sure I’ve seen other muddled definitions elsewhere.</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/13</link>
+        <pubDate>Wed, 05 Jul 2017 14:53:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-13</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Okay, cool. But it should be clear that ‘replicated’ doesn’t mean it’s a direct copy, because the list also includes withdrawn codes that are no longer part of the original.</p>
+<aside class="quote no-group" data-post="11" data-topic="854">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/hayfield/40/202_1.png" class="avatar"> hayfield:</div>
+<blockquote>
+<ul>
+<li><code>modified</code></li>
+</ul>
+</blockquote>
+</aside>
+<p>Names &amp; descriptions of third party codes are changed quite frequently. I worry you’ll make a rod for your own backs if you attempt to track these changes.</p>
+<aside class="quote no-group" data-post="11" data-topic="854">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/hayfield/40/202_1.png" class="avatar"> hayfield:</div>
+<blockquote>
+<ul>
+<li><code>external</code></li>
+</ul>
+</blockquote>
+</aside>
+<p>I’m not sure I can guess what the <code>external</code> code means here.</p>
+<p>I really like the premise of streamlining the third party codelist management process. But I’m concerned that further extending the <code>status</code> options could begin to make that process more involved.</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/12</link>
+        <pubDate>Tue, 04 Jul 2017 15:51:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-12</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>This suggests losing <code>status="withdrawn"</code> code information… Is that right?</p>
+</blockquote>
+<p>Our (mine / Dale’s) current thinking is that the <code>status</code> attribute should be better defined to accommodate the various types of state that a Code may be in. This would lead to something like the following list of statuses:</p>
+<ul>
+<li><code>active</code></li>
+<li><code>modified</code></li>
+<li><code>withdrawn</code></li>
+<li><code>removed</code></li>
+<li><code>external</code></li>
+</ul>
+<p>With these statuses that a Code may have, a Code may be <code>withdrawn</code> (marked with <code>status="withdrawn"</code> (or some language-independent equivalent)) from a Replicated Codelist, but never <code>removed</code> (physically removed from the Codelist).</p>
+<p>It would also provide a method of maintaining previous definitions of Codes so that Replicated Codelists clearly indicate when a third party has changed the definition of a Code. We’ve not fully looked at how implementation of this part may work.</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/11</link>
+        <pubDate>Fri, 30 Jun 2017 08:40:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-11</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="9" data-topic="854">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"> dalepotter:</div>
+<blockquote>
+<p>In terms of language, could I suggest we use the term ‘replicated’ instead of ‘third-party’?</p>
+</blockquote>
+</aside>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/thumbsup.png?v=5" title=":thumbsup:" class="emoji" alt=":thumbsup:"> agree – ‘replicated’ better conveys the desired meaning.</p>
+<aside class="quote no-group" data-post="9" data-topic="854">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"> dalepotter:</div>
+<blockquote>
+<p>This might better convey that we seek to simply copy the latest version of these codelists as soon as we spot they are released, regardless of their content (e.g. duplicate codes, non-backwardly compatible changes, etc).</p>
+</blockquote>
+</aside>
+<p>Eek… This suggests losing <code>status="withdrawn"</code> code information… Is that right? I think it’s probably preferable to maintain that information for replicated lists <img src="//discuss.iatistandard.org/images/emoji/twitter/sweat.png?v=5" title=":sweat:" class="emoji" alt=":sweat:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/10</link>
+        <pubDate>Wed, 28 Jun 2017 17:59:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-10</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="8" data-topic="854" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>Can we consider adjusting the language here? “Embedded” v “non-embedded” is not intuitive language, and several different sorts of codelists are mixed up together in the existing categorisation. How about something like:</p>
+<p>flexible =&gt; can be adjusted between upgrades<br>
+core =&gt; can only be adjusted in decimal upgrades<br>
+third-party =&gt; can be adjusted between upgrades, should (generally?) remain faithful to external codelists.</p>
+</blockquote>
+</aside>
+<p>Good idea - I’d add a +1 for this. IATI essentially maintains two types of codelists which currently fall under the ‘non-embedded codelist’ banner (‘flexible’ and ‘third-party’ using the terminology that you suggested).</p>
+<p>In terms of language, could I suggest we user the term ‘replicated’ instead of ‘third-party’? This might better convey that we seek to simply copy the latest version of these codelists as soon as we spot they are released, regardless of their content (e.g. duplicate codes, non-backwardly compatible changes, etc).  I would also suggest that changes to these codelists will not require consultation on Discuss, with changes noted on a changelog that is presented alongside the codelist on the <a>IATI Standard documentation</a> pages.</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/9</link>
+        <pubDate>Tue, 27 Jun 2017 12:59:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-9</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Can we consider adjusting the language here? “Embedded” v “non-embedded” is not intuitive language, and several different sorts of codelists are mixed up together in the existing categorisation. How about something like:</p>
+<ul>
+<li>flexible =&gt; can be adjusted between upgrades</li>
+<li>core =&gt; can only be adjusted in decimal upgrades</li>
+<li>third-party =&gt; can be adjusted between upgrades, should (generally?) remain faithful to external codelists.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/8</link>
+        <pubDate>Mon, 26 Jun 2017 15:04:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-8</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="854">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/262_1.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>codelists that impact on the functionality of data processing should remain embedded</p>
+</blockquote>
+</aside>
+<p>I think the follow codelists may impact on the functionality of data processing:</p>
+<ul>
+<li><a href="http://iatistandard.org/202/codelists/ConditionType/" rel="nofollow noopener">http://iatistandard.org/202/codelists/ConditionType/</a></li>
+<li>
+<a href="http://iatistandard.org/202/codelists/IndicatorMeasure/" rel="nofollow noopener">http://iatistandard.org/202/codelists/IndicatorMeasure/</a><br>
+As they are currently required to be used (if supplying conditions/indicators respectively), and there’s no “Other” code, so a data processing application may have custom logic for each option.</li>
+</ul>
+<p>These codelists don’t seem to be used anywhere:</p>
+<ul>
+<li><a href="http://iatistandard.org/202/codelists/GeographicalPrecision/" rel="nofollow noopener">http://iatistandard.org/202/codelists/GeographicalPrecision/</a></li>
+<li>
+<a href="http://iatistandard.org/202/codelists/PublisherType/" rel="nofollow noopener">http://iatistandard.org/202/codelists/PublisherType/</a><br>
+It might be best to explicitly remove them?<br>
+(Additonally <a href="http://iatistandard.org/202/codelists/VerificationStatus" rel="nofollow noopener">VerificationStatus</a> only seems to be used by the defunct <a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-registry-record-schema.xsd" rel="nofollow noopener">iati-registry-record-schema.xsd</a>).</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/6</link>
+        <pubDate>Wed, 21 Jun 2017 17:19:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-6</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been included for consideration in the formal 2.03 proposal</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/5</link>
+        <pubDate>Fri, 16 Jun 2017 15:19:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-5</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>At 2.02 a method was added to deprecate (withdraw) codes through use of use of the <code>status</code>, <code>activation-date</code> and <code>withdrawal-date</code> attributes on Codelists. The <a href="https://support.iatistandard.org/hc/en-us/articles/214390846">proposal</a> wasn’t, however, fleshed out to cover usage. For example, the following points were not answered:</p>
+<ul>
+<li>What are valid values for the <code>status</code> attribute?</li>
+<li>Given the stated values of <code>active</code> and <code>withdrawn</code> for the <code>status</code> attribute, what do they mean?</li>
+<li>How are narrative modifications dealt with? <code>withdraw</code> the old value and add a new <code>active</code> one? Overwrite the existing narrative? Something else?</li>
+<li>How serious is a withdrawal in terms of backwards-compatibility and use in data? Rule-&gt;Guideline? Rule-&gt;Rule? Guideline-&gt;Guideline?</li>
+</ul>
+<p>As such, there stand the points raised in my previous post.</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/4</link>
+        <pubDate>Mon, 22 May 2017 08:19:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-4</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Hayden<br>
+Code lists i.m.o. should never depreciate old values since these values could legitimately have been used in past activities which are still published. A solution could be to flag old values. Values in non-embedded code lists which are no longer valid, could be flagged by 2 fields ‘valid from’ and ‘valid until’ where ‘valid until’ is empty when it is the current value.</p>
+<p>In this way downward compatibility is guaranteed.</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/3</link>
+        <pubDate>Fri, 19 May 2017 14:22:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-3</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>Migrating a comment from the <a href="https://discuss.iatistandard.org/t/tech-paper-codelist-management/538/17?u=hayfield">previous discussion</a>…</p>
+<p>By changing Codelists from Embedded to Non-Embedded, what are they deemed to be at an earlier version of the standard?</p>
+<p>For example:</p>
+<ol>
+<li>You have a Codelist. It is currently Embedded.</li>
+<li>By this change, it becomes Non-Embedded.</li>
+<li>At some point, it is decided to withdraw certain values on the Non-Embedded version of the Codelist.</li>
+</ol>
+<p>Are these values deemed withdrawn against versions of the Standard at which the Codelist was Embedded?</p>
+<ul>
+<li>If yes, is this permitted? There is nothing under <a href="http://iatistandard.org/202/codelists/codelist-management/">Codelist management</a> or the <a href="https://support.iatistandard.org/hc/en-us/articles/214390846">withdrawal discussion</a> to indicate whether it is permitted to withdraw a value from an Embedded Codelist outside an integer upgrade (it’s backwards incompatible since Embedded Codelists are a fixed part of the Standard).</li>
+<li>If no, the versions of the Standard where the Codelists are each Embedded and Non-Embedded are backwards incompatible. As such, changing Codelists from Embedded to Non-Embedded would have to be an integer change.</li>
+</ul>
+<p>Also, there similar questions about adding new values and whether they are deemed part of the Codelist for earlier versions of the Standard (but without the backwards-incompatibility problems).</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/2</link>
+        <pubDate>Mon, 15 May 2017 11:49:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-2</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+      <item>
+        <title>Redefine selected codelists as “Non-embedded” (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal is part of the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity and Organisation</p>
+<p>
+**Schema Object**
+None
+</p><p>
+**Type of Change**
+Redefine embedded codelist as non-embedded
+</p><p>
+**Issue**
+The IATI standard contains a  mixture of “embedded” and “non-embedded” codelists. Embedded codelists can only be modified through the formal upgrade process. Non-embedded codelists can be modified through a [light-touch consultation process](http://iatistandard.org/202/codelists/codelist-management/). In order to increase the flexibility and responsiveness of the standard only those codelists that impact on the functionality of data processing should remain embedded and all others should be redefined as “Non-embedded”.
+</p><p>
+**Proposal**
+Redefine the following Embedded codelists as Non-embedded.
+</p><ul>
+<li>ActivityScope; BudgetIdentifier; BudgetIdentifierSector-category; BudgetIdentifierSector; BudgetIdentifierVocabulary; CRSAddOtherFlags; ConditionType; ContactType; DescriptionType; DisbursementChannel; DocumentCategory-category; DocumentCategory; GazetteerAgency; GeographicExactness; GeographicLocationClass; GeographicLocationReach; GeographicVocabulary; GeographicalPrecision; IndicatorMeasure; LoanRepaymentPeriod; LoanRepaymentType; OtherIdentifierType; PolicyMarker; PolicyMarkerVocabulary; PublisherType; RegionVocabulary; ResultType; SectorVocabulary; TiedStatus; VerificationStatus
+</li>
+</ul>
+**Standards Day**
+Accepted in principle but check details of which should be moved
+<p>
+**Links**
+http://bit.ly/2m1jy70
+Previous discussions - https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495</p>
+          <p><a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854/1</link>
+        <pubDate>Fri, 12 May 2017 12:41:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-854-1</guid>
+        <source url="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854.rss">Redefine selected codelists as “Non-embedded” (included 2.03)</source>
+      </item>
+  </channel>
+</rss>

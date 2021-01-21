@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>State of pyIATI?</title>
+    <link>https://discuss.iatistandard.org/t/state-of-pyiati/1360</link>
+    <description>It&#39;s been a year, well almost, since the first pyIATI commit too place. 
+
+It seems that status according to the [Github](https://github.com/IATI/pyIATI/tree/master) labels are ranging from experimental to outdated in the category stability and the category  requirements are set to outdated on both the master and dev branch. 
+
+Seeing the most recent PR&#39;s date back from February on Master branch, I am wondering what the state on pyIATI actually is and if IATI could provide at least the tech community with a real update on this thing. 
+
+It was and still being hailed as a major outcome of technical work done by IATI, but it&#39;s not visible at least not on the Github end.
+
+Is pyIATI used anywhere in real life? Is it planned to be used in real life anywhere? It has been referenced in accordance with building a new Datastore, but who has time to run experimental software with outdated requirements and no active code commits?
+
+Could someone from IATI (tech or not tech) shed some light on this? It seems pyIATI has been abandoned.
+
+**Edit**: I noticed the first commit dates back to January 2017 which makes it even more worrisome I think..</description>
+    
+    <lastBuildDate>Thu, 06 Jun 2019 08:32:21 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/state-of-pyiati/1360.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>State of pyIATI?</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> yes you are correct, pyIATI has been deprecated since last November’s TAG and is no longer considered a core piece of work.</p>
+<p>The library’s code is still available on Git if people were interested, but official development and support on it has stopped.</p>
+          <p><a href="https://discuss.iatistandard.org/t/state-of-pyiati/1360/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/state-of-pyiati/1360/7</link>
+        <pubDate>Thu, 06 Jun 2019 08:32:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1360-7</guid>
+        <source url="https://discuss.iatistandard.org/t/state-of-pyiati/1360.rss">State of pyIATI?</source>
+      </item>
+      <item>
+        <title>State of pyIATI?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I think I read in the documents for the Copenhagen meeting that pyIATI is now discontinued - can anyone confirm? <a class="mention" href="/u/iati-techteam">@IATI-techteam</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/state-of-pyiati/1360/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/state-of-pyiati/1360/6</link>
+        <pubDate>Wed, 05 Jun 2019 19:34:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1360-6</guid>
+        <source url="https://discuss.iatistandard.org/t/state-of-pyiati/1360.rss">State of pyIATI?</source>
+      </item>
+      <item>
+        <title>State of pyIATI?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I wanted to ask if there is any update on the pyIATI project</p>
+<p>We’ve a potential dependency on <a href="https://github.com/OpenDataServices/cove/issues/1051#issuecomment-418705044" rel="nofollow noopener">pyIATI in our own work</a>, so it would be very helpful to know how things are progressing, to help us plan our development</p>
+<p>–&gt; <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/state-of-pyiati/1360/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/state-of-pyiati/1360/5</link>
+        <pubDate>Wed, 05 Sep 2018 13:53:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1360-5</guid>
+        <source url="https://discuss.iatistandard.org/t/state-of-pyiati/1360.rss">State of pyIATI?</source>
+      </item>
+      <item>
+        <title>State of pyIATI?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/siemvaessen">@siemvaessen</a>  <a class="mention" href="/u/dalepotter">@dalepotter</a> The discussion about to pyIATI or not to pyIATI touches the surface of another i.m.o. more profound discussion.</p>
+<p>The rationale for standardizing all IATI core products on one consolidated software stack (e.g. Python, javascript, Ruby, etc.) makes sense assuming that development and maintenance is done by one party (the IATI Technical Team). The advantage of this model is that the development and maintenance team only has to adopt one software stack (e.g. based on Python). Interoperability between components is facilitated by using standardized libraries (e.g. pyIATI).</p>
+<p>Another model for the development and maintenance of IATI core products is to develop and maintain  components (registry, website, data store, data validator, etc.) as separate services interconnecting through standardized API’s. In such a <strong>service oriented approach</strong>, components are encapsulated as services which can be developed and maintained by different suppliers. The advantage is that development and maintenance is distributed among several suppliers. This improves time to market, is scalable and more flexible. Components can be built using the software stack most suitable given the requirements (of course within certain boundaries such as openness, reliability, etc.). Existing IATI software could be reused. No suppliers will be excluded because they do not support a specific software stack. The role of the IATI technical team will partly shift from development and maintenance to interface specification, component requirement specification, integration and testing.</p>
+<p>Therefore it is premature to force all IATI core software developers to use pyIATI and Python. This requirement excludes a more service oriented approach, limits the reuse of existing software and reduces the number of possible suppliers.</p>
+<p>The real discussion here is i.m.o. what the <strong>future IATI software governance model</strong> should be. The urgent need of the IATI community for the delivery components such as the IATI data validator and data store, suggests a more service oriented approach in which we share the burden of development and maintenance over a wider community. The currently small and overburdened IATI technical development team emphasizes the importance of this point. I suggest that this more strategic than technical discussion is put on the agenda at the next Members Assembly.</p>
+          <p><a href="https://discuss.iatistandard.org/t/state-of-pyiati/1360/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/state-of-pyiati/1360/4</link>
+        <pubDate>Thu, 28 Jun 2018 12:25:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1360-4</guid>
+        <source url="https://discuss.iatistandard.org/t/state-of-pyiati/1360.rss">State of pyIATI?</source>
+      </item>
+      <item>
+        <title>State of pyIATI?</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback <a class="mention" href="/u/dalepotter">@dalepotter</a>. While I do understand the limitations of available resources that you mention, it does not add up to the ambition raised January 2017 in the <a href="https://discuss.iatistandard.org/t/iati-systems-design-architecture-proposal/709">long term plan outline</a>. I’d even argue it’s not realistic, seeing we’re now 18 months further and given the minimal resources I fail to see the ambitions you are trying to achieve. It also (still) misses the roadmap, so while it may be clear to you what pyIATI will achieve -and not- the IATI community is not kept in the loop. And as you rightly state, addressing aging technical products is a challenge, but I do not see how pyIATI will solve this and more importantly when. In all fairness, the IATI validator for example is a very misleading piece of software, which does not does not perform extensive validation (namespace check etc.). How and moreover, <strong>when</strong> will pyIATI have this covered?</p>
+<aside class="quote no-group" data-post="1" data-topic="709">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"><a href="//discuss.iatistandard.org/t/iati-systems-design-architecture-proposal/709/1">IATI Systems Design &amp; Architecture Proposal</a>
+</div>
+<blockquote>
+<p>This roadmap review will be released within the next week - watch this space!</p>
+</blockquote>
+</aside>
+<p>While I am well aware of limitations in said type resources, I am somewhat amazed that parts of the long term plan are “<em>being refactored into existing IATI tools where time allows</em>”. This is hardly convincing and adds to the worry I raised by starting this Topic.</p>
+<p>Seeing pyIATI as future of IATI code with more features planned also again rings some alarm bells! Why not finish some current envisioned tasks first before thinking about new ones? Who is going to build all these features (what features?!) Do you have a roadmap that can be shared and that we as IATI (tech) community can discuss and find some consensus on moving forward?</p>
+<p>I did think about reserving time to have a ZZ team member play around with pyIATI but got discouraged and canceled the request internally when checking PR’s, commits, etc hanging in the ropes. Hence this Topic, which to my surprise has been <a href="https://twitter.com/isiAfrica/status/1011295099903512576" rel="nofollow noopener">labeled ‘<em>a sneer</em>’ on Twitter</a> by the IATI technical lead himself. Thanks <a class="mention" href="/u/bill_anderson">@bill_anderson</a>…</p>
+<p>I think we all should be on the same team and I find all of this somewhat discouraging.</p>
+<p>Just a note on requirements, please do check <a href="https://requires.io/github/zimmerman-zimmerman/OIPA/requirements/?branch=OIPA-87" rel="nofollow noopener">OIPA Branch 87.</a> Squeeky clean Python 3, 2.03 support in the make. <img src="//discuss.iatistandard.org/images/emoji/twitter/dragon.png?v=5" title=":dragon:" class="emoji" alt=":dragon:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/state-of-pyiati/1360/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/state-of-pyiati/1360/3</link>
+        <pubDate>Mon, 25 Jun 2018 19:49:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1360-3</guid>
+        <source url="https://discuss.iatistandard.org/t/state-of-pyiati/1360.rss">State of pyIATI?</source>
+      </item>
+      <item>
+        <title>State of pyIATI?</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>pyIATI has definitely not been abandoned and the reasons for its existence are as present today as they ever have been!</p>
+<p>Back in early 2017 we posted our <a href="https://discuss.iatistandard.org/t/iati-systems-design-architecture-proposal/709">long-term plans to make IATI technical infrastructure more robust, more scalable and more sustainable</a>. This was also presented at the TAG2017. The key challenges are a set of aging technical products (in multiple languages) built quickly to prove the concept of IATI at a time when the number of publishers and datasets was a fraction of what it is now.  The refactoring work to pay down the technical debt this approach inherently created as a side effect happened in places but, even now we’re left with a large codebase that has at least 3 approaches (in 3 languages) to downloading a dataset.</p>
+<p>We were really encouraged when pyIATI itself even seemed to receive rapturous applause <a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720">on Discuss</a> and again duing last year’s TAG.</p>
+<p>The first commit was indeed back in early 2017 and since then, pyIATI has had at most 6 months of active development which could roughly be categorised into three main chunks:</p>
+<ul>
+<li>February 2017 (initial prototyping)</li>
+<li>July-September 2017 (main development)</li>
+<li>November (refactoring and work on scalability for new IATI versions).</li>
+</ul>
+<p>If only we’d been working on it since January 2017!</p>
+<p>It is being refactored into existing IATI tools where time allows. It currently exists in the schema test runner (cited as the robust standard upgrade implementation process we’ve had). Additionally significant work has gone into including it into an upgrade of the query builder (which currently runs on <em>very</em> old-school PHP <img src="//discuss.iatistandard.org/images/emoji/twitter/frowning.png?v=5" title=":frowning:" class="emoji" alt=":frowning:"> ) which is due to be completed as soon as we have the website in front of the MA!</p>
+<p>pyIATI will also be a key part of work to incorporate the IATI Standard reference docs into further iterations of the new IATI website.  It will also form part of validation functionality due to be added to the Registry in coming months.</p>
+<p>We would have loved to have come further with it - integrated it into more tools, have a full readthedocs site, solved all of IATI’s technical issues etc - but given we are an incredibly small dev team (at least by industry standards) of 2 full time developers for the amount of products we have and building a robust reference implementation of the IATI Standard uncovered more gremlins than we thought: each that need designing for in a robust and tested way.</p>
+<p>All in all, we have a tool that is designed for use (well, our use as tool maintainers), offers a good vehicle we have for integrating single-point-of-responsibility code across IATI products and <a href="https://docs.google.com/presentation/d/1OI9gYBR7ixaEfn3woe_D3iU0XPjO27VkHpAyzQOHc6o/edit?usp=sharing">can even do stuff right now</a>!</p>
+<p>Since last Autumn, IATI’s Governing Board have set priorities to work on the 2.03 upgrade and a new IATI website, which has been the focus of dev time.  Nonetheless, we do try to keep pyIATI ticking along - indeed releasing pyIATI v0.4.0 was indeed on the cards for today’s ‘Maintenance Monday’ until we had uncovered Discuss needed a critical update as well as some issues with Discuss Twitter logins <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Indeed some of the README documentation could do with a review given what is possible with IATI and even the much cited ‘experimental’ tags added at the start of the project (sometimes it sucks to be transparent right?!) are due for removal now. Some (mostly dev) library requirements are indeed out by a few minor versions but <a href="https://requires.io/github/zimmerman-zimmerman/OIPA/requirements/?branch=develop">even the best of us</a> suffer from this <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>We see pyIATI as the future of IATI code. More features are planned (subject to MA and governing board approval) in coming months when we can focus dev attention onto ensuring validation functionality is robust enough to work with all datasets.  Alongside this, we’ll continue to seek out every opportunity to integrate it into other tools where we can.</p>
+          <p><a href="https://discuss.iatistandard.org/t/state-of-pyiati/1360/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/state-of-pyiati/1360/2</link>
+        <pubDate>Mon, 25 Jun 2018 16:55:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1360-2</guid>
+        <source url="https://discuss.iatistandard.org/t/state-of-pyiati/1360.rss">State of pyIATI?</source>
+      </item>
+      <item>
+        <title>State of pyIATI?</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s been a year, well almost, since the first pyIATI commit too place.</p>
+<p>It seems that status according to the <a href="https://github.com/IATI/pyIATI/tree/master" rel="nofollow noopener">Github</a> labels are ranging from experimental to outdated in the category stability and the category  requirements are set to outdated on both the master and dev branch.</p>
+<p>Seeing the most recent PR’s date back from February on Master branch, I am wondering what the state on pyIATI actually is and if IATI could provide at least the tech community with a real update on this thing.</p>
+<p>It was and still being hailed as a major outcome of technical work done by IATI, but it’s not visible at least not on the Github end.</p>
+<p>Is pyIATI used anywhere in real life? Is it planned to be used in real life anywhere? It has been referenced in accordance with building a new Datastore, but who has time to run experimental software with outdated requirements and no active code commits?</p>
+<p>Could someone from IATI (tech or not tech) shed some light on this? It seems pyIATI has been abandoned.</p>
+<p><strong>Edit</strong>: I noticed the first commit dates back to January 2017 which makes it even more worrisome I think…</p>
+          <p><a href="https://discuss.iatistandard.org/t/state-of-pyiati/1360/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/state-of-pyiati/1360/1</link>
+        <pubDate>Mon, 25 Jun 2018 13:27:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1360-1</guid>
+        <source url="https://discuss.iatistandard.org/t/state-of-pyiati/1360.rss">State of pyIATI?</source>
+      </item>
+  </channel>
+</rss>

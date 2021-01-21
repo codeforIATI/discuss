@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Stop recommending DAC codelists</title>
+    <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824</link>
+    <description>The guidance for the standard recommends using DAC codelists in several places - this is not in keeping with the ambition to be a global aid data standard, and can result in worse quality data e.g. the DAC5 sector codelist has limited information in the 7xxxx humanitarian codes compared to the humanitarian cluster codes.</description>
+    
+    <lastBuildDate>Tue, 10 Sep 2019 07:42:17 +0000</lastBuildDate>
+    <category>3.0.0 Major Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Stop recommending DAC codelists</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="1824">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rolfkleef/40/82_2.png" class="avatar"> rolfkleef:</div>
+<blockquote>
+<p>if you declare your activity to be “humanitarian”, the validator will apply the <em>humanitarian validation rules</em> in addition to the <em>base rules</em> .</p>
+</blockquote>
+</aside>
+<p>This is a cool functionality - a discussion about what it means that the guidance is probably not ‘one size fits all’ would be very healthy for IATI.</p>
+          <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/10</link>
+        <pubDate>Tue, 10 Sep 2019 07:42:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1824-10</guid>
+        <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+      </item>
+      <item>
+        <title>Stop recommending DAC codelists</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>If we differentiate between the IATI validator and broader data quality feedback:</p>
+<ul>
+<li>The IATI Standard defines rules and recommendations as a minimum for IATI data.</li>
+<li>It’s possible to add additional <em>layers</em> or <em>perspectives</em> (business rules) for other use cases: humanitarian data, data for a particular donor, data in accordance with your own publishing policy, data for the Aid Transparency Index, etc.</li>
+</ul>
+<p>Whether or how common practices or additional perspectives become part of the official IATI Standard and IATI validator is up to the Members’ Assembly. DAC is, right now <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>From a technical perspective it would be useful and doable to say: if you declare your activity to be “humanitarian”, the validator will apply the <em>humanitarian validation rules</em> in addition to the <em>base rules</em>.</p>
+<p>Such a mechanism could also be used for other guidelines. <em>If you say the Dutch MFA is funding the activity, we will apply their guidelines to this activity and all downstream activities</em>.</p>
+<p>It is up to the MA to decide which perspectives and business rules become part of the IATI Validator, and who defines them: a TAG, a separate body of stakeholders, the MA, …</p>
+<p>From a service point of view, <strong>we</strong> are ready to layer additional perspectives in a public or private environment for anyone: our goal is to help improve data quality and make it useful for its intended purpose.</p>
+<hr>
+<p>From a philosophical point of view, I’d say the Schema and Validator are technology, and therefore cannot be neutral: they encode choices made by the MA and within the Standard, to make verifying quality and compliance as smooth as possible.</p>
+          <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/9</link>
+        <pubDate>Mon, 09 Sep 2019 19:36:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1824-9</guid>
+        <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+      </item>
+      <item>
+        <title>Stop recommending DAC codelists</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>I would hope that the “best practices guidance” can still be tailored to either use cases and/or publisher types depending upon the topic.  Something to discuss as we expand the development of the guidance.</p>
+          <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/8</link>
+        <pubDate>Thu, 29 Aug 2019 15:10:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1824-8</guid>
+        <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+      </item>
+      <item>
+        <title>Stop recommending DAC codelists</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/wendy">@Wendy</a> - my understanding is that the recommendation to use DAC sector codes is in the general IATI guidance so all publishing, including humanitarian would get the warning if they didn’t also have DAC codes in addition to their humanitarian (or SDG) sector codes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/7</link>
+        <pubDate>Thu, 29 Aug 2019 14:36:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1824-7</guid>
+        <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+      </item>
+      <item>
+        <title>Stop recommending DAC codelists</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the clarification <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> and my understanding is that the new validator shall allow for the optional use of ‘topic specific’ rulesets? Therefore if there are elements /attributes that it is recommended for all humanitarian agencies to include then a humanitarian ruleset can be used by those agencies which can include warning or other notices to encourage them to publish the relevant information. However,  it is probably better for the ITT or <a class="mention" href="/u/rolfkleef">@rolfkleef</a> to comment on this in case this is not or no longer the case??</p>
+          <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/6</link>
+        <pubDate>Thu, 29 Aug 2019 14:31:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1824-6</guid>
+        <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+      </item>
+      <item>
+        <title>Stop recommending DAC codelists</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I guess this really comes down to us thinking harder about the guidance, which is going to become vital once guidance starts coming up as warnings etc in the new validator. Key things I think we need to cover:</p>
+<ol>
+<li>Is the appropriate guidance different for the different use cases - I think hugely so, and therefore the idea that we have one set of ‘best practice’ recommendations may be actively unhelpful.</li>
+<li>In this case, strongly suggesting that publishers without the DAC codes natively in their data invent them is a big cost, for the publisher to generate them, for accuracy (probably not generated by someone who knows the project then) and for IATI - makes it harder to publish, puts off non-DAC publishers.</li>
+<li>I am unclear what evidence this is based on and can see plenty of cases where the additional work to add DAC codes would not be worth it - in these cases, publishers should not be pressured by a ‘should’ and a warning/error from the validator.</li>
+</ol>
+<p>This difficulty in moving from the spec/rules for a neutral Standard, to detailing ‘how best the standard should be used’ I think may be a bigger jump than IATI might have the resources or evidence for, but most importantly, needs a bit of a strategic think about where it stops before we end up with more guidance than we know what to do with. Maybe we have examples from other similar standards about how they handle guidance that we can learn from?</p>
+          <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/5</link>
+        <pubDate>Thu, 29 Aug 2019 12:41:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1824-5</guid>
+        <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+      </item>
+      <item>
+        <title>Stop recommending DAC codelists</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to add that those of us working on the Grand Bargain (GB) are also planning to work with IATI Technical Team in order to feed in the learning from the GB to any humanitarian related IATI guidance.</p>
+<p>Also, whilst  I very much agree that the actual IATI Standard (spec) definitions should remain ‘neutral’ I personally would prefer to see the central IATI guidance contain recommendations for ‘best practice’ which may include encouraging publishers to include specific codelist values in their published data.  This is actually really helpful in making the total IATI dataset more usable at an aggregated level ie as per use of DAC sector codes, cluster codes etc.</p>
+<p>However, is that actually what you meant <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> or have I misinterpreted your comments?</p>
+          <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/4</link>
+        <pubDate>Thu, 29 Aug 2019 11:28:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1824-4</guid>
+        <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+      </item>
+      <item>
+        <title>Stop recommending DAC codelists</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/petyakangalova">@petyakangalova</a> yes, it did crop up when thinking about a humanitarian context and cool to hear that guidance will be reviewed too, but I am also suggesting that in general (in all the other places) IATI should not be officially recommending any specific codelist over any other codelist, otherwise it is akin to saying that some codelists are more important than others, which is not how IATI works, and not good for the neutrality of the standard, or the aim to cover more than just DAC donor aid.</p>
+          <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/3</link>
+        <pubDate>Wed, 28 Aug 2019 16:23:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1824-3</guid>
+        <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+      </item>
+      <item>
+        <title>Stop recommending DAC codelists</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for raising, Matt. It is indeed correct that on a number of instance the OECD DAC codelist is the recommended one, which is mainly about aligning with other reporting standards.</p>
+<p>I think your specific comment here relates to humanitarian guidance, where since version 2.02 the use of the humanitarian attribute is recommended. Humanitarian cluster codes can also be reported in addition to the humanitarian attribute.</p>
+<p>Enhanced humanitarian guidance is another area we want to focus on in the next rounds of IATI standard guidance consultations that we hope to run.</p>
+          <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/2</link>
+        <pubDate>Wed, 28 Aug 2019 15:35:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1824-2</guid>
+        <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+      </item>
+      <item>
+        <title>Stop recommending DAC codelists</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>The guidance for the standard recommends using DAC codelists in several places - this is not in keeping with the ambition to be a global aid data standard, and can result in worse quality data e.g. the DAC5 sector codelist has limited information in the 7xxxx humanitarian codes compared to the humanitarian cluster codes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824/1</link>
+        <pubDate>Thu, 22 Aug 2019 15:20:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1824-1</guid>
+        <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+      </item>
+  </channel>
+</rss>

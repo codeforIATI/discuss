@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using IATI for COVID in Palestine</title>
+    <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932</link>
+    <description>Hi, I was going to keep a log of how we were using IATI data for COVID in Palestine as a feed into the guidance on COVID for data users discussed on the webinar.
+
+So far (10th April)  d-portal shows us [5 activities](http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=main) with thanks to Oxfam and DFID for being so fast - that is the first lesson, coordination decisions about what to fund are being taken on a weekly basis so for COVID, if IATI data is going to be any use, we need weekly (if not daily publishing).
+
+The second feedback is that we currently have to do multiple searches e.g.:
+1. On [d-portal for &quot;COVID](http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=active)&quot; (which also captures COVID-19)
+2. on d-portal for &#39;Coronavirus&quot; (none yet but seen in other countries, and globlaly) and then 
+3. A techie (is this available via the interface?) version of [d-portal for the GLIDE code](https://d-portal.org/ctrack.html?/humanitarian-scope@code=EP-2020-000012-001&amp;country_code=PS#view=active): 
+4. An [even more comprehensive search on the new datastore](https://iati.cloud/search/activity?q=recipient_country_code:(PS)%20AND%20(title_narrative:%22COVID%22%20OR%20description_narrative:%22COVID%22%20OR%20humanitarian_scope_code:%22EP-2020-000012-001%22%20OR%20humanitarian_scope_code:%22HCOVD20%22%20OR%20tag_code:%22EP-2020-000012-001%22)&amp;wt=json&amp;rows=500000) but that I don&#39;t think can be done via the user interface - and weirdly the datastore only has 2 projects where d-portal has 5?
+
+Once all those searches have been done, we have to combine all the different results, remove all the duplication/double counting, and then add it to all the data from non-IATI publishers.
+
+5. A [search on the FTS database.](https://fts.unocha.org/data-search/results/incoming?usageYears=2020&amp;locations=171&amp;f%5B0%5D=destinationEmergencyIdName%3A%22911%3ACoronavirus%20disease%20Outbreak%20-%20COVID%20-19%22).....which has many activities which are not in d-portal
+6. An excel based tracking sheet sent out to country offices of partners
+
+As of 10th April, D-portal has 5 activities when searching for COVID, 4 activities when searching by GLIDE code, the new Datastore has 2 activities, the FTS has 46 activities (many are global) and our in-country dataset has well over 100 projects - from both IATI and non-IATI publishers.
+
+So far we have found:
+A) IATI is helpful for us to find actors who are delivering outside of the formal plans/working groups
+B) IATI is not rapid enough (except for Oxfam), and not consistent across the different IATI portals, or e.g. compared to the FTS (I really wish they would restart publishing FTS data in IATI format)
+C) On a single activity basis IATI can tell us how much money is flowing, but not across multiple publishers - due to the difficulty in working out which activities are the same project just from different publishers
+D) No activity titles are in Arabic etc - so we have to translate them for our colleagues in all the Ministries.
+E) We see how using different options helps publishers - but unless there is a way to search all the different options in one search query (and through the interface non-techies can access) then [the different ways of reporting make a huge mess](https://discuss.iatistandard.org/t/covid-19-iati-publishing-guidance-consultation-6-20-april/1925/2) for us and make it probably not worth the effort.
+
+I will try to keep this up to date as the situation progresses - hopefully with just a few tweaks this can be improved substantially.</description>
+    
+    <lastBuildDate>Wed, 30 Sep 2020 14:07:49 +0000</lastBuildDate>
+    <category>COVID-19</category>
+    <atom:link href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>This kind of thing could be a lever to encourage more (and more-standardised) use of standard markers, identifiers, and language. If a report or dashboard had high international visibility, IATI reporting orgs might feel more urgency making sure their activitivies/funding show up there.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/12</link>
+        <pubDate>Wed, 30 Sep 2020 14:07:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-12</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Another update (every month I try to answer the question “how much COVID support has Palestine received to date” using IATI data).</p>
+<p>A search <a href="http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=main" rel="nofollow noopener">for ‘COVID’ on d-portal</a> now reveals 67 projects, slowly rising but locally we record approx 220.</p>
+<p>When I look into the 67 projects though I find money for 2016, 2017, 2018, 2019 - that highlights that the reporting of COVID at the activity level really makes a mess of everything.</p>
+<p>Only taking 2020 transactions helps (but still means there is a lot of non-COVID data included) but now serves to highlight that double counting is immediately a challenge. For example, <a href="http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=act&amp;aid=GB-GOV-1-300001-104" rel="nofollow noopener">this DFID project is implemented by UNICEF</a>:  so we need to go through each UNICEF project and try to find a matching one (not an easy task!) and remove it…at this stage my colleagues said ‘forget it’. We could assume that because UNICEF also report we should just disregard all IATI activities that have another reporter as the implementer - that is a fairly heroic assumption!</p>
+<p>Another data source is OCHA and see the table by donor in the <a href="https://www.ochaopt.org/content/covid-19-emergency-situation-report-14" rel="nofollow noopener">latest report</a> which highlights that a search by ‘COVID’ is missing huge amounts of data from existing IATI publishers e.g. when comparing to the <a href="http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=list_publishers" rel="nofollow noopener">D-portal publishers list</a>: IATI data is missing for the following who are all captured by OCHA:</p>
+<ul>
+<li>Austria</li>
+<li>Canada</li>
+<li>Germany BMZ</li>
+<li>Ireland</li>
+<li>Japan</li>
+<li>SIDA</li>
+<li>Switzerland</li>
+<li>UNESCO</li>
+<li>UNFPA</li>
+<li>…</li>
+</ul>
+<p>OCHA also have <a href="https://app.powerbi.com/view?r=eyJrIjoiZjg5MWNiODYtZmIzZC00MmE1LTk0NWItMTVlMzU2MDFlN2ZjIiwidCI6IjBmOWUzNWRiLTU0NGYtNGY2MC1iZGNjLTVlYTQxNmU2ZGM3MCIsImMiOjh9" rel="nofollow noopener">much more detailed data</a> - maybe IATI could reach out and encourage them to publish these datasets to IATI?</p>
+<p>Continued conclusion - IATI data remains unusable for COVID aside from a few niche use-cases e.g. finding new organisations to contact for data outside of IATI, or seeing if there are project documents available without needing to ring the implementer.</p>
+<p>I think that at some point soon, IATI needs to make a high level (non-technical) decision about whether it is going to try to meet this user need (crises e.g. Nepal Earthquake, Ebola, COVID etc) as it seems clear to me that this is not something we can achieve by a few ‘please could you’ guidance tweaks. If not, I think IATI should rethink advertising itself as relevant for COVID as my experience has been that when people do then try to use it, the negative outcome is really damaging - and those users give up on IATI for other purposes where it performs much better.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/11</link>
+        <pubDate>Sat, 08 Aug 2020 08:20:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-11</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Small update trying to supplement the great/interesting work here: <a href="https://iatistandard.org/en/news/covid-19-data-published-to-iati-what-do-we-know-and-whats-next/" rel="nofollow noopener">https://iatistandard.org/en/news/covid-19-data-published-to-iati-what-do-we-know-and-whats-next/</a></p>
+<p>Based on our weekly data collection in Palestine:</p>
+<ol>
+<li>D-portal lists (as of the 26th June) 45 activities with a value of around $88 million: <a href="http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=main" rel="nofollow noopener">http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=main</a>
+</li>
+<li>This compares to around 90 activities that we have tracked locally, with a value of around $375 million.</li>
+<li>IATI lists 11 publishers, compared to more than 50 international ones (82 including Palestinian orgs) collected locally.</li>
+</ol>
+<p>Conclusions:</p>
+<ol>
+<li>This is a big improvement in coverage from IATI data, as for the first three months of the crisis, IATI coverage was between 10% and 20% - but based on this, IATI data is not realtime enough (or comprehensive enough) to start to replace existing information collection/sharing methods in a crisis.</li>
+<li>It seems like much of the coverage gap could be due to the much wider set of reporters locally - it would be good to analyse if this because there are lots of organisations in the local data who are not IATI publishers, or if there are a lot are IATI publishers in the local data, but who do not publish frequently enough, or in a way that is picked up by d-portal to be visible there.</li>
+<li>Both datasets are full of things that are not 100% COVID</li>
+<li>We are using IATI data to check if there are organisations that we are not getting local reporting from, and to fill gaps in knowledge, because locally we just ask for a project name/description, but these are often more detailed in IATI data. 5. We need more detailed fields locally (PPE vs Ventilators etc) than IATI provides, so IATI is always going to be just a part of the approach.</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/10</link>
+        <pubDate>Fri, 26 Jun 2020 16:36:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-10</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>I wonder if this should be a topic for discussion at the IATI community meeting (sorry I don’t recall what the new name is for the combined MA &amp; TAG) held this fall (assuming we have it in person).  Max’s point about having a way to search for non-technical folks that covers all the publishing options is so key.  As someone with no inhouse technical support, I’m dead in the water with targeted extraction of useful data.  I wonder if the DUTF can think about “tools” that accompany guidance when we have specialized/best practices guidance issued. Again, just riffing here but perhaps a topic for a future meeting when we aren’t all running a mile a minute with COVID.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/9</link>
+        <pubDate>Mon, 04 May 2020 09:55:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-9</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Historical aside: in IATI, we knew about this different approach on the humanitarian side as early as March 2010, when we did the first IATI pilot with OCHA-FTS for the Haiti earthquake, but the decision then was to stick with an activity-centric approach because it was more compatible with OECD’s CRS, and also because plans don’t generally apply in the dev-aid world (though MDGs/SDGs have some similarities).</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/8</link>
+        <pubDate>Thu, 30 Apr 2020 13:37:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-8</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Good catch, <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>. You’re right that the GLIDE is not in either the simplified CSV or the full JSON from HPC.tools, because the information’s organised differently than IATI data (IATI is activity-centric, while OCHA’s data is plan-centric).</p>
+<p>Every Project is attached to a Response Plan, and every Response Plan is associated with one or more Emergencies. You’d have to go to the Response Plan to find the GLIDE(s) for the Emergency/ies.</p>
+<p>There is a new <a href="https://www.humanitarianresponse.info/sites/www.humanitarianresponse.info/files/documents/files/global_humanitarian_response_plan_covid-19.pdf" rel="nofollow noopener">Global COVID-19 Humanitarian Response Plan</a> (PDF), and (presumably) most COVID-19 projects will eventually be associated with it; right now, however, there are none registered in HPC.tools yet.</p>
+<p>I’ll keep an eye on it, and see if we can get permission to include the COVID-19 projects (from all countries) as a new dataset on HDX once there are some registered in HPC.tools.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/7</link>
+        <pubDate>Thu, 30 Apr 2020 13:32:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-7</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/david_megginson">@David_Megginson</a>  - the csv has columns for (name, versionCode, currentRequestedFunds, objective, partners, startDate, endDate, globalClusters, organizations, plans, Response plan code) which one will the glide code turn up in…and which list of glide codes will it come from?</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/6</link>
+        <pubDate>Thu, 30 Apr 2020 07:58:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-6</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>The GLIDE is fairly new, so it will take a while to worm its way into information systems, but I’m hoping it will start showing up in some relevant activities here soon:</p>
+<p><a href="https://data.humdata.org/dataset/hrp-projects-pse" class="onebox" target="_blank" rel="nofollow noopener">https://data.humdata.org/dataset/hrp-projects-pse</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/5</link>
+        <pubDate>Wed, 29 Apr 2020 21:14:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-5</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1932">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>write this all up into a blog</p>
+</blockquote>
+</aside>
+<p>Agreed / will do, hoping it can also feed into the upcoming IATI guidance for users of COVID data to complement the publishers one that is already out</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/4</link>
+        <pubDate>Tue, 28 Apr 2020 11:58:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-4</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> I think it would be incredibly useful for you to write this all up into a blog. We’ve got a little bit better since Haiyan and Kathmandu - but not much. It would also be useful to know from the Humanitarian Data Centre and FTS folks how timely their data flows are.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/3</link>
+        <pubDate>Tue, 28 Apr 2020 08:48:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-3</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Small update:</p>
+<ol>
+<li>Now up to 8 activities on IATI (6 Oxfam, one WB, one DFID) - thanks to those publishers</li>
+<li>However, this compares to over 123 projects provided by donor country offices via Excel sheets, the majority of which are from existing IATI publishers</li>
+</ol>
+<p>At this stage, our major issue is therefore that the vast majority of IATI publishing is not frequent enough to allow us to use the data in the weekly decision making meetings.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/2</link>
+        <pubDate>Tue, 28 Apr 2020 06:58:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-2</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+      <item>
+        <title>Using IATI for COVID in Palestine</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, I was going to keep a log of how we were using IATI data for COVID in Palestine as a feed into the guidance on COVID for data users discussed on the webinar.</p>
+<p>So far (10th April)  d-portal shows us <a href="http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=main" rel="nofollow noopener">5 activities</a> with thanks to Oxfam and DFID for being so fast - that is the first lesson, coordination decisions about what to fund are being taken on a weekly basis so for COVID, if IATI data is going to be any use, we need weekly (if not daily publishing).</p>
+<p>The second feedback is that we currently have to do multiple searches e.g.:</p>
+<ol>
+<li>On <a href="http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=active" rel="nofollow noopener">d-portal for "COVID</a>" (which also captures COVID-19)</li>
+<li>on d-portal for 'Coronavirus" (none yet but seen in other countries, and globlaly) and then</li>
+<li>A techie (is this available via the interface?) version of <a href="https://d-portal.org/ctrack.html?/humanitarian-scope@code=EP-2020-000012-001&amp;country_code=PS#view=active" rel="nofollow noopener">d-portal for the GLIDE code</a>:</li>
+<li>An <a href="https://iati.cloud/search/activity?q=recipient_country_code:(PS)%20AND%20(title_narrative:%22COVID%22%20OR%20description_narrative:%22COVID%22%20OR%20humanitarian_scope_code:%22EP-2020-000012-001%22%20OR%20humanitarian_scope_code:%22HCOVD20%22%20OR%20tag_code:%22EP-2020-000012-001%22)&amp;wt=json&amp;rows=500000" rel="nofollow noopener">even more comprehensive search on the new datastore</a> but that I don’t think can be done via the user interface - and weirdly the datastore only has 2 projects where d-portal has 5?</li>
+</ol>
+<p>Once all those searches have been done, we have to combine all the different results, remove all the duplication/double counting, and then add it to all the data from non-IATI publishers.</p>
+<ol start="5">
+<li>A <a href="https://fts.unocha.org/data-search/results/incoming?usageYears=2020&amp;locations=171&amp;f%5B0%5D=destinationEmergencyIdName%3A%22911%3ACoronavirus%20disease%20Outbreak%20-%20COVID%20-19%22" rel="nofollow noopener">search on the FTS database.</a>…which has many activities which are not in d-portal</li>
+<li>An excel based tracking sheet sent out to country offices of partners</li>
+</ol>
+<p>As of 10th April, D-portal has 5 activities when searching for COVID, 4 activities when searching by GLIDE code, the new Datastore has 2 activities, the FTS has 46 activities (many are global) and our in-country dataset has well over 100 projects - from both IATI and non-IATI publishers.</p>
+<p>So far we have found:<br>
+A) IATI is helpful for us to find actors who are delivering outside of the formal plans/working groups<br>
+B) IATI is not rapid enough (except for Oxfam), and not consistent across the different IATI portals, or e.g. compared to the FTS (I really wish they would restart publishing FTS data in IATI format)<br>
+C) On a single activity basis IATI can tell us how much money is flowing, but not across multiple publishers - due to the difficulty in working out which activities are the same project just from different publishers<br>
+D) No activity titles are in Arabic etc - so we have to translate them for our colleagues in all the Ministries.<br>
+E) We see how using different options helps publishers - but unless there is a way to search all the different options in one search query (and through the interface non-techies can access) then <a href="https://discuss.iatistandard.org/t/covid-19-iati-publishing-guidance-consultation-6-20-april/1925/2">the different ways of reporting make a huge mess</a> for us and make it probably not worth the effort.</p>
+<p>I will try to keep this up to date as the situation progresses - hopefully with just a few tweaks this can be improved substantially.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932/1</link>
+        <pubDate>Fri, 10 Apr 2020 15:08:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1932-1</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+      </item>
+  </channel>
+</rss>

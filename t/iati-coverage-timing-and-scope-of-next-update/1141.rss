@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Coverage ; timing and scope of next update?</title>
+    <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141</link>
+    <description>Hello @IATI-techteam , @bill_anderson
+
+Is there a timescale for the next update of the [Coverage statistics](http://dashboard.iatistandard.org/coverage.html)?  
+
+Additionally, since coverage data was last calculated, and the reference data collected, many more organisations will have published.  It seems they get a default score, despite reference data being missing.  Is there a plan to extend to all published organisations?</description>
+    
+    <lastBuildDate>Wed, 19 Jun 2019 09:39:01 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>There has been a lot of good discussion about this topic on this post so I thought it might also be useful to share how we are currently planning to assess coverage for Grand Bargain signatories (as part of the the Grand Bargain Transparency workstream).</p>
+<p>As <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a> has mentioned earlier we (those working on the Grand Bargain) are only interested in the total operational spend for humanitarian activities. Therefore our proposal is to use the expenses-line element of total-expenditure with a predefined <span class="mention">@ref</span> of ‘HUMTOT’ so that we can identify the expenses line that contains the humanitarian only total value.</p>
+<p>total-expenditure<br>
+period-start iso-date=“2018-04-06”<br>
+period-end iso-date=“2019-04-05”<br>
+value value-date=“2019-04-05”&gt;10000000/value<br>
+expense-line ref=“HUMTOT”<br>
+value value-date=“2019-04-05”&gt;5000000/value<br>
+narrative<br>
+Total operational spend for humanitarian activities. Figure can be validated by reference to page 32 of the 2018-2019 annual report at <a href="http://www.myorganisation.org/annual-report-2019" rel="nofollow noopener">www.myorganisation.org/annual-report-2019</a><br>
+/narrative<br>
+/expense-line<br>
+/total-expenditure</p>
+<p>This is not of course a perfect solution as we will have to rely on publishers providing specific attribute content. However it does potentially meet our purposes for now. The publisher could also choose to include a link to a document which provides verification of any figures provided via the  field (although again not a perfect solution!). However, the new approach of using  does have some advantages:</p>
+<ol>
+<li>Use of total-expenditure means that operational totals can be provided for any number of years and therefore coverage can be calculated for multiple years</li>
+<li>Use of period-start and period-end means that the publisher can specify their own fiscal or other year boundaries for coverage calculations (rather than having to recalculate their values for a 01 Jan to 31 Dec year start &amp; end).</li>
+</ol>
+<p>As ever any thoughts about this approach are very welcome?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/36</link>
+        <pubDate>Wed, 19 Jun 2019 09:39:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-36</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="33" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/alexjtilley/40/536_2.png" class="avatar"> alexjtilley:</div>
+<blockquote>
+<p>The idea would be that publishers could use this new code to tag a document that corroborates the total-expenditure field amount.</p>
+</blockquote>
+</aside>
+<p>As mentioned earlier in this thread, it is possible that no document will clearly corroborate the total-expenditure amount.</p>
+<p>Rather than discussing changes to the standard to enable this option, perhaps we should discuss whether it is so important to corroborate the amount declared? Could we not assume organisations act in good faith when declaring their total expenditures? With of course the possibility that a stakeholder could challenge the amount declared, in which case the organisation could be asked to explain and corroborate its declaration (and correct it if needed).</p>
+<p>All organisations have to adhere to financial mangement standards; deliberate misreporting is a serious matters, so I simply cannot imagine it happening on a large scale. Is it really worth designing a verification method beyond the publication of the annual report?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/35</link>
+        <pubDate>Tue, 18 Jun 2019 18:47:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-35</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/alexjtilley">@alexjtilley</a></p>
+<blockquote>
+<p>just wondering how easy</p>
+</blockquote>
+<p>The <a href="http://reference.iatistandard.org/203/codelists/DocumentCategory/" rel="nofollow noopener">DocumentCategory</a> codelist is flagged as a <a href="http://reference.iatistandard.org/203/codelists-guides/codelist-management/#core-codelist" rel="nofollow noopener">Core codelist</a>:</p>
+<blockquote>
+<p>Core Codelists contain conforming values for a particular  <strong>decimal Version</strong>  of the IATI Standard, the contents of which are managed by the IATI Technical Team. Core Codelists contain codes that involve functional logic that impacts the way in which the Standard is interpreted and processed.</p>
+</blockquote>
+<p>So, I think the answer is: not <em>that</em> easily.  Or: not as easily as a <a href="http://reference.iatistandard.org/203/codelists-guides/codelist-management/#non-embedded-codelists-non-core" rel="nofollow noopener">Non Core codelist change</a>.</p>
+<blockquote>
+<p>feasible</p>
+</blockquote>
+<p>Whilst we have a process to do this, I think it’s fair to flag there’s no advertised schedule for an “upgrade” to the standard.  So, whilst a proposal could be made for editing this Core codelist, there’s no actual mechanism in place to do so, right now</p>
+<p>We should also consider that a change to the standard will take some months to fully implement, and then publishers will need to update their systems to use any new possibilities</p>
+<p>Sorry - that doesn’t sound like an encouraging answer - but hopefully helpful!</p>
+<blockquote>
+<p>helpful</p>
+</blockquote>
+<p>I’d encourage anyone with a proposal to change/add/modify the standard to gather user stories and a wide range of support.  I’d also be ready for discussion and debate on any proposal - as we all have to consider the impacts on existing and future users.  A kind of <a href="https://en.wikipedia.org/wiki/Stress_testing" rel="nofollow noopener">stress testing</a>, maybe.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/34</link>
+        <pubDate>Fri, 14 Jun 2019 11:19:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-34</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[alexjtilley]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="30" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_2.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>We know that the B codes in the <a href="http://reference.iatistandard.org/203/codelists/DocumentCategory/" rel="nofollow noopener">DocumentCategory</a> codelist are to be used for organisation level documents. Of these, B01 - Annual Report seems the most likely (in fact, the <em>only</em> ?) existing category for budgetary/spent information ?</p>
+</blockquote>
+</aside>
+<p>Thanks Steven - just wondering how easy/feasible/helpful it would be to add an extra B code for “total-expenditure” in the general document link codelist?</p>
+<p>The idea would be that publishers could use this new code to tag a document that corroborates the total-expenditure field amount.  This could then be used as an extra tag for a document such as an Annual Report if it contains the figure, or for a new document that shows total annual spend, such as an official expenditure statement.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/33</link>
+        <pubDate>Fri, 14 Jun 2019 10:08:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-33</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="29" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/alexjtilley/40/536_2.png" class="avatar"> alexjtilley:</div>
+<blockquote>
+<blockquote>
+<p>The figure used is often just the sum of disbursements + expenditure recorded in a publisher’s IATI activities, so does not help to provide a comparison with which to measure coverage.</p>
+</blockquote>
+<p>One way of doing this would be to require a published document such as an annual report, audited accounts or other public statement which corroborates the figure entered in the total-expenditure field. I’m not sure whether this could/should be done using the existing document-link in the org file, by adding a new code to the document-link codelist or as an additional subelement in the total-expenditure element.</p>
+</blockquote>
+</aside>
+<p>One potential issue is where an organisation has a mix of activities (hence expenditure) and some of these are not relevant to IATI. The figure in the total-expenditure element may be the result of calculations that will not necessarily appear in a clear way in the annual report. For instance, total-expenditure for IATI may be “pillar 1C + all of pillar 2 + pillar 3A”. Not insurmontable, but we’d need to think of ways (and provide guidance on how) to communicate what total-expenditure represents if it’s less than 100% of an organization’s budget.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/32</link>
+        <pubDate>Fri, 24 May 2019 14:51:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-32</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/alexjtilley">@alexjtilley</a> thank you for following up.  As <a class="mention" href="/u/stevieflow">@stevieflow</a> has summarized, currently there is the option to add a <code>document-link</code> at organisation level,  specify the type and link to relevant document, such as Annual reports. However, this is not a mandatory field in IATI.</p>
+<blockquote>
+<p>One way of doing this would be to require a published document such as an annual report, audited accounts or other public statement which corroborates the figure entered in the total-expenditure field.</p>
+</blockquote>
+<p>I would agree that the above would be quite a strong requirement. Advising organisations and recommending that they add/ refer to a relevant document is beneficial for users of the data, can be one way forward.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/31</link>
+        <pubDate>Fri, 24 May 2019 09:46:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-31</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="29" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/alexjtilley/40/536_2.png" class="avatar"> alexjtilley:</div>
+<blockquote>
+<p>One way of doing this would be to require a published document such as an annual report, audited accounts or other public statement which corroborates the figure entered in the total-expenditure field. I’m not sure whether this could/should be done using the existing document-link in the org file, by adding a new code to the document-link codelist or as an additional subelement in the total-expenditure element.</p>
+</blockquote>
+</aside>
+<p>Thanks <a class="mention" href="/u/alexjtilley">@alexjtilley</a></p>
+<p>We know that the B codes in the <a href="http://reference.iatistandard.org/203/codelists/DocumentCategory/" rel="nofollow noopener">DocumentCategory</a> codelist are to be used for organisation level documents.  Of these, B01 - Annual Report seems the most likely (in fact, the <em>only</em>?) existing category for budgetary/spent information ?</p>
+<p>I’d be very wary of mandating a document-link of a certain type, as that would a) be in place for everybody (and for some publishers there may be good reason not to include it, and b) as it involves a codelist value it would have to be implemented by a new ruleset</p>
+<p>The document-link block being added within the total-expenditure element is interesting - in the same way a document-link could be relevant to a specific transaction or location (for example).  I think that possibility takes us into a new area of discussion - around the future flexibility of the standard - so maybe not on the table for addressing this more immediate need.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/30</link>
+        <pubDate>Thu, 23 May 2019 16:04:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-30</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[alexjtilley]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Petya - thanks for getting back to me.</p>
+<aside class="quote no-group" data-post="27" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/petyakangalova/40/175_2.png" class="avatar"> petyakangalova:</div>
+<blockquote>
+<p>Yes, I agree that we need to encourage more organisation to be using the <code>total-expenditure</code> field. I believe the ‘verification’ part will be something you will be doing for the Aid Transparency Index. One way will be to see if organisations have added a relevant <code>document-link</code> in their organisation file.</p>
+</blockquote>
+</aside>
+<p>To avoid confusion I suggest we focus the discussion in this thread on IATI’s <a href="http://dashboard.iatistandard.org/coverage.html" rel="nofollow noopener">coverage statistics</a> rather than on the Aid Transparency Index. My suggestion is that the total-expenditure element should have some form of verification to address my point 2:</p>
+<aside class="quote no-group" data-post="26" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v4/letter/a/8edcca/40.png" class="avatar"> alexjtilley:</div>
+<blockquote>
+<p>The figure used is often just the sum of disbursements + expenditure recorded in a publisher’s IATI activities, so does not help to provide a comparison with which to measure coverage.</p>
+</blockquote>
+</aside>
+<p>One way of doing this would be to require a published document such as an annual report, audited accounts or other public statement which corroborates the figure entered in the total-expenditure field. I’m not sure whether this could/should be done using the existing document-link in the org file, by adding a new code to the document-link codelist or as an additional subelement in the total-expenditure element.</p>
+<p>It would be good to hear views from those more involved in the technical detail of the standard as to whether this is a workable proposal and what may be the best way to implement it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/29</link>
+        <pubDate>Thu, 23 May 2019 10:04:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-29</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="27" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/petyakangalova/40/175_2.png" class="avatar"> petyakangalova:</div>
+<blockquote>
+<p>I believe the ‘verification’ part will be something you will be doing for the Aid Transparency Index.</p>
+</blockquote>
+</aside>
+<p>I suspect the “verification” part may also become relevant for the IATI Coverage methodology, as part of the intention to:</p>
+<aside class="quote no-group" data-post="6" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<ul>
+<li>Agree on a mechanism to check the accuracy of the reported data.</li>
+</ul>
+</blockquote>
+</aside>
+<p>In fact, I suspect much of the complexity of the new coverage methodology has been shifted into this bullet point.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/28</link>
+        <pubDate>Wed, 15 May 2019 10:46:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-28</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Alex. Many thanks for providing this useful analysis from the work you have done.</p>
+<blockquote>
+<p>In order for this proposed methodology to work we would need to encourage publishers to consistently add their data to the total-expenditure field and to have some form of verification, in order to address point 2.</p>
+</blockquote>
+<p>Yes, I agree that we need to encourage more organisation to be using the <code>total-expenditure</code> field. I believe the ‘verification’ part will be something you will be doing for the Aid Transparency Index. One way will be to see if organisations have added a relevant <code>document-link</code> in their organisation file.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/27</link>
+        <pubDate>Wed, 15 May 2019 10:41:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-27</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[alexjtilley]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi IATI Technical Team:</p>
+<p>Following up on this I wanted to let you know that we have been looking into this issue at Publish What You Fund.</p>
+<p>We looked at the total-expenditure field of the 45 publishers assessed in the 2018 Aid Transparency Index and compared these with the total of expenditures and disbursements for that year. This is what we found:</p>
+<ol>
+<li>Most publishers are not using the total-expenditure field to publish annual expenditure. Of the 45 publishers in the Index, 4 have published 2018 total-expenditure data, 7 have published 2017 data and 8 have published 2016 data.</li>
+<li>The figure used is often just the sum of disbursements + expenditure recorded in a publisher’s IATI activities, so does not help to provide a comparison with which to measure coverage.</li>
+</ol>
+<p>In order for this proposed methodology to work we would need to encourage publishers to consistently add their data to the total-expenditure field and to have some form of verification, in order to address point 2. Linking to an annual report or official figure elsewhere is one suggestion of how this could be done.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/26</link>
+        <pubDate>Tue, 14 May 2019 13:23:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-26</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Yohanna.</p>
+<p>Thanks for the follow-up and apologies for the delay in getting back to you. Following the tech audit last August, there was no immediate action to work on the IATI dashboard and we have not looked into a new methodology for the coverage assessment.</p>
+<p>This is currently on hold so I cannot confirm what period the coverage assessment would cover. The recommendation for the Dashboard was to revisit re-building the Dashboard as we have updated the community in our last blog: <a href="https://iatistandard.org/en/news/iati-technical-team-our-detailed-quarterly-update/">https://iatistandard.org/en/news/iati-technical-team-our-detailed-quarterly-update/</a></p>
+<p>In the meantime, I would still encourage using total-expenditure in  the organisation file .</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/25</link>
+        <pubDate>Thu, 02 May 2019 13:21:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-25</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<ul>
+<li>Agree on a mechanism to check the accuracy of the reported data.</li>
+</ul>
+</blockquote>
+</aside>
+<p>I suppose the detail around this bit is also important, since it seems the methodological complexity has been shifted to here.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/24</link>
+        <pubDate>Fri, 26 Apr 2019 16:28:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-24</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Going over the thread again, I’m not sure we fully answered some queries.</p>
+<p>Could the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> provide clarifications on the questions above - in particular regarding the period for which coverage would be calculated ie 1) what time lag (2 years, as suggested by Steven) and 2) how far back in time.</p>
+<p>thanks</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/23</link>
+        <pubDate>Thu, 18 Apr 2019 17:53:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-23</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, the TAG would be a good opportunity to make sure we all understand what is being proposed.</p>
+<p>However, it would be great if the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> could share more details ahead of time so we can prepare.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/22</link>
+        <pubDate>Tue, 09 Oct 2018 22:01:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-22</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Perhaps another mini-conversation at TAG?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/21</link>
+        <pubDate>Thu, 04 Oct 2018 08:57:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-21</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>(At least some) publishers have been emailed, yes.</p>
+<p>The core message is as follows:<br>
+"In the future we plan to compare the value of the  element published in your organisation file with the calculated total spend (expenditure + disbursements) for a given year published in your activity files.</p>
+<p>To prepare for this please ensure you are publishing an organisation file which contains the  element for at least all years that you have been publishing to IATI."</p>
+<p>I’m not sure I understand this last part: “for at least all the years that you have been publishing to IATI”. This seems like a fairly tall order, and not necessarily a very useful one for publishers who have (very partial) data going back over many years.</p>
+<p>I assume coverage will be assessed for recent years (probably a year behind, as suggested by Steven). Could the Tech Team confirm what is the proposed approach?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/20</link>
+        <pubDate>Wed, 03 Oct 2018 16:32:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-20</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/petyakangalova">@petyakangalova</a></p>
+<p>Have publishers been emailed?</p>
+<p>I assume that the methodology to use the <code>total-expenditure</code> would run (at least) a year “behind”.  For example:</p>
+<ul>
+<li>In 2018, coverage data would be based on 2016 expenditure</li>
+<li>In 2019, coverage data would be based on 2017 expenditure</li>
+<li>In 2020, coverage data would be based on 2019 expenditure</li>
+</ul>
+<p>Because - it seems unrealistic for publishers to have their <code>total-expenditure</code> published (and all their activity data, on the 1st January each year.  For many, getting this data together might take a few months.  Therefore, it would seem the IATI dashboard methodology would need to accommodate this, in line with regular financial process &amp; timescales.</p>
+<p>Great to see this move forward, nevertheless.  Thanks.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/19</link>
+        <pubDate>Wed, 03 Oct 2018 16:00:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-19</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the comments and ideas <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a><br>
+We will be emailing all IATI publishers next week to inform them about the planned changes of removing coverage-adjusted score and would strongly encouraged all to use <code>total-expenditure</code> in their organisation file.</p>
+<p>On including <code>total-expenditure</code> in the summary statistics methodology, we don’t have an ETA yet for when that will be incorporated in the publisher statistics, but would keep in mind the idea about highlighting publishers that have already included <code>total-expenditure</code> in their file.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/18</link>
+        <pubDate>Fri, 28 Sep 2018 10:13:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-18</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>How about putting a statistic about which publisher includes total expenditure in the org file on the statistics page?  It would highlight whose coverage could theoretically could be calculated (as imperfect as it may be) and may provide an incentive for others to include that data in their org files so we get closer to actually having an automated way of calculating coverage.  Assuming people still agree that coverage is important.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/17</link>
+        <pubDate>Thu, 13 Sep 2018 12:16:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-17</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The IATI technical team did a manual collection of reference spend for 2014 and 2015 from all IATI publishers two years ago. The process involved emailing publishers, collecting data manually and storing in a <a href="https://docs.google.com/spreadsheets/d/1SgE6sXbzD2y8p3QzBcY4kAqkCTG1eUld5QuSvCfKVUE">public Google sheet</a>. This is not a sustainable method for collecting coverage data and the IATI tech team has <strong>not</strong> done reference spend collection for any new IATI publishers over the past two years. This means that the coverage data and then coverage-adjusted scores on the <a href="http://dashboard.iatistandard.org/summary_stats.html">Summary Statistics</a> are not up to date for all IATI publishers.</p>
+<p>As a result, the current plan is to remove the coverage and coverage-adjusted columns from the <a href="http://dashboard.iatistandard.org/summary_stats.html">Summary Statistics page</a> on the Dashboard, keeping the <a href="http://dashboard.iatistandard.org/coverage.html">coverage page</a> only for reference, until the process for collecting reference spend is automated and up to date. In the meantime, we strongly encourage that all IATI publishers <a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/6">include in their organisation file total-expenditure</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/16</link>
+        <pubDate>Thu, 13 Sep 2018 11:02:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-16</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> any updates on this?  The number of publishers without (2014) coverage reference data now far exceeds those with.  The knock on is that the coverage-adjusted score is calculated with the arbitrary 20% for many many publishers.  This just looks strange, particularly to those new to IATI.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/15</link>
+        <pubDate>Tue, 11 Sep 2018 07:04:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-15</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>returns a 404 error.</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>: <a href="https://github.com/IATI/IATI-Dashboard/pull/501">fixed here</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/14</link>
+        <pubDate>Tue, 17 Jul 2018 15:05:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-14</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="7" data-topic="1141">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>For <code>total-expenditure</code> there seem to be <a href="http://dashboard.iatistandard.org/element/iati-organisation_total-expenditure.html" rel="nofollow noopener">45 publishers currently using that</a></p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a>, the link from this Dashboard total-expenditure element to the Standard page (presumably describing the element) returns a 404 error.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/13</link>
+        <pubDate>Tue, 17 Jul 2018 14:27:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-13</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+      <item>
+        <title>IATI Coverage ; timing and scope of next update?</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>IOM is one of those 15 publishers.  We do include line-item info all of which ties to our audited financials. Our data doesn’t reference or even isolate humanitarian from development but it is something we could do if/when coverage statistics want to pull from the org file.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141/12</link>
+        <pubDate>Tue, 17 Jul 2018 08:22:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1141-12</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-coverage-timing-and-scope-of-next-update/1141.rss">IATI Coverage ; timing and scope of next update?</source>
+      </item>
+  </channel>
+</rss>

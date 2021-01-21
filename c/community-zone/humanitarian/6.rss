@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Humanitarian - IATI Community Discussions</title>
+    <link>https://discuss.iatistandard.org/c/community-zone/humanitarian/6</link>
+    <description>Topics in the &#39;Humanitarian&#39; category &lt;strong&gt;INTRODUCTION&lt;/strong&gt;&lt;br/&gt;The IATI Humanitarian Working Group is a sub-group under the IATI Technical Committee for discussion and collaborative action around the management of humanitarian related information published using the  IATI standard. The Humanitarian Working Group seeks to develop common solutions on questions related to data management, collection, and sharing for the broader international development and humanitarian IATI data user communities.</description>
+    
+      <lastBuildDate>Mon, 26 Oct 2020 16:29:08 +0000</lastBuildDate>
+      <atom:link href="https://discuss.iatistandard.org/c/community-zone/humanitarian/6.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Humanitarian Scope - Activity/Transaction Level</title>
+          <dc:creator><![CDATA[AVaughn]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Colleagues -</p>
+<p>Earlier this summer USAID realized that placement of the Humanitarian Scope at the transaction level was causing a critical validation error in the IATI Validator (original post <a href="https://discuss.iatistandard.org/t/current-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19/1939/7">here</a>). USAID puts many details (such as country, sector) at the transaction level to improve the granularity of activity information. If we put Humanitarian Scope with the activity level, we will lose significant granularity in our information, as well as dramatically over-count USAID efforts to specific responses. Additionally, elements such as cluster code and glide code can differ among the transactions within one USAID activity.</p>
+<p>Initially, USAID decided the best interim solution would be to intentionally continue reporting Humanitarian Scope at the transaction level in order to preserve the granularity of our data. Because this is a critical validation error, however, we have now transitioned to “namespace” the element.</p>
+<p>Rather than continue using this workaround, USAID would like to see the IATI standard revised to accommodate the Humanitarian Scope at the transaction level in the same way recipient countries and sectors can be reported at the activity level or transaction level. This will not affect publishers who include this data at the activity level, but will allow for more granularity for those who want to publish transaction-level data. Additionally, we believe this improved granularity will be more useful for data users.</p>
+<p>It would be great to discuss this with others.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041</link>
+          <pubDate>Mon, 26 Oct 2020 16:29:08 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-2041</guid>
+          <source url="https://discuss.iatistandard.org/t/humanitarian-scope-activity-transaction-level/2041.rss">Humanitarian Scope - Activity/Transaction Level</source>
+        </item>
+        <item>
+          <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Within the Humanitarian <a href="https://interagencystandingcommittee.org/more-support-and-funding-tools-local-and-national-responders" rel="nofollow noopener">Grand Bargain (GB) Localisation</a> commitment, not only is there a requirement for donors and responders to increase the amount of funding that goes both directly and indirectly to in-country NGOS and responders but there is also a requirement to increase the % of funding that goes directly to humanitarian pooled funds such as those managed by UN OCHA’s CERF and Country Based Pooled Funds.<br>
+As part of the prototyping work that we are undertaking within the Grand Bargain Transparency workstream we would like to be able to demonstrate how the percentage of funding disbursed to pooled funds could be calculated by using the published IATI data of the GB Signatories. The intention was to identify such payments via the use of the element   for OECD DAC Aid Types with a value of ‘B04’?  However, having looked at the data of a number of different donors I have noticed that different donors are using different codes (mainly ‘B02’, ‘BO3’ or ‘B04’) in relation to their CERF or CBPF contributions.<br>
+In order to calculate an aggregated pooled fund contribution value it would of course be preferable if all donors used the same code for contributions to the same fund (and we could even eventually provide a look up list for which code(s) to use for which fund to assist with this process). However, I first wanted to better understand why donors were currently using the different specific codes for CERF &amp; CBPF? Are there other criteria that you would take into account for using eg ‘B03’ rather than ‘B04’ or are there more practical issues such as current constraints within your organisation own’s systems etc?</p>
+<p>Any thoughts or comments from <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/rbesseling">@rbesseling</a> <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <span class="mention">@OJ</span>_ <a class="mention" href="/u/avaughn">@AVaughn</a>  or anyone else would be very welcome</p>
+            <p><small>9 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821</link>
+          <pubDate>Thu, 22 Aug 2019 08:56:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1821</guid>
+          <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+        </item>
+        <item>
+          <title>Help request - FTS vs .......for humanitarian data</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Hi,</p>
+<p>In Somalia we are making IATI data available within the government AIMS for data entry users to import projects published via IATI, rather than re-typing out all of the data.</p>
+<p>When we scoped the project back in 2015, OCHA was publishing FTS data to IATI e.g. see <a href="https://www.iatiregistry.org/publisher/18ebafff-9867-4a03-aa8f-d2e2a3fa1938?country=Somalia&amp;_country_limit=0&amp;q=&amp;sort=metadata_modified+desc" rel="nofollow noopener">here</a> but this seems to have stopped in 2015?</p>
+<p>Does anyone know what we are missing? Has it restarted somewhere else? OCHA in Mogadishu are suggesting using OPS data but as far as we know that is just excel sheets and not published to IATI…help!</p>
+<p>Of course we can also get humanitarian data from all the individual organisations, but FTS is (was) great because it used the locally recognised project names, sorted out the duplication etc</p>
+<p>Thanks a lot,</p>
+<p>Matt</p>
+            <p><small>12 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694</link>
+          <pubDate>Fri, 22 Mar 2019 11:01:55 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1694</guid>
+          <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+        </item>
+        <item>
+          <title>Accessing IATI data with humanitarian flag</title>
+          <dc:creator><![CDATA[Nik]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Hello all,</p>
+<p>first post here, so please be forgiving as this is all new and exciting.</p>
+<p>I’m currently trying to explore the humanitarian data (as in, data with a <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/" rel="nofollow noopener">humanitarian attribute</a>) on IATI. However, it seems to be tricky to download this data, in either XML or preferably CSV format. Would anybody have advice on how to best get hold of, say, all IATI data with a humanitarian flag in either of those formats?</p>
+<p>Now this might have already been addressed in similar topics. I could not find anything specific to this query but am more than happy to read up existing discussions if pointed in the right direction.</p>
+<p>Thanks a lot,</p>
+<p>Nik</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504</link>
+          <pubDate>Tue, 09 Oct 2018 13:47:38 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1504</guid>
+          <source url="https://discuss.iatistandard.org/t/accessing-iati-data-with-humanitarian-flag/1504.rss">Accessing IATI data with humanitarian flag</source>
+        </item>
+        <item>
+          <title>Policy Markers and humanitarian activities - advice needed</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Hello</p>
+<p>When activities centre on humanitarian responses, how have people included the <a href="http://iatistandard.org/203/codelists/PolicyMarker/" rel="nofollow noopener">Policy Marker</a> codes?</p>
+<p>I know that there is also a Policy Marker Vocabulary, so this function could utilise other codes, but specifically - does anyone have experience of using the OECD DAC derived policy markers in humanitarian settings, or is it just not applicable?</p>
+<p>I’d be interested in feedback from Dutch colleagues, as I had understood Policy Markers were advocated for --&gt; <a class="mention" href="/u/pelleaardema">@pelleaardema</a> <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/rolfkleef">@rolfkleef</a></p>
+<p>There’s no reference to Policy Markers in the latest version of <a href="https://discuss.iatistandard.org/t/help-develop-iati-s-humanitarian-reporting-guidance/530/12">guidance around humanitarian data</a> &amp; IATI --&gt; <a class="mention" href="/u/wendy">@Wendy</a></p>
+            <p><small>10 posts - 5 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/policy-markers-and-humanitarian-activities-advice-needed/1343">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/policy-markers-and-humanitarian-activities-advice-needed/1343</link>
+          <pubDate>Thu, 07 Jun 2018 09:05:27 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1343</guid>
+          <source url="https://discuss.iatistandard.org/t/policy-markers-and-humanitarian-activities-advice-needed/1343.rss">Policy Markers and humanitarian activities - advice needed</source>
+        </item>
+        <item>
+          <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>The definition of the <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/" rel="nofollow noopener">humanitarian flag attribute</a>, at activity level declares:</p>
+<blockquote>
+<p>A process flag to indicate that this activity relates entirely or partially to humanitarian aid.</p>
+</blockquote>
+<p>It’s a boolean - so my understanding is that 1 = Yes, 0 = No</p>
+<p>Therefore, how would someone declare “partially”, at the activity level?</p>
+            <p><small>36 posts - 9 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229</link>
+          <pubDate>Sat, 17 Feb 2018 09:30:44 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1229</guid>
+          <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+        </item>
+        <item>
+          <title>Help! Can&#39;t access GLIDE numbers</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>I can’t seem to access anything via <a href="http://www.glidenumber.net/" rel="nofollow noopener">http://www.glidenumber.net/</a></p>
+<p>The <a href="http://iatistandard.org/202/codelists/HumanitarianScopeVocabulary/" rel="nofollow noopener">Humanitarian Scope Vocabulary</a> codelists includes this option:</p>
+<blockquote>
+<p>1-2	Glide	 	<a href="http://glidenumber.net/glide/public/search/search.jsp" rel="nofollow noopener">http://glidenumber.net/glide/public/search/search.jsp</a></p>
+</blockquote>
+<p>Domain details: <a href="https://whois.icann.org/en/lookup?name=glidenumber.net" rel="nofollow noopener">https://whois.icann.org/en/lookup?name=glidenumber.net</a></p>
+<p>Anybody know anything?</p>
+            <p><small>18 posts - 5 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/help-cant-access-glide-numbers/1225">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/help-cant-access-glide-numbers/1225</link>
+          <pubDate>Wed, 14 Feb 2018 09:54:01 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1225</guid>
+          <source url="https://discuss.iatistandard.org/t/help-cant-access-glide-numbers/1225.rss">Help! Can&#39;t access GLIDE numbers</source>
+        </item>
+        <item>
+          <title>Publishing separate humanitarian files</title>
+          <dc:creator><![CDATA[Melinda]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>To be able to publish humanitarian data on a daily or weekly basis Sweden will need to publish their humanitarian data separate from the ordinary publication. We are wondering what will be the best publishing routine?</p>
+<p>Until we are ready to merge our ordinary publication with the humanitarian data, there will be some double-counting as the new humanitarian activities are also presented in the ordinary file.</p>
+<p>Unless we can find another way around it, removing the humanitarian activities completely from the ordinary publication would make too much of a dent in the other publications that use our data.</p>
+            <p><small>5 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143</link>
+          <pubDate>Tue, 28 Nov 2017 09:39:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1143</guid>
+          <source url="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143.rss">Publishing separate humanitarian files</source>
+        </item>
+        <item>
+          <title>Changes to the Standard to fit Grand Bargain priorities</title>
+          <dc:creator><![CDATA[DanielMackenzie]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Hi all,</p>
+<p>Are there plans to add tags to the IATI Standard to improve the usability for Grand Bargain members? For example, if Grand Bargain members have signed up to both increased transparency through IATI publishing and also increasing the use cash-based programming, would it be beneficial to have a tag that identified cash-based programmes?</p>
+<p>I’m sure there are other ways the Standard could be tweaked to help track the GB priorities, but this one sprang to mind.</p>
+<p>Thanks,</p>
+<p>Daniel</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/changes-to-the-standard-to-fit-grand-bargain-priorities/805">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/changes-to-the-standard-to-fit-grand-bargain-priorities/805</link>
+          <pubDate>Thu, 13 Apr 2017 14:50:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-805</guid>
+          <source url="https://discuss.iatistandard.org/t/changes-to-the-standard-to-fit-grand-bargain-priorities/805.rss">Changes to the Standard to fit Grand Bargain priorities</source>
+        </item>
+        <item>
+          <title>Additions to Organisation-Type codelist</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>(from Mike Smith, WaterAid)</p>
+<p>Proposal to add two items to the organisation-type codelist</p>
+<p>1 - Anonymous - for instances where organisation details are redacted</p>
+<p>2 - Supporter-giving - for instances to describe donations from “the public”</p>
+<p>Both would help with reporting, and could be assigned a relevant code via DAC, on investigation</p>
+<p>This <a href="http://support.iatistandard.org/hc/en-us/articles/214388446-Additions-to-Organisation-Type-codelist">issue</a> was originally added and originally discussed on the previous version IATI Standard Upgrade forum. However that forum has itself now itself moved to the IATI Discuss platform so this topic has been created in order that discussions can continue here.</p>
+            <p><small>9 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/additions-to-organisation-type-codelist/658">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/additions-to-organisation-type-codelist/658</link>
+          <pubDate>Wed, 04 Jan 2017 12:00:40 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-658</guid>
+          <source url="https://discuss.iatistandard.org/t/additions-to-organisation-type-codelist/658.rss">Additions to Organisation-Type codelist</source>
+        </item>
+        <item>
+          <title>Humanitarian reporting on emergency in Yemen</title>
+          <dc:creator><![CDATA[SJohns]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Hello, any advice for organisations reporting on the emergency in Yemen - what codes etc are people using?</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/humanitarian-reporting-on-emergency-in-yemen/611">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/humanitarian-reporting-on-emergency-in-yemen/611</link>
+          <pubDate>Fri, 28 Oct 2016 13:33:36 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-611</guid>
+          <source url="https://discuss.iatistandard.org/t/humanitarian-reporting-on-emergency-in-yemen/611.rss">Humanitarian reporting on emergency in Yemen</source>
+        </item>
+        <item>
+          <title>Publishing data on response to hurricane Matthew</title>
+          <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Thought I would start a thread focused on response to Matthew, as it may be useful to share our experience, questions etc.</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/publishing-data-on-response-to-hurricane-matthew/598">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/publishing-data-on-response-to-hurricane-matthew/598</link>
+          <pubDate>Wed, 19 Oct 2016 16:21:00 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-598</guid>
+          <source url="https://discuss.iatistandard.org/t/publishing-data-on-response-to-hurricane-matthew/598.rss">Publishing data on response to hurricane Matthew</source>
+        </item>
+        <item>
+          <title>Humanitarian Scope Vocabularies</title>
+          <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>I’m trying to find the references for the vocabularies identified in the 2.02 Humanitarian Scope.</p>
+<p>The proposal presented to the Steering Committee had 3 vocabularies for Appeals: Humanitarian Plan, Start Network, and Disasters Emergency Committee (with a note saying that further consultations were required on values for this list).   I see that the codelist on the IATI ste is more limited, with only 2-1 Humanitarian Plan (and no link).<br>
+<a href="http://iatistandard.org/202/codelists/HumanitatianScopeVocabulary/" class="onebox" target="_blank">http://iatistandard.org/202/codelists/HumanitatianScopeVocabulary/</a></p>
+<p>Can someone explain what the 3 vocabularies are, ie who manages them, where they can be found etc?</p>
+            <p><small>23 posts - 8 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389</link>
+          <pubDate>Fri, 22 Jan 2016 23:00:32 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-389</guid>
+          <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+        </item>
+        <item>
+          <title>Differences between NGO Organisation Type codes</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Hello</p>
+<p>Looking at the <strong><a href="http://iatistandard.org/201/codelists/OrganisationType/" rel="nofollow noopener">Org Type codelist</a></strong> there are three codes for NGOs:</p>
+<ul>
+<li>21 - International NGO</li>
+<li>22 - National NGO</li>
+<li>23 - Regional NGO</li>
+</ul>
+<p>I’m curious as to how others have interpreted this - and whether people also consult advice &amp; guidance elsewhere.  For example:</p>
+<ul>
+<li>Is a national office of an international NGO a national NGO (I know that <em>sounds</em> like it answers itself!)?</li>
+<li>If my organisation <em>just</em> record “NGO” in our internal database, what would be an effective code to use?</li>
+</ul>
+<p>Thoughts and clarifications welcome.  Looking particularly at <a class="mention" href="/u/sjohns">@SJohns</a> <a class="mention" href="/u/laia_grino">@laia_grino</a> &amp; <a class="mention" href="/u/rolfkleef">@rolfkleef</a> …</p>
+            <p><small>9 posts - 7 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380</link>
+          <pubDate>Wed, 06 Jan 2016 18:04:59 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-380</guid>
+          <source url="https://discuss.iatistandard.org/t/differences-between-ngo-organisation-type-codes/380.rss">Differences between NGO Organisation Type codes</source>
+        </item>
+        <item>
+          <title>What are the appropriate codes for humanitarian organisations? START Network as example</title>
+          <dc:creator><![CDATA[DanielMackenzie]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>I’ve been speaking to the START Network who are starting to publish IATI data soon. They receive funding from multiple donors e.g DfID, MFA, Save the Children UK etc, which goes into a pool of money available for quicker-release humanitarian response agencies.</p>
+<p>We’ve been looking at the Flow Type Codelist. Which one would be suitable for humanitarian response? Is it still ODA? What if they are receiving funds from national donors and NGOs alike?</p>
+<p>Any thoughts welcome. Happy to clarify if needed.</p>
+<p>Thanks,</p>
+<p>Daniel</p>
+<p><a href="http://iatistandard.org/201/codelists/FlowType/" class="onebox" target="_blank" rel="nofollow noopener">http://iatistandard.org/201/codelists/FlowType/</a></p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/what-are-the-appropriate-codes-for-humanitarian-organisations-start-network-as-example/327">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/what-are-the-appropriate-codes-for-humanitarian-organisations-start-network-as-example/327</link>
+          <pubDate>Fri, 18 Sep 2015 11:01:04 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-327</guid>
+          <source url="https://discuss.iatistandard.org/t/what-are-the-appropriate-codes-for-humanitarian-organisations-start-network-as-example/327.rss">What are the appropriate codes for humanitarian organisations? START Network as example</source>
+        </item>
+        <item>
+          <title>IATI Humanitarian next steps</title>
+          <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> wrote this in the OKFest topic (as a “new user”, I’m not allowed to post any more replies there):</p>
+<blockquote>
+Great context
+<p>So what to do?</p>
+<ol>
+<li>Get a humanitarian marker in place</li>
+<li>Bring FTS extension covering emergencies, appeals, etc, into the main standard</li>
+<li>Redefine timeliness for humanitarian needs: best practice is daily, not monthly</li>
+<li>Focus on Result Outputs: Get WFP in the saddle for this</li>
+<li>Get into a situation asap that EDRIS and FTS feel comfortable with importing IATI data</li>
+</ol>
+</blockquote>
+<p>Thanks, Bill — I that’s an excellent start.  First, I’d like to add a couple more points for discussion:</p>
+<ul>
+<li>Consider making <em>transaction</em> optional for field-level humanitarian reporting (an NGO will know outputs, e.g. how many anti-Malarial kits were distributed, but might not know how much money those represent until later).</li>
+<li>Figure out the role of the cluster system in humanitarian field-level reporting. Since clusters already collect 3W information from their partners, are they the sweet spot for getting IATI humanitarian field-level information, or do we want to invest more energy reaching out downstream to the individual implementing NGOs and agencies?</li>
+<li>Work with Publish What You Fund to come up with different report-card criteria for different types of humanitarian reporting.</li>
+</ul>
+<p>For your original points, I think daily reporting could make sense from some HQ-level information systems, but the most-frequent I’ve seen so far at the field cluster level is weekly, and that’s only for an L3 (highest level) emergency that’s developing fast.  Monthly, quarterly, or semi-annually seems more common for 3W, depending on the crisis and how fast it changes.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/iati-humanitarian-next-steps/95">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/iati-humanitarian-next-steps/95</link>
+          <pubDate>Fri, 15 Aug 2014 15:38:29 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-95</guid>
+          <source url="https://discuss.iatistandard.org/t/iati-humanitarian-next-steps/95.rss">IATI Humanitarian next steps</source>
+        </item>
+        <item>
+          <title>Can We Define What Humanitarian Data Is?</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>At a Humanitarian Stakeholder’s Workshop held in 2013 it was generally agreed that it would be useful for some sort of marker to be added to the IATI Standard in order that humanitarian data can be easily identified. However, there was much discussion and as yet no agreement on what the properties of Humanitarian data are in order that it can be distinguished from other development data?</p>
+<p>All suggestions are welcome. For the purposes of the IATI standard we could agree that identification of data as ‘Humanitarian’ is simply left to the discretion of the data owner. However, it would be good to explore at least what some of those common properties might be?</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/can-we-define-what-humanitarian-data-is/55">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/can-we-define-what-humanitarian-data-is/55</link>
+          <pubDate>Wed, 02 Jul 2014 12:56:01 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-55</guid>
+          <source url="https://discuss.iatistandard.org/t/can-we-define-what-humanitarian-data-is/55.rss">Can We Define What Humanitarian Data Is?</source>
+        </item>
+        <item>
+          <title>Adding A Humanitarian &#39;Marker&#39; To The IATI Standard</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>At a Humanitarian Stakeholder’s Workshop held in 2013 it was generally agreed that it would be useful for some sort of marker to be added to the IATI Standard in order that humanitarian data can be easily identified. However, to take this suggestion further we need to explore where that marker might best be added to the IATI standard and what other humanitarian related information might be useful to include?</p>
+<p>All suggestions are welcome. Could such a marker just been an amendment to an existing element or codelist or should we consider the introduction of a new Humanitarian extension perhaps formalising the FTS extension?</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/adding-a-humanitarian-marker-to-the-iati-standard/54">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/adding-a-humanitarian-marker-to-the-iati-standard/54</link>
+          <pubDate>Wed, 02 Jul 2014 12:51:04 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-54</guid>
+          <source url="https://discuss.iatistandard.org/t/adding-a-humanitarian-marker-to-the-iati-standard/54.rss">Adding A Humanitarian &#39;Marker&#39; To The IATI Standard</source>
+        </item>
+        <item>
+          <title>Capturing information on funder type</title>
+          <dc:creator><![CDATA[chloe_stirk]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>Hi all,</p>
+<p>One of the things I/we at GHA would like to use IATI data for is to contribute to our analysis on the various types of humanitarian donors - i.e. governments, multilaterals, private (potentially further broken down by foundations, private companies/corporations and individual donors, for e.g.), and self-generated income (e.g. through charity shops). We can’t however use IATI for this as, at the moment, the only “organisation type” data available relates to the reporting organisation and not (necessarily) to the source of the funds. I appreciate that the number of different fields needs to be limited, but do others feel that a “donor type” marker would be valuable or not? While our interest here is on humanitarian funds, obviously this would also apply for all development funding, not just for humanitarian aid.</p>
+<p>Thanks,</p>
+<p>Chloe</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/capturing-information-on-funder-type/29">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/capturing-information-on-funder-type/29</link>
+          <pubDate>Tue, 10 Jun 2014 13:37:23 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-29</guid>
+          <source url="https://discuss.iatistandard.org/t/capturing-information-on-funder-type/29.rss">Capturing information on funder type</source>
+        </item>
+        <item>
+          <title>How Can IATI Data Be Used By The Humanitarian Data Exchange</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>The Humanitarian Data Exchange (HDX) project aims to make humanitarian data easy to find and use for analysis. How might IATI data be used by the project?</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/how-can-iati-data-be-used-by-the-humanitarian-data-exchange/27">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/how-can-iati-data-be-used-by-the-humanitarian-data-exchange/27</link>
+          <pubDate>Mon, 09 Jun 2014 10:22:17 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-27</guid>
+          <source url="https://discuss.iatistandard.org/t/how-can-iati-data-be-used-by-the-humanitarian-data-exchange/27.rss">How Can IATI Data Be Used By The Humanitarian Data Exchange</source>
+        </item>
+        <item>
+          <title>Information Required For UN OCHA &#39;Open Humanitarianism&#39; Project</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p>The IATI Technical Team was recently contacted by Leandro Salazar with the following request:</p>
+<p>"I’'m currently working at the United Nations Office for the Coordination of Humanitarian Affairs on a project that we call ‘Open Humanitarianism’. We are basically collecting information on ‘Open Government’ to start establishing the pillars of our project.</p>
+<p>My colleagues and I would really appreciate any suggestions on documents, websites, authors or any other help related to that matter."</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/information-required-for-un-ocha-open-humanitarianism-project/25">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/information-required-for-un-ocha-open-humanitarianism-project/25</link>
+          <pubDate>Fri, 06 Jun 2014 14:47:04 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-25</guid>
+          <source url="https://discuss.iatistandard.org/t/information-required-for-un-ocha-open-humanitarianism-project/25.rss">Information Required For UN OCHA &#39;Open Humanitarianism&#39; Project</source>
+        </item>
+        <item>
+          <title>Information About The Humanitarian Working Group</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>Humanitarian</category>
+          <description><![CDATA[
+            <p><strong>INTRODUCTION</strong></p>
+<p>The IATI Humanitarian Working Group is a sub-group under the IATI Technical Advisory Group (TAG) for discussion and collaborative action around the management of humanitarian related information published using the  IATI standard. The Humanitarian Working Group seeks to develop common solutions on questions related to data management, collection, and sharing for the broader international development and humanitarian IATI data user communities.</p>
+<p><strong>OBJECTIVES</strong><br>
+<strong>Purpose and scope.</strong></p>
+<p>The purpose of the group is to define enhancements to the IATI Standard that:enable the identification of humanitarian related information within published IATI XML filesextend the usefulness of IATI XML files to data users of humanitarian data and other interested partiesAlignment with IATI TAG. The group should be able to directly contribute to two of the three current pillars of the TAG:  improving the standard and using the data.</p>
+<p><strong>DELIVERABLES</strong></p>
+<p>The group should deliver.<br>
+a)  candidate changes or enhancements to the ‘next’ or ‘later’ version(s) of the IATI Standard<br>
+b)  proposals for data use to data users who need access to humanitarian related information<br>
+c)  open tools to make use of IATI humanitarian aid related information<br>
+d)  knowledge coming back to the TAG on use and management of humanitarian related information  in other  contexts</p>
+<p><strong>TIMESCALE</strong></p>
+<p>The Humanitarian Working Group will operate until the members of the group<br>
+decide that there is no longer a  requirement for the group to exist</p>
+<p><strong>MEMBERSHIP</strong></p>
+<p>Openness! The group should be open to any TAG member to participate and contribute.<br>
+The focus of any tools should be on open source.<br>
+We welcome knowledge and expertise in the areas of the delivery of Humanitarian Aid,<br>
+technology, or data management. Members will bring into their own experiences, tools, best/better practices, lessons learned to help provide solutions to the challenges.</p>
+<p><strong>MEETINGS</strong></p>
+<p>The purpose of Humanitarian WG meetings is to share information on an informal basis, to exchange experiences and knowledge, to explore opportunities for closer coordination and collaboration, to advocate for increased awareness of and action around key issues, and to determine solutions for common issues and concerns. Meetings will be held on a quarterly basis (or more, as needed) via conference call/webinar. Topics for discussion will be managed via an agenda for each meeting.</p>
+<p><strong>TASK FORCE CO-CHAIRS</strong></p>
+<p>The IATI Humanitarian Working Group will be led by IATI Technical Advisory Group.</p>
+<ul>
+<li>Wendy Rogers:  IATI Technical Support Team</li>
+</ul>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/information-about-the-humanitarian-working-group/24">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/information-about-the-humanitarian-working-group/24</link>
+          <pubDate>Fri, 06 Jun 2014 14:39:46 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-24</guid>
+          <source url="https://discuss.iatistandard.org/t/information-about-the-humanitarian-working-group/24.rss">Information About The Humanitarian Working Group</source>
+        </item>
+  </channel>
+</rss>

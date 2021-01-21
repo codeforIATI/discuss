@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI&#39;s Datastore and Validator Tools launched</title>
+    <link>https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021</link>
+    <description>IATI is delighted to announce the launch today of its new [Datastore](https://iatidatastore.iatistandard.org/home) and [Validator](https://iativalidator.iatistandard.org/), fulfilling a commitment to members to provide robust tools to improve the quality and use of development and humanitarian data published to IATI.
+
+1. Why use the new IATI Datastore?
+2. Why use the new IATI Validator?
+3. Get support: online guidance and webinars
+4. What’s changed since the testing phase?
+5. Deprecation of old Datastore and Public Validator - 22 March 2021
+6. Upcoming work
+
+Developing and building these new tools has been the result of a close collaboration between the IATI Secretariat and suppliers Zimmerman and Data4Development, and thanks are also due to our dedicated community for testing the new tools and helping us to improve them.
+
+The following information is provided to enable our community of publishers and users to easily transition to using the new tools and get help through webinars and detailed guidance. It also outlines planning for subsequent phases of development to continually improve our suite of IATI tools.
+
+### Why use the new IATI Datastore?
+
+The new IATI Datastore allows for much more detailed queries and searches of IATI data than previously possible. Use the [Query Builder](https://iatidatastore.iatistandard.org/querybuilder/core-filters) to search data across 39 different fields (elements and attributes) of the IATI Standard and choose to download data in three different formats (CSV, XML and JSON). For the more technical user, the [Datastore API](https://iatidatastore.iatistandard.org/documentation) enables searches of IATI data across  **all**  elements of the IATI Standard, enabling more complex data analysis.
+
+![IATI Datastore Query Builder launch.png|autoxauto](https://iatistandard.org/media/images/IATI_Datastore_Query_Builder.width-700.png)
+
+Use the Query Builder to search for development and humanitarian activities responding to COVID-19
+
+The Query Builder and API also provide users with data that complies with the most up-to-date version of the IATI Standard (version 2 and beyond). The IATI Datastore complements existing online tools for accessing IATI data such as [d-portal](http://d-portal.org/ctrack.html#view=search).
+
+### Why use the new IATI Validator?
+
+Organisations are strongly encouraged to use the new IATI Validator to check if their data is accessible and of good quality, increasing its utility for partner countries, civil society and other data users. Organisations have the option of [checking for errors in their data  *before*  publishing their files](https://iativalidator.iatistandard.org/validate), or  *after*  data has been published ([using the Public Data Viewer](https://iativalidator.iatistandard.org/organisations)).
+
+![IATI Validator launch.png|autoxauto](https://iatistandard.org/media/images/IATI_Validator_launch.width-700.png)
+
+Use the new [IATI Validator](https://iativalidator.iatistandard.org/) to check the quality of IATI data.
+
+Most organisations will find at least some errors in their data and we know this may take some time for them to correct. IATI’s Secretariat is providing support in the following ways to help organisations make these changes to improve the quality of their data.
+
+### Get support: online guidance and webinars
+
+The IATI Secretariat has provided instructions and useful information on both tools through online guidance: [IATI Datastore Query Builder User Guide](https://iatistandard.org/documents/10453/IATI_Datastore_Query_Builder_User_Guide.pdf), [IATI Datastore API documentation](https://iatidatastore.iatistandard.org/documentation) and the [IATI Validator Q&amp;A](https://iatistandard.org/documents/10454/IATI_Validator_QA_September_2020.pdf). The Secretariat will also be proactively contacting IATI publishers in the coming months to offer direct support to improve their datafiles using the IATI Validator.
+
+You can learn how to make the most of both tools by joining upcoming webinars held by IATI’s Technical Team:
+
+* **Webinar: Using IATI’s new Validator, Wednesday 7 October**  [ **Register** ](https://zoom.us/meeting/register/tJcof-GhqjkrEtOQfRStOf1mTknhe_yguTkj)
+* **Webinar: Using IATI’s new Datastore, Wednesday 28 October**  [ **Register** ](https://zoom.us/meeting/register/tJIrduqpqzMuHtLCjFMrqiBt5HM3HUBRU0GG)
+
+As always, the IATI Technical Team welcomes your questions and feedback at: [support@iatistandard.org](mailto:support@iatistandard.org).
+
+### What’s changed since the testing phase?
+
+The new Datastore and Validator were pre-released for extensive testing. Both have benefitted from a huge number of improvements in response to feedback from IATI’s community of data users and publishers. Here are just a few examples:
+
+**Datastore**
+
+* Additional filters have been added to the Datastore Query Builder
+* Users can now output CSV columns in the order of the IATI XML Schema
+* The Query Builder has a new multi-sector and multi-country expansion option
+* The Datastore is now integrated with the Validator. This means that the Validator will check that data is fed into the Datastore and ensure only data that follows the IATI schema is available to users. The IATI schema provides the exact order and structure for publishing the XML. Data that does not follow the IATI XML schema will not be outputted through the Datastore. For further information see [IATI Validator Q&amp;A](https://iatistandard.org/documents/10454/IATI_Validator_QA_September_2020.pdf) (page 5-6).
+
+**Validator**
+
+* All bugs raised by users following the testing phase have been fixed
+* There is a new feature to allow the bulk-uploading of files
+* Users can now receive validation reports via email.
+
+The IATI Technical Team has worked with suppliers [Zimmerman](https://zimmerman.team/) (who continue to host the new IATI Datastore) and [Data4Development](https://data4development.nl/en/) (developers of the new IATI Validator, now hosted by the IATI Secretariat) to implement changes to both products.
+
+### Important: Deprecation of old Datastore and Public Validator - 22 March 2021
+
+As previously announced, the new IATI Datastore and Validator replace the old Datastore CSV Query Builder, API and Public Validator. These older versions will be deprecated on Monday 22 March 2021 and after this date, users will no longer be able to access these services.
+
+* **Old Datastore API:**  Between now and 22 March 2021 users can choose to  *either*  use existing API calls to return data from the old Datastore,  *or*  use a Redirect version from the Old Datastore to the new Datastore. Redirects can be tested by replacing &quot;datastore.iatistandard.org&quot; in previous queries with &quot;datastoreredirect.iatistandard.org.&quot; By using this version, existing API calls will be redirected and return data from the new Datastore. After 22 March 2021, the old Datastore will be deprecated and  **all**  queries to the Old Datastore will automatically be redirected to corresponding queries on the new Datastore.
+
+For any questions or support to transition to using the new Datastore and Validator, please email the IATI Secretariat: [support@iatistandard.org](mailto:support@iatistandard.org).
+
+### Upcoming work
+
+IATI’s Secretariat is committed to maintaining and updating all IATI digital products to meet users’ needs. Some examples of planned work include:
+
+**Datastore:**
+
+* Enable transaction and activity level data to be output from a single query
+* Enable output of normalised USD values for transactions, regardless of published currency
+* Enable output of validation results.
+
+**Validator:**
+
+* Key priority post-launch is working proactively with publishers in fixing data errors and improving their data quality.
+
+To provide feedback on either of these two projects, please raise an issue on Github: [IATI Datastore](https://github.com/zimmerman-team/iati.cloud/issues) [Validator](https://github.com/IATI/IATI-Validator-Web) or email [support@iatistandard.org](mailto:support@iatistandard.org)</description>
+    
+    <lastBuildDate>Thu, 08 Oct 2020 21:11:26 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI&#39;s Datastore and Validator Tools launched</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I am also confused why something that is a ‘must’, when not met, is still allowed in the datastore? Maybe there is a plan to phase enforcing this at a later stage? If it is a ‘must’ in the rules, this is surely because not doing it has big implications for the usability of the data?</p>
+<p>PS - I think the video is great - I can really imagine using these to help people to understand rather than wading through discuss/online docs (but noting that the videos might best be linked to a specific version of a document, so when that changes, the video is updated accordingly): <a href="https://www.youtube.com/watch?v=Bre_hflB2Sw" rel="nofollow noopener">https://www.youtube.com/watch?v=Bre_hflB2Sw</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/8</link>
+        <pubDate>Thu, 08 Oct 2020 21:11:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2021-8</guid>
+        <source url="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021.rss">IATI&#39;s Datastore and Validator Tools launched</source>
+      </item>
+      <item>
+        <title>IATI&#39;s Datastore and Validator Tools launched</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Ace, thanks - so:</p>
+<ol>
+<li>Schema error = Validator ‘critical’ = data removed from datastore</li>
+<li>Guidance ‘must’ error = Validator ‘error’ = still in datastore</li>
+<li>Guidance ‘should’ = Validator ‘warning’ = still in datastore</li>
+<li>Guidance ‘can/may/is preferred’…what happens in these cases - is it the same as ‘should’, or is it just not included?</li>
+<li>Additional guidance = Validator ‘not checked’ = still in datastore</li>
+</ol>
+<p>Please can we update the validator message so that it actually tells users who get these error messages what the impact is on their data RE the datastore…seems like that is a critical thing to know, especially in the schema error message, especially as it applies to their entire file at this stage?</p>
+<p>I asked this before as well - can we just rename the error types in the validator so that they match the guidance words for them therefore we do not have to maintain a weird linguistic translation table in our heads? Or update the guidance to use the validator terms?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/7</link>
+        <pubDate>Mon, 05 Oct 2020 13:41:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2021-7</guid>
+        <source url="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021.rss">IATI&#39;s Datastore and Validator Tools launched</source>
+      </item>
+      <item>
+        <title>IATI&#39;s Datastore and Validator Tools launched</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Matt, yes you’re (mostly) correct.</p>
+<p>The Validator will flag schema issues (Critical), standard Must breaks (Errors) and standard Should breaks (Warnings) separately.</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/069e4cab7bdc409a8e68b6a1b34bfcbdd398d969.png" alt="image" data-base62-sha1="Wy1ezl6Ya85RvHPkHkpbv7kdVT" width="602" height="105"></p>
+<p>The Validator only includes checks that are in the Standard. It doesn’t check against the additional guidance pages.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/6</link>
+        <pubDate>Mon, 05 Oct 2020 07:44:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2021-6</guid>
+        <source url="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021.rss">IATI&#39;s Datastore and Validator Tools launched</source>
+      </item>
+      <item>
+        <title>IATI&#39;s Datastore and Validator Tools launched</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Amy, I think this was the bit I was missing e.g. that only the schema affects what is in the datastore and therefore adhering to the guidance (which is on top of the schema) will not affect what data is in the datastore, is that correct? Will the Validator say when something is a Schema error vs when it is a guidance error?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/5</link>
+        <pubDate>Sat, 03 Oct 2020 13:53:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2021-5</guid>
+        <source url="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021.rss">IATI&#39;s Datastore and Validator Tools launched</source>
+      </item>
+      <item>
+        <title>IATI&#39;s Datastore and Validator Tools launched</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Matt,</p>
+<p>Both the <a href="https://iatistandard.org/en/iati-tools-and-resources/iati-datastore/">IATI website Datastore page</a> and the <a href="https://iatidatastore.iatistandard.org/about">Datastore’s about page</a> say that schema invalid data isn’t included.</p>
+<p>I’ll check about ways of finding a list of files that aren’t included in the datastore because they fail schema validation. <a class="mention" href="/u/siemvaessen">@siemvaessen</a> is this included in the api already or something we could add?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/4</link>
+        <pubDate>Fri, 02 Oct 2020 15:25:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2021-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021.rss">IATI&#39;s Datastore and Validator Tools launched</source>
+      </item>
+      <item>
+        <title>IATI&#39;s Datastore and Validator Tools launched</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Great - is there a statement somewhere on which data (if any) is excluded from the datastore on the basis of failing validation, or is that part not implemented yet (or was never planned to be)? And linked, how would I tell in the datastore (e.g. when using the query builder) that some data is missing due to failing validation - if this is possible?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/3</link>
+        <pubDate>Tue, 29 Sep 2020 14:31:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2021-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021.rss">IATI&#39;s Datastore and Validator Tools launched</source>
+      </item>
+      <item>
+        <title>IATI&#39;s Datastore and Validator Tools launched</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>Great news, thank you all for your hard work!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/2</link>
+        <pubDate>Tue, 22 Sep 2020 18:15:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2021-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021.rss">IATI&#39;s Datastore and Validator Tools launched</source>
+      </item>
+      <item>
+        <title>IATI&#39;s Datastore and Validator Tools launched</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>IATI is delighted to announce the launch today of its new <a href="https://iatidatastore.iatistandard.org/home">Datastore</a> and <a href="https://iativalidator.iatistandard.org/">Validator</a>, fulfilling a commitment to members to provide robust tools to improve the quality and use of development and humanitarian data published to IATI.</p>
+<ol>
+<li>Why use the new IATI Datastore?</li>
+<li>Why use the new IATI Validator?</li>
+<li>Get support: online guidance and webinars</li>
+<li>What’s changed since the testing phase?</li>
+<li>Deprecation of old Datastore and Public Validator - 22 March 2021</li>
+<li>Upcoming work</li>
+</ol>
+<p>Developing and building these new tools has been the result of a close collaboration between the IATI Secretariat and suppliers Zimmerman and Data4Development, and thanks are also due to our dedicated community for testing the new tools and helping us to improve them.</p>
+<p>The following information is provided to enable our community of publishers and users to easily transition to using the new tools and get help through webinars and detailed guidance. It also outlines planning for subsequent phases of development to continually improve our suite of IATI tools.</p>
+<h3>Why use the new IATI Datastore?</h3>
+<p>The new IATI Datastore allows for much more detailed queries and searches of IATI data than previously possible. Use the <a href="https://iatidatastore.iatistandard.org/querybuilder/core-filters">Query Builder</a> to search data across 39 different fields (elements and attributes) of the IATI Standard and choose to download data in three different formats (CSV, XML and JSON). For the more technical user, the <a href="https://iatidatastore.iatistandard.org/documentation">Datastore API</a> enables searches of IATI data across  <strong>all</strong>  elements of the IATI Standard, enabling more complex data analysis.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://iatistandard.org/media/images/IATI_Datastore_Query_Builder.width-700.png" title="IATI Datastore Query Builder launch.png|autoxauto"><img src="https://iatistandard.org/media/images/IATI_Datastore_Query_Builder.width-700.png" alt="IATI Datastore Query Builder launch.png|autoxauto" width="676" height="500"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">IATI Datastore Query Builder launch.png|autoxauto</span><span class="informations">700×517</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>Use the Query Builder to search for development and humanitarian activities responding to COVID-19</p>
+<p>The Query Builder and API also provide users with data that complies with the most up-to-date version of the IATI Standard (version 2 and beyond). The IATI Datastore complements existing online tools for accessing IATI data such as <a href="http://d-portal.org/ctrack.html#view=search">d-portal</a>.</p>
+<h3>Why use the new IATI Validator?</h3>
+<p>Organisations are strongly encouraged to use the new IATI Validator to check if their data is accessible and of good quality, increasing its utility for partner countries, civil society and other data users. Organisations have the option of <a href="https://iativalidator.iatistandard.org/validate">checking for errors in their data  <em>before</em>  publishing their files</a>, or  <em>after</em>  data has been published (<a href="https://iativalidator.iatistandard.org/organisations">using the Public Data Viewer</a>).</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://iatistandard.org/media/images/IATI_Validator_launch.width-700.png" title="IATI Validator launch.png|autoxauto"><img src="https://iatistandard.org/media/images/IATI_Validator_launch.width-700.png" alt="IATI Validator launch.png|autoxauto" width="690" height="363"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">IATI Validator launch.png|autoxauto</span><span class="informations">700×369</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div></p>
+<p>Use the new <a href="https://iativalidator.iatistandard.org/">IATI Validator</a> to check the quality of IATI data.</p>
+<p>Most organisations will find at least some errors in their data and we know this may take some time for them to correct. IATI’s Secretariat is providing support in the following ways to help organisations make these changes to improve the quality of their data.</p>
+<h3>Get support: online guidance and webinars</h3>
+<p>The IATI Secretariat has provided instructions and useful information on both tools through online guidance: <a href="https://iatistandard.org/documents/10453/IATI_Datastore_Query_Builder_User_Guide.pdf">IATI Datastore Query Builder User Guide</a>, <a href="https://iatidatastore.iatistandard.org/documentation">IATI Datastore API documentation</a> and the <a href="https://iatistandard.org/documents/10454/IATI_Validator_QA_September_2020.pdf">IATI Validator Q&amp;A</a>. The Secretariat will also be proactively contacting IATI publishers in the coming months to offer direct support to improve their datafiles using the IATI Validator.</p>
+<p>You can learn how to make the most of both tools by joining upcoming webinars held by IATI’s Technical Team:</p>
+<ul>
+<li>
+<strong>Webinar: Using IATI’s new Validator, Wednesday 7 October</strong>  <a href="https://zoom.us/meeting/register/tJcof-GhqjkrEtOQfRStOf1mTknhe_yguTkj"> <strong>Register</strong> </a>
+</li>
+<li>
+<strong>Webinar: Using IATI’s new Datastore, Wednesday 28 October</strong>  <a href="https://zoom.us/meeting/register/tJIrduqpqzMuHtLCjFMrqiBt5HM3HUBRU0GG"> <strong>Register</strong> </a>
+</li>
+</ul>
+<p>As always, the IATI Technical Team welcomes your questions and feedback at: <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>.</p>
+<h3>What’s changed since the testing phase?</h3>
+<p>The new Datastore and Validator were pre-released for extensive testing. Both have benefitted from a huge number of improvements in response to feedback from IATI’s community of data users and publishers. Here are just a few examples:</p>
+<p><strong>Datastore</strong></p>
+<ul>
+<li>Additional filters have been added to the Datastore Query Builder</li>
+<li>Users can now output CSV columns in the order of the IATI XML Schema</li>
+<li>The Query Builder has a new multi-sector and multi-country expansion option</li>
+<li>The Datastore is now integrated with the Validator. This means that the Validator will check that data is fed into the Datastore and ensure only data that follows the IATI schema is available to users. The IATI schema provides the exact order and structure for publishing the XML. Data that does not follow the IATI XML schema will not be outputted through the Datastore. For further information see <a href="https://iatistandard.org/documents/10454/IATI_Validator_QA_September_2020.pdf">IATI Validator Q&amp;A</a> (page 5-6).</li>
+</ul>
+<p><strong>Validator</strong></p>
+<ul>
+<li>All bugs raised by users following the testing phase have been fixed</li>
+<li>There is a new feature to allow the bulk-uploading of files</li>
+<li>Users can now receive validation reports via email.</li>
+</ul>
+<p>The IATI Technical Team has worked with suppliers <a href="https://zimmerman.team/">Zimmerman</a> (who continue to host the new IATI Datastore) and <a href="https://data4development.nl/en/">Data4Development</a> (developers of the new IATI Validator, now hosted by the IATI Secretariat) to implement changes to both products.</p>
+<h3>Important: Deprecation of old Datastore and Public Validator - 22 March 2021</h3>
+<p>As previously announced, the new IATI Datastore and Validator replace the old Datastore CSV Query Builder, API and Public Validator. These older versions will be deprecated on Monday 22 March 2021 and after this date, users will no longer be able to access these services.</p>
+<ul>
+<li>
+<strong>Old Datastore API:</strong>  Between now and 22 March 2021 users can choose to  <em>either</em>  use existing API calls to return data from the old Datastore,  <em>or</em>  use a Redirect version from the Old Datastore to the new Datastore. Redirects can be tested by replacing “<a href="http://datastore.iatistandard.org">datastore.iatistandard.org</a>” in previous queries with “<a href="http://datastoreredirect.iatistandard.org">datastoreredirect.iatistandard.org</a>.” By using this version, existing API calls will be redirected and return data from the new Datastore. After 22 March 2021, the old Datastore will be deprecated and  <strong>all</strong>  queries to the Old Datastore will automatically be redirected to corresponding queries on the new Datastore.</li>
+</ul>
+<p>For any questions or support to transition to using the new Datastore and Validator, please email the IATI Secretariat: <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>.</p>
+<h3>Upcoming work</h3>
+<p>IATI’s Secretariat is committed to maintaining and updating all IATI digital products to meet users’ needs. Some examples of planned work include:</p>
+<p><strong>Datastore:</strong></p>
+<ul>
+<li>Enable transaction and activity level data to be output from a single query</li>
+<li>Enable output of normalised USD values for transactions, regardless of published currency</li>
+<li>Enable output of validation results.</li>
+</ul>
+<p><strong>Validator:</strong></p>
+<ul>
+<li>Key priority post-launch is working proactively with publishers in fixing data errors and improving their data quality.</li>
+</ul>
+<p>To provide feedback on either of these two projects, please raise an issue on Github: <a href="https://github.com/zimmerman-team/iati.cloud/issues">IATI Datastore</a> <a href="https://github.com/IATI/IATI-Validator-Web">Validator</a> or email <a href="mailto:support@iatistandard.org">support@iatistandard.org</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021/1</link>
+        <pubDate>Tue, 22 Sep 2020 10:34:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2021-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iatis-datastore-and-validator-tools-launched/2021.rss">IATI&#39;s Datastore and Validator Tools launched</source>
+      </item>
+  </channel>
+</rss>

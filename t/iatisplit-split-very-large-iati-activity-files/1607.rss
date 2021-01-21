@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Iatisplit - split very large IATI activity files</title>
+    <link>https://discuss.iatistandard.org/t/iatisplit-split-very-large-iati-activity-files/1607</link>
+    <description>I&#39;ve just released v0.2 of **iatisplit**, a public-domain command-line utility for splitting very large IATI activity reports into smaller ones. This utility can process a very large IATI file in a few seconds, with constant memory usage (so it&#39;s quite reasonable to try it with a 100+MB IATI file, though I haven&#39;t found one yet).
+
+To install, you need Python3 on your system. You can either install from the source on GitHub, or use
+
+&gt; $ pip install iatisplit
+
+from the command line. After that, usage looks like this (to split into files with a maximum of 200 activities each):
+
+&gt; $ iatisplit -n 200 -d my-output-directory/ big-iati-file.xml
+
+(You can also provide a URL.)
+
+Now there is no excuse for any system to have a size limit for importing IATI data. ;)
+
+https://pypi.org/project/iatisplit/0.2/
+https://github.com/davidmegginson/iatisplit/releases/tag/v0.2</description>
+    
+    <lastBuildDate>Wed, 02 Jan 2019 17:16:01 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iatisplit-split-very-large-iati-activity-files/1607.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Iatisplit - split very large IATI activity files</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve just released v0.2 of <strong>iatisplit</strong>, a public-domain command-line utility for splitting very large IATI activity reports into smaller ones. This utility can process a very large IATI file in a few seconds, with constant memory usage (so it’s quite reasonable to try it with a 100+MB IATI file, though I haven’t found one yet).</p>
+<p>To install, you need Python3 on your system. You can either install from the source on GitHub, or use</p>
+<blockquote>
+<p>$ pip install iatisplit</p>
+</blockquote>
+<p>from the command line. After that, usage looks like this (to split into files with a maximum of 200 activities each):</p>
+<blockquote>
+<p>$ iatisplit -n 200 -d my-output-directory/ big-iati-file.xml</p>
+</blockquote>
+<p>(You can also provide a URL.)</p>
+<p>Now there is no excuse for any system to have a size limit for importing IATI data. <img src="https://discuss.iatistandard.org/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<p><aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://pypi.org/static/images/favicon.6a76275d.ico" class="site-icon" width="32" height="30">
+      <a href="https://pypi.org/project/iatisplit/0.2/" target="_blank" rel="nofollow noopener">PyPI</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://pypi.org/static/images/twitter.90915068.jpg" class="thumbnail onebox-avatar" width="300" height="300">
+
+<h3><a href="https://pypi.org/project/iatisplit/0.2/" target="_blank" rel="nofollow noopener">iatisplit</a></h3>
+
+<p>Split International Aid Transparency Initiative (IATI) XML activity files.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/davidmegginson/iatisplit/releases/tag/v0.2" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars1.githubusercontent.com/u/2810060?s=400&amp;v=4" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/davidmegginson/iatisplit/releases/tag/v0.2" target="_blank" rel="nofollow noopener">davidmegginson/iatisplit</a></h3>
+
+<p>Split IATI activity files to limit the number of activities in each one. Also does some basic filtering. - davidmegginson/iatisplit</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/iatisplit-split-very-large-iati-activity-files/1607/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iatisplit-split-very-large-iati-activity-files/1607/1</link>
+        <pubDate>Wed, 02 Jan 2019 17:16:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1607-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iatisplit-split-very-large-iati-activity-files/1607.rss">Iatisplit - split very large IATI activity files</source>
+      </item>
+  </channel>
+</rss>

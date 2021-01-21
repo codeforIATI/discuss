@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Searching in D-Portal by Policy Marker</title>
+    <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295</link>
+    <description>So I recently discovered that the standard includes the OECD policy markers.  The one of interest for me is the gender marker, but I am sure other users or potential users are interested in other markers.  To my amazement/joy the standard not only includes the policy marker but also if it is principal or significant.  I couldn&#39;t figure out any way to search d-portal for the policy markers though, and then I wondered if any publish actually publishes the information, or its just code that is there because it should be used.  So I searched Canada&#39;s xml and found 895 mentions of the gender policy marker (@YohannaLoucheur congrats), but outside of that I have no idea how to access that information.  I think finding projects by their gender policy marker could be a massively helpful tool for users (myself included), so I have two questions:
+1) Is there a way to search activities by policy markers currently besides via the xml?
+2) What would it take to make them easily searchable in D-portal?
+@AkermanMartin @AVaughn @stevieflow @JohnAdams @Melinda @bill_anderson
+
+Happy to walk through use cases or why I think this information is super important to have.</description>
+    
+    <lastBuildDate>Mon, 23 Apr 2018 08:27:44 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, sorry for the late reply. Well, the SAVi i read about on the d-portal about page (<a href="http://www.d-portal.org/about.html" rel="nofollow noopener">http://www.d-portal.org/about.html</a>). I have never looked into it myself so I will be of no help to you there, sorry!</p>
+<p>And yes, our Openaid.se is actually built on or IATI files, and the policy markers have been published for quite some time according to the standard. I hope you find what you are looking for.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/15</link>
+        <pubDate>Mon, 23 Apr 2018 08:27:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-15</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="1295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/shi/40/234_1.png" class="avatar"> shi:</div>
+<blockquote>
+<p>For instance, the current database in d-portal informs me that all WHO activities have been missing since the end of January.</p>
+</blockquote>
+</aside>
+<p>Straying off-topic, but… All the content appears to have moved from e.g.:<br>
+<a href="http://open.who.int/api/iatiFiles/iati-file-content/DZA" class="onebox" target="_blank">http://open.who.int/api/iatiFiles/iati-file-content/DZA</a></p>
+<p>…to:<br>
+<a href="http://open.who.int/api/iatiFiles/iati-file-content/2016-17/DZA" class="onebox" target="_blank">http://open.who.int/api/iatiFiles/iati-file-content/2016-17/DZA</a></p>
+<p>I’ve emailed the WHO contact address and IATI secretariat support about this.</p>
+<p>But yeah – I agree that this sort of thing could account for numeric differences. Honestly, so many bits of IATI tech are either undergoing major overhauls or are otherwise in limbo (rather than being incrementally maintained) that it’s difficult to think about addressing this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/14</link>
+        <pubDate>Thu, 19 Apr 2018 11:25:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-14</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="10" data-topic="1295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_2.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>The answers are close to each other, but you’d think they would be identical since it’s about the same dataset. Thought I’d flag as it may matter in creating the D-portal filter.</p>
+</blockquote>
+</aside>
+<p>Thanks, <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> - it is quite common for the full IATI dataset to differ simply depending on what time the data is fetched into respective databases.</p>
+<p>For instance, the current database in d-portal informs me that <a href="https://www.iatiregistry.org/publisher/who" rel="nofollow noopener">all WHO activities have been missing since the end of January</a>.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/cc630fbdb5a46ba1f48eccc6b9895abcb8346ae9.png" data-download-href="https://discuss.iatistandard.org/uploads/default/cc630fbdb5a46ba1f48eccc6b9895abcb8346ae9" title="who.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/cc630fbdb5a46ba1f48eccc6b9895abcb8346ae9_2_389x500.png" alt="who" width="389" height="500" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/cc630fbdb5a46ba1f48eccc6b9895abcb8346ae9_2_389x500.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/cc630fbdb5a46ba1f48eccc6b9895abcb8346ae9_2_583x750.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/cc630fbdb5a46ba1f48eccc6b9895abcb8346ae9.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/cc630fbdb5a46ba1f48eccc6b9895abcb8346ae9_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">who.png</span><span class="informations">723×928 35.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><br>
+<em>XML Errors all the way down</em></p>
+<p>Other databases may have cached versions from before that so their numbers will be different from other databases that are trying to get the most up-to-date data from the WHO.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/13</link>
+        <pubDate>Thu, 19 Apr 2018 10:42:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-13</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[KateHughes]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/ariag">@ariag</a>,</p>
+<p>If you raise an issue for this in Github:  <a href="https://github.com/devinit/D-Portal/issues" rel="nofollow noopener">https://github.com/devinit/D-Portal/issues</a> then Kris and Shi can take a look at it for you.</p>
+<p>I spoke with them today and it is only a couple of days of work so they should be able to do it for you.</p>
+<p>K</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/12</link>
+        <pubDate>Thu, 19 Apr 2018 10:20:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-12</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[ariag]]></dc:creator>
+        <description><![CDATA[
+            <p>I have never heard of SAVi and google wasn’t super helpful in teaching me about it. Are your IATI files linked to the Swedish open aid portal so the policy markers will also appear in IATI?</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/11</link>
+        <pubDate>Wed, 18 Apr 2018 00:26:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-11</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="1295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/shi/40/234_1.png" class="avatar"> shi:</div>
+<blockquote>
+<p>Looks like there are 2935 activities found in d-portal using policy-marker.</p>
+</blockquote>
+</aside>
+<p>I find quite fascinating that we all get a slightly different answer to the question “how many GAC activities use policy markers” (2,935 in yours,  2,931 on the Dashboard; Andy said 2,315, but that was specific to the GE marker, which may explain the difference).</p>
+<p>The answers are close to each other, but you’d think they would be identical since it’s about the same dataset. Thought I’d flag as it may matter in creating the D-portal filter.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/10</link>
+        <pubDate>Tue, 17 Apr 2018 16:56:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-10</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/a/a8b319/40.png" class="avatar"> ariag:</div>
+<blockquote>
+<p>What would it take to make them easily searchable in D-portal?</p>
+</blockquote>
+</aside>
+<p>We’ll need some development time to add it to D-portal as a filter.</p>
+<p>In the meantime, here’s two ways to get a list of activities from Canada that report policy-marker:</p>
+<p><a href="http://d-portal.org/q.csv?from=element,act&amp;orderby=element_volume-&amp;limit=-1&amp;element_name0=policy-marker&amp;reporting_ref=CA-3&amp;human" rel="nofollow noopener">CSV</a><br>
+<a href="http://d-portal.org/q.json?from=element,act&amp;orderby=element_volume-&amp;limit=-1&amp;element_name0=policy-marker&amp;reporting_ref=CA-3&amp;human" rel="nofollow noopener">JSON</a></p>
+<p>Looks like there are 2935 activities found in d-portal using policy-marker.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/9</link>
+        <pubDate>Tue, 17 Apr 2018 16:43:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-9</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="7" data-topic="1295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/a/a8b319/40.png" class="avatar"> ariag:</div>
+<blockquote>
+<p>I am going to be greedy and say I want easy access to those 2,315 activities so that my Oxfam Canada colleagues can go nuts with them, and I can show them to civil society in Uganda including women’s rights organizations</p>
+</blockquote>
+</aside>
+<p>I am going to be greedy and say I would like 1) your input on the Datastore ToR (it’s really important to have user input!) and 2) data from your Oxfam Canada colleagues so we can get a more complete picture of activities and results on the ground, and all go nuts with them thanks to the (future) improved Datastore and D-Portal!</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/8</link>
+        <pubDate>Mon, 16 Apr 2018 20:00:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-8</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[ariag]]></dc:creator>
+        <description><![CDATA[
+            <p>Even if it appeared on the query builder, the important connection of what did that project do would still be lost because results and the documents attached to the activity don’t show up (at least they didn’t in the past).  Your power of fancy data stuff beats out my command f and the code I am searching for in the xml file. <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">   I am going to be greedy and say I want easy access to those 2,315 activities so that my Oxfam Canada colleagues can go nuts with them, and I can show them to civil society in Uganda including women’s rights organizations.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/7</link>
+        <pubDate>Mon, 16 Apr 2018 19:48:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-7</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[ariag]]></dc:creator>
+        <description><![CDATA[
+            <p>This is awesome, and the amounts of files that are listed by a lot of the big donors, just further highlights the opportunity lost by not having a search by policy marker feature. We can only use data we can find.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/6</link>
+        <pubDate>Mon, 16 Apr 2018 19:40:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-6</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/a/a8b319/40.png" class="avatar"> ariag:</div>
+<blockquote>
+<p>and then I wondered if any publish actually publishes the information, or its just code that is there because it should be used.</p>
+</blockquote>
+</aside>
+<p>Aria, the easiest way to find the answer to this may be to check the Dashboard [<a href="http://dashboard.iatistandard.org/element/iati-activity_policy-marker.html">http://dashboard.iatistandard.org/element/iati-activity_policy-marker.html</a> ]  The data is not searchable, but it would help you identify which publishers use policy markers. Or perhaps even narrow the number down to those who use the “significance”<br>
+attribute. <a href="http://dashboard.iatistandard.org/element/iati-activity_policy-marker_@significance.html">http://dashboard.iatistandard.org/element/iati-activity_policy-marker_@significance.html</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/5</link>
+        <pubDate>Mon, 16 Apr 2018 16:34:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-5</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1295">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/a/a8b319/40.png" class="avatar"> ariag:</div>
+<blockquote>
+<p>So I searched Canada’s xml and found 895 mentions of the gender policy marker</p>
+</blockquote>
+</aside>
+<p>That seems low to me, actually. <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">  Gender Equality has been an important topic for Canada even before our recently-published Feminist International Assistance Policy, so I would expect all our projects to have the GE policy marker (if only to indicate that a given project does not have GE as a principal or significant dimension). I seem to recall there were changes in the GE policy marker at some point, so perhaps we cannot publish them for older projects.</p>
+<p>I wish I could point you to our Project Browser <a href="http://w05.international.gc.ca/projectbrowser-banqueprojets/filter-filtre">http://w05.international.gc.ca/projectbrowser-banqueprojets/filter-filtre</a> to play with data with the GE marker, but unfortunately our Browser does not yet provide a policy marker filter (though they are displayed on project profiles). I would definitely echo calls to make policy markers searchable on the Datastore and D-Portal.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/4</link>
+        <pubDate>Mon, 16 Apr 2018 15:12:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-4</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>The <a href="http://iatistandard.org/guidance/datastore/">IATI Datastore</a> is filterable by policy marker, but there some issues:</p>
+<ul>
+<li>the policy marker filter doesn’t appear on the <a href="http://datastore.iatistandard.org/query/">query builder</a>, so there’s no friendly interface for it</li>
+<li>policy marker doesn’t appear in the output CSV (<a class="mention" href="/u/stevieflow">@stevieflow</a> has <a href="https://github.com/IATI/IATI-Datastore/issues/168">raised that one</a>)</li>
+<li>you can’t specify the policy marker <code>@vocabulary</code>
+</li>
+<li>you can’t specify the policy marker <code>@significance</code> (e.g. to ignore <a href="http://iatistandard.org/codelists/PolicySignificance/">PolicySignificance</a> code 0)</li>
+</ul>
+<p>Anyway, by way of example, here are 50 of Canada’s activities that include policy marker 1 (“Gender Equality”):</p>
+<p><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?policy-marker=1&amp;reporting-org=CA-3" class="onebox" target="_blank">http://datastore.iatistandard.org/api/1/access/activity.xml?policy-marker=1&amp;reporting-org=CA-3</a></p>
+<p>^^ According to this, the number of CA-3 activities with the gender equality policy marker is closer to 2,315.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/3</link>
+        <pubDate>Mon, 16 Apr 2018 09:35:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-3</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree, it would be useful for many to search on policy markers. We have started to publish them on our national portal <a href="https://openaid.se/aid/2017/" rel="nofollow noopener">https://openaid.se/aid/2017/</a> but we haven’t added the possibility to search by PM. And it is only possible to extract an Excel with the PM’s for the climate data.</p>
+<p>Have you looked into SAVi at all? I reckon most of the publishers that publish to DAC publish their PM’s here as well since they already have the data available.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/2</link>
+        <pubDate>Mon, 16 Apr 2018 08:26:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-2</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+      <item>
+        <title>Searching in D-Portal by Policy Marker</title>
+        <dc:creator><![CDATA[ariag]]></dc:creator>
+        <description><![CDATA[
+            <p>So I recently discovered that the standard includes the OECD policy markers.  The one of interest for me is the gender marker, but I am sure other users or potential users are interested in other markers.  To my amazement/joy the standard not only includes the policy marker but also if it is principal or significant.  I couldn’t figure out any way to search d-portal for the policy markers though, and then I wondered if any publish actually publishes the information, or its just code that is there because it should be used.  So I searched Canada’s xml and found 895 mentions of the gender policy marker (<a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> congrats), but outside of that I have no idea how to access that information.  I think finding projects by their gender policy marker could be a massively helpful tool for users (myself included), so I have two questions:</p>
+<ol>
+<li>Is there a way to search activities by policy markers currently besides via the xml?</li>
+<li>What would it take to make them easily searchable in D-portal?<br>
+<a class="mention" href="/u/akermanmartin">@AkermanMartin</a> <a class="mention" href="/u/avaughn">@AVaughn</a> <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/johnadams">@JohnAdams</a> <a class="mention" href="/u/melinda">@Melinda</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a>
+</li>
+</ol>
+<p>Happy to walk through use cases or why I think this information is super important to have.</p>
+          <p><a href="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295/1</link>
+        <pubDate>Mon, 16 Apr 2018 02:09:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1295-1</guid>
+        <source url="https://discuss.iatistandard.org/t/searching-in-d-portal-by-policy-marker/1295.rss">Searching in D-Portal by Policy Marker</source>
+      </item>
+  </channel>
+</rss>

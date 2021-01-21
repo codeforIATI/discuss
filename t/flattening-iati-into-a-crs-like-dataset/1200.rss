@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Flattening IATI into a CRS-like dataset</title>
+    <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200</link>
+    <description>Hi all,
+
+I&#39;ve seen a few topics here discussing the conversion of flat files into hierarchical IATI data. I&#39;m attempting to do the reverse, and I&#39;m interested in hearing your feedback.
+
+The original idea was to create a flat file from IATI transactions and budgets that could fill-in for the gaps in the CRS (i.e. 2017 and beyond).
+
+Here&#39;s my work so far: https://github.com/akmiller01/iati_flat_testing
+
+I&#39;m not sure if this could be worked into a multi-purpose tool, given that whoever wants to flatten IATI data probably has different use-cases in mind, but maybe we could strip down some of the logic of splitting values by sectoral/recipient percentages.
+
+Cheers,
+-Alex Miller</description>
+    
+    <lastBuildDate>Fri, 16 Feb 2018 21:51:01 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Riza, when you publish incoming funds and commitments, do you include the donor’s 1) name and ID? 2) its Activity ID?</p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/12</link>
+        <pubDate>Fri, 16 Feb 2018 21:51:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-12</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[Riza]]></dc:creator>
+        <description><![CDATA[
+            <p>We do have projects at UNDP that are funded by a mix of core and earmarked funds and we publish incoming commitment and incoming funds for all projects. When we publish the core contribution of a project, UNDP becomes the funding organization, and incoming commitment and incoming funds transactions are added with reference to UNDP as the provider organization.</p>
+<ol>
+<li>Yes</li>
+<li>No. UNDP publish it for all activities</li>
+<li>Yes</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/11</link>
+        <pubDate>Fri, 16 Feb 2018 20:00:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-11</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[Reichner]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Bill,<br>
+WFP is a 100% voluntarily funded organization and has no core funding.<br>
+Therefore all incoming funds reported by WFP are according your definition ‘earmarked’.<br>
+Rgds<br>
+Otto</p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/10</link>
+        <pubDate>Mon, 05 Feb 2018 10:27:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-10</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+<p>I can’t speak directly for FAO , but know that in their IATI publication the Incoming Fund transactions represent funding that is directed to that activity/project.  In all cases (I think) there is a named donor for each project.  This is also cited in the IF transactions.</p>
+<p>Example: <a href="http://d-portal.org/q.html?aid=XM-DAC-41301-640544" rel="nofollow noopener">http://d-portal.org/q.html?aid=XM-DAC-41301-640544</a></p>
+<p>One next step for FAO would be to connect together with the donor project, where applicable: <a href="https://devtracker.dfid.gov.uk/projects/GB-1-204019/" rel="nofollow noopener">https://devtracker.dfid.gov.uk/projects/GB-1-204019/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/9</link>
+        <pubDate>Mon, 05 Feb 2018 08:19:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-9</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>A  few questions for UNDP, UNICEF, FAO, WFP that may help us avoid double counting through multilaterals.</p>
+<p>You all report Incoming Commitment and/or Incoming Fund transactions</p>
+<ol>
+<li>Do you have activities that are funded by a mix of core and earmarked funds. or are the two exclusive of each other?</li>
+<li>Is it possible to say that activities that include Incoming Commitment and/or Incoming Funds transactions are 100% earmarked funding?</li>
+<li>Do you add incoming commitment/funds to all activities with earmarked funding?</li>
+</ol>
+<p><a class="mention" href="/u/riza">@Riza</a> <a class="mention" href="/u/reichner">@Reichner</a> <a class="mention" href="/u/dubeys">@dubeys</a> <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/alex_miller">@alex_miller</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/8</link>
+        <pubDate>Fri, 02 Feb 2018 15:50:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-8</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[alex_miller]]></dc:creator>
+        <description><![CDATA[
+            <p>Made a start here: <a href="https://docs.google.com/document/d/127FhZq9-nD7yj9hsPG6TjDUIZkLojqWP7n4eHlwNguw/edit?usp=sharing" rel="nofollow noopener">https://docs.google.com/document/d/127FhZq9-nD7yj9hsPG6TjDUIZkLojqWP7n4eHlwNguw/edit?usp=sharing</a></p>
+<p>Bill, could you fill in the assumption we’ve been making about recoding donors? Something about aggregating agencies for governments (like the UK), but being unable to disaggregate multilateral donors?</p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/7</link>
+        <pubDate>Wed, 31 Jan 2018 15:33:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-7</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="1200">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>maybe we should also write down together, maybe in a GDoc, the assumptions we’ve made for how to handle data</p>
+</blockquote>
+</aside>
+<p>Great idea<br>
++1 to that</p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/6</link>
+        <pubDate>Wed, 31 Jan 2018 14:56:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-6</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andylolz">@andylolz</a> – I also meant to reply on here so you beat me to it!</p>
+<p><a class="mention" href="/u/alex_miller">@alex_miller</a> maybe we should also write down together, maybe in a GDoc, the assumptions we’ve made for how to handle data</p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/5</link>
+        <pubDate>Wed, 31 Jan 2018 14:42:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-5</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Aha – <a class="mention" href="/u/markbrough">@markbrough</a> has just posted here: <a href="https://discuss.iatistandard.org/t/generating-spreadsheets-of-iati-data-for-use-at-country-level/1207">Generating spreadsheets of IATI data for use at country level</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/4</link>
+        <pubDate>Wed, 31 Jan 2018 14:31:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-4</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/alex_miller">@alex_miller</a> – pinging <a class="mention" href="/u/bjwebb">@bjwebb</a> &amp; <a class="mention" href="/u/rory_scott">@rory_scott</a>, who have also done a lot of work around this – specifically via the aptly-named <a href="https://github.com/OpenDataServices/flatten-tool" rel="nofollow noopener">flatten-tool</a>…</p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/3</link>
+        <pubDate>Wed, 31 Jan 2018 14:10:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-3</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Paging <a class="mention" href="/u/markbrough">@markbrough</a>! (I know he has done a bunch of work on this topic.)</p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/2</link>
+        <pubDate>Fri, 26 Jan 2018 19:31:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-2</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+      <item>
+        <title>Flattening IATI into a CRS-like dataset</title>
+        <dc:creator><![CDATA[alex_miller]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>I’ve seen a few topics here discussing the conversion of flat files into hierarchical IATI data. I’m attempting to do the reverse, and I’m interested in hearing your feedback.</p>
+<p>The original idea was to create a flat file from IATI transactions and budgets that could fill-in for the gaps in the CRS (i.e. 2017 and beyond).</p>
+<p>Here’s my work so far: <a href="https://github.com/akmiller01/iati_flat_testing" rel="nofollow noopener">https://github.com/akmiller01/iati_flat_testing</a></p>
+<p>I’m not sure if this could be worked into a multi-purpose tool, given that whoever wants to flatten IATI data probably has different use-cases in mind, but maybe we could strip down some of the logic of splitting values by sectoral/recipient percentages.</p>
+<p>Cheers,<br>
+-Alex Miller</p>
+          <p><a href="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200/1</link>
+        <pubDate>Fri, 26 Jan 2018 18:42:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1200-1</guid>
+        <source url="https://discuss.iatistandard.org/t/flattening-iati-into-a-crs-like-dataset/1200.rss">Flattening IATI into a CRS-like dataset</source>
+      </item>
+  </channel>
+</rss>

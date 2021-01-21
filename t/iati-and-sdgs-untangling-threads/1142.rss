@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI and SDGs - untangling threads</title>
+    <link>https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142</link>
+    <description>Just spent longer than I care to admit investigating how IATI handles SDGs both now and post-January. Would someone please ELI5 (explain like I&#39;m 5)?
+
+I think the following is true...after reading all the threads at the bottom of this post - please confirm:
+* The standard allows users to use the Sector element to report SDG goals, targets, and indicator via the [SectorVocabulary](http://iatistandard.org/202/codelists/SectorVocabulary/) codelist.
+* The standard also allows for the reporting of indicators via Results, and the SDG codelist is to be added to [IndicatorVocabulary](http://iatistandard.org/202/codelists/IndicatorVocabulary/) as MDGs were.
+* The standard also allows, and many have suggested, using Policy Markers or the new (2.03) Tag element to &#39;tag&#39; SDGs without %s.
+
+Is there a written or unwritten best practice about how organizations should publish SDG information? I&#39;m sensing confusion but it could just be me. Thanks!
+
+Related threads:
+https://discuss.iatistandard.org/t/possibly-change-sdgs-from-sector-to-policy-markers-excluded-2-03/891
+https://discuss.iatistandard.org/t/proposed-addition-to-the-indicator-vocabulary-codelist/946
+https://discuss.iatistandard.org/t/add-sdg-indicators-as-standard-vocabulary/824
+https://discuss.iatistandard.org/t/dac-wp-stat-group-redefining-purpose-codes-sector-codes-to-align-with-sdgs/433
+https://discuss.iatistandard.org/t/resolved-update-sdg-targets-indicators-links-on-sector-vocabulary/703
+https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753
+https://discuss.iatistandard.org/t/final-proposal-of-2-03-content/1054
+https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097</description>
+    
+    <lastBuildDate>Fri, 27 Jul 2018 16:44:20 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI and SDGs - untangling threads</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>As indicated in <a href="https://discuss.iatistandard.org/t/dac-wp-stat-group-redefining-purpose-codes-sector-codes-to-align-with-sdgs/433/10">another post</a>, the WP-STAT recently approved the creation of a  <a href="https://one.oecd.org/document/DCD/DAC/STAT(2018)41/en/pdf" rel="nofollow noopener">new CRS field to report SDG targets</a> (and goals, temporarily) as flags.</p>
+<p>(TL;DR) Here are the central elements of the CRS field:<br>
+•Track the SDG focus of development co-operation at the target level, and allow the possibility of reporting at the goal level for a transitional period.<br>
+•Allow multiple entries in the SDG field, with a maximum number of 10 reportable targets<br>
+•Allow the SDG field information to be recorded with a qualitative flag, indicating to which SDG targets the activity is contributing.</p>
+<p>The SDG goals and targets are already non-embedded code lists in the IATI SectorVocabulary element. However, the Sector element is used as having implicit percentages, which means it is not the right element to publish SDG targets in a way that will align with CRS data.</p>
+<p>I think the <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/tag/#iati-activities-iati-activity-tag-vocabulary" rel="nofollow noopener">Tag element</a> introduced in 2.03 is where we should be publishing SDG targets (and goals, if desired). While there’s technically no reason to limit the number of targets, those reporting to the DAC will likely limit themselves to 10 in order to align their IATI and DAC data - so this could be a good rule of thumb for other publishers. Could this guidance be added to the Tag element?</p>
+<p>I would flag, however, that the <a href="http://reference.iatistandard.org/203/codelists/TagVocabulary/" rel="nofollow noopener">TagVocabulary codelist</a> does not include the SDG targets and goals at the moment. This is a non-embedded codelist, so new vocabularies can be added easily, correct?</p>
+<p>Does the above approach make sense?  <a class="mention" href="/u/herman">@Herman</a>, <a class="mention" href="/u/theo.sande">@theo.sande</a> and others that may have been involved in the WP-STAT discussions, is this how you envisaged implementation on the IATI side?</p>
+<p>Would appreciate if the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> could confirm when the codelists may be available in the TagVocabulary and what is needed to make it happen.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/6</link>
+        <pubDate>Fri, 27 Jul 2018 16:44:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1142-6</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142.rss">IATI and SDGs - untangling threads</source>
+      </item>
+      <item>
+        <title>IATI and SDGs - untangling threads</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I think reporting on the input side is more useful (Statistical - in the case of <a class="mention" href="/u/reidmporter">@reidmporter</a>)</p>
+</blockquote>
+<p>Just to make sure I understand (and to not-so-slyly raise this topic again in everyone’s inbox;-) you’re preferred method is statistical reporting via <code>sector</code> - yes? Do you/UNDP or any other orgs out there plan to utilize the non-statistical <code>tag</code> element to–ahem–<em>tag</em> activities with SDG markers as well?</p>
+<p>I’m choosing not go down a rabbit hole and actually look at the data, but does anyone have a sense of how many publishers report <em>any</em> SDG information, and if so, how?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/5</link>
+        <pubDate>Fri, 05 Jan 2018 18:15:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1142-5</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142.rss">IATI and SDGs - untangling threads</source>
+      </item>
+      <item>
+        <title>IATI and SDGs - untangling threads</title>
+        <dc:creator><![CDATA[Riza]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> Currently, UNDP is only thinking to report on the input side using sector vocabularies and as far as I know, other UN Development Group members also working on the same. With our current results framework it will be challenging to link the activities directly to SDG indicators and therefore, using it in results element is not an option, at least for now.</p>
+<p>I think reporting on the input side is more useful (Statistical - in the case of <a class="mention" href="/u/reidmporter">@reidmporter</a>) and a feasible solution for most publishers - at least, for those I have spoken to. However, a hybrid approach of reporting it in both sector and results elements would be ideal, where the cause-effect relationship between the input and output can be effectively reported for SDGs in IATI.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/4</link>
+        <pubDate>Wed, 29 Nov 2017 19:07:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1142-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142.rss">IATI and SDGs - untangling threads</source>
+      </item>
+      <item>
+        <title>IATI and SDGs - untangling threads</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>Missed the Sweden case at TAG, but that’s very much in line with some work IFPRI/IISD have done in estimating the funding gap on goal 2 and what the projected donor share is. To date they’ve exclusively used CRS data, which makes sense, but there may be an opportunity to add detail via IATI data to their models.</p>
+<p>For reference: <a href="http://www.ifpri.org/publication/ending-hunger-what-would-it-cost" rel="nofollow noopener">http://www.ifpri.org/publication/ending-hunger-what-would-it-cost</a></p>
+<p>Looking forward to hearing what our UN colleagues have to say <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/3</link>
+        <pubDate>Tue, 28 Nov 2017 14:00:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1142-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142.rss">IATI and SDGs - untangling threads</source>
+      </item>
+      <item>
+        <title>IATI and SDGs - untangling threads</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>A timely post <a class="mention" href="/u/reidmporter">@reidmporter</a>. I think that the sooner we all start heading in one (or two) agreed directions the better.</p>
+<p><strong>Input, output or whatever</strong></p>
+<ul>
+<li>There are those who would like to use IATI to quantify their commitment to the SDGs on the <strong><em>input</em></strong> side using <code>sector</code> vocabularies. Sweden presented a case study at the TAG along these lines.</li>
+<li>There are those who argue that the SDGs can only be monitored as <strong><em>outputs</em></strong> using the <code>results</code> element</li>
+<li>And there are those who think a fuzzier relationship is easier to record.</li>
+</ul>
+<p>Personally I think achieving more joined-up thinking on this rests with the development community at large: it is not an IATI-XML problem. The UN Development Group is committed to using IATI for SDG reporting so it would be useful to hear exactly what they have in mind. (<a class="mention" href="/u/aparr">@aparr</a>, <a class="mention" href="/u/akermanmartin">@AkermanMartin</a>, <a class="mention" href="/u/riza">@Riza</a> ?)</p>
+<p><strong>Goals, targets or indicators</strong></p>
+<p>Having the choice of granularity to accurately describe activities is, I think, a good idea - particularly as the coding across the three levels has been done hierarchically (i.e. you can derive the goal and target from the indicator code.)</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/2</link>
+        <pubDate>Tue, 28 Nov 2017 09:22:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1142-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142.rss">IATI and SDGs - untangling threads</source>
+      </item>
+      <item>
+        <title>IATI and SDGs - untangling threads</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>Just spent longer than I care to admit investigating how IATI handles SDGs both now and post-January. Would someone please ELI5 (explain like I’m 5)?</p>
+<p>I think the following is true…after reading all the threads at the bottom of this post - please confirm:</p>
+<ul>
+<li>The standard allows users to use the Sector element to report SDG goals, targets, and indicator via the <a href="http://iatistandard.org/202/codelists/SectorVocabulary/" rel="nofollow noopener">SectorVocabulary</a> codelist.</li>
+<li>The standard also allows for the reporting of indicators via Results, and the SDG codelist is to be added to <a href="http://iatistandard.org/202/codelists/IndicatorVocabulary/" rel="nofollow noopener">IndicatorVocabulary</a> as MDGs were.</li>
+<li>The standard also allows, and many have suggested, using Policy Markers or the new (2.03) Tag element to ‘tag’ SDGs without %s.</li>
+</ul>
+<p>Is there a written or unwritten best practice about how organizations should publish SDG information? I’m sensing confusion but it could just be me. Thanks!</p>
+<p>Related threads:<br>
+<aside class="quote quote-modified" data-post="1" data-topic="891">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/r/97f17d/40.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/possibly-change-sdgs-from-sector-to-policy-markers-excluded-2-03/891">Possibly change SDGs from sector to policy markers (excluded 2.03)</a> <a class="badge-wrapper  box" href="/c/standard-management/2-03-decimal-upgrade-proposals/42"><span class="badge-category-parent-bg" style="background-color: #5719A3;"></span><span class="badge-category-bg" style="background-color: #A66EE9;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="The process to upgrade the IATI Standard to version 2.03 is under way - you can find details of how to participate here and the timeline for this process here.">2.03 Decimal Upgrade Proposals</span></a>
+  </div>
+  <blockquote>
+    Title 
+possibly change SDGs to sector to policy markers 
+Standard 
+Activity 
+Schema Object 
+iati-activity/sector 
+Type of Change 
+change schema object location of SDGs from sector to policy marker 
+Issue 
+Since the SDGs are currently reported under the IATI sector codelists, you are obliged to include a percentage per SDG. However, determining how much an activity contributes to an SDG or how much of the budget is spent per SDG is very arbitrary. An activity can contribute 100% to several SDGs. 
+…
+  </blockquote>
+</aside>
+<br>
+<aside class="quote quote-modified" data-post="1" data-topic="946">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/pelleaardema/40/108_2.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/proposed-addition-to-the-indicator-vocabulary-codelist/946">[Added]Proposed addition to the Indicator Vocabulary Codelist</a> <a class="badge-wrapper  box" href="/c/standard-management/non-core-codelist-amendments/38"><span class="badge-category-parent-bg" style="background-color: #5719A3;"></span><span class="badge-category-bg" style="background-color: #A66EE9;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Proposals and consultations for additions to all non-embedded codelists within the IATI standard. The distinction between embedded and non-embedded codelists can be found here.">Non-Core Codelist Amendments</span></a>
+  </div>
+  <blockquote>
+    Again, asking to add the SDG Indicators (<a href="https://unstats.un.org/sdgs/indicators/indicators-list/" rel="nofollow noopener">https://unstats.un.org/sdgs/indicators/indicators-list/</a>) to the list of recognised indicator vocabularies (<a href="http://iatistandard.org/202/codelists/IndicatorVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/IndicatorVocabulary/</a>) 
+The previous thread was closed, however without a solution: <a href="https://discuss.iatistandard.org/t/add-sdg-indicators-as-standard-vocabulary/824">Add SDG Indicators as standard vocabulary</a> 
+Upon closure, reference was made to a related discussion, which i.m.o. is a different issue (<a href="https://discuss.iatistandard.org/t/possibly-change-sdgs-from-sector-to-policy-markers-excluded-2-03/891/7">recognising SDGs as ‘policy-markers’</a> vs the simple addition of a recognised vocabulary to an ex…
+  </blockquote>
+</aside>
+<br>
+<aside class="quote" data-post="1" data-topic="824">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/pelleaardema/40/108_2.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/add-sdg-indicators-as-standard-vocabulary/824">Add SDG Indicators as standard vocabulary</a> <a class="badge-wrapper  box" href="/c/standard-management/non-core-codelist-amendments/38"><span class="badge-category-parent-bg" style="background-color: #5719A3;"></span><span class="badge-category-bg" style="background-color: #A66EE9;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Proposals and consultations for additions to all non-embedded codelists within the IATI standard. The distinction between embedded and non-embedded codelists can be found here.">Non-Core Codelist Amendments</span></a>
+  </div>
+  <blockquote>
+    Hi, 
+I couldn’t find if it was already discussed elsewhere, but I think we should add the SDG Indicators (<a href="https://unstats.un.org/sdgs/indicators/indicators-list/" rel="nofollow noopener">https://unstats.un.org/sdgs/indicators/indicators-list/</a>) to the list of recognised indicator vocabularies (<a href="http://iatistandard.org/202/codelists/IndicatorVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/IndicatorVocabulary/</a>) 
+Pelle
+  </blockquote>
+</aside>
+<br>
+<aside class="quote quote-modified" data-post="1" data-topic="433">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/letter_avatar_proxy/v4/letter/s/65b543/40.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/dac-wp-stat-group-redefining-purpose-codes-sector-codes-to-align-with-sdgs/433">DAC WP-STAT group redefining purpose codes (sector codes) to align with SDGs</a> <a class="badge-wrapper  box" href="/c/community-zone/sectors/31"><span class="badge-category-parent-bg" style="background-color: #155366;"></span><span class="badge-category-bg" style="background-color: #2695B8;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Include any posts here that relate to the Sectors element of the IATI Standard">Sectors</span></a>
+  </div>
+  <blockquote>
+    WP-STAT, the group that defines the codes used by donors for reporting on overseas development assistance recently discussed a proposal to redefine the DAC purpose codes (which are used in IATI as the main source of sector codes) to better align with the Sustainable Development Goals: <a href="http://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2015)9&amp;docLanguage=En" rel="nofollow noopener">http://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2015)9&amp;docLanguage=En</a> 
+Does anyone know if any IATI members (through also being donors who are members of DAC) have been or will be …
+  </blockquote>
+</aside>
+<br>
+<aside class="quote" data-post="1" data-topic="703">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/wendy/40/12_2.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/resolved-update-sdg-targets-indicators-links-on-sector-vocabulary/703">[Resolved] Update SDG Targets &amp; Indicators Links on Sector Vocabulary</a> <a class="badge-wrapper  box" href="/c/standard-management/non-core-codelist-amendments/38"><span class="badge-category-parent-bg" style="background-color: #5719A3;"></span><span class="badge-category-bg" style="background-color: #A66EE9;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Proposals and consultations for additions to all non-embedded codelists within the IATI standard. The distinction between embedded and non-embedded codelists can be found here.">Non-Core Codelist Amendments</span></a>
+  </div>
+  <blockquote>
+    The official list of Sustainable Development Goals (SDGs) including targets and indicators is now published (in downloadable format) at <a href="http://unstats.un.org/sdgs/indicators/indicators-list/" rel="nofollow noopener">http://unstats.un.org/sdgs/indicators/indicators-list/</a> 
+Therefore the URL for code 8 ’ SDG Target’ and code 9 ‘SDG Indicator’ on the <a href="http://iatistandard.org/202/codelists/SectorVocabulary/" rel="nofollow noopener">Sector Vocabulary</a> codelist should be amended to reference the above UNSTATs link.
+  </blockquote>
+</aside>
+<br>
+<aside class="quote quote-modified" data-post="1" data-topic="753">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/rory_scott/40/594_2.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/standards-day-proposal-accommodating-non-statistical-secondary-sectors/753">Standards Day Proposal: Accommodating non-statistical, secondary sectors</a> <a class="badge-wrapper  box" href="/c/standard-management/2-03-decimal-upgrade-discussions/40"><span class="badge-category-parent-bg" style="background-color: #5719A3;"></span><span class="badge-category-bg" style="background-color: #A66EE9;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="This is a grouping of all previous discussions relating to possible 2.03 proposals - these are now locked to be used as a reference, as the upgrade process has been begun - you can find details of the timeline here, and all the proposals for 2.03 in the category 2.03 Decimal Upgrade Proposals which are now open for comments.">2.03 Decimal Upgrade Discussions</span></a>
+  </div>
+  <blockquote>
+    Standards Day Proposal: Accommodating non-statistical, secondary sectors
+Key Facts
+
+
+Proposal Authors: Open Ag Funding Partnership
+Standard change type: schema (and guidelines indirectly)
+Elements affected: iati-activities/iati-activity/sector
+
+Change Type: backwardly compatible
+Proposed IATI Version: 2.03
+Issues addressed:
+
+non-statistical activity classification
+activity-search
+SDGs
+
+
+
+
+TL;DR
+Let’s add an @aggregation-status attribute to the iati-activity/sector element so that we can put in t…
+  </blockquote>
+</aside>
+<br>
+<aside class="quote quote-modified" data-post="1" data-topic="1054">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/final-proposal-of-2-03-content/1054">Final Proposal of 2.03 Content</a> <a class="badge-wrapper  box" href="/c/standard-management/2-03-decimal-upgrade-proposals/42"><span class="badge-category-parent-bg" style="background-color: #5719A3;"></span><span class="badge-category-bg" style="background-color: #A66EE9;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="The process to upgrade the IATI Standard to version 2.03 is under way - you can find details of how to participate here and the timeline for this process here.">2.03 Decimal Upgrade Proposals</span></a>
+  </div>
+  <blockquote>
+    Apologies for the delay in taking this forward. (The responsibility for this delay sits with me, not the Tech Team as a whole.) <a href="https://docs.google.com/spreadsheets/d/1cRcze_DQ0kciTHcmEhRHn-EM7DqQV7XHjXZVWZibTmQ/edit?usp=sharing" rel="nofollow noopener">Herewith the final proposed content for the 2.03 Upgrade.</a> 
+In the spirit of the <a href="http://www.aidtransparency.net/wp-content/uploads/2017/09/Paper-10-Proposed-revisions-to-the-IATI-Standard-upgrade-process.pdf" rel="nofollow noopener">proposed new approach (for which we seek approval in Rome this week)</a> we are seeking consensus on this ‘English language’ summary before presenting a technical proposal by 13 October. 
+Please record any objections on this thread. 
+Subject to no further disruptions we envisage that the release…
+  </blockquote>
+</aside>
+<br>
+<aside class="quote quote-modified" data-post="1" data-topic="1097">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_2.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097">Final Technical Proposal for the 2.03 Upgrade</a> <a class="badge-wrapper  box" href="/c/standard-management/2-03-decimal-upgrade-proposals/42"><span class="badge-category-parent-bg" style="background-color: #5719A3;"></span><span class="badge-category-bg" style="background-color: #A66EE9;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="The process to upgrade the IATI Standard to version 2.03 is under way - you can find details of how to participate here and the timeline for this process here.">2.03 Decimal Upgrade Proposals</span></a>
+  </div>
+  <blockquote>
+    The IATI technical team has worked up the <a href="https://discuss.iatistandard.org/t/final-proposal-of-2-03-content/1054">final proposed content for the 2.03 Upgrade</a> into a technical proposal. The document below contains the proposed 2.03 summary tables for the Organisation and Activity Standards: 
+
+
+The tabs are as follows: 
+
+Keylog: details the type of change made
+2.03 Activity Standard (Changes): a condensed summary of the changes
+2.03 Organisation Standard (Changes): a condensed summary of the changes
+2.03 Activity Standard (Full): the full summary table
+2.03 Organisati…
+  </blockquote>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142/1</link>
+        <pubDate>Mon, 27 Nov 2017 17:28:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1142-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-and-sdgs-untangling-threads/1142.rss">IATI and SDGs - untangling threads</source>
+      </item>
+  </channel>
+</rss>

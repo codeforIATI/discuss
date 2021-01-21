@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Tracking UK covid-19 grants - what could our IATI community learn?</title>
+    <link>https://discuss.iatistandard.org/t/tracking-uk-covid-19-grants-what-could-our-iati-community-learn/1931</link>
+    <description>I wanted to share with the IATI community a project that uses data on financial flows in response to the covid-19 crisis, to provide a simple-yet-effective interface and call-to-action:
+
+![Coronavirus response grants|546x500](upload://nxzrjq2co3JZu6DzA0wFRDzb0Jw.png) 
+
+The [360Giving](https://www.threesixtygiving.org/) initiative - which encourages grantmakers and foundations to publish their grant portfolio with an open data standard - launched the **[Coronavirus response grants](https://covidtracker.threesixtygiving.org/)** tracker a couple of weeks ago.  
+
+On a nightly basis, it checks across the (as of today, April 10th) 362,077 records from 122 publishers for mentions of various text strings that could describe the crisis.  These could be in the title, description or even the name of the grant programme.  
+
+These are then detailed in a dedicated tracker that visualises the key stats, lists the grants, and provides links for more info:
+![Coronavirus response grants (1)|690x221](upload://8Ks09Y1cbaMed9noV8pWqeLWllY.png) 
+
+360 have a similar operating model to IATI:
+
+- Publishers share their data in a [standardised format](http://standard.threesixtygiving.org/en/latest/), at their own URL
+- A [Registry](http://data.threesixtygiving.org/) collates the links to this data
+- A [Datastore](https://github.com/ThreeSixtyGiving/datastore) pulls this, and provides query APIs
+- Tools visualise the data (eg [GrantNav](http://grantnav.threesixtygiving.org/); [Insights](https://insights.threesixtygiving.org/))
+
+360 have long had a catchall interface for users to search across all grants and (when publishers use [the same organisation reference](https://grantnav.threesixtygiving.org/recipient/GB-CHC-1123908)) recipients.  It&#39;s very possible to [search this for variations of covid-19, covid19, coronavirus](https://grantnav.threesixtygiving.org/search?json_query=%7B%22query%22%3A+%7B%22bool%22%3A+%7B%22must%22%3A+%7B%22query_string%22%3A+%7B%22query%22%3A+%22%5C%22covid-19%5C%22+OR+%5C%22covid19%5C%22+OR+%5C%22coronavirus%5C%22%22%2C+%22default_field%22%3A+%22%2A%22%7D%7D%2C+%22filter%22%3A+%5B%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%2C+%22must%22%3A+%7B%7D%2C+%22minimum_should_match%22%3A+1%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%7B%22range%22%3A+%7B%22amountAwarded%22%3A+%7B%7D%7D%7D%2C+%22must%22%3A+%7B%7D%2C+%22minimum_should_match%22%3A+1%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%5D%7D%7D%2C+%22sort%22%3A+%7B%22_score%22%3A+%7B%22order%22%3A+%22desc%22%7D%7D%2C+%22aggs%22%3A+%7B%22fundingOrganization%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22fundingOrganization.id_and_name%22%2C+%22size%22%3A+3%7D%7D%2C+%22recipientOrganization%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22recipientOrganization.id_and_name%22%2C+%22size%22%3A+3%7D%7D%2C+%22recipientRegionName%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22recipientRegionName%22%2C+%22size%22%3A+3%7D%7D%2C+%22recipientDistrictName%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22recipientDistrictName%22%2C+%22size%22%3A+3%7D%7D%2C+%22currency%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22currency%22%2C+%22size%22%3A+3%7D%7D%7D%2C+%22extra_context%22%3A+%7B%22awardYear_facet_size%22%3A+3%2C+%22amountAwardedFixed_facet_size%22%3A+3%7D%7D) etc.   
+
+But - the team a 360 chose to take advantage of their infrastructure and provide users with a direct and dedicated interface to this emerging corpus.  
+
+It&#39;s growing fast - yesterday (April 9th) I noticed 91 grants. Today (April 10th) there are 180.  Some 360 publishers are now switching their **update frequency to daily** - given that they can see an immediate and relevant outlet for their data.
+
+There&#39;s also a key and vital outcome.: as more organisation start to access and use this interface, ***more want to then participate and openly share their own data***.   Here we have the [virtuous circle](https://twitter.com/johnthegeo/status/606562725427159041), @JohnAdams once mentioned at a TAG meeting (in 2015!) 
+
+**So - what can we learn in the IATI community?**  
+
+I can think of three things (which kind of interlink):
+
+- **Show, then tell**
+360 put something up quickly and efficiently.  *This* is now the focus for conversation and action with existing and new users.  
+**- Use, then build**
+360 used their existing infrastructure to quickly build this new addition.  No changes to the standard, no hacks of existing tools.
+**- Listen, then iterate**
+It&#39;s no coincidence that this tracker presents data simply and intuitively - 360 spend a great deal of time [understanding who their users are, and what needs they have](https://www.threesixtygiving.org/support/data-expeditions/).  
+
+I *know* there&#39;s the experience, knowledge, skill and ability in the IATI community to do similar.  We&#39;ve a [fantastic conversation](https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/) about how to use the standard, and a [rapid response in terms of guidance](https://discuss.iatistandard.org/t/covid-19-publishing-guidance/1923).  
+
+Right now though, I&#39;d really like to hear how we *can* do this, rather than how the world that IATI inhabits is too complicated....</description>
+    
+    <lastBuildDate>Fri, 10 Apr 2020 14:49:03 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/tracking-uk-covid-19-grants-what-could-our-iati-community-learn/1931.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Tracking UK covid-19 grants - what could our IATI community learn?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I wanted to share with the IATI community a project that uses data on financial flows in response to the covid-19 crisis, to provide a simple-yet-effective interface and call-to-action:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe.png" data-download-href="https://discuss.iatistandard.org/uploads/default/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe" title="Coronavirus response grants"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe_2_546x500.png" alt="Coronavirus response grants" data-base62-sha1="nxzrjq2co3JZu6DzA0wFRDzb0Jw" width="546" height="500" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe_2_546x500.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe_2_819x750.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/a4fd81b06f6483ffcfdc5f6b201615936da2bdbe_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Coronavirus response grants</span><span class="informations">979×896 41.3 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>The <a href="https://www.threesixtygiving.org/" rel="nofollow noopener">360Giving</a> initiative - which encourages grantmakers and foundations to publish their grant portfolio with an open data standard - launched the <strong><a href="https://covidtracker.threesixtygiving.org/" rel="nofollow noopener">Coronavirus response grants</a></strong> tracker a couple of weeks ago.</p>
+<p>On a nightly basis, it checks across the (as of today, April 10th) 362,077 records from 122 publishers for mentions of various text strings that could describe the crisis.  These could be in the title, description or even the name of the grant programme.</p>
+<p>These are then detailed in a dedicated tracker that visualises the key stats, lists the grants, and provides links for more info:<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486.png" data-download-href="https://discuss.iatistandard.org/uploads/default/3d519f89ebdc41bb88e7544ebed2aef7673f7486" title="Coronavirus response grants (1)"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486_2_690x221.png" alt="Coronavirus response grants (1)" data-base62-sha1="8Ks09Y1cbaMed9noV8pWqeLWllY" width="690" height="221" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486_2_690x221.png, https://discuss.iatistandard.org/uploads/default/original/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/3d519f89ebdc41bb88e7544ebed2aef7673f7486_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Coronavirus response grants (1)</span><span class="informations">969×311 36.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>360 have a similar operating model to IATI:</p>
+<ul>
+<li>Publishers share their data in a <a href="http://standard.threesixtygiving.org/en/latest/" rel="nofollow noopener">standardised format</a>, at their own URL</li>
+<li>A <a href="http://data.threesixtygiving.org/" rel="nofollow noopener">Registry</a> collates the links to this data</li>
+<li>A <a href="https://github.com/ThreeSixtyGiving/datastore" rel="nofollow noopener">Datastore</a> pulls this, and provides query APIs</li>
+<li>Tools visualise the data (eg <a href="http://grantnav.threesixtygiving.org/" rel="nofollow noopener">GrantNav</a>; <a href="https://insights.threesixtygiving.org/" rel="nofollow noopener">Insights</a>)</li>
+</ul>
+<p>360 have long had a catchall interface for users to search across all grants and (when publishers use <a href="https://grantnav.threesixtygiving.org/recipient/GB-CHC-1123908" rel="nofollow noopener">the same organisation reference</a>) recipients.  It’s very possible to <a href="https://grantnav.threesixtygiving.org/search?json_query=%7B%22query%22%3A+%7B%22bool%22%3A+%7B%22must%22%3A+%7B%22query_string%22%3A+%7B%22query%22%3A+%22%5C%22covid-19%5C%22+OR+%5C%22covid19%5C%22+OR+%5C%22coronavirus%5C%22%22%2C+%22default_field%22%3A+%22%2A%22%7D%7D%2C+%22filter%22%3A+%5B%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%2C+%22must%22%3A+%7B%7D%2C+%22minimum_should_match%22%3A+1%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%7B%22range%22%3A+%7B%22amountAwarded%22%3A+%7B%7D%7D%7D%2C+%22must%22%3A+%7B%7D%2C+%22minimum_should_match%22%3A+1%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%2C+%7B%22bool%22%3A+%7B%22should%22%3A+%5B%5D%7D%7D%5D%7D%7D%2C+%22sort%22%3A+%7B%22_score%22%3A+%7B%22order%22%3A+%22desc%22%7D%7D%2C+%22aggs%22%3A+%7B%22fundingOrganization%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22fundingOrganization.id_and_name%22%2C+%22size%22%3A+3%7D%7D%2C+%22recipientOrganization%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22recipientOrganization.id_and_name%22%2C+%22size%22%3A+3%7D%7D%2C+%22recipientRegionName%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22recipientRegionName%22%2C+%22size%22%3A+3%7D%7D%2C+%22recipientDistrictName%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22recipientDistrictName%22%2C+%22size%22%3A+3%7D%7D%2C+%22currency%22%3A+%7B%22terms%22%3A+%7B%22field%22%3A+%22currency%22%2C+%22size%22%3A+3%7D%7D%7D%2C+%22extra_context%22%3A+%7B%22awardYear_facet_size%22%3A+3%2C+%22amountAwardedFixed_facet_size%22%3A+3%7D%7D" rel="nofollow noopener">search this for variations of covid-19, covid19, coronavirus</a> etc.</p>
+<p>But - the team a 360 chose to take advantage of their infrastructure and provide users with a direct and dedicated interface to this emerging corpus.</p>
+<p>It’s growing fast - yesterday (April 9th) I noticed 91 grants. Today (April 10th) there are 180.  Some 360 publishers are now switching their <strong>update frequency to daily</strong> - given that they can see an immediate and relevant outlet for their data.</p>
+<p>There’s also a key and vital outcome.: as more organisation start to access and use this interface, <em><strong>more want to then participate and openly share their own data</strong></em>.   Here we have the <a href="https://twitter.com/johnthegeo/status/606562725427159041" rel="nofollow noopener">virtuous circle</a>, <a class="mention" href="/u/johnadams">@JohnAdams</a> once mentioned at a TAG meeting (in 2015!)</p>
+<p><strong>So - what can we learn in the IATI community?</strong></p>
+<p>I can think of three things (which kind of interlink):</p>
+<ul>
+<li>
+<strong>Show, then tell</strong><br>
+360 put something up quickly and efficiently.  <em>This</em> is now the focus for conversation and action with existing and new users.<br>
+<strong>- Use, then build</strong><br>
+360 used their existing infrastructure to quickly build this new addition.  No changes to the standard, no hacks of existing tools.<br>
+<strong>- Listen, then iterate</strong><br>
+It’s no coincidence that this tracker presents data simply and intuitively - 360 spend a great deal of time <a href="https://www.threesixtygiving.org/support/data-expeditions/" rel="nofollow noopener">understanding who their users are, and what needs they have</a>.</li>
+</ul>
+<p>I <em>know</em> there’s the experience, knowledge, skill and ability in the IATI community to do similar.  We’ve a <a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/">fantastic conversation</a> about how to use the standard, and a <a href="https://discuss.iatistandard.org/t/covid-19-publishing-guidance/1923">rapid response in terms of guidance</a>.</p>
+<p>Right now though, I’d really like to hear how we <em>can</em> do this, rather than how the world that IATI inhabits is too complicated…</p>
+          <p><a href="https://discuss.iatistandard.org/t/tracking-uk-covid-19-grants-what-could-our-iati-community-learn/1931/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/tracking-uk-covid-19-grants-what-could-our-iati-community-learn/1931/1</link>
+        <pubDate>Fri, 10 Apr 2020 14:49:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1931-1</guid>
+        <source url="https://discuss.iatistandard.org/t/tracking-uk-covid-19-grants-what-could-our-iati-community-learn/1931.rss">Tracking UK covid-19 grants - what could our IATI community learn?</source>
+      </item>
+  </channel>
+</rss>

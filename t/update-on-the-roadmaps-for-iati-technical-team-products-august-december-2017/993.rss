@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</title>
+    <link>https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993</link>
+    <description>Just before the March 2017 TAG, the IATI Technical Team [posted an outline of our Product Roadmap](https://discuss.iatistandard.org/t/roadmaps-for-iati-technical-team-products/733) This included short-term plans up to the end of Q2 2017. Now that we are in Q3, we are providing an update on progress in these areas, plus information about plans for the next few months.
+
+# Review of the past few months
+There are five key areas that we highlighted as areas to focus on in our previous post.
+
+## 1. Maintenance
+We have undertaken a range of maintenance activities on existing products. A small subset of the changes we have made are:
+
+* [Updates and management of Non-Embedded Codelists](http://iatistandard.org/202/upgrades/nonembedded-codelist-changelog/)
+* Started migration of products to HTTPS. Some, such as [Discuss](https://discuss.iatistandard.org/), have been migrated, others are at various stages in the pipeline.
+
+* Resolved a range of issues with products including the [Dashboard](http://dashboard.iatistandard.org/), [Standard Website](http://iatistandard.org/), [Query Builder](http://datastore.iatistandard.org/query/) and [Registry](https://iatiregistry.org/) Community input from @andylolz on investigating some issues has been particularly noted and appreciated :-)
+* Major review of internal processes and coding standards which has generated efficiencies, giving us more time to work on things that aren’t maintenance.
+
+## 2. Time-sensitive Work
+We have worked on a number of time-sensitive projects:
+
+* Participating in [TAG 2017](http://www.aidtransparency.net/technicaladvisorygroup/tag-meetings/tag-meeting-2017), including usability research [some brief notes here](https://discuss.iatistandard.org/t/roadmaps-for-iati-technical-team-products/733/5), as well as other actions that came out of it
+* Development and review of proposals for the [2.03 Upgrade](http://iatistandard.org/202/upgrades/decimal-upgrade-to-2-03/)
+* Added a [Humanitarian Page](http://dashboard.iatistandard.org/humanitarian.html) to the IATI Dashboard
+* Created a Dashboard to [monitor humanitarian publishing](http://www.aidtransparency.net/news/di-report-reviews-humanitarian-publishing-to-iati) for Grand Bargain signatories, using IATI data.
+## 3. Architecture Design and Development
+In January, we took time to assess the current state of IATI architecture and we [posted our plans](https://discuss.iatistandard.org/t/iati-systems-design-architecture-proposal/709) to improve the situation.
+
+## 4. Python Library Development: Core and Validation
+
+We have worked to begin implementing the base architecture, formed initially around an IATI [Python Library*](https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720).
+
+Our primary work has centered around the [core module](https://github.com/IATI/iati.core) to act as a reference implementation of the letter (rather than the undocumented &#39;spirit&#39; (that varies from person to person)) of the &#39;Standard&#39;. We have initially used version `2.02` of the Standard for this, and will soon extend to other versions. 
+
+We have also [undertaken](https://github.com/IATI/iati.core/network) some work to perform dataset validation within the Schema. A proof-of-concept implementation for validating a dataset against IATI Codelists and Rulesets has been demonstrated.
+
+Alongside this, work has recently begun work on additional parts of the Python Library, such as [`iati.fetch`](https://github.com/IATI/iati.fetch/network), which aims to offer functionality to download data and updates to Single Source Of Truth content using a network connection.
+
+`*` The Python library is a collection of reusable software components that the IATI Technical Team are building to help us to improve the underlying structure of existing tools. The library will act as a base for common tasks and is being built in an extensible way.  Therefore, it is intended that the library will make it easier to use IATI data by removing the need to reinvent the wheel before moving onto implementing innovative functionality, performing analysis of data or simply accessing data for data visualisations. [More information here](https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720).
+
+## 5. Datastore Development
+We have, unfortunately, not had the capacity to properly assess future plans for the Datastore  However, we are definitely aware that there are problems with the current product and, as such, we will ensure a proper review is undertaken at the point in our migration to a sustainable architecture when we require the functionality that a Datastore may provide.
+# Direction for the next few months
+Alongside maintenance, there are three main projects that we plan to work on between now and the end of 2017:
+
+* **Validator:** We will aim to release developer functionality (with accompanying user guidance) that will enable datasets to be validated against more of the IATI Standard than just Schemas – for example, that the correct values from a related codelist have been used.
+
+* **2.03 Standard Upgrade:** Once proposals have been finalised and agreed upon, we will implement them in the Schema, and update tools to support the new functionality as appropriate.
+
+* **Architecture Design and Development / Web Project:** We will continue work on the Python Library to provide the base of a sustainable architecture. Alongside this, we will use it in practice during work to significantly improve the experience of those using IATI’s websites. The scope of this project will be confirmed over the coming weeks before we start implementation in the Autumn.</description>
+    
+    <lastBuildDate>Thu, 17 Aug 2017 10:41:10 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Excellent, thanks <a class="mention" href="/u/bill_anderson">@bill_anderson</a> and <a class="mention" href="/u/hayfield">@hayfield</a>, and sorry for my impatience. I am placated and reassured <img src="//discuss.iatistandard.org/images/emoji/twitter/blush.png?v=5" title=":blush:" class="emoji" alt=":blush:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/5</link>
+        <pubDate>Thu, 17 Aug 2017 10:41:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-993-5</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993.rss">Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</source>
+      </item>
+      <item>
+        <title>Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>Alongside what is presented here, there is a separate Data Use workplan due to run from September 2017 through to August 2018. This will look at the various dimensions of Data Use including both technical and political interventions (plus a variety of things that don’t fit neatly into these categories). The current prep work is being undertaken by other members of the Tech Team, so I am unsure of the full detail of what it will entail and where the balance of work will lie, though there is reference to work around improving / developing Datastore-esque tools in there.</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/4</link>
+        <pubDate>Thu, 17 Aug 2017 09:11:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-993-4</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993.rss">Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</source>
+      </item>
+      <item>
+        <title>Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/markbrough">@markbrough</a> our medium term is a little longer than yours. <a class="mention" href="/u/dalepotter">@dalepotter</a> has outlined priorities for the next three months. The Datastore is top of the priority list thereafter.</p>
+<p>If you can bear with me for a couple of weeks, I will (in a piece accompanying the launch of the Python Library) make the case for investing in rock-hard foundations and sustainable infrastructures, putting our work in this field into historical perspective.</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/3</link>
+        <pubDate>Thu, 17 Aug 2017 08:59:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-993-3</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993.rss">Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</source>
+      </item>
+      <item>
+        <title>Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Super helpful to have this kind of update from the Technical Team. I understand you guys have a lot of competing demands on your time and that resources are constrained.</p>
+<p>In view of the existing constraints and the calls to focus more on data use, I am not really sure how the Python Library development responds to the <a href="https://discuss.iatistandard.org/t/roadmaps-for-iati-technical-team-products/733/5">user needs identified at the TAG</a>. From my perspective, providing reliable, stable, queryable data through the IATI Datastore (or an alternative solution guaranteed by the Secretariat) is essential to being able to effectively use this data at country level. The technical roadmap also states that it is seen as “core to IATI”.</p>
+<p>However, according to this update there are no plans to address the Datastore’s shortcomings even in the medium term.</p>
+<p>Can this be reconsidered please? Thanks! <img src="//discuss.iatistandard.org/images/emoji/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/2</link>
+        <pubDate>Wed, 16 Aug 2017 16:11:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-993-2</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993.rss">Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</source>
+      </item>
+      <item>
+        <title>Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Just before the March 2017 TAG, the IATI Technical Team <a href="https://discuss.iatistandard.org/t/roadmaps-for-iati-technical-team-products/733">posted an outline of our Product Roadmap</a> This included short-term plans up to the end of Q2 2017. Now that we are in Q3, we are providing an update on progress in these areas, plus information about plans for the next few months.</p>
+<h1>Review of the past few months</h1>
+<p>There are five key areas that we highlighted as areas to focus on in our previous post.</p>
+<h2>1. Maintenance</h2>
+<p>We have undertaken a range of maintenance activities on existing products. A small subset of the changes we have made are:</p>
+<ul>
+<li>
+<p><a href="http://iatistandard.org/202/upgrades/nonembedded-codelist-changelog/">Updates and management of Non-Embedded Codelists</a></p>
+</li>
+<li>
+<p>Started migration of products to HTTPS. Some, such as <a href="https://discuss.iatistandard.org/">Discuss</a>, have been migrated, others are at various stages in the pipeline.</p>
+</li>
+<li>
+<p>Resolved a range of issues with products including the <a href="http://dashboard.iatistandard.org/">Dashboard</a>, <a href="http://iatistandard.org/">Standard Website</a>, <a href="http://datastore.iatistandard.org/query/">Query Builder</a> and <a href="https://iatiregistry.org/">Registry</a> Community input from <a class="mention" href="/u/andylolz">@andylolz</a> on investigating some issues has been particularly noted and appreciated <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</li>
+<li>
+<p>Major review of internal processes and coding standards which has generated efficiencies, giving us more time to work on things that aren’t maintenance.</p>
+</li>
+</ul>
+<h2>2. Time-sensitive Work</h2>
+<p>We have worked on a number of time-sensitive projects:</p>
+<ul>
+<li>Participating in <a href="http://www.aidtransparency.net/technicaladvisorygroup/tag-meetings/tag-meeting-2017">TAG 2017</a>, including usability research <a href="https://discuss.iatistandard.org/t/roadmaps-for-iati-technical-team-products/733/5">some brief notes here</a>, as well as other actions that came out of it</li>
+<li>Development and review of proposals for the <a href="http://iatistandard.org/202/upgrades/decimal-upgrade-to-2-03/">2.03 Upgrade</a>
+</li>
+<li>Added a <a href="http://dashboard.iatistandard.org/humanitarian.html">Humanitarian Page</a> to the IATI Dashboard</li>
+<li>Created a Dashboard to <a href="http://www.aidtransparency.net/news/di-report-reviews-humanitarian-publishing-to-iati">monitor humanitarian publishing</a> for Grand Bargain signatories, using IATI data.</li>
+</ul>
+<h2>3. Architecture Design and Development</h2>
+<p>In January, we took time to assess the current state of IATI architecture and we <a href="https://discuss.iatistandard.org/t/iati-systems-design-architecture-proposal/709">posted our plans</a> to improve the situation.</p>
+<h2>4. Python Library Development: Core and Validation</h2>
+<p>We have worked to begin implementing the base architecture, formed initially around an IATI <a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720">Python Library*</a>.</p>
+<p>Our primary work has centered around the <a href="https://github.com/IATI/iati.core">core module</a> to act as a reference implementation of the letter (rather than the undocumented ‘spirit’ (that varies from person to person)) of the ‘Standard’. We have initially used version <code>2.02</code> of the Standard for this, and will soon extend to other versions.</p>
+<p>We have also <a href="https://github.com/IATI/iati.core/network">undertaken</a> some work to perform dataset validation within the Schema. A proof-of-concept implementation for validating a dataset against IATI Codelists and Rulesets has been demonstrated.</p>
+<p>Alongside this, work has recently begun work on additional parts of the Python Library, such as <a href="https://github.com/IATI/iati.fetch/network"><code>iati.fetch</code></a>, which aims to offer functionality to download data and updates to Single Source Of Truth content using a network connection.</p>
+<p><code>*</code> The Python library is a collection of reusable software components that the IATI Technical Team are building to help us to improve the underlying structure of existing tools. The library will act as a base for common tasks and is being built in an extensible way.  Therefore, it is intended that the library will make it easier to use IATI data by removing the need to reinvent the wheel before moving onto implementing innovative functionality, performing analysis of data or simply accessing data for data visualisations. <a href="https://discuss.iatistandard.org/t/introducing-the-iati-python-library/720">More information here</a>.</p>
+<h2>5. Datastore Development</h2>
+<p>We have, unfortunately, not had the capacity to properly assess future plans for the Datastore  However, we are definitely aware that there are problems with the current product and, as such, we will ensure a proper review is undertaken at the point in our migration to a sustainable architecture when we require the functionality that a Datastore may provide.</p>
+<h1>Direction for the next few months</h1>
+<p>Alongside maintenance, there are three main projects that we plan to work on between now and the end of 2017:</p>
+<ul>
+<li>
+<p><strong>Validator:</strong> We will aim to release developer functionality (with accompanying user guidance) that will enable datasets to be validated against more of the IATI Standard than just Schemas – for example, that the correct values from a related codelist have been used.</p>
+</li>
+<li>
+<p><strong>2.03 Standard Upgrade:</strong> Once proposals have been finalised and agreed upon, we will implement them in the Schema, and update tools to support the new functionality as appropriate.</p>
+</li>
+<li>
+<p><strong>Architecture Design and Development / Web Project:</strong> We will continue work on the Python Library to provide the base of a sustainable architecture. Alongside this, we will use it in practice during work to significantly improve the experience of those using IATI’s websites. The scope of this project will be confirmed over the coming weeks before we start implementation in the Autumn.</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993/1</link>
+        <pubDate>Tue, 15 Aug 2017 16:12:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-993-1</guid>
+        <source url="https://discuss.iatistandard.org/t/update-on-the-roadmaps-for-iati-technical-team-products-august-december-2017/993.rss">Update on the Roadmaps for IATI Technical Team Products (August-December 2017)</source>
+      </item>
+  </channel>
+</rss>

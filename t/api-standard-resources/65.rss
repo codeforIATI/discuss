@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>API Standard Resources</title>
+    <link>https://discuss.iatistandard.org/t/api-standard-resources/65</link>
+    <description>Some work has already been done on an API Convention/Standard:
+
+ - [API Standardisation Wiki page](http://wiki.iatistandard.org/wg/api/start)
+ - [IATI API Convention - Working Draft](https://docs.google.com/document/d/1gxvmYZSDXBTSMAU16bxfFd-hn1lYVY1c2olkXbuPBj4/edit#)
+ - [IATI API Convention Wiki Page](http://wiki.iatistandard.org/wg/api/api_standard)</description>
+    
+    <lastBuildDate>Fri, 07 Nov 2014 09:24:57 +0000</lastBuildDate>
+    <category>APIs</category>
+    <atom:link href="https://discuss.iatistandard.org/t/api-standard-resources/65.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>API Standard Resources</title>
+        <dc:creator><![CDATA[Adrian]]></dc:creator>
+        <description><![CDATA[
+            <p>We’ve implemented Swagger for our latest API in Akvo RSR - we really like the generated info, especially as this reuses the help information we have in place in the code already. <a href="http://rsr.akvo.org/rest/docs/" rel="nofollow noopener">http://rsr.akvo.org/rest/docs/</a></p>
+<p>The one thing we’ve yet to add is the information about how to actually implement, for example with RSR users need to send or receive tables in specific orders so that they can access the full set of relevant information, and this is something additional we need to provide.</p>
+<p>But for the basics, this has been great - and devs (and almost devs like me) can instantly get at lots of useful info.</p>
+          <p><a href="https://discuss.iatistandard.org/t/api-standard-resources/65/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/api-standard-resources/65/4</link>
+        <pubDate>Fri, 07 Nov 2014 09:24:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-65-4</guid>
+        <source url="https://discuss.iatistandard.org/t/api-standard-resources/65.rss">API Standard Resources</source>
+      </item>
+      <item>
+        <title>API Standard Resources</title>
+        <dc:creator><![CDATA[Adrian]]></dc:creator>
+        <description><![CDATA[
+            <p>I think we need to try and consolidate the documentation into a single source when all is decided on.</p>
+<p>I’ve been checking out <a href="https://helloreverb.com/developers/swagger" rel="nofollow noopener">Swagger</a> which looks really good from my point of view; however if we wanted to adopt this, we’d need to make sure that all API builders would utilise the same patterns of coding (and used Swagger) - and then we have the question, which do we point to as “<strong>The</strong> IATI API Documentation”?</p>
+<p>I think the docs should cover 3 areas:</p>
+<ul>
+<li>How to build an API for IATI Data</li>
+<li>How to use an API for IATI Data</li>
+<li>What APIs are there already existing (and what do they provide)</li>
+</ul>
+<p>Maybe the how to use is covered individually within each of the implementations though…</p>
+          <p><a href="https://discuss.iatistandard.org/t/api-standard-resources/65/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/api-standard-resources/65/3</link>
+        <pubDate>Wed, 06 Aug 2014 08:09:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-65-3</guid>
+        <source url="https://discuss.iatistandard.org/t/api-standard-resources/65.rss">API Standard Resources</source>
+      </item>
+      <item>
+        <title>API Standard Resources</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Aside from linking to those here, have we any thoughts on how best to surface these documents, and the WG in general?  Dare I suggest <a href="http://api.iatistandard.org" rel="nofollow noopener">api.iatistandard.org</a> … ?!</p>
+          <p><a href="https://discuss.iatistandard.org/t/api-standard-resources/65/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/api-standard-resources/65/2</link>
+        <pubDate>Thu, 31 Jul 2014 08:23:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-65-2</guid>
+        <source url="https://discuss.iatistandard.org/t/api-standard-resources/65.rss">API Standard Resources</source>
+      </item>
+      <item>
+        <title>API Standard Resources</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>Some work has already been done on an API Convention/Standard:</p>
+<ul>
+<li><a href="http://wiki.iatistandard.org/wg/api/start" rel="nofollow noopener">API Standardisation Wiki page</a></li>
+<li><a href="https://docs.google.com/document/d/1gxvmYZSDXBTSMAU16bxfFd-hn1lYVY1c2olkXbuPBj4/edit#" rel="nofollow noopener">IATI API Convention - Working Draft</a></li>
+<li><a href="http://wiki.iatistandard.org/wg/api/api_standard" rel="nofollow noopener">IATI API Convention Wiki Page</a></li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/api-standard-resources/65/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/api-standard-resources/65/1</link>
+        <pubDate>Fri, 18 Jul 2014 12:07:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-65-1</guid>
+        <source url="https://discuss.iatistandard.org/t/api-standard-resources/65.rss">API Standard Resources</source>
+      </item>
+  </channel>
+</rss>

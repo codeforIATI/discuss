@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Language - recommend use of ISO 639-1 (included 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842</link>
+    <description>This proposal is part of the [2.03 upgrade process](https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838), please comment by replying below.
+
+**Standard**
+Activity and Organisation
+
+**Schema Object**
+All uses of @xml:lang attribute
+
+**Type of Change**
+Change Definition
+
+**Issue**
+Xml:lang references the generic XML spec which allows for a range of languages, locales, regions and scripts. It is used in our schema with a more limiting definition - specifying sole use of ISO 639-1. This is not enforceable. Moreover, there are users who need to specify languages that aren’t on the ISO 639-1 list, but can be specified with BCP 47.
+
+**Proposal**
+Change all definitions of xml:lang
+&lt;ul&gt;
+&lt;li&gt;From
+ISO 639-1 code specifying the language of text in this element.
+&lt;li&gt;To
+A code specifying the language of text in this element.It is recommended that wherever possible only codes from ISO 639-1 are used.
+&lt;/ul&gt;
+
+**Standards Day**
+Accepted
+
+**Links**
+http://bit.ly/2m0EWJL</description>
+    
+    <lastBuildDate>Wed, 25 Oct 2017 13:53:02 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Language - recommend use of ISO 639-1 (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/11</link>
+        <pubDate>Wed, 25 Oct 2017 13:53:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-842-11</guid>
+        <source url="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842.rss">Language - recommend use of ISO 639-1 (included 2.03)</source>
+      </item>
+      <item>
+        <title>Language - recommend use of ISO 639-1 (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal has been been included in the 2.03 upgrade. It can be viewed in the following two Discuss posts:</p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Proposal of 2.03 Content</a></p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Technical Proposal for the 2.03 Upgrade</a></p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/10</link>
+        <pubDate>Wed, 25 Oct 2017 13:53:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-842-10</guid>
+        <source url="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842.rss">Language - recommend use of ISO 639-1 (included 2.03)</source>
+      </item>
+      <item>
+        <title>Language - recommend use of ISO 639-1 (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Ace – sounds good to me.</p>
+          <p><a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/9</link>
+        <pubDate>Mon, 31 Jul 2017 20:45:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-842-9</guid>
+        <source url="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842.rss">Language - recommend use of ISO 639-1 (included 2.03)</source>
+      </item>
+      <item>
+        <title>Language - recommend use of ISO 639-1 (included 2.03)</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>So it does… <em>redundant</em> probably isn’t the best term.</p>
+<p>Looking at this again, there are currently multiple definitions for valid values within the <code>xml:lang</code> attribute:</p>
+<ol>
+<li>ISO 639-1 code <em>(from the <a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-common.xsd#L40">attribute definition</a>)</em>
+</li>
+<li>A value on the Language codelist <em>(<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/title/narrative/#attributes">auto-generated documentation</a>)</em>
+</li>
+<li>Any value, recommended that it is on the Language Codelist <em>(<a href="https://github.com/IATI/IATI-Codelists#extra-metadata">Codelist documentation</a>)</em>
+</li>
+<li>Any valid BCP 47 value <em>(<a href="https://www.w3.org/TR/REC-xml/#sec-lang-tag">XML spec</a>)</em>
+</li>
+</ol>
+<p>Looking at how these interact…</p>
+<ul>
+<li>Points 1, 2 and 3 are part of the IATI Standard.</li>
+<li>Point 4 is part of a standard that IATI builds upon.</li>
+<li>Points 1 and 2 are stricter than Point 3.</li>
+<li>Point 4 restricts the values permitted by Point 3.</li>
+</ul>
+<p>At present, there is no documented manner in which contradictions within the IATI Standard should be resolved. I would premise that the more permissive of valid interpretations of the contradicting statements be deemed the correct interpretation of the IATI Standard.</p>
+<p>Based on the above, this proposal does not need to go through the 2.03 upgrade process, and should instead be implemented as a backwards-compatible bug fix.</p>
+<hr>
+<p>Separately, the auto-generated documentation stating presence on Codelists should be fixed to take into account the <code>complete</code> attribute.</p>
+          <p><a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/8</link>
+        <pubDate>Mon, 31 Jul 2017 08:19:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-842-8</guid>
+        <source url="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842.rss">Language - recommend use of ISO 639-1 (included 2.03)</source>
+      </item>
+      <item>
+        <title>Language - recommend use of ISO 639-1 (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>This change makes the <code>xml:lang</code> definition <strong>consistent</strong> with the fact the language codelist is <code>complete="0"</code>. So I don’t see it as redundant.</p>
+<p>That said, this isn’t my proposal and I have no strong feelings either way.</p>
+          <p><a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/7</link>
+        <pubDate>Tue, 25 Jul 2017 15:38:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-842-7</guid>
+        <source url="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842.rss">Language - recommend use of ISO 639-1 (included 2.03)</source>
+      </item>
+      <item>
+        <title>Language - recommend use of ISO 639-1 (included 2.03)</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/petyakangalova">@petyakangalova</a> has noted that Codelists have a boolean <code>complete</code> attribute which impacts usage in a way relevant to this proposal.</p>
+<p>The <a href="http://iatistandard.org/201/codelists/codelist-management/#complete-vs-incomplete-codelists">documentation</a> on this attribute is:</p>
+<blockquote>
+<p>Some codelists, such as the ISO country codes, are not ‘complete’ lists of all possible values that might be used. In the case of countries, publishers may use extra user defined codes (such as ‘XK’ for Kosovo) or valid historical values that are not on our maintained list.</p>
+</blockquote>
+<blockquote>
+<p>For other codelists, such as the DescriptionType codelist, if the value is not on the codelist the data doesn’t make any sense - it is invalid. This is an example of a ‘complete’ codelist.</p>
+</blockquote>
+<blockquote>
+<p>We distinguish between these two types of codelists by the use of an xml attribute: <code>complete="1"</code></p>
+</blockquote>
+<p><a href="https://github.com/IATI/IATI-Codelists#extra-metadata">and</a></p>
+<blockquote>
+<p>complete - boolean that describes whether the codelist is ‘complete’ ie. having a value not on the codelist is definitely invalid. An example of an incomplete codelist is country codes, where extra codes may exist for disputed countries.</p>
+</blockquote>
+<p>Reading through this, it appears that:</p>
+<ul>
+<li>
+<code>complete="1"</code> - use of values from this Codelist is mandatory - using other values makes the data invalid</li>
+<li>
+<code>complete="0"</code> - use of values from this Codelist is recommended, though using other values is absolutely fine (but might lead to a warning in a validation tool)</li>
+</ul>
+<p>The <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/blob/master/xml/Language.xml#L1">Language Codelist</a> is marked as <code>complete="0"</code>. As such, this proposal appears redundant in its current state.</p>
+<p>An alternative course of action would be to improve documentation around the <code>complete</code> attribute.</p>
+          <p><a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/6</link>
+        <pubDate>Tue, 25 Jul 2017 08:55:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-842-6</guid>
+        <source url="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842.rss">Language - recommend use of ISO 639-1 (included 2.03)</source>
+      </item>
+      <item>
+        <title>Language - recommend use of ISO 639-1 (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Notes from consultation calls w/c 3rd July</p>
+<p>The proposal was reviewed by those on the call and there was no objection from the group.</p>
+          <p><a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/5</link>
+        <pubDate>Fri, 07 Jul 2017 12:18:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-842-5</guid>
+        <source url="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842.rss">Language - recommend use of ISO 639-1 (included 2.03)</source>
+      </item>
+      <item>
+        <title>Language - recommend use of ISO 639-1 (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been included for consideration in the formal 2.03 proposal</p>
+          <p><a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/2</link>
+        <pubDate>Fri, 16 Jun 2017 15:34:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-842-2</guid>
+        <source url="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842.rss">Language - recommend use of ISO 639-1 (included 2.03)</source>
+      </item>
+      <item>
+        <title>Language - recommend use of ISO 639-1 (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal is part of the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity and Organisation</p>
+<p><strong>Schema Object</strong><br>
+All uses of <span class="mention">@xml</span>:lang attribute</p>
+<p><strong>Type of Change</strong><br>
+Change Definition</p>
+<p><strong>Issue</strong><br>
+Xml:lang references the generic XML spec which allows for a range of languages, locales, regions and scripts. It is used in our schema with a more limiting definition - specifying sole use of ISO 639-1. This is not enforceable. Moreover, there are users who need to specify languages that aren’t on the ISO 639-1 list, but can be specified with BCP 47.</p>
+<p><strong>Proposal</strong><br>
+Change all definitions of xml:lang</p>
+<ul>
+<li>From
+ISO 639-1 code specifying the language of text in this element.
+</li>
+<li>To
+A code specifying the language of text in this element.It is recommended that wherever possible only codes from ISO 639-1 are used.
+</li>
+</ul>
+<p><strong>Standards Day</strong><br>
+Accepted</p>
+<p><strong>Links</strong><br>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/document/d/1XCwTApd1NX3Rfc0p8-uxAskZ0NE8RIDxrzmojQdNYRY/edit" target="_blank">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/document/d/1XCwTApd1NX3Rfc0p8-uxAskZ0NE8RIDxrzmojQdNYRY/edit" target="_blank"><span class="googledocs-onebox-logo g-docs-logo"></span></a>
+
+<h3><a href="https://docs.google.com/document/d/1XCwTApd1NX3Rfc0p8-uxAskZ0NE8RIDxrzmojQdNYRY/edit" target="_blank">14. Improvements relating to both Activity and Organisation Standards</a></h3>
+
+<p>Name of paper Improvements relating to both Activity and  Organisation Standards  Lead author Hayden Field / Bill Anderson Links to other relevant information (Discuss forum; Website etc) Discuss:...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842/1</link>
+        <pubDate>Fri, 12 May 2017 11:05:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-842-1</guid>
+        <source url="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842.rss">Language - recommend use of ISO 639-1 (included 2.03)</source>
+      </item>
+  </channel>
+</rss>

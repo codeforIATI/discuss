@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>3.0.0 Major Upgrade Proposals - IATI Community Discussions</title>
+    <link>https://discuss.iatistandard.org/c/standard-management/3-01-integer-upgrade-proposals/37</link>
+    <description>Topics in the &#39;3.0.0 Major Upgrade Proposals&#39; category Proposals and consultations pertaining to the 3rd major integer version of the IATI standard.</description>
+    
+      <lastBuildDate>Tue, 10 Sep 2019 10:15:02 +0000</lastBuildDate>
+      <atom:link href="https://discuss.iatistandard.org/c/standard-management/3-01-integer-upgrade-proposals/37.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>If using a codelist, the data must exactly match</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>The new [SDG guidance] <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> (<a href="https://docs.google.com/document/d/11vsqHc-mdAYUCqrrGCaCTFxu48oD3VvBVSlY9Q3ideo/edit" rel="nofollow noopener">https://docs.google.com/document/d/11vsqHc-mdAYUCqrrGCaCTFxu48oD3VvBVSlY9Q3ideo/edit</a>) states that: “IATI recommends that if a publisher’s internal indicators do not directly match any SDG Indicator, they should choose one SDG Indicator that their internal result’s indicator best relates or contributes to.”</p>
+<p>I think this breaks how IATI works and am very surprised that this is allowed as this means that data users cannot rely on the data being supplied by a publisher, exactly matching the codelist entry that it is marked as.</p>
+<p>This means that if a user were to aggregate all the baselines for a particular SDG indicator, they would not know that in some cases, the baseline data provided, is actually for a different indicator, not the one they are expecting, and therefore their conclusions from using this data would be false.</p>
+<p>IATI needs to find a way to use existing tools e.g. the <code>&lt;legacy-data&gt;</code> element, or a new element, to allow publishers to indicate whether the data they are supplying is from a similar, but not exactly the same indicator/sector etc to that described by the codelist which they have used to mark it. This could easily done by an attribute i.e. <code>match=not_exact</code> or similar.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/if-using-a-codelist-the-data-must-exactly-match/1842">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/if-using-a-codelist-the-data-must-exactly-match/1842</link>
+          <pubDate>Tue, 10 Sep 2019 10:15:02 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1842</guid>
+          <source url="https://discuss.iatistandard.org/t/if-using-a-codelist-the-data-must-exactly-match/1842.rss">If using a codelist, the data must exactly match</source>
+        </item>
+        <item>
+          <title>Replace assumption of 100% if only one sector published with rule</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>Currently the guidance is that “f the activity has only one sector, then it is presumed that 100% of the funding is going to that sector”.</p>
+<p>This (as with all of the ‘assumption’ based rules) makes it harder for data users. The ‘assumption’ of 100% could be replaced by a rule that requires a percentage value to be given for all sectors added, and therefore that this should be 100% where only one sector is provided.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/replace-assumption-of-100-if-only-one-sector-published-with-rule/1841">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/replace-assumption-of-100-if-only-one-sector-published-with-rule/1841</link>
+          <pubDate>Mon, 09 Sep 2019 14:02:04 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1841</guid>
+          <source url="https://discuss.iatistandard.org/t/replace-assumption-of-100-if-only-one-sector-published-with-rule/1841.rss">Replace assumption of 100% if only one sector published with rule</source>
+        </item>
+        <item>
+          <title>Require link to codelist or require narratives when using a 98/99 codelist</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>At the moment, the guidance says “If region vocab 99 (reporting org) is used, it is strongly recommended that a link to the codelist is included.” This means that a publisher can use a 98/99 codelist, but not include a link or narrative elements, and therefore data users will not know what the codes (data) represent.</p>
+<p>A rule is needed to require a link OR narrative element for each code from a 98/99 codelist.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/require-link-to-codelist-or-require-narratives-when-using-a-98-99-codelist/1838">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/require-link-to-codelist-or-require-narratives-when-using-a-98-99-codelist/1838</link>
+          <pubDate>Thu, 05 Sep 2019 17:43:47 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1838</guid>
+          <source url="https://discuss.iatistandard.org/t/require-link-to-codelist-or-require-narratives-when-using-a-98-99-codelist/1838.rss">Require link to codelist or require narratives when using a 98/99 codelist</source>
+        </item>
+        <item>
+          <title>Budget values *must* not be repeated in multiple currencies</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>Currently the guidance states “Recipient country budgets can be published in the currency of the country. However, budget values <strong>should</strong> not be repeated in multiple currencies.”</p>
+<p>I am proposing that this ‘should’ should be made a ‘must’ (and a rule added) to make data use easier as publishing the same budget in multiple currencies would make it very hard to use the data as there is no way to know if they are duplicates or not?</p>
+<p>Or is there a way to know if two budget items are identical, just in different currencies? Or should we introduce a ‘budget element ID’ so publishers could signal that this is the same budget? Or are users expected to deduce from the period of the budget that they are the same?</p>
+<p>I also wonder why ‘budgets’ don’t use the transaction element like all the other financial flows? The transaction element has more of the tools needed to solve this issue I think.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/budget-values-must-not-be-repeated-in-multiple-currencies/1837">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/budget-values-must-not-be-repeated-in-multiple-currencies/1837</link>
+          <pubDate>Thu, 05 Sep 2019 09:22:59 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1837</guid>
+          <source url="https://discuss.iatistandard.org/t/budget-values-must-not-be-repeated-in-multiple-currencies/1837.rss">Budget values *must* not be repeated in multiple currencies</source>
+        </item>
+        <item>
+          <title>Develop alternative for opengis location information</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>Currently use of opengis is required, but only by virtue of the element being required, and opengis being the only option, we should think of an alternative so we can make the guidance more IATI-like e.g. saying that ‘a location service should be indicated to identify the location’ rather than effectively forcing opengis</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/develop-alternative-for-opengis-location-information/1829">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/develop-alternative-for-opengis-location-information/1829</link>
+          <pubDate>Tue, 27 Aug 2019 16:39:23 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1829</guid>
+          <source url="https://discuss.iatistandard.org/t/develop-alternative-for-opengis-location-information/1829.rss">Develop alternative for opengis location information</source>
+        </item>
+        <item>
+          <title>Stop recommending DAC codelists</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>The guidance for the standard recommends using DAC codelists in several places - this is not in keeping with the ambition to be a global aid data standard, and can result in worse quality data e.g. the DAC5 sector codelist has limited information in the 7xxxx humanitarian codes compared to the humanitarian cluster codes.</p>
+            <p><small>10 posts - 5 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824</link>
+          <pubDate>Thu, 22 Aug 2019 15:20:39 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1824</guid>
+          <source url="https://discuss.iatistandard.org/t/stop-recommending-dac-codelists/1824.rss">Stop recommending DAC codelists</source>
+        </item>
+        <item>
+          <title>Remove assumptions that if codelist not provided, it is the DAC codelist</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>In several places, where a codelist is not specified, then the DAC codelist is assumed. This is unhelpful for data users who have to maintain knowledge of all the assumptions they need to make, rather than relying on the information embodied within the data/standard. Adding the codelist reference should be very little effort for publishers.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823</link>
+          <pubDate>Thu, 22 Aug 2019 15:18:25 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1823</guid>
+          <source url="https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823.rss">Remove assumptions that if codelist not provided, it is the DAC codelist</source>
+        </item>
+        <item>
+          <title>Remove the &#39;if codelist not specified assume X&#39;</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>In order to ‘standardise the standard’ we should remove all the areas where when a codelist is not specified (e.g. sector vocabulary), then one of the codelists is set as the default (although not in any way a machine could follow). This would make the standard less complex e.g. easier for users who would not need to maintain their own lists of where these rules apply. These typically also reinforce the idea of IATI as a DAC centric institution which is not helpful.</p>
+<p>A very second best solution would be a way for IATI data consuming systems to track these ‘defaults’.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/remove-the-if-codelist-not-specified-assume-x/1818">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/remove-the-if-codelist-not-specified-assume-x/1818</link>
+          <pubDate>Wed, 21 Aug 2019 13:46:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1818</guid>
+          <source url="https://discuss.iatistandard.org/t/remove-the-if-codelist-not-specified-assume-x/1818.rss">Remove the &#39;if codelist not specified assume X&#39;</source>
+        </item>
+        <item>
+          <title>Ability to link elements to specific documents/links</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>In Copenhagen 2019, Ghana explained that in order to use IATI transaction (or other) data in their systems they needed harder evidence e.g. an official document supporting the data. Therefore it would be useful to be able to link e.g. a transaction to a specific document which forms the underlying evidence.</p>
+<p>Multiple IATI elements could be linked to the same document e.g. the activity title, budget etc could all be linked to the project document. Many transactions could be linked to a single transactions statement, but this would save a lot of time searching though the documents associated with a project to try and find the right one. Publishers could also link to the relevant part of their own websites as evidence for some IATI data.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/ability-to-link-elements-to-specific-documents-links/1817">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/ability-to-link-elements-to-specific-documents-links/1817</link>
+          <pubDate>Wed, 21 Aug 2019 12:25:17 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1817</guid>
+          <source url="https://discuss.iatistandard.org/t/ability-to-link-elements-to-specific-documents-links/1817.rss">Ability to link elements to specific documents/links</source>
+        </item>
+        <item>
+          <title>Placeholder to make language on orgs in recipient countries consistent</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <aside class="quote" data-post="11" data-topic="1755">
+  <div class="title">
+    <div class="quote-controls"></div>
+    <img alt="" width="20" height="20" src="/user_avatar/discuss.iatistandard.org/amys/40/288_2.png" class="avatar">
+    <a href="https://discuss.iatistandard.org/t/bug-fix-incorrect-org-type-description/1755/11">Bug fix: Incorrect org type description</a> <a class="badge-wrapper  box" href="/c/standard-management/modifications-additions-improvements"><span class="badge-category-parent-bg" style="background-color: #5719A3;"></span><span class="badge-category-bg" style="background-color: #A66EE9;"></span><span style="color: #FFFFFF" data-drop-close="true" class="badge-category clear-badge" title="Inbox for suggestions - post will be moved into appropriate upgrade forums as they are made. For instance, if a proposal would constitute a non-backwardly compatible change to the IATI standard, it would most likely be moved into the nearest Integer upgrade forum.">Modifications, Additions, Improvements</span></a>
+  </div>
+  <blockquote>
+    Thanks for the input all. 
+If there’s no objection within 7 days we’ll change the description to: Local and National NGO / CSO based in aid/assistance recipient country’ 
+<a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> to your point, I agree it needs doing and to be done consistently. That will most likely take place at a v3 upgrade.
+  </blockquote>
+</aside>
+
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/placeholder-to-make-language-on-orgs-in-recipient-countries-consistent/1775">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/placeholder-to-make-language-on-orgs-in-recipient-countries-consistent/1775</link>
+          <pubDate>Tue, 25 Jun 2019 20:24:44 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1775</guid>
+          <source url="https://discuss.iatistandard.org/t/placeholder-to-make-language-on-orgs-in-recipient-countries-consistent/1775.rss">Placeholder to make language on orgs in recipient countries consistent</source>
+        </item>
+        <item>
+          <title>Rule - no using a publisher vocabulary that duplicates a codelist vocabulary</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>Fairly simple, rarely broken, but worth having a rule that publishers cannot use a custom vocabulary for something that is on an IATI codelist for that element.</p>
+<p>Has implication for when new codelists are added, to support those already using their own codelist for that purpose to change over.</p>
+<p>Reason being that when using the data, it is not feasible to check if a publisher is using their own codelist to report something, therefore you want to be able to assume that the official codelist users represent the total reporters of that data.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/rule-no-using-a-publisher-vocabulary-that-duplicates-a-codelist-vocabulary/1772">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/rule-no-using-a-publisher-vocabulary-that-duplicates-a-codelist-vocabulary/1772</link>
+          <pubDate>Fri, 21 Jun 2019 14:20:05 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1772</guid>
+          <source url="https://discuss.iatistandard.org/t/rule-no-using-a-publisher-vocabulary-that-duplicates-a-codelist-vocabulary/1772.rss">Rule - no using a publisher vocabulary that duplicates a codelist vocabulary</source>
+        </item>
+        <item>
+          <title>Add metadata from Registry &#39;About&#39; page to Org files</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>I have been looking for email addresses for a range of organisations recently, and often ended up using the one given in the ‘about’ page (e.g. <a href="https://www.iatiregistry.org/publisher/about/aias" rel="nofollow noopener">here</a>) on the IATI registry as there were none provided in the activity or the organisation file. This was a complete pain as while the org file can be queried using standard IATI tools, the ‘about’ page cannot (as far as I am aware?)</p>
+<p>Therefore I am suggesting a modification to require the registry ‘about’ page information to be added to the org file instead.</p>
+<p>The ‘about’ page on the registry should in turn pull from the org file, and perhaps the act of registering for the registry should be reduced to supplying a link to an org file with all the relevant information.</p>
+<p>This would require simple changes to the org file elements, and combining with a rule to require an org file from of any organisation with an activity file on the registry.</p>
+<p>There would need to be adjustments made by publishers to their publication systems.</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/add-metadata-from-registry-about-page-to-org-files/1770">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/add-metadata-from-registry-about-page-to-org-files/1770</link>
+          <pubDate>Fri, 21 Jun 2019 09:56:38 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1770</guid>
+          <source url="https://discuss.iatistandard.org/t/add-metadata-from-registry-about-page-to-org-files/1770.rss">Add metadata from Registry &#39;About&#39; page to Org files</source>
+        </item>
+        <item>
+          <title>Request use of @narrative when using &#39;non-embedded - external&#39; codelists</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>There is no API access to code-lists classified as non-embedded - external’ e.g. the IASC Humanitarian Clusters which makes it very difficult to get meaningful (for humans) information on activities/transactions coded using these vocabularies.</p>
+<p>The proposal is for cases when a non-embedded - external code-list is used, to request/require the user to add the <span class="mention">@narrative</span> element (as is currently done for 98/99 vocabularies) to give a some text reflecting the code.</p>
+<p>The alternative is that all data users/systems maintain their own copies of all non-embedded - external code-lists, this is unreliable in many contexts.</p>
+<p>It is also highly inefficient compared to IATI maintaining these code-lists centrally, i.e. moving commonly used code-lists into the maintained category (and therefore available via the API) which is the other alternative.</p>
+<p>See discussion <a href="https://discuss.iatistandard.org/t/help-develop-iati-s-humanitarian-reporting-guidance/530/22">here</a> and the guidance on sector <span class="mention">@narrative</span> <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/sector/narrative/" rel="nofollow noopener">here</a>.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/request-use-of-narrative-when-using-non-embedded-external-codelists/1744">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/request-use-of-narrative-when-using-non-embedded-external-codelists/1744</link>
+          <pubDate>Thu, 09 May 2019 14:30:18 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1744</guid>
+          <source url="https://discuss.iatistandard.org/t/request-use-of-narrative-when-using-non-embedded-external-codelists/1744.rss">Request use of @narrative when using &#39;non-embedded - external&#39; codelists</source>
+        </item>
+        <item>
+          <title>Make Baseline &amp; Period guidance Musts</title>
+          <dc:creator><![CDATA[amys]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>At 2.03 three <em>should</em> statements (of which originally two were <em>musts</em>) should be made into <em>must</em> statements at version 3.0.0.</p>
+<p>The rules to be added are:</p>
+<ul>
+<li>The <span class="mention">@value</span>  <strong>must</strong>  be omitted for qualitative measures</li>
+<li>The <span class="mention">@value</span>  <strong>must</strong>  be included for non-qualitative measures</li>
+<li>The <span class="mention">@value</span> <strong>must</strong> be a valid number for all non-qualitative measures</li>
+</ul>
+<p>And they are found in three places:</p>
+<ul>
+<li>iati-activities/iati-activity/result/indicator/baseline/<span class="mention">@value</span>
+</li>
+<li>iati-activities/iati-activity/result/indicator/period/target/<span class="mention">@value</span>
+</li>
+<li>iati-activities/iati-activity/result/indicator/period/actual/<span class="mention">@value</span>
+</li>
+</ul>
+<p>This helps ensure the quality of data being reported, and will make it easier for data users to analyse results data.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733</link>
+          <pubDate>Tue, 30 Apr 2019 10:23:24 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1733</guid>
+          <source url="https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733.rss">Make Baseline &amp; Period guidance Musts</source>
+        </item>
+        <item>
+          <title>Making the @generated-datetime element mandatory</title>
+          <dc:creator><![CDATA[Herman]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>Currently the <span class="mention">@generated-datetime</span> element is optional in both the activity and the organization standard. Without this element it is not possible to determine when an IATI file has been produced. In other words, it is impossible to determine the status of all data contained in the file. Therefore I propose to make this element mandatory.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/making-the-generated-datetime-element-mandatory/1204">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/making-the-generated-datetime-element-mandatory/1204</link>
+          <pubDate>Tue, 30 Jan 2018 11:16:58 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1204</guid>
+          <source url="https://discuss.iatistandard.org/t/making-the-generated-datetime-element-mandatory/1204.rss">Making the @generated-datetime element mandatory</source>
+        </item>
+        <item>
+          <title>Under the Bonnet: Various Improvements to Guidelines</title>
+          <dc:creator><![CDATA[hayfield]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>This is a follow-up from the previous <a href="https://discuss.iatistandard.org/t/under-the-bonnet-standard-tuning-issues/735">Under the Bonnet</a> post, but focused purely on Guidelines. Guidelines are recommendations about how the Standard <em>should</em> be used, but are not mandatory requirements (Rules) that <em>must</em> be followed.</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/IATI/IATI-Extra-Documentation/issues?utf8=%E2%9C%93&amp;q=author:hayfield%20%22Guidelines%20-%22" target="_blank">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars3.githubusercontent.com/u/5502974?s=400&amp;v=4" class="thumbnail onebox-avatar" width="220" height="220">
+
+<h3><a href="https://github.com/IATI/IATI-Extra-Documentation/issues?utf8=%E2%9C%93&amp;q=author:hayfield%20%22Guidelines%20-%22" target="_blank">IATI/IATI-Extra-Documentation</a></h3>
+
+<p>Code examples and overview documentation relating to the IATI Standard - IATI/IATI-Extra-Documentation</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><a href="https://github.com/IATI/IATI-Extra-Documentation/issues?utf8=%E2%9C%93&amp;q=author%3Ahayfield%20%22Guidelines%20-%22">This Issues Page</a> lists a number of problems, issues and suggestions for improving Guidelines. There are several larger posts grouping a number of related issues (such as <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/350">Contradictions with the Schema</a>), as well as several smaller posts focusing on single issues (such as an <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/344">unclear example</a>).</p>
+<p>The point at which the issues may and should be updated varies - <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/348">contradictions</a> should be fixed in a shorter-term to improve clarity, while <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/347">Guidelines that are trying to be Rules</a> cannot become Rules until an integer upgrade process. Some points should become full Proposals for the <a href="https://discuss.iatistandard.org/t/2-03-standard-upgrade-process-next-steps/830">2.03 Upgrade Process</a>.</p>
+<p>Comments, thoughts, identification of missed points (there are a few!), and so on would be wonderful (either in this thread or directly on the relevant Github Issue).</p>
+<p>(the current set of issues was gathered from the <a href="http://iatistandard.org/202/activity-standard/overview/activity-file/#considerations">Considerations</a> sections on <a href="http://iatistandard.org/202/activity-standard/overview/">Overview Pages</a> within the Activity Standard - Guidelines elsewhere in the documentation have not been covered at this point)</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/under-the-bonnet-various-improvements-to-guidelines/837">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/under-the-bonnet-various-improvements-to-guidelines/837</link>
+          <pubDate>Wed, 10 May 2017 15:29:59 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-837</guid>
+          <source url="https://discuss.iatistandard.org/t/under-the-bonnet-various-improvements-to-guidelines/837.rss">Under the Bonnet: Various Improvements to Guidelines</source>
+        </item>
+        <item>
+          <title>Make `iati-activities` or `iati-organisations` mandatory in an IATI file</title>
+          <dc:creator><![CDATA[dalepotter]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>It has been spotted that the root <code>&lt;iati-activities&gt;</code> or <code>&lt;iati-organisations&gt;</code> elements are not set by the IATI schemas as a mandatory component of an IATI file.  Therefore, a file containing only the following would pass validation in the v2.02 schema:</p>
+<pre><code class="lang-auto">&lt;title&gt;
+   &lt;narrative&gt;Activity title&lt;/narrative&gt;
+   &lt;narrative xml:lang="fr"&gt;Titre de l'activité&lt;/narrative&gt;
+   &lt;narrative xml:lang="es"&gt;Título de la actividad&lt;/narrative&gt;
+&lt;/title&gt;
+</code></pre>
+<p>This type of thing is referred to as a type of ‘<a href="http://dashboard.iatistandard.org/xml.html">XML error</a>’ on the Dashboard, under 'Files with non-standard roots’.</p>
+<p>This would likely require a major version upgrade as the change would not be backwardly compatible.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679</link>
+          <pubDate>Mon, 23 Jan 2017 17:59:19 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-679</guid>
+          <source url="https://discuss.iatistandard.org/t/make-iati-activities-or-iati-organisations-mandatory-in-an-iati-file/679.rss">Make `iati-activities` or `iati-organisations` mandatory in an IATI file</source>
+        </item>
+        <item>
+          <title>Introduce a New Transaction Type For Internally Sourced Funds</title>
+          <dc:creator><![CDATA[Wendy]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>Raised from Zendesk ticket <span class="hashtag">#1047</span>. Currently, it is not necessary for organisations to report or include funding that comes from their own fundraising ( or similar internal) sources. Therefore should such funding be reported on (and do we perhaps need a new transaction type called locally raised funds, or something)</p>
+<p>(Originally reported at <a href="https://github.com/IATI/IATI-Schemas/issues/36">https://github.com/IATI/IATI-Schemas/issues/36</a>)</p>
+<p>This <a href="http://support.iatistandard.org/hc/en-us/articles/214388486-Introduce-a-New-Transaction-Type-For-Internally-Sourced-Funds">issue</a> was originally added and discussed on the previous version IATI Standard Upgrade forum. However that forum has now itself moved to the IATI Discuss platform so this topic has been created in order that discussions can continue here.</p>
+            <p><small>5 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/introduce-a-new-transaction-type-for-internally-sourced-funds/662">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/introduce-a-new-transaction-type-for-internally-sourced-funds/662</link>
+          <pubDate>Wed, 04 Jan 2017 12:20:03 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-662</guid>
+          <source url="https://discuss.iatistandard.org/t/introduce-a-new-transaction-type-for-internally-sourced-funds/662.rss">Introduce a New Transaction Type For Internally Sourced Funds</source>
+        </item>
+        <item>
+          <title>General : Guidance on timeliness</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>Firstly we need to include, somehow, guidance on the timeliness and frequency of publication as a more formal part of the standard.</p>
+<p>Secondly, guidance on timeliness should be:</p>
+<ul>
+<li>Minimum requirement for all activities - quarterly updates</li>
+<li>Best practice for development activities - monthly updates</li>
+<li>Best practice for humanitarian emergencies - daily updates</li>
+</ul>
+<p>This <a href="http://support.iatistandard.org/hc/en-us/articles/214388466-General-Guidance-on-timeliness">issue</a> was originally added and originally discussed on the previous version IATI Standard Upgrade forum. However that forum has now itself moved to the IATI Discuss platform so this topic has been created in order that discussions can continue here.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/general-guidance-on-timeliness/660">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/general-guidance-on-timeliness/660</link>
+          <pubDate>Wed, 04 Jan 2017 12:07:36 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-660</guid>
+          <source url="https://discuss.iatistandard.org/t/general-guidance-on-timeliness/660.rss">General : Guidance on timeliness</source>
+        </item>
+        <item>
+          <title>IATI Identifiers should not be allowed to contain special characters</title>
+          <dc:creator><![CDATA[r_clements]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>Hello,</p>
+<p>We have had a lot of issues latelywhen trying to develop solutions on top of IATI data when the underlying IATI identifiers contain special characters like ’ and &amp;.</p>
+<p>The <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/iati-identifier/" rel="nofollow noopener">IATI standard</a> states that identifiers should pass the followiing regex [^/&amp;|?]+</p>
+<p>I think that this suggestion should be made into a requirement that identifiers must not contain special characters and that any IATI identifier that contains special characters will cause the activity to fail  validation.</p>
+<p>The standard also states that once an ID has been created that it must not be changed. I think in the case of special characters within IDs, however, that an exception should be made in order to improve the quality of the data contained within the registry.</p>
+<p>Ross</p>
+            <p><small>38 posts - 12 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649</link>
+          <pubDate>Thu, 22 Dec 2016 13:35:01 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-649</guid>
+          <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+        </item>
+        <item>
+          <title>About the 3.0.0 Major Upgrade Proposals category</title>
+          <dc:creator><![CDATA[rory_scott]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>Proposals and consultations pertaining to the 3rd major integer version of the IATI standard.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/about-the-3-0-0-major-upgrade-proposals-category/590">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/about-the-3-0-0-major-upgrade-proposals-category/590</link>
+          <pubDate>Tue, 11 Oct 2016 14:27:56 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-590</guid>
+          <source url="https://discuss.iatistandard.org/t/about-the-3-0-0-major-upgrade-proposals-category/590.rss">About the 3.0.0 Major Upgrade Proposals category</source>
+        </item>
+        <item>
+          <title>Tech Paper: Miscellaneous Rules and Guidelines</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p><strong>Make Rules and Guidelines part of the Standard</strong></p>
+<p><a href="http://support.iatistandard.org/entries/41586986-Overview-of-Version-2-01">The initial submission for Version 2.01</a> of the standard proposed that a number of elements contained in IATI’s general guidance should be included in the standard itself: namely <a href="http://support.iatistandard.org/entries/41582966-General-Guidance-on-timeliness">timeliness</a> and <a href="http://support.iatistandard.org/entries/40759343-General-rules-for-multi-level-reporting">multi-level reporting</a> (see<a href="//discuss.iatistandard.org/t/tech-paper-hierarchies/539"> current paper on hierarchies</a>). A<a href="http://support.iatistandard.org/entries/45539933-Thematic-content-agreed-by-IATI-Steering-Committee"> meeting of the Steering Committee</a> in March 2014 agreed “that more work needs to be done on bringing general guidance into the formal standard, so this should be excluded” from the 2.01 upgrade.</p>
+<p>We think the time is ripe for reconsidering how a number of key features of IATI that cannot be controlled by the XML Schema could be included in the Standard</p>
+<p><strong>Implementation Schedules</strong></p>
+<p>Implementation schedules played a key role in capturing the intentions of publishers in the early years of the Standard. This proposal will recommend that their usefulness has run its course.</p>
+<p><strong>Status of Publishers (IATI Registry)</strong></p>
+<p>The <a href="https://iatiregistry.org/">Registry</a> reports that over 500 Organisations have published. Our <a href="http://dashboard.iatistandard.org/comprehensiveness.html">publishing statistics</a> show, however, that 100 of these are not reporting any current information. There is a need to classify publishers that are dormant or have been merged, liquidated, etc.</p>
+<p><strong>Timeliness</strong></p>
+<p>Is it time for timeliness guidelines to be included in the standard?</p>
+<p><a href="https://docs.google.com/document/d/1MXUwCbyIhqAeJsDLV53yQ5hB2x_lEzLdnwiWw2fFGBM/edit?usp=sharing">This paper</a> is part of the <a href="//discuss.iatistandard.org/t/tag-tech-consult-outline-agenda/534">Agenda</a> for the IATI TAG 2016 <a href="//discuss.iatistandard.org/t/technical-consultation-workshop/533">Technical Consultation Workshop</a></p>
+<p><img src="//discuss.iatistandard.org/images/emoji/twitter/bird.png?v=5" title=":bird:" class="emoji" alt=":bird:"> <span class="hashtag">#IATI</span> <span class="hashtag">#TAG2016</span></p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/tech-paper-miscellaneous-rules-and-guidelines/546">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/tech-paper-miscellaneous-rules-and-guidelines/546</link>
+          <pubDate>Tue, 09 Aug 2016 10:08:55 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-546</guid>
+          <source url="https://discuss.iatistandard.org/t/tech-paper-miscellaneous-rules-and-guidelines/546.rss">Tech Paper: Miscellaneous Rules and Guidelines</source>
+        </item>
+        <item>
+          <title>Should the value-date attribute be required?</title>
+          <dc:creator><![CDATA[VincentVW]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>The value-date attribute of an value element is not marked as required in recent IATI versions at <a href="http://iatistandard.org" rel="nofollow noopener">iatistandard.org</a> (for example transaction value -&gt; value-date).</p>
+<p>To perform currency conversion correctly, and hence, cross IATI source comparison, this date would preferably be required. I’m interested to know everyone else’s opinion on this.</p>
+<p>p.s.</p>
+<p>In the old docs it was marked as required. Which makes me wonder if it was made non-required on purpose.</p>
+<p><a href="http://iatistandard.org/103/activities-standard/transaction/value/" class="onebox" target="_blank" rel="nofollow noopener">http://iatistandard.org/103/activities-standard/transaction/value/</a></p>
+<p>I also checked the IATI 1.04/1.05/2.01 xsd schema files, the value-date attribute is missing there for most occurrences of the value element.</p>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364</link>
+          <pubDate>Tue, 17 Nov 2015 13:31:04 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-364</guid>
+          <source url="https://discuss.iatistandard.org/t/should-the-value-date-attribute-be-required/364.rss">Should the value-date attribute be required?</source>
+        </item>
+        <item>
+          <title>[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>3.0.0 Major Upgrade Proposals</category>
+          <description><![CDATA[
+            <p>I few people have mentioned that the codelist descriptions for codes 3 (Completion) and 4 (Post Completion) ActivityStatus seem to be mixed up:</p>
+<p><a href="http://iatistandard.org/201/codelists/ActivityStatus/" class="onebox" target="_blank" rel="nofollow noopener">http://iatistandard.org/201/codelists/ActivityStatus/</a></p>
+<blockquote>
+<p>3 - Completion: Physical activity is complete or the final disbursement has been made.</p>
+</blockquote>
+<blockquote>
+<p>4 - Post Completion: Physical activity is complete or the final disbursement has been made,<br>
+but the activity remains open pending financial sign off or M&amp;E</p>
+</blockquote>
+<p>The description for 4 should be with code 3, and vice versa!</p>
+<p>These descriptions were added in the 2.01 process, as they do not exist in 1.05: <a href="http://iatistandard.org/105/codelists/ActivityStatus/" rel="nofollow noopener">http://iatistandard.org/105/codelists/ActivityStatus/</a></p>
+<p>Do others agree?</p>
+            <p><small>69 posts - 11 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304</link>
+          <pubDate>Fri, 17 Jul 2015 07:23:11 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-304</guid>
+          <source url="https://discuss.iatistandard.org/t/implemented-as-bug-fix-activitystatus-codes-mixup-of-descriptions-for-codes-3-4/304.rss">[Implemented as bug fix] ActivityStatus codes - mixup of descriptions for codes 3 &amp; 4?</source>
+        </item>
+  </channel>
+</rss>

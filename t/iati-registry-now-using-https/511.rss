@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Registry: Now using HTTPS</title>
+    <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511</link>
+    <description>Work has recently been completed in install a Secure Socket Layer (SSL) certificate on the server that powers the [IATI Registry](https://www.iatiregistry.org/).
+
+This will mean that  content is now served under the encrypted HTTPS connection. This is in line with [internet best practices](http://webmasters.stackexchange.com/questions/96238/what-is-the-benefit-of-forcing-a-site-to-load-over-ssl-https).
+
+Requests to all Registry URLs using the unencrypted HTTP protocol should be automatically redirected to use HTTPS. This means that there should be no change to user interface functionality. Similarly, API functionality will not be affected, as long as application requests have been set-up to follow redirects, as is common with many request libraries.
+
+Please do let us know below if you have any comments or questions.</description>
+    
+    <lastBuildDate>Thu, 01 Sep 2016 11:03:11 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Just an update on this issue, which was logged in GitHub as <a href="https://github.com/okfn/ckanext-iati/issues/74">issue #74</a>.</p>
+<p>Alongside the suspected related <a href="https://github.com/okfn/ckanext-iati/issues/79">GitHub issue #79</a>, we understand that these ongoing issues should be resolved when the IATI Registry is <a href="http://www.aidtransparency.net/news/important-changes-to-the-iati-registry-api">upgraded to a newer CKAN version in October</a>, meaning that a fix will take some time and would only exist for 4-6 weeks. Therefore, this issue is being marked as a <span class="hashtag">#wontfix</span> for now.</p>
+<p>We apologise for any inconvenience this issue may cause in the meantime, and IATI will continue to monitor the situation to ensure that these issues do not reappear after the CKAN upgrade.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/12</link>
+        <pubDate>Thu, 01 Sep 2016 11:03:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-12</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[ckraft]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello everyone,</p>
+<p>I am very sorry for the late response. The notification emails went into my Spam folder…</p>
+<p>I will raise this again and we will take a look on that.</p>
+<p>Thanks and best regards,</p>
+<p>Chris</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/11</link>
+        <pubDate>Mon, 22 Aug 2016 15:08:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-11</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to chip in on this one too, using an updated version of Chrome (Version 52.0.2743.116 (64-bit)) I’m now getting a ‘scripts from unauthenticated sources’ warning in the URL bar itself.</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/a2c4c26f686a22ad00b6ef77afbcf0fbc010e4be.jpg" data-download-href="https://discuss.iatistandard.org/uploads/default/a2c4c26f686a22ad00b6ef77afbcf0fbc010e4be" title="blob.jpg"><img src="https://discuss.iatistandard.org/uploads/default/original/1X/a2c4c26f686a22ad00b6ef77afbcf0fbc010e4be.jpg" width="690" height="163" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/a2c4c26f686a22ad00b6ef77afbcf0fbc010e4be_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">blob.jpg</span><span class="informations">699×166 36.5 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>It would be good to take a look at this issue again to try to come to a resolution, as it seems this issue have been ongoing for just over a month now.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/10</link>
+        <pubDate>Tue, 16 Aug 2016 08:51:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-10</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Ben,</p>
+<p>Thanks for pointing this out. On chrome the problem doesn’t show in the loading bar at all:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/feda1ce2db0a6099aaf36ac0123db499593ac7eb.png" data-download-href="https://discuss.iatistandard.org/uploads/default/feda1ce2db0a6099aaf36ac0123db499593ac7eb" title="Pasted image"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/feda1ce2db0a6099aaf36ac0123db499593ac7eb_2_690x272.png" width="690" height="272" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/feda1ce2db0a6099aaf36ac0123db499593ac7eb_2_690x272.png, https://discuss.iatistandard.org/uploads/default/original/1X/feda1ce2db0a6099aaf36ac0123db499593ac7eb.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/feda1ce2db0a6099aaf36ac0123db499593ac7eb.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/feda1ce2db0a6099aaf36ac0123db499593ac7eb_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Pasted image</span><span class="informations">850×336 75.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>But on inspecting the javascript console, you can see this:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/4465084479d12a570a3a88db38a1006328f1bd9b.png" width="593" height="254"></p>
+<p>The <a href="https://iatiregistry.org/api/i18n/en" rel="nofollow noopener">insecure endpoint</a> directs to <a href="https://iatiregistry.org/api/i18n/en" rel="nofollow noopener">an empty script</a>, which contains only ‘<code>{ }</code>’.</p>
+<p><a class="mention" href="/u/ckraft">@ckraft</a> - any thoughts on this? I don’t think it’s effecting functionality for us, but I suppose there’s a chance that it could cause more security-heavy applications to halt / misbehave.</p>
+<p>Thanks,<br>
+Rory</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/9</link>
+        <pubDate>Mon, 08 Aug 2016 15:47:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-9</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m still seeing the problem on <a href="http://iatiregistry.org" rel="nofollow noopener">iatiregistry.org</a></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/ad70b5d9fff157989e2f8c21eaded3d7eed421d2.png" data-download-href="https://discuss.iatistandard.org/uploads/default/ad70b5d9fff157989e2f8c21eaded3d7eed421d2" title="notfixed.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/ad70b5d9fff157989e2f8c21eaded3d7eed421d2_2_690x352.png" width="690" height="352" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/ad70b5d9fff157989e2f8c21eaded3d7eed421d2_2_690x352.png, https://discuss.iatistandard.org/uploads/default/original/1X/ad70b5d9fff157989e2f8c21eaded3d7eed421d2.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/ad70b5d9fff157989e2f8c21eaded3d7eed421d2.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/ad70b5d9fff157989e2f8c21eaded3d7eed421d2_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">notfixed.png</span><span class="informations">967×494 48.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/8</link>
+        <pubDate>Mon, 08 Aug 2016 15:19:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-8</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[ckraft]]></dc:creator>
+        <description><![CDATA[
+            <p>My development team told me that this issue should be solved.</p>
+<p>Please feel free to test it.</p>
+<p>Best regards,</p>
+<p>Chris</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/7</link>
+        <pubDate>Mon, 08 Aug 2016 12:34:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-7</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[ckraft]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey Ben, hey Dale,</p>
+<p>thank you very much for pointing this out. We will take s look on this soon and post an update here.</p>
+<p>Have a great start into the week!</p>
+<p>Chris</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/6</link>
+        <pubDate>Mon, 18 Jul 2016 17:51:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-6</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the heads up on this Ben - I have flagged this up to Open Knowledge Foundation (the suppliers of the Registry) and have also sent them an article suggesting a fix.</p>
+<p>Will post to this forum when this is resolved. In the meantime, please feel free to post if you come across any other issues.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/5</link>
+        <pubDate>Fri, 15 Jul 2016 14:43:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-5</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>Looking in the developer console I see:</p>
+<blockquote>
+<p>jquery.min.js:529 Mixed Content: The page at ‘<a href="https://www.iatiregistry.org/" rel="nofollow noopener">https://www.iatiregistry.org/</a>’ was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint ‘<a href="http://www.iatiregistry.org/api/i18n/en" rel="nofollow noopener">http://www.iatiregistry.org/api/i18n/en</a>’. This request has been blocked; the content must be served over HTTPS.send @ jquery.min.js:529<br>
+jquery.min.js:529 XMLHttpRequest cannot load <a href="http://www.iatiregistry.org/api/i18n/en" rel="nofollow noopener">http://www.iatiregistry.org/api/i18n/en</a>. Failed to start loading.</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/4</link>
+        <pubDate>Fri, 15 Jul 2016 14:23:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>provide links to those sources. probably some image/external reference not behind HTTPS</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/3</link>
+        <pubDate>Fri, 15 Jul 2016 12:27:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>I get a notice in the right hand side of my URL bar in Chromium: “This page is trying to load scripts from unauthenticated sources”</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/2</link>
+        <pubDate>Fri, 15 Jul 2016 12:26:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+      <item>
+        <title>IATI Registry: Now using HTTPS</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Work has recently been completed in install a Secure Socket Layer (SSL) certificate on the server that powers the <a href="https://www.iatiregistry.org/">IATI Registry</a>.</p>
+<p>This will mean that  content is now served under the encrypted HTTPS connection. This is in line with <a href="http://webmasters.stackexchange.com/questions/96238/what-is-the-benefit-of-forcing-a-site-to-load-over-ssl-https">internet best practices</a>.</p>
+<p>Requests to all Registry URLs using the unencrypted HTTP protocol should be automatically redirected to use HTTPS. This means that there should be no change to user interface functionality. Similarly, API functionality will not be affected, as long as application requests have been set-up to follow redirects, as is common with many request libraries.</p>
+<p>Please do let us know below if you have any comments or questions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-registry-now-using-https/511/1</link>
+        <pubDate>Fri, 15 Jul 2016 10:32:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-511-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-registry-now-using-https/511.rss">IATI Registry: Now using HTTPS</source>
+      </item>
+  </channel>
+</rss>

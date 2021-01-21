@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Remove assumptions that if codelist not provided, it is the DAC codelist</title>
+    <link>https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823</link>
+    <description>In several places, where a codelist is not specified, then the DAC codelist is assumed. This is unhelpful for data users who have to maintain knowledge of all the assumptions they need to make, rather than relying on the information embodied within the data/standard. Adding the codelist reference should be very little effort for publishers.</description>
+    
+    <lastBuildDate>Fri, 23 Aug 2019 08:48:45 +0000</lastBuildDate>
+    <category>3.0.0 Major Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Remove assumptions that if codelist not provided, it is the DAC codelist</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>I think I would agree with this point raised by <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>. There is obviously a balance to be struck between not including elements and attributes unnecessarily in order to avoid file ‘bloat’ (which is why it has always been recommended that publishers should not include ‘empty’ fields) . However, now that the Standard has matured and there are many more  vocabularies available for the  element it would make good sense to always include the specific vocabulary so there is no doubt which vocab the publisher is referring to. Also as Matt points out it does reduce the burden on anyone using the data to know about these assumptions .</p>
+<p>Obviously such a change would need to be made as part of a (major?) upgrade but in doing so might provide an opportunity to also review any other elements where similar assumptions are made (including the sector percentage attribute as well?)</p>
+          <p><a href="https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823/2</link>
+        <pubDate>Fri, 23 Aug 2019 08:48:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1823-2</guid>
+        <source url="https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823.rss">Remove assumptions that if codelist not provided, it is the DAC codelist</source>
+      </item>
+      <item>
+        <title>Remove assumptions that if codelist not provided, it is the DAC codelist</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>In several places, where a codelist is not specified, then the DAC codelist is assumed. This is unhelpful for data users who have to maintain knowledge of all the assumptions they need to make, rather than relying on the information embodied within the data/standard. Adding the codelist reference should be very little effort for publishers.</p>
+          <p><a href="https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823/1</link>
+        <pubDate>Thu, 22 Aug 2019 15:18:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1823-1</guid>
+        <source url="https://discuss.iatistandard.org/t/remove-assumptions-that-if-codelist-not-provided-it-is-the-dac-codelist/1823.rss">Remove assumptions that if codelist not provided, it is the DAC codelist</source>
+      </item>
+  </channel>
+</rss>

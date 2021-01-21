@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+    <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821</link>
+    <description>Within the Humanitarian [Grand Bargain (GB) Localisation](https://interagencystandingcommittee.org/more-support-and-funding-tools-local-and-national-responders) commitment, not only is there a requirement for donors and responders to increase the amount of funding that goes both directly and indirectly to in-country NGOS and responders but there is also a requirement to increase the % of funding that goes directly to humanitarian pooled funds such as those managed by UN OCHA’s CERF and Country Based Pooled Funds. 
+As part of the prototyping work that we are undertaking within the Grand Bargain Transparency workstream we would like to be able to demonstrate how the percentage of funding disbursed to pooled funds could be calculated by using the published IATI data of the GB Signatories. The intention was to identify such payments via the use of the element  &lt;default-aid-type&gt; for OECD DAC Aid Types with a value of ‘B04’?  However, having looked at the data of a number of different donors I have noticed that different donors are using different codes (mainly ‘B02’, ‘BO3’ or ‘B04’) in relation to their CERF or CBPF contributions. 
+In order to calculate an aggregated pooled fund contribution value it would of course be preferable if all donors used the same code for contributions to the same fund (and we could even eventually provide a look up list for which code(s) to use for which fund to assist with this process). However, I first wanted to better understand why donors were currently using the different specific codes for CERF &amp; CBPF? Are there other criteria that you would take into account for using eg ‘B03’ rather than ‘B04’ or are there more practical issues such as current constraints within your organisation own’s systems etc? 
+
+Any thoughts or comments from @Herman @rbesseling @YohannaLoucheur @OJ_ @AVaughn  or anyone else would be very welcome</description>
+    
+    <lastBuildDate>Fri, 30 Aug 2019 08:18:58 +0000</lastBuildDate>
+    <category>Humanitarian</category>
+    <atom:link href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Many thanks to you all for your insightful and extremely useful input and comments on this topic. As a result it is has clearly revealed that this is not as straight-forward an issue as we would have hoped and it seems unlikely that a blanket identification of monies allocated to a specific OECD DAC Aid Type would adequately identify totals allocated to pooled funding.</p>
+<p>Therefore, the alternative approach will be to use the <a href="https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf" rel="nofollow noopener">Earmarking Modalities</a> that were introduced to the IATI standard as a new codelist at v2.03 for use via default-aid-type . The Earmarking Modalities do in fact have specific codes that can be assigned:</p>
+<p>B – Fully flexible core contribution to CERF</p>
+<p>F – Directed to a country based pooled fund</p>
+<p>However, the reason for looking to use the OECD DAC Aid Types is because it is likely to be some while before the majority of donors and responders are able to incorporate these codes into their published IATI data but the requirement to assess levels of pooled fund contributions exists  ‘today’.</p>
+<p>In addition, we do also recognise that there is also some overlap between the OECD DAC Aid Types and the Earmarking Modalities and given the remit of the hum-dev initiative of the Grand Bargain (which aims to better align the ways of working of the development and humanitarian sectors) it would be good to explore (although likely to be in the longer term) if those overlaps could eventually be reconciled and/or  ‘removed’ ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/9</link>
+        <pubDate>Fri, 30 Aug 2019 08:18:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1821-9</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+      </item>
+      <item>
+        <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Shi.</p>
+<p>Can you confirm whether this was filtered for humanitarian aid, or is it general?</p>
+<p>For instance I clicked on the G01 line - the example is from the Netherlands and seems to relate to EU funding, so I’m not sure it would be part of the Grand Bargain universe.</p>
+<p>I do note that B04 does not even appear in the list - which seems to contradict Wendy’s initial post (?).</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/8</link>
+        <pubDate>Thu, 29 Aug 2019 14:01:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1821-8</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+      </item>
+      <item>
+        <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Yohanna,</p>
+<p>Here’s a list of example datasets:<br>
+<a href="https://xriss.github.io/D-Portal-Logs/xpath.html#/iati-activities/iati-activity/default-aid-type@code" class="onebox" target="_blank" rel="nofollow noopener">https://xriss.github.io/D-Portal-Logs/xpath.html#/iati-activities/iati-activity/default-aid-type@code</a></p>
+<p>Looks like a majority of activities are C01 (Project-type interventions), followed by G01 (Administrative costs not included elsewhere) and then B03 (Contributions to specific-purpose programmes and funds managed by implementing partners).</p>
+<p>By the way, this is our internal dashboard that we use to find examples of datasets using certain IATI elements, sorted by most used.</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/7</link>
+        <pubDate>Thu, 29 Aug 2019 10:38:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1821-7</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+      </item>
+      <item>
+        <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="1821">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v4/letter/a/48db29/40.png" class="avatar"> AVaughn:</div>
+<blockquote>
+<p>There are not necessarily other criteria that we take into account to assign B03 or B04, but we can specify our understanding of the distinction between the two aid types: Primarily, funding assigned B03 is going to a specific activity owned and implemented by another actor, oftentimes a multilateral; while B04 funding goes to an activity or programme jointly controlled by the funding organizations.</p>
+</blockquote>
+</aside>
+<p>Andie’s explanation reflects our own understanding of B03 and B04. Given that B04 would be associated (in most cases) with more burdensome management structures/processes than B03, I would indeed expect B04 to be lesser used.</p>
+<p>Also agree with OJ’s explanation regarding CERF - indeed instructions are to code funding to CERF as B02 (core funding).</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/6</link>
+        <pubDate>Tue, 27 Aug 2019 19:49:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1821-6</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+      </item>
+      <item>
+        <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello Everyone,</p>
+<p>I’m back and already have a silly question.  While it would seem logical that donations to pooled funds would be coded with “aid type” B04 (Basket funds/pooled funding) wouldn’t it be possible to simply note who the recipient is of the funds and if the recipient itself is a pooled fund wouldn’t that work?</p>
+<p>Of course that assumes that the pooled funds are easily identifiable and that may be a bad assumption on my part.</p>
+<p>Kind Regards,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/5</link>
+        <pubDate>Tue, 27 Aug 2019 18:51:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1821-5</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+      </item>
+      <item>
+        <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+        <dc:creator><![CDATA[AVaughn]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Wendy,</p>
+<p>Proper assignment of aid types often takes us a good deal of manual assessment and cleaning of the aid types is left to the time of our OECD CRS production.  However, it is becoming apparent that this cleaning may need to start happening more often when we produce data for other publications like IATI.</p>
+<p>There are not necessarily other criteria that we take into account to assign B03 or B04, but we can specify our understanding of the distinction between the two aid types: Primarily, funding assigned B03 is going to a specific activity owned and implemented by another actor, oftentimes a multilateral; while B04 funding goes to an activity or programme jointly controlled by the funding organizations. Having said that, we would defer to a official list of programmes and activities that identifies them as either B03 or B04.</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/4</link>
+        <pubDate>Tue, 27 Aug 2019 15:01:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1821-4</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+      </item>
+      <item>
+        <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>Wendy - I think that you will find both CERF and CBPF included on Annex 2 of the directive as individual multilateral entities. The instruction embedded in that annex overrules the common sense definition of the concept of pool funds, when it comes to the application of type-of-aid codes.</p>
+<p>In some pooled funds things gets complicated when some donors wish to earmark their contributions to particular activities, funded by the pool fund. This is obviously counter to the concept of pooled funds, but some pool managers are extremely service minded. I do not know if that is happening in these two.</p>
+<p>Yours OJ</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/3</link>
+        <pubDate>Fri, 23 Aug 2019 18:27:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1821-3</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+      </item>
+      <item>
+        <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Wendy</p>
+<p>Would you have a dataset to share with exemples of such funding? Unfortunately the d-portal doesn’t allow searching by aid type and/or recipient, and I haven’t mastered the new API…</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/2</link>
+        <pubDate>Thu, 22 Aug 2019 13:24:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1821-2</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+      </item>
+      <item>
+        <title>Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Within the Humanitarian <a href="https://interagencystandingcommittee.org/more-support-and-funding-tools-local-and-national-responders" rel="nofollow noopener">Grand Bargain (GB) Localisation</a> commitment, not only is there a requirement for donors and responders to increase the amount of funding that goes both directly and indirectly to in-country NGOS and responders but there is also a requirement to increase the % of funding that goes directly to humanitarian pooled funds such as those managed by UN OCHA’s CERF and Country Based Pooled Funds.<br>
+As part of the prototyping work that we are undertaking within the Grand Bargain Transparency workstream we would like to be able to demonstrate how the percentage of funding disbursed to pooled funds could be calculated by using the published IATI data of the GB Signatories. The intention was to identify such payments via the use of the element   for OECD DAC Aid Types with a value of ‘B04’?  However, having looked at the data of a number of different donors I have noticed that different donors are using different codes (mainly ‘B02’, ‘BO3’ or ‘B04’) in relation to their CERF or CBPF contributions.<br>
+In order to calculate an aggregated pooled fund contribution value it would of course be preferable if all donors used the same code for contributions to the same fund (and we could even eventually provide a look up list for which code(s) to use for which fund to assist with this process). However, I first wanted to better understand why donors were currently using the different specific codes for CERF &amp; CBPF? Are there other criteria that you would take into account for using eg ‘B03’ rather than ‘B04’ or are there more practical issues such as current constraints within your organisation own’s systems etc?</p>
+<p>Any thoughts or comments from <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/rbesseling">@rbesseling</a> <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <span class="mention">@OJ</span>_ <a class="mention" href="/u/avaughn">@AVaughn</a>  or anyone else would be very welcome</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821/1</link>
+        <pubDate>Thu, 22 Aug 2019 08:56:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1821-1</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-oecd-dac-aid-type-codes-for-humanitarian-pooled-funding/1821.rss">Use Of OECD DAC Aid Type Codes For Humanitarian Pooled Funding</source>
+      </item>
+  </channel>
+</rss>

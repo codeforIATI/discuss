@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/show-iati-republishing-oecd-dac-codelists/763 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:46:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Show IATI: Republishing OECD DAC codelists - Modifications, Additions, Improvements - IATI Community Discussions</title>
+    <meta name="description" content="I’ve noticed a few threads about machine readable, version controlled OECD DAC codelists. 
+
+I’ve had a go at a DAC CRS codelist scraper (built from earlier work by @markbrough) that auto- sends pull requests to a github &amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="763.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Show IATI: Republishing OECD DAC codelists&#39;" href="763.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/show-iati-republishing-oecd-dac-codelists/763" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/show-iati-republishing-oecd-dac-codelists/763" />
+<meta property="og:title" content="Show IATI: Republishing OECD DAC codelists" />
+<meta name="twitter:title" content="Show IATI: Republishing OECD DAC codelists" />
+<meta property="og:description" content="I’ve noticed a few threads about machine readable, version controlled OECD DAC codelists.  I’ve had a go at a DAC CRS codelist scraper (built from earlier work by @markbrough) that auto- sends pull requests to a github repo, with an octopub frontend.  Demo here:  https://andylolz.github.io/dac-crs-codes/  (NB there’s a few “csv invalid” errors there that I need to iron out!)  The scraper runs daily and lives on morph.io.  I wonder if this is something that could be useful to the secretariat, as ..." />
+<meta name="twitter:description" content="I’ve noticed a few threads about machine readable, version controlled OECD DAC codelists.  I’ve had a go at a DAC CRS codelist scraper (built from earlier work by @markbrough) that auto- sends pull requests to a github repo, with an octopub frontend.  Demo here:  https://andylolz.github.io/dac-crs-codes/  (NB there’s a few “csv invalid” errors there that I need to iron out!)  The scraper runs daily and lives on morph.io.  I wonder if this is something that could be useful to the secretariat, as ..." />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="1 ❤" />
+<meta property="article:published_time" content="2017-03-17T17:08:36+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="763.html">Show IATI: Republishing OECD DAC codelists</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/standard-management/35.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #5719A3'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Standard Management</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/standard-management/modifications-additions-improvements/36.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #A66EE9'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Modifications, Additions, Improvements</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="763.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-03-17T17:08:36Z'>
+              <time itemprop='dateModified' datetime='2017-04-18T10:44:26Z' class='post-time'>
+                April 18, 2017, 10:44am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve noticed a few threads about machine readable, version controlled OECD DAC codelists.</p>
+<p>I’ve had a go at a DAC CRS codelist scraper (built from earlier work by <a class="mention" href="../../u/markbrough.html">@markbrough</a>) that auto- sends pull requests to a github repo, with an octopub frontend.</p>
+<p><strong>Demo here:</strong><br>
+<strong><a href="https://andylolz.github.io/dac-crs-codes/">https://andylolz.github.io/dac-crs-codes/</a></strong></p>
+<p>(NB there’s a few “csv invalid” errors there that I need to iron out!)</p>
+<p>The scraper runs daily <a href="https://morph.io/andylolz/dac-crs-codes">and lives on morph.io</a>.</p>
+<p>I wonder if this is something that could be useful to the secretariat, as a tool to help manage non-embedded codelists from OECD DAC?</p>
+<p>Tagging some people from related threads:<br>
+<a class="mention" href="../../u/bill_anderson.html">@bill_anderson</a> <a class="mention" href="../../u/stevieflow.html">@stevieflow</a> <a class="mention" href="../../u/wendy-2.html">@Wendy</a> <a class="mention" href="../../u/yohannaloucheur-2.html">@YohannaLoucheur</a> <a class="mention" href="../../u/herman-2.html">@Herman</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Republishing OECD DAC codelists'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../added-align-sector-codelist-with-the-latest-version-published-the-dac/771.html" itemprop='item'>
+                      <meta itemprop='url' content='../added-align-sector-codelist-with-the-latest-version-published-the-dac/771.html'>
+                      <meta itemprop='position' content='3'>
+                      <span itemprop='name'>[Added] Align Sector codelist with the latest version published the DAC</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/markbrough.html'><span itemprop='name'>markbrough</span></a>
+            (Mark Brough)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="763.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-17T17:19:44Z' class='post-time'>
+                March 17, 2017,  5:19pm
+              </time>
+              <meta itemprop='dateModified' content='2017-03-17T17:19:44Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Great work Andy <img src="../../images/emoji/twitter/slight_smileae52.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Just to flag that the CSV files also contain both English and French versions and are quite nicely structured. So they might be useful for a number of other users, especially those building French or multilingual tools.</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Republishing OECD DAC codelists'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="763.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-20T08:51:53Z' class='post-time'>
+                March 20, 2017,  8:51am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-20T08:51:53Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks for sharing this <a class="mention" href="../../u/andylolz.html">@andylolz</a></p>
+<p>Alongside the need to get these lists in a machine readable version, there’s the other need of “what has changed?”</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Republishing OECD DAC codelists'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="763.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-03-20T10:21:43Z'>
+              <time itemprop='dateModified' datetime='2017-03-20T18:18:22Z' class='post-time'>
+                March 20, 2017,  6:18pm
+              </time>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="stevieflow" data-post="3" data-topic="763">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../user_avatar/discuss.iatistandard.org/stevieflow/40/196_2.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Alongside the need to get these lists in a machine readable version, there’s the other need of “what has changed?”</p>
+</blockquote>
+</aside>
+<p>Absolutely! So that’s why the scraper sends pull requests – to benefit from git’s version control.</p>
+<p>For instance, the auto pull request sent on Friday already shows a change to a DAC CRS code – OOF was removed from flow types. You can see this in the pull request diff:<br>
+<a href="https://github.com/andylolz/dac-crs-codes/pull/4/files#diff-cd40d8ab" class="onebox" target="_blank" rel="nofollow noopener">https://github.com/andylolz/dac-crs-codes/pull/4/files#diff-cd40d8ab</a></p>
+<p>If you check the ‘type of flow’ sheet of <a href="http://www.oecd.org/dac/financing-sustainable-development/development-finance-standards/DAC-CRS-CODES.xls" rel="nofollow noopener">the DAC CRS codelist xls</a>, you can see that is the case – code 20 (Other Official Flows) has gone.</p>
+<p>Note that I’m following the same model here as mySociety’s <a href="https://medium.com/@everypolitician" rel="nofollow noopener">EveryPoliticianBot</a>. One improvement would be to create human-readable descriptions of the pull requests, <a href="https://medium.com/@everypolitician/i-let-humans-have-the-final-word-45ca8efc807f" rel="nofollow noopener">as that bot does</a> – rather than having to read diffs. But in general, the diffs here are likely to be small and relatively easy to understand.</p>
+<p>The next step here would be to build on <a class="mention" href="../../u/bjwebb.html">@bjwebb</a>’s work, to pull this stuff into non-embedded codelists and maintain a list of withdrawn codes:<br>
+<aside class="onebox githubpullrequest">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/51" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Codelists-NonEmbedded</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Pull Request">
+    <svg width="60" height="60" class="github-icon" viewBox="0 0 12 16" aria-hidden="true"><path d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/51" target="_blank" rel="nofollow noopener">Pull external codes automatically including withdrawn (historic) codes</a>
+    </h4>
+
+    <div class="branches">
+      <code>IATI:master</code> ← <code>IATI:9-historical-codes</code>
+    </div>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2015-02-04" data-time="15:02:03" data-timezone="UTC">03:02PM - 04 Feb 15 UTC</span>
+      </div>
+
+      <div class="user">
+        <a href="https://github.com/Bjwebb" target="_blank" rel="nofollow noopener">
+          <img alt="Bjwebb" src="https://avatars0.githubusercontent.com/u/634?v=4" class="onebox-avatar-inline" width="20" height="20">
+          Bjwebb
+        </a>
+      </div>
+
+      <div class="lines" title="12 commits changed 9 files with 3213 additions and 546 deletions">
+        <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/51/files" target="_blank" rel="nofollow noopener">
+          <span class="added">+3213</span>
+          <span class="removed">-546</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Republishing OECD DAC codelists'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="763.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-20T11:09:50Z' class='post-time'>
+                March 20, 2017, 11:09am
+              </time>
+              <meta itemprop='dateModified' content='2017-03-20T11:09:50Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I always knew you were several steps ahead <a class="mention" href="../../u/andylolz.html">@andylolz</a> <img src="../../images/emoji/twitter/slight_smileae52.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Republishing OECD DAC codelists'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="763.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-03-21T17:25:07Z' class='post-time'>
+                March 21, 2017,  5:25pm
+              </time>
+              <meta itemprop='dateModified' content='2017-03-21T17:25:07Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve modified <a class="mention" href="../../u/bjwebb.html">@bjwebb</a>’s script to generate an updated IATI Sector codelist from the scraped CSV: <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/137">https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/137</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Republishing OECD DAC codelists'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.html" itemprop='item'>
+                      <meta itemprop='url' content='../planning-for-machine-readable-version-controlled-oecd-dac-codelists/866.html'>
+                      <meta itemprop='position' content='2'>
+                      <span itemprop='name'>Planning for machine readable, version controlled OECD-DAC codelists</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="763.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-05-10T09:21:58Z'>
+              <time itemprop='dateModified' datetime='2017-05-10T10:05:58Z' class='post-time'>
+                May 10, 2017, 10:05am
+              </time>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The DAC CRS codelists were updated yesterday.</p>
+<p>Here’s a diff showing the changes:<br>
+<a href="https://github.com/andylolz/dac-crs-codes/pull/20/files" class="onebox" target="_blank">https://github.com/andylolz/dac-crs-codes/pull/20/files</a></p>
+<p>I think the only relevant one for IATI is that the CRS Channel Code <code>50000</code> (Other / Autre) was withdrawn. <strike>I’ll send a pull request with this codelist update.</strike> I’ve updated <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/142">my existing pull request</a> to reflect this.</p>
+        </div>
+
+        <meta itemprop='headline' content='Show IATI: Republishing OECD DAC codelists'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/show-iati-republishing-oecd-dac-codelists/763 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:46:22 GMT -->
+</html>

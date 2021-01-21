@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Unused / rarely used parts of the standard</title>
+    <link>https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894</link>
+    <description>The subheading on the [Exploring Data](http://dashboard.iatistandard.org/exploring_data.html) section of the IATI dashboard asks “Which parts of the IATI Standard are being used?”
+
+After discovering `iati-activity/crs-add/channel-code` is unused ([here](https://discuss.iatistandard.org/t/updates-to-the-crschannelcode-codelist/797/8)), I was interested in which other parts aren’t being used / are rarely used.
+
+Using [the data here](http://dashboard.iatistandard.org/elements.html) and the [v2.02 schema](https://github.com/IATI/IATI-Schemas/tree/version-2.02), [this script](https://gist.github.com/andylolz/6f532d2074c275859affb7210e0377e9) extracts the following:
+
+## Unused elements
+
+ * [iati-activity/crs-add/channel-code](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/channel-code/)
+ * [iati-activity/fss](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/fss/)
+ * [iati-activity/fss/forecast](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/fss/forecast/)
+ * [iati-organisation/recipient-region-budget/recipient-region/narrative](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/recipient-region/narrative/)
+
+## Rarely used elements
+
+ * [iati-activity/planned-disbursement/provider-org/narrative](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/planned-disbursement/provider-org/narrative/) (used in 89 activities)
+ * [iati-activity/planned-disbursement/receiver-org](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/planned-disbursement/receiver-org/) (used in 100 activities)
+ * [iati-activity/planned-disbursement/receiver-org/narrative](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/planned-disbursement/receiver-org/narrative/) (used in 89 activities)
+ * [iati-activity/crs-add/loan-terms](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/) (used in 2 activities)
+ * [iati-activity/crs-add/loan-terms/repayment-type](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/repayment-type/) (used in 2 activities)
+ * [iati-activity/crs-add/loan-terms/repayment-plan](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/repayment-plan/) (used in 2 activities)
+ * [iati-activity/crs-add/loan-terms/commitment-date](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/commitment-date/) (used in 2 activities)
+ * [iati-activity/crs-add/loan-terms/repayment-first-date](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/repayment-first-date/) (used in 2 activities)
+ * [iati-activity/crs-add/loan-terms/repayment-final-date](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/repayment-final-date/) (used in 2 activities)
+ * [iati-activity/crs-add/loan-status](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-status/) (used in 17 activities)
+ * [iati-activity/crs-add/loan-status/interest-received](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-status/interest-received/) (used in 17 activities)
+ * [iati-activity/crs-add/loan-status/principal-outstanding](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-status/principal-outstanding/) (used in 17 activities)
+ * [iati-activity/crs-add/loan-status/principal-arrears](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-status/principal-arrears/) (used in 17 activities)
+ * [iati-activity/crs-add/loan-status/interest-arrears](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-status/interest-arrears/) (used in 17 activities)
+ * [iati-organisation/total-budget/budget-line](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/) (used in 54 organisation files)
+ * [iati-organisation/total-budget/budget-line/value](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/value/) (used in 53 organisation files)
+ * [iati-organisation/total-budget/budget-line/narrative](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/narrative/) (used in 52 organisation files)
+ * [iati-organisation/recipient-org-budget](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/) (used in 42 organisation files)
+ * [iati-organisation/recipient-org-budget/recipient-org](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/recipient-org/) (used in 42 organisation files)
+ * [iati-organisation/recipient-org-budget/recipient-org/narrative](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/recipient-org/narrative/) (used in 18 organisation files)
+ * [iati-organisation/recipient-org-budget/period-start](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/period-start/) (used in 42 organisation files)
+ * [iati-organisation/recipient-org-budget/period-end](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/period-end/) (used in 42 organisation files)
+ * [iati-organisation/recipient-org-budget/value](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/value/) (used in 42 organisation files)
+ * [iati-organisation/recipient-org-budget/budget-line](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/budget-line/) (used in 9 organisation files)
+ * [iati-organisation/recipient-org-budget/budget-line/value](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/budget-line/value/) (used in 9 organisation files)
+ * [iati-organisation/recipient-org-budget/budget-line/narrative](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/budget-line/narrative/) (used in 8 organisation files)
+ * [iati-organisation/recipient-region-budget](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/) (used in 4 organisation files)
+ * [iati-organisation/recipient-region-budget/recipient-region](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/recipient-region/) (used in 4 organisation files)
+ * [iati-organisation/recipient-region-budget/period-start](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/period-start/) (used in 4 organisation files)
+ * [iati-organisation/recipient-region-budget/period-end](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/period-end/) (used in 4 organisation files)
+ * [iati-organisation/recipient-region-budget/value](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/value/) (used in 4 organisation files)
+ * [iati-organisation/recipient-region-budget/budget-line](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/budget-line/) (used in 1 organisation files)
+ * [iati-organisation/recipient-region-budget/budget-line/value](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/budget-line/value/) (used in 1 organisation files)
+ * [iati-organisation/recipient-region-budget/budget-line/narrative](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/budget-line/narrative/) (used in 1 organisation files)
+ * [iati-organisation/recipient-country-budget](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/) (used in 70 organisation files)
+ * [iati-organisation/recipient-country-budget/recipient-country](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/recipient-country/) (used in 70 organisation files)
+ * [iati-organisation/recipient-country-budget/recipient-country/narrative](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/recipient-country/narrative/) (used in 16 organisation files)
+ * [iati-organisation/recipient-country-budget/period-start](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/period-start/) (used in 70 organisation files)
+ * [iati-organisation/recipient-country-budget/period-end](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/period-end/) (used in 70 organisation files)
+ * [iati-organisation/recipient-country-budget/value](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/value/) (used in 70 organisation files)
+ * [iati-organisation/recipient-country-budget/budget-line](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/budget-line/) (used in 11 organisation files)
+ * [iati-organisation/recipient-country-budget/budget-line/value](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/budget-line/value/) (used in 11 organisation files)
+ * [iati-organisation/recipient-country-budget/budget-line/narrative](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/budget-line/narrative/) (used in 11 organisation files)
+ * [iati-organisation/total-expenditure](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/) (used in 14 organisation files)
+ * [iati-organisation/total-expenditure/period-start](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/period-start/) (used in 14 organisation files)
+ * [iati-organisation/total-expenditure/period-end](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/period-end/) (used in 14 organisation files)
+ * [iati-organisation/total-expenditure/value](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/value/) (used in 14 organisation files)
+ * [iati-organisation/total-expenditure/expense-line](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/) (used in 9 organisation files)
+ * [iati-organisation/total-expenditure/expense-line/value](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/value/) (used in 9 organisation files)
+ * [iati-organisation/total-expenditure/expense-line/narrative](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/narrative/) (used in 9 organisation files)
+ * [iati-organisation/document-link/document-date](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/document-link/document-date/) (used in 43 organisation files)
+ * [iati-organisation/document-link/recipient-country](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/document-link/recipient-country/) (used in 47 organisation files)
+ * [iati-organisation/document-link/recipient-country/narrative](http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/document-link/recipient-country/narrative/) (used in 24 organisation files)</description>
+    
+    <lastBuildDate>Fri, 16 Jun 2017 10:53:42 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Unused / rarely used parts of the standard</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="2" data-topic="894">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>I wonder if part of the explanation may be that there’s default information already provided - hence no need to provide it in the particular element.</p>
+</blockquote>
+</aside>
+<p>That’s no doubt the case for some elements. But here, I was more interested in ‘unnecessary’ than ‘under-used’ i.e. are there indications that some parts of the standard might be extraneous. Even for elements that override a default, I’d anticipate more occurrences.</p>
+<aside class="quote no-group quote-modified" data-post="2" data-topic="894">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Also wonder about counting “activities” for the iati-organisation/ elements. Technically these would not show in “activites”. In this care are you counting the number of files (thus publishers) instead?</p>
+</blockquote>
+</aside>
+<p>Ah! Yes, exactly – thanks. I’ve fixed this typo in the post above.</p>
+          <p><a href="https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894/3</link>
+        <pubDate>Fri, 16 Jun 2017 10:53:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-894-3</guid>
+        <source url="https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894.rss">Unused / rarely used parts of the standard</source>
+      </item>
+      <item>
+        <title>Unused / rarely used parts of the standard</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Andy, thanks for sharing, it’s interesting.</p>
+<p>For some of the “rarely used” category, I wonder if part of the explanation may be that there’s default information already provided - hence no need to provide it in the particular element. This came to mind regarding for instance the planned-disbursements/receiver-org, which in most cases is the same as the implementing org and the receiver-org for transactions etc. If it was possible to do some contextual analysis (ie counting only those activities where a given element would be expected), we’d get a more precise sense of how much specific elements are under-used - but I understand this may be too difficult to do and/no not worth the effort!</p>
+<p>Also wonder about counting “activities” for the iati-organisation/ elements. Technically these would not show in “activites”. In this care are you counting the number of files (thus publishers) instead?</p>
+          <p><a href="https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894/2</link>
+        <pubDate>Wed, 14 Jun 2017 16:48:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-894-2</guid>
+        <source url="https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894.rss">Unused / rarely used parts of the standard</source>
+      </item>
+      <item>
+        <title>Unused / rarely used parts of the standard</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>The subheading on the <a href="http://dashboard.iatistandard.org/exploring_data.html">Exploring Data</a> section of the IATI dashboard asks “Which parts of the IATI Standard are being used?”</p>
+<p>After discovering <code>iati-activity/crs-add/channel-code</code> is unused (<a href="https://discuss.iatistandard.org/t/updates-to-the-crschannelcode-codelist/797/8">here</a>), I was interested in which other parts aren’t being used / are rarely used.</p>
+<p>Using <a href="http://dashboard.iatistandard.org/elements.html">the data here</a> and the <a href="https://github.com/IATI/IATI-Schemas/tree/version-2.02">v2.02 schema</a>, <a href="https://gist.github.com/andylolz/6f532d2074c275859affb7210e0377e9">this script</a> extracts the following:</p>
+<h2>Unused elements</h2>
+<ul>
+<li><a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/channel-code/">iati-activity/crs-add/channel-code</a></li>
+<li><a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/fss/">iati-activity/fss</a></li>
+<li><a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/fss/forecast/">iati-activity/fss/forecast</a></li>
+<li><a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/recipient-region/narrative/">iati-organisation/recipient-region-budget/recipient-region/narrative</a></li>
+</ul>
+<h2>Rarely used elements</h2>
+<ul>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/planned-disbursement/provider-org/narrative/">iati-activity/planned-disbursement/provider-org/narrative</a> (used in 89 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/planned-disbursement/receiver-org/">iati-activity/planned-disbursement/receiver-org</a> (used in 100 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/planned-disbursement/receiver-org/narrative/">iati-activity/planned-disbursement/receiver-org/narrative</a> (used in 89 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/">iati-activity/crs-add/loan-terms</a> (used in 2 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/repayment-type/">iati-activity/crs-add/loan-terms/repayment-type</a> (used in 2 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/repayment-plan/">iati-activity/crs-add/loan-terms/repayment-plan</a> (used in 2 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/commitment-date/">iati-activity/crs-add/loan-terms/commitment-date</a> (used in 2 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/repayment-first-date/">iati-activity/crs-add/loan-terms/repayment-first-date</a> (used in 2 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-terms/repayment-final-date/">iati-activity/crs-add/loan-terms/repayment-final-date</a> (used in 2 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-status/">iati-activity/crs-add/loan-status</a> (used in 17 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-status/interest-received/">iati-activity/crs-add/loan-status/interest-received</a> (used in 17 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-status/principal-outstanding/">iati-activity/crs-add/loan-status/principal-outstanding</a> (used in 17 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-status/principal-arrears/">iati-activity/crs-add/loan-status/principal-arrears</a> (used in 17 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/crs-add/loan-status/interest-arrears/">iati-activity/crs-add/loan-status/interest-arrears</a> (used in 17 activities)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/">iati-organisation/total-budget/budget-line</a> (used in 54 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/value/">iati-organisation/total-budget/budget-line/value</a> (used in 53 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/narrative/">iati-organisation/total-budget/budget-line/narrative</a> (used in 52 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/">iati-organisation/recipient-org-budget</a> (used in 42 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/recipient-org/">iati-organisation/recipient-org-budget/recipient-org</a> (used in 42 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/recipient-org/narrative/">iati-organisation/recipient-org-budget/recipient-org/narrative</a> (used in 18 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/period-start/">iati-organisation/recipient-org-budget/period-start</a> (used in 42 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/period-end/">iati-organisation/recipient-org-budget/period-end</a> (used in 42 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/value/">iati-organisation/recipient-org-budget/value</a> (used in 42 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/budget-line/">iati-organisation/recipient-org-budget/budget-line</a> (used in 9 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/budget-line/value/">iati-organisation/recipient-org-budget/budget-line/value</a> (used in 9 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/budget-line/narrative/">iati-organisation/recipient-org-budget/budget-line/narrative</a> (used in 8 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/">iati-organisation/recipient-region-budget</a> (used in 4 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/recipient-region/">iati-organisation/recipient-region-budget/recipient-region</a> (used in 4 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/period-start/">iati-organisation/recipient-region-budget/period-start</a> (used in 4 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/period-end/">iati-organisation/recipient-region-budget/period-end</a> (used in 4 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/value/">iati-organisation/recipient-region-budget/value</a> (used in 4 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/budget-line/">iati-organisation/recipient-region-budget/budget-line</a> (used in 1 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/budget-line/value/">iati-organisation/recipient-region-budget/budget-line/value</a> (used in 1 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/budget-line/narrative/">iati-organisation/recipient-region-budget/budget-line/narrative</a> (used in 1 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/">iati-organisation/recipient-country-budget</a> (used in 70 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/recipient-country/">iati-organisation/recipient-country-budget/recipient-country</a> (used in 70 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/recipient-country/narrative/">iati-organisation/recipient-country-budget/recipient-country/narrative</a> (used in 16 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/period-start/">iati-organisation/recipient-country-budget/period-start</a> (used in 70 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/period-end/">iati-organisation/recipient-country-budget/period-end</a> (used in 70 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/value/">iati-organisation/recipient-country-budget/value</a> (used in 70 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/budget-line/">iati-organisation/recipient-country-budget/budget-line</a> (used in 11 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/budget-line/value/">iati-organisation/recipient-country-budget/budget-line/value</a> (used in 11 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget/budget-line/narrative/">iati-organisation/recipient-country-budget/budget-line/narrative</a> (used in 11 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/">iati-organisation/total-expenditure</a> (used in 14 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/period-start/">iati-organisation/total-expenditure/period-start</a> (used in 14 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/period-end/">iati-organisation/total-expenditure/period-end</a> (used in 14 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/value/">iati-organisation/total-expenditure/value</a> (used in 14 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/">iati-organisation/total-expenditure/expense-line</a> (used in 9 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/value/">iati-organisation/total-expenditure/expense-line/value</a> (used in 9 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/narrative/">iati-organisation/total-expenditure/expense-line/narrative</a> (used in 9 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/document-link/document-date/">iati-organisation/document-link/document-date</a> (used in 43 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/document-link/recipient-country/">iati-organisation/document-link/recipient-country</a> (used in 47 organisation files)</li>
+<li>
+<a href="http://iatistandard.org/202/organisation-standard/iati-organisations/iati-organisation/document-link/recipient-country/narrative/">iati-organisation/document-link/recipient-country/narrative</a> (used in 24 organisation files)</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894/1</link>
+        <pubDate>Fri, 02 Jun 2017 10:48:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-894-1</guid>
+        <source url="https://discuss.iatistandard.org/t/unused-rarely-used-parts-of-the-standard/894.rss">Unused / rarely used parts of the standard</source>
+      </item>
+  </channel>
+</rss>

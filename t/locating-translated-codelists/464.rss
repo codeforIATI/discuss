@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Locating translated codelists</title>
+    <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464</link>
+    <description>We are trying to locate the French versions of some IATI codelists.  We found some on Github, but are missing the following:
+
+ConditionType.xml
+DocumentCategory.xml
+GeographicExactness.xml
+GeographicLocationClass.xml
+GeographicLocationReach.xml
+OtherIdentifierType.xml
+RelatedActivityType.xml
+TiedStatus.xml (though this last one may be a DAC one?)
+
+Anybody knows where to find them?</description>
+    
+    <lastBuildDate>Sun, 18 Mar 2018 23:39:27 +0000</lastBuildDate>
+    <category>Codelists</category>
+    <atom:link href="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry, yes – you’re quite right <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>! (Apologies for my unhelpful comments.)</p>
+<p>The IATI standard site generator is capable of generating the site in other languages – it’s just missing translations. For the purposes of demonstration, I’ve generated and deployed a French version here:<br>
+<a href="https://andylolz.github.io/iatistandard-multilingual/fr/203/" class="onebox" target="_blank">https://andylolz.github.io/iatistandard-multilingual/fr/203/</a></p>
+<p>So e.g. here’s the codelist for “type de condition”: <a href="https://andylolz.github.io/iatistandard-multilingual/fr/203/codelists/ConditionType/">https://andylolz.github.io/iatistandard-multilingual/fr/203/codelists/ConditionType/</a></p>
+<p>Hope that’s useful! It would be great if francophones would be interested in translating more of the site, and then it could be deployed somewhere official.</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/16</link>
+        <pubDate>Sat, 17 Mar 2018 13:47:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-16</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I know they are in the xml (thanks for doing this!)</p>
+<p>But for mere humans hoping to use the codelists in day-to-day work (eg download as a table for reference), the DAC (and your clone) is more user friendly.</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/15</link>
+        <pubDate>Thu, 15 Mar 2018 19:11:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-15</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="464">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Pls note however that all DAC codelists (e.g. sectors, aid type, flow type etc) are available in French on the DAC website.</p>
+</blockquote>
+</aside>
+<p>The French translations of the DAC codelists are all available in the IATI XML (I added them all! <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"> )</p>
+<p>And in <a href="https://datahub.io/core/dac-and-crs-code-lists">the Open Knowledge clone</a> that I maintain. E.g. <a href="https://datahub.io/core/dac-and-crs-code-lists/r/sectors.html">here’s the sector codelist</a> (as <a href="https://datahub.io/core/dac-and-crs-code-lists/r/sectors.html">html</a>; <a href="https://datahub.io/core/dac-and-crs-code-lists/r/sectors.csv">csv</a>; <a href="https://datahub.io/core/dac-and-crs-code-lists/r/sectors.json">json</a>).</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/14</link>
+        <pubDate>Thu, 15 Mar 2018 19:06:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-14</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>So I have a partial answer for <a class="mention" href="/u/cecilelg">@CecileLG</a> (tks <a class="mention" href="/u/stevieflow">@stevieflow</a>!)</p>
+<ol>
+<li>Not all codelists are available in French (this will hopefully be improved soon).</li>
+<li>Those that are can be found on the codelist page, in (some of) the xml files.</li>
+</ol>
+<p>For instance, for Conditions Type (<a href="http://iatistandard.org/203/codelists/ConditionType/">http://iatistandard.org/203/codelists/ConditionType/</a>), the French version is in xml under CLv2 and CLv3 (but not under CLv1). It’s not in the CSV files; I don’t know for JSON.</p>
+<p>Pls note however that all DAC codelists (e.g. sectors, aid type, flow type etc) are available in French on the DAC website.</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/13</link>
+        <pubDate>Thu, 15 Mar 2018 18:24:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-13</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thought I might bump this question up…</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/12</link>
+        <pubDate>Mon, 05 Feb 2018 17:20:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-12</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[CecileLG]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there, where can I find the French codelist localisation of the latest version of the standard ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/11</link>
+        <pubDate>Tue, 23 Jan 2018 10:04:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-11</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi there</p>
+<p>I just signaled a problem with the Related Activity Type codelist translation on Github.  Pls let me know when it has been addressed (or at least whether our proposed terms are acceptable) as we will be using the same terminology in our internal systems.</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/10</link>
+        <pubDate>Tue, 13 Sep 2016 18:46:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-10</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Rory &amp; other secretariat staff who helped with this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/9</link>
+        <pubDate>Thu, 08 Sep 2016 18:09:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-9</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi All,</p>
+<p>French translations are now live for the codelists mentioned above. They can be seen in the <a href="http://iatistandard.org/202/codelists/downloads/clv3/xml/ConditionType.xml" rel="nofollow noopener">raw xml</a> files linked in the given codelist’s <a href="http://staging.iatistandard.org/202/codelists/ConditionType/#download-this-codelist" rel="nofollow noopener">guidance page</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/8</link>
+        <pubDate>Thu, 08 Sep 2016 15:50:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-8</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> We are due to get the translations back at the end of the week so I would hope (depending on competing priorities) that we would be finally able to make the formatted lists available in another week or so.</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/7</link>
+        <pubDate>Wed, 31 Aug 2016 08:10:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-7</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Wendy, do we have an ETA for the translated codelists?</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/6</link>
+        <pubDate>Mon, 29 Aug 2016 20:35:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-6</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>  and just to let you know that we have started the process for getting the codelists listed above translated in French ASAP. Also, we will initially only be providing them in .xml format so I hope that is okay? We are however, also looking at making the translation process a more formal part of all of our Standard upgrade procedures and so this will also include investigating how we can provide the codelists in other formats (.csv, json) in a resource effective way.</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/5</link>
+        <pubDate>Wed, 06 Jul 2016 13:06:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-5</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, it would be very helpful to have the codelists translated and available quite soon, as they are needed by the team building our new data visualization platform.</p>
+<p>I think it would make sense for this to become part of the normal standard upgrade process - just like e.g. documentation and guidance are revised/updated to reflect any changes in the standard. In fact, we had assumed this was already the case, given there was agreement on the need to have codelists available in multiple languages.  This is how the WP-STAT proceeds as well; when changes are made to any part of the standard (like, for instance, the recent purpose codes related to country budgets), they are posted in English and French at the same time.  The translation is an integral part of the upgrade process.</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/4</link>
+        <pubDate>Thu, 09 Jun 2016 13:24:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-4</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> thanks for flagging this issue which has been on our ‘to do’ list for quite some time but for which we have just not had the capacity or resources to progress as yet. However, if it would help in the short term, we could try to identify some funding from the budget to arrange for the codelists you have highlighted to be translated into French? However, we do recognise that we need to establish a more sustainable mechanism for maintaining codelists in multiple languages in a way that ensure they remain up-to-date whenever they are updated. An IATI Standard upgrade might be a useful point at which to implement such a mechanism but I would be interested to know what you and other members of the IATI community think of this as a proposal?</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/3</link>
+        <pubDate>Thu, 09 Jun 2016 10:48:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-3</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>Not all the codelists on GitHub have French translations. As far as I’m aware those missing translations do not exist, and didn’t exist when I initially <a href="https://github.com/IATI/IATI-Codelists/commit/8c24692bfc388091c86a411d90f4c2877025a63c" rel="nofollow noopener">uploaded the French translations to GitHub</a>. There’s an archive of the previous codelist system, and French versions of the above are missing from that also <a href="http://codelists103.archive.iatistandard.org/data/codelist/" rel="nofollow noopener">http://codelists103.archive.iatistandard.org/data/codelist/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/2</link>
+        <pubDate>Tue, 24 May 2016 14:50:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-2</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+      <item>
+        <title>Locating translated codelists</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>We are trying to locate the French versions of some IATI codelists.  We found some on Github, but are missing the following:</p>
+<p>ConditionType.xml<br>
+DocumentCategory.xml<br>
+GeographicExactness.xml<br>
+GeographicLocationClass.xml<br>
+GeographicLocationReach.xml<br>
+OtherIdentifierType.xml<br>
+RelatedActivityType.xml<br>
+TiedStatus.xml (though this last one may be a DAC one?)</p>
+<p>Anybody knows where to find them?</p>
+          <p><a href="https://discuss.iatistandard.org/t/locating-translated-codelists/464/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/locating-translated-codelists/464/1</link>
+        <pubDate>Fri, 13 May 2016 21:27:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-464-1</guid>
+        <source url="https://discuss.iatistandard.org/t/locating-translated-codelists/464.rss">Locating translated codelists</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Publishing separate humanitarian files</title>
+    <link>https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143</link>
+    <description>To be able to publish humanitarian data on a daily or weekly basis Sweden will need to publish their humanitarian data separate from the ordinary publication. We are wondering what will be the best publishing routine? 
+
+Until we are ready to merge our ordinary publication with the humanitarian data, there will be some double-counting as the new humanitarian activities are also presented in the ordinary file.  
+
+Unless we can find another way around it, removing the humanitarian activities completely from the ordinary publication would make too much of a dent in the other publications that use our data.</description>
+    
+    <lastBuildDate>Thu, 30 Nov 2017 14:04:48 +0000</lastBuildDate>
+    <category>Humanitarian</category>
+    <atom:link href="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Publishing separate humanitarian files</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>Okey, I’m a bit worried of changing too much to our ordinary publication-routine. the humanitarian activities must have different identifiers from our ordinary files because they are a more detailed view of the acitivities.</p>
+<p>I guess we could have semi-static “ordinary” acitivity data that is only updated together with the humanitarian data that is updated daily. I will have to check with our developers. And I realize I haven’t done my home work, but that would require that we can destinguish between the humanitarian activity description from the ordinary description whereas the first is the same for all activities under the same agreement and the latter is unique for that humanitarian activity. The same will be for titles and activity dates.</p>
+<p>I will have to look into the details but I’m thinking maybe this is where we could use the hierarchylevels? Just brainstorming…</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143/5</link>
+        <pubDate>Thu, 30 Nov 2017 14:04:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1143-5</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143.rss">Publishing separate humanitarian files</source>
+      </item>
+      <item>
+        <title>Publishing separate humanitarian files</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for raising <a class="mention" href="/u/melinda">@Melinda</a> and I can see that there could be some benefit from humanitarian activities being published in their own set of IATI XML files as it would mean that data users who are only interested in humanitarian data would not need to process all of an organisation’s published XML datafiles in order to find the data that they want to use. However, I can anticipate that it may also be necessary to establish a Registry or other mechanism that would enable data users to programmatically identify which files only contain humanitarian data (rather than relying on manual selection)?</p>
+<p>Also, as you and <a class="mention" href="/u/pelleaardema">@pelleaardema</a> point out the relevant activities should not be published twice so good to know that you are already working on this issue.</p>
+<p>It would also be really interesting to hear from other publishers about any plans to segment (or not?) their data or if there are any issues that such an approach might cause?</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143/4</link>
+        <pubDate>Tue, 28 Nov 2017 13:53:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1143-4</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143.rss">Publishing separate humanitarian files</source>
+      </item>
+      <item>
+        <title>Publishing separate humanitarian files</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you for replying so quickly. Since we publish one part of the data on a monthly basis and we wish to publish the humanitarian on a daily basis, we need to find a way to get around that.</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143/3</link>
+        <pubDate>Tue, 28 Nov 2017 13:52:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1143-3</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143.rss">Publishing separate humanitarian files</source>
+      </item>
+      <item>
+        <title>Publishing separate humanitarian files</title>
+        <dc:creator><![CDATA[pelleaardema]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Melinda,</p>
+<p>I think this approach will cause problems for users of the data. How will they know which of the published activities is the “valid” version: the one in the humanitarian dataset or the one in your regular publication?</p>
+<p>Therefore IATI requires the<a href="http://iatistandard.org/202/activity-standard/overview/iati-identifier/" rel="nofollow noopener"> iati-identifier to be globally unique</a>, meaning</p>
+<blockquote>
+<p>The iati-identifier must be unique for every iati-activity within the complete dataset published.</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143/2</link>
+        <pubDate>Tue, 28 Nov 2017 13:46:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1143-2</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143.rss">Publishing separate humanitarian files</source>
+      </item>
+      <item>
+        <title>Publishing separate humanitarian files</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>To be able to publish humanitarian data on a daily or weekly basis Sweden will need to publish their humanitarian data separate from the ordinary publication. We are wondering what will be the best publishing routine?</p>
+<p>Until we are ready to merge our ordinary publication with the humanitarian data, there will be some double-counting as the new humanitarian activities are also presented in the ordinary file.</p>
+<p>Unless we can find another way around it, removing the humanitarian activities completely from the ordinary publication would make too much of a dent in the other publications that use our data.</p>
+          <p><a href="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143/1</link>
+        <pubDate>Tue, 28 Nov 2017 09:39:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1143-1</guid>
+        <source url="https://discuss.iatistandard.org/t/publishing-separate-humanitarian-files/1143.rss">Publishing separate humanitarian files</source>
+      </item>
+  </channel>
+</rss>

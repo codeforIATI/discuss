@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+    <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229</link>
+    <description>The definition of the [humanitarian flag attribute](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/), at activity level declares:
+
+&gt; A process flag to indicate that this activity relates entirely or partially to humanitarian aid.
+
+It&#39;s a boolean - so my understanding is that 1 = Yes, 0 = No
+
+Therefore, how would someone declare &quot;partially&quot;, at the activity level?</description>
+    
+    <lastBuildDate>Wed, 17 Jul 2019 21:08:40 +0000</lastBuildDate>
+    <category>Humanitarian</category>
+    <atom:link href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I am reviving this thread to ask where we’re at regarding the correction to the guidance on humanitarian data, as discussed at length above (and in other threads related to humanitarian data)?</p>
+<p>The reason I ask is because the <a href="https://www.aidtransparency.net/wp-content/uploads/2016/08/How-to-publish-open-humanitarian-data-using-the-IATI-Standard.docx" rel="nofollow noopener">2016 document</a> that presented guidance that pretty much everyone agrees is wrong <strong>is still online and misleading people</strong> (point in case: a colleague just sent it to me).</p>
+<p>It would be great if the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> could update the guidance in light of the feedback that has been provided since its publication; if this is not feasible, it would be better to remove it for the time being.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/36</link>
+        <pubDate>Wed, 17 Jul 2019 21:08:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-36</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="34" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/457_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>then you can use the DAC humanitarian sector codes and percentages.</p>
+</blockquote>
+</aside>
+<p>What if you are not using the DAC sector vocab, perhaps using the humanitarian clusters as the sector vocab?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/35</link>
+        <pubDate>Thu, 07 Mar 2019 15:48:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-35</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry for slow reply <a class="mention" href="/u/stevieflow">@stevieflow</a> - yes, looks good! I think I was just confused by the language in the table in your comment but I get what you’re trying to do now.</p>
+<p>And <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>, I think if you want to (and are able to) state a specific percentage that is humanitarian then you can use the DAC humanitarian sector codes and percentages.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/34</link>
+        <pubDate>Thu, 07 Mar 2019 15:48:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-34</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Yohanna, if it is a bridge, or PFM, then it is clearly not humanitarian, if it is emergency food aid, then it clearly is - for everything else, use the ‘partial’ marker. I agree it is sometimes not clear (I am in Somalia right now and discussed coding with UNOCHA and others on Tuesday) but this doesn’t mean that it often isn’t clear. I will give it up now, but this seems like the same situation as the DAC markers i.e. there are clearly yes bits, clearly not bits, and partial bits - hence the need for 0, 1 and 2, not a boolean, because if the DAC markers had one called ‘principally or maybe significant but not principal’ it would be silly and far less use. This idea about if it is a hard call to make then we should bundle two categories together seems a completely false line of reasoning, that is exactly why we need a category to reflect those hard calls so that the other categories mean more.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/33</link>
+        <pubDate>Thu, 07 Mar 2019 15:45:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-33</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Matt, I don’t believe (based on feedback from humanitarian folks) that we can get to the accuracy you aspire to.</p>
+<p>I do think we should correct the guidance, as we’ve been discussing for a long time now.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/32</link>
+        <pubDate>Thu, 07 Mar 2019 15:22:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-32</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="30" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Correct, 'cos in the real world an exact calculation is often not possible. This is corroborated by Mark, Wendy and Yohanna above.</p>
+</blockquote>
+</aside>
+<p>That is what a separate ‘partial’ flag is for, leaving the ‘humanitarian = 1’, and ‘humanitarian = 0’ for when you can tell, and is why moving away from a boolean would help the accuracy.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/31</link>
+        <pubDate>Thu, 07 Mar 2019 13:16:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-31</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="29" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>we cannot calculate a figure for the share of an activity that is purely humanitarian support</p>
+</blockquote>
+</aside>
+<p>Correct, 'cos in the real world an exact calculation is often not possible. This is corroborated by Mark, Wendy and Yohanna above.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/30</link>
+        <pubDate>Thu, 07 Mar 2019 12:33:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-30</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t follow why it should remain a boolean - did I miss the reasoning somewhere, or is it just a reluctance to change the standard?</p>
+<p>Unless we change it, it seems to me that we cannot calculate a figure for the share of an activity that is purely humanitarian support without relying on the sector codes being the DAC sectors, therefore making them mandatory for reporting humanitarian support (or inferring it from the organisations involved), neither of which seem like the right/IATI way of doing things.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/29</link>
+        <pubDate>Thu, 07 Mar 2019 12:18:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-29</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="27" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>But - It seems if we sharpen the description:</p>
+<p><img src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_1.png" alt width="20" height="20"> YohannaLoucheur:</p>
+<blockquote>
+<p>In short: someone would not declare “partially”. This sentence rather means “if an activity relates to humanitarian aid, even partially”. So if there’s a humanitarian component/aspect to the activity, you would code 1=Yes.</p>
+</blockquote>
+<p>… then that might help…</p>
+</blockquote>
+</aside>
+<p>I agree (and it should remain a Boolean)</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/28</link>
+        <pubDate>Thu, 07 Mar 2019 08:45:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-28</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a></p>
+<p>Understood.   I think this was part of my earlier confusion:</p>
+<aside class="quote no-group" data-post="8" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>I get confused by this (it <em>could</em> well be me) – as I understand a boolean / flag to be Yes/No or True/False or 1/0 in terms of <em>humanitarian</em> . Bringing in “0 = development” seems like a … codelist !</p>
+</blockquote>
+</aside>
+<p>But - It seems if we sharpen the description:</p>
+<aside class="quote no-group" data-post="3" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_1.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>In short: someone would not declare “partially”. This sentence rather means “if an activity relates to humanitarian aid, even partially”. So if there’s a humanitarian component/aspect to the activity, you would code 1=Yes.</p>
+</blockquote>
+</aside>
+<p>… then that might help…</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/27</link>
+        <pubDate>Thu, 07 Mar 2019 07:58:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-27</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Have we considered changing this to non-boolean to make it simpler?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/26</link>
+        <pubDate>Thu, 07 Mar 2019 05:39:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-26</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/markbrough">@markbrough</a> just to double check - have I clarified with my response ^^ ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/25</link>
+        <pubDate>Wed, 06 Mar 2019 19:34:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-25</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="23" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/457_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>I <strong>think</strong> your intention is to remove the “or partially”</p>
+</blockquote>
+</aside>
+<p>Thanks.  No - the intention is along the lines of</p>
+<aside class="quote no-group" data-post="3" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_1.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>In short: someone would not declare “partially”. This sentence rather means “if an activity relates to humanitarian aid, even partially”.</p>
+</blockquote>
+</aside>
+<p>Have I made it even more unclear?  Oh no!</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/24</link>
+        <pubDate>Wed, 27 Feb 2019 17:55:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-24</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stevieflow">@stevieflow</a> I am a little unsure what the goal is here - I <strong>think</strong> your intention is to remove the “or partially” from the description “indicate that this activity relates entirely or partially to humanitarian aid”?</p>
+<p>I am not sure that is a good idea. It seems as though it would rule out <a class="mention" href="/u/wendy">@Wendy</a>’s point 3 (quoted below). I have <a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/13?u=markbrough">argued above</a> that this is important because:</p>
+<p>a) a single project shouldn’t be split into artificial components, because it makes reconciliation of project units more difficult and</p>
+<p>b) you may know that an activity is <strong>partially</strong> related to humanitarian aid, but not the precise amount, and your accounting system may not (I guess, often will not) be able to tell you precise amounts at the transaction level. I think the use of humanitarian DAC codes would be a better way of roughly stating the amount of aid that is humanitarian in nature.</p>
+<aside class="quote no-group" data-post="17" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/wendy/40/12_1.png" class="avatar"> Wendy:</div>
+<blockquote>
+<ol start="3">
+<li><strong>Some aspects of an activity are humanitarian related but the activity cannot be split at the transaction level to specifically indicate its humanitarian and other components</strong></li>
+</ol>
+<ul>
+<li>The iati-activity/<a class="mention" href="/u/humanitarian">@humanitarian</a> attribute is required:<br>
+iati-activity humanitarian=“1”</li>
+<li>NB Humanitarian and other related DAC sector codes with a percentage split should also be present in this situation</li>
+<li>The iati-activity/transaction/<a class="mention" href="/u/humanitarian">@humanitarian</a> attribute is NOT required</li>
+</ul>
+</blockquote>
+</aside>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/23</link>
+        <pubDate>Wed, 27 Feb 2019 14:07:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-23</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/david_megginson">@David_Megginson</a></p>
+<p>OK - if we agree that there are many combinations that <em>anyone</em> trying to process IATI data might have to consider, we can now look at (and you’ve said this already!) what we would consider as <strong>best practice amongst publishers</strong>:</p>
+<p>(NB: I’ve a <a href="https://docs.google.com/document/d/1i5NwQUvh0roTOU5jU7BbDuJdzp-8Xd55i4LtVGw01iA/edit#" rel="nofollow noopener">google doc</a> with this, if anyone finds it easier to comment there)</p>
+<p>If we consider these two publishing conditions to be acceptable:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/34ba57a13803b812dea02d84db2d01601c5639e9.png" alt="publishing-best-practice" width="614" height="258"></p>
+<p>We then have a reduced number of best practice combinations of the humanitarian flag:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/41cfc037664767e9260471e5aacd2fb82fd89a9e.png" alt="publishing-best-practice-flags" width="621" height="361"></p>
+<p>Is this what we want ?</p>
+<p>Moving on, it seems there’s two main actions:</p>
+<ol>
+<li>Revise the description of the humanitarian flag (as originally discussed) - consider this as bug fix of the standard</li>
+<li>Publish this Best Practice guidance for the community, and link to it from the documentation</li>
+</ol>
+<p>I hope this gets us to a satisfactory place!  It seems a real lesson in terms of introducing a relatively simple attribute to the standard, but then learning from the reality of implementation.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/22</link>
+        <pubDate>Tue, 26 Feb 2019 18:43:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-22</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, Steven – that’s a great table for organisations consuming IATI data. For organisations <em>producing</em> IATI data (as we discussed after you posted this), we would want to discourage some of these combinations, especially given the standard’s guidance that “1” should be set at the activity level if one or more transactions are humanitarian.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/21</link>
+        <pubDate>Wed, 20 Feb 2019 14:52:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-21</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all</p>
+<p>In response to this, I’ve formatted this table to illustrate the permutations one could see with the <code>humanitarian</code> flag at activity and/or transaction level:</p>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/037a1606d57462c367dbf7f0daaab9c103293a82.png" alt="hum-flag" width="607" height="458"></p>
+<p>I also subscribe to the proposal from <a class="mention" href="/u/david_megginson">@David_Megginson</a>, but also want to flag (!) how we can see a wide range of uses - all of which are valid (in terms of schema validation, at least).</p>
+<p>With the FTS IATI pilot we will discuss this - so just raising a humanitarian-flag for <a class="mention" href="/u/ximboden">@ximboden</a> <a class="mention" href="/u/wendy">@Wendy</a> <a class="mention" href="/u/stolk">@stolk</a> <a class="mention" href="/u/pelleaardema">@pelleaardema</a> <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/danielmackenzie">@DanielMackenzie</a> <a class="mention" href="/u/rbesseling">@rbesseling</a> <a class="mention" href="/u/r_clements">@r_clements</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/20</link>
+        <pubDate>Mon, 18 Feb 2019 18:23:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-20</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="17" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/wendy/40/12_1.png" class="avatar"> Wendy:</div>
+<blockquote>
+<p>Its been a while but work has now restarted on updating the IATI humanitarian guidelines.</p>
+</blockquote>
+</aside>
+<p>Thanks <a class="mention" href="/u/wendy">@Wendy</a>.  Please can you indicate when these guidelines would be updated, and which document we should be following.  There’s a <a href="https://docs.google.com/document/d/1rjpH2taYIQCDI58YZSUJeRgjRoUsfHxClacO9xdEh5E/edit#" rel="nofollow noopener">document online</a>, but that doesn’t provide any indication of how current it is, nor include some of the information above</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/19</link>
+        <pubDate>Mon, 02 Jul 2018 10:45:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-19</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for sharing that, Wendy. My proposal is slightly simpler:</p>
+<ol>
+<li>
+<p><strong><code>iati-activity/@humanitarian</code> sets the default for child transactions:</strong> if <code>iati-activity/@humanitarian</code> is “1,” then every child <code>transaction/@humanitarian</code> defaults to “1” unless overridden; if it is “0” or omitted, then every child <code>transaction/@humanitarian</code> defaults to “0” unless overridden.</p>
+</li>
+<li>
+<p><strong>recommended best practice is to set <code>iati-activity/@humanitarian</code> to “1” if any child transaction is humanitarian:</strong> while not strictly required for data processing, this practice makes it easier to scan quickly for activities that have <em>some</em> humanitarian component (however small).</p>
+</li>
+</ol>
+<p>This proposal follows the rule of least surprise by conforming closely to the existing model of attributes and elements at the <code>iati_activity</code> level including <code>@xml:lang</code>, <code>@default-currency</code>, <code>default-flow-type</code>, <code>default-finance-type</code>, <code>default-aid-type</code>, and <code>default-tied status</code>, all of which set default values that individual child elements (mostly, <code>transaction</code>) can override on a case-by-case basis.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/18</link>
+        <pubDate>Tue, 19 Jun 2018 15:22:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-18</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Its been a while but work has now restarted on updating the IATI humanitarian guidelines. As a result of the above and other consultations the following scenarios for use (or not) of the iati-activity/<a class="mention" href="/u/humanitarian">@humanitarian</a> and iati-activity/transaction/<a class="mention" href="/u/humanitarian">@humanitarian</a> attributes have been identified:</p>
+<ol>
+<li><strong>An activity has no humanitarian component (eg development only)</strong></li>
+</ol>
+<ul>
+<li>
+<p>Neither the iati-activity/<a class="mention" href="/u/humanitarian">@humanitarian</a> attribute or iati-activity/transaction/<a class="mention" href="/u/humanitarian">@humanitarian</a> are required and should NOT be included</p>
+</li>
+<li>
+<p>NB there have been some discussions that in this case the iati-activity/<a class="mention" href="/u/humanitarian">@humanitarian</a> attribute should be present but set to ‘0’. Eg  iati-activity humanitarian=“0”</p>
+</li>
+<li>
+<p>However, general publishing best practice recommends that unnecessary elements and/or attributes should not be included in an IATI XML file in order to reduce file ‘bloat’ and subsequent file processing overhead &amp; times etc.</p>
+</li>
+</ul>
+<ol start="2">
+<li><strong>All aspects of an activity are humanitarian related</strong></li>
+</ol>
+<ul>
+<li>
+<p>The iati-activity/<a class="mention" href="/u/humanitarian">@humanitarian</a> attribute is required<br>
+iati-activity humanitarian=“1”</p>
+</li>
+<li>
+<p>The iati-activity/transaction/<a class="mention" href="/u/humanitarian">@humanitarian</a> attribute is NOT required</p>
+</li>
+</ul>
+<ol start="3">
+<li><strong>Some aspects of an activity are humanitarian related but the activity cannot be split at the transaction level to specifically indicate its humanitarian and other components</strong></li>
+</ol>
+<ul>
+<li>
+<p>The iati-activity/<a class="mention" href="/u/humanitarian">@humanitarian</a> attribute is required:<br>
+iati-activity humanitarian=“1”</p>
+</li>
+<li>
+<p>NB Humanitarian and other related DAC sector codes with a percentage split should also be present in this situation</p>
+</li>
+<li>
+<p>The iati-activity/transaction/<a class="mention" href="/u/humanitarian">@humanitarian</a> attribute is NOT required</p>
+</li>
+</ul>
+<ol start="4">
+<li><strong>Some aspects of an activity are humanitarian related and the activity can be split at the transaction level to specifically indicate its humanitarian and other components</strong></li>
+</ol>
+<ul>
+<li>
+<p>The iati-activity/<a class="mention" href="/u/humanitarian">@humanitarian</a> attribute is NOT required</p>
+</li>
+<li>
+<p>The iati-activity/transaction/<a class="mention" href="/u/humanitarian">@humanitarian</a> attribute is required and should be used on ALL transactions. Eg</p>
+</li>
+<li>
+<p>If a transaction is humanitarian related<br>
+transaction ref=“1234” humanitarian=“1”</p>
+</li>
+<li>
+<p>If a transaction is NOT humanitarian related<br>
+transaction ref=“1234” humanitarian=“0”</p>
+</li>
+</ul>
+<p>NB One issue that has been raised in relation to this option is that it does mean that from a data processing perspective there is a big overhead of having to check both the activity and at least one transaction of every published activity to identify if an activity is ‘humanitarian’ or ‘not’.It would therefore be interesting to get the view of other developers on this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/17</link>
+        <pubDate>Tue, 19 Jun 2018 14:55:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-17</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="15" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>Yes, I agree.  Should we start a new thread?</p>
+</blockquote>
+</aside>
+<p>Sure. This way we can keep this one focused on correcting the humanitarian guidance as soon as possible.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/16</link>
+        <pubDate>Thu, 22 Feb 2018 14:17:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-16</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="14" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Will be useful in an (unrelated) discussion regarding the “right” amount of project disaggregation by country and sector.</p>
+</blockquote>
+</aside>
+<p>Yes, I agree.  Should we start a new thread?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/15</link>
+        <pubDate>Thu, 22 Feb 2018 07:42:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-15</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="1229">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>We have seen this a lot with donors breaking projects into multiple activities for each sector and country, where it significantly increases the amount of noise in the data.</p>
+</blockquote>
+</aside>
+<p>Thanks for this Mark. Will be useful in an (unrelated) discussion regarding the “right” amount of project disaggregation by country and sector.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/14</link>
+        <pubDate>Wed, 21 Feb 2018 18:33:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-14</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I think it is a really bad idea to split a single project into artificial components and a bad precedent to set. Project IDs will no longer be consistent between published data and source systems, making reconciliation between different systems (e.g. IATI and local AIMS) more difficult. Activity-based reporting is an advantage of IATI over the CRS’s transaction-based reporting.</p>
+<p>We have seen this a lot with donors breaking projects into multiple activities for each sector and country, where it significantly increases the amount of noise in the data. See for example <a href="http://spreadsheets.aidonbudget.org/en/countries/LR/activities/" rel="nofollow noopener">Swedish projects here</a> (Sweden is in the process of correcting this). The project beginning <code>SE-0-SE-6-5204006501-</code> is broken into three activities (one for each sector code <code>72010</code>, <code>72040</code>, <code>72050</code>) and many more activities when you consider the other countries this project is active in.</p>
+<p>USAID recently corrected the same issue in their data and it made their data far more useful and usable.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/13</link>
+        <pubDate>Wed, 21 Feb 2018 16:43:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-13</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+      <item>
+        <title>Humanitarian flag - &quot; entirely or partially&quot;</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>For the reasons explained in the other thread.</p>
+<p>It’s fine to have the possibility to do it, but it should not be presented as the preferred way to do it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229/12</link>
+        <pubDate>Tue, 20 Feb 2018 16:52:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1229-12</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-flag-entirely-or-partially/1229.rss">Humanitarian flag - &quot; entirely or partially&quot;</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Vocabulary codelists - &quot;reserving&quot; a number</title>
+    <link>https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494</link>
+    <description>Hello
+
+We&#39;ve an interesting dilemma via research on the Open Ag Funding project. 
+
+We may want to propose an additional [SectorVocabulary](http://iatistandard.org/201/codelists/SectorVocabulary/) code, to assist publishers, for example.  However, we would also plan a period of piloting and data exploration, before any proposal
+
+Our (slight) difficulty is that the vocabulary codelists seem to be based on incremental integers - eg: [SectorVocabulary](http://iatistandard.org/201/codelists/SectorVocabulary/) currently has 1-6 codes, so we&#39;re assuming the next on will be 7.  
+
+This could make it tricky to pilot anything.  If we pilot with code 7, but could then find this is allocated to another purpose.  
+
+Would there ever be a situation whereby codes could be &quot;pre-reserved&quot; (or, &quot;emerging&quot;) , pending full proposal/acceptance?  I appreciate that this in turn could generate gaps in the list(s)
+
+Thanks!</description>
+    
+    <lastBuildDate>Tue, 24 Jan 2017 16:13:50 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Vocabulary codelists - &quot;reserving&quot; a number</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>One other consideration here is that now that the  attribute exists is it still necessary to retain ‘98’ on the  <a href="http://iatistandard.org/202/codelists/SectorVocabulary/">Sector code vocabulary</a> as multiple in-house codelists can be used and differentiated between by specifying an appropriate link in  ?</p>
+<p>I will also move this topic to the Standard Management -&gt; Modifications, Additions, Improvements category for further consideration</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/6</link>
+        <pubDate>Tue, 24 Jan 2017 16:13:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-494-6</guid>
+        <source url="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494.rss">Vocabulary codelists - &quot;reserving&quot; a number</source>
+      </item>
+      <item>
+        <title>Vocabulary codelists - &quot;reserving&quot; a number</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>99 does not require the vocabulary-uri to be unique. If it is not unique - i.e. it is shared by a number of publishers - the question then arises as to how shared/sharable it is, and whether it should be recognised with its own vocab code.</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/5</link>
+        <pubDate>Fri, 24 Jun 2016 05:38:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-494-5</guid>
+        <source url="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494.rss">Vocabulary codelists - &quot;reserving&quot; a number</source>
+      </item>
+      <item>
+        <title>Vocabulary codelists - &quot;reserving&quot; a number</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/bill_anderson">@bill_anderson</a> &amp; <a class="mention" href="/u/wendy">@Wendy</a></p>
+<p>One other point of (related) clarification would be useful.</p>
+<p>In 2.02 the attribute <code>&lt;vocabulary-uri&gt;</code> exists for <code>&lt;sector&gt;</code>: <a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used" rel="nofollow noopener">http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used</a></p>
+<p>The guidance seems to suggest that this should only be used when the vocab=99</p>
+<blockquote>
+<p>If a publisher uses a vocabulary of 98 or 99 (i.e. ‘Reporting Organisation’), then the <span class="mention">@vocabulary-uri</span> attribute should also be used</p>
+</blockquote>
+<p>I wonder if it feasible for different publishers to use vocab=99 and the <em>same</em> vocabulary-uri as an alternative way around the above issue?  Or - do we always consider the 99 (Reporting Organisation) vocabulary to be unique and different across publishers?</p>
+<p>(apologies if this is overly pushing the original definitions/design)</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/4</link>
+        <pubDate>Thu, 23 Jun 2016 19:13:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-494-4</guid>
+        <source url="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494.rss">Vocabulary codelists - &quot;reserving&quot; a number</source>
+      </item>
+      <item>
+        <title>Vocabulary codelists - &quot;reserving&quot; a number</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to add that the Sector Vocabulary codelist (at V2.02) now has 1 to 10 in use so 11 would be the next number on the list to reserve or assign - <a href="http://iatistandard.org/202/codelists/SectorVocabulary/">http://iatistandard.org/202/codelists/SectorVocabulary/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/3</link>
+        <pubDate>Mon, 20 Jun 2016 12:52:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-494-3</guid>
+        <source url="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494.rss">Vocabulary codelists - &quot;reserving&quot; a number</source>
+      </item>
+      <item>
+        <title>Vocabulary codelists - &quot;reserving&quot; a number</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven</p>
+<p>There is nothing in the standard that says that codelists MUST be based on incremental integers. If you send a formal request to <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> the Tech Team can ‘reserve’  this.</p>
+<p>Best</p>
+<p>Bill</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/2</link>
+        <pubDate>Mon, 20 Jun 2016 11:16:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-494-2</guid>
+        <source url="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494.rss">Vocabulary codelists - &quot;reserving&quot; a number</source>
+      </item>
+      <item>
+        <title>Vocabulary codelists - &quot;reserving&quot; a number</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello</p>
+<p>We’ve an interesting dilemma via research on the Open Ag Funding project.</p>
+<p>We may want to propose an additional <a href="http://iatistandard.org/201/codelists/SectorVocabulary/" rel="nofollow noopener">SectorVocabulary</a> code, to assist publishers, for example.  However, we would also plan a period of piloting and data exploration, before any proposal</p>
+<p>Our (slight) difficulty is that the vocabulary codelists seem to be based on incremental integers - eg: <a href="http://iatistandard.org/201/codelists/SectorVocabulary/" rel="nofollow noopener">SectorVocabulary</a> currently has 1-6 codes, so we’re assuming the next on will be 7.</p>
+<p>This could make it tricky to pilot anything.  If we pilot with code 7, but could then find this is allocated to another purpose.</p>
+<p>Would there ever be a situation whereby codes could be “pre-reserved” (or, “emerging”) , pending full proposal/acceptance?  I appreciate that this in turn could generate gaps in the list(s)</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494/1</link>
+        <pubDate>Mon, 20 Jun 2016 10:59:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-494-1</guid>
+        <source url="https://discuss.iatistandard.org/t/vocabulary-codelists-reserving-a-number/494.rss">Vocabulary codelists - &quot;reserving&quot; a number</source>
+      </item>
+  </channel>
+</rss>

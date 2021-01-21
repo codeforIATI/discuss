@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Currency conversion</title>
+    <link>https://discuss.iatistandard.org/t/currency-conversion/413</link>
+    <description>Hi everyone,
+
+As an extension to OIPA&#39;s functionality we would like to add the option to convert values to a specific currency. For example, this would make it possible to do aggregations on transaction in different currencies.
+
+To be able to do this we need an exchange rate dataset. Datasets like this are published by IMF, World Bank and OECD and others. However, we are unsure what dataset is best suited for this purpose, seeing how they seem to differ and secondly we do not want to make use general market rates.
+
+Does the IATI community have an opinion on what dataset would be most accurate to use for this use?
+
+Work has been done by ourselves last year, D-Portal and work on the BD AIMS has been done, but no general solution exists that could work for IATI works.
+
+Suggestions more than welcome.
+
+Regards, Robin</description>
+    
+    <lastBuildDate>Fri, 24 Feb 2017 11:13:56 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/currency-conversion/413.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p><a class="mention" href="/u/herman">@Herman</a> yes, for many agreements the exchange rate is at the level of the contract - where would this go in IATI data, as a single project can be covered by several contracts - if contract = commitment, perhaps it can go there? Would that then be linked to all transactions made under that contract - I do not know enough about the nesting etc to be sure?</p>
+<p>However, there is another situation. Attached below are a set of screenshots showing how the statement for a loan specifies (or allows calculation of) the exchange rates for the different value dates. In this case, the exchange rate is set per transaction.</p>
+<p>The reason I am inclined to push this is that in most aid recipient countries, the debt management office/unit is the most competent user of aid flow data as it tends to be a far stronger legal requirement to track the disbursements as more disbursements means more indebtedness/repayments. If IATI could allow transaction level exchange rates (specifying the sending/loan currency, the rate applied on that value-date and the currency of receipt) then it might pick up a significant number of users. If not, all aid recipient countries will continue to collect this data separately/manually so are likely to continue to find IATI peripheral to their needs.</p>
+<p>The ideal endpoint is that CS-DRMS/DEMFAS debt management systems would pull data directly from IATI, eliminating a huge amount of manual data entry and potential for error.</p>
+<p>The bigger issue here (and also starting to crop us in traceability etc) is that IATI is not an accounting system e.g. with double entry etc. If it was, then all transactions would have a debit and a credit, a sender and a receiver (with an official receiver/org ID), a send currency, a receipt currency (and therefor exchange rates built in). In this scenario, traceability is much easier to solve and I think this has to be a serious consideration going forwards.</p>
+<p>As it is, if a donor reports in e.g. SDR or Japanese Yen, but the recipients receive the funds into a local currency bank account, they typically struggle to make any connection with the amounts shown in IATI data - and again are disinclined to use IATI.</p>
+<p>/end ramble!</p>
+<p>Matt</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/5b701ce54e3a4a78c243ad407c804122776ff543.png" data-download-href="https://discuss.iatistandard.org/uploads/default/5b701ce54e3a4a78c243ad407c804122776ff543" title="Loan Disb 1.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/5b701ce54e3a4a78c243ad407c804122776ff543_2_690x141.png" width="690" height="141" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/5b701ce54e3a4a78c243ad407c804122776ff543_2_690x141.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/5b701ce54e3a4a78c243ad407c804122776ff543_2_1035x211.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/5b701ce54e3a4a78c243ad407c804122776ff543.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/5b701ce54e3a4a78c243ad407c804122776ff543_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Loan Disb 1.png</span><span class="informations">1217×249 23.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807.png" data-download-href="https://discuss.iatistandard.org/uploads/default/bbb42993d16c598d9b928f6ee687b31ba21cf807" title="Loan Disb 2.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807_2_689x215.png" width="689" height="215" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807_2_689x215.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807_2_1033x322.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Loan Disb 2.png</span><span class="informations">1299×406 70 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><br>
+<img src="https://discuss.iatistandard.org/uploads/default/original/1X/df7292963c093b7c5729fd0c3f63e373529af03c.png" width="637" height="282"></p>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/11</link>
+        <pubDate>Fri, 24 Feb 2017 11:13:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-11</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/markbrough">@markbrough</a>,<br>
+I am not sure. The interest rate you mention, if I understand you correctly, is an attribute of the contract and not transaction specific? We run the risk of adding a lot of elements to the transactions, which do not really belong there. Would this be a case for linked open data (IATI &lt;-&gt; open contracts)?</p>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/10</link>
+        <pubDate>Fri, 17 Feb 2017 08:41:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-10</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/herman">@Herman</a></p>
+<p>The specific use case here is for loans and debt repayment, where agreements will specify a specific exchange rate. This would be very helpful for making IATI useful for debt management.</p>
+<p>At the moment, we can use the <code>value-date</code> to find the prevailing exchange rate to the target currency. It generally does not matter enormously (especially with grants) if there are slight differences in the rate we end up with from the rate at which the funds were actually converted (as a result of using a slightly different date or a different source for the rates). However, with loans this does matter as there is a specific amount that has to be paid back and because it makes a difference to the country’s debt stock. Incidentally, almost all countries have debt management software that could benefit from using this data (and are one of the principal collectors / users of aid data in many countries).</p>
+<p>So, making it possible to provide the actual exchange rate from the agreement, where possible, would help satisfy an important use case. Though of course, nobody would be forced to use it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/9</link>
+        <pubDate>Thu, 16 Feb 2017 17:34:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-9</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Exchange rates are very dependent on the use-case. Therefore IATI data users will have different requirements. So I do not think we should try to add exchange-rates to the standard.</p>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/8</link>
+        <pubDate>Thu, 16 Feb 2017 09:31:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-8</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>This issue was originally added to the <a href="http://support.iatistandard.org/hc/en-us/articles/214388666-Add-ability-to-report-explicit-exchange-rates-used-in-transactions">previous version IATI Standard Upgrade forum</a>. However that forum has itself now itself moved to the IATI Discuss platform so I have recatagorised this topic for consideration for the next IATI Standard upgrade</p>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/7</link>
+        <pubDate>Wed, 04 Jan 2017 11:38:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-7</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/dalepotter">@dalepotter</a>, great, thanks - let me know if there is anything I can do to make it happen e.g. rounding up examples, or testing etc. Also registering with the iatisupport site so I am available there too.</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/6</link>
+        <pubDate>Fri, 01 Jul 2016 11:18:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-6</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> - thanks for flagging this.</p>
+<p>As I don’t think that it is possible to sent an explicit exchange rate for a given transaction, I’ve <a href="http://support.iatistandard.org/entries/110307626-Add-ability-to-report-explicit-exchange-rates-used-in-transactions">added a post to describe this</a> in our separate forum for Modifications, Additions, Improvements to the IATI standard. This means that it will be considered for inclusion in future upgrades of the standard.</p>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/5</link>
+        <pubDate>Fri, 01 Jul 2016 10:42:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-5</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>Our work in Bangladesh has also identified that many donors have their own exchange rates (often set by their central bank / ministry of finance) and therefore when converting projects between currencies, these are the ones that need using. For example, the Netherlands update their EUR to USD rate annually, and this is the rate that should be used for converting the values on their projects - using another rate would be might reduce the value of IATI data as it would no longer match the official values expected by the publisher. This is also often an issue for loans, where the loan agreement might include an official rate of conversion for the life of the loan.</p>
+<p>Is there somewhere in IATI that would allow publishers to include this information e.g. an exchange rate field, to go after the currency and value fields for the transactions? This would also massively increase the utility of IATI for monitoring debt data - integration of IATI feeds into CS-DRMS and DFMAS would be a huge win for recipient countries.</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/4</link>
+        <pubDate>Fri, 26 Feb 2016 13:57:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-4</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve started collecting rates from <a href="http://openexchangerates.org" rel="nofollow noopener">http://openexchangerates.org</a> (daily rates available from 1999 onward), interesting to compare these. I guess an SDR exchange rate makes sense too.</p>
+<p>To throw in some of my questions:</p>
+<ul>
+<li>Why would “one exchange rate per year” be good enough? It appears to me that some currencies are too volatile to capture in just one rate for a whole year?</li>
+<li>What are current approaches to changes of the “base rate” over time? Sometimes you just want to aggregate (for instance) dollar amounts as they occur, sometimes you’d like to express things in “dollars of the year 2000”.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/3</link>
+        <pubDate>Wed, 24 Feb 2016 11:43:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-3</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Robin,</p>
+<p>Thanks for posting this - this has also been a timely problem for the central tech team too. In October we added 2014 IATI spend $USD aggregations for all publishers on the <a href="http://dashboard.iatistandard.org/coverage.html">Dashboard coverage</a> tab.</p>
+<p>We spoke to D-Portal about how they are managing conversions and their approach seems to be to scrape daily exchange rates from the <a href="http://www.imf.org/external/np/fin/data/rms_five.aspx">IMF website</a> each night, and then to save a local copy in <a href="https://github.com/devinit/D-Portal/tree/master/dstore/json">Git</a>. When the data is collected, these are averaged out for the whole month, and that average rate is used for USD (based on the month in the value-date).<br>
+(I’ve also asked <a class="mention" href="/u/matt">@Matt</a> for some clarification on the process here, as the IMF link appears to only list currency to SDR rates, rather than currency to USD rates.)</p>
+<p>They also have an <a href="https://docs.google.com/spreadsheets/d/1jpXHDNmJ1WPdrkidEle0Ig13zLlXw4eV6WkbSy6kWk4/edit#gid=13">‘exchange’ tab on a Google sheet </a> that is used for for currencies which aren’t in the nightly IMF data.  This stores exchange rate data on an annual basis.</p>
+<p>In terms of the implementation on the Dashboard, we went for an MVP approach, using the annual data in the D-portal exchange tab. The spreadsheet we use, together with logic is available here: <a href="https://github.com/IATI/IATI-Stats/tree/master/helpers/currency_conversion">https://github.com/IATI/IATI-Stats/tree/master/helpers/currency_conversion</a> In time, we would like to move to a monthly granularity, based on automated inputs of IMF data, although this is not a priority at present.</p>
+<p>Would be interesting to hear others perspectives, and do post back with details, in due course, of your implementation approach <a class="mention" href="/u/murrx">@Murrx</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/2</link>
+        <pubDate>Fri, 19 Feb 2016 16:43:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-2</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+      <item>
+        <title>Currency conversion</title>
+        <dc:creator><![CDATA[Murrx]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>As an extension to OIPA’s functionality we would like to add the option to convert values to a specific currency. For example, this would make it possible to do aggregations on transaction in different currencies.</p>
+<p>To be able to do this we need an exchange rate dataset. Datasets like this are published by IMF, World Bank and OECD and others. However, we are unsure what dataset is best suited for this purpose, seeing how they seem to differ and secondly we do not want to make use general market rates.</p>
+<p>Does the IATI community have an opinion on what dataset would be most accurate to use for this use?</p>
+<p>Work has been done by ourselves last year, D-Portal and work on the BD AIMS has been done, but no general solution exists that could work for IATI works.</p>
+<p>Suggestions more than welcome.</p>
+<p>Regards, Robin</p>
+          <p><a href="https://discuss.iatistandard.org/t/currency-conversion/413/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/currency-conversion/413/1</link>
+        <pubDate>Thu, 18 Feb 2016 15:17:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-413-1</guid>
+        <source url="https://discuss.iatistandard.org/t/currency-conversion/413.rss">Currency conversion</source>
+      </item>
+  </channel>
+</rss>

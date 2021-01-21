@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Thoughts on API as a Service &amp; Data Playground</title>
+    <link>https://discuss.iatistandard.org/t/thoughts-on-api-as-a-service-data-playground/87</link>
+    <description>In March I shared some thoughts via a [Gist][0] about some ways in which IATI data could be used in a way that would make it more accessible to NGOs and other parties.  I have been asked to move the content of the [gist][0] here as it is a better forum (in that it is actually a forum) for discussing it.
+
+I must caveat the following with 
+
+1. These are just ideas off the top of my head and could be further refined.
+2. I currently don&#39;t work with IATI data or projects so the __user need__ associated with these ideas may be very limited
+3. This was written roughly in a single pass and might contain terrible atrocities against grammar and spelling.  I apologies for that.
+4. I am in no way saying any of this is right or anything currently existing is wrong, these are just thoughts that may or may not spark some discussion.
+
+&gt; EARLY ALPHA: Some very early unvalidated thoughts on an IATI API Service/Playground.
+
+&gt; ## Introduction
+
+&gt; There appears, from an outside view, to be an attempt to create a unified IATI API that will supoprt querying of all available IATI data in a unified way.  Projects like [IATI Datastore][1] and to a certain extent the [DevTracker API][2] _[There are more and we should call them out here]_ have gone some way to achieving this goal.
+
+&gt; ## DevTracker
+
+&gt; During the development of [DevTracker][3] we explored using various IATI datastores but every one of them had constraints.  Some problematic, others potentially catastrophic to the project.  Existing solutions either strictly adhered to the IATI standard thus refusing to consume most of the necessary data (IATI Datastore) or had assumptions baked into the logic that conflicted with the DFID data structure.
+
+&gt; ## Root Cause Analysis
+
+&gt; The reason for these problems was that existing datastores attempt to provide a generic appraoch to a non-generic problem.  While most API based solutions give people access to Activity streams and Organistaion streams there simply isn&#39;t enough guidence within the developing IATI standard yet to expand on this.  Consumers needs are typically rather unique to them in some regard which imposes certain overheads on a generic API.  In DevTracker for example using an existing solution would have meant extracting data by crawling the, often paged, endpoints, deserialing it and aggreating the data into our own structure that we want to consume.  This would have been more time consuming and prone to error.
+
+&gt; The other problem was that most of these solutions aren&#39;t open to extension without diving into the code itself.  Something that many people would consider too high a barrier of entry.
+
+&gt; ## Suggestion
+
+&gt; Two things I have observed (from my outsider view) is that people want
+
+&gt; 1. Access to data (or subset of)
+&gt; 2. Ability to construct their own queries over this data
+
+&gt; These people may want to build a site, make an API of a subset of data publically available, or simply do some spreadsheet based work.  All of these require some very specific query abilities and custom outputs that dont belong in a generic solution.  
+
+&gt; Over the last few weeks I&#39;ve been toying with the idea of an &quot;API as a Service&quot; and/or &quot;Data Playground&quot;.  Both of these could be seen as an extension to [IATI Datastore][1] (though an extensible approach would be more favourable due to the needs of some users).
+
+&gt; ### API as a Service
+
+&gt; This concept revolves around providing a multi-tenant approach to providing an API.  A user would sign up to the service, configure their resources (select desired data sources, refresh frequency etc) and immediatley be given access to a basic but full featured API similar to the IATI Datastore.  They can then provide their own aggregations to the API e.g. Country View, Sectors etc. which will be exposed as an API endpoint on their specific API e.g. `http://jhughes.iati-api.org/api/countries`.
+
+&gt; Custom queries can be provided through some sort of query language _[TBD]_ e.g. Readonly SQL Subset, Readonly XPath/XQuery or some sort of graphical interface akin to [Yahoo Pipes][4].  
+
+&gt; Varous other customisations _could_ be provided if there was a need (i18n of API data, custom codelists etc.) but the goal should be to provide flexability without inventing an entirely new platfrom with a million bells and whistles.
+
+&gt; ### Data Playground
+
+&gt; Not everyone wants an API.  Some users may simply want to access a subset of data and play around with it to perform some adhoc calculations or embed it as a widget in another site.  So where the API as a Service feature would be too full blown they could use the Data Playground.  Inspired by Githubs [Gist][5] feature (providing ability to share code without having to use a full blown git repository) and Neo4Js [Graph Gist][6] (abiltiy to save and visualise graph queries) the playground would enable users to write and save one off queries against a set of data.  Results would come back in table, csv, json, xml, graphs (D3 powered for example) and can be embedded in other sites or exported to spreadsheets and other tools.
+
+&gt; Again format of the queries is open to discussion.
+
+&gt; ## Thoughts 
+
+&gt; ### Extensible Data Store
+
+&gt; Datastores could be pluggable (assuming a common defined interface) so you could provide a public store and plug it into your own API platform account.  Or other people coudl provide BaseX version of IATI or you could run everything locally etc.
+
+&gt; ### Monetisation
+
+&gt; As the IATI dataset grows and potential userbase gets larger the cost of running this type service would also increase.  Queries would not necesarilly be cheap (though extensive caching in line with IATI data refresh would help).  So a tiered subscription model could be introduced giving access to various features or increasing numbers of Requests/Queries per Month.
+
+&gt; ### Benefits
+
+&gt; __For the User/Consumer__
+
+&gt; - They aren&#39;t obliged to download and setup another product or technology stack just to get some data.  
+&gt; - They don&#39;t have to work around the constraints of a sytem designed to cater to everyone
+
+&gt; __For the API Designers__
+
+&gt; - They can look at providing a baseline API (performance, scale, API semantics) without extensive aggregations and trying to guess people needs.
+
+[0]: https://gist.github.com/kouphax/f5f3553c1c48860288bc
+[1]: http://iati-datastore.herokuapp.com/
+[2]: http://devtracker.dfid.gov.uk/api
+[3]: http://devtracker.dfid.gov.uk/
+[4]: http://pipes.yahoo.com/pipes/
+[5]: https://gist.github.com
+[6]: http://gist.neo4j.org/</description>
+    
+    <lastBuildDate>Tue, 05 Aug 2014 12:06:13 +0000</lastBuildDate>
+    <category>APIs</category>
+    <atom:link href="https://discuss.iatistandard.org/t/thoughts-on-api-as-a-service-data-playground/87.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Thoughts on API as a Service &amp; Data Playground</title>
+        <dc:creator><![CDATA[kouphax]]></dc:creator>
+        <description><![CDATA[
+            <p>In March I shared some thoughts via a <a href="https://gist.github.com/kouphax/f5f3553c1c48860288bc" rel="nofollow noopener">Gist</a> about some ways in which IATI data could be used in a way that would make it more accessible to NGOs and other parties.  I have been asked to move the content of the <a href="https://gist.github.com/kouphax/f5f3553c1c48860288bc" rel="nofollow noopener">gist</a> here as it is a better forum (in that it is actually a forum) for discussing it.</p>
+<p>I must caveat the following with</p>
+<ol>
+<li>These are just ideas off the top of my head and could be further refined.</li>
+<li>I currently don’t work with IATI data or projects so the <strong>user need</strong> associated with these ideas may be very limited</li>
+<li>This was written roughly in a single pass and might contain terrible atrocities against grammar and spelling.  I apologies for that.</li>
+<li>I am in no way saying any of this is right or anything currently existing is wrong, these are just thoughts that may or may not spark some discussion.</li>
+</ol>
+<blockquote>
+<p>EARLY ALPHA: Some very early unvalidated thoughts on an IATI API Service/Playground.</p>
+</blockquote>
+<blockquote>
+<h2>Introduction</h2>
+</blockquote>
+<blockquote>
+<p>There appears, from an outside view, to be an attempt to create a unified IATI API that will supoprt querying of all available IATI data in a unified way.  Projects like <a href="http://iati-datastore.herokuapp.com/" rel="nofollow noopener">IATI Datastore</a> and to a certain extent the <a href="http://devtracker.dfid.gov.uk/api" rel="nofollow noopener">DevTracker API</a> <em>[There are more and we should call them out here]</em> have gone some way to achieving this goal.</p>
+</blockquote>
+<blockquote>
+<h2>DevTracker</h2>
+</blockquote>
+<blockquote>
+<p>During the development of <a href="http://devtracker.dfid.gov.uk/" rel="nofollow noopener">DevTracker</a> we explored using various IATI datastores but every one of them had constraints.  Some problematic, others potentially catastrophic to the project.  Existing solutions either strictly adhered to the IATI standard thus refusing to consume most of the necessary data (IATI Datastore) or had assumptions baked into the logic that conflicted with the DFID data structure.</p>
+</blockquote>
+<blockquote>
+<h2>Root Cause Analysis</h2>
+</blockquote>
+<blockquote>
+<p>The reason for these problems was that existing datastores attempt to provide a generic appraoch to a non-generic problem.  While most API based solutions give people access to Activity streams and Organistaion streams there simply isn’t enough guidence within the developing IATI standard yet to expand on this.  Consumers needs are typically rather unique to them in some regard which imposes certain overheads on a generic API.  In DevTracker for example using an existing solution would have meant extracting data by crawling the, often paged, endpoints, deserialing it and aggreating the data into our own structure that we want to consume.  This would have been more time consuming and prone to error.</p>
+</blockquote>
+<blockquote>
+<p>The other problem was that most of these solutions aren’t open to extension without diving into the code itself.  Something that many people would consider too high a barrier of entry.</p>
+</blockquote>
+<blockquote>
+<h2>Suggestion</h2>
+</blockquote>
+<blockquote>
+<p>Two things I have observed (from my outsider view) is that people want</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Access to data (or subset of)</li>
+<li>Ability to construct their own queries over this data</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>These people may want to build a site, make an API of a subset of data publically available, or simply do some spreadsheet based work.  All of these require some very specific query abilities and custom outputs that dont belong in a generic solution.</p>
+</blockquote>
+<blockquote>
+<p>Over the last few weeks I’ve been toying with the idea of an “API as a Service” and/or “Data Playground”.  Both of these could be seen as an extension to <a href="http://iati-datastore.herokuapp.com/" rel="nofollow noopener">IATI Datastore</a> (though an extensible approach would be more favourable due to the needs of some users).</p>
+</blockquote>
+<blockquote>
+<h3>API as a Service</h3>
+</blockquote>
+<blockquote>
+<p>This concept revolves around providing a multi-tenant approach to providing an API.  A user would sign up to the service, configure their resources (select desired data sources, refresh frequency etc) and immediatley be given access to a basic but full featured API similar to the IATI Datastore.  They can then provide their own aggregations to the API e.g. Country View, Sectors etc. which will be exposed as an API endpoint on their specific API e.g. <code>http://jhughes.iati-api.org/api/countries</code>.</p>
+</blockquote>
+<blockquote>
+<p>Custom queries can be provided through some sort of query language <em>[TBD]</em> e.g. Readonly SQL Subset, Readonly XPath/XQuery or some sort of graphical interface akin to <a href="http://pipes.yahoo.com/pipes/" rel="nofollow noopener">Yahoo Pipes</a>.</p>
+</blockquote>
+<blockquote>
+<p>Varous other customisations <em>could</em> be provided if there was a need (i18n of API data, custom codelists etc.) but the goal should be to provide flexability without inventing an entirely new platfrom with a million bells and whistles.</p>
+</blockquote>
+<blockquote>
+<h3>Data Playground</h3>
+</blockquote>
+<blockquote>
+<p>Not everyone wants an API.  Some users may simply want to access a subset of data and play around with it to perform some adhoc calculations or embed it as a widget in another site.  So where the API as a Service feature would be too full blown they could use the Data Playground.  Inspired by Githubs <a href="https://gist.github.com" rel="nofollow noopener">Gist</a> feature (providing ability to share code without having to use a full blown git repository) and Neo4Js <a href="http://gist.neo4j.org/" rel="nofollow noopener">Graph Gist</a> (abiltiy to save and visualise graph queries) the playground would enable users to write and save one off queries against a set of data.  Results would come back in table, csv, json, xml, graphs (D3 powered for example) and can be embedded in other sites or exported to spreadsheets and other tools.</p>
+</blockquote>
+<blockquote>
+<p>Again format of the queries is open to discussion.</p>
+</blockquote>
+<blockquote>
+<h2>Thoughts</h2>
+</blockquote>
+<blockquote>
+<h3>Extensible Data Store</h3>
+</blockquote>
+<blockquote>
+<p>Datastores could be pluggable (assuming a common defined interface) so you could provide a public store and plug it into your own API platform account.  Or other people coudl provide BaseX version of IATI or you could run everything locally etc.</p>
+</blockquote>
+<blockquote>
+<h3>Monetisation</h3>
+</blockquote>
+<blockquote>
+<p>As the IATI dataset grows and potential userbase gets larger the cost of running this type service would also increase.  Queries would not necesarilly be cheap (though extensive caching in line with IATI data refresh would help).  So a tiered subscription model could be introduced giving access to various features or increasing numbers of Requests/Queries per Month.</p>
+</blockquote>
+<blockquote>
+<h3>Benefits</h3>
+</blockquote>
+<blockquote>
+<p><strong>For the User/Consumer</strong></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>They aren’t obliged to download and setup another product or technology stack just to get some data.</li>
+<li>They don’t have to work around the constraints of a sytem designed to cater to everyone</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>For the API Designers</strong></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>They can look at providing a baseline API (performance, scale, API semantics) without extensive aggregations and trying to guess people needs.</li>
+</ul>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/thoughts-on-api-as-a-service-data-playground/87/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/thoughts-on-api-as-a-service-data-playground/87/1</link>
+        <pubDate>Tue, 05 Aug 2014 12:06:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-87-1</guid>
+        <source url="https://discuss.iatistandard.org/t/thoughts-on-api-as-a-service-data-playground/87.rss">Thoughts on API as a Service &amp; Data Playground</source>
+      </item>
+  </channel>
+</rss>

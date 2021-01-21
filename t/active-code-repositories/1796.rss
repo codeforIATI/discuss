@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Active code repositories?</title>
+    <link>https://discuss.iatistandard.org/t/active-code-repositories/1796</link>
+    <description>Hi!
+
+I&#39;ve been trawling through the github code repositories for small issues that I might be able to contribute fixes to. The problem I&#39;m facing is that it isn&#39;t clear which repositories are active and which are not.  For example, I was looking at issues in https://github.com/IATI/pyIATI and it was only through looking for further information/context that I noticed that it appears to be inactive. Then I was looking at IATI/IATI-Datastore and it took some effort to realise that it is being re-built.
+
+Would it be possible to mark those repositories that are no longer used as either unmaintained, archive in github or add to the readme where appropriate marking it as deprecated?
+
+Thanks
+
+Ross</description>
+    
+    <lastBuildDate>Mon, 29 Jul 2019 11:04:08 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[rossjones]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry for being slow getting back, I’ve reduced my paying work to spend a bit more time on OSS, but life intervened this week.</p>
+<p>Thanks for all the feedback and info, it’s really great to see this discussed, lots of really good points and a more clarity for me.  I particularly take the point about responding to pull-requests/bug-fixes/issues, I’m deeply aware of how much time these can take to respond to, and how frustrating it can be for both parties waiting for responses - and yes, it’s definitely worse if people randomly submit new features w/o discussion.</p>
+<p>With a limited number of people working full-time on the repositories though, perhaps the issue is the number of people ‘allowed’ to respond/interact/merge changes? In the CKAN community we went from only OKF contributors to a technical team made up of people from many organisations - is this the case with IATI, or is it more a case of ‘an organisation working in the open’?</p>
+<p>Apologies for the possibly naive questions, still trying to find my way around.</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/18</link>
+        <pubDate>Mon, 29 Jul 2019 11:04:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-18</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="16" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/samuele-mattiuzzo/40/485_2.png" class="avatar"> samuele-mattiuzzo:</div>
+<blockquote>
+<p>Then, once we get to it, you’ll be automatically notified by GitHub.</p>
+</blockquote>
+</aside>
+<p>GitHub <a href="https://github.com/isaacs/github/issues/631" rel="nofollow noopener">doesn’t send notifications</a> for reactions (e.g. thumbs up). So a comment is preferable.</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/17</link>
+        <pubDate>Fri, 26 Jul 2019 07:10:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-17</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="15" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/david_megginson/40/544_2.png" class="avatar"> David_Megginson:</div>
+<blockquote>
+<p>within the bounds of, say, a 2-minute response-time budget.</p>
+</blockquote>
+</aside>
+<p>that is quite a lot of time budgeted <img src="https://discuss.iatistandard.org/images/emoji/twitter/slightly_smiling_face.png?v=9" title=":slightly_smiling_face:" class="emoji" alt=":slightly_smiling_face:"></p>
+<aside class="quote no-group" data-post="15" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/david_megginson/40/544_2.png" class="avatar"> David_Megginson:</div>
+<blockquote>
+<p>“Yes, we’ve seen this” (like) is better than nothing, but “Yes, we’ve seen this, and our first triage pass is to work on it now / soon / someday / maybe / never” (like and label or milestone) would give a lot more feedback to the contributors with very little extra effort from the team (I hope).</p>
+</blockquote>
+</aside>
+<p>Triaging an issue isn’t very little extra effort. So, instead of commenting with things such as “we’ll look into it someday”, I’d rather give a +1/thumbsup acknowledgement.<br>
+Then, once we get to it, you’ll be automatically notified by GitHub.</p>
+<p>The only label I could add is an acknowledgement one, which isn’t any different than the thumbsup emoji. Milestones are also not viable, as it’s not their purpose.</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/16</link>
+        <pubDate>Thu, 25 Jul 2019 14:39:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-16</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the reply. I understand that problem well, having contributed to label inflation myself on more than one tech project. I think GitHub labels aren’t a great tool for fine-grained workflow tracking – that’s why one ends up with dozens of long labels that still don’t do the job – but they’re great for a very coarse-level classification.</p>
+<p>We don’t want to get into a situation where the dev team needs to divert signficant time to acknowledging each issue – that would be unfair to everyone, and would delay important work – but it would be good to be as transparent as possible (“Transparency” is part of our name <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> ) within the bounds of, say, a 2-minute response-time budget.</p>
+<p>“Yes, we’ve seen this” (like) is better than nothing, but “Yes, we’ve seen this, and our first triage pass is to work on it now / soon / someday / maybe / never” (like and label or milestone) would give a lot more feedback to the contributors with very little extra effort from the team (I hope).</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/15</link>
+        <pubDate>Wed, 24 Jul 2019 19:37:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-15</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>More community engagement/enthusiasm, I’d think. As I’ve suggested before, having hundreds of enthusiastic people who are willing to fly around the world to debate arcane points of aid transparency or technology can sometimes be a challenge for staff to manage, but it’s also an asset of incalculable value.</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/14</link>
+        <pubDate>Wed, 24 Jul 2019 19:29:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-14</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Is “community cohesion” a euphemism for community policing?</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/13</link>
+        <pubDate>Wed, 24 Jul 2019 09:52:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-13</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="10" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/samuele-mattiuzzo/40/485_2.png" class="avatar"> samuele-mattiuzzo:</div>
+<blockquote>
+<p>This has already happened and keeps happening many times, so the step forward has already been made.</p>
+</blockquote>
+</aside>
+<p>Again, I welcome this initiative to acknowledge issues and pull requests.</p>
+<p>However, there are a number of cases where it hasn’t happened yet. In the spirit of community cohesion, I’ll follow up with you and Wendy directly about this, so it can be addressed.</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/12</link>
+        <pubDate>Wed, 24 Jul 2019 09:26:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-12</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="7" data-topic="1796" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/david_megginson/40/544_2.png" class="avatar"> David_Megginson:</div>
+<blockquote>
+<p>A good combination that would put minimal demands on the tech team but give useful feedback to the contributor would be a combination of a like (“we’ve seen this”) and adding a label like WontDo, Later, Soon, Priority, etc (“here’s how we plan to respond”) and/or a milestone.</p>
+</blockquote>
+</aside>
+<p>I’m torn on this, not because I fail to see the usefulness of those labels, but mostly because they started growing too much in size, so we decided to use the labels that would benefit our internal day-to-day life.<br>
+Again, we’re flexible in how we deal with this, but essentially any activity whatsoever on your issue means the issue has been acknowledged.<br>
+If the issue is critical/breaking, there will surely be activity (either a discussion, status/labels updates or the code moves forward etc).</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/11</link>
+        <pubDate>Wed, 24 Jul 2019 08:31:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-11</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_2.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>+1, a comment, or some acknowledgement (a thumbs up) on issues or PRs would be a really good step forward.</p>
+</blockquote>
+</aside>
+<p>This has already happened and keeps happening many times, so the step forward has already been made.</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/10</link>
+        <pubDate>Wed, 24 Jul 2019 08:26:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-10</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Whether it’s great minds thinking alike or fools seldom differing, I’m glad we’re all thinking among the same lines. <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/9</link>
+        <pubDate>Tue, 23 Jul 2019 18:10:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-9</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="7" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/david_megginson/40/544_2.png" class="avatar"> David_Megginson:</div>
+<blockquote>
+<p>a combination of a like (“we’ve seen this”) and adding a label like WontDo, Later, Soon, Priority, etc (“here’s how we plan to respond”) and/or a milestone.</p>
+</blockquote>
+</aside>
+<p>This would be great. In fact agreement to this effect was reached at last year’s technical audit in The Hague. The following is from <a href="https://iatistandard.org/en/news/board-decisions-on-iati-technical-audit/" rel="nofollow noopener">the writeup</a>:</p>
+<blockquote>
+<p>The contribution guidelines […] should be updated to more accurately reflect the process, in order to manage expectations. Make an effort to respond to PRs (by adding labels on Github) to say if something is a priority and when it might be possible for it to be reviewed.</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/8</link>
+        <pubDate>Tue, 23 Jul 2019 16:42:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-8</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>A good combination that would put minimal demands on the tech team but give useful feedback to the contributor would be a combination of a like (“we’ve seen this”) and adding a label like WontDo, Later, Soon, Priority, etc (“here’s how we plan to respond”) and/or a milestone.</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/7</link>
+        <pubDate>Tue, 23 Jul 2019 00:09:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-7</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/samuele-mattiuzzo/40/485_2.png" class="avatar"> samuele-mattiuzzo:</div>
+<blockquote>
+<p>What we want to try is to at least get to comment to an issue or give it a thumbs up as a way to let the user know we have seen it</p>
+</blockquote>
+</aside>
+<p>+1, a comment, or some acknowledgement (a thumbs up) on issues or PRs would be a really good step forward.</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/6</link>
+        <pubDate>Mon, 22 Jul 2019 22:41:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-6</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks so much for taking the time to set this out <a class="mention" href="/u/samuele-mattiuzzo">@samuele-mattiuzzo</a> - much appreciated</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/5</link>
+        <pubDate>Mon, 22 Jul 2019 10:01:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-5</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<ul>
+<li>The Tech Team will post what areas they are working on each quarter (<a href="https://iatistandard.org/en/news/iati-technical-team-quarterly-update/" rel="nofollow noopener">https://iatistandard.org/en/news/iati-technical-team-quarterly-update/</a>)</li>
+</ul>
+</blockquote>
+</aside>
+<p>Yep!</p>
+<aside class="quote no-group" data-post="3" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<ul>
+<li>Members of the community should then get in touch (not sure how is best) with the Tech Team to say what bits of those areas they are keen to contribute on</li>
+</ul>
+</blockquote>
+</aside>
+<p>Via GitHub: keen developers can refer to all of our repositories and start contributing, either by fixing open issues or by raising new ones. This can happen on tools we’re focussing on for the quarter as well as those we’re just keeping on the backburner.</p>
+<aside class="quote no-group" data-post="3" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<ul>
+<li>If an agreement is reached that inputs are appreciated - community members should raise an issue first, and then the Tech Team will indicate whether they prefer to deal with it themselves - or for you to submit a PR (with tests)</li>
+</ul>
+</blockquote>
+</aside>
+<p>Yes and no: this is completely true for new feature requests that significantly alter some tool’s current functionality (example, made extreme on purpose: “Remove the forward looking calculations from the Dashboard and change its methodology”) or for enhancement/bug fixes that aren’t too trivial.<br>
+It’s essentially the normal triaging process any dev team foregoes internally, except for us (where us is me, John and essentially all of you contributors!) it’s going to be an asyncronous exercise!</p>
+<aside class="quote no-group" data-post="3" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<ul>
+<li>Unsolicited PRs, or PRs on ‘active’ issues (things that the Tech Team are currently working on themselves) are not welcomed</li>
+</ul>
+</blockquote>
+</aside>
+<p>Yes and no: they are most certaintly welcomed and considered, just we might be working and focussing on other things so we might not get to them straight away. What we were trying to prevent with the guidelines are reminders that certain PRs/issues have been open for X amount of time. We’re a team of two at the moment, time and capacity don’t always allow for instant interaction with non-priority work. What we want to try is to at least get to comment to an issue or give it a thumbs up as a way to let the user know we have seen it and added it to our backlog!</p>
+<p>Essentially, in a shorter version: we do encourage and welcome open and spontaneous contributions to our codebase, there are no restrictions to who can suggest/fix/raise what, always bearing in mind that we do have priorities and can’t always get straight to your issues, but we will eventually!</p>
+<p>Thanks Matt for these bullet points, it was a good breakdown and useful to help clarify some of those aspects as well!</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/4</link>
+        <pubDate>Mon, 22 Jul 2019 09:44:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-4</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/rossjones">@rossjones</a> - sharing what I (think I) know…also keen to hear if someone else has more clarity</p>
+<aside class="quote no-group" data-post="1" data-topic="1796">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rossjones/40/553_2.png" class="avatar"> rossjones:</div>
+<blockquote>
+<p>trawling through the github code repositories for small issues that I might be able to contribute fixes to</p>
+</blockquote>
+</aside>
+<p>There are some <a href="https://docs.google.com/document/d/1XdV94basDpFCsrGkA0DsFTJ52pwr3Z-_dckVL4RIcL0/edit#heading=h.k536gcyobtrm" rel="nofollow noopener">community collaboration guidelines</a> (I don’t know the current status - but only developed last month) which includes a section on github which I think works out to mean:</p>
+<ol>
+<li>The Tech Team will post what areas they are working on each quarter (<a href="https://iatistandard.org/en/news/iati-technical-team-quarterly-update/" rel="nofollow noopener">https://iatistandard.org/en/news/iati-technical-team-quarterly-update/</a>)</li>
+<li>Members of the community should then get in touch (not sure how is best) with the Tech Team to say what bits of those areas they are keen to contribute on</li>
+<li>If an agreement is reached that inputs are appreciated - community members should raise an issue first, and then the Tech Team will indicate whether they prefer to deal with it themselves - or for you to submit a PR (with tests)</li>
+<li>Unsolicited PRs, or PRs on ‘active’ issues (things that the Tech Team are currently working on themselves) are not welcomed</li>
+</ol>
+<p>This is probably not what you are used to on github!</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/3</link>
+        <pubDate>Fri, 19 Jul 2019 15:54:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-3</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Ross, welcome to IATI first of all!</p>
+<p>As part of our current packet of work, we are also in the process of rehauling our tools’ ecosystem. There is a page we’re working on (still WIP, hence why it hasn’t been made public yet) where we have listed all the tools, their repos and whether they are deprecated, soon to be deprecated, supported by the team etc. As part of that work we’ll also label each repo correctly.</p>
+<p>We often communicate also via other channels (eg: here’s the post about the new datastore, dated Nov 2018 <a href="https://iatistandard.org/en/news/iati-datastore-project-gets-underway/" rel="nofollow noopener">https://iatistandard.org/en/news/iati-datastore-project-gets-underway/</a>). Same for pyIATI, it has officially been deprecated as an official tool around the same time at the TAG meeting that happened in Katmandu (<a href="https://discuss.iatistandard.org/t/state-of-pyiati/1360/7" class="inline-onebox">State of pyIATI?</a>)</p>
+<p>We’ll get there with the updates, thanks for pointing all of this and more out, really appreciated.</p>
+<p>I suggest you keep following this forum plus the official twitter <a href="https://twitter.com/IATI_aid" rel="nofollow noopener">https://twitter.com/IATI_aid</a> and the news section on the main website <a href="https://iatistandard.org/en/news/" rel="nofollow noopener">https://iatistandard.org/en/news/</a> for future changes in our tools.</p>
+<p>Once again, welcome!</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/2</link>
+        <pubDate>Fri, 19 Jul 2019 14:04:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-2</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+      <item>
+        <title>Active code repositories?</title>
+        <dc:creator><![CDATA[rossjones]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi!</p>
+<p>I’ve been trawling through the github code repositories for small issues that I might be able to contribute fixes to. The problem I’m facing is that it isn’t clear which repositories are active and which are not.  For example, I was looking at issues in <a href="https://github.com/IATI/pyIATI" rel="nofollow noopener">https://github.com/IATI/pyIATI</a> and it was only through looking for further information/context that I noticed that it appears to be inactive. Then I was looking at IATI/IATI-Datastore and it took some effort to realise that it is being re-built.</p>
+<p>Would it be possible to mark those repositories that are no longer used as either unmaintained, archive in github or add to the readme where appropriate marking it as deprecated?</p>
+<p>Thanks</p>
+<p>Ross</p>
+          <p><a href="https://discuss.iatistandard.org/t/active-code-repositories/1796/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/active-code-repositories/1796/1</link>
+        <pubDate>Fri, 19 Jul 2019 12:12:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1796-1</guid>
+        <source url="https://discuss.iatistandard.org/t/active-code-repositories/1796.rss">Active code repositories?</source>
+      </item>
+  </channel>
+</rss>

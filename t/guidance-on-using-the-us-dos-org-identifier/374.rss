@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Guidance on using the US-DOS org identifier</title>
+    <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374</link>
+    <description>Hello
+
+Has anyone used the ``US-DOS`` code for referencing US registered corporations?  As far as I can see, many US organisations are using ``US-EIN`` instead.
+
+A further question to this would be any recommended practice in terms of identifying the state registries. 
+
+Picking a *random* example:
+
+Acme Company: https://opencorporates.com/companies/us_de/947909 - registered in Delaware.
+
+For using ``US-DOS`` would the reference be, for example, ``US-DOS-DE947909`` ?</description>
+    
+    <lastBuildDate>Fri, 18 Dec 2015 23:34:01 +0000</lastBuildDate>
+    <category>Codelists</category>
+    <atom:link href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Guidance on using the US-DOS org identifier</title>
+        <dc:creator><![CDATA[ChrisTaggart]]></dc:creator>
+        <description><![CDATA[
+            <p>There’s no two ways about it, identification of US companies is problematic. Companies (including nonprofits) are created/registered at state level, and so the obvious thing is to use state-level identifiers, and this is what OpenCorporates uses.</p>
+<p>Having said this, these are not without problems, and certainly don’t satisfy every single one of those qualities you’d want from good identifiers:</p>
+<ul>
+<li>stable (i.e. they don’t change) – in general this is true, but not in all cases. For example, we’ve found several registers (for example Georgia), which have changed the identifier system without notice, or documentation. This causes problems for users of the identifiers, although we come up with a transparent and effective system for handling this, listing previous numbers, and performing redirects for the URIs (we are also writing public reports listing what we’ve done)</li>
+<li>1:1 mapping with the entity to which they relate. This in general is true, although we have come across situations where the identifiers are not unique across the state (see <a href="https://wiki.opencorporates.com/qa/qa_public/migrating_company_numbers/minnesota" rel="nofollow noopener">this report on Minnesota</a>) but only to a a particular company type.</li>
+<li>well-known, i.e. they are widely used/distributed. This is a significant problem in the US – unless the UK company  number or say the French Sirete, the numbers are not put on letterheads, or invoices, for example.</li>
+<li>open - no proprietary licence. This at least is not a problem, unlike for example the hated DUNS number.</li>
+</ul>
+<p>On the other hand they are issued by the government that creates the entities, and do relate the the legal entities themselves (unlike the EIN – see below – or the DUNS number).</p>
+<p>The DUNS can be ruled out, being both proprietary, and mapping not to legal entities, but to records inside D&amp;B’s proprietary block-box database, and could be a company, a building, a division, or frankly, from an end-user’s perspective, anything at all.</p>
+<p>EINs are superficially attractive, being issued by the IRS (i.e. Federal level). However, in general these are not a matter of public record, and they are not necessarily persistent or 1:1 mapping to legal entities. In addition, not all legal entities have EINs. They are, however, usually known by the entity themselves – the challenge, however, is mapping to legal entities (which are at the state level).</p>
+<p>So not easy solutions, and we think in reality this will be solved by a) either us mapping different identifier systems together (we are already doing with EINs, where we can), and creating URIs that are transparent, have well-thought-out and public principles (see our blog – sorry won’t let me add another URL in this post) for how we handle the changes and issues, or b) a move to a universal identifier system such as the LEI, or most likely a combination of the two.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/9</link>
+        <pubDate>Fri, 18 Dec 2015 23:34:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-374-9</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss">Guidance on using the US-DOS org identifier</source>
+      </item>
+      <item>
+        <title>Guidance on using the US-DOS org identifier</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/laia_grino">@laia_grino</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/timdavies">@TimDavies</a></p>
+<p>Re: US-DOS - that does seem like it needs a change proposal - should we post this in the relevant forum <a class="mention" href="/u/bill_anderson">@bill_anderson</a> ?</p>
+<p>My understanding is that an organisation could be referenced through <em>any</em> of the suggested methods, but we want to place emphasis on those that can more easily be dereferenced.  I’m not sure how <em>easy</em> this is via EIN numbers, but haven’t also checked each and every state registry either!  Regardless - this looks to be new and important developments, so we have a way forward</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/8</link>
+        <pubDate>Fri, 18 Dec 2015 10:54:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-374-8</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss">Guidance on using the US-DOS org identifier</source>
+      </item>
+      <item>
+        <title>Guidance on using the US-DOS org identifier</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>I would suggest a variation of (1) and (2), in which the pattern is:</p>
+<p>US-{STATE}_SCR-{identifier}</p>
+<p>e.g:</p>
+<p>US-SCR_DE-947909</p>
+<p>This assumes their is just one main company registry per-state.</p>
+<p>This might be a good issue to put to the joined up data group for insights.</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/7</link>
+        <pubDate>Fri, 18 Dec 2015 10:42:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-374-7</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss">Guidance on using the US-DOS org identifier</source>
+      </item>
+      <item>
+        <title>Guidance on using the US-DOS org identifier</title>
+        <dc:creator><![CDATA[laia_grino]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/stevieflow">@stevieflow</a> – I misspoke. I thought US government was using the US-DOS identifier to publish to IATI, but they’re not – they’re using US-USAGOV (this might have changed recently – I’m pretty sure it used to be US-DOS, as that’s the IATI id we’d been using for the purpose of publishing US govt grants to IATI).</p>
+<p>Afraid that’s all the light I can shed on this!</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/6</link>
+        <pubDate>Thu, 17 Dec 2015 19:44:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-374-6</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss">Guidance on using the US-DOS org identifier</source>
+      </item>
+      <item>
+        <title>Guidance on using the US-DOS org identifier</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven</p>
+<p>US-DOS is misleading and we should remove it (if it is not being used). The related url on the codelist points to advice on the UK Companies House website which is advising UK companies to approach the US Dept of State. US company registers are maintained at state level but I can’t find any consistent way of referring to them based on state practices.</p>
+<p>I think we have three options in referencing company registrations:</p>
+<ol>
+<li>
+<p>Replace US-DOS with, say US-SCR (State company registry) and add state prefix to registration as per Steven’s example - US-SCR-DE947909</p>
+</li>
+<li>
+<p>Create a separate registration agency code for each state. that properly reflects each’s identity, eg (US-DEDC-947909 = Delaware Division of Corporations) (US-ALSOS-000000 = Alabama Secretary of State)</p>
+</li>
+<li>
+<p>Use opencorporates as a registration agency. XI-OC-US_DE_947909</p>
+</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/5</link>
+        <pubDate>Thu, 17 Dec 2015 17:38:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-374-5</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss">Guidance on using the US-DOS org identifier</source>
+      </item>
+      <item>
+        <title>Guidance on using the US-DOS org identifier</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>(i’ve created an issue for the non update of the code list at <a href="https://github.com/IATI/IATI-Guidance/issues/220" rel="nofollow noopener">https://github.com/IATI/IATI-Guidance/issues/220</a> - but this shouldn’t confuse the main subject - using <code>US-DOS</code>!)</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/4</link>
+        <pubDate>Thu, 17 Dec 2015 17:14:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-374-4</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss">Guidance on using the US-DOS org identifier</source>
+      </item>
+      <item>
+        <title>Guidance on using the US-DOS org identifier</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>HI <a class="mention" href="/u/laia_grino">@laia_grino</a> thanks, that makes sense, although what has thrown me is the <a href="http://iatistandard.org/201/codelists/OrganisationRegistrationAgency/" rel="nofollow noopener">description text</a> for <code>US-DOS</code>:</p>
+<blockquote>
+<p>Corporation registration is the responsibility of each state (see link)</p>
+</blockquote>
+<p>…with the link: <a href="http://www.companieshouse.gov.uk/links/usaLink.shtml" rel="nofollow noopener">http://www.companieshouse.gov.uk/links/usaLink.shtml</a> then talking about corporations (rather than the US government).</p>
+<p>As far as I can see, the change log for the non-embedded codelists has not been updated: <a href="http://iatistandard.org/201/upgrades/nonembedded-codelist-changelog/" rel="nofollow noopener">http://iatistandard.org/201/upgrades/nonembedded-codelist-changelog/</a> - so if this <code>US-DOS</code> is a new code, the reasons for it are not linked to…</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/3</link>
+        <pubDate>Thu, 17 Dec 2015 16:55:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-374-3</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss">Guidance on using the US-DOS org identifier</source>
+      </item>
+      <item>
+        <title>Guidance on using the US-DOS org identifier</title>
+        <dc:creator><![CDATA[laia_grino]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven,</p>
+<p>I think it makes more sense for organizations to use US-EIN. I could be wrong, but isn’t US-DOS just an identifier that the US government created for reporting to IATI? I don’t think there is a DOS registry (I’m pretty sure that’s just meant to refer to the Department of State, which is responsible for publishing all USG data to IATI).</p>
+<p>Laia</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/2</link>
+        <pubDate>Thu, 17 Dec 2015 16:15:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-374-2</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss">Guidance on using the US-DOS org identifier</source>
+      </item>
+      <item>
+        <title>Guidance on using the US-DOS org identifier</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello</p>
+<p>Has anyone used the <code>US-DOS</code> code for referencing US registered corporations?  As far as I can see, many US organisations are using <code>US-EIN</code> instead.</p>
+<p>A further question to this would be any recommended practice in terms of identifying the state registries.</p>
+<p>Picking a <em>random</em> example:</p>
+<p>Acme Company: <a href="https://opencorporates.com/companies/us_de/947909" rel="nofollow noopener">https://opencorporates.com/companies/us_de/947909</a> - registered in Delaware.</p>
+<p>For using <code>US-DOS</code> would the reference be, for example, <code>US-DOS-DE947909</code> ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374/1</link>
+        <pubDate>Wed, 16 Dec 2015 19:59:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-374-1</guid>
+        <source url="https://discuss.iatistandard.org/t/guidance-on-using-the-us-dos-org-identifier/374.rss">Guidance on using the US-DOS org identifier</source>
+      </item>
+  </channel>
+</rss>

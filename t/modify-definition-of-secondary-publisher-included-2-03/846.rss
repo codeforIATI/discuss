@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Modify definition of secondary publisher (included 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846</link>
+    <description>This proposal is part of the [2.03 upgrade process](https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838), please comment by replying below.
+
+**Standard**
+Activity
+
+**Schema Object**
+reporting-org/@secondary-publisher
+
+**Type of Change**
+Schema modification
+
+**Issue**
+The concept of a “secondary publisher” was introduced into the standard to allow for organisations that collect data on aid activities from a number of actors (such as UN OCHA’s Financial Tracking Service, an Aid Information Management System, or bodies representing NGOs or foundations) to publish this data to IATI. Much, but not all, of this data may already be published to IATI by the primary source and so the @secondary-publisher flag is a warning to users to understand this context. This was never intended to cover situations where an agency (such as Swedish SIDA) officially publishes data on behalf of another related institution (such as the Swedish Ministry of Foreign Affairs). 
+
+**Proposal**
+Modify the definition of reporting-org/@secondary-publisher
+&lt;ul&gt;
+&lt;li&gt;From
+A flag indicating that the reporting organisation is a secondary publisher: publishing data for which it is not directly responsible. This flag must not be reported by primary source publishers.
+&lt;li&gt;To
+A flag indicating that the reporting organisation of this activity is acting as a secondary publisher. A secondary publisher is one that reproduces data on the activities of an organisation for which it is not directly responsible. This does not include a publisher officially assigned as a proxy to  report on behalf of another.”
+&lt;/ul&gt;
+
+**Standards Day**
+There was confusion about what is meant by the term &#39;secondary publisher&#39;. The use of the term &#39;proxy&#39; was suggested to clarify where publishers report &#39;officially&#39; on behalf of another organisation. (eg Swedish SIDA and Ministry of Foreign Affairs)
+
+**Links**
+http://bit.ly/2lCMYvS</description>
+    
+    <lastBuildDate>Wed, 25 Oct 2017 13:53:41 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/24</link>
+        <pubDate>Wed, 25 Oct 2017 13:53:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-24</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal has been been included in the 2.03 upgrade. It can be viewed in the following two Discuss posts:</p>
+<ul>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Proposal of 2.03 Content</a></p>
+</li>
+<li>
+<p><a href="https://discuss.iatistandard.org/t/final-technical-proposal-for-the-2-03-upgrade/1097?u=iati-techteam">Final Technical Proposal for the 2.03 Upgrade</a></p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/23</link>
+        <pubDate>Wed, 25 Oct 2017 13:53:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-23</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/iati-techteam">@IATI-techteam</a>: The name of the attribute in the standard is <code>@secondary-reporter</code>, not <code>@secondary-publisher</code> (<a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/reporting-org/#attributes">ref</a>). Could the proposal be amended to reflect that?</p>
+<aside class="quote no-group quote-modified" data-post="18" data-topic="846">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Let’s say we publish an activity CA-3-D123456, and this activity is also reported/pulled to FTS. If FTS publishes the exact same activity again, they could name it CA-3-D123456. Why should they rename it some random FTS number in IATI data if it’s the same activity and this activity was already published in IATI under CA-3-D123456?</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>: If both publishers use the same IATI identifier then it is not globally unique. I expect this global uniqueness is core to various systems, so I think it would likely be problematic to relax that (i.e. by allowing/encouraging republishers to use the same identifier). As an example: If I were to look up the activity on d-portal, what would I expect <a href="http://d-portal.org/ctrack.html?#view=act&amp;aid=CA-3-D123456">http://d-portal.org/ctrack.html?#view=act&amp;aid=CA-3-D123456</a> to show? Should it amalgamate all information from all publishers of <code>iati-activity</code>s with that IATI identifier? I can anticipate problems with that.</p>
+<p>When a new reporting org starts publishing, a ‘secondary publisher’ (of the reporting org’s activities) becomes a ‘republisher’. That change is outside of the control of the secondary publisher. So I don’t think we should expect the secondary publisher/republisher to declare which one they are, because I suppose that information could easily become inaccurate.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/22</link>
+        <pubDate>Wed, 30 Aug 2017 16:19:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-22</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Given this definitions, wouldn’t this suggest that:</p>
+<p>1 - ‘Secondary publishers’ should use the organization prefix of the primary publisher in the activities id’s. There is no risk for publishing the same activity twice, since the primary publisher does not publish themselves. The secondary publisher is nothing more than a administrative service provider.</p>
+<p>2 - ‘Republishers’ (e.g. FTS) should NOT reuse the already published activity identifiers of the primary publishers, since that would cause confusion about who is the original data owner. It would also introduce great risks for double counting. Republishers should additionally ALWAYS mark an activity as ‘Republished’ and preferably refer back to the original activity with the related activity type, as suggested by <a class="mention" href="/u/andylolz">@andylolz</a> . This would enable data users to easily distinguish between original data and republished data.</p>
+<p>I am not sure though if the proposed definition of a ‘secondary publisher’ according to <a class="mention" href="/u/bill_anderson">@bill_anderson</a>  matches with your definitions above.</p>
+<p>Maybe the use  of the term ‘secondary publisher’ is too confusing. Wouldn’t the terms ‘original publication’ and ‘republication’ be a better way to describe the status of the data? It looks more important to know if you are dealing with the original data or the reprocessed data, than to know that you are processing the data of someone else.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/21</link>
+        <pubDate>Wed, 30 Aug 2017 12:58:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-21</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="19" data-topic="846">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>: for my understanding, what is in your view the fundamental difference between a secondary publisher and a republisher? Don’t they both use existing IATI data, modify or add to these data, and publish the modified data as IATI again?</p>
+</blockquote>
+</aside>
+<p>I would suggest that a secondary publisher is publishing data from  organizations that don’t publish IATI data themselves - like Interaction or US Foundation (per examples provided by Reid and Bill). This creates low/no risk of double-counting.</p>
+<p>Whereas republishing involves taking data from IATI and publishing it again, like FTS.  In some cases they may add content to it (like could happen for instance if someone adds detailed agriculture codes, or geo locations), but for the most part it’s data already available in IATI format - hence high risks of double-counting.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/20</link>
+        <pubDate>Tue, 29 Aug 2017 16:09:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-20</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="18" data-topic="846">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Side note: we should distinguish secondary publishers and re-publishers. This issue arises with re-publishers, not secondary publishers.</p>
+</blockquote>
+</aside>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>: for my understanding, what is in your view the fundamental difference between a secondary publisher and a republisher? Don’t they both use existing IATI data, modify or add to these data, and publish the modified data as IATI again?</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/19</link>
+        <pubDate>Tue, 29 Aug 2017 08:38:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-19</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>In fact, the problem isn’t so much the need for a globally unique iactivity identifier - it would remain unique - but the requirement that the activity ID start with the reporting org ID even in the case of  re-publishers. (Side note: we should distinguish secondary publishers and re-publishers. This issue arises with re-publishers, not secondary publishers.)</p>
+<p>Let’s say we publish an activity CA-3-D123456, and this activity is also reported/pulled to FTS. If FTS publishes the exact same activity again, they could name it CA-3-D123456. Why should they rename it some random FTS number in IATI data if it’s the <strong>same</strong> activity and this activity was already published in IATI under CA-3-D123456?</p>
+<p>This rule seems to be the source of the problem:<br>
+“This MUST be prefixed with EITHER the current IATI organisation identifier for the reporting organisation (reporting-org/<span class="mention">@ref</span>) OR a previous identifier reported in other-identifier, and suffixed with the organisation’s own activity identifier.”</p>
+<p>Should this rule be relaxed in the case of re-publishers?</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/18</link>
+        <pubDate>Mon, 28 Aug 2017 15:19:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-18</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> Yes, that is what I meant. <a class="mention" href="/u/andylolz">@andylolz</a> though has a valid objection against using the same identifier when republishing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/17</link>
+        <pubDate>Fri, 25 Aug 2017 07:27:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-17</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a> Yes I see your point. The concern is about the duplication of activities with all the risks of inconsistencies and double counting.  Your suggestion to add a new RelatedActivity type might help at data use time to identify such duplications.</p>
+<p><a class="mention" href="/u/reidmporter">@reidmporter</a> started a discussion about this subject in the<br>
+<a href="https://discuss.iatistandard.org/t/secondary-publishers-a-manifesto-and-some-honest-questions/949">community zone</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/16</link>
+        <pubDate>Fri, 25 Aug 2017 07:26:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-16</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Reusing the same IATI identifier – albeit for the same (republished) activity breaks a standard ruleset rule:</p>
+<blockquote>
+<p>It MUST be globally unique among all activities published through the IATI Registry</p>
+</blockquote>
+<p>I’d suggest instead a new <a href="http://iatistandard.org/202/codelists/RelatedActivityType/">RelatedActivityType</a>. But I’d also agree that this is out of scope for 2.03 discussions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/15</link>
+        <pubDate>Thu, 24 Aug 2017 23:03:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-15</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="13" data-topic="846">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>but would it be an idea to use exactly the same IATI identifier as the primary publisher, when you are republishing an activity as a secondary publisher?</p>
+</blockquote>
+</aside>
+<p>Just to clarify, I assume you mean using the same Activity ID as the primary publisher?</p>
+<p>Would support this 1,000%.  In fact, I naively assumed this was the case…  Not using the same Activity ID should be a cardinal sin of republishing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/14</link>
+        <pubDate>Thu, 24 Aug 2017 19:32:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-14</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> Maybe not for the 2.03 discussion, but would it be an idea to use exactly the same IATI identifier as the primary publisher, when you are republishing an activity as a secondary publisher?</p>
+<p>Now there is no way to find out that the same activity is published twice with different IATI identifiers, leading to double counting. Doesn’t that violate a core IATI principle: publish once, use often? When using the same IATI identifier, you can at least identify that an activity is a duplicate.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/13</link>
+        <pubDate>Thu, 24 Aug 2017 14:24:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-13</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="846">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>it has already been published by the primary publisher</p>
+</blockquote>
+</aside>
+<p>No.</p>
+<ul>
+<li>OCHA’s FTS publishes ALL its data irrespective of whether the primary source publishes to IATI.</li>
+<li>The US Foundation Center <a href="http://pndblog.typepad.com/pndblog/2017/08/two-new-data-tools-for-the-open-ag-sector.html">has recently published</a> “$4.3 billion worth of grants from nearly 1,900 funders to more than 3,000 organizations around the world”, but “to avoid duplication of data on the IATI Registry, we have removed funders already publishing to IATI from our IATI data”</li>
+</ul>
+<aside class="quote no-group" data-post="11" data-topic="846">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>a different IATI identifier is used by the secondary publisher than by the primary publisher?</p>
+</blockquote>
+</aside>
+<p>Yes</p>
+<p>NB that on Standards Day there was another proposal …</p>
+<blockquote>
+<p>Add attribute reporting-org/<span class="mention">@secondary-unique</span><br>
+“A flag indicating that this activity, reported by a secondary reporter, is not reported to IATI by a primary publisher and can therefore be expected to be unique.”</p>
+</blockquote>
+<p>… which wasn’t taken forward.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/12</link>
+        <pubDate>Tue, 22 Aug 2017 17:21:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-12</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Ok, from that perspective the definition change is fine with me.</p>
+<p>For my understanding: does the definition of secondary publisher mean that when an activity is published by a secondary publisher, it has already been published by the primary publisher AND that a <strong>different</strong> IATI identifier is used by the secondary publisher than by the primary publisher?</p>
+<p>Cannot find any guidance in standard about this topic, but maybe I am missing something.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/11</link>
+        <pubDate>Tue, 22 Aug 2017 14:12:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-11</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>I think the use case is clear.</p>
+<p>Swedish SIDA publishes another institution’s activities but is NOT a secondary publisher - because it is mandated to publish the Ministry of Foreign Affairs activities as primary data. The current definition makes no distinction between this case, and publishers such as FTS or AidData.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/10</link>
+        <pubDate>Fri, 18 Aug 2017 16:22:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-10</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>I agree with <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>. It seems no harm is done if we take some more time to find out what is the business case.</p>
+<p>If someone Is of the opinion that harm is done and explains why, we might have our business case.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/9</link>
+        <pubDate>Fri, 18 Aug 2017 14:47:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-9</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>According to yesterday’s update, this modification is listed as having consensus.</p>
+<p>This status is not clear to me from the above. If people asked for more  examples of secondary publishers and use cases, does it not mean the proposal is not fully supported (or at least fully understood)?</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/8</link>
+        <pubDate>Thu, 17 Aug 2017 20:12:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-8</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Notes from consultation calls w/c 3rd July</p>
+<p>Discussion:<br>
+There were some questions around double counting; the difference between ‘secondary publisher’ and a ‘proxy’ was explained<br>
+There was agreement that more use cases would be good in addition to a clearer definition.<br>
+IATI tech team to provide more examples of secondary publishers and more use cases on what information is being published by existing secondary publisher.</p>
+<p>Outcomes:<br>
+The proposal was reviewed by those on the call and there was no objection from the group.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/7</link>
+        <pubDate>Fri, 07 Jul 2017 12:33:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-7</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been included for consideration in the formal 2.03 proposal</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/4</link>
+        <pubDate>Fri, 16 Jun 2017 15:26:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-4</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[jonesiom]]></dc:creator>
+        <description><![CDATA[
+            <p>any secondary publisher that commits significant unfunded effort to surface primary publisher open data as IATI datasets would need to reconsider that a primary publisher could simply “adopt” the datasets (download, retag and upload) without acknowledgement/engagement, not upload any new datasets or stop at the next budget/election, and simply marginalise the secondary publisher with the net result efforts are stopped</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/3</link>
+        <pubDate>Fri, 26 May 2017 16:29:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-3</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>The use case described here for secondary publisher, assumes that the IATI data may already have been published by the primary publisher. If that is the case, why republish the IAT data again, conflicting with the ‘Publish once, use often’ rule? Couldn’t this be solved by introducing a rule that secondary publishers ONLY publish activities which have NOT been published by the primary publisher? In this way, also the uniqueness of IATI activity identifiers can be guaranteed.</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/2</link>
+        <pubDate>Fri, 19 May 2017 13:18:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-2</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+      <item>
+        <title>Modify definition of secondary publisher (included 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal is part of the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p><strong>Schema Object</strong><br>
+reporting-org/<span class="mention">@secondary-publisher</span></p>
+<p><strong>Type of Change</strong><br>
+Schema modification</p>
+<p><strong>Issue</strong><br>
+The concept of a “secondary publisher” was introduced into the standard to allow for organisations that collect data on aid activities from a number of actors (such as UN OCHA’s Financial Tracking Service, an Aid Information Management System, or bodies representing NGOs or foundations) to publish this data to IATI. Much, but not all, of this data may already be published to IATI by the primary source and so the <span class="mention">@secondary-publisher</span> flag is a warning to users to understand this context. This was never intended to cover situations where an agency (such as Swedish SIDA) officially publishes data on behalf of another related institution (such as the Swedish Ministry of Foreign Affairs).</p>
+<p><strong>Proposal</strong><br>
+Modify the definition of reporting-org/<span class="mention">@secondary-publisher</span></p>
+<ul>
+<li>From
+A flag indicating that the reporting organisation is a secondary publisher: publishing data for which it is not directly responsible. This flag must not be reported by primary source publishers.
+</li>
+<li>To
+A flag indicating that the reporting organisation of this activity is acting as a secondary publisher. A secondary publisher is one that reproduces data on the activities of an organisation for which it is not directly responsible. This does not include a publisher officially assigned as a proxy to  report on behalf of another.”
+</li>
+</ul>
+<p><strong>Standards Day</strong><br>
+There was confusion about what is meant by the term ‘secondary publisher’. The use of the term ‘proxy’ was suggested to clarify where publishers report ‘officially’ on behalf of another organisation. (eg Swedish SIDA and Ministry of Foreign Affairs)</p>
+<p><strong>Links</strong><br>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/document/d/1kOIcA2A_eDfP8pnoLTFHbXvRdJdwJn81R2CwdQcrqQc/edit" target="_blank">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/document/d/1kOIcA2A_eDfP8pnoLTFHbXvRdJdwJn81R2CwdQcrqQc/edit" target="_blank"><span class="googledocs-onebox-logo g-docs-logo"></span></a>
+
+<h3><a href="https://docs.google.com/document/d/1kOIcA2A_eDfP8pnoLTFHbXvRdJdwJn81R2CwdQcrqQc/edit" target="_blank">10 Improvements to the Activity Standard</a></h3>
+
+<p>Name of paper Improvements to the Activity Standard Lead author Rory Scott/ Bill Anderson Links to other relevant information (Discuss forum; Website etc) Discuss: http://discuss.iatistandard.org/t/tech-paper-improvements-to-the-activity-standard/544...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+          <p><a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846/1</link>
+        <pubDate>Fri, 12 May 2017 11:39:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-846-1</guid>
+        <source url="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846.rss">Modify definition of secondary publisher (included 2.03)</source>
+      </item>
+  </channel>
+</rss>

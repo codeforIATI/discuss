@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Making codelists more accessible</title>
+    <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895</link>
+    <description>See below for the latest short post, cross-posted from [the Code for IATI blog](https://codeforiati.org/blog/2020/02/10/making-third-party-codelists-more-accessible/) – this time to launch our new [replicated codelists website](https://codelists.codeforiati.org/).
+
+---
+
+# Making codelists more accessible
+
+When using IATI data, there are a number of reference codelists that are needed to make sense of the data. Some of these codelists are controlled by IATI directly, but others are controlled by a number of other organisations: for example, the [Country](https://reference.iatistandard.org/codelists/Country) codelist (the [ISO-managed list of countries](https://www.iso.org/obp/ui#iso:pub:PUB500001:en)) or the [Sector](https://reference.iatistandard.org/codelists/Sector) codelist (the [OECD DAC list of Purpose Codes](https://www.oecd.org/development/financing-sustainable-development/development-finance-standards/dacandcrscodelists.htm)).
+
+IATI maintains copies of these third-party codelists – called replicated codelists – but there are a number of reasons why, as users of IATI data, we would often have to construct our own versions directly from the source. We built the [the replicated codelists interface](https://codelists.codeforiati.org/) to share this work with others who could stand to benefit from it.
+
+## Aims and additional functionality
+
+We had three main aims in building this new interface. We wanted to ensure that replicated codelists are:
+
+* as up to date as possible;
+* provided in formats that are most useful for users of IATI data (including via an intuitive API);
+* accessible in multiple languages - initially in English and French, with scope to expand the range of supported languages depending on availability of translated codelists.
+
+We’ve gone through most of the replicated codelists to ensure they are fully up to date and consistent with the source, including adding in historical codes that have subsequently been withdrawn, and adding in official French translations. The entire interface can be switched from English to French (with thanks to @YohannaLoucheur!) and codelists can be downloaded in a range of formats (including Excel) in either language.
+
+We added in a codelist for [Humanitarian Global Cluster codes](https://codelists.codeforiati.org/HumanitarianGlobalClusters/), and a link to a separate set of work around [exchange rates data](https://codelists.codeforiati.org/ExchangeRates/) - vital reference data when working with IATI data. We made all codelists accessible through [a simple API for developers](https://codelists.codeforiati.org/api/). Finally, we have a workflow in place to ensure that everything is kept up to date and consistent whenever the source codelists change.
+
+## Next steps
+
+We already [sent our proposed updates to the underlying codelists to IATI](https://github.com/IATI/IATI-Codelists-NonEmbedded/pulls), who can decide whether they would like to incorporate these changes.
+
+Let us know if you think this is useful for accessing codelists, and what else you think should be included! We have logged [a number of issues we plan to work on here](https://github.com/codeforIATI/codelists/issues).</description>
+    
+    <lastBuildDate>Thu, 02 Jul 2020 16:09:19 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/markbrough">@markbrough</a> - yes I was told by the UN CEB folks just this morning that it got updated.  Whew.  Glad it is all there finally.</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/21</link>
+        <pubDate>Thu, 02 Jul 2020 16:09:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-21</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/michelle_iom">@Michelle_IOM</a> – it appears the UN M49 codelist has also now been updated to include the 2-digit ISO code:<br>
+<a href="https://unstats.un.org/unsd/methodology/m49/overview/" class="onebox" target="_blank" rel="nofollow noopener">https://unstats.un.org/unsd/methodology/m49/overview/</a></p>
+<p>We’ll continue to make this codelist available in the replicated codelists interface (we are automatically tracking any changes to the source).</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/20</link>
+        <pubDate>Thu, 02 Jul 2020 14:12:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-20</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Got it.  Was really hoping the UN would change the source since it is used for other reporting.  Glad at least we got it for IATI.</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/19</link>
+        <pubDate>Thu, 07 May 2020 12:08:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-19</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a></p>
+<p>Yes - <a href="https://unstats.un.org/unsd/methodology/m49/" rel="nofollow noopener">the original source of the UN M49 codelist</a> only has the 3-digit ISO code. To make it easier to use, we added the 2-digit ISO code in our replicated version of the codelists: <a href="https://codelists.codeforiati.org/RegionM49/" rel="nofollow noopener">https://codelists.codeforiati.org/RegionM49/</a></p>
+<p>You can download the data directly from the Code for IATI codelists interface in a range of different formats. The data in that interface is kept up to date by automatically checking for changes with the source every night, so it should be fine to use our version if you wish.</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/18</link>
+        <pubDate>Wed, 06 May 2020 15:24:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-18</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p>Ok I’m either going blind or misunderstood but when I pulled up the link in IATI to the UNM49 code list it brought me to<br>
+<a href="https://unstats.un.org/unsd/methodology/m49/" class="onebox" target="_blank" rel="nofollow noopener">https://unstats.un.org/unsd/methodology/m49/</a><br>
+and that only has the ISO-alpha3 code.  Did I misunderstand what what was changing?</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/17</link>
+        <pubDate>Wed, 06 May 2020 09:09:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-17</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a> Fantastic work.  Thank you for your persistence and the notification.</p>
+<p>Stay Safe,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/16</link>
+        <pubDate>Thu, 09 Apr 2020 13:25:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-16</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/michelle_iom">@Michelle_IOM</a> the M49 codelist is now available on the replicated codelists site: <a href="https://codelists.codeforiati.org/RegionM49/" rel="nofollow noopener">https://codelists.codeforiati.org/RegionM49/</a></p>
+<p>This includes mappings to ISO 3166-1 alpha-2 codes.</p>
+<p>The data is available in HTML, XML, JSON, CSV and XLSX, and in English and French.</p>
+<p>Credit to <a class="mention" href="/u/markbrough">@markbrough</a> for sorting this!</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/15</link>
+        <pubDate>Thu, 09 Apr 2020 13:11:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-15</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="1895">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/michelle_iom/40/515_2.png" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>The UN M49 list is what I would hope would get added to the replicated codelist list. But I was also pointing out that rather than the UN M49 list use the 3 digit ISO codes, they could switch or at least add the 2 digit code so it would be all together and, while easy to map, wouldn’t be necessary for the cross-reference.</p>
+</blockquote>
+</aside>
+<p>Hi <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a>, just to let you know that we’re currently working on this. <a class="mention" href="/u/markbrough">@markbrough</a> has merged M49 with the 2 digit ISO country codes. The next step is to include it on <a href="https://codelists.codeforiati.org/" rel="nofollow noopener">the replicated codelists site</a>. This should be sorted in the next week or so.</p>
+<p>Thanks for your patience!</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/14</link>
+        <pubDate>Fri, 06 Mar 2020 14:57:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-14</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="10" data-topic="1895">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/michelle_iom/40/515_2.png" class="avatar"> Michelle_IOM:</div>
+<blockquote>
+<p>UN list in this link is from 2015</p>
+</blockquote>
+</aside>
+<p>Unsustained funding &gt;&gt; unsustained project &gt;&gt; unsustainable data.</p>
+<p>(Sigh)</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/13</link>
+        <pubDate>Mon, 17 Feb 2020 16:11:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-13</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="9" data-topic="1895">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/david_megginson/40/578_2.png" class="avatar"> David_Megginson:</div>
+<blockquote>
+<p>Nice work, Andy—I think it will be useful to a lot of people</p>
+</blockquote>
+</aside>
+<p>Many thanks, <a class="mention" href="/u/david_megginson">@David_Megginson</a>! I should clarify that this is the work of several people, including <a class="mention" href="/u/markbrough">@markbrough</a>, <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> and <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>.</p>
+<aside class="quote no-group" data-post="9" data-topic="1895" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/david_megginson/40/578_2.png" class="avatar"> David_Megginson:</div>
+<blockquote>
+<p>Do you transform on the fly, or work off static copies updated via a cronjob?</p>
+</blockquote>
+</aside>
+<p>Yes exactly – static copies, <a href="https://bot.codeforiati.org/" rel="nofollow noopener">updated via a cronjob</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/12</link>
+        <pubDate>Mon, 17 Feb 2020 16:05:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-12</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I think this is super useful, thanks <a class="mention" href="/u/bill_anderson">@bill_anderson</a>!</p>
+<p><a class="mention" href="/u/michelle_iom">@Michelle_IOM</a> the country codes (both 2-digit and 3-digit) are also visible behind the scenes. I think once we have this into a spreadsheet format it will be a bit easier to see.</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/11</link>
+        <pubDate>Mon, 17 Feb 2020 15:54:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-11</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Bill,</p>
+<p>I like the what one can compare and contrasts lists in your link.<br>
+However, the UN list in this link is from 2015 and doesn’t have the correct names of some countries so it wouldn’t be helpful for the UN agencies.  We have to be very careful with the country names we use.  It also doesn’t contain the code behind the names from what I can see.  But maybe that is visible behind the scenes in the code.</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/10</link>
+        <pubDate>Mon, 17 Feb 2020 15:49:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-10</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Nice work, Andy—I think it will be useful to a lot of people. Do you transform on the fly, or work off static copies updated via a cronjob?</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/9</link>
+        <pubDate>Fri, 14 Feb 2020 20:15:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-9</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Is this repository of any use? <a href="http://joinedupdata.org/sup/en/page/?uri=http://joinedupdata.org/Supranational/geographic_regions">http://joinedupdata.org/sup/en/page/?uri=http://joinedupdata.org/Supranational/geographic_regions</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/8</link>
+        <pubDate>Fri, 14 Feb 2020 17:00:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-8</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Great, yes makes sense! I’m sure we could add the UN M49 codes to the replicated codelists site. And I also think it would be relatively straightforward to also include the 2-digit ISO codes on there (in addition to the 3-digit ISO codes), given that the mapping already exists.</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/7</link>
+        <pubDate>Thu, 13 Feb 2020 14:01:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-7</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Mark,</p>
+<p>The UN M49 list is what I would hope would get added to the replicated codelist list.  But I was also pointing out that rather than the UN M49 list use the 3 digit ISO codes, they could switch or at least add the 2 digit code so it would be all together and, while easy to map, wouldn’t be necessary for the cross-reference.  The UN has indicated they are trying to harmonize to existing standards and IATI in particular when it makes sense.  Using 2-digit rather than 3-digit ISO codes was just one of the minor things discussed.  I just don’t know how to get the UN Stats team to make the change as keepers of the list.</p>
+<p>I hope that makes more sense.</p>
+<p>Kind Regards,<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/6</link>
+        <pubDate>Thu, 13 Feb 2020 13:58:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-6</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a>,</p>
+<p>I think you are looking for a list that maps the <a href="https://codelists.codeforiati.org/Country/" rel="nofollow noopener">Country codelist</a> (containing ISO-2 country codes, e.g. <code>KE</code> for Kenya) to the UN M49 codes. I found <a href="https://unstats.un.org/unsd/methodology/m49/overview/" rel="nofollow noopener">this list of UN M49 codes</a>, which includes ISO-3 country codes (e.g. <code>KEN</code> for Kenya), as well as UN M49 country codes, and UN M49 regions, so I guess a mapping between the two codelists should be relatively straightforward.</p>
+<p>I also noticed <a href="https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2019)20&amp;docLanguage=En" rel="nofollow noopener">this DAC proposal</a> to map UN M49 regions to DAC regions which may be of interest. It’s in a PDF at the moment, I guess it could be useful in Excel?</p>
+<p>Have I understood correctly – is this what you’re looking for?</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/5</link>
+        <pubDate>Thu, 13 Feb 2020 13:40:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-5</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Matt,</p>
+<p>Agree that having the full list of countries helps everyone or at least those of us who work outside of the recipient country list of OECD.  We also work with UN regions not the OECD regions for consistency with other reporting requirements we have.</p>
+<p>I’ve previously asked the IATI Secretariat, the UN data Cube people and the UN Finance &amp; Budget network teams to see if they can get the UN Stats team (the ones who maintain the M49 list) to include the 2-digit ISO country references so there would be one source for all.  Sadly, I’ve had no luck so the UN list only really gets us regions and official country names.</p>
+<p>One day I hope someone with better knowledge of the UN systems, people, processes can make this happen.  Perhaps it is because I don’t have a first born to sacrifice to the cause. <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/4</link>
+        <pubDate>Thu, 13 Feb 2020 11:51:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-4</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Michelle,</p>
+<p>I am keeping a list of ones people would find useful and whenever I get time adding them, so I will put this on the list - I should be able to get it done towards the end of the month.</p>
+<p>Are you just after the regions, or the country codes as well, as I couldn’t work our whether the country codes would be valid as my quick search only found M49 codes here: <a href="http://reference.iatistandard.org/203/codelists/RegionVocabulary/" rel="nofollow noopener">http://reference.iatistandard.org/203/codelists/RegionVocabulary/</a> - but I am sure having the country codes on the region list would make picking the right region easier, if for nothing else?</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/3</link>
+        <pubDate>Wed, 12 Feb 2020 18:31:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-3</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear Andy,</p>
+<p>I’m not a technical person but I do find this list and easy access useful.  May I ask if the UN(M49) list could be put here as well.  As I’m sure you know, it is a standard code list maintained by the UN which, unlike the OECD list, contains all countries mapped to all regions which is useful for many who have benefiting regions not on the OECD list.</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/2</link>
+        <pubDate>Tue, 11 Feb 2020 08:14:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-2</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+      <item>
+        <title>Making codelists more accessible</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>See below for the latest short post, cross-posted from <a href="https://codeforiati.org/blog/2020/02/10/making-third-party-codelists-more-accessible/" rel="nofollow noopener">the Code for IATI blog</a> – this time to launch our new <a href="https://codelists.codeforiati.org/" rel="nofollow noopener">replicated codelists website</a>.</p>
+<hr>
+<h1>Making codelists more accessible</h1>
+<p>When using IATI data, there are a number of reference codelists that are needed to make sense of the data. Some of these codelists are controlled by IATI directly, but others are controlled by a number of other organisations: for example, the <a href="https://reference.iatistandard.org/codelists/Country" rel="nofollow noopener">Country</a> codelist (the <a href="https://www.iso.org/obp/ui#iso:pub:PUB500001:en" rel="nofollow noopener">ISO-managed list of countries</a>) or the <a href="https://reference.iatistandard.org/codelists/Sector" rel="nofollow noopener">Sector</a> codelist (the <a href="https://www.oecd.org/development/financing-sustainable-development/development-finance-standards/dacandcrscodelists.htm" rel="nofollow noopener">OECD DAC list of Purpose Codes</a>).</p>
+<p>IATI maintains copies of these third-party codelists – called replicated codelists – but there are a number of reasons why, as users of IATI data, we would often have to construct our own versions directly from the source. We built the <a href="https://codelists.codeforiati.org/" rel="nofollow noopener">the replicated codelists interface</a> to share this work with others who could stand to benefit from it.</p>
+<h2>Aims and additional functionality</h2>
+<p>We had three main aims in building this new interface. We wanted to ensure that replicated codelists are:</p>
+<ul>
+<li>as up to date as possible;</li>
+<li>provided in formats that are most useful for users of IATI data (including via an intuitive API);</li>
+<li>accessible in multiple languages - initially in English and French, with scope to expand the range of supported languages depending on availability of translated codelists.</li>
+</ul>
+<p>We’ve gone through most of the replicated codelists to ensure they are fully up to date and consistent with the source, including adding in historical codes that have subsequently been withdrawn, and adding in official French translations. The entire interface can be switched from English to French (with thanks to <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>!) and codelists can be downloaded in a range of formats (including Excel) in either language.</p>
+<p>We added in a codelist for <a href="https://codelists.codeforiati.org/HumanitarianGlobalClusters/" rel="nofollow noopener">Humanitarian Global Cluster codes</a>, and a link to a separate set of work around <a href="https://codelists.codeforiati.org/ExchangeRates/" rel="nofollow noopener">exchange rates data</a> - vital reference data when working with IATI data. We made all codelists accessible through <a href="https://codelists.codeforiati.org/api/" rel="nofollow noopener">a simple API for developers</a>. Finally, we have a workflow in place to ensure that everything is kept up to date and consistent whenever the source codelists change.</p>
+<h2>Next steps</h2>
+<p>We already <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pulls" rel="nofollow noopener">sent our proposed updates to the underlying codelists to IATI</a>, who can decide whether they would like to incorporate these changes.</p>
+<p>Let us know if you think this is useful for accessing codelists, and what else you think should be included! We have logged <a href="https://github.com/codeforIATI/codelists/issues" rel="nofollow noopener">a number of issues we plan to work on here</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895/1</link>
+        <pubDate>Mon, 10 Feb 2020 16:45:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1895-1</guid>
+        <source url="https://discuss.iatistandard.org/t/making-codelists-more-accessible/1895.rss">Making codelists more accessible</source>
+      </item>
+  </channel>
+</rss>

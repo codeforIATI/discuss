@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Make Baseline &amp; Period guidance Musts</title>
+    <link>https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733</link>
+    <description>At 2.03 three _should_ statements (of which originally two were _musts_) should be made into _must_ statements at version 3.0.0.
+
+The rules to be added are:
+
+* The @value  **must**  be omitted for qualitative measures
+* The @value  **must**  be included for non-qualitative measures
+* The @value **must** be a valid number for all non-qualitative measures
+
+And they are found in three places:
+
+* iati-activities/iati-activity/result/indicator/baseline/@value
+* iati-activities/iati-activity/result/indicator/period/target/@value
+* iati-activities/iati-activity/result/indicator/period/actual/@value
+
+This helps ensure the quality of data being reported, and will make it easier for data users to analyse results data.</description>
+    
+    <lastBuildDate>Tue, 30 Apr 2019 10:23:24 +0000</lastBuildDate>
+    <category>3.0.0 Major Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Make Baseline &amp; Period guidance Musts</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>At 2.03 three <em>should</em> statements (of which originally two were <em>musts</em>) should be made into <em>must</em> statements at version 3.0.0.</p>
+<p>The rules to be added are:</p>
+<ul>
+<li>The <span class="mention">@value</span>  <strong>must</strong>  be omitted for qualitative measures</li>
+<li>The <span class="mention">@value</span>  <strong>must</strong>  be included for non-qualitative measures</li>
+<li>The <span class="mention">@value</span> <strong>must</strong> be a valid number for all non-qualitative measures</li>
+</ul>
+<p>And they are found in three places:</p>
+<ul>
+<li>iati-activities/iati-activity/result/indicator/baseline/<span class="mention">@value</span>
+</li>
+<li>iati-activities/iati-activity/result/indicator/period/target/<span class="mention">@value</span>
+</li>
+<li>iati-activities/iati-activity/result/indicator/period/actual/<span class="mention">@value</span>
+</li>
+</ul>
+<p>This helps ensure the quality of data being reported, and will make it easier for data users to analyse results data.</p>
+          <p><a href="https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733/1</link>
+        <pubDate>Tue, 30 Apr 2019 10:23:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1733-1</guid>
+        <source url="https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733.rss">Make Baseline &amp; Period guidance Musts</source>
+      </item>
+  </channel>
+</rss>

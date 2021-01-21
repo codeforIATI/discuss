@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Data Quality - IATI Community Discussions</title>
+    <link>https://discuss.iatistandard.org/c/community-zone/data-quality/14</link>
+    <description>Topics in the &#39;Data Quality&#39; category This category is for you to share stories and experiences on how you have managed to improve IATI data quality within your organisation, or to ask questions of others.</description>
+    
+      <lastBuildDate>Tue, 24 Sep 2019 11:05:50 +0000</lastBuildDate>
+      <atom:link href="https://discuss.iatistandard.org/c/community-zone/data-quality/14.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>IATI rules, guidance, validator - standardise language</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>I would like to ask if there is support for simplifying/standardising the language that we are using across these various tools as it is getting incredibly difficult to know how the words were intended and therefore what to publish to meet each one, especially as the validator is going to start adjudicating on them:</p>
+<p>My non-exhaustive list:</p>
+<ul>
+<li>The SSOT has “rules”</li>
+<li>The Github additional guidance has “should”, “can”, and “is used to”</li>
+<li>The Guidance has “must”, “should”, “can”, “preferable”, “recommends”, “may” and “tips”</li>
+<li>The new Validator has “error”, “warning”, “improvement” and “optimise”</li>
+<li>DFID Guidance has “required”, “not required”, “please include”, “if available”, “should” and “must”</li>
+</ul>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/iati-rules-guidance-validator-standardise-language/1853">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/iati-rules-guidance-validator-standardise-language/1853</link>
+          <pubDate>Tue, 24 Sep 2019 11:05:50 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1853</guid>
+          <source url="https://discuss.iatistandard.org/t/iati-rules-guidance-validator-standardise-language/1853.rss">IATI rules, guidance, validator - standardise language</source>
+        </item>
+        <item>
+          <title>IATI rulesets - add rules for sector percentages and policy marker conditionals</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>(posting this in Data Quality to begin with…)</p>
+<p>The <a href="http://reference.iatistandard.org/203/rulesets/" rel="nofollow noopener"><strong>IATI Rulesets</strong></a> are a set of conditions that it would be very useful for any IATI publisher to consider in their publication.</p>
+<p>These are not enforced at the schema level, but additional. Think of these rules as the bits of “guidance” you often see in the IATI schema, which are then represented as rules to help us use them!  They represent logic (eg start date before end date!) and conditions (percenrages of multiple countries should add to 100%) and other things!</p>
+<p>These rulesets are very important, and have long been available around IATI.  We know that they are not currently used in the “<a href="http://validator.iatistandard.org/" rel="nofollow noopener">official IATI validator</a>”, but are used by others.  At Open Data Services, we use the rulesets in our tools, for example.</p>
+<p>Who else uses the rulsets?  <a class="mention" href="/u/rolfkleef">@rolfkleef</a> <a class="mention" href="/u/rbesseling">@rbesseling</a> <a class="mention" href="/u/johnadams">@JohnAdams</a> maybe?</p>
+<p>Looking at the <a href="https://github.com/IATI/IATI-Rulesets/blob/e77e6860ceba3be71d95c7ed95b9c78f3f29928e/rulesets/standard.json" rel="nofollow noopener">current IATI rules</a>, and in discussion with others such as <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/robredpath">@robredpath</a> &amp; <a class="mention" href="/u/andylolz">@andylolz</a>, there seem to be a couple of omissions, which I would suggest we incorporate:</p>
+<p><strong>Sectors</strong><br>
+There is no rule in terms of multiple sectors from the same vocabulary should add to 100%.  The standard text says:</p>
+<blockquote>
+<p>All reported sectors from the same vocabulary MUST add up to 100.</p>
+</blockquote>
+<p>There is no rule in the ruleset for this</p>
+<p><strong>Policy Markers</strong><br>
+There is no rule in terms of conditions of the <a href="http://reference.iatistandard.org/203/codelists/PolicySignificance/" rel="nofollow noopener">Policy Marker codes</a></p>
+<p>The standard says:</p>
+<blockquote>
+<p>Policy Significance code = 4 (Explicit primary objective) SHOULD ONLY be used in conjunction with Policy Marker code = 9 (Reproductive, Maternal, Newborn and Child Health)</p>
+</blockquote>
+<p>There is no rule in the ruleset for this</p>
+<p>==================</p>
+<p>There may be others too - so I wonder if there is chance to get a wider review of these rulesets…?</p>
+            <p><small>14 posts - 5 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395</link>
+          <pubDate>Mon, 16 Jul 2018 16:48:33 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1395</guid>
+          <source url="https://discuss.iatistandard.org/t/iati-rulesets-add-rules-for-sector-percentages-and-policy-marker-conditionals/1395.rss">IATI rulesets - add rules for sector percentages and policy marker conditionals</source>
+        </item>
+        <item>
+          <title>Feedback on IATI Public Validator feedback</title>
+          <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>I recently used the IATI Public Validator to check our Organisation file, after a user flagged that it was not validating.</p>
+<p>1- The user provided a link generated by the Validator through the “Share the results” button: <a href="http://validator.iatistandard.org/?perm=w05.international.gc.ca_projectbrowser-banqueprojets_iita-iati_dfatd-maecd_organisation.xml_1525333064">http://validator.iatistandard.org/?perm=w05.international.gc.ca_projectbrowser-banqueprojets_iita-iati_dfatd-maecd_organisation.xml_1525333064</a> (Note that this link has the file path and a string of numbers at the end that look like it may be a unique ID). That link did not work. Its purpose is presumably to go back to a specific validation result, but it did not work.</p>
+<p>So I provided the link to our file and sure enough, the Validator said there was a problem. I poked around until I got this feedback on our data: "Line 148 Error 1871 Element ‘recipient-org-budget’: Element ‘recipient-org-budget’: This element is not expected. Expected is one of ( recipient-country-budget, document-link, #<span class="hashtag">#other</span>* ).”</p>
+<p>2- Our file doesn’t have line numbers, so that reference was not very helpful.</p>
+<p>3- What on earth is Error 1871?</p>
+<p>4- I understood “Element ‘recipient-org-budget’: This element is not expected” to mean that the element was not in the standard. However, I checked the standard and found it, so I was lost. I had to turn to the always helpful <a class="mention" href="/u/andylolz">@andylolz</a> to help me understand what the Validator was saying we were doing wrong (answer: the elements were not in the order dictated by the standard).</p>
+<p>As a non-tech person, I found the Validator interface not very friendly and its results/feedback very hard to understand. Perhaps a bit of UX could help improve it?</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/feedback-on-iati-public-validator-feedback/1313">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/feedback-on-iati-public-validator-feedback/1313</link>
+          <pubDate>Wed, 09 May 2018 15:44:50 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1313</guid>
+          <source url="https://discuss.iatistandard.org/t/feedback-on-iati-public-validator-feedback/1313.rss">Feedback on IATI Public Validator feedback</source>
+        </item>
+        <item>
+          <title>Add links between Standard element and Dashboard &quot;Who Uses?&quot; page</title>
+          <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>I just posted a suggested new feature on Github, thought I’d share here to see if others think it could be useful.</p>
+<p>Basically, when looking at an element (or codelist) in the Standard section of the website, it would be good to have a link to the Dashboard (Exploring Data section) to check who is using the element.  It’s doable manually - go to Exploring Data, click on Elements, scroll dooooowwwwwnnnn to the element you’re looking for. It would make life easier if direct links can be provided.</p>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/414" target="_blank" rel="nofollow noopener">github.com/IATI/IATI-Extra-Documentation</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/414" target="_blank" rel="nofollow noopener">Improvement: Add links from Standard pages to Dashboard </a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2018-02-05" data-time="17:18:24" data-timezone="UTC">05:18PM - 05 Feb 18 UTC</span>
+      </div>
+
+
+      <div class="user">
+        <a href="https://github.com/YohannaLoucheur" target="_blank" rel="nofollow noopener">
+          <img alt="YohannaLoucheur" src="https://avatars3.githubusercontent.com/u/6749013?v=4" class="onebox-avatar-inline" width="20" height="20">
+          YohannaLoucheur
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">Not sure this is the right section to post this.
+I was looking at specific elements of the standard and thought it...</p>
+</div>
+
+<div class="labels">
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/add-links-between-standard-element-and-dashboard-who-uses-page/1211">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/add-links-between-standard-element-and-dashboard-who-uses-page/1211</link>
+          <pubDate>Mon, 05 Feb 2018 17:27:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1211</guid>
+          <source url="https://discuss.iatistandard.org/t/add-links-between-standard-element-and-dashboard-who-uses-page/1211.rss">Add links between Standard element and Dashboard &quot;Who Uses?&quot; page</source>
+        </item>
+        <item>
+          <title>Basic usability issues with financial data and guidance</title>
+          <dc:creator><![CDATA[markbrough]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>Through using IATI data in Liberia, we have become aware that some donors are publishing data that is not possible to use at country level. I have contacted the relevant organisations and understand <strong>they’re all working to fix their data</strong> (which is great, so I am not complaining about anyone specifically!)</p>
+<p>However, I wanted to bring these issues to the attention of the community as there appears to be some misunderstanding that publishing data in this way is in line with the Standard (or will provide useful data).</p>
+<p>The two main issues I encountered are:</p>
+<ul>
+<li>
+<p><strong>publishing annual totals for previous years</strong>. This data looks odd when mapped against country fiscal years. For example, <a href="http://spreadsheets.aidonbudget.org/en/countries/LR/activities/XM-DAC-41114-PROJECT-00050471/" rel="nofollow noopener">this project</a> shows all disbursements against Q2, because disbursements in 2012-2015 were recorded at 31st December of each year, which is Q2 in Liberia’s financial year (July-June).</p>
+</li>
+<li>
+<p><strong>publishing cumulative disbursements in the current year</strong>. This means that as we move through the year, spending that would currently (as of 31 Jan) be attributed to Liberia’s Q3 (Jan-Mar) would become attributed to Q4 (Apr-Jun) and then shift into the next fiscal year (beginning in July).</p>
+</li>
+</ul>
+<h2>Suggestions for improving guidance</h2>
+<p>The <a>guidance on the IATI Standard site</a> already states that publishers should consider “how to achieve”</p>
+<blockquote>
+<p>Sense - IATI data should be represented in units that are manageable for the publisher and meaningful for the user - particularly when focusing on aggregation of transaction data.</p>
+</blockquote>
+<p>It would be great to be a bit more explicit in guidance and communications to encourage publishers to:</p>
+<ul>
+<li>
+<p><strong>publish a breakdown of disbursements</strong> (at least monthly, though actual transactions would be preferable to allow for accurate currency conversion)</p>
+</li>
+<li>
+<p><strong>ensure transactions are always actual</strong> rather than cumulative</p>
+</li>
+</ul>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206</link>
+          <pubDate>Wed, 31 Jan 2018 13:24:14 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1206</guid>
+          <source url="https://discuss.iatistandard.org/t/basic-usability-issues-with-financial-data-and-guidance/1206.rss">Basic usability issues with financial data and guidance</source>
+        </item>
+        <item>
+          <title>Where&#39;s the list of Busan Implementation Schedules?</title>
+          <dc:creator><![CDATA[stevieflow]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>The OECD DAC used to host all the Implementation Schedules from organisations that agreed the Busan outcome.  This was useful in terms of a single point of access to check these commitments.</p>
+<p>I can’t now find that page.  The <a href="http://www.oecd.org/dac/aid-architecture/acommonstandard.htm" rel="nofollow noopener">page that might have replaced it</a> has no mention of Implementation Schedules.</p>
+<p><a class="mention" href="/u/markbrough">@markbrough</a> has found an archive copy of the <a href="https://web.archive.org/web/20170212173717/https://www.oecd.org/dac/aid-architecture/acommonstandard.htm" rel="nofollow noopener">page on the web archive website</a> - which is lucky for us</p>
+<p>Via IATI documentation there is a <a href="http://iatistandard.org/202/guidance/implementation-schedule/" rel="nofollow noopener">page on Implementation Schedules</a>, with templates.  A <a href="http://iatistandard.org/202/guidance/implementation-schedule/" rel="nofollow noopener">GitHub repository</a> hosts these, but not the ones completed by donors.</p>
+<p>As important artifacts on aid transparency, it is peculiar if these documents are now not available.  Hopefully I’ve just mistyped - any info <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>?</p>
+<p>(also on <a href="https://twitter.com/stevieflow/status/946366364876406784" rel="nofollow noopener">twitter</a>)</p>
+            <p><small>8 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/wheres-the-list-of-busan-implementation-schedules/1167">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/wheres-the-list-of-busan-implementation-schedules/1167</link>
+          <pubDate>Fri, 29 Dec 2017 08:13:10 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1167</guid>
+          <source url="https://discuss.iatistandard.org/t/wheres-the-list-of-busan-implementation-schedules/1167.rss">Where&#39;s the list of Busan Implementation Schedules?</source>
+        </item>
+        <item>
+          <title>New version of IATI Bug Tracker</title>
+          <dc:creator><![CDATA[VincentVW]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>Last year around this time I put <a href="http://www.iatibugtracker.org/" rel="nofollow noopener">http://www.iatibugtracker.org/</a> online, which was an incomplete, example-ish tool that displayed validation logs on ~250 checks being applied in OIPA.</p>
+<p>Since then, nothing really changed in being able to validate your data, nor in the (technical) data quality itself. So in an effort to give more feedback to data publishers I’ve been working on finishing this tool. An updated version of it is now online. The update includes:</p>
+<ul>
+<li>A list of all validation checks I could think of <a href="http://www.iatibugtracker.org/implemented-checks" rel="nofollow noopener">http://www.iatibugtracker.org/implemented-checks</a>
+</li>
+<li>Better search functionalities in publisher / dataset lists</li>
+<li>Better functionalities to filter validation errors (select element/attribute)</li>
+<li>More in depth info; the line number where the error occurs (for most of them at least), the used value in the XML in case its an ‘not on codelist’ or ‘incorrect format’ error.</li>
+<li>An updated, easier to maintain design (with a favicon of a bug)</li>
+</ul>
+<p>Further more, a couple notes on dubious errors;</p>
+<ul>
+<li>When an element is used, its expected to have valid data (hence something like an empty narrative will show as an error).</li>
+<li>When an attribute is used, its expected to have valid data (hence an empty transaction/provider-org/provider-activity-id will show as an error).</li>
+<li>The “Must be in the format {Registration Agency} - (Registration Number}” check for org refs is a bit awkward; with that rule you can’t correctly mention an organisation that uses a 1.0x ref (for example, unhabitat with ref 41120) from 2.0x data. This should solve itself when all orgs publish in 2.01+ though.</li>
+<li>Some errors might throw for 1.0x data while they only apply to 2.0x. I was a bit lazy on this, but at the same time it gives publishers valuable info for their to do’s when moving to 2.0x.</li>
+</ul>
+<p>I hope this helps some publishers with improving their data, the tool is obviously not meant to blame anyone or rank something like technical data correctness, its just an extra aid.</p>
+<p>Feedback is very welcome of course!</p>
+<p>p.s. excuse me for the name of the tool, software has bugs, data has errors.</p>
+<p>p.s.2 I’ve got very limited ambition to further improve this tool anytime soon, its an evening hours side-project that took me too much time already.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/new-version-of-iati-bug-tracker/948">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/new-version-of-iati-bug-tracker/948</link>
+          <pubDate>Wed, 12 Jul 2017 07:47:13 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-948</guid>
+          <source url="https://discuss.iatistandard.org/t/new-version-of-iati-bug-tracker/948.rss">New version of IATI Bug Tracker</source>
+        </item>
+        <item>
+          <title>How to ask &quot;How&#39;s your data quality?&quot;</title>
+          <dc:creator><![CDATA[reidmporter]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://discuss.iatistandard.org/t/technical-measures-to-improve-incentivise-better-data-quality/704/22">Technical measures to improve/incentivise better data quality</a>:</p>
+<p>The Open Ag team has learned that focusing on fields/elements/attributes (“you’re missing this, you’re missing that”) is the quickest way to get data publishers to tune out. It’s been much more effective in our conversations with donors to focus on data use cases or themes - how’s your results data? how’s your location data? etc. This is the way we intend to frame any data validation tools that we develop/fund.</p>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> took it a step further (as she does!) by proposing that we generate a small set of questions, ~10, where each one covers multiple elements/attributes that together enable data users to accomplish something useful. Here’s her illustrative suggestions:</p>
+<ul>
+<li>How much will publisher’s operational projects disburse in country x in the next 12 months? (this requires planned disbursements broken down by quarter)</li>
+<li>Which national NGOs are involved in the delivery of the publisher’s activities? (this requires all the details on the implementing partner)</li>
+<li>Has the publisher implemented projects in support of the following sectors (work needed to create a list of sectors where 5-digits are necessary, eg primary education, basic health infrastructure)? (this would test the use of 5-digit DAC codes instead of 3-digit)</li>
+<li>Has the publisher implemented projects at the district/village/something level (choosing a relevant admin 3 level)? (this would test geographic data)</li>
+</ul>
+<p>If we can get the right set of questions, it would be of practical use for those working on validation tools, but more generally useful as questions we can ask donors, publishers, our colleagues, ourselves, etc. about data quality without sounding too pushy.</p>
+<p>So we need to do some joint thinking. I’ve started a Google Doc for that purpose. If you would like to join this effort, raise your hand in the comments or jump into the doc and start ideating!</p>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/document/d/1sb1urvjZuX1hH28tnZUKMgF8avEQmYdcaQ5h_z0vfXo/edit?usp=sharing" target="_blank" rel="nofollow noopener">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/document/d/1sb1urvjZuX1hH28tnZUKMgF8avEQmYdcaQ5h_z0vfXo/edit?usp=sharing" target="_blank" rel="nofollow noopener"><span class="googledocs-onebox-logo g-docs-logo"></span></a>
+
+<h3><a href="https://docs.google.com/document/d/1sb1urvjZuX1hH28tnZUKMgF8avEQmYdcaQ5h_z0vfXo/edit?usp=sharing" target="_blank" rel="nofollow noopener">How to ask “How’s your data quality?"</a></h3>
+
+<p>How to ask “How’s your data quality?” Coming up with key data quality assessment questions Jump to the Workspace to get to work! Background The Open Ag team has learned that focusing on fields/elements/attributes ("you're missing this, you're missing...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+            <p><small>7 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/how-to-ask-hows-your-data-quality/809">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/how-to-ask-hows-your-data-quality/809</link>
+          <pubDate>Thu, 20 Apr 2017 02:03:26 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-809</guid>
+          <source url="https://discuss.iatistandard.org/t/how-to-ask-hows-your-data-quality/809.rss">How to ask &quot;How&#39;s your data quality?&quot;</source>
+        </item>
+        <item>
+          <title>Registry publisher_iati_id inconsistencies</title>
+          <dc:creator><![CDATA[VincentVW]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>A while ago I found a publisher that was publishing an activity under the IATI identifier GB-1-123456 (one of DFID’s activities). This was by a publisher that was publishing through CSV2IATI and probably misunderstood the guidance to refer to GB-1-123456 as provider-activity-id for its DFID funded transactions within the activity.</p>
+<p>Of course we wanted to invalidate this data as it was not DFID’s. I could do that quite easily because the reporting-org ref was set correctly, and when when you don’t use that reporting-org ref as your prefix, I’ll just invalidate the activity.</p>
+<p>It becomes more error prone if the reporting-org is also set incorrectly, how do I know who’s speaking truth then? I don’t expect anyone to purposely do this but I’ve seen odder mistakes in IATI and try to avoid assumptions where possible.</p>
+<p>For this we need a validation check to see if the activity reporting-org is the publisher of the dataset (are there any edge cases on this?). This is possible by using the publisher_iati_id key on the IATI Registry CKAN API endpoint to get all publishers: <a href="https://iatiregistry.org/api/action/organization_list?all_fields=true&amp;include_extras=true&amp;limit=10" rel="nofollow noopener">https://iatiregistry.org/api/action/organization_list?all_fields=true&amp;include_extras=true&amp;limit=10</a></p>
+<p>Though unfortunately, this is not always set correctly:<br>
+<aside class="onebox googledocs">
+  <header class="source">
+      <a href="https://docs.google.com/spreadsheets/d/1-RkRlT1r3dgm047rAv91O0dbrev5T9ITXVL6JPwFXK8/edit" target="_blank" rel="nofollow noopener">docs.google.com</a>
+  </header>
+  <article class="onebox-body">
+    <a href="https://docs.google.com/spreadsheets/d/1-RkRlT1r3dgm047rAv91O0dbrev5T9ITXVL6JPwFXK8/edit" target="_blank" rel="nofollow noopener"><span class="googledocs-onebox-logo g-sheets-logo"></span></a>
+
+<h3><a href="https://docs.google.com/spreadsheets/d/1-RkRlT1r3dgm047rAv91O0dbrev5T9ITXVL6JPwFXK8/edit" target="_blank" rel="nofollow noopener">Registry publisher_iati_id inconsistencies</a></h3>
+
+<p>Sheet1
+
+ publisher id, publisher_iati_id, used reporting-org, publisher_iati_id correct?, publisher name, publisher display name
+ f78e4a4f-951e-43f8-843b-9d35f1dfa702, No activities found, cant check, 49374507, Haitelmex Foundation
+...</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>Another use scenario this would help is; I’m building an IATI publishing tool and would like to make it easier for new publishers to start publishing correctly. I ask them to make an IATI registry account and after registration ask them for their IATI Registry user name and API key. Based upon that I fetch the publisher with its iati id, I validate the user and automatically set the reporting-org correctly so they can’t make any errors on that.</p>
+<p><strong>Questions</strong></p>
+<p>-Is this a shared need?</p>
+<p>-How can we keep the IATI Registry publisher_iati_id in sync? It seems like quite some orgs did not correctly fill in the publisher_iati_id on registration, but afterwards did use the correct one on their reporting-org (see the gdoc). <a class="mention" href="/u/dalepotter">@dalepotter</a> <a class="mention" href="/u/hayfield">@hayfield</a> can this be included in the new validator?</p>
+            <p><small>6 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773</link>
+          <pubDate>Tue, 28 Mar 2017 19:43:33 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-773</guid>
+          <source url="https://discuss.iatistandard.org/t/registry-publisher-iati-id-inconsistencies/773.rss">Registry publisher_iati_id inconsistencies</source>
+        </item>
+        <item>
+          <title>GPEDC Monitoring Framework : 2016 Progress Report</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>The Global Partnership’s new “Transparency Indicator” <a href="http://www.undp.org/content/undp/en/home/librarypage/development-impact/making-development-co-operation-more-effective--2016-progress-re.html" rel="nofollow noopener">report has been published</a>.</p>
+<p>Remember that this indicator was designed to track progress of paragraph 23 c) of the<a href="http://www.undp.org/content/undp/en/home/librarypage/development-impact/making-development-co-operation-more-effective--2016-progress-re.html" rel="nofollow noopener"> Busan Partnership agreement</a></p>
+<blockquote>
+<p>Implement a common, open standard for electronic publication of <strong><em>timely, comprehensive and forward-looking</em></strong> information on resources provided through development co-operation, taking into account the statistical reporting of the OECD-DAC and the complementary efforts of the International Aid Transparency Initiative and others. This standard must <strong><em>meet the information needs of developing countries</em></strong> and non-state actors, consistent with national requirements. [my emphases]</p>
+</blockquote>
+<p>If you skim Chapter 5 this is what you will see:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/9d587803c950a8c0bb077cd44064d1783d00f58e.PNG" data-download-href="https://discuss.iatistandard.org/uploads/default/9d587803c950a8c0bb077cd44064d1783d00f58e" title="ti5.PNG"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/9d587803c950a8c0bb077cd44064d1783d00f58e_2_500x400.PNG" width="500" height="400" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/9d587803c950a8c0bb077cd44064d1783d00f58e_2_500x400.PNG, https://discuss.iatistandard.org/uploads/default/optimized/1X/9d587803c950a8c0bb077cd44064d1783d00f58e_2_750x600.PNG 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/9d587803c950a8c0bb077cd44064d1783d00f58e.PNG 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/9d587803c950a8c0bb077cd44064d1783d00f58e_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">ti5.PNG</span><span class="informations">851×555 87.8 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>The IATI Secretariat and Technical Team <a href="http://discuss.iatistandard.org/t/consultation-on-gpedc-transparency-indicator-methodology/353">has been involved in the preparation</a> of our statistics for this report for over a year. These are the statistics that you can <a href="http://dashboard.iatistandard.org/transparencyindicator.html" rel="nofollow noopener">see on our Dashboard</a>, and which are refreshed every night. I stand by this work and believe we have reflected - honestly, fairly and as accurately as possible - the current (and improving) status of IATI data.</p>
+<p>According to the statistics we submitted to the progress report 35% of IATI publishers (only those that endorsed the Busan agreement) publish good or excellent data. By comparison 72% and 66% of reporters to the OECD DAC Creditor Reporting System and Forward Spending Survey respectively are reported to meet this standard.</p>
+<p>If this is truly a fair comparison of timely, comprehensive and forward-looking data that meets the needs of developing countries I can only conclude that there remain huge gaps in our understanding of what is meant by transparent, usable data.</p>
+            <p><small>7 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/gpedc-monitoring-framework-2016-progress-report/615">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/gpedc-monitoring-framework-2016-progress-report/615</link>
+          <pubDate>Thu, 03 Nov 2016 20:17:07 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-615</guid>
+          <source url="https://discuss.iatistandard.org/t/gpedc-monitoring-framework-2016-progress-report/615.rss">GPEDC Monitoring Framework : 2016 Progress Report</source>
+        </item>
+        <item>
+          <title>Data Quality Issues</title>
+          <dc:creator><![CDATA[Moqri]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>It seems the <a href="http://data.tickets.iatistandard.org/" rel="nofollow noopener">Data Quality Tracker</a> system is not active, so I am creating this topic to report quality/accuracy issues with the data.</p>
+            <p><small>21 posts - 9 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/data-quality-issues/488">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/data-quality-issues/488</link>
+          <pubDate>Sat, 11 Jun 2016 05:02:15 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-488</guid>
+          <source url="https://discuss.iatistandard.org/t/data-quality-issues/488.rss">Data Quality Issues</source>
+        </item>
+        <item>
+          <title>What did you learn from the Aid Transparency Index 2014?</title>
+          <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>Today is the last day for improving your data quality in advance of the final data cut for the PWYF Aid Transparency Index 2014.</p>
+<ul>
+<li>What did you do to improve data quality this time?</li>
+<li>How did you support the rest of your organisation in improving data quality?</li>
+<li>Is there more information you’d have liked to help you?</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/what-did-you-learn-from-the-aid-transparency-index-2014/52">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/what-did-you-learn-from-the-aid-transparency-index-2014/52</link>
+          <pubDate>Mon, 30 Jun 2014 11:58:04 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-52</guid>
+          <source url="https://discuss.iatistandard.org/t/what-did-you-learn-from-the-aid-transparency-index-2014/52.rss">What did you learn from the Aid Transparency Index 2014?</source>
+        </item>
+        <item>
+          <title>About the Data Quality category</title>
+          <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+          <category>Data Quality</category>
+          <description><![CDATA[
+            <p>This category is for you to share stories and experiences on how you have managed to improve IATI data quality within your organisation, or to ask questions of others.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/about-the-data-quality-category/51">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/about-the-data-quality-category/51</link>
+          <pubDate>Mon, 30 Jun 2014 11:55:04 +0000</pubDate>
+          <discourse:topicPinned>Yes</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-51</guid>
+          <source url="https://discuss.iatistandard.org/t/about-the-data-quality-category/51.rss">About the Data Quality category</source>
+        </item>
+  </channel>
+</rss>

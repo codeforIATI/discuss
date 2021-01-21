@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Identifiers should not be allowed to contain special characters</title>
+    <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649</link>
+    <description>Hello,
+
+We have had a lot of issues latelywhen trying to develop solutions on top of IATI data when the underlying IATI identifiers contain special characters like &#39; and &amp;.
+
+The [IATI standard](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/iati-identifier/) states that identifiers should pass the followiing regex [^\/\&amp;\|\?]+
+
+I think that this suggestion should be made into a requirement that identifiers must not contain special characters and that any IATI identifier that contains special characters will cause the activity to fail  validation.
+
+The standard also states that once an ID has been created that it must not be changed. I think in the case of special characters within IDs, however, that an exception should be made in order to improve the quality of the data contained within the registry. 
+
+
+Ross</description>
+    
+    <lastBuildDate>Thu, 13 Jun 2019 22:47:54 +0000</lastBuildDate>
+    <category>3.0.0 Major Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks, Andy. Did you see how many non-alphanumeric/basic punctuation characters there were?</p>
+<p>D</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/38">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/38</link>
+        <pubDate>Thu, 13 Jun 2019 22:47:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-38</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Worth noting that <a href="http://reference.iatistandard.org/203/activity-standard/overview/iati-identifier/#considerations" rel="nofollow noopener">there’s already a recommendation in the docs</a> against using non-ASCII characters.</p>
+<aside class="quote no-group" data-post="36" data-topic="649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/david_megginson/40/22_2.png" class="avatar"> David_Megginson:</div>
+<blockquote>
+<p>We’d have to crawl the registry to check.</p>
+</blockquote>
+</aside>
+<p>This is trivial to do using <a href="https://iatikit.readthedocs.io/" rel="nofollow noopener">iatikit</a>.</p>
+<p><strong><a href="https://gist.github.com/andylolz/82a748a54671ea6d09b0f341e4ec448c" rel="nofollow noopener">Here’s a gist containing the code and results.</a></strong></p>
+<p>In summary, there are currently 198 non-ASCII identifiers on the registry.</p>
+<p>Worth mentioning that d-portal appears to cope with unicode in identifiers. The only exceptions relate to carriage returns in identifiers (which d-portal strips <a href="https://d-portal.org/q.html?aid=XI-IATI-EC_DEVCO_T05-EUTF-SAH-SN-01AM%C3%89LIORATION" rel="nofollow noopener">e.g. here</a>) and angle brackets in identifiers (which d-portal gives up on <a href="https://d-portal.org/q.html?aid=GB-UKPRN-10007774-%3Coxford%3E+%E2%80%93+203166" rel="nofollow noopener">e.g. here</a>, from <a href="https://aidstream.org/files/xml/oxford-mm.xml" rel="nofollow noopener">here</a>). But neither of these are unicode issues.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/37">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/37</link>
+        <pubDate>Thu, 13 Jun 2019 17:03:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-37</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Very true, Herman. My question is whether it <em>would</em> involve a change to any existing identifiers. We’d have to crawl the registry to check.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/36">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/36</link>
+        <pubDate>Thu, 13 Jun 2019 11:19:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-36</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Changes in current IATI identifiers will produce havoc when using IATI data, especially when those identifiers are being used in other activities or by other publishers. I think the best we could do here is to make this a guideline, which could be checked and flagged by the data-validator (e.g. IATI identifier ABC contains non-standard characters) as a ‘warning’ class message.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/35">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/35</link>
+        <pubDate>Wed, 12 Jun 2019 14:19:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-35</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="31" data-topic="649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/david_megginson/40/22_2.png" class="avatar"> David_Megginson:</div>
+<blockquote>
+<p>if we are sticking with regular expressions, then in POSIX-y dialects (including Python regex’s) we can use \w to match any alphanumeric character, \s to match any whitespace character, etc.</p>
+</blockquote>
+</aside>
+<p>By default, <code>\w</code> will match unicode characters in python3. But python’s <code>re</code> library has the <a href="https://docs.python.org/3/library/re.html#re.ASCII" rel="nofollow noopener">re.ASCII flag</a>, which would make <code>\w</code> do the right thing (if “the right thing” means ASCII-only).</p>
+<p>[Just mentioning this here because I was previously unaware of <code>re.ASCII</code>].</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/34">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/34</link>
+        <pubDate>Mon, 10 Jun 2019 16:45:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-34</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Good points, <a class="mention" href="/u/markbrough">@markbrough</a>, but I think there’s a risk of being overly cautious here. Yes, it is possible that there is a major enterprise computer system somewhere in the world that uses emojis in its database primary keys, but I’d suggest that it’s highly improbable, to the point that we can leave it out of consideration. Accented or non-Roman characters in a primary key are <em>slightly</em> less improbable, but anyone doing that would already have to convert them for interoperability with other systems.</p>
+<p>On the other side of the scale, allowing non-alphanumeric, non-basic-punctuation characters opens a huge range of security holes in naive implementations, and a huge range of potential bugs. So we have to ask which cost is greater – accommodating a theoretically-possible edge case (that we could help a single org work around if it happened), or adding the potential for bugs and security holes in every IATI software implementation. There’s no zero-cost choice here.</p>
+<p>(Note that I am a huge advocate of multilingual support in the human-readable data in IATI – titles, descriptions, etc – but not necessarily in the purely machine-readable stuff like XML tags, identifiers, etc).</p>
+<p>D</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/33">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/33</link>
+        <pubDate>Thu, 23 May 2019 13:41:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-33</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hey <a class="mention" href="/u/david_megginson">@David_Megginson</a> – I think this is a rare moment where I maybe have to disagree with you! There are a bunch of different perspectives and arguments in the thread above, but my argument is something like the following:</p>
+<p>So IATI Identifiers should be composed of <code>[Organisation ID]-[Organisation's internal project ID]</code>.</p>
+<p>Having restrictions on IATI Identifiers means that we have to:</p>
+<ol>
+<li>restrict which characters an organisation has in its project ID in internal systems (which as <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/20">says is not something IATI has control over</a>), or</li>
+<li>we require that organisations with non-permitted characters to convert those characters in a consistent way</li>
+</ol>
+<p>I think 2. has several issues:</p>
+<ul>
+<li>every other organisation referring to this IATI ID has to convert in exactly the same way, whereas probably at least sometimes people will make mistakes</li>
+<li>it breaks the link between internal project IDs and IATI Identifiers</li>
+</ul>
+<p>In either case:</p>
+<ul>
+<li>the benefits are difficult to ascertain, because as we have seen elsewhere in IATI, there will always be cases where organisations don’t implement this perfectly – so systems using the data will therefore have to handle funny characters anyway (e.g percent-encoding if using these identifiers in URLs)</li>
+<li>we would have to have a long and very painful discussion about which characters exactly should be permitted… e.g. would we be excluding data from Chinese or Arabic systems which have non-ASCII identifiers? I don’t know…</li>
+</ul>
+<p>Or have I got the wrong end of the stick of what you’re proposing here?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/32">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/32</link>
+        <pubDate>Wed, 22 May 2019 17:05:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-32</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>I think BNF (or similar) might be clearer than a regex, because of all the different regex flavours, but if we are sticking with regular expressions, then in POSIX-y dialects (including Python regex’s) we can use \w to match any alphanumeric character, \s to match any whitespace character, etc.</p>
+<p>We also have to specify whether we’re allowing Unicode or just ASCII. I’m a huge Unicode (and UTF-8 encoding) fan, but even an experienced coder or DBA will often blow up a system and/or open security holes when they get an unexpected non-ASCII character in an identifier, etc. If we scan the registry and find that no one is using non-ASCII characters in identifiers, I’d suggest making the regex very explicit (inclusion rather than exclusion character groups) and issuing a guidance note along the lines of “this is what we meant, and what the registry will support”.</p>
+<p>D</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/31">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/31</link>
+        <pubDate>Tue, 21 May 2019 12:12:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-31</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/david_megginson">@David_Megginson</a> can you explain why this would be a problem? Is it just that some systems would fail to handle some unicode characters correctly? Also, could you suggest an alternative regex that would deal with this?</p>
+<p>Aside: Back in Feb 2017, <a href="https://github.com/IATI/IATI-Rulesets/pull/25" rel="nofollow noopener">I sent a PR to fix this regex</a>. This was merged earlier this year, but then discarded (presumably by accident) <a href="https://github.com/IATI/IATI-Rulesets/pull/125" rel="nofollow noopener">in this PR</a> <img src="https://discuss.iatistandard.org/images/emoji/twitter/frowning_face.png?v=9" title=":frowning_face:" class="emoji" alt=":frowning_face:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/30">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/30</link>
+        <pubDate>Mon, 13 May 2019 15:52:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-30</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Reactivating an old conversation, since I just stumbled on that regex in the 2.03 conversation. The current regex means that, in a Unicode context, this is a valid activity identifier:</p>
+<p>XI-IATI-OCHADSC-<img src="https://discuss.iatistandard.org/images/emoji/twitter/recycle.png?v=5" title=":recycle:" class="emoji" alt=":recycle:">️xxx123…<img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">️</p>
+<p>Perhaps it would be wise to revise at least to specify allowable Unicode character classes.</p>
+<p>D</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/29</link>
+        <pubDate>Mon, 13 May 2019 11:49:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-29</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="27" data-topic="649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>For example, if the project ID is 2017/123-456, should both the publisher and the implementing partner be told that they need to remember to ignore the slash and turn it into some other character?</p>
+</blockquote>
+</aside>
+<p>I think the point that comes out of this is that data usage is - or should be - , primarily, content-related.  Finding the path of least resistance might produce a ‘better’ technical solution that appears to improve data quality (fewer errors), but does it achieve this at the expense of the meaning of the data?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/28</link>
+        <pubDate>Thu, 02 Mar 2017 15:44:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-28</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Strongly agree with <a class="mention" href="/u/herman">@Herman</a>, <a class="mention" href="/u/bill_anderson">@bill_anderson</a> and others on option 2. Proper URL encoding much simpler than getting all publishers to replace characters from their project IDs. Slashes in project IDs sometimes have real meaning, and getting all organisations to implement manually <a href="https://tools.ietf.org/html/rfc3986#section-2.1" rel="nofollow noopener">RFC 3986</a> rather than have libraries that do the same job seems like a recipe for disaster to me.</p>
+<p>For example, if the project ID is <code>2017/123-456</code>, should both the publisher and the implementing partner be told that they need to remember to ignore the slash and turn it into some other character? Clearly that won’t always happen, so tools will always need to handle these characters, so why make people go to any effort? Even the conversation about what to do is complicated and going to add a lot of overhead.</p>
+<p>I think we need a clearer explanation of why percent-encoding URL inputs is insufficient before undertaking what would be quite a disruptive step.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/27</link>
+        <pubDate>Thu, 02 Mar 2017 15:10:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-27</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[r_clements]]></dc:creator>
+        <description><![CDATA[
+            <p>In the specific case I was talking about the ID on IATI was actually a compound ID based on data from their internal system and as they were using CSV2IATI to generate their data, so the ID actually didn’t exist in the IATI form on thier system.</p>
+<p>They hadn’t realised what they were doing would cause a problem and were happy to change it when they did, so I think that there might be some naivety in the publishing community as to the issues that are being caused by IDs with non url compliant characters.</p>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a> - The only addition I would make to your list is that we identify organisations that are currently publishing IDs that have non complaint urls and, if possible, give them a nudge to change the impacted ID(s) to something that’s compliant with urls.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/26</link>
+        <pubDate>Thu, 02 Mar 2017 12:44:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-26</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>IATI isn’t a green field anymore. Since changing existing IATI identifiers will break references to organizations and activities of other publishers, I strongly oppose to this change. This change may have a huge impact on existing IATI data users.</p>
+<p>As a rule you never change existing business identifiers. I can only think of two exceptions in this case:<br>
+1 -  An IATI identifier has not been used by any other publisher: so it is safe to change the identifier or<br>
+2 - the proposed change is only applied to NEW IATI identifiers. The exiting identifiers are left unchanged.</p>
+<p>To estimate to impact of this change it would be nice to have some metrics on the use of IATI identifiers with invalid characters.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/25</link>
+        <pubDate>Thu, 02 Mar 2017 12:38:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-25</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="23" data-topic="649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/wendy/40/12_1.png" class="avatar"> Wendy:</div>
+<blockquote>
+<p>publishers can also use the other-identifier element</p>
+</blockquote>
+</aside>
+<p>Good shout. So 5 should in fact be:</p>
+<p>5 . Publishers whose in-house business model involves use of invalid characters should record the original identifier in the <code>other-identifier</code> element with <code>@type="A1"</code></p>
+<p>Question: Is this a <strong><em>should</em></strong> or a <strong><em>must</em></strong>?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/24</link>
+        <pubDate>Thu, 02 Mar 2017 12:30:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-24</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to add that re 5) in <a class="mention" href="/u/bill_anderson">@bill_anderson</a> post above, publishers can also use the <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a> element to cross ref the activity to their own internal project identifier.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/23</link>
+        <pubDate>Thu, 02 Mar 2017 12:24:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-23</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="21" data-topic="649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/410_1.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>What would you propose?</p>
+</blockquote>
+</aside>
+<p>If the consensus is Option 1 I would:</p>
+<ol start="0">
+<li>Agree Regex rules</li>
+<li>Schema (3.01):Add Regex validation to all fields containing org and activity identifiers</li>
+<li>Guideline (2.03): Publishers <strong><em>should</em></strong> follow Regex rules</li>
+<li>Action: Add Regex rule and guidance to <a href="http://identify-org.net">identify-org.net</a> (<a class="mention" href="/u/timdavies">@TimDavies</a> ok?)</li>
+<li>Guideline (2.03): Publishers whose in-house business model involves use of invalid characters <strong><em>should</em></strong> provide a note (in the registry metadata?) on how users may be able to derive the original project id.</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/22</link>
+        <pubDate>Thu, 02 Mar 2017 12:08:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-22</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="20" data-topic="649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Isn’t the root of the chain the institution’s own business rules for how they id their projects? IATI doesn’t have jurisdiction over this.</p>
+</blockquote>
+</aside>
+<p>From the IATI network perspective yes and no. I understand IATI does not have jurisdiction over their business rules, but I guess leaving this as is will continue to cause issues down the line.</p>
+<p>What if IATI -from data quality perspective- picks this up according to tbd upon convention / conversion we can all agree to? As in your option 1 <a class="mention" href="/u/bill_anderson">@bill_anderson</a> What would you propose?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/21</link>
+        <pubDate>Thu, 02 Mar 2017 11:49:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-21</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="19" data-topic="649">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/siemvaessen/40/410_1.png" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>the root of the chain</p>
+</blockquote>
+</aside>
+<p>Isn’t the root of the chain the institution’s own business rules for how they id their projects? IATI doesn’t have jurisdiction over this.</p>
+<p><a class="mention" href="/u/r_clements">@r_clements</a> just to be clear, when I talked about breaking the link I didn’t mean across IATI datasets, but between IATI and the reporting organisation’s project management system</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/20</link>
+        <pubDate>Thu, 02 Mar 2017 11:37:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-20</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Do we know firsthand how many IATI identifiers contain special characters, seeing I don’t have those numbers in front of me.</p>
+<p>From API (OIPA) perspective this has been an ongoing <em>issue</em> for years now. Non URL/URI compliance does in many cases require a custom approach from our perspective. Seeing how others may have a different approach as well, this does not add to interoperability if we for example were to align different systems in the IATI network.</p>
+<p>Basically the issue is two-fold: an IATI org. identifier can contain special character plus the additional identifier may contain special characters as well.</p>
+<p>We would prefer this to be solved at the root of the chain -the standard itself- and not anywhere else.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/19</link>
+        <pubDate>Thu, 02 Mar 2017 11:33:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-19</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[r_clements]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry I went off a bit there: I think you’ve hit the nail on the head, in the first instance I would break the link so 2. but would look to flag this in some way (Vincent’s IATI bug tracker could be adapted for this, so that part 1. can happen in conversation between the impacted organisations.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/18</link>
+        <pubDate>Thu, 02 Mar 2017 11:33:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-18</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[r_clements]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello <a class="mention" href="/u/bill_anderson">@bill_anderson</a>, In this case we were lucky in that the project was not linked to any other IATI data sets so I asked the organisation to fix it (i.e. remove the ’ and republish) - I must appologise to the community here as I didn’t realise that you’re not meant to do this, so I misinformed the publisher in this case.</p>
+<p>There were other issues with their published data, projects were published four times a year as the ID was adapted to reflect the current financial quarter, causing duplication of data within the IATI network. Again we have advised the organisation involved about this and they are changing their data, going forward, so they only publish a project ID once and adjust the finances rather than change the ID.</p>
+<p>I think my real concern with the IATI identifiers is that when we start to really improve our linking through the network, via the transaction ref fields, that a badly formed identifier (i.e. non url compliant) is going to cause issues for anyone trying to track funds when they’re using API calls to return the data.</p>
+<p>It’s not impossible to work round this issue, but I think we’re going to make the IATI data much more complex to work with than it needs to be - I suppose my core question, difficulties of changing the systems to enforce complance behaviour aside, is it too much to ask project inputters to avoid using these specific characters when allocating IATI Identifiers?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/17</link>
+        <pubDate>Thu, 02 Mar 2017 11:30:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-17</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/r_clements">@r_clements</a> you make a strong case, but how do you maintain a link to the original project number:</p>
+<ol>
+<li>Is there a conversion (that works in both directions) that could be standardised?</li>
+<li>Or do you argue that the benefits of breaking that link outweigh the drawbacks?</li>
+</ol>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/16</link>
+        <pubDate>Thu, 02 Mar 2017 10:30:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-16</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/timdavies">@TimDavies</a> I think the bigger problem lies with the ‘project number’ part of the identifier, though I take the point that this could crop up on the organisation side as well</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/15</link>
+        <pubDate>Thu, 02 Mar 2017 10:23:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-15</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+      <item>
+        <title>IATI Identifiers should not be allowed to contain special characters</title>
+        <dc:creator><![CDATA[r_clements]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello everyone,</p>
+<p>For me it’s still: 1.Restrict characters allowed and fix regex rules.</p>
+<p>I don’t like to be the contrarian here, but I’m afraid I disagree and would like to highlight one of the issues.</p>
+<p>An organisation whose data we wanted to consume published an identifier that went something like: GB-test-Sana’a and caused the team behind DevTracker and OIPA no end of headaches to try and formulate and process an ID that was usable from the existing data.</p>
+<p>I think it would be far easier for any tool builder to have the option of excluding IATI identifiers that contain this type of character and I fail to see why allowing /  ’ " = and &amp; values within IATI identifiers adds any value to the standard.</p>
+<p>For me it results in a significant overhead for anyone trying to build API tools on top of the data, that will be replicated by any technical team looking to build tools with IATI data.</p>
+<p>As a consumer of IATI data, I would rather spend my time working to develop new features to our tools (e.g DevTracker), insead of trying to mitigate against the impact of iati identifiers whi ch contain special characters that break url encoding.</p>
+<p><a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/andylolz">@andylolz</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/bjwebb">@bjwebb</a> <a class="mention" href="/u/markbrough">@markbrough</a> <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/vincentvw">@VincentVW</a> <a class="mention" href="/u/siemvaessen">@siemvaessen</a> <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649/14</link>
+        <pubDate>Thu, 02 Mar 2017 10:21:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-649-14</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-identifiers-should-not-be-allowed-to-contain-special-characters/649.rss">IATI Identifiers should not be allowed to contain special characters</source>
+      </item>
+  </channel>
+</rss>

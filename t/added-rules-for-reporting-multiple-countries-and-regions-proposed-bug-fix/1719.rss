@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>(Added) Rules for reporting multiple countries and regions - proposed bug fix</title>
+    <link>https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719</link>
+    <description>**Issue**
+
+In the activity standard and surrounding guidance it is unclear whether or not recipient-regions from different vocabularies are included within the 100%.
+
+For the example below:
+
+- If the reported region vocabulary makes no difference, then the percentage total equals 150% which is invalid
+- If the reported region vocabularies are treated separately. Then country + region percentages equals 100%, which is valid.
+
+&amp;lt;recipient-country code=&quot;AF&quot; percentage=&quot;50&quot; /&amp;gt;
+ &amp;lt;recipient-region code=&quot;489&quot; vocabulary=&quot;1&quot; percentage=&quot;50&quot; /&amp;gt;
+&amp;lt;recipient-region code=&quot;A1&quot; vocabulary=&quot;99&quot; percentage=&quot;50&quot; vocabulary-uri=&quot;http://example.com/vocab.html&quot; /&amp;gt;
+
+There&#39;s been some discussion on GitHub about this already: https://github.com/IATI/IATI-Extra-Documentation/pull/516
+
+We propose that the latter option should be implemented as a bug fix.
+
+**Solution**
+To make it clear that vocabularies can be used independently of each other, we have made text changes to the rules in the IATI activity standard, changed the guidance for recipient-region and recipient country and updated the overall geography guidance. These proposed changes can be seen on GitHub and are linked to the following issue:
+
+https://github.com/IATI/IATI-Extra-Documentation/issues/544
+
+
+**Use cases:**
+Organisations may need to report using different region vocabularies for different stakeholders. E.g. UN CEB requirements require publishing using the UN region codelist, and their DAC reporting requires use of the OECD DAC region codelist.
+
+Organisations may need to report using the OECD DAC region codelist as per their grant agreement. However, internally their region mapping is different and would use the vocab option 99 to demonstrate their own regions based on partner networks 
+
+**Who would be affected?**
+If this bug fix goes ahead, it means that the rule will be included in the IATI validator.
+
+I can find one organisation which has one activity that would be breaking this rule:
+
+- [International Planned Parenthood Federation](https://iatiregistry.org/publisher/ippf)
+- [GB-CHC-229476-XM-DAC-7PPR-4000000707](http://www.d-portal.org/ctrack.html#view=act&amp;aid=GB-CHC-229476-XM-DAC-7PPR-4000000707)
+
+The IATI tech team will get in contact with them to let them know of the change and what changes are needed to their data.
+
+**Next steps**
+If there is no objection to this bug fix within 7 working days (excluding bank holidays for Easter) we will implement the changes. This will include version 2.01, 2.02 and 2.03 of the IATI Standard. If objections are raised we will go into consultation about how this issue should be resolved.</description>
+    
+    <lastBuildDate>Tue, 07 May 2019 16:01:08 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>(Added) Rules for reporting multiple countries and regions - proposed bug fix</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719/4</link>
+        <pubDate>Tue, 07 May 2019 16:01:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1719-4</guid>
+        <source url="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719.rss">(Added) Rules for reporting multiple countries and regions - proposed bug fix</source>
+      </item>
+      <item>
+        <title>(Added) Rules for reporting multiple countries and regions - proposed bug fix</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This fix has now been implemented</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719/3</link>
+        <pubDate>Tue, 07 May 2019 16:01:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1719-3</guid>
+        <source url="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719.rss">(Added) Rules for reporting multiple countries and regions - proposed bug fix</source>
+      </item>
+      <item>
+        <title>(Added) Rules for reporting multiple countries and regions - proposed bug fix</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>As there has been no objection to this fix on Discuss nor on GitHub, the IATI Technical Team will implement this fix.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719/2</link>
+        <pubDate>Tue, 30 Apr 2019 09:13:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1719-2</guid>
+        <source url="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719.rss">(Added) Rules for reporting multiple countries and regions - proposed bug fix</source>
+      </item>
+      <item>
+        <title>(Added) Rules for reporting multiple countries and regions - proposed bug fix</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Issue</strong></p>
+<p>In the activity standard and surrounding guidance it is unclear whether or not recipient-regions from different vocabularies are included within the 100%.</p>
+<p>For the example below:</p>
+<ul>
+<li>If the reported region vocabulary makes no difference, then the percentage total equals 150% which is invalid</li>
+<li>If the reported region vocabularies are treated separately. Then country + region percentages equals 100%, which is valid.</li>
+</ul>
+<p>&lt;recipient-country code=“AF” percentage=“50” /&gt;<br>
+&lt;recipient-region code=“489” vocabulary=“1” percentage=“50” /&gt;<br>
+&lt;recipient-region code=“A1” vocabulary=“99” percentage=“50” vocabulary-uri=“<a href="http://example.com/vocab.html">http://example.com/vocab.html</a>” /&gt;</p>
+<p>There’s been some discussion on GitHub about this already: <a href="https://github.com/IATI/IATI-Extra-Documentation/pull/516">https://github.com/IATI/IATI-Extra-Documentation/pull/516</a></p>
+<p>We propose that the latter option should be implemented as a bug fix.</p>
+<p><strong>Solution</strong><br>
+To make it clear that vocabularies can be used independently of each other, we have made text changes to the rules in the IATI activity standard, changed the guidance for recipient-region and recipient country and updated the overall geography guidance. These proposed changes can be seen on GitHub and are linked to the following issue:</p>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/544" target="_blank">github.com/IATI/IATI-Extra-Documentation</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/IATI/IATI-Extra-Documentation/issues/544" target="_blank">Unclear Country and Region rule/guidance</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2019-04-18" data-time="10:52:13" data-timezone="UTC">10:52AM - 18 Apr 19 UTC</span>
+      </div>
+
+        <div class="date">
+          closed <span class="discourse-local-date" data-format="ll" data-date="2019-05-07" data-time="16:03:14" data-timezone="UTC">04:03PM - 07 May 19 UTC</span>
+        </div>
+
+      <div class="user">
+        <a href="https://github.com/amy-silcock" target="_blank">
+          <img alt="amy-silcock" src="https://avatars1.githubusercontent.com/u/27764077?v=4" class="onebox-avatar-inline" width="20" height="20">
+          amy-silcock
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">The rules within the IATI Standard and the surrounding documentation are unclear and inconsistent whether or not publishers can map their...</p>
+</div>
+
+<div class="labels">
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">bug</span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p><strong>Use cases:</strong><br>
+Organisations may need to report using different region vocabularies for different stakeholders. E.g. UN CEB requirements require publishing using the UN region codelist, and their DAC reporting requires use of the OECD DAC region codelist.</p>
+<p>Organisations may need to report using the OECD DAC region codelist as per their grant agreement. However, internally their region mapping is different and would use the vocab option 99 to demonstrate their own regions based on partner networks</p>
+<p><strong>Who would be affected?</strong><br>
+If this bug fix goes ahead, it means that the rule will be included in the IATI validator.</p>
+<p>I can find one organisation which has one activity that would be breaking this rule:</p>
+<ul>
+<li><a href="https://iatiregistry.org/publisher/ippf">International Planned Parenthood Federation</a></li>
+<li><a href="http://www.d-portal.org/ctrack.html#view=act&amp;aid=GB-CHC-229476-XM-DAC-7PPR-4000000707">GB-CHC-229476-XM-DAC-7PPR-4000000707</a></li>
+</ul>
+<p>The IATI tech team will get in contact with them to let them know of the change and what changes are needed to their data.</p>
+<p><strong>Next steps</strong><br>
+If there is no objection to this bug fix within 7 working days (excluding bank holidays for Easter) we will implement the changes. This will include version 2.01, 2.02 and 2.03 of the IATI Standard. If objections are raised we will go into consultation about how this issue should be resolved.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719/1</link>
+        <pubDate>Thu, 18 Apr 2019 11:50:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1719-1</guid>
+        <source url="https://discuss.iatistandard.org/t/added-rules-for-reporting-multiple-countries-and-regions-proposed-bug-fix/1719.rss">(Added) Rules for reporting multiple countries and regions - proposed bug fix</source>
+      </item>
+  </channel>
+</rss>

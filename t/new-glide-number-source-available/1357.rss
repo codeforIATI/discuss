@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>New GLIDE number source available</title>
+    <link>https://discuss.iatistandard.org/t/new-glide-number-source-available/1357</link>
+    <description>**GLIDE numbers** are the identifiers for humanitarian crises used UN agencies, IFRC, and many other partners. Because multiple organisations can create GLIDEs independently, there is often confusion over which ones to choose for best interoperability.
+
+The UN&#39;s humanitarian office (OCHA) is now publishing a live list of the subset of GLIDE numbers it uses for information management and financial tracking:
+
+https://data.humdata.org/dataset/unocha-glides
+
+(Direct CSV download: https://proxy.hxlstandard.org/data/39a48b/download/unocha-glide-numbers.csv)
+
+This list is available online independently of any outages at the main GLIDEnumber.net site, and we encourage IATI reporters to use these codes (when available) with the _[humanitarian-scope](http://iatistandard.org/203/activity-standard/iati-activities/iati-activity/humanitarian-scope/)_ element for their humanitarian activities.</description>
+    
+    <lastBuildDate>Wed, 26 Sep 2018 09:12:14 +0000</lastBuildDate>
+    <category>Codelists</category>
+    <atom:link href="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>New GLIDE number source available</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a really great resource <a class="mention" href="/u/david_megginson">@David_Megginson</a> and it is really useful to have the country codes in the dataset in order to use the data with other IATI (and other sources) elements. <a class="mention" href="/u/ximboden">@ximboden</a> how easy (or not?) would it be to provide a CSV download for the HRP codes at <a href="https://fts.unocha.org/plan-code-list-iati">https://fts.unocha.org/plan-code-list-iati</a> and also include the ISO 2 char and 3 char country codes?</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-glide-number-source-available/1357/4</link>
+        <pubDate>Wed, 26 Sep 2018 09:12:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1357-4</guid>
+        <source url="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357.rss">New GLIDE number source available</source>
+      </item>
+      <item>
+        <title>New GLIDE number source available</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Absolutely, Andy. This is a curated subset based on two criteria:</p>
+<ol>
+<li>Only the GLIDEs that the UN actually uses (ReliefWeb, FTS, etc)</li>
+<li>Only the most-recent 1,000 (which takes us back about 7-8 years).</li>
+</ol>
+<p>Because GLIDEs are semi-crowdsourced with a closed group of contributors, the full database ends up with duplicates, different levels of detail (e.g. one national crisis split up into multiple subnational), etc.</p>
+<p>This isn’t meant as a replacement for <a href="http://GLIDEnumber.net" rel="nofollow noopener">GLIDEnumber.net</a>, but it will cover all of the major crises over the past few years, and will also help ensure that any GLIDEs you use in your IATI reporting will be the same ones UNOCHA (and partners) are using.</p>
+<p>We still hope that <a href="http://GLIDEnumber.net" rel="nofollow noopener">GLIDEnumber.net</a> will become more stable soon. It remains the official source of all GLIDEs.</p>
+<p>D</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-glide-number-source-available/1357/3</link>
+        <pubDate>Wed, 27 Jun 2018 12:27:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1357-3</guid>
+        <source url="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357.rss">New GLIDE number source available</source>
+      </item>
+      <item>
+        <title>New GLIDE number source available</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Great! This is fantastic work, thanks <a class="mention" href="/u/david_megginson">@David_Megginson</a>!</p>
+<p>I’ve only glanced at this, but this looks to me like it’s a subset… The CSV on <a href="http://humdata.org">humdata.org</a> has 1,000 rows; the source on <a href="http://glidenumber.net">http://glidenumber.net</a> has ~6,500. Can you explain the relationship between the two lists?</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-glide-number-source-available/1357/2</link>
+        <pubDate>Wed, 27 Jun 2018 09:04:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1357-2</guid>
+        <source url="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357.rss">New GLIDE number source available</source>
+      </item>
+      <item>
+        <title>New GLIDE number source available</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>GLIDE numbers</strong> are the identifiers for humanitarian crises used UN agencies, IFRC, and many other partners. Because multiple organisations can create GLIDEs independently, there is often confusion over which ones to choose for best interoperability.</p>
+<p>The UN’s humanitarian office (OCHA) is now publishing a live list of the subset of GLIDE numbers it uses for information management and financial tracking:</p>
+<p><a href="https://data.humdata.org/dataset/unocha-glides" class="onebox" target="_blank" rel="nofollow noopener">https://data.humdata.org/dataset/unocha-glides</a></p>
+<p>(Direct CSV download: <a href="https://proxy.hxlstandard.org/data/39a48b/download/unocha-glide-numbers.csv" rel="nofollow noopener">https://proxy.hxlstandard.org/data/39a48b/download/unocha-glide-numbers.csv</a>)</p>
+<p>This list is available online independently of any outages at the main <a href="http://GLIDEnumber.net" rel="nofollow noopener">GLIDEnumber.net</a> site, and we encourage IATI reporters to use these codes (when available) with the <em><a href="http://iatistandard.org/203/activity-standard/iati-activities/iati-activity/humanitarian-scope/" rel="nofollow noopener">humanitarian-scope</a></em> element for their humanitarian activities.</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-glide-number-source-available/1357/1</link>
+        <pubDate>Tue, 19 Jun 2018 15:40:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1357-1</guid>
+        <source url="https://discuss.iatistandard.org/t/new-glide-number-source-available/1357.rss">New GLIDE number source available</source>
+      </item>
+  </channel>
+</rss>

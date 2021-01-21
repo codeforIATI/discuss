@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Results: represent more than quantitative data</title>
+    <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749</link>
+    <description>This suggestion addresses Principle 1 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/ ) - see attached document &lt;a class=&quot;attachment&quot; href=&quot;/uploads/default/original/1X/def895b120dfd4c1b55f7c5d8a65e3dfc8782536.docx&quot;&gt;Results_representMoreThanQuantitativeDataFORMATTINGUPDATED.docx&lt;/a&gt; (16.6 KB)</description>
+    
+    <lastBuildDate>Mon, 01 May 2017 07:57:01 +0000</lastBuildDate>
+    <category>Results</category>
+    <atom:link href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Results: represent more than quantitative data</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Comments added in document.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749/4</link>
+        <pubDate>Mon, 01 May 2017 07:57:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-749-4</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749.rss">Results: represent more than quantitative data</source>
+      </item>
+      <item>
+        <title>Results: represent more than quantitative data</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Including link to google doc version of proposal document per <a class="mention" href="/u/herman">@Herman</a>’s suggestion with indication of the minimum suggestions raised at the technical standards day of the IATI TAG 2017. <strong>Please use this google doc instead of the word document: <a href="https://docs.google.com/document/d/179pZPWwfohsPfNJSrtz1x3816VYciK9iH5Voblx2GFI/edit?usp=sharing" rel="nofollow noopener">Results: represent more than quantitative data</a></strong></p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749/3</link>
+        <pubDate>Tue, 11 Apr 2017 07:37:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-749-3</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749.rss">Results: represent more than quantitative data</source>
+      </item>
+      <item>
+        <title>Results: represent more than quantitative data</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<blockquote>
+<blockquote>
+<ol>
+<li>Add a “qualitative” code to the IndicatorMeasure Codelist</li>
+</ol>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>I would call this code “ordinal” since you are expressing a result in qualitative terms like “1 - bad”, “2 - fair”, “3 - good”.  I.m.o.  an at least ordinal  (expert opinion) is always possible.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<ol start="2">
+<li>Make the value attribute optional for<br>
+i.	result/indicator/baseline<br>
+ii.	result/indicator/period/target<br>
+iii.	result/indicator/period/actual<br>
+to allow:<br>
+i.	qualitative results to be expressed in narrative only</li>
+</ol>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>For the reason mentioned above, this is i.m.o. not a good reason to make values optional.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ii.	distinction between an value of zero versus no value recorded &gt;&gt;&gt;(alternative: use xsi:nil but this may cause complications for csv based &gt;&gt;&gt;tools that do not have the same capability)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>I would prefer an explicit ‘missing value’’ indicator. A technical limitation of CSV files should exclude the possibility to explicitly specify an missing value.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<ol start="3">
+<li>In order to link documents<br>
+•	Preferred suggestion:<br>
+To be consistent with iati-activity/location element (where location is &gt;&gt;&gt; defined once and referenced in results) add document-link (0…<em>) to:<br>
+i.	result/indicator/baseline<br>
+ii.	result/indicator/period/target<br>
+iii.	result/indicator/period/actual<br>
+with:<br>
+i.	ref attribute to link to iati-activity/document-link<br>
+ii.	optional free-text to describe how the document is relevant to the &gt;&gt;&gt;results or indicator<br>
+iii.	sub-ref element (0…</em>)  to allow free-text reference to a particular &gt;&gt;&gt;area/section/graph/table etc. of a document acknowledging that often &gt;&gt;&gt;only part(s) of a document will be relevant to a given result or indicator.<br>
+and add ref attribute to iati-activity/document-link<br>
+•	Alternative suggestion a:<br>
+add document-link element (0…*) (per iati-activity/document-link) to:<br>
+i.	result/indicator/baseline<br>
+ii.	result/indicator/period/target<br>
+iii.	result/indicator/period/actual<br>
+•	Alternative suggestion b: (If modification &gt;&gt;&gt;<a href="//discuss.iatistandard.org/t/results-use-of-narrative-elements/746">Results: use of narrative elements</a> is &gt;&gt;&gt;not accepted (i.e. use narrative type attribute))<br>
+Any document URLs to be included directly as part of existing narrative &gt;&gt;&gt;elements.</li>
+</ol>
+</blockquote>
+</blockquote>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749/2</link>
+        <pubDate>Mon, 27 Mar 2017 08:00:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-749-2</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749.rss">Results: represent more than quantitative data</source>
+      </item>
+      <item>
+        <title>Results: represent more than quantitative data</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>This suggestion addresses Principle 1 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – (per <a href="http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/" class="inline-onebox">Results: discussion space and TAG 2016/17 path</a> ) - see attached document <a class="attachment" href="https://discuss.iatistandard.org/uploads/default/original/1X/def895b120dfd4c1b55f7c5d8a65e3dfc8782536.docx">Results_representMoreThanQuantitativeDataFORMATTINGUPDATED.docx</a> (16.6 KB)</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749/1</link>
+        <pubDate>Mon, 06 Mar 2017 20:59:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-749-1</guid>
+        <source url="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data/749.rss">Results: represent more than quantitative data</source>
+      </item>
+  </channel>
+</rss>

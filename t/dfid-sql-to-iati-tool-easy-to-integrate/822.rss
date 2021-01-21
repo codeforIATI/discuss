@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>DfID SQL-to-IATI tool - easy to integrate?</title>
+    <link>https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822</link>
+    <description>Hello,
+
+I&#39;m looking to find a short-to-medium-term solution for publishing at IRC-UK, and the other day a colleague from Malaria Consortium mentioned the SQL-to-IATI. I understand that Malaria Consortium and DfID use it to publish IATI data.
+
+I am keen to hear any experiences relating to this tool. To cue anyone that can chip in...
+
+- Which software systems has it been tested with?
+- Is there an estimate on start-up times, how long it has taken?
+- Would developers need to be brought it, or can non-devs work it out?
+
+I read through the Git-Hub posting, but I would appreciate any narrative people can offer that explains the tech.
+
+Thanks,
+
+Daniel</description>
+    
+    <lastBuildDate>Thu, 04 May 2017 13:37:04 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>DfID SQL-to-IATI tool - easy to integrate?</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, in DK MoFA we are happy users of Dfid’s DB. And we can recommend it - but rather as the long-term solution.</p>
+<p>We use it as a data-mart - as a destination for updates, processed by our DataWarehouse.</p>
+<p>For us, this has several advantages: We maintain our existing architechture; we complete the etl-process in this internal DB, which can then be copied and restored in our DMZ (avoiding any security / Firewall issues); and we can rely on the fact that Dfid’s developers have created a reliable set of stored procedures to generate the ultimate IATI XML files.</p>
+<p>We have added a few elements that wasnt completed at the time Dfid published the current DB - and we have added an API of our own design to provide various additional features on top of the DB (standardises pagination - and an o-data feature that allows us to use Excel to pivot the raw data).</p>
+<p>Both the updated version we have made of Dfids DB and our API is mae available on GitHub. I haven’t tried that before, so please let me know if there is something we ought to do better for that sort of publication.</p>
+<p>Yours OJ</p>
+          <p><a href="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/6</link>
+        <pubDate>Thu, 04 May 2017 13:37:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-822-6</guid>
+        <source url="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822.rss">DfID SQL-to-IATI tool - easy to integrate?</source>
+      </item>
+      <item>
+        <title>DfID SQL-to-IATI tool - easy to integrate?</title>
+        <dc:creator><![CDATA[DanielMackenzie]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi John, Hi Ross</p>
+<p>Thanks for both coming back to me so quickly on this one. There are some very useful points in the above.</p>
+<p>I’ll do a bit more research and get in touch with others who may have experiences.</p>
+<p>Any other thoughts, please add more on this thread.</p>
+<p>Best,</p>
+<p>Daniel</p>
+          <p><a href="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/5</link>
+        <pubDate>Wed, 03 May 2017 11:07:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-822-5</guid>
+        <source url="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822.rss">DfID SQL-to-IATI tool - easy to integrate?</source>
+      </item>
+      <item>
+        <title>DfID SQL-to-IATI tool - easy to integrate?</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Dan, I know that a few others are either using SQL-to-IATI or have tried to use it - OJ in Denmark, Carl and team in Sida, and Antoon in Belgium. It might be worth a chat with them about how they use the tool - or reasons for not using it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/4</link>
+        <pubDate>Wed, 03 May 2017 11:02:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-822-4</guid>
+        <source url="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822.rss">DfID SQL-to-IATI tool - easy to integrate?</source>
+      </item>
+      <item>
+        <title>DfID SQL-to-IATI tool - easy to integrate?</title>
+        <dc:creator><![CDATA[r_clements]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello Daniel,</p>
+<p>There is some narrative text on the IATI website, which might explain the purpose of SQL to IATI a little further: <a href="http://iatistandard.org/201/guidance/how-to-publish/select-publishing-tool/#sql-to-iati" rel="nofollow noopener">http://iatistandard.org/201/guidance/how-to-publish/select-publishing-tool/#sql-to-iati</a></p>
+<p>We open sourced the database so I will answer your points as best as I can, if you would like any further information please just reply to this post.</p>
+<p>•Which software systems has it been tested with</p>
+<p>The database was developed on SQL server &amp; worked with the community edition which is freely available to download - though I am not sure what the licensing restrictions are like if you were to use it in a production setting.</p>
+<p>• Is there an estimate on start-up times, how long it has taken?</p>
+<p>I am afraid not, this database has been in use since we started publishing IATI data, in some form or other, so we haven’t had to start from scratch in a very long time.</p>
+<p>The challenge is not the time taken to set up the database, which could be done relatively quickly by a database administrator, it would be trying to integrate the database with your finance system so that it gets populated with accurate information that is suitable for publication.</p>
+<p>•Would developers need to be brought it, or can non-devs work it out?</p>
+<p>I think you would ideally have a Database Administrator work on the project and somone who understands processing project &amp; finance data from your core systems using SQL (i.e. the job of creating a custom version of p_populate that’s tailored to your organsation’s needs).</p>
+<p>Kind Regards,<br>
+Ross</p>
+          <p><a href="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/3</link>
+        <pubDate>Tue, 02 May 2017 16:05:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-822-3</guid>
+        <source url="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822.rss">DfID SQL-to-IATI tool - easy to integrate?</source>
+      </item>
+      <item>
+        <title>DfID SQL-to-IATI tool - easy to integrate?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Link to GitHub repository: <a href="https://github.com/DFID/SQL-to-IATI-Database" rel="nofollow noopener">https://github.com/DFID/SQL-to-IATI-Database</a></p>
+<p>Tagging <a class="mention" href="/u/johnadams">@JohnAdams</a> <a class="mention" href="/u/r_clements">@r_clements</a> too</p>
+          <p><a href="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/2</link>
+        <pubDate>Fri, 28 Apr 2017 10:41:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-822-2</guid>
+        <source url="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822.rss">DfID SQL-to-IATI tool - easy to integrate?</source>
+      </item>
+      <item>
+        <title>DfID SQL-to-IATI tool - easy to integrate?</title>
+        <dc:creator><![CDATA[DanielMackenzie]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello,</p>
+<p>I’m looking to find a short-to-medium-term solution for publishing at IRC-UK, and the other day a colleague from Malaria Consortium mentioned the SQL-to-IATI. I understand that Malaria Consortium and DfID use it to publish IATI data.</p>
+<p>I am keen to hear any experiences relating to this tool. To cue anyone that can chip in…</p>
+<ul>
+<li>Which software systems has it been tested with?</li>
+<li>Is there an estimate on start-up times, how long it has taken?</li>
+<li>Would developers need to be brought it, or can non-devs work it out?</li>
+</ul>
+<p>I read through the Git-Hub posting, but I would appreciate any narrative people can offer that explains the tech.</p>
+<p>Thanks,</p>
+<p>Daniel</p>
+          <p><a href="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822/1</link>
+        <pubDate>Fri, 28 Apr 2017 10:35:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-822-1</guid>
+        <source url="https://discuss.iatistandard.org/t/dfid-sql-to-iati-tool-easy-to-integrate/822.rss">DfID SQL-to-IATI tool - easy to integrate?</source>
+      </item>
+  </channel>
+</rss>

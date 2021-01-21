@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Best Practices - Aid Type and Grand Bargain</title>
+    <link>https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983</link>
+    <description>Hello Everyone,
+
+Hoping to crowd source some ideas on best practices.  Apologies if this has been discussed before but I didn&#39;t see it in previous discussions but admittedly I&#39;m crap at finding old threads.  If I missed it don&#39;t hesitate to point me to it.
+
+There are AidType vocabulary for both OECD and Grand Bargain (GB) and from what I can tell  you can code the same activity (default level) or transaction (transaction level) against both.  
+
+Assuming that a publisher is:
+1) receiving money from a donor 
+2) is not passing it on to an implementing partner
+3) coding at the transaction not activity level
+
+ Questions, is it correct to assume:
+1)  that codes 1-3 would only be used for incoming commitment (transaction type 11) or incoming funds (transaction type 1)
+2) code 4 would be for expenditures?  
+3) is it best practice to code both transaction types 1 and 11 with aid types 1-3 or would it only be for the incoming commitment?
+
+Rather than replicating AidTypes in two different transaction types, it could simply be coded at the activity level.  But if these 3 vocabularies are only related to two transaction types won&#39;t that mess up assumptions on the disbursement (3) and Expenditure (4) transaction types? 
+
+In looking at the list of GB signatories, only a handful actually code to the GB aid type vocabulary 2-4 so perhaps @stolk, @pelleaardema, @stevieflow can chime in here as they work for/with a few of them.
+
+Thanks in advance.  
+Michelle</description>
+    
+    <lastBuildDate>Tue, 14 Jul 2020 16:03:45 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Best Practices - Aid Type and Grand Bargain</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/pelleaardema">@pelleaardema</a> this was the question I was telling you about.</p>
+          <p><a href="https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983/3</link>
+        <pubDate>Tue, 14 Jul 2020 16:03:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1983-3</guid>
+        <source url="https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983.rss">Best Practices - Aid Type and Grand Bargain</source>
+      </item>
+      <item>
+        <title>Best Practices - Aid Type and Grand Bargain</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a> Thank you for opening this discussion on best practice. Currently, we don’t have a specific recommendations on which transaction types are expected to be seen for each of the <a href="https://iatistandard.org/en/iati-standard/203/codelists/aidtypevocabulary/">aid-type vocabularies</a> you have referred to above.</p>
+<p>This is indeed something that we want to incorporate into the humanitarian guidance consultation that we plan to have in the upcoming months, and it will indeed be good to have Grand Bargain signatories involved.</p>
+<p>There are still very few publishers using  vocabularies 2, 3 and 4.  You can see which organisations have already used the codes  <a href="http://dashboard.iatistandard.org/codelist/2/default-aid-type_@vocabulary.html">activity level</a> and/or <a href="http://dashboard.iatistandard.org/codelist/2/transaction_aid-type_@vocabulary.html">transaction level</a>. It will be great to hear from those already publishing as well as others that plan on using them shortly.</p>
+          <p><a href="https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983/2</link>
+        <pubDate>Tue, 14 Jul 2020 09:30:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1983-2</guid>
+        <source url="https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983.rss">Best Practices - Aid Type and Grand Bargain</source>
+      </item>
+      <item>
+        <title>Best Practices - Aid Type and Grand Bargain</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello Everyone,</p>
+<p>Hoping to crowd source some ideas on best practices.  Apologies if this has been discussed before but I didn’t see it in previous discussions but admittedly I’m crap at finding old threads.  If I missed it don’t hesitate to point me to it.</p>
+<p>There are AidType vocabulary for both OECD and Grand Bargain (GB) and from what I can tell  you can code the same activity (default level) or transaction (transaction level) against both.</p>
+<p>Assuming that a publisher is:</p>
+<ol>
+<li>receiving money from a donor</li>
+<li>is not passing it on to an implementing partner</li>
+<li>coding at the transaction not activity level</li>
+</ol>
+<p>Questions, is it correct to assume:</p>
+<ol>
+<li>that codes 1-3 would only be used for incoming commitment (transaction type 11) or incoming funds (transaction type 1)</li>
+<li>code 4 would be for expenditures?</li>
+<li>is it best practice to code both transaction types 1 and 11 with aid types 1-3 or would it only be for the incoming commitment?</li>
+</ol>
+<p>Rather than replicating AidTypes in two different transaction types, it could simply be coded at the activity level.  But if these 3 vocabularies are only related to two transaction types won’t that mess up assumptions on the disbursement (3) and Expenditure (4) transaction types?</p>
+<p>In looking at the list of GB signatories, only a handful actually code to the GB aid type vocabulary 2-4 so perhaps <a class="mention" href="/u/stolk">@stolk</a>, <a class="mention" href="/u/pelleaardema">@pelleaardema</a>, <a class="mention" href="/u/stevieflow">@stevieflow</a> can chime in here as they work for/with a few of them.</p>
+<p>Thanks in advance.<br>
+Michelle</p>
+          <p><a href="https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983/1</link>
+        <pubDate>Thu, 02 Jul 2020 17:12:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1983-1</guid>
+        <source url="https://discuss.iatistandard.org/t/best-practices-aid-type-and-grand-bargain/1983.rss">Best Practices - Aid Type and Grand Bargain</source>
+      </item>
+  </channel>
+</rss>

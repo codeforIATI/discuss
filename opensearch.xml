@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>IATI Community Discussions Search</ShortName>
+  <Description>Search for posts on IATI Community Discussions</Description>
+  <Tags>discourse forum</Tags>
+    <Image type="image/png">https://discuss.iatistandard.org/uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg</Image>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://discuss.iatistandard.org/opensearch.xml"/>
+  <Url type="text/html" template="https://discuss.iatistandard.org/search?q={searchTerms}"/>
+  <Query role="example" searchTerms="search term"/>
+</OpenSearchDescription>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Providing sector/country codes at activity and transaction level - enable both?</title>
+    <link>https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577</link>
+    <description>IATI is quite clear in how and where either sector and country/region classifications can be mixed between the activity and transactions.
+
+For [sector](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/sector/) codes 
+
+&gt; Sector can also be reported at the transaction level rather than the activity level. Sector must only be reported at EITHER transaction level OR activity level.
+
+and [country/region](http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/recipient-country/): 
+
+&gt; The country can also be specified at transaction rather than activity level. If recipient-country OR recipient-region are reported at the transaction level, ALL transactions MUST contain a recipient-country or recipient-region element and iati-activity/recipient-country and iati-activity/recipient-region MUST NOT be used.
+
+With the [Initiative for Open Ag Funding](https://www.interaction.org/document/initiative-open-ag-funding-proposals-standard-developments) we think it might be useful to relax this rule, in terms of:
+
+- any activity can have sector / country/region codes at BOTH activity and transaction level
+- sector / country/region codes do NOT have to apply to all transactions
+
+We can see use-cases such as:
+
+- A publisher may want to describe their activity with a certain set of sector codes at a high level / early on, and then gradually build up a more detailed picture over time of the activity via transaction encoding.
+- A publisher may be able to codify certain transactions (eg disbursements to partners) with a sector / country/region codes, but have no reason or use with other types.  
+
+Both of these may help end users understand the delivery and scope of the activity via access to greater detail.  We understand that this may also place a high bar on publishers to do this effectively - this post is to illustrate that within the current guidance neither of these scenarios are permitted.</description>
+    
+    <lastBuildDate>Thu, 09 Mar 2017 14:45:16 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Providing sector/country codes at activity and transaction level - enable both?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Just flagging that this didnt seem to get to the list for <span class="hashtag">#TAG2017</span> Standards Day</p>
+<p>It is tagged with Standards Day, so maybe just an oversight <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/wendy">@Wendy</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/4</link>
+        <pubDate>Thu, 09 Mar 2017 14:45:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-577-4</guid>
+        <source url="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577.rss">Providing sector/country codes at activity and transaction level - enable both?</source>
+      </item>
+      <item>
+        <title>Providing sector/country codes at activity and transaction level - enable both?</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve been working on some notes below - but the more I look at this, the more confused I’m finding I’m getting. So posting for now - in the hope this parses clearly enough. But planning to return to it more later too - perhaps with a few more worked examples.</p>
+<h2>(initial) Problem analysis</h2>
+<p>It would be interesting here to understand what business logic (if any) data users are currently employing to cope with the fact that, if working with data from different sources, a user has to look at both <strong>activity</strong> and <strong>transaction</strong> level to understand funding flows, and to find out what sectors an activity is in.</p>
+<p>Whilst in theory the rules might aim to get at 100% of the financial flows, I’m not sure how far it works in practice.</p>
+<p>With the current rules, I think the current business logic (for sector as an example) would go <em>something</em> like this:</p>
+<blockquote>
+<p>If <code>iati-activity/sector</code> exists but <strong>not</strong> at the <code>iati-activity/transaction/sector</code> then:<br>
+…For each <code>sector/@vocabulary</code>:<br>
+… … Sum up <code>sector/@percentage</code> and check it equals 100<br>
+… … For each sector in that <span class="mention">@vocabulary</span><br>
+… … … Multiply the total activity (budget? planned disbursements? commitments?) by sector/<span class="mention">@percentage</span> to get total allocated to that sector</p>
+<p>If <code>iati-activity/transaction/sector</code> exists but <strong>not</strong> <code>iati-activity/sector</code> then:<br>
+… For each <code>iati-activity/transaction/sector/@vocabulary</code>:<br>
+… … For each transaction using that sector vocabulary:<br>
+… … … For each mentioned sector in that <span class="mention">@vocabulary</span><br>
+… … … … Add up the value of commitment transactions to get the total allocated to that sector</p>
+<p>If <code>iati-actiity/sector</code> and <code>iati-activity/transaction/sector</code> exist then:<br>
+… <strong>What?</strong> Error condition.</p>
+</blockquote>
+<p>For faceted browse tools which want to find all the activities in a given sector, they have to look at both <code>iati-activity/sector</code> and <code>iati-activity/transaction/sector</code>.</p>
+<p>(Would be good to hear if anyone is using business logic <em>like</em> this…)</p>
+<p>But, in cases where we might have two sector coding vocabularies, this creates problems. For example, an activity could be coded:</p>
+<ul>
+<li>At the activity level with the DAC Vocabulary (@vocabulary=‘1’)</li>
+<li>At the transaction level with an agriculture vocabulary (@vocabulary=‘99’)</li>
+</ul>
+<p>This breaks the rule that “Sector can also be reported at the transaction level rather than the activity level. Sector must only be reported at EITHER transaction level OR activity level.”</p>
+<p>There is also a rule for <code>iati-activity/transaction/sector</code> which states that “This element can be used multiple times, but only one sector can be reported per vocabulary.”</p>
+<ul>
+<li>i.e. Each transaction can only be tagged with one sector from each vocabulary</li>
+</ul>
+<p>(I think this last issue is something we’ve not picked up properly in our analysis to date…)</p>
+<h2>Possible responses</h2>
+<h3>(1) <strong>Require</strong> sectors/countries/regions at the activity level, but make them <strong>optional</strong> at the transaction level</h3>
+<p>A validation rule might be added along the lines of:</p>
+<blockquote>
+<p>The value of transactions (commitment) to a sector should not exceed the value of the budget/planned disbursements (?) [1] for that sector as calculated using activity level sector percentages</p>
+</blockquote>
+<p>Whilst the logic to calculate this isn’t entirely trivial - it would just be a job for validation of data, not for individual users.</p>
+<p>This change would make things easier for users: they can get high-level summaries at the activity level, and dig deeper at the transaction level.</p>
+<p>From the publisher perspective, it introduces some redundancy, and the need for publishers who have transaction-level data to calculate the activity level information, but otherwise it introduces little extra burden.</p>
+<p>This would impact publishers who are currently providing only transaction level sectors/locations etc, but <a href="http://dashboard.iatistandard.org/elements.html" rel="nofollow noopener">it seems to me from the dashboard</a> that might not be very many publishers right now.</p>
+<h3>(2) Adjust the restrictions to only apply to OECD DAC Codes, or just to be per-vocabulary</h3>
+<p>For example, updated rules could state something along the lines of:</p>
+<blockquote>
+<p>Any particular sector vocabulary must only be reported at EITHER transaction level OR activity level. Any individual vocabulary should not be used at both levels.</p>
+</blockquote>
+<p>This doesn’t really deal with the recipient country issue though.</p>
+<h3>(3) Propose an alternative &lt;<strong>tag</strong>&gt; element for the kinds of coding we are looking for</h3>
+<p>This would help with the sector issue, but not country.</p>
+<p>Tag could be defined differently from sector as:</p>
+<ul>
+<li>Any concept associated with this activity or transaction that indicates the nature of the funding or activity</li>
+</ul>
+<p>I’m generally cautious about adding new fields, but if the semantics of the tagging we are aiming for is different from the semantics of sector, then maybe we should have a different field.</p>
+<hr>
+<p>Notes:</p>
+<p>[1]: I realise here I’m not entirely clear on the business logic for aggregations from the transaction level and what it equates to. Clarifications welcome.</p>
+          <p><a href="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/3</link>
+        <pubDate>Wed, 28 Sep 2016 20:06:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-577-3</guid>
+        <source url="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577.rss">Providing sector/country codes at activity and transaction level - enable both?</source>
+      </item>
+      <item>
+        <title>Providing sector/country codes at activity and transaction level - enable both?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Steven,<br>
+How are you sure that the financial amounts specified by country or by sector cover 100% of the financial flows? With the current guidelines you can. With the relaxed guidelines you can not since it is not required that the percentages at the activity level sums up to 100. The same is true for the transaction level, since there is no requirement that all transactions should be labeled with a country and/or sector code.</p>
+<p>The relaxed requirement will imo make it very difficult, if not impossible, to fully attribute financial flows to either sector or country.</p>
+          <p><a href="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/2</link>
+        <pubDate>Wed, 28 Sep 2016 07:31:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-577-2</guid>
+        <source url="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577.rss">Providing sector/country codes at activity and transaction level - enable both?</source>
+      </item>
+      <item>
+        <title>Providing sector/country codes at activity and transaction level - enable both?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>IATI is quite clear in how and where either sector and country/region classifications can be mixed between the activity and transactions.</p>
+<p>For <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/sector/" rel="nofollow noopener">sector</a> codes</p>
+<blockquote>
+<p>Sector can also be reported at the transaction level rather than the activity level. Sector must only be reported at EITHER transaction level OR activity level.</p>
+</blockquote>
+<p>and <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/recipient-country/" rel="nofollow noopener">country/region</a>:</p>
+<blockquote>
+<p>The country can also be specified at transaction rather than activity level. If recipient-country OR recipient-region are reported at the transaction level, ALL transactions MUST contain a recipient-country or recipient-region element and iati-activity/recipient-country and iati-activity/recipient-region MUST NOT be used.</p>
+</blockquote>
+<p>With the <a href="https://www.interaction.org/document/initiative-open-ag-funding-proposals-standard-developments" rel="nofollow noopener">Initiative for Open Ag Funding</a> we think it might be useful to relax this rule, in terms of:</p>
+<ul>
+<li>any activity can have sector / country/region codes at BOTH activity and transaction level</li>
+<li>sector / country/region codes do NOT have to apply to all transactions</li>
+</ul>
+<p>We can see use-cases such as:</p>
+<ul>
+<li>A publisher may want to describe their activity with a certain set of sector codes at a high level / early on, and then gradually build up a more detailed picture over time of the activity via transaction encoding.</li>
+<li>A publisher may be able to codify certain transactions (eg disbursements to partners) with a sector / country/region codes, but have no reason or use with other types.</li>
+</ul>
+<p>Both of these may help end users understand the delivery and scope of the activity via access to greater detail.  We understand that this may also place a high bar on publishers to do this effectively - this post is to illustrate that within the current guidance neither of these scenarios are permitted.</p>
+          <p><a href="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577/1</link>
+        <pubDate>Tue, 20 Sep 2016 23:42:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-577-1</guid>
+        <source url="https://discuss.iatistandard.org/t/providing-sector-country-codes-at-activity-and-transaction-level-enable-both/577.rss">Providing sector/country codes at activity and transaction level - enable both?</source>
+      </item>
+  </channel>
+</rss>

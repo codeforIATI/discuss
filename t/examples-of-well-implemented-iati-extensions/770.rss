@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Examples of well-implemented IATI extensions?</title>
+    <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770</link>
+    <description>Quick question to all the wonks - can anyone show me an example of a well-executed extension of IATI data the *isn&#39;t* the United States? Their namespace link isn&#39;t working: http://beta.foreignassistance.gov/assets/Organisations/DOS%20and%20USAID.xml (I&#39;m aware this might change, but am impatient).
+
+(Further question - is there any way of finding these activities with extensions through the datastore, dashboard, OIPA, or D-portal? My suspicion is that there isn&#39;t, but I&#39;d be interested to hear.)</description>
+    
+    <lastBuildDate>Fri, 07 Apr 2017 15:01:34 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Examples of well-implemented IATI extensions?</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Ah right, got it - it still seems a little unsatisfying to me, but I see the logic. I really appreciate your time, thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/10</link>
+        <pubDate>Fri, 07 Apr 2017 15:01:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-770-10</guid>
+        <source url="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss">Examples of well-implemented IATI extensions?</source>
+      </item>
+      <item>
+        <title>Examples of well-implemented IATI extensions?</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>Use xmllint without the -valid switch: that switch lets you specifify a DTD rather than an XSD to define the schema. Only --schema is needed, with the file to validate as input:</p>
+<p><code>xmllint -schema http://iatistandard.org/202/schema/downloads/iati-activities-schema.xsd -noout http://beta.foreignassistance.gov/assets/IATI/Argentina.xml http://beta.foreignassistance.gov/assets/IATI/Argentina.xml validates</code></p>
+          <p><a href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/9</link>
+        <pubDate>Fri, 07 Apr 2017 14:08:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-770-9</guid>
+        <source url="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss">Examples of well-implemented IATI extensions?</source>
+      </item>
+      <item>
+        <title>Examples of well-implemented IATI extensions?</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you <a class="mention" href="/u/rolfkleef">@rolfkleef</a> and <a class="mention" href="/u/mato74">@mato74</a> - I see what mistake I’ve made: I’ve been thinking that the reason these files are valid is that their namespace URI is <em>also</em> a URL which points to an actual schema extension. Not so. Even though the files which use this method <a href="http://validator.iatistandard.org/?url=http://iati.openaid.se/xml/189.xml" rel="nofollow noopener">will validate via the IATI Validator</a>, they don’t actually strictly validate if you use something like <code>xmllint -valid &lt;file&gt; -schema &lt;iati-activities.xsd&gt;</code>:</p>
+<pre><code class="lang-bash">### Validate agains the XML standards and the IATI activities schema
+xmllint -valid http://iati.openaid.se/xml/189.xml -schema /IATI-Schemas/iati-activities-schema.xsd -noout
+# -valid: validate this file
+# -schema: fetch the xsd file from this address
+# -noout: don't print the whole file to console afterwards!
+
+######## Output ########
+# http://iati.openaid.se/xml/189.xml:1: validity error : Validation failed: no DTD found!
+# &lt;iati-activities version="2.01" generated-datetime="2017-03-17T13:53:14"&gt;
+#                                                                           ^
+# http://iati.openaid.se/xml/189.xml validates
+</code></pre>
+<p>Similarly, when the namespace is declared at the top of the file: <a href="http://validator.iatistandard.org/?url=http://beta.foreignassistance.gov/assets/IATI/Argentina.xml" rel="nofollow noopener">validator</a>, versus terminal:</p>
+<pre><code class="lang-bash">xmllint -valid http://beta.foreignassistance.gov/assets/IATI/Argentina.xml -schema http://iatistandard.org/202/schema/downloads/iati-activities-schema.xsd -noout
+
+######## Output ########
+# http://beta.foreignassistance.gov/assets/IATI/Argentina.xml:1: validity error: Validation failed: no DTD found!
+# /web/IATI/usg-extension" generated-datetime="2017-03-22T23:18:00" version="2.01"
+#                                                                               ^
+# http://beta.foreignassistance.gov/assets/IATI/Argentina.xml validates
+</code></pre>
+<p>So the questions is, is this a problem? If not, I could happily just get around validation of an extension in this way, but it doesn’t seem ideal. For instance if I was extending a transaction to have a new date value within it, I would prefer to be able to extend the IATI schema so that when I run a validation procedure, I can tell if I’ve violated the original IATI specification <strong>or</strong> my own extension within one validation…</p>
+          <p><a href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/8</link>
+        <pubDate>Fri, 07 Apr 2017 13:22:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-770-8</guid>
+        <source url="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss">Examples of well-implemented IATI extensions?</source>
+      </item>
+      <item>
+        <title>Examples of well-implemented IATI extensions?</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>I can find a couple of namespace declarations:</p>
+<ul>
+<li>xmlns:akvo=“<a href="http://akvo.org/iati-activities" rel="nofollow noopener">http://akvo.org/iati-activities</a>”</li>
+<li>xmlns:ir=“<a href="http://iatiregistry.org/ns/record#" rel="nofollow noopener">http://iatiregistry.org/ns/record#</a>”</li>
+<li>xmlns:ir=“<a href="http://iatistandard.org/downloads/iati-registry/record-schema.xsd" rel="nofollow noopener">http://iatistandard.org/downloads/iati-registry/record-schema.xsd</a>”</li>
+<li>xmlns:cerf=“<a href="http://cerf-gms.unocha.org/CERF01" rel="nofollow noopener">http://cerf-gms.unocha.org/CERF01</a>”</li>
+<li>xmlns:fts=“<a href="http://fts.unocha.org" rel="nofollow noopener">http://fts.unocha.org</a>”</li>
+<li>xmlns:fts=“nothing”</li>
+<li>xmlns:sida=“<a href="http://sida.se/ns/strategy#" rel="nofollow noopener">http://sida.se/ns/strategy#</a>”</li>
+<li>xmlns:ns1=“xml”</li>
+<li>xmlns:usg=“<a href="http://foreignassistance.gov/iati#" rel="nofollow noopener">http://foreignassistance.gov/iati#</a>”</li>
+<li>xmlns:usg=“<a href="http://www.foreignassistance.gov/web/IATI/usg-extension" rel="nofollow noopener">http://www.foreignassistance.gov/web/IATI/usg-extension</a>”</li>
+</ul>
+<p>A namespace declaration is supposed to contain a URI, not a URL, so you’re not required to provide a web page (but it’s recommended).</p>
+<p>So <code>xmlns:fts="nothing"</code> and <code>xmlns:ns1="xml"</code> are wrong, but the others are technically ok. Although for instance both variations of <code>ir</code> or <code>fts</code> or <code>usg</code> are considered to be different namespaces, even if that wasn’t intended.</p>
+<p>I internally use my own <code>xmlns:iati-me="http://iati.me/..."</code> variations in pipeline processes but (try to) make sure it doesn’t show up in published files. At the end of everything, I should be able to remove every attribute and element from none-IATI namespaces, and end up with valid IATI.</p>
+<p>If you want, you can add invoices as UBL data to your expenditure transactions: <code>&lt;ubl:Invoice xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" ...</code> and then provide an interface looking for <code>//iati-actiivity[transaction[@type="4"]/ubl:Invoice</code>.</p>
+<p>I think the difficulty is that we don’t specify interpretation of IATI data:</p>
+<p>If Akvo publishes (leaving out the <code>narrative</code> layer):<br>
+<code>&lt;description type="1" akvo:type="4"&gt;Subtitle&lt;/description&gt; &lt;description type="1" akvo:type="5"&gt;Project plan&lt;/description&gt;</code></p>
+<p>Can I can concatenate those as <code>&lt;description type="1"&gt;Subtitle&amp;#xa;Project plan&lt;/description&gt;</code>?</p>
+          <p><a href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/7</link>
+        <pubDate>Fri, 07 Apr 2017 08:46:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-770-7</guid>
+        <source url="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss">Examples of well-implemented IATI extensions?</source>
+      </item>
+      <item>
+        <title>Examples of well-implemented IATI extensions?</title>
+        <dc:creator><![CDATA[mato74]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/vincentvw">@VincentVW</a> thanks for flagging this.</p>
+<p><a class="mention" href="/u/rory_scott">@rory_scott</a> you might want to have a look at this page: <a href="https://github.com/akvo/akvo-rsr/wiki/IATI-Import-mapping" rel="nofollow noopener">https://github.com/akvo/akvo-rsr/wiki/IATI-Import-mapping</a> what the use of these in practice look like you can find on e.g. <a href="https://rain.akvoapp.org/en/projects/" rel="nofollow noopener">https://rain.akvoapp.org/en/projects/</a> (The Rain IATI file imports in Akvo RSR that Vincent referred to).</p>
+<p>Please let me know if you have any questions on this. Regarding suggestions for enhancing the standard in this respect please see this post: <a href="https://discuss.iatistandard.org/t/tech-paper-codelist-management/538/15?u=mato74">Tech Paper: Codelist Management</a></p>
+<p>Last but not least; why would you get involved with these types of fields? That has everything to do with the storage of data for communication purposes. See this presentation for more context: <a href="http://www.slideshare.net/martenschoonman/using-iati-datasets-for-communication-where-can-we-improve" rel="nofollow noopener">http://www.slideshare.net/martenschoonman/using-iati-datasets-for-communication-where-can-we-improve</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/6</link>
+        <pubDate>Fri, 07 Apr 2017 07:15:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-770-6</guid>
+        <source url="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss">Examples of well-implemented IATI extensions?</source>
+      </item>
+      <item>
+        <title>Examples of well-implemented IATI extensions?</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks everyone, this has been really helpful. I think it’s highlighted two things to me:</p>
+<ol>
+<li>I’m still not completely clear on how I would go about making an extension, and it doesn’t seem like there are any obvious examples to draw upon.</li>
+<li>It doesn’t look as though many (or even any?) publishers are using them correctly as of right now.</li>
+</ol>
+<p>If anyone has any further insights please post them here <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/5</link>
+        <pubDate>Wed, 05 Apr 2017 11:19:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-770-5</guid>
+        <source url="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss">Examples of well-implemented IATI extensions?</source>
+      </item>
+      <item>
+        <title>Examples of well-implemented IATI extensions?</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/rory_scott">@rory_scott</a> - we’ve recently implemented this during the OpenAg tool workshop but didn’t have time to talk about it.</p>
+<p>Not sure if this helps but we’ve added element search and from your link, we can do either:</p>
+<p><a href="http://d-portal.org/q.json?from=element&amp;orderby=element_volume-&amp;limit=10&amp;element_name0_like=usg:%25" class="onebox" target="_blank" rel="nofollow noopener">http://d-portal.org/q.json?from=element&amp;orderby=element_volume-&amp;limit=10&amp;element_name0_like=usg:%</a></p>
+<p>or</p>
+<p><a href="http://d-portal.org/q.json?from=element,act&amp;orderby=element_volume-&amp;limit=100&amp;reporting_ref_nteq=US-1&amp;element_name0_like=usg:%25" class="onebox" target="_blank" rel="nofollow noopener">d-portal.org/q.json?from=element,act&amp;orderby=element_volume-&amp;limit=100&amp;reporting_ref_nteq=US-1&amp;element_name0_like=usg:%</a></p>
+<p>You can go deeper into elements hierarchy like so:</p>
+<p><a href="http://d-portal.org/q.json?from=element&amp;orderby=element_volume-&amp;limit=10&amp;element_name0=dimension&amp;element_name1=target&amp;element_name2=period&amp;element_name3=indicator" class="onebox" target="_blank" rel="nofollow noopener">d-portal.org/q.json?from=element&amp;orderby=element_volume-&amp;limit=10&amp;element_name0=dimension&amp;element_name1=target&amp;element_name2=period&amp;element_name3=indicator</a></p>
+<p>For more info, I’ll be publishing a blog post about this next week on d-portal.</p>
+<p>ps: This is new and may likely crash or fail to work.<br>
+pps: Hyperlinks are borked due to discuss platform limiting new users to one link for first post :}</p>
+          <p><a href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/4</link>
+        <pubDate>Fri, 31 Mar 2017 15:42:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-770-4</guid>
+        <source url="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss">Examples of well-implemented IATI extensions?</source>
+      </item>
+      <item>
+        <title>Examples of well-implemented IATI extensions?</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>As to the question to OIPA; We indeed don’t support namespaces and have no plans to support them in the master of OIPA.</p>
+<p>There’s certainly advantages for namespaces when used in certain groups of publishers, but there’s too much interpretation to be done to be able to standardize namespaces into a generic application. A customized branch to address that interpretation and its specific use cases would be a better option.</p>
+<p>As to examples, I only know of RAIN foundation and Akvo that use namespaces. Maybe <a class="mention" href="/u/mato74">@mato74</a> can tell you more on Akvo’s use.</p>
+          <p><a href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/3</link>
+        <pubDate>Tue, 28 Mar 2017 20:26:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-770-3</guid>
+        <source url="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss">Examples of well-implemented IATI extensions?</source>
+      </item>
+      <item>
+        <title>Examples of well-implemented IATI extensions?</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>As something potentially useful that I can think of… The <a href="http://dashboard.iatistandard.org/elements.html">elements</a> page on the dashboard includes information about non-standard namespaces.</p>
+<p>A quick look through indicates that most of the provided namespaces resolve to 404, though it could act as somewhere useful to start from.</p>
+          <p><a href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/2</link>
+        <pubDate>Thu, 23 Mar 2017 17:46:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-770-2</guid>
+        <source url="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss">Examples of well-implemented IATI extensions?</source>
+      </item>
+      <item>
+        <title>Examples of well-implemented IATI extensions?</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Quick question to all the wonks - can anyone show me an example of a well-executed extension of IATI data the <em>isn’t</em> the United States? Their namespace link isn’t working: <a href="http://beta.foreignassistance.gov/assets/Organisations/DOS%20and%20USAID.xml" rel="nofollow noopener">http://beta.foreignassistance.gov/assets/Organisations/DOS%20and%20USAID.xml</a> (I’m aware this might change, but am impatient).</p>
+<p>(Further question - is there any way of finding these activities with extensions through the datastore, dashboard, OIPA, or D-portal? My suspicion is that there isn’t, but I’d be interested to hear.)</p>
+          <p><a href="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770/1</link>
+        <pubDate>Thu, 23 Mar 2017 12:08:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-770-1</guid>
+        <source url="https://discuss.iatistandard.org/t/examples-of-well-implemented-iati-extensions/770.rss">Examples of well-implemented IATI extensions?</source>
+      </item>
+  </channel>
+</rss>

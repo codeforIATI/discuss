@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Using IATI data to create network visualisations</title>
+    <link>https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399</link>
+    <description>We want to use IATI data to create a network visualisation of the connections between funders, international NGOs and local NGOs. For us, this is about spotting where organisations are clustering rather than collaborating within a specific context or country as well as seeing how they link up. A very basic example is here: https://www.google.com/fusiontables/DataSource?docid=1VfPqITAxt2rzZTBRXlcr0YlaDfIToX1us0atuss8 (Chart 1 tab). This is data on organisations working on international development in Nepal. The viz shows the relationship between the funding organisations and the implementing organisations, weighted by total disbursements. We wanted to see if there were any patterns, for example, organisations receiving funding (orange node) from more than one funder (blue node).
+
+I just wondered if you had any advice about things to be careful of, when creating a network visualisation. We can cut the data in very different ways, which mean the story we tell will also be different. And the quality of the data will also affect this - for example, there are funders who do not name implementing organisations - you can see this by the big orange blob connected to many funders. This network viz also shows that where organisations have different names in the data (DFID and Department for International Development), they appear as different nodes. If there any other &#39;gotchas&#39; that we should watch for  based on your experience, it would be really useful to know this. Thank you IATI Community!</description>
+    
+    <lastBuildDate>Fri, 12 Feb 2016 12:16:31 +0000</lastBuildDate>
+    <category>Traceability</category>
+    <atom:link href="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Using IATI data to create network visualisations</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rolfkleef">@rolfkleef</a> Just looked at your SVG link and my brain exploded. But also really useful, thanks for sharing.<img src="//discuss.iatistandard.org/images/emoji/twitter/relaxed.png?v=5" title=":relaxed:" class="emoji" alt=":relaxed:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399/5</link>
+        <pubDate>Thu, 11 Feb 2016 16:04:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-399-5</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399.rss">Using IATI data to create network visualisations</source>
+      </item>
+      <item>
+        <title>Using IATI data to create network visualisations</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Steven, really helpful. We’ll be using OIPA to pull the data so hopefully that will get around the datastore/csv issue. We’re looking at Gephi for initial analysis of the data at the moment as it’s a bit more in-depth than Fusion. Data quality I think is going to be a bit of an issue too, where the data is missing. For this reason, I’ve using the data in the transactions (incoming funds and disbursements) and provider and receiver orgs as the relationships are clearer than in participating orgs.</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399/4</link>
+        <pubDate>Thu, 11 Feb 2016 16:01:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-399-4</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399.rss">Using IATI data to create network visualisations</source>
+      </item>
+      <item>
+        <title>Using IATI data to create network visualisations</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>I find that with “IATI-wide queries” across all available data, there is quite a bit of curation to do:</p>
+<ul>
+<li>Uppercase and lowercase differences in identifiers (gb-CHC-… versus GB-CHC-…)</li>
+<li>Not (consistently) using an organisation identifier</li>
+<li>Changes of organisation identifier (NL-1 became XM-DAC-7, but most activities are still identified with NL-1-…)</li>
+<li>Using different organisation identifiers (ICCO, like most Dutch NGOs, has several legal entities in the Chamber of Commerce, which one to pick?)</li>
+<li>Dealing with secondary publishers: UNOCHA publishes FTS information on activities that have different donor codes (XM-OCHA-FTS5191 as yet another identifier for NL or NL-1/XM-DAC-7)</li>
+<li>Funky activity identifiers containing symbols like #,$,*,’,| etc that often break standard tools without pre-processing</li>
+<li>Combining multiple organisations in one participating-org name, or using generic descriptions (“Oxfam partner(s)”)</li>
+<li>Outdated datasets that are still active in the IATI Registry</li>
+</ul>
+<p>I’ve done a query on all activities from NGOs (types 21,22,23) with recipient-country Nepal: it’s a big graph, and there are some errors on my end to resolve, but it’s the sort of output that helps me feedback to organisations on their data quality.</p>
+<p><a href="https://www.drostan.org/wp-content/uploads/2016/02/nepal.svg" class="onebox" target="_blank" rel="nofollow noopener">https://www.drostan.org/wp-content/uploads/2016/02/nepal.svg</a></p>
+<p>For instance, use “Find” and look for “ActionAid United Kingdom”, you’ll see:</p>
+<ul>
+<li>GB-CHC-274467 (ActionAid United Kingdom) working with “ActionAid Nepal”</li>
+<li>GB-CHC-27446721 (ActionAid UK) working with “ACTIONAID NEPAL”</li>
+</ul>
+<p>Hope this is helpful, although perhaps not hopeful <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399/3</link>
+        <pubDate>Thu, 11 Feb 2016 16:01:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-399-3</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399.rss">Using IATI data to create network visualisations</source>
+      </item>
+      <item>
+        <title>Using IATI data to create network visualisations</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/sjohns">@SJohns</a> interesting, thanks</p>
+<p>I did something similar with UN-Habitat data just recently - <a href="https://www.google.com/fusiontables/DataSource?docid=1bUOK-_oqvuNesCauTVIGyx5Le8UIsaWRmHZmKy47#chartnew:id=4" rel="nofollow noopener">here’s the fusion table</a>:  (hat tip to <a class="mention" href="/u/pelleaardema">@pelleaardema</a> &amp; <a class="mention" href="/u/rolfkleef">@rolfkleef</a> for originally surfacing this idea in their <a href="https://partos.nl/content/iati-training-materials" rel="nofollow noopener">training materials</a>)</p>
+<p>I originally grabbed the UN-Habitat data as a CSV file via the IATI datastore.  However, I noticed quite soon that several organisations were missing from the graph - as I knew that some UN-Habitat activities include multiple implementing and funding <code>participating-org</code>s.  That’s because the datastore (afaik) doesnt output a flat csv file containing multiple orgs for a single activity (please correct me if I am wrong <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/dalepotter">@dalepotter</a>).  So - I ended up working directly with the XML source data, rather than a third party output of it.</p>
+<p>NB: this isn’t a commentary or criticism of the datastore - more about the “gotcha” to always check your source data when undertaking any kind of visualisations.  Does it look as you’d expect?</p>
+<p>Specifically in terms of fusion tables - watch out with network graphs in terms of the number of nodes that are shown.  Sometimes, it can default to far fewer than available, meaning you have to increase it to see the full map.</p>
+<p>Hope that is helpful</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399/2</link>
+        <pubDate>Thu, 11 Feb 2016 14:05:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-399-2</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399.rss">Using IATI data to create network visualisations</source>
+      </item>
+      <item>
+        <title>Using IATI data to create network visualisations</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>We want to use IATI data to create a network visualisation of the connections between funders, international NGOs and local NGOs. For us, this is about spotting where organisations are clustering rather than collaborating within a specific context or country as well as seeing how they link up. A very basic example is here: <a href="https://www.google.com/fusiontables/DataSource?docid=1VfPqITAxt2rzZTBRXlcr0YlaDfIToX1us0atuss8" rel="nofollow noopener">https://www.google.com/fusiontables/DataSource?docid=1VfPqITAxt2rzZTBRXlcr0YlaDfIToX1us0atuss8</a> (Chart 1 tab). This is data on organisations working on international development in Nepal. The viz shows the relationship between the funding organisations and the implementing organisations, weighted by total disbursements. We wanted to see if there were any patterns, for example, organisations receiving funding (orange node) from more than one funder (blue node).</p>
+<p>I just wondered if you had any advice about things to be careful of, when creating a network visualisation. We can cut the data in very different ways, which mean the story we tell will also be different. And the quality of the data will also affect this - for example, there are funders who do not name implementing organisations - you can see this by the big orange blob connected to many funders. This network viz also shows that where organisations have different names in the data (DFID and Department for International Development), they appear as different nodes. If there any other ‘gotchas’ that we should watch for  based on your experience, it would be really useful to know this. Thank you IATI Community!</p>
+          <p><a href="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399/1</link>
+        <pubDate>Thu, 11 Feb 2016 10:59:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-399-1</guid>
+        <source url="https://discuss.iatistandard.org/t/using-iati-data-to-create-network-visualisations/399.rss">Using IATI data to create network visualisations</source>
+      </item>
+  </channel>
+</rss>

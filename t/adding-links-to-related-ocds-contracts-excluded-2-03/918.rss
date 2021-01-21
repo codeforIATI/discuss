@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Adding links to related OCDS contracts (excluded 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918</link>
+    <description>**Standard**
+Activity
+
+**Schema Object**
+iati-activiity/related-contract
+iati-activity/transaction/related-contract
+
+**Type of Change**
+Addition
+
+**Issue**
+Contracts published using the Open Contracting Data Standard can be linked to activities published through IATI, at either activity or transaction level.
+
+**Proposal**
+
+Based on advice from @TimDavies ... 
+
+* **related-contract/@contract-process-id**
+Contracting process identifier - in OCDS this is the ocid (Open Contracting ID) and should be a globally unique identifier
+
+* **related-contract/@contract-id**
+Contract Identifier - a contracting process might result in multiple contracts (for example, a call for partners that then awards 5 partners, each with their own contract). The Contract ID only has to be unique within the scope of the contracting process, so to unique identify a specific contract requires the pairing of these identifiers
+
+* **related-contract/@url**
+A URL could be provided to a OCDS release package that contains the contracting process and contract discussed. However, OCDS does not use URLs as identifiers, and recognises that (a) some publishers provide multiple processes at a particular URI (e.g. when they only publish bulk data). and (b) some publishers struggle to maintain stable URIs - so we tend to think of URIs as helpful for users, but no guarantee of discovering information.
+
+
+**Standards Day**
+This was discussed in a TAG session on contracting but was mistakenly overlooked on the Standards Day agenda
+
+**Links**
+
+http://standard.open-contracting.org/latest/en/schema/identifiers/</description>
+    
+    <lastBuildDate>Fri, 07 Jul 2017 12:17:38 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Adding links to related OCDS contracts (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/8</link>
+        <pubDate>Wed, 25 Oct 2017 13:59:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-918-8</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918.rss">Adding links to related OCDS contracts (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Adding links to related OCDS contracts (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Notes from consultation calls w/c 3rd July</p>
+<p>The proposal was reviewed by those on the call and there was no objection from the group.</p>
+          <p><a href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/7</link>
+        <pubDate>Fri, 07 Jul 2017 12:17:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-918-7</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918.rss">Adding links to related OCDS contracts (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Adding links to related OCDS contracts (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been included for consideration in the formal 2.03 proposal subject to further clarification</p>
+          <p><a href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/4</link>
+        <pubDate>Fri, 16 Jun 2017 16:18:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-918-4</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918.rss">Adding links to related OCDS contracts (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Adding links to related OCDS contracts (excluded 2.03)</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>I think the advice I was giving focussed on the need to have a way of identifying three things:</p>
+<ul>
+<li>The related contracting process</li>
+<li>The related contract in that process</li>
+<li>The place where structured data on that process can be located</li>
+</ul>
+<p>However, I’ve been looking back over our <a href="https://docs.google.com/document/d/1kDDSBYCt-FPI2jV1d226j9GBkQVCTIHkQtZk42PoBBU/edit#" rel="nofollow noopener">working paper</a> on this, and the key issue there of modelling different kinds of relationship:</p>
+<ul>
+<li>An aid activity operates through a contracting process</li>
+<li>An aid activity results in one or more contracting processes</li>
+<li>A contracting process leads to a one or more aid activities</li>
+</ul>
+<p>I’m not sure that a <code>related-contract</code> element at the activity and transaction level helps us distinguish these adequately, and we would definitely want to refine the documentation around this to explain to publishers and users what they could interpret/learn from the inclusion of a related-contract link within a IATI publication.</p>
+<p>I think it would be really useful for us to try and construct a quick worked example or two of the linkage with real world data just to check this out more. I think it should be possible to find examples from DFID where we could do this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/3</link>
+        <pubDate>Fri, 16 Jun 2017 15:53:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-918-3</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918.rss">Adding links to related OCDS contracts (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Adding links to related OCDS contracts (excluded 2.03)</title>
+        <dc:creator><![CDATA[TimDavies]]></dc:creator>
+        <description><![CDATA[
+            <p>(<span class="hashtag">#JoinedUpDataStandards</span>)</p>
+<p>Thanks <a class="mention" href="/u/bill_anderson">@bill_anderson</a>. I’ve alerted the OCDS community to this also and created a parallel issue at <a href="https://github.com/open-contracting/standard/issues/478" rel="nofollow noopener">https://github.com/open-contracting/standard/issues/478</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/2</link>
+        <pubDate>Fri, 16 Jun 2017 15:39:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-918-2</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918.rss">Adding links to related OCDS contracts (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Adding links to related OCDS contracts (excluded 2.03)</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Standard</strong><br>
+Activity</p>
+<p><strong>Schema Object</strong><br>
+iati-activiity/related-contract<br>
+iati-activity/transaction/related-contract</p>
+<p><strong>Type of Change</strong><br>
+Addition</p>
+<p><strong>Issue</strong><br>
+Contracts published using the Open Contracting Data Standard can be linked to activities published through IATI, at either activity or transaction level.</p>
+<p><strong>Proposal</strong></p>
+<p>Based on advice from <a class="mention" href="/u/timdavies">@TimDavies</a> …</p>
+<ul>
+<li>
+<p><strong>related-contract/<span class="mention">@contract-process-id</span></strong><br>
+Contracting process identifier - in OCDS this is the ocid (Open Contracting ID) and should be a globally unique identifier</p>
+</li>
+<li>
+<p><strong>related-contract/<span class="mention">@contract-id</span></strong><br>
+Contract Identifier - a contracting process might result in multiple contracts (for example, a call for partners that then awards 5 partners, each with their own contract). The Contract ID only has to be unique within the scope of the contracting process, so to unique identify a specific contract requires the pairing of these identifiers</p>
+</li>
+<li>
+<p><strong>related-contract/<span class="mention">@url</span></strong><br>
+A URL could be provided to a OCDS release package that contains the contracting process and contract discussed. However, OCDS does not use URLs as identifiers, and recognises that (a) some publishers provide multiple processes at a particular URI (e.g. when they only publish bulk data). and (b) some publishers struggle to maintain stable URIs - so we tend to think of URIs as helpful for users, but no guarantee of discovering information.</p>
+</li>
+</ul>
+<p><strong>Standards Day</strong><br>
+This was discussed in a TAG session on contracting but was mistakenly overlooked on the Standards Day agenda</p>
+<p><strong>Links</strong></p>
+<p><a href="http://standard.open-contracting.org/latest/en/schema/identifiers/" class="onebox" target="_blank">http://standard.open-contracting.org/latest/en/schema/identifiers/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918/1</link>
+        <pubDate>Fri, 16 Jun 2017 14:39:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-918-1</guid>
+        <source url="https://discuss.iatistandard.org/t/adding-links-to-related-ocds-contracts-excluded-2-03/918.rss">Adding links to related OCDS contracts (excluded 2.03)</source>
+      </item>
+  </channel>
+</rss>

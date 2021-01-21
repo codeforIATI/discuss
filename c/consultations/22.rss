@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Consultations - IATI Community Discussions</title>
+    <link>https://discuss.iatistandard.org/c/consultations/22</link>
+    <description>Topics in the &#39;Consultations&#39; category This category is home to consultations about IATI which &lt;strong&gt;aren&#39;t&lt;/strong&gt; directly concerning the technical standard. Examples include: methodologies / best practices for using or evaluating IATI data, specifications for technical tools, etc.</description>
+    
+      <lastBuildDate>Fri, 11 Sep 2020 16:10:09 +0000</lastBuildDate>
+      <atom:link href="https://discuss.iatistandard.org/c/consultations/22.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Help shape IATI Standard humanitarian guidance</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>Can you contribute to our work on improving IATI data published on the spending and activities that respond to humanitarian crises? Then please take part in the IATI Secretariat’s consultation to inform new guidance on publishing data on humanitarian crises using the IATI Standard.</p>
+<p>IATI data users and publishers are encouraged to help review draft guidance and join two upcoming webinars to help ensure the final guidance helps meet the needs of humanitarian practitioners.</p>
+<p><strong>How to get involved</strong></p>
+<p>Please register your interest in joining the IATI Standard humanitarian guidance consultation by emailing IATI’s Technical Team: <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>. The team will send you the draft How to publish humanitarian data guidance to review and to provide your feedback through an online feedback form by <strong>Friday 9 October (extended from 5 October).</strong></p>
+<p>The IATI Technical Team will then address participants; feedback and discuss changes to the guidance during two webinars:</p>
+<p><strong>IATI Standard humanitarian guidance Webinar 1</strong></p>
+<p>Wednesday 14 October 2020</p>
+<p><a href="https://zoom.us/meeting/register/tJErc-6vrDojGdFRvkcxfF2HfH-xme40-QG0">Register</a></p>
+<ol>
+<li>Identifying humanitarian activities - humanitarian flag</li>
+<li>Humanitarian scope - GLIDE codes and UN HRPs</li>
+<li>Using humanitarian OECD DAC 5-digit sector codes</li>
+<li>Publishing humanitarian budgets - budget-not-provided attribute</li>
+</ol>
+<p><strong>IATI Standard humanitarian guidance Webinar 2</strong></p>
+<p>Wednesday 21 October 2020</p>
+<p><a href="https://zoom.us/meeting/register/tJMqf-GuqTIsGtU2uedFBNQ8ESghfZns2hfT">Register</a></p>
+<ol>
+<li>Identifying local actors - participating organisation types</li>
+<li>Linking to Humanitarian Global Clusters</li>
+<li>Declaring earmarked contributions - Aid Type</li>
+<li>Declaring cash and voucher contributions - Aid Type</li>
+</ol>
+<p>Please forward details of the IATI Standard humanitarian guidance consultation to interested colleagues in your networks. For any questions, do get in touch with IATI’s Technical Team: <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>.</p>
+            <p><small>2 posts - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/help-shape-iati-standard-humanitarian-guidance/2016">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/help-shape-iati-standard-humanitarian-guidance/2016</link>
+          <pubDate>Fri, 11 Sep 2020 16:10:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-2016</guid>
+          <source url="https://discuss.iatistandard.org/t/help-shape-iati-standard-humanitarian-guidance/2016.rss">Help shape IATI Standard humanitarian guidance</source>
+        </item>
+        <item>
+          <title>COVID-19 prototype visualisation updates</title>
+          <dc:creator><![CDATA[markbrough]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>I hope everyone is doing OK during these difficult times!</p>
+<p>On behalf of the <a href="https://interagencystandingcommittee.org/greater-transparency" rel="nofollow noopener">Grand Bargain transparency workstream</a>, we have made some further improvements to <a href="https://covid19.humportal.org/activities/" rel="nofollow noopener">the COVID-19 prototype visualisation</a> (see <a href="https://discuss.iatistandard.org/t/new-covid-19-funding-data-visualisation-launched/1969">original post here</a>) and wanted to share these with the IATI community.</p>
+<p>The number of COVID-19 activities has now significantly increased to over 5000 – the visualisation now automatically updates every hour.</p>
+<p>We’ve recently added the following additional functionality:</p>
+<ul>
+<li>summarise by commitments or disbursements</li>
+<li>breakdown by reporting organisation, country or sector</li>
+<li>filter by sector</li>
+<li>download transactions in Excel, expanded out by country and sector (e.g. where a single transaction relates to multiple countries or sectors) - allowing for detailed analysis</li>
+<li>share / save the current view based on selected filters (the URL is now updated)</li>
+</ul>
+<p><em>(NB most of the improvements refer to the <strong>activities</strong> tab, which uses IATI data)</em></p>
+<p>I wanted to talk through some of this work and ask for feedback from the IATI community regarding whether this is a good way of reprocessing and presenting the data.</p>
+<hr>
+<h2>Summarising by commitments / disbursements</h2>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/6bf78502316c6ed65d339fa8a98504749e1065ba.png" data-download-href="https://discuss.iatistandard.org/uploads/default/6bf78502316c6ed65d339fa8a98504749e1065ba" title="image"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/6bf78502316c6ed65d339fa8a98504749e1065ba_2_517x207.png" alt="image" data-base62-sha1="fp7oEdBAtPCptQTU0P3HMuIcKka" width="517" height="207" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/6bf78502316c6ed65d339fa8a98504749e1065ba_2_517x207.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/6bf78502316c6ed65d339fa8a98504749e1065ba_2_775x310.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/6bf78502316c6ed65d339fa8a98504749e1065ba_2_1034x414.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/6bf78502316c6ed65d339fa8a98504749e1065ba_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image</span><span class="informations">1115×449 38.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div><br>
+<em><a href="https://covid19.humportal.org/activities/?country=LR&amp;summary=commitments" rel="nofollow noopener">Total commitments for activities in Liberia, by reporting organisation</a></em></p>
+<p>Initially, we just showed a list of projects, with a summary at the top showing the <a href="https://covid19.humportal.org/activities" rel="nofollow noopener">number of activities</a> for each reporting organisation or country. We added new functionality to roll up by <a href="https://covid19.humportal.org/activities?summary=commitments" rel="nofollow noopener">commitments</a> or <a href="https://covid19.humportal.org/activities?summary=disbursements" rel="nofollow noopener">disbursements</a>. In order to do this, we had to undertake some reprocessing of the data:</p>
+<ul>
+<li>all values are converted to USD according to the <code>value-date</code>, <a href="https://exchangerates.codeforiati.org/" rel="nofollow noopener">using this dataset</a> (with rates sourced from the OECD and Federal Reserve)</li>
+<li>where there are multiple sectors or countries on an activity, transactions are broken down into multiple rows for each sector/country, with the transaction value proportionate to the sector/country percentages.</li>
+</ul>
+<p>The <a href="https://github.com/markbrough/covid19-data/blob/gh-pages/xlsx/traceability/transactions_sectors_countries_regions.xlsx?raw=true" rel="nofollow noopener">resulting data is available in Excel here</a>, in case you want to take a look.</p>
+<h3>Double-counting</h3>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/ccd933136de6a6abf4afea29a1258ca270ca9a6f.png" alt="image|660x5075" data-base62-sha1="teaKBRQlAZo0MsgB9kNuBRZCyaX" width="660" height="50"><br>
+<em>Warning if results are likely to contain double-counting</em></p>
+<p>We don’t currently handle double-counting in this dataset or visualisation, other than to alert the user when there is a risk of double-counting. However, there are a few ideas about how this could be handled:</p>
+<ul>
+<li>allow / encourage users to select to view only a particular type of organisation
+<ul>
+<li>e.g. there is less likely to be double-counting when looking only at Governments, though there will still be some double-counting in cases of delegated cooperation</li>
+</ul>
+</li>
+<li>show net disbursements instead of disbursements and net commitments instead of commitments
+<ul>
+<li>i.e. disbursements MINUS incoming funds and commitments MINUS incoming commitments</li>
+<li>however, this will only work where organisations are reporting incoming funds; many large organisations are not doing so.</li>
+</ul>
+</li>
+<li>comparing organisation IDs or (harder!) organisation names – e.g. if Germany is disbursing to UNDP, we could try to subtract that amount from UNDP’s total
+<ul>
+<li>this could get a bit messy!</li>
+</ul>
+</li>
+</ul>
+<p>We would be very keen to hear if anyone has suggestions on the best way to proceed here!</p>
+<hr>
+<h2>Sectors</h2>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/da2cd1d843969888983e28afe6774fa018b3c291.png" data-download-href="https://discuss.iatistandard.org/uploads/default/da2cd1d843969888983e28afe6774fa018b3c291" title="image"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/da2cd1d843969888983e28afe6774fa018b3c291_2_517x239.png" alt="image" data-base62-sha1="v8475vlW4F54A6zcHtnXlEecM6t" width="517" height="239" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/da2cd1d843969888983e28afe6774fa018b3c291_2_517x239.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/da2cd1d843969888983e28afe6774fa018b3c291_2_775x358.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/da2cd1d843969888983e28afe6774fa018b3c291_2_1034x478.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/da2cd1d843969888983e28afe6774fa018b3c291_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image</span><span class="informations">1105×512 57.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div><br>
+<em><a href="https://covid19.humportal.org/activities/?summary=commitments&amp;breakdown=sector" rel="nofollow noopener">Total commitments by sector</a></em></p>
+<p>It’s also now possible to summarise the data by sectors (we are only using the DAC codes here). Again, as shown in the image above, this summary may currently lead to double counting where more than one reporting organisation is included.</p>
+<p>Perhaps it would be useful to be able to summarise by multiple sectors, and to select whole categories at once (e.g. all health or education sectors) – any other preferences?</p>
+<hr>
+<h2>Downloads</h2>
+<p>We have added a series of additional download options. On the activities tab, the blue download button now allow you to download <a href="https://github.com/markbrough/covid19-data/blob/gh-pages/traceability/transactions_sectors_countries_regions.xlsx?raw=true" rel="nofollow noopener">transactions broken down by sector and country/region</a>. For this dataset, an additional column has been added (<code>value_USD_proportionate</code>) which makes it easy to put a pivot table on top of the dataset. This column is calculated by multiplying the <code>value_USD</code> column by the proportion allocated to this sector and this country/region.</p>
+<p>For example: a transaction for USD 100, allocated 40% health and 60% education; 50% to Kenya and 50% to Uganda would be output as:</p>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>value_USD</th>
+<th>sector</th>
+<th>country_region</th>
+<th>value_USD_proportionate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>health</td>
+<td>Kenya</td>
+<td>20</td>
+</tr>
+<tr>
+<td>100</td>
+<td>health</td>
+<td>Uganda</td>
+<td>20</td>
+</tr>
+<tr>
+<td>100</td>
+<td>education</td>
+<td>Kenya</td>
+<td>30</td>
+</tr>
+<tr>
+<td>100</td>
+<td>education</td>
+<td>Uganda</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+</div><p>In the dataset, the <code>sector</code> and <code>country_region</code> are output with the relevant sector or country codes, rather than the full sector/country names, in order to reduce the filesize.</p>
+<hr>
+<h2>Other plans and feedback</h2>
+<p>We are working on a few more improvements to the visualisation at the moment, for example to include the ability to filter by grant or loan. We’d be very keen to hear from anyone who might have further suggestions on how we could best present this data.</p>
+<p>You are very welcome to add feedback here, or alternatively email us at: <a href="mailto:humportal@devinit.org">humportal@devinit.org</a></p>
+            <p><small>10 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012</link>
+          <pubDate>Wed, 26 Aug 2020 07:59:52 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-2012</guid>
+          <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+        </item>
+        <item>
+          <title>COVID-19 data published to IATI: what do we know and what’s next?</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>The IATI Secertariat has shared initial analysis that evaluates the progress made in publishing data on COVID-related activities to IATI and outlines upcoming work intended to increase the quality and quantity of this information. Please read the full newspost on the <a href="https://iatistandard.org/en/news/covid-19-data-published-to-iati-what-do-we-know-and-whats-next/">IATI website</a>.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/covid-19-data-published-to-iati-what-do-we-know-and-what-s-next/1977">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/covid-19-data-published-to-iati-what-do-we-know-and-what-s-next/1977</link>
+          <pubDate>Mon, 29 Jun 2020 14:46:54 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1977</guid>
+          <source url="https://discuss.iatistandard.org/t/covid-19-data-published-to-iati-what-do-we-know-and-what-s-next/1977.rss">COVID-19 data published to IATI: what do we know and what’s next?</source>
+        </item>
+        <item>
+          <title>Webinar 3: Results &amp; Conditions Guidance</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>We are pleased to share three IATI Standard Guidance pages for review, following the Technical Team’s consultations with the IATI community.</p>
+<p>The third round of IATI Guidance Review consultations took place in March and April 2020. As with previous IATI guidance reviews, the IATI community was invited to provide feedback on draft guidance pages. After carefully reviewing feedback the Technical Team then held a webinar with the community to discuss key areas requiring further detail, any conflicting views among the community, and recommended use. Following the webinar, the team updated the pages, incorporating the feedback received.</p>
+<p>Links to the updated pages are below, and a summary of discussions is available in the<a href="https://docs.google.com/presentation/d/1Su9Egzd5S5njSvcS8VRUMbqTSAn4T1eCbEcSjyGOsZU/edit#slide=id.g5e489fa3cb_0_0"> presentation slides</a>.</p>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>Guidance Page</th>
+<th>Key updates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://docs.google.com/document/d/1zXSxVi4OxleylVsplCxbKQoG78EzBIy3_B_h5D57qEY/edit">Result information</a></td>
+<td>Provides an overview of IATI results data Highlights that results should be meaningful to the organisation Notes the complexity of results and security implications Contains example xml Explains  Standard terminology and use of types, measures, baselines, etc.</td>
+</tr>
+<tr>
+<td><a href="https://docs.google.com/document/d/1UduiNMrEHfjfx3WOLxsV1YqdJlo78hgWZwrQZ89zjag/edit">Understanding results data</a></td>
+<td>Visually presents results data (based on previous d-portal visualisation) Builds up understanding of the different elements and attributes Name changed to better reflect the purpose of the page</td>
+</tr>
+<tr>
+<td><a href="https://docs.google.com/document/d/1TB-sfRGc1U-e1BZDbtmFQYwZ9sXYF35pe8TZYyvT0Ac/edit#heading=h.tyinwtpt1usf">Conditions</a></td>
+<td>Explains why conditions are useful Explains what kind of conditions can be published and how further detail can be added</td>
+</tr>
+</tbody>
+</table>
+</div><p><strong>Please review</strong></p>
+<p>These guidance documents aim to expand on what is <strong>currently</strong> in the IATI Standard and <a href="http://reference.iatistandard.org/203/activity-standard/overview/">current overview pages</a>. We recognise there are a number of areas of divergence between the current overview pages and the Standard. The revised guidance pages are intended to align with the Standard.</p>
+<p>Please reply in this thread if you spot instances where the new guidance documents do not align with the Standard pages. Please comment by <strong>Friday 3 July</strong>. If you have additional questions about the guidance or require clarification about any of the guidance pages, the Technical Team is happy to arrange a call with you.</p>
+<p>In line with previous consultations, these guidance documents attempt to explain and interpret what is in the IATI Standard. Organisations must still decide how best to apply this to their own data.</p>
+<p>These guidance pages will be reviewed by a copy editor before being published on the IATI Standard website.</p>
+<p>Thank you very much in advance!</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/webinar-3-results-conditions-guidance/1975">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/webinar-3-results-conditions-guidance/1975</link>
+          <pubDate>Tue, 23 Jun 2020 16:04:04 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1975</guid>
+          <source url="https://discuss.iatistandard.org/t/webinar-3-results-conditions-guidance/1975.rss">Webinar 3: Results &amp; Conditions Guidance</source>
+        </item>
+        <item>
+          <title>New Covid-19 funding data visualisation launched</title>
+          <dc:creator><![CDATA[markbrough]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>On behalf of the Grand Bargain transparency workstream, Development Initiatives has just launched a new prototype visualisation of funding to the Covid-19 global development response, using FTS and IATI data.</p>
+<p>The prototype aims to encourage the use of data on Covid-19 financing by demonstrating how it can be made more accessible and showcasing its potential. It has been developed with leading donors and aid organisations who have committed to <a href="https://interagencystandingcommittee.org/greater-transparency" rel="nofollow noopener">greater transparency through the Grand Bargain</a> and reacted quickly to demands for increased transparency around humanitarian and development finance during the pandemic.</p>
+<p>You can <a href="https://devinit.org/blog/strengthening-data-driven-transparency-response-covid-19/" rel="nofollow noopener">read the blog here</a> and explore the visualisation yourself via the following link:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://covid19.humportal.org/favicon.ico" class="site-icon" width="" height="">
+      <a href="https://covid19.humportal.org/" target="_blank" rel="nofollow noopener">covid19.humportal.org</a>
+  </header>
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/247;"><img src="https://covid19.humportal.org/visualisation.png" class="thumbnail" width="690" height="247"></div>
+
+<h3><a href="https://covid19.humportal.org/" target="_blank" rel="nofollow noopener">Covid-19 Response Visualisation</a></h3>
+
+<p>A prototype visualisation to track the Covid-19 response</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>The visualisation is updated automatically nightly, and includes all data published according to the <a href="https://drive.google.com/open?id=11XTnrPw8K76JvBhFfnqo-1Z9BmgqzWv2bEz9QoDrw2k" rel="nofollow noopener">IATI Covid-19 Publishing Guidance</a>. Any newly published data will automatically be picked up. Many thanks to the large number of organisations that have already published data!</p>
+<p>Very much welcome feedback and further discussion!</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/new-covid-19-funding-data-visualisation-launched/1969">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/new-covid-19-funding-data-visualisation-launched/1969</link>
+          <pubDate>Thu, 04 Jun 2020 16:03:55 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1969</guid>
+          <source url="https://discuss.iatistandard.org/t/new-covid-19-funding-data-visualisation-launched/1969.rss">New Covid-19 funding data visualisation launched</source>
+        </item>
+        <item>
+          <title>Webinar: IATI COVID-19 data progress update and consultation- Tuesday 30 June</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>It has now been two months since IATI launched guidance on how to <a href="https://iatistandard.org/en/news/publishing-data-covid-19-using-iati-standard/">publish</a> and <a href="https://iatistandard.org/en/news/covid-19-data-access-and-use-guidance-launched/">use</a> IATI data relating to the COVID-19 pandemic. The IATI Secretariat is holding a webinar to provide an update on what IATI COVID-19 data is now available and understand what more can be done to meet the needs of data users.</p>
+<p><a href="https://zoom.us/meeting/register/tJ0ucumhrDsuE9XBDwzbUHHCQ1mPaDB0uSwd"> <strong>Register now</strong> </a></p>
+<h4><strong>Draft Agenda - Tuesday 30 June 3:30-5pm UK time.</strong></h4>
+<ul>
+<li>Overview of COVID-19 data / analysis - progress to date</li>
+<li>Facilitated community discussion on the two topics for further consideration and proposal for best way forward:
+<ul>
+<li><a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdiscuss.iatistandard.org%2Ft%2Fcurrent-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19%2F1939%2F2&amp;data=02%7C01%7Cannelise.parr%40undp.org%7C7e9f69c41641484492ac08d7fe6a47ef%7Cb3e5db5e2944483799f57488ace54319%7C0%7C0%7C637257604732971941&amp;sdata=zO5a43RajTiK6287zav5qZriKX03kDhzX1FyVoPD%2B8o%3D&amp;reserved=0">Current Discussion: Quantifying percentage of funds allocated from an activity to COVID-19</a></li>
+<li><a href="https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdiscuss.iatistandard.org%2Ft%2Fcurrent-discussion-diverted-repurposed-funding-due-to-covid-19%2F1940%2F2&amp;data=02%7C01%7Cannelise.parr%40undp.org%7C7e9f69c41641484492ac08d7fe6a47ef%7Cb3e5db5e2944483799f57488ace54319%7C0%7C0%7C637257604732971941&amp;sdata=hQ8f0%2FLAjvJLSIOJb4tZKIjlQ4yMzXA3WpBLm8y1AHQ%3D&amp;reserved=0">Current Discussion: Diverted / repurposed funding due to COVID-19</a></li>
+</ul>
+</li>
+<li>Next steps</li>
+</ul>
+<h4><strong>Analysis of COVID-19 data</strong></h4>
+<p>The Secretariat is currently undertaking analysis of COVID-19 data published so far. The analysis will help provide a better understanding on which organisations are publishing, how they are publishing, what this data tells about COVID-19-related activities, and if/how this data meets user needs.</p>
+<p>Based on this analysis, the Secretariat will engage specific organisations with the goal of improving the volume and quality of COVID-19 data published. We encourage organisation that have not yet published data, to use the <a href="https://iatistandard.org/en/news/publishing-data-covid-19-using-iati-standard/">IATI publishing guidance</a> to do so as soon as possible., This will enable the Secretariat to include as many datasets as possible in the analysis, provide assistance to address specific issues arising and identify and discuss systemic issues with the broader community.</p>
+<p>This webinar will be an opportunity to share these findings with the community and to continue discussions on if/how further adjustments are needed to publishing to ensure that this data meets the needs of IATI data users. We will also share guiding questions to registered participants in advance of the webinar.</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/webinar-iati-covid-19-data-progress-update-and-consultation-tuesday-30-june/1968">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/webinar-iati-covid-19-data-progress-update-and-consultation-tuesday-30-june/1968</link>
+          <pubDate>Fri, 29 May 2020 12:46:19 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1968</guid>
+          <source url="https://discuss.iatistandard.org/t/webinar-iati-covid-19-data-progress-update-and-consultation-tuesday-30-june/1968.rss">Webinar: IATI COVID-19 data progress update and consultation- Tuesday 30 June</source>
+        </item>
+        <item>
+          <title>COVID-19 data access and use guidance launched</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>New guidance has been released on how to access and use IATI data on COVID-19. The guidance explains how to find data on activities published by organisations on their response to the global pandemic. To date, over <a href="http://d-portal.org/ctrack.html?aids=COVID-19#view=main">500 COVID-19-related projects</a> have been published by a wide range of organisations, for example, donor governments, UN agencies and NGOs.</p>
+<h3>View <a href="https://bit.ly/2SR32J1"> <em>Guidance: Accessing and Using COVID-19 Data</em> </a>
+</h3>
+<p>In the guidance, data users can find instructions on how to search for COVID-19-related activities using IATI’s online tools, including d-portal and the Datastore Query Builder and API. This guidance follows the publication of guidance for organisations on how to <a href="https://iatistandard.org/en/news/updated-covid-19-guidance-iati-publishers/"> <em>publish</em>  data on the COVID-19 pandemic.</a></p>
+<p>By accessing IATI data, users can supplement their information on international resources responding to COVID-19. Good data is critical to avoid duplication, improve coordination and enable recipient governments to know what resources are flowing into their countries.</p>
+<h4><strong>Updating guidance</strong></h4>
+<p>As the response to the global pandemic progresses, the publishing guidance and availability of COVID-19 data may change. Therefore, the IATI Secretariat is committed to updating this guidance as required. Please keep updated with news relating to the pandemic here or sign-up to IATI’s monthly community newsletter.</p>
+<h4><strong>Get support</strong></h4>
+<p>If you have any specific questions on using or publishing IATI data on activities related to COVID-19, please do get in touch by emailing the IATI Helpdesk (<a href="mailto:support@iatistandard.org">support@iatistandard.org</a>).</p>
+            <p><small>5 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957</link>
+          <pubDate>Mon, 11 May 2020 15:27:17 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1957</guid>
+          <source url="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957.rss">COVID-19 data access and use guidance launched</source>
+        </item>
+        <item>
+          <title>Comms update: mention of IATI on COVID-19</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>Hi all, sharing a brief update on IATI COVID-19 communications. This is not an extensive list, but we can keep adding to this post to share with the community. Thanks to <a class="mention" href="/u/rohini_simbodyal">@Rohini_Simbodyal</a> for putting this together:</p>
+<ul>
+<li>
+<p>Humantiarian Data Centre have published a new visualisation and called for IATI publishing <a href="https://twitter.com/humdata/status/1255148869660184577">https://twitter.com/humdata/status/1255148869660184577</a></p>
+</li>
+<li>
+<p>The journalist, Ben Parker  signposted IATI COVID-19 data as a way to track development flows in the New Humantiarian article: <a href="https://www.thenewhumanitarian.org/news/2020/04/23/Coronavirus-emergency-aid-funding">https://www.thenewhumanitarian.org/news/2020/04/23/Coronavirus-emergency-aid-funding</a></p>
+</li>
+<li>
+<p>Microsoft has promoted their use of the IATI Standard in their Non-profit software in a news post on their response to COVID-19 <a href="https://mspoweruser.com/microsoft-explains-what-they-are-doing-to-keep-azure-up-and-running-during-the-covid-19-crisis/">https://mspoweruser.com/microsoft-explains-what-they-are-doing-to-keep-azure-up-and-running-during-the-covid-19-crisis/</a></p>
+</li>
+<li>
+<p>Development Initiatives and World Vision have published a blog on the Grand Bargain, which mentions the value of publishing and using IATI data during the pandemic <a href="https://devinit.org/blog/power-transparency-data-key-effective-crisis-response/">https://devinit.org/blog/power-transparency-data-key-effective-crisis-response/</a></p>
+</li>
+</ul>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/comms-update-mention-of-iati-on-covid-19/1949">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/comms-update-mention-of-iati-on-covid-19/1949</link>
+          <pubDate>Thu, 30 Apr 2020 14:40:05 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1949</guid>
+          <source url="https://discuss.iatistandard.org/t/comms-update-mention-of-iati-on-covid-19/1949.rss">Comms update: mention of IATI on COVID-19</source>
+        </item>
+        <item>
+          <title>Using the org file to report Covid-19 budget?</title>
+          <dc:creator><![CDATA[Melinda]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>Has anyone considered using the org-file to report how much of one’s budget is allocatied/redirected to Covid-19? The reason I ask is that some organizations can say of their budget is expected to go to Covid-19 but are unable to specify activity data. This information is shared between providers but is shared in a manual and unstructured manner. I was speaking to <a class="mention" href="/u/avaughn">@AVaughn</a> about this last week and it seems unreasonable that organizations call eachother to gather this information on spreadsheets. I mean, this is tedious work and the information could quickly become out of date.</p>
+<p>I came to think of suggestions <span class="mention">@OJ</span>_ proposed a couple of years ago (but then suggesting that core support coming in to an organization could be presented in org file (I hope I remember that correctly)).</p>
+<p>With other words, make the org file more of a narrative of an organizations overall budget instead of focusing on the forward looking aggregated budget. Last summer <a class="mention" href="/u/stevieflow">@stevieflow</a> brought up the question if the org file is used (under topic: Does anyone use the Organisation file?). Maybe we could think wider about the use cases.</p>
+<p>However, the org file specifies where the money is going (org or country) but doesn’t specify the purpose as far as I can see. So this may not at all be reasonable. In that case it should be possible to publish a document with the overall Covid-19 spending. Unless anybody sees a reason for not doing so.</p>
+            <p><small>7 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/using-the-org-file-to-report-covid-19-budget/1945">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/using-the-org-file-to-report-covid-19-budget/1945</link>
+          <pubDate>Tue, 28 Apr 2020 10:02:31 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1945</guid>
+          <source url="https://discuss.iatistandard.org/t/using-the-org-file-to-report-covid-19-budget/1945.rss">Using the org file to report Covid-19 budget?</source>
+        </item>
+        <item>
+          <title>Current Discussion: Diverted / repurposed funding due to COVID-19</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>A number of funds and activities are being turned fully or partially into COVID-19 activities. How should these changes be reflected in IATI data? How should activities and transactions be identified? Activities could be split into COVID-19 and non COVID-19 components.</p>
+<p>This could look like:</p>
+<ul>
+<li>
+<p>Cancelling existing activities and creating two new ones. Helps to easily identify COVID-19 activities</p>
+</li>
+<li>
+<p>Showing a removal of funds from existing activities and setting up a new COVID-19 one</p>
+</li>
+<li>
+<p>Keeping the one activity but adding new classifications to show the percentage split between COVID-19 and non COVID-19</p>
+</li>
+</ul>
+<p>Options depend on how an organisation’s business models and internal systems work. But to track the redirection in funding options include:</p>
+<ul>
+<li>
+<p>Adding ‘redirected’ into activity titles and descriptions.</p>
+</li>
+<li>
+<p>Using the sector element to show percentage splits.</p>
+</li>
+<li>
+<p>Using outgoing and incoming funds, with a COVID-19 description to show the redirection of funds.</p>
+</li>
+</ul>
+<p>For previous discussions, please see the following posts from <a class="mention" href="/u/melinda">@Melinda</a> <a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/26">here</a> and <a class="mention" href="/u/anna.pe">@Anna.Pe</a>  <a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/23">here</a>.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/current-discussion-diverted-repurposed-funding-due-to-covid-19/1940">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/current-discussion-diverted-repurposed-funding-due-to-covid-19/1940</link>
+          <pubDate>Thu, 23 Apr 2020 11:21:38 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1940</guid>
+          <source url="https://discuss.iatistandard.org/t/current-discussion-diverted-repurposed-funding-due-to-covid-19/1940.rss">Current Discussion: Diverted / repurposed funding due to COVID-19</source>
+        </item>
+        <item>
+          <title>Current Discussion: Quantifying percentage of funds allocated from an activity to COVID-19</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>One question about COVID-19 IATI data, is how can we tell exactly how much of a given activity is being budgeted, committed and spent on COVID19. This is particularly relevant where activities may be a mix, or contain some redirected funds.</p>
+<p>Two options have been proposed:</p>
+<ul>
+<li>
+<p>Add in COVID-19 to transaction narratives. This allows publishers to detail which commitments, incoming funds and disbursements are specific COVID-19 funding. Most organisations can already do this. However, this is cumbersome to find for data users, not all transactions may be COVID-19 specific, and timeliness of data is an issue.</p>
+</li>
+<li>
+<p>Or the sector element could be used. A binary ‘COVID-19’ and ‘not COVID-19’ category could be used. Either from adding a new codelist or organisations using vocabulary 98 and 99. This can be published alongside other sector elements and provide data users a way of interpreting budget allocations and other financial details. However, this option must also include the narrative element, how would this be used? If reported at transaction level, transactions will need to be separated into COVID-19 and not COVID-19.</p>
+</li>
+</ul>
+<p>Please see <a class="mention" href="/u/rory_scott">@rory_scott</a>  's <a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921">post</a> and <a class="mention" href="/u/jieruz">@JieruZ</a> 's <a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/25">post</a> on using the Sector element for previous discussions.</p>
+            <p><small>7 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/current-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19/1939">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/current-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19/1939</link>
+          <pubDate>Thu, 23 Apr 2020 11:19:12 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1939</guid>
+          <source url="https://discuss.iatistandard.org/t/current-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19/1939.rss">Current Discussion: Quantifying percentage of funds allocated from an activity to COVID-19</source>
+        </item>
+        <item>
+          <title>Using IATI for COVID in Palestine</title>
+          <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>Hi, I was going to keep a log of how we were using IATI data for COVID in Palestine as a feed into the guidance on COVID for data users discussed on the webinar.</p>
+<p>So far (10th April)  d-portal shows us <a href="http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=main" rel="nofollow noopener">5 activities</a> with thanks to Oxfam and DFID for being so fast - that is the first lesson, coordination decisions about what to fund are being taken on a weekly basis so for COVID, if IATI data is going to be any use, we need weekly (if not daily publishing).</p>
+<p>The second feedback is that we currently have to do multiple searches e.g.:</p>
+<ol>
+<li>On <a href="http://www.d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=active" rel="nofollow noopener">d-portal for "COVID</a>" (which also captures COVID-19)</li>
+<li>on d-portal for 'Coronavirus" (none yet but seen in other countries, and globlaly) and then</li>
+<li>A techie (is this available via the interface?) version of <a href="https://d-portal.org/ctrack.html?/humanitarian-scope@code=EP-2020-000012-001&amp;country_code=PS#view=active" rel="nofollow noopener">d-portal for the GLIDE code</a>:</li>
+<li>An <a href="https://iati.cloud/search/activity?q=recipient_country_code:(PS)%20AND%20(title_narrative:%22COVID%22%20OR%20description_narrative:%22COVID%22%20OR%20humanitarian_scope_code:%22EP-2020-000012-001%22%20OR%20humanitarian_scope_code:%22HCOVD20%22%20OR%20tag_code:%22EP-2020-000012-001%22)&amp;wt=json&amp;rows=500000" rel="nofollow noopener">even more comprehensive search on the new datastore</a> but that I don’t think can be done via the user interface - and weirdly the datastore only has 2 projects where d-portal has 5?</li>
+</ol>
+<p>Once all those searches have been done, we have to combine all the different results, remove all the duplication/double counting, and then add it to all the data from non-IATI publishers.</p>
+<ol start="5">
+<li>A <a href="https://fts.unocha.org/data-search/results/incoming?usageYears=2020&amp;locations=171&amp;f%5B0%5D=destinationEmergencyIdName%3A%22911%3ACoronavirus%20disease%20Outbreak%20-%20COVID%20-19%22" rel="nofollow noopener">search on the FTS database.</a>…which has many activities which are not in d-portal</li>
+<li>An excel based tracking sheet sent out to country offices of partners</li>
+</ol>
+<p>As of 10th April, D-portal has 5 activities when searching for COVID, 4 activities when searching by GLIDE code, the new Datastore has 2 activities, the FTS has 46 activities (many are global) and our in-country dataset has well over 100 projects - from both IATI and non-IATI publishers.</p>
+<p>So far we have found:<br>
+A) IATI is helpful for us to find actors who are delivering outside of the formal plans/working groups<br>
+B) IATI is not rapid enough (except for Oxfam), and not consistent across the different IATI portals, or e.g. compared to the FTS (I really wish they would restart publishing FTS data in IATI format)<br>
+C) On a single activity basis IATI can tell us how much money is flowing, but not across multiple publishers - due to the difficulty in working out which activities are the same project just from different publishers<br>
+D) No activity titles are in Arabic etc - so we have to translate them for our colleagues in all the Ministries.<br>
+E) We see how using different options helps publishers - but unless there is a way to search all the different options in one search query (and through the interface non-techies can access) then <a href="https://discuss.iatistandard.org/t/covid-19-iati-publishing-guidance-consultation-6-20-april/1925/2">the different ways of reporting make a huge mess</a> for us and make it probably not worth the effort.</p>
+<p>I will try to keep this up to date as the situation progresses - hopefully with just a few tweaks this can be improved substantially.</p>
+            <p><small>12 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932</link>
+          <pubDate>Fri, 10 Apr 2020 15:08:09 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1932</guid>
+          <source url="https://discuss.iatistandard.org/t/using-iati-for-covid-in-palestine/1932.rss">Using IATI for COVID in Palestine</source>
+        </item>
+        <item>
+          <title>COVID-19 IATI Publishing Guidance Consultation</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>We welcome your feedback and suggestions on improving IATI’s <a href="https://drive.google.com/open?id=11XTnrPw8K76JvBhFfnqo-1Z9BmgqzWv2bEz9QoDrw2k">COVID-19 Publishing Guidance</a>!</p>
+<p><strong>How to get involved in the consultation:</strong></p>
+<p><strong>1. Provide answers to one or all of the below questions and respond directly to this Discuss thread by Monday 20th of April.</strong></p>
+<ul>
+<li>
+<p>Does the guidance meet the needs of <strong>both development and humanitarian actors?</strong></p>
+<ul>
+<li>Specifically, we recommend the use of <a href="http://reference.iatistandard.org/202/activity-standard/iati-activities/iati-activity/humanitarian-scope/">humanitarian-scope</a> for both development and humanitarian activities. Do you agree with that, or do you support the proposal to also add GLIDE as a <a href="http://reference.iatistandard.org/203/codelists/TagVocabulary/">vocabulary</a> to the <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/tag/"> tag element </a>for publishing development activities <strong>only</strong> (see more detailed discussions <a href="https://discuss.iatistandard.org/t/covid-19-guidance-musings/1918">here</a> and <a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921">here</a>)?</li>
+<li>If you support the use of the tag element, please provide specific examples of development activities that will be published there.</li>
+</ul>
+</li>
+<li>
+<p>Can you publish data on <strong>all activities and spending</strong> related to COVID-19 using the recommended elements?</p>
+<ul>
+<li>If not, please provide an example of an activity/spending you are unable to publish using the recommended IATI specific elements?</li>
+<li>Would you be using <a href="http://reference.iatistandard.org/203/codelists/TransactionType/">Transaction Type</a> 12 - Outgoing Pledge &amp; 13- Incoming Pledge for any spending related to  COVID-19? We have not provided specific guidance on use of transactions and want to hear from you!</li>
+</ul>
+</li>
+<li>
+<p>Do you have any specific suggestions on <strong>improving the guidance</strong>? Are there areas where the <strong>guidance can be made clearer?</strong> If so, please state your specific suggestion.</p>
+</li>
+<li>
+<p>How will your organisation <strong>use data</strong> on international resource flows to respond to the pandemic? Does the IATI publishing guidance and recommended elements meet those data use needs? Please provide any examples.</p>
+</li>
+</ul>
+<p><strong>2. Join the IATI Publishing Guidance Webinar on COVID-19 on <a href="https://iatistandard.org/en/events/webinar-iati-publishing-guidance-covid-19/">Tuesday 7 April - 3:30pm UK time.</a></strong></p>
+<p><strong>3. Get in touch with the IATI technical team by emailing the IATI Helpdesk (<a href="mailto:support@iatistandard.org">support@iatistandard.org</a>)</strong></p>
+<p><strong>NEXT STEPS:</strong></p>
+<p>After the closing date of the consultation (Monday 20th of April), we will summarise the discussions (received via Discuss, webinar or email) and post a response to this Discuss thread with any proposed clarification or amendments to the IATI guidance. The guidance will then be updated respectively.</p>
+            <p><small>10 posts - 4 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/covid-19-iati-publishing-guidance-consultation/1925">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/covid-19-iati-publishing-guidance-consultation/1925</link>
+          <pubDate>Mon, 06 Apr 2020 16:50:02 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1925</guid>
+          <source url="https://discuss.iatistandard.org/t/covid-19-iati-publishing-guidance-consultation/1925.rss">COVID-19 IATI Publishing Guidance Consultation</source>
+        </item>
+        <item>
+          <title>COVID-19 Publishing Guidance</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>Many thanks to everyone who’s contributed views on IATI’s <a href="https://drive.google.com/open?id=11XTnrPw8K76JvBhFfnqo-1Z9BmgqzWv2bEz9QoDrw2k">COVID-19 publishing guidance</a>. In response to your views <a href="https://discuss.iatistandard.org/t/covid-19-guidance-musings/1918">here</a> and <a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921">here</a>, this post will:</p>
+<ol>
+<li>Explain the rationale for the content of the existing guidance</li>
+<li>Provide information on a two-week consultation with the IATI community</li>
+</ol>
+<p><strong>Rationale for content on COVID-19 IATI Standard guidance</strong></p>
+<p>We created the existing IATI COVID-19 guidance to rapidly respond to daily increases in the number of organisations publishing COVID-19 related activities using the Standard. The content aimed to <strong>a)</strong> be quick and simple to implement <strong>b)</strong> align with other major humanitarian partners reporting <strong>c)</strong> allow users quick and easy access of the data with IATI tools.</p>
+<p>Specifically:</p>
+<ul>
+<li>
+<p><strong>Humanitarian Scope</strong> - we included this element in discussion with UN OCHA FTS, HDX and WHO. By aligning IATI data to other partners’ reporting, we are promoting interoperability of IATI data within the humanitarian sector and we will continue to advise organisations to follow this guidance. Additionally, we recommended that humanitarian activities responding to COVID-19 also use the humanitarian attribute at activity and/or transaction level.</p>
+</li>
+<li>
+<p><strong>Title -</strong> including COVID-19 in the Activity title is simple and easy to implement, and can be found using free-text searches on d-portal and the Datastore. We will continue to advise organisations to include COVID-19 in their title, however if publishers are unable to do so, they should include this in their Activity description.</p>
+</li>
+</ul>
+<p><strong>Consultation: Publication and use of COVID-19 data (6-20 April)</strong></p>
+<p>We understand that other members of the IATI community have suggestions on updating the COVID-19 publishing guidance, particularly on data on development activities.</p>
+<p>Therefore we will launch a two-week consultation on Monday to gather your views on publishing and using data on COVID-19. We will incorporate feedback and suggestions already posted on Discuss about this issue and would really welcome additional views for the consultation on IATI Discuss, as well as through email and on the upcoming <a href="https://zoom.us/meeting/register/uZMtduGsqzIrpeco55RgsKn5TE-2BwoUbQ">IATI webinar on 7 April</a>.</p>
+<p>After the consultation, we will propose updates on the guidance and summarise how users can access the data published on IATI tools.</p>
+<p><strong>COVID-19 Webinar 7 April</strong></p>
+<p>We invite you to discuss your views on the upcoming <a href="https://zoom.us/meeting/register/uZMtduGsqzIrpeco55RgsKn5TE-2BwoUbQ">COVID-19 webinar- Tuesday 7 April, 3:30pm UK time</a>. IATI’s Technical Team will firstly take participants through how to use the existing guidance and then hold a technical discussion on updating the guidance in the second part of the webinar. Register here and send any questions or comments to the IATI Technical Team in advance: <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>.</p>
+<p>We continue to wish all members of the IATI community well and hope your organisations are managing the impact of the COVID-19 pandemic as best you can.</p>
+<p>Do keep in touch though IATI Discuss or by emailing <a href="mailto:support@iatistandard.org">support@iatistandard.org</a></p>
+<p>Best wishes,</p>
+<p>IATI Technical Team</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/covid-19-publishing-guidance/1923">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/covid-19-publishing-guidance/1923</link>
+          <pubDate>Fri, 03 Apr 2020 15:40:50 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1923</guid>
+          <source url="https://discuss.iatistandard.org/t/covid-19-publishing-guidance/1923.rss">COVID-19 Publishing Guidance</source>
+        </item>
+        <item>
+          <title>Proposing another formal method of classifying COVID-19 activities</title>
+          <dc:creator><![CDATA[rory_scott]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>Many thanks to everyone for the <a href="https://docs.google.com/document/d/11XTnrPw8K76JvBhFfnqo-1Z9BmgqzWv2bEz9QoDrw2k/edit" rel="nofollow noopener">rapid thinking COVID-19</a>.</p>
+<p>I have two issues which have led me to consider three further options for classification.</p>
+<h2>Issues</h2>
+<h3>Classifying Using Text</h3>
+<p>I don’t think this should be a formal method of classifying relevant activities - at least not on its own.</p>
+<p>Although I absolutely encourage all publishers to be descriptive with project titles, there are legitimate reasons not to include “COVID-19”. There could be an existing convention of naming activities based on the country office they’re based in; it could be that the project has been named based on contractual or partnership details; it could be that the work is looking at <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/naming-the-coronavirus-disease-(covid-2019)-and-the-virus-that-causes-it" rel="nofollow noopener">the virus, not the disease</a>.</p>
+<p>To be clear, I think that using this approach will absolutely be helpful, but that it is not sufficient on its own.</p>
+<h3>Lack of Non-Humanitarian Classifications</h3>
+<p>In the linked guidance, it’s acknowledged that not all COVID-19 related projects will be humanitarian. Indeed, DFID is likely to have a mixture of hum / non-hum responses, as the pandemic touches all aspects of our work.</p>
+<p>However, I presume it’s not best practice to use <code>&lt;humanitarian-scope&gt;</code> in a non-humanitarian activity. Although I can’t find any formal rule saying as much, intuitively I would only look for this element in activities where <code>@humanitarian</code> is true.</p>
+<p>To allow for robust (non-statistical - see below) classification, I think one of the following three options needs to be endorsed by us as a community, and by the secretariat as a steward. I’ve very possibly missed something here, so shout if so.</p>
+<h2>Options</h2>
+<p>Personally I recommend either <strong>Option 1</strong> or <strong>Option 2</strong>, given my reluctance to use a <code>&lt;humanitarian-scope&gt;</code> element in non-humanitarian activities.</p>
+<hr>
+<h3>Option 1</h3>
+<p><em><strong>Include GLIDE Codes as entries on the TagVocabulary codelist and recognise the following use of the <code>&lt;tag&gt;</code> element using it</strong></em></p>
+<p>This would allow for any activity that is relevant to be tagged in the following way:</p>
+<pre><code class="lang-xml">&lt;tag  vocabulary="1-2" code="EP-2020-000012-001" vocabulary-uri="https://glidenumber.net/glide/public/search/search.jsp"&gt; 
+</code></pre>
+<p>This assumes that the entry would have the same vocabulary <code>@code</code> as it does on the <a href="http://reference.iatistandard.org/203/codelists/HumanitarianScopeVocabulary/" rel="nofollow noopener">HumanitarianScopeVocabulary</a> codelist)</p>
+<p><img src="https://discuss.iatistandard.org/images/emoji/twitter/+1.png?v=9" title=":+1:" class="emoji" alt=":+1:"> Unambiguous<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/+1.png?v=9" title=":+1:" class="emoji" alt=":+1:"> Official<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/-1.png?v=9" title=":-1:" class="emoji" alt=":-1:"> Requires (small) edit to the standard, which might take a bit of time<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/-1.png?v=9" title=":-1:" class="emoji" alt=":-1:"> Not strictly necessary, given <strong>Option 2</strong></p>
+<hr>
+<h3>Option 2</h3>
+<p><em><strong>Recognise the following use of the <code>&lt;tag&gt;</code> element, declaring GLIDE as a custom vocabulary using code 99, 98, 97, etc.</strong></em></p>
+<pre><code class="lang-xml">&lt;tag  vocabulary="99" code="EP-2020-000012-001" vocabulary-uri="https://glidenumber.net/glide/public/search/search.jsp"&gt; 
+</code></pre>
+<p><img src="https://discuss.iatistandard.org/images/emoji/twitter/+1.png?v=9" title=":+1:" class="emoji" alt=":+1:"> Unambiguous<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/+1.png?v=9" title=":+1:" class="emoji" alt=":+1:"> Require no change to the standard<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/+1.png?v=9" title=":+1:" class="emoji" alt=":+1:"> Extensible approach - this can be done with any codelist with a unique URI<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/-1.png?v=9" title=":-1:" class="emoji" alt=":-1:"> Depends on the vocabulary URI not changing, or being redirected if it does<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/-1.png?v=9" title=":-1:" class="emoji" alt=":-1:"> More susceptible to typos!</p>
+<hr>
+<h3>Option 3</h3>
+<p>Endorse the use of <code>&lt;humanitarian-scope&gt;</code> elements in activities which do not have <code>@humanitian='1'</code></p>
+<p><img src="https://discuss.iatistandard.org/images/emoji/twitter/+1.png?v=9" title=":+1:" class="emoji" alt=":+1:"> Require no change to the standard<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/-1.png?v=9" title=":-1:" class="emoji" alt=":-1:"> Ambiguous<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/-1.png?v=9" title=":-1:" class="emoji" alt=":-1:"> Possibly confusing<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/-1.png?v=9" title=":-1:" class="emoji" alt=":-1:"> More susceptible to typos!<br>
+<img src="https://discuss.iatistandard.org/images/emoji/twitter/-1.png?v=9" title=":-1:" class="emoji" alt=":-1:"> I’d argue that the humanitarian scope, tag, and sector should  have been <code>&lt;classification&gt;</code> elements all along <img src="https://discuss.iatistandard.org/images/emoji/twitter/wink.png?v=9" title=":wink:" class="emoji" alt=":wink:"></p>
+<hr>
+<h2>What about quantification?</h2>
+<p>In theory, it could be that people know exactly how much of a given activity is being budgeted, committed and spent on COVID 19. If so, we could use the approach of <strong>Option 2</strong> above to refer to it in the  element, as long as we could agree a ‘null’ value to pad the sector and ensure that it sums to 100 for that vocabulary. I’m planning to trial <a href="https://devtracker.dfid.gov.uk/custom-codes#policy-priorities" rel="nofollow noopener">a similar approach</a> with cross-government spending through International Climate Finance, and I’m interested to hear people’s thoughts.</p>
+            <p><small>29 posts - 13 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921</link>
+          <pubDate>Thu, 02 Apr 2020 15:22:33 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1921</guid>
+          <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+        </item>
+        <item>
+          <title>Covid-19 guidance musings</title>
+          <dc:creator><![CDATA[reidmporter]]></dc:creator>
+          <category>COVID-19</category>
+          <description><![CDATA[
+            <p>Perhaps I should just wait for the webinar in 10 minutes, but I was just corresponding with <a class="mention" href="/u/petyakangalova">@petyakangalova</a> on the support desk re. the Covid-19 guidance.</p>
+<p>Essentially, there’s obvious scalability and useability concerns with adding free text “Covid-19” to the title. It gets the discoverability job done, but potentially becomes noise in activity titles as more and more programming has to adapt to a changing world. If coronavirus becomes a seasonal but unvaccinated ongoing reality, will every activity in the world eventually be suffixed as “–Covid-19”?</p>
+<p>I had some brief discussions about using <code>&lt;tag&gt;</code> for Covid-19, but obviously that requires a new codelist to be added/used, and the obvious codelists are already in use in <code>&lt;humanitarian-scope&gt;</code></p>
+<p>But that got me thinking: what exactly <em>is</em> Covid-19?</p>
+<p>Sure, in  it’s an emergency/appeal, and for a certain audience that’s sufficient. But for a more generalist (or even niche) data user/researcher, <code>&lt;tag&gt;</code> was meant to be the user-desired yet easy-on-publishers discoverability tool. Of course, that requires codelists to avoid the perils of free text.</p>
+<p>So aside from disaster/response codelists already spoken for, what <em>is</em> Covid-19 that makes it interesting to said researcher: a cross-cutting issue? a particular methodology (i.e. remote monitoring, local decision-making, socially distanced programming)? an international topic of concern? (To be clear, these are all poor examples that don’t translate well to codelists).</p>
+<p>I guess my question is: <strong>has anyone else considered alternatives for tracking and tagging Covid-19 data within their donor ecosystem?</strong> (I know you have, but I’ll refrain from calling you out:-)</p>
+            <p><small>4 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/covid-19-guidance-musings/1918">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/covid-19-guidance-musings/1918</link>
+          <pubDate>Wed, 01 Apr 2020 14:29:27 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1918</guid>
+          <source url="https://discuss.iatistandard.org/t/covid-19-guidance-musings/1918.rss">Covid-19 guidance musings</source>
+        </item>
+        <item>
+          <title>Invitation: IATI Standard guidance review webinar 3</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>Following the success of last year’s <a href="https://iatistandard.org/en/news/interpreting_iatis_standard_made_easier_with_new_guidance/">guidance consultations</a>, the IATI technical team is inviting the IATI Community to join the third guidance webinar on 1st April. We’ll be reviewing the newly improved IATI results and conditions guidance and discussing what ‘recommendations’ should be included. You don’t need to have participated in the previous webinars to contribute. <strong>The deadline to sign-up is Friday 13th of March.</strong></p>
+<p><strong>What will the webinar cover?</strong></p>
+<p>The IATI technical team has rewritten and added additional content to existing IATI Standard guidance currently published on the <a href="http://reference.iatistandard.org/203/activity-standard/overview/">Activity</a> and <a href="http://reference.iatistandard.org/203/organisation-standard/overview/">Organisation</a> overview pages on <a href="http://reference.iatistandard.org/">reference.iatistandard.org</a>. This webinar will look specifically at the result and conditions elements. We want you to review the content of the new pages and provide feedback:</p>
+<ul>
+<li>
+<p>Review pieces of additional guidance</p>
+</li>
+<li>
+<p>Highlight and suggest areas of the guidance which could be better explained</p>
+</li>
+<li>
+<p>Identify gaps</p>
+</li>
+<li>
+<p>Provide use cases for IATI data where relevant</p>
+</li>
+</ul>
+<p>If you are interested in helping us, please send an e-mail to <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> indicating if you would like to join the webinar and / or the review process. We will share the guidance to be reviewed and commented on with participants before the webinars.</p>
+<p><strong>Why rewrite IATI Standard guidance?</strong></p>
+<p>The IATI technical team is undertaking this process as part of our ongoing project to consolidate and improve the guidance documentation and make it available on the <a href="https://iatistandard.org/en/">IATI Standard </a>website, which was launched in 2018.</p>
+<p>We hope to:</p>
+<ul>
+<li>
+<p>Ensure the overview guidance pages are written in a user-friendly language to help data publishers and users better understand the IATI Standard</p>
+</li>
+<li>
+<p>Add additional guidance for publishers to help improve the consistency of data published to IATI</p>
+</li>
+</ul>
+<p><em>Do note:</em></p>
+<p>We have split the overview guidance pages into various groups. Further guidance pages will be reviewed throughout the year.</p>
+<p><strong>Webinar dates</strong></p>
+<ul>
+<li>
+<p><b><i>Webinar 3 Wednesday 1 April 3.30pm - 4.30pm UK time.</i></b> This webinar will cover three pages of guidance covering results and conditions.</p>
+</li>
+<li>
+<p><b><i>Upcoming webinar 4 (tbc).</i></b> This webinar will cover three pages of guidance, covering identifiers, converting currencies and extending the standard (namespaces). More details coming soon.</p>
+</li>
+</ul>
+<p><em>Cannot attend?</em></p>
+<p>If you are keen to review the updated guidance but cannot attend the webinar, you can still add your voice by providing written feedback. The webinar will be recorded and can be sent to you to listen. Please let us know.</p>
+<p><strong>Sign-up by Friday 13th of March</strong></p>
+<p>To sign-up please e-mail <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> letting us know you are interested in being part of the process and state if you can attend. We encourage you to share this invitation with relevant people in your networks.</p>
+<p>Let us know if you have any questions and we look forward to working with you on this important piece of work!</p>
+            <p><small>15 posts - 7 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904</link>
+          <pubDate>Tue, 03 Mar 2020 10:26:57 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1904</guid>
+          <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinar-3/1904.rss">Invitation: IATI Standard guidance review webinar 3</source>
+        </item>
+        <item>
+          <title>Invitation: IATI Standard guidance review webinars</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>The IATI technical team are inviting the IATI Community to join upcoming webinars on 1 August and 7 August to improve guidance provided on the IATI Standard. The deadline to sign-up is Friday 26 July.</p>
+<p><strong>What will the webinars cover?</strong></p>
+<p>The IATI technical team have rewritten and added additional content to existing IATI Standard guidance currently published on the <a href="http://reference.iatistandard.org/203/activity-standard/overview/" rel="nofollow noopener">Activity</a> and <a href="http://reference.iatistandard.org/203/organisation-standard/overview/" rel="nofollow noopener">Organisation</a> overview pages on <a href="http://reference.iatistandard.org/" rel="nofollow noopener">reference.iatistandard.org/</a>. We want you to review the content and provide feedback:</p>
+<ul>
+<li>Review pieces of additional guidance</li>
+<li>Highlight and suggest areas of the guidance which could be better explained</li>
+<li>Identify gaps</li>
+<li>Provide use cases for IATI data where relevant</li>
+</ul>
+<p>If you are interested in helping us, please send an e-mail to <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> indicating which (or both) of the webinars below you would like to join. We will share the guidance to be reviewed with participants before the webinars.</p>
+<p><strong>Why rewrite IATI Standard guidance?</strong></p>
+<p>The IATI technical team are undertaking this process as part of our ongoing project to consolidate and move IATI content across various older websites onto the <a href="https://iatistandard.org/en/" rel="nofollow noopener">IATI Standard</a> website, which was launched in 2018.</p>
+<p>We hope to:</p>
+<ul>
+<li>Ensure the overview guidance pages are written in a user friendly language to help data publishers and users better understand the IATI Standard</li>
+<li>Add additional guidance for publishers to help improve the consistency of data published to IATI</li>
+</ul>
+<p><em>Do note:</em><br>
+We have split the overview guidance pages into various groups. The first two groups will be reviewed in the upcoming webinars and we will continue consultation on further areas of guidance throughout the year.</p>
+<p><strong>Webinar dates</strong></p>
+<ul>
+<li>
+<p><em><strong>Webinar 1 Thursday 1 August 2pm - 3pm UK time</strong></em></p>
+<p>This webinar will cover 6 pages of guidance on activity dates, geography and sector information.</p>
+</li>
+<li>
+<p><em><strong>Webinar 2 Wednesday 7 August 3:30pm - 4:30pm UK time</strong></em></p>
+<p>This webinar will cover 6 pages of guidance on activity and organisation financial information and publishing documents.</p>
+</li>
+</ul>
+<p><em>Cannot attend?</em><br>
+If you are keen to review the updated guidance but cannot attend the webinars, you can still add your voice by providing written feedback. The webinars will be recorded and can be sent to you to listen. Please let us know.</p>
+<p><strong>Sign-up by Friday 26 July</strong></p>
+<p>To sign-up please e-mail <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> letting us know you are interested in being part of the process and state if/which webinars you can attend. We encourage you to share this invitation with relevant people in your networks.</p>
+<p>Let us know if you have any questions and we look forward to working with you on this important piece of work!</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinars/1791">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinars/1791</link>
+          <pubDate>Wed, 17 Jul 2019 11:21:05 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1791</guid>
+          <source url="https://discuss.iatistandard.org/t/invitation-iati-standard-guidance-review-webinars/1791.rss">Invitation: IATI Standard guidance review webinars</source>
+        </item>
+        <item>
+          <title>Update from the SDG working Group - draft guidance available for review</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>Dear all,</p>
+<p>The SDG working group set up after the 2018 TAG has been working hard and can now share the draft SDG guidance. Currently this only contains publishing guidance, and data use guidance will follow shortly.</p>
+<p>We have aimed to create guidance that every organisation can use and that works for data users. We recognise that some organisations may choose to go beyond this, and the guidance does not stop them doing so.</p>
+<p>Please do read over the document. We would like to hear from you as to whether or not the suggested guidance works for your organisation or data use needs, and your suggestions on how to make the guidance easier to understand. Please enter your thoughts into the <a href="https://docs.google.com/document/d/11vsqHc-mdAYUCqrrGCaCTFxu48oD3VvBVSlY9Q3ideo/edit?usp=sharing" rel="nofollow noopener">google doc</a> or on this Discuss post. There is also a proposal to implement the required codelist changes <a href="https://discuss.iatistandard.org/t/on-hold-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/24">here</a>.</p>
+<p><strong>Please can you add your comments by the 17 July</strong>. They will then be reviewed by the SDG working group.</p>
+<p>A summary of the recommendations of the working group is below:</p>
+<hr>
+<p>The SDG working group recommends that organisations should publish:</p>
+<ul>
+<li>Goals and/or Targets using the <code>&lt;tag&gt;</code> element</li>
+<li>Indicators using the result/indicator  attribute</li>
+</ul>
+<p>Recommendations and reasons for recommendations:</p>
+<p><strong>Recommended</strong></p>
+<ul>
+<li>
+<p>Using the <code>&lt;tag&gt;</code> element is the most ‘vanilla’ way of reporting SDGs and aligns with CRS reporting. Everyone who can attach SDGs to their activities should be able to use this. Data users can also turn SDGs reported in other areas into tags (see section 3.2)</p>
+</li>
+<li>
+<p>Using the <code>&lt;result/indicator/reference&gt;</code> element adds further details, by ‘tagging’ an SDG Indicator to a result and aligning it with the organisation’s internal indicators. It allows SDGs to be published at an outcome level, providing additional detail to the <code>&lt;tag&gt;</code> element. We recognise that not every organisation will be able to do this.</p>
+</li>
+</ul>
+<p><strong>Other areas where SDGs could be reported (not recommended)</strong></p>
+<ul>
+<li>
+<p>Using the<code>&lt;policy-marker&gt;</code>, whilst similar to the <code>&lt;tag&gt;</code> element, adds complexity and diverges from CRS reporting.</p>
+</li>
+<li>
+<p>The majority of the group were not in favour of using the <code>&lt;sector&gt;</code> element for SDGs. This adds complexity, is not financially accurate and requires SDGs to add up to 100%. However, it is recognised that some publishers may want to use this option in the future. The UN agencies are one example but further discussion about how it is best for them to do so needs more exploration. In the SDG guidance, we do not recommend the <code>&lt;sector&gt;</code> element being used.</p>
+</li>
+<li>
+<p>There is no direct mapping between the DAC sector codes and the SDGs. Previous comparisons have been carried out and the results do not allow a mapping to take place and place barriers to data interpretation on data users.</p>
+</li>
+</ul>
+<p><strong>Other points to note</strong></p>
+<ul>
+<li>
+<p>The guidance is only guidance. It has been developed with a view to introducing conformity in published data to benefit end users by providing better comparability. It is not mandatory and does not prevent a publisher from using a different method according to their own business models and internal processes.</p>
+</li>
+<li>
+<p>This guidance is not being released along with a Standard upgrade. Accordingly, publishers are still governed by the existing rules and capabilities within the Standard.</p>
+</li>
+</ul>
+            <p><small>3 posts - 3 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783</link>
+          <pubDate>Wed, 03 Jul 2019 16:02:17 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1783</guid>
+          <source url="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783.rss">Update from the SDG working Group - draft guidance available for review</source>
+        </item>
+        <item>
+          <title>IATI Strategic Planning online consultation 4-28 Feb</title>
+          <dc:creator><![CDATA[aparr]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>Dear All</p>
+<p>Hopefully you’ve seen through the Chair’s email and on Twitter that on behalf of the Governing Board, we have now launched three moderated online discussions as the first stage of developing IATI’s new Strategic Plan for 2019-22. The link to the consultations is here: <a href="https://www.globaldevhub.org/iati-sp-2019" rel="nofollow noopener">https://www.globaldevhub.org/iati-sp-2019</a>, and we sincerely thank <a class="mention" href="/u/timdavies">@TimDavies</a> <a class="mention" href="/u/sohir">@Sohir</a>, and old friends Craig Fagan and Lidia Fromm for agreeing to moderate the discussions.</p>
+<p>This is the first phase of consultation, and it’s wide open to all new thinking. These discussions will form the basis of a Strategic Directions Paper, which the Board will then review and refine in more depth directly with IATI members. Please do get involved and have your say at this stage, so that we can all contribute to IATI’s future.</p>
+<p>A note from our technical colleagues follows as they iron out a couple of bugs in the platform:</p>
+<p><em>This online platform now supports external discussions previously hosted by the UN Teamworks online community. If you had a UN Teamworks account, or participated in any past external online consultations hosted by the United Nations it is possible that you will have to re-activate your account.</em></p>
+<p><em>In order to do this, please navigate to the “<a href="https://www.globaldevhub.org/user/password" rel="nofollow noopener">forgot password</a>" page and provide your email address. You will then receive email instructions on how to re-activate your account.</em></p>
+<p>*The link to reset your password can be found here: <a href="https://www.globaldevhub.org/user/password" rel="nofollow noopener">https://www.globaldevhub.org/user/password</a></p>
+<p><em>If you continue to experience issues in accessing the platform please email <a href="mailto:info@globaldevhub.org">info@globaldevhub.org</a> and a site administrator will provide further support.</em></p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/iati-strategic-planning-online-consultation-4-28-feb/1649">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/iati-strategic-planning-online-consultation-4-28-feb/1649</link>
+          <pubDate>Tue, 05 Feb 2019 20:22:40 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1649</guid>
+          <source url="https://discuss.iatistandard.org/t/iati-strategic-planning-online-consultation-4-28-feb/1649.rss">IATI Strategic Planning online consultation 4-28 Feb</source>
+        </item>
+        <item>
+          <title>East-African IATI Resource Centre?</title>
+          <dc:creator><![CDATA[mfo]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>Our local partners implementing the projects that we publish through IATI rarely have the capacity to publish their part of the financial chain. It seems to me that this is a general challenge whereby the financial transactions can rarely be tracked to the end receiver. In Caritas Denmark we are considering how to deal with this challenge. Can anyone recommend a good solution to this? Could it be an idea to establish some sort of local resource centre where private market actors could be trained in IATI usage and use that expertise to start up small local businesses advising local NGOs on how to publish their data? A place to pilot such idea could be East-Africa where there must be a market for this.</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/east-african-iati-resource-centre/1384">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/east-african-iati-resource-centre/1384</link>
+          <pubDate>Tue, 10 Jul 2018 10:14:07 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1384</guid>
+          <source url="https://discuss.iatistandard.org/t/east-african-iati-resource-centre/1384.rss">East-African IATI Resource Centre?</source>
+        </item>
+        <item>
+          <title>Future use of Hierarchies</title>
+          <dc:creator><![CDATA[amys]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>Following from the Discuss post of <a href="https://discuss.iatistandard.org/t/agreeing-best-practice-using-hierarchies/">Agreeing best practice – using Hierarchies</a></p>
+<p>The IATI tech team propose that hierarchies do not need to exist within the IATI standard. Their removal will not restrict the flexibility of organisations to show internal decisions about funds nor will it affect timeliness, structure or granularity of published data. This is based on the assumption that the changes outlined in the <a href="https://discuss.iatistandard.org/t/agreeing-best-practice-using-hierarchies/1337">Agreeing best practice – using Hierarchies</a> post are taken forward.  Implementation of this would need to happen at the next integer upgrade as the changes are not backwards compatible.</p>
+<p><strong>Here is our reasoning:</strong></p>
+<ul>
+<li>
+<p>Only the attribute <span class="mention">@hierarchies</span> will be removed. All other reporting best practices will remain.</p>
+</li>
+<li>
+<p>Activities previously reported in a hierarchical model can still be reported in the same structure. The structure will be detailed through use of the <code>&lt;related-activity&gt;</code> element, which allows organisations to specify ‘Child’ and ‘Parent’ relations within their reported activities.</p>
+</li>
+<li>
+<p>The hierarchies attribute does not add any additional information needed for data quality analysis or data use. This is true for the IATI Dashboard, d-Portal and likely all other data use platforms.</p>
+</li>
+<li>
+<p>Therefore <span class="mention">@hierarchies</span> is a superfluous attribute which only adds complexity, and often confusion, to the IATI standard.</p>
+</li>
+</ul>
+<p><strong>Current number of organisations using multiple hierarchies</strong></p>
+<p>When I was looking into this a few months ago there were 46 organisations using the <span class="mention">@hierarchy</span> attribute (this number will now have grown significantly). The majority of these organisations only use levels 1 and 2, with one organisation correctly using three levels of hierarchy. Removing the <span class="mention">@hierarchy</span> attribute will not remove the relationships between the published activities but will enable data users to better navigate the data as they will not be misled by incorrect <span class="mention">@hierarchy</span> labeling.</p>
+<p>Level 2: 44</p>
+<p>Level 3: 1 (4)</p>
+<p>Level 4: (1)</p>
+<p>Level 5: (1)</p>
+<p>(Numbers in brackets show the number of organisations only publishing at that hierarchical level or not publishing sequentially to that level)</p>
+<p>Please do let us know what you think by responding to this post.</p>
+            <p><small>11 posts - 8 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338</link>
+          <pubDate>Fri, 01 Jun 2018 13:30:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1338</guid>
+          <source url="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338.rss">Future use of Hierarchies</source>
+        </item>
+        <item>
+          <title>Agreeing best practice - Using Hierarchies</title>
+          <dc:creator><![CDATA[amys]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>Recently I’ve been looking at how we can best use Hierarchies in IATI. The tech team are looking to agree guidance in the interim before the next upgrade. See here for a post about our proposed <a href="https://discuss.iatistandard.org/t/future-use-of-hierarchies/">Future use of Hierarchies</a>.</p>
+<p>Our draft guidance is <a href="https://docs.google.com/document/d/1YLR0vcCnubrEPbR_q6RDVCd9qMF-1djXBoa1kex0mEQ/edit?usp=sharing"><strong>here</strong></a>. Please do comment on this post and in the document.</p>
+<p>Below is a summary of our reasoning behind the guidance:</p>
+<p><strong>Structuring data</strong><br>
+Organisations can use multiple hierarchical models to structure their data. These should best reflect an organisation’s internal structure.</p>
+<ul>
+<li>
+<p>The original intended purpose of hierarchies was to enable the earliest reporting of an organisation’s own internal funding decisions and flows.</p>
+</li>
+<li>
+<p>Any number of hierarchies can be used, provided that they are sequential (this rule to be added at the next upgrade).</p>
+</li>
+<li>
+<p>For example, an organisation may need multiple hierarchical structures to reflect their allocation of funds (use-case from DFAT Australia):</p>
+</li>
+</ul>
+<hr>
+<p><em>Simple:</em><br>
+One bilateral program fund<br>
+All budget/ commitment/ expenditure in one country</p>
+<hr>
+<p><em>Moderate:</em><br>
+One non-bilateral program fund<br>
+All budget/ commitment done at a higher (regional/global) level<br>
+Expenditure attributed to countries after the end of each financial year</p>
+<hr>
+<p><em>Complicated:</em><br>
+Multiple program funds - bilateral and non-bilatera<br>
+Budget done at various levels e.g. country and regional<br>
+Commitment covers entire investment<br>
+Expenditure attributed to countries after the end of each financial year</p>
+<hr>
+<p><strong>Internal transfers</strong><br>
+Incoming Funds and Disbursements should be used to show allocation of funding/transfers of funds within an organisation:</p>
+<ul>
+<li>
+<p>No new type of transaction can be added until the next standard upgrade.</p>
+</li>
+<li>
+<p>Using ‘Incoming Commitment’ and ‘Commitment’ is not appropriate as this would require changing their definitions: <a href="http://iatistandard.org/203/codelists/TransactionType/">http://iatistandard.org/203/codelists/TransactionType/</a>.</p>
+</li>
+<li>
+<p>Using Incoming Funds and Disbursements means the same principles of traceability apply, as with transactions between organisations.</p>
+</li>
+</ul>
+<p>Strongly advise organisations to include the name and ref in the <code>&lt;provider-org&gt;</code> and <code>&lt;receiver-org&gt;</code> transaction elements:</p>
+<ul>
+<li>
+<p>This should become mandatory at the next standard upgrade.</p>
+</li>
+<li>
+<p>This allows internal transfers of funds to be identified by the matching provider and receiver org refs.</p>
+</li>
+<li>
+<p>To avoid double counting, only transactions which have differing  and  should be counted.</p>
+</li>
+</ul>
+<p><strong>Relating activities</strong><br>
+Organisations should explicitly detail the relationship between different activities and the internal flow of funds through them using the Parent and Child relationships:</p>
+<ul>
+<li>When looking at the data, this will help the user navigate the activities.</li>
+</ul>
+<p><strong>Other points to note</strong></p>
+<ul>
+<li>
+<p>Cannot have hierarchies across organisational boundaries.</p>
+</li>
+<li>
+<p>Related activities can be declared across organisational boundaries, as per the current IATI schema. Our guidance is that Parent, Child and Sibling relationship types should not be used this way: <a href="http://iatistandard.org/203/codelists/RelatedActivityType/">http://iatistandard.org/203/codelists/RelatedActivityType/</a>.</p>
+</li>
+<li>
+<p>Organisations can choose how to structure their data. This allows their IATI data file to best reflect their practices e.g. creating hierarchies based on internal financial flows or results reporting.</p>
+</li>
+</ul>
+            <p><small>10 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/agreeing-best-practice-using-hierarchies/1337">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/agreeing-best-practice-using-hierarchies/1337</link>
+          <pubDate>Fri, 01 Jun 2018 13:25:25 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1337</guid>
+          <source url="https://discuss.iatistandard.org/t/agreeing-best-practice-using-hierarchies/1337.rss">Agreeing best practice - Using Hierarchies</source>
+        </item>
+        <item>
+          <title>List of available IATI data use tools and services</title>
+          <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>As part of the new IATI website project, we would like to provide users with a single place where they can access a list of available IATI data use tools and services. If you have developed a tool that uses IATI data, we would like to hear from you!</p>
+<p>Please fill out this <a href="https://goo.gl/forms/EeLSAiPskkJrltZk1">Google Form</a> to provide us with the required information. We will then add the details of your tool or service to the new IATI <a href="http://iatistandard.org/en/">website</a>.</p>
+<p>We have already done a similar exercise for available IATI publishing tools. If you are aware of any other IATI publishing tools, please drop us an e-mail at <a href="mailto:support@iatistandard.org">support@iatistandard.org</a>.</p>
+<p>This list will also inform the work done by the Data Use Task Force under <a href="https://www.aidtransparency.net/news/submit-proposals-for-data-use-fund">Theme 3: User-friendly IATI tools</a>.</p>
+            <p><small>7 posts - 6 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/list-of-available-iati-data-use-tools-and-services/1334">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/list-of-available-iati-data-use-tools-and-services/1334</link>
+          <pubDate>Tue, 29 May 2018 14:08:10 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1334</guid>
+          <source url="https://discuss.iatistandard.org/t/list-of-available-iati-data-use-tools-and-services/1334.rss">List of available IATI data use tools and services</source>
+        </item>
+        <item>
+          <title>Revised specification for the IATI datastore</title>
+          <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+          <category>Consultations</category>
+          <description><![CDATA[
+            <p>My apologies for the delay in resolving the edit on our consultation document.</p>
+<p>Herewith<a href="https://docs.google.com/document/d/17bcs7jBp7hLAn4gc_WcpgNG1sWD1kciRDmi8bdkSkn4/edit?usp=sharing"> a draft specification</a> and associated <a href="https://docs.google.com/document/d/1BPUxdRFrwO5EVz6ng0o8v9rKCURihYw1KlrH7-nnPqI/edit?usp=sharing">user stories</a>.</p>
+<p>If there are no major objections this will be progressed next week into a procurement process managed by UNOPS. Clarifications, qualifications and revisions requested by bidders will be considered during this process.</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://discuss.iatistandard.org/t/revised-specification-for-the-iati-datastore/1333">Read full topic</a></p>
+          ]]></description>
+          <link>https://discuss.iatistandard.org/t/revised-specification-for-the-iati-datastore/1333</link>
+          <pubDate>Tue, 29 May 2018 12:56:46 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">discuss.iatistandard.org-topic-1333</guid>
+          <source url="https://discuss.iatistandard.org/t/revised-specification-for-the-iati-datastore/1333.rss">Revised specification for the IATI datastore</source>
+        </item>
+  </channel>
+</rss>

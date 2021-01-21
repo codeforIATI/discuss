@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Proposing another formal method of classifying COVID-19 activities</title>
+    <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921</link>
+    <description>Many thanks to everyone for the [rapid thinking COVID-19](https://docs.google.com/document/d/11XTnrPw8K76JvBhFfnqo-1Z9BmgqzWv2bEz9QoDrw2k/edit).
+
+I have two issues which have led me to consider three further options for classification.
+
+## Issues
+
+### Classifying Using Text
+
+I don&#39;t think this should be a formal method of classifying relevant activities - at least not on its own. 
+
+Although I absolutely encourage all publishers to be descriptive with project titles, there are legitimate reasons not to include &quot;COVID-19&quot;. There could be an existing convention of naming activities based on the country office they&#39;re based in; it could be that the project has been named based on contractual or partnership details; it could be that the work is looking at [the virus, not the disease](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/naming-the-coronavirus-disease-(covid-2019)-and-the-virus-that-causes-it). 
+
+To be clear, I think that using this approach will absolutely be helpful, but that it is not sufficient on its own.
+
+### Lack of Non-Humanitarian Classifications
+
+In the linked guidance, it&#39;s acknowledged that not all COVID-19 related projects will be humanitarian. Indeed, DFID is likely to have a mixture of hum / non-hum responses, as the pandemic touches all aspects of our work.
+
+However, I presume it&#39;s not best practice to use `&lt;humanitarian-scope&gt;` in a non-humanitarian activity. Although I can&#39;t find any formal rule saying as much, intuitively I would only look for this element in activities where `@humanitarian` is true.
+
+To allow for robust (non-statistical - see below) classification, I think one of the following three options needs to be endorsed by us as a community, and by the secretariat as a steward. I&#39;ve very possibly missed something here, so shout if so.
+
+## Options
+
+Personally I recommend either **Option 1** or **Option 2**, given my reluctance to use a `&lt;humanitarian-scope&gt;` element in non-humanitarian activities.
+
+---
+
+### Option 1
+
+_**Include GLIDE Codes as entries on the TagVocabulary codelist and recognise the following use of the `&lt;tag&gt;` element using it**_
+
+This would allow for any activity that is relevant to be tagged in the following way:
+
+```xml
+&lt;tag  vocabulary=&quot;1-2&quot; code=&quot;EP-2020-000012-001&quot; vocabulary-uri=&quot;https://glidenumber.net/glide/public/search/search.jsp&quot;&gt; 
+```
+
+This assumes that the entry would have the same vocabulary `@code` as it does on the [HumanitarianScopeVocabulary](http://reference.iatistandard.org/203/codelists/HumanitarianScopeVocabulary/) codelist)
+
+👍 Unambiguous
+👍 Official
+👎 Requires (small) edit to the standard, which might take a bit of time
+👎 Not strictly necessary, given **Option 2**
+
+---
+
+### Option 2
+
+***Recognise the following use of the `&lt;tag&gt;` element, declaring GLIDE as a custom vocabulary using code 99, 98, 97, etc.***
+
+```xml
+&lt;tag  vocabulary=&quot;99&quot; code=&quot;EP-2020-000012-001&quot; vocabulary-uri=&quot;https://glidenumber.net/glide/public/search/search.jsp&quot;&gt; 
+```
+
+👍 Unambiguous
+👍 Require no change to the standard
+👍 Extensible approach - this can be done with any codelist with a unique URI
+👎 Depends on the vocabulary URI not changing, or being redirected if it does
+👎 More susceptible to typos!
+
+---
+
+### Option 3
+
+Endorse the use of `&lt;humanitarian-scope&gt;` elements in activities which do not have `@humanitian=&#39;1&#39;`
+
+👍 Require no change to the standard
+👎 Ambiguous
+👎 Possibly confusing
+👎 More susceptible to typos! 
+👎 I&#39;d argue that the humanitarian scope, tag, and sector should  have been `&lt;classification&gt;` elements all along :wink: 
+
+---
+
+## What about quantification?
+
+In theory, it could be that people know exactly how much of a given activity is being budgeted, committed and spent on COVID 19. If so, we could use the approach of **Option 2** above to refer to it in the &lt;sector&gt; element, as long as we could agree a &#39;null&#39; value to pad the sector and ensure that it sums to 100 for that vocabulary. I&#39;m planning to trial [a similar approach](https://devtracker.dfid.gov.uk/custom-codes#policy-priorities) with cross-government spending through International Climate Finance, and I&#39;m interested to hear people&#39;s thoughts.</description>
+    
+    <lastBuildDate>Thu, 23 Apr 2020 13:41:26 +0000</lastBuildDate>
+    <category>COVID-19</category>
+    <atom:link href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>The <a href="http://glidenumber.net" rel="nofollow noopener">glidenumber.net</a> site was updated this week, and now appears to include codes for each affected country (i.e. <code>EP-2020-000012-*</code>). However, global code <code>EP-2020-000012-001</code> hasn’t been added. I don’t know if this is significant?</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/29">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/29</link>
+        <pubDate>Thu, 23 Apr 2020 13:41:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-29</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[stolk]]></dc:creator>
+        <description><![CDATA[
+            <p>HI All, very valuable discussion and suggestions.<br>
+When reading through all answers and suggestions how to tag/flag development activities as COVID-19 response related, I started reflecting how we will be able to distinguish between unfolding COVID-19 pandemic response project, protracted response to COVID-19 pandemic impact project and a development response to COVID-19 pandemic.<br>
+I understand the need for a longer term tag option, but really wonder when and if we will be able to agree we deal with COVID-19 development activity.<br>
+COVID-19 is a typical NEXUS challenge in my view, we may as well consider as humanitarian throughout the crisis lifecycle.<br>
+Looking forward to your reactions.<br>
+Leo</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/28">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/28</link>
+        <pubDate>Tue, 21 Apr 2020 06:39:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-28</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 Yay <span class="hashtag">#hashtags</span> (or any tags)</p>
+<p>Also highlighting that many of these issues were faced during the Napal Earthquake, Ebola etc - so let’s also not make the mistake of just limit ourselves by the need for something right now in the discussions, i.e. I know not all publishers can do tags right now, but we also need to fix this for the next crisis so that we are not having this same discussion again.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/27">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/27</link>
+        <pubDate>Mon, 20 Apr 2020 09:36:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-27</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you all for these very engaging discussions. I am really impressed how rapidly and well-structured the tech team have been in bringing this together, guidance, data store, d-portal and all. I’m joining the discussion in the last minute… hopefully to spark a late discussion when we all have had more time to get a grip of the situation.</p>
+<p>Thank you <a class="mention" href="/u/rory_scott">@rory_scott</a>  for bringing forward some concrete examples to base the discussion on. I’m a bit concerned with the suggestions of changing the standard for an imperfect fit. So I am inclined to reject option 1 and 3. But I would go a little bit further with suggesting a 99 vocabulary. The humanitarian Glide-numbers will be limited to humanitarian activities. If we are opening up to the risk of typos, why don’t we open up for some more flexibility, and codes that are a little bit easier to follow (because, let’s face it, how many reporting officers will get “EP-2020-000012-001” right?). Sure, for those organizations that have the humanitarian reporting integrated with the development assistance reporting, there might already be a built in drop-down list with Glide numbers. But I’m assuming this is not the case for most. An alternative marker would have to be used and then adjustments will need to be made to the reporting organization’s IATI file generators. Once again, quite an adjustment for an imperfect solution. And… as <a class="mention" href="/u/markbrough">@markbrough</a>  pointed out, there are not that many publishers already using this.</p>
+<p>I base my arguments on two points; 1) we need to be pragmatic and 2) to distinguish between communication and measuring/classification.</p>
+<p>In Tanzania I remember a workshop where hashtags were suggested as an option in Humanitarian reporting, given that there was little time for the field workers to meticulously fill in an excel sheet or other reporting system.</p>
+<p>Would it not be able to give a suggested list of hashtags to be used that would give a little more depth to a pragmatic communicative approach? The reason I suggest hashtags is that they are understood by a wider community as something to tag information and the importance of spelling it correctly. That way the programmer could hashtag if it is a redirection of the original activity and even give an indication of how much and under what period. It could also held to distinguish between humanitarian and development activities.</p>
+<p>For example for an activity that has 20% of the funding directed toward Covid for the 2020 budget could tag in the title or description alongside the original title and description  <span class="hashtag">#Covid19</span> <span class="hashtag">#redirected</span> <span class="hashtag">#2020</span> <span class="hashtag">#20percent</span>.</p>
+<p>Not all organizations have the business model where it makes sense to break the redirection of funds to new activities. But it sure would make it easier, still, the discontinued activity also needs to record that it was changed due to the redirections. Otherwise the results etc. will look completely out of place.</p>
+<p>I am aware that the hashtag idea goes against the idea of safeguarding the standard and code lists (this list to be owned by who?), but the situation is obviously extraordinary. It might very well be long term effects, as <a class="mention" href="/u/reidmporter">@reidmporter</a>  pointed out, not just by the virus, but also aftermaths of funding being cut down in other areas to meet the crisis… and not to mention the effect of (possible) lower GNI’s of donor countries. This might very well be data we are going to be living with and analyzing for a long time to come in a variety of use cases. More long term solutions require a balance against other statistical values. I haven’t looked into it personally, but I bet there are considerations to be made in relation to sectors and Aid types etc. So…</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/26">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/26</link>
+        <pubDate>Mon, 20 Apr 2020 09:12:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-26</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[JieruZ]]></dc:creator>
+        <description><![CDATA[
+            <p>Greatly appreciate IATI-techteam for the quick response to COVID-19 and a super helpful webinar on COVID-19 reporting guidance!</p>
+<p>Also thank you all for the great discussion &amp; suggestions!</p>
+<p>For the 3 options proposed during the webinar:</p>
+<ol>
+<li>
+<p>Include ‘COVID-19’ in the title: as many have mentioned, this would be the low hanging fruit and can probably be implemented quickly by many publishers. We (UNICEF) can implement this fairly quickly, with the caveat that there could be activities missing ‘COVID-19’ text in the title or spelled in various ways</p>
+</li>
+<li>
+<p>Humanitarian flag:  I share the concern that COVID activity span humanitarian and development (almost cross-cutting). It feels like this option is force fitting all COVID activities to humanitarian bucket. From user perspective, some clear explanation will be needed, and is there anyway to filter out ‘true humanitarian’ activities (i.e. excluding COVID development) from the data if that’s the use case? That said, however, this is also fairly straightforward for us to implement.</p>
+</li>
+<li>
+<p>Humanitarian scope element (GLIDE and HRP):  we won’t be able to implement as we use vocabulary code ‘99’.</p>
+</li>
+</ol>
+<p>On the option of using ‘tag’ element for COVID reporting. Agree with many discussions above that it would be a clean solution. However, ‘tag’ element is introduced in 2.03 schema and is only published by few publishers. We would not be able to follow the guidance at the moment either (publishing to 2.02 schema). Also ‘tag’ element would not solve the problem of quantification (budget), as there is no <span class="mention">@percentage</span> attribute.</p>
+<p>I’d like to entertain the idea of using sector code (I believe <a class="mention" href="/u/rory_scott">@rory_scott</a> also mentioned briefly). Sector vocabulary has ‘98’ and ‘99’ for ‘reporting organization’, one of which can be used for COVID. And <span class="mention">@percentage</span> attribute is available for sector element so quantification is possible as well. Any thoughts on this?</p>
+<p>Thank you!<br>
+Jieru</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/25">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/25</link>
+        <pubDate>Fri, 17 Apr 2020 06:11:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-25</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[Anna.Pe]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi All,</p>
+<p>Thanks for the interesting discussion and suggestions.</p>
+<p>I’ve been thinking about how to report on IATI funds diverted from existing development projects to COVID-19 activities. I know <a class="mention" href="/u/stolk">@stolk</a> would be in favour of creating a new activity and I understand the rationale behind this idea. However, I think it’s also important to track the shift of resources from longer term development activities to COVID-19 - at least I know my organisation would be interested in this type of analysis.</p>
+<p>Based on Option 2 (either <a class="mention" href="/u/rory_scott">@rory_scott</a> or <a class="mention" href="/u/shi">@shi</a>’s version), I thought this could be represented in the following way - please shout if this doesn’t make sense, I’d be really interested in your opinion.</p>
+<p>[Please note this an opinion from a non-techie (clearly reflected in the language :)) and AidStream publisher]</p>
+<p>-&gt; Add GLIDE code as tag<br>
+-&gt; Add Outgoing commitment transaction reflecting the amount of funds diverted to COVID-19 activities and add ‘COVID-19’ in the transaction description/reference (as suggested by <a class="mention" href="/u/stevieflow">@stevieflow</a>). Adjust amount of original outgoing commitment transaction(s) accordingly. Ideally this should show on the budget but there aren’t narrative fields in the budget section.<br>
+-&gt; Update sector percentages to reflect thematic shift (using the null value if there aren’t any appropriate codes).</p>
+<p>Could datastore queries be built around these criteria (similar to the <a href="https://discuss.iatistandard.org/t/tracking-uk-covid-19-grants-what-could-our-iati-community-learn/1931">360Giving covid tracker</a> flagged by <a class="mention" href="/u/stevieflow">@stevieflow</a> )? Or d-portal searches? Or new tools/data viz (thinking about what <a class="mention" href="/u/markbrough">@markbrough</a>  is working on at DI)?</p>
+<p>I hope this makes sense!<br>
+Anna</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/24">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/24</link>
+        <pubDate>Thu, 16 Apr 2020 10:24:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-24</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this discussion everyone</p>
+<p>I also agree using the ’<code>tag</code> element may be interesting, with a GLIDE code if possible</p>
+<p>I also appreciate the points around on communication vs classification.  There’s heavy focus on the <code>title</code> element - but let’s not also forget we have a bunch of narrative possibilities via the <code>description</code> element combined with &amp; the <a href="http://reference.iatistandard.org/203/codelists/DescriptionType/" rel="nofollow noopener">DescriptionType</a> codelist…</p>
+<p>We are all trying to figure this out, think through scenarios, and learn from each other, I hope. Thanks to <a class="mention" href="/u/rory_scott">@rory_scott</a> for openly sharing his thoughts and challenges, and for the positive contributions that build on this.</p>
+<p>And - I echo the appreciation of the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> to act swiftly and inclusively.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/23</link>
+        <pubDate>Fri, 10 Apr 2020 13:37:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-23</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[Michelle_IOM]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="21" data-topic="1921">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>I would argue that where IATI <strong>should</strong> now be delivering is where we failed with the Haiyan typhoon and the Kathmandhu earthquake: timely responsiveness. For me, putting a flag in the title is not a classification but a communication.</p>
+</blockquote>
+</aside>
+<p>I would agree with Bill’s comment.  Changing a title isn’t a classification but just to reiterate, it may be all some of us can do in the short-term. I recognize it is only a start and still leads to inconsistency of use as some publishers can’t change titles and for some that is all we can do.  I think the multifaceted option approach is needed at this time.  I just hope the users understand and can make it work.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/22</link>
+        <pubDate>Thu, 09 Apr 2020 13:30:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-22</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="20" data-topic="1921">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/reidmporter/40/204_2.png" class="avatar"> reidmporter:</div>
+<blockquote>
+<p>long-term response come 2021</p>
+</blockquote>
+</aside>
+<p>Will the longer-term response be for covid-19 or more generally for public health infrastructures / data infrastructures / DRR / debt / unemployment / etc. Aren’t the latter all covered in existing architectures?</p>
+<p>I would argue that where IATI <strong>should</strong> now be delivering is where we failed with the Haiyan typhoon and the Kathmandhu earthquake: timely responsiveness. For me, putting a flag in the title is not a classification but a communication.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/21</link>
+        <pubDate>Thu, 09 Apr 2020 13:23:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-21</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>I would like to express my satisfaction with what the tech team produced in terms of guidance.</p>
+</blockquote>
+<p>I don’t think anyone would contest that the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> responded remarkably quickly to a rapidly evolving situation and put out clear, concise, immensely actionable guidance. Chapeau indeed!</p>
+<p>I think the concern here is that — as I already discussed <a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/6">earlier in the thread</a> — this does not seem to be the kind of crisis that will neatly contain itself in time and space. Eventually, we may find that the indisputably right response in March is the wrong long-term response come 2021+, and overfitted to a particular “use case” (covid-19), especially if/when other across-the-board, all-hands-on-deck, beyond-humanitarian-response crises emerge in future.</p>
+<blockquote>
+<p>I suggested to evaluate this in 2 month time.</p>
+</blockquote>
+<p>I think that’s a perfectly reasonable timeline (or even longer), and agree that it would be disruptive to change course any earlier after the guidance just went out.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/20</link>
+        <pubDate>Thu, 09 Apr 2020 12:16:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-20</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[stolk]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/rory_scott">@rory_scott</a> and others,   I would like to express my satisfaction with what the tech team produced in terms of guidance.  For me it strikes the right balance, in speed and by the recommendations within the current elements and guidance.  So chapeau!</p>
+<p>In these times it is not easy for publishers to change and adjust program management system capability to capture new data points to an activity. Hence I understand <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a> point s made in the webinar: adding COVID-19 to titles and descriptions is the fastest and easiest way to flag and filter out COVID-19 related activities.</p>
+<p>I also support the recommendations for humanitarian projects to use of existing element practice and guidance. Also aware that many publishers have not yet incorporated the ability to use glide code and response code into their systems (as IOM) , so they can’t at his moment follow the recommendation.</p>
+<p>I suggested to evaluate this in 2 month time.  Than we can reflect on data use cases, and the possible need to recommend use of tag, or sector elements with new vocabularies.</p>
+<p>As a publisher we just spend (significant) time and resources to properly introduce SDG tag, glide codes and humanitarian cluster codes in our project management system, as per 2.03.<br>
+At this stage, amids COVID-19 impact, we would not really welcome strong new recommendations for new vocabularies for TAG or SECTOR element use. This is not the time for system changes.</p>
+<p>So I prefer the extension of available vocabularies for each element, rather than introducing new vocabularies for an element (even if reused from another element).</p>
+<p>My plee would be to keep this simple and advice publishers to split off COVID-19 specific activities whenever possible, even when adjusting/altering ongoing activities, both Hum and Dev.</p>
+<p>hope this makes sense<br>
+leo</p>
+<p><a class="mention" href="/u/shi">@shi</a> <a class="mention" href="/u/markbrough">@markbrough</a> <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/19</link>
+        <pubDate>Thu, 09 Apr 2020 11:36:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-19</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks to <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> for the webinar yesterday, and <a class="mention" href="/u/petyakangalova">@petyakangalova</a> for facilitating in particular. I thought it was really positive, and great to hear a variety of perspective emerging. I have a few thoughts to underline coming out of it.</p>
+<p>Regarding <a class="mention" href="/u/bill_anderson">@bill_anderson</a>’s thoughts on the title. I want to reiterate that I’m not against using “COVID-19” in the title, and I’m absolutely happy for us to say that this is sufficient for a given publisher: for a publisher like <a class="mention" href="/u/michelle_iom">@Michelle_IOM</a>, putting it in the title is fine. My contention is that there should be another formal and recognised way for development organisations to classify, inline with any of my options, or <a class="mention" href="/u/shi">@shi</a>’s suggestion above.</p>
+<p>We wouldn’t ask UNHCR to rename <a href="http://d-portal.org/ctrack.html?reporting_ref=XM-DAC-41121#view=active" rel="nofollow noopener">every activity</a> to “…including work on COVID-19” - they will of course use <code>@humanitarian-scope</code> with the corresponding code.</p>
+<p>There are absolutely situations where I can imagine DFID adding ‘COVID-19’ to a title, and I will advocate for that, but there will be some projects and components for which that’s not appropriate, and I will also want to have a non-text field which reflects this classification formally.</p>
+<p>Per <a class="mention" href="/u/markbrough">@markbrough</a>’s queries above, we can encode a relevant query in an <a href="https://iati.cloud" rel="nofollow noopener">iati.cloud</a> URL very easily, and regardless of how we answer the questions above, we could make this query very inclusive. We could include “SARS-CoV-19”, “COVID-19”, “Orthocoronavirinae” - it’s just a query. In my view the real friction comes from formatting the data and presenting the relevant details.</p>
+<p>I’m really not too opinionated on we answer the questions above. Currently I’m leaning mildly towards Option 2 or <a class="mention" href="/u/shi">@shi</a>’s proposal.</p>
+<p>Do we have any further thoughts on quantifying through the use of <code>&lt;sector @vocabulary="not_OECD_DAC&gt;</code>? I don’t see any other way of putting numbers on COVID-19 spend, given the need to impute spend over transactions as we do with purpose codes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/18</link>
+        <pubDate>Wed, 08 Apr 2020 10:20:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-18</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Are there any lessons learned pieces from the Ebola crisis i.e. what worked with IATI and what didn’t? Were any studies done, anything internal? Presumably similar discussions on publishing were had?</p>
+<p>If we assume that the same approach was used (putting Ebola in the activity title/description) then a d-portal text search - e.g. for the USA: <a href="http://www.d-portal.org/ctrack.html?text_search=ebola&amp;country_code=SL&amp;reporting_ref=US-18%2CUS-GOV-1&amp;year_min=2014&amp;year_max=2019#view=main" rel="nofollow noopener">http://www.d-portal.org/ctrack.html?text_search=ebola&amp;country_code=SL&amp;reporting_ref=US-18%2CUS-GOV-1&amp;year_min=2014&amp;year_max=2019#view=main</a> gives something around 110 million.</p>
+<p>This compares with a figures of 600 million from the US State Department: <a href="https://www.state.gov/u-s-relations-with-sierra-leone/" rel="nofollow noopener">https://www.state.gov/u-s-relations-with-sierra-leone/</a></p>
+<p>I couldn’t get all the US Agencies to come up e.g. DCD, DOD etc, and I guess the figure in the press release is generous, but even then, this suggests that something would have to be very much improved (enforcement of the guidance?) if IATI is to be a useful data source for COVID in terms of capturing a reasonable estimate of the flows, as this is approximately 20% coverage.</p>
+<p>Maybe examples from other publishers are better?</p>
+<p>Edit: This study found something similar: <a href="https://politicsofpoverty.oxfamamerica.org/2017/09/can-you-track-the-ebola-funding-from-pledge-to-delivery/" rel="nofollow noopener">https://politicsofpoverty.oxfamamerica.org/2017/09/can-you-track-the-ebola-funding-from-pledge-to-delivery/</a> which makes me conclude that before we all argue over how to do COVID reporting in IATI, it would probably help if we all discussed ‘what’ we are trying to do, i.e. what purposes we anticipate IATI data actually being used for in COVID.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/17</link>
+        <pubDate>Fri, 03 Apr 2020 23:47:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-17</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[shi]]></dc:creator>
+        <description><![CDATA[
+            <p>We recommend a simpler version of Option 2 where <code>vocab="99"</code> is treated as freetext and where no <code>uri</code> is needed, so</p>
+<pre><code class="lang-auto">&lt;tag  vocabulary="99" code="COVID-19"&gt; 
+</code></pre>
+<p>We suggest this so that people can use the <code>tag</code> element in the way they would expect to use the <code>tag</code> element; ie. as organic tags.</p>
+<aside class="quote no-group quote-modified" data-post="9" data-topic="1921">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<blockquote>
+<p>as long as it’s clear how users would access the data (check the <code>title</code> , <code>description</code> , <code>humanitarian-scope/@code</code> and <code>tag/@code</code> ).</p>
+</blockquote>
+<p>If this is to be the approach (not that I agree) I would suggest that both the Datastore and d-Portal add buttons to run this pre-built query.</p>
+</blockquote>
+</aside>
+<p>Because the standard has recommended publishers include COVID-19 in the title, d-Portal is already equipped to find <a href="http://d-portal.org/ctrack.html?text_search=COVID-19#view=main" rel="nofollow noopener">all these activities</a>.</p>
+<p>However, we have also be <a href="http://d-portal.org/ctrack.html#view=search2" rel="nofollow noopener">trialing more filters for search</a> so it is possible to limit it by <code>humanitarian-scope</code> and/or <code>tag</code>.</p>
+<p>And in this case, if <code>tag</code> were freetext, COVID-19 would be a dropdown.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/16</link>
+        <pubDate>Fri, 03 Apr 2020 11:38:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-16</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="14" data-topic="1921">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>it does still need to be added to the GLIDE database</p>
+</blockquote>
+</aside>
+<p>Flagging for <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>!</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/15</link>
+        <pubDate>Fri, 03 Apr 2020 11:36:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-15</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="12" data-topic="1921">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/557_2.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>So perhaps the code should be <code>EP-2020-000012----</code></p>
+</blockquote>
+</aside>
+<p>Yes, but it does still need to be added to the GLIDE database. (cf. your example  <a href="https://glidenumber.net/glide/public/search/details.jsp?glide=18507&amp;record=42&amp;last=58">https://glidenumber.net/glide/public/search/details.jsp?glide=18507&amp;record=42&amp;last=58</a>)</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/14</link>
+        <pubDate>Fri, 03 Apr 2020 11:34:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-14</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="1921">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>recognise the GLIDE codelist</p>
+</blockquote>
+</aside>
+<p>is quite different from adopting it i.e. replicating it. Currently, users have to search for “EP-2020-000012-001” which they have to look up themselves from a link to a website that you can find deep in the IATI website. If IATI made it replicated, users would be shown “COVID” when searching for or receiving data which would be much more helpful. It would also mean that D-portal and the Datastore could offer “COVID-19” on a dropdown, which neither can currently do because it is only “recognised”.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/13</link>
+        <pubDate>Fri, 03 Apr 2020 10:55:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-13</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="1921">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>“EP-2020-000012-001” isn’t a valid code</p>
+</blockquote>
+</aside>
+<p>This is a good point! GLIDE appears to use <code>---</code> to denote codes that aren’t tied to a specific country:</p>
+<ol>
+<li>Go to <a href="https://glidenumber.net/glide/public/search/search.jsp" rel="nofollow noopener">the GLIDE search form</a>
+</li>
+<li>Select country: <code>(Non-Localized)</code>
+</li>
+<li>See e.g. code <code>TC-2008-000105----</code>
+</li>
+</ol>
+<p>So perhaps the code should be <code>EP-2020-000012----</code></p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/12</link>
+        <pubDate>Fri, 03 Apr 2020 10:54:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-12</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> IATI does recognise the GLIDE codelist, but only as an humanitarian scope vocabulary.</p>
+<p>Bigger problem from a standards point of view is that GLIDE numbers are country specific and “EP-2020-000012-001” isn’t a valid code (it has been tweaked from “EP-2020-000012-CHN”).</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/11</link>
+        <pubDate>Fri, 03 Apr 2020 09:58:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-11</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I like <a class="mention" href="/u/rory_scott">@rory_scott</a>’s option 2 - what would it take for IATI to adopt the GLIDE codelist necessary to make this really simple for everyone?</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/10</link>
+        <pubDate>Fri, 03 Apr 2020 09:23:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-10</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="7" data-topic="1921">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/557_2.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>as long as it’s clear how users would access the data (check the <code>title</code> , <code>description</code> , <code>humanitarian-scope/@code</code> and <code>tag/@code</code> ).</p>
+</blockquote>
+</aside>
+<p>If this is to be the approach (not that I agree) I would suggest that both the Datastore and d-Portal add buttons to run this pre-built query. If we want to encourage more people to use IATI data we need to make access easier. A four-part filter doesn’t pass a user friendliness test …</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/9</link>
+        <pubDate>Fri, 03 Apr 2020 08:08:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-9</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rory_scott">@rory_scott</a> I don’t think it’s a matter of “if people want”. We’re still talking about a standard in which ALL publishers SHOULD use the title. If some can provide a more refined approach it should remain consistent with the simple universal case that allows all users to perform simple queries.</p>
+<p>Over the years we have had many unresolved conversations about the need to simplify the standard. Is this another opportunity?</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/8</link>
+        <pubDate>Thu, 02 Apr 2020 20:26:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-8</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>This is a good point! Actually it made me think: I wonder if we should supplement here advice for users trying to access the data: if there are a few different options for publishing the data, maybe that is OK, as long as it’s clear how users would access the data (check the <code>title</code>, <code>description</code>, <code>humanitarian-scope/@code</code> and <code>tag/@code</code>).</p>
+<p>I think the following will get the data from the v2 Datastore, according to any of the above options:</p>
+<ul>
+<li><a href="https://iati.cloud/search/activity?q=(title_narrative:%22COVID%22%20OR%20description_narrative:%22COVID%22%20OR%20humanitarian_scope_code:%22EP-2020-000012-001%22%20OR%20humanitarian_scope_code:%22HCOVD20%22%20OR%20tag_code:%22EP-2020-000012-001%22)&amp;wt=xslt&amp;tr=activity-xml.xsl&amp;rows=500000" rel="nofollow noopener">IATI XML</a></li>
+<li>
+<a href="https://iati.cloud/search/activity?q=(title_narrative:%22COVID%22%20OR%20description_narrative:%22COVID%22%20OR%20humanitarian_scope_code:%22EP-2020-000012-001%22%20OR%20humanitarian_scope_code:%22HCOVD20%22%20OR%20tag_code:%22EP-2020-000012-001%22)&amp;wt=csv&amp;rows=500000" rel="nofollow noopener">CSV</a> (right-click and download)</li>
+</ul>
+<p>Both of these formats are not super accessible for the everyday user (and constructing the query was not super straightforward) - but given that we would expect to access this query through some nice front end - perhaps that is OK to have a couple of different ways of publishing this data; and we should spend our time focusing on how to improve various front-ends so that they can handle this complexity behind the scenes?</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/7</link>
+        <pubDate>Thu, 02 Apr 2020 20:15:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-7</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1921" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Sometimes a simple imperfect solution is what is needed to make things work fast. Is this not a time to be pragmatic for all rather than perfect for a few?</p>
+</blockquote>
+</aside>
+<p>The guidance is perfectly fine, especially to get data published on the first wave of funding published fast. But unless epidemiologists are wrong, Covid-19 is going to be with us for a long time, and having an affect on related and unrelated programming for — hope I’m not being alarmist here — years to come. I don’t think pragmatic and perfect/preferred are mutually exclusive.</p>
+<p>The guidance itself starts out, “Version 1…”</p>
+<aside class="quote no-group" data-post="4" data-topic="1921">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/557_2.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>The IATI Dashboard shows <a href="http://dashboard.iatistandard.org/element/iati-activity_humanitarian-scope.html" rel="nofollow noopener">there are currently 30 organisations publishing data in the <code>humanitarian-scope</code> element</a> (<a href="http://dashboard.iatistandard.org/element/iati-activity_tag.html" rel="nofollow noopener">8 are publishing data in the <code>tag</code> element</a>). For these 30 organisations, presumably it would be easier to add a new code into their existing systems / publishing processes rather than to adjust the output to publish this particular crisis/response plan in a different element?</p>
+</blockquote>
+</aside>
+<p>I would say out of 1100+ publishers (caveats abound, I know), 30 and 8 are roughly equivalent.</p>
+<p>I genuinely think <code>&lt;tag&gt;</code> could be useful here and elsewhere, and while it was initially lacking in codelists and recommended usage (hence 8), it’s been validated by the <a href="https://iatistandard.org/en/news/new-guidance-on-publishing-sdg-data-using-the-iati-standard/" rel="nofollow noopener">SDG guidance</a> as of late September.</p>
+<p>I wouldn’t be strongly opposed to Option 3, but I think <a class="mention" href="/u/rory_scott">@rory_scott</a>’s analysis of “ambiguous, possibly confusing” reflects my personal hesitancy.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/6</link>
+        <pubDate>Thu, 02 Apr 2020 18:47:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-6</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+      <item>
+        <title>Proposing another formal method of classifying COVID-19 activities</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a>: If people want to put ‘COVID-19’ in their project titles they can and should, and we can all agree to do a text search for relevant projects - none of the options contradict that or would make anyone act slower.</p>
+<p><a class="mention" href="/u/markbrough">@markbrough</a>: thanks for that analysis, point taken. Though for organisations not using the humanitarian attribute (and hence not using the humanitarian-scope element, the inverse is true, and again, my suggestion wouldn’t stop humanitarian organisations following the existing guidance.</p>
+          <p><a href="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921/5</link>
+        <pubDate>Thu, 02 Apr 2020 18:29:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1921-5</guid>
+        <source url="https://discuss.iatistandard.org/t/proposing-another-formal-method-of-classifying-covid-19-activities/1921.rss">Proposing another formal method of classifying COVID-19 activities</source>
+      </item>
+  </channel>
+</rss>

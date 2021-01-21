@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Data on pooled funding - a case study</title>
+    <link>https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099</link>
+    <description>Continuing the discussion from [Data use observation: some organisations don&amp;#x27;t use their IATI data, but *do* use their data](https://discuss.iatistandard.org/t/data-use-observation-some-organisations-dont-use-their-iati-data-but-do-use-their-data/1069/14):
+
+Looking for an activity co-funded by donors, @matmaxgeds pointed out a health project in South Sudan with pooled funding from Canada, UK, EU, Australia and Sweden. 
+
+Looking quickly at the projects published on the websites of Canada, UK and Sweden (haven&#39;t looked yet for EU or Australia), I was interested in the differences both in the data reported and its presentation on the websites. Note that this is NOT the same project reported by 3 donors; rather, they are related projects, all contributing to a single health project/fund in South Sudan managed by DFID (Matt, please rectify if this is not correct). 
+
+I suspect each version has some useful features and some shortcomings. I thought it would be interesting to bring this up on Discuss and perhaps get feedback from (potential) users on how best to improve things. 
+
+Canada: http://w05.international.gc.ca/projectbrowser-banqueprojets/project-projet/details/A035360001?Lang=eng
+
+UK: https://devtracker.dfid.gov.uk/projects/GB-1-203109
+
+Sweden: https://openaid.se/activity/SE-0-SE-6-5210008601-SSD-12220
+
+Some observations from my quick look at all 3: 
+- Canada says the funds go to DFID, but does not provide DFID&#39;s Activity ID. It says the project ended in 2016, which seems to contradict DFID (but DFID may have extended their project, I didn&#39;t check). Canada codes 3 sectors, one of which is related to gender (reproductive health) which may be useful for some users (including GAC itself). I have not compared the results reported by Canada with those reported by DFID.
+
+- DFID provides several documents related to the project, where I assume stakeholders could find a lot of information. I did not find any information to the effect that Canada (or others) provided funding (also checked on D-Portal, Canada is not listed among the participating orgs); among other things, this makes it hard for someone to know how much DFID itself put in the project. The sectors coded are different than Canada&#39;s, with the conspicuous absence of reproductive health (which was the priority identified by Canada). There are no details on the recipients of DFID&#39;s funding on the DevTracker, only that they are Crown Agents.
+
+- Sweden also provides access to many project documents (again, not reviewed). The website says that the funding goes to another government (delegated cooperation) but does not specify which one in the Implementing Org section or in the transaction (though one can find it by glancing at the documents&#39; titles). I didn&#39;t see an Activity ID for the other government&#39;s project. The SIDA project is coded 100% basic health care. 
+
+Having looked at all 3, a reasonably savvy IATI data user would guess that these projects are inter-related. This user would also probably conclude that from the perspective of entering data in South Sudan&#39;s aid system, DFID&#39;s data should be used. Would this be the correct conclusion? How would the contributions from Canada, Sweden etc be reflected in the SS system? (this is an important issue for donors, who fear becoming invisible to partner countries).  How savvy do you need to be to make sense of all this, and is it reasonable to expect users to do so? If not, what do we need to improve as a priority?
+
+(I didn&#39;t go into the differences in HOW the information is presented in the 3 websites, but would be interested in feedback - especially on Canada&#39;s, as we are about to review the design.)
+
+(Tagging also @JohnAdams, @carlelmstam, and @markbrough to perhaps comment based on experience in other partner countries)</description>
+    
+    <lastBuildDate>Thu, 09 Nov 2017 19:55:08 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Data on pooled funding - a case study</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Mark, very useful input as always.</p>
+<aside class="quote no-group" data-post="6" data-topic="1099">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<p>At least for the purposes of aid management at country level, my hunch would be that the return on investment of focusing on 5-10 large organisations would be much larger than 100s of smaller organisations.</p>
+</blockquote>
+</aside>
+<p>I would qualify this: “focusing on the 5-10 large organisations who receiving funds from other donors” - which probably means multilaterals (the SS example above, a pooled fund managed by a bilateral donor, is rather rare as far as I know - <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> please correct me if I’m wrong).</p>
+<p>So where do we start? It may be easier to start with project funding (what we would code as Aid Type C01).</p>
+<p>I remain a bit unclear as to what obstacles or constraints multis face to do this. We did a small pilot with AfDB last year for a trust funds (B03), perhaps Sohir would have insights to share.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/7</link>
+        <pubDate>Thu, 09 Nov 2017 19:55:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1099-7</guid>
+        <source url="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099.rss">Data on pooled funding - a case study</source>
+      </item>
+      <item>
+        <title>Data on pooled funding - a case study</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for bringing up a super important conversation <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a></p>
+<p>The structure and data you’ve described would work in the Bangladesh context because the workflow we developed is designed to handle this kind of structure where the links between similar activities are not explicit in the data. It therefore needs users – donors – to explain / interpret the data as it is imported. Canada would say that their activity is managed by DFID; DFID would then be prompted to combine Canada’s activity with one of DFID’s own activities (DFID would need to confirm whether adding Canada’s contributions would not be double-counting).</p>
+<p>It would definitely simplify the process of importing data if the incoming funds were in DFID’s activities; and that would be a prerequisite for doing reliable automatic import without requiring any human intervention.</p>
+<p>I guess an interesting question is about the balance of investment between:</p>
+<ul>
+<li>asking donors to record incoming fund transactions against activities where other organisations are contributing</li>
+<li>building tools that assume that the data will be a bit messy for at least the next 5-10 years, and will require some human intervention and interpretation.</li>
+</ul>
+<p>Either way, I would definitely be in favour of more of the energy around traceability being focused on large / official donors. At least for the purposes of aid management at country level, my hunch would be that the return on investment of focusing on 5-10 large organisations would be much larger than 100s of smaller organisations.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/6</link>
+        <pubDate>Thu, 09 Nov 2017 11:53:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1099-6</guid>
+        <source url="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099.rss">Data on pooled funding - a case study</source>
+      </item>
+      <item>
+        <title>Data on pooled funding - a case study</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Good example of quoting people out of context…   The first statement said “especially in terms of entering data into the SS aid system”.</p>
+<p>The central question is where the most extra value is obtained - and what should be improved as a priority.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/5</link>
+        <pubDate>Fri, 27 Oct 2017 13:52:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1099-5</guid>
+        <source url="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099.rss">Data on pooled funding - a case study</source>
+      </item>
+      <item>
+        <title>Data on pooled funding - a case study</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1099">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>it’s unclear whether there would be a lot of extra value in having this information in the data itself</p>
+</blockquote>
+</aside>
+<aside class="quote no-group" data-post="3" data-topic="1099">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>show these details in our respective websites AND on D-Portal</p>
+</blockquote>
+</aside>
+<p>Surely the only way D-portal could show these details would be if the links <strong>were</strong> in the data?</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/4</link>
+        <pubDate>Fri, 27 Oct 2017 12:53:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1099-4</guid>
+        <source url="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099.rss">Data on pooled funding - a case study</source>
+      </item>
+      <item>
+        <title>Data on pooled funding - a case study</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Bill, this is very useful complementary information.</p>
+<p>From a user perspective, especially in terms of entering data into the SS aid system, it’s unclear whether there would be a lot of extra value in having this information in the data itself, since it’s available in the documents.</p>
+<p>From what I understand of the system in Bangladesh, for instance, donor staff enter/confirm the information in the system. In this case, presumably 1) the DFID person would know where to look for the details on incoming funds and could add them, while 2) the CIDA, SIDA, EC and AusAid staff would indicate in the system that their respective projects are reported by DFID (since it’s delegated cooperation), which would avoid double-counting.</p>
+<p>Having these details in DFID’s data could somewhat reduce the burden on all (though mostly on DFID), though probably in a marginal way. On the other hand, if we all developed ways to capture and to show these details in our respective websites AND on D-Portal, all data users would have a better sense of how these projects fit together.</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/3</link>
+        <pubDate>Thu, 26 Oct 2017 13:51:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1099-3</guid>
+        <source url="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099.rss">Data on pooled funding - a case study</source>
+      </item>
+      <item>
+        <title>Data on pooled funding - a case study</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Really useful, this.</p>
+<p><a href="http://iati.dfid.gov.uk/iati_documents/3769141.odt" rel="nofollow noopener">DFID’s original business case</a> is very informative, with this diagram …<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/c6b8c5547baed01a66a48053efef2423a81c5846.PNG" data-download-href="https://discuss.iatistandard.org/uploads/default/c6b8c5547baed01a66a48053efef2423a81c5846" title="d1.PNG"><img src="https://discuss.iatistandard.org/uploads/default/original/1X/c6b8c5547baed01a66a48053efef2423a81c5846.PNG" alt="d1" width="641" height="500" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/c6b8c5547baed01a66a48053efef2423a81c5846_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">d1.PNG</span><span class="informations">698×544 15.3 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>… and financial overview</p>
+<blockquote>
+<p>The UK plans to provide £56 million over at least 3 ½ years (mid 2012 - January 2016) to improve health outcomes in South Sudan. The overall budget of the Programme over this period is expected to be £123 million. Four other donors (Canada, Australia, Sweden and the European Commission) have committed £67m in total to date for the first three years. It is anticipated that the programme will be extended for at least a further two years after the initial intervention, with additional funding of £26m from DFID and we will seek at least £39m from other donors.</p>
+</blockquote>
+<p>This sounds like DFID could, at this stage. have published <em>Incoming Commitments</em>  from the four other donors (although this document is strangely dated 2015 while talking about 2012 in the future tense).</p>
+<p>Whether it would have been possible for DFID to report <code>provider-activity-id</code> details at this point is unclear, but by the time that disbursements were received it should definitely be reporting the link in <em>Incoming Funds</em>. (Strange that DFID, our original traceability champions, are not reporting any <a href="http://dashboard.iatistandard.org/codelist/2/transaction_transaction-type_@code.html" rel="nofollow noopener">incoming fund transactions</a>).</p>
+<p>This is, I think, a good example of how the implementation of the simplest traceability rule could make a difference.</p>
+<blockquote>
+<p><strong>The recipient of funds should report where they came from.</strong><br>
+(i.e. Incoming Fund transaction with provider-activity-id.)</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/2</link>
+        <pubDate>Thu, 26 Oct 2017 08:08:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1099-2</guid>
+        <source url="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099.rss">Data on pooled funding - a case study</source>
+      </item>
+      <item>
+        <title>Data on pooled funding - a case study</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Continuing the discussion from <a href="https://discuss.iatistandard.org/t/data-use-observation-some-organisations-dont-use-their-iati-data-but-do-use-their-data/1069/14">Data use observation: some organisations don't use their IATI data, but <em>do</em> use their data</a>:</p>
+<p>Looking for an activity co-funded by donors, <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> pointed out a health project in South Sudan with pooled funding from Canada, UK, EU, Australia and Sweden.</p>
+<p>Looking quickly at the projects published on the websites of Canada, UK and Sweden (haven’t looked yet for EU or Australia), I was interested in the differences both in the data reported and its presentation on the websites. Note that this is NOT the same project reported by 3 donors; rather, they are related projects, all contributing to a single health project/fund in South Sudan managed by DFID (Matt, please rectify if this is not correct).</p>
+<p>I suspect each version has some useful features and some shortcomings. I thought it would be interesting to bring this up on Discuss and perhaps get feedback from (potential) users on how best to improve things.</p>
+<p>Canada: <a href="http://w05.international.gc.ca/projectbrowser-banqueprojets/project-projet/details/A035360001?Lang=eng">http://w05.international.gc.ca/projectbrowser-banqueprojets/project-projet/details/A035360001?Lang=eng</a></p>
+<p>UK: <a href="https://devtracker.dfid.gov.uk/projects/GB-1-203109">https://devtracker.dfid.gov.uk/projects/GB-1-203109</a></p>
+<p>Sweden: <a href="https://openaid.se/activity/SE-0-SE-6-5210008601-SSD-12220">https://openaid.se/activity/SE-0-SE-6-5210008601-SSD-12220</a></p>
+<p>Some observations from my quick look at all 3:</p>
+<ul>
+<li>
+<p>Canada says the funds go to DFID, but does not provide DFID’s Activity ID. It says the project ended in 2016, which seems to contradict DFID (but DFID may have extended their project, I didn’t check). Canada codes 3 sectors, one of which is related to gender (reproductive health) which may be useful for some users (including GAC itself). I have not compared the results reported by Canada with those reported by DFID.</p>
+</li>
+<li>
+<p>DFID provides several documents related to the project, where I assume stakeholders could find a lot of information. I did not find any information to the effect that Canada (or others) provided funding (also checked on D-Portal, Canada is not listed among the participating orgs); among other things, this makes it hard for someone to know how much DFID itself put in the project. The sectors coded are different than Canada’s, with the conspicuous absence of reproductive health (which was the priority identified by Canada). There are no details on the recipients of DFID’s funding on the DevTracker, only that they are Crown Agents.</p>
+</li>
+<li>
+<p>Sweden also provides access to many project documents (again, not reviewed). The website says that the funding goes to another government (delegated cooperation) but does not specify which one in the Implementing Org section or in the transaction (though one can find it by glancing at the documents’ titles). I didn’t see an Activity ID for the other government’s project. The SIDA project is coded 100% basic health care.</p>
+</li>
+</ul>
+<p>Having looked at all 3, a reasonably savvy IATI data user would guess that these projects are inter-related. This user would also probably conclude that from the perspective of entering data in South Sudan’s aid system, DFID’s data should be used. Would this be the correct conclusion? How would the contributions from Canada, Sweden etc be reflected in the SS system? (this is an important issue for donors, who fear becoming invisible to partner countries).  How savvy do you need to be to make sense of all this, and is it reasonable to expect users to do so? If not, what do we need to improve as a priority?</p>
+<p>(I didn’t go into the differences in HOW the information is presented in the 3 websites, but would be interested in feedback - especially on Canada’s, as we are about to review the design.)</p>
+<p>(Tagging also <a class="mention" href="/u/johnadams">@JohnAdams</a>, <a class="mention" href="/u/carlelmstam">@carlelmstam</a>, and <a class="mention" href="/u/markbrough">@markbrough</a> to perhaps comment based on experience in other partner countries)</p>
+          <p><a href="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099/1</link>
+        <pubDate>Wed, 25 Oct 2017 22:53:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1099-1</guid>
+        <source url="https://discuss.iatistandard.org/t/data-on-pooled-funding-a-case-study/1099.rss">Data on pooled funding - a case study</source>
+      </item>
+  </channel>
+</rss>

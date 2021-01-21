@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Humanitarian Scope Vocabularies</title>
+    <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389</link>
+    <description>I&#39;m trying to find the references for the vocabularies identified in the 2.02 Humanitarian Scope.  
+
+The proposal presented to the Steering Committee had 3 vocabularies for Appeals: Humanitarian Plan, Start Network, and Disasters Emergency Committee (with a note saying that further consultations were required on values for this list).   I see that the codelist on the IATI ste is more limited, with only 2-1 Humanitarian Plan (and no link).
+http://iatistandard.org/202/codelists/HumanitatianScopeVocabulary/ 
+
+Can someone explain what the 3 vocabularies are, ie who manages them, where they can be found etc?</description>
+    
+    <lastBuildDate>Mon, 17 Oct 2016 17:22:25 +0000</lastBuildDate>
+    <category>Humanitarian</category>
+    <atom:link href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>John, by <strong>ECHO</strong> I assume you mean <a href="https://webgate.ec.europa.eu/hac/"><strong>EDRIS</strong></a> (European Emergency and Disaster Response Information System). ECHO<a href="http://d-portal.org/ctrack.html?publisher=XI-IATI-EC_ECHO&amp;tongue=eng#view=publisher_countries"> publish their own activities to IATI</a>.</p>
+<aside class="quote no-group" data-post="22" data-topic="389">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/johnadams/40/11_1.png" class="avatar"> JohnAdams:</div>
+<blockquote>
+<p>How are donors getting their information into ECHO and FTS?</p>
+</blockquote>
+</aside>
+<p>EU members do not report directly to FTS but are required to key their data into EDRIS.</p>
+<aside class="quote no-group" data-post="22" data-topic="389">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/johnadams/40/11_1.png" class="avatar"> JohnAdams:</div>
+<blockquote>
+<p>Is there an automatic ECHO &gt; FTS process?</p>
+</blockquote>
+</aside>
+<p>Data is transferred from EDRIS to FTS (OCHA Financial Tracking Service) every night.</p>
+<aside class="quote no-group" data-post="22" data-topic="389">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/johnadams/40/11_1.png" class="avatar"> JohnAdams:</div>
+<blockquote>
+<p>Has anyone done IATI &gt; ECHO</p>
+</blockquote>
+</aside>
+<p>No. We would hope that in future EDRIS will be able to import IATI data.</p>
+<aside class="quote no-group" data-post="22" data-topic="389">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/johnadams/40/11_1.png" class="avatar"> JohnAdams:</div>
+<blockquote>
+<p>or IATI &gt; FTS?</p>
+</blockquote>
+</aside>
+<p><a href="https://ftsbeta.unocha.org/content/iati-v202-upgraded-humanitarian-reporting">FTS can import IATI v2.02 data</a> (i.e. the latest version including humanitarian improvements). I’m not sure whether it is doing so yet. <a class="mention" href="/u/foos">@foos</a> <a class="mention" href="/u/ximboden">@ximboden</a>  could you confirm?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/23">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/23</link>
+        <pubDate>Mon, 17 Oct 2016 17:22:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-23</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>How are donors getting their information into ECHO and FTS?</p>
+<p>Is there an automatic ECHO &gt; FTS process?</p>
+<p>Has anyone done IATI &gt; ECHO or IATI &gt; FTS?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/22">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/22</link>
+        <pubDate>Mon, 17 Oct 2016 14:22:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-22</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> and yes I am confirming the use of IDs as listed by <a class="mention" href="/u/bill_anderson">@bill_anderson</a>  above . eg to include reference to Hurricane Matthew for Haiti publishers should include &lt; humanitarian-scope type=”1” vocabulary=”1-2” code=”TC-2016-000106-HTI” &gt;</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/21">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/21</link>
+        <pubDate>Mon, 17 Oct 2016 11:27:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-21</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>To further clarify, Wendy are you saying that we should use the IDs as listed by Bill above (e.g. TC-2016-000106-HTI for Haiti) rather than 2016-000106?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/20">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/20</link>
+        <pubDate>Fri, 14 Oct 2016 18:11:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-20</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to clarify that publishers should use the GLIDE IDs as per our initial humanitarian reporting guidelines - <a href="//discuss.iatistandard.org/t/help-develop-iati-s-humanitarian-reporting-guidance/530">Help develop IATI’s humanitarian reporting guidance</a></p>
+<p>Also we will tighten up on the language when we revise these guidelines and make sure that any other related documentation also specifically references GLIDE IDs</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/19">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/19</link>
+        <pubDate>Thu, 13 Oct 2016 13:09:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-19</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Can we clarify …<br>
+The GLIDE <strong>number</strong> for Matthew is 2016-000106, but …</p>
+<p>Humanitarian emergencies are defined to be country-specific, and GLIDE also includes event type, so …</p>
+<p>Matthew in Haiti is TC-2016-000106-HTI<br>
+Matthew in St Lucia is TC-2016-000106-LCA</p>
+<p>So we need to use <strong>GLIDE Ids</strong>, not GLIDE numbers. Right?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/18">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/18</link>
+        <pubDate>Wed, 12 Oct 2016 15:34:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-18</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/ximboden">@ximboden</a> - thanks for the clarifications, good to hear that non-natural disasters get their own GLIDE numbers now.</p>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a>, in reference to the point you made in <a href="http://www.aidtransparency.net/news/defining-humanitarian-emergencies-a-joined-up-approach" rel="nofollow noopener">your blog post</a> re lack of an API for GLIDE numbers, I made a quick scraper to output all GLIDE emergency IDs (and also FTS emergency IDs) in a couple of simple spreadsheets here:</p>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" width="32" height="32">
+      <a href="https://github.com/markbrough/emergency-IDs/tree/master/output" target="_blank" rel="nofollow noopener">GitHub</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://avatars2.githubusercontent.com/u/688113?s=400&amp;v=4" class="thumbnail onebox-avatar" width="400" height="400">
+
+<h3><a href="https://github.com/markbrough/emergency-IDs/tree/master/output" target="_blank" rel="nofollow noopener">markbrough/emergency-IDs</a></h3>
+
+<p>Scrape of FTS API to obtain emergency IDs for humanitarian emergencies - markbrough/emergency-IDs</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>These could probably quite easily be integrated with existing IATI codelists updating routines, if you want.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/17">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/17</link>
+        <pubDate>Wed, 12 Oct 2016 10:37:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-17</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[ximboden]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/markbrough">@markbrough</a>, the intention from FTS’s side (and this is also what we have been discussing with IATI) is to use GLIDE, and to no longer offer a separate list of emergencies curated by FTS. GLIDE already covers all emergencies; non-natural disasters use either the category ‘Complex Emergency’ or ‘Other’. You will find practically all non-natural emergencies already available in the GLIDE registry, including Syria, South Sudan, Iraq etc.</p>
+<p>We have discussed whether to incorporate a more detailed taxonomy related to non-natural disasters. However, this is impractical for two reasons: one, these types of emergencies are inherently complex, and cannot easily be separated into any meaningful distinction between e.g. local, national or cross-border conflicts, or elements such as displacement, migration, human rights/protection, service disruption etc. - as in nearly all cases an emergency contains many or all of these elements, and/or the presence/prevalence of these elements changes with time; two, even if we were to use such distinctions for internal reporting, making them public would be a political minefield given the sensitivities around such categorisation or grouping together.</p>
+<p><a class="mention" href="/u/bill_anderson">@bill_anderson</a>, OCHA does already create and manage GLIDE codes (via ReliefWeb). We are discussing both the guidelines for their creation and curation, and how to ensure that the IATI secretariat also has the right to create them (ideally, following the same guidelines as us).</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/16</link>
+        <pubDate>Wed, 12 Oct 2016 09:13:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-16</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/foos">@foos</a> you (UNOCHA) have the access and authority to create GLIDE codes, don’t you?</p>
+<p>IATI should also apply for this right.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/15</link>
+        <pubDate>Wed, 12 Oct 2016 08:29:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-15</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/wendy">@Wendy</a> - sure, it would be nice if we could use GLIDE only, though I imagine that will take some time to change, as GLIDE currently (deliberately) includes only emergencies related to natural disasters, as I understand it.</p>
+<p><a class="mention" href="/u/foos">@foos</a> - similar to the previous point - as I understand it, GLIDE doesn’t contain man-made emergencies. So in referring to a man-made emergency, there is a need to use the list of emergencies published by FTS. This is also envisaged in the humanitarian extension to IATI. Could you just separately publish the list of FTS emergencies that do not have an associated GLIDE ID?</p>
+<p>The way I understand this, if we were to rely only on GLIDE IDs, then we would not really be able to publish any humanitarian information relating to some of the biggest humanitarian crises right now (e.g. Syria, South Sudan).</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/14</link>
+        <pubDate>Wed, 12 Oct 2016 08:12:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-14</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[foos]]></dc:creator>
+        <description><![CDATA[
+            <p>The FTS emergency list at the moment is just our list of database records<br>
+and ids.  For the moment we haven’t published a clean list that IATI can<br>
+refer to, and we would prefer to have a better format for an emergency id<br>
+rather than just a number before we do this.  So at the moment, we would<br>
+recommend using GLIDE which is more established as well as having a more<br>
+readable format.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/13</link>
+        <pubDate>Tue, 11 Oct 2016 13:02:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-13</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for flagging <a class="mention" href="/u/markbrough">@markbrough</a> and as this list belongs to FTS I’ll let them know about this post for any comment. However, I think the ‘best’ solution would always be to have a single source(such as an enhanced GLIDE) that covers all known emergencies? Also and just for context that same issue is also addressed in the blog here -  <a href="http://www.aidtransparency.net/news/defining-humanitarian-emergencies-a-joined-up-approach">http://www.aidtransparency.net/news/defining-humanitarian-emergencies-a-joined-up-approach</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/12</link>
+        <pubDate>Tue, 11 Oct 2016 08:27:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-12</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Re <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>’s point (lack of code <code>2.1</code> vocabulary) – this list of codes for emergencies is available from the FTS API (need to change <code>2016</code> to each year):</p>
+<p><a href="http://fts.unocha.org/api/v1/Emergency/year/2016.xml" class="onebox" target="_blank" rel="nofollow noopener">http://fts.unocha.org/api/v1/Emergency/year/2016.xml</a></p>
+<p>Can this be made into a more user-friendly list and/or the URL included on the IATI Standard website list of codelists for <a href="http://iatistandard.org/202/codelists/HumanitarianScopeVocabulary/#codes" rel="nofollow noopener"><code>Humanitarian Scope Vocabulary</code></a>?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/11</link>
+        <pubDate>Thu, 06 Oct 2016 14:57:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-11</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Just to X-reference that new humanitarian reporting guidelines have now been posted for review by the wider IATI community at <a href="//discuss.iatistandard.org/t/help-develop-iati-s-humanitarian-reporting-guidance/530">Help develop IATI’s humanitarian reporting guidance</a></p>
+<p>All comments are very welcome.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/10</link>
+        <pubDate>Mon, 22 Aug 2016 15:45:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-10</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the interesting question <a class="mention" href="/u/brentphillips">@BrentPhillips</a>. As I’m sure you are aware, the purpose of the Humanitarian Scope element is to enable a publisher to associate any of their individual activities with a specific humanitarian emergency or appeal as defined in any of the allowed vocabularies. Therefore, I guess in theory you could define a list of emergencies that each has a unique HXL hashtag as its code. I also like that as an idea as it could make things a little easier when bringing together multiple sets of related emergency information from different sources.However, the biggest issue that we have with the humanitarian scope vocabularies is identifying who should create and maintain these lists as they ideally need to be kept up-to-date and managed via a formal change process and be publicly available? As there is no single organisation that is involved with all humanitarian crisis the ownership and management of any such definitive list is proving a significant challenge.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/9</link>
+        <pubDate>Thu, 28 Apr 2016 09:04:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-9</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Wendy and Yohanna for your great questions and input! I’m curious if HXL hashtags could serve as an alternate humanitarian scope vocabulary? What are your thoughts?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/8</link>
+        <pubDate>Thu, 28 Apr 2016 04:52:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-8</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the questions <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> and a little belatedly I will do my best to answer them now.</p>
+<p>Regarding the 1-1 codelist - we are still waiting for this from FTS. The original timescale for this was this month (March 2016) but I know that FTS are now currently investigating using GLIDE (<a href="http://glidenumber.net/">http://glidenumber.net/</a> and 1-2 on the humanitarian scope vocabularly codelist) to reference all emergencies rather than creating a new separate list that would need to be additionally maintained. It does of course make sense to potentially extend the use of an existing resource rather than create a new one if it can be done in a way that works for all stakeholders. I’ll therefore post any further updates here as and when I have them.</p>
+<p>Re the new ‘humanitarian’ attribute on the iati-activity element - you are quite correct that this is a binary value and it was always our intention to leave it up to the discretion of a publisher to decide which of their published activities should be marked as such (given the absence of any formally accepted and industry wide definition of what is or isn’t a humanitarian activity). In addition, whilst there might be an expectation that an activity should be classified as EITHER humanitarian OR development I am not aware of any issues that would prevent an activity being classified as both. However, we would always be interested in the views of other publishers or data users on this point? Also I should add that an additional pre-conceived use of the humanitarian attribute was to enable publishers to fast-track publishing of their humanitarian activities during the initial period of crisis. Thus the attribute could operate as a flag within a publisher’s IT systems that allows humanitarian activities to bypass the normal data quality or other approval processes and so enable daily publishing of updates.</p>
+<p>Finally re the Humanitarian Global Clusters you are also quite correct that it is okay to code more than one cluster if necessary. However, as a caveat to this I would add that we will also look to take guidance on this from FTS in order to make sure that publishers use this classification in a way which is mutually compatible to the publisher and the FTS systems that will be potentially using the data.</p>
+<p>Anyway, I hope that helps to clarify the above for the moment and of course all thoughts and issues on any of this are very welcome.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/7</link>
+        <pubDate>Wed, 30 Mar 2016 13:43:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-7</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>A couple other questions regarding the use of the new humanitarian fields:</p>
+<p>1- We sometimes have projects that are coded in part humanitarian (with the DAC sector codes), in part development.  The new attribute “humanitarian” is a binary flag, so we assume we should attach it to any activity that has a humanitarian component, even if it’s not the whole activity. Correct?<br>
+This will make the flag redondant with the DAC sector codes for humanitarian aid (at least in our case), but so be it.</p>
+<p>2- Regarding the Humanitarian Global Clusters, we assume it’s ok to code more than one cluster if necessary, using the % element (like for other codes).</p>
+<p>It would be great to hear from others how they plan to implement these fields, and from data users on what would make the data more useful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/6</link>
+        <pubDate>Thu, 17 Mar 2016 21:53:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-6</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>In case others interested in this thread missed it (like I did), I thought I would flag that a codelist was recently added for the Humanitarian Scope element: 2-1 Humanitarian Plan (OCHA FTS).<br>
+<a href="http://iatistandard.org/201/codelists/HumanitarianScopeVocabulary/" class="onebox" target="_blank">http://iatistandard.org/201/codelists/HumanitarianScopeVocabulary/</a></p>
+<p>The 1-1 codelist is still missing, however. Does anyone know when it might be available?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/5</link>
+        <pubDate>Fri, 11 Mar 2016 19:57:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-5</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Lists for other fund managers such as Start Network or DEC (Disasters Emergency Committee) would need to be provided and managed by the fund managers themselves. Although I cannot of course speak directly on behalf of either (or any other) organisation my understanding is that they don’t currently have a public list that we could use within the IATI Standard at the moment? However, it is our intention to liaise with any such fund holders so that over time we can develop and extend the available list of Humanitarian Scope Vocabularies for use by publishers.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/4</link>
+        <pubDate>Tue, 26 Jan 2016 16:56:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-4</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Wendy.</p>
+<p>You mention that 2.1, which is Humanitarian Plan, is being developed by UN OCHA.</p>
+<p>What about 2-2 (Start Network) and 2-3 (Disasters Emergency Committee)?  Can you clarify who would be developing/managing these code lists and where we might find additional information?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/3</link>
+        <pubDate>Mon, 25 Jan 2016 15:39:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-3</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Yohanna</p>
+<p>I know that you are already aware that the purpose of the humanitarian scope elements is to enable a publisher to relate any individual activity to a specific humanitarian emergency and/or appeal. As a result the Humanitarian Scope Vocabularies will provide links to the public lists of emergencies being supported or that are known to the wider humanitarian community.</p>
+<p>Unfortunately there is currently no single public list of emergencies that is available to use so we are having to liaise with multiple humanitarian fund managers in order to try and establish a set of lists that at least cover most of the known and supported crisis.</p>
+<p>Currently we only have full details for the code 1-2 GLIDE (Global Disaster Identifier Number) List. This list is public and maintained by the Asian Disaster Reduction Centre (ADRC) in collaboration with many member organisations of the humanitarian community. The list contains details of mainly natural disasters.</p>
+<p>The lists with codes ‘1-1’ and ‘2-1’ are both currently being developed by UN OCHA FTS and are planned to be available (public) by the end of February 2016. These lists will contain references for the emergencies and subsequent responses as managed by UN OCHA</p>
+<p>We also envisage that number of public lists referenced on the Humanitarian Scope Vocabulary codelist will increase over time so that publishers will also be able to use the humanitarian elements to directly reference activities that support those emergencies supported by other humanitarian fund holders. However, we will of course only be able to add any additional lists as and when any individual fund holder is in a position to provide the required information in a managed and timely way.</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/2</link>
+        <pubDate>Mon, 25 Jan 2016 14:53:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-2</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+      <item>
+        <title>Humanitarian Scope Vocabularies</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m trying to find the references for the vocabularies identified in the 2.02 Humanitarian Scope.</p>
+<p>The proposal presented to the Steering Committee had 3 vocabularies for Appeals: Humanitarian Plan, Start Network, and Disasters Emergency Committee (with a note saying that further consultations were required on values for this list).   I see that the codelist on the IATI ste is more limited, with only 2-1 Humanitarian Plan (and no link).<br>
+<a href="http://iatistandard.org/202/codelists/HumanitatianScopeVocabulary/" class="onebox" target="_blank">http://iatistandard.org/202/codelists/HumanitatianScopeVocabulary/</a></p>
+<p>Can someone explain what the 3 vocabularies are, ie who manages them, where they can be found etc?</p>
+          <p><a href="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389/1</link>
+        <pubDate>Fri, 22 Jan 2016 23:00:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-389-1</guid>
+        <source url="https://discuss.iatistandard.org/t/humanitarian-scope-vocabularies/389.rss">Humanitarian Scope Vocabularies</source>
+      </item>
+  </channel>
+</rss>

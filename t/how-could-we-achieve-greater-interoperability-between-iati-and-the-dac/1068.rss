@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+    <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068</link>
+    <description>As you may be aware, the DAC Chair (Charlotte Petri Gornitzka) gave a talk at the IATI Members&#39; Assembly last week, and spoke very positively about co-operation between DAC and IATI. In addition, the miniTAG at FAO last Friday looked at technical interoperability around codelists. 
+
+So, how could we achieve this greater interoperability between IATI and the DAC? I&#39;d be grateful for thoughts around the following dimensions:
+
+* short-term/longer-term
+* technical/operational/strategic</description>
+    
+    <lastBuildDate>Fri, 13 Oct 2017 07:48:31 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree. I also think it is in principle possible to produce CRS++ from IATI. A few years ago we did a pilot to do exactly this. There were a few  challenges, but they can be overcome. Since we are already producing CRS++ and IATI from the same reporting database, the added value of this format conversion is not very significant, and therefore we haven’t pursued this.</p>
+<p>What would be interesting though is if the DAC would be willing to accept IATI XML as a data interchange format to do DAC reporting. IATI XML for instance supports multiple CRS purpose codes and multiple countries for one activity. The DAC is, if I am not mistaken, also considering multiple CSR pupose codes for one activity. I.m.o. the CRS++ flat file format will be too inflexible to accomodate these kind of changes. But in the end it is up to the DAC of course what formats will be accepted.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/10</link>
+        <pubDate>Fri, 13 Oct 2017 07:48:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1068-10</guid>
+        <source url="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss">How could we achieve greater interoperability between IATI and the DAC?</source>
+      </item>
+      <item>
+        <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>The format is being changed these years; we are moving from a format where only the primary purposecode could be reported and multible countries shall be aggregated to the relevant regional code, to a format that allows multible purposecodes (totaling 100%) and multible countrycodes. The first is decided, the second is expected to be approved next year. Personally, I am pushing for a data-governance rule that only allows the reporter to apply one multible element for any activity; it is hardly useful  or transparent to have multible on multibles - how should a fifty-fifty coding of two purposecodes for two countries be interpreted by the relevant consituency in any of the countries? I also claim that one of the multibles will be more important than the other in any specific activity.</p>
+<p>The complete CRS++ format is available on OECD’s website, along with the Directive that provides instructions and guidelines on the completion of the format.</p>
+<p>I will revisit this post Friday and include links - it’s too much of a challenge on the phone in the airport …</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/9</link>
+        <pubDate>Wed, 11 Oct 2017 19:10:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1068-9</guid>
+        <source url="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss">How could we achieve greater interoperability between IATI and the DAC?</source>
+      </item>
+      <item>
+        <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>Perhaps someone (<a class="mention" href="/u/oj_">@OJ_</a>?) could also share the format for submitting data to the DAC?</p>
+</blockquote>
+<p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> I got <em><a href="https://twitter.com/stevieflow/status/917317504678195200" rel="nofollow noopener">temporarily excited</a></em> when I stumbled into a <a href="http://www.oecd.org/tax/automatic-exchange/common-reporting-standard/schema-and-user-guide/#d.en.345315" rel="nofollow noopener">CRS XML Schema</a> (!) the other day.  Alas, as <a class="mention" href="/u/herman">@Herman</a> pointed out: same organisation, same acronym, but <em>different</em> standard.  My head doesn’t really compute this.</p>
+<p><a class="mention" href="/u/reidmporter">@reidmporter</a> fully agree - making <a class="mention" href="/u/andylolz">@andylolz</a> obsolete should be a priority!  But seriously, if we value and rely on this work, then IATI core needs to maintain it?</p>
+<p><a class="mention" href="/u/johnadams">@JohnAdams</a> in terms of IATI &lt;&gt; DAC collaboration, then I know <a class="mention" href="/u/dalepotter">@dalepotter</a> was <a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/8?u=stevieflow">pushing</a> (despite my <a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/6?u=stevieflow">unhelpful grumbling</a>!):</p>
+<blockquote>
+<p>Given this, we encouraged the DAC to consider setting-up a (perhaps quarterly) user group meeting/consultation call to speak directly with codelist users and other interested parties in the open and development data communities. However, given resourcing constraints, there is no capacity to do this and it is felt that an informal relationship is most sustainable, given they see their primary remit being to service DAC members. They have said that interested parties and data users are however welcome to get in touch using the contact information on their website.</p>
+</blockquote>
+<p>Do we think this has now changed?</p>
+<p>(wrt Discuss, I do wish it/someone can start to link threads automagically.  Like on GitHub :))</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/8</link>
+        <pubDate>Wed, 11 Oct 2017 07:59:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1068-8</guid>
+        <source url="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss">How could we achieve greater interoperability between IATI and the DAC?</source>
+      </item>
+      <item>
+        <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="1068">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>how, for example, do you export an IATI activity that contains percentage splits on sectors and countries</p>
+</blockquote>
+</aside>
+<p>Yes, very interesting, is there anyone familiar with the CRS++ submission process who could share how this is currently dealt with as it is not an IATI specific issue, the same problem must come also when preparing the current non-IATI based CRS++ submissions.  I have found a copy of the guidance <a href="https://www.oecd.org/dac/stats/documentupload/DCDDAC(2016)3FINAL.pdf" rel="nofollow noopener">here</a> which suggests that this issue is similar to the issue of a donor funding a multilateral i.e. the solution is to also take the measurement from the recipient perspective i.e. what outflow from project X which covers multiple countries, was received by country Y. In reality, I presume that percentage splits are taken based on the percentages for each country receiving benefits from an activity/project.</p>
+<p>Perhaps someone (<a class="mention" href="/u/oj_">@OJ_</a>?) could also share the format for submitting data to the DAC?, I can only find mention of what sounds like a spreadsheet reporting format e.g. see mention of columns <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/policy-marker/" rel="nofollow noopener">here</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/7</link>
+        <pubDate>Wed, 11 Oct 2017 05:22:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1068-7</guid>
+        <source url="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss">How could we achieve greater interoperability between IATI and the DAC?</source>
+      </item>
+      <item>
+        <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Here’s a related discuss post from <a class="mention" href="/u/stevieflow">@stevieflow</a>: <a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866">Planning for machine readable, version controlled OECD-DAC codelists</a></p>
+<p>Echoing <a class="mention" href="/u/reidmporter">@reidmporter</a>’s point, I’d also ideally like <a>my third party codelist work</a> to be rendered unnecessary! Long-term via co-operation between IATI and the DAC. E.g. not so long ago we heard about the DAC’s <a href="https://discuss.iatistandard.org/t/planning-for-machine-readable-version-controlled-oecd-dac-codelists/866/3">plans for an automated system to do this</a>.</p>
+<p>In the short-term, I’d love it if one or more organisations that internally rely on machine readable DAC codelists could either fund or take on the ongoing maintenance of the work, so that it can continue to be provided as a public service to publishers and data use tools.</p>
+<p>As mentioned in my (impromptu) miniTAG presentation, it’s worth flagging again <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/172">this pull request</a>, that should make it much much easier for IATI to keep third party non-embedded codelists in sync. (This builds on some excellent work by <a class="mention" href="/u/bjwebb">@bjwebb</a>.) If there’s any feedback from the <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> on whether that looks okay or if anything else needs to be done before it can be merged in, that would be much appreciated.</p>
+<p>I’ve been using the code on that pull request to generate amendments to keep IATI third party codelists up-to-date. Here’s a bunch of them:</p>
+<ul>
+<li><a href="https://discuss.iatistandard.org/t/added-updates-to-the-aidtype-and-aidtypecategory-codelists/798">[Added] Updates to the AidType and AidTypeCategory codelists</a></li>
+<li><a href="https://discuss.iatistandard.org/t/added-updates-to-the-crschannelcode-codelist/797">[Added] Updates to the CRSChannelCode codelist</a></li>
+<li><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771">[Added] Align Sector codelist with the latest version published the DAC</a></li>
+<li><a href="https://discuss.iatistandard.org/t/added-updates-to-the-sectorcategory-codelist/796">[Added] Updates to the SectorCategory codelist</a></li>
+<li><a href="https://discuss.iatistandard.org/t/added-updates-to-the-flowtype-codelist/833">[Added] Updates to the FlowType codelist</a></li>
+<li><a href="https://discuss.iatistandard.org/t/added-updates-to-the-fileformat-codelist/904">[Added] Updates to the FileFormat codelist</a></li>
+<li><a href="https://discuss.iatistandard.org/t/added-updates-to-various-dac-crs-non-embedded-codelists/903">[Added] Updates to various DAC CRS non-embedded codelists</a></li>
+<li><a href="https://discuss.iatistandard.org/t/added-august-2017-updates-to-dac-crs-non-embedded-codelists/1012">[Added] August 2017 updates to DAC CRS non-embedded codelists</a></li>
+<li><a href="https://discuss.iatistandard.org/t/mark-netherland-antilles-an-as-withdrawn-in-country-codelist/1057">[Added] Mark Netherland Antilles (AN) as withdrawn in Country codelist</a></li>
+</ul>
+<p>…And once the IATI codelists were up-to-date, I was able to use those to update AidStream:</p>
+<ul>
+<li><a href="https://github.com/younginnovations/aidstream/pull/104">https://github.com/younginnovations/aidstream/pull/104</a></li>
+</ul>
+<p>…and d-portal:</p>
+<ul>
+<li><a href="https://github.com/devinit/D-Portal/pull/392">https://github.com/devinit/D-Portal/pull/392</a></li>
+</ul>
+<p>…and the query builder:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Query-Builder/pull/44">https://github.com/IATI/IATI-Query-Builder/pull/44</a></li>
+</ul>
+<p>…and the datastore:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Datastore/pull/282">https://github.com/IATI/IATI-Datastore/pull/282</a></li>
+</ul>
+<p>So this is demonstrably useful for both publishing and data use tools. Apologies for writing an entire essay!</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/6</link>
+        <pubDate>Tue, 10 Oct 2017 20:53:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1068-6</guid>
+        <source url="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss">How could we achieve greater interoperability between IATI and the DAC?</source>
+      </item>
+      <item>
+        <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="1068">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>convert from IATI xml to the CRS++ input</p>
+</blockquote>
+</aside>
+<p>Although there are some edge cases - how, for example, do you export an IATI activity that contains percentage splits on sectors and countries - I do believe this is possible. I would initially see the output not as an automatic submission to CRS but a file for DAC reporters to work with.</p>
+<p>This is not currently a priority for the Tech Team (we’ve got websites and datastores and validation tools to build) but we and others (<a class="mention" href="/u/herman">@Herman</a>?) would, I’m sure, be happy to advise an intrepid developer supported by a visionary DAC donor.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/5</link>
+        <pubDate>Tue, 10 Oct 2017 15:58:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1068-5</guid>
+        <source url="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss">How could we achieve greater interoperability between IATI and the DAC?</source>
+      </item>
+      <item>
+        <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>My mission is to render the third-party codelist management work <a class="mention" href="/u/andylolz">@andylolz</a> did unnecessary, and the horse I would bet on there is the proposal that <a class="mention" href="/u/dubeys">@dubeys</a>’ team is putting together, which the miniTAG participants and Mr. Lolz gave a tremendous amount of input on. (And yes I know that’s not his real name!<img src="//discuss.iatistandard.org/images/emoji/twitter/joy.png?v=5" title=":joy:" class="emoji" alt=":joy:">)</p>
+<p>Interoperability aside, I just saw a really cool data visualization tool built on CRS data that FAO has been working on for a while. It’s called AIDmonitor, launching in November. No public link yet, but if you’d like to get a preview (and are willing to serve as a peer reviewer) reach out to me privately and I’ll put you in touch with the team. <span class="hashtag">#coworking</span></p>
+          <p><a href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/4</link>
+        <pubDate>Tue, 10 Oct 2017 14:10:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1068-4</guid>
+        <source url="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss">How could we achieve greater interoperability between IATI and the DAC?</source>
+      </item>
+      <item>
+        <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/reidmporter">@reidmporter</a> <a class="mention" href="/u/dubeys">@dubeys</a> <a class="mention" href="/u/andylolz">@andylolz</a> Any views based on the miniTAG last Friday?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/3</link>
+        <pubDate>Tue, 10 Oct 2017 13:30:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1068-3</guid>
+        <source url="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss">How could we achieve greater interoperability between IATI and the DAC?</source>
+      </item>
+      <item>
+        <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Is being able to use IATI as a format to report to the DAC a solvable issue? <a class="mention" href="/u/oj_">@OJ_</a> said <a href="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/16?u=matmaxgeds">here</a> that while DAC &gt; IATI was possible, currently IATI &gt; CRS++ is not.</p>
+<p>I think this is important as it would really focus publisher’s attention on improving IATI data quality. The DAC needn’t accept IATI XML (although that would be cool) but if there was an official converter that all publishers could use (the new pyiait tools?) to convert from IATI xml to the CRS++ input format that would do.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/2</link>
+        <pubDate>Tue, 10 Oct 2017 13:29:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1068-2</guid>
+        <source url="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss">How could we achieve greater interoperability between IATI and the DAC?</source>
+      </item>
+      <item>
+        <title>How could we achieve greater interoperability between IATI and the DAC?</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>As you may be aware, the DAC Chair (Charlotte Petri Gornitzka) gave a talk at the IATI Members’ Assembly last week, and spoke very positively about co-operation between DAC and IATI. In addition, the miniTAG at FAO last Friday looked at technical interoperability around codelists.</p>
+<p>So, how could we achieve this greater interoperability between IATI and the DAC? I’d be grateful for thoughts around the following dimensions:</p>
+<ul>
+<li>short-term/longer-term</li>
+<li>technical/operational/strategic</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/1</link>
+        <pubDate>Tue, 10 Oct 2017 11:34:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1068-1</guid>
+        <source url="https://discuss.iatistandard.org/t/how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068.rss">How could we achieve greater interoperability between IATI and the DAC?</source>
+      </item>
+  </channel>
+</rss>

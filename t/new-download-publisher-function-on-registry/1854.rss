@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>New download publisher function on Registry</title>
+    <link>https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854</link>
+    <description>Hi all,
+
+The Tech Team is pleased to announce that we have implemented a ’Download List’ function on the [Publisher List](https://iatiregistry.org/publisher) page on the Registry.
+
+The function allows users to instantly download the latest list of active publishers in CSV, XLS, XML or JSON formats.
+
+**NOTE:** If you are using the [IATI Decipher](https://www.publishwhatyoufund.org/projects/iati-decipher/) extension on Chrome or Firefox, the download button may not work correctly until your extension has been automatically updated to the latest version. See the [GitHub issue](https://github.com/pwyf/iati-decipher/issues/106) for details.</description>
+    
+    <lastBuildDate>Mon, 14 Oct 2019 05:42:51 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>New download publisher function on Registry</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Superhelpful - thanks Josh</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854/5</link>
+        <pubDate>Mon, 14 Oct 2019 05:42:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1854-5</guid>
+        <source url="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854.rss">New download publisher function on Registry</source>
+      </item>
+      <item>
+        <title>New download publisher function on Registry</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Matt,</p>
+<p>The following is in fact the query that you want to use to get the same list as the Registry. The previous one that I suggested looks at organisations that are published in the reporting-org field and therefore won’t necessarily match with the list of actual publishers.</p>
+<p><code>https://test-datastore.iatistandard.org/api/publishers/?&amp;format=json&amp;is_active=True</code></p>
+<p>Josh</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854/4</link>
+        <pubDate>Thu, 10 Oct 2019 12:55:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1854-4</guid>
+        <source url="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854.rss">New download publisher function on Registry</source>
+      </item>
+      <item>
+        <title>New download publisher function on Registry</title>
+        <dc:creator><![CDATA[JoshStanley]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Matt,</p>
+<p>I think this query should give you what you’re after:</p>
+<p><a href="https://test-datastore.iatistandard.org/api/organisations/?format=json&amp;is_reporting_organisation=True" class="onebox" target="_blank" rel="nofollow noopener">https://test-datastore.iatistandard.org/api/organisations/?format=json&amp;is_reporting_organisation=True</a></p>
+<p>Note that the actual count of publishers may not sync exactly with the Registry while we are in the DS testing phase.</p>
+<p>Thanks,<br>
+Josh</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854/3</link>
+        <pubDate>Fri, 27 Sep 2019 15:06:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1854-3</guid>
+        <source url="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854.rss">New download publisher function on Registry</source>
+      </item>
+      <item>
+        <title>New download publisher function on Registry</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Cool - is there a way to get the same list from the new Datastore? I think there was going to be a flag to have it only return active publishers, but can’t remember what it was?</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854/2</link>
+        <pubDate>Thu, 26 Sep 2019 20:30:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1854-2</guid>
+        <source url="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854.rss">New download publisher function on Registry</source>
+      </item>
+      <item>
+        <title>New download publisher function on Registry</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>The Tech Team is pleased to announce that we have implemented a ’Download List’ function on the <a href="https://iatiregistry.org/publisher" rel="nofollow noopener">Publisher List</a> page on the Registry.</p>
+<p>The function allows users to instantly download the latest list of active publishers in CSV, XLS, XML or JSON formats.</p>
+<p><strong>NOTE:</strong> If you are using the <a href="https://www.publishwhatyoufund.org/projects/iati-decipher/" rel="nofollow noopener">IATI Decipher</a> extension on Chrome or Firefox, the download button may not work correctly until your extension has been automatically updated to the latest version. See the <a href="https://github.com/pwyf/iati-decipher/issues/106" rel="nofollow noopener">GitHub issue</a> for details.</p>
+          <p><a href="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854/1</link>
+        <pubDate>Wed, 25 Sep 2019 11:26:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1854-1</guid>
+        <source url="https://discuss.iatistandard.org/t/new-download-publisher-function-on-registry/1854.rss">New download publisher function on Registry</source>
+      </item>
+  </channel>
+</rss>

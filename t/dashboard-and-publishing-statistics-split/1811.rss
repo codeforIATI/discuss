@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Dashboard and Publishing Statistics Split</title>
+    <link>https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811</link>
+    <description>Following a decision at last year’s Technical Audit, our developers have been working on moving the IATI Publishing Statistics section from dashboard.iatistandard.org/ onto a separate website, in order to better meet the different needs of internal and external users of the tool and to improve the tool’s performance. Developer John Askew has now completed a big piece of work to split the code, enabling us to launch the Dashboard and Publishing Statistics as two separate platforms:
+
+* The [IATI-Dashboard](http://dashboard.iatistandard.org)
+* The new [Publishing Statistics](http://publishingstats.iatistandard.org) portal
+
+For our Users, the viewing and browsing experience will not change: we have updated all the links to now point to either portal’s pages and we have also provided a redirect system that will automatically redirect your existing bookmarks to the new Publishing Statistics url’s version of the pages.
+
+A big benefit of this work is improved and updated performance: now both tools can aggregate, crunch and rebuild the pages on a daily basis. (Previously the dashboard did not update daily.) It will also make it easier for the Tech Team to investigate and debug anything that does not function properly.
+
+The code for Publishing Statistics is hosted at https://github.com/IATI/IATI-Publishing-Statistics while the Dashboard is still at its old home https://github.com/IATI/IATI-Dashboard
+
+Thanks John for all your work on this!
+
+Wendy Thomas, IATI Technical Lead</description>
+    
+    <lastBuildDate>Wed, 21 Aug 2019 10:19:46 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Dashboard and Publishing Statistics Split</title>
+        <dc:creator><![CDATA[samuele-mattiuzzo]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="1811">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_2.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Poking around the Publishing Statistics portal, I noticed that the individual publisher links don’t seem to work - getting an http 404 error</p>
+</blockquote>
+</aside>
+<p>Thanks for raising <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> we’re looking now into this issue so that it can be fixed by the time the next re generation of the portal happens!</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811/5</link>
+        <pubDate>Wed, 21 Aug 2019 10:19:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1811-5</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811.rss">Dashboard and Publishing Statistics Split</source>
+      </item>
+      <item>
+        <title>Dashboard and Publishing Statistics Split</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Good to see improvements to the Dashboard and Publishing Statistics portal.</p>
+<p>Poking around the Publishing Statistics portal, I noticed that the individual publisher links don’t seem to work - getting an http 404 error. It is useful to be able to go to publishers’ pages/data, so hopefully these links can be restaured.</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811/4</link>
+        <pubDate>Tue, 20 Aug 2019 20:22:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1811-4</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811.rss">Dashboard and Publishing Statistics Split</source>
+      </item>
+      <item>
+        <title>Dashboard and Publishing Statistics Split</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Wendy, and good stuff from <a class="mention" href="/u/john_askew">@John_Askew</a> and <a class="mention" href="/u/samuele-mattiuzzo">@samuele-mattiuzzo</a> et al.</p>
+<p>Just today I was working with a publisher walking through their data quality, and being able to see timeliness figures accurate to the day was really useful (especially because we can still pull the <code>/stats</code> trick with the URL to find out what’s happening with the JSON under the hood <img src="https://discuss.iatistandard.org/images/emoji/twitter/innocent.png?v=9" title=":innocent:" class="emoji" alt=":innocent:">)</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811/3</link>
+        <pubDate>Mon, 12 Aug 2019 16:27:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1811-3</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811.rss">Dashboard and Publishing Statistics Split</source>
+      </item>
+      <item>
+        <title>Dashboard and Publishing Statistics Split</title>
+        <dc:creator><![CDATA[WendyThomas]]></dc:creator>
+        <description><![CDATA[
+            <p>Post edited with, erm, the correct links!!</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811/2</link>
+        <pubDate>Thu, 08 Aug 2019 16:24:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1811-2</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811.rss">Dashboard and Publishing Statistics Split</source>
+      </item>
+      <item>
+        <title>Dashboard and Publishing Statistics Split</title>
+        <dc:creator><![CDATA[WendyThomas]]></dc:creator>
+        <description><![CDATA[
+            <p>Following a decision at last year’s Technical Audit, our developers have been working on moving the IATI Publishing Statistics section from <a href="http://dashboard.iatistandard.org/" rel="nofollow noopener">dashboard.iatistandard.org/</a> onto a separate website, in order to better meet the different needs of internal and external users of the tool and to improve the tool’s performance. Developer John Askew has now completed a big piece of work to split the code, enabling us to launch the Dashboard and Publishing Statistics as two separate platforms:</p>
+<ul>
+<li>The <a href="http://dashboard.iatistandard.org" rel="nofollow noopener">IATI-Dashboard</a>
+</li>
+<li>The new <a href="http://publishingstats.iatistandard.org" rel="nofollow noopener">Publishing Statistics</a> portal</li>
+</ul>
+<p>For our Users, the viewing and browsing experience will not change: we have updated all the links to now point to either portal’s pages and we have also provided a redirect system that will automatically redirect your existing bookmarks to the new Publishing Statistics url’s version of the pages.</p>
+<p>A big benefit of this work is improved and updated performance: now both tools can aggregate, crunch and rebuild the pages on a daily basis. (Previously the dashboard did not update daily.) It will also make it easier for the Tech Team to investigate and debug anything that does not function properly.</p>
+<p>The code for Publishing Statistics is hosted at <a href="https://github.com/IATI/IATI-Publishing-Statistics" rel="nofollow noopener">https://github.com/IATI/IATI-Publishing-Statistics</a> while the Dashboard is still at its old home <a href="https://github.com/IATI/IATI-Dashboard" rel="nofollow noopener">https://github.com/IATI/IATI-Dashboard</a></p>
+<p>Thanks John for all your work on this!</p>
+<p>Wendy Thomas, IATI Technical Lead</p>
+          <p><a href="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811/1</link>
+        <pubDate>Thu, 08 Aug 2019 15:43:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1811-1</guid>
+        <source url="https://discuss.iatistandard.org/t/dashboard-and-publishing-statistics-split/1811.rss">Dashboard and Publishing Statistics Split</source>
+      </item>
+  </channel>
+</rss>

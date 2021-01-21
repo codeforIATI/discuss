@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Indicator/result reference code</title>
+    <link>https://discuss.iatistandard.org/t/indicator-result-reference-code/1653</link>
+    <description>We offer reference code vocabularies for results and indicators. While trying to resolve some data processing issues, I had a few observations on how to improve orthogonality of the standard.
+
+* For indicators, it says &quot;Multiple vocabularies may be specified, but each vocabulary may be specified only once for each indicator.&quot;. For results, this is not specified.
+* This makes it impossible to use two different reference codes from two separate organisation-specific vocabularies (for instance to include a partnership-specific code).
+* For sectors, we added code &quot;98&quot; to have the option of a second organisation-specific vocabulary. These could be included in the result and indicator vocabularies as well.
+* For sectors and results, it is possible to add an attribute @vocabulary-uri to specify which vocabulary is used. For indicators, this attribute is called @indicator-uri, although it is described as a vocabulary uri too.
+
+A bit of a mixed bag. I think the &quot;98&quot; codes could be added in a decimal upgrade, the rest probably could be taken into account for a major upgrade?</description>
+    
+    <lastBuildDate>Thu, 07 Feb 2019 12:59:56 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/indicator-result-reference-code/1653.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Indicator/result reference code</title>
+        <dc:creator><![CDATA[rolfkleef]]></dc:creator>
+        <description><![CDATA[
+            <p>We offer reference code vocabularies for results and indicators. While trying to resolve some data processing issues, I had a few observations on how to improve orthogonality of the standard.</p>
+<ul>
+<li>For indicators, it says “Multiple vocabularies may be specified, but each vocabulary may be specified only once for each indicator.”. For results, this is not specified.</li>
+<li>This makes it impossible to use two different reference codes from two separate organisation-specific vocabularies (for instance to include a partnership-specific code).</li>
+<li>For sectors, we added code “98” to have the option of a second organisation-specific vocabulary. These could be included in the result and indicator vocabularies as well.</li>
+<li>For sectors and results, it is possible to add an attribute <span class="mention">@vocabulary-uri</span> to specify which vocabulary is used. For indicators, this attribute is called <span class="mention">@indicator-uri</span>, although it is described as a vocabulary uri too.</li>
+</ul>
+<p>A bit of a mixed bag. I think the “98” codes could be added in a decimal upgrade, the rest probably could be taken into account for a major upgrade?</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-result-reference-code/1653/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-result-reference-code/1653/1</link>
+        <pubDate>Thu, 07 Feb 2019 12:59:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1653-1</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-result-reference-code/1653.rss">Indicator/result reference code</source>
+      </item>
+  </channel>
+</rss>

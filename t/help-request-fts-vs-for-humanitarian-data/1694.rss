@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Help request - FTS vs .......for humanitarian data</title>
+    <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694</link>
+    <description>Hi,
+
+In Somalia we are making IATI data available within the government AIMS for data entry users to import projects published via IATI, rather than re-typing out all of the data.
+
+When we scoped the project back in 2015, OCHA was publishing FTS data to IATI e.g. see [here](https://www.iatiregistry.org/publisher/18ebafff-9867-4a03-aa8f-d2e2a3fa1938?country=Somalia&amp;_country_limit=0&amp;q=&amp;sort=metadata_modified+desc) but this seems to have stopped in 2015?
+
+Does anyone know what we are missing? Has it restarted somewhere else? OCHA in Mogadishu are suggesting using OPS data but as far as we know that is just excel sheets and not published to IATI........help!
+
+Of course we can also get humanitarian data from all the individual organisations, but FTS is (was) great because it used the locally recognised project names, sorted out the duplication etc
+
+Thanks a lot,
+
+Matt</description>
+    
+    <lastBuildDate>Mon, 03 Jun 2019 15:31:42 +0000</lastBuildDate>
+    <category>Humanitarian</category>
+    <atom:link href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>I have an update on this topic. We have datasets HRP projects for 14 countries on HDX now, in both the original JSON and simplified CSV:</p>
+<p>Announcement: <a href="https://twitter.com/humdata/status/1134427056387895296?s=21" rel="nofollow noopener">https://twitter.com/humdata/status/1134427056387895296?s=21</a></p>
+<p>Direct link: <a href="https://data.humdata.org/search?organization=ocha-fts&amp;tags=projects" rel="nofollow noopener">https://data.humdata.org/search?organization=ocha-fts&amp;tags=projects</a></p>
+<p>For most countries, the data goes back to 2015. The data updates live from the HPC.tools API (the JSON is actually direct API links), and you can use this as a source for finding humanitarian project IDs to include in your IATI reporting.</p>
+<p>Thanks to <a class="mention" href="/u/ximboden">@ximboden</a> and <a class="mention" href="/u/foos">@foos</a> for their help with this.</p>
+<p>Cheers, David</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/12</link>
+        <pubDate>Mon, 03 Jun 2019 15:31:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-12</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>HI, <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> - the FTS tech team got in touch and let me know that there’s a new v2 of the API that they recommend using. Here’s an example:</p>
+<p><a href="https://api.hpc.tools/v2/public/project/search?planCodes=HSOM19&amp;excludeFields=locations" rel="nofollow noopener">https://api.hpc.tools/v2/public/project/search?planCodes=HSOM19&amp;excludeFields=locations</a></p>
+<p>It looks like both the API structure and returned data structures have changed considerably.</p>
+<p>For anyone not comfortable with JSON, I’ve made a simplified tabular view here (leaving out some hierarchical data structures):</p>
+<p><a href="https://proxy.hxlstandard.org/data/93fb54" class="onebox" target="_blank" rel="nofollow noopener">https://proxy.hxlstandard.org/data/93fb54</a></p>
+<p>D</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/11</link>
+        <pubDate>Wed, 10 Apr 2019 13:07:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-11</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/david_megginson">@David_Megginson</a> - that is very helpful.</p>
+<p>We also heard today that the FTS hope to restart IATI publishing in 2019, fingers crossed - will share more here when we get it.</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/10</link>
+        <pubDate>Wed, 03 Apr 2019 20:46:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-10</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>You can look up organisation ids here, and then filter on import (unfortunately, you can’t filter via the public API itself, as far as I know):</p>
+<p><a href="https://api.hpc.tools/v1/public/organization" class="onebox" target="_blank" rel="nofollow noopener">https://api.hpc.tools/v1/public/organization</a></p>
+<p>CERF is straight-forward, because it’s a single org in the system:</p>
+<pre><code class="lang-auto">{
+  "id": 4762,
+  "abbreviation": "CERF",
+  "name": "Central Emergency Response Fund",
+  "categories": [
+    {
+      "id": 121,
+      "name": "Pooled fund",
+      "group": "organizationType"
+    }
+  ]
+}
+</code></pre>
+<p>CBPF is more complicated, because each country fund is listed as a separate org. You could try filtering on the “Pooled fund” category (as shown in the example above), but I’m not sure if there are other pooled funds in the system that you might miss. Here is the record for the DRC pooled fund, as an example (at least, I <em>think</em> it’s the CBPF fund—you see, even I’m not sure):</p>
+<pre><code class="lang-auto">{
+  "id": 7654,
+  "abbreviation": "Democratic Republic of the Congo Humanitarian Fund",
+  "name": "Democratic Republic of the Congo Humanitarian Fund",
+  "categories": [
+    {
+      "id": 121,
+      "name": "Pooled fund",
+      "group": "organizationType"
+    }
+  ]
+}
+</code></pre>
+<p>Cheers, David</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/9</link>
+        <pubDate>Wed, 03 Apr 2019 18:25:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-9</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks David, sorry, this is turning into an FTS API info request.</p>
+<p>Is there a way to distinguish between the CERF/CBPF vs other projects in the FTS data? We are trying to work out what we are missing out on by only importing IATI data. For example, some projects have their code as HSOM - whereas others start with XNP (but also appear to have a HSOM code) - do you know who we could check this with?</p>
+<p>Can you also recommend someone to ask about the redacted projects?</p>
+<p>I guess this must be the largest amount of data that was formerly available in IATI but no longer.</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/8</link>
+        <pubDate>Thu, 28 Mar 2019 09:13:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-8</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Any project not funded by CBPF or CERF would not appear in their IATI reports, but would appear in the FTS API. Note that those projects are a much-more granular level than most donors report—they’re usually a specific thing that an org is doing in a specific place, while donors’ IATI reports are often more about programming (e.g. $1M for women’s health education in Ghana), which doesn’t actually tell you much about what’s happening where.</p>
+<p>There has been some investigation into getting the HPC project identifiers into CERF’s and CBPF’s IATI. I’m not sure about the status of that.</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/7</link>
+        <pubDate>Wed, 27 Mar 2019 19:32:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-7</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>thanks <a class="mention" href="/u/david_megginson">@David_Megginson</a> for setting this all out.</p>
+<p>So we know what we are now missing out on, do you know if there a way to identify what projects in FTS are not also reported under CERF or CBPFs? As if that was significant, then we would have to think again about supporting the FTS API.</p>
+<p>We would also be very keen to support efforts to restart the FTS publishing data to IATI - let us know if there is any way we can help? We are already telling the country office staff who are therefore now responsible for doing manual entry (without IATI) that they need to make themselves heard.</p>
+<p>FTS was always listed as a secondary publisher so I don’t understand how the double reporting can be an issue - especially given the scale of it elsewhere in IATI - plus it also applies to CERF/CBPFs as donors report their core contributions.</p>
+<p>RE redacted projects - is there a way to get at them that redacts the names/locations, but would allow us to know that there is an activity at least? Or who should we ask for an estimate of their number/volume?</p>
+<p>Thanks a mil - and happy to skype if easier (‘matmaxgeds’).</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/6</link>
+        <pubDate>Wed, 27 Mar 2019 14:29:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-6</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>Following up on the API, here are all the humanitarian response plans (formerly, “appeals”) for Somalia:</p>
+<p><a href="https://api.hpc.tools/v1/public/plan/country/som" class="onebox" target="_blank" rel="nofollow noopener">https://api.hpc.tools/v1/public/plan/country/som</a></p>
+<p>The code for the Somalia 2019 HRP is “HSOM19”. Knowing that, we can get a list of projects:</p>
+<p><a href="https://api.hpc.tools/v1/public/project/plancode/HSOM19" class="onebox" target="_blank" rel="nofollow noopener">https://api.hpc.tools/v1/public/project/plancode/HSOM19</a></p>
+<p>Checking right now, there are 561 Somalia 2019 projects listed in the JSON, with funding info (some additional projects are redacted for privacy/security concerns, and don’t appear in the public listing).</p>
+<p>I hope this is helpful. I’d love to see those projects available as IATI some day.</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/5</link>
+        <pubDate>Wed, 27 Mar 2019 13:28:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-5</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>The UN Secretariat does not have a single IATI go-to person right now, but we’re talking about that inside OCHA. You might as well reach out to me, and I can try to answer any questions or direct them to the right person.</p>
+<p>Yes, FTS stopped republishing IATI data in 2015, I think, because of concerns about duplicate reporting (some of the orgs they were republishing were also publishing directly). The financial data is still available via FTS’s API, and you can find a <em>lot</em> of individual project information there (much more than used to be in OPS): <a href="https://api.hpc.tools/docs/v1/" rel="nofollow noopener">https://api.hpc.tools/docs/v1/</a></p>
+<p>CERF and CBPF are pooled funds that OCHA manages on behalf of the humanitarian community. They exist because during a humanitarian emergency, there needs to be money available right away, without waiting for fundraising and earmarked donor grants.</p>
+<p>CERF (<a href="https://cerf.un.org/" rel="nofollow noopener">Central Emergency Response Fund</a>) is an unearmarked fund that many donors contribute to, and it’s used to help with underfunded emergencies in any country where there’s a need. Donors pay in without knowing where or how the money will be spent.</p>
+<p>CBPF (<a href="https://www.unocha.org/our-work/humanitarian-financing/country-based-pooled-funds-cbpf" rel="nofollow noopener">Country-Based Pooled Funds</a>) are a collection of lightly-earmarked funds that donors contribute to, and they’re used to help fund activities/projects in specific countries as the need arises. Donors pay in knowing where the money will be spent, but not how it will be spent.</p>
+<p>While OCHA reports on these funds, neither of them is actually OCHA’s money, per se. The funds are intermediaries between the donors and the implementing orgs or agencies, and they can make IATI traceability <em>very</em> challenging (it’s like trying to the trace the origin of a cup of water you pull out of the ocean).</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/4</link>
+        <pubDate>Wed, 27 Mar 2019 13:21:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-4</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Also tagging <a class="mention" href="/u/david_megginson">@david_megginson</a> in case he can help flag this query to the right person!</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/3</link>
+        <pubDate>Wed, 27 Mar 2019 11:54:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-3</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Tumbleweed…can anyone recommend any contacts? We are talking to the OCHA country office, but it would be good to know who at HQ is switched on with regard to IATI so we can connect them? Does the secretariat have a go-to person?</p>
+<p>I also now see that that OCHA publishes under five different entities:<br>
+<a href="https://www.iatiregistry.org/publisher/unocha-sdc" rel="nofollow noopener">XM-IATI-OCHASDC</a><br>
+<a href="https://www.iatiregistry.org/publisher/cerf" rel="nofollow noopener">XM-OCHA-CERF</a><br>
+<a href="https://www.iatiregistry.org/publisher/unocha-cbpf" rel="nofollow noopener">XM-OCHA-CBPF</a><br>
+<a href="https://www.iatiregistry.org/publisher/ocha_fts" rel="nofollow noopener">XM-OCHA-FTS</a><br>
+<a href="https://www.iatiregistry.org/publisher/unocha" rel="nofollow noopener">XM-DAC-41127</a></p>
+<p>Of which some are primary publishers and some secondary, they are based in different countries…it would be great to talk to someone about how these different publishing entities relate to each-other, and to humanitarian support (in Somalia) in general.</p>
+<p>tagging <a class="mention" href="/u/elbayar">@elbayar</a> <a class="mention" href="/u/ximboden">@ximboden</a> as they both represented OCHA on these forums in the past.</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/2</link>
+        <pubDate>Tue, 26 Mar 2019 18:51:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-2</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+      <item>
+        <title>Help request - FTS vs .......for humanitarian data</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>In Somalia we are making IATI data available within the government AIMS for data entry users to import projects published via IATI, rather than re-typing out all of the data.</p>
+<p>When we scoped the project back in 2015, OCHA was publishing FTS data to IATI e.g. see <a href="https://www.iatiregistry.org/publisher/18ebafff-9867-4a03-aa8f-d2e2a3fa1938?country=Somalia&amp;_country_limit=0&amp;q=&amp;sort=metadata_modified+desc" rel="nofollow noopener">here</a> but this seems to have stopped in 2015?</p>
+<p>Does anyone know what we are missing? Has it restarted somewhere else? OCHA in Mogadishu are suggesting using OPS data but as far as we know that is just excel sheets and not published to IATI…help!</p>
+<p>Of course we can also get humanitarian data from all the individual organisations, but FTS is (was) great because it used the locally recognised project names, sorted out the duplication etc</p>
+<p>Thanks a lot,</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694/1</link>
+        <pubDate>Fri, 22 Mar 2019 11:01:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1694-1</guid>
+        <source url="https://discuss.iatistandard.org/t/help-request-fts-vs-for-humanitarian-data/1694.rss">Help request - FTS vs .......for humanitarian data</source>
+      </item>
+  </channel>
+</rss>

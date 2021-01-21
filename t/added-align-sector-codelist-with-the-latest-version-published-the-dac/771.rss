@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+    <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771</link>
+    <description>@andylolz has identified the changes that would be necessary to bring the [IATI Sector codelist](http://iatistandard.org/codelists/Sector/) into line with the [current DAC/CRS sector codelist](http://www.oecd.org/dac/stats/dacandcrscodelists.htm).
+
+These have been submitted to us as a [pull request to the Non-embedded codelist repository](https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/137).
+
+This forms part of Andy&#39;s [sterling work to republish OECD DAC codelists in a robust machine-readable format](https://discuss.iatistandard.org/t/republishing-oecd-dac-codelists/763). 
+
+As part of the [change management process for Non-embedded codelists](http://iatistandard.org/202/codelists/codelist-management/#non-embedded-codelists), the suggested changes are being posted here for review and discussion.
+
+Looking at the content of the proposed changes, Andy had identified that code `15114` may have been reused (previously “Tax policy and tax administration support”, now “Domestic Revenue Mobilisation”).
+
+Also from [looking at the pull request diff](https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/137/files), it looks like the following new codes are added:
+
+ * `15180` (Ending violence against women and girls)
+ * `23110` (Energy policy and administrative management)
+ * `23181` (Energy education/training)
+ * `23182` (Energy research)
+ * `23183` (Energy conservation and demand-side efficiency)
+ * `23210` (Energy generation, renewable sources – multiple technologies)
+ * `23220` (Hydro-electric power plants)
+ * `23230` (Solar energy)
+ * `23240` (Wind energy)
+ * `23250` (Marine energy)
+ * `23260` (Geothermal energy)
+ * `23270` (Biofuel-fired power plants)
+ * `23310` (Energy generation, non-renewable sources – unspecified)
+ * `23320` (Coal-fired electric power plants)
+ * `23330` (Oil-fired electric power plants)
+ * `23340` (Natural gas-fired electric power plants)
+ * `23350` (Fossil fuel electric power plants with carbon capture and storage (CCS))
+ * `23360` (Non-renewable waste-fired electric power plants)
+ * `23410` (Hybrid energy electric power plants)
+ * `23510` (Nuclear energy electric power plants)
+ * `23610` (Heat plants)
+ * `23620` (District heating and cooling)
+ * `23630` (Electric power transmission and distribution)
+ * `23640` (Gas distribution)</description>
+    
+    <lastBuildDate>Tue, 06 Jun 2017 08:29:42 +0000</lastBuildDate>
+    <category>Non-Core Codelist Amendments</category>
+    <atom:link href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/16">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/16</link>
+        <pubDate>Tue, 06 Jun 2017 08:29:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-16</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>The Pull Request referenced in the first post of this topic has now been merged.</p>
+<p>The values will appear on the website when it is next generated (should be later today).</p>
+<p>As such, I have marked this topic as <em>[Added]</em>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/15</link>
+        <pubDate>Tue, 06 Jun 2017 08:29:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-15</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>Thank you for all of your work in reviewing these changes.</p>
+<p>The IATI tech team have reviewed and approved this pull request. We expect changes to be implemented by 9th June.</p>
+<p>The IATI technical team contacted OECD DAC members to gain understanding into the changes. The OECD’s response to our question around code 15180 is: - “A new code 15180 - Ending violence against women and girls was introduced in 2017 on 2016 flows (DCD/DAC/STAT(2015)2/REV1”</p>
+<p>The majority of outstanding checks relate to the use of footnotes and references within the DAC code lists. For more information about these please contact the OECD DAC.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/14</link>
+        <pubDate>Tue, 30 May 2017 13:54:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-14</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Second others’ comments on getting this merged.</p>
+<p>I think this discussion raises a wider point - this codelist and several others have been out of date for a long time - <a href="https://discuss.iatistandard.org/t/dac-crs-code-lists-multiple-versions/528">this particular issue was raised almost a year ago</a> (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/51" rel="nofollow noopener">fixes</a> were proposed over two years ago).</p>
+<p>The fact that codelists are out of date means that it is not possible to rely on IATI codelists when building tools. I have to go back and make my own codelists each time or rely on scrapers like <a class="mention" href="/u/andylolz">@andylolz</a>’. This is frustrating and adds quite a lot of burden to users, when handling the data itself is already challenging.</p>
+<p>It would be helpful if we could have some clarity on process here. Is the IATI Secretariat committed to keeping these codelists up to date, or should users be encouraged to consult the original codelists instead?</p>
+<p>I think it would be preferable for the IATI Secretariat to do this work rather than each tool developer having to assemble their own codelists manually. I also think the Secretariat should commit to update codelists within a clearly defined time period (e.g. within one week of becoming aware of changes to codelists). I understand the Secretariat has a lot of demands on their time but I think this stuff is really fundamental to the Standard, so it should be prioritised.</p>
+<p>Either way, it would be useful to have clarity so that expectations can be managed and we can stop having lengthy and so far inconclusive conversations about this <img src="//discuss.iatistandard.org/images/emoji/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/13</link>
+        <pubDate>Fri, 26 May 2017 11:44:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-13</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all</p>
+<p>Any news on getting the updated codes into the IATI list?</p>
+<p>I appreciate the difficulties in terms of undertaking and clarifying this - we’ve discussions elsewhere</p>
+<p>One thing - the dashboard currently reports that some codes are not on the IATI list, when we know there are on the updated DAC list (we know that, but others might not): <a href="http://dashboard.iatistandard.org/publisher/fao.html#p_codelists" rel="nofollow noopener">http://dashboard.iatistandard.org/publisher/fao.html#p_codelists</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/12</link>
+        <pubDate>Thu, 25 May 2017 09:29:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-12</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s great – thanks for keeping us updated, <a class="mention" href="/u/petyakangalova">@petyakangalova</a>!</p>
+<p>I spotted the review of changes, and have commented to add explanations on the minor technical points I’m able to help with. I’ve also fixed one error in the pull request that your reviewer <a class="mention" href="/u/amys">@amys</a> spotted.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/11</link>
+        <pubDate>Wed, 17 May 2017 09:13:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-11</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a></p>
+<p>I have now heard back from the DAC in relation to code 15114 and they confirmed that the code has been renamed (so it is not a case of reusing a code) and the name change has been approved by WP-STAT, which means that we can go ahead with implementing the new code (see information from the DAC below).</p>
+<blockquote>
+<p>In 2016, the proposal to upgrade the dummy code 15114 for “Tax policy and administration support” to a formal code and rename it “Domestic Revenue Mobilisation” has been approved by the WP-STAT [DCD/DAC/STAT(2016)8]</p>
+</blockquote>
+<p>I am still waiting to hear back on a few other questions we have identified following a review of the changes in the pull request. They are mostly in relation to small changes in the narrative of some sector codes. Once those have been confirmed I will post an update in here so that the pull request can then be implemented and codes updated.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/10</link>
+        <pubDate>Tue, 16 May 2017 11:22:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-10</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="771">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>Looks great! Hope that the updated codelist makes it to production as soon as possible, since DAC members such as ourselves are already using these codes in their project administration systems!</p>
+</blockquote>
+</aside>
+<p>Thanks for this, <a class="mention" href="/u/herman">@Herman</a>! I’ve seen other examples of current DAC CRS purpose codes used in IATI data, even though they’re not yet part of IATI non-embedded codelists. If the new IATI validator is to validate codelist codes, then I suppose it’s important for non-embedded codelists to be kept in sync.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/8</link>
+        <pubDate>Tue, 04 Apr 2017 14:01:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-8</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="6" data-topic="771">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/petyakangalova/40/175_1.png" class="avatar"> petyakangalova:</div>
+<blockquote>
+<p>Just an update to say that I have emailed the OECD to get more clarity on the reuse of code 15114 before we proceed with any changes. I will let you know as soon as I have more information.</p>
+</blockquote>
+</aside>
+<p>Ahh – so it’s possible this isn’t reuse of the same code, and is instead just a rewording. I’m afraid I don’t have the domain expertise to know! But perhaps someone else can say.</p>
+<p>So previously, the title and description was:</p>
+<blockquote>
+<h4>15114: Tax policy and tax administration support</h4>
+<p>Support to the ministries of finance, revenue authorities or other local, regional or national public bodies on tax policy, analysis and administration (including “non-tax” public revenue).</p>
+</blockquote>
+<p>And now:</p>
+<blockquote>
+<h4>15114: Domestic Revenue Mobilisation</h4>
+<p>Support to domestic revenue mobilisation/tax policy, analysis and administration as well as non-tax public revenue, which includes work with ministries of finance, line ministries, revenue authorities or other local, regional or national public bodies. (Use code 16010 for social security and other social protection.)</p>
+</blockquote>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/7</link>
+        <pubDate>Tue, 04 Apr 2017 13:55:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-7</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="771">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"> dalepotter:</div>
+<blockquote>
+<p>Andy had identified that code 15114 may have been reused</p>
+</blockquote>
+</aside>
+<p>Hi all. Just an update to say that I have emailed the OECD to get more clarity on the reuse of code 15114 before we proceed with any changes. I will let you know as soon as I have more information.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/6</link>
+        <pubDate>Tue, 04 Apr 2017 11:22:46 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-6</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/andylolz">@andylolz</a> and <a class="mention" href="/u/dalepotter">@dalepotter</a>,<br>
+Looks great! Hope that the updated codelist makes it to production as soon as possible, since DAC members such as ourselves are already using these codes in their project administration systems!</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/5</link>
+        <pubDate>Tue, 04 Apr 2017 10:44:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-5</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, great work Andy. <a class="mention" href="/u/dalepotter">@dalepotter</a> I’d like to see a time limit set for consulting on and incorporating changes into the non-embedded codelists. At least for DAC-sourced codelists. The IATI Codelist Management page is unclear about how long it takes from the point that the DAC releases an update to when changes get incorporated into the IATI codelists so that new codes can be used.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/4</link>
+        <pubDate>Thu, 30 Mar 2017 07:57:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-4</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group">
+<blockquote>
+<p>The title for purpose-code 15180 was revised.</p>
+</blockquote>
+</aside>
+<p>So I suspect since the last IATI Sector codelist update (in July 2016), 15180 was added and subsequently revised. That would explain any apparent discrepancy.</p>
+<p>I should restate – any work on scraping is really just a pragmatic, interim measure to ensure non-embedded codelists are up-to-date. I’d be pleased to see the DAC and IATI secretariat move towards a shared standard for metadata management, as <a class="mention" href="/u/oj_">@OJ_</a> describes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/3</link>
+        <pubDate>Mon, 27 Mar 2017 09:08:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-3</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for this</p>
+<p>Would be good to group (or “TAG”) some of these threads together.  Over at this <a href="https://discuss.iatistandard.org/t/oecd-dac-codelist-updated-in-january-10th/681/3">thread</a>, <a class="mention" href="/u/oj_">@OJ_</a> shares:</p>
+<aside class="quote no-group" data-post="4" data-topic="681">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/o/e19adc/40.png" class="avatar"><a href="//discuss.iatistandard.org/t/oecd-dac-codelist-updated-in-january-10th/681/4">OECD DAC codelist - updated in January 10th</a>
+</div>
+<blockquote>
+<ul>
+<li>The title for purpose-code 15180 was revised.*</li>
+</ul>
+</blockquote>
+</aside>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/2</link>
+        <pubDate>Thu, 23 Mar 2017 21:45:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-2</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+      <item>
+        <title>[Added] Align Sector codelist with the latest version published the DAC</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/andylolz">@andylolz</a> has identified the changes that would be necessary to bring the <a href="http://iatistandard.org/codelists/Sector/">IATI Sector codelist</a> into line with the <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm">current DAC/CRS sector codelist</a>.</p>
+<p>These have been submitted to us as a <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/137">pull request to the Non-embedded codelist repository</a>.</p>
+<p>This forms part of Andy’s <a href="https://discuss.iatistandard.org/t/republishing-oecd-dac-codelists/763">sterling work to republish OECD DAC codelists in a robust machine-readable format</a>.</p>
+<p>As part of the <a href="http://iatistandard.org/202/codelists/codelist-management/#non-embedded-codelists">change management process for Non-embedded codelists</a>, the suggested changes are being posted here for review and discussion.</p>
+<p>Looking at the content of the proposed changes, Andy had identified that code <code>15114</code> may have been reused (previously “Tax policy and tax administration support”, now “Domestic Revenue Mobilisation”).</p>
+<p>Also from <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/137/files">looking at the pull request diff</a>, it looks like the following new codes are added:</p>
+<ul>
+<li>
+<code>15180</code> (Ending violence against women and girls)</li>
+<li>
+<code>23110</code> (Energy policy and administrative management)</li>
+<li>
+<code>23181</code> (Energy education/training)</li>
+<li>
+<code>23182</code> (Energy research)</li>
+<li>
+<code>23183</code> (Energy conservation and demand-side efficiency)</li>
+<li>
+<code>23210</code> (Energy generation, renewable sources – multiple technologies)</li>
+<li>
+<code>23220</code> (Hydro-electric power plants)</li>
+<li>
+<code>23230</code> (Solar energy)</li>
+<li>
+<code>23240</code> (Wind energy)</li>
+<li>
+<code>23250</code> (Marine energy)</li>
+<li>
+<code>23260</code> (Geothermal energy)</li>
+<li>
+<code>23270</code> (Biofuel-fired power plants)</li>
+<li>
+<code>23310</code> (Energy generation, non-renewable sources – unspecified)</li>
+<li>
+<code>23320</code> (Coal-fired electric power plants)</li>
+<li>
+<code>23330</code> (Oil-fired electric power plants)</li>
+<li>
+<code>23340</code> (Natural gas-fired electric power plants)</li>
+<li>
+<code>23350</code> (Fossil fuel electric power plants with carbon capture and storage (CCS))</li>
+<li>
+<code>23360</code> (Non-renewable waste-fired electric power plants)</li>
+<li>
+<code>23410</code> (Hybrid energy electric power plants)</li>
+<li>
+<code>23510</code> (Nuclear energy electric power plants)</li>
+<li>
+<code>23610</code> (Heat plants)</li>
+<li>
+<code>23620</code> (District heating and cooling)</li>
+<li>
+<code>23630</code> (Electric power transmission and distribution)</li>
+<li>
+<code>23640</code> (Gas distribution)</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771/1</link>
+        <pubDate>Thu, 23 Mar 2017 16:55:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-771-1</guid>
+        <source url="https://discuss.iatistandard.org/t/added-align-sector-codelist-with-the-latest-version-published-the-dac/771.rss">[Added] Align Sector codelist with the latest version published the DAC</source>
+      </item>
+  </channel>
+</rss>

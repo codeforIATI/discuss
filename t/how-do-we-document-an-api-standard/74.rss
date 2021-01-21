@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How do we document an API standard?</title>
+    <link>https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74</link>
+    <description>We&#39;ve talked briefly about ways and means to document an API standard, whilst also being minded that we should collectively build something to discuss/test in this early stage.  
+
+I was pointed towards [Swagger][1] recently -  to help document an API (but maybe not an API Standard), so just wanted to share on the list.  I&#39;m sure there are others that exist.  One limitation I can envisage is that such tools document an API with a base URL - whereas an API standard documents common/agreed methods for API calls, etc.
+
+I know @Adrian was also interested in looking at ways to document, and I&#39;m pretty sure @bjwebb has thoughts.  
+
+
+  [1]: https://helloreverb.com/developers/swagger</description>
+    
+    <lastBuildDate>Sun, 03 Aug 2014 15:33:44 +0000</lastBuildDate>
+    <category>APIs</category>
+    <atom:link href="https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How do we document an API standard?</title>
+        <dc:creator><![CDATA[kouphax]]></dc:creator>
+        <description><![CDATA[
+            <p>It’s also worth noting that Swagger API’s can be exposed without having to annotate code just by crafting the Swagger JSON document but in comparison to RAMLs YAML DSL the Swagger JSON is more of an artefact of generation that something designed for humans to write (e.g. the RAML editor has dynamic validation and type hints for documents).</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74/3</link>
+        <pubDate>Sun, 03 Aug 2014 15:33:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-74-3</guid>
+        <source url="https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74.rss">How do we document an API standard?</source>
+      </item>
+      <item>
+        <title>How do we document an API standard?</title>
+        <dc:creator><![CDATA[kouphax]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="1" data-topic="74">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/stevieflow/40/196_1.png" class="avatar"> stevieflow:</div>
+<blockquote>
+<p>I’m sure there are others that exist.</p>
+</blockquote>
+</aside>
+<p>This is true.  I’ve personally had better success documenting APIs with <a href="http://raml.org/" rel="nofollow noopener">RAML</a>.  We found that Swagger caused too many implementation details to bleed into the API that required too much work to fix.  This is because Swagger originated in the Java world and was very tightly coupled to an annotation driven approach (which led to very annotation heavy endpoints).  We also found that the most interesting stuff we would get form Swagger was contained within string based annotations which wouldn’t be automatically updated when your API changed (which negated the point of Swagger and its tight coupling with your code).  I suspect this has improved in the last year or so but I haven’t really investigated.</p>
+<p>So back to RAML.  RAML allows you to write an API specification in the form of a YAML style document that can be applied to any base URL.  It is also possible to generate API clients and (potentially) tests against this document. You also get the actual documentation that can be pointed to a test environment for live examples (similar to Swagger).</p>
+<p>The big difference I found between the two was the Swagger is good for documenting existing APIs or evolving new ones as you go.  RAML is much better suited to <strong>designing</strong> APIs and I think the tooling certainly echos that opinion.</p>
+<p>However, yes, both tools are more aimed at documenting an API instance rather than standards but I do think RAML would be a much better fit fir at least defining a standard from a technical perspective.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74/2</link>
+        <pubDate>Sun, 03 Aug 2014 15:16:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-74-2</guid>
+        <source url="https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74.rss">How do we document an API standard?</source>
+      </item>
+      <item>
+        <title>How do we document an API standard?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>We’ve talked briefly about ways and means to document an API standard, whilst also being minded that we should collectively build something to discuss/test in this early stage.</p>
+<p>I was pointed towards <a href="https://helloreverb.com/developers/swagger" rel="nofollow noopener">Swagger</a> recently -  to help document an API (but maybe not an API Standard), so just wanted to share on the list.  I’m sure there are others that exist.  One limitation I can envisage is that such tools document an API with a base URL - whereas an API standard documents common/agreed methods for API calls, etc.</p>
+<p>I know <a class="mention" href="/u/adrian">@Adrian</a> was also interested in looking at ways to document, and I’m pretty sure <a class="mention" href="/u/bjwebb">@bjwebb</a> has thoughts.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74/1</link>
+        <pubDate>Thu, 31 Jul 2014 08:19:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-74-1</guid>
+        <source url="https://discuss.iatistandard.org/t/how-do-we-document-an-api-standard/74.rss">How do we document an API standard?</source>
+      </item>
+  </channel>
+</rss>

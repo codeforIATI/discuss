@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Mapping Budget Identifiers and DAC Sectors</title>
+    <link>https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322</link>
+    <description>I have found and old mapping between CC codes and CRS Purpose Codes. Now that there are a few new and changed sectors I was wondering if anybody has updated their mapping and if we can use it?</description>
+    
+    <lastBuildDate>Tue, 22 May 2018 11:52:22 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Mapping Budget Identifiers and DAC Sectors</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="4" data-topic="1322">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<aside class="quote no-group quote-modified" data-post="2" data-topic="1322">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/markbrough/40/24_1.png" class="avatar"> markbrough:</div>
+<blockquote>
+<blockquote>
+<p>perhaps this is something <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> could consider adding to the Sector codelist to make clear which codes are compatible with budget alignment and which are not?</p>
+</blockquote>
+</blockquote>
+</aside>
+<p>^^ this is a great suggestion – this would be really useful.</p>
+</blockquote>
+</aside>
+<p>I’ve made a start on this, by adding budget alignment information to the sector codelist as a custom namespace. <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/253">I’ve sent a fix for that</a>.</p>
+<p>The next step then would be to use that information when generating the <a href="http://iatistandard.org">iatistandard.org</a> site, <a href="https://github.com/IATI/IATI-Standard-SSOT/pull/175">in a similar way to this fix</a> that shows withdrawn codes as such.</p>
+          <p><a href="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322/5</link>
+        <pubDate>Tue, 22 May 2018 11:52:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1322-5</guid>
+        <source url="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322.rss">Mapping Budget Identifiers and DAC Sectors</source>
+      </item>
+      <item>
+        <title>Mapping Budget Identifiers and DAC Sectors</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<p>The guidance describes which codes should be used and which should not – I think <a class="mention" href="/u/andylolz">@andylolz</a> has a nice list</p>
+</blockquote>
+<p>Indeed yes! See:<br>
+<aside class="onebox githubgist">
+  <header class="source">
+      <a href="https://gist.github.com/andylolz/ed771c6a897dccdc1c768ab8b8157753" target="_blank">gist.github.com</a>
+  </header>
+  <article class="onebox-body">
+    <h4><a href="https://gist.github.com/andylolz/ed771c6a897dccdc1c768ab8b8157753" target="_blank">https://gist.github.com/andylolz/ed771c6a897dccdc1c768ab8b8157753</a></h4>
+<h5>sector_for_budget_alignment.csv</h5>
+<pre><code class="CSV">"Category","Code","Budget status","Name (EN)","Description (EN)","Name (FR)","Description (FR)"
+"111","11110","","Education policy and administrative management","Education sector policy, planning and programmes; aid to education ministries, administration and management systems; institution capacity building and advice; school management and governance; curriculum and materials development; unspecified education activities.","Politique de l’éducation et gestion administrative","Politique de l’éducation, planification et programmes ; aide aux ministères de l’éducation, à l’administration et au développement de systèmes de gestion, renforcement des capacités institutionnelles et conseils ; gestion et direction des écoles, développement des programmes d’études et des matériels pédagogiques ; activités d’éducation non spécifiées."
+"111","11120","","Education facilities and training","Educational buildings, equipment, materials; subsidiary services to education (boarding facilities, staff housing); language training; colloquia, seminars, lectures, etc.","Equipements scolaires et formation","Bâtiments scolaires, équipement, fournitures ; services pour l’éducation (équipement pour les pensionnaires, logement pour le personnel) ; cours de langues ; colloques, séminaires, conférences, etc."
+"111","11130","","Teacher training","Teacher education (where the level of education is unspecified); in-service and pre-service training; materials development.","Formation des enseignants","Éducation des enseignants (quand le niveau d’éducation n’est pas spécifié) ; formation et formation continue ; développement des matériels pédagogiques."
+"111","11182","","Educational research","Research and studies on education effectiveness, relevance and quality; systematic evaluation and monitoring.","Recherche en éducation","Recherche et études sur l’efficacité, la pertinence et la qualité de l’éducation ; évaluation et suivi systématiques."
+"112","11220","","Primary education","Formal and non-formal primary education for children; all elementary and first cycle systematic instruction; provision of learning materials.","Enseignement primaire","Enseignement primaire formel et non formel pour les enfants ; enseignement élémentaire général ; fournitures scolaires."
+"112","11230","insufficiently granular","Basic life skills for youth and adults","Formal and non-formal education for basic life skills for young people and adults (adults education); literacy and numeracy training.","Education pour une meilleure qualité de vie pour les jeunes et les adultes","Éducation formelle et non formelle pour une meilleure qualité de vie pour les jeunes et les adultes (éducation des adultes) ; alphabétisation et apprentissage du calcul."
+"112","11231","","Basic life skills for youth","Formal and non-formal education for basic life skills for young people.","Éducation pour une meilleure qualité de vie pour les jeunes","Éducation formelle et non formelle pour une meilleure qualité de vie pour les jeunes."
+"112","11232","","Primary education equivalent for adults","Formal primary education for adults.","Education primaire des adultes","Éducation primaire formelle pour adultes."
+"112","11240","","Early childhood education","Formal and non-formal pre-school education.","Education de la petite enfance","Éducation préscolaire formelle et non formelle."</code></pre>
+This file has been truncated. <a href="https://gist.github.com/andylolz/ed771c6a897dccdc1c768ab8b8157753" target="_blank">show original</a>
+
+<p>
+</p>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+<p>The above lists all current DAC 5 digit sector (purpose) codes. It includes a “Budget status” column, indicating any issues identified in mapping the code to recipient country budgets. So codes for which this column is empty are fine to use; codes for which this column is populated are not. This was generated in accordance with the methodology described in <a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831">the guidance Mark links to</a>. In fact, it’s the list I used to generate the graph for <a href="http://www.publishwhatyoufund.org/time-act-aid-budgets/">this blogpost on the topic</a>.</p>
+<blockquote>
+<p>perhaps this is something <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> could consider adding to the <a href="http://iatistandard.org/codelists/sector/"><code>Sector</code></a> codelist to make clear which codes are compatible with budget alignment and which are not?</p>
+</blockquote>
+<p>^^ this is a great suggestion – this would be really useful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322/4</link>
+        <pubDate>Fri, 18 May 2018 13:36:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1322-4</guid>
+        <source url="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322.rss">Mapping Budget Identifiers and DAC Sectors</source>
+      </item>
+      <item>
+        <title>Mapping Budget Identifiers and DAC Sectors</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>Oh, thank you for replying so quickly!</p>
+<p>Good thing capital-spend was the next thing on my to-do list, then I will jump right onto that. I will look at this a little more and get back to you if I have any further questions (which I usually do <img src="//discuss.iatistandard.org/images/emoji/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"> ). Thanks again for the information and the offer of further help.</p>
+          <p><a href="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322/3</link>
+        <pubDate>Wed, 16 May 2018 21:10:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1322-3</guid>
+        <source url="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322.rss">Mapping Budget Identifiers and DAC Sectors</source>
+      </item>
+      <item>
+        <title>Mapping Budget Identifiers and DAC Sectors</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/melinda">@Melinda</a>!</p>
+<p>I presume this is in the context of trying to implement aid and budget alignment in Sida’s IATI data, but let me know if this is wrong (and happy to have a chat – you can also email me at <a href="mailto:mark@brough.io">mark@brough.io</a>).</p>
+<p>So in the end we agreed the best way of implementing this was to encourage the use of a subset of (more detailed) CRS purpose codes. You can see the <a href="https://discuss.iatistandard.org/t/guidance-on-implementing-aid-and-budget-alignment/831">final guidance here</a> (which should shortly be added to the IATI website). As part of this, the CC (“Common Code”) codes have been deprecated and no longer need to be used.</p>
+<p>As the guidance says, in addition to the <code>capital-spend</code> field, you should now just be publishing a subset of the CRS purpose codes. The guidance describes which codes should be used and which should not – I think <a class="mention" href="/u/andylolz">@andylolz</a> has a nice list and perhaps this is something <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> could consider adding to the <a href="http://iatistandard.org/codelists/sector/" rel="nofollow noopener"><code>Sector</code></a> codelist to make clear which codes are compatible with budget alignment and which are not?</p>
+          <p><a href="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322/2</link>
+        <pubDate>Wed, 16 May 2018 16:10:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1322-2</guid>
+        <source url="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322.rss">Mapping Budget Identifiers and DAC Sectors</source>
+      </item>
+      <item>
+        <title>Mapping Budget Identifiers and DAC Sectors</title>
+        <dc:creator><![CDATA[Melinda]]></dc:creator>
+        <description><![CDATA[
+            <p>I have found and old mapping between CC codes and CRS Purpose Codes. Now that there are a few new and changed sectors I was wondering if anybody has updated their mapping and if we can use it?</p>
+          <p><a href="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322/1</link>
+        <pubDate>Wed, 16 May 2018 10:55:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1322-1</guid>
+        <source url="https://discuss.iatistandard.org/t/mapping-budget-identifiers-and-dac-sectors/1322.rss">Mapping Budget Identifiers and DAC Sectors</source>
+      </item>
+  </channel>
+</rss>

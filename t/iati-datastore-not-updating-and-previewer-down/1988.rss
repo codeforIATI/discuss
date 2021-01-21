@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI datastore not updating and previewer down?</title>
+    <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988</link>
+    <description>Hi, I was looking up an  project this morning for COVID in Palestine this morning and:
+
+1. I am not sure that the datastore is up to date at the moment, [here is a project that I can find in d-portal](https://d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=act&amp;aid=XI-IATI-EC_FPI-2020%2F42819%2F0), but I can&#39;t find it in the datastore [here](http://datastore.iatistandard.org/api/1/access/activity.xml?iati-identifier=XI-IATI-EC_FPI-2020/42819/0) or [here](http://datastore.iatistandard.org/api/1/access/activity.csv?reporting-org=XI-IATI-EC_DEVCO&amp;recipient-country=PS&amp;start-date__gt=2020-12-31)? Any ideas?
+2. The previewer for the datastore [doesn&#39;t seem to be working](http://preview.iatistandard.org/index.php?url=http%3A%2F%2Fdatastore.iatistandard.org%2Fapi%2F1%2Faccess%2Factivity.xml%3Freporting-org%3DXI-IATI-EC_DEVCO%26recipient-country%3DPS%26start-date__gt%3D2020-12-31) with datastore data - any ideas on that one? Edit....maybe it never worked and I am confused, but in that case seems worth quickly removing the link?
+
+Thanks!</description>
+    
+    <lastBuildDate>Tue, 28 Jul 2020 09:57:26 +0000</lastBuildDate>
+    <category>Welcome to IATI Discuss</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="IATI-techteam" data-post="13" data-topic="1988">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_2.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p><em>As such, we’ve remedied the situation by removing the constraint.</em></p>
+</blockquote>
+</aside>
+<p>Fix sounds good to me – many thanks for digging into this and resolving it.</p>
+<p>I notice the open source code on GitHub hasn’t changed. I guess <a href="https://github.com/IATI/IATI-Datastore/blob/87a3874dd0b498878f3ed5feb2956e21c9db5c7d/iati_datastore/iatilib/model.py#L172-L174">the bit you’re referring to is just here?</a> Please could you push the fix (and associated migration) to the open source code base.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/15</link>
+        <pubDate>Tue, 28 Jul 2020 09:57:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-15</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I really recommend restarting <a href="https://github.com/IATI/IATI-Website-Tests#iati-website-tests" rel="nofollow noopener">IATI Website Tests</a> – it was a really good initiative that previous iterations of the IATI tech team invested significant work into. I’ve sent <a href="https://github.com/IATI/IATI-Website-Tests/pulls/andylolz" rel="nofollow noopener">a couple of small fixes</a> that are enough to get the tests working again. This includes a fix to check whether data in the datastore has been refreshed.</p>
+<p>I’ve also created a very minimal dashboard for it here:<br>
+</p><aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <a href="https://status.codeforiati.org" target="_blank" rel="nofollow noopener">IATI Service Monitor</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://status.codeforiati.org/img/status.jpg" class="thumbnail onebox-avatar" width="500" height="500">
+
+<h3><a href="https://status.codeforiati.org" target="_blank" rel="nofollow noopener">IATI Service Monitor</a></h3>
+
+<p>Smoke tests and sanity checks for some live IATI websites and web tools.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>It would be great to expand these tests to cover the new datastore and new validator, too, as well as other services like the codelist API.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/14</link>
+        <pubDate>Fri, 17 Jul 2020 16:54:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-14</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Thank you all for your continued engagement. We absolutely agree there is a need to have a robust alert system that tells us when data has not been refreshed. Historically IATI tools were not built with comprehensive, or at times any, tests. Over the last few years we have been increasing the number of tests we run on our existing tools, including the <a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/5">ones referenced in this post,</a> whilst pushing forward with our new technical products. However, currently we don’t have a test for the old datastore that specifically checks if data has not refreshed.</p>
+<p>We will be adding comprehensive tests to the new datastore, to try and ensure this type of break does not reoccur.</p>
+<p>Although our recent focus has not been on the old datastore, we continue to maintain it and will add fixes when it breaks. This is with the understanding that it will be deprecated 6 months after the launch of the new datastore.</p>
+<p>As Matt has already noticed, our senior developer has been investigating yesterday the issue with the datastore and below is a more technical explanation of what caused it and how it was resolved:</p>
+<p><em>The datastore logs deleted activities in a table with a unique constraint on the column to which the external activity id is written. That id is theoretically unique and it previously had recorded nearly 700,000 unique ids without collision, presumably over its lifespan.</em><br>
+<em>However, on 28th March it met its first collision, which caused the database transaction to fail against that constraint and the program to error.</em><br>
+<em>Given that this is the first instance of this occurring after two thirds of a million ids it would appear to be a very rare occurrence, and there also appears to be no reason not to record that occurrence in the table. As such, we’ve remedied the situation by removing the constraint.</em></p>
+<p>We do apologise that we didn’t spot the recent issue with data not refreshing sooner. As mentioned above, we will make sure we have this capability in the new Datastore.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/13</link>
+        <pubDate>Fri, 17 Jul 2020 15:25:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-13</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> it seems like you have cracked it as I am getting recent results again, and <a href="http://datastore.iatistandard.org/api/1/access/activity.xml?last-updated-datetime__gt=2020-07-16" rel="nofollow noopener">I see 15 new ones since yesterday</a> - thanks!</p>
+<p>Please can we have some sort of check in place so that we catch these earlier next time?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/12</link>
+        <pubDate>Fri, 17 Jul 2020 06:27:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-12</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[WendyThomas]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all, the Tech Team is investigating as a priority today! We’ll update as soon as we know a bit more about what’s happened/happening. Thanks for your patience!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/11</link>
+        <pubDate>Thu, 16 Jul 2020 10:27:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-11</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[stolk]]></dc:creator>
+        <description><![CDATA[
+            <p>I also discovered that the api returns old data. OGB updated their files, including COVID-19 activities. API returns the old file/activities.<br>
+New datastore returns incomplete activities (excludes elements that are not well declared)… opened ticket at github.<br>
+So bit stuck between old and new datastore</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/10</link>
+        <pubDate>Thu, 16 Jul 2020 10:04:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-10</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I just discovered the datastore query parameter <a href="https://github.com/IATI/IATI-Developer-Documentation/blob/master/old-datastore/reference/data-api.rst#last-change" rel="nofollow noopener"><code>last-change__gt</code></a>, which returns all data updated since the specified date. It shows data in the datastore hasn’t been updated since 28th March 2020:<br>
+<a href="http://datastore.iatistandard.org/api/1/access/activity.xml?last-change__gt=2020-03-28" class="onebox" target="_blank" rel="nofollow noopener">http://datastore.iatistandard.org/api/1/access/activity.xml?last-change__gt=2020-03-28</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/9</link>
+        <pubDate>Thu, 16 Jul 2020 08:55:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-9</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> - thanks, and looking forward to heading what the developer team say.</p>
+<p>The backend of our aid management system in Somalia pulls data from the datastore nightly and we then access it through the AIMS system interface so can’t just swap to the upcoming datastore interface for the training (which is based on the system) - as soon as the new datastore is released, we will transition to pulling data from it and have been working on that with Josh.</p>
+<p>Is it possible to setup some checks at your end to make sure that core infrastructure is working (I guess we will at our end too) and alert people? If it has really not been working between March and July, that is more than a quarter of a year with a core piece of IATI infrastructure offline which is pretty worrying!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/8</link>
+        <pubDate>Thu, 16 Jul 2020 07:18:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-8</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a></p>
+<p>Great to know you’re doing some IATI training in Somalia.</p>
+<p>We will look into the issue with the old Datastore immediately and get our Developer team to see what has gone on. Unfortunately it is unlikely we will have this resolved by Thursday afternoon. Can we help you in any other way to get the data you need in the interim-- happy to discuss options and run through the new Datastore with you if you’re able to use that in your training?</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/7</link>
+        <pubDate>Wed, 15 Jul 2020 15:48:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-7</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> - I am doing a training on Thursday afternoon for users in Somalia, any chance the DSv1 might be working again by then, especially as this is affecting the availability of COVID data until the DSv2 is launched? Thanks, Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/6</link>
+        <pubDate>Tue, 14 Jul 2020 18:01:47 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-6</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>IATI devs used to have <a href="https://github.com/IATI/IATI-Website-Tests" rel="nofollow noopener">smoke tests in place</a>, for checking possible problems with services offered.</p>
+<p>I’ve just <a href="https://travis-ci.com/github/codeforIATI/iati-service-monitor" rel="nofollow noopener">got these tests working again</a>, and they report that the datastore hasn’t successfully fetched data since the end of March. I’m not exactly sure if that’s correct… The datastore doesn’t provide a reliable way to check if the parser is still running.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/5</link>
+        <pubDate>Tue, 14 Jul 2020 07:04:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-5</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[Joshua_Powell]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the heads up <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> – have flagged for colleagues working on IATI import in Haiti and DRC.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/4</link>
+        <pubDate>Mon, 13 Jul 2020 15:43:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/rory_scott">@rory_scott</a> from my side, we have 236 registered users in Somalia which uses the current datastore to access IATI data. I have also been using the datastore in Rwanda for their annual aid report, and in Palestine at the moment for COVID.</p>
+<p>I guess it might also be impacting AMPs if they are in the middle of an import cycle <a class="mention" href="/u/joshua_powell">@Joshua_Powell</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/3</link>
+        <pubDate>Mon, 13 Jul 2020 15:08:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>These are the <a href="https://iati.cloud/search/activity?q=iati_identifier:(/GB-GOV-1-3011.*/)%20AND%20hierarchy:(2)&amp;fl=iati_identifier,title_narrative_text,description_narrative_text,activity_date,last_updated_datetime&amp;wt=json&amp;rows=25" rel="nofollow noopener">20 most recently minted DFID projects</a> - the newest 17 of which aren’t on v1 of the datastore.</p>
+<p>Any AIMS providers who are currently still using the v1 datastore should take note, as a few of these are COVID-19 related and most are global, and so could be relevant.</p>
+<p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> you’re clearly up to speed, but ccing <a class="mention" href="/u/markbrough">@markbrough</a> too. Do you know any other users? (Catalpa perhaps?)</p>
+<p>Also, could you both mention countries that will be affected by this and the <a href="https://discuss.iatistandard.org/t/moving-iati-standard-content-from-iati-reference-site-to-main-iati-website/1987/2">concurrent codelist issue</a> so I can anticipate any issues from partners / other donors can be informed?</p>
+<p><strong>Edit</strong>: I’ve only included hierarchy 2 activities here, as they are the ones with the financials.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/2</link>
+        <pubDate>Mon, 13 Jul 2020 14:30:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+      <item>
+        <title>IATI datastore not updating and previewer down?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi, I was looking up an  project this morning for COVID in Palestine this morning and:</p>
+<ol>
+<li>I am not sure that the datastore is up to date at the moment, <a href="https://d-portal.org/ctrack.html?text_search=covid&amp;country_code=PS#view=act&amp;aid=XI-IATI-EC_FPI-2020%2F42819%2F0" rel="nofollow noopener">here is a project that I can find in d-portal</a>, but I can’t find it in the datastore <a href="http://datastore.iatistandard.org/api/1/access/activity.xml?iati-identifier=XI-IATI-EC_FPI-2020/42819/0" rel="nofollow noopener">here</a> or <a href="http://datastore.iatistandard.org/api/1/access/activity.csv?reporting-org=XI-IATI-EC_DEVCO&amp;recipient-country=PS&amp;start-date__gt=2020-12-31" rel="nofollow noopener">here</a>? Any ideas?</li>
+<li>The previewer for the datastore <a href="http://preview.iatistandard.org/index.php?url=http%3A%2F%2Fdatastore.iatistandard.org%2Fapi%2F1%2Faccess%2Factivity.xml%3Freporting-org%3DXI-IATI-EC_DEVCO%26recipient-country%3DPS%26start-date__gt%3D2020-12-31" rel="nofollow noopener">doesn’t seem to be working</a> with datastore data - any ideas on that one? Edit…maybe it never worked and I am confused, but in that case seems worth quickly removing the link?</li>
+</ol>
+<p>Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988/1</link>
+        <pubDate>Mon, 13 Jul 2020 12:51:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1988-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-not-updating-and-previewer-down/1988.rss">IATI datastore not updating and previewer down?</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Where does the PolicyMarker codelist come from?</title>
+    <link>https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298</link>
+    <description>I have a codelist question!
+
+The IATI [Policy Marker](http://iatistandard.org/203/codelists/PolicyMarker/) codelist doesn’t include a description or URL, so I’m not sure where it comes from. I realise the names of the codelist items correspond to those [provided by DAC CRS](http://www.oecd.org/dac/stats/dacandcrscodelists.htm), but the codes themselves don’t appear to be provided there, so I’m not sure where these come from.
+
+Also… (and I’m sure this has come up before, and I hope I’m not reopening a can of worms…) The IATI [Policy Significance](http://iatistandard.org/codelists/PolicySignificance/) codelist doesn’t capture the fact that the meanings are slightly different when the Reproductive, Maternal, Newborn and Child Health policy marker is used. Is this simply an accepted shortcoming? (I’m not sure of a tidy way to resolve it.)
+
+Any light that can be shed would be appreciated!</description>
+    
+    <lastBuildDate>Thu, 19 Apr 2018 12:16:31 +0000</lastBuildDate>
+    <category>Non-Core Codelist Amendments</category>
+    <atom:link href="https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Where does the PolicyMarker codelist come from?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Aha! Thanks for explaining, <a class="mention" href="/u/bill_anderson">@bill_anderson</a>!</p>
+<p>I guess the main thing would be to add some metadata to the codelist, explaining the provenance. <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/pull/250/files">I’ve had a go here</a>, but feel free to tweak or correct this!</p>
+<aside class="quote no-group" data-post="2" data-topic="1298">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>RMNCH was added later.</p>
+</blockquote>
+</aside>
+<p>Yes, I guessed as much. I suppose it’s not terribly easily work-around-able. One option would be to add the RMNCH significances as new (invented) codes on the Policy Significance codelist… But that’s a) not backwards compatible, and b) probably not a good idea anyway.</p>
+          <p><a href="https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298/3</link>
+        <pubDate>Thu, 19 Apr 2018 12:16:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1298-3</guid>
+        <source url="https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298.rss">Where does the PolicyMarker codelist come from?</source>
+      </item>
+      <item>
+        <title>Where does the PolicyMarker codelist come from?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>It comes from IATI. The thinking was that rather than have eight (at the time) separate fields (elements or attributes) as is the case in the CRS, they could be normalised into a single element. RMNCH was added later.</p>
+          <p><a href="https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298/2</link>
+        <pubDate>Thu, 19 Apr 2018 11:33:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1298-2</guid>
+        <source url="https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298.rss">Where does the PolicyMarker codelist come from?</source>
+      </item>
+      <item>
+        <title>Where does the PolicyMarker codelist come from?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I have a codelist question!</p>
+<p>The IATI <a href="http://iatistandard.org/203/codelists/PolicyMarker/">Policy Marker</a> codelist doesn’t include a description or URL, so I’m not sure where it comes from. I realise the names of the codelist items correspond to those <a href="http://www.oecd.org/dac/stats/dacandcrscodelists.htm">provided by DAC CRS</a>, but the codes themselves don’t appear to be provided there, so I’m not sure where these come from.</p>
+<p>Also… (and I’m sure this has come up before, and I hope I’m not reopening a can of worms…) The IATI <a href="http://iatistandard.org/codelists/PolicySignificance/">Policy Significance</a> codelist doesn’t capture the fact that the meanings are slightly different when the Reproductive, Maternal, Newborn and Child Health policy marker is used. Is this simply an accepted shortcoming? (I’m not sure of a tidy way to resolve it.)</p>
+<p>Any light that can be shed would be appreciated!</p>
+          <p><a href="https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298/1</link>
+        <pubDate>Thu, 19 Apr 2018 11:03:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1298-1</guid>
+        <source url="https://discuss.iatistandard.org/t/where-does-the-policymarker-codelist-come-from/1298.rss">Where does the PolicyMarker codelist come from?</source>
+      </item>
+  </channel>
+</rss>

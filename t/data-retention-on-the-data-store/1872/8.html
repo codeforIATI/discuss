@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/8 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:04:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Data retention on the Data Store - IATI Community Discussions</title>
+    <meta name="description" content="The Data Store depends on whatever is available on the IATI Registry. We have come across a use-case with @Wendy on the Humanitarian Data Portal (Grand Bargain) where data is not available in the Data Store once it becom&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1872.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Data retention on the Data Store&#39;" href="../1872.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/8" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/8" />
+<meta property="og:title" content="Data retention on the Data Store" />
+<meta name="twitter:title" content="Data retention on the Data Store" />
+<meta property="og:description" content="My guess would be this might involve the 104 FTS files with URLs that have gone missing since July 30th?  As the new IATI Validator currently still uses its independent harvesting backend (integration with Datastore underway): we use the “last seen alive” version of files (July 29th).  This allows for reasonably robust availability of data independent of availability of source files (or even the Registry).  The “publisher kill switch” would be one of two options:    Remove the dataset from the R..." />
+<meta name="twitter:description" content="My guess would be this might involve the 104 FTS files with URLs that have gone missing since July 30th?  As the new IATI Validator currently still uses its independent harvesting backend (integration with Datastore underway): we use the “last seen alive” version of files (July 29th).  This allows for reasonably robust availability of data independent of availability of source files (or even the Registry).  The “publisher kill switch” would be one of two options:    Remove the dataset from the R..." />
+<meta property="article:published_time" content="2019-11-13T21:11:44+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../../index.html">
+          <img src="../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1872.html">Data retention on the Data Store</a>
+    </h1>
+
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-13T11:16:44Z' class='post-time'>
+                November 13, 2019, 11:16am
+              </time>
+              <meta itemprop='dateModified' content='2019-11-13T11:16:44Z'>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The Data Store depends on whatever is available on the IATI Registry. We have come across a use-case with <a class="mention" href="../../../u/wendy-2.html">@Wendy</a> on the Humanitarian Data Portal (Grand Bargain) where data is not available in the Data Store once it becomes unavailable in the Registry.</p>
+<p>While some publishers remove their data on purpose, sometimes data becomes unreachable and therefore will be removed from the Datastore.</p>
+<p>What retention policy should we take into consideration here and should the Registry have a publisher ‘kill-switch’ which could tell other services down the data pipeline (Datastore etc) to remove data if that is checked to True in case of a retention policy of say 30 days?</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/samuele-mattiuzzo.html'><span itemprop='name'>samuele-mattiuzzo</span></a>
+            (Samuele Mattiuzzo)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-13T16:07:03Z' class='post-time'>
+                November 13, 2019,  4:07pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-13T16:07:03Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Wouldn’t removing the data from the Datastore and other tools also affect the way we can report on historical data, being that there will be gaps/missing pieces that were there in the first place?<br>
+Although I think this would be the case anyway whenever a publisher takes their file offline.</p>
+<p>Above aside, I would say a notification system that tells all the tools that the data has been removed by the publishers is what we should aim for, so that we can ensure consistency across tools</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-13T17:13:26Z' class='post-time'>
+                November 13, 2019,  5:13pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-13T17:13:26Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>As far as I am aware, IATI doesn’t have any historical approach, it is up to the publishers to decide if they want to keep historical data available.</p>
+<p>My assumption would be that if data is removed/becomes unreachable then it should immediately disappear from the datastore as there is no way of knowing whether this was an error, or on-purpose as I suspect that many publishers would ignore a kill-switch.</p>
+<p>If the DS kept it in, and then the publisher replaced it with another file there would be issues knowing which one was the right one etc</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/samuele-mattiuzzo.html'><span itemprop='name'>samuele-mattiuzzo</span></a>
+            (Samuele Mattiuzzo)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-13T17:19:13Z' class='post-time'>
+                November 13, 2019,  5:19pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-13T17:19:13Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="3" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>My assumption would be that if data is removed/becomes unreachable then it should immediately disappear from the datastore as there is no way of knowing whether this was an error, or on-purpose as I suspect that many publishers would ignore a kill-switch.</p>
+</blockquote>
+</aside>
+<p>ah I did not think about the edge cases of mistakes/publishing the wrong file or generic errors like such (in which case having faulty broken data and retaining it becomes detrimental)</p>
+<p>I was more referring to data that was valid and has once been used to draw calculations and then gets removed by the publisher 2-3 years afterwards, that would fundamentally change previous reports and possibly reports that work on comparisons as well (as that comparable data would have been removed).</p>
+<p>Maybe there needs to be a way to clarify whether certain datasets have actually been published with mistakes and thus need removal and which data can stay but is not relevant/withdrawn for certain reasons?</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-13T18:23:54Z' class='post-time'>
+                November 13, 2019,  6:23pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-13T18:23:54Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/samuele-mattiuzzo.html">@samuele-mattiuzzo</a> - totally with you on the need to think/decide whether IATI should do historical (and what that would involve), but I think it must have been discussed 10 years ago and probably needs solving in that context, not in the context of a problem it causes for the DS as the implications are far wider…also e.g. if something was published as v1.03 and the secretariat stored it for historical purposes, would it then be lost as v1 is depreciated (in which case it is only part of history being kept), or would the Secretariat republish in v2…I guess because of all the difficulties is why the current situation exists <img src="../../../images/emoji/twitter/slight_smilec164.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-13T18:47:21Z' class='post-time'>
+                November 13, 2019,  6:47pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-13T18:47:21Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Splitting this in three:</p>
+<ol>
+<li>As far as I am aware the current position remains that the Datastore is an organised interface to the registry. It is not a curated database. If a publisher removes any data from the registry it gets removed from the datastore. This is simple. The Datastore does not hold data (historical or otherwise) against the wishes of a publisher.</li>
+<li>Ascertaining whether a publisher has removed data or whether it is accidentally, temporarily unavailable is the challenge that <a class="mention" href="../../../u/siemvaessen.html">@siemvaessen</a> focuses on above, and that does require some rules that I don’t think have been clearly expressed anywhere.</li>
+<li>As per 1 above I don’t think it is the responsibility of the Datastore to perpetually cope with deprecated versions of the standard - where a publisher has neither removed nor refreshed their data - but this is perhaps best dealt with as a separate, validation issue.</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-13T21:09:03Z' class='post-time'>
+                November 13, 2019,  9:09pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-13T21:09:03Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="6" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.jpg" class="avatar"> bill_anderson:</div>
+<blockquote>
+<ul>
+<li>As far as I am aware the current position remains that the Datastore is an organised interface to the registry. It is not a curated database. If a publisher removes any data from the registry it gets removed from the datastore. This is simple. <strong>The Datastore does not hold data (historical or otherwise) against the wishes of a publisher.</strong>
+</li>
+</ul>
+</blockquote>
+</aside>
+<p>Agree.</p>
+<aside class="quote no-group">
+<blockquote>
+<ul>
+<li>Ascertaining whether a publisher has removed data or whether it is accidentally, temporarily unavailable is the challenge that <a class="mention" href="../../../u/siemvaessen.html">@siemvaessen</a> focuses on above, and that does <strong>require some rules that I don’t think have been clearly expressed anywhere</strong>.</li>
+</ul>
+</blockquote>
+</aside>
+<p>Correct, IATI needs to define a ruleset for this.</p>
+<aside class="quote no-group">
+<blockquote>
+<ul>
+<li>As per 1 above I <strong>don’t think it is the responsibility of the Datastore to perpetually cope with deprecated versions of the standard</strong> - where a publisher has neither removed nor refreshed their data - but this is perhaps best dealt with as a separate, validation issue.</li>
+</ul>
+</blockquote>
+</aside>
+<p>Agree.</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/rolfkleef.html'><span itemprop='name'>rolfkleef</span></a>
+            (Rolf Kleef)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-13T21:11:44Z' class='post-time'>
+                November 13, 2019,  9:11pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-13T21:11:44Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>My guess would be this might involve the <a href="https://iatiregistry.org/publisher/ocha_fts" rel="nofollow noopener">104 FTS files</a> with URLs that have gone missing since July 30th?</p>
+<p>As the new IATI Validator currently still uses its independent harvesting backend (integration with Datastore underway): we use the <a href="https://test-validator.iatistandard.org/organisation/ocha_fts" rel="nofollow noopener">“last seen alive” version</a> of files (July 29th).</p>
+<p>This allows for reasonably robust availability of data independent of availability of source files (or even the Registry).</p>
+<p>The “publisher kill switch” would be one of two options:</p>
+<ol>
+<li>
+<p>Remove the dataset from the Registry: in that case, the dataset will disappear from the Validator at the next successful refresh from the Registry (currently scheduled every 3 hours).</p>
+</li>
+<li>
+<p>Remove an activity (or all data) from the data served via the URL of the dataset: in that case, the specific activity will disappear after the next successful file refresh and processing (currently scheduled every 8 hours).</p>
+</li>
+</ol>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="4" />
+           <span class='post-likes'>4 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-14T08:59:16Z' class='post-time'>
+                November 14, 2019,  8:59am
+              </time>
+              <meta itemprop='dateModified' content='2019-11-14T08:59:16Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-username="samuele-mattiuzzo" data-post="2" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/samuele-mattiuzzo/40/485_2.png" class="avatar"> samuele-mattiuzzo:</div>
+<blockquote>
+<p>Above aside, I would say a notification system that tells all the tools that the data has been removed by the publishers is what we should aim for, so that we can ensure consistency across tools</p>
+</blockquote>
+</aside>
+<p>Happily, such a notification system exists:<br>
+<aside class="onebox whitelistedgeneric">
+  <header class="source">
+      <img src="https://iati-canary.herokuapp.com/static/img/favicon-32x32.png%3Fq%3Df1647" class="site-icon" width="32" height="32">
+      <a href="https://iati-canary.herokuapp.com/" target="_blank" rel="nofollow noopener">IATI Canary</a>
+  </header>
+  <article class="onebox-body">
+    <img src="https://iati-canary.herokuapp.com/static/img/canary.png%3Fq%3D54077" class="thumbnail onebox-avatar" width="256" height="256">
+
+<h3><a href="https://iati-canary.herokuapp.com/" target="_blank" rel="nofollow noopener">IATI Canary</a></h3>
+
+<p>An early warning system for IATI publishers.</p>
+
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-14T10:37:36Z' class='post-time'>
+                November 14, 2019, 10:37am
+              </time>
+              <meta itemprop='dateModified' content='2019-11-14T10:37:36Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Back to my original subject: data retention. Currently policy (rules) on the matter are not in place. What is the best way forward to introduce such a policy and who needs to be involved? What is the mechanism to start this?</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-14T11:53:14Z' class='post-time'>
+                November 14, 2019, 11:53am
+              </time>
+              <meta itemprop='dateModified' content='2019-11-14T11:53:14Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="10" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.jpg" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>What is the best way forward to introduce such a policy</p>
+</blockquote>
+</aside>
+<p>I’m in favour of consistency between tools.</p>
+<p>So for instance: <a href="https://d-portal.org/" rel="nofollow noopener">d-portal</a> has a policy on this (<a class="mention" href="../../../u/shi.html">@shi</a> and xriss can elucidate). The validator also has a policy (as <a class="mention" href="../../../u/rolfkleef.html">@rolfkleef</a> <a href="8.html">outlines above</a>) which sounds very similar to the one d-portal uses. I <em>think</em> (but would need to check) that the <a href="http://datastore.iatistandard.org/" rel="nofollow noopener">existing datastore</a> policy is also similar.</p>
+<p>So there’s already a precedent here. It would seem reasonable for the new datastore to follow the precedent already set (see: <a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" rel="nofollow noopener">Principle of least astonishment</a>).</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-14T12:12:09Z' class='post-time'>
+                November 14, 2019, 12:12pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-14T12:12:09Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="11" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/andylolz/40/495_2.jpg" class="avatar"> andylolz:</div>
+<blockquote>
+<p>So there’s already a precedent here. It would seem reasonable for the new datastore to follow the precedent already set (see: <a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment" rel="nofollow noopener">Principle of least astonishment</a>).</p>
+</blockquote>
+</aside>
+<p>Sure, but we need a formal rule, not informal precedent. Is there any audit trail on IATI communication discussion on this? It needs to be discussed outside of the realm of 2-3 tools, seeing it touches on overall data consistency.</p>
+<p>And it also does not provide a solution to data accidentally being unavailable on the Registry, while some other tool (a website for example) depends on another tool (datastore for example) etc.etc.</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-14T12:48:36Z'>
+              <time itemprop='dateModified' datetime='2019-11-14T12:49:20Z' class='post-time'>
+                November 14, 2019, 12:49pm
+              </time>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="12" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.jpg" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>we need a formal rule, not informal precedent</p>
+</blockquote>
+</aside>
+<p>Absolutely agree. I suppose a rule on this should be proposed, agreed, and then formally conveyed (e.g. via a page on <a href="http://iatistandard.org/" rel="nofollow noopener">iatistandard.org</a>).</p>
+<aside class="quote no-group" data-post="12" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/siemvaessen/40/579_2.jpg" class="avatar"> siemvaessen:</div>
+<blockquote>
+<p>Is there any audit trail on IATI communication discussion on this?</p>
+</blockquote>
+</aside>
+<p>I don’t see anything in the draft ToR about it. This was certainly discussed as part of the Manchester developer workshop last year, but I’m afraid I’m not able to find documentation of that.</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/shi.html'><span itemprop='name'>shi</span></a>
+            (shi)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-14T14:24:05Z' class='post-time'>
+                November 14, 2019,  2:24pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-14T14:24:05Z'>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks, <a class="mention" href="../../../u/andylolz.html">@andylolz</a> - yes, our process is similar to the validator:</p>
+<ol>
+<li>If a file download errors out, we use the last successful download. (This mostly deals with intermittent network errors.)</li>
+<li>We do a test wherein if the Registry looks <em>suspiciously</em> empty, we skip the Registry update and use the previous version.</li>
+</ol>
+<p>Step 2 was added when the <a href="https://twitter.com/IATI_aid/status/801437815867408384" rel="nofollow noopener">Registry hiccuped</a> and emptied itself.</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2019-11-14T16:31:43Z'>
+              <time itemprop='dateModified' datetime='2019-11-14T16:32:01Z' class='post-time'>
+                November 14, 2019,  4:32pm
+              </time>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I am not convinced that solving the issue of data being accidentally/temporarily unavailable in the registry should be solved via the datastore, as this means that only tools that use the datastore as the source of their data benefit from it, if everyone needs this feature, perhaps this would be better inserted into the current ToR for the revisions to the registry, then it would be solved once (and with only one ruleset) for everyone?</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2019-11-14T18:03:28Z' class='post-time'>
+                November 14, 2019,  6:03pm
+              </time>
+              <meta itemprop='dateModified' content='2019-11-14T18:03:28Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="15" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I am not convinced that solving the issue of data being accidentally/temporarily unavailable in the registry should be solved via the datastore</p>
+</blockquote>
+</aside>
+<p>Me neither, never made that claim either. Again: this topic tries to address the lack of a data retention policy in place and how formalise it. Who within IATI is responsible for shaping this policy? Perhaps <a class="mention" href="../../../u/wendythomas-2.html">@WendyThomas</a> could shed light on the matter?</p>
+<aside class="quote no-group" data-post="15" data-topic="1872">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_2.jpg" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>current ToR for the revisions to the registry</p>
+</blockquote>
+</aside>
+<p>Where could I find that ToR revisions plan for the Registry?</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-04-10T10:49:57Z' class='post-time'>
+                April 10, 2020, 10:49am
+              </time>
+              <meta itemprop='dateModified' content='2020-04-10T10:49:57Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Please can I ask: did a Data Retention Policy for IATI products come through?</p>
+<p>Seems the last post from <a class="mention" href="../../../u/siemvaessen.html">@siemvaessen</a> was querying this with <a class="mention" href="../../../u/wendythomas-2.html">@WendyThomas</a> / <a class="mention" href="../../../u/iati-techteam-2.html">@IATI-techteam</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-05-30T09:12:03Z' class='post-time'>
+                May 30, 2020,  9:12am
+              </time>
+              <meta itemprop='dateModified' content='2020-05-30T09:12:03Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p><a class="mention" href="../../../u/iati-techteam-2.html">@IATI-techteam</a> <a class="mention" href="../../../u/wendythomas-2.html">@WendyThomas</a> is there any update on this topic? Thanks</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../iati-data-removal-guidance-input-by-26-june/1973/4.html" itemprop='item'>
+                      <meta itemprop='url' content='../../iati-data-removal-guidance-input-by-26-june/1973/4.html'>
+                      <meta itemprop='position' content='1'>
+                      <span itemprop='name'>IATI Data Removal Guidance: input by 26 June</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/IATI-techteam.html'><span itemprop='name'>IATI-techteam</span></a>
+            (IATI Technical Team)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1872.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2020-06-17T16:12:01Z' class='post-time'>
+                June 17, 2020,  4:12pm
+              </time>
+              <meta itemprop='dateModified' content='2020-06-17T16:12:01Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>The <a href="../../iati-data-removal-guidance-input-by-26-june/1973.html">IATI Technical Team has now written guidance</a> for data owners to explain the process for removing data published to the IATI Standard. This guidance sets out the process to be followed by data owners in instances where they choose to remove data published to the IATI Standard. Please note that this is separate from data retention, which sets policies on, for instance, how long a dataset is retained for in a specific application. We will look at this in the future, but at the moment the priority focus was on developing data removal guidance. Please do have a look at the <a href="../../iati-data-removal-guidance-input-by-26-june/1973.html">IATI data removal guidance Discuss post</a> and let us know if you have any clarification points.</p>
+        </div>
+
+        <meta itemprop='headline' content='Data retention on the Data Store'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/data-retention-on-the-data-store/1872/8 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:04:50 GMT -->
+</html>

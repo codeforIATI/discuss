@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Improvements to the IATI Datastore CSV Query Builder now live</title>
+    <link>https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056</link>
+    <description>The IATI Technical team have been working hard over the past couple weeks to improve the [IATI Datastore CSV Query Builder](http://datastore.iatistandard.org/query/). This tool was initially launched some years ago and is commonly used by analysts to return IATI data in a spreadsheet format.
+
+Regular users will notice some significant changes to the look-and-feel of the tool:
+
+![29|690x493](upload://1ZITWEx9PMCwQYojLT7PDWe8csa.png)
+ 
+The changes have included:
+- Improved usability across a wider range of devices through porting the front-end to [Bootstrap](http://getbootstrap.com/)
+- Nicer select fields (including ability to multi-select fields) through the use of the [Chosen jQuery plugin](https://harvesthq.github.io/chosen/)
+- Additional Datastore filters have been added, including activity start and end dates
+- Ability to preview (as well as download) data by linking the tool to the IATI Preview tool
+- Removed the need to click submit to obtain a Datastore query by generating the Datastore link instantly using javascript, where browser support exists
+- Adding clearer copy, alongside visual enhancements
+
+The changes are now available to view at: http://datastore.iatistandard.org/query  
+ 
+We welcome comments, user feedback and ideas for additional improvements – either in response to this post, or by adding to our [Github issue](https://github.com/IATI/IATI-Query-Builder/issues/54).
+ 
+Special thanks also goes to @andylolz who has provided community support for this work, including a number of useful code contributions.</description>
+    
+    <lastBuildDate>Thu, 12 Oct 2017 17:09:33 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Improvements to the IATI Datastore CSV Query Builder now live</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andylolz">@andylolz</a> and <a class="mention" href="/u/hayfield">@hayfield</a> - great to know that the ‘bug’ works and looking forward to the full feature!</p>
+          <p><a href="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/7</link>
+        <pubDate>Thu, 12 Oct 2017 17:09:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1056-7</guid>
+        <source url="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056.rss">Improvements to the IATI Datastore CSV Query Builder now live</source>
+      </item>
+      <item>
+        <title>Improvements to the IATI Datastore CSV Query Builder now live</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="1056">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/hayfield/40/202_1.png" class="avatar"> hayfield:</div>
+<blockquote>
+<p>Looks like the Datastore will query whatever is provided in the code attribute (though you can’t additionally filter for particular vocabularies).</p>
+</blockquote>
+</aside>
+<p>Oh, good spot, <a class="mention" href="/u/hayfield">@hayfield</a>! (I read the documentation, but didn’t actually test it!) Returning matching sectors regardless of vocab is somewhere between an undocumented features and a bug…! E.g. I can imagine scenarios where it causes spurious results (e.g. a custom vocab happens to contain codes that look the same as DAC codes).</p>
+<p>So… Feature request to add a sector vocab parameter to the datastore API <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>P.S. Thanks for elucidating, <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>! That’s very helpful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/6</link>
+        <pubDate>Thu, 12 Oct 2017 16:44:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1056-6</guid>
+        <source url="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056.rss">Improvements to the IATI Datastore CSV Query Builder now live</source>
+      </item>
+      <item>
+        <title>Improvements to the IATI Datastore CSV Query Builder now live</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1056">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>The datastore is (currently) only DAC 5-digit:</p>
+</blockquote>
+</aside>
+<p><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?sector=998">http://datastore.iatistandard.org/api/1/access/activity.xml?sector=998</a> <a href="http://datastore.iatistandard.org/api/1/access/activity.xml?sector=4">http://datastore.iatistandard.org/api/1/access/activity.xml?sector=4</a></p>
+<p>Looks like the Datastore will query whatever is provided in the <code>code</code> attribute (though you can’t additionally filter for particular vocabularies).</p>
+          <p><a href="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/5</link>
+        <pubDate>Wed, 11 Oct 2017 08:06:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1056-5</guid>
+        <source url="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056.rss">Improvements to the IATI Datastore CSV Query Builder now live</source>
+      </item>
+      <item>
+        <title>Improvements to the IATI Datastore CSV Query Builder now live</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/andylolz">@andylolz</a> of course:</p>
+<p>In this case, I was looking up some <a href="http://datastore.iatistandard.org/api/1/access/activity.csv?reporting-org=XM-OCHA-FTS" rel="nofollow noopener">OCHA data</a> and wanted the output broken down by clusters (the humanitarian sectors, vocab = 10). I was surprised to see that OCHA were actually reporting via both DAC5 sector codes, and their own vocab=99 so I was able to get the data (secondary issue, the sector names associated with this vocab=99 are visible in the xml, but not visible in the csv).</p>
+<p>My request was more driven by the expectation that OCHA-FTS were not using the DAC5 sector codes (hence I initially tried to search using a different vocab, the feature that is not there), and therefore to find their data, I would have needed to be able to search by different sector vocabs.</p>
+          <p><a href="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/4</link>
+        <pubDate>Wed, 11 Oct 2017 05:03:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1056-4</guid>
+        <source url="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056.rss">Improvements to the IATI Datastore CSV Query Builder now live</source>
+      </item>
+      <item>
+        <title>Improvements to the IATI Datastore CSV Query Builder now live</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="1056">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Any chance of allowing users to chose alternative sector codelists?</p>
+</blockquote>
+</aside>
+<p>Interesting suggestion, <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a>!</p>
+<p>The datastore is (currently) only DAC 5-digit:<br>
+<a href="http://datastore.iatistandard.org/docs/api/#sector" class="onebox" target="_blank">http://datastore.iatistandard.org/docs/api/#sector</a></p>
+<p>So that’s not to say it’s by any means impossible… Just flagging that it would require changes to the datastore too.</p>
+<p>But anyway! In (approximately) the spirit of the <a href="https://discuss.iatistandard.org/t/revision-of-iati-standard-upgrade-procedures/1014">upgrade procedures document</a>, are you able to expand a bit on the <strong>intent</strong> here? What are you trying to do / what alternative sector codelists are you looking to use?</p>
+<p>Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/3</link>
+        <pubDate>Tue, 10 Oct 2017 19:36:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1056-3</guid>
+        <source url="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056.rss">Improvements to the IATI Datastore CSV Query Builder now live</source>
+      </item>
+      <item>
+        <title>Improvements to the IATI Datastore CSV Query Builder now live</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I just had a go - really great improvements - thanks!</p>
+<p>Any chance of allowing users to chose alternative sector codelists?</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/2</link>
+        <pubDate>Tue, 10 Oct 2017 13:21:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1056-2</guid>
+        <source url="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056.rss">Improvements to the IATI Datastore CSV Query Builder now live</source>
+      </item>
+      <item>
+        <title>Improvements to the IATI Datastore CSV Query Builder now live</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>The IATI Technical team have been working hard over the past couple weeks to improve the <a href="http://datastore.iatistandard.org/query/" rel="nofollow noopener">IATI Datastore CSV Query Builder</a>. This tool was initially launched some years ago and is commonly used by analysts to return IATI data in a spreadsheet format.</p>
+<p>Regular users will notice some significant changes to the look-and-feel of the tool:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/0dfc5e1fa02fc87cab874616c5327bd6acea51a2.png" data-download-href="https://discuss.iatistandard.org/uploads/default/0dfc5e1fa02fc87cab874616c5327bd6acea51a2" title="Screen Shot 2017-10-02 at 15.07.29.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/0dfc5e1fa02fc87cab874616c5327bd6acea51a2_2_690x493.png" alt="29" width="690" height="493" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/0dfc5e1fa02fc87cab874616c5327bd6acea51a2_2_690x493.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/0dfc5e1fa02fc87cab874616c5327bd6acea51a2_2_1035x739.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/0dfc5e1fa02fc87cab874616c5327bd6acea51a2_2_1380x986.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/0dfc5e1fa02fc87cab874616c5327bd6acea51a2_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Screen Shot 2017-10-02 at 15.07.29.png</span><span class="informations">1962×1402 303 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>The changes have included:</p>
+<ul>
+<li>Improved usability across a wider range of devices through porting the front-end to <a href="http://getbootstrap.com/" rel="nofollow noopener">Bootstrap</a>
+</li>
+<li>Nicer select fields (including ability to multi-select fields) through the use of the <a href="https://harvesthq.github.io/chosen/" rel="nofollow noopener">Chosen jQuery plugin</a>
+</li>
+<li>Additional Datastore filters have been added, including activity start and end dates</li>
+<li>Ability to preview (as well as download) data by linking the tool to the IATI Preview tool</li>
+<li>Removed the need to click submit to obtain a Datastore query by generating the Datastore link instantly using javascript, where browser support exists</li>
+<li>Adding clearer copy, alongside visual enhancements</li>
+</ul>
+<p>The changes are now available to view at: <a href="http://datastore.iatistandard.org/query" rel="nofollow noopener">http://datastore.iatistandard.org/query</a></p>
+<p>We welcome comments, user feedback and ideas for additional improvements – either in response to this post, or by adding to our <a href="https://github.com/IATI/IATI-Query-Builder/issues/54" rel="nofollow noopener">Github issue</a>.</p>
+<p>Special thanks also goes to <a class="mention" href="/u/andylolz">@andylolz</a> who has provided community support for this work, including a number of useful code contributions.</p>
+          <p><a href="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056/1</link>
+        <pubDate>Mon, 02 Oct 2017 12:53:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1056-1</guid>
+        <source url="https://discuss.iatistandard.org/t/improvements-to-the-iati-datastore-csv-query-builder-now-live/1056.rss">Improvements to the IATI Datastore CSV Query Builder now live</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Dashboard &amp; Data quality - your views welcome</title>
+    <link>https://discuss.iatistandard.org/t/iati-dashboard-data-quality-your-views-welcome/490</link>
+    <description>I have been asked to scope out improvements to the [IATI Dashboard](http://dashboard.iatistandard.org/) and am keen to hear the community&#39;s views on this tool.
+
+**We are particularly interested in how we can help publishers to understand their data quality.**
+
+Currently, [all current IATI publishers](http://dashboard.iatistandard.org/publishers.html) have a page which offers an overview of their data (example page for the [UK Department for International Development](http://dashboard.iatistandard.org/publisher/dfid.html)). This page is has the following sections:
+
+- **Headlines** - Overview of data by this publisher (number of files, IATI versions used, etc). Plus graphs showing the number of activities/activity files/organisation files/total file size over time
+- **Data Quality** - summary of automated issues found, for example Files Failing Validation
+- **Financial** - counts the number of budgets published, together with aggregated totals
+- **Exploring Data**
+  - **Files** - Overview of all publisher’s files, showing the number of activities contained, file size and version
+  - **Codelist values** - summary of the codelist values used for each element used by this publisher
+  - **Elements and Attributes published** - shows counts for how often the IATI schema is used by this publisher, and details which of their files
+
+Questions for publishers/data users:
+=======
+
+We are keen to hear your thoughts, some questions to get you thinking: 
+
+- Which of the above components (if any) do publishers/data users find _most_ useful?
+- Which of the above components (if any) do publishers/data users find _least_ useful?
+- Is there any data which should be presented in a different way? Or should the page have a different look and feel in general?
+- Are there other aspects to data quality that should also be included?  Can you demonstrate how this would make a difference to you?
+- How often do you use the dashboard? Would this change if different data/format was available?
+- Is the page fine as it is? In which case, are there other things which you would suggest we should improve instead?
+
+At present, we are in the scoping phase and timescales for development have not been fully defined, but we are keen to hear your views to inform our thinking on how much priority should be assigned to this.</description>
+    
+    <lastBuildDate>Fri, 24 Jun 2016 13:46:59 +0000</lastBuildDate>
+    <category>Consultations</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-dashboard-data-quality-your-views-welcome/490.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Dashboard &amp; Data quality - your views welcome</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Dale,</p>
+<p>First of all I have to say the dashboard is a great tool and I use it a lot! As a data user it provides me the necessary meta on datasets / fields used. Very handy when developing data portals. As maintainer of OIPA it provides me with an easy way to cross-check my findings.</p>
+<p><strong>The components I find most useful</strong>: The headline overview table, Exploring data components, the table of contents to get to those exploring data components which are at the bottom of the page.</p>
+<p><strong>The components I find least useful</strong>: All the headline graphs (they are useful, but only for use cases that don’t happen very often), Financial, Data quality (XSD validation is not enough for my use cases).</p>
+<p>The presentation of all components is ok for me, no suggestions on that.</p>
+<p><strong>The thing that could use improvement is the data quality component.</strong> XSD validation just covers the basics, there’s more in-depth validation to check. Here’s everything I can think of now:</p>
+<ul>
+<li>
+<p>Are all used codelist values on the accompanying codelist. this is already displayed on the dashboard at Exploring data -&gt; Codelist value, but that ‘Values not on codelist’ column should lead to data quality issues in the data quality component.</p>
+</li>
+<li>
+<p>Check if defaults are set when data is omitted. For example; according to my data there’s over 500,000 narratives (in 519 files) that don’t have a language nor default language set. Strictly taken this is a violation of this rule and those narratives should be invalidated; <a href="http://iatistandard.org/201/activity-standard/iati-activities/iati-activity/#iati-activities-iati-activity-xml-lang" rel="nofollow noopener">http://iatistandard.org/201/activity-standard/iati-activities/iati-activity/#iati-activities-iati-activity-xml-lang</a> (Correct me if I’m wrong here! ).</p>
+</li>
+<li>
+<p>For a data publisher it would be useful to know where these errors happen, so to have an iati-identifier and/or xml line number.</p>
+</li>
+<li>
+<p>For a data journalist/scientist it might be useful to have aggregated numbers on these errors? Not sure on this one.</p>
+</li>
+</ul>
+<p><strong>I consider it quite concerning to IATI that there’s hidden errors in the data of publishers since it leads to incomparable data.</strong> Here’s an example, which is quite a bad example because its not hidden nor do their files validate the XSD, but it demonstrates a bad practice caused by bad data.</p>
+<p>The policy markers of the EC-DEVCO all have a zero prepended to their code; <a href="http://dashboard.iatistandard.org/publisher/ec-devco.html#p_codelists" rel="nofollow noopener">http://dashboard.iatistandard.org/publisher/ec-devco.html#p_codelists</a></p>
+<p>This leads to all 300,976 policy markers to be invalid. Meanwhile, I can find those activities through filtering policy markers on the EU Aid Explorer; <a href="https://euaidexplorer.ec.europa.eu/SearchPageAction.do" rel="nofollow noopener">https://euaidexplorer.ec.europa.eu/SearchPageAction.do</a></p>
+<p>So instead of getting DEVCO to correct the error in the data, the developers on the EU Aid Explorer started to cheat the standard and wrote something to make them valid policy markers. Obviously this leads to IATI dialects and incomparable data.<br>
+I also saw an example last week where these kind of things happen on the transactions receiver/provider, and thats an even bigger problem. Then not only comparability but also traceability would become impossible without cheating. Note to developers; try to never cheat the standard on purpose! I know that sounds impossible in some cases, but it really shouldn’t be your problem and in the end its bad for everyone.</p>
+<p>Recently I’ve been working on making OIPA’s validation errors more transparent. This provides some of the functionality I just described that’s not in the IATI Dashboard yet. I’m thinking about creating a small tool to display it, first reason is awareness and it not fully being shown on the IATI Dashboard yet. Second reason is that people can point me at errors we make in OIPA, though I hope thats not the case too often. For both reasons it would be great if this would also be possible through the IATI Dashboard. That would provide us both a cross-check to improve our tools, and in the end provide data publishers with better tools to get technically high quality IATI files.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-dashboard-data-quality-your-views-welcome/490/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-dashboard-data-quality-your-views-welcome/490/2</link>
+        <pubDate>Fri, 24 Jun 2016 13:46:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-490-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-dashboard-data-quality-your-views-welcome/490.rss">IATI Dashboard &amp; Data quality - your views welcome</source>
+      </item>
+      <item>
+        <title>IATI Dashboard &amp; Data quality - your views welcome</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>I have been asked to scope out improvements to the <a href="http://dashboard.iatistandard.org/">IATI Dashboard</a> and am keen to hear the community’s views on this tool.</p>
+<p><strong>We are particularly interested in how we can help publishers to understand their data quality.</strong></p>
+<p>Currently, <a href="http://dashboard.iatistandard.org/publishers.html">all current IATI publishers</a> have a page which offers an overview of their data (example page for the <a href="http://dashboard.iatistandard.org/publisher/dfid.html">UK Department for International Development</a>). This page is has the following sections:</p>
+<ul>
+<li>
+<strong>Headlines</strong> - Overview of data by this publisher (number of files, IATI versions used, etc). Plus graphs showing the number of activities/activity files/organisation files/total file size over time</li>
+<li>
+<strong>Data Quality</strong> - summary of automated issues found, for example Files Failing Validation</li>
+<li>
+<strong>Financial</strong> - counts the number of budgets published, together with aggregated totals</li>
+<li>
+<strong>Exploring Data</strong>
+<ul>
+<li>
+<strong>Files</strong> - Overview of all publisher’s files, showing the number of activities contained, file size and version</li>
+<li>
+<strong>Codelist values</strong> - summary of the codelist values used for each element used by this publisher</li>
+<li>
+<strong>Elements and Attributes published</strong> - shows counts for how often the IATI schema is used by this publisher, and details which of their files</li>
+</ul>
+</li>
+</ul>
+<h1>Questions for publishers/data users:</h1>
+<p>We are keen to hear your thoughts, some questions to get you thinking:</p>
+<ul>
+<li>Which of the above components (if any) do publishers/data users find <em>most</em> useful?</li>
+<li>Which of the above components (if any) do publishers/data users find <em>least</em> useful?</li>
+<li>Is there any data which should be presented in a different way? Or should the page have a different look and feel in general?</li>
+<li>Are there other aspects to data quality that should also be included?  Can you demonstrate how this would make a difference to you?</li>
+<li>How often do you use the dashboard? Would this change if different data/format was available?</li>
+<li>Is the page fine as it is? In which case, are there other things which you would suggest we should improve instead?</li>
+</ul>
+<p>At present, we are in the scoping phase and timescales for development have not been fully defined, but we are keen to hear your views to inform our thinking on how much priority should be assigned to this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-dashboard-data-quality-your-views-welcome/490/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-dashboard-data-quality-your-views-welcome/490/1</link>
+        <pubDate>Tue, 14 Jun 2016 16:27:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-490-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-dashboard-data-quality-your-views-welcome/490.rss">IATI Dashboard &amp; Data quality - your views welcome</source>
+      </item>
+  </channel>
+</rss>

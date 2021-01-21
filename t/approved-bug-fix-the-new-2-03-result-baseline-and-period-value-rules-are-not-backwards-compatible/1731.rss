@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</title>
+    <link>https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731</link>
+    <description>**Issue**
+
+I think we implemented two rules at the v2.03 upgrade which are not backwards compatible, as v2.02 and previous data may not validate against the v2.03 ruleset. This may have been missed as the rules were added as the relevant [Indicator Measure](http://reference.iatistandard.org/codelists/IndicatorMeasure/) codelist transitioned from embedded to non-embedded.
+
+The Rules are:
+
+* The @value **must** be omitted for qualitative measures
+* The @value **must** be included for non-qualitative measures
+* The @value should be a valid number for all non-qualitative measures
+
+And they are found in three places:
+
+* iati-activities/iati-activity/result/indicator/baseline/@value
+* iati-activities/iati-activity/result/indicator/period/target/@value
+* iati-activities/iati-activity/result/indicator/period/actual/@value
+
+Measures are declared using the @measure attribute at indicator level. The ability to do was present at v1.04 onward. As the Indicator Measure codelist is now non-embedded all values are available for all versions of the Standard - this includes the new &#39;qualitative&#39; measure.
+
+(See the [Discuss post](https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/49) for more information)
+
+This means that as of version 2.03,  publishers using an earlier version of the IATI Standard could report a qualitative measure and include an @value. Similarly, they could include a non-qualitative measure and not include an @value. Neither of these would be breaking a rule in IATI.
+
+**Solution**
+
+We propose that the two **_must_** statements added at v2.03 are to be changed to **_shoulds_**. This means they will be taken out of the Standard Ruleset and publishers’ data will not be checked against this in the new validator.
+
+These three now _should_ statements are to be made _musts_ at the next major upgrade (version 3.0.0). The proposal for this is [here](https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733).
+
+**Who would be affected?**
+
+No publisher will be disadvantaged by this change.
+
+Publishers who are obeying the rules as they currently are will not be affected. They will continue to be following the guidance provided by the IATI Standard. Publishers using an earlier version may be going against the guidance resent in v2.03. However, if they change their published data to v2.03 their files will still validate as they will not be breaking a rule.
+
+**Next Steps**
+
+The relevant GitHub changes to the Standard can be seen [here](https://github.com/IATI/IATI-Schemas/pull/429). The current discussion and PR for the rulesets can be found [here](https://github.com/IATI/IATI-Rulesets/issues/189).
+
+If there is no objection to this bug fix within 7 days, the IATI Technical Team will implement the changes. This only applies to version 2.03 of the IATI Standard. If objections are raised, we will go into consultation about how this issue should be resolved.</description>
+    
+    <lastBuildDate>Tue, 07 May 2019 16:02:48 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>As there has been no objection to this fix on Discuss nor on GitHub, the IATI Technical Team will implement this fix.</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731/4</link>
+        <pubDate>Tue, 07 May 2019 16:02:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1731-4</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731.rss">(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</source>
+      </item>
+      <item>
+        <title>(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/andylolz">@andylolz</a> I had missed the part about the frequency of the <span class="mention">@value</span> changing.</p>
+<p>I agree that it should become</p>
+<ul>
+<li>The <span class="mention">@value</span> <strong>should</strong> be omitted for qualitative measures</li>
+<li>The <span class="mention">@value</span> <strong>must</strong> be included for non-qualitative measures</li>
+<li>The <span class="mention">@value</span> should be a valid number for all non-qualitative measures</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731/3</link>
+        <pubDate>Wed, 01 May 2019 08:30:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1731-3</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731.rss">(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</source>
+      </item>
+      <item>
+        <title>(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1731">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/amys/40/288_1.png" class="avatar"> amys:</div>
+<blockquote>
+<p>Similarly, they could include a non-qualitative measure and not include an <span class="mention">@value</span>. Neither of these would be breaking a rule in IATI.</p>
+</blockquote>
+</aside>
+<p>Prior to version 2.03, <code>@value</code> was required (<a href="https://github.com/IATI/IATI-Schemas/blob/29dce27fc9e049405a87c8493ccb1e98b808a871/iati-activities-schema.xsd#L1745-L1751">see for example</a>). So this <em>would</em> be breaking a rule, in the sense that it would not be compliant with the schema.</p>
+<aside class="quote no-group" data-post="1" data-topic="1731">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/amys/40/288_1.png" class="avatar"> amys:</div>
+<blockquote>
+<ul>
+<li>The <span class="mention">@value</span> <strong>must</strong> be included for non-qualitative measures</li>
+</ul>
+</blockquote>
+</aside>
+<p>^^ I don’t think this is a bug – I think this change is backwards compatible.</p>
+<aside class="quote no-group" data-post="1" data-topic="1731">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/amys/40/288_1.png" class="avatar"> amys:</div>
+<blockquote>
+<ul>
+<li>The <span class="mention">@value</span> <strong>must</strong> be omitted for qualitative measures</li>
+</ul>
+</blockquote>
+</aside>
+<p>^^ I agree that this is not backwards compatible. This bug was actually <a href="https://github.com/IATI/IATI-Schemas/pull/418">introduced in August 2018</a> (or thereabouts), so not really as part of the v2.03 upgrade.</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731/2</link>
+        <pubDate>Tue, 30 Apr 2019 17:58:23 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1731-2</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731.rss">(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</source>
+      </item>
+      <item>
+        <title>(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Issue</strong></p>
+<p>I think we implemented two rules at the v2.03 upgrade which are not backwards compatible, as v2.02 and previous data may not validate against the v2.03 ruleset. This may have been missed as the rules were added as the relevant <a href="http://reference.iatistandard.org/codelists/IndicatorMeasure/">Indicator Measure</a> codelist transitioned from embedded to non-embedded.</p>
+<p>The Rules are:</p>
+<ul>
+<li>The <span class="mention">@value</span> <strong>must</strong> be omitted for qualitative measures</li>
+<li>The <span class="mention">@value</span> <strong>must</strong> be included for non-qualitative measures</li>
+<li>The <span class="mention">@value</span> should be a valid number for all non-qualitative measures</li>
+</ul>
+<p>And they are found in three places:</p>
+<ul>
+<li>iati-activities/iati-activity/result/indicator/baseline/<span class="mention">@value</span>
+</li>
+<li>iati-activities/iati-activity/result/indicator/period/target/<span class="mention">@value</span>
+</li>
+<li>iati-activities/iati-activity/result/indicator/period/actual/<span class="mention">@value</span>
+</li>
+</ul>
+<p>Measures are declared using the <span class="mention">@measure</span> attribute at indicator level. The ability to do was present at v1.04 onward. As the Indicator Measure codelist is now non-embedded all values are available for all versions of the Standard - this includes the new ‘qualitative’ measure.</p>
+<p>(See the <a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872/49">Discuss post</a> for more information)</p>
+<p>This means that as of version 2.03,  publishers using an earlier version of the IATI Standard could report a qualitative measure and include an <span class="mention">@value</span>. Similarly, they could include a non-qualitative measure and not include an <span class="mention">@value</span>. Neither of these would be breaking a rule in IATI.</p>
+<p><strong>Solution</strong></p>
+<p>We propose that the two <strong><em>must</em></strong> statements added at v2.03 are to be changed to <strong><em>shoulds</em></strong>. This means they will be taken out of the Standard Ruleset and publishers’ data will not be checked against this in the new validator.</p>
+<p>These three now <em>should</em> statements are to be made <em>musts</em> at the next major upgrade (version 3.0.0). The proposal for this is <a href="https://discuss.iatistandard.org/t/make-baseline-period-guidance-musts/1733">here</a>.</p>
+<p><strong>Who would be affected?</strong></p>
+<p>No publisher will be disadvantaged by this change.</p>
+<p>Publishers who are obeying the rules as they currently are will not be affected. They will continue to be following the guidance provided by the IATI Standard. Publishers using an earlier version may be going against the guidance resent in v2.03. However, if they change their published data to v2.03 their files will still validate as they will not be breaking a rule.</p>
+<p><strong>Next Steps</strong></p>
+<p>The relevant GitHub changes to the Standard can be seen <a href="https://github.com/IATI/IATI-Schemas/pull/429">here</a>. The current discussion and PR for the rulesets can be found <a href="https://github.com/IATI/IATI-Rulesets/issues/189">here</a>.</p>
+<p>If there is no objection to this bug fix within 7 days, the IATI Technical Team will implement the changes. This only applies to version 2.03 of the IATI Standard. If objections are raised, we will go into consultation about how this issue should be resolved.</p>
+          <p><a href="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731/1</link>
+        <pubDate>Tue, 30 Apr 2019 09:54:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1731-1</guid>
+        <source url="https://discuss.iatistandard.org/t/approved-bug-fix-the-new-2-03-result-baseline-and-period-value-rules-are-not-backwards-compatible/1731.rss">(Approved) Bug fix: the new 2.03 result baseline and period value rules are not backwards compatible</source>
+      </item>
+  </channel>
+</rss>

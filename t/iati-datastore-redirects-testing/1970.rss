@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Datastore: Redirects Testing</title>
+    <link>https://discuss.iatistandard.org/t/iati-datastore-redirects-testing/1970</link>
+    <description>As you are aware, the IATI Tech Team has been working on delivering the new[ IATI Datastore](https://iatidatastore.iatistandard.org/). The tool is currently in a ‘pre-launch’ phase and will be fully released in the coming weeks.
+
+As per previous project updates, an important requirement is that queries that are made to the ‘old’ IATI Datastore API are redirected to the new one, with the equivalent query parameters used. This will ensure that any regular queries that utilise the existing tool can continue to return corresponding data from the new tool.
+
+**Please test Datastore API redirects**
+
+We have now implemented these redirects on a test version of the old Datastore and as a user of the existing tool, we would welcome your input in this testing phase, as we are aware that your organisation makes (or has previously made) regular queries to the old Datastore.
+
+* To test the redirect functionality, use a regular API query and substitute “[http://datastore.iatistandard.org](http://datastore.iatistandard.org/api/1/access/activity.csv?reporting-org=GB-COH-07291220&amp;stream=True)” for “http://104.248.175.88”.For example, to return all activities where Somalia is reported as a recipient-country, you could use this URL:
+http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=SO&amp;stream=true
+
+* To test the redirect, you should use the URL:
+[http://104.248.175.88](http://104.248.175.88/)[/api/1/access/activity.xml?recipient-country=SO&amp;stream=true](http://104.248.175.88/api/1/access/activity.xml?recipient-country=SO&amp;stream=true)
+
+Instead of immediately returning the results, you will be presented with the redirected query for the new Datastore. You should then run this query to check that the results correspond with your original regular query. Once the tool is fully launched, the redirected query will be run automatically, rather than just the URL being displayed.
+
+It is important to note that we **do not** expect the number of activities that are returned to be the same when an equivalent query is made using the two different tools. The new Datastore does not import data that is published at version 1 of the IATI Standard or datasets that do not conform to the IATI Schema.
+
+**Provide feedback by 15 June**
+
+Rather, we would appreciate your feedback on whether the parameters translate correctly, and that the data that is returned corresponds with these parameters as expected. Please provide your feedback by Friday 15th June.
+
+If you have any questions, please do not hesitate to ask.
+
+Many thanks,
+IATI Tech Team</description>
+    
+    <lastBuildDate>Tue, 09 Jun 2020 22:05:01 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-datastore-redirects-testing/1970.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Datastore: Redirects Testing</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>This looks great! Thanks, <a class="mention" href="/u/iati-techteam">@IATI-techteam</a>.</p>
+<aside class="quote no-group" data-post="1" data-topic="1970">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_2.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>Once the tool is fully launched, the redirected query will be run automatically, rather than just the URL being displayed.</p>
+</blockquote>
+</aside>
+<p>Minor thing, but I think it might help to make the test version behave the same way the live version is intended to work, i.e. perform the automatic redirect. That way, developers can fully test this in a staging environment, in order to spot any problems.</p>
+<p>You could still add a query parameter (<code>?dryrun=true</code> or equivalent) that puts the redirect URL in the body of the response (as it does now), rather than using headers. But I think it would be helpful to make the default behaviour match production.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-redirects-testing/1970/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-redirects-testing/1970/2</link>
+        <pubDate>Tue, 09 Jun 2020 17:18:35 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1970-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-redirects-testing/1970.rss">IATI Datastore: Redirects Testing</source>
+      </item>
+      <item>
+        <title>IATI Datastore: Redirects Testing</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>As you are aware, the IATI Tech Team has been working on delivering the new<a href="https://iatidatastore.iatistandard.org/"> IATI Datastore</a>. The tool is currently in a ‘pre-launch’ phase and will be fully released in the coming weeks.</p>
+<p>As per previous project updates, an important requirement is that queries that are made to the ‘old’ IATI Datastore API are redirected to the new one, with the equivalent query parameters used. This will ensure that any regular queries that utilise the existing tool can continue to return corresponding data from the new tool.</p>
+<p><strong>Please test Datastore API redirects</strong></p>
+<p>We have now implemented these redirects on a test version of the old Datastore and as a user of the existing tool, we would welcome your input in this testing phase, as we are aware that your organisation makes (or has previously made) regular queries to the old Datastore.</p>
+<ul>
+<li>
+<p>To test the redirect functionality, use a regular API query and substitute “<a href="http://datastore.iatistandard.org/api/1/access/activity.csv?reporting-org=GB-COH-07291220&amp;stream=True">http://datastore.iatistandard.org</a>” for “<a href="http://104.248.175.88">http://104.248.175.88</a>”.For example, to return all activities where Somalia is reported as a recipient-country, you could use this URL:<br>
+<a href="http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=SO&amp;stream=true">http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=SO&amp;stream=true</a></p>
+</li>
+<li>
+<p>To test the redirect, you should use the URL:<br>
+<a href="http://104.248.175.88/">http://104.248.175.88</a><a href="http://104.248.175.88/api/1/access/activity.xml?recipient-country=SO&amp;stream=true">/api/1/access/activity.xml?recipient-country=SO&amp;stream=true</a></p>
+</li>
+</ul>
+<p>Instead of immediately returning the results, you will be presented with the redirected query for the new Datastore. You should then run this query to check that the results correspond with your original regular query. Once the tool is fully launched, the redirected query will be run automatically, rather than just the URL being displayed.</p>
+<p>It is important to note that we <strong>do not</strong> expect the number of activities that are returned to be the same when an equivalent query is made using the two different tools. The new Datastore does not import data that is published at version 1 of the IATI Standard or datasets that do not conform to the IATI Schema.</p>
+<p><strong>Provide feedback by 15 June</strong></p>
+<p>Rather, we would appreciate your feedback on whether the parameters translate correctly, and that the data that is returned corresponds with these parameters as expected. Please provide your feedback by Friday 15th June.</p>
+<p>If you have any questions, please do not hesitate to ask.</p>
+<p>Many thanks,<br>
+IATI Tech Team</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-datastore-redirects-testing/1970/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-datastore-redirects-testing/1970/1</link>
+        <pubDate>Tue, 09 Jun 2020 15:19:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1970-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-datastore-redirects-testing/1970.rss">IATI Datastore: Redirects Testing</source>
+      </item>
+  </channel>
+</rss>

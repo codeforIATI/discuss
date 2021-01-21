@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Experience using Watson with IATI data?</title>
+    <link>https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404</link>
+    <description>A colleague suggested Watson might be a good, easy tool to use our IATI data. He says he saw a demo by the Watson team who downloaded our data and were able to do some basic stuff (graphs etc) within half-an-hour. They said some configuration work would be needed to do it properly (like filtering our data for language) but that it would be quite easy.
+
+ Has anyone tried it?  I intent to look at it, if their website lets me create an account for the free trial (no luck after 1 hour watching the &quot;processing your request&quot; wheel).</description>
+    
+    <lastBuildDate>Mon, 05 Sep 2016 16:32:05 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Experience using Watson with IATI data?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/brentphillips">@BrentPhillips</a> I had a quick look at the documentation for the new(ish) version 2.1 of Watson Analytics, and it looks like it still only accepts flat files (ie .csv, .xls etc) and not files with hierarchical data such as XML. This means that you’d need to run the XML data through a conversion process in order to produce the flat file prior to uploading to Watson. Once converted, I also found it really useful to only include the fields (columns) that I needed for the data viz, as once flattened, IATI produces a lot of columns! Also helps to assess data quality issues before it’s uploaded to Watson so you can fix or at least be aware. Watson provides a data quality score once your dataset is uploaded, but I haven’t found it that useful.</p>
+          <p><a href="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/8</link>
+        <pubDate>Mon, 05 Sep 2016 16:32:05 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-404-8</guid>
+        <source url="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404.rss">Experience using Watson with IATI data?</source>
+      </item>
+      <item>
+        <title>Experience using Watson with IATI data?</title>
+        <dc:creator><![CDATA[BrentPhillips]]></dc:creator>
+        <description><![CDATA[
+            <p>I just saw this thread. Any updates on using Watson to analyze IATI data?</p>
+<p>It would be useful to hear from the Watson team about how they’d ideally like to see IATI data prepped for input into Watson.</p>
+          <p><a href="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/7</link>
+        <pubDate>Sun, 04 Sep 2016 21:37:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-404-7</guid>
+        <source url="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404.rss">Experience using Watson with IATI data?</source>
+      </item>
+      <item>
+        <title>Experience using Watson with IATI data?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback Sarah!</p>
+          <p><a href="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/6</link>
+        <pubDate>Mon, 22 Feb 2016 16:41:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-404-6</guid>
+        <source url="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404.rss">Experience using Watson with IATI data?</source>
+      </item>
+      <item>
+        <title>Experience using Watson with IATI data?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>So I’ve had a play with the free version of Watson, and it can pretty much do the kind of stuff that Google Fusion can do, plus some more advanced dashboard and infographic type layouts. If your data is nice and clean, it’s quick to use to create basic charts and visualisations (this one is Global Giving’s disbursements to organisations in Kenya over time, for example).</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/e59c2d8f31944b1e5e871e4c210de8785b50f6e8.png" data-download-href="https://discuss.iatistandard.org/uploads/default/e59c2d8f31944b1e5e871e4c210de8785b50f6e8" title="Watson chart example.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/e59c2d8f31944b1e5e871e4c210de8785b50f6e8_2_690x320.png" width="690" height="320" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/e59c2d8f31944b1e5e871e4c210de8785b50f6e8_2_690x320.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/e59c2d8f31944b1e5e871e4c210de8785b50f6e8_2_1035x480.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/e59c2d8f31944b1e5e871e4c210de8785b50f6e8.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/e59c2d8f31944b1e5e871e4c210de8785b50f6e8_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Watson chart example.png</span><span class="informations">1349×626 65.6 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>and this one is a treemap of the organisations by value of disbursements:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/6fbc4a29c35c0cc82c6ba6d7b942678547123acd.png" data-download-href="https://discuss.iatistandard.org/uploads/default/6fbc4a29c35c0cc82c6ba6d7b942678547123acd" title="Watson heatmap example.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/6fbc4a29c35c0cc82c6ba6d7b942678547123acd_2_690x320.png" width="690" height="320" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/6fbc4a29c35c0cc82c6ba6d7b942678547123acd_2_690x320.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/6fbc4a29c35c0cc82c6ba6d7b942678547123acd_2_1035x480.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/6fbc4a29c35c0cc82c6ba6d7b942678547123acd.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/6fbc4a29c35c0cc82c6ba6d7b942678547123acd_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Watson heatmap example.png</span><span class="informations">1349×626 81.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>You can do more stuff with the full version I’m sure and I couldn’t see that it imports XML straight in, so you’d still have to convert to CSV or import to Cognos, SPSS or your own database and export into Watson.</p>
+          <p><a href="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/5</link>
+        <pubDate>Mon, 22 Feb 2016 15:32:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-404-5</guid>
+        <source url="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404.rss">Experience using Watson with IATI data?</source>
+      </item>
+      <item>
+        <title>Experience using Watson with IATI data?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi - I’ve just got a trial Watson account (took a while, they check out you are who you are).</p>
+          <p><a href="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/4</link>
+        <pubDate>Mon, 22 Feb 2016 10:51:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-404-4</guid>
+        <source url="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404.rss">Experience using Watson with IATI data?</source>
+      </item>
+      <item>
+        <title>Experience using Watson with IATI data?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Rory<br>
+Thanks for poking around. I haven’t been successful yet in creating an account (we’re looking into it) but I will try to explore the potential further with help from more tech-savy colleagues.  I look forward to hearing more about your own trials.<br>
+Hopefully others will see this post and also be curious to try Watson with their own organization’s data.</p>
+          <p><a href="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/3</link>
+        <pubDate>Wed, 17 Feb 2016 14:39:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-404-3</guid>
+        <source url="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404.rss">Experience using Watson with IATI data?</source>
+      </item>
+      <item>
+        <title>Experience using Watson with IATI data?</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>This sounds really interesting Yohanna - I’ve spent a few minutes here and there googling various combinations of “watson”, “open data”, “structured data”, “XML”, etc. and I can’t find any notable hits.</p>
+<p>Given <a href="https://www.youtube.com/watch?v=JiITninyH-k" rel="nofollow noopener">this demonstration</a> hoever, I can see how it could be a fantastic way for an organisation to use their IATI data to gain quick and easy insight into their operations.</p>
+<p>I’ll try to take some time to look into this for my own personal interest, and I’d be really keen to hear about any experiences you have.</p>
+          <p><a href="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/2</link>
+        <pubDate>Wed, 17 Feb 2016 14:16:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-404-2</guid>
+        <source url="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404.rss">Experience using Watson with IATI data?</source>
+      </item>
+      <item>
+        <title>Experience using Watson with IATI data?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>A colleague suggested Watson might be a good, easy tool to use our IATI data. He says he saw a demo by the Watson team who downloaded our data and were able to do some basic stuff (graphs etc) within half-an-hour. They said some configuration work would be needed to do it properly (like filtering our data for language) but that it would be quite easy.</p>
+<p>Has anyone tried it?  I intent to look at it, if their website lets me create an account for the free trial (no luck after 1 hour watching the “processing your request” wheel).</p>
+          <p><a href="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404/1</link>
+        <pubDate>Fri, 12 Feb 2016 18:15:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-404-1</guid>
+        <source url="https://discuss.iatistandard.org/t/experience-using-watson-with-iati-data/404.rss">Experience using Watson with IATI data?</source>
+      </item>
+  </channel>
+</rss>

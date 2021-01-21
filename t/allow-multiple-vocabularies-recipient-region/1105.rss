@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Allow multiple vocabularies- recipient region</title>
+    <link>https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105</link>
+    <description>**Issue:** 
+
+At the moment the IATI standard does **not** allow the use of multiple vocabularies **`recipient- region`** at transaction level. 
+
+The guidance currently states that @vocabulary attribute is only allowed to exist `0` or `1` for the following elements:
+
+   
+  iati-activities/iati-activity/transaction/recipient-region
+
+See [Activity Summary table](http://iatistandard.org/202/activity-standard/summary-table/) for reference.
+
+This has been flagged as an issue for users who want to classify their data using multiple vocabularies and also in line with the below recommendation in the guidance.
+
+**Question:**
+Given that the community agrees that multiple vocabularies should be allowed, there are two suggested options:
+1) Consider this as a bug fix and fix immediately.
+2) Issue should be taken forward at the next decimal upgrade.
+
+Please comment in response to this post.</description>
+    
+    <lastBuildDate>Thu, 02 Nov 2017 00:35:56 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Allow multiple vocabularies- recipient region</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the update.</p>
+<p>Would opt for 1. for the reason you mentioned.</p>
+<p>Some other notes to avoid confusion to other people (and maybe start a new discussion thats highly related):</p>
+<ul>
+<li>
+<p>The recipient-region code used in the example on <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/transaction/recipient-country/" rel="nofollow noopener">transaction/country</a> and <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/transaction/recipient-region/" rel="nofollow noopener">transaction/region</a> pages does not exist within the used vocabulary</p>
+</li>
+<li>
+<p>So a transaction can just have one sector, I guess for the reason that we don’t want to overcomplicate things and want to avoid multiple sectors with percentages per transaction? If so, then it also does not make sense for a transaction to have both a recipient-country AND recipient-region I think. How do I split financial commitment over these two while on activity level they <strong>together</strong> have to add up to 100%. According to the example and definition you can do that.</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105/4</link>
+        <pubDate>Thu, 02 Nov 2017 00:35:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1105-4</guid>
+        <source url="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105.rss">Allow multiple vocabularies- recipient region</source>
+      </item>
+      <item>
+        <title>Allow multiple vocabularies- recipient region</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/vincentvw">@VincentVW</a>  Thanks for the clarification on this on.</p>
+<p>For <code>sector</code>, the schema is correct and I have requested an update on <a href="https://github.com/younginnovations/aidstream/issues/114" rel="nofollow noopener">Aidstream</a> for this.  I have also updated the initial post not to confuse other people. Thanks again for spotting this.</p>
+<p>For recipient-region, however, at transaction level, the <code>recipient-region</code> can only occur once.<br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/8d3b5e93c106e9f02b12c9d032ddec5136702259.png" data-download-href="https://discuss.iatistandard.org/uploads/default/8d3b5e93c106e9f02b12c9d032ddec5136702259" title="image.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/8d3b5e93c106e9f02b12c9d032ddec5136702259_2_690x74.png" alt="image" width="690" height="74" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/8d3b5e93c106e9f02b12c9d032ddec5136702259_2_690x74.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/8d3b5e93c106e9f02b12c9d032ddec5136702259_2_1035x111.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/8d3b5e93c106e9f02b12c9d032ddec5136702259_2_1380x148.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/8d3b5e93c106e9f02b12c9d032ddec5136702259_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1699×184 16.6 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>As different vocabularies can be used for <code>recipient region</code> my initial question is still valid. I can see why there might not be many cases where organisation would classify their data at transaction level using multiple vocabularies, however, the scheme should allow this and be consistent at both activity and transaction level.</p>
+          <p><a href="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105/3</link>
+        <pubDate>Wed, 01 Nov 2017 11:14:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1105-3</guid>
+        <source url="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105.rss">Allow multiple vocabularies- recipient region</source>
+      </item>
+      <item>
+        <title>Allow multiple vocabularies- recipient region</title>
+        <dc:creator><![CDATA[VincentVW]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1105">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/petyakangalova/40/175_1.png" class="avatar"> petyakangalova:</div>
+<blockquote>
+<p>The guidance currently states that <span class="mention">@vocabulary</span> attribute is only allowed to exist 0 or 1 for the following elements</p>
+</blockquote>
+</aside>
+<p>I think the guidance is misread here and there is no issue.</p>
+<p>The summary table says the <span class="mention">@vocabulary</span> attribute can be used 0 to 1 times <strong>per element</strong> of sector and recipient-region. It also says the sector and recipient-region element can be reported 0 to many times (with some additional conditions). Hence you can report in multiple vocabularies by repeating the sector / recipient-region elements for the different vocabularies.</p>
+          <p><a href="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105/2</link>
+        <pubDate>Fri, 27 Oct 2017 11:51:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1105-2</guid>
+        <source url="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105.rss">Allow multiple vocabularies- recipient region</source>
+      </item>
+      <item>
+        <title>Allow multiple vocabularies- recipient region</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Issue:</strong></p>
+<p>At the moment the IATI standard does <strong>not</strong> allow the use of multiple vocabularies <strong><code>recipient- region</code></strong> at transaction level.</p>
+<p>The guidance currently states that <span class="mention">@vocabulary</span> attribute is only allowed to exist <code>0</code> or <code>1</code> for the following elements:</p>
+<p>iati-activities/iati-activity/transaction/recipient-region</p>
+<p>See <a href="http://iatistandard.org/202/activity-standard/summary-table/">Activity Summary table</a> for reference.</p>
+<p>This has been flagged as an issue for users who want to classify their data using multiple vocabularies and also in line with the below recommendation in the guidance.</p>
+<p><strong>Question:</strong><br>
+Given that the community agrees that multiple vocabularies should be allowed, there are two suggested options:</p>
+<ol>
+<li>Consider this as a bug fix and fix immediately.</li>
+<li>Issue should be taken forward at the next decimal upgrade.</li>
+</ol>
+<p>Please comment in response to this post.</p>
+          <p><a href="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105/1</link>
+        <pubDate>Fri, 27 Oct 2017 10:46:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1105-1</guid>
+        <source url="https://discuss.iatistandard.org/t/allow-multiple-vocabularies-recipient-region/1105.rss">Allow multiple vocabularies- recipient region</source>
+      </item>
+  </channel>
+</rss>

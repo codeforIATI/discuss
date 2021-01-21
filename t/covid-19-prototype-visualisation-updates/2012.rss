@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>COVID-19 prototype visualisation updates</title>
+    <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012</link>
+    <description>I hope everyone is doing OK during these difficult times!
+
+On behalf of the [Grand Bargain transparency workstream](https://interagencystandingcommittee.org/greater-transparency), we have made some further improvements to [the COVID-19 prototype visualisation](https://covid19.humportal.org/activities/) (see [original post here](https://discuss.iatistandard.org/t/new-covid-19-funding-data-visualisation-launched/1969)) and wanted to share these with the IATI community.
+
+The number of COVID-19 activities has now significantly increased to over 5000 -- the visualisation now automatically updates every hour.
+
+We&#39;ve recently added the following additional functionality:
+
+* summarise by commitments or disbursements
+* breakdown by reporting organisation, country or sector
+* filter by sector
+* download transactions in Excel, expanded out by country and sector (e.g. where a single transaction relates to multiple countries or sectors) - allowing for detailed analysis
+* share / save the current view based on selected filters (the URL is now updated)
+
+*(NB most of the improvements refer to the **activities** tab, which uses IATI data)*
+
+I wanted to talk through some of this work and ask for feedback from the IATI community regarding whether this is a good way of reprocessing and presenting the data.
+
+---
+
+## Summarising by commitments / disbursements
+
+![image|690x277, 75%](upload://fp7oEdBAtPCptQTU0P3HMuIcKka.png)  
+*[Total commitments for activities in Liberia, by reporting organisation](https://covid19.humportal.org/activities/?country=LR&amp;summary=commitments)*
+
+Initially, we just showed a list of projects, with a summary at the top showing the [number of activities](https://covid19.humportal.org/activities) for each reporting organisation or country. We added new functionality to roll up by [commitments](https://covid19.humportal.org/activities?summary=commitments) or [disbursements](https://covid19.humportal.org/activities?summary=disbursements). In order to do this, we had to undertake some reprocessing of the data:
+
+* all values are converted to USD according to the `value-date`, [using this dataset](https://exchangerates.codeforiati.org/) (with rates sourced from the OECD and Federal Reserve)
+* where there are multiple sectors or countries on an activity, transactions are broken down into multiple rows for each sector/country, with the transaction value proportionate to the sector/country percentages.
+
+The [resulting data is available in Excel here](https://github.com/markbrough/covid19-data/blob/gh-pages/xlsx/traceability/transactions_sectors_countries_regions.xlsx?raw=true), in case you want to take a look.
+
+### Double-counting
+
+![image|660x5075 ](upload://teaKBRQlAZo0MsgB9kNuBRZCyaX.png) 
+*Warning if results are likely to contain double-counting*
+
+We don&#39;t currently handle double-counting in this dataset or visualisation, other than to alert the user when there is a risk of double-counting. However, there are a few ideas about how this could be handled:
+
+* allow / encourage users to select to view only a particular type of organisation
+  * e.g. there is less likely to be double-counting when looking only at Governments, though there will still be some double-counting in cases of delegated cooperation
+* show net disbursements instead of disbursements and net commitments instead of commitments
+  * i.e. disbursements MINUS incoming funds and commitments MINUS incoming commitments
+  * however, this will only work where organisations are reporting incoming funds; many large organisations are not doing so.
+* comparing organisation IDs or (harder!) organisation names -- e.g. if Germany is disbursing to UNDP, we could try to subtract that amount from UNDP&#39;s total
+   * this could get a bit messy!
+
+We would be very keen to hear if anyone has suggestions on the best way to proceed here!
+
+-----
+
+## Sectors
+
+![image|690x319, 75%](upload://v8475vlW4F54A6zcHtnXlEecM6t.png) 
+*[Total commitments by sector](https://covid19.humportal.org/activities/?summary=commitments&amp;breakdown=sector)*
+
+It&#39;s also now possible to summarise the data by sectors (we are only using the DAC codes here). Again, as shown in the image above, this summary may currently lead to double counting where more than one reporting organisation is included.
+
+Perhaps it would be useful to be able to summarise by multiple sectors, and to select whole categories at once (e.g. all health or education sectors) -- any other preferences?
+
+---
+## Downloads
+
+We have added a series of additional download options. On the activities tab, the blue download button now allow you to download [transactions broken down by sector and country/region](https://github.com/markbrough/covid19-data/blob/gh-pages/traceability/transactions_sectors_countries_regions.xlsx?raw=true). For this dataset, an additional column has been added (`value_USD_proportionate`) which makes it easy to put a pivot table on top of the dataset. This column is calculated by multiplying the `value_USD` column by the proportion allocated to this sector and this country/region.
+
+For example: a transaction for USD 100, allocated 40% health and 60% education; 50% to Kenya and 50% to Uganda would be output as:
+
+value_USD | sector | country_region | value_USD_proportionate
+--- | --- | --- | ---
+100 | health | Kenya | 20
+100 | health | Uganda | 20
+100 | education | Kenya | 30
+100 | education | Uganda | 30
+
+In the dataset, the `sector` and `country_region` are output with the relevant sector or country codes, rather than the full sector/country names, in order to reduce the filesize.
+
+---
+
+## Other plans and feedback
+
+We are working on a few more improvements to the visualisation at the moment, for example to include the ability to filter by grant or loan. We&#39;d be very keen to hear from anyone who might have further suggestions on how we could best present this data.
+
+You are very welcome to add feedback here, or alternatively email us at: humportal@devinit.org</description>
+    
+    <lastBuildDate>Mon, 07 Sep 2020 12:09:21 +0000</lastBuildDate>
+    <category>COVID-19</category>
+    <atom:link href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>COVID-19 prototype visualisation updates</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/sjohns">@SJohns</a>, thanks for the feedback and apologies for taking a few days to reply!</p>
+<p>I am not sure this answers your question but:</p>
+<ul>
+<li>On the <strong>contributions</strong> tab (containing FTS data), you can <a href="https://github.com/markbrough/covid19-data/blob/gh-pages/xlsx/contributions.xlsx?raw=true" rel="nofollow noopener">download all contributions in Excel</a> - you can then see the flow you linked to above. However, this list only includes the first level of contributions, and wouldn’t include any child flows as you can sometimes see in FTS. This is done to avoid double-counting in the visualisation, but when I looked at the data before, there didn’t appear to be an enormous amount of child flows anyway.</li>
+<li>On the <strong>activities</strong> tab (containing IATI data), you can do the same thing if you <a href="https://github.com/markbrough/covid19-data/blob/gh-pages/traceability/transactions_sectors_countries_regions.xlsx?raw=true" rel="nofollow noopener">download the transactional data</a> – this will involve some double-counting, but I did do quite a lot of work to clean up provider/receiver organisation names where possible. It would be super interesting to be able to see the flow from organisations to each other, but this is quite difficult in most cases given a lack of a consistent use of organisation IDs. Also: many of the multilaterals publishing to IATI do not currently publish the names of their implementing organisations (<a href="https://covid19.humportal.org/flows?orgtype=40&amp;organisation=XM-DAC-41122" rel="nofollow noopener">see e.g. the flows tab</a> - scroll down; you can change to look at different multilaterals).</li>
+</ul>
+<p>But perhaps what you are asking for is something different? I <strong>think</strong> the answer to your question is basically that this is a limitation of the data. But it is also something that we could look to build out in the interface, where such data is available?</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/10</link>
+        <pubDate>Mon, 07 Sep 2020 12:09:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2012-10</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+      </item>
+      <item>
+        <title>COVID-19 prototype visualisation updates</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Really like how this portal is shaping up, and the links through to the original data/sources.</p>
+<p>I have a user story to share with you from one of my colleagues:</p>
+<p><strong>As an</strong> humanitarian finance analyst, <strong>I would like to</strong> access and download data as CSV on funding from an individual donor going to local and national implementers <strong>so that I</strong> can monitor the percentage of funding reaching local and national implementers against the Grand Bargain commitments.</p>
+<p>This ask is going further than the current Contributions tab, and more like the flow functionality in FTS where you can see the parent (funder), the intermediary (ie UNICEF) and the implementer (hopefully!): <a href="https://fts.unocha.org/flows/217289?destination=emergencies/911/flows/2020" rel="nofollow noopener">https://fts.unocha.org/flows/217289?destination=emergencies/911/flows/2020</a></p>
+<p>I think this visualisation would be make it easier to achieve, especailly as FTS only allows downloading of flow data as PDF.</p>
+<p>Would it be possible or is the data limiting this functionality? I noticed on the Contributions tab that WHO/ICRC just have a statement in the implementer column to say it’s going through local RCRC (for ICRC) or to countries, rather than give detail.</p>
+<p>Thanks for considering this, and great work so far - really impressed!</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/9</link>
+        <pubDate>Wed, 02 Sep 2020 14:51:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2012-9</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+      </item>
+      <item>
+        <title>COVID-19 prototype visualisation updates</title>
+        <dc:creator><![CDATA[Sarah_Scholz]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Mark - the updates look great! The new filter options and value_USD_proportionate field seem very useful. On the double counting issue, USAID’s <a href="https://explorer.usaid.gov/donor" rel="nofollow noopener">Development Cooperation Landscape tool</a> went with the first option you present, visualizing the data disaggregated by donor type to reduce double counting. The other two options might not be feasible, given the current variability of data quality published to IATI.</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/8</link>
+        <pubDate>Tue, 01 Sep 2020 20:30:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2012-8</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+      </item>
+      <item>
+        <title>COVID-19 prototype visualisation updates</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>We make use of <a href="https://postmarkapp.com/" rel="nofollow noopener">https://postmarkapp.com/</a> for transactional messaging (e-mail that is).</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/7</link>
+        <pubDate>Fri, 28 Aug 2020 12:35:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2012-7</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+      </item>
+      <item>
+        <title>COVID-19 prototype visualisation updates</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-username="bjwebb" data-post="5" data-topic="2012">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bjwebb/40/452_2.png" class="avatar"> bjwebb:</div>
+<blockquote>
+<p>we’re exploring email notifications f</p>
+</blockquote>
+</aside>
+<p><a href="https://blogtrottr.com/pricing/" rel="nofollow noopener">https://blogtrottr.com/pricing/</a> looks pretty affordable?</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/6</link>
+        <pubDate>Fri, 28 Aug 2020 12:34:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2012-6</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+      </item>
+      <item>
+        <title>COVID-19 prototype visualisation updates</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>I use Blogtrottr, and find it useful, but I’m wary of pointing people to it, as the ads are rather low quality (dubious diet pills etc.) and don’t look good next to your content in the email.</p>
+<p>(Interested in what you choose for this, as we’re exploring email notifications for one of our services).</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/5</link>
+        <pubDate>Thu, 27 Aug 2020 15:18:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2012-5</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+      </item>
+      <item>
+        <title>COVID-19 prototype visualisation updates</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>That’s a great idea, <a class="mention" href="/u/siemvaessen">@siemvaessen</a>. Maybe a RSS feed of new projects, perhaps for particular countries? I guess that would be straightforward to implement, perhaps also with a button to deliver that feed to email via something like Blogtrottr?<br>
+<a href="https://blogtrottr.com/" class="onebox" target="_blank" rel="nofollow noopener">https://blogtrottr.com/</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/4</link>
+        <pubDate>Thu, 27 Aug 2020 13:34:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2012-4</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+      </item>
+      <item>
+        <title>COVID-19 prototype visualisation updates</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>Could users sign up to some feed/email/alert perhaps? Would be a handy feature.</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/3</link>
+        <pubDate>Thu, 27 Aug 2020 12:31:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2012-3</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+      </item>
+      <item>
+        <title>COVID-19 prototype visualisation updates</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I’ve only had a quick glance, but this is looking great. I love that everything is linkable (e.g. <a href="https://covid19.humportal.org/activities/?country=LR&amp;summary=commitments" rel="nofollow noopener">Total commitments for activities in Liberia, by reporting organisation</a>) – that’s very handy for sharing.</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/2</link>
+        <pubDate>Wed, 26 Aug 2020 08:17:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2012-2</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+      </item>
+      <item>
+        <title>COVID-19 prototype visualisation updates</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I hope everyone is doing OK during these difficult times!</p>
+<p>On behalf of the <a href="https://interagencystandingcommittee.org/greater-transparency" rel="nofollow noopener">Grand Bargain transparency workstream</a>, we have made some further improvements to <a href="https://covid19.humportal.org/activities/" rel="nofollow noopener">the COVID-19 prototype visualisation</a> (see <a href="https://discuss.iatistandard.org/t/new-covid-19-funding-data-visualisation-launched/1969">original post here</a>) and wanted to share these with the IATI community.</p>
+<p>The number of COVID-19 activities has now significantly increased to over 5000 – the visualisation now automatically updates every hour.</p>
+<p>We’ve recently added the following additional functionality:</p>
+<ul>
+<li>summarise by commitments or disbursements</li>
+<li>breakdown by reporting organisation, country or sector</li>
+<li>filter by sector</li>
+<li>download transactions in Excel, expanded out by country and sector (e.g. where a single transaction relates to multiple countries or sectors) - allowing for detailed analysis</li>
+<li>share / save the current view based on selected filters (the URL is now updated)</li>
+</ul>
+<p><em>(NB most of the improvements refer to the <strong>activities</strong> tab, which uses IATI data)</em></p>
+<p>I wanted to talk through some of this work and ask for feedback from the IATI community regarding whether this is a good way of reprocessing and presenting the data.</p>
+<hr>
+<h2>Summarising by commitments / disbursements</h2>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/6bf78502316c6ed65d339fa8a98504749e1065ba.png" data-download-href="https://discuss.iatistandard.org/uploads/default/6bf78502316c6ed65d339fa8a98504749e1065ba" title="image"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/6bf78502316c6ed65d339fa8a98504749e1065ba_2_517x207.png" alt="image" data-base62-sha1="fp7oEdBAtPCptQTU0P3HMuIcKka" width="517" height="207" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/6bf78502316c6ed65d339fa8a98504749e1065ba_2_517x207.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/6bf78502316c6ed65d339fa8a98504749e1065ba_2_775x310.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/6bf78502316c6ed65d339fa8a98504749e1065ba_2_1034x414.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/6bf78502316c6ed65d339fa8a98504749e1065ba_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image</span><span class="informations">1115×449 38.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div><br>
+<em><a href="https://covid19.humportal.org/activities/?country=LR&amp;summary=commitments" rel="nofollow noopener">Total commitments for activities in Liberia, by reporting organisation</a></em></p>
+<p>Initially, we just showed a list of projects, with a summary at the top showing the <a href="https://covid19.humportal.org/activities" rel="nofollow noopener">number of activities</a> for each reporting organisation or country. We added new functionality to roll up by <a href="https://covid19.humportal.org/activities?summary=commitments" rel="nofollow noopener">commitments</a> or <a href="https://covid19.humportal.org/activities?summary=disbursements" rel="nofollow noopener">disbursements</a>. In order to do this, we had to undertake some reprocessing of the data:</p>
+<ul>
+<li>all values are converted to USD according to the <code>value-date</code>, <a href="https://exchangerates.codeforiati.org/" rel="nofollow noopener">using this dataset</a> (with rates sourced from the OECD and Federal Reserve)</li>
+<li>where there are multiple sectors or countries on an activity, transactions are broken down into multiple rows for each sector/country, with the transaction value proportionate to the sector/country percentages.</li>
+</ul>
+<p>The <a href="https://github.com/markbrough/covid19-data/blob/gh-pages/xlsx/traceability/transactions_sectors_countries_regions.xlsx?raw=true" rel="nofollow noopener">resulting data is available in Excel here</a>, in case you want to take a look.</p>
+<h3>Double-counting</h3>
+<p><img src="https://discuss.iatistandard.org/uploads/default/original/1X/ccd933136de6a6abf4afea29a1258ca270ca9a6f.png" alt="image|660x5075" data-base62-sha1="teaKBRQlAZo0MsgB9kNuBRZCyaX" width="660" height="50"><br>
+<em>Warning if results are likely to contain double-counting</em></p>
+<p>We don’t currently handle double-counting in this dataset or visualisation, other than to alert the user when there is a risk of double-counting. However, there are a few ideas about how this could be handled:</p>
+<ul>
+<li>allow / encourage users to select to view only a particular type of organisation
+<ul>
+<li>e.g. there is less likely to be double-counting when looking only at Governments, though there will still be some double-counting in cases of delegated cooperation</li>
+</ul>
+</li>
+<li>show net disbursements instead of disbursements and net commitments instead of commitments
+<ul>
+<li>i.e. disbursements MINUS incoming funds and commitments MINUS incoming commitments</li>
+<li>however, this will only work where organisations are reporting incoming funds; many large organisations are not doing so.</li>
+</ul>
+</li>
+<li>comparing organisation IDs or (harder!) organisation names – e.g. if Germany is disbursing to UNDP, we could try to subtract that amount from UNDP’s total
+<ul>
+<li>this could get a bit messy!</li>
+</ul>
+</li>
+</ul>
+<p>We would be very keen to hear if anyone has suggestions on the best way to proceed here!</p>
+<hr>
+<h2>Sectors</h2>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/da2cd1d843969888983e28afe6774fa018b3c291.png" data-download-href="https://discuss.iatistandard.org/uploads/default/da2cd1d843969888983e28afe6774fa018b3c291" title="image"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/da2cd1d843969888983e28afe6774fa018b3c291_2_517x239.png" alt="image" data-base62-sha1="v8475vlW4F54A6zcHtnXlEecM6t" width="517" height="239" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/da2cd1d843969888983e28afe6774fa018b3c291_2_517x239.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/da2cd1d843969888983e28afe6774fa018b3c291_2_775x358.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/da2cd1d843969888983e28afe6774fa018b3c291_2_1034x478.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/da2cd1d843969888983e28afe6774fa018b3c291_2_10x10.png"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image</span><span class="informations">1105×512 57.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg></div></a></div><br>
+<em><a href="https://covid19.humportal.org/activities/?summary=commitments&amp;breakdown=sector" rel="nofollow noopener">Total commitments by sector</a></em></p>
+<p>It’s also now possible to summarise the data by sectors (we are only using the DAC codes here). Again, as shown in the image above, this summary may currently lead to double counting where more than one reporting organisation is included.</p>
+<p>Perhaps it would be useful to be able to summarise by multiple sectors, and to select whole categories at once (e.g. all health or education sectors) – any other preferences?</p>
+<hr>
+<h2>Downloads</h2>
+<p>We have added a series of additional download options. On the activities tab, the blue download button now allow you to download <a href="https://github.com/markbrough/covid19-data/blob/gh-pages/traceability/transactions_sectors_countries_regions.xlsx?raw=true" rel="nofollow noopener">transactions broken down by sector and country/region</a>. For this dataset, an additional column has been added (<code>value_USD_proportionate</code>) which makes it easy to put a pivot table on top of the dataset. This column is calculated by multiplying the <code>value_USD</code> column by the proportion allocated to this sector and this country/region.</p>
+<p>For example: a transaction for USD 100, allocated 40% health and 60% education; 50% to Kenya and 50% to Uganda would be output as:</p>
+<div class="md-table">
+<table>
+<thead>
+<tr>
+<th>value_USD</th>
+<th>sector</th>
+<th>country_region</th>
+<th>value_USD_proportionate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>health</td>
+<td>Kenya</td>
+<td>20</td>
+</tr>
+<tr>
+<td>100</td>
+<td>health</td>
+<td>Uganda</td>
+<td>20</td>
+</tr>
+<tr>
+<td>100</td>
+<td>education</td>
+<td>Kenya</td>
+<td>30</td>
+</tr>
+<tr>
+<td>100</td>
+<td>education</td>
+<td>Uganda</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+</div><p>In the dataset, the <code>sector</code> and <code>country_region</code> are output with the relevant sector or country codes, rather than the full sector/country names, in order to reduce the filesize.</p>
+<hr>
+<h2>Other plans and feedback</h2>
+<p>We are working on a few more improvements to the visualisation at the moment, for example to include the ability to filter by grant or loan. We’d be very keen to hear from anyone who might have further suggestions on how we could best present this data.</p>
+<p>You are very welcome to add feedback here, or alternatively email us at: <a href="mailto:humportal@devinit.org">humportal@devinit.org</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012/1</link>
+        <pubDate>Wed, 26 Aug 2020 07:59:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-2012-1</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-prototype-visualisation-updates/2012.rss">COVID-19 prototype visualisation updates</source>
+      </item>
+  </channel>
+</rss>

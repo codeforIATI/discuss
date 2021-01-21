@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Use of CLv1 and CLv2</title>
+    <link>https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704</link>
+    <description>With the upcoming deprecation of version 1 of the IATI Standard there&#39;s a question over what happens to codelist versions.
+
+Currently there are [three types](http://reference.iatistandard.org/203/codelists-guides/codelist-api/): CLv1, CLv2 and CLv3. Each codelist version has slightly different formatting, and can be accessed by the codelist api.
+
+Please can share if you are using version CLv1 and/or CLv2. If yes, do you have plans to change onto CLv3 before/once version 1 of the IATI Standard has been deprecated? And if not, why not?
+
+I&#39;m reaching out to the techies here. Please do let me know and do share with others.
+
+@andylolz @markbrough @siemvaessen @rolfkleef @matmaxgeds @bibhusan @AkermanMartin @shi @Eimis @Herman @JohnAdams @stevieflow @stolk</description>
+    
+    <lastBuildDate>Thu, 11 Apr 2019 12:54:29 +0000</lastBuildDate>
+    <category>Codelists</category>
+    <atom:link href="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Use of CLv1 and CLv2</title>
+        <dc:creator><![CDATA[siemvaessen]]></dc:creator>
+        <description><![CDATA[
+            <p>OIPA makes use of CLv1. Will add impact of moving to CLv3 in <a href="https://github.com/zimmerman-zimmerman/OIPA/projects/3" rel="nofollow noopener">Maintenance Board</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/6</link>
+        <pubDate>Thu, 11 Apr 2019 12:54:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1704-6</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704.rss">Use of CLv1 and CLv2</source>
+      </item>
+      <item>
+        <title>Use of CLv1 and CLv2</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="1704">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/495_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>If IATI v1.0x codelists were available in CLv3, I would always use that.</p>
+</blockquote>
+</aside>
+<p>I’ve just sent some pull requests (<a href="https://github.com/IATI/IATI-Codelists/pull/202" rel="nofollow noopener">here</a> and <a href="https://github.com/IATI/IATI-Codelists/pull/203" rel="nofollow noopener">here</a>) to make IATI v1.0x codelists available in CLv3. I realise v1.0x is due to be deprecated, and publishers should certainly be discouraged from publishing v1.0x data. But v1.0x data will probably still be floating around for a bit longer, so we should still endeavour to make it easy <strong>to use</strong>.</p>
+<p>Also: I wonder if you have server monitoring set up, so you can see how often different codelist versions are downloaded? That would help quantify how widely used the different codelist versions are, but would probably also provide generally useful analytics.</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/5</link>
+        <pubDate>Tue, 09 Apr 2019 10:23:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1704-5</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704.rss">Use of CLv1 and CLv2</source>
+      </item>
+      <item>
+        <title>Use of CLv1 and CLv2</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Amy,<br>
+Thanks for asking. We only use CLv3.</p>
+<p>Regards<br>
+Herman</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/4</link>
+        <pubDate>Tue, 09 Apr 2019 08:38:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1704-4</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704.rss">Use of CLv1 and CLv2</source>
+      </item>
+      <item>
+        <title>Use of CLv1 and CLv2</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I always use CLv2. That’s because:</p>
+<ul>
+<li>IATI v2.0x codelists are available in CLv1, CLv2 and CLv3</li>
+<li>IATI v1.0x codelists are available in CLv1 and CLv2</li>
+</ul>
+<p>So CLv2 is the most recent codelist API version that’s universally available.</p>
+<p>I guess I’ll continue to do so after IATI v1.0x is deprecated, because I will probably still sometimes need to parse v1.0x data.</p>
+<p>If IATI v1.0x codelists were available in CLv3, I would always use that. <a href="https://github.com/IATI/IATI-Codelists/issues/153" rel="nofollow noopener">Here is a ticket about this</a>.</p>
+<aside class="quote no-group" data-post="2" data-topic="1704">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/matmaxgeds/40/498_1.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>but wanting to say thanks for the good process <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+</blockquote>
+</aside>
+<p>+1.</p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/3</link>
+        <pubDate>Fri, 05 Apr 2019 14:41:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1704-3</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704.rss">Use of CLv1 and CLv2</source>
+      </item>
+      <item>
+        <title>Use of CLv1 and CLv2</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>V3 only here - but wanting to say thanks for the good process <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/2</link>
+        <pubDate>Fri, 05 Apr 2019 14:31:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1704-2</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704.rss">Use of CLv1 and CLv2</source>
+      </item>
+      <item>
+        <title>Use of CLv1 and CLv2</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>With the upcoming deprecation of version 1 of the IATI Standard there’s a question over what happens to codelist versions.</p>
+<p>Currently there are <a href="http://reference.iatistandard.org/203/codelists-guides/codelist-api/">three types</a>: CLv1, CLv2 and CLv3. Each codelist version has slightly different formatting, and can be accessed by the codelist api.</p>
+<p>Please can share if you are using version CLv1 and/or CLv2. If yes, do you have plans to change onto CLv3 before/once version 1 of the IATI Standard has been deprecated? And if not, why not?</p>
+<p>I’m reaching out to the techies here. Please do let me know and do share with others.</p>
+<p><a class="mention" href="/u/andylolz">@andylolz</a> <a class="mention" href="/u/markbrough">@markbrough</a> <a class="mention" href="/u/siemvaessen">@siemvaessen</a> <a class="mention" href="/u/rolfkleef">@rolfkleef</a> <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> <a class="mention" href="/u/bibhusan">@bibhusan</a> <a class="mention" href="/u/akermanmartin">@AkermanMartin</a> <a class="mention" href="/u/shi">@shi</a> <a class="mention" href="/u/eimis">@Eimis</a> <a class="mention" href="/u/herman">@Herman</a> <a class="mention" href="/u/johnadams">@JohnAdams</a> <a class="mention" href="/u/stevieflow">@stevieflow</a> <a class="mention" href="/u/stolk">@stolk</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704/1</link>
+        <pubDate>Fri, 05 Apr 2019 14:04:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1704-1</guid>
+        <source url="https://discuss.iatistandard.org/t/use-of-clv1-and-clv2/1704.rss">Use of CLv1 and CLv2</source>
+      </item>
+  </channel>
+</rss>

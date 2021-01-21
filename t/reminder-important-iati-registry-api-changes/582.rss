@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Reminder: Important IATI Registry API changes</title>
+    <link>https://discuss.iatistandard.org/t/reminder-important-iati-registry-api-changes/582</link>
+    <description>Just a reminder following our [post on the aidtransparency.net website](http://www.aidtransparency.net/news/important-changes-to-the-iati-registry-api) in early August that the [IATI Registry](https://iatiregistry.org/) will be upgraded in upgraded in the week beginning Monday 10 October 2016 and will result in changes to the API. Working with our suppliers, we will update the CKAN software and fix over 250 bugs, improving your experience of the Registry.
+
+Users of the IATI Registry API are advised to:
+
+* Understand what’s changing: See our list below of the most important technical changes to the API’s functionality and responses. View the full list of changes on the CKAN changelog. (Note we are upgrading from CKAN version 2.1.4 to version 2.5.2);
+
+* Test your application: use our new staging site to understand the adjustments that you may need to make to ensure you are not adversely affected by the upgrade. Data from the current live registry will be replicated on this staging site fortnightly from Tuesday 16th August. At this point, any changes made to the staging site will be overwritten with live data;
+
+* Let us know you’re an API user so we can update you with important information during the upgrade process. Email the IATI Technical Team now.
+
+If you do not use the API then no action is needed, as this upgrade will result in virtually no changes to the way that users interact with the IATI Registry website. Once the upgrade is completed, all publishers’ data will be preserved.
+
+We will provide advance notice of any downtime during the upgrade and in the meantime, work closely with our suppliers to ensure that the process goes smoothly. Please email the IATI Technical Team for more information.
+
+
+## Technical API changes to highlight:
+
+* `package_purge` API action added (added in CKAN v2.5.2).
+ 
+* `revision_list` API action now has paging (changed in CKAN v2.5.1).
+
+* The `package_show` API call does not return the tracking_summary, keys in the dataset or resources by default any more (changed in CKAN v2.4).
+
+* `group_show` and `organization_show` API calls no longer return the datasets by default. Users of this API call will need to pass `include_datasets=True` to include datasets in the response (changed in CKAN v2.4).
+
+* The `vocabulary_show` and `tag_show` API calls no longer returns the packages key – i.e. datasets that use the vocabulary or tag. However tag_show now has an include_datasets option (changed in CKAN v2.4).
+
+* The action API (v3) no longer returns the full help for the action on each request. It rather includes a link to a separate call to get the action help string (changed in CKAN v2.3).
+
+* Ability for users to re-generate their own API keys (added in CKAN v2.3).
+
+* Able to list private datasets via the API (added in CKAN v2.3).
+
+* The action API (v3) no longer returns the full help for the action on each request. It rather includes a link to a separate call to get the action help string (changed in CKAN v2.3).
+
+* The `user_show` API call does not return the datasets, `num_followers` or activity keys by default any more (changed in CKAN v2.3).
+
+* `package_search` now returns results with custom schemas applied like package_show, ause_default_schema parameter was added to request the old behaviour (changed in CKAN v2.2).</description>
+    
+    <lastBuildDate>Fri, 07 Oct 2016 15:49:06 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/reminder-important-iati-registry-api-changes/582.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Reminder: Important IATI Registry API changes</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>The <a href="https://www.iatiregistry.org/">IATI Registry</a> will be read-only on Wednesday 12 October at 08:00 - 14:00 (UK time), due to a <a href="http://www.aidtransparency.net/news/important-changes-to-the-iati-registry-api">scheduled upgrade</a>. During this time, IATI publishers will not be able to edit or upload URL links to their datasets.</p>
+<p>However, the API and website will be readable and any changes that publishers make to their data can still be viewed through existing URL links. Once the upgrade is complete, all data on the Registry will be preserved and users will experience virtually no changes to the way they interact with the website.</p>
+<p><strong>API users - action may be required</strong><br>
+IATI Registry API users are reminded to read important changes (<a href="//discuss.iatistandard.org/t/reminder-important-iati-registry-api-changes/582?u=dalepotter">see above</a>) resulting from this upgrade and take action if required.</p>
+<p>The IATI Technical Team will be working closely with our suppliers to ensure that this upgrade goes smoothly. Together, we will fix over 250 bugs and update the underlying CKAN software to improve your experience of the Registry.</p>
+<p>If you require any further information, please do get in touch with us by emailing <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> or by posting below.</p>
+          <p><a href="https://discuss.iatistandard.org/t/reminder-important-iati-registry-api-changes/582/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reminder-important-iati-registry-api-changes/582/2</link>
+        <pubDate>Fri, 07 Oct 2016 15:49:06 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-582-2</guid>
+        <source url="https://discuss.iatistandard.org/t/reminder-important-iati-registry-api-changes/582.rss">Reminder: Important IATI Registry API changes</source>
+      </item>
+      <item>
+        <title>Reminder: Important IATI Registry API changes</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Just a reminder following our <a href="http://www.aidtransparency.net/news/important-changes-to-the-iati-registry-api">post on the aidtransparency.net website</a> in early August that the <a href="https://iatiregistry.org/">IATI Registry</a> will be upgraded in upgraded in the week beginning Monday 10 October 2016 and will result in changes to the API. Working with our suppliers, we will update the CKAN software and fix over 250 bugs, improving your experience of the Registry.</p>
+<p>Users of the IATI Registry API are advised to:</p>
+<ul>
+<li>
+<p>Understand what’s changing: See our list below of the most important technical changes to the API’s functionality and responses. View the full list of changes on the CKAN changelog. (Note we are upgrading from CKAN version 2.1.4 to version 2.5.2);</p>
+</li>
+<li>
+<p>Test your application: use our new staging site to understand the adjustments that you may need to make to ensure you are not adversely affected by the upgrade. Data from the current live registry will be replicated on this staging site fortnightly from Tuesday 16th August. At this point, any changes made to the staging site will be overwritten with live data;</p>
+</li>
+<li>
+<p>Let us know you’re an API user so we can update you with important information during the upgrade process. Email the IATI Technical Team now.</p>
+</li>
+</ul>
+<p>If you do not use the API then no action is needed, as this upgrade will result in virtually no changes to the way that users interact with the IATI Registry website. Once the upgrade is completed, all publishers’ data will be preserved.</p>
+<p>We will provide advance notice of any downtime during the upgrade and in the meantime, work closely with our suppliers to ensure that the process goes smoothly. Please email the IATI Technical Team for more information.</p>
+<h2>Technical API changes to highlight:</h2>
+<ul>
+<li>
+<p><code>package_purge</code> API action added (added in CKAN v2.5.2).</p>
+</li>
+<li>
+<p><code>revision_list</code> API action now has paging (changed in CKAN v2.5.1).</p>
+</li>
+<li>
+<p>The <code>package_show</code> API call does not return the tracking_summary, keys in the dataset or resources by default any more (changed in CKAN v2.4).</p>
+</li>
+<li>
+<p><code>group_show</code> and <code>organization_show</code> API calls no longer return the datasets by default. Users of this API call will need to pass <code>include_datasets=True</code> to include datasets in the response (changed in CKAN v2.4).</p>
+</li>
+<li>
+<p>The <code>vocabulary_show</code> and <code>tag_show</code> API calls no longer returns the packages key – i.e. datasets that use the vocabulary or tag. However tag_show now has an include_datasets option (changed in CKAN v2.4).</p>
+</li>
+<li>
+<p>The action API (v3) no longer returns the full help for the action on each request. It rather includes a link to a separate call to get the action help string (changed in CKAN v2.3).</p>
+</li>
+<li>
+<p>Ability for users to re-generate their own API keys (added in CKAN v2.3).</p>
+</li>
+<li>
+<p>Able to list private datasets via the API (added in CKAN v2.3).</p>
+</li>
+<li>
+<p>The action API (v3) no longer returns the full help for the action on each request. It rather includes a link to a separate call to get the action help string (changed in CKAN v2.3).</p>
+</li>
+<li>
+<p>The <code>user_show</code> API call does not return the datasets, <code>num_followers</code> or activity keys by default any more (changed in CKAN v2.3).</p>
+</li>
+<li>
+<p><code>package_search</code> now returns results with custom schemas applied like package_show, ause_default_schema parameter was added to request the old behaviour (changed in CKAN v2.2).</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/reminder-important-iati-registry-api-changes/582/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/reminder-important-iati-registry-api-changes/582/1</link>
+        <pubDate>Fri, 30 Sep 2016 15:47:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-582-1</guid>
+        <source url="https://discuss.iatistandard.org/t/reminder-important-iati-registry-api-changes/582.rss">Reminder: Important IATI Registry API changes</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/currency-conversion/413 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:39:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Currency conversion - 2.03 Decimal Upgrade Discussions - IATI Community Discussions</title>
+    <meta name="description" content="Hi everyone, 
+
+As an extension to OIPA&amp;#39;s functionality we would like to add the option to convert values to a specific currency. For example, this would make it possible to do aggregations on transaction in different cur&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="413.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Currency conversion&#39;" href="413.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/currency-conversion/413" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/currency-conversion/413" />
+<meta property="og:title" content="Currency conversion" />
+<meta name="twitter:title" content="Currency conversion" />
+<meta property="og:description" content="Hi everyone,  As an extension to OIPA’s functionality we would like to add the option to convert values to a specific currency. For example, this would make it possible to do aggregations on transaction in different currencies.  To be able to do this we need an exchange rate dataset. Datasets like this are published by IMF, World Bank and OECD and others. However, we are unsure what dataset is best suited for this purpose, seeing how they seem to differ and secondly we do not want to make use ge..." />
+<meta name="twitter:description" content="Hi everyone,  As an extension to OIPA’s functionality we would like to add the option to convert values to a specific currency. For example, this would make it possible to do aggregations on transaction in different currencies.  To be able to do this we need an exchange rate dataset. Datasets like this are published by IMF, World Bank and OECD and others. However, we are unsure what dataset is best suited for this purpose, seeing how they seem to differ and secondly we do not want to make use ge..." />
+<meta property="article:published_time" content="2016-02-18T15:17:51+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../index.html">
+          <img src="../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="413.html">Currency conversion</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/standard-management/35.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #5719A3'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Standard Management</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../c/standard-management/2-03-decimal-upgrade-discussions/40.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #A66EE9'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>2.03 Decimal Upgrade Discussions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Murrx.html'><span itemprop='name'>Murrx</span></a>
+            (Robin)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2016-02-18T15:17:51Z'>
+              <time itemprop='dateModified' datetime='2017-04-27T10:58:38Z' class='post-time'>
+                April 27, 2017, 10:58am
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi everyone,</p>
+<p>As an extension to OIPA’s functionality we would like to add the option to convert values to a specific currency. For example, this would make it possible to do aggregations on transaction in different currencies.</p>
+<p>To be able to do this we need an exchange rate dataset. Datasets like this are published by IMF, World Bank and OECD and others. However, we are unsure what dataset is best suited for this purpose, seeing how they seem to differ and secondly we do not want to make use general market rates.</p>
+<p>Does the IATI community have an opinion on what dataset would be most accurate to use for this use?</p>
+<p>Work has been done by ourselves last year, D-Portal and work on the BD AIMS has been done, but no general solution exists that could work for IATI works.</p>
+<p>Suggestions more than welcome.</p>
+<p>Regards, Robin</p>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/dalepotter.html'><span itemprop='name'>dalepotter</span></a>
+            (Dale Potter)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-02-19T16:43:24Z' class='post-time'>
+                February 19, 2016,  4:43pm
+              </time>
+              <meta itemprop='dateModified' content='2016-02-19T16:43:24Z'>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi Robin,</p>
+<p>Thanks for posting this - this has also been a timely problem for the central tech team too. In October we added 2014 IATI spend $USD aggregations for all publishers on the <a href="http://dashboard.iatistandard.org/coverage.html">Dashboard coverage</a> tab.</p>
+<p>We spoke to D-Portal about how they are managing conversions and their approach seems to be to scrape daily exchange rates from the <a href="http://www.imf.org/external/np/fin/data/rms_five.aspx">IMF website</a> each night, and then to save a local copy in <a href="https://github.com/devinit/D-Portal/tree/master/dstore/json">Git</a>. When the data is collected, these are averaged out for the whole month, and that average rate is used for USD (based on the month in the value-date).<br>
+(I’ve also asked <a class="mention" href="../../u/matt-2.html">@Matt</a> for some clarification on the process here, as the IMF link appears to only list currency to SDR rates, rather than currency to USD rates.)</p>
+<p>They also have an <a href="https://docs.google.com/spreadsheets/d/1jpXHDNmJ1WPdrkidEle0Ig13zLlXw4eV6WkbSy6kWk4/edit#gid=13">‘exchange’ tab on a Google sheet </a> that is used for for currencies which aren’t in the nightly IMF data.  This stores exchange rate data on an annual basis.</p>
+<p>In terms of the implementation on the Dashboard, we went for an MVP approach, using the annual data in the D-portal exchange tab. The spreadsheet we use, together with logic is available here: <a href="https://github.com/IATI/IATI-Stats/tree/master/helpers/currency_conversion">https://github.com/IATI/IATI-Stats/tree/master/helpers/currency_conversion</a> In time, we would like to move to a monthly granularity, based on automated inputs of IMF data, although this is not a priority at present.</p>
+<p>Would be interesting to hear others perspectives, and do post back with details, in due course, of your implementation approach <a class="mention" href="../../u/murrx-2.html">@Murrx</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/rolfkleef.html'><span itemprop='name'>rolfkleef</span></a>
+            (Rolf Kleef)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-02-24T11:43:32Z' class='post-time'>
+                February 24, 2016, 11:43am
+              </time>
+              <meta itemprop='dateModified' content='2016-02-24T11:43:32Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I’ve started collecting rates from <a href="http://openexchangerates.org/" rel="nofollow noopener">http://openexchangerates.org</a> (daily rates available from 1999 onward), interesting to compare these. I guess an SDR exchange rate makes sense too.</p>
+<p>To throw in some of my questions:</p>
+<ul>
+<li>Why would “one exchange rate per year” be good enough? It appears to me that some currencies are too volatile to capture in just one rate for a whole year?</li>
+<li>What are current approaches to changes of the “base rate” over time? Sometimes you just want to aggregate (for instance) dollar amounts as they occur, sometimes you’d like to express things in “dollars of the year 2000”.</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../tech-paper-improvements-to-the-activity-standard/544.html" itemprop='item'>
+                      <meta itemprop='url' content='../tech-paper-improvements-to-the-activity-standard/544.html'>
+                      <meta itemprop='position' content='2'>
+                      <span itemprop='name'>Tech Paper: Improvements to the Activity Standard</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-02-26T13:57:21Z' class='post-time'>
+                February 26, 2016,  1:57pm
+              </time>
+              <meta itemprop='dateModified' content='2016-02-26T13:57:21Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi,</p>
+<p>Our work in Bangladesh has also identified that many donors have their own exchange rates (often set by their central bank / ministry of finance) and therefore when converting projects between currencies, these are the ones that need using. For example, the Netherlands update their EUR to USD rate annually, and this is the rate that should be used for converting the values on their projects - using another rate would be might reduce the value of IATI data as it would no longer match the official values expected by the publisher. This is also often an issue for loans, where the loan agreement might include an official rate of conversion for the life of the loan.</p>
+<p>Is there somewhere in IATI that would allow publishers to include this information e.g. an exchange rate field, to go after the currency and value fields for the transactions? This would also massively increase the utility of IATI for monitoring debt data - integration of IATI feeds into CS-DRMS and DFMAS would be a huge win for recipient countries.</p>
+<p>Matt</p>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/dalepotter.html'><span itemprop='name'>dalepotter</span></a>
+            (Dale Potter)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-07-01T10:42:14Z' class='post-time'>
+                July 1, 2016, 10:42am
+              </time>
+              <meta itemprop='dateModified' content='2016-07-01T10:42:14Z'>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/matmaxgeds.html">@matmaxgeds</a> - thanks for flagging this.</p>
+<p>As I don’t think that it is possible to sent an explicit exchange rate for a given transaction, I’ve <a href="http://support.iatistandard.org/entries/110307626-Add-ability-to-report-explicit-exchange-rates-used-in-transactions">added a post to describe this</a> in our separate forum for Modifications, Additions, Improvements to the IATI standard. This means that it will be considered for inclusion in future upgrades of the standard.</p>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2016-07-01T11:18:21Z' class='post-time'>
+                July 1, 2016, 11:18am
+              </time>
+              <meta itemprop='dateModified' content='2016-07-01T11:18:21Z'>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/dalepotter.html">@dalepotter</a>, great, thanks - let me know if there is anything I can do to make it happen e.g. rounding up examples, or testing etc. Also registering with the iatisupport site so I am available there too.</p>
+<p>Matt</p>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Wendy.html'><span itemprop='name'>Wendy</span></a>
+            (Wendy Rogers)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-01-04T11:38:03Z' class='post-time'>
+                January 4, 2017, 11:38am
+              </time>
+              <meta itemprop='dateModified' content='2017-01-04T11:38:03Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>This issue was originally added to the <a href="http://support.iatistandard.org/hc/en-us/articles/214388666-Add-ability-to-report-explicit-exchange-rates-used-in-transactions">previous version IATI Standard Upgrade forum</a>. However that forum has itself now itself moved to the IATI Discuss platform so I have recatagorised this topic for consideration for the next IATI Standard upgrade</p>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-16T09:31:52Z' class='post-time'>
+                February 16, 2017,  9:31am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-16T09:31:52Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Exchange rates are very dependent on the use-case. Therefore IATI data users will have different requirements. So I do not think we should try to add exchange-rates to the standard.</p>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/markbrough.html'><span itemprop='name'>markbrough</span></a>
+            (Mark Brough)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-16T17:34:46Z' class='post-time'>
+                February 16, 2017,  5:34pm
+              </time>
+              <meta itemprop='dateModified' content='2017-02-16T17:34:46Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/herman-2.html">@Herman</a></p>
+<p>The specific use case here is for loans and debt repayment, where agreements will specify a specific exchange rate. This would be very helpful for making IATI useful for debt management.</p>
+<p>At the moment, we can use the <code>value-date</code> to find the prevailing exchange rate to the target currency. It generally does not matter enormously (especially with grants) if there are slight differences in the rate we end up with from the rate at which the funds were actually converted (as a result of using a slightly different date or a different source for the rates). However, with loans this does matter as there is a specific amount that has to be paid back and because it makes a difference to the country’s debt stock. Incidentally, almost all countries have debt management software that could benefit from using this data (and are one of the principal collectors / users of aid data in many countries).</p>
+<p>So, making it possible to provide the actual exchange rate from the agreement, where possible, would help satisfy an important use case. Though of course, nobody would be forced to use it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-17T08:41:12Z' class='post-time'>
+                February 17, 2017,  8:41am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-17T08:41:12Z'>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../u/markbrough.html">@markbrough</a>,<br>
+I am not sure. The interest rate you mention, if I understand you correctly, is an attribute of the contract and not transaction specific? We run the risk of adding a lot of elements to the transactions, which do not really belong there. Would this be a case for linked open data (IATI &lt;-&gt; open contracts)?</p>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="413.html">
+
+            <link itemprop="image" href="../../uploads/default/original/1X/5b701ce54e3a4a78c243ad407c804122776ff543.png">
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-02-24T11:13:56Z' class='post-time'>
+                February 24, 2017, 11:13am
+              </time>
+              <meta itemprop='dateModified' content='2017-02-24T11:13:56Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi all,</p>
+<p><a class="mention" href="../../u/herman-2.html">@Herman</a> yes, for many agreements the exchange rate is at the level of the contract - where would this go in IATI data, as a single project can be covered by several contracts - if contract = commitment, perhaps it can go there? Would that then be linked to all transactions made under that contract - I do not know enough about the nesting etc to be sure?</p>
+<p>However, there is another situation. Attached below are a set of screenshots showing how the statement for a loan specifies (or allows calculation of) the exchange rates for the different value dates. In this case, the exchange rate is set per transaction.</p>
+<p>The reason I am inclined to push this is that in most aid recipient countries, the debt management office/unit is the most competent user of aid flow data as it tends to be a far stronger legal requirement to track the disbursements as more disbursements means more indebtedness/repayments. If IATI could allow transaction level exchange rates (specifying the sending/loan currency, the rate applied on that value-date and the currency of receipt) then it might pick up a significant number of users. If not, all aid recipient countries will continue to collect this data separately/manually so are likely to continue to find IATI peripheral to their needs.</p>
+<p>The ideal endpoint is that CS-DRMS/DEMFAS debt management systems would pull data directly from IATI, eliminating a huge amount of manual data entry and potential for error.</p>
+<p>The bigger issue here (and also starting to crop us in traceability etc) is that IATI is not an accounting system e.g. with double entry etc. If it was, then all transactions would have a debit and a credit, a sender and a receiver (with an official receiver/org ID), a send currency, a receipt currency (and therefor exchange rates built in). In this scenario, traceability is much easier to solve and I think this has to be a serious consideration going forwards.</p>
+<p>As it is, if a donor reports in e.g. SDR or Japanese Yen, but the recipients receive the funds into a local currency bank account, they typically struggle to make any connection with the amounts shown in IATI data - and again are disinclined to use IATI.</p>
+<p>/end ramble!</p>
+<p>Matt</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/5b701ce54e3a4a78c243ad407c804122776ff543.png" data-download-href="https://discuss.iatistandard.org/uploads/default/5b701ce54e3a4a78c243ad407c804122776ff543" title="Loan Disb 1.png"><img src="../../uploads/default/optimized/1X/5b701ce54e3a4a78c243ad407c804122776ff543_2_690x141.png" width="690" height="141" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/5b701ce54e3a4a78c243ad407c804122776ff543_2_690x141.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/5b701ce54e3a4a78c243ad407c804122776ff543_2_1035x211.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/5b701ce54e3a4a78c243ad407c804122776ff543.png 2x" data-small-upload="../../uploads/default/optimized/1X/5b701ce54e3a4a78c243ad407c804122776ff543_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Loan Disb 1.png</span><span class="informations">1217×249 23.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><br>
+<div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807.png" data-download-href="https://discuss.iatistandard.org/uploads/default/bbb42993d16c598d9b928f6ee687b31ba21cf807" title="Loan Disb 2.png"><img src="../../uploads/default/optimized/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807_2_689x215.png" width="689" height="215" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807_2_689x215.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807_2_1033x322.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807.png 2x" data-small-upload="../../uploads/default/optimized/1X/bbb42993d16c598d9b928f6ee687b31ba21cf807_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">Loan Disb 2.png</span><span class="informations">1299×406 70 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div><br>
+<img src="../../uploads/default/original/1X/df7292963c093b7c5729fd0c3f63e373529af03c.png" width="637" height="282"></p>
+        </div>
+
+        <meta itemprop='headline' content='Currency conversion'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../calls-for-global-register-of-debt-with-a-few-tweaks-iati-could-do-this/1728.html" itemprop='item'>
+                      <meta itemprop='url' content='../calls-for-global-register-of-debt-with-a-few-tweaks-iati-could-do-this/1728.html'>
+                      <meta itemprop='position' content='3'>
+                      <span itemprop='name'>Calls for global register of debt - with a few tweaks IATI could do this</span>
+                    </a>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../exchange-rate-options-excluded-2-03/901/3.html" itemprop='item'>
+                      <meta itemprop='url' content='../exchange-rate-options-excluded-2-03/901/3.html'>
+                      <meta itemprop='position' content='4'>
+                      <span itemprop='name'>Exchange Rate Options (excluded 2.03)</span>
+                    </a>
+                  </div>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../basic-usability-issues-with-financial-data-and-guidance/1206/3.html" itemprop='item'>
+                      <meta itemprop='url' content='../basic-usability-issues-with-financial-data-and-guidance/1206/3.html'>
+                      <meta itemprop='position' content='5'>
+                      <span itemprop='name'>Basic usability issues with financial data and guidance</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/currency-conversion/413 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:39:46 GMT -->
+</html>

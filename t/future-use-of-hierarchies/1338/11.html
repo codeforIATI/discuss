@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/future-use-of-hierarchies/1338/11 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:58:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Future use of Hierarchies - Consultations - IATI Community Discussions</title>
+    <meta name="description" content="Following from the Discuss post of Agreeing best practice – using Hierarchies 
+The IATI tech team propose that hierarchies do not need to exist within the IATI standard. Their removal will not restrict the flexibility of&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1338.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Future use of Hierarchies&#39;" href="../1338.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/11" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/future-use-of-hierarchies/1338/11" />
+<meta property="og:title" content="Future use of Hierarchies" />
+<meta name="twitter:title" content="Future use of Hierarchies" />
+<meta property="og:description" content="Hi @amys,  Since i.m.o. all activity hierarchies can be modelled using the ‘related-activity’ element, and because the hierarchy level itself can be derived/calculated from the published activity data (as we do based on both the related activity as the providing activity transaction elements) , I think your proposal makes sense. It would reduce redundancy and therefore remove a possible source of inconsistencies  in the IATI data.  That being said, the issue here seems to be:  1 - is it worth th..." />
+<meta name="twitter:description" content="Hi @amys,  Since i.m.o. all activity hierarchies can be modelled using the ‘related-activity’ element, and because the hierarchy level itself can be derived/calculated from the published activity data (as we do based on both the related activity as the providing activity transaction elements) , I think your proposal makes sense. It would reduce redundancy and therefore remove a possible source of inconsistencies  in the IATI data.  That being said, the issue here seems to be:  1 - is it worth th..." />
+<meta property="article:published_time" content="2018-10-01T15:42:37+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../../index.html">
+          <img src="../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1338.html">Future use of Hierarchies</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/consultations/22.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #00C497'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Consultations</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/amys.html'><span itemprop='name'>amys</span></a>
+            (Amy Silcock)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-06-01T13:30:46Z'>
+              <time itemprop='dateModified' datetime='2018-06-01T15:14:53Z' class='post-time'>
+                June 1, 2018,  3:14pm
+              </time>
+          <span itemprop='position'>#1</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Following from the Discuss post of <a href="../../agreeing-best-practice-using-hierarchies/index.html">Agreeing best practice – using Hierarchies</a></p>
+<p>The IATI tech team propose that hierarchies do not need to exist within the IATI standard. Their removal will not restrict the flexibility of organisations to show internal decisions about funds nor will it affect timeliness, structure or granularity of published data. This is based on the assumption that the changes outlined in the <a href="../../agreeing-best-practice-using-hierarchies/1337.html">Agreeing best practice – using Hierarchies</a> post are taken forward.  Implementation of this would need to happen at the next integer upgrade as the changes are not backwards compatible.</p>
+<p><strong>Here is our reasoning:</strong></p>
+<ul>
+<li>
+<p>Only the attribute <span class="mention">@hierarchies</span> will be removed. All other reporting best practices will remain.</p>
+</li>
+<li>
+<p>Activities previously reported in a hierarchical model can still be reported in the same structure. The structure will be detailed through use of the <code>&lt;related-activity&gt;</code> element, which allows organisations to specify ‘Child’ and ‘Parent’ relations within their reported activities.</p>
+</li>
+<li>
+<p>The hierarchies attribute does not add any additional information needed for data quality analysis or data use. This is true for the IATI Dashboard, d-Portal and likely all other data use platforms.</p>
+</li>
+<li>
+<p>Therefore <span class="mention">@hierarchies</span> is a superfluous attribute which only adds complexity, and often confusion, to the IATI standard.</p>
+</li>
+</ul>
+<p><strong>Current number of organisations using multiple hierarchies</strong></p>
+<p>When I was looking into this a few months ago there were 46 organisations using the <span class="mention">@hierarchy</span> attribute (this number will now have grown significantly). The majority of these organisations only use levels 1 and 2, with one organisation correctly using three levels of hierarchy. Removing the <span class="mention">@hierarchy</span> attribute will not remove the relationships between the published activities but will enable data users to better navigate the data as they will not be misled by incorrect <span class="mention">@hierarchy</span> labeling.</p>
+<p>Level 2: 44</p>
+<p>Level 3: 1 (4)</p>
+<p>Level 4: (1)</p>
+<p>Level 5: (1)</p>
+<p>(Numbers in brackets show the number of organisations only publishing at that hierarchical level or not publishing sequentially to that level)</p>
+<p>Please do let us know what you think by responding to this post.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="3" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/10.html" itemprop='item'>
+                      <meta itemprop='url' content='../../tag-session-on-reviewing-the-need-for-a-next-minor-or-major-iati-standard-upgrade/1535/10.html'>
+                      <meta itemprop='position' content='3'>
+                      <span itemprop='name'>TAG session on reviewing the need for a next minor or major IATI standard upgrade</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/JohnAdams.html'><span itemprop='name'>JohnAdams</span></a>
+            (John Adams)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-06-01T15:06:16Z'>
+              <time itemprop='dateModified' datetime='2018-06-01T15:09:47Z' class='post-time'>
+                June 1, 2018,  3:09pm
+              </time>
+          <span itemprop='position'>#2</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks Amy</p>
+<p>I’m not convinced that this is a good idea if we are trying to describe complex aid interventions, but will respond more fully next week.</p>
+<p>Also if we don’t hold finances at a particular hierarchy level, would that be possible?</p>
+<p>John</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/JohnAdams.html'><span itemprop='name'>JohnAdams</span></a>
+            (John Adams)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-06-01T15:08:22Z' class='post-time'>
+                June 1, 2018,  3:08pm
+              </time>
+              <meta itemprop='dateModified' content='2018-06-01T15:08:22Z'>
+          <span itemprop='position'>#3</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Or is there something missing in your second bullet point - are you proposing replacing the <span class="mention">@hierarchy</span> attribute with the use of the <strong>related-activity</strong> element?</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/amys.html'><span itemprop='name'>amys</span></a>
+            (Amy Silcock)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-06-01T15:16:45Z' class='post-time'>
+                June 1, 2018,  3:16pm
+              </time>
+              <meta itemprop='dateModified' content='2018-06-01T15:16:45Z'>
+          <span itemprop='position'>#4</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks <a class="mention" href="../../../u/johnadams-2.html">@JohnAdams</a> the <code>&lt;related-activity&gt;</code> now appears. Looking forward to your responses next week and starting a discussion on this.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-06-01T15:41:32Z'>
+              <time itemprop='dateModified' datetime='2018-06-01T15:44:56Z' class='post-time'>
+                June 1, 2018,  3:44pm
+              </time>
+          <span itemprop='position'>#5</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Unless I’m mistaken, you’re proposing the removal of the <code>@hierarchy</code> attribute here. You’re not talking about removing hierarchies in general. Is that correct?</p>
+<p>If so, I’d suggest removing or rewording the first sentence:</p>
+<aside class="quote no-group" data-post="1" data-topic="1338">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/amys/40/288_1.jpg" class="avatar"> amys:</div>
+<blockquote>
+<p>The IATI tech team propose that hierarchies do not need to exist within the IATI standard.</p>
+</blockquote>
+</aside>
+<p>…because it might cause confusion / derail the discussion.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/andylolz.html'><span itemprop='name'>andylolz</span></a>
+            (Andy Lulham)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-06-05T16:17:03Z'>
+              <time itemprop='dateModified' datetime='2018-06-05T16:18:07Z' class='post-time'>
+                June 5, 2018,  4:18pm
+              </time>
+          <span itemprop='position'>#6</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="1" data-topic="1338">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/amys/40/288_1.jpg" class="avatar"> amys:</div>
+<blockquote>
+<p><strong>Current number of organisations using multiple hierarchies</strong></p>
+<p>When I was looking into this a few months ago there were 46 organisations using the <span class="mention">@hierarchy</span> attribute</p>
+</blockquote>
+</aside>
+<p><a href="http://dashboard.iatistandard.org/publishers.html">According to the dashboard</a>, 79 publishers use multiple <code>@hierarchy</code> values. But as we know, the <code>@hierarchy</code> attribute is in many cases used incorrectly. If we instead look at <code>related-activity</code>, 199 publishers have at least one parent/child relation in their data.</p>
+<p>Looking at how this is used in the wild, these parent/child relations very often span multiple publishers. Here are some random examples (these are some of the longest, each involving four activities):</p>
+<ul>
+<li>US-EIN-521291786-CMI16: <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-CMI">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-388173">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=US-EIN-521291786-CMI">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=US-EIN-521291786-CMI16">[4]</a>
+</li>
+<li>NL-KVK-32108345-NLBB25-8832-ID: <a href="http://d-portal.org/q.html?aid=XM-DAC-7-PPR-28432">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41193594-AD7100GUS">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-32108345-NLBB25-GUSO">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-32108345-NLBB25-8832-ID">[4]</a>
+</li>
+<li>US-EIN-31-1812979-CMI01: <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-CMI">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-388144">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=US-EIN-31-1812979-CMI">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=US-EIN-31-1812979-CMI01">[4]</a>
+</li>
+<li>NL-KVK-40535338-FGG-TOC1: <a href="http://d-portal.org/q.html?aid=NL-KVK-41210098-FGG">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-40530467-FGG">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-40535338-FGG">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-40535338-FGG-TOC1">[4]</a>
+</li>
+<li>NL-KVK-41078390-SP-BO: <a href="http://d-portal.org/q.html?aid=NL-KVK-52957535-SP">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41078390-SP">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41078390-SP-LA">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41078390-SP-BO">[4]</a>
+</li>
+<li>NL-KVK-34308169-FG-DtZ-THAILAND: <a href="http://d-portal.org/q.html?aid=NL-KVK-41149287-TdH_NL_CE_AS_EU_AM_2015_PR0027">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41149287-TdH_NL_CE_NL_2016_Free%20a%20girl_PC0080">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-34308169-DtZ-FG">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-34308169-FG-DtZ-THAILAND">[4]</a>
+</li>
+<li>GB-CHC-229476-GUSO-ippf-ethiopia: <a href="http://d-portal.org/q.html?aid=XM-DAC-7-PPR-28432">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41193594-AD7100GUS">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=GB-CHC-229476-GUSO-ippfglobal">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=GB-CHC-229476-GUSO-ippf-ethiopia">[4]</a>
+</li>
+<li>NL-KVK-41202535-GAGGA-09: <a href="http://d-portal.org/q.html?aid=NL-1-PPR-27546">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NI-MIGOB-3602-001">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-GAGGA">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-GAGGA-09">[4]</a>
+</li>
+<li>NL-KVK-41155305-GLA-BO: <a href="http://d-portal.org/q.html?aid=NL-1-PPR-27549">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-40530467-GLA">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41155305-GLA">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41155305-GLA-BO">[4]</a>
+</li>
+<li>KE-NCB-200201282375-CMI01: <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-CMI">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-388174">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=KE-NCB-200201282375-CMI">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=KE-NCB-200201282375-CMI01">[4]</a>
+</li>
+<li>CO-CCB-00159397-CMI05: <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-CMI">[1]</a> -&gt; <a href="http://d-portal.org/q.html?aid=NL-KVK-41202535-388175">[2]</a> -&gt; <a href="http://d-portal.org/q.html?aid=CO-CCB-00159397-CMI">[3]</a> -&gt; <a href="http://d-portal.org/q.html?aid=CO-CCB-00159397-CMI05">[4]</a>
+</li>
+</ul>
+<p>You can also see in these examples that reciprocal parent/child relationships often aren’t declared. That is, while B might declare that A is its parent, that doesn’t necessarily mean A will declare that B is its child.</p>
+<p>So it looks like in the absence of clear guidance, and without feedback loops to correct publishers’ data, publishers have been left to figure out their own rules.</p>
+<p>The cool thing about the <code>@hierarchy</code> attribute is it provides a checksum, which can be used to spot errors. So IATI (or a third party) could use it to check related activity data and raise the issue with publishers.</p>
+<p>This attribute is surely there to make life easier for data users. Of course if it’s wrong, that won’t help the data user. But I wonder if the correct solution should be to fix it, rather than to remove it.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/markbrough.html'><span itemprop='name'>markbrough</span></a>
+            (Mark Brough)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-06-05T16:30:21Z' class='post-time'>
+                June 5, 2018,  4:30pm
+              </time>
+              <meta itemprop='dateModified' content='2018-06-05T16:30:21Z'>
+          <span itemprop='position'>#7</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I added my comments on <a href="../../agreeing-best-practice-using-hierarchies/1337/37a28.html?u=markbrough">the other post</a> – sorry, I’m a bit confused about the distinction between the two posts.</p>
+<p>I <em>think</em> this post is just suggesting that the <code>@hierarchy</code> attribute should be removed. I would strongly disagree with this. I think it is very useful as it means you can easily select activities from a particular level (e.g. “select only DFID’s programs, and not their project sub-components”). I have used this many times to roll up data according to what is most appropriate to the context, it is super useful.</p>
+<p>I am also still very unclear on the arguments in favour of removing it, it would be great if those could be explained in more detail.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stolk.html'><span itemprop='name'>stolk</span></a>
+            (leo stolk)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-06-06T06:45:34Z' class='post-time'>
+                June 6, 2018,  6:45am
+              </time>
+              <meta itemprop='dateModified' content='2018-06-06T06:45:34Z'>
+          <span itemprop='position'>#8</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi amy</p>
+<p>In my view the use of hierachies has added value. For instance it allows organisations of networked organisations to link/group/cluster activities under one upper level entity.<br>
+Within the Oxfam confederation we now almost agreed on one maintained repository of confederation wide oxfam (country strategy)  programmes.  This opens up the possibility to demonstrate strategic coherence within the activities of all members of the confederation. In my view programmes should not necessarily be part of the funding flow.<br>
+the relation between programme type of activity and project type of activity is one to many.  Each project type of activity can have multiple internal and/or external sources of funding (provider activity ID).  A hierachy one activity is therefor not necessarily the funding source of hierachy 2 activities,<br>
+Hence we need related activity/hierachies ánd specific reference to provider activity ID and receiver activity ID in transactions.<br>
+I see this as two separate useful dimensions, getting rid of one of them would be a loss</p>
+<p>leo</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/stevieflow.html'><span itemprop='name'>stevieflow</span></a>
+            (Steven Flower)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-06-07T09:21:43Z' class='post-time'>
+                June 7, 2018,  9:21am
+              </time>
+              <meta itemprop='dateModified' content='2018-06-07T09:21:43Z'>
+          <span itemprop='position'>#9</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>I noticed in <a href="http://d-portal.org/faq.html#tech2" rel="nofollow noopener">d-portal FAQ</a> the following:</p>
+<blockquote>
+<p>There are currently plans under consideration to use the lowest hierarchy level data only, should data at multiple hierarchies exist, in order to avoid double counting.</p>
+</blockquote>
+<p>I think this illustrates - and <a class="mention" href="../../../u/markbrough.html">@markbrough</a> provides further evidence - that those <strong><em>using</em></strong> IATI data are considering hierarchies.</p>
+<p>I’ve always understood the hierarchy attribute as a mechanism to help distinguish and provide rationale for distributing various levels of data / IATI elements differently, within a set.  As we know, DFID only publish budgets at H1, with transactions occurring at H2 etc.  The same could apply to other data points (results, for example).</p>
+<p>To completely remove hierarchies would need careful consideration of the impact on such flexibility provided to the growing community of publishers and users</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/siemvaessen.html'><span itemprop='name'>siemvaessen</span></a>
+            (Siem Vaessen)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2018-06-07T12:53:42Z'>
+              <time itemprop='dateModified' datetime='2018-06-07T12:54:14Z' class='post-time'>
+                June 7, 2018, 12:54pm
+              </time>
+          <span itemprop='position'>#10</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="1" data-topic="1338">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/amys/40/288_1.jpg" class="avatar"> amys:</div>
+<blockquote>
+<p>Only the attribute <span class="mention">@hierarchies</span> will be removed. All other reporting best practices will remain.</p>
+</blockquote>
+</aside>
+<p>This sounds like an action, not a reason.</p>
+<aside class="quote no-group">
+<blockquote>
+<p>Activities previously reported in a hierarchical model can still be reported in the same structure. The structure will be detailed through use of the &lt;related-activity&gt; element, which allows organisations to specify ‘Child’ and ‘Parent’ relations within their reported activities.</p>
+</blockquote>
+</aside>
+<p>Yes, but this would imply migrations for many of the information products (UI’s) -&gt; we do not see the benefit. This will also burden publishers with changes.</p>
+<aside class="quote no-group">
+<blockquote>
+<p>The hierarchies attribute does not add any additional information needed for data quality analysis or data use. This is true for the IATI Dashboard, d-Portal and likely all other data use platforms.</p>
+</blockquote>
+</aside>
+<p>This is not true. We and many in the IATI space use this element. The IATI Dashboard, d-Portal are not any ‘IATI’ default as far as I am concerned.</p>
+<aside class="quote no-group">
+<blockquote>
+<p>Therefore <span class="mention">@hierarchies</span> is a superfluous attribute which only adds complexity, and often confusion, to the IATI standard.</p>
+</blockquote>
+</aside>
+<p>I strongly disagree.</p>
+<p>I therefore find removing <span class="mention">@hierachies</span> as an attribute a very bad idea and should be abandoned asap.</p>
+<p>The thought of complete removal gave me an instant headache.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1338.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2018-10-01T15:42:37Z' class='post-time'>
+                October 1, 2018,  3:42pm
+              </time>
+              <meta itemprop='dateModified' content='2018-10-01T15:42:37Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../../u/amys.html">@amys</a>,<br>
+Since i.m.o. all activity hierarchies can be modelled using the ‘related-activity’ element, and because the hierarchy level itself can be derived/calculated from the published activity data (as we do based on both the related activity as the providing activity transaction elements) , I think your proposal makes sense. It would reduce redundancy and therefore remove a possible source of inconsistencies  in the IATI data.</p>
+<p>That being said, the issue here seems to be:<br>
+1 - is it worth the effort? Removing hierarchies would but a burden on both publishers and data users.<br>
+2 - isn’t the redundancy worthwhile to have because it may help to detect data quality problems?</p>
+<p>From the data modelling ‘purist’ point of view I tend to agree with this idea since registering derivable data always leads to consistency problems. But we also need to consider the migration effort this will mean for both publishers and data users.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future use of Hierarchies'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="2" />
+           <span class='post-likes'>2 Likes</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/future-use-of-hierarchies/1338/11 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 15:58:38 GMT -->
+</html>

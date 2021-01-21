@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Work towards an improved IATI validator</title>
+    <link>https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524</link>
+    <description>Over the past few weeks, the IATI Technical Team have been making first steps to build an improved validator. This follows the great work by done by David Carpenter and others who built the initial validator, which has served IATI well since it&#39;s initial development in 2012. 
+
+## Why a new tool is needed
+
+However, as users call for added validation functionality, the technical team feel would be better served by a revamped version, rather than trying to bolt functionality onto this legacy tool.
+
+The overall aim is to build a new validation tool that features:
+
+- XML syntax and IATI schema checking.
+- Content checking, to look for adherance to IATI Rulesets, and codelists. Plus basic sense checking where approproiate (for example: do specified transaction dates fall within the broad range of speficied activity start/end dates).
+- RESTful API functionality, that can be used by bespoke publisher applications.
+- Improved error messages, showing the context of any errors and pointing users towards appropriate documentation and guidance.
+
+The new tool will also have technical advantages. It will:
+
+- Rationalise the IATI technology stack further towards Python and the &#39;lxml&#39; XML parser.
+- Make use of improved software design patterns.
+- Enable integration into our other IATI tools, making better use of common functionality.
+
+
+## Our development approach
+
+We are using [agile](https://www.gov.uk/service-manual/agile-delivery/agile-government-services-introduction) and [&#39;API first&#39;](http://apievangelist.com/2014/08/11/what-is-an-api-first-strategy-adding-some-dimensions-to-this-new-question/) approaches to the development of this tool. Work is organised around 2-3 week sprints culminating the the release of a usable and testable product at the end of each iteration.
+
+The improved validator will continue to be an open-source tool and work is taking place on a [new branch of the IATI-Public-Validator github repository](https://github.com/IATI/IATI-Public-Validator/tree/81-validator-rewrite).  As ever, we welcome comments, suggestions and scrutiny on our work.
+
+
+## Sprint 1 complete
+
+The first sprint has just completed and focuses on basic API functionality for XML syntax (well-formed) and validation against an (automatically detected) IATI version.
+
+[Examples API usage can be found here](https://github.com/IATI/IATI-Public-Validator/blob/81-validator-rewrite/temp/api-examples.md) with an available public endpoint of: http://dev.validator.iatistandard.org/api/validate/xml
+
+Future sprints will focus on adding documentation, a user-interface and content checking.
+
+
+## Watch this topic for updates.
+
+We will be posting further updates to this thread and deploying to the public instance at regular intervals. In the meantime, we welcome user comments and testing of the current work.</description>
+    
+    <lastBuildDate>Wed, 21 Dec 2016 17:03:41 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Work towards an improved IATI validator</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi John,</p>
+<p>I’m afraid work on a new validator paused in the autumn on account of other  internal priorities (including initial preparation for the upcoming TAG, recruitment of more developers, and others). Furthermore, we have pivoted our focus in the past few weeks to shoring up current tools, adding a number of automated tests to check availability and improve deployment practices.</p>
+<p>We expect to refocus attention towards building an improved validator user-interface and API sometime in Q1 of next year.  Before then, we will be spending sometime before then to scope and build the foundations of a new architecture plan for the array of IATI Secretariat tools. This will aim to build solid foundations for new tools (such as the validator) as well as transition legacy products - more on this to be shared publicly in the new year!</p>
+<p>There could be scope to discuss IATI Secretariat architecture plans at the TAG 2017, as we will be keen to gather expert input and advice in order to reduce the past proliferation of common functionality and integrate existing tools - watch this space…</p>
+<p>Sorry that there hasn’t been more exciting news to report on the validator, but hope that this gives a good overview of what (we hope) is to come!</p>
+          <p><a href="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524/5</link>
+        <pubDate>Wed, 21 Dec 2016 17:03:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-524-5</guid>
+        <source url="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524.rss">Work towards an improved IATI validator</source>
+      </item>
+      <item>
+        <title>Work towards an improved IATI validator</title>
+        <dc:creator><![CDATA[JohnAdams]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Dale, has there been any further progress on the shiny new validator?</p>
+          <p><a href="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524/4</link>
+        <pubDate>Tue, 20 Dec 2016 12:22:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-524-4</guid>
+        <source url="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524.rss">Work towards an improved IATI validator</source>
+      </item>
+      <item>
+        <title>Work towards an improved IATI validator</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Herman,</p>
+<p>You’re right that the current validator seems to struggle with files over 10MB, including the <a href="http://www.oxfamnovib.nl/redactie/Downloads/XML/iati.xml">Oxfam Novib</a> dataset that you highlighted, which is around 35MB in size.</p>
+<p>It’s unlikely that we’ll work to improve the validator to handle larger inputs, but there’s good news in that it seems that the new validator can handle large files very well.  I’ve just used this to confirm that this large file validates against version 2.02 of the schema.</p>
+<pre><code class="lang-auto">$ wget http://www.oxfamnovib.nl/redactie/Downloads/XML/iati.xml -O oxfamnovib_iati.xml
+# Small edit made to the file to remove the encoding declaration on the first line - i.e. '&lt;?xml version="1.0" encoding="utf-8"?&gt;'
+$ curl --data-urlencode "xml@oxfamnovib_iati.xml" http://dev.validator.iatistandard.org/api/validate/xml
+{
+  "error_count": 0, 
+  "error_detail": [], 
+  "metadata": {
+    "began": "Fri, 07 Oct 2016 16:20:57 GMT", 
+    "completed": "Fri, 07 Oct 2016 16:20:59 GMT", 
+    "file_size_bytes": 38453296, 
+    "version": {
+      "type": "Detected", 
+      "version_tested": "2.02"
+    }
+  }, 
+  "status": {
+    "status_detail": {
+      "status_schema": "Pass", 
+      "status_well_formed_xml": "Pass"
+    }, 
+    "status_overall": "Pass"
+  }
+}
+</code></pre>
+<p>We are working to finalise a user-interface as an alternative to the API too.  This has been delayed, partly due to TAG preparation work, but we hope to release the first iteration this in coming weeks.</p>
+<p>Hope that this helps in the meantime.</p>
+          <p><a href="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524/3</link>
+        <pubDate>Fri, 07 Oct 2016 15:29:51 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-524-3</guid>
+        <source url="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524.rss">Work towards an improved IATI validator</source>
+      </item>
+      <item>
+        <title>Work towards an improved IATI validator</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Dale. Good to see that you started improving the IATI public validator. Is any work still being done on the IATI public validator? The current implementation works fine for files up to 10 Mb. Unfortunately large XML’s, such as the activity file from Oxfam Novib Netherlands can not validated. Since the IATI public validator is a critical piece of software for IATI data quality assurance, I think it is important that the validator is also able to handle large XML’s.</p>
+          <p><a href="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524/2</link>
+        <pubDate>Fri, 07 Oct 2016 14:30:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-524-2</guid>
+        <source url="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524.rss">Work towards an improved IATI validator</source>
+      </item>
+      <item>
+        <title>Work towards an improved IATI validator</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Over the past few weeks, the IATI Technical Team have been making first steps to build an improved validator. This follows the great work by done by David Carpenter and others who built the initial validator, which has served IATI well since it’s initial development in 2012.</p>
+<h2>Why a new tool is needed</h2>
+<p>However, as users call for added validation functionality, the technical team feel would be better served by a revamped version, rather than trying to bolt functionality onto this legacy tool.</p>
+<p>The overall aim is to build a new validation tool that features:</p>
+<ul>
+<li>XML syntax and IATI schema checking.</li>
+<li>Content checking, to look for adherance to IATI Rulesets, and codelists. Plus basic sense checking where approproiate (for example: do specified transaction dates fall within the broad range of speficied activity start/end dates).</li>
+<li>RESTful API functionality, that can be used by bespoke publisher applications.</li>
+<li>Improved error messages, showing the context of any errors and pointing users towards appropriate documentation and guidance.</li>
+</ul>
+<p>The new tool will also have technical advantages. It will:</p>
+<ul>
+<li>Rationalise the IATI technology stack further towards Python and the ‘lxml’ XML parser.</li>
+<li>Make use of improved software design patterns.</li>
+<li>Enable integration into our other IATI tools, making better use of common functionality.</li>
+</ul>
+<h2>Our development approach</h2>
+<p>We are using <a href="https://www.gov.uk/service-manual/agile-delivery/agile-government-services-introduction">agile</a> and <a href="http://apievangelist.com/2014/08/11/what-is-an-api-first-strategy-adding-some-dimensions-to-this-new-question/">‘API first’</a> approaches to the development of this tool. Work is organised around 2-3 week sprints culminating the the release of a usable and testable product at the end of each iteration.</p>
+<p>The improved validator will continue to be an open-source tool and work is taking place on a <a href="https://github.com/IATI/IATI-Public-Validator/tree/81-validator-rewrite">new branch of the IATI-Public-Validator github repository</a>.  As ever, we welcome comments, suggestions and scrutiny on our work.</p>
+<h2>Sprint 1 complete</h2>
+<p>The first sprint has just completed and focuses on basic API functionality for XML syntax (well-formed) and validation against an (automatically detected) IATI version.</p>
+<p><a href="https://github.com/IATI/IATI-Public-Validator/blob/81-validator-rewrite/temp/api-examples.md">Examples API usage can be found here</a> with an available public endpoint of: <a href="http://dev.validator.iatistandard.org/api/validate/xml">http://dev.validator.iatistandard.org/api/validate/xml</a></p>
+<p>Future sprints will focus on adding documentation, a user-interface and content checking.</p>
+<h2>Watch this topic for updates.</h2>
+<p>We will be posting further updates to this thread and deploying to the public instance at regular intervals. In the meantime, we welcome user comments and testing of the current work.</p>
+          <p><a href="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524/1</link>
+        <pubDate>Thu, 21 Jul 2016 11:33:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-524-1</guid>
+        <source url="https://discuss.iatistandard.org/t/work-towards-an-improved-iati-validator/524.rss">Work towards an improved IATI validator</source>
+      </item>
+  </channel>
+</rss>

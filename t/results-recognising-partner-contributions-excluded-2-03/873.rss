@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Results – recognising partner contributions (excluded 2.03)</title>
+    <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873</link>
+    <description>**Title**
+Results – recognising partner contributions
+
+**Standard**
+Activity
+
+**Schema Object**
+iati-activities/iati-activity/result
+iati-activities/iati-activity/result/indicator
+
+**Type of Change**
+Addition to schema
+
+**Issue**
+•	Currently attribution is only possible for entire projects, not individual results or indicators.
+•	_Why is this a problem?:_ An increasingly large proportion of projects involve working in partnerships, be it from working with community groups, governments, NGOs, the private sector, academia, our funders etc. This presents a practical but solvable challenge where each reporting organisation in the partnership must represent these joint projects in their IATI data, making sure they reflect their relationship to the project and to others in the partnership using elements like participating-org and related-activity. 
+
+However, there is also a challenge for reporting results. There is currently no means to attribute specific project results to specific organisations within a partnership. This is leading to a number of undesirable reporting practices, for example, some organisations are unrecognised for their input, or all implementing organisations are assumed to have inputted equally, or the project is split into many smaller replicated projects in the data (one for each combination of implementing partners).  
+
+Each of these practices cause confusion when trying to understand and use IATI data.  Further they can disempower some organisations through the reporting process and they can create high reporting burden and opportunity for error through forcing organisations to artificially split and repeat their reporting of project results (and corresponding finances) into multiple sub-projects just for the purpose of IATI.
+
+There is a growing convention that each organisation reports only their own results.  Further, where there are overarching results (e.g. where multiple organisations’ contributions cannot be separated) these results are reported by the lead organisation (as determined by e.g. funding agreement structure) (eg: section 1.2 of the Netherlands Ministry of Foreign Affairs (NMFA) guidelines: https://www.government.nl/documents/publications/2015/12/01/open-data-and-development-cooperation).  This convention can help to avoid double counting and clarifies the interrelatedness of organisations’ activities. 
+
+However, this convention only partially solves the challenge.  For example, even for overarching results, not all results apply to all members of a consortium.  Here the ability to recognise contributions to results would avoid the additional reporting burden, risk of error, confusion and lack of traceability from artificially replicating and fragmenting projects.  
+
+Also some organisations also do not have the capacity to report directly to IATI (think of the tiny pop-up organisations that are funded to take on specific causes such as Ebola but that do not have computer/internet access).  Rather than remove their voice from IATI publishing we suggest it is preferable that the funding/reporting organisation, which will already be collecting the required IATI information as part of their funding agreement in many cases, is able to report and recognise the organisations efforts.  
+
+**Proposal**
+We propose that a “light touch” attribution should be possible by adding the names and/or IATI organisation identifier of participating organisations that are involved in a result or indicator.
+
+add participating-org (0..*) to result/ and result/indicator
+with “ref”  attribute to link to iati organisation identifier
+
+(see http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/ and http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/ for relevant sections of the standard)
+
+
+**Standards Day**
+Workshopped at the TAG 2017 and mentioned at the end of the Standards day as part of the results section.  Although there was very little time to discuss the proposal, no criticism of the proposal was offered. Proposal has been on IATI Discuss since March 2017.
+
+**Links**
+•	This topic is discussed here: http://discuss.iatistandard.org/t/results-recognising-partner-contributions/743 
+•	This topic addresses Principle 6 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – see http://discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/.  Technical suggestions were devised by technology specialists at the Nethope Athens conference March 2017.  In all around 30 M&amp;E and technical specialists were involved in this consultation and it builds on a previous consultation by Bond 2015-16 (https://www.bond.org.uk/resources/publishing-results-to-iati - also on discuss.iatistandard : https://discuss.iatistandard.org/t/sharing-results-using-iati-data-standard-will-it-improve-learning-and-accountability/431 ).
+•	Related discussion on importance of allowing attribution at project level: http://support.iatistandard.org/entries/82377659-Add-activity-id-attribute-to-participating-org-element</description>
+    
+    <lastBuildDate>Mon, 06 Nov 2017 09:15:27 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/13</link>
+        <pubDate>Mon, 06 Nov 2017 09:16:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-13</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[petyakangalova]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/12</link>
+        <pubDate>Mon, 06 Nov 2017 09:15:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-12</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/11</link>
+        <pubDate>Wed, 25 Oct 2017 14:01:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-11</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[pelleaardema]]></dc:creator>
+        <description><![CDATA[
+            <p>In line with <a href="https://discuss.iatistandard.org/t/our-shared-understanding-of-what-iati-is-and-is-not">https://discuss.iatistandard.org/t/our-shared-understanding-of-what-iati-is-and-is-not</a> I think this specific proposal is adding complexity to the results standard, while the IATI community is still in the process of gaining experience with the use of the ‘results section’ in more complex networks.</p>
+<p>I’d be in favour of gaining more experience first, before we try to fix (perceived) problems.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/10</link>
+        <pubDate>Fri, 18 Aug 2017 09:41:55 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-10</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry for the delay, and yes, thanks <a class="mention" href="/u/bwalkden">@bwalkden</a> we decided that the queries were not about the specific proposal but the results section of the IATI standard in general (eg double counting etc.).  We’d like to suggest that guidelines are written for how to publish IATI data in general (eg following the traceability discussions, what IATI is and is not <a href="https://discuss.iatistandard.org/t/our-shared-understanding-of-what-iati-is-and-is-not/893">Our shared understanding of what IATI is, and is not,</a> etc.), but guideline writing is separate to this proposal or any other in the 2.03 consultation and seems a much larger topic.  I hope that helps.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/9</link>
+        <pubDate>Fri, 21 Jul 2017 12:58:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-9</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[bwalkden]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>I think there’s been a slight misunderstanding about what Mike and I were doing. During the call I asked for examples of how the designers of the results structure saw it working, particularly with respect to what I see as a risk of double-counting. I wasn’t offering to develop any examples myself – I was asking for examples.</p>
+<p>Mike and I subsequently had a meeting to discuss our understanding of the model, and I think Mike has taken action to drop a note to Bill Anderson. Mike, please correct me if I’m wrong.</p>
+<p>As far as qualitative results are concerned, my thoughts are as follows, largely influenced by what I’ve heard M&amp;E people from Save and other organisations say – I’m an IT person, so not qualified to comment on operational use of these things as I don’t have the experience:</p>
+<ol>
+<li>Yes, everything can be quantified. That doesn’t mean that everything should be quantified, or that the effort to quantify / measure is always justified. In particular, some smaller organisations would not be able to cost-justify it, and are not publishing to IATI, so it falls to their commissioning organisation to do it, and the commissioning organisations would like to recognise the smaller partners’ contributions.</li>
+<li>The results model seems to be designed around the commissioning organisation setting targets, and the commissioned organisation reporting actuals against the targets. Therefore if the commissioning organisation sets quantified targets the commissioned organisation should report actuals using the same scale. This needs to be realistic – if the delivery partner can’t measure the thing for some reason then is there any point in setting a quantitative target? If the commissioning organisation prefers to set some qualitative targets they should be free to do so.</li>
+<li>Some organisations may wish to report results that are not linked to targets. If so, I don’t see why they should not be able to report qualitative results as this gives some background and richness to the numbers.</li>
+</ol>
+<p>I’d be very happy to hear other thoughts and opinions about this.</p>
+<p>Regards,<br>
+Bob</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/8</link>
+        <pubDate>Fri, 21 Jul 2017 10:07:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-8</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks again to all who have contributed to this proposal. It would be good to hear more use cases from everyone. <a class="mention" href="/u/mikesmith">@mikesmith</a> and <a class="mention" href="/u/bwalkden">@bwalkden</a> I’m particularly looking to you as per our discussion, to bring any practical examples on this proposal.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/7</link>
+        <pubDate>Thu, 20 Jul 2017 14:31:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-7</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Notes from consultation calls w/c 3rd July</p>
+<p>Outcome:<br>
+The proposal was reviewed by those on the call and there was no objection from the group.<br>
+Mike Smith and Bob Walkden agreed to explore usage of how this proposal will work over the next week. With the aim of providing practical examples to the IATI community.</p>
+<p>Discussion:<br>
+There were some questions on how this element would be used, and how to avoid double counting. The IATI tech team clarified that the IATI principles of traceability within financials should also apply to IATI results data.<br>
+There was general agreement for the need to explore more use cases of how this element would work. Particularly how this element would allow publishers to  delineate responsibility of meeting targets down, and then back up, the chain.</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/6</link>
+        <pubDate>Fri, 07 Jul 2017 12:04:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-6</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I don’t see mention of <code>participating-org/narrative</code> here, but presumably this will be added in order to be consistent with e.g. <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/participating-org/">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/participating-org/</a> ?</p>
+<p>Particularly relevant if the participating-org doesn’t report to IATI (and therefore doesn’t have a self-declared organisational identifier).</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/5</link>
+        <pubDate>Mon, 03 Jul 2017 13:27:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-5</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic has been included for consideration in the formal 2.03 proposal</p>
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/2</link>
+        <pubDate>Fri, 16 Jun 2017 15:30:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-2</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+      <item>
+        <title>Results – recognising partner contributions (excluded 2.03)</title>
+        <dc:creator><![CDATA[mikesmith]]></dc:creator>
+        <description><![CDATA[
+            <p><strong>Title</strong><br>
+Results – recognising partner contributions</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p><strong>Schema Object</strong><br>
+iati-activities/iati-activity/result<br>
+iati-activities/iati-activity/result/indicator</p>
+<p><strong>Type of Change</strong><br>
+Addition to schema</p>
+<p><strong>Issue</strong><br>
+•	Currently attribution is only possible for entire projects, not individual results or indicators.<br>
+•	<em>Why is this a problem?:</em> An increasingly large proportion of projects involve working in partnerships, be it from working with community groups, governments, NGOs, the private sector, academia, our funders etc. This presents a practical but solvable challenge where each reporting organisation in the partnership must represent these joint projects in their IATI data, making sure they reflect their relationship to the project and to others in the partnership using elements like participating-org and related-activity.</p>
+<p>However, there is also a challenge for reporting results. There is currently no means to attribute specific project results to specific organisations within a partnership. This is leading to a number of undesirable reporting practices, for example, some organisations are unrecognised for their input, or all implementing organisations are assumed to have inputted equally, or the project is split into many smaller replicated projects in the data (one for each combination of implementing partners).</p>
+<p>Each of these practices cause confusion when trying to understand and use IATI data.  Further they can disempower some organisations through the reporting process and they can create high reporting burden and opportunity for error through forcing organisations to artificially split and repeat their reporting of project results (and corresponding finances) into multiple sub-projects just for the purpose of IATI.</p>
+<p>There is a growing convention that each organisation reports only their own results.  Further, where there are overarching results (e.g. where multiple organisations’ contributions cannot be separated) these results are reported by the lead organisation (as determined by e.g. funding agreement structure) (eg: section 1.2 of the Netherlands Ministry of Foreign Affairs (NMFA) guidelines: <a href="https://www.government.nl/documents/publications/2015/12/01/open-data-and-development-cooperation" rel="nofollow noopener">https://www.government.nl/documents/publications/2015/12/01/open-data-and-development-cooperation</a>).  This convention can help to avoid double counting and clarifies the interrelatedness of organisations’ activities.</p>
+<p>However, this convention only partially solves the challenge.  For example, even for overarching results, not all results apply to all members of a consortium.  Here the ability to recognise contributions to results would avoid the additional reporting burden, risk of error, confusion and lack of traceability from artificially replicating and fragmenting projects.</p>
+<p>Also some organisations also do not have the capacity to report directly to IATI (think of the tiny pop-up organisations that are funded to take on specific causes such as Ebola but that do not have computer/internet access).  Rather than remove their voice from IATI publishing we suggest it is preferable that the funding/reporting organisation, which will already be collecting the required IATI information as part of their funding agreement in many cases, is able to report and recognise the organisations efforts.</p>
+<p><strong>Proposal</strong><br>
+We propose that a “light touch” attribution should be possible by adding the names and/or IATI organisation identifier of participating organisations that are involved in a result or indicator.</p>
+<p>add participating-org (0…*) to result/ and result/indicator<br>
+with “ref”  attribute to link to iati organisation identifier</p>
+<p>(see <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/</a> and <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/result/indicator/</a> for relevant sections of the standard)</p>
+<p><strong>Standards Day</strong><br>
+Workshopped at the TAG 2017 and mentioned at the end of the Standards day as part of the results section.  Although there was very little time to discuss the proposal, no criticism of the proposal was offered. Proposal has been on IATI Discuss since March 2017.</p>
+<p><strong>Links</strong><br>
+•	This topic is discussed here: <a href="//discuss.iatistandard.org/t/results-recognising-partner-contributions/743">Results: recognising partner contributions</a><br>
+•	This topic addresses Principle 6 from a consultation driven by Monitoring and Evaluation experts from UK CSOs Jan – Mar 2017 – see <a href="//discuss.iatistandard.org/t/results-discussion-space-and-tag-2016-17-path/502/">Results: discussion space and TAG 2016/17 path</a>.  Technical suggestions were devised by technology specialists at the Nethope Athens conference March 2017.  In all around 30 M&amp;E and technical specialists were involved in this consultation and it builds on a previous consultation by Bond 2015-16 (<a href="https://www.bond.org.uk/resources/publishing-results-to-iati" rel="nofollow noopener">https://www.bond.org.uk/resources/publishing-results-to-iati</a> - also on discuss.iatistandard : <a href="https://discuss.iatistandard.org/t/sharing-results-using-iati-data-standard-will-it-improve-learning-and-accountability/431">Sharing Results using IATI data standard: will it improve learning and accountability?</a> ).<br>
+•	Related discussion on importance of allowing attribution at project level: <a href="http://support.iatistandard.org/entries/82377659-Add-activity-id-attribute-to-participating-org-element" rel="nofollow noopener">http://support.iatistandard.org/entries/82377659-Add-activity-id-attribute-to-participating-org-element</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873/1</link>
+        <pubDate>Wed, 17 May 2017 12:38:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-873-1</guid>
+        <source url="https://discuss.iatistandard.org/t/results-recognising-partner-contributions-excluded-2-03/873.rss">Results – recognising partner contributions (excluded 2.03)</source>
+      </item>
+  </channel>
+</rss>

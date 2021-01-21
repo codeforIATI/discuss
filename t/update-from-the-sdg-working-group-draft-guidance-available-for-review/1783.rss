@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Update from the SDG working Group - draft guidance available for review</title>
+    <link>https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783</link>
+    <description>Dear all,
+
+The SDG working group set up after the 2018 TAG has been working hard and can now share the draft SDG guidance. Currently this only contains publishing guidance, and data use guidance will follow shortly.
+
+We have aimed to create guidance that every organisation can use and that works for data users. We recognise that some organisations may choose to go beyond this, and the guidance does not stop them doing so.
+
+Please do read over the document. We would like to hear from you as to whether or not the suggested guidance works for your organisation or data use needs, and your suggestions on how to make the guidance easier to understand. Please enter your thoughts into the [google doc](https://docs.google.com/document/d/11vsqHc-mdAYUCqrrGCaCTFxu48oD3VvBVSlY9Q3ideo/edit?usp=sharing) or on this Discuss post. There is also a proposal to implement the required codelist changes [here](https://discuss.iatistandard.org/t/on-hold-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/24).
+
+**Please can you add your comments by the 17 July**. They will then be reviewed by the SDG working group. 
+
+A summary of the recommendations of the working group is below:
+
+-------------------------------------------------------------------------------------------------------------
+
+The SDG working group recommends that organisations should publish:
+
+* Goals and/or Targets using the `&lt;tag&gt;` element
+* Indicators using the result/indicator &lt;reference&gt; attribute
+
+Recommendations and reasons for recommendations:
+
+**Recommended**
+
+* Using the `&lt;tag&gt;` element is the most ‘vanilla’ way of reporting SDGs and aligns with CRS reporting. Everyone who can attach SDGs to their activities should be able to use this. Data users can also turn SDGs reported in other areas into tags (see section 3.2)
+
+* Using the `&lt;result/indicator/reference&gt;` element adds further details, by ‘tagging’ an SDG Indicator to a result and aligning it with the organisation&#39;s internal indicators. It allows SDGs to be published at an outcome level, providing additional detail to the `&lt;tag&gt;` element. We recognise that not every organisation will be able to do this.
+
+**Other areas where SDGs could be reported (not recommended)**
+
+* Using the` &lt;policy-marker&gt;`, whilst similar to the `&lt;tag&gt;` element, adds complexity and diverges from CRS reporting.
+
+* The majority of the group were not in favour of using the `&lt;sector&gt;` element for SDGs. This adds complexity, is not financially accurate and requires SDGs to add up to 100%. However, it is recognised that some publishers may want to use this option in the future. The UN agencies are one example but further discussion about how it is best for them to do so needs more exploration. In the SDG guidance, we do not recommend the `&lt;sector&gt;` element being used.
+
+* There is no direct mapping between the DAC sector codes and the SDGs. Previous comparisons have been carried out and the results do not allow a mapping to take place and place barriers to data interpretation on data users.
+
+**Other points to note**
+
+* The guidance is only guidance. It has been developed with a view to introducing conformity in published data to benefit end users by providing better comparability. It is not mandatory and does not prevent a publisher from using a different method according to their own business models and internal processes.
+
+* This guidance is not being released along with a Standard upgrade. Accordingly, publishers are still governed by the existing rules and capabilities within the Standard.</description>
+    
+    <lastBuildDate>Tue, 09 Jul 2019 13:54:01 +0000</lastBuildDate>
+    <category>Consultations</category>
+    <atom:link href="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Update from the SDG working Group - draft guidance available for review</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/james_mckinney">@James_McKinney</a>. You’re correct, I’ve added the <code>&lt;tag&gt;</code> back in.</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783/3</link>
+        <pubDate>Tue, 09 Jul 2019 13:54:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1783-3</guid>
+        <source url="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783.rss">Update from the SDG working Group - draft guidance available for review</source>
+      </item>
+      <item>
+        <title>Update from the SDG working Group - draft guidance available for review</title>
+        <dc:creator><![CDATA[James_McKinney]]></dc:creator>
+        <description><![CDATA[
+            <blockquote>
+<ul>
+<li>Goals and/or Targets using the element</li>
+</ul>
+</blockquote>
+<p>I assume a word is missing between “the” and “element”? (Perhaps it was eaten by an HTML filter.)</p>
+          <p><a href="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783/2</link>
+        <pubDate>Tue, 09 Jul 2019 13:52:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1783-2</guid>
+        <source url="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783.rss">Update from the SDG working Group - draft guidance available for review</source>
+      </item>
+      <item>
+        <title>Update from the SDG working Group - draft guidance available for review</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>Dear all,</p>
+<p>The SDG working group set up after the 2018 TAG has been working hard and can now share the draft SDG guidance. Currently this only contains publishing guidance, and data use guidance will follow shortly.</p>
+<p>We have aimed to create guidance that every organisation can use and that works for data users. We recognise that some organisations may choose to go beyond this, and the guidance does not stop them doing so.</p>
+<p>Please do read over the document. We would like to hear from you as to whether or not the suggested guidance works for your organisation or data use needs, and your suggestions on how to make the guidance easier to understand. Please enter your thoughts into the <a href="https://docs.google.com/document/d/11vsqHc-mdAYUCqrrGCaCTFxu48oD3VvBVSlY9Q3ideo/edit?usp=sharing" rel="nofollow noopener">google doc</a> or on this Discuss post. There is also a proposal to implement the required codelist changes <a href="https://discuss.iatistandard.org/t/on-hold-add-sdg-goals-and-targets-to-the-tagvocabulary-codelist/1562/24">here</a>.</p>
+<p><strong>Please can you add your comments by the 17 July</strong>. They will then be reviewed by the SDG working group.</p>
+<p>A summary of the recommendations of the working group is below:</p>
+<hr>
+<p>The SDG working group recommends that organisations should publish:</p>
+<ul>
+<li>Goals and/or Targets using the <code>&lt;tag&gt;</code> element</li>
+<li>Indicators using the result/indicator  attribute</li>
+</ul>
+<p>Recommendations and reasons for recommendations:</p>
+<p><strong>Recommended</strong></p>
+<ul>
+<li>
+<p>Using the <code>&lt;tag&gt;</code> element is the most ‘vanilla’ way of reporting SDGs and aligns with CRS reporting. Everyone who can attach SDGs to their activities should be able to use this. Data users can also turn SDGs reported in other areas into tags (see section 3.2)</p>
+</li>
+<li>
+<p>Using the <code>&lt;result/indicator/reference&gt;</code> element adds further details, by ‘tagging’ an SDG Indicator to a result and aligning it with the organisation’s internal indicators. It allows SDGs to be published at an outcome level, providing additional detail to the <code>&lt;tag&gt;</code> element. We recognise that not every organisation will be able to do this.</p>
+</li>
+</ul>
+<p><strong>Other areas where SDGs could be reported (not recommended)</strong></p>
+<ul>
+<li>
+<p>Using the<code>&lt;policy-marker&gt;</code>, whilst similar to the <code>&lt;tag&gt;</code> element, adds complexity and diverges from CRS reporting.</p>
+</li>
+<li>
+<p>The majority of the group were not in favour of using the <code>&lt;sector&gt;</code> element for SDGs. This adds complexity, is not financially accurate and requires SDGs to add up to 100%. However, it is recognised that some publishers may want to use this option in the future. The UN agencies are one example but further discussion about how it is best for them to do so needs more exploration. In the SDG guidance, we do not recommend the <code>&lt;sector&gt;</code> element being used.</p>
+</li>
+<li>
+<p>There is no direct mapping between the DAC sector codes and the SDGs. Previous comparisons have been carried out and the results do not allow a mapping to take place and place barriers to data interpretation on data users.</p>
+</li>
+</ul>
+<p><strong>Other points to note</strong></p>
+<ul>
+<li>
+<p>The guidance is only guidance. It has been developed with a view to introducing conformity in published data to benefit end users by providing better comparability. It is not mandatory and does not prevent a publisher from using a different method according to their own business models and internal processes.</p>
+</li>
+<li>
+<p>This guidance is not being released along with a Standard upgrade. Accordingly, publishers are still governed by the existing rules and capabilities within the Standard.</p>
+</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783/1</link>
+        <pubDate>Wed, 03 Jul 2019 16:02:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1783-1</guid>
+        <source url="https://discuss.iatistandard.org/t/update-from-the-sdg-working-group-draft-guidance-available-for-review/1783.rss">Update from the SDG working Group - draft guidance available for review</source>
+      </item>
+  </channel>
+</rss>

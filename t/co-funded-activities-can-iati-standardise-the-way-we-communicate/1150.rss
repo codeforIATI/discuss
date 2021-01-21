@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Co-funded Activities: Can IATI standardise the way we communicate?</title>
+    <link>https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150</link>
+    <description>[Good news from Malawi.](https://malawi24.com/2017/12/06/malawi-national-ids-great-milestone-transformative-promise/) A new National Registration and Identification System has issued 9 million identity cards in the last year. 
+
+The [National Registration Bureau tells us](http://www.nrb.gov.mw/index.php/services/national-registration) that:
+
+&gt; The mass registration exercise shall be undertaken as a Project Unit coordinated by the United Development Programme (UNDP). The government of Malawi and Development Partners such as DFID, European Union, Ireland, Norway, United States of America and UNDP agreed to fund the project at 40 and 60 percent respectively via a UNDP Basket Fund mechanism. The total project cost is $49, 694,000. In addition, the government of Malawi is providing in-kind contribution such as transportation, security etc
+
+What does IATI tell us? Can we get a coherent view of this activity across six publishers? 
+
+Browsing titles d-Portal will show you data from the UNDP, DFID and EC-DEVCO. With a bit more patience and digging I _think_ I found the relevant Ireland and USA entries (but nothing from Norway).
+
+**Sectors**
+
+Searching or analysing by sector yields a massive disconnect. (It is worth noting that DAC Purpose code 13010 specifically refers to &quot;vital registration&quot;)
+
+![sector|690x211](upload://lMoUMCJoWtFKXsfhngqKr4IZu74.PNG)
+
+**Participants**
+
+* UNDP, as the implementing agency,  comes up trumps here with a list of participating organisations
+
+![undp|690x293](upload://2cK6CCkLH1CUzgJQYXE8r1dUxVc.PNG)
+
+* DFID includes a document link to its business case which describes the co-funding arrangement
+* No other information on co-funding could be found
+
+**How can we improve?**
+
+My top tips are for all participants in co-funded activities to:
+
+* Agree on the same, or similar,` &lt;title&gt;`
+* Agree on `&lt;sector&gt;` classifications
+* Use the `&lt;related-activity&gt;` element to cross-reference all partners&#39; activities
+* Use the `&lt;description&gt;`to explain the co-funding arrangements
+
+The biggest challenge here is not implementing IATI, but thinking about the real world in a joined-up way.</description>
+    
+    <lastBuildDate>Sat, 09 Dec 2017 13:44:33 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Co-funded Activities: Can IATI standardise the way we communicate?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>My two cents: +1 for using related activity, as imaging e.g. coordinating a name across languages, and much better than a description as descriptions can’t be interpreted by a machine. Also +1 for ‘received from/sent to Org IDs’ for the funds.</p>
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/7</link>
+        <pubDate>Sat, 09 Dec 2017 13:44:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1150-7</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150.rss">Co-funded Activities: Can IATI standardise the way we communicate?</source>
+      </item>
+      <item>
+        <title>Co-funded Activities: Can IATI standardise the way we communicate?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="5" data-topic="1150">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/y/f05b48/40.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>, I don’t understand why this is not coded 100% 13010, since this code includes vital registratin very specifically</p>
+</blockquote>
+</aside>
+<p>I agree. Is this because (some?) donor’s use sector-coding for upward accountability within their domestic political environment, rather than to provide an accurate description of the specific output?</p>
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/6</link>
+        <pubDate>Fri, 08 Dec 2017 17:26:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1150-6</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150.rss">Co-funded Activities: Can IATI standardise the way we communicate?</source>
+      </item>
+      <item>
+        <title>Co-funded Activities: Can IATI standardise the way we communicate?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Bill, this is a very interesting example to work on.<br>
+A few reactions from a (non-involved) donor’s perspective on your tips and/or Reid’s responses:</p>
+<aside class="quote no-group" data-post="3" data-topic="1150">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>reidmporter:</p>
+<p>the verb “agree” implies coordination, which A) is difficult in practice and B) in my estimation isn’t really a top priority of the back office team publishing the data.</p>
+<p>A) Surely people/institutions speak to each other and coordinate - I would assume face to face - when agreeing to collaborate. If they can agree on how to split the bill can’t they agree on other stuff too?</p>
+</blockquote>
+</aside>
+<p>I think some level of coordination is possible in most cases, at least for the initial partners/funders. It would be healthy to have such discussions to improve sector coding (based on the initiative’s description, I don’t understand why this is not coded 100% 13010, since this code includes vital registratin very specifically). Keeping in mind though that consensus may not always be achievable (for one, sometimes it IS very hard to assign sectors to a project).</p>
+<aside class="quote no-group" data-post="2" data-topic="1150">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/reidmporter/40/204_1.png" class="avatar"> reidmporter:</div>
+<blockquote>
+<p>Why not push donors to insert language in their contracts/agreements that spells out exactly how such and such activity is to be published? Basically, treat IATI the same as we treat branding requirements</p>
+</blockquote>
+</aside>
+<p>That’s a really interesting idea that would apply beyond co-funded projects (though not all projects). Will give some thought to its feasibility.</p>
+<aside class="quote no-group quote-modified" data-post="2" data-topic="1150">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/reidmporter/40/204_1.png" class="avatar"> reidmporter:</div>
+<blockquote>
+<p>but it seems it should be the accountable agency calling the shots for efficiency’s sake.</p>
+</blockquote>
+</aside>
+<p>Assume by accountable agency you mean UNDPm as stated in the data above?  If so, first thing to note is that this is erroneous - the Malawi National Registration Bureau (or higher-level unit under which it falls) is most likely the accountable agency, according to the standard.</p>
+<p>Second, we may get higher quality data if all partners discuss/agree on coding. In this example, UNDP is coding this project 15113 “Anti corruption”, which seems quite strange. Discussing with partners may have resulted on them choosing 13010.  That said, the proposed coding could be included in the project proposal as a first step toward common coding.</p>
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/5</link>
+        <pubDate>Fri, 08 Dec 2017 17:08:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1150-5</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150.rss">Co-funded Activities: Can IATI standardise the way we communicate?</source>
+      </item>
+      <item>
+        <title>Co-funded Activities: Can IATI standardise the way we communicate?</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>Yeah I’m not sure my original post made any sense upon second reading. It was pre-coffee. I mean uh…my lawyer wrote it?<img src="//discuss.iatistandard.org/images/emoji/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/4</link>
+        <pubDate>Fri, 08 Dec 2017 13:37:56 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1150-4</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150.rss">Co-funded Activities: Can IATI standardise the way we communicate?</source>
+      </item>
+      <item>
+        <title>Co-funded Activities: Can IATI standardise the way we communicate?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="1150">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/reidmporter/40/204_1.png" class="avatar"> reidmporter:</div>
+<blockquote>
+<p>the verb “agree” implies coordination, which A) is difficult in practice and B) in my estimation isn’t really a top priority of the back office team publishing the data.</p>
+</blockquote>
+</aside>
+<p>A) Surely people/institutions speak to each other and coordinate - I would assume face to face - when agreeing to collaborate. If they can agree on how to split the bill can’t they agree on other stuff too?</p>
+<p>B) See A). Isn’t it project managers and fund managers that decide such matters?</p>
+<aside class="quote no-group" data-post="2" data-topic="1150">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/reidmporter/40/204_1.png" class="avatar"> reidmporter:</div>
+<blockquote>
+<p>Why not push donors to insert language in their contracts/agreements</p>
+</blockquote>
+</aside>
+<p>Telling donors how to frame their contracts goes quite a way beyond IATI’s remit, doesn’t it?</p>
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/3</link>
+        <pubDate>Fri, 08 Dec 2017 11:11:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1150-3</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150.rss">Co-funded Activities: Can IATI standardise the way we communicate?</source>
+      </item>
+      <item>
+        <title>Co-funded Activities: Can IATI standardise the way we communicate?</title>
+        <dc:creator><![CDATA[reidmporter]]></dc:creator>
+        <description><![CDATA[
+            <p>Your tips make sense, but the verb “agree” implies coordination, which A) is difficult in practice and B) in my estimation isn’t really a top priority of the back office team publishing the data.</p>
+<p>Guidance that’s been agreed by the community would go a long way (basically, your top tips codified) but there’s still a lot left to “agree” on.</p>
+<p>Why not push donors to insert language in their contracts/agreements that spells out exactly how such and such activity is to be published? <strong>Basically, treat IATI the same as we treat branding requirements</strong> - for instance, “the donor logo must be this big/left aligned on the PPT slides, and the <code>&lt;title&gt;</code> <code>&lt;sector&gt;</code> <code>&lt;related-activity&gt;</code> must be […] in IATI?” There could even be template text that procurement specialists could adapt and drop into their agreements.</p>
+<p>Mileage may vary for cofunding arrangements/MOUs, but it seems it should be the <s>implementing</s> accountable agency calling the shots for efficiency’s sake.</p>
+<p>Edit: Meant to say accountable, not implementing, in the last line.</p>
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/2</link>
+        <pubDate>Thu, 07 Dec 2017 14:38:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1150-2</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150.rss">Co-funded Activities: Can IATI standardise the way we communicate?</source>
+      </item>
+      <item>
+        <title>Co-funded Activities: Can IATI standardise the way we communicate?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a href="https://malawi24.com/2017/12/06/malawi-national-ids-great-milestone-transformative-promise/" rel="nofollow noopener">Good news from Malawi.</a> A new National Registration and Identification System has issued 9 million identity cards in the last year.</p>
+<p>The <a href="http://www.nrb.gov.mw/index.php/services/national-registration" rel="nofollow noopener">National Registration Bureau tells us</a> that:</p>
+<blockquote>
+<p>The mass registration exercise shall be undertaken as a Project Unit coordinated by the United Development Programme (UNDP). The government of Malawi and Development Partners such as DFID, European Union, Ireland, Norway, United States of America and UNDP agreed to fund the project at 40 and 60 percent respectively via a UNDP Basket Fund mechanism. The total project cost is $49, 694,000. In addition, the government of Malawi is providing in-kind contribution such as transportation, security etc</p>
+</blockquote>
+<p>What does IATI tell us? Can we get a coherent view of this activity across six publishers?</p>
+<p>Browsing titles d-Portal will show you data from the UNDP, DFID and EC-DEVCO. With a bit more patience and digging I <em>think</em> I found the relevant Ireland and USA entries (but nothing from Norway).</p>
+<p><strong>Sectors</strong></p>
+<p>Searching or analysing by sector yields a massive disconnect. (It is worth noting that DAC Purpose code 13010 specifically refers to “vital registration”)</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/98a65216aa289c83c0b2055e24d32fb4f81a8946.PNG" data-download-href="https://discuss.iatistandard.org/uploads/default/98a65216aa289c83c0b2055e24d32fb4f81a8946" title="sector.PNG"><img src="https://discuss.iatistandard.org/uploads/default/original/1X/98a65216aa289c83c0b2055e24d32fb4f81a8946.PNG" alt="sector" width="690" height="211" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/98a65216aa289c83c0b2055e24d32fb4f81a8946_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">sector.PNG</span><span class="informations">783×240 5.77 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p><strong>Participants</strong></p>
+<ul>
+<li>UNDP, as the implementing agency,  comes up trumps here with a list of participating organisations</li>
+</ul>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/0f7520ab8fcd01938d66a6f597929094efa8950e.PNG" data-download-href="https://discuss.iatistandard.org/uploads/default/0f7520ab8fcd01938d66a6f597929094efa8950e" title="undp.PNG"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/0f7520ab8fcd01938d66a6f597929094efa8950e_2_690x293.PNG" alt="undp" width="690" height="293" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/0f7520ab8fcd01938d66a6f597929094efa8950e_2_690x293.PNG, https://discuss.iatistandard.org/uploads/default/original/1X/0f7520ab8fcd01938d66a6f597929094efa8950e.PNG 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/0f7520ab8fcd01938d66a6f597929094efa8950e.PNG 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/0f7520ab8fcd01938d66a6f597929094efa8950e_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">undp.PNG</span><span class="informations">922×392 249 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<ul>
+<li>DFID includes a document link to its business case which describes the co-funding arrangement</li>
+<li>No other information on co-funding could be found</li>
+</ul>
+<p><strong>How can we improve?</strong></p>
+<p>My top tips are for all participants in co-funded activities to:</p>
+<ul>
+<li>Agree on the same, or similar,<code>&lt;title&gt;</code>
+</li>
+<li>Agree on <code>&lt;sector&gt;</code> classifications</li>
+<li>Use the <code>&lt;related-activity&gt;</code> element to cross-reference all partners’ activities</li>
+<li>Use the <code>&lt;description&gt;</code>to explain the co-funding arrangements</li>
+</ul>
+<p>The biggest challenge here is not implementing IATI, but thinking about the real world in a joined-up way.</p>
+          <p><a href="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150/1</link>
+        <pubDate>Thu, 07 Dec 2017 11:50:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1150-1</guid>
+        <source url="https://discuss.iatistandard.org/t/co-funded-activities-can-iati-standardise-the-way-we-communicate/1150.rss">Co-funded Activities: Can IATI standardise the way we communicate?</source>
+      </item>
+  </channel>
+</rss>

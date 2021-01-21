@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hierarchies - general guidance</title>
+    <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861</link>
+    <description>This proposal is part of the [2.03 upgrade process](https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838), please comment by replying below.
+
+**Standard**
+Activity
+&lt;p&gt;
+**Schema Object**
+None
+&lt;p&gt;
+**Type of Change**
+Addition of guidance
+&lt;p&gt;
+**Issue**
+Publishers and users require clearer guidance on how hierarchical business models are managed.
+&lt;p&gt;
+**Proposal**
+Add a section on use of hierarchies to the standard guidance on [Establishing Publishing Policies](http://iatistandard.org/202/guidance/how-to-publish/establish-publishing-policies/). This should include:
+&lt;ul&gt;
+&lt;li&gt;The scope of use must not extend beyond the reporting of the activities of a single organisation. 
+&lt;li&gt;All types of transactions may be reported at any level provided that:
+&lt;ul&gt;
+&lt;li&gt;There is no double counting across the activities of a single organisation. 
+&lt;li&gt;Transactions should not report disbursements within a hierarchical group. The flow of money down a hierarchical chain is implicitly assumed
+&lt;li&gt;Incoming Funds can be present at any level but must be reported only once and at only one level
+&lt;/ul&gt;
+&lt;li&gt;Budgets &amp; results can be defined at any number of levels
+&lt;li&gt;All mandatory fields should be present at all levels. 
+&lt;li&gt;Hierarchical groups should be treated as a single activity for the purpose of publisher statistics assessments
+&lt;/ul&gt;
+**Standards Day**
+Proposals were accepted. There was a wider discussion in the room around different use of hierarchy, described as hierarchy of relationship as well as hierarchy of funding flows. However, there was confusion around the definition being used for double counting and how that relates to reporting hierarchies. It was clarified that as long as the flow of resources is reported correctly, there will be no double counting. However, a number of examples were given from organisations highlighting that that there is inconsistency in how they use hierarchies and their understanding of double counting. The issue of treating hierarchical groups as single activities for publisher statistics assessments was not discussed.
+&lt;p&gt;
+**Links**
+Previous discussions - https://discuss.iatistandard.org/t/tech-paper-hierarchies/539/21</description>
+    
+    <lastBuildDate>Tue, 18 Jul 2017 22:02:16 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, in the example total disbursements to <code>OTHERORG-1</code> are $1000.</p>
+<p>However, it could also be that the disbursement from the <code>DONOR-1</code> activity is a mistake, and that <code>DONOR</code> really meant that $500 was disbursed to <code>OTHERORG-1</code>. Maybe they were trying to say "$500 of project <code>DONOR-1</code>'s funds went to <code>OTHERORG-1</code>; that $500 comes from this specific component <code>DONOR-2</code>".</p>
+<p>My point being, when we make things much more complex in the standard, both publishers and users will be much more likely to misinterpret the standard and the data and thereby run into fairly significant problems…</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/14</link>
+        <pubDate>Tue, 18 Jul 2017 22:02:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-14</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree with <a class="mention" href="/u/markbrough">@markbrough</a> on this. The use case is not terribly clear for tracking movements of funds within an organization, while the potential for it to be used erroneously appears quite high. The original proposal not to report “transactions” between different levels of a hierarchical group should be maintained.</p>
+<p>(Mark, in your example above, total disbursements to OTHERORG-1 if you add h=1+h=2 are $1,000, no? $500 from DONOR-1 and $500 from DONOR-2?)</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/13</link>
+        <pubDate>Tue, 18 Jul 2017 21:00:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-13</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/herman">@Herman</a>, thanks for your response. My example (sorry, wasn’t terribly clear) is about hierarchies within one organisation - <code>DONOR-1</code> and <code>DONOR-2</code> projects are from the same organisation, with two levels of hierarchy. My concern is that it is complicated to add up the total amount disbursed if a) both levels can have disbursements to other organisations and b) both levels can disburse to each other.</p>
+<p>I can imagine rules you could put in place to handle the example above - i.e. always ensure internal disbursements are balanced by incoming funds. But given how many people are using the standard incorrectly as it currently stands, I don’t think it is realistic to expect such rules to be followed. So users would have to decide whether they think the example means the amount being disbursed is $500, $1000, or $1500, and the correct interpretation might vary by publisher.</p>
+<p>If it is important to show internal flow of funds (and I am not really clear what the use case for this is, or how generalisable that use case would be) then I think it would be preferable to explicitly state that the flows are internal rather than re-using the disbursement transaction type.</p>
+<p>Basically, I agree with you on this point:</p>
+<blockquote>
+<p>Sometimes you want to avoid double counting. Sometimes you wont. It depends on your use-case. This should be decided at the moment of consuming the data and not at the moment of producing the data.</p>
+</blockquote>
+<p>But I think at the moment, it is not clear how a user would be able to reliably avoid double-counting in this example. And I think we should be trying to avoid adding additional burden to users at this stage.</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/11</link>
+        <pubDate>Mon, 12 Jun 2017 15:31:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-11</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/markbrough">@markbrough</a> There are many publishers which are using two levels of activities (level 1 - programme, level-2 project) within one organisation. Of the organisations funded by the Netherlands MFA which report in IATI, the majority does.</p>
+<p>Unless I misunderstand you, your example is about hierarchies spanning 2 organizations. The discussion here was, if I am not mistaken,  how to handle transactions in hierarchies  within one organization (•The scope of use must not extend beyond the reporting of the activities of a single organisation.). Maybe we are discussing two different subjects here?</p>
+<p>As a matter of principle, i.m.o. the IATI standard should be able to reflect reality. We shouldn’t try to artificially simplify reality to accommodate to the standard. So I am very reluctant to accept any limitations on what you can model just to make interpretation of the data (e.g. avoiding double counting) easier. Sometimes you want to avoid double counting. Sometimes you wont. It depends on your use-case. This should be decided at the moment of consuming the data and not at the moment of producing the data.</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/10</link>
+        <pubDate>Thu, 08 Jun 2017 15:13:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-10</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I think I agree with <a class="mention" href="/u/oj_">@OJ_</a>'s point here. It would be helpful to make it clear in the data whether funds are a) actually being disbursed from the organisation or b) just moved around inside that organisation. I find a) is far more important than b), but it would be good if we can find a way to do both consistently.</p>
+<p>Almost all of the official donors that have published so far are only publishing commitments / disbursements at one level. In this case, where donors are using multiple hierarchies, flattening them up can be achieved by taking all the transactions from h=2 to h=1. If transactions can be used at both levels, then it becomes much more complicated.</p>
+<p>Consider the following:<br>
+h=1 activity <code>DONOR-1</code><br>
+=&gt; disbursement to activity <code>DONOR-2</code>: $500<br>
+=&gt; disbursement to activity <code>OTHERORG-1</code>: 500</p>
+<p>h=2 activity <code>DONOR-2</code><br>
+=&gt; incoming funds from activity <code>DONOR-1</code>: $500<br>
+=&gt; disbursement to activity <code>OTHERORG-1</code>: $500</p>
+<p>I am then not sure what the total disbursements of h=1+h=2 should be. Is this not overly complicated to handle (and inconsistent with most of the data that has been published to date) compared with just:<br>
+h=1 activity <code>DONOR-1</code>: no transactions<br>
+h=2 activity <code>DONOR-2</code>:<br>
+=&gt; disbursement to activity <code>OTHERORG-1</code>: $500</p>
+<p>Also wary of making things more complicated than they need to be, given that the standard is already a bit of a mammoth…</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/9</link>
+        <pubDate>Wed, 07 Jun 2017 15:22:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-9</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="5" data-topic="861">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>Are you happy with</p>
+<ul>
+<li>Incoming Funds can be present at any level. Funds received from external sources but must be reported only once.</li>
+</ul>
+</blockquote>
+</aside>
+<p>That looks ok.</p>
+<p>Regarding the flows between activities within 1 organization: it depends on the use-case if you are interested in the internal commitment and/or disbursement flows.</p>
+<p>From the double counting perspective: you can avoid double counting at data use time, by ignoring/excluding all the transfers between programme and project level. So even when the flows between programme and project level do not balance, you can avoid double counting. I would be reluctant to add the balancing rule for internal flows, since organizations do internal tracking in many different ways. This rule would lead to constructing data which might in reality not be part of an organisation’s administration.</p>
+<p>What’s i.m.o. important though is that all flows (commitments, disbursements and expenditures) crossing the organization boundary (incoming and outgoing), are only reported once by this organization.</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/8</link>
+        <pubDate>Wed, 07 Jun 2017 15:15:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-8</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Yes, I am happy with that.</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/7</link>
+        <pubDate>Wed, 07 Jun 2017 14:37:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-7</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>I certainly don’t want to block your constructive effort. Would it be worthwhile to consider a specific ‘type’ of transaction to be used for such internal transactions? It’s hardly in line with the common-sense concept of ‘disbursement’ that we usually apply. I would find it problematic along several lines (which type_of_flow of type_of_aid applies to internal disbursements? And can we rely on simultaneous reporting of the out- and in-going amount of each transaction? (otherwise we can’t really clam that there is no double counting)).</p>
+<p>If we came up with a specific ‘type’ stamp, I would have no problem. Then these transactions could be entirely ignored if you wish to assess an organisations overall incoming/outgoing flows, and you could instantly verify whether the sum of transactions of that type is zero. I do understand the interest in disclosing the origin of ‘incoming’ funds in any activity.</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/6</link>
+        <pubDate>Wed, 07 Jun 2017 10:33:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-6</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="861">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>Incoming Funds can be present at any level but must be reported only once and at only one level</p>
+<p>This is far to restrictive. In practice incoming funds and commitments can be both at the program level (hierarchy level 1) and the activity level (hierarchy level 2). Eg when co-financing a specific activity  under a program.</p>
+</blockquote>
+</aside>
+<ul>
+<li>The intention here was to ensure that funds coming in from external sources are only reported once.</li>
+<li>I agree that there does not appear to be a good reason for specifying ‘only one level’</li>
+</ul>
+<p>Are you happy with</p>
+<ul>
+<li>Incoming Funds can be present at any level. Funds received from external sources but must be reported only once.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/5</link>
+        <pubDate>Tue, 06 Jun 2017 07:47:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-5</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="861">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>◦There is no double counting across the activities of a single organisation.</p>
+<p>Does this mean that it is allowed to have an outgoing fund trx of X from hierarchy level 1 if there is an incoming fund trx X at hierarchy level 2?</p>
+<p>◦Transactions should not report disbursements within a hierarchical group.<br>
+The flow of money down a hierarchical chain is implicitly assumed.</p>
+<p>As mentioned in the previous discussion: it can be quite interesting to see what has been disbursed or committed from the program level (hierarchy level</p>
+</blockquote>
+</aside>
+<p>I can now see why we have confusion. The proposal as it stands suggests that intra-organisational disbursements (with matching incoming funds) can be made between a publisher’s activities provided that they are not part of an hierarchical group.</p>
+<p>I suggest</p>
+<ul>
+<li>We qualify the first proposition: There is no double counting across the activities of a single organisation. This excludes disbursements between activities which are matched by traceable balancing incoming funds transactions. (Traceable means that the incoming fund transaction specifies the provider-activity-id)</li>
+<li>We remove the second proposition. (i.e. the first proposition refers to all of a publisher’s activities)</li>
+</ul>
+<p><a class="mention" href="/u/oj_">@OJ_</a> are you happy that making the balancing incoming funds explicit deals with shoveling funds around transparently?</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/4</link>
+        <pubDate>Tue, 06 Jun 2017 07:41:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-4</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="861">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/herman/40/192_1.png" class="avatar"> Herman:</div>
+<blockquote>
+<p>◦Transactions should not report disbursements within a hierarchical group.<br>
+The flow of money down a hierarchical chain is implicitly assumed.</p>
+<p>As mentioned in the previous discussion: it can be quite interesting to see what has been disbursed or committed from the program level (hierarchy level 1) to the activity level (hierarchy level 2) when you want to asses how far the execution of a program is.</p>
+</blockquote>
+</aside>
+<p>I fail to comprehend the concept of ‘disbursement’ from programme to component, within one and the same reporting organisation. If the aim is to disclose how far the execution of a programme is, I would recommend to combine info on budgets (on both levels) with info on real disbursements (and expenditures) - i.e. outgoing flows from level 2.</p>
+<p>As a parallel, from DAC-statistics: You don’t Count any ODA if you are just shoveling funds around between your own budgetlines or bank-accounts. So which type of aid were you considering to apply for such internal reclassifications?</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/3</link>
+        <pubDate>Tue, 30 May 2017 18:15:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-3</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Some questions:<br>
+◦There is no double counting across the activities of a single organisation.</p>
+<p>Does this mean that it is allowed to have an outgoing fund trx of X from hierarchy level 1 if there is an incoming fund trx X at hierarchy level 2?</p>
+<p>◦Transactions should not report disbursements within a hierarchical group.<br>
+The flow of money down a hierarchical chain is implicitly assumed.</p>
+<p>As mentioned in the previous discussion: it can be quite interesting to see what has been disbursed or committed from the program level (hierarchy level 1) to the activity level (hierarchy level 2) when you want to asses how far the execution of a program is.</p>
+<p>◦Incoming Funds can be present at any level but must be reported only once and at only one level</p>
+<p>This is far to restrictive. In practice incoming funds and commitments can be both at the program level (hierarchy level 1) and the activity level (hierarchy level 2). Eg when co-financing a specific activity  under a program.</p>
+<p>In summary: the scope limitation is fine. The other restrictions seem to restrict valid real word use cases being modelled in IATI. Avoiding double counting is i.m.o. something which needs to be done at the moment of usage of IATI data, not at the moment of the production of IATI data.</p>
+<p>From the procedural pint of view: limiting the scope of hierarchies to 1 organization, is a breaking change. Therefore shouldn’t this proposal  be part of the next decimal upgrade?</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/2</link>
+        <pubDate>Fri, 19 May 2017 12:54:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-2</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+      <item>
+        <title>Hierarchies - general guidance</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>This proposal is part of the <a href="https://discuss.iatistandard.org/t/version-2-03-decimal-upgrade-index-of-proposals/838">2.03 upgrade process</a>, please comment by replying below.</p>
+<p><strong>Standard</strong><br>
+Activity</p>
+<p>
+**Schema Object**
+None
+</p><p>
+**Type of Change**
+Addition of guidance
+</p><p>
+**Issue**
+Publishers and users require clearer guidance on how hierarchical business models are managed.
+</p><p>
+**Proposal**
+Add a section on use of hierarchies to the standard guidance on [Establishing Publishing Policies](http://iatistandard.org/202/guidance/how-to-publish/establish-publishing-policies/). This should include:
+</p><ul>
+<li>The scope of use must not extend beyond the reporting of the activities of a single organisation. 
+</li>
+<li>All types of transactions may be reported at any level provided that:
+<ul>
+<li>There is no double counting across the activities of a single organisation. 
+</li>
+<li>Transactions should not report disbursements within a hierarchical group. The flow of money down a hierarchical chain is implicitly assumed
+</li>
+<li>Incoming Funds can be present at any level but must be reported only once and at only one level
+</li>
+</ul>
+</li>
+<li>Budgets &amp; results can be defined at any number of levels
+</li>
+<li>All mandatory fields should be present at all levels. 
+</li>
+<li>Hierarchical groups should be treated as a single activity for the purpose of publisher statistics assessments
+</li>
+</ul>
+**Standards Day**
+Proposals were accepted. There was a wider discussion in the room around different use of hierarchy, described as hierarchy of relationship as well as hierarchy of funding flows. However, there was confusion around the definition being used for double counting and how that relates to reporting hierarchies. It was clarified that as long as the flow of resources is reported correctly, there will be no double counting. However, a number of examples were given from organisations highlighting that that there is inconsistency in how they use hierarchies and their understanding of double counting. The issue of treating hierarchical groups as single activities for publisher statistics assessments was not discussed.
+<p>
+**Links**
+Previous discussions - https://discuss.iatistandard.org/t/tech-paper-hierarchies/539/21</p>
+          <p><a href="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/hierarchies-general-guidance/861/1</link>
+        <pubDate>Fri, 12 May 2017 12:56:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-861-1</guid>
+        <source url="https://discuss.iatistandard.org/t/hierarchies-general-guidance/861.rss">Hierarchies - general guidance</source>
+      </item>
+  </channel>
+</rss>

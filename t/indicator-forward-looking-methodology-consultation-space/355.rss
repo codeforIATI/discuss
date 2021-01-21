@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Indicator Forward Looking Methodology - consultation space</title>
+    <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355</link>
+    <description>**[Forward Looking][1]**
+
+The number of activities with budgets reported for each year is compared against the total number of activities current at the start of each year. The table contains three blocks: 
+
+ - The first block shows the number of activities that are, or will be, current in this and the next two years.
+ - The second block shows how many of these activities contain a budget for the corresponding year.
+ - The third block expresses this as a percentage.
+
+  [1]: http://dashboard.iatistandard.org/forwardlooking.html</description>
+    
+    <lastBuildDate>Tue, 31 May 2016 09:55:19 +0000</lastBuildDate>
+    <category>Consultations</category>
+    <atom:link href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[amaro]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Dale,<br>
+Yes, now the sample activity is scored</p>
+<p>Thanks for your fast answer.</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/15">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/15</link>
+        <pubDate>Tue, 31 May 2016 09:55:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-15</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="13" data-topic="355">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/letter_avatar_proxy/v2/letter/d/2bfe46/40.png" class="avatar"> dalepotter:</div>
+<blockquote>
+<p>The reason the activity is not included in the 2017 counts is that the activity is excluded from all 2017 forward-looking counts. This is because the activity would have expired when being assessed for 2017 (based on the today’s day and month, but in 2017). This relates to this issue, although I will double check that this methodology has been interpreted and implemented correctly based on your example data.</p>
+</blockquote>
+</aside>
+<p>Hi <a class="mention" href="/u/amaro">@amaro</a>, just as a follow-up to this, I have double-checked the intentions behind <a href="https://github.com/IATI/IATI-Dashboard/issues/389">issue 389</a> and it seems there was a misinterpretation in its implantation.  I have made a <a href="https://github.com/IATI/IATI-Stats/commit/9b40a7d12e8c444f27d355bf65c9354f69bcfb3e">change to the code</a> to resolve this.</p>
+<p>This will have the effect of scoring the <a href="http://pastebin.com/TuTKtb2G">sample activity you described</a> being scored as having a budget for 2016 and 2017 when the Dashboard next fully regenerates.</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/14</link>
+        <pubDate>Fri, 27 May 2016 13:04:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-14</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Alberto,</p>
+<p>Just been taking a look at how a sample activity that you have described would be interpreted by the Dashboard stats logic (for reference, the sample activity in IATI format is here: <a href="http://pastebin.com/TuTKtb2G">http://pastebin.com/TuTKtb2G</a>).</p>
+<p>The reason the activity is not included in the 2017 counts is that the activity is excluded from all 2017 forward-looking counts. This is because the activity would have expired when being assessed for 2017 (based on the today’s day and month, but in 2017). This relates to <a href="https://github.com/IATI/IATI-Dashboard/issues/389">this issue</a>, although I will double check that this methodology has been interpreted and implemented correctly based on your example data.</p>
+<p>I’m not 100% sure on the the answer to you initial question regarding the choice of 370 days, although I suspect it is to be generous if publishers reported budgets which lasted slightly more than one calendar year. For example if the budget year is a leap year and a publisher has a policy to define a year end on a week day (when the calendar year in fact ends on a Saturday). This is just an interpretation - however <a class="mention" href="/u/bill_anderson">@bill_anderson</a> or <a class="mention" href="/u/bjwebb">@bjwebb</a> may have more information on this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/13</link>
+        <pubDate>Thu, 26 May 2016 14:37:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-13</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[amaro]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi!<br>
+I have a question about the methodology.<br>
+I don’t understand the reason of  “370 days” in the pseudocode of this indicator:</p>
+<blockquote>
+<p>If start and end are both not null<br>
+If (end - start &lt;= 370 days)<br>
+If end month &gt;= 7<br>
+budget year = end year<br>
+Else<br>
+budget year = end year - 1<br>
+Else ignore the budget<br>
+Else budget year is null</p>
+</blockquote>
+<p>I’m not sure but perhaps this is the reason why the following activity doesn’t appear in the 2017 table.</p>
+<p>This is the example (obviously, in the IATI XML file published, the data are correctly formatted)</p>
+<blockquote>
+<p>activity-date type=“1” iso-date=“2013-10-08”<br>
+activity-date type=“3” iso-date=“2017-04-08”</p>
+</blockquote>
+<p>And I include the budget information of every year:</p>
+<blockquote>
+<pre><code>budget
+  period-star="2013-10-08"
+  period-end="2013-12-31"
+  value 1176.5
+
+budget
+  period-start ="2014-01-01"
+  period-end iso-date="2014-12-31"
+  value 13765.05
+</code></pre>
+</blockquote>
+<blockquote>
+<pre><code>budget
+  period-start="2015-01-01"
+  period-end "2015-12-31"
+  value 13765.05
+</code></pre>
+</blockquote>
+<blockquote>
+<pre><code>budget
+  period-start="2016-01-01"
+  period-end="2016-12-31"
+  value 13765.05
+</code></pre>
+</blockquote>
+<blockquote>
+<pre><code>budget
+  period-start "2017-01-01"
+  period-end iso-date="2017-12-31"
+  value 4653.35
+</code></pre>
+</blockquote>
+<p>Thanks in advance<br>
+Alberto Amaro</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/12</link>
+        <pubDate>Thu, 26 May 2016 08:54:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-12</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[OJ_]]></dc:creator>
+        <description><![CDATA[
+            <p>The underlying assumptions are invalid. Activities are in the stage of ‘Implementation’ until ‘Completion’. This includes, as a general observation, more than 6 months for compilation of Completion Reports and proper closure of accounts including compilation/approval of final, financial audit. Thus it will be the rule, not the exception, that the last entry in ‘Disbursement Budget’ will be set some time in advance of the expected completion.</p>
+<p>We accept that a more accurate calculation is considerably more difficult, but it should be investigated if an alternative method could be applied: Calculating whether ‘past disbursements’+’future budgets’ equals ‘commitment’. Even this calculation will, however, be too simplistic in Denmark’s case – see comment regarding Commitments’.</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/11</link>
+        <pubDate>Tue, 01 Dec 2015 10:27:01 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-11</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Regarding planned disbursements, some points to consider as a start. What we want to do is identify projects that still have money to disburse, versus those that have already disbursed their funds.<br>
+A few ways to do this may be:</p>
+<ul>
+<li>only consider operational projects (obvious, but worth spelling out);</li>
+<li>exclude projects where total disbursements + expenditures = total commitments (perhaps with a margin like 10%, as total disbursements may not always match the original commitments);</li>
+<li>if a project has forward annual budgets, we would expect planned disbursements</li>
+</ul>
+<p>There may be cases where there’s a legitimate reason not to publish planned disbursements, even if publishing forward annual budgets.  I can’t think of a reason but perhaps others can weigh in on this and help define rules to identify and exclude such cases.</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/10</link>
+        <pubDate>Thu, 26 Nov 2015 15:00:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-10</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[arajivan]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks very much for this feedback.</p>
+<p>We already have all the SDG targets under the 17 Goals -  half or more of<br>
+the targets would be relevant for development finance institutions. Many<br>
+of the SDG indicators too are final as of 2 November 2015 (moved to the<br>
+“green” column from “yellow” and “grey”).  So it may be a good time to<br>
+start thinking about this. Look forward to more from IATI as the work<br>
+develops.</p>
+<p>Very best,</p>
+<p>Anuradha Rajivan</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/9</link>
+        <pubDate>Thu, 26 Nov 2015 06:36:29 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-9</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Anuradha we are introducing optional SDG reporting in Version 2.02 with a placeholder for indicators to be included when they are agreed. I think it is too early to consider these for inclusion in an indicator.</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/8</link>
+        <pubDate>Thu, 26 Nov 2015 05:50:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-8</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>The problem I have with planned disbursements is finding a fair way to measure them. Planned disbursements are about cash flow and are not a substitute for budgets (Josh I think you may have a different definition in the AMP). How can we determine which activities ought to have planned disbursements and which don’t?</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/7</link>
+        <pubDate>Thu, 26 Nov 2015 05:46:04 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-7</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[arajivan]]></dc:creator>
+        <description><![CDATA[
+            <p>Now that the Sustainable Development Goals are a realty, signed on to by developed and developing countries, is there thinking on developing DFI-relevant indicators / dashboard to assess contribution to the SDGs?</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/6</link>
+        <pubDate>Thu, 26 Nov 2015 01:41:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-6</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[Joshua_Powell]]></dc:creator>
+        <description><![CDATA[
+            <p>+1 to Yohanna’s comments on planned disbursements, which should ideally be part of the comprehensiveness scoring (or could even better be placed here to give them greater importance in the overall scoring). In many country systems, planned disbursements are entered prior to each country fiscal year, which proves to be quite important in short-term fiscal management.</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/5</link>
+        <pubDate>Tue, 24 Nov 2015 20:15:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-5</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>On the other hand, we’re not looking at planned disbursements in the indicator. This element provides important short-term planning information for partners and may be worth including.<br>
+I assume you looked at this; were there technical difficulties to assessing publishers on this element?</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/4</link>
+        <pubDate>Wed, 18 Nov 2015 17:08:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-4</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Yohanna</p>
+<p>I think you raise a valid point as to why we are visiting budgets twice.</p>
+<p>The thinking was that it would undermine the importance of budgets if we didn’t include them in the Comprehensiveness component even though they account for a whole 33% of the total indicator score in the Forward-Looking component.</p>
+<p>A solution could be to drop budgets from the comprehensive score (where it accounts for 1% of total indicator score) with a clear explanation in the narrative that this element is assessed n the Forward-Looking component.</p>
+<p>The Technical Team will look into your forward-looking score, which I agree doesn’t  look right.</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/3</link>
+        <pubDate>Wed, 18 Nov 2015 10:37:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-3</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m a bit confused by this one. How does it differ from the Budget element of the Comprehensiveness dimension?  Under Comprehensiveness, Budget = existence of activity budgets for current activities.<br>
+Under Forward-Looking, we have Current activities with budgets (for each year).</p>
+<p>I understand that under Comprehensiveness, a budget in ANY year will do. Still, it looks like quite a bit of overlap between the two. What is the rationale for this?  Perhaps we should remove the Budget element from the Comprehensiveness dimension?</p>
+<p>That being said, I am puzzled by DFATD’s result on this.  We get 93% for Budget under Comprehensiveness (and we know this to be correct), but only 35% under Forward-Looking (which we know to be incorrect).</p>
+<p>It would be good to have others’ views on the overlap between the 2 components, and to know whether other publishers have a similar issue with their forward-looking budgets.</p>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/2</link>
+        <pubDate>Tue, 17 Nov 2015 23:26:52 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-2</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+      <item>
+        <title>Indicator Forward Looking Methodology - consultation space</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><strong><a href="http://dashboard.iatistandard.org/forwardlooking.html">Forward Looking</a></strong></p>
+<p>The number of activities with budgets reported for each year is compared against the total number of activities current at the start of each year. The table contains three blocks:</p>
+<ul>
+<li>The first block shows the number of activities that are, or will be, current in this and the next two years.</li>
+<li>The second block shows how many of these activities contain a budget for the corresponding year.</li>
+<li>The third block expresses this as a percentage.</li>
+</ul>
+          <p><a href="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355/1</link>
+        <pubDate>Wed, 11 Nov 2015 17:00:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-355-1</guid>
+        <source url="https://discuss.iatistandard.org/t/indicator-forward-looking-methodology-consultation-space/355.rss">Indicator Forward Looking Methodology - consultation space</source>
+      </item>
+  </channel>
+</rss>

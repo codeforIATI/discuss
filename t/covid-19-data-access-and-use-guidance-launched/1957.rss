@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>COVID-19 data access and use guidance launched</title>
+    <link>https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957</link>
+    <description>New guidance has been released on how to access and use IATI data on COVID-19. The guidance explains how to find data on activities published by organisations on their response to the global pandemic. To date, over [500 COVID-19-related projects](http://d-portal.org/ctrack.html?aids=COVID-19#view=main) have been published by a wide range of organisations, for example, donor governments, UN agencies and NGOs.
+
+### View [ *Guidance: Accessing and Using COVID-19 Data* ](https://bit.ly/2SR32J1)
+
+In the guidance, data users can find instructions on how to search for COVID-19-related activities using IATI’s online tools, including d-portal and the Datastore Query Builder and API. This guidance follows the publication of guidance for organisations on how to [ *publish*  data on the COVID-19 pandemic.](https://iatistandard.org/en/news/updated-covid-19-guidance-iati-publishers/)
+
+By accessing IATI data, users can supplement their information on international resources responding to COVID-19. Good data is critical to avoid duplication, improve coordination and enable recipient governments to know what resources are flowing into their countries.
+
+#### **Updating guidance**
+
+As the response to the global pandemic progresses, the publishing guidance and availability of COVID-19 data may change. Therefore, the IATI Secretariat is committed to updating this guidance as required. Please keep updated with news relating to the pandemic here or sign-up to IATI’s monthly community newsletter.
+
+#### **Get support**
+
+If you have any specific questions on using or publishing IATI data on activities related to COVID-19, please do get in touch by emailing the IATI Helpdesk ([support@iatistandard.org](mailto:support@iatistandard.org)).</description>
+    
+    <lastBuildDate>Wed, 13 May 2020 18:15:19 +0000</lastBuildDate>
+    <category>COVID-19</category>
+    <atom:link href="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>COVID-19 data access and use guidance launched</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks also to <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> for putting this guidance together – it is great to see this kind of user-focused guidance!</p>
+<p>I think it is super helpful to work through and understand the steps that users need to go through to get data back out of various IATI tools. D-Portal looks pretty straightforward, I know this is due to quite a bit of work from the tech team and the D-Portal developers, so thanks a lot for that effort!!</p>
+<p>The steps for the Datastore are currently quite complicated, involving a number of not very intuitive steps and offline data wrangling. The only Datastore query listed in the document to return almost* all COVID-19 data returns XML data, but probably many users will be looking for a nice Excel extract of COVID-19 data.</p>
+<p>(* NB it appears to currently miss out the transaction description?)</p>
+<p>I think <a class="mention" href="/u/andylolz">@andylolz</a>’ suggestion might be a good way for being able to provide users with a single clear link to make IATI data on COVID-19 accessible from the Datastore. Users would then be able to refine a populated query builder form (e.g. to limit their search to a particular country). I know there might be a few other priority fixes in order to launch the Datastore as it is, but I think this should be seen as a priority as it is a very clear and quite urgent use case.</p>
+<p>The complexity of getting COVID-19 data out of the datastore also reflects the complexity of the publishing guidance, and I think should prompt us to think if we can simplify that guidance while making sure we can meet important use cases (<a href="https://discuss.iatistandard.org/t/current-discussion-quantifying-percentage-of-funds-allocated-from-an-activity-to-covid-19/1939">such as this</a>).</p>
+<p>Just to reiterate – I think this guidance is extremely helpful, both immediately for helping users to understand how to access the data, as well as highlighting areas for potential further improvement of existing tools and publication guidance.</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957/5</link>
+        <pubDate>Wed, 13 May 2020 18:15:19 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1957-5</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957.rss">COVID-19 data access and use guidance launched</source>
+      </item>
+      <item>
+        <title>COVID-19 data access and use guidance launched</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Re. the datastore query builder instructions in the guidance: It would be great if it were possible to generate and share a direct link to a populated query builder form. Here’s a ticket for that:</p>
+<aside class="onebox githubissue">
+  <header class="source">
+      <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/1863" target="_blank" rel="nofollow noopener">github.com/zimmerman-zimmerman/iati.cloud</a>
+  </header>
+  <article class="onebox-body">
+    <div class="github-row">
+  <div class="github-icon-container" title="Issue">
+	  <svg width="60" height="60" class="github-icon" viewBox="0 0 14 16" aria-hidden="true"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+  </div>
+
+  <div class="github-info-container">
+    <h4>
+      <a href="https://github.com/zimmerman-zimmerman/iati.cloud/issues/1863" target="_blank" rel="nofollow noopener">Feature request: Save query builder state</a>
+    </h4>
+
+    <div class="github-info">
+      <div class="date">
+        opened <span class="discourse-local-date" data-format="ll" data-date="2019-10-25" data-time="10:39:09" data-timezone="UTC">10:39AM - 25 Oct 19 UTC</span>
+      </div>
+
+
+      <div class="user">
+        <a href="https://github.com/andylolz" target="_blank" rel="nofollow noopener">
+          <img alt="andylolz" src="https://avatars1.githubusercontent.com/u/464193?v=4" class="onebox-avatar-inline" width="20" height="20">
+          andylolz
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="github-row">
+  <p class="github-content">Is your feature request related to a problem? Please describe.
+The query builder currently generates a query that can be saved and...</p>
+</div>
+
+<div class="labels">
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">BACKLOG</span>
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">FEATURE</span>
+    <span style="display:inline-block;margin-top:2px;background-color: #B8B8B8;padding: 2px;border-radius: 4px;color: #fff;margin-left: 3px;">QB</span>
+</div>
+
+  </article>
+  <div class="onebox-metadata">
+    
+    
+  </div>
+  <div style="clear: both"></div>
+</aside>
+
+<p>This feature would make these instructions much easier to communicate and follow.</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957/4</link>
+        <pubDate>Wed, 13 May 2020 14:16:26 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1957-4</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957.rss">COVID-19 data access and use guidance launched</source>
+      </item>
+      <item>
+        <title>COVID-19 data access and use guidance launched</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m not sure why the humanitarian flag is included in the list of COVID-19-specific values. As the guidance states at the very end:</p>
+<blockquote>
+<p>The use of the humanitarian flag does not specifically indicate that the activity is related to COVID-19.</p>
+</blockquote>
+<p>So it seems confusing to include it in a list of COVID-19-specific values.</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957/3</link>
+        <pubDate>Wed, 13 May 2020 14:13:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1957-3</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957.rss">COVID-19 data access and use guidance launched</source>
+      </item>
+      <item>
+        <title>COVID-19 data access and use guidance launched</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Great to see this type of user focused guidance being produced</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957/2</link>
+        <pubDate>Tue, 12 May 2020 12:17:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1957-2</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957.rss">COVID-19 data access and use guidance launched</source>
+      </item>
+      <item>
+        <title>COVID-19 data access and use guidance launched</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>New guidance has been released on how to access and use IATI data on COVID-19. The guidance explains how to find data on activities published by organisations on their response to the global pandemic. To date, over <a href="http://d-portal.org/ctrack.html?aids=COVID-19#view=main">500 COVID-19-related projects</a> have been published by a wide range of organisations, for example, donor governments, UN agencies and NGOs.</p>
+<h3>View <a href="https://bit.ly/2SR32J1"> <em>Guidance: Accessing and Using COVID-19 Data</em> </a>
+</h3>
+<p>In the guidance, data users can find instructions on how to search for COVID-19-related activities using IATI’s online tools, including d-portal and the Datastore Query Builder and API. This guidance follows the publication of guidance for organisations on how to <a href="https://iatistandard.org/en/news/updated-covid-19-guidance-iati-publishers/"> <em>publish</em>  data on the COVID-19 pandemic.</a></p>
+<p>By accessing IATI data, users can supplement their information on international resources responding to COVID-19. Good data is critical to avoid duplication, improve coordination and enable recipient governments to know what resources are flowing into their countries.</p>
+<h4><strong>Updating guidance</strong></h4>
+<p>As the response to the global pandemic progresses, the publishing guidance and availability of COVID-19 data may change. Therefore, the IATI Secretariat is committed to updating this guidance as required. Please keep updated with news relating to the pandemic here or sign-up to IATI’s monthly community newsletter.</p>
+<h4><strong>Get support</strong></h4>
+<p>If you have any specific questions on using or publishing IATI data on activities related to COVID-19, please do get in touch by emailing the IATI Helpdesk (<a href="mailto:support@iatistandard.org">support@iatistandard.org</a>).</p>
+          <p><a href="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957/1</link>
+        <pubDate>Mon, 11 May 2020 15:27:17 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1957-1</guid>
+        <source url="https://discuss.iatistandard.org/t/covid-19-data-access-and-use-guidance-launched/1957.rss">COVID-19 data access and use guidance launched</source>
+      </item>
+  </channel>
+</rss>

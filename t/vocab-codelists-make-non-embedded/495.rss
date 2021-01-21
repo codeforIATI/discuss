@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Vocab codelists - make &quot;non-embedded&quot;?</title>
+    <link>https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495</link>
+    <description>There are two different versions of SectorVocabulary codelist for
+
+* 2.01 (8 codes): http://iatistandard.org/201/codelists/SectorVocabulary/ 
+* 2.02 (12 codes): http://iatistandard.org/202/codelists/SectorVocabulary/
+
+This is because this list (and other vocab lists) are &quot;embedded&quot; - meaning they can only be changed through version updates: http://iatistandard.org/202/codelists/codelist-management/
+
+It might be a more useful approach for these vocab lists to be &quot;non-embedded&quot;, meaning that a new code can be added independently.  Currently the standard seems to suggest that additional/new vocab codes published in 2.02 **cannot** be used in previous versions of the standard (as they are not on the list).  I&#39;m not sure this is the intention - if I publish 2.01 (or a relevant 1.0x version) and want to utilise a new vocab, it&#39;s probably practical (and useful) to refer to a single/definitive list...
+
+(more widely, this might point at how versions of different codelists are managed and published - but the vocab use-case may provide a good focal point)</description>
+    
+    <lastBuildDate>Wed, 25 Jan 2017 10:57:22 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Vocab codelists - make &quot;non-embedded&quot;?</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>This topic will be covered by the TAG <a href="//discuss.iatistandard.org/t/tech-paper-codelist-management/538/2">Codelist Management</a> paper</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/8</link>
+        <pubDate>Wed, 25 Jan 2017 10:57:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-495-8</guid>
+        <source url="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495.rss">Vocab codelists - make &quot;non-embedded&quot;?</source>
+      </item>
+      <item>
+        <title>Vocab codelists - make &quot;non-embedded&quot;?</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Moving this to the Standard Management -&gt; Modification Additions &amp; Improvements category for further consideration</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/7</link>
+        <pubDate>Tue, 24 Jan 2017 12:22:53 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-495-7</guid>
+        <source url="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495.rss">Vocab codelists - make &quot;non-embedded&quot;?</source>
+      </item>
+      <item>
+        <title>Vocab codelists - make &quot;non-embedded&quot;?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stevieflow">@stevieflow</a> I agree with your suggestion</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/6</link>
+        <pubDate>Wed, 29 Jun 2016 10:44:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-495-6</guid>
+        <source url="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495.rss">Vocab codelists - make &quot;non-embedded&quot;?</source>
+      </item>
+      <item>
+        <title>Vocab codelists - make &quot;non-embedded&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/herman">@Herman</a> and <a class="mention" href="/u/bill_anderson">@bill_anderson</a> for your comments</p>
+<p>I just wanted to step back to the original focus - that of codelists relating to vocabularies.  To help, I’ve made a list, which echoes <a class="mention" href="/u/wendy">@Wendy</a>’s point about the mix between embedded and non-embedded lists</p>
+<p>embedded:</p>
+<ul>
+<li>
+<p>Sector Vocabulary | embedded | <a href="http://iatistandard.org/202/codelists/SectorVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/SectorVocabulary/</a></p>
+</li>
+<li>
+<p>Region Vocabulary | embedded | <a href="http://iatistandard.org/202/codelists/RegionVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/RegionVocabulary/</a></p>
+</li>
+<li>
+<p>Policy Marker Vocabulary | embedded | <a href="http://iatistandard.org/202/codelists/PolicyMarkerVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/PolicyMarkerVocabulary/</a></p>
+</li>
+<li>
+<p>Geographic Vocabulary | embedded | <a href="http://iatistandard.org/202/codelists/GeographicVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/GeographicVocabulary/</a></p>
+</li>
+<li>
+<p>Budget Identifier Vocabulary | embedded | <a href="http://iatistandard.org/202/codelists/BudgetIdentifierVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/BudgetIdentifierVocabulary/</a></p>
+</li>
+</ul>
+<p>non-embedded:</p>
+<ul>
+<li>
+<p>Indicator Vocabulary | non-embedded | <a href="http://iatistandard.org/202/codelists/IndicatorVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/IndicatorVocabulary/</a></p>
+</li>
+<li>
+<p>Humanitarian Scope Vocabulary | non-embedded |  <a href="http://iatistandard.org/202/codelists/HumanitarianScopeVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/HumanitarianScopeVocabulary/</a></p>
+</li>
+</ul>
+<p>My suggestion is that it may be useful to maintain vocab related lists as non-embedded - so that new vocabs can easily be added.  As <a class="mention" href="/u/wendy">@Wendy</a> also suggests, there might be a need for a criteria to add new vocabs - whilst my observation about the limited practicality of different versions (related to the version of IATI) of these lists still remains</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/5</link>
+        <pubDate>Wed, 29 Jun 2016 10:13:12 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-495-5</guid>
+        <source url="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495.rss">Vocab codelists - make &quot;non-embedded&quot;?</source>
+      </item>
+      <item>
+        <title>Vocab codelists - make &quot;non-embedded&quot;?</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Herman all third-party lists are already non-embedded. The issue is how we handle lists created by ourselves.</p>
+<p>So, for instance, Transaction Type is, in my view, correctly an embedded list which means it can only be changed through formal  upgrade procedures. Others that we have created do not necessarily have to be embedded.</p>
+<p>What I think we need to set in place at the next TAG are clear rules and guidelines for the embedding and versioning of code lists.</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/4</link>
+        <pubDate>Tue, 28 Jun 2016 07:44:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-495-4</guid>
+        <source url="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495.rss">Vocab codelists - make &quot;non-embedded&quot;?</source>
+      </item>
+      <item>
+        <title>Vocab codelists - make &quot;non-embedded&quot;?</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Wendy and Steven. I definitely think making the OECD/DAC sector codelists  non-embedded is a good idea. The contents of this codelist is maintained by the OECD/DAC and should i.m.o. immediately follow the changes made by the OECD/DAC.</p>
+<p>The IATI validation software should also check whether or not the proper code list values are used. Shouldn’t the OECD/DAC codelist also have an ‘valid from’ and ‘valid until’ date for each value, since the OECD/DAC sometimes does depreciate sector codes?</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/3</link>
+        <pubDate>Tue, 28 Jun 2016 07:13:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-495-3</guid>
+        <source url="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495.rss">Vocab codelists - make &quot;non-embedded&quot;?</source>
+      </item>
+      <item>
+        <title>Vocab codelists - make &quot;non-embedded&quot;?</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for raising <a class="mention" href="/u/stevieflow">@stevieflow</a> and I agree that we should perhaps consider making most/all of the vocabulary codelists non-embedded so that they could be updated outside of a formal Standard upgrade and the entries available to earlier versions of the Standard. In fact we did actually make the  <a href="http://iatistandard.org/202/codelists/HumanitarianScopeVocabulary/">Humanitarian Scope Vocabulary</a> that was introduced at V2.02 non emebdded for that reason. We are also seeing an increasing requirement for the IATI Standard to enable linking to other sets of information/ topics of interest etc so such a change could certainly increase the ability of the IATI Standard to be more flexible and react more quickly to these.</p>
+<p>However, I should also mention that one thing we would need to be mindful of is that the non-embedded codelist update process has enough oversight to ensure that only valid entries for formal vocabularies (that are themselves well managed and likely to endure) are added. To that end I would certainly encourage members of the community to ‘subscribe’ to the <a href="http://support.iatistandard.org/forums/23076626-Non-embedded-Codelist-Amendments">non-embedded codelist amendment forum</a> so that they can be aware of any proposed/accepted changes and provide input/comment on any changes as well . In addition, it may still be necessary to only allow deletions of any entries as part of an integer Standard upgrade due to not being backwardly compatible.</p>
+<p>However, we would certainly welcome other views on this issue?</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/2</link>
+        <pubDate>Mon, 27 Jun 2016 09:42:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-495-2</guid>
+        <source url="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495.rss">Vocab codelists - make &quot;non-embedded&quot;?</source>
+      </item>
+      <item>
+        <title>Vocab codelists - make &quot;non-embedded&quot;?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>There are two different versions of SectorVocabulary codelist for</p>
+<ul>
+<li>2.01 (8 codes): <a href="http://iatistandard.org/201/codelists/SectorVocabulary/" rel="nofollow noopener">http://iatistandard.org/201/codelists/SectorVocabulary/</a>
+</li>
+<li>2.02 (12 codes): <a href="http://iatistandard.org/202/codelists/SectorVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/SectorVocabulary/</a>
+</li>
+</ul>
+<p>This is because this list (and other vocab lists) are “embedded” - meaning they can only be changed through version updates: <a href="http://iatistandard.org/202/codelists/codelist-management/" rel="nofollow noopener">http://iatistandard.org/202/codelists/codelist-management/</a></p>
+<p>It might be a more useful approach for these vocab lists to be “non-embedded”, meaning that a new code can be added independently.  Currently the standard seems to suggest that additional/new vocab codes published in 2.02 <strong>cannot</strong> be used in previous versions of the standard (as they are not on the list).  I’m not sure this is the intention - if I publish 2.01 (or a relevant 1.0x version) and want to utilise a new vocab, it’s probably practical (and useful) to refer to a single/definitive list…</p>
+<p>(more widely, this might point at how versions of different codelists are managed and published - but the vocab use-case may provide a good focal point)</p>
+          <p><a href="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495/1</link>
+        <pubDate>Wed, 22 Jun 2016 08:48:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-495-1</guid>
+        <source url="https://discuss.iatistandard.org/t/vocab-codelists-make-non-embedded/495.rss">Vocab codelists - make &quot;non-embedded&quot;?</source>
+      </item>
+  </channel>
+</rss>

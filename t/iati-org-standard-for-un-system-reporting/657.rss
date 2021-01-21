@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI Org standard for UN System Reporting</title>
+    <link>https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657</link>
+    <description>This [issue](http://support.iatistandard.org/hc/en-us/articles/214388586-IATI-Org-standard-for-UN-System-Reporting) was originally added and originally discussed on the previous version IATI Standard Upgrade forum. However that forum has itself now itself moved to the IATI Discuss platform so this topic has been created in order that discussions can continue here.</description>
+    
+    <lastBuildDate>Thu, 16 Feb 2017 09:25:30 +0000</lastBuildDate>
+    <category>2.03 Decimal Upgrade Discussions</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI Org standard for UN System Reporting</title>
+        <dc:creator><![CDATA[Herman]]></dc:creator>
+        <description><![CDATA[
+            <p>One of the elements in the original proposal was to add 5 new flow types:</p>
+<p>Humanitarian assistance<br>
+Peacekeeping operations<br>
+Technical cooperation<br>
+Normative, treaty-related and knowledge creation activities<br>
+Other flows</p>
+<p>I doubt that the flow-type element should be used for this classification, since flow-type is meant as a high level classification defining the ‘ruleset’ under which a financial flow is governed (ODA, OOF, Private flows, etc.).</p>
+<p>When looking at the attribute values above, I notice these values seem to be more comparable to the OECD DAC Table 1 ‘Aid type’:</p>
+<p><strong>Aid type</strong><br>
+I. OFFICIAL DEVELOPMENT ASSISTANCE (I.A + I.B)<br>
+I.A. Bilateral Official Development Assistance by types of aid (1+2+3+4+5+6+7+8+9+10)<br>
+I.A.1. Budget support<br>
+I.A.1.1. General budget support<br>
+I.A.1.2. Sector budget support<br>
+I.A.2. Bilateral core contributions &amp; pooled programmes &amp; funds<br>
+I.A.2.1. Core support to NGOs, other priv. bodies, PPPs &amp; research institutes<br>
+I.A.2.1.a. Core support to donor country-based NGOs &amp; civil society<br>
+I.A.2.1.b. Core support to international NGOs (including developing country-based NGOs)<br>
+I.A.2.1.c. Core support to Public-Private Partnerships (including networks)<br>
+I.A.2.1.d. Other<br>
+I.A.2.2. Specific-purpose programmes &amp; funds managed by int’l org.<br>
+I.A.2.3. Basket funds/pooled funding<br>
+I.A.3. Project-type interventions<br>
+I.A.3.1. Investment projects<br>
+I.A.3.2. Other projects<br>
+Memo: Projects qualifying as programme-based approaches<br>
+Memo: Cost of donor experts included in projects (optional reporting)<br>
+I.A.4. Experts and other technical assistance<br>
+I.A.4.1. Donor personnel<br>
+I.A.4.2. Other technical assistance<br>
+I.A.5. Scholarships and student costs in donor countries<br>
+I.A.5.1. Scholarships/training in donor country<br>
+I.A.5.2. Imputed student costs<br>
+I.A.6. Debt relief<br>
+I.A.6.1. Debt forgiveness and debt rescheduling<br>
+I.A.6.1.a. ODA claims (for loans, only capitalised interest)<br>
+I.A.6.1.b. OOF claims<br>
+I.A.6.1.c. Private claims<br>
+I.A.6.1. Memo: Grants for debt service reduction<br>
+I.A.6.2. Other action on debt<br>
+I.A.6.2.a. Service payments to third parties<br>
+I.A.6.2.b. Debt conversion<br>
+I.A.6.2.c. Debt buybacks<br>
+I.A.6.2.d. Other<br>
+I.A.7. Administrative costs not included elsewhere<br>
+I.A.8. Other in-donor expenditures<br>
+I.A.8.1. Development awareness<br>
+I.A.8.2. Refugees in donor countries<br>
+Memo: Programme-based approaches (PBAs)<br>
+Memo: Free-standing technical co-operation (FTC)<br>
+Memo: ODA channelled through private entities<br>
+Memo: ODA channelled through multilateral organisations<br>
+Memo: Post-conflict peacebuilding operations<br>
+Memo: Relief food aid<br>
+I.A.11. Other ODA not assigned to the above categories (historical series)<br>
+hist: development food aid<br>
+hist: humanitarian aid grants<br>
+I.B. Multilateral Official Development Assistance (capital subscriptions are included with grants)<br>
+I.B.1. Multilateral contributions to:<br>
+I.B.1.1. UN agencies<br>
+I.B.1.2. EU institutions<br>
+I.B.1.3. IDA<br>
+I.B.1.4. Other World Bank (IBRD, IFC, MIGA)<br>
+Memo: World Bank, Total (I.B.1.3. + I.B.1.4.)<br>
+I.B.1.5. Regional development banks<br>
+I.B.1.6. Global Environment Facility (96%)<br>
+I.B.1.7. Montreal Protocol<br>
+I.B.1.8. Other agencies<br>
+I.B.2. Recoveries on multilateral ODA grants and capital subscriptions / negative commitments<br>
+Memo: HIPC Initiative<br>
+Memo: IDA Debt Reduction Facility<br>
+II.A.1.2. Support to national private exporters<br>
+V.1. Total participation in peacebuilding operations (incl. non-ODA)<br>
+I.A.3.1. Investment projects, of which equities<br>
+I.A.6.3. Offsetting entry for debt forgiveness (principal ODA claim)<br>
+I.A.6.3. Memo: Offsetting entry for forgiven interest (interest ODA claim)<br>
+I.A.9. Recoveries on bilateral ODA grants / negative commitments<br>
+I.A.10. Other loans repayments<br>
+II. OTHER OFFICIAL FLOWS<br>
+II.A. Other Official Bilateral Flows<br>
+II.A.1. Export-related transactions<br>
+II.A.1.1. Official export credits to developing countries<br>
+II.A.2. Investment-related transactions<br>
+II.A.2.1. With developing countries<br>
+II.A.2.1. With developing countries, of which: Joint ventures<br>
+II.A.2.1. Joint ventures, of which: - Loans<br>
+II.A.2.1. Joint ventures, of which: - Acquisition of equity<br>
+II.A.2.2.  With residents (Support to national private investors)<br>
+II.A.3. Debt rescheduling<br>
+II.A.3.1. Non-concessional rescheduling<br>
+II.A.3.1.a. OOF claims (capitalised interest)<br>
+II.A.3.1.b. Private sector claims<br>
+II.A.3.2. OOF component of debt service reduction<br>
+II.A.4. Other bilateral securities and claims<br>
+II.A.4.1. Other acquisition of equity<br>
+II.A.4.2. Other claims and grants (includes developmental OOF loans)<br>
+II.A.5. Offsetting entry for debt relief<br>
+II.B. Transactions with Multilateral Agencies at Market Terms<br>
+II.B.1. Purchase of securities from issuing agencies<br>
+II.B.2. Other transactions<br>
+Memo: - Interest received on OOF, total (bilat.+multilat.)<br>
+Memo: - Interest received on OOF (Bilateral)<br>
+Memo: - Interest received on OOF (Multilateral)<br>
+Memo: - Offsetting entry for forgiven interest<br>
+III. PRIVATE FLOWS AT MARKET TERMS<br>
+III.A. Bilateral Private Flows<br>
+III.A.1. Direct investment<br>
+III.A.1. Direct investment, of which: New capital outflows<br>
+III.A.2. Other securities and claims<br>
+III.A.2.1. Total banks (long-term)<br>
+III.A.2.1.a. Bonds<br>
+III.A.2.1.b. Export credits<br>
+III.A.2.1.c. Other bank<br>
+III.A.2.2. Non-banks<br>
+III.A.2.2.a. Guaranteed export credits<br>
+III.A.2.2.b. Non-guaranteed portions of guaranteed export cred.<br>
+III.A.2.2.c. Bonds<br>
+III.A.2.2.d. Other securities (incl. equities)<br>
+III.A.3. Offsetting entry for debt relief<br>
+III.B. Multilateral Private Flows<br>
+IV. NET PRIVATE GRANTS (IV.1 minus IV.2)<br>
+IV.1. Gross outflow from private sources<br>
+IV.2. Support received from official sector</p>
+<p>This would imply adding another code list ‘Detailed Aid Type’ which reference the current Aid Type code list. I think it is import to converge as much as possible to the OECD existing standards, and not diverge.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657/2</link>
+        <pubDate>Thu, 16 Feb 2017 09:25:30 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-657-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657.rss">IATI Org standard for UN System Reporting</source>
+      </item>
+      <item>
+        <title>IATI Org standard for UN System Reporting</title>
+        <dc:creator><![CDATA[Riza]]></dc:creator>
+        <description><![CDATA[
+            <p>This <a href="http://support.iatistandard.org/hc/en-us/articles/214388586-IATI-Org-standard-for-UN-System-Reporting" rel="nofollow noopener">issue</a> was originally added and originally discussed on the previous version IATI Standard Upgrade forum. However that forum has itself now itself moved to the IATI Discuss platform so this topic has been created in order that discussions can continue here.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657/1</link>
+        <pubDate>Wed, 04 Jan 2017 11:57:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-657-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-org-standard-for-un-system-reporting/657.rss">IATI Org standard for UN System Reporting</source>
+      </item>
+  </channel>
+</rss>

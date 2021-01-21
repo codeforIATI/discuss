@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>IATI import module for Stata</title>
+    <link>https://discuss.iatistandard.org/t/iati-import-module-for-stata/406</link>
+    <description>Hello - 
+
+I am new to this forum, but wanted to write to introduce a new tool I developed for the Stata statistical software program to import and convert IATI data into Stata form so it can be used in statistical analysis.  Once installed in Stata the _iati_ command will contact the IATI Datastore API and download/convert the activity file of any IATI publisher specified.
+
+My objective in creating this module for Stata was to ease the process of accessing IATI data for quantitative analysis and statistical modelling. I hope in future versions of the module to be able to expand its options to mirror most of those currently present on the IATI Datastore CSV builder. 
+
+If you have any questions or feedback on this tool, please do not hesitate to contact me: lswiss(at)mun.ca  or @liamswiss.
+
+Cheers,
+
+Liam
+
+The _iati_ command can be installed in Stata via the following command:
+`ssc install iati`
+
+A more detailed blog post describing the tool is available [here](http://blog.liamswiss.com/2016/02/09/iati-import-for-stata/).</description>
+    
+    <lastBuildDate>Tue, 16 Feb 2016 10:11:34 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/iati-import-module-for-stata/406.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>IATI import module for Stata</title>
+        <dc:creator><![CDATA[Wilbrod]]></dc:creator>
+        <description><![CDATA[
+            <p>I have made the changes and it is working.<br>
+Thanks Liam</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-import-module-for-stata/406/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-import-module-for-stata/406/4</link>
+        <pubDate>Tue, 16 Feb 2016 10:11:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-406-4</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-import-module-for-stata/406.rss">IATI import module for Stata</source>
+      </item>
+      <item>
+        <title>IATI import module for Stata</title>
+        <dc:creator><![CDATA[LSwiss]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the feedback Wilbrod.</p>
+<p>The module is set for version 14 simply because it was written for and tested in that environment. I think it should be backward compatible, though.</p>
+<p>I believe you can hack the version requirement in your install by editing iati.ado manually.</p>
+<p>Replace “version 14” on line 4 of the code with “version 13” or lower and it may still work. Reload your Stata and it should work.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-import-module-for-stata/406/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-import-module-for-stata/406/3</link>
+        <pubDate>Mon, 15 Feb 2016 19:30:41 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-406-3</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-import-module-for-stata/406.rss">IATI import module for Stata</source>
+      </item>
+      <item>
+        <title>IATI import module for Stata</title>
+        <dc:creator><![CDATA[Wilbrod]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Liam,</p>
+<p>This seems a great tool.</p>
+<p>It installs well. However, It does not load data while using lower versions of Stata version14. (I have Stata version 13.1)<br>
+Let me know if/when this can be corrected!.</p>
+<p>Many thanks,</p>
+<p>Wilbrod</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-import-module-for-stata/406/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-import-module-for-stata/406/2</link>
+        <pubDate>Mon, 15 Feb 2016 18:58:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-406-2</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-import-module-for-stata/406.rss">IATI import module for Stata</source>
+      </item>
+      <item>
+        <title>IATI import module for Stata</title>
+        <dc:creator><![CDATA[LSwiss]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello -</p>
+<p>I am new to this forum, but wanted to write to introduce a new tool I developed for the Stata statistical software program to import and convert IATI data into Stata form so it can be used in statistical analysis.  Once installed in Stata the <em>iati</em> command will contact the IATI Datastore API and download/convert the activity file of any IATI publisher specified.</p>
+<p>My objective in creating this module for Stata was to ease the process of accessing IATI data for quantitative analysis and statistical modelling. I hope in future versions of the module to be able to expand its options to mirror most of those currently present on the IATI Datastore CSV builder.</p>
+<p>If you have any questions or feedback on this tool, please do not hesitate to contact me: lswiss(at)mun.ca  or <span class="mention">@liamswiss</span>.</p>
+<p>Cheers,</p>
+<p>Liam</p>
+<p>The <em>iati</em> command can be installed in Stata via the following command:<br>
+<code>ssc install iati</code></p>
+<p>A more detailed blog post describing the tool is available <a href="http://blog.liamswiss.com/2016/02/09/iati-import-for-stata/" rel="nofollow noopener">here</a>.</p>
+          <p><a href="https://discuss.iatistandard.org/t/iati-import-module-for-stata/406/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/iati-import-module-for-stata/406/1</link>
+        <pubDate>Mon, 15 Feb 2016 18:01:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-406-1</guid>
+        <source url="https://discuss.iatistandard.org/t/iati-import-module-for-stata/406.rss">IATI import module for Stata</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Comprehensiveness info on the IATI Dashboard</title>
+    <link>https://discuss.iatistandard.org/t/comprehensiveness-info-on-the-iati-dashboard/432</link>
+    <description>Are there any known issues or gotchas with the Comprehensiveness info on the IATI Dashboard? http://dashboard.iatistandard.org/comprehensiveness.html
+
+We&#39;d like to use it in our feedback to publishers but wanted to check it was ok to use in this way.
+
+@Wendy @dalepotter</description>
+    
+    <lastBuildDate>Tue, 22 Mar 2016 10:16:24 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/comprehensiveness-info-on-the-iati-dashboard/432.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Comprehensiveness info on the IATI Dashboard</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/sjohns">@SJohns</a></p>
+<p>That’s great that you’re planning to use the Comprehensiveness data for your work with publishers. There are a few things to be aware of though:</p>
+<p><strong>Workings</strong><br>
+It’s worth taking a good look at the corresponding ‘Narrative’ and ‘Pseudocode’ sections for each of the comprehensiveness statistic/s that you are looking at, as these give an explanation of how the statistic is calculated.</p>
+<p><strong>Only ‘current’ activities are counted</strong><br>
+It’s also worth noting that the comprehensiveness data is based on ‘current activities’. For an activity to be classed as ‘current’, it must meet at least one of these three conditions:</p>
+<ul>
+<li>If there is no planned end date AND activity-status/<span class="mention">@code</span> is 2 (implementing) or 4 (post-completion)</li>
+<li>If the actual end date is within the last year</li>
+<li>If the planned end date is greater than today</li>
+</ul>
+<p>At present, we don’t show how many activities are classed as current (and therefore normally* used as the denominator for calculating comprehensiveness percentages). However, we do have an <a href="https://github.com/IATI/IATI-Dashboard/issues/371">issue logged</a> to add this at some point.  In the meantime, there is a way to output a list of current activities, and I can point you to this if interested.</p>
+<p><strong>*Exceptions to the use of total current activities as a denominator</strong><br>
+A publishers’ total number of current activities is used as the denominator for calculating percentages, except in the following cases:</p>
+<ul>
+<li>Transaction - Disbursement or Expenditure: current activities less than one year old are excluded from the calculation as it is fair to assume that disbursements are not always made in the early stages of an activity’s development</li>
+<li>Transaction - Traceability: current activities that do not contain incoming funds transactions are excluded from the calculation.</li>
+<li>Budgets: see below</li>
+</ul>
+<p><strong>Budgets</strong><br>
+For calculation of the budget statistic on the <a href="http://dashboard.iatistandard.org/comprehensiveness_financials.html">Comprehensiveness financials</a> page, only the activities in the bottom hierarchy is used.  In line with a <a href="//discuss.iatistandard.org/t/indicator-comprehensive-methodology-consultation-space/356/6">consultation post</a>, this will soon change to be the hierarchy with the highest number of budgets within a publishers’ dataset.</p>
+<p><strong>Future additions</strong><br>
+As part of ongoing work (detailed <a href="//discuss.iatistandard.org/t/indicator-comprehensive-methodology-consultation-space/356">here</a> and <a href="//discuss.iatistandard.org/t/indicator-coverage-methodology-consultation-space/357/7">here</a>). In summary, this will add new metrics for aid type and recipient language. The metrics for Activity Website and Conditions Attached will be removed. There will also be the aforementioned change to which hierarchy is chosen in order to assess budgets. These are all due to be rolled out to the live Dashboard in the next few weeks.</p>
+<p>Hope that this helps - do let me know if you need any further information.</p>
+          <p><a href="https://discuss.iatistandard.org/t/comprehensiveness-info-on-the-iati-dashboard/432/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/comprehensiveness-info-on-the-iati-dashboard/432/2</link>
+        <pubDate>Tue, 22 Mar 2016 10:16:24 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-432-2</guid>
+        <source url="https://discuss.iatistandard.org/t/comprehensiveness-info-on-the-iati-dashboard/432.rss">Comprehensiveness info on the IATI Dashboard</source>
+      </item>
+      <item>
+        <title>Comprehensiveness info on the IATI Dashboard</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Are there any known issues or gotchas with the Comprehensiveness info on the IATI Dashboard? <a href="http://dashboard.iatistandard.org/comprehensiveness.html" rel="nofollow noopener">http://dashboard.iatistandard.org/comprehensiveness.html</a></p>
+<p>We’d like to use it in our feedback to publishers but wanted to check it was ok to use in this way.</p>
+<p><a class="mention" href="/u/wendy">@Wendy</a> <a class="mention" href="/u/dalepotter">@dalepotter</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/comprehensiveness-info-on-the-iati-dashboard/432/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/comprehensiveness-info-on-the-iati-dashboard/432/1</link>
+        <pubDate>Mon, 21 Mar 2016 12:14:34 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-432-1</guid>
+        <source url="https://discuss.iatistandard.org/t/comprehensiveness-info-on-the-iati-dashboard/432.rss">Comprehensiveness info on the IATI Dashboard</source>
+      </item>
+  </channel>
+</rss>

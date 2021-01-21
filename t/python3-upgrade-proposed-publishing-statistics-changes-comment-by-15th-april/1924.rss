@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</title>
+    <link>https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924</link>
+    <description>As outlined in a previous [Discuss post](https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/4), the Technical Team has been working towards upgrading the programming language that is used across a number of IATI tools from Python 2.x to Python 3.x
+
+One of the tools that is undergoing upgrade work is IATI’s [Publishing Statistics site.](http://publishingstats.iatistandard.org/)
+
+Some of the functionality changes between Python2 and Python3 have led to some scores in the Publishing Statistics pages altering slightly. These changes - and how we propose to handle them - are summarised below:
+
+**Change to [‘Bankers’ Rounding’](https://stackoverflow.com/questions/10825926/python-3-x-rounding-behavior)**
+
+* In Python2, x.5 numbers are rounded away from 0. E.g. 75.5 rounds to 76, 76.5 rounds to 77.
+* In Python3, x.5 numbers are rounded to the nearest even integer. Therefore 75.5 still rounds to 76, but 76.5 would also round to 76.
+* This means in Python3 that two publishers with a score that is a whole integer different in an initial calculation (e.g. 75.5 and 76.5) could be assigned the same score - 76 in this case.
+* The Technical Team proposes that we amend the code so that the Python2 functionality is replicated (while still upgrading the language itself to Python3), so that those two publishers would continue to score 76 and 77, respectively.
+
+**Change to [integer division](https://stackoverflow.com/questions/19507808/python3-integer-division) functionality**
+
+* In Python2, an integer divided by another integer, yields an integer. E.g. (2 / 3) * 100 = 66%
+* In Python3, an integer divided by another integer, yields a ‘float’. E.g. (2 / 3) * 100 = 66.66%
+* The Technical Team proposes that the core Python3 functionality is retained. Therefore where an initial calculation of 66.66 is currently output as 66, this will change to the value being output as 67.
+
+The only material difference to the metrics (as a result of the integer division change)  is that some values in the Publishing Statistics  calculations will be **one unit higher** than they currently are. Therefore, **no publisher will be penalised by the changes that we propose.**
+
+We welcome the community’s thoughts on this before proceeding with the amendments and deploying to the live Publisher Statistics site. Please provide your input by **Wednesday 15th April.** The upgrade will be implemented following this if there are no objections.
+
+Many thanks,
+IATI Tech Team</description>
+    
+    <lastBuildDate>Wed, 06 May 2020 10:48:25 +0000</lastBuildDate>
+    <category>Notifications</category>
+    <atom:link href="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>To be clear: no objections from me re. the proposals. I’m certainly in favour of upgrading to python 3 while retaining existing functionality as much as possible (which I think is the spirit of the first proposal), and fixing bugs including rounding bugs (which I think is the spirit of the second proposal).</p>
+<p>I suspect there are other rounding errors in this code (due to <a href="https://en.wikipedia.org/wiki/Round-off_error" rel="nofollow noopener">premature rounding</a>) but those should be addressed separate to the python 3 upgrade.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/7</link>
+        <pubDate>Wed, 06 May 2020 10:48:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1924-7</guid>
+        <source url="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924.rss">Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</source>
+      </item>
+      <item>
+        <title>Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>The Tech Team has completed the coding of the upgrade from Python2 to Python3. In order to test the exact differences the code introduces, we have created two versions of the output based on a static pull of the Registry data. You can see the differences in the versions here:<a href="https://github.com/akmiller01/Publishing-Changes/pull/1/files"> https://github.com/akmiller01/Publishing-Changes/pull/1/files</a></p>
+<p>As we suspected, the difference in the way that Python2 and Python3 treat integer division has resulted only in a handful of the statistics increasing by 1, and in some instances by 2 units.</p>
+<p>Of the cases where the statistic increased by 2 units, we concluded that this was an artifact of the two versions being run at slightly different times (once a date passes, an activity is no longer considered forward-looking, for e.g.).</p>
+<p>The underlying JSON files running the HTML are identical, so all of the above changes are only the result of the integer division and rounding differences. Please note the stats generated in this study were based off of a static pull of the Registry data, and as such are not directly comparable with the live version of publishing statistics (only comparable with each other).</p>
+<p>Even while trying to hold the data constant, the nature of how the statistics are generated does depend heavily on the computer clock at the time of running, so it is possible that some of the small increases are due to the two versions being run at slightly different times.</p>
+<p><a class="mention" href="/u/andylolz">@andylolz</a> These differences are due to the intrinsic ways in which Python2 and Python3 vary with regard to integers and rounding. While we could try and separate this slight change in the statistics with the version upgrade, it would be an exercise in re-introducing deprecated behavior into the newer version</p>
+          <p><a href="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/6</link>
+        <pubDate>Mon, 04 May 2020 14:47:27 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1924-6</guid>
+        <source url="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924.rss">Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</source>
+      </item>
+      <item>
+        <title>Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1924">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_2.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<p>some values in the Publishing Statistics calculations will be <strong>one unit higher</strong> than they currently are.</p>
+</blockquote>
+</aside>
+<p>Is there any way to list / identify which values will be affected?  Whilst flagged that nobody will be negatively changed, it’s important to know what - as publishers have no control / input to this change… (usually, a publisher can only influence their metrics on publisher statistics by updating their IATI publication)</p>
+          <p><a href="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/5</link>
+        <pubDate>Wed, 15 Apr 2020 15:21:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1924-5</guid>
+        <source url="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924.rss">Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</source>
+      </item>
+      <item>
+        <title>Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Alex! You’re absolutely right.</p>
+<p>Okay, so… It looks like there are a number of rounding issues in this code. There’s a lot of coercing and casting going on. It might be clearer and more accurate to use floats throughout, and leave all the rounding to presentation in the template (<a href="https://github.com/IATI/IATI-Dashboard/issues/403" rel="nofollow noopener">rounding up where applicable, as per this</a>).</p>
+<p>I’d suggest doing this as a separate piece of work to the python3 upgrade, since it’s not really related to that piece of work. It’s a happy coincidence that python3 happens to handle division differently… But it looks like there are other rounding issues here.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/4</link>
+        <pubDate>Tue, 14 Apr 2020 17:20:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1924-4</guid>
+        <source url="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924.rss">Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</source>
+      </item>
+      <item>
+        <title>Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</title>
+        <dc:creator><![CDATA[alex_miller]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Andy,</p>
+<p>Examples are scattered throughout the code, but here’s one in particular: <a href="https://github.com/IATI/IATI-Publishing-Statistics/blob/master/IATI-Dashboard/summary_stats.py#L105">https://github.com/IATI/IATI-Publishing-Statistics/blob/master/IATI-Dashboard/summary_stats.py#L105</a></p>
+<p>You can see the integer is cast to int before being divided by a length, which is also an integer.</p>
+          <p><a href="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/3</link>
+        <pubDate>Tue, 14 Apr 2020 14:38:08 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1924-3</guid>
+        <source url="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924.rss">Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</source>
+      </item>
+      <item>
+        <title>Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="1" data-topic="1924">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_2.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<ul>
+<li>The Technical Team proposes that we amend the code so that the Python2 functionality is replicated (while still upgrading the language itself to Python3), so that those two publishers would continue to score 76 and 77, respectively.</li>
+</ul>
+</blockquote>
+</aside>
+<p>This seems fine to me. A purely technical upgrade like this shouldn’t affect the output, so I think it’s okay to reproduce python2 rounding (and consider migrating to bankers rounding at a later date).</p>
+<aside class="quote no-group" data-post="1" data-topic="1924">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/iati-techteam/40/432_2.png" class="avatar"> IATI-techteam:</div>
+<blockquote>
+<ul>
+<li>Therefore where an initial calculation of 66.66 is currently output as 66, this will change to the value being output as 67.</li>
+</ul>
+</blockquote>
+</aside>
+<p>This sounds like a bug in the existing code – 66.66 shouldn’t be rounded to 66. In python2, integers should be cast to floats first. However, I’m not able to see an instance of this bug in the publishing statistics code. <strong>Please could you point to an example?</strong> (I see it in the coverage code, but obviously that is not currently in use.) Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/2</link>
+        <pubDate>Tue, 07 Apr 2020 12:02:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1924-2</guid>
+        <source url="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924.rss">Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</source>
+      </item>
+      <item>
+        <title>Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</title>
+        <dc:creator><![CDATA[IATI-techteam]]></dc:creator>
+        <description><![CDATA[
+            <p>As outlined in a previous <a href="https://discuss.iatistandard.org/t/python-2-x-deprecation-notice/1725/4">Discuss post</a>, the Technical Team has been working towards upgrading the programming language that is used across a number of IATI tools from Python 2.x to Python 3.x</p>
+<p>One of the tools that is undergoing upgrade work is IATI’s <a href="http://publishingstats.iatistandard.org/">Publishing Statistics site.</a></p>
+<p>Some of the functionality changes between Python2 and Python3 have led to some scores in the Publishing Statistics pages altering slightly. These changes - and how we propose to handle them - are summarised below:</p>
+<p><strong>Change to <a href="https://stackoverflow.com/questions/10825926/python-3-x-rounding-behavior">‘Bankers’ Rounding’</a></strong></p>
+<ul>
+<li>In Python2, x.5 numbers are rounded away from 0. E.g. 75.5 rounds to 76, 76.5 rounds to 77.</li>
+<li>In Python3, x.5 numbers are rounded to the nearest even integer. Therefore 75.5 still rounds to 76, but 76.5 would also round to 76.</li>
+<li>This means in Python3 that two publishers with a score that is a whole integer different in an initial calculation (e.g. 75.5 and 76.5) could be assigned the same score - 76 in this case.</li>
+<li>The Technical Team proposes that we amend the code so that the Python2 functionality is replicated (while still upgrading the language itself to Python3), so that those two publishers would continue to score 76 and 77, respectively.</li>
+</ul>
+<p><strong>Change to <a href="https://stackoverflow.com/questions/19507808/python3-integer-division">integer division</a> functionality</strong></p>
+<ul>
+<li>In Python2, an integer divided by another integer, yields an integer. E.g. (2 / 3) * 100 = 66%</li>
+<li>In Python3, an integer divided by another integer, yields a ‘float’. E.g. (2 / 3) * 100 = 66.66%</li>
+<li>The Technical Team proposes that the core Python3 functionality is retained. Therefore where an initial calculation of 66.66 is currently output as 66, this will change to the value being output as 67.</li>
+</ul>
+<p>The only material difference to the metrics (as a result of the integer division change)  is that some values in the Publishing Statistics  calculations will be <strong>one unit higher</strong> than they currently are. Therefore, <strong>no publisher will be penalised by the changes that we propose.</strong></p>
+<p>We welcome the community’s thoughts on this before proceeding with the amendments and deploying to the live Publisher Statistics site. Please provide your input by <strong>Wednesday 15th April.</strong> The upgrade will be implemented following this if there are no objections.</p>
+<p>Many thanks,<br>
+IATI Tech Team</p>
+          <p><a href="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924/1</link>
+        <pubDate>Mon, 06 Apr 2020 11:14:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1924-1</guid>
+        <source url="https://discuss.iatistandard.org/t/python3-upgrade-proposed-publishing-statistics-changes-comment-by-15th-april/1924.rss">Python3 Upgrade: Proposed Publishing Statistics Changes (comment by 15th April)</source>
+      </item>
+  </channel>
+</rss>

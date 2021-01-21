@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Location element: which elements are most useful to data users?</title>
+    <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757</link>
+    <description>Does anyone have information (beyond anecdotal) on which location sub-elements are most useful to data users? I&#39;ve seen different combinations, but most usually just the point (coordinates) and name being given in the data. Here&#39;s a list of the sub-elements. 
+
+location-reach
+location-id
+name
+description
+activity-description
+administrative
+point
+exactness
+location-class
+feature-designation
+
+Look forward to hearing back!  Also, has anyone written or seen user-friendly guidance on how to use the location element? So this would be supplementary to the IATI element page, and any donor guidance. If it&#39;s for Aidstream, even better!</description>
+    
+    <lastBuildDate>Thu, 06 Jun 2019 16:41:50 +0000</lastBuildDate>
+    <category>IATI Standard</category>
+    <atom:link href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Indeed, using a shape (with a gazeteer’s ID) makes much better sense than using coordinates when trying to geolocate beneficiaries.</p>
+<p>It is indeed one of the key gaps in the open data infrastructure that there is not API to retrieve info from eg Geonames, making them the IDs almost useless (indeed, is GAC alone in using geonames IDs in its IATI data?)</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/14</link>
+        <pubDate>Thu, 06 Jun 2019 16:41:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-14</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="11" data-topic="1757">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/letter_avatar_proxy/v4/letter/s/65b543/40.png" class="avatar"> SJohns:</div>
+<blockquote>
+<p>On the coordinates, IATI captures point data (ie one town in a district) rather than shape data (ie the boundaries of a district).</p>
+</blockquote>
+</aside>
+<p>I don’t know if this is already well-known… But IATI allows you to specify district boundaries via the <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/location/location-id/" rel="nofollow noopener"><code>location/location-id</code></a> and/or the <a href="http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/location/administrative/" rel="nofollow noopener"><code>location/administrative</code></a> elements. This is a cool feature, but unfortunately I don’t know if the resulting info is exposed anywhere, possibly because it’s a bit tricky to do (because of the many different vocabularies).</p>
+<p>So e.g. I can do something like:</p>
+<pre><code class="lang-xml">&lt;location&gt;
+    &lt;location-id vocabulary="G1" code="1142263" /&gt;
+    &lt;name&gt;Farāh, Afghanistan&lt;/name&gt;
+&lt;/location&gt;
+</code></pre>
+<p>…and that <code>location-id</code> (1142263) would refer to the Farāh region of Afghanistan in the <a href="http://www.geonames.org/" rel="nofollow noopener">GeoNames</a> vocabulary (G1): <a href="https://www.geonames.org/1142263/farah.html" rel="nofollow noopener">https://www.geonames.org/1142263/farah.html</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/13</link>
+        <pubDate>Thu, 06 Jun 2019 12:25:45 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-13</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Matt for finding the link. I’ll have a look through and let you know if I need more info.</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/12</link>
+        <pubDate>Wed, 05 Jun 2019 20:03:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-12</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the information everyone - so it looks like information on administrative level 2 location ie. city or district rather than level 1 (region/division) is the most useful. Location-reach is also useful, as is including location information in the activity level description. Coordinates are better than just names.</p>
+<p>I have an additional question: On the coordinates, IATI captures point data (ie one town in a district) rather than shape data (ie the boundaries of a district). Where the beneficiaries are located within a district, perhaps in small settlements that may not be on a map, rather than a particular town, how would you like to see this recorded in IATI? Are there other sub-elements that could help clarify this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/11</link>
+        <pubDate>Wed, 05 Jun 2019 20:01:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-11</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>I always found this guidance helpful: <a href="http://docs.aiddata.org/ad4/files/geocoding-methodology-updated-2017-06.pdf" rel="nofollow noopener">http://docs.aiddata.org/ad4/files/geocoding-methodology-updated-2017-06.pdf</a> - if useful I could fish through old emails for the aiddata people who I met when they came to Sierra Leone and trained 16 students to geocode the AIMS, hence they have good training materials.</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/10</link>
+        <pubDate>Wed, 05 Jun 2019 19:43:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-10</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>On coordinates vs names - unless you have a fancy system (and access to computerised boundary maps etc) you are working with ADMs and names - and as mentioned above, at least ADM2 is what is in use by most government budget systems.</p>
+<p>Working against this - the data quickly becomes junk with bad spellings, use of outdated ADM names etc - and this is where coordinates matter.</p>
+<p>In my experience most users are satisfied with the activity level description - if they need more, they should really be talking to the programme manager anyway as they would take hours and hours to type out.</p>
+<p>RE - point of spend vs point of impact - I think this needs to be a field in the location element - there isn’t really a way to solve it within one location - so if you know them, then report both - or at least mark what you are reporting as to which it is.</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/9</link>
+        <pubDate>Wed, 05 Jun 2019 17:06:32 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-9</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Would echo James’ comments. This is exactly the perspective we’re trying to take for Canada, though it’s challenging.</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/8</link>
+        <pubDate>Wed, 05 Jun 2019 14:54:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-8</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[tdavis]]></dc:creator>
+        <description><![CDATA[
+            <p>In addition to James’s comments, we had feedback on what location level was important for people. We learned from those we talked to that it should be geocoded at least to Admin 2, while some also wanted the exact location, such as village.</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/7</link>
+        <pubDate>Wed, 05 Jun 2019 12:23:07 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-7</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[james.coe]]></dc:creator>
+        <description><![CDATA[
+            <p>Based on my <em>personal thoughts</em> – i’d say that would be helpful. (1) understanding where the beneficiaries are is an important aspect of understanding where the aid is going while (2) including this element would help counter the narrative that “most aid is going to the capital city / regional capital” when it might just be that the aid is being implemented there but the impact will be spread across several areas.</p>
+<p>(1) = good for the users.<br>
+(2) = good for the publishers.</p>
+<p>In my opinion, the issue we need to address is when publishers <em>just</em> say “whole of country”.</p>
+<p>Here’s a <a href="https://www.publishwhatyoufund.org/2016/11/more-than-digits-why-location-data-matters/" rel="nofollow noopener">blog</a> I wrote on it a few years ago.</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/6</link>
+        <pubDate>Wed, 05 Jun 2019 11:13:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-6</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/james.coe">@james.coe</a>, useful to know. Would you also expect to see additional location element/s used to show where the teachers came from (ie location-reach = beneficiaries location)? Or is that getting unnecessarily complicated?</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/5</link>
+        <pubDate>Wed, 05 Jun 2019 10:34:37 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-5</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[james.coe]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Sarah. We identified the location-reach element being important, in part because it helped defined what the location actually referred to. For example, if a project trains a number of teachers from across the country in the capital city, what is the location?</p>
+<p>Using the location-reach element helped resolve this as they could, for example, put the location as the capital city but then define it as the physical place where the activity took place.</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/4</link>
+        <pubDate>Wed, 05 Jun 2019 10:27:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-4</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks Taryn <a class="mention" href="/u/tdavis">@tdavis</a> - that’s good info. Do you remember whether there was anything that came out of the Open Ag initiative? I seem to remember that location was one of the things that Reid looked at?</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/3</link>
+        <pubDate>Wed, 05 Jun 2019 08:46:59 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-3</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[tdavis]]></dc:creator>
+        <description><![CDATA[
+            <p>Responding to the question of what is most useful, if we were to import the data into an AMP, at the very least would need Name and Administrative, if specific locations lower than an admin level is wanted, then we would also need Point and Location Class.</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/2</link>
+        <pubDate>Tue, 04 Jun 2019 20:58:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-2</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+      <item>
+        <title>Location element: which elements are most useful to data users?</title>
+        <dc:creator><![CDATA[SJohns]]></dc:creator>
+        <description><![CDATA[
+            <p>Does anyone have information (beyond anecdotal) on which location sub-elements are most useful to data users? I’ve seen different combinations, but most usually just the point (coordinates) and name being given in the data. Here’s a list of the sub-elements.</p>
+<p>location-reach<br>
+location-id<br>
+name<br>
+description<br>
+activity-description<br>
+administrative<br>
+point<br>
+exactness<br>
+location-class<br>
+feature-designation</p>
+<p>Look forward to hearing back!  Also, has anyone written or seen user-friendly guidance on how to use the location element? So this would be supplementary to the IATI element page, and any donor guidance. If it’s for Aidstream, even better!</p>
+          <p><a href="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757/1</link>
+        <pubDate>Tue, 04 Jun 2019 16:17:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1757-1</guid>
+        <source url="https://discuss.iatistandard.org/t/location-element-which-elements-are-most-useful-to-data-users/1757.rss">Location element: which elements are most useful to data users?</source>
+      </item>
+  </channel>
+</rss>

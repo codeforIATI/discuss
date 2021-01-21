@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Machine translation and secondary publishers</title>
+    <link>https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677</link>
+    <description>Hi,
+
+I had been thinking about machine translation of IATI a while back and the [recent discussion on](https://www.globaldevhub.org/iati-sp-2019-discussion-3#comment-19294) globaldevhub stimulated it again. 
+
+One issue that I came up against last time is that I had imagined that we would lookup the recipient country, cross-reference with a list of national languages, and then re-publish all the text fields in the national languages. However, my understanding was that republishing needs to be done as a &#39;secondary-publisher&#39; but it is very difficult to see data from secondary publishers in any of the user-facing tools.
+
+For example, I was just trying to see some secondary publishers in d-portal but don&#39;t seem to be able to get them to come up in the publisher list. The FAQ says that they are excluded from the calculations but [this](https://github.com/devinit/D-Portal/issues/156#issuecomment-61030207) suggests that they should still be in the publisher list?
+
+This isn&#39;t really about d-portal, but a question asking for feedback on whether anyone can suggest whether there is going to be an easy route to end-users being able to see the machine translated data in order to decide whether setting up machine translation would be worth it (although it wouldn&#39;t be that much effort).
+
+Thoughts much appreciated,
+
+Matt</description>
+    
+    <lastBuildDate>Fri, 01 Mar 2019 16:23:57 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Machine translation and secondary publishers</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="4" data-topic="1677">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="https://discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/yohannaloucheur/40/493_1.png" class="avatar"> YohannaLoucheur:</div>
+<blockquote>
+<p>Why would you need to re-publish translated text? Would it not make more sense to have machine translation as an option for the end user?</p>
+</blockquote>
+</aside>
+<p>For all those end users who do not have machine translation built into their systems - plus the efficiencies of ‘do once, use everywhere’. I am not complaining if d-portal, OIPA, aidstream, the datastore, open UNICEF, each AIMS etc all want to implement it, a) it just doesn’t seem the most efficient and b) none of them have done so far and by publishing translations, it becomes available in all systems without them doing anything.</p>
+          <p><a href="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677/5</link>
+        <pubDate>Fri, 01 Mar 2019 16:23:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1677-5</guid>
+        <source url="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677.rss">Machine translation and secondary publishers</source>
+      </item>
+      <item>
+        <title>Machine translation and secondary publishers</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Why would you need to re-publish translated text? Would it not make more sense to have machine translation as an option for the end user?  Something like a button onsay  D-portal that would offer to translate the content for you? (a bit like Google does)</p>
+          <p><a href="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677/4</link>
+        <pubDate>Fri, 01 Mar 2019 15:58:18 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1677-4</guid>
+        <source url="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677.rss">Machine translation and secondary publishers</source>
+      </item>
+      <item>
+        <title>Machine translation and secondary publishers</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Would doing it as a primary-publisher be better, or you don’t think that publishing them is the way forward?</p>
+<p>I think I am against this idea that the datastore should be adjusting, tweaking, imputing, assuming or doing anything to data - otherwise tools that use the datastore will get different results from tools that use the registry - which I think would be pretty disruptive to the ecosystem. The job of the datastore is to make it easier to access data. Note that I am already concerned that the datastore will follow OIPA and do things like making assumptions where percentages don’t add up (for me this is the job of the ruleset that is now being discussed a lot).</p>
+<p>If the translated versions were published, the datastore could allow you to select what language you wanted to see/download for fields where there were multiple language options available - I presume it would already do that, publishing them would just mean there were more options to pick from. Is there a timeline for Datastore v3 - I had guessed it is several years away?</p>
+          <p><a href="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677/3</link>
+        <pubDate>Fri, 01 Mar 2019 13:38:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1677-3</guid>
+        <source url="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677.rss">Machine translation and secondary publishers</source>
+      </item>
+      <item>
+        <title>Machine translation and secondary publishers</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Good idea. Not sure secondary publishing is the answer though. On the wish list for DataStore Phase 3?</p>
+          <p><a href="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677/2</link>
+        <pubDate>Wed, 27 Feb 2019 08:49:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1677-2</guid>
+        <source url="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677.rss">Machine translation and secondary publishers</source>
+      </item>
+      <item>
+        <title>Machine translation and secondary publishers</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>I had been thinking about machine translation of IATI a while back and the <a href="https://www.globaldevhub.org/iati-sp-2019-discussion-3#comment-19294" rel="nofollow noopener">recent discussion on</a> globaldevhub stimulated it again.</p>
+<p>One issue that I came up against last time is that I had imagined that we would lookup the recipient country, cross-reference with a list of national languages, and then re-publish all the text fields in the national languages. However, my understanding was that republishing needs to be done as a ‘secondary-publisher’ but it is very difficult to see data from secondary publishers in any of the user-facing tools.</p>
+<p>For example, I was just trying to see some secondary publishers in d-portal but don’t seem to be able to get them to come up in the publisher list. The FAQ says that they are excluded from the calculations but <a href="https://github.com/devinit/D-Portal/issues/156#issuecomment-61030207" rel="nofollow noopener">this</a> suggests that they should still be in the publisher list?</p>
+<p>This isn’t really about d-portal, but a question asking for feedback on whether anyone can suggest whether there is going to be an easy route to end-users being able to see the machine translated data in order to decide whether setting up machine translation would be worth it (although it wouldn’t be that much effort).</p>
+<p>Thoughts much appreciated,</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677/1</link>
+        <pubDate>Wed, 27 Feb 2019 08:30:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1677-1</guid>
+        <source url="https://discuss.iatistandard.org/t/machine-translation-and-secondary-publishers/1677.rss">Machine translation and secondary publishers</source>
+      </item>
+  </channel>
+</rss>

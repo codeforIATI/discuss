@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/16?u=matmaxgeds by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:19:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Future infrastructure to support the IATI Standard - Using IATI Data - IATI Community Discussions</title>
+    <meta name="description" content="Since the TAG meeting in Tanzania, I have had several strands of thought floating around in my head and on scraps of paper. 
+These are concerned with the idea of how we in the tech community can help make IATI more usabl&amp;hellip;">
+    <meta name="generator" content="Discourse 2.6.0.beta1 - https://github.com/discourse/discourse version fe7a7ecf6cc9a8e048c8250859be179502041feb">
+<link rel="icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_32x32.svg">
+<link rel="apple-touch-icon" type="image/png" href="../../../uploads/default/optimized/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72_2_180x180.svg">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<link rel="canonical" href="../1047.html" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="search" type="application/opensearchdescription+xml" href="../../../opensearch.xml" title="IATI Community Discussions Search">
+
+      <link href="../../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
+      <link href="../../../stylesheets/desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca.css_%3b%20filename_%3dUTF-8%27%27desktop_theme_5_073cbd05d898fc0ac65983595990f500f00f69ca1522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop_theme" data-theme-id="5"/>
+    
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Future infrastructure to support the IATI Standard&#39;" href="../1047.rss" />
+    <meta property="og:site_name" content="IATI Community Discussions" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" />
+<meta property="og:url" content="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/16?u=matmaxgeds" />
+<meta name="twitter:url" content="https://discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/16?u=matmaxgeds" />
+<meta property="og:title" content="Future infrastructure to support the IATI Standard" />
+<meta name="twitter:title" content="Future infrastructure to support the IATI Standard" />
+<meta property="og:description" content="I made a paper for a session at one of the TAG’s in Canada - not at  hand right now - but the obstacle identified at that time was the org_type etc. codes of IATI that can’t be translated into CRS channel-codes. Will need to update that paper in order to verify wether this problem is solved with version 2.03 of our standard.  Another issue should be noted as well: We must recognise that the DAC has a strong need for ‘single point of contact’ to governments of donor countries, for the dialogue a..." />
+<meta name="twitter:description" content="I made a paper for a session at one of the TAG’s in Canada - not at  hand right now - but the obstacle identified at that time was the org_type etc. codes of IATI that can’t be translated into CRS channel-codes. Will need to update that paper in order to verify wether this problem is solved with version 2.03 of our standard.  Another issue should be noted as well: We must recognise that the DAC has a strong need for ‘single point of contact’ to governments of donor countries, for the dialogue a..." />
+<meta property="article:published_time" content="2017-10-05T09:12:45+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+        <link rel="next" href="../10474658.html?page=2">
+
+
+    
+  </head>
+  <body class="crawler">
+    <div id="top">
+      <div id="header">
+        <div id="header_container">
+    
+    <table id="table_header"><tbody><tr>
+      <td><a href="../../welcome-to-iati-discuss/6.html" title=""><img src="https://styles.iatistandard.org/assets/svg/source/logo-colour.svg" id="logo"></a>&nbsp;</td>
+      <td><img alt="" id="logo-delimiter" src="../../../images/logo-delimiter.html">&nbsp;</td>
+      
+    </tr></tbody></table>
+    </div>
+          <ul class="navigation-utility">
+        <li id="section-news" class="navigation-utility__item"><a href="http://iatistandard.org/en/news/">News</a></li>
+        <li id="section-events" class="navigation-utility__item"><a href="http://iatistandard.org/en/events/">Events</a></li>
+        <li id="section-contact" class="navigation-utility__item"><a href="http://iatistandard.org/en/contact/">Contact</a></li>
+      </ul>
+        <nav class="navigation-primary" id="navigation-primary">
+
+            <ul id="navigation-primary__items">
+              <li id="section-about" class="navigation-primary__item"><a href="http://iatistandard.org/en/about/">About</a></li>
+      				<li id="section-standard" class="navigation-primary__item"><a href="http://iatistandard.org/en/iati-standard">IATI Standard</a></li>
+      				<li id="section-data" class="navigation-primary__item"><a href="http://iatistandard.org/en/using-data">Using Data</a></li>
+      				<li id="section-support" class="navigation-primary__item"><a href="http://iatistandard.org/en/guidance/">Guidance &amp; Support</a></li>
+      				<li id="section-community" class="navigation-primary__item"><a href="../../../index.html">Community</a></li>
+            </ul>
+          </nav>
+        <nav>
+    </nav></div>
+                <div id="top-menu-background">
+        <div id="top-menu">
+          <ul id="green" style="width: 100%;">
+            <li class="clazz tab_home first active"><a href="../../../index.html" class="tab">Home</a></li>
+            <li class="main tab_forums first"><a href="../../../c/standard-management/35.html" class="tab">IATI Standard Consultations</a></li>
+            <li class="main tab_forums first"><a href="http://support.iatistandard.org/hc/en-us/categories/201849026-Upgrading-the-IATI-Standards" class="tab">Archive</a></li>
+            <li class="main tab_forums first"><a href="https://iaticonnect.org/" class="tab">Discuss has moved to IATI Connect</a></li>
+            
+            <li class="main clazz tab_new community-nav-right"><a href="https://iatistandard.org/en/contact/" class="tab">Contact IATI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <a href="../../../index.html">
+          <img src="../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+      </a>
+    </header>
+    <div id="main-outlet" class="wrap">
+        <div id="topic-title">
+    <h1>
+      <a href="../1047.html">Future infrastructure to support the IATI Standard</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/community-zone/20.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #155366'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Community Zone</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="../../../c/community-zone/iati-applied/21.html" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #2695B8'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Using IATI Data</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/JohnAdams.html'><span itemprop='name'>JohnAdams</span></a>
+            (John Adams)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-01T17:38:38Z' class='post-time'>
+                October 1, 2017,  5:38pm
+              </time>
+              <meta itemprop='dateModified' content='2017-10-01T17:38:38Z'>
+          <span itemprop='position'>#11</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>And I am fully supportive of those upcoming changes, Bill. Particularly as those changes are based on the robust user research carried out earlier this year.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+          <meta itemprop='keywords' content=''>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-03T08:49:20Z' class='post-time'>
+                October 3, 2017,  8:49am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-03T08:49:20Z'>
+          <span itemprop='position'>#12</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="1" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/johnadams/40/11_1.jpg" class="avatar"> JohnAdams:</div>
+<blockquote>
+<p>Build a Repository, not just a Registry</p>
+</blockquote>
+</aside>
+<p>In addition to the comments made by <a class="mention" href="../../../u/reidmporter.html">@reidmporter</a>, <a class="mention" href="../../../u/matmaxgeds.html">@matmaxgeds</a> and <a class="mention" href="../../../u/bill_anderson.html">@bill_anderson</a>, I doubt that it is possible to define a repository which will serve all the different use cases. A lot of functional design decisions would have to be made which are use-case dependent. E.g.:</p>
+<ul>
+<li>Do we split up transactions by their sector and country percentages in order to facilitate data use? If so, how? By sector, by region/country or both?</li>
+<li>How would we implement traceability? Would we attribute outgoing flows to the relative contribution of incoming flows or not?</li>
+<li>Etc.</li>
+</ul>
+<p>Secondly, looking at the conclusions being drawn the last few years about the use of IATI data in country pilots, an very important problem is the completeness and accuracy of the published data. Wouldn’t we therefore better invest our very limited recourses in tooling, procedures, etc. enabling publishers to publish better quality data instead of trying to build another repository?</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/Herman.html'><span itemprop='name'>Herman</span></a>
+            (Herman van Loon)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-03T10:01:22Z' class='post-time'>
+                October 3, 2017, 10:01am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-03T10:01:22Z'>
+          <span itemprop='position'>#13</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="1" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/johnadams/40/11_1.jpg" class="avatar"> JohnAdams:</div>
+<blockquote>
+<p>In summary, I am proposing four actions</p>
+<p>Separate the definition of the standard from its technical implementation</p>
+</blockquote>
+</aside>
+<p>It would indeed be nice if the technical representation of IATI data would be separated from its semantic definition. A way to do this, would be to keep the current XML representation as the core representation and provide tooling to:<br>
+1 Convert non XML IATI data to IATI XML (e.g. convert CSV to IATI)<br>
+2 Retrieve non XML IATI data from IATI XML (e.g. convert IATI to CSV)</p>
+<p>So I would keep the rich and proven XML format as the core technical representation for IATI data. The advantage is that we keep one canonical technical representation for all IATI data which has enough power to model all use-cases.</p>
+<p>In such an approach it would i.m.o. be important to automatically check the consistency and conformance of the data being converted to the IATI. So the tooling should not only do the technical conversion, but should also do an automated quality check. Ideally there would be a centrally maintained data quality service, which could be used by all tool developers.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/OJ_.html'><span itemprop='name'>OJ_</span></a>
+            (Ole Jacob Hjøllund)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-10-03T20:01:19Z'>
+              <time itemprop='dateModified' datetime='2017-10-04T05:45:05Z' class='post-time'>
+                October 4, 2017,  5:45am
+              </time>
+          <span itemprop='position'>#14</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="8" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.jpg" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>matmaxgeds:</p>
+<p>Now if the OECD decided to only accept IATI data as an input for the CRS, then we would be talking…how about that OECD?</p>
+</blockquote>
+</aside>
+<p>We can’t blame OECD for our own blunders - we have designed the IATI standard in a way that allows for a conversion of DAC-formatted CRS++ data into a (simple) IATI-file, but we have made it impossible to go the other way; IATI activity-files cannot be converted into CRS++ and are thus unable to fit into, or feed into the statistical databases of the DAC.</p>
+<p>What we can do (and I make the statement at any chance) is to advice the DAC to use IATI as a secondary datasource whenever they draft statistical analyses that trancends CRS++ (e.g. assessing flows from private charity-funds or working on the TOSSD measure for the future).</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-05T08:39:08Z' class='post-time'>
+                October 5, 2017,  8:39am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-05T08:39:08Z'>
+          <span itemprop='position'>#15</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../../u/oj_-2.html">@OJ_</a> I would be really interested to know about why IATI &gt; CRS++ is not possible - is there anywhere I can read about it?</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/OJ_.html'><span itemprop='name'>OJ_</span></a>
+            (Ole Jacob Hjøllund)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-05T09:12:45Z' class='post-time'>
+                October 5, 2017,  9:12am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-05T09:12:45Z'>
+          <span itemprop='position'>#16</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="15" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>why IATI &gt; CRS++ is not possible</p>
+</blockquote>
+</aside>
+<p>I made a paper for a session at one of the TAG’s in Canada - not at  hand right now - but the obstacle identified at that time was the org_type etc. codes of IATI that can’t be translated into CRS channel-codes. Will need to update that paper in order to verify wether this problem is solved with version 2.03 of our standard.</p>
+<p>Another issue should be noted as well: We must recognise that the DAC has a strong need for ‘single point of contact’ to governments of donor countries, for the dialogue and data-validation. Even though some of us are currently reporting on behalf of our Government, making sure that our IATI-reported ODA-volume reach 100% of our DAC-reported ODA, this is not the case for all donors, and might not continue to be the case for us; IATI is designed for reporting by individual organisations rather than Governments. There are advantages, certainly, but it will be an organisational challenge for IATI-formatted CRS-reporting.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+            <div class='crawler-linkback-list' itemscope itemtype='http://schema.org/ItemList'>
+                  <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+                    <a href="../../how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/2.html" itemprop='item'>
+                      <meta itemprop='url' content='../../how-could-we-achieve-greater-interoperability-between-iati-and-the-dac/1068/2.html'>
+                      <meta itemprop='position' content='1'>
+                      <span itemprop='name'>How could we achieve greater interoperability between IATI and the DAC?</span>
+                    </a>
+                  </div>
+            </div>
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-05T09:29:13Z' class='post-time'>
+                October 5, 2017,  9:29am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-05T09:29:13Z'>
+          <span itemprop='position'>#17</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Thanks <a class="mention" href="../../../u/oj_-2.html">@OJ_</a> really interesting to know - I found it <a href="https://iatitag2015.sched.com/event/3Ruu/master-data-management-managing-authoritative-codelists" rel="nofollow noopener">in the 2015 schedule</a> in case anyone else was there and can share the paper</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="1" />
+           <span class='post-likes'>1 Like</span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/ibrahim.html'><span itemprop='name'>ibrahim</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-08T16:07:13Z' class='post-time'>
+                October 8, 2017,  4:07pm
+              </time>
+              <meta itemprop='dateModified' content='2017-10-08T16:07:13Z'>
+          <span itemprop='position'>#18</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>If you allow me,</p>
+<aside class="quote no-group" data-post="1" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/johnadams/40/11_1.jpg" class="avatar"> JohnAdams:</div>
+<blockquote>
+<p>Simplify the standard for different user needs through a modular approach.</p>
+</blockquote>
+</aside>
+<p>I do support this, most of the data users depend mainly on some of the attributes(fields), we could have something such as “Basic” data or “Core” data and “Extended” or “Complete” data, this will:</p>
+<ul>
+<li>
+<p>Simplify exporting the “Basic” data to Excel format for the user</p>
+</li>
+<li>
+<p>Simplify the publishing of the “Basic” data which minimize the invalid data and increase the reliability and quality of data</p>
+</li>
+</ul>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-09T10:37:51Z' class='post-time'>
+                October 9, 2017, 10:37am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-09T10:37:51Z'>
+          <span itemprop='position'>#19</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../../u/ibrahim.html">@ibrahim</a>,</p>
+<p>I think this is a great idea. Does the recent work that was done on ‘IATI users’ help to define what data is needed by the different use cases? Or for the ‘basic’ needs, I can share the data that the various countries I work with would love to be able to easily access (in flat/excel) format, basically: a row per project: funder(s), implementer(s), total project value, local sector, start date, end date, grant/loan, disbursements to date, disbursement in last local FY, disbursements in next local FY, description (incl in local language), local contact name, local contact email. ADM1 geographic information, humanitarian/development.</p>
+<p>If agreed, we could then work on making sure that that very restricted set of fields is comprehensive, not double-counted, uses local language.</p>
+<p>Matt</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="3" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/ibrahim.html'><span itemprop='name'>ibrahim</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-09T17:17:46Z' class='post-time'>
+                October 9, 2017,  5:17pm
+              </time>
+              <meta itemprop='dateModified' content='2017-10-09T17:17:46Z'>
+          <span itemprop='position'>#20</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../../u/matmaxgeds.html">@matmaxgeds</a>,<br>
+Thanks for your reply, to me these fields is fair enough, I only want to add a note for how to represent the multi-valued fields such as sectors or donors in a flat Excel file, I propose to separate them by either “,” or “/” or whatever else, this will help to import this in a database later, and keep that each row has one activity.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-10T07:56:11Z' class='post-time'>
+                October 10, 2017,  7:56am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-10T07:56:11Z'>
+          <span itemprop='position'>#21</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="19" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>I can share the data that the various countries I work with would love to be able to easily access (in flat/excel) format</p>
+</blockquote>
+</aside>
+<aside class="quote no-group" data-post="19" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>disbursements to date, disbursement in last local FY, disbursements in next local FY</p>
+</blockquote>
+</aside>
+<p>This sounds like ODA macro-management. I accept that this may be the most prevalent use of AIMS at present, but is this really the IATI vision? Is this really what in-country decision-makers need? I would go so far as to argue that ODA macro-management (for which double counting is an issue) is an edge case. Is IATI a bean-counting balance sheet, or part of what the data revolution promotes as data-driven decision-making?</p>
+<p>I agree that we can provide more focused (even standardised) <strong>outputs</strong> from IATI data, but for every person satisfied with this use case you will find many to the contrary. We already have a ‘basic’ standard, common to all: it is defined by mandatory fields.</p>
+<p>To return to my much-used UNDP example. Would you like to see the arithmetically clean $400m number they report to the CRS, or the $4bn they account through IATI for their activities on the ground?</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-10T09:17:38Z' class='post-time'>
+                October 10, 2017,  9:17am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-10T09:17:38Z'>
+          <span itemprop='position'>#22</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi,</p>
+<p>Is there a list of the mandatory fields somewhere? I tried <a href="http://iatistandard.org/202/guidance/how-to-publish/" rel="nofollow noopener">here</a> in the guidance but couldn’t see it. There is mention in the upgrades for specific mandatory fields?</p>
+<p>[quote=“bill_anderson, post:21, topic:1047”]<br>
+Is this really what in-country decision-makers need?<br>
+[/quote] from my experience, yes - it is not everything they need, but a list of all the active and pipeline projects solves 80% of the needs for 80% of the users. At worst, it is a good starting point for them to be able to follow up further - at which point the use cases become too individual/unique to be able to cater for as a consistent group.</p>
+<p>[quote=“bill_anderson, post:21, topic:1047”]<br>
+is this really the IATI vision?<br>
+[/quote] - I am not sure what the IATI vision is, but it would seem to me that first catering to the dominant user need would be a good start - I could be wrong that this is the dominant user need - and I think that DI commissioned some research last year working out who the users of IATI data were, is that something that is public yet? If not, a public mapping of the different user groups and their data needs sounds sensible to help define what the IATI vision is - and to guide future iterations of the standard/effort.</p>
+<p>RE the UNDP example - of course we want the 4bn (UNDP mainly as an implementer, not as a funder), but are you suggesting that in the quest for simple export of basic fields in a flat format, we will not get the $4bn, but instead the $400mn?</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="2" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-10T09:32:28Z' class='post-time'>
+                October 10, 2017,  9:32am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-10T09:32:28Z'>
+          <span itemprop='position'>#23</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="22" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>the quest for simple export of basic fields in a flat format</p>
+</blockquote>
+</aside>
+<p>I am agreeing (110%) that your use case can be met by a standardised <strong>export</strong> - and we should do this.</p>
+<p>I’m disagreeing that your use case can be used to define the standard itself</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-10T09:44:32Z' class='post-time'>
+                October 10, 2017,  9:44am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-10T09:44:32Z'>
+          <span itemprop='position'>#24</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi - also agreed, IATI is much more than just this one use case</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-10T10:02:34Z' class='post-time'>
+                October 10, 2017, 10:02am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-10T10:02:34Z'>
+          <span itemprop='position'>#25</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="22" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Is there a list of the mandatory fields somewhere?</p>
+</blockquote>
+</aside>
+<p><a href="http://dashboard.iatistandard.org/comprehensiveness_core.html" class="onebox" target="_blank">http://dashboard.iatistandard.org/comprehensiveness_core.html</a></p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-10T10:23:38Z' class='post-time'>
+                October 10, 2017, 10:23am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-10T10:23:38Z'>
+          <span itemprop='position'>#26</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>aha - thanks <a class="mention" href="../../../u/bill_anderson.html">@bill_anderson</a>  - based on that, I think <a class="mention" href="../../../u/ibrahim.html">@ibrahim</a> and I are suggesting a slight expansion of the core/manadatory fields?</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/ibrahim.html'><span itemprop='name'>ibrahim</span></a>
+            
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-10T10:24:38Z' class='post-time'>
+                October 10, 2017, 10:24am
+              </time>
+              <meta itemprop='dateModified' content='2017-10-10T10:24:38Z'>
+          <span itemprop='position'>#27</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="23" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.jpg" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>I’m disagreeing that your use case can be used to define the standard itself</p>
+</blockquote>
+</aside>
+<p>Agreed(100%)</p>
+<aside class="quote no-group" data-post="24" data-topic="1047" data-full="true">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>Hi - also agreed, IATI is much more than just this one use case</p>
+</blockquote>
+</aside>
+<p>Agreed(100%)</p>
+<aside class="quote no-group" data-post="23" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../user_avatar/discuss.iatistandard.org/bill_anderson/40/453_2.jpg" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>I am agreeing (110%) that your use case can be met by a standardised export - and we should do this.</p>
+</blockquote>
+</aside>
+<p>what I am proposing is that the standard has two parts: “Basic” and “Extended”, The “Basic” is the mandatory and the “Extended” is all the others.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="1" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <meta itemprop='datePublished' content='2017-10-10T10:35:54Z'>
+              <time itemprop='dateModified' datetime='2017-10-11T07:52:10Z' class='post-time'>
+                October 11, 2017,  7:52am
+              </time>
+          <span itemprop='position'>#28</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Hi <a class="mention" href="../../../u/ibrahim.html">@ibrahim</a></p>
+<p>Yes, I think that ‘basic’ and ‘extended’ are a good idea - although there might be ‘extended - results’ and ‘extended - openAG’ etc, i.e. multiple different extensions for different more specific use cases. The reason I like this idea is that it should make it easier to focus on comprehensiveness and usability in the key fields first - and at the same time, perhaps answer some of the needs of those currently campaigning for simplification, and those wanting more extensions. What worries me is that IATI already has some structures e.g. the different parts of the XML tree, and this would add another structure that runs across that which would add complexity.</p>
+<p>Matt</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/bill_anderson.html'><span itemprop='name'>bill_anderson</span></a>
+            (Bill Anderson)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-10T12:13:55Z' class='post-time'>
+                October 10, 2017, 12:13pm
+              </time>
+              <meta itemprop='dateModified' content='2017-10-10T12:13:55Z'>
+          <span itemprop='position'>#29</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <aside class="quote no-group" data-post="26" data-topic="1047">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="../../../letter_avatar_proxy/v2/letter/m/ea666f/40.png" class="avatar"> matmaxgeds:</div>
+<blockquote>
+<p>a slight expansion of the core/manadatory fields</p>
+</blockquote>
+</aside>
+<p>As this is a matter for a <a href="http://www.aidtransparency.net/wp-content/uploads/2017/09/Paper-10-Proposed-revisions-to-the-IATI-Standard-upgrade-process.pdf">Major upgrade</a> I guess we have a couple of years to prepare a campaign around this.</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+      <div itemscope itemtype='http://schema.org/DiscussionForumPosting' class='topic-body crawler-post'>
+        <div class='crawler-post-meta'>
+          <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop='name' content='IATI Community Discussions'>
+              <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop='url' content='../../../uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg'>
+              </div>
+          </div>
+          <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href='../../../u/matmaxgeds.html'><span itemprop='name'>matmaxgeds</span></a>
+            (Matt Geddes)
+          </span>
+
+          <link itemprop="mainEntityOfPage" href="../1047.html">
+
+
+          <span class="crawler-post-infos">
+              <time itemprop='datePublished' datetime='2017-10-10T13:22:58Z' class='post-time'>
+                October 10, 2017,  1:22pm
+              </time>
+              <meta itemprop='dateModified' content='2017-10-10T13:22:58Z'>
+          <span itemprop='position'>#30</span>
+          </span>
+        </div>
+        <div class='post' itemprop='articleBody'>
+          <p>Noted…campaign starting now <img src="../../../images/emoji/twitter/slight_smileae52.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<p>Any ideas about the paper I thought that DI commissioned last year on IATI users?</p>
+        </div>
+
+        <meta itemprop='headline' content='Future infrastructure to support the IATI Standard'>
+
+        <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+           <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+           <meta itemprop="userInteractionCount" content="0" />
+           <span class='post-likes'></span>
+         </div>
+
+         <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+            <meta itemprop="interactionType" content="http://schema.org/CommentAction"/>
+            <meta itemprop="userInteractionCount" content="0" />
+          </div>
+
+      </div>
+
+    <div role='navigation' itemscope itemtype='http://schema.org/SiteNavigationElement' class="topic-body crawler-post">
+        <span itemprop='name'><b><a rel="next" itemprop="url" href="../10474658.html?page=2">next page →</a></b></span>
+    </div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+      <nav class='crawler-nav'>
+        <ul>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../index.html' itemprop="url">Home </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../categories.html' itemprop="url">Categories </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../guidelines.html' itemprop="url">FAQ/Guidelines </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='../../../tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+        </ul>
+      </nav>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
+<script src="../../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
+<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-cookie">
+			<aside id="text-3" class="widget widget_text">
+				<h3 class="widget-title">Cookie Disclaimer</h3>
+				<div class="textwidget">
+					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
+						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
+						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
+				</div>
+			</aside>
+		</div>
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+    
+  </body>
+  
+
+<!-- Mirrored from discuss.iatistandard.org/t/future-infrastructure-to-support-the-iati-standard/1047/16?u=matmaxgeds by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 16:19:26 GMT -->
+</html>

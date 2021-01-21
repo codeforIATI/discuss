@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>How to define a GLOBAL project?</title>
+    <link>https://discuss.iatistandard.org/t/how-to-define-a-global-project/810</link>
+    <description>If you have an activity that is global in focus/reach/scope/benefit , how to use the IATI country/region codes accordingly?
+
+Looking at regions, it would not seem the OECD-DAC 998 code is about Global:
+
+&gt; 998 	Developing countries, unspecified
+
+The [activity-scope element](http://iatistandard.org/202/codelists/ActivityScope/) can help describe Global through code 1:
+
+&gt; 1  	Global 	The activity scope is global
+
+However, a recipient-country or recipient-region can be useful for data users, such as d-portal.  
+
+I noticed [UNFPA just publish](http://d-portal.org/ctrack.html?search=core&amp;publisher=41119#view=act&amp;aid=41119-CORE-PROGRAMME) (cc/ @AkermanMartin) : 
+
+     &lt;recipient-country code=&quot;GLOBAL&quot; percentage=&quot;100&quot;/&gt;
+ 
+... which I&#39;m sure will &quot;upset&quot; some.  
+
+So - should Global activities 
+
+- omit country/region elements 
+- &quot;hack&quot; as above
+- refer to a different region vocabulary (such as...?)
+- any combination of the above, or none....
+
+Thoughts and answers welcome!</description>
+    
+    <lastBuildDate>Thu, 27 Apr 2017 19:04:36 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>How to define a GLOBAL project?</title>
+        <dc:creator><![CDATA[CAD_WP-Stater]]></dc:creator>
+        <description><![CDATA[
+            <p>I should also mention that best practices here is to code at the lowest possible level (country-region-global).  Sometimes global is the best information we have at the time of commitment.  However, the coding should be revised as more information on spending becomes available.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/9</link>
+        <pubDate>Thu, 27 Apr 2017 19:04:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-810-9</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810.rss">How to define a GLOBAL project?</source>
+      </item>
+      <item>
+        <title>How to define a GLOBAL project?</title>
+        <dc:creator><![CDATA[CAD_WP-Stater]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/dubeys">@dubeys</a> <a class="mention" href="/u/stevieflow">@stevieflow</a><br>
+Interesting conversation that definitely needs to happen as coverage of data increasingly goes beyond ODA eligible flows.</p>
+<p>As Canada’s rep at the OECD-DAC WP-STAT, I can speak about the 998 code.  As Yohanna pointed out, this issue is about the DAC’s codelist for countries not yet being catered for non-ODA flows.</p>
+<p>For non-ODA portion of global projects, the instructions we have received for the time being, is to code against the “998 Developing countries, unspecified” in conjunction with the appropriate Type of Flow code (e.g. OOF)</p>
+<p>In a nutshell, the labels on the codes have to be modernized. In my view there is absolutely no need to have a new code for “global – non-developing countries”… instead we should rename the existing 998 code, and use it in conjunction with the appropriate Type of Flow.</p>
+<p>Canada is happy to bring this issue forward at the next June meeting<br>
+Thanks!</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/8</link>
+        <pubDate>Thu, 27 Apr 2017 19:01:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-810-8</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810.rss">How to define a GLOBAL project?</source>
+      </item>
+      <item>
+        <title>How to define a GLOBAL project?</title>
+        <dc:creator><![CDATA[dubeys]]></dc:creator>
+        <description><![CDATA[
+            <p>For me, the ideal solutions would be to have the OECD-DAC introduce a “Global” code, and a methodology for determining what percentage of Global is aid related.</p>
+<p>The one year to date when FAO reported aid expenditures to the OECD (2013 data), we developed a methodology for allocating a percentage of expenditures on regional and global public goods towards development.  The OECD DAC secretariat approved the approach, and asked us to share with other organizations (e.g. ILO).  Methodology: the “developing” country share of agriculture value-added (from national accounts) for the region/world determined the percentage of expenditure to development.</p>
+<p>Forcing organizations to determine what share of a global public good is for development is not transparent to the data user, and would vary from one organization to anther (ILO is certainly not going to use agriculture value-added; and for FAO, it is an imperfect measure too). I think it is more transparent to have a Global DAC code, and an OECD methodology to allocate expenditure shares to development.</p>
+<p>Thoughts on this?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/7</link>
+        <pubDate>Wed, 26 Apr 2017 10:56:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-810-7</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810.rss">How to define a GLOBAL project?</source>
+      </item>
+      <item>
+        <title>How to define a GLOBAL project?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>I missed <a class="mention" href="/u/bill_anderson">@bill_anderson</a>’s customary <em>rant</em> about synching of region codes at the TAG this year!</p>
+<p>In terms of vocab=2 , is this the codelist: <a href="https://en.wikipedia.org/wiki/UN_M.49" rel="nofollow noopener">https://en.wikipedia.org/wiki/UN_M.49</a> (<a class="mention" href="/u/akermanmartin">@AkermanMartin</a> ? <a class="mention" href="/u/bill_anderson">@bill_anderson</a>?)?  And so , I guess global could be:</p>
+<p><code>&lt;recipient-region code="001" vocabulary="2" /&gt;</code></p>
+<p>In terms of data use, then I would imagine the pay-off here could be how projects such as IATI Studio or D-portal then utilise region codes multiple vocabularies</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/6</link>
+        <pubDate>Tue, 25 Apr 2017 15:08:54 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-810-6</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810.rss">How to define a GLOBAL project?</source>
+      </item>
+      <item>
+        <title>How to define a GLOBAL project?</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group quote-modified" data-post="4" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/hayfield/40/202_1.png" class="avatar"> hayfield:</div>
+<blockquote>
+<p>As such, something along the lines of &lt;recipient-region code=“GLOBAL” vocabulary=“99” /&gt; would be a minimal valid method of expressing the information UNFPA is trying to convey in the example</p>
+</blockquote>
+</aside>
+<p>Good suggestion!</p>
+<aside class="quote no-group quote-modified" data-post="4" data-topic="810">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/hayfield/40/202_1.png" class="avatar"> hayfield:</div>
+<blockquote>
+<p>(there may alternatively be a better solution under RegionVocabulary  code 2, though I don’t know what list that refers to)</p>
+</blockquote>
+</aside>
+<p>Eek! In general, I suppose Vocabulary codelists should all have URLs attached. They mostly seem to, but this seems like a good example where adding them would be handy.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/5</link>
+        <pubDate>Tue, 25 Apr 2017 12:20:28 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-810-5</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810.rss">How to define a GLOBAL project?</source>
+      </item>
+      <item>
+        <title>How to define a GLOBAL project?</title>
+        <dc:creator><![CDATA[hayfield]]></dc:creator>
+        <description><![CDATA[
+            <p>The <a href="http://iatistandard.org/202/codelists/RegionVocabulary/"><code>RegionVocabulary</code></a> Codelist includes a <code>99</code> code for custom vocabularies.</p>
+<p>As such, something along the lines of <code>&lt;recipient-region code="GLOBAL" vocabulary="99" /&gt;</code> would be a minimal valid method of expressing the information UNFPA is trying to convey in the example (the <code>vocabulary-uri</code> attribute is optional, as is <code>percentage</code> if there is only a single region/country specified).</p>
+<p>(there may alternatively be a better solution under <a href="http://iatistandard.org/202/codelists/RegionVocabulary/"><code>RegionVocabulary</code></a>  code <code>2</code>, though I don’t know what list that refers to)</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/4</link>
+        <pubDate>Mon, 24 Apr 2017 16:23:33 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-810-4</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810.rss">How to define a GLOBAL project?</source>
+      </item>
+      <item>
+        <title>How to define a GLOBAL project?</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>The problem with “global” is that it’s, well, global…  So a portion of the benefits would not be for developing countries, thus cannot count as ODA. Martin, when you code something as global, is that what you mean? Does this mean that not all UNFPA activities would be oda-ble?</p>
+<p>Presumably, if using “global”, you’d also have to code Types of Flow appropriately (ie % of global that is not ODA recipients)?</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/3</link>
+        <pubDate>Fri, 21 Apr 2017 20:49:48 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-810-3</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810.rss">How to define a GLOBAL project?</source>
+      </item>
+      <item>
+        <title>How to define a GLOBAL project?</title>
+        <dc:creator><![CDATA[AkermanMartin]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for opening this discussion, Steven. Looking forward to seeing what everyone thinks.</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/2</link>
+        <pubDate>Thu, 20 Apr 2017 18:46:10 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-810-2</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810.rss">How to define a GLOBAL project?</source>
+      </item>
+      <item>
+        <title>How to define a GLOBAL project?</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>If you have an activity that is global in focus/reach/scope/benefit , how to use the IATI country/region codes accordingly?</p>
+<p>Looking at regions, it would not seem the OECD-DAC 998 code is about Global:</p>
+<blockquote>
+<p>998 	Developing countries, unspecified</p>
+</blockquote>
+<p>The <a href="http://iatistandard.org/202/codelists/ActivityScope/" rel="nofollow noopener">activity-scope element</a> can help describe Global through code 1:</p>
+<blockquote>
+<p>1  	Global 	The activity scope is global</p>
+</blockquote>
+<p>However, a recipient-country or recipient-region can be useful for data users, such as d-portal.</p>
+<p>I noticed <a href="http://d-portal.org/ctrack.html?search=core&amp;publisher=41119#view=act&amp;aid=41119-CORE-PROGRAMME" rel="nofollow noopener">UNFPA just publish</a> (cc/ <a class="mention" href="/u/akermanmartin">@AkermanMartin</a>) :</p>
+<pre><code> &lt;recipient-country code="GLOBAL" percentage="100"/&gt;
+</code></pre>
+<p>… which I’m sure will “upset” some.</p>
+<p>So - should Global activities</p>
+<ul>
+<li>omit country/region elements</li>
+<li>“hack” as above</li>
+<li>refer to a different region vocabulary (such as…?)</li>
+<li>any combination of the above, or none…</li>
+</ul>
+<p>Thoughts and answers welcome!</p>
+          <p><a href="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/how-to-define-a-global-project/810/1</link>
+        <pubDate>Thu, 20 Apr 2017 17:52:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-810-1</guid>
+        <source url="https://discuss.iatistandard.org/t/how-to-define-a-global-project/810.rss">How to define a GLOBAL project?</source>
+      </item>
+  </channel>
+</rss>

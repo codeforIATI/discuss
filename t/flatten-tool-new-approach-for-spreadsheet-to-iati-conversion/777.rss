@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Flatten-tool: New approach for Spreadsheet to IATI conversion</title>
+    <link>https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777</link>
+    <description>
+This post is mostly a write up of the lightening talk I gave at the TAG, with some additional info on how the work is progressing.
+
+[CSV2IATI](http://csv2iati.iatistandard.org/) is going to be retired this year, so at [Open Data Services Co-operative](http://opendataservices.coop/) we&#39;ve been looking at alternate approaches for converting spreadsheets to IATI XML.
+
+For [OCDS (Open Contracting Data Standard)](http://standard.open-contracting.org/) and [360Giving](http://www.threesixtygiving.org/standard/), we built [flatten-tool](https://github.com/OpenDataServices/flatten-tool).  This is a command line tool, and python library, for converting from flat spreadsheet formats to nested structured formats (JSON or XML). We&#39;re working on adding IATI XML support to this.
+
+## Key features of flatten-tool:
+
+### No mapping tool
+
+Instead of a mapping tool, we require that headings contain an xpath (or close to an xpath) for the part of the IATI XML the column corresponds to.
+
+e.g. this spreadsheet:
+
+&lt;img src=&quot;/uploads/default/original/1X/8a7946636d00e1297e4f13489b699594f2bf7bad.png&quot; width=&quot;689&quot; height=&quot;74&quot;&gt;
+
+becomes this XML:
+
+&lt;img src=&quot;/uploads/default/original/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2.png&quot; width=&quot;345&quot; height=&quot;57&quot;&gt;
+
+
+Most users won&#39;t need to worry about xpath though, as we&#39;ll have a pre-made template for them to download and populate. However, the approach does also allow custom templates to be easily crafted for particular use cases.
+
+Since all information is contained in the spreadsheet, it will be possible to upgrade to a new IATI standard version by just changing the data, without any change required to the tool.
+
+### One-to-many relationships
+
+In IATI, one activity usually has multiple child elements of certain types (e.g. multiple transactions). flatten-tool supports multiple ways of representing this:
+
+* Multiple columns
+* Separate sheets, linked by the IATI Identifier in both sheets
+* Repeated rows, for compatibility with CSV2IATI
+
+e.g. multiple columns might be convenient for mulitiple recipient countries:
+
+&lt;img src=&quot;/uploads/default/original/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5.png&quot; width=&quot;690&quot; height=&quot;69&quot;&gt;
+
+but a separate sheet might be more convenient for multiple transactions:
+
+&lt;img src=&quot;/uploads/default/original/1X/6fba25080a085599c1f4d81951a365e46aa9d46f.png&quot; width=&quot;690&quot; height=&quot;74&quot;&gt;
+
+### Excel workbook (XLSX) support, in addition to CSV
+
+CSV and XLSX are the supported input file formats.
+
+CSVs exported from Excel often have problems - e.g. encodings and date formats. By supporting XLSX we can more easily get at the original data. It&#39;s also an easy way to supply multiple sheets with one-to-many relationships (above).
+
+## Progress so far
+
+Basic XML support has been merged into flatten-tool, and there&#39;s [instructions for using it to produce IATI XML in the docs](https://flatten-tool.readthedocs.io/en/latest/usage-iati/). We&#39;re already using this code internally to help people publish IATI data. As @johnadams would say, we&#39;re eating our own dog food.
+
+There&#39;s a bunch of [issues still to be worked on](https://github.com/OpenDataServices/flatten-tool/issues?q=is%3Aopen+is%3Aissue+label%3AXML). The most pressing, which we&#39;re working on currently, are [sorting the XML correctly](https://github.com/OpenDataServices/flatten-tool/issues/146), and [allowing spreadsheets to specify the IATI standard version](https://github.com/OpenDataServices/flatten-tool/pull/144). We&#39;re currently working around these by manually adding the version number, and [sorting with this script](https://github.com/OpenDataServices/iati-utils/blob/master/sort_iati.py).
+
+## Future plans
+
+We&#39;re working on a web interface, so that users can upload a file, instead of having to use a commandline tool.
+
+We want this web interface to have integrated validation. Additionally validation messages will list the cell in the spreadsheet that caused the error, allowing data to be fixed more easily. @stevieflow made a presentation about this approach to the IATI Members&#39; Assembly. Here&#39;s a screenshot of what this currently looks like for 360Giving:
+
+&lt;img src=&quot;/uploads/default/original/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad.png&quot; width=&quot;690&quot; height=&quot;159&quot;&gt;
+
+For OCDS and 360Giving we also have conversion **to** spreadsheet (which means it&#39;s possible to roundtrip, ie. edit and then convert back to XML). We think this could be useful for IATI too, but at the moment we&#39;re focusing on conversion **from** spreadsheet first, because that appears to have the greater need.</description>
+    
+    <lastBuildDate>Fri, 07 Apr 2017 14:04:00 +0000</lastBuildDate>
+    <category>Community Zone</category>
+    <atom:link href="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Flatten-tool: New approach for Spreadsheet to IATI conversion</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for the extra detail. Looking forward to giving it a go sometime…</p>
+<aside class="quote no-group quote-modified" data-post="7" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/rory_scott/40/247_1.png" class="avatar"> rory_scott:</div>
+<blockquote>
+<p>Ultimately it’s just very flexible, but would require a good template for each version or a good level of IATI knowledge to make a spreadsheet work well i.e. knowing the difference between a 1.05 transaction description and a 2.01 one.</p>
+</blockquote>
+</aside>
+<p>Re templates - would it make sense to just have a v1.05 template, plus a v2.02 template?</p>
+<p>Therefore – unless a user specifically wants another point version (and wants to do the work to figure out which fields didn’t exist in earlier versions) – the tool outputs at these versions.</p>
+<p>When v2.03 is released, just add any new fields into the sheet and the default output options are then v1.05 and v2.03.</p>
+          <p><a href="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/8</link>
+        <pubDate>Fri, 07 Apr 2017 14:04:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-777-8</guid>
+        <source url="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777.rss">Flatten-tool: New approach for Spreadsheet to IATI conversion</source>
+      </item>
+      <item>
+        <title>Flatten-tool: New approach for Spreadsheet to IATI conversion</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Yup! xpaths in headings mean that you can specify where in the tree the value should go so, for example, if you had a sheet which had in it:</p>
+<pre><code class="lang-auto">+-----------------+--------------------+-------------------------------------+
+| iati-identifier | ...other values... | transaction/transaction/description |
++-----------------+--------------------+-------------------------------------+
+| GB-TEST-1       |                ... | Test description for fake activity  |
++-----------------+--------------------+-------------------------------------+
+</code></pre>
+<p>This would result in something like:</p>
+<pre><code class="lang-xml">&lt;iati-activities version="1.05" etc...&gt;
+  &lt;iati-activity&gt;
+    &lt;iati-identifier&gt;GB-TEST-1&lt;/iati-identifier&gt;
+    &lt;!-- other columns --&gt;
+      &lt;transaction&gt;
+        &lt;description&gt;Test description for fake activity&lt;/description&gt;
+      &lt;/transaction
+    &lt;!-- other columns --&gt;
+  &lt;/iati-activity&gt;
+&lt;/iati-activities&gt;
+</code></pre>
+<p>Change that to:</p>
+<pre><code class="lang-auto">+-----------------+--------------------+-----------------------------------------------+
+| iati-identifier | ...other values... | transaction/transaction/description/narrative |
++-----------------+--------------------+-----------------------------------------------+
+| GB-TEST-1       |                ... | Test description for fake activity            |
++-----------------+--------------------+-----------------------------------------------+
+</code></pre>
+<p>And it would be more like:</p>
+<pre><code class="lang-xml">&lt;iati-activities version="2.01" etc...&gt;
+  &lt;iati-activity&gt;
+    &lt;iati-identifier&gt;GB-TEST-1&lt;/iati-identifier&gt;
+    &lt;!-- other columns --&gt;
+      &lt;transaction&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Test description for fake activity&lt;/narrative&gt;
+        &lt;/description&gt;
+      &lt;/transaction
+    &lt;!-- other columns --&gt;
+  &lt;/iati-activity&gt;
+&lt;/iati-activities&gt;
+</code></pre>
+<p>Though I’ve skimmed over the version declaration and other elements.</p>
+<p>Ultimately it’s just very flexible, but would require a good template for each version or a good level of IATI knowledge to make a spreadsheet work well i.e. knowing the difference between a 1.05 transaction description and a 2.01 one.</p>
+<p>Hope this is clear <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+          <p><a href="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/7</link>
+        <pubDate>Fri, 07 Apr 2017 13:38:58 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-777-7</guid>
+        <source url="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777.rss">Flatten-tool: New approach for Spreadsheet to IATI conversion</source>
+      </item>
+      <item>
+        <title>Flatten-tool: New approach for Spreadsheet to IATI conversion</title>
+        <dc:creator><![CDATA[dalepotter]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for posting this update, especially for those who were not at the TAG lightning talk session.  Good to hear of progress too!</p>
+<p>Just reading though the discussion on how versions will be specified, it implies that the output XML can be produced to any versions of IATI Standard (v1.01 to v2.02) - is this correct?</p>
+<p>I know <a class="mention" href="/u/wendy">@Wendy</a> was curious about this a few weeks ago.</p>
+          <p><a href="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/6</link>
+        <pubDate>Thu, 06 Apr 2017 09:34:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-777-6</guid>
+        <source url="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777.rss">Flatten-tool: New approach for Spreadsheet to IATI conversion</source>
+      </item>
+      <item>
+        <title>Flatten-tool: New approach for Spreadsheet to IATI conversion</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>If you’re instead talking about the IATI version used by the spreadsheet, isn’t it possible to infer this from the headers / data?</p>
+</blockquote>
+</aside>
+<p>Yes, it’s the IATI version used by the spreadsheet. Currently all info in the spreadsheet is assumed to be about <code>iati-activity</code> and child elements, whereas <code>@version</code> is found on the <code>iati-activities</code> root element. What we’re working on is letting people add an extra tab for these root level attributes.</p>
+          <p><a href="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/5</link>
+        <pubDate>Tue, 04 Apr 2017 10:41:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-777-5</guid>
+        <source url="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777.rss">Flatten-tool: New approach for Spreadsheet to IATI conversion</source>
+      </item>
+      <item>
+        <title>Flatten-tool: New approach for Spreadsheet to IATI conversion</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="3" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/robredpath/40/193_1.png" class="avatar"> robredpath:</div>
+<blockquote>
+<p>Forgive my IATI naïvité</p>
+</blockquote>
+</aside>
+<p>On the contrary! I’m fairly new to IATI, so I may well be wrong!</p>
+<aside class="quote no-group" data-post="3" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/robredpath/40/193_1.png" class="avatar"> robredpath:</div>
+<blockquote>
+<p>can you give me some examples?</p>
+</blockquote>
+</aside>
+<p>I was specifically thinking about CSV export from the datastore (but I suppose CSV export from d-portal, too?) Getting flattened data out so it can be manipulated using familiar tools (e.g. Excel) is helpful for a set of data users.</p>
+<p>I’ve seen some issues about the way the datastore does CSV export. If it were to use flatten-tool that could at least help in standardising IATI to spreadsheet export across tools.</p>
+          <p><a href="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/4</link>
+        <pubDate>Tue, 04 Apr 2017 10:10:13 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-777-4</guid>
+        <source url="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777.rss">Flatten-tool: New approach for Spreadsheet to IATI conversion</source>
+      </item>
+      <item>
+        <title>Flatten-tool: New approach for Spreadsheet to IATI conversion</title>
+        <dc:creator><![CDATA[robredpath]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/andylolz/40/164_1.png" class="avatar"> andylolz:</div>
+<blockquote>
+<p>Loads of applications for this.</p>
+</blockquote>
+</aside>
+<p>Forgive my IATI naïvité - can you give me some examples? I’m working on all the product owner-ey bits of making all this happen!</p>
+          <p><a href="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/3</link>
+        <pubDate>Mon, 03 Apr 2017 05:53:03 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-777-3</guid>
+        <source url="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777.rss">Flatten-tool: New approach for Spreadsheet to IATI conversion</source>
+      </item>
+      <item>
+        <title>Flatten-tool: New approach for Spreadsheet to IATI conversion</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Super cool.</p>
+<p>Was just going to suggest doing this <a href="http://hxlstandard.org/">the HXL way</a>, with a human-readable header row followed by the flatten-tool-readable xpath-like header row. But I see <a class="mention" href="/u/timdavies">@TimDavies</a> has <a href="https://github.com/OpenDataServices/flatten-tool/issues/130">already suggested it</a> <img src="//discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+<aside class="quote no-group" data-post="1" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bjwebb/40/7_1.png" class="avatar"> bjwebb:</div>
+<blockquote>
+<p>allowing spreadsheets to specify the IATI standard version.</p>
+</blockquote>
+</aside>
+<p>Sorry if this is a silly question… Are you talking about specifying the output version? If so, it seems odd to store this in with the spreadsheet. If you’re instead talking about the IATI version used by the spreadsheet, isn’t it possible to infer this from the headers / data?</p>
+<aside class="quote no-group quote-modified" data-post="1" data-topic="777">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bjwebb/40/7_1.png" class="avatar"> bjwebb:</div>
+<blockquote>
+<p>we also have conversion to spreadsheet (which means it’s possible to roundtrip, ie. edit and then convert back to XML)</p>
+</blockquote>
+</aside>
+<p>Oh yeah for sure, this would be really great. Loads of applications for this.</p>
+          <p><a href="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/2</link>
+        <pubDate>Fri, 31 Mar 2017 20:01:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-777-2</guid>
+        <source url="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777.rss">Flatten-tool: New approach for Spreadsheet to IATI conversion</source>
+      </item>
+      <item>
+        <title>Flatten-tool: New approach for Spreadsheet to IATI conversion</title>
+        <dc:creator><![CDATA[bjwebb]]></dc:creator>
+        <description><![CDATA[
+            <p>This post is mostly a write up of the lightening talk I gave at the TAG, with some additional info on how the work is progressing.</p>
+<p><a href="http://csv2iati.iatistandard.org/" rel="nofollow noopener">CSV2IATI</a> is going to be retired this year, so at <a href="http://opendataservices.coop/" rel="nofollow noopener">Open Data Services Co-operative</a> we’ve been looking at alternate approaches for converting spreadsheets to IATI XML.</p>
+<p>For <a href="http://standard.open-contracting.org/" rel="nofollow noopener">OCDS (Open Contracting Data Standard)</a> and <a href="http://www.threesixtygiving.org/standard/" rel="nofollow noopener">360Giving</a>, we built <a href="https://github.com/OpenDataServices/flatten-tool" rel="nofollow noopener">flatten-tool</a>.  This is a command line tool, and python library, for converting from flat spreadsheet formats to nested structured formats (JSON or XML). We’re working on adding IATI XML support to this.</p>
+<h2>Key features of flatten-tool:</h2>
+<h3>No mapping tool</h3>
+<p>Instead of a mapping tool, we require that headings contain an xpath (or close to an xpath) for the part of the IATI XML the column corresponds to.</p>
+<p>e.g. this spreadsheet:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/8a7946636d00e1297e4f13489b699594f2bf7bad.png" data-download-href="https://discuss.iatistandard.org/uploads/default/8a7946636d00e1297e4f13489b699594f2bf7bad" title="image.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_689x74.png" width="689" height="74" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_689x74.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_1033x111.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/8a7946636d00e1297e4f13489b699594f2bf7bad.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1308×141 22.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>becomes this XML:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2.png" data-download-href="https://discuss.iatistandard.org/uploads/default/7cba10e3803b8b5cd97af915e81797b2013f27d2" title="image.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_345x57.png" width="345" height="57" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_345x57.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_517x85.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_690x114.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">2110×351 77.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>Most users won’t need to worry about xpath though, as we’ll have a pre-made template for them to download and populate. However, the approach does also allow custom templates to be easily crafted for particular use cases.</p>
+<p>Since all information is contained in the spreadsheet, it will be possible to upgrade to a new IATI standard version by just changing the data, without any change required to the tool.</p>
+<h3>One-to-many relationships</h3>
+<p>In IATI, one activity usually has multiple child elements of certain types (e.g. multiple transactions). flatten-tool supports multiple ways of representing this:</p>
+<ul>
+<li>Multiple columns</li>
+<li>Separate sheets, linked by the IATI Identifier in both sheets</li>
+<li>Repeated rows, for compatibility with CSV2IATI</li>
+</ul>
+<p>e.g. multiple columns might be convenient for mulitiple recipient countries:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5.png" data-download-href="https://discuss.iatistandard.org/uploads/default/3a484b93bde1094cfdfbedf2d2da0f999f4498a5" title="image.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_690x69.png" width="690" height="69" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_690x69.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_1035x103.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1325×134 13.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>but a separate sheet might be more convenient for multiple transactions:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/6fba25080a085599c1f4d81951a365e46aa9d46f.png" data-download-href="https://discuss.iatistandard.org/uploads/default/6fba25080a085599c1f4d81951a365e46aa9d46f" title="image.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_690x74.png" width="690" height="74" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_690x74.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_1035x111.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_1380x148.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1807×195 32.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<h3>Excel workbook (XLSX) support, in addition to CSV</h3>
+<p>CSV and XLSX are the supported input file formats.</p>
+<p>CSVs exported from Excel often have problems - e.g. encodings and date formats. By supporting XLSX we can more easily get at the original data. It’s also an easy way to supply multiple sheets with one-to-many relationships (above).</p>
+<h2>Progress so far</h2>
+<p>Basic XML support has been merged into flatten-tool, and there’s <a href="https://flatten-tool.readthedocs.io/en/latest/usage-iati/" rel="nofollow noopener">instructions for using it to produce IATI XML in the docs</a>. We’re already using this code internally to help people publish IATI data. As <a class="mention" href="/u/johnadams">@johnadams</a> would say, we’re eating our own dog food.</p>
+<p>There’s a bunch of <a href="https://github.com/OpenDataServices/flatten-tool/issues?q=is%3Aopen+is%3Aissue+label%3AXML" rel="nofollow noopener">issues still to be worked on</a>. The most pressing, which we’re working on currently, are <a href="https://github.com/OpenDataServices/flatten-tool/issues/146" rel="nofollow noopener">sorting the XML correctly</a>, and <a href="https://github.com/OpenDataServices/flatten-tool/pull/144" rel="nofollow noopener">allowing spreadsheets to specify the IATI standard version</a>. We’re currently working around these by manually adding the version number, and <a href="https://github.com/OpenDataServices/iati-utils/blob/master/sort_iati.py" rel="nofollow noopener">sorting with this script</a>.</p>
+<h2>Future plans</h2>
+<p>We’re working on a web interface, so that users can upload a file, instead of having to use a commandline tool.</p>
+<p>We want this web interface to have integrated validation. Additionally validation messages will list the cell in the spreadsheet that caused the error, allowing data to be fixed more easily. <a class="mention" href="/u/stevieflow">@stevieflow</a> made a presentation about this approach to the IATI Members’ Assembly. Here’s a screenshot of what this currently looks like for 360Giving:</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://discuss.iatistandard.org/uploads/default/original/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad.png" data-download-href="https://discuss.iatistandard.org/uploads/default/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad" title="image.png"><img src="https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_690x159.png" width="690" height="159" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_690x159.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_1035x238.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_1380x318.png 2x" data-small-upload="https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_10x10.png"><div class="meta">
+<svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">2153×498 68.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
+</div></a></div></p>
+<p>For OCDS and 360Giving we also have conversion <strong>to</strong> spreadsheet (which means it’s possible to roundtrip, ie. edit and then convert back to XML). We think this could be useful for IATI too, but at the moment we’re focusing on conversion <strong>from</strong> spreadsheet first, because that appears to have the greater need.</p>
+          <p><a href="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777/1</link>
+        <pubDate>Fri, 31 Mar 2017 17:03:09 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-777-1</guid>
+        <source url="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777.rss">Flatten-tool: New approach for Spreadsheet to IATI conversion</source>
+      </item>
+  </channel>
+</rss>

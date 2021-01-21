@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>If using a codelist, the data must exactly match</title>
+    <link>https://discuss.iatistandard.org/t/if-using-a-codelist-the-data-must-exactly-match/1842</link>
+    <description>The new [SDG guidance] :) (https://docs.google.com/document/d/11vsqHc-mdAYUCqrrGCaCTFxu48oD3VvBVSlY9Q3ideo/edit) states that: &quot;IATI recommends that if a publisher’s internal indicators do not directly match any SDG Indicator, they should choose one SDG Indicator that their internal result’s indicator best relates or contributes to.&quot;
+
+I think this breaks how IATI works and am very surprised that this is allowed as this means that data users cannot rely on the data being supplied by a publisher, exactly matching the codelist entry that it is marked as.
+
+This means that if a user were to aggregate all the baselines for a particular SDG indicator, they would not know that in some cases, the baseline data provided, is actually for a different indicator, not the one they are expecting, and therefore their conclusions from using this data would be false.
+
+IATI needs to find a way to use existing tools e.g. the `&lt;legacy-data&gt;` element, or a new element, to allow publishers to indicate whether the data they are supplying is from a similar, but not exactly the same indicator/sector etc to that described by the codelist which they have used to mark it. This could easily done by an attribute i.e. `match=not_exact` or similar.</description>
+    
+    <lastBuildDate>Tue, 10 Sep 2019 10:15:02 +0000</lastBuildDate>
+    <category>3.0.0 Major Upgrade Proposals</category>
+    <atom:link href="https://discuss.iatistandard.org/t/if-using-a-codelist-the-data-must-exactly-match/1842.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>If using a codelist, the data must exactly match</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>The new [SDG guidance] <img src="https://discuss.iatistandard.org/images/emoji/twitter/slight_smile.png?v=9" title=":slight_smile:" class="emoji" alt=":slight_smile:"> (<a href="https://docs.google.com/document/d/11vsqHc-mdAYUCqrrGCaCTFxu48oD3VvBVSlY9Q3ideo/edit" rel="nofollow noopener">https://docs.google.com/document/d/11vsqHc-mdAYUCqrrGCaCTFxu48oD3VvBVSlY9Q3ideo/edit</a>) states that: “IATI recommends that if a publisher’s internal indicators do not directly match any SDG Indicator, they should choose one SDG Indicator that their internal result’s indicator best relates or contributes to.”</p>
+<p>I think this breaks how IATI works and am very surprised that this is allowed as this means that data users cannot rely on the data being supplied by a publisher, exactly matching the codelist entry that it is marked as.</p>
+<p>This means that if a user were to aggregate all the baselines for a particular SDG indicator, they would not know that in some cases, the baseline data provided, is actually for a different indicator, not the one they are expecting, and therefore their conclusions from using this data would be false.</p>
+<p>IATI needs to find a way to use existing tools e.g. the <code>&lt;legacy-data&gt;</code> element, or a new element, to allow publishers to indicate whether the data they are supplying is from a similar, but not exactly the same indicator/sector etc to that described by the codelist which they have used to mark it. This could easily done by an attribute i.e. <code>match=not_exact</code> or similar.</p>
+          <p><a href="https://discuss.iatistandard.org/t/if-using-a-codelist-the-data-must-exactly-match/1842/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/if-using-a-codelist-the-data-must-exactly-match/1842/1</link>
+        <pubDate>Tue, 10 Sep 2019 10:15:02 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1842-1</guid>
+        <source url="https://discuss.iatistandard.org/t/if-using-a-codelist-the-data-must-exactly-match/1842.rss">If using a codelist, the data must exactly match</source>
+      </item>
+  </channel>
+</rss>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Frustration with unreliable IATI infrastructure when using data at country level</title>
+    <link>https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081</link>
+    <description>I thought it would be useful to bring this issue to the attention of the wider community. Poorly maintained IATI infrastructure is presenting a significant challenge to the use of IATI data at country level (currently here in Bangladesh).
+
+A recurrent issue has come up with using the IATI Datastore. It is not updating data automatically -- the last data available for the Netherlands is from early July (though their data is updated monthly). We previously faced the same problem with World Bank data. This means that a) new activities are not found and b) existing activities are not updated. This clearly presents a fundamental obstacle to using IATI data at country level.
+
+After previously reporting this problem in early July, the data finally became available after two weeks (which is too slow, but OK if it doesn&#39;t happen again), [thanks to a bugfix](https://github.com/IATI/IATI-Datastore/pull/272) by @andylolz. I [reported yesterday](https://github.com/IATI/IATI-Datastore/issues/268#issuecomment-337123175) that this issue has now appeared again for Netherlands data. My bug report was essentially disregarded and the issue closed, on the basis that the problem **may** lie with the Registry (which is not a reason for closing the issue: the Datastore is still not functioning correctly, as it is not returning the requested data).
+
+I am extremely frustrated that such a basic, core service to IATI&#39;s mission is so unreliable and that feedback on basic problems with using IATI data is not actioned speedily by the Secretariat, especially given the apparent focus now on data use.
+
+Having been involved in IATI for about 7 years, it is really embarrassing to have to keep explaining to people here in Bangladesh that their data is fine, the government’s software is fine, but it is IATI infrastructure that is preventing their data from being automatically imported and updated. This is undermining confidence in the use of IATI at country level.
+
+How do we fix this problem? 
+
+1. Does the Secretariat need additional resources or just to [prioritise existing resources better](https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018/1)? 
+2. Does the Secretariat even think people should be trying to use the Datastore or does it recommend an alternate option for accessing the data? 
+3. Can the Secretariat have some kind of targets for uptime and resolution of major issues? 
+
+Suggestions welcome…</description>
+    
+    <lastBuildDate>Mon, 30 Oct 2017 10:23:50 +0000</lastBuildDate>
+    <category>Using IATI Data</category>
+    <atom:link href="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Frustration with unreliable IATI infrastructure when using data at country level</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <p>Great news: the issue with the IATI registry (that’s believed to be the underlying issue here) <a href="https://github.com/ViderumGlobal/ckanext-iati/issues/125#issuecomment-340392194">now appears to be fixed</a>, and there is some indication that <a href="https://github.com/IATI/IATI-Datastore/issues/268#issuecomment-340401462">things may now be working on the datastore</a>… I do think a bit more investigation is needed here, but it’s looking positive.</p>
+          <p><a href="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/6</link>
+        <pubDate>Mon, 30 Oct 2017 10:23:50 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1081-6</guid>
+        <source url="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081.rss">Frustration with unreliable IATI infrastructure when using data at country level</source>
+      </item>
+      <item>
+        <title>Frustration with unreliable IATI infrastructure when using data at country level</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi all,</p>
+<p>I have just signed off on the procurement of the Somali AIMS, plus am working on two other IATI based platforms - all of which are designed to use the datastore. I am therefore having difficulty understanding that as a core tool, the IATI Secretariat a) make no formal promise that the datastore will work or have a target/standard for uptime/bugfixing (nor it appears does the contract with the registry supplier), and b) the timeline for improvements is “will be in the Secretariat’s workplan for next year” but unclear in what form/with what resources?</p>
+<p>That is not a strong enough basis to develop tools that use IATI data in production environments, so I have to ask, what is the recommendation here? Go back to UNDP and say that IATI tools are not ready for production use for a few years? Find an alternative i.e. is that why lots of people use OIPA, is it better in this regard? If so, perhaps the Secretariat should formally recommend OIPA for production use - I don’t think they will, but what are the alternatives for those of us trying to get IATI data into the hands of users who need bugs squashed faster than the 4! months that the one that triggered this thread is taking?</p>
+<p>Two linked thoughts:</p>
+<ol>
+<li>
+<p>Maybe we need to start separating the roles of the secretariat into a technical provider with a commercial/binding service delivery contract for the core tools/services, and a separate role for the consultations, outreach, vision etc as it appears that the two missions maybe cannibalising eachother – perhaps this is the ‘back to basics’ discussion.</p>
+</li>
+<li>
+<p>Current IATI secretariat support to tools either needs to be stopped, or needs more money - <a href="https://www.aidtransparency.net/wp-content/uploads/2013/05/IATI-Workplan-updated-Dec-2016.pdf" rel="nofollow noopener">this workplan</a> indicates that maintaining the core tools in 2017 gets GBP 51 out of a total budget of 987 thousand i.e. approx 5% of the budget, or 7% if contribution to the registry is included. This is not the prioritisation, or the amount, I would pick if I wanted IATI to develop towards use in production systems. The rest of the IATI development community must spend over GBP 1 million (perhaps 2 million) a year on IATI systems/tools, it seems therefore bizarre that those core ones we all use, struggle by with under 5% of that.</p>
+</li>
+</ol>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/5</link>
+        <pubDate>Thu, 19 Oct 2017 18:22:22 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1081-5</guid>
+        <source url="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081.rss">Frustration with unreliable IATI infrastructure when using data at country level</source>
+      </item>
+      <item>
+        <title>Frustration with unreliable IATI infrastructure when using data at country level</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/bill_anderson">@bill_anderson</a>, thanks for your response</p>
+<p>This was the same reply I got from your colleagues and I have to say it is a very poor answer. The IATI Datastore is not delivering a basic service required for use at country level. Whether this is the result of failings in a service that the IATI Secretariat has outsourced to a third party or not, the Secretariat remains responsible. Further, it is really not clear that the Registry alone is responsible, and even if it is, the fact that <a href="https://www.oipa.nl/api/activities/?activity_id=XM-DAC-7-PPR-4000000013&amp;format=json" rel="nofollow noopener">OIPA works</a> and <a href="http://datastore.iatistandard.org/api/1/access/activity.xml?iati-identifier=XM-DAC-7-PPR-4000000013" rel="nofollow noopener">the IATI Datastore doesn’t</a> shows there are workarounds. Whether you choose to fix the Registry or the Datastore, both are within your power <img src="//discuss.iatistandard.org/images/emoji/twitter/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"></p>
+<p>I remain highly frustrated by the lack of prioritisation given to the Datastore, in preference for other tools like pyIATI where there has been no demonstrable user need or demand outside of the IATI tech team.</p>
+<p>The Datastore does not need to be rebuilt. It just needs basic issues to be resolved in a timely manner rather than rather brusquely dismissed.</p>
+          <p><a href="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/4</link>
+        <pubDate>Thu, 19 Oct 2017 13:36:16 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1081-4</guid>
+        <source url="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081.rss">Frustration with unreliable IATI infrastructure when using data at country level</source>
+      </item>
+      <item>
+        <title>Frustration with unreliable IATI infrastructure when using data at country level</title>
+        <dc:creator><![CDATA[andylolz]]></dc:creator>
+        <description><![CDATA[
+            <aside class="quote no-group" data-post="2" data-topic="1081">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>You are, I understand, aware that this problem emanates from the Registry, not the DataStore.</p>
+</blockquote>
+</aside>
+<p>Apologies for getting into details here… Here’s the ticket (from June) regarding the apparent underlying registry issue: <a href="https://github.com/ViderumGlobal/ckanext-iati/issues/125">https://github.com/ViderumGlobal/ckanext-iati/issues/125</a></p>
+<p>The issue was fixed on staging two weeks ago. Yesterday I tested the latest version. It looks good to me. Please could the ticket be reviewed by <a class="mention" href="/u/iati-techteam">@IATI-techteam</a> / Viderum be given the go-ahead to push this to production?</p>
+<p>I think there are signs of improvement with Viderum. I’ve previously suggested that a more hands-on approach to managing (e.g. diving into the code a bit more) might be more productive, and would help the tech team have a better handle on what’s going on with CKAN stuff.</p>
+<aside class="quote no-group quote-modified" data-post="2" data-topic="1081">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt width="20" height="20" src="//discuss.iatistandard.org/user_avatar/discuss.iatistandard.org/bill_anderson/40/13_1.png" class="avatar"> bill_anderson:</div>
+<blockquote>
+<p>At the Members’ Assembly I made it clear that IATI Developers currently have three key priorities: […]</p>
+</blockquote>
+</aside>
+<p>IMO fixing bugs that are affecting real users right now should feature on this list. I don’t think it’s a given.</p>
+          <p><a href="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/3</link>
+        <pubDate>Thu, 19 Oct 2017 11:29:11 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1081-3</guid>
+        <source url="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081.rss">Frustration with unreliable IATI infrastructure when using data at country level</source>
+      </item>
+      <item>
+        <title>Frustration with unreliable IATI infrastructure when using data at country level</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>You are, I understand, aware that this problem emanates from the Registry, not the DataStore. I appreciate this doesn’t help you at the coal face but a little explanation might be useful.</p>
+<p>The Registry is a customised instance of CKAN, originally built by Open Knowledge and now maintained by Viderum, an Open Knowledge company. Users of the registry will be aware that we have been receiving a poor service for some time. The technical team have made a number of attempts to sort this out with little success. I am in the process of escalating the matter on a political level. We will contact you as soon as this is resolved.</p>
+<p>At the Members’ Assembly I made it clear that IATI Developers currently have three key priorities:</p>
+<ul>
+<li>Building a sustainable technical foundation and infrastructure that will ensure all core IATI products and services are as future-proof as possible.</li>
+<li>Delivering a new integrated website that will ensure, inter alia, that we can scale our support services from 500 to 5,000 publishers.</li>
+<li>Rebuilding the Datastore so that it
+<ul>
+<li>Ensures accurate importing of all data across all versions of  the standard</li>
+<li>Provides access to a database that is queryable across all fields</li>
+<li>Delivers requested data via API in xml, json and a selected range of csv serialisations.</li>
+</ul>
+</li>
+</ul>
+<p>We are currently preparing our detailed workplan for the next year and will share this with the community as soon as it is finalised.</p>
+          <p><a href="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/2</link>
+        <pubDate>Thu, 19 Oct 2017 10:07:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1081-2</guid>
+        <source url="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081.rss">Frustration with unreliable IATI infrastructure when using data at country level</source>
+      </item>
+      <item>
+        <title>Frustration with unreliable IATI infrastructure when using data at country level</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>I thought it would be useful to bring this issue to the attention of the wider community. Poorly maintained IATI infrastructure is presenting a significant challenge to the use of IATI data at country level (currently here in Bangladesh).</p>
+<p>A recurrent issue has come up with using the IATI Datastore. It is not updating data automatically – the last data available for the Netherlands is from early July (though their data is updated monthly). We previously faced the same problem with World Bank data. This means that a) new activities are not found and b) existing activities are not updated. This clearly presents a fundamental obstacle to using IATI data at country level.</p>
+<p>After previously reporting this problem in early July, the data finally became available after two weeks (which is too slow, but OK if it doesn’t happen again), <a href="https://github.com/IATI/IATI-Datastore/pull/272" rel="nofollow noopener">thanks to a bugfix</a> by <a class="mention" href="/u/andylolz">@andylolz</a>. I <a href="https://github.com/IATI/IATI-Datastore/issues/268#issuecomment-337123175" rel="nofollow noopener">reported yesterday</a> that this issue has now appeared again for Netherlands data. My bug report was essentially disregarded and the issue closed, on the basis that the problem <strong>may</strong> lie with the Registry (which is not a reason for closing the issue: the Datastore is still not functioning correctly, as it is not returning the requested data).</p>
+<p>I am extremely frustrated that such a basic, core service to IATI’s mission is so unreliable and that feedback on basic problems with using IATI data is not actioned speedily by the Secretariat, especially given the apparent focus now on data use.</p>
+<p>Having been involved in IATI for about 7 years, it is really embarrassing to have to keep explaining to people here in Bangladesh that their data is fine, the government’s software is fine, but it is IATI infrastructure that is preventing their data from being automatically imported and updated. This is undermining confidence in the use of IATI at country level.</p>
+<p>How do we fix this problem?</p>
+<ol>
+<li>Does the Secretariat need additional resources or just to <a href="https://discuss.iatistandard.org/t/a-response-to-a-week-in-the-life-of-an-iati-developer/1018/1">prioritise existing resources better</a>?</li>
+<li>Does the Secretariat even think people should be trying to use the Datastore or does it recommend an alternate option for accessing the data?</li>
+<li>Can the Secretariat have some kind of targets for uptime and resolution of major issues?</li>
+</ol>
+<p>Suggestions welcome…</p>
+          <p><a href="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081/1</link>
+        <pubDate>Wed, 18 Oct 2017 11:28:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1081-1</guid>
+        <source url="https://discuss.iatistandard.org/t/frustration-with-unreliable-iati-infrastructure-when-using-data-at-country-level/1081.rss">Frustration with unreliable IATI infrastructure when using data at country level</source>
+      </item>
+  </channel>
+</rss>

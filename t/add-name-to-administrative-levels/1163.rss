@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Add name to administrative levels</title>
+    <link>https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163</link>
+    <description>It could be really useful to have a name element within administrative node in order to report the name of each level. 
+ Example:
+
+    &lt;administrative code=&quot;370230&quot; vocabulary=&quot;G1&quot; level=&quot;2&quot;&gt;
+    &lt;name&gt;
+    &lt;Narrative&gt;Meheisa&lt;/Narrative&gt; 
+    &lt;/name&gt;
+    &lt;/administrative&gt;</description>
+    
+    <lastBuildDate>Wed, 03 Jan 2018 10:43:57 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Add name to administrative levels</title>
+        <dc:creator><![CDATA[amys]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks for posting <a class="mention" href="/u/sebastian_dimunzio">@Sebastian_Dimunzio</a>. Your suggestion will be considered by the community during the ‘next’ IATI Standard upgrade process.</p>
+<p>In the mean time, if you or other members of the community have use cases for this proposal then please do post them here.</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163/3</link>
+        <pubDate>Wed, 03 Jan 2018 10:43:57 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1163-3</guid>
+        <source url="https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163.rss">Add name to administrative levels</source>
+      </item>
+      <item>
+        <title>Add name to administrative levels</title>
+        <dc:creator><![CDATA[David_Megginson]]></dc:creator>
+        <description><![CDATA[
+            <p>That would align well with HXL. We allow the code via the <em>+code</em> attribute (e.g. <em><span class="hashtag">#adm1</span> +code</em>) and the name via the _+name+ attribute (e.g. <em><span class="hashtag">#adm1</span> +name</em>), optionally in multiple languages (#adm1+name+i_ar, #adm1+name+i_fr, etc). It would be good to be able to represent all of that in IATI when we start mapping back and forth.</p>
+<p>D</p>
+          <p><a href="https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163/2</link>
+        <pubDate>Fri, 22 Dec 2017 16:13:39 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1163-2</guid>
+        <source url="https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163.rss">Add name to administrative levels</source>
+      </item>
+      <item>
+        <title>Add name to administrative levels</title>
+        <dc:creator><![CDATA[Sebastian_Dimunzio]]></dc:creator>
+        <description><![CDATA[
+            <p>It could be really useful to have a name element within administrative node in order to report the name of each level.<br>
+Example:</p>
+<pre><code>&lt;administrative code="370230" vocabulary="G1" level="2"&gt;
+&lt;name&gt;
+&lt;Narrative&gt;Meheisa&lt;/Narrative&gt; 
+&lt;/name&gt;
+&lt;/administrative&gt;</code></pre>
+          <p><a href="https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163/1</link>
+        <pubDate>Thu, 21 Dec 2017 13:48:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-1163-1</guid>
+        <source url="https://discuss.iatistandard.org/t/add-name-to-administrative-levels/1163.rss">Add name to administrative levels</source>
+      </item>
+  </channel>
+</rss>

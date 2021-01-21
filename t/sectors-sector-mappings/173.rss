@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Sectors &amp; sector mappings</title>
+    <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173</link>
+    <description>Hi everyone
+
+Just recently (in my post IATI Secretariat work), I&#39;ve been talking to a few organisations publishing/preparing IATI data.  One of the common processes they face - particularly when they are NGO / CSO type organisations - is to make some kind of mapping between their existing categories/sectors/taxonomy with the IATI/DAC sector codes.
+
+In some cases, the IATI/DAC codes can be too specific for the organisation, whereas the broad categories are too wide
+
+In other cases, areas/themes of work just don&#39;t seem to exist on the DAC/IATI codelist
+
+I wanted to gauge opinion and insights on this.  How have people been dealing with this?  The Standard states:
+
+&gt; It is recommended that OECD DAC 5-digit Purpose Codes are used wherever possible. It is also recommended that if a publisher has its own classification system or systems, then the vocabularies 99 or 98 (Reporting Organisation’s own vocabularies) should be used in addition to the DAC codes.
+
+This seems to be quite an overhead for several organisations, who at the same time understand and value the purpose of a common vocabulary</description>
+    
+    <lastBuildDate>Tue, 24 Jan 2017 10:43:25 +0000</lastBuildDate>
+    <category>Modifications, Additions, Improvements</category>
+    <atom:link href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss" rel="self" type="application/rss+xml" />
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[Wendy]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello everyone - I am reassigning this topic to the Standard Management -&gt; Modification Additions &amp; Improvements categories so that any potential changes to the IATI Standard can be considered as part of the next Standard Upgrade process</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/14">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/14</link>
+        <pubDate>Tue, 24 Jan 2017 10:43:25 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-14</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[rory_scott]]></dc:creator>
+        <description><![CDATA[
+            <p>Hello everyone – just to let you all know, the new voluntary codes were <a href="http://iatistandard.org/202/codelists/Sector/" rel="nofollow noopener">staged and deployed</a> last week.</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/13">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/13</link>
+        <pubDate>Mon, 08 Aug 2016 09:40:31 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-13</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi,</p>
+<p>I also think it is prudent to keep the <code>&lt;country-budget-items&gt;</code> element and see a lot of sense in pruning to be a dedicated space just for recipient country budget integration (Chart of Accounts / CoA data). I presume that things like CoFoG, funder CoA etc would instead be available as a vocab elsewhere. However, I am not sure that splitting up the CoA would work:</p>
+<ol>
+<li>Not all CoAs split nicely into the 4 categories (or 5 - as location is needed) e.g. some have a Fund-source sub-classification, or a development vs recurrent sub-classification so unless we added subcategories for all permutations (messy), then a single one for the full CoA seems like the only option.</li>
+<li>There would be several sub-vocabs to publish and version etc instead of just one CoA which adds complexity.</li>
+<li>A full CoA block is normally needed to describe/separate each financial movement. With separate sub-classifications, if an activity was marked with a Functional classification of 25% education, 75% health, and an Economic classification of 50% salaries and 50% books, this is not sufficient for budget integration as it is unclear whether education received books, salaries, or a mixture of both.</li>
+</ol>
+<p>Three other thoughts:</p>
+<ol>
+<li>If we are going to push for CoA data in IATI this might not be helpful at the activity level where a single activity might have thousands of separate CoA entries. Even the transaction level as currently used by publishers often has hundreds of CoA entries matching a single transaction.</li>
+<li>I would prefer not to have the guidance to limit (vs voluntary) the publishing of these codes to just country systems as I see no harm if someone else wants to publish the data.</li>
+<li>Perhaps the way forward is a practical test to see what level of CoA data might be useful, obtainable etc and use that to influence the design. For me there are still big questions as to the objective e.g. is this about budget process integration or FMIS integration all of which will influence what is needed in the standard.</li>
+</ol>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/12">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/12</link>
+        <pubDate>Thu, 28 Jul 2016 10:09:36 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-12</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Sorry. <a class="mention" href="/u/markbrough">@markbrough</a> you are absolutely correct. (Dementia sets in …) . I agree with your suggestion 100%. Would you not want the Full Chart of Accounts Code as a vocab in addition to the sub-codes?</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/11">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/11</link>
+        <pubDate>Wed, 27 Jul 2016 17:29:42 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-11</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[markbrough]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree with the idea of deprecating the <a href="http://iatistandard.org/202/codelists/BudgetIdentifier/" rel="nofollow noopener">BudgetIdentifier</a> codelists, but think there may be some good arguments for retaining the element.</p>
+<p>In the context of country systems reporting their own data back out to IATI, I would suggest retaining the ability of those <strong>country systems</strong> to report the actual country budget classifications that projects map to. I think this would also make sense in the context of Joined Up Data, especially once data begins to be published under the Fiscal Data Package. It could have some positive benefits in allowing aid and budget spending data to be linked together.</p>
+<p>It might therefore make sense to prune the <a href="http://iatistandard.org/202/codelists/BudgetIdentifierVocabulary/" rel="nofollow noopener">BudgetIdentifierVocabulary</a>, removing everything except for the  <code>2 - Country Chart of Accounts</code> code, and expanding it to something like the following options:</p>
+<ol>
+<li>Country Administrative Classification</li>
+<li>Country Functional Classification</li>
+<li>Country Program Classification</li>
+<li>Country Economic Classification</li>
+</ol>
+<p>The guidance should then make clear that <strong>these codes would only be expected to be reported by country systems re-publishing to IATI</strong>. Donors should just be publishing the detailed CRS sector codes.</p>
+<p>This is just a suggestion - but I just wanted to flag that while I’m in favour of removing the <code>BudgetIdentifier</code> codelist, I think we should proceed a bit more cautiously on removing the <code>&lt;country-budget-items&gt;</code> element entirely until we’re certain there is no other use for it.</p>
+<p>cc/ <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> <a class="mention" href="/u/bill_anderson">@bill_anderson</a> <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a></p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/10">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/10</link>
+        <pubDate>Wed, 27 Jul 2016 17:12:14 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-10</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> : in an attempt to try and link up some of the discuss threads (OK, the ones I’ve made!), I think this post might be interesting in terms of evaluating what we’d <em>expect</em> to see from externally held code lists: <a href="//discuss.iatistandard.org/t/criteria-for-assessing-external-codelists-vocabularies-registries/498">Criteria for assessing external codelists / vocabularies / registries</a></p>
+<p>FYI, when looking at Indicator Vocabulary <a class="mention" href="/u/laia_grino">@laia_grino</a> and I noticed that the URL for one vocab was actually wrong <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/119" rel="nofollow noopener">https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/119</a> …</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/9">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/9</link>
+        <pubDate>Wed, 27 Jul 2016 16:55:49 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-9</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[bill_anderson]]></dc:creator>
+        <description><![CDATA[
+            <p>Agree with <a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> that we need to deprecate Country Budget Items element and codelist.</p>
+<p><a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> the sector element allows for use of multiple vocabularies - not great for novice data users, but logically correct.</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/8">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/8</link>
+        <pubDate>Wed, 27 Jul 2016 16:53:00 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-8</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>I’m sorry, I realize now that my comment above wasn’t quite as clear as it should have (it was clear in my mind!)</p>
+<p>Our recommendation is to deprecate the Country Budget Items element, along with the Budget Identifier codelist (IATI Functional and Administrative Common Code).  The new CRS Purpose Codes list <strong>with the voluntary codes</strong> replaces the Budget Identifier codelist.   To be extra clear: the voluntary codes are not/not equivalent to the Budget Identifier codelist and cannot be used on their own (ie without the broader CRS Purpose Codes).</p>
+<p>I don’t see any value in using the same CRS Purpose Codes in the Country Budget Items and in the Sector elements. But I may be missing something, so happy to chat.</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/7">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/7</link>
+        <pubDate>Wed, 27 Jul 2016 16:39:38 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-7</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p><a class="mention" href="/u/stevieflow">@stevieflow</a> - no problem (was an accident!). RE the sector codes, it seems to me that if publishers are using the new codes as part of the detailed CRS sector vocab then they are not needed again in budget ID. But, the whole sector vs budget ID may need rethinking a bit now that some of the codes it was designed to hold are now in the main sector vocab. Key for me is to retain the ability for an activity to be simultaneously coded to multiple vocabs e.g. CRS and CoFOG, or Humanitarian and National (which would presumably also require a URI link?).</p>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a>, I absolutely agree that the new CRS codes will be very useful in helping countries to map the CRS to their national taxonomies/CoA - so thanks for all your work on this! I hope the option to also publish the National taxonomy remains as although you don’t see much value in coding directly to country budgets, in all AIMS which are not CRS based this is already done in country so the data is readily available and often better than mapping via the CRS for DPs which don’t use the CRS internally and e.g. humanitarian support.</p>
+<p>RE publishing National CoAs - I guess this is included by default for all countries that publish their annual budget or expenditure reports (I must check the latest open budget survey to see what percentage this is), up to the level of detail provided, but typically this is sufficient for aid&gt;budget process integration, although probably not aid&gt;IFMIS integration.</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/6">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/6</link>
+        <pubDate>Wed, 27 Jul 2016 16:33:20 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-6</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Thanks <a class="mention" href="/u/matmaxgeds">@matmaxgeds</a> for keeping this post open!</p>
+<p><a class="mention" href="/u/yohannaloucheur">@YohannaLoucheur</a> regarding the latest additions to the CRS Purpose Codes, I can see that these will be added to the IATI Sector code list: <a href="http://support.iatistandard.org/entries/108948043-DAC-CRS-Codelist-recently-added-voluntary-purpose-codes" rel="nofollow noopener">http://support.iatistandard.org/entries/108948043-DAC-CRS-Codelist-recently-added-voluntary-purpose-codes</a></p>
+<p>Is the intention that publishers could / should <em>also</em> be using these codes within the Country Budget Items element too: <a href="http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/country-budget-items/" rel="nofollow noopener">http://iatistandard.org/202/activity-standard/iati-activities/iati-activity/country-budget-items/</a> ?  In addition, should DAC CRS then be a vocabulary on the Budget Identifier vocab list: <a href="http://iatistandard.org/202/codelists/BudgetIdentifierVocabulary/" rel="nofollow noopener">http://iatistandard.org/202/codelists/BudgetIdentifierVocabulary/</a> ?</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/5">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/5</link>
+        <pubDate>Wed, 27 Jul 2016 13:15:43 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-5</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[YohannaLoucheur]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Matt</p>
+<p>Your post, though “1 year and three months on”, is a good opportunity to provide an update on the “common code” for those who didn’t follow the updates presented to the Steering Committee/Members’ Assembly, and to go into some more detail about the potential uses of the budget id.</p>
+<p>Update: the DAC WP-STAT recently approved the addition of several new codes to the CRS purpose codelist. These new codes are voluntary, which means not all donors/publishers have to use them, but those who want to can.  You’re right that the “common code” has died - after much technical work, we came to the conclusion that we would get a much better fit with country budget classifications by integrating the new codes into the CRS codelist than using a separate “common code”. In the last report to the Members’ Assembly on June 29, we suggested that the common code be deprecated and encouraged all publishers to start using the new codes where relevant (along with the capital expenditure field, which is also part of the “budget id”).</p>
+<p>By “national taxonomies” I assume you mean the national budget classification (also called charter of account)?  Indeed, it would be ideal if they were all public - and they should, as this is a good public financial management practice.  Now that we have agreed on the new CRS purpose codes, the next step in each country is to map these CRS codes to the national budget classification and see how they will use the map to interpret project data (e.g. integrate the mapping in their aid management platform). Ideally, this CRS-budget mapping should also be made public, so that anyone can use it when looking at project data.</p>
+<p>Franckly, with the new CRS codes, I think the match to individual country budgets will be much improved, while preserving cross-country comparability, which is also very important.  As such, I wouldn’t see much value in coding directly to country budgets.  Similarly, the budget can help identify which national development priority, or which SDG, a project contributes to - making the CRS sector codes much more useful than perhaps they seemed to be.</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/4">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/4</link>
+        <pubDate>Mon, 11 Jul 2016 18:03:21 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-4</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>PS - I now realise that this is 1 year and three months on!</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/3">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/3</link>
+        <pubDate>Sun, 10 Jul 2016 01:59:40 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-3</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[matmaxgeds]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi Stevie,</p>
+<p>Sorry for picking this up three month’s on, but I wanted to highlight that that this is the same problem in reverse that aid recipients have, when they have to then (un)map the OECD sectors/purposecodes back to their national taxonomies. I guess the thing to do is to run through all the work done on mapping to the common core (which seems to have died?) and budget integration and see what would help them.</p>
+<p>I also had another thought. What would happen if aid recipients were to publish their national taxonomy, and then reporters could code directly to that? This would at least skip the messy translation to the OECD taxonomy and back again, perhaps saving a lot of work on both sides. It would also then much more closely follow the process of in-country reporting of activities which means that in most cases, the work of mapping is already done, just that the information is stuck in the field offices, rather than in HQ which does the IATI reporting.</p>
+<p>This would make IATI data far more useful for aid recipient countries, but at the expense of cross country comparability and I think highlights how for me, the standard currently seems geared rather more to the second issue (and also to the issue of making it easy for OECD donors to publish), rather than a starting point of what data, and in what format, is needed by aid recipient country governments.</p>
+<p>Matt</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/2">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/2</link>
+        <pubDate>Sun, 10 Jul 2016 01:59:15 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-2</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+      <item>
+        <title>Sectors &amp; sector mappings</title>
+        <dc:creator><![CDATA[stevieflow]]></dc:creator>
+        <description><![CDATA[
+            <p>Hi everyone</p>
+<p>Just recently (in my post IATI Secretariat work), I’ve been talking to a few organisations publishing/preparing IATI data.  One of the common processes they face - particularly when they are NGO / CSO type organisations - is to make some kind of mapping between their existing categories/sectors/taxonomy with the IATI/DAC sector codes.</p>
+<p>In some cases, the IATI/DAC codes can be too specific for the organisation, whereas the broad categories are too wide</p>
+<p>In other cases, areas/themes of work just don’t seem to exist on the DAC/IATI codelist</p>
+<p>I wanted to gauge opinion and insights on this.  How have people been dealing with this?  The Standard states:</p>
+<blockquote>
+<p>It is recommended that OECD DAC 5-digit Purpose Codes are used wherever possible. It is also recommended that if a publisher has its own classification system or systems, then the vocabularies 99 or 98 (Reporting Organisation’s own vocabularies) should be used in addition to the DAC codes.</p>
+</blockquote>
+<p>This seems to be quite an overhead for several organisations, who at the same time understand and value the purpose of a common vocabulary</p>
+          <p><a href="https://discuss.iatistandard.org/t/sectors-sector-mappings/173/1">Read full topic</a></p>
+        ]]></description>
+        <link>https://discuss.iatistandard.org/t/sectors-sector-mappings/173/1</link>
+        <pubDate>Thu, 30 Apr 2015 09:31:44 +0000</pubDate>
+        <guid isPermaLink="false">discuss.iatistandard.org-post-173-1</guid>
+        <source url="https://discuss.iatistandard.org/t/sectors-sector-mappings/173.rss">Sectors &amp; sector mappings</source>
+      </item>
+  </channel>
+</rss>
