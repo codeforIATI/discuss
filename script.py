@@ -36,6 +36,22 @@ subs = [
           </span>
         </li>
 ''', ''),
+    ('''<div id="pre-footer">
+	<div id="footer-additional">
+		<div id="footer-social">
+			<aside id="sidebar_social_links" class="widget widget_social_links">
+				<div class="text-widget">
+					<ul class="social-links">
+						<li class="social twitter"><a href="https://twitter.com/codeforiati">Twitter</a></li>
+						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<!--#footer-social -->
+	</div>
+</div>
+''', ''),
 ]
 
 for file in glob('**/*.html', recursive=True):
