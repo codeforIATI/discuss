@@ -63,6 +63,9 @@ re_subs = [
           </span>
         </li>
 ''', ''),
+    (r'''<link rel="icon" type="image/png" href="[^"]+">
+<link rel="apple-touch-icon" type="image/png" href="[^"]+">
+''', '<link rel="icon" href="https://codeforiati.org/favicon.ico">'),
 ]
 
 for file in glob('**/*.html', recursive=True):
