@@ -15,7 +15,7 @@ CSV2IATI is going to be retired this year, so at Open Data Services Co-operative
 <meta name="theme-color" content="#ffffff">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
 <link rel="canonical" href="777.html" />
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.iatistandard.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.iatistandard.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://discuss.codeforiati.org","potentialAction":{"@type":"SearchAction","target":"https://discuss.codeforiati.org/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 <link rel="search" type="application/opensearchdescription+xml" href="../../opensearch.xml" title="IATI Community Discussions Search">
 
       <link href="../../stylesheets/desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf7.css_%3b%20filename_%3dUTF-8%27%27desktop_97eab4872dd7e0bbc07f97051ddccc2321e7baf71522.css?__ws=discuss.iatistandard.org" media="all" rel="stylesheet" data-target="desktop" data-theme-id="5"/>
@@ -25,10 +25,10 @@ CSV2IATI is going to be retired this year, so at Open Data Services Co-operative
         <link rel="alternate" type="application/rss+xml" title="RSS feed of &#39;Flatten-tool: New approach for Spreadsheet to IATI conversion&#39;" href="777.rss" />
     <meta property="og:site_name" content="IATI Community Discussions" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_1024x110.png" />
-<meta property="og:image" content="https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_1024x110.png" />
-<meta property="og:url" content="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777" />
-<meta name="twitter:url" content="https://discuss.iatistandard.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777" />
+<meta name="twitter:image" content="https://discuss.codeforiati.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_1024x110.png" />
+<meta property="og:image" content="https://discuss.codeforiati.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_1024x110.png" />
+<meta property="og:url" content="https://discuss.codeforiati.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777" />
+<meta name="twitter:url" content="https://discuss.codeforiati.org/t/flatten-tool-new-approach-for-spreadsheet-to-iati-conversion/777" />
 <meta property="og:title" content="Flatten-tool: New approach for Spreadsheet to IATI conversion" />
 <meta name="twitter:title" content="Flatten-tool: New approach for Spreadsheet to IATI conversion" />
 <meta property="og:description" content="This post is mostly a write up of the lightening talk I gave at the TAG, with some additional info on how the work is progressing.  CSV2IATI is going to be retired this year, so at Open Data Services Co-operative we’ve been looking at alternate approaches for converting spreadsheets to IATI XML.  For OCDS (Open Contracting Data Standard) and 360Giving, we built flatten-tool.  This is a command line tool, and python library, for converting from flat spreadsheet formats to nested structured format..." />
@@ -142,11 +142,11 @@ CSV2IATI is going to be retired this year, so at Open Data Services Co-operative
 <h3>No mapping tool</h3>
 <p>Instead of a mapping tool, we require that headings contain an xpath (or close to an xpath) for the part of the IATI XML the column corresponds to.</p>
 <p>e.g. this spreadsheet:</p>
-<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/8a7946636d00e1297e4f13489b699594f2bf7bad.png" data-download-href="https://discuss.iatistandard.org/uploads/default/8a7946636d00e1297e4f13489b699594f2bf7bad" title="image.png"><img src="../../uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_689x74.png" width="689" height="74" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_689x74.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_1033x111.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/8a7946636d00e1297e4f13489b699594f2bf7bad.png 2x" data-small-upload="../../uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_10x10.png"><div class="meta">
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/8a7946636d00e1297e4f13489b699594f2bf7bad.png" data-download-href="https://discuss.codeforiati.org/uploads/default/8a7946636d00e1297e4f13489b699594f2bf7bad" title="image.png"><img src="../../uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_689x74.png" width="689" height="74" srcset="https://discuss.codeforiati.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_689x74.png, https://discuss.codeforiati.org/uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_1033x111.png 1.5x, https://discuss.codeforiati.org/uploads/default/original/1X/8a7946636d00e1297e4f13489b699594f2bf7bad.png 2x" data-small-upload="../../uploads/default/optimized/1X/8a7946636d00e1297e4f13489b699594f2bf7bad_2_10x10.png"><div class="meta">
 <svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1308×141 22.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
 </div></a></div></p>
 <p>becomes this XML:</p>
-<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2.png" data-download-href="https://discuss.iatistandard.org/uploads/default/7cba10e3803b8b5cd97af915e81797b2013f27d2" title="image.png"><img src="../../uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_345x57.png" width="345" height="57" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_345x57.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_517x85.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_690x114.png 2x" data-small-upload="../../uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_10x10.png"><div class="meta">
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2.png" data-download-href="https://discuss.codeforiati.org/uploads/default/7cba10e3803b8b5cd97af915e81797b2013f27d2" title="image.png"><img src="../../uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_345x57.png" width="345" height="57" srcset="https://discuss.codeforiati.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_345x57.png, https://discuss.codeforiati.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_517x85.png 1.5x, https://discuss.codeforiati.org/uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_690x114.png 2x" data-small-upload="../../uploads/default/optimized/1X/7cba10e3803b8b5cd97af915e81797b2013f27d2_2_10x10.png"><div class="meta">
 <svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">2110×351 77.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
 </div></a></div></p>
 <p>Most users won’t need to worry about xpath though, as we’ll have a pre-made template for them to download and populate. However, the approach does also allow custom templates to be easily crafted for particular use cases.</p>
@@ -159,11 +159,11 @@ CSV2IATI is going to be retired this year, so at Open Data Services Co-operative
 <li>Repeated rows, for compatibility with CSV2IATI</li>
 </ul>
 <p>e.g. multiple columns might be convenient for mulitiple recipient countries:</p>
-<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5.png" data-download-href="https://discuss.iatistandard.org/uploads/default/3a484b93bde1094cfdfbedf2d2da0f999f4498a5" title="image.png"><img src="../../uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_690x69.png" width="690" height="69" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_690x69.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_1035x103.png 1.5x, https://discuss.iatistandard.org/uploads/default/original/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5.png 2x" data-small-upload="../../uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_10x10.png"><div class="meta">
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5.png" data-download-href="https://discuss.codeforiati.org/uploads/default/3a484b93bde1094cfdfbedf2d2da0f999f4498a5" title="image.png"><img src="../../uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_690x69.png" width="690" height="69" srcset="https://discuss.codeforiati.org/uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_690x69.png, https://discuss.codeforiati.org/uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_1035x103.png 1.5x, https://discuss.codeforiati.org/uploads/default/original/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5.png 2x" data-small-upload="../../uploads/default/optimized/1X/3a484b93bde1094cfdfbedf2d2da0f999f4498a5_2_10x10.png"><div class="meta">
 <svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1325×134 13.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
 </div></a></div></p>
 <p>but a separate sheet might be more convenient for multiple transactions:</p>
-<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/6fba25080a085599c1f4d81951a365e46aa9d46f.png" data-download-href="https://discuss.iatistandard.org/uploads/default/6fba25080a085599c1f4d81951a365e46aa9d46f" title="image.png"><img src="../../uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_690x74.png" width="690" height="74" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_690x74.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_1035x111.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_1380x148.png 2x" data-small-upload="../../uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_10x10.png"><div class="meta">
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/6fba25080a085599c1f4d81951a365e46aa9d46f.png" data-download-href="https://discuss.codeforiati.org/uploads/default/6fba25080a085599c1f4d81951a365e46aa9d46f" title="image.png"><img src="../../uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_690x74.png" width="690" height="74" srcset="https://discuss.codeforiati.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_690x74.png, https://discuss.codeforiati.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_1035x111.png 1.5x, https://discuss.codeforiati.org/uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_1380x148.png 2x" data-small-upload="../../uploads/default/optimized/1X/6fba25080a085599c1f4d81951a365e46aa9d46f_2_10x10.png"><div class="meta">
 <svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">1807×195 32.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
 </div></a></div></p>
 <h3>Excel workbook (XLSX) support, in addition to CSV</h3>
@@ -175,7 +175,7 @@ CSV2IATI is going to be retired this year, so at Open Data Services Co-operative
 <h2>Future plans</h2>
 <p>We’re working on a web interface, so that users can upload a file, instead of having to use a commandline tool.</p>
 <p>We want this web interface to have integrated validation. Additionally validation messages will list the cell in the spreadsheet that caused the error, allowing data to be fixed more easily. <a class="mention" href="../../u/stevieflow.html">@stevieflow</a> made a presentation about this approach to the IATI Members’ Assembly. Here’s a screenshot of what this currently looks like for 360Giving:</p>
-<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad.png" data-download-href="https://discuss.iatistandard.org/uploads/default/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad" title="image.png"><img src="../../uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_690x159.png" width="690" height="159" srcset="https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_690x159.png, https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_1035x238.png 1.5x, https://discuss.iatistandard.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_1380x318.png 2x" data-small-upload="../../uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_10x10.png"><div class="meta">
+<p><div class="lightbox-wrapper"><a class="lightbox" href="../../uploads/default/original/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad.png" data-download-href="https://discuss.codeforiati.org/uploads/default/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad" title="image.png"><img src="../../uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_690x159.png" width="690" height="159" srcset="https://discuss.codeforiati.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_690x159.png, https://discuss.codeforiati.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_1035x238.png 1.5x, https://discuss.codeforiati.org/uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_1380x318.png 2x" data-small-upload="../../uploads/default/optimized/1X/1f4cdc8d423c17b8148ebe9d7d36518829e3d0ad_2_10x10.png"><div class="meta">
 <svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use xlink:href="#far-image"></use></svg><span class="filename">image.png</span><span class="informations">2153×498 68.1 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use xlink:href="#discourse-expand"></use></svg>
 </div></a></div></p>
 <p>For OCDS and 360Giving we also have conversion <strong>to</strong> spreadsheet (which means it’s possible to roundtrip, ie. edit and then convert back to XML). We think this could be useful for IATI too, but at the moment we’re focusing on conversion <strong>from</strong> spreadsheet first, because that appears to have the greater need.</p>
@@ -637,36 +637,20 @@ CSV2IATI is going to be retired this year, so at Open Data Services Co-operative
             <a href='../../tos.html' itemprop="url">Terms of Service </a>
           </span>
         </li>
-        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
-          <span itemprop='name'>
-            <a href='https://iatistandard.org/en/privacy-policy/' itemprop="url">Privacy Policy </a>
-          </span>
-        </li>
         </ul>
       </nav>
-      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a>, best viewed with JavaScript enabled</p>
+      <p class='powered-by-link'>Powered by <a href="https://www.discourse.org/">Discourse</a></p>
     </footer>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107364622-1"></script>
 <script src="../../theme-javascripts/4253779dfdd8746a6d2d7a4caed66d6a3c739ecc.js_%3b%20filename_%3dUTF-8%27%274253779dfdd8746a6d2d7a4caed66d6a3c739ecc1522.js?__ws=discuss.iatistandard.org"></script>
 <div id="pre-footer">
 	<div id="footer-additional">
-		<div id="footer-cookie">
-			<aside id="text-3" class="widget widget_text">
-				<h3 class="widget-title">Cookie Disclaimer</h3>
-				<div class="textwidget">
-					<p>Cookies are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and
-						how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username
-						and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
-					<p><a href="https://www.aidtransparency.net/privacy-policy">Privacy policy</a></p>
-				</div>
-			</aside>
-		</div>
 		<div id="footer-social">
 			<aside id="sidebar_social_links" class="widget widget_social_links">
 				<div class="text-widget">
 					<ul class="social-links">
-						<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>
+						<li class="social twitter"><a href="https://twitter.com/codeforiati">Twitter</a></li>
 						<li class="social rss"><a href="feed://support.iatistandard.org/home/index.rss">RSS</a></li>
 					</ul>
 				</div>
