@@ -30,6 +30,12 @@ subs = [
     ('https://discuss.iatistandard.org', 'https://discuss.codeforiati.org'),
     (', best viewed with JavaScript enabled', ''),
     ('<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>', '<li class="social twitter"><a href="https://twitter.com/codeforiati">Twitter</a></li>'),
+    ('''        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='tos.html' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+''', ''),
 ]
 
 for file in glob('**/*.html', recursive=True):
