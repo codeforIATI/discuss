@@ -2,6 +2,7 @@
 A bunch of replacements on the scraped HTML.
 '''
 
+import re
 from glob import glob
 
 subs = [
@@ -52,14 +53,16 @@ subs = [
 	</div>
 </div>
 ''', ''),
-    ('''    <header>
-      <a href="index.html">
-          <img src="uploads/default/original/1X/6b91f9ecc20e7554001e0411c0ddd61c81836f72.svg" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
+    ('''<nav>
+    </nav>''', ''),
+]
+re_subs = [
+    (r'''    <header>
+      <a href="[^"]+">
+          <img src="[^"]+" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
       </a>
     </header>
 ''', ''),
-    ('''<nav>
-    </nav>''', ''),
 ]
 
 for file in glob('**/*.html', recursive=True):
@@ -67,5 +70,7 @@ for file in glob('**/*.html', recursive=True):
         txt = f.read()
     for find, repl in subs:
         txt = txt.replace(find, repl)
+    for find, repl in re_subs:
+        txt = re.sub(find, repl, txt)
     with open(file, 'w') as f:
         _ = f.write(txt)
