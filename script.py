@@ -31,12 +31,6 @@ subs = [
     ('https://discuss.iatistandard.org', 'https://discuss.codeforiati.org'),
     (', best viewed with JavaScript enabled', ''),
     ('<li class="social twitter"><a href="https://twitter.com/IATI_aid">Twitter</a></li>', '<li class="social twitter"><a href="https://twitter.com/codeforiati">Twitter</a></li>'),
-    ('''        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
-          <span itemprop='name'>
-            <a href='tos.html' itemprop="url">Terms of Service </a>
-          </span>
-        </li>
-''', ''),
     ('''<div id="pre-footer">
 	<div id="footer-additional">
 		<div id="footer-social">
@@ -62,6 +56,12 @@ re_subs = [
           <img src="[^"]+" alt="IATI Community Discussions" id="site-logo" style="max-width: 150px;">
       </a>
     </header>
+''', ''),
+    (r'''        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='[^']+' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
 ''', ''),
 ]
 
