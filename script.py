@@ -58,6 +58,8 @@ subs = [
       </a>
     </header>
 ''', ''),
+    ('''<nav>
+    </nav>''', ''),
 ]
 
 for file in glob('**/*.html', recursive=True):
